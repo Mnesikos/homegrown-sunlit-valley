@@ -1,0 +1,26 @@
+{
+  "name": "Yerba Mate 🌼🔥🍂",
+  "category": "patchouli:crops",
+  "icon": "herbalbrews:yerba_mate_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 6$(li)🌼 §2Spring§r 🔥 §6Summer§r 🍂 §4Autumn$(li)Yield: 1-3$(li)Grow time: 3 days$(li)Seeds itself$(br2)$(l)Notes$()$(br)Wild Yerba Mate can be found in mountainous biomes."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Yerba Mate Crop",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "herbalbrews:yerba_mate_plant[age=3]",
+          "F": "minecraft:farmland[moisture=7]"
+        }
+      }
+    }
+  ]
+}

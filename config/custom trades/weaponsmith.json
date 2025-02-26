@@ -1,0 +1,431 @@
+{
+  "profession": "minecraft:weaponsmith",
+  "removeOtherTrades": true,
+  "maxTrades": 30,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "supplementaries:safe",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:safe_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:storage_controller",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_storage_controller_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:controller_extension",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_controller_extension_for_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:copper_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_copper_upgrade_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:gold_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_gold_upgrade_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:diamond_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_diamond_upgrade_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:netherite_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_netherite_upgrade_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "functionalstorage:void_upgrade",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_void_upgrade_for_bevel"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.inventory_connector",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.inventory_connector_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.inventory_cable",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.inventory_cable_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.inventory_cable_connector",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.inventory_cable_connector_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.storage_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.storage_terminal_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.crafting_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "toms_storage:ts.storage_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.crafting_terminal_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.wireless_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.wireless_terminal_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.adv_wireless_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "toms_storage:ts.wireless_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.adv_wireless_terminal_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "toms_storage:ts.paint_kit",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_ts.paint_kit_for_bevel"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:upgrade_base",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_upgrade_base_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_1",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_1_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_1_plus",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_1_plus_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_2",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_2_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_3",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_3_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_4",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_4_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_tier_5",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_tier_5_for_sun"
+    }
+  ]
+}

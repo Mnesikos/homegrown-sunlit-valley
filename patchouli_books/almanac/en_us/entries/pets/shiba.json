@@ -1,0 +1,17 @@
+{
+  "name": "Shiba",
+  "category": "patchouli:pets",
+  "icon": "minecraft:arrow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Shocking Skateboard wheels$(br2)$(l)Taming$()$(br)Bone"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "quark:shiba",
+      "scale": 0.7,
+      "text": "They love playing fetch with arrows"
+    }
+  ]
+}

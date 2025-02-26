@@ -1,0 +1,10 @@
+{
+  "_documentation": "https://github.com/Luke100000/SelectiveBounds/blob/1.20.1/common/src/main/java/net/conczin/selectivebounds/config/Config.java",
+  "showOnSneak": true,
+  "showOnAction": true,
+  "showOnActionTime": 4.0,
+  "considerCanAttackBlock": true,
+  "considerIsCorrectToolForDrops": true,
+  "version": 0,
+  "name": "selectivebounds"
+}

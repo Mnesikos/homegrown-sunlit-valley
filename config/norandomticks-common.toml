@@ -1,0 +1,9 @@
+#A list of IDs to shut them up. Every element must be in "" and divided by , from one another.
+#You can prevent RANDOM ticking of any block in the game. Be it vanilla or modded.
+#E.G. ["minecraft:copper_block", "minecraft:bamboo"]
+randomticks_blocks = ["society:eggplant", "veggiesdelight:cauliflower_crop", "veggiesdelight:garlic_crop", "veggiesdelight:bellpepper_crop", "veggiesdelight:sweet_potato_crop", "minecraft:pumpkin_stem", "minecraft:melon_stem", "society:tubabacco_leaf", "society:ancient_fruit", "brewery:hop_trellis", "society:blueberry", "atmospheric:dragon_roots", "minecraft:wheat", "minecraft:carrots", "minecraft:potatoes", "minecraft:torchflower_crop", "minecraft:beetroots", "snowyspirit:ginger", "supplementaries:flax", "supplementaries:stick_tomatoes", "herbalbrews:coffee_plant", "herbalbrews:rooibos_plant", "herbalbrews:tea_plant", "herbalbrews:yerba_mate_plant", "farm_and_charm:strawberry_crop", "farm_and_charm:strawberry", "farm_and_charm:lettuce_crop", "farm_and_charm:barley_crop", "farm_and_charm:onion_crop", "farm_and_charm:tomato_crop_body", "farm_and_charm:corn_crop", "farm_and_charm:oat_crop", "minecraft:sweet_berry_bush", "vintagedelight:gearo_berry_bush", "vintagedelight:ghost_pepper_crop", "vintagedelight:cucumber_crop", "farmersdelight:cabbages", "farmersdelight:budding_tomatoes", "farmersdelight:tomatoes", "vintagedelight:peanut_crop", "etcetera:cotton"]
+#You can prevent TICKING of any block in the game. Be it vanilla or modded.
+#USE AT YOUR OWN DISCRETION. YOU MUST KNOW WHAT YOU ARE DOING OR YOU CAN BREAK GAMEPLAY.
+#E.G. ["minecraft:fire"]
+ticks_blocks = [""]
+

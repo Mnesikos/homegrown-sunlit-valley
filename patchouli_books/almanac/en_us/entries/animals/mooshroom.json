@@ -1,0 +1,17 @@
+{
+  "name": "Mooshroom",
+  "category": "patchouli:animals",
+  "icon": "minecraft:red_mushroom",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: Not Sold$(li)Milk: Milk$(li)Milk Cooldown: 10m$(li)Forage: Truffle (20% chance)$(li)Drops: Drops: Raw Beef, Leather$(br2)$(l)Notes$()$(br)Foraging requires 5+ hearts of affection."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:mooshroom",
+      "scale": 0.8,
+      "text": "A rare, mushroom producing beauty."
+    }
+  ]
+}

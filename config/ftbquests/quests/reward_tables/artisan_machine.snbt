@@ -1,0 +1,20 @@
+{
+	id: "7CEE6786B4C401DE"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "society:mayonnaise_machine" }
+		{ item: "society:loom" }
+		{ item: "society:preserves_jar" }
+		{
+			item: {
+				Count: 1
+				id: "society:magic_shears"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+	title: "Artisan Machine"
+}

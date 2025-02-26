@@ -1,0 +1,410 @@
+{
+  "profession": "minecraft:fisherman",
+  "removeOtherTrades": true,
+  "maxTrades": 30,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "aquaculture:worm",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_worm_for_spur"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:fishing_rod",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_fishing_rod_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "netherdepthsupgrade:lava_fishing_rod",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 24,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_lava_fishing_rod_rod_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:fish_radar",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "aquaculture:neptunium_ingot",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_fishing_rod_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "society:fish_pond",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_fish_pond_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:fish_smoker",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 10,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_fish_smoker_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:note_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:spur",
+        "amount": 7,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_note_hook_for_spur"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:iron_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_iron_hook_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:light_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_light_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:redstone_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_redstone_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:heavy_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_heavy_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:gold_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_gold_hook_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:double_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_double_hook_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:diamond_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_diamond_hook_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:nether_star_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "minecraft:nether_star",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_nether_star_hook_for_sun_and_nether_star"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:tackle_box",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_tackle_box_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:worm_farm",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_worm_farm_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "create:copper_diving_helmet",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_copper_diving_helmet_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "create:copper_backtank",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_copper_backtank_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "create:copper_diving_boots",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_copper_diving_boots_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "candlelight:gold_ring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_gold_ring_for_sun"
+    }
+  ]
+}

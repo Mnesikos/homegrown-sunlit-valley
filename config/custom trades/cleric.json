@@ -1,0 +1,292 @@
+{
+  "profession": "minecraft:cleric",
+  "removeOtherTrades": true,
+  "maxTrades": 40,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "minecraft:blaze_powder",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_blaze_powder_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "moreminecarts:levitation_powder",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_levitation_powder_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:stone_wand",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_stone_wand_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:iron_wand",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_iron_wand_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:diamond_wand",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_diamond_wand_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "constructionwand:infinity_wand",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_infinity_wand_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "quark:pickarang",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_pickarang_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "create:wand_of_symmetry",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_wand_of_symmetry_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:elytra_wing",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 64,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "numismatics:sun",
+        "amount": 64,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_wand_of_symmetry_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "gag:hearthstone",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_hearthstone_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:crystal_of_regret_farming",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:crystal_of_regret_farming_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:crystal_of_regret_husbandry",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:crystal_of_regret_husbandry_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:crystal_of_regret_mining",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:crystal_of_regret_mining_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:crystal_of_regret_adventuring",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:crystal_of_regret_adventuring_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:crystal_of_regret_fishing",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:crystal_of_regret_fishing_for_sun"
+    }
+  ]
+}

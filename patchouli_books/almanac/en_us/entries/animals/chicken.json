@@ -1,0 +1,17 @@
+{
+  "name": "Chicken",
+  "category": "patchouli:animals",
+  "icon": "minecraft:egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 256$(li)Egg: Egg$(li)Drops: Raw Chicken, Feather$(br2)$(l)Notes$()$(br)Hungry or unhappy (less than 2 hearts of affection) Chickens don't lay eggs"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "scale": 0.8,
+      "text": "These humble birds require little attention, only food."
+    }
+  ]
+}

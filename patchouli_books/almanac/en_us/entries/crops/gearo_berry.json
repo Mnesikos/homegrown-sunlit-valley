@@ -1,0 +1,26 @@
+{
+  "name": "Gearo Berries 🌼",
+  "category": "patchouli:crops",
+  "icon": "vintagedelight:gearo_berry",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 24$(li)🌼 §2Spring$(li)Yield: 1-3$(li)Grow time: 4 days$(li)Seeds itself$(br2)$(l)Notes$()$(br)Requires Botania progression"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Gearo Berry Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "vintagedelight:gearo_berry_bush[age=4]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

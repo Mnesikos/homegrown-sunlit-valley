@@ -1,0 +1,6 @@
+{
+  "entity.brewery.hanging_rope": "Hanging Flexible Rope",
+  "entity.brewery.rope_collision": "Flexible Rope",
+  "entity.brewery.rope_knot": "Flexible Rope Knot",
+  "item.brewery.rope": "Flexible Rope"
+}

@@ -1,0 +1,213 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wheels"
+	group: "15230846E14B6926"
+	icon: "iwannaskate:skateboard_wheels_emerald"
+	id: "7FA3DD4B1E16A1C3"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2B9F6A4CC25AE095"
+			tasks: [{
+				id: "4A8E06A48C878161"
+				item: "iwannaskate:skateboard_wheels"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			id: "7BCB1E6EFE077181"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "4E206832335393D6"
+				item: "iwannaskate:skateboard_wheels_enderpearl"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			id: "564CECD16A35C655"
+			tasks: [{
+				id: "45DA9BF876D052CC"
+				item: "iwannaskate:skateboard_wheels_emerald"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "5931F8AD9028E708"
+			subtitle: "&6Fall Zombies"
+			tasks: [{
+				id: "39E7E169142E6714"
+				item: "iwannaskate:skateboard_wheels_spooky"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "7CACBDC9699FAD32"
+			subtitle: "&6Winter Zombies"
+			tasks: [{
+				id: "555D518231C0395F"
+				item: "iwannaskate:skateboard_wheels_snowy"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			id: "49A259C97DE5A89F"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "6A83BD0E17D36326"
+				item: "iwannaskate:skateboard_wheels_flame"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			id: "0278E29E85A3868F"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "34C0569FF3270FDF"
+				item: "iwannaskate:skateboard_wheels_soul_flame"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			id: "09428A3C7050AD4F"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "54429D05AED48E48"
+				item: "iwannaskate:skateboard_wheels_rainbow"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			id: "7763AD2EF3180C6A"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "29677835000733BD"
+				item: "iwannaskate:skateboard_wheels_shocking"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			id: "328A83DCA38481D6"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "2F97237E7409F2E1"
+				item: "iwannaskate:skateboard_wheels_hover"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			id: "6F2BD065E7BD99FC"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "5D25AE906141BBCE"
+				item: "iwannaskate:skateboard_wheels_aesthetic"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			id: "0AA78ED23FE016AD"
+			subtitle: "&6Pet Gift"
+			tasks: [{
+				id: "0118BF0B24D8E694"
+				item: "iwannaskate:skateboard_wheels_honey"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"49A259C97DE5A89F"
+				"09428A3C7050AD4F"
+				"7BCB1E6EFE077181"
+				"328A83DCA38481D6"
+				"7CACBDC9699FAD32"
+				"0AA78ED23FE016AD"
+				"0278E29E85A3868F"
+				"2B9F6A4CC25AE095"
+				"5931F8AD9028E708"
+				"564CECD16A35C655"
+				"7763AD2EF3180C6A"
+				"6F2BD065E7BD99FC"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_visible: false
+			icon: {
+				Count: 1
+				id: "trofers:large_pillar"
+				tag: {
+					BlockEntityTag: {
+						Trophy: "trofers:wheels"
+						id: "trofers:trophy"
+					}
+					display: {
+						Lore: ["\"(+NBT)\""]
+					}
+				}
+			}
+			id: "49ED51D21AFFA505"
+			rewards: [
+				{
+					count: 32
+					id: "6251216DBC788EAD"
+					item: "iwannaskate:energy_drink"
+					type: "item"
+				}
+				{
+					id: "7B055EC16E3A0826"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:wheels"
+								id: "trofers:trophy"
+							}
+							display: {
+								Lore: ["\"(+NBT)\""]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 3.0d
+			tasks: [{
+				icon: "iwannaskate:skateboard_wheels_emerald"
+				id: "1CEC58FBDC800033"
+				stat: "minecraft:play_time"
+				title: "Collect all Skateboard Wheels"
+				type: "stat"
+				value: 1
+			}]
+			title: "Wheel Collection Complete!"
+			x: -6.482142857142854d
+			y: 4.625000000000007d
+		}
+	]
+	subtitle: ["Not required for Perfection"]
+	title: "Wheels"
+}

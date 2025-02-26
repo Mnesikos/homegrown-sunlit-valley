@@ -1,0 +1,147 @@
+[
+  {
+    "mob": [
+      "minecraft:zombie",
+      "minecraft:skeleton",
+      "minecraft:enderman",
+      "minecraft:spider",
+      "minecraft:creeper",
+      "minecraft:witch",
+      "minecraft:drowned",
+      "minecraft:zombie_villager",
+      "minecraft:husk",
+      "minecraft:stray",
+      "trials:bogged"
+    ],
+    "minheight": 50,
+    "dimension": "minecraft:overworld",
+    "result": "deny"
+  },
+  {
+    "mob": [
+      "minecraft:zombie",
+      "minecraft:skeleton",
+      "minecraft:enderman",
+      "minecraft:spider",
+      "minecraft:creeper",
+      "minecraft:witch",
+      "minecraft:drowned",
+      "minecraft:zombie_villager",
+      "minecraft:husk",
+      "minecraft:stray",
+      "trials:bogged"
+    ],
+    "maxheight": 50,
+    "dimension": "minecraft:overworld",
+    "result": "allow"
+  },
+  {
+    "mod": "legendarycreatures",
+    "dimension": "minecraft:overworld",
+    "result": "deny"
+  },
+  {
+    "mob": "unusualfishmod:ripper",
+    "result": "deny"
+  },
+  {
+    "mob": "crabbersdelight:crab",
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "balloonbox:balloonbox",
+    "mincount": {
+      "amount": 1,
+      "perplayer": false,
+      "mob": "balloonbox:balloonbox"
+    },
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mob": ["minecraft:zombie"],
+    "winter": true,
+    "result": "allow",
+    "maxheight": 50,
+    "speedmultiply": 1.2,
+    "random": 0.4,
+    "armorhelmet": [
+      "simplehats:santaclaus",
+      "simplehats:frozenhead",
+      "minecraft:ice"
+    ],
+    "helditem": [
+      "2=simplehats:hatscraps_festive",
+      "1=simplehats:hatbag_festive",
+      "1=iwannaskate:skateboard_wheels_snowy",
+      "3=society:frozen_geode",
+      "4=society:frozen_tear",
+      "1=pamhc2trees:cinnamon_sapling",
+      "1=snowyspirit:candy_cane"
+    ]
+  },
+  {
+    "mob": ["minecraft:zombie"],
+    "result": "allow",
+    "maxheight": 50,
+    "autumn": true,
+    "speedmultiply": 0.6,
+    "random": 0.6,
+    "armorhelmet": [
+      "simplehats:jackohat",
+      "minecraft:pumpkin",
+      "autumnity:redstone_jack_o_lantern",
+      "minecraft:carved_pumpkin",
+      "autumnity:soul_jack_o_lantern",
+      "simplehats:spiderweb",
+      "simplehats:hockeymask",
+      "simplehats:ghostmask"
+    ],
+    "helditem": [
+      "1=simplehats:hatscraps_halloween",
+      "1=simplehats:hatbag_halloween",
+      "1=iwannaskate:skateboard_wheels_spooky",
+      "3=farmersdelight:iron_knife",
+      "3=vinery:basket",
+      "4=minecraft:apple",
+      "1=pamhc2trees:cinnamon_sapling",
+      "4=supplementaries:candy"
+    ]
+  },
+  {
+    "dimension": "mining_dimension:mining",
+    "healthmultiply": 2,
+    "damagemultiply": 2.5
+  },
+  {
+    "mob": "legendarycreatures:corpse_eater",
+    "dimension": "mining_dimension:mining",
+    "structure": [
+      "hopo:mineshaft/acacia_mineshaft",
+      "hopo:mineshaft/bamboo_mineshaft",
+      "hopo:mineshaft/birch_mineshaft",
+      "hopo:mineshaft/cherry_mineshaft",
+      "hopo:mineshaft/dark_oak_mineshaft",
+      "hopo:mineshaft/deepslate_mineshaft",
+      "hopo:mineshaft/jungle_mineshaft",
+      "hopo:mineshaft/mangrove_mineshaft",
+      "hopo:mineshaft/mud_mineshaft",
+      "hopo:mineshaft/oak_mineshaft",
+      "hopo:mineshaft/spruce_mineshaft",
+      "hopo:mineshaft/stone_mineshaft"
+    ],
+    "healthmultiply": 7,
+    "damagemultiply": 3,
+    "armoradd": 5,
+    "speedmultiply": 0.4,
+    "when": "onjoin",
+    "result": "default"
+  },
+  {
+    "mob": "legendarycreatures:corpse_eater",
+    "dimension": "mining_dimension:mining",
+    "when": "onjoin",
+    "result": "deny"
+  }
+]

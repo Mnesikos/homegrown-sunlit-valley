@@ -1,0 +1,28 @@
+{
+  "name": "Foul Berries 🍂",
+  "category": "patchouli:crops",
+  "icon": "autumnity:foul_berries",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 4$(li)🍂 §4Autumn§r$(li)Yield: 2 (per bush half)$(li)Growth Stages: 3$(li)Seeds itself$(br2)$(l)Notes$()$(br)Found in rarely in Maple Forest biomes"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name ": "Tall Foul Berry Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["U"],
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "U": "autumnity:tall_foul_berry_bush[age=3,half=upper]",
+          "0": "autumnity:tall_foul_berry_bush[age=3,half=lower]",
+          "F": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}
