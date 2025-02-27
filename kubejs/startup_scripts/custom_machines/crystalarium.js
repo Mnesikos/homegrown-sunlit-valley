@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns 3 of the same crop into seeds"));
+      item.tooltip(Text.gray("Duplicates any mineral or gem placed inside"));
       item.modelJson({
         parent: "society:block/crystalarium",
       });
@@ -138,7 +138,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
+      if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
         global.crystalariumCrystals[
           Number(block.properties.get("type").toLowerCase()) - 1
         ].output.forEach((item) => {

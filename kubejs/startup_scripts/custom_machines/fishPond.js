@@ -461,7 +461,7 @@ StartupEvents.registry("block", (event) => {
         }
       });
       if (type !== "0" && valid === "true") {
-        if (mature === "false" && Number(population) > 1 && rnd25()) {
+        if (mature === "false" && Number(population) > 1 && rnd10()) {
           tick.level.spawnParticles(
             "minecraft:campfire_cosy_smoke",
             true,
