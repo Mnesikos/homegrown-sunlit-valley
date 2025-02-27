@@ -105,8 +105,9 @@ const handlePet = (
       player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
     data.affection = affection + affectionIncrease;
 
-    if ((!data.clockwork && player.isFake()) || !livableArea) {
-      data.affection = affection - 50;
+    if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
+      affectionIncrease = 0
+      data.affection = affection - (hungry ? 25 : 50);
     }
     data.ageLastPet = level.time;
     level.spawnParticles(

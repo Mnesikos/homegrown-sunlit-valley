@@ -12,6 +12,7 @@ ServerEvents.recipes((e) => {
     result: [{ item: "herbalbrews:lavender_blossom", count: 2 }],
   });
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
+  e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
