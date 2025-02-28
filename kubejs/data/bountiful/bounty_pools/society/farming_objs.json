@@ -1,0 +1,94 @@
+{
+  "content": {
+    "obj_catch_anything": {
+      "type": "criteria",
+      "rarity": "RARE",
+      "name": "Fish up anything",
+      "content": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "type_specific": {
+          "fishing_hook": {
+            "in_open_water": true
+          }
+        }
+      },
+      "amount": {
+        "min": 2,
+        "max": 10
+      },
+      "unitWorth": 64,
+      "timeMult": 3,
+      "weightMult": 0.6
+    },
+    "farmer_obj_chop_on_cutting_board": {
+      "type": "criteria",
+      "rarity": "COMMON",
+      "name": "Chop things on a farmer's delight cutting board",
+      "content": "farmersdelight:use_cutting_board",
+      "conditions": {},
+      "amount": {
+        "min": 1,
+        "max": 16
+      },
+      "unitWorth": 8,
+      "timeMult": 2,
+      "weightMult": 0.5
+    },
+    "farmer_obj_camfire_cooking": {
+      "type": "criteria",
+      "rarity": "UNCOMMON",
+      "name": "Cook on a campfire",
+      "content": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:campfires"
+              }
+            }
+          }
+        ]
+      },
+      "amount": {
+        "min": 1,
+        "max": 16
+      },
+      "unitWorth": 8,
+      "weightMult": 0.5
+    },
+    "farmer_obj_strip_logs": {
+      "type": "criteria",
+      "content": "minecraft:item_used_on_block",
+      "rarity": "EPIC",
+      "name": "Strip logs in world",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "equipment": {
+              "mainhand": {
+                "tag": "minecraft:axes"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "society:raw_logs"
+              }
+            }
+          }
+        ]
+      },
+      "amount": {
+        "min": 8,
+        "max": 32
+      },
+      "unitWorth": 32,
+      "weightMult": 0.6
+    }
+  }
+}

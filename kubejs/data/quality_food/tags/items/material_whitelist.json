@@ -1,0 +1,96 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:sugar",
+    "minecraft:sugar_cane",
+    "minecraft:cocoa_beans",
+    "minecraft:ink_sac",
+    "minecraft:hay_block",
+    "minecraft:honey_block",
+    "#forge:eggs",
+    "#society:large_eggs",
+    "#forge:seeds",
+    "#forge:crops",
+    "#forge:mushrooms",
+    {
+      "id": "species:ichor_bottle",
+      "required": false
+    },
+    {
+      "id": "society:truffle",
+      "required": false
+    },
+    {
+      "id": "#forge:dough",
+      "required": false
+    },
+    {
+      "id": "#forge:flour",
+      "required": false
+    },
+    {
+      "id": "#farmersdelight:wild_crops",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice_panicle",
+      "required": false
+    },
+    {
+      "id": "fruitfulfun:lemon_roast_chicken_block",
+      "required": false
+    },
+    {
+      "id": "collectorsreap:pomegranate",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:barley",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:oat",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:oat",
+      "required": false
+    },
+    {
+      "id": "herbalbrews:green_tea_leaf",
+      "required": false
+    },
+    {
+      "id": "society:tubabacco_leaf",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:ginger",
+      "required": false
+    },
+    {
+      "id": "aquaculture:goldfish",
+      "required": false
+    },
+    {
+      "id": "aquaculture:minnow",
+      "required": false
+    },
+    {
+      "id": "aquaculture:leech",
+      "required": false
+    },
+    {
+      "id": "society:fine_wool",
+      "required": false
+    },
+    {
+      "id": "society:truffle",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit_foot",
+      "required": false
+    }
+  ]
+}

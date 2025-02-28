@@ -1,0 +1,17 @@
+{
+  "type": "farm_and_charm:stove",
+  "ingredients": [
+    {
+      "item": "veggiesdelight:cauliflower"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "tag": "forge:vegetables"
+    }
+  ],
+  "item": "veggiesdelight:whole_roasted_cauliflower",
+  "count": 1,
+  "experience": 2
+}

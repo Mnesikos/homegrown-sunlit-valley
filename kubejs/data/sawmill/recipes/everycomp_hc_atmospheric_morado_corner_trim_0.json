@@ -1,0 +1,21 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "atmospheric:morado_log"
+    },
+    {
+      "item": "atmospheric:morado_wood"
+    },
+    {
+      "item": "atmospheric:stripped_morado_log"
+    },
+    {
+      "item": "atmospheric:stripped_morado_wood"
+    }
+  ],
+  "ingredient_count": 1,
+  "result": "everycomp:hc/atmospheric/morado_corner_trim",
+  "count": 3,
+  "type": "sawmill:woodcutting"
+}

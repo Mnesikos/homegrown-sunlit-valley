@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "B": {
+      "item": "numismatics:sprocket"
+    }
+  },
+  "pattern": [
+    "BA",
+    "AB"
+  ],
+  "result": {
+    "item": "create:andesite_alloy",
+    "count": 2
+  },
+  "show_notification": true
+}

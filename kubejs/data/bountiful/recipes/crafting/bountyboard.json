@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["PLP", "DDD", "PLP"],
+  "key": {
+    "P": { "item": "minecraft:oak_planks" },
+    "L": { "item": "minecraft:oak_log" },
+    "D": { "item": "numismatics:cog" }
+  },
+  "result": {
+    "item": "bountiful:bountyboard"
+  }
+}

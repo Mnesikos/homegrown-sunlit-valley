@@ -1,0 +1,15 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "atmospheric:grimwood_log"
+    },
+    {
+      "item": "atmospheric:stripped_grimwood_log"
+    }
+  ],
+  "ingredient_count": 1,
+  "result": "everycomp:hc/atmospheric/grimwood_corner_trim",
+  "count": 3,
+  "type": "sawmill:woodcutting"
+}

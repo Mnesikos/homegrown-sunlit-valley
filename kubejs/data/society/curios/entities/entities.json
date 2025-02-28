@@ -1,0 +1,11 @@
+{
+    "entities": [
+      "minecraft:player"
+    ],
+    "slots": [
+      "bank_meter",
+      "clock",
+      "chat_color",
+      "calendarslot"
+    ]
+  }

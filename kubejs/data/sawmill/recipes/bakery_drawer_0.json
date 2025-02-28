@@ -1,0 +1,10 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "ingredient_count": 4,
+  "result": "bakery:drawer",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

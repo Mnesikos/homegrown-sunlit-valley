@@ -1,0 +1,356 @@
+{
+  "axe_speed+5%": {
+    "title": "+5% Axe Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_axe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.axe_speed",
+          "value": 0.05,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "shovel_speed+5%": {
+    "title": "+5% Shovel Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_shovel"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.shovel_speed",
+          "value": 0.05,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "tiller": {
+    "title": "Tiller",
+    "description": ":corn: Farmer products worth 20% more",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "carrot"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1.2",
+          "lock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s tiller",
+          "lock_command": "kubejs stages remove @s tiller"
+        }
+      }
+    ]
+  },
+  "soil_inspector": {
+    "title": "Soil Inspector",
+    "description": "Chance to dig up §6Plant Nutrients§7 when manually harvesting crops",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "farm_and_charm:fertilizer"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s soil_inspector",
+          "lock_command": "kubejs stages remove @s soil_inspector"
+        }
+      }
+    ]
+  },
+  "sticky_crops": {
+    "title": "Sticky Crops",
+    "description": "Chance to find §6Pine Tar§7 when manually harvesting crops",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:pine_tar"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s sticky_crops",
+          "lock_command": "kubejs stages remove @s sticky_crops"
+        }
+      }
+    ]
+  },
+  "artisan": {
+    "title": "Artisan",
+    "description": ":art: Artisan products worth 10% more",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:aging_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1.1",
+          "lock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s artisan",
+          "lock_command": "kubejs stages remove @s artisan"
+        }
+      }
+    ]
+  },
+  "aged_prize": {
+    "title": "Aged Prize",
+    "description": "§65%§7 chance to find §6Prize Tickets§7 when collecting from §6Aging Cask",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:prize_ticket"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s aged_prize",
+          "lock_command": "kubejs stages remove @s aged_prize"
+        }
+      }
+    ]
+  },
+  "ancient_aging": {
+    "title": "Ancient Aging",
+    "description": "Adds ability to use §6Ancient Casks",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_cask"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s ancient_aging",
+          "lock_command": "kubejs stages remove @s ancient_aging"
+        }
+      }
+    ]
+  },
+  "artful_tycoon": {
+    "title": "Artful Tycoon",
+    "description": ":art: Artisan products worth 100% more.\n\n§cDoes not stack with previous skills.",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:dewy_star"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 2",
+          "lock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s artful_tycoon",
+          "lock_command": "kubejs stages remove @s artful_tycoon"
+        }
+      }
+    ]
+  },
+  "rancher": {
+    "title": "Rancher",
+    "description": "§6Mayo Machines§7 and §6Looms§7 output double",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:golden_mayonnaise"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s rancher",
+          "lock_command": "kubejs stages remove @s rancher"
+        }
+      }
+    ]
+  },
+  "crop_collector": {
+    "title": "Crop Collector",
+    "description": "Crops drop double outputs when manually harvesting",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "aquaculture:double_hook"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s crop_collector",
+          "lock_command": "kubejs stages remove @s crop_collector"
+        }
+      }
+    ]
+  },
+  "tree_whisperer": {
+    "title": "Tree Whisperer",
+    "description": "Fruit trees drop +2 fruit per harvest",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "mysticaloaktree:wise_oak"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s tree_whisperer",
+          "lock_command": "kubejs stages remove @s tree_whisperer"
+        }
+      }
+    ]
+  },
+  "crop_tycoon": {
+    "title": "Crop Tycoon",
+    "description": ":corn: Farmer products worth 100% more.\n\n§cDoes not stack with previous skills.",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_fruit"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "attribute @s shippingbin:gem_sell_multiplier base set 2",
+          "lock_command": "attribute @s shippingbin:gem_sell_multiplier base set 1"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s crop_tycoon",
+          "lock_command": "kubejs stages remove @s crop_tycoon"
+        }
+      }
+    ]
+  },
+  "farmers_blessing": {
+    "title": "Farmer's Blessing",
+    "description": "Adds ability to use §6Ancient Goddess Statues",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:ancient_goddess_statue"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s farmers_blessing",
+          "lock_command": "kubejs stages remove @s farmers_blessing"
+        }
+      }
+    ]
+  }
+}

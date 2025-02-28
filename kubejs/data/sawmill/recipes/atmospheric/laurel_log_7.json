@@ -1,0 +1,10 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "atmospheric:stripped_laurel_log"
+  },
+  "ingredient_count": 1,
+  "result": "atmospheric:stripped_laurel_wood",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

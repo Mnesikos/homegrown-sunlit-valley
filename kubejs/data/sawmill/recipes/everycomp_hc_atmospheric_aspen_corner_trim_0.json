@@ -1,0 +1,21 @@
+{
+  "group": "logs",
+  "ingredient": [
+    {
+      "item": "atmospheric:aspen_log"
+    },
+    {
+      "item": "atmospheric:aspen_wood"
+    },
+    {
+      "item": "atmospheric:stripped_aspen_log"
+    },
+    {
+      "item": "atmospheric:stripped_aspen_wood"
+    }
+  ],
+  "ingredient_count": 1,
+  "result": "everycomp:hc/atmospheric/aspen_corner_trim",
+  "count": 3,
+  "type": "sawmill:woodcutting"
+}

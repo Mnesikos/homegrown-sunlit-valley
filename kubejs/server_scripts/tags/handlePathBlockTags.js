@@ -56,6 +56,7 @@ let pathBlocks = [
   "quark:iron_pillar",
   "quark:bamboo_mat_carpet",
   "quark:bamboo_mat",
+  "quark:sandstone_bricks",
   "supplementaries:blackstone_tile",
   "supplementaries:gravel_bricks",
   "supplementaries:stone_tile",
@@ -209,5 +210,6 @@ ServerEvents.tags("block", (e) => {
   e.add("via_romana:path_block", "#minecraft:combination_step_sound_blocks");
   e.add("via_romana:path_block", "#minecraft:planks");
   e.add("via_romana:path_block", "#railways:locometal");
+  e.add("via_romana:path_block", "#decorative_blocks:beams");
   e.add("via_romana:path_block", "#twigs:packed_silt");
 });

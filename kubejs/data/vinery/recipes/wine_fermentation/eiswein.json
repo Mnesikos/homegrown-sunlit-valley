@@ -1,0 +1,21 @@
+{
+  "type": "vinery:wine_fermentation",
+  "juice": {
+    "type": "white_taiga",
+    "amount": 10
+  },
+  "ingredients": [
+    {
+      "item": "pamhc2trees:dragonfruititem"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "wine_bottle": {
+    "required": true
+  },
+  "result": {
+    "item": "vinery:eiswein"
+  }
+}

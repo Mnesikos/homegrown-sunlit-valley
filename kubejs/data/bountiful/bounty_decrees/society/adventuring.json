@@ -1,0 +1,4 @@
+{
+  "objectives": ["adventuring_objs", "adventuring_objs_shipping"],
+  "rewards": ["coin_rews"]
+}

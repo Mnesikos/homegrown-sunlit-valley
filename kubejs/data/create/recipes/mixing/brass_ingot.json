@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "numismatics:cog"
+    },
+    {
+      "item": "numismatics:cog"
+    },
+    {
+      "item": "numismatics:cog"
+    },
+    {
+      "item": "create:zinc_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:brass_ingot"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "ingredient_count": 1,
+  "result": "minecraft:chiseled_bookshelf",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

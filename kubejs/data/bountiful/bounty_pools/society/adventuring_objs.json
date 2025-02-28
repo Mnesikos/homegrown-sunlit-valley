@@ -1,0 +1,116 @@
+{
+  "content": {
+    "adventurer_obj_zombie": {
+      "type": "entity",
+      "rarity": "COMMON",
+      "timeMult": 6,
+      "content": "minecraft:zombie",
+      "amount": {
+        "min": 2,
+        "max": 10
+      },
+      "unitWorth": 4
+    },
+    "adventurer_obj_skeleton": {
+      "type": "entity",
+      "rarity": "COMMON",
+      "timeMult": 6,
+      "content": "minecraft:skeleton",
+      "amount": {
+        "min": 2,
+        "max": 10
+      },
+      "unitWorth": 4
+    },
+    "adventurer_obj_drowned": {
+      "type": "entity",
+      "rarity": "COMMON",
+      "timeMult": 6,
+      "content": "minecraft:drowned",
+      "amount": {
+        "min": 2,
+        "max": 10
+      },
+      "unitWorth": 8
+    },
+    "adventurer_obj_spider": {
+      "type": "entity",
+      "rarity": "COMMON",
+      "timeMult": 6,
+      "content": "minecraft:spider",
+      "amount": {
+        "min": 2,
+        "max": 10
+      },
+      "unitWorth": 8
+    },
+    "adventurer_obj_witch": {
+      "type": "entity",
+      "timeMult": 6,
+      "rarity": "UNCOMMON",
+      "content": "minecraft:witch",
+      "amount": {
+        "min": 1,
+        "max": 4
+      },
+      "unitWorth": 12
+    },
+    "adventurer_obj_creeper": {
+      "type": "entity",
+      "timeMult": 6,
+      "rarity": "UNCOMMON",
+      "content": "minecraft:creeper",
+      "amount": {
+        "min": 1,
+        "max": 4
+      },
+      "unitWorth": 12
+    },
+    "adventurer_obj_wither_skeleton": {
+      "type": "entity",
+      "timeMult": 6,
+      "rarity": "RARE",
+      "content": "minecraft:wither_skeleton",
+      "amount": {
+        "min": 1,
+        "max": 10
+      },
+      "unitWorth": 20
+    },
+    "adventurer_obj_blaze": {
+      "type": "entity",
+      "timeMult": 6,
+      "rarity": "RARE",
+      "content": "minecraft:blaze",
+      "amount": {
+        "min": 1,
+        "max": 10
+      },
+      "unitWorth": 20
+    },
+    "adventurer_obj_wither": {
+      "type": "entity",
+      "timeMult": 12,
+      "rarity": "EPIC",
+      "content": "minecraft:wither",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1280
+    },
+    "adventurer_obj_player": {
+      "type": "entity",
+      "timeMult": 12.0,
+      "icon": "minecraft:painting",
+      "content": "minecraft:player",
+      "rarity": "LEGENDARY",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 300,
+      "weightMult": 0.3
+    }
+  }
+}

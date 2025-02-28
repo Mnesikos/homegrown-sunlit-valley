@@ -1,0 +1,344 @@
+{
+  "content": {
+    "geologist_raw_iron": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "minecraft:raw_iron",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 16
+    },
+    "geologist_raw_copper": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "minecraft:raw_copper",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 8
+    },
+    "geologist_raw_gold": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "minecraft:raw_gold",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 32
+    },
+    "geologist_raw_zinc": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "create:raw_zinc",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 16
+    },
+    "geologist_lapis_lazuli": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "minecraft:lapis_lazuli",
+      "amount": {
+        "min": 8,
+        "max": 64
+      },
+      "unitWorth": 12
+    },
+    "geologist_redstone": {
+      "type": "minecraft:item",
+      "rarity": "COMMON",
+      "content": "minecraft:redstone",
+      "amount": {
+        "min": 8,
+        "max": 64
+      },
+      "unitWorth": 16
+    },
+    "geologist_amethyst_shard": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:amethyst_shard",
+      "amount": {
+        "min": 4,
+        "max": 16
+      },
+      "unitWorth": 20
+    },
+    "geologist_emerald": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:emerald",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 64
+    },
+    "geologist_diamond": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:diamond",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 512
+    },
+    "geologist_geode": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:geode",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 32
+    },
+    "geologist_amethyst_chunk": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:amethyst_chunk",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 224
+    },
+    "geologist_aquamarine": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:aquamarine",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 368
+    },
+    "geologist_earth_crystal": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:earth_crystal",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 96
+    },
+    "geologist_frozen_geode": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:frozen_geode",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 64
+    },
+    "geologist_frozen_tear": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "society:frozen_tear",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 128
+    },
+    "geologist_nether_quartz_ore": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:nether_quartz_ore",
+      "amount": {
+        "min": 8,
+        "max": 64
+      },
+      "unitWorth": 32
+    },
+    "geologist_raw_bismuth": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "etcetera:raw_bismuth",
+      "amount": {
+        "min": 4,
+        "max": 16
+      },
+      "unitWorth": 64
+    },
+    "geologist_magma_geode": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "society:magma_geode",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 96
+    },
+    "geologist_topaz": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "society:topaz",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 384
+    },
+    "geologist_ruby": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "society:ruby",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 512
+    },
+    "geologist_fire_quartz": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "society:fire_quartz",
+      "amount": {
+        "min": 1,
+        "max": 3
+      },
+      "unitWorth": 192
+    },
+    "geologist_raw_iron_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "minecraft:raw_iron",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 288
+    },
+    "geologist_raw_copper_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "minecraft:raw_copper",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 144
+    },
+    "geologist_raw_gold_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "minecraft:raw_gold",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 576
+    },
+    "geologist_raw_zinc_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "create:raw_zinc",
+      "amount": {
+        "min": 4,
+        "max": 64
+      },
+      "unitWorth": 288
+    },
+    "geologist_lapis_lazuli_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "minecraft:lapis_lazuli",
+      "amount": {
+        "min": 8,
+        "max": 64
+      },
+      "unitWorth": 216
+    },
+    "geologist_redstone_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "minecraft:redstone_block",
+      "amount": {
+        "min": 8,
+        "max": 64
+      },
+      "unitWorth": 16
+    },
+    "geologist_raw_bismuth_block": {
+      "type": "minecraft:item",
+      "rarity": "RARE",
+      "content": "etcetera:raw_bismuth_block",
+      "amount": {
+        "min": 4,
+        "max": 16
+      },
+      "unitWorth": 288
+    },
+    "geologist_diamond_block": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:diamond_block",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 9216
+    },
+    "geologist_emerald_block": {
+      "type": "minecraft:item",
+      "rarity": "UNCOMMON",
+      "content": "minecraft:emerald_block",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 1152
+    },
+    "geologist_ancient_debris": {
+      "type": "minecraft:item",
+      "rarity": "EPIC",
+      "content": "minecraft:ancient_debris",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024
+    },
+    "geologist_omni_geode": {
+      "type": "minecraft:item",
+      "rarity": "EPIC",
+      "content": "society:omni_geode",
+      "amount": {
+        "min": 1,
+        "max": 4
+      },
+      "unitWorth": 128
+    },
+    "geologist_diamond_heart": {
+      "type": "minecraft:item",
+      "rarity": "EPIC",
+      "content": "quark:diamond_heart",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1504
+    },
+    "geologist_jade": {
+      "type": "minecraft:item",
+      "rarity": "EPIC",
+      "content": "society:jade",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024
+    }
+  }
+}

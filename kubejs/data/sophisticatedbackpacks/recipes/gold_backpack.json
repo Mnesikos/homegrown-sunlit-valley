@@ -1,0 +1,31 @@
+{
+  "type": "sophisticatedbackpacks:backpack_upgrade",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:gold_backpack"
+    }
+  ],
+  "key": {
+    "B": {
+      "item": "sophisticatedbackpacks:iron_backpack"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "c": {
+      "item": "numismatics:sun"
+    }
+  },
+  "pattern": [
+    "cGc",
+    "gBg",
+    "cgc"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:gold_backpack"
+  }
+}
