@@ -1180,9 +1180,7 @@
 		{
 			dependencies: ["4A48308E11476E9B"]
 			description: [
-				"&6Fish Ponds&r cultivate fish over time once a single fish is placed in."
-				""
-				"Roe and other items can be harvested, and more items are unlocked at certain fish populations."
+				"&6Fish Ponds&r cultivate fish over time once a single fish is placed in. Roe and other items can be harvested from them, and more items are unlocked at certain fish populations. "
 				""
 				"Sometimes the fish will request items in order to grow their populaton."
 				""
@@ -1193,6 +1191,8 @@
 				"&3⬜⬜⬜ <- Water/Lava"
 				"&3⬜⬜⬜"
 				"  &6⬜   <- Fish Pond block"
+				""
+				"{image:society:textures/gui/fish_pond_example.png width:150 height:150 align:center}"
 				" "
 			]
 			id: "6FE9F992ACD90629"

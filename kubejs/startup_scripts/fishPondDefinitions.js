@@ -332,7 +332,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:raw_iron", count: 32 },
+          { item: "minecraft:raw_iron", count: 16 },
           { item: "minecraft:iron_block", count: 8 },
           { item: "justhammers:iron_hammer", count: 1 },
         ],
@@ -2030,7 +2030,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:blaze_rod", count: 16 },
+          { item: "minecraft:torchflower", count: 4 },
           { item: "minecraft:wither_skeleton_skull", count: 1 },
           { item: "create:blaze_burner", count: 1 },
         ],

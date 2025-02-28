@@ -284,6 +284,10 @@ ServerEvents.tags("item", (e) => {
   ];
   relics.forEach((relic) => e.add("society:relics", relic));
 
+  Color.DYE.forEach((color) =>{
+    e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
+  });
+
   [
     "aquaculture:jellyfish",
     "aquaculture:goldfish",

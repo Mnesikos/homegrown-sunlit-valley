@@ -413,7 +413,7 @@ ServerEvents.recipes((e) => {
     type: "farmersdelight:cutting",
     ingredients: [{ item: "society:neptuna" }],
     tool: { tag: "forge:tools/knives" },
-    result: [{ item: "aquaculture:neptunium_nugget", count: 1 }],
+    result: [{ item: "aquaculture:neptunium_nugget", count: 3 }],
   });
   // Catalog Dupes
   e.shaped("2x society:tanuki_catalog", ["CCC", "CcC", "CCC"], {

@@ -137,7 +137,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 4,
+        "amount": 8,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -155,7 +155,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 8,
+        "amount": 16,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -173,7 +173,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 16,
+        "amount": 32,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -191,7 +191,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 32,
+        "amount": 64,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -208,6 +208,11 @@
         "priceModifier": 0
       },
       "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 64,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
         "itemKey": "numismatics:sun",
         "amount": 64,
         "priceModifier": 0

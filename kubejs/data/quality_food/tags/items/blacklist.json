@@ -32,6 +32,10 @@
     {
       "id": "#society:aged_roe",
       "required": false
+    },
+    {
+      "id": "#society:botania_seeds",
+      "required": false
     }
   ]
 }
