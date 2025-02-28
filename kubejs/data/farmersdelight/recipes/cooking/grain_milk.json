@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "tag": "brewery:wheat"
+    },
+    {
+      "tag": "brewery:wheat"
+    },
+    {
+      "tag": "brewery:wheat"
+    }
+  ],
+  "container": {
+    "item": "meadow:wooden_bucket"
+  },
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "meadow:wooden_grain_milk_bucket"
+  }
+}

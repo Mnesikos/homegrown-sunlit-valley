@@ -1,0 +1,10 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "item": "betterarcheology:rotten_log"
+  },
+  "ingredient_count": 6,
+  "result": "meadow:fire_log",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

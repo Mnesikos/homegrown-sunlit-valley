@@ -1,0 +1,10 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "ingredient_count": 1,
+  "result": "brewery:beer_mug",
+  "count": 5,
+  "type": "sawmill:woodcutting"
+}

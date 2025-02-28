@@ -62,6 +62,7 @@ global.ore = [
   { item: "minecraft:amethyst_shard", value: 4 },
   { item: "minecraft:amethyst_block", value: 16 },
   { item: "minecraft:quartz", value: 4 },
+  { item: "minecraft:quartz_block", value: 16 },
   { item: "minecraft:diamond", value: 256 },
   { item: "minecraft:diamond_block", value: 2304 },
   { item: "minecraft:ancient_debris", value: 1024 },
@@ -753,7 +754,7 @@ global.logs = [
 global.wines = [
   { item: "society:forks_of_blue", value: 252 },
   { item: "vinery:jo_special_mixture", value: 208 },
-{ item: "vinery:cristel_wine", value: 168 },
+  { item: "vinery:cristel_wine", value: 168 },
   { item: "vinery:creepers_crush", value: 84 },
   { item: "vinery:villagers_fright", value: 96 },
   { item: "vinery:glowing_wine", value: 400 },
@@ -1046,6 +1047,7 @@ const fermentingRecipes = [
   { item: "vintagedelight:pickled_pitcher_pod", value: 64 },
   { item: "vintagedelight:kimchi", value: 71 },
   { item: "veggiesdelight:fermented_garlic_honey", value: 156 },
+  { item: "supplementaries:lumisene_bottle", value: 24 },
 ];
 fermentingRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1455,6 +1457,10 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "create:experience_nugget", value: 2 },
+  { item: "create:experience_block", value: 18 },
+  { item: "minecraft:experience_bottle", value: 8 },
+  { item: "create_enchantment_industry:hyper_experience_bottle", value: 550 },
   { item: "twigs:opaline_seashell", value: 16 },
   { item: "twigs:roseate_seashell", value: 20 },
   { item: "twigs:bronzed_seashell", value: 32 },
@@ -1523,6 +1529,7 @@ global.miscAdventurer = [
   { item: "aquaculture:lockbox", value: 128 },
   { item: "aquaculture:treasure_chest", value: 512 },
   { item: "mysticaloaktree:wise_oak", value: 1024 },
+  { item: "minecraft:enchanted_golden_apple", value: 4096 },
   { item: "minecraft:goat_horn", value: 512 },
   { item: "botania:life_essence", value: 9999 },
   { item: "botania:manasteel_ingot", value: 32 },

@@ -1,0 +1,10 @@
+{
+  "group": "logs",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "ingredient_count": 4,
+  "result": "candlelight:cabinet",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

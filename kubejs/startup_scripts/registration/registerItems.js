@@ -103,25 +103,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:canvas")
     .texture("society:item/canvas")
     .displayName("Artisan Canvas");
-  const dyeColors = [
-    "white",
-    "light_gray",
-    "gray",
-    "black",
-    "brown",
-    "red",
-    "orange",
-    "yellow",
-    "lime",
-    "green",
-    "cyan",
-    "light_blue",
-    "blue",
-    "purple",
-    "magenta",
-    "pink",
-  ];
-  dyeColors.forEach((color) =>{
+  Color.DYE.forEach((color) =>{
     e.create(`society:${color}_sheet`)
     .texture(`society:item/sheets/${color}`)
   })

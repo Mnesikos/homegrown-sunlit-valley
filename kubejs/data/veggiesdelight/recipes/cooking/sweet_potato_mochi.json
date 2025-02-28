@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 3.0,
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "veggiesdelight:sweet_potato_dough"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "tag": "society:large_milk"
+    }
+  ],
+  "result": {
+    "item": "veggiesdelight:sweet_potato_mochi"
+  }
+}

@@ -391,6 +391,12 @@
 				"&oPetals cannot be planted and bonemeal like you may be able to do in other packs...&r"
 			]
 			id: "1BF054DD14781BAD"
+			rewards: [{
+				count: 8
+				id: "3B8818DAAD40E9F6"
+				item: "botania_seeds:white_mystical_flower_seed"
+				type: "item"
+			}]
 			tasks: [{
 				id: "23CC15DBCB48AA96"
 				item: "botania:white_petal"

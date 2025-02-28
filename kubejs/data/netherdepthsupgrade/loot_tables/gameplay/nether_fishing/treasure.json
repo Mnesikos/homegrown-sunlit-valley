@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_contents",
+              "type": "aquaculture:neptunes_bounty",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "name": "aquaculture:box/neptunes_bounty"
+                }
+              ]
+            }
+          ],
+          "name": "aquaculture:neptunes_bounty"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "type": "minecraft:uniform",
+                "min": 0.0,
+                "max": 0.25
+              },
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30.0,
+              "treasure": true
+            }
+          ],
+          "name": "netherdepthsupgrade:lava_fishing_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wither_skeleton_skull"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:ember_crystal_cluster"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ancient_debris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:wet_weekly"
+        }
+      ]
+    }
+  ]
+}

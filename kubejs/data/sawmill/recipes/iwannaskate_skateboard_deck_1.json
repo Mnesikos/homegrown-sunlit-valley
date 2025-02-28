@@ -1,0 +1,10 @@
+{
+  "group": "planks",
+  "ingredient": {
+    "tag": "minecraft:planks"
+  },
+  "ingredient_count": 1,
+  "result": "iwannaskate:skateboard_deck",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

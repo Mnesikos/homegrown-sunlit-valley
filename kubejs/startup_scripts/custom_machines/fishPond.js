@@ -312,7 +312,9 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Cultivates fish. Right Click with fish to add"));
+      item.tooltip(Text.gray("Cultivates fish, roe, and various items"));
+      item.tooltip(Text.gray("Right Click with a fish to add it to the pond"));
+      item.tooltip(Text.gray("Shift + Right Click with an empty hand to take out fish"));
       item.modelJson({
         parent: "society:block/fish_pond",
       });
@@ -461,7 +463,7 @@ StartupEvents.registry("block", (event) => {
         }
       });
       if (type !== "0" && valid === "true") {
-        if (mature === "false" && Number(population) > 1 && rnd25()) {
+        if (mature === "false" && Number(population) > 1 && rnd10()) {
           tick.level.spawnParticles(
             "minecraft:campfire_cosy_smoke",
             true,

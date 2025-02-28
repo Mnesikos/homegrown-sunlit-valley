@@ -15,6 +15,6 @@ CommonAddedEvents.playerRespawn((e) => {
   if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 2));
   if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.5));
   if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 2));
-  if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 2));
-  if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 3));
+  if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));
+  if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 2));
 });

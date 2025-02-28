@@ -1,6 +1,6 @@
 ^^^
 ## It's a Magical World
-### v2.0.0
+### v2.0.1
 ^^^
 --- 
 **WARNING** 2 furniture mods removed! Backup worlds before updating and add these mods manually to avoid losing blocks!
@@ -56,3 +56,34 @@
 - Fixed incorrect Scarecrow and Totem of Growth totem
 - Fixed some duplicate item names
 - Fixed some recipe conflicts
+
+# 2.0.1
+- Added value for Quartz Block, Enchanted Golden Apple and Lumisene
+- Added values for experience items
+- Added `:skamtebord:` emoji for Frog
+- Added alternative recipes for some fertilizers using Botania
+- Added photo to Fish Pond quest to make it more clear
+- Added more information to Fish Pond tooltip
+- Adjusted certain villager prices
+- Reduced bonus of Fence and Looting Tycoon by half 
+- Replaced Soul Sand washing recipe with Soul Beads
+- Compressed panoramas so the pack isn't so large
+- Decreased Fish Pond collection speed
+- Increased Neptuna crafting into nuggets amount
+- Improved certain Fish Pond quests to be different from their outputs to reduce confusion
+- Fixed Mystical Flower Crops randomly ticking
+- Fixed Mystical Flowers being turned into crops on right click
+- Fixed Mystical Flower Seeds not having season tags
+- Fixed Mystical Flower Seeds having quality
+- Fixed console spam from crop growth
+- Fixed Star Blessing not working in the Nether
+- Fixed Crystalarium tooltip
+- Fixed Sprinkler tooltip
+- Fixed Nether quest again
+- Fixed Beef Patty name
+- Fixed The Davey Burger tooltip having the incorrect adverb
+- Fixed husbandry hunger debuff not applying
+- Fixed framed storage controllers/extenders bypassing purchase
+- Fixed Everycompat Functional Storage drawers not having a wood type
+- Fixed quark replanting affecting mystical flowers
+- Fixed Beautify picture frame loot tables

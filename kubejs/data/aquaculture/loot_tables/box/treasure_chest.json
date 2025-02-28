@@ -1,0 +1,82 @@
+{
+  "pools": [
+    {
+      "name": "aquaculture:treasure_chest_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "entryName": "diamond",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "society:pristine_diamond",
+          "entryName": "pristine_diamond",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "society:pristine_emerald",
+          "entryName": "pristine_emerald",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "numismatics:crown",
+          "entryName": "crown",
+          "weight": 12
+        },
+        {
+          "type": "item",
+          "name": "numismatics:sun",
+          "entryName": "sun",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "simplehats:hatbag_epic",
+          "entryName": "hatbag_epic",
+          "weight": 12
+        },
+        {
+          "type": "item",
+          "name": "society:furniture_box",
+          "entryName": "furniture_box",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "society:relic_trove",
+          "entryName": "relic_trove",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "society:artifact_trove",
+          "entryName": "artifact_trove",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:wet_weekly",
+          "entryName": "wet_weekly",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "society:pristine_aquamarine",
+          "entryName": "aquamarine",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "crabbersdelight:pearl_block",
+          "entryName": "pearl",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

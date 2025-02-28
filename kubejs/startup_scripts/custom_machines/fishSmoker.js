@@ -192,7 +192,7 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, 2);
+        global.handleBETick(entity, global.fishSmokerRecipes, 2);
       });
     }).blockstateJson = {
     multipart: [

@@ -1,0 +1,10 @@
+{
+  "group": "log",
+  "ingredient": {
+    "item": "quark:azalea_log"
+  },
+  "ingredient_count": 1,
+  "result": "quark:azalea_wood",
+  "count": 1,
+  "type": "sawmill:woodcutting"
+}

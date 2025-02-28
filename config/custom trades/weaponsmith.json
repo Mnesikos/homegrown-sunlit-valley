@@ -28,16 +28,16 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
+        "itemKey": "numismatics:crown",
         "amount": 1,
         "priceModifier": 0
       },
-      "tradeExp": 1,
+      "tradeExp": 2,
       "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_storage_controller_for_cog"
+      "UTID": "minecraft:weaponsmith_storage_controller_for_crown"
     },
     {
       "offer": {
@@ -46,8 +46,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sprocket",
-        "amount": 2,
+        "itemKey": "numismatics:crown",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -55,7 +55,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_controller_extension_for_sprocket"
+      "UTID": "minecraft:weaponsmith_controller_extension_for_crown"
     },
     {
       "offer": {
@@ -65,7 +65,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 1,
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -83,7 +83,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 2,
+        "amount": 6,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -101,7 +101,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 3,
+        "amount": 10,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -119,7 +119,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 4,
+        "amount": 14,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -136,7 +136,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:cog",
         "amount": 3,
         "priceModifier": 0
       },
@@ -145,7 +145,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_void_upgrade_for_bevel"
+      "UTID": "minecraft:weaponsmith_void_upgrade_for_cog"
     },
     {
       "offer": {
@@ -155,7 +155,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 1,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -168,7 +168,7 @@
     {
       "offer": {
         "itemKey": "toms_storage:ts.inventory_cable",
-        "amount": 4,
+        "amount": 1,
         "priceModifier": 0
       },
       "request": {
@@ -190,7 +190,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
+        "itemKey": "numismatics:crown",
         "amount": 1,
         "priceModifier": 0
       },
@@ -199,7 +199,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.inventory_cable_connector_for_cog"
+      "UTID": "minecraft:weaponsmith_ts.inventory_cable_connector_for_crown"
     },
     {
       "offer": {
@@ -250,7 +250,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 6,
+        "amount": 12,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -268,7 +268,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 6,
+        "amount": 48,
         "priceModifier": 0
       },
       "additionalRequest": {
@@ -308,8 +308,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 2,
+        "itemKey": "numismatics:crown",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -317,7 +317,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_upgrade_base_for_cog"
+      "UTID": "minecraft:weaponsmith_upgrade_base_for_crown"
     },
     {
       "offer": {
@@ -327,7 +327,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 1,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -345,7 +345,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 2,
+        "amount": 6,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -363,7 +363,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 4,
+        "amount": 8,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -381,7 +381,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 8,
+        "amount": 16,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -399,7 +399,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 16,
+        "amount": 32,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -417,7 +417,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 32,
+        "amount": 64,
         "priceModifier": 0
       },
       "tradeExp": 1,
