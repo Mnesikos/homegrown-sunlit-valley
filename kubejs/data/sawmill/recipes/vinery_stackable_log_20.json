@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "quark:ancient_log"
+      "item": "meadow:pine_log"
     },
     {
-      "item": "quark:ancient_wood"
+      "item": "meadow:pine_wood"
     },
     {
-      "item": "quark:stripped_ancient_log"
+      "item": "meadow:stripped_pine_log"
     },
     {
-      "item": "quark:stripped_ancient_wood"
+      "item": "meadow:stripped_pine_wood"
     }
   ],
   "ingredient_count": 1,

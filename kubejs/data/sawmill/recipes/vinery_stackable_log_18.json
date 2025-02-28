@@ -2,16 +2,10 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "minecraft:warped_stem"
+      "item": "atmospheric:rosewood_log"
     },
     {
-      "item": "minecraft:warped_hyphae"
-    },
-    {
-      "item": "minecraft:stripped_warped_stem"
-    },
-    {
-      "item": "minecraft:stripped_warped_hyphae"
+      "item": "atmospheric:stripped_rosewood_log"
     }
   ],
   "ingredient_count": 1,

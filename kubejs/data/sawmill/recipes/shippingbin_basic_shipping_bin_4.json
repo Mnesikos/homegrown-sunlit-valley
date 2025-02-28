@@ -2,19 +2,13 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "minecraft:oak_log"
+      "item": "minecraft:bamboo_block"
     },
     {
-      "item": "minecraft:oak_wood"
-    },
-    {
-      "item": "minecraft:stripped_oak_log"
-    },
-    {
-      "item": "minecraft:stripped_oak_wood"
+      "item": "minecraft:stripped_bamboo_block"
     }
   ],
-  "ingredient_count": 2,
+  "ingredient_count": 5,
   "result": "shippingbin:basic_shipping_bin",
   "count": 1,
   "type": "sawmill:woodcutting"

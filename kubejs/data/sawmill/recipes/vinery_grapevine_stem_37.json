@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "minecraft:mangrove_planks"
+      "item": "minecraft:jungle_planks"
     },
     {
-      "item": "quark:vertical_mangrove_planks"
+      "item": "quark:vertical_jungle_planks"
     }
   ],
   "ingredient_count": 1,

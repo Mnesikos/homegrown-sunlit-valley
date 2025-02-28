@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "atmospheric:laurel_log"
+      "item": "minecraft:warped_stem"
     },
     {
-      "item": "atmospheric:laurel_wood"
+      "item": "minecraft:warped_hyphae"
     },
     {
-      "item": "atmospheric:stripped_laurel_log"
+      "item": "minecraft:stripped_warped_stem"
     },
     {
-      "item": "atmospheric:stripped_laurel_wood"
+      "item": "minecraft:stripped_warped_hyphae"
     }
   ],
   "ingredient_count": 1,

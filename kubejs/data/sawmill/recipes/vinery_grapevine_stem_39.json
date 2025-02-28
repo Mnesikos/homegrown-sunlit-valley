@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "minecraft:birch_planks"
+      "item": "minecraft:cherry_planks"
     },
     {
-      "item": "quark:vertical_birch_planks"
+      "item": "quark:vertical_cherry_planks"
     }
   ],
   "ingredient_count": 1,

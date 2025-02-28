@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "atmospheric:aspen_planks"
+      "item": "quark:blossom_planks"
     },
     {
-      "item": "everycomp:q/atmospheric/vertical_aspen_planks"
+      "item": "quark:vertical_blossom_planks"
     }
   ],
   "ingredient_count": 1,

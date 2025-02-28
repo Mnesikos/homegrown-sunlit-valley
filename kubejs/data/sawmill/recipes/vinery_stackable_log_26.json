@@ -1,8 +1,13 @@
 {
   "group": "logs",
-  "ingredient": {
-    "item": "betterarcheology:rotten_log"
-  },
+  "ingredient": [
+    {
+      "item": "botania:livingwood_log"
+    },
+    {
+      "item": "botania:stripped_livingwood_log"
+    }
+  ],
   "ingredient_count": 1,
   "result": "vinery:stackable_log",
   "count": 1,

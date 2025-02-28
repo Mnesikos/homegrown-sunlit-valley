@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "quark:blossom_log"
+      "item": "minecraft:birch_log"
     },
     {
-      "item": "quark:blossom_wood"
+      "item": "minecraft:birch_wood"
     },
     {
-      "item": "quark:stripped_blossom_log"
+      "item": "minecraft:stripped_birch_log"
     },
     {
-      "item": "quark:stripped_blossom_wood"
+      "item": "minecraft:stripped_birch_wood"
     }
   ],
   "ingredient_count": 4,

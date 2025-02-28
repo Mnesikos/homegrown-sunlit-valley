@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "beachparty:palm_log"
+      "item": "meadow:pine_log"
     },
     {
-      "item": "beachparty:palm_wood"
+      "item": "meadow:pine_wood"
     },
     {
-      "item": "beachparty:stripped_palm_log"
+      "item": "meadow:stripped_pine_log"
     },
     {
-      "item": "beachparty:stripped_palm_wood"
+      "item": "meadow:stripped_pine_wood"
     }
   ],
   "ingredient_count": 1,

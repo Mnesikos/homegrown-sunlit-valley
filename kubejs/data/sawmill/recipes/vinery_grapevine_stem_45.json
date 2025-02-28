@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "beachparty:palm_planks"
+      "item": "meadow:pine_planks"
     },
     {
-      "item": "everycomp:q/beachparty/vertical_palm_planks"
+      "item": "everycomp:q/meadow/vertical_pine_planks"
     }
   ],
   "ingredient_count": 1,

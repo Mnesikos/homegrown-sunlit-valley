@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "vinery:dark_cherry_log"
+      "item": "autumnity:maple_log"
     },
     {
-      "item": "vinery:dark_cherry_wood"
+      "item": "autumnity:maple_wood"
     },
     {
-      "item": "vinery:stripped_dark_cherry_log"
+      "item": "autumnity:stripped_maple_log"
     },
     {
-      "item": "vinery:stripped_dark_cherry_wood"
+      "item": "autumnity:stripped_maple_wood"
     }
   ],
   "ingredient_count": 1,

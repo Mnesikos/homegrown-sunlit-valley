@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "minecraft:jungle_planks"
+      "item": "atmospheric:aspen_planks"
     },
     {
-      "item": "quark:vertical_jungle_planks"
+      "item": "everycomp:q/atmospheric/vertical_aspen_planks"
     }
   ],
   "ingredient_count": 1,

@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "autumnity:maple_log"
+      "item": "atmospheric:morado_log"
     },
     {
-      "item": "autumnity:maple_wood"
+      "item": "atmospheric:morado_wood"
     },
     {
-      "item": "autumnity:stripped_maple_log"
+      "item": "atmospheric:stripped_morado_log"
     },
     {
-      "item": "autumnity:stripped_maple_wood"
+      "item": "atmospheric:stripped_morado_wood"
     }
   ],
   "ingredient_count": 1,

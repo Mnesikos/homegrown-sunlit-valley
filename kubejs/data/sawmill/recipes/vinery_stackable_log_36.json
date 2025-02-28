@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "atmospheric:aspen_log"
+      "item": "minecraft:birch_log"
     },
     {
-      "item": "atmospheric:aspen_wood"
+      "item": "minecraft:birch_wood"
     },
     {
-      "item": "atmospheric:stripped_aspen_log"
+      "item": "minecraft:stripped_birch_log"
     },
     {
-      "item": "atmospheric:stripped_aspen_wood"
+      "item": "minecraft:stripped_birch_wood"
     }
   ],
   "ingredient_count": 1,

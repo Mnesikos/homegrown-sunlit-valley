@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "atmospheric:aspen_log"
+      "item": "quark:blossom_log"
     },
     {
-      "item": "atmospheric:aspen_wood"
+      "item": "quark:blossom_wood"
     },
     {
-      "item": "atmospheric:stripped_aspen_log"
+      "item": "quark:stripped_blossom_log"
     },
     {
-      "item": "atmospheric:stripped_aspen_wood"
+      "item": "quark:stripped_blossom_wood"
     }
   ],
   "ingredient_count": 1,

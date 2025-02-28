@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "quark:azalea_log"
+      "item": "atmospheric:kousa_log"
     },
     {
-      "item": "quark:azalea_wood"
+      "item": "atmospheric:kousa_wood"
     },
     {
-      "item": "quark:stripped_azalea_log"
+      "item": "atmospheric:stripped_kousa_log"
     },
     {
-      "item": "quark:stripped_azalea_wood"
+      "item": "atmospheric:stripped_kousa_wood"
     }
   ],
   "ingredient_count": 1,

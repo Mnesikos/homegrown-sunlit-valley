@@ -2,10 +2,10 @@
   "group": "planks",
   "ingredient": [
     {
-      "item": "minecraft:dark_oak_planks"
+      "item": "beachparty:palm_planks"
     },
     {
-      "item": "quark:vertical_dark_oak_planks"
+      "item": "everycomp:q/beachparty/vertical_palm_planks"
     }
   ],
   "ingredient_count": 1,

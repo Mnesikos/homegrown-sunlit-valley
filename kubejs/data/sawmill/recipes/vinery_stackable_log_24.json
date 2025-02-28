@@ -2,16 +2,16 @@
   "group": "logs",
   "ingredient": [
     {
-      "item": "minecraft:crimson_stem"
+      "item": "vinery:dark_cherry_log"
     },
     {
-      "item": "minecraft:crimson_hyphae"
+      "item": "vinery:dark_cherry_wood"
     },
     {
-      "item": "minecraft:stripped_crimson_stem"
+      "item": "vinery:stripped_dark_cherry_log"
     },
     {
-      "item": "minecraft:stripped_crimson_hyphae"
+      "item": "vinery:stripped_dark_cherry_wood"
     }
   ],
   "ingredient_count": 1,
