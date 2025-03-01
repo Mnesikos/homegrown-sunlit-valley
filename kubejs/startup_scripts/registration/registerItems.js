@@ -103,10 +103,9 @@ StartupEvents.registry("item", (e) => {
   e.create("society:canvas")
     .texture("society:item/canvas")
     .displayName("Artisan Canvas");
-  Color.DYE.forEach((color) =>{
-    e.create(`society:${color}_sheet`)
-    .texture(`society:item/sheets/${color}`)
-  })
+  Color.DYE.forEach((color) => {
+    e.create(`society:${color}_sheet`).texture(`society:item/sheets/${color}`);
+  });
   e.create("society:merino_wool").texture("society:item/merino_wool");
   e.create("society:enriched_bone_meal").texture(
     "society:item/enriched_bonemeal"
@@ -662,6 +661,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_amber_goby", hex: 0xfcae2a },
     { item: "unusualfishmod:raw_eyelash", hex: 0xdc66a0 },
   ];
+  // Smoked fish, roe, aged roe, and bait
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
@@ -697,6 +697,11 @@ StartupEvents.registry("item", (e) => {
         food.hunger(5);
         food.saturation(4);
       });
+    e.create(`society:${fishId}_bait`)
+      .texture("society:item/fish_bait")
+      .color(0, roeHex)
+      .tooltip(Text.gray(`Catches fish in any season or location`))
+      .tooltip(Text.gray("Place in Fish Traps, not Crab Traps!"));
   });
 
   // Pristine gems

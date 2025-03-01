@@ -10966,6 +10966,48 @@
             ]
         },
         {
+            "pakku_id": "5o0j4wcGZvPrDmOC",
+            "pakku_links": [
+                "Z5ABSfuXE0jplGgO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lets-do-lilis-lucky-lures"
+            },
+            "name": {
+                "curseforge": "[Let's Do] Lili's Lucky Lures"
+            },
+            "id": {
+                "curseforge": "1197637"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "letsdo-lilis_lucky_lures-forge-1.0.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6195/750/letsdo-lilis_lucky_lures-forge-1.0.2.jar",
+                    "id": "6195750",
+                    "parent_id": "1197637",
+                    "hashes": {
+                        "sha1": "f2d83f50578a9aa799cd395169184ce294411c5a",
+                        "md5": "bfa0647f2201f203813c6f7e69597dcb"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 423663,
+                    "date_published": "2025-02-15T12:04:36.750Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6ttfrVdaWQBx18D9",
             "pakku_links": [
                 "Z5ABSfuXE0jplGgO"
