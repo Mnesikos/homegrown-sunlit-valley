@@ -624,6 +624,10 @@
     "modId": "liltractor",
     "version": "1.20.1-1.1"
   },
+  "lmft-1.0.4+1.20.1-forge.jar": {
+    "modId": "lmft",
+    "version": "1.0.4+1.20.1"
+  },
   "lootjs-forge-1.20.1-2.12.0.jar": {
     "modId": "lootjs",
     "version": "1.20.1-2.12.0"
