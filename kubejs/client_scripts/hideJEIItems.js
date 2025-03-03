@@ -1,5 +1,8 @@
 JEIEvents.hideItems((e) => {
   const hiddenItems = [
+    "lilis_lucky_lures:dynamite",
+    "lilis_lucky_lures:fish_bag",
+    "lilis_lucky_lures:bamboo_fishing_rod", 
     // Twigs
     "botania:pebble",
     "decorative_blocks:rocky_dirt",

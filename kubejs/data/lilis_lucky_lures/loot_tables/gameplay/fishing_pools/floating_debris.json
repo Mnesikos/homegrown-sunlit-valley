@@ -21,11 +21,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "lilis_lucky_lures:dynamite",
-          "weight": 12
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:birch_planks",
           "weight": 8
         },

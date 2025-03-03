@@ -110,11 +110,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "lilis_lucky_lures:dynamite",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:gold_ingot",
           "weight": 4
         },

@@ -4,6 +4,9 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "lilis_lucky_lures:dynamite",
+    "lilis_lucky_lures:fish_bag",
+    "lilis_lucky_lures:bamboo_fishing_rod", 
     // Twigs
     "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",

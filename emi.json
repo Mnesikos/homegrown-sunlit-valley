@@ -1,6 +1,13 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:lilis_lucky_lures:dynamite",
+    "item:lilis_lucky_lures:fish_net",
+    "item:lilis_lucky_lures:bamboo_fishing_rod{Damage:0}",
+    "item:lilis_lucky_lures:fishing_net",
+    "item:lilis_lucky_lures:spear{Damage:0}",
+    "item:lilis_lucky_lures:redstone_coil",
+    "item:lilis_lucky_lures:fish_bag",
     "item:botania_seeds:white_mystical_flower_seed",
     "item:croptania:cropnolia",
     "item:fantasyfurniture:necrolord/drawer",
