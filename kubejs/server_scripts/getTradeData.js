@@ -4,6 +4,4 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
   trades.trades.forEach((trade)=>{
     e.player.tell(`${trade.offer.amount}x ${trade.offer.itemKey} for ${trade.request.amount}x ${trade.request.itemKey}`)
   })
-  
-  JsonIO.write("Society Unamed/yeet.json", {"yeet" : "yoot"});
 });
