@@ -319,10 +319,6 @@
     "modId": "emi",
     "version": "1.1.20+1.20.1+forge"
   },
-  "emitrades-forge-1.2.1+mc1.20.1.jar": {
-    "modId": "emitrades",
-    "version": "1.2.1+mc1.20.1"
-  },
   "Emojiful-Forge-1.20.1-4.2.0.jar": {
     "modId": "emojiful",
     "version": "4.2.0"
@@ -631,10 +627,6 @@
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
     "version": "1.20.1-1.1"
-  },
-  "lmft-1.0.4+1.20.1-forge.jar": {
-    "modId": "lmft",
-    "version": "1.0.4+1.20.1"
   },
   "lootjs-forge-1.20.1-2.12.0.jar": {
     "modId": "lootjs",

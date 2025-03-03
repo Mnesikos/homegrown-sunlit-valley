@@ -3069,6 +3069,42 @@
             ]
         },
         {
+            "pakku_id": "EMZjAi5TpykS4ZaM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "emi"
+            },
+            "name": {
+                "curseforge": "EMI"
+            },
+            "id": {
+                "curseforge": "580555"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emi-1.1.20+1.20.1+forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6205/514/emi-1.1.20+1.20.1+forge.jar",
+                    "id": "6205514",
+                    "parent_id": "580555",
+                    "hashes": {
+                        "sha1": "f6ee97d1f49e106b2dc887df3c238bb06b84bada",
+                        "md5": "dc29b4d99258b76f28aa3ad5ce5e6e2d"
+                    },
+                    "required_dependencies": [],
+                    "size": 1028204,
+                    "date_published": "2025-02-18T04:58:55.627Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "BBk8UEHhXmtRfqPF",
             "pakku_links": [
                 "h4bdqeioqgqc7T24"
@@ -5968,6 +6004,42 @@
                     "required_dependencies": [],
                     "size": 37178,
                     "date_published": "2024-02-15T10:46:05.407Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "oiL6sCibRiBjYLMi",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "mining-master"
+            },
+            "name": {
+                "curseforge": "Mining Master"
+            },
+            "id": {
+                "curseforge": "534956"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "miningmaster-1.20.1-4.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5540/513/miningmaster-1.20.1-4.1.3.jar",
+                    "id": "5540513",
+                    "parent_id": "534956",
+                    "hashes": {
+                        "sha1": "d042acd211e6b53c4358c61ad4776d60e1213431",
+                        "md5": "07dd05e047bbd763fa318cc9ea6bca93"
+                    },
+                    "required_dependencies": [],
+                    "size": 1255160,
+                    "date_published": "2024-07-17T15:13:44.233Z"
                 }
             ]
         },

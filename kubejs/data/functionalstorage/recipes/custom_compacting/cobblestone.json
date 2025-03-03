@@ -2,10 +2,10 @@
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
     "count": 1,
-    "item": "numismatics:sprocket"
+    "item": "minecraft:cobblestone"
   },
   "lower_input": {
-    "count": 2,
-    "item": "numismatics:bevel"
+    "count": 4,
+    "item": "twigs:pebble"
   }
 }

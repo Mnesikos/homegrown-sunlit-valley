@@ -12,29 +12,33 @@
         }
       ],
       "recipe": {
-        "type": "sewingkit:sewing",
+        "type": "toolbelt:sewing_upgrade",
         "materials": [
           {
-            "count": 2,
+            "count": 1,
             "ingredient": {
-              "item": "farmersdelight:rope"
+              "type": "toolbelt:belt_upgrade_level",
+              "upgrade_level": 6
             }
           },
           {
-            "count": 5,
+            "count": 1,
             "ingredient": {
-              "item": "society:canvas"
+              "item": "toolbelt:pouch"
             }
           },
           {
-            "count": 4,
+            "count": 1,
             "ingredient": {
-              "item": "minecraft:iron_ingot"
+              "item": "minecraft:string"
             }
           }
         ],
         "result": {
-          "item": "toolbelt:belt"
+          "item": "toolbelt:belt",
+          "nbt": {
+            "Size": 9
+          }
         },
         "tool": {
           "type": "sewingkit:tool_ingredient",

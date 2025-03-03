@@ -3,6 +3,11 @@ console.info("[SOCIETY] handleTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
+    "sewingkit:bone_sewing_needle",
+    "sewingkit:diamond_sewing_needle",
+    "sewingkit:netherite_sewing_needle",
+    "sewingkit:wood_sewing_needle",
+    "sewingkit:gold_sewing_needle",
     "refurbished_furniture:knife",
     "vintagedelight:cheese_wheel",
     "vintagedelight:oat_dough",

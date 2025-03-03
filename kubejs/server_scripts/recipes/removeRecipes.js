@@ -5,6 +5,7 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
     // Twigs
+    "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",
     "twigs:polished_calcite_brick_wall",
     "twigs:polished_calcite_brick_stairs",
@@ -942,6 +943,7 @@ ServerEvents.recipes((e) => {
     "minecraft:beehive",
   ];
   const removeByInput = [
+    "decorative_blocks:rocky_dirt",
     "veggiesdelight:mature_dandelion",
     "veggiesdelight:dandelion_leaf",
     "create:dough",

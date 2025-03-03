@@ -173,4 +173,3 @@ JEIEvents.removeCategories((e) => {
   e.remove("farm_and_charm:cooking_pot");
   e.remove("meadow:woodcutting");
 });
-

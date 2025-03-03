@@ -1,6 +1,8 @@
 JEIEvents.hideItems((e) => {
   const hiddenItems = [
     // Twigs
+    "botania:pebble",
+    "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",
     "twigs:polished_calcite_brick_wall",
     "twigs:polished_calcite_brick_stairs",
@@ -158,7 +160,7 @@ JEIEvents.hideItems((e) => {
     "nethervinery:warped_apple_press",
     "nethervinery:crimson_apple_press",
     // Furniture Dupes
-    'refurbished_furniture:knife', 
+    "refurbished_furniture:knife",
     "refurbished_furniture:sea_salt",
     "refurbished_furniture:dough",
     "refurbished_furniture:wheat_flour",
