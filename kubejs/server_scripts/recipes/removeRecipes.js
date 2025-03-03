@@ -565,7 +565,6 @@ ServerEvents.recipes((e) => {
     "create:copper_diving_boots",
     "netherdepthsupgrade:lava_fishing_rod",
     // Butcher
-    "trading_floor:trading_depot",
     "numismatics:bank_terminal",
     "numismatics:vendor",
     "numismatics:banking_guide",
@@ -829,7 +828,6 @@ ServerEvents.recipes((e) => {
     "nethervinery:create/mixing/lava_fizz",
     "nethervinery:create/mixing/improved_nether_fizz",
     "nethervinery:create/mixing/improved_lava_fizz",
-    "create_connected:crafting/kinetics/fluid_vessel",
     "create:item_application/copper_casing_from_wood",
     // Farming
     "netherdepthsupgrade:food/nether_salad",
