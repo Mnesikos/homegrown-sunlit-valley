@@ -759,7 +759,6 @@ ItemEvents.tooltip((tooltip) => {
   // Librarian
   tooltip.add(
     [
-      "minecraft:paper",
       "labels:label",
       "minecraft:name_tag",
       "minecraft:book",

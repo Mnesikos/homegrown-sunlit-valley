@@ -1,6 +1,10 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:stonecutter",
+    "item:minecraft:glass",
+    "item:minecraft:emerald",
+    "item:minecraft:grindstone",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:smite\",lvl:5s}]}",
     "item:quark:cherry_vertical_slab",
     "item:atmospheric:stripped_morado_wood",

@@ -315,6 +315,14 @@
     "modId": "embeddium",
     "version": "0.3.31+mc1.20.1"
   },
+  "emi-1.1.20+1.20.1+forge.jar": {
+    "modId": "emi",
+    "version": "1.1.20+1.20.1+forge"
+  },
+  "emitrades-forge-1.2.1+mc1.20.1.jar": {
+    "modId": "emitrades",
+    "version": "1.2.1+mc1.20.1"
+  },
   "Emojiful-Forge-1.20.1-4.2.0.jar": {
     "modId": "emojiful",
     "version": "4.2.0"
@@ -643,6 +651,10 @@
   "mining-dimension-forge-1.20.1-1.1.0.jar": {
     "modId": "mining_dimension",
     "version": "1.20.1-1.1.0"
+  },
+  "miningmaster-1.20.1-4.1.3.jar": {
+    "modId": "miningmaster",
+    "version": "4.1.3"
   },
   "modernfix-forge-5.20.0+mc1.20.1.jar": {
     "modId": "modernfix",

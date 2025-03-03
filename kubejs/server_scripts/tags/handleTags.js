@@ -3,6 +3,7 @@ console.info("[SOCIETY] handleTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
+    "refurbished_furniture:knife",
     "vintagedelight:cheese_wheel",
     "vintagedelight:oat_dough",
     "vintagedelight:oat_seeds",
@@ -55,7 +56,7 @@ ServerEvents.tags("item", (e) => {
 });
 
 ServerEvents.tags("item", (e) => {
-// Misc tags
+  // Misc tags
   e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:salt", "meadow:alpine_salt");
   e.add("forge:crops", "society:tubabbaco");
@@ -64,7 +65,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:eggplant");
   e.add("forge:crops", "society:eggplant");
   e.add("forge:vegetables/eggplant", "society:eggplant");
-  e.add('forge:vegetables', "society:eggplant");
+  e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
   e.add("farm_and_charm:water_bottles", "herbalbrews:water_cup");
   e.add("forge:water_bottles", "herbalbrews:water_cup");
@@ -78,8 +79,8 @@ ServerEvents.tags("item", (e) => {
   e.remove("candlelight:white_effect", "minecraft:potion");
   e.remove("candlelight:all_effects", "minecraft:potion");
   // Vinery leaf fix
-  e.add('minecraft:mineable/hoe', "vinery:apple_leaves")
-  e.add('minecraft:mineable/hoe', "vinery:dark_cherry_leaves")
+  e.add("minecraft:mineable/hoe", "vinery:apple_leaves");
+  e.add("minecraft:mineable/hoe", "vinery:dark_cherry_leaves");
   // Tag tags
   e.add("forge:food/cheese", "#forge:foods/cheese");
   e.add("forge:food/pastas", "#forge:foods/pastas");
@@ -284,8 +285,11 @@ ServerEvents.tags("item", (e) => {
   ];
   relics.forEach((relic) => e.add("society:relics", relic));
 
-  Color.DYE.forEach((color) =>{
-    e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
+  Color.DYE.forEach((color) => {
+    e.add(
+      "society:botania_seeds",
+      `botania_seeds:${color}_mystical_flower_seed`
+    );
   });
 
   [
@@ -422,7 +426,7 @@ ServerEvents.tags("block", (e) => {
   randomTickMachines.forEach((log) => {
     e.add("society:artisan_machine", log);
   });
-  e.remove('minecraft:leaves', "beachparty:palm_leaves")
+  e.remove("minecraft:leaves", "beachparty:palm_leaves");
 });
 
 ServerEvents.tags("worldgen/biome", (e) => {

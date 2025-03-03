@@ -214,7 +214,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         handleSpecialItem(
           data,
-          0.2,
+          0.02,
           hungry,
           1,
           1,

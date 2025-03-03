@@ -158,6 +158,7 @@ JEIEvents.hideItems((e) => {
     "nethervinery:warped_apple_press",
     "nethervinery:crimson_apple_press",
     // Furniture Dupes
+    'refurbished_furniture:knife', 
     "refurbished_furniture:sea_salt",
     "refurbished_furniture:dough",
     "refurbished_furniture:wheat_flour",

@@ -6,6 +6,22 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  const tiers = ["Stone, Leather, Chainmail, and Cotton", "Iron", "Gold", "Diamond", "Neptunium"];
+  tiers.forEach((tier, index) => {
+    console.log(`society:item/smithing/${tier.toLowerCase()}`)
+    if (index > 0) {
+      e.create(`society:${tier.toLowerCase()}_upgrade_smithing_template`)
+      .texture(`society:item/smithing/${tier.toLowerCase()}`)
+        .displayName("Smithing Template")
+        .tooltip(Text.blue("Ingredients:"))
+        .tooltip(Text.gray(`${tier} Upgrade`))
+        .tooltip(Text.of(" "))
+        .tooltip(Text.gray("Applies to:"))
+        .tooltip(Text.blue(`${tiers[index - 1]} Equipment`))
+        .tooltip(Text.gray("Ingredients:"))
+        .tooltip(Text.blue(`${tier} Ingot`));
+    }
+  });
 
   e.create("society:tanuki_leaf")
     .texture("society:item/tanuki_leaf")
