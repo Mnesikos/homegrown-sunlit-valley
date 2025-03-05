@@ -366,6 +366,7 @@ global.crops = [
   { item: "minecraft:bamboo_block", value: 9 },
   { item: "minecraft:cactus", value: 12 },
   { item: "quark:cactus_block", value: 108 },
+  { item: "moreminecarts:glass_spines", value: 16 },
   { item: "vinery:cherry", value: 12 },
   { item: "vinery:rotten_cherry", value: 1 },
   { item: "vinery:cherry_bag", value: 108 },
