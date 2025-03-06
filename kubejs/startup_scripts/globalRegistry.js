@@ -941,6 +941,7 @@ const craftingTableRecipes = [
   { item: "crabbersdelight:kelp_shake", value: 8 },
   { item: "crabbersdelight:sea_pickle_juice", value: 8 },
   { item: "create:chocolate_glazed_berries", value: 34 },
+  { item: "create:bar_of_chocolate", value: 30 },
   { item: "create:sweet_roll", value: 64 },
   { item: "create:builders_tea", value: 352 },
   { item: "create:honeyed_apple", value: 32 },
@@ -1174,6 +1175,7 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "farmersdelight:tomato_sauce", value: 52 },
   { item: "minecraft:beetroot_soup", value: 72 },
   { item: "farm_and_charm:strawberry_tea", value: 40 },
   { item: "farm_and_charm:nettle_tea", value: 52 },

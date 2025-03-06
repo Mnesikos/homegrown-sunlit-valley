@@ -6,7 +6,7 @@ ServerEvents.recipes((e) => {
   const removeByOutput = [
     "lilis_lucky_lures:dynamite",
     "lilis_lucky_lures:fish_bag",
-    "lilis_lucky_lures:bamboo_fishing_rod", 
+    "lilis_lucky_lures:bamboo_fishing_rod",
     // Twigs
     "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",
@@ -44,6 +44,8 @@ ServerEvents.recipes((e) => {
     "quark:calcite_stairs",
     "quark:calcite_slab",
     // Botania
+    "botania:glass_pickaxe",
+    "botania:manaweave_cloth",
     "botania:elementium_sword",
     "botania:elementium_pickaxe",
     "botania:elementium_shovel",

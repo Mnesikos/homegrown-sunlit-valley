@@ -12,7 +12,7 @@ JEIAddedEvents.registerCategories((e) => {
           20
         )
       )
-      .icon(guiHelper.createDrawableItemStack("numismatics:sun"))
+      .icon(guiHelper.createDrawableItemStack("minecraft:villager_spawn_egg"))
       .isRecipeHandled(() => true)
       .handleLookup((builder, recipe) => {
         const {

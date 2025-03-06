@@ -287,7 +287,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/mayo/mayonnaise")
     .food((food) => {
       food.hunger(4);
-      food.saturation(2);
+      food.saturation(0.5);
       food.effect("minecraft:nausea", 600, 1, 1.0);
     })
     .useAnimation("drink");
@@ -295,8 +295,8 @@ StartupEvents.registry("item", (e) => {
   e.create("society:large_mayonnaise")
     .texture("society:item/mayo/large_mayonnaise")
     .food((food) => {
-      food.hunger(6);
-      food.saturation(2);
+      food.hunger(8);
+      food.saturation(0.5);
       food.effect("minecraft:nausea", 1200, 1, 1.0);
     })
     .useAnimation("drink");
@@ -323,15 +323,15 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/mayo/${egg}_mayonnaise`)
       .food((food) => {
         food.hunger(4);
-        food.saturation(2);
+        food.saturation(0.5);
         food.effect("minecraft:nausea", 600, 1, 1.0);
       });
     if (largeMayoEggs.includes(egg)) {
       e.create(`society:large_${egg}_mayonnaise`)
         .texture(`society:item/mayo/large_${egg}_mayonnaise`)
         .food((food) => {
-          food.hunger(6);
-          food.saturation(2);
+          food.hunger(8);
+          food.saturation(0.5);
           food.effect("minecraft:nausea", 1200, 1, 1.0);
         });
     }
@@ -411,19 +411,18 @@ StartupEvents.registry("item", (e) => {
         });
   });
   // Dehydrator outputs
-
   e.create(`society:raisins`)
     .texture(`society:item/raisins`)
     .food((food) => {
-      food.hunger(6);
-      food.saturation(1);
+      food.hunger(9);
+      food.saturation(0.5);
       food.fastToEat(true);
     });
   e.create(`society:nether_raisins`)
     .texture(`society:item/nether_raisins`)
     .food((food) => {
-      food.hunger(6);
-      food.saturation(1);
+      food.hunger(9);
+      food.saturation(0.5);
       food.fastToEat(true);
     });
   e.create(`society:dried_shimmering_mushrooms`).texture(
@@ -446,8 +445,8 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/dried_mushrooms`)
       .color(0, itemHex)
       .food((food) => {
-        food.hunger(6);
-        food.saturation(2);
+        food.hunger(9);
+        food.saturation(0.5);
         food.fastToEat(true);
       });
   });
@@ -488,8 +487,8 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/dried_fruit`)
       .color(0, itemHex)
       .food((food) => {
-        food.hunger(6);
-        food.saturation(2);
+        food.hunger(9);
+        food.saturation(0.5);
         food.fastToEat(true);
       });
   });

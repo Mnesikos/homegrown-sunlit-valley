@@ -56,11 +56,19 @@ ServerEvents.recipes((e) => {
       );
     }
   };
+  e.smithing(
+    `society:galaxy_sword`,
+    `minecraft:netherite_upgrade_smithing_template`,
+    `minecraft:netherite_sword`,
+    "society:prismatic_shard"
+  );
+  
+  
   const manasteelUpgrades = (type) => {
     e.smithing(
       `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
       `society:botanical_tribute`,
-      `minecraft:diamond_${type}`,
+      `minecraft:golden_${type}`,
       "botania:manasteel_ingot"
     );
   };
@@ -72,6 +80,12 @@ ServerEvents.recipes((e) => {
       "botania:elementium_ingot"
     );
   };
+  e.smithing(
+    'botania:glass_pickaxe',
+    "society:botanical_tribute",
+    "botania:manasteel_pick",
+    "botania:mana_glass"
+  );
   const runes = ["spring", "summer", "autumn", "winter"];
   const terrasteelUpgrades = (type, runeIndex) => {
     e.shaped(`botania:terrasteel_${type}`, ["crc", "mTm", "cmc"], {
