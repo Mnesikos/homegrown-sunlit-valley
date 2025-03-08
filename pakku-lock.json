@@ -1457,43 +1457,6 @@
             ]
         },
         {
-            "pakku_id": "zjhPYr0bbYOwFbLD",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "citadel"
-            },
-            "name": {
-                "curseforge": "Citadel"
-            },
-            "id": {
-                "curseforge": "331936"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "citadel-2.6.1-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6002/521/citadel-2.6.1-1.20.1.jar",
-                    "id": "6002521",
-                    "parent_id": "331936",
-                    "hashes": {
-                        "sha1": "97ccbfda78ed538669352d868ad6fa6075ec6a99",
-                        "md5": "d7c8be4b34cfd4db20ad1747b122d07c"
-                    },
-                    "required_dependencies": [],
-                    "size": 3173637,
-                    "date_published": "2024-12-18T17:17:56.680Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "dbTpu5FlgMhBX2gP",
             "type": "MOD",
             "slug": {
@@ -4760,45 +4723,6 @@
             ]
         },
         {
-            "pakku_id": "vTWm3Sqzs5U44RIS",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "i-wanna-skate"
-            },
-            "name": {
-                "curseforge": "I Wanna Skate"
-            },
-            "id": {
-                "curseforge": "695018"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "iwannaskate-1.2.0.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4576/733/iwannaskate-1.2.0.jar",
-                    "id": "4576733",
-                    "parent_id": "695018",
-                    "hashes": {
-                        "sha1": "13d32a92909c7079d7e18598f42dbfe1497b40cf",
-                        "md5": "b4bd88188adf5d81e9f6f329c2e0cf4e"
-                    },
-                    "required_dependencies": [
-                        "331936"
-                    ],
-                    "size": 1461417,
-                    "date_published": "2023-06-09T20:07:13.743Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "eG7Zr5rCjZa17lF8",
             "type": "MOD",
             "slug": {
@@ -6003,42 +5927,6 @@
                     "required_dependencies": [],
                     "size": 37178,
                     "date_published": "2024-02-15T10:46:05.407Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "oiL6sCibRiBjYLMi",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "mining-master"
-            },
-            "name": {
-                "curseforge": "Mining Master"
-            },
-            "id": {
-                "curseforge": "534956"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "miningmaster-1.20.1-4.1.3.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5540/513/miningmaster-1.20.1-4.1.3.jar",
-                    "id": "5540513",
-                    "parent_id": "534956",
-                    "hashes": {
-                        "sha1": "d042acd211e6b53c4358c61ad4776d60e1213431",
-                        "md5": "07dd05e047bbd763fa318cc9ea6bca93"
-                    },
-                    "required_dependencies": [],
-                    "size": 1255160,
-                    "date_published": "2024-07-17T15:13:44.233Z"
                 }
             ]
         },

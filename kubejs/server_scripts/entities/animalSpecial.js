@@ -191,7 +191,7 @@ ItemEvents.entityInteracted((e) => {
       if (global.checkEntityTag(target, "society:large_egg_animal")) {
         let eggType = String(target.type).split(":")[1];
         handleSpecialItem(
-          data,
+        data,
           1,
           hungry,
           4,
