@@ -1,6 +1,21 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:botania:turntable",
+    "item:botania:twig_wand{color1:0,color2:15}",
+    "item:botania:drum_wild",
+    "item:botania:corporea_index",
+    "item:society:large_duck_mayonnaise",
+    "item:society:cruncher_mayonnaise",
+    "item:society:large_mayonnaise",
+    {
+      "type": "item",
+      "id": "vintagedelight:vinegar_bottle",
+      "amount": 3
+    },
+    "item:vintagedelight:vinegar_mason_jar",
+    "item:vintagedelight:organic_mash",
+    "item:minecraft:pitcher_pod",
     {
       "type": "item",
       "id": "society:sturdy_bamboo",
