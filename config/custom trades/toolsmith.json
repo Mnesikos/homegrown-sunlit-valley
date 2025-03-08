@@ -15,7 +15,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -33,7 +33,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -51,7 +51,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -69,7 +69,7 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -87,11 +87,29 @@
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 16,
+      "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:toolsmith_gold_ingot_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:redstone",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:toolsmith_redstone_for_bevel"
     },
     {
       "offer": {

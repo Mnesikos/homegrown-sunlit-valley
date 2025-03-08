@@ -496,7 +496,7 @@
 			description: [
 				"The &6Workbench&r is used for crafting advanced furniture, and blocks from furniture catalogs!"
 				""
-				"It can be purchased from the &6Mechanic&r but requires power to operate. "
+				"It can be purchased from the &6Blacksmith&r but requires power to operate. "
 				""
 				"You can burn solid fuel in a generator and connect it to the &6Workbench&r using the &6Electric Wrench&r."
 			]

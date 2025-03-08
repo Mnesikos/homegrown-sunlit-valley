@@ -33,7 +33,7 @@ StartupEvents.registry("block", (event) => {
           );
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
-          let interactionCooldown = 200;
+          let interactionCooldown = 12000;
           if (mana >= MANA_PER_MILK) {
             if (
               animal.type === "minecraft:goat" ||

@@ -1,6 +1,9 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:coal",
+    "item:minecraft:redstone",
+    "item:cc:claim_block",
     "item:sophisticatedstorage:paintbrush",
     "item:sophisticatedstorage:storage_tool",
     "item:functionalstorage:compacting_drawer",
@@ -296,11 +299,6 @@
     "item:minecraft:red_dye",
     "item:society:box_turtle_roe",
     "item:aquaculture:red_grouper",
-    {
-      "type": "item",
-      "id": "minecraft:redstone",
-      "amount": 32
-    },
     {
       "type": "item",
       "id": "society:geode",

@@ -24,8 +24,7 @@ const resolveMilk = (hearts, type, warped) => {
 
 global.getMilk = (level, target, data, player, interactionCooldown) => {
     const ageLastMilked = data.getInt("ageLastMilked");
-    // const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
-    const hungry = false;
+    const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
     const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
     const affection = data.getInt("affection");
     let hearts = Math.floor(affection / 100);

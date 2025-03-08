@@ -1457,44 +1457,6 @@
             ]
         },
         {
-            "pakku_id": "dbTpu5FlgMhBX2gP",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "claim-chunk"
-            },
-            "name": {
-                "curseforge": "Claim Chunk"
-            },
-            "id": {
-                "curseforge": "397443"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ClaimChunk-1.20-1.0.17.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4619/886/ClaimChunk-1.20-1.0.17.jar",
-                    "id": "4619886",
-                    "parent_id": "397443",
-                    "hashes": {
-                        "sha1": "a45fe92346bce851f08b840c8b3e644fac692811",
-                        "md5": "63d8afb04d771363d9da5b84c3ca00a1"
-                    },
-                    "required_dependencies": [],
-                    "size": 134353,
-                    "date_published": "2023-07-01T20:02:08.153Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "UELGch8kkJv0bnlQ",
             "pakku_links": [
                 "UgI7EbeCzWodOBqx"
