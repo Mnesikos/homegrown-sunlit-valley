@@ -47,7 +47,7 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-    e.create("society:boulder")
+  e.create("society:boulder")
     .defaultCutout()
     .soundType("stone")
     .hardness(4.5)
@@ -463,13 +463,14 @@ StartupEvents.registry("block", (e) => {
       .texture("east", `society:block/${type}_crate_side`)
       .texture("south", `society:block/${type}_crate_side`)
       .texture("west", `society:block/${type}_crate_side`)
+      .texture("particle", `society:block/${type}_crate_top`)
       .mapColor("grass")
       .soundType("wood")
       .hardness(1.0)
       .resistance(1.0)
-      .requiresTool(false)
-      .texture("particle", `society:block/${type}_crate_top`);
+      .requiresTool(false);
   };
+
   createCrate("blueberry");
   createCrate("eggplant");
   createCrate("ancient_fruit");
@@ -483,6 +484,14 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .texture("particle", "herbalbrews:block/green_tea_leaf1");
 
+  e.create("society:sturdy_bamboo")
+    .tag("minecraft:logs")
+    .tag("society:raw_logs")
+    .soundType("wood")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/axe");
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)
@@ -507,5 +516,4 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .model("society:block/fantasy_catalog")
     .displayName(":axe: §eFantasy Catalog");
-
 });

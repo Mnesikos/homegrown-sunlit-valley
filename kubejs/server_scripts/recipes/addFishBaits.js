@@ -1,6 +1,6 @@
 console.info("[SOCIETY] addFishBaits.js loaded");
 
-ServerEvents.recipes((e) => {
+ServerEvents.highPriorityData((e) => {
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
@@ -11,21 +11,24 @@ ServerEvents.recipes((e) => {
     if (fishId.includes("raw_")) {
       fishId = fishId.substring(4, fishId.length);
     }
-    e.custom({
-      type: "lilis_lucky_lures:fish_trap",
-      bait_item: {
-        item: `society:${fishId}_bait`,
-      },
-      catch: {
-        result: {
-          item: fish.item,
-          count: 1,
-        },
-      },
-      catch_duration: {
-        min: fish.value * 32,
-        max: fish.value * 48,
-      },
-    });
+    e.addJson(
+      `crabbersdelight:loot_tables/gameplay/crab_trap_loot/society/${fishId}_bait.json`,
+      {
+        type: "minecraft:fishing",
+        pools: [
+          {
+            rolls: 1,
+            bonus_rolls: 0,
+            entries: [
+              {
+                type: "minecraft:item",
+                weight: 1,
+                name: fish.item,
+              },
+            ],
+          },
+        ],
+      }
+    );
   });
 });

@@ -114,6 +114,19 @@ ServerEvents.tags("item", (e) => {
       dehydratee.output[0].substring(2, dehydratee.output[0].length)
     );
   });
+  global.fish.forEach((fish) => {
+    const splitFish = fish.item.split(":");
+    let fishId = splitFish[1];
+    if (
+      ["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
+    )
+      return;
+    if (fishId.includes("raw_")) {
+      fishId = fishId.substring(4, fishId.length);
+    }
+    
+    e.add(`crabbersdelight:jei_display_results/society/${fishId}_bait`, fish.item);
+  });
   global.agedRoe.forEach((preserve) => {
     e.add("society:aged_roe", preserve.item);
   });

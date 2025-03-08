@@ -715,8 +715,8 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:${fishId}_bait`)
       .texture("society:item/fish_bait")
       .color(0, roeHex)
+      .tag("crabbersdelight:crab_trap_bait")
       .tooltip(Text.gray(`Catches fish in any season or location`))
-      .tooltip(Text.gray("Place in Fish Traps, not Crab Traps!"));
   });
 
   // Pristine gems
