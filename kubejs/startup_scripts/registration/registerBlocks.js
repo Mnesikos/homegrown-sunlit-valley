@@ -484,7 +484,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .texture("particle", "herbalbrews:block/green_tea_leaf1");
 
-  e.create("society:sturdy_bamboo")
+  e.create("society:sturdy_bamboo_block")
     .tag("minecraft:logs")
     .tag("society:raw_logs")
     .soundType("wood")

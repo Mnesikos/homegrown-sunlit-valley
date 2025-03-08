@@ -1,6 +1,12 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:crafting_on_a_stick:cartography_table",
+    "item:society:sturdy_bamboo_block",
+    "item:quark:bamboo_mat",
+    "item:supplementaries:bamboo_spikes_tipped{Damage:0,Potion:\"minecraft:strong_poison\"}",
+    "item:minecraft:bamboo_mosaic_stairs",
+    "item:supplementaries:bamboo_spikes_tipped{Damage:0,Potion:\"atmospheric:worsening_long\"}",
     "item:minecraft:coal",
     "item:minecraft:redstone",
     "item:cc:claim_block",
@@ -126,11 +132,6 @@
     "item:vintagedelight:vinegar_mason_jar",
     "item:vintagedelight:organic_mash",
     "item:minecraft:pitcher_pod",
-    {
-      "type": "item",
-      "id": "society:sturdy_bamboo",
-      "amount": 64
-    },
     "item:minecraft:lava_bucket",
     "item:society:kinetic_blueprint",
     "item:create:water_wheel",
@@ -139,7 +140,6 @@
     "item:quark:sturdy_stone",
     "item:candlelight:bamboo_counter",
     "item:minecraft:bamboo_block",
-    "item:quark:bamboo_mat",
     {
       "type": "item",
       "id": "society:lava_pufferfish_bait",
