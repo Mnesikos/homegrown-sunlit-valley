@@ -22,7 +22,6 @@ ServerEvents.tags("item", (e) => {
     "rehooked",
     "gag",
     "waystones",
-    "iwannaskate",
     "trofers",
     "chimes",
     "createutilities",

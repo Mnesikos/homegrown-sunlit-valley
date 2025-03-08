@@ -44,7 +44,7 @@ global.ageableProductInputs = [
   { item: "vinery:jo_special_mixture", name: "Jo's Special Mixture", time: 10 },
   { item: "society:nutty_basil", name: "Nutty Basil", time: 10 },
   { item: "vintagedelight:century_egg", name: "Century Egg", time: 10 },
-  { item: "iwannaskate:energy_drink", name: "Energy Drink", time: 4 },
+  { item: "society:energy_drink", name: "Energy Drink", time: 4 },
   { item: "society:espresso", name: "Espresso", time: 2 },
   { item: "society:starcardi", name: "Starcardi", time: 4 },
   { item: "society:star_coquito", name: "Star Coquito", time: 10 },

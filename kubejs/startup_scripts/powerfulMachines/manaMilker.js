@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Milks farm animals up to 8 blocks"));
+      item.tooltip(Text.gray("Milks farm animals up to 8 blocks away"));
       item.tooltip(Text.aqua("Requires Botania mana from spreader"));
       item.modelJson({
         parent: "society:block/mana_milker",

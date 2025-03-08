@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Gifts:$()$(br)Flame Skateboard Wheels, Soul Flame Skateboard wheels. Type of Foxhound has no bearing on gift.$(br2)$(l)Taming$()$(br)Have the Fire Resistance effect and feed them coal."
+      "text": "$(l)Possible Gifts:$()$(br)Fireworks Hat$(br2)$(l)Taming$()$(br)Have the Fire Resistance effect and feed them coal."
     },
     {
       "type": "patchouli:entity",

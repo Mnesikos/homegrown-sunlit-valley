@@ -1,15 +1,15 @@
 console.info("[SOCIETY] animalPet.js loaded");
 
 const petGifts = new Map([
-  ["buzzier_bees:grizzly_bear", ["society:beemonican_seal", "2x iwannaskate:skateboard_wheels_honey"]],
-  ["legendarycreatures:ender_wisp", ["2x iwannaskate:skateboard_wheels_enderpearl"]],
-  ["minecraft:wolf", ["2x iwannaskate:skateboard_wheels_aesthetic", "betterarcheology:wolf_fossil"]],
-  ["minecraft:cat", ["2x iwannaskate:skateboard_wheels_rainbow", "betterarcheology:ocelot_fossil"]],
-  ["quark:foxhound", ["2x iwannaskate:skateboard_wheels_flame", "2x iwannaskate:skateboard_wheels_soul_flame"]],
-  ["quark:shiba", ["2x iwannaskate:skateboard_wheels_shocking"]],
-  ["minecraft:allay", ["2x iwannaskate:skateboard_wheels_hover"]],
+  ["buzzier_bees:grizzly_bear", ["society:beemonican_seal"]],
+  ["legendarycreatures:ender_wisp", ['simplehats:pika_ears']],
+  ["minecraft:wolf", ["simplehats:longfoxears", "betterarcheology:wolf_fossil"]],
+  ["minecraft:cat", ["simplehats:nekoears", "betterarcheology:ocelot_fossil"]],
+  ["quark:foxhound", ['simplehats:fireworks',]],
+  ["quark:shiba", ["simplehats:eevee_ears"]],
+  ["minecraft:allay", ['simplehats:chi_ears']],
   ["minecraft:horse", ["relics:horse_flute"]],
-  ["minecraft:polar_bear", ["2x iwannaskate:skateboard_wheels_snowy"]],
+  ["minecraft:polar_bear", ['simplehats:teddy_bear']],
   ["hamsters:hamster", ["society:tiny_gnome"]]
 ]);
 

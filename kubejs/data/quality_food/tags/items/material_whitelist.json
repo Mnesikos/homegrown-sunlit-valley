@@ -85,10 +85,6 @@
       "required": false
     },
     {
-      "id": "society:truffle",
-      "required": false
-    },
-    {
       "id": "minecraft:rabbit_foot",
       "required": false
     }

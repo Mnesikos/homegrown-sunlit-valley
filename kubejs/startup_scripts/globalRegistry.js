@@ -881,7 +881,7 @@ global.brews.forEach((brew) => {
 });
 const miscAged = [
   { item: "vintagedelight:century_egg", value: 192 * 3 },
-  { item: "iwannaskate:energy_drink", value: 566 },
+  { item: "society:energy_drink", value: 566 },
   { item: "society:espresso", value: 128 },
 ];
 
@@ -1019,7 +1019,7 @@ const craftingTableRecipes = [
   { item: "vintagedelight:pb_j", value: 208 },
   { item: "vintagedelight:cucumber_salad", value: 270 },
   { item: "vintagedelight:oatmeal_cookie", value: 10 },
-  { item: "iwannaskate:energy_drink", value: 277 },
+  { item: "society:energy_drink", value: 277 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },

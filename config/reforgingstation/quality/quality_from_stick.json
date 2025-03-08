@@ -1,8 +1,0 @@
-{
-  "material": "minecraft:stick",
-  "values": [
-    "minecraft:bow",
-    "minecraft:crossbow",
-    "minecraft:fishing_rod"
-  ]
-}

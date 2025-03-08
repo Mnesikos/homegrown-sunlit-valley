@@ -323,8 +323,8 @@
 				type: "item"
 			}]
 			title: "Terrasteel Armor"
-			x: 14.0d
-			y: -1.5d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
@@ -378,7 +378,7 @@
 				type: "item"
 			}]
 			title: "Terra Tools"
-			x: 14.0d
+			x: 14.5d
 			y: 1.5d
 		}
 		{
@@ -786,6 +786,28 @@
 			title: "Generating Flora"
 			x: 6.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["46F86152B5B36A3B"]
+			description: [
+				"Keeping up with milking farm animals can be time consuming with all your other farming chores. The &6Mana Milker&r does this for you by gently milking farm animals using &bMana&r recieved from a Mana Spreader."
+				""
+				"Unlike Deployers, farm animals don't mind being milked by this, but they won't recieve affection from being milked like usual."
+			]
+			id: "18EDA9E2559C26E1"
+			rewards: [{
+				id: "6C28E320E6433D57"
+				item: "meadow:water_buffalo_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B4DFFCF3C1F7C60"
+				item: "society:mana_milker"
+				type: "item"
+			}]
+			title: "Mana Milking"
+			x: 13.5d
+			y: -1.5d
 		}
 	]
 	title: "IV - Mystical Farming"

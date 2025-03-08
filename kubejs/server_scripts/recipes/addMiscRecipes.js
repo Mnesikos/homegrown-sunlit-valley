@@ -106,12 +106,6 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     z: "create:zinc_ingot",
   });
-  e.shaped("iwannaskate:skateboard_wheels", ["  e", "rsr", "e  "], {
-    s: "minecraft:stick",
-    e: "society:earth_crystal",
-    r: "society:oak_resin",
-  });
-
   // Fire Quartz
   e.shaped("society:seed_maker", [" C ", "pcp", " f "], {
     c: "minecraft:composter",
@@ -315,7 +309,7 @@ ServerEvents.recipes((e) => {
     a: "create:andesite_casing",
     A: "minecraft:netherite_upgrade_smithing_template",
     c: "numismatics:ancient_coin",
-    n: "minecraft:netherite_ingot"
+    n: "minecraft:netherite_ingot",
   });
   e.shaped("2x create:mechanical_saw", ["chc"], {
     h: "create:mechanical_saw",
@@ -387,10 +381,6 @@ ServerEvents.recipes((e) => {
     b: "quark:blaze_lantern",
   });
   // Other
-  e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {
-    M: "botania:manasteel_ingot",
-    C: "numismatics:sun",
-  });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(
     0.35
@@ -507,7 +497,7 @@ ServerEvents.recipes((e) => {
     c: "vintagedelight:ghost_charcoal",
   });
 
-  e.shapeless("iwannaskate:energy_drink", [
+  e.shapeless("society:energy_drink", [
     "society:ancient_juice",
     "pamhc2trees:pawpawitem",
     "minecraft:sugar",
@@ -605,6 +595,11 @@ ServerEvents.recipes((e) => {
   });
 
   // Botania
+  e.shaped("society:botanical_tribute", ["CCC", "CMC", "CCC"], {
+    M: "botania:manasteel_ingot",
+    C: "numismatics:sun",
+  });
+
   e.shaped("unusualfishmod:fluvial_shell", [" r ", "nhn", " d "], {
     r: "botania:rune_summer",
     h: "botania:horn_grass",
@@ -627,5 +622,14 @@ ServerEvents.recipes((e) => {
   e.shaped("society:cornucopia", [" p ", "php", " p "], {
     p: "botania:pixie_dust",
     h: "botania:horn_grass",
+  });
+
+  e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
+    r: "botania:rune_earth",
+    t: "society:botanical_tribute",
+    n: "botania:terrasteel_nugget",
+    M : "society:milk_pail",
+    l: "botania:livingwood_log",
+    T: "botania:mana_tablet",
   });
 });

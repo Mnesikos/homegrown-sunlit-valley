@@ -180,7 +180,6 @@ JEIEvents.hideItems((e) => {
     "refurbished_furniture:cheese_sandwich",
     "vintagedelight:cheese_pizza",
     "vintagedelight:cheese_pizza_slice",
-    "iwannaskate:pizza_slice",
     "refurbished_furniture:cooked_meatlovers_pizza",
     "refurbished_furniture:meatlovers_pizza_slice",
     "beautify:lamp_candelabra_orange",

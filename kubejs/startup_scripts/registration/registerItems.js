@@ -191,6 +191,14 @@ StartupEvents.registry("item", (e) => {
   });
 
   // Food
+  e.create("society:energy_drink")
+  .texture("society:item/drinks/energy_drink")
+  .food((food) => {
+    food.fastToEat(true);
+    food.effect("botania:emptiness", 4800, 0, 1.0);
+    food.effect("minecraft:speed", 4800, 2, 1.0);
+  })
+  .useAnimation("drink");
   e.create("herbalbrews:ground_coffee").texture("society:item/ground_coffee");
 
   e.create("herbalbrews:cinnamon_coffee")

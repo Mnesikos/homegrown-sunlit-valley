@@ -5701,6 +5701,45 @@
             ]
         },
         {
+            "pakku_id": "57F7hKutEXUrSvfE",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "lmft"
+            },
+            "name": {
+                "curseforge": "Load My F***ing Tags"
+            },
+            "id": {
+                "curseforge": "656346"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "lmft-1.0.4+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4892/299/lmft-1.0.4+1.20.1-forge.jar",
+                    "id": "4892299",
+                    "parent_id": "656346",
+                    "hashes": {
+                        "sha1": "e44a12eb51813b16faaab89b8073ec63c746c1b0",
+                        "md5": "b6fef15e42caec14db87f5aa498233e8"
+                    },
+                    "required_dependencies": [],
+                    "size": 178625,
+                    "date_published": "2023-11-23T00:33:22.407Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GFwaZJsaLc3oiY9P",
             "type": "MOD",
             "slug": {

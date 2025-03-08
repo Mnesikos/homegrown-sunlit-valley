@@ -487,6 +487,7 @@ StartupEvents.registry("block", (e) => {
   e.create("society:sturdy_bamboo_block")
     .tag("minecraft:logs")
     .tag("society:raw_logs")
+    .displayName("Sturdy Block of Bamboo")
     .soundType("wood")
     .hardness(1.0)
     .resistance(1.0)
