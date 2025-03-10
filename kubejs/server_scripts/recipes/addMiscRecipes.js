@@ -12,6 +12,7 @@ ServerEvents.recipes((e) => {
     result: [{ item: "herbalbrews:lavender_blossom", count: 2 }],
   });
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
+  e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
@@ -66,7 +67,7 @@ ServerEvents.recipes((e) => {
     t: "society:treated_log",
   });
   e.shaped("minecraft:beehive", ["ppp", "hhh", "pop"], {
-    h: "minecraft:honeycomb",
+    h: "minecraft:iron_ingot",
     p: "#minecraft:planks",
     o: "society:maple_syrup",
   });
@@ -90,7 +91,7 @@ ServerEvents.recipes((e) => {
   e.shaped("4x farm_and_charm:silo_wood", ["lCl", "rbr", "lel"], {
     C: "numismatics:crown",
     b: "minecraft:barrel",
-    l: "#minecraft:logs",
+    l: "meadow:fire_log",
     r: "society:oak_resin",
     e: "society:earth_crystal",
   });
@@ -338,7 +339,7 @@ ServerEvents.recipes((e) => {
   // Fish
   e.shaped("society:fish_pond", ["rNr", "PwP", "rCr"], {
     N: "aquaculture:neptunium_ingot",
-    P: "crabbersdelight:pearl_block",
+    P: "crabbersdelight:pearl",
     C: "numismatics:sun",
     r: "society:oak_resin",
     w: "meadow:wooden_water_bucket",
@@ -348,7 +349,21 @@ ServerEvents.recipes((e) => {
     N: "aquaculture:neptunium_ingot",
     a: "society:aquamarine",
     C: "numismatics:sun",
-    l: "#minecraft:logs",
+    l: "meadow:fire_log",
+  });
+  e.shaped("society:bait_maker", ["lNl", "asa", "lCl"], {
+    s: "society:seed_maker",
+    N: "aquaculture:neptunium_ingot",
+    a: "crabbersdelight:pearl_block",
+    C: "numismatics:sun",
+    l: "create:zinc_ingot",
+  });
+  e.shaped("society:auto_worm_farm", ["lpl", "asa", "lCl"], {
+    s: "farmersdelight:rich_soil",
+    p: "create:precision_mechanism",
+    a: "aquaculture:worm_farm",
+    C: "society:battery",
+    l: "minecraft:iron_ingot",
   });
   e.shaped("society:deluxe_worm_farm", ["zNz", "pwp", "zaz"], {
     w: "aquaculture:worm_farm",

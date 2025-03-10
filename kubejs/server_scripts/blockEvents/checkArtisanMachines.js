@@ -255,6 +255,12 @@ const artisanMachines = [
     maxInput: 1,
   },
   {
+    id: "society:bait_maker",
+    recipes: global.baitMakerRecipes,
+    stageCount: 1,
+    maxInput: 1,
+  },
+  {
     id: "society:dehydrator",
     recipes: global.dehydratorRecipes,
     stageCount: 1,

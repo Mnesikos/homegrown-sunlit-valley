@@ -76,7 +76,6 @@ JEIEvents.hideItems((e) => {
     // Veggiesdelight
     "veggiesdelight:dandelion_leaf",
     "veggiesdelight:dandelion_juice",
-    "veggiesdelight:mature_dandelion",
     "veggiesdelight:vegan_pizza",
     "veggiesdelight:vegan_pizza_slice",
     "veggiesdelight:beetroot_pouch",

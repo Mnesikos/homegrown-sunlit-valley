@@ -1,6 +1,6 @@
 console.info("[SOCIETY] fishSmoker.js loaded");
 global.fishSmokerRecipes = [];
-const fishes = [
+const smokableFish = [
   "aquaculture:atlantic_herring",
   "minecraft:pufferfish",
   "aquaculture:minnow",
@@ -75,7 +75,7 @@ const fishes = [
   "unusualfishmod:raw_amber_goby",
   "unusualfishmod:raw_eyelash",
 ];
-fishes.forEach((fish) => {
+smokableFish.forEach((fish) => {
   let fishId = fish.split(":")[1];
   if (fishId.includes("raw_")) {
     if (fishId === "raw_snowflake") fishId = "frosty_fin";

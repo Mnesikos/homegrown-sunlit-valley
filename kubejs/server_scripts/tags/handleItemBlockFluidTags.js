@@ -124,8 +124,11 @@ ServerEvents.tags("item", (e) => {
     if (fishId.includes("raw_")) {
       fishId = fishId.substring(4, fishId.length);
     }
-    
-    e.add(`crabbersdelight:jei_display_results/society/${fishId}_bait`, fish.item);
+
+    e.add(
+      `crabbersdelight:jei_display_results/society/${fishId}_bait`,
+      fish.item
+    );
   });
   global.agedRoe.forEach((preserve) => {
     e.add("society:aged_roe", preserve.item);
@@ -169,6 +172,7 @@ ServerEvents.tags("item", (e) => {
     "atmospheric:kousa_log",
     "atmospheric:crustose_log",
     "atmospheric:grimwood_log",
+    "vintagedelight:magic_vine",
   ];
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
@@ -326,9 +330,38 @@ ServerEvents.tags("item", (e) => {
       e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
+  const fantasyCategories = [
+    "nordic",
+    "dunmer",
+    "venthyr",
+    "bone",
+    "royal",
+    "necrolord",
+  ];
   Ingredient.of("@fantasyfurniture").stacks.forEach((item) => {
     if (item.toString().includes("furniture_station")) return;
     e.add("refurbished_furniture:bathroom", item.id);
+    let type = /:(.*)\//g.exec(item.id);
+    if (type && type[1]) {
+      type = type[1];
+      if (type.includes("bone")) type = "bone";
+      if (type.includes("decorations")) {
+        fantasyCategories.forEach((category) => {
+          if (item.id.includes(category)) type = category;
+        });
+      }
+      e.add(`society:${type}_fantasy_furniture`, item.id);
+    }
+  });
+  const skillBooks = [
+    "society:wet_weekly",
+    "society:mining_monthly",
+    "society:husbandry_hourly",
+    "society:yard_work_yearly",
+    "society:combat_quarterly",
+  ];
+  skillBooks.forEach((item) => {
+    e.add("society:skill_book", item);
   });
   const smallMilks = [
     "society:milk",
@@ -394,6 +427,7 @@ ServerEvents.tags("block", (e) => {
     "vinery:dark_cherry_log",
     "beachparty:palm_log",
     "vinery:apple_log",
+    "society:sturdy_bamboo_block"
   ];
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
@@ -430,6 +464,7 @@ ServerEvents.tags("block", (e) => {
     "society:deluxe_worm_farm",
     "society:seed_maker",
     "society:fish_smoker",
+    "society:bait_maker",
   ];
   tickArtisanMachines.forEach((log) => {
     e.add("society:artisan_machine", log);

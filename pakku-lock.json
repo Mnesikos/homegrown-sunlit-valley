@@ -10168,7 +10168,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "veggiesdelight-1.7.jar",
+                    "file_name": "veggiesdelight-1.7.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10176,18 +10176,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6197/262/veggiesdelight-1.7.jar",
-                    "id": "6197262",
+                    "url": "https://edge.forgecdn.net/files/6271/55/veggiesdelight-1.7.2.jar",
+                    "id": "6271055",
                     "parent_id": "1082807",
                     "hashes": {
-                        "sha1": "dd31fecb89114be57941c2a3be607c10127f5487",
-                        "md5": "a645529d59b5e417e2ea226859533af9"
+                        "sha1": "db098470583baf792f70322471f03b764acd30de",
+                        "md5": "df08ec52c09a650a0ea7288ac11d1074"
                     },
-                    "required_dependencies": [
-                        "398521"
-                    ],
-                    "size": 280757,
-                    "date_published": "2025-02-15T21:06:58.013Z"
+                    "required_dependencies": [],
+                    "size": 283302,
+                    "date_published": "2025-03-06T13:38:10.437Z"
                 }
             ]
         },

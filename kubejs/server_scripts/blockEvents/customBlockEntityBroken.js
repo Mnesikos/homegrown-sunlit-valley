@@ -26,6 +26,19 @@ BlockEvents.broken("society:preserves_jar", (e) => {
   }
 });
 
+BlockEvents.broken("society:dehydrator", (e) => {
+  if (e.block.properties.get("mature").toLowerCase() == "true") {
+    global.dehydratorRecipes[
+      Number(e.block.properties.get("type").toLowerCase()) - 1
+    ].output.forEach((element) => {
+      e.block.popItem(element);
+    });
+  }
+  if (e.block.properties.get("upgraded").toLowerCase() == "true") {
+    e.block.popItem(Item.of("society:cordycep"));
+  }
+});
+
 BlockEvents.broken("society:mayonnaise_machine", (e) => {
   if (e.block.properties.get("mature").toLowerCase() == "true") {
     global.mayonnaiseMachineRecipes[
@@ -82,19 +95,26 @@ BlockEvents.broken("society:fish_smoker", (e) => {
     ].output.forEach((element) => {
       e.block.popItem(element);
     });
-  } 
+  }
   if (e.block.properties.get("upgraded").toLowerCase() == "true") {
     e.block.popItem(Item.of("society:ancient_roe"));
   }
 });
 
+BlockEvents.broken("society:bait_maker", (e) => {
+  if (e.block.properties.get("mature").toLowerCase() == "true") {
+    global.baitMakerRecipes[
+      Number(e.block.properties.get("type").toLowerCase()) - 1
+    ].output.forEach((element) => {
+      e.block.popItem(element);
+    });
+  }
+});
+
 BlockEvents.broken("society:fish_pond", (e) => {
-  const pondType = e.block.properties.get("type").toLowerCase() 
+  const pondType = e.block.properties.get("type").toLowerCase();
   if (pondType !== "0") {
-    const fish =
-      global.fishPondDefinitions[
-        Number(pondType) - 1
-      ].item;
+    const fish = global.fishPondDefinitions[Number(pondType) - 1].item;
     e.block.popItem(
       Item.of(`${e.block.properties.get("population").toLowerCase()}x ${fish}`)
     );
@@ -139,7 +159,19 @@ BlockEvents.broken("society:prize_machine", (e) => {
     )
   );
 });
-
+BlockEvents.broken(
+  [
+    "society:iron_sprinkler",
+    "society:gold_sprinkler",
+    "society:diamond_sprinkler",
+    "society:netherite_sprinkler",
+  ],
+  (e) => {
+    if (e.block.properties.get("sticklogged").toLowerCase() == "true") {
+      e.block.popItem("minecraft:stick");
+    }
+  }
+);
 BlockEvents.broken("society:coin_leaderboard", (e) => {
   const { x, y, z } = e.block;
   Utils.server

@@ -39,7 +39,7 @@ ItemEvents.rightClicked("society:book_of_stars", (e) => {
     `puffish_skills experience add ${player.username} society:farming 750`
   );
   server.runCommandSilent(
-    `puffish_skills experience add ${player.username} society:husbandry 400`
+    `puffish_skills experience add ${player.username} society:husbandry 750`
   );
   server.runCommandSilent(
     `puffish_skills experience add ${player.username} society:mining 750`

@@ -165,8 +165,8 @@
 				item: "society:espresso_machine"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0C7D8F89BCF645AA"]
@@ -187,8 +187,8 @@
 				type: "item"
 			}]
 			title: "Growing Crystals"
-			x: 4.5d
-			y: 3.5d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -284,7 +284,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -536,8 +536,8 @@
 				type: "item"
 			}]
 			title: "Smarter Selling"
-			x: 1.5d
-			y: 3.5d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
@@ -734,6 +734,35 @@
 			}]
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["0C7D8F89BCF645AA"]
+			description: [
+				"Manually harvesting from Worm Farms gets old fast. An &6Auto Worm Farm&r cultivates worms in an automatable way, with the added bonus of not needing any inputs!"
+				""
+				"It can be used to automate Crab Traps, provided you have an automated way to turn Worms into Crab Trap Bait."
+			]
+			id: "345432E72BD82727"
+			rewards: [
+				{
+					id: "6AD9F9C1ED7E3787"
+					item: "society:aquamarine"
+					type: "item"
+				}
+				{
+					id: "617E724CEDDF6AC0"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7E0948BD5FC9E764"
+				item: "society:auto_worm_farm"
+				type: "item"
+			}]
+			title: "Worm Parade"
+			x: 1.5d
+			y: 4.0d
 		}
 	]
 	title: "III - Advanced Farming"

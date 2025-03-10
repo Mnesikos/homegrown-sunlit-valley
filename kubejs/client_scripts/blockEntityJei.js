@@ -18,7 +18,7 @@ const registerBECategory = (
           1,
           1,
           142,
-          46
+          42
         )
       )
       .icon(guiHelper.createDrawableItemStack(Item.of(`society:${block}`)))
@@ -161,6 +161,7 @@ JEIAddedEvents.registerCategories((e) => {
   );
   registerBECategory(e, "dehydrating", "dehydrator", "Dehydrating", 8, 1);
   registerBECategory(e, "fish_smoking", "fish_smoker", "Fish Smoking", 1, 2);
+  registerBECategory(e, "bait_making", "bait_maker", "Bait Making", 1, 1);
   registerBECategory(
     e,
     "mayonnaise_making",
@@ -187,6 +188,14 @@ JEIAddedEvents.registerCategories((e) => {
     "Espresso Brewing",
     4,
     0.5
+  );
+  registerBECategory(
+    e,
+    "goddess_offering",
+    "ancient_goddess_statue",
+    "Goddess Offering",
+    64,
+    0
   );
 });
 
@@ -254,6 +263,9 @@ JEIAddedEvents.registerRecipes((e) => {
   global.fishSmokerRecipes.forEach((element) => {
     e.custom("society:fish_smoking").add(element);
   });
+  global.baitMakerRecipes.forEach((element) => {
+    e.custom("society:bait_making").add(element);
+  });
   global.mayonnaiseMachineRecipes.forEach((element) => {
     e.custom("society:mayonnaise_making").add(element);
   });
@@ -269,5 +281,19 @@ JEIAddedEvents.registerRecipes((e) => {
   e.custom("society:charging").add({ input: "", output: ["society:battery"] });
   global.espressoMachineRecipes.forEach((element) => {
     e.custom("society:espresso_brewing").add(element);
+  });
+  [
+    { input: "society:ancient_fruit", output: ["society:prismatic_shard"] },
+    {
+      input: "vintagedelight:ghost_pepper",
+      output: ["4x society:artifact_trove"],
+    },
+    {
+      input: "farm_and_charm:corn",
+      output: ["4x society:pristine_star_shards"],
+    },
+    { input: "snowyspirit:ginger", output: ["4x minecraft:ancient_debris"] },
+  ].forEach((element) => {
+    e.custom("society:goddess_offering").add(element);
   });
 });

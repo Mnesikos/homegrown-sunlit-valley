@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -20
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
     for (let z = 0; z <= 5; z++) {

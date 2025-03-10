@@ -21,7 +21,6 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(100, 0, (entity) => {
         const { inventory, block, level } = entity;
-        let slots = inventory.getSlots();
 
         let mana = entity.persistentData.getInt("mana");
         inventory.allItems;
@@ -52,41 +51,13 @@ StartupEvents.registry("block", (event) => {
               interactionCooldown
             );
             if (milkItem !== -1) {
-              let success = false;
-              let slotItem;
-              for (let i = 0; i < slots; i++) {
-                slotItem = inventory.getStackInSlot(i)
-                if (slotItem.item.id === milkItem.id) {
-                  if (slotItem.nbt && milkItem.nbt) {
-                    if (
-                      slotItem.nbt.quality_food.quality ===
-                      milkItem.nbt.quality_food.quality
-                    ) {
-                      milkItem.count = slotItem.count + 1;
-                      inventory.setStackInSlot(i, milkItem);
-                      success = true;
-                      break;
-                    }
-                  } else if (!slotItem.nbt && !milkItem.nbt) {
-                    milkItem.count = slotItem.count + 1;
-                    inventory.setStackInSlot(i, milkItem);
-                    success = true;
-                    break;
-                  }
-                }
-              }
-              if (!success) {
-                for (let i = 0; i < slots; i++) {
-                  if (inventory.getStackInSlot(i).item.id === "minecraft:air") {
-                    inventory.setStackInSlot(i, milkItem);
-                    success = true;
-                    break;
-                  }
-                }
-              }
-
+              let success = entity.inventory.insertItem(milkItem, false);
               if (success) {
                 entity.persistentData.putInt("mana", mana - MANA_PER_MILK);
+
+                level.server.runCommandSilent(
+                  `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
+                );
                 level.spawnParticles(
                   "atmospheric:aloe_blossom",
                   true,

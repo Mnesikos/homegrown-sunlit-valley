@@ -125,7 +125,11 @@
 				"2134CA6B3880D089"
 				"3D324E99DF28D224"
 			]
-			description: ["The &6Farmer's Almanac&r has detailed information of crops and farm animals, which is essential when deciding what to focus on every season."]
+			description: [
+				"The &6Farmer's Almanac&r has detailed information of crops and farm animals, which is essential when deciding what to focus on every season."
+				""
+				"It is sold by the &6Farmer&r and &6Shepherd&r"
+			]
 			id: "596D2298299CCEED"
 			rewards: [{
 				count: 8
@@ -1611,6 +1615,7 @@
 				""
 				"The same applies to frozen biomes for &6Winter&r."
 			]
+			icon: "atmospheric:sun_pottery_sherd"
 			id: "24F09C4D4D9DDF79"
 			rewards: [{
 				id: "46FC4901A1D7B8C2"
@@ -1626,6 +1631,29 @@
 			title: "Eternal Summer"
 			x: 4.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["4A48308E11476E9B"]
+			description: [
+				"There are occasions where you may need a large quantity of one specific fish. The &6Bait Maker&r turns one of any type of fish into targed bait!"
+				""
+				"This bait can be placed inside of a &6Crab Trap&r,"
+				""
+				"&oNether Fish can be caught in a Crab Trap placed in water... Strange.&r"
+			]
+			id: "73E15D00539BF7CD"
+			rewards: [{
+				id: "175F4915C9565C3B"
+				item: "society:neptuna_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B23A61A54E4A941"
+				item: "society:bait_maker"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
 		}
 	]
 	title: "II - Farm Building"

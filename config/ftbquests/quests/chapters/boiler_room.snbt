@@ -383,38 +383,6 @@
 			x: 3.0d
 			y: 0.2d
 		}
-		{
-			dependencies: ["33B78DFDDC041570"]
-			description: [
-				"While the Cropnolia may be a good start for generating mana, it's far from the fastest."
-				""
-				"&6Generating Flora&r are classified as flowers that are able to synthesize mana. As you progress, look to utilize the different types to upgrade your mana generating capacity."
-				""
-				"The &6Lexica Botania&r will have information on all the different types."
-			]
-			icon: "botania:kekimurus"
-			id: "14FBA0E06A439C1F"
-			rewards: [{
-				id: "46394E8C635338EE"
-				item: "numismatics:crown"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5ADDA79B92F1B9D4"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "botania:generating_special_flowers"
-					}
-				}
-				title: "Any #botania:generating_special_flowers"
-				type: "item"
-			}]
-			title: "Generating Flora"
-			x: 9.0d
-			y: 8.0d
-		}
 	]
 	subtitle: ["Reward: Create Power Generators"]
 	title: "Boiler Room"

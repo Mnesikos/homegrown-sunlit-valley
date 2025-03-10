@@ -1,11 +1,28 @@
 StartupEvents.registry("block", (e) => {
-  e.create("society:treated_log")
+  e
+    .create("society:treated_log")
     .soundType("wood")
+    .property(BlockProperties.AXIS)
+    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
     .hardness(1.0)
     .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/axe");
-
+    .requiresTool(false)
+    .tagBlock("minecraft:mineable/axe").blockstateJson = {
+    variants: {
+      "axis=x": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+        y: 90,
+      },
+      "axis=y": {
+        model: "society:block/treated_log",
+      },
+      "axis=z": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+      },
+    },
+  };
   // Ores
   e.create("society:earth_crystal")
     .box(2, 0, 2, 14, 8, 14)
@@ -47,15 +64,15 @@ StartupEvents.registry("block", (e) => {
       });
     });
 
-  e.create("society:boulder")
-    .defaultCutout()
-    .soundType("stone")
-    .hardness(4.5)
-    .resistance(9.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_stone_tool")
-    .model("society:block/boulder");
+  // e.create("society:boulder")
+  //   .defaultCutout()
+  //   .soundType("stone")
+  //   .hardness(4.5)
+  //   .resistance(9.0)
+  //   .requiresTool(true)
+  //   .tagBlock("minecraft:mineable/pickaxe")
+  //   .tagBlock("minecraft:needs_stone_tool")
+  //   .model("society:block/boulder");
 
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -484,15 +501,32 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .texture("particle", "herbalbrews:block/green_tea_leaf1");
 
-  e.create("society:sturdy_bamboo_block")
+  e
+    .create("society:sturdy_bamboo_block")
     .tag("minecraft:logs")
-    .tag("society:raw_logs")
+    .property(BlockProperties.AXIS)
+    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
     .displayName("Sturdy Block of Bamboo")
     .soundType("wood")
     .hardness(1.0)
     .resistance(1.0)
     .requiresTool(true)
-    .tagBlock("minecraft:mineable/axe");
+    .tagBlock("minecraft:mineable/axe").blockstateJson = {
+    variants: {
+      "axis=x": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+        y: 90,
+      },
+      "axis=y": {
+        model: "society:block/treated_log",
+      },
+      "axis=z": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+      },
+    },
+  };
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)

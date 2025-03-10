@@ -368,6 +368,26 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     [
+      "society:bait_maker",
+      "society:aging_cask",
+      "society:ancient_cask",
+      "society:ancient_goddess_statue",
+      "society:charging_rod",
+      "society:crystalarium",
+      "society:deluxe_worm_farm",
+      "society:dehydrator",
+      "society:espresso_machine",
+      "society:fish_pond",
+      "society:fish_smoker",
+      "society:loom",
+      "society:mayonnaise_machine",
+      "society:preserves_jar",
+      "society:seed_maker",
+    ],
+    Text.gold(":gear: Artisan Machine")
+  );
+  tooltip.add(
+    [
       "minecraft:milk_bucket",
       "meadow:wooden_milk_bucket",
       "meadow:wooden_sheep_milk_bucket",
@@ -446,10 +466,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:prize_ticket",
     Text.gray("Use on a Prize Machine for something good!")
   );
-  tooltip.add(
-    'create:creative_blaze_cake',
-    Text.gray("It's smoking...")
-  );
+  tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add(
     "tanukidecor:slot_machine",
     Text.gray("Right click with any legal tender")
