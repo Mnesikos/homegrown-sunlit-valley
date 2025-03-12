@@ -1,35 +1,17 @@
 {
-  "favorites": [
-    {
-      "stack": "item:simplehats:babydolphin",
-      "recipe": "jei:/sewingkit/kjs/ecehh73vvmzttxe6a12n1ky2y"
-    },
-    {
-      "stack": "item:simplehats:greenbirb",
-      "recipe": "jei:/sewingkit/kjs/f0t31r9rceuawjq2sxn5p3nwi"
-    },
-    {
-      "stack": "item:simplehats:mindflayer_alhoon",
-      "recipe": "jei:/sewingkit/kjs/9bh6w2z2ll64ety3mns42lf4v"
-    },
-    {
-      "stack": "item:simplehats:lil_termagant",
-      "recipe": "jei:/sewingkit/kjs/4moahogrenf7xm9uvshfebb6d"
-    },
-    {
-      "stack": "item:simplehats:tomato_splats"
-    },
-    {
-      "stack": "item:simplehats:teddy_bear"
-    },
-    {
-      "stack": "item:minecraft:beehive",
-      "recipe": "minecraft:kjs/beehive"
-    }
-  ],
+  "favorites": [],
   "lookup_history": [
+    "item:society:beer_attunecore",
+    "item:vinery:cristel_wine{}",
+    "item:society:blueberry_preserves",
+    "item:vintagedelight:gearo_berry",
+    "item:pamhc2trees:lemon_sapling",
+    "item:veggiesdelight:cauliflower_seeds",
+    "item:veggiesdelight:garlic_seeds",
     {
-      "id": "vinery:frosty_armor"
+      "type": "item",
+      "id": "veggiesdelight:cauliflower",
+      "amount": 32
     },
     "item:society:dried_dragonfruit",
     "item:etcetera:hammer{Damage:0}",
@@ -43,7 +25,6 @@
     "item:minecraft:oak_stairs",
     "item:minecraft:stripped_oak_wood",
     "item:society:aged_beer_wheat",
-    "item:society:beer_attunecore",
     "item:society:aged_beer_attunecore",
     "item:numismatics:bevel",
     "item:numismatics:sprocket",
@@ -218,7 +199,6 @@
     "item:society:ancient_fruit_seed",
     "item:botania:overgrowth_seed",
     "item:botania:infused_seeds",
-    "item:veggiesdelight:cauliflower_seeds",
     "item:veggiesdelight:bellpepper_seeds",
     "item:minecraft:melon_seeds",
     "item:supplementaries:flax_seeds",
@@ -231,7 +211,6 @@
       "amount": 4
     },
     "item:veggiesdelight:garlic",
-    "item:veggiesdelight:cauliflower",
     "item:veggiesdelight:whole_roasted_cauliflower",
     "item:veggiesdelight:sweet_potato_mochi",
     "item:veggiesdelight:roasted_vegetables",
@@ -342,7 +321,6 @@
     "item:supplementaries:bamboo_spikes_tipped{Damage:0,Potion:\"atmospheric:worsening_long\"}",
     "item:minecraft:coal",
     "item:minecraft:redstone",
-    "item:cc:claim_block",
     "item:sophisticatedstorage:paintbrush",
     "item:sophisticatedstorage:storage_tool",
     "item:functionalstorage:compacting_drawer",
@@ -485,7 +463,6 @@
     "item:minecraft:iron_block",
     "item:society:preserves_jar",
     "item:veggiesdelight:sweet_potato",
-    "item:veggiesdelight:garlic_seeds",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\",lvl:2s}]}",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"iwannaskate:earthcrosser\",lvl:1s}]}",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:efficiency\",lvl:1s}]}",

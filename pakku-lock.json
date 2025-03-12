@@ -8,6 +8,44 @@
     },
     "projects": [
         {
+            "pakku_id": "caQ6FRXrn9fkxrIf",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "additional-attributes"
+            },
+            "name": {
+                "curseforge": "Additional Attributes"
+            },
+            "id": {
+                "curseforge": "986624"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "additional_attributes-1.20.1-1.3.1-all.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6255/276/additional_attributes-1.20.1-1.3.1-all.jar",
+                    "id": "6255276",
+                    "parent_id": "986624",
+                    "hashes": {
+                        "sha1": "82ba92f0bc8d03a7531380725fddd2715dbd4a7e",
+                        "md5": "6ad7664b94d3bd424c368072c7be29cf"
+                    },
+                    "required_dependencies": [],
+                    "size": 243998,
+                    "date_published": "2025-03-02T11:33:58.007Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3TI9E5ZNU05cvezm",
             "type": "MOD",
             "slug": {
@@ -7381,48 +7419,6 @@
                     ],
                     "size": 597375,
                     "date_published": "2025-01-24T17:32:42.663Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "02bHn8wF8sYMMV4O",
-            "pakku_links": [
-                "3F0ul19NH4mCx9lj"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "probejs"
-            },
-            "name": {
-                "curseforge": "ProbeJS"
-            },
-            "id": {
-                "curseforge": "585406"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "probejs-6.0.1-forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5227/399/probejs-6.0.1-forge.jar",
-                    "id": "5227399",
-                    "parent_id": "585406",
-                    "hashes": {
-                        "sha1": "5380211b1c2891f454a136545721526b184d8513",
-                        "md5": "69dfe15b710b9b213feb7eb788ed83a9"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 2365466,
-                    "date_published": "2024-04-01T14:08:56.003Z"
                 }
             ]
         },

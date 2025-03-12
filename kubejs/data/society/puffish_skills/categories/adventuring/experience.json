@@ -26,7 +26,7 @@
         },
         "experience": [
           {
-            "expression": "max_health / 5"
+            "expression": "max_health"
           }
         ],
         "anti_farming": {

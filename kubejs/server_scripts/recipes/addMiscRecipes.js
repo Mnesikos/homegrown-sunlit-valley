@@ -256,26 +256,6 @@ ServerEvents.recipes((e) => {
     p: "society:prismatic_shard",
   });
   e.shaped(
-    Item.of("minecraft:enchanted_book").enchant("minecraft:fortune", 3),
-    [" j ", "cbc", " p "],
-    {
-      j: "society:jade",
-      b: "minecraft:book",
-      c: "numismatics:sun",
-      p: "society:prismatic_shard",
-    }
-  );
-  e.shaped(
-    Item.of("minecraft:enchanted_book").enchant("minecraft:silk_touch", 3),
-    [" j ", "cbc", " p "],
-    {
-      j: "society:earth_crystal",
-      b: "minecraft:book",
-      c: "numismatics:sun",
-      p: "society:prismatic_shard",
-    }
-  );
-  e.shaped(
     Item.of("minecraft:enchanted_book").enchant("minecraft:looting", 3),
     [" j ", "cbc", " p "],
     {

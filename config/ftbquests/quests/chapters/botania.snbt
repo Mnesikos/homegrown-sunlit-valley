@@ -105,6 +105,11 @@
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
+			description: [
+				"There are certain fruits native to Alfheim that the elves will be willing to trade for."
+				""
+				"In return they require their overworldian counterparts."
+			]
 			icon: "vintagedelight:gearo_berry"
 			id: "42DA09B2A18E2ED1"
 			rewards: [{

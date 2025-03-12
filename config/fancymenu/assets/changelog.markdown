@@ -1,89 +1,75 @@
 ^^^
-## It's a Magical World
-### v2.0.1
+## A Tuned Fish
+### v2.1.0
 ^^^
 --- 
-**WARNING** 2 furniture mods removed! Backup worlds before updating and add these mods manually to avoid losing blocks!
-*Note - New Villager trades won't be updated on existing villagers*
-- Added Botania -  a flower based magic mod for mid-late game
-- Added new crops from Veggies Delight
-- Added new claiming system with Open parties and Claims
-- Added Eggplant crop
-- Added Lemon trees
-- Added twigs mod
-- Added weather changing shells
-- Added experience orb drops to crops depending on how long they take to grow
-- Added gunpowder recipe from Ghost Charcoal
-- Added more via romana road tags
-- Added preserves for all missing vegetables
-- Added value to Nether Quartz, removed from ore for consistency
-- Added crash assistant, neoauth
-- Added ok zoomer
-- Added Embeddium Dynamic Lights
-- Added Glow Up - Emissive Ores
-- Changed slingshot to use Canvas instead of Rabbit Hide
-- Cleaned up quests
-- Fish Ponds no longer chat quests when they're being harvested
-- Increased tick rate to vanilla levels
-- Updated Milking Pail and Magic Shear textures
-- Rebalanced create Drills/Saws/Harvesters to not be as annoying to craft but make duplication more expensive
-- Renamed The Burger to The Davey Burger
-- Removed mob spawnings above sea level
-- Removed everycompat picture frames
-- Removed Cart Assemblers and Mechanical Bearings for balance reasons
-- Removed Recall enchantment
-- Removed Stardew Furnace resource pack
-- Removed furniture mods: Yuushya's Townscape and Handcrafted
-- Removed Advanced Book, Create Contraption Terminals, Create Pattern Schematics, Launchers, Set block begone, and Model Gap Fix, soulbound (unneeded), and trimmable tools
-- Removed Simple Voice Chat. It can be installed manually
-- Removed hidden recipes 
-- Replaced Loot Journal with Loot Pickup notifier
-- Reduced food values of mayo
-- Reduced value of pristine minerals 6x -> 4x base value
-- Reduced aging time for whisky (6 -> 4 days) and beer (4 -> 3 days)
-- Reduced quality bonus to a max of x2
-- Star Blessings now works on a sliding scale based off dimension
-- Farmer experience from crops now based off of crop growth time
-- Fixed sprinkler range being to large
-- Fixed Cornucopia not working correctly for certain fruit trees
-- Fixed Dragonfruit item textures not being anatomically correct
-- Fixed quality value increase not matching tooltip
-- Fixed progression skip with wool armor crafting
-- Fixed Dark Cherry/Apple trees not being minable with a hoe
-- Fixed gold hammers not having proper tier, speed, and damage
-- Fixed Pawpaw not having proper season
-- Fixed Double Aged Buffalo Cheese having less value than aged 
-- Fixed incorrect Scarecrow and Totem of Growth totem
-- Fixed some duplicate item names
-- Fixed some recipe conflicts
-
-# 2.0.1
-- Added value for Quartz Block, Enchanted Golden Apple and Lumisene
-- Added values for experience items
-- Added `:skamtebord:` emoji for Frog
-- Added alternative recipes for some fertilizers using Botania
-- Added photo to Fish Pond quest to make it more clear
-- Added more information to Fish Pond tooltip
-- Adjusted certain villager prices
-- Reduced bonus of Fence and Looting Tycoon by half 
-- Replaced Soul Sand washing recipe with Soul Beads
-- Compressed panoramas so the pack isn't so large
-- Decreased Fish Pond collection speed
-- Increased Neptuna crafting into nuggets amount
-- Improved certain Fish Pond quests to be different from their outputs to reduce confusion
-- Fixed Mystical Flower Crops randomly ticking
-- Fixed Mystical Flowers being turned into crops on right click
-- Fixed Mystical Flower Seeds not having season tags
-- Fixed Mystical Flower Seeds having quality
-- Fixed console spam from crop growth
-- Fixed Star Blessing not working in the Nether
-- Fixed Crystalarium tooltip
-- Fixed Sprinkler tooltip
-- Fixed Nether quest again
-- Fixed Beef Patty name
-- Fixed The Davey Burger tooltip having the incorrect adverb
-- Fixed husbandry hunger debuff not applying
-- Fixed framed storage controllers/extenders bypassing purchase
-- Fixed Everycompat Functional Storage drawers not having a wood type
-- Fixed quark replanting affecting mystical flowers
-- Fixed Beautify picture frame loot tables
+*Note - New Villager trades won't be updated on existing villagers. Minor mods removed.* 
+- Added Targeted Fish Bait - renewable way to get fish using Crab Traps
+- Added Bait Maker
+- Added Auto Worm Farm
+- Added Mana Milker
+- Added Iron, Gold, Diamond, and Neptunium smithing templates that are used for upgrading tools
+- Added Fantasy Furniture boxes to Bounty Board & switched bounty board furniture rewards to all types of boxes
+- Added Attunecore Beer
+- Added fertilizer recycling ability to Pitchfork
+- Added values to bamboo, bamboo, leaves, stripped logs, straw, and bark
+- Added EMI - New recipe viewer
+- Added villager trades to JEI/EMI and removed tooltips
+- Added tag/color searching in JEI/EMI
+- Added two Dragontooth Axe skills for Adventurer skill tree
+- Added JEI/EMI support for Ancient Goddess Statute
+- Added Rotten logs fermenting recipe
+- Added/rebalanced Storagesmith Trades
+- Added Sturdy Bamboo Block, a log alternative
+- Added Redstone trade to Blacksmith and increase max trade limits
+- Added burn time to twigs
+- Added Vine Stems to raw logs tag
+- Added crafting recipe for recycling unneeded experience books
+- Added Paraglider wind blocks
+- Added cobblestone compacting recipe
+- Bounty Boards and Slot Machines can not be interacted with in claims
+- Reworked health upgrades to use SOL onion diversity
+- Reworked tool upgrading -  now uses Smithing Templates
+- Reworked certain skills to be more impactful, mapping to enchant levels
+- Reworked enchanting to have lower maximums to accomodate
+- Removed duplicate Rocky Dirty/Pebble
+- Removed Zombie Sieges
+- Removed Iwannaskate. Replaced Energy Drink with society version. 
+- Removed Claim Chunk
+- Removed Create Connected to prep for Create 6.0
+- Removed Cornucopia from Farmer
+- Removed some SophisticatedStorage tier upgrades for cleanliness (eg, copper -> netherite. Diamond -> Netherite still exists) 
+- Reduced thunderstorm wake up chances
+- Reduced Fletcher Cinnamon Sapling cost
+- Reduced Fish Pond crafting recipe cost
+- Retextured London Beer
+- Pets now gift unique hats
+- Spring Bundle now requests Cauliflower instead of Onion
+- Chicken Nest now uses Straw Bale instead of Hay Bale 
+- Increased mining experience requirements
+- Increased adventurer experience from killing things
+- Changed manasteel/elementium tools to require upgrading
+- Changed Cropnolia to only eat plants one at a time
+- Elementium Hoe now created Hydrating Fertilizer like the Neptunium Hoe
+- Treated Log now placeable directionally
+- Pawpaw easter egg no random changes
+- Fixed Terrasteel leggings not having rune in recipe
+- Fixed Copy-Paste Gadget using wrong copycat
+- Fixed Multiplayer Pigracing not working
+- Fixed toolbet upgrades using wrong needles
+- Fixed some broken tags
+- Fixed cactus not being faster mined with hoe
+- Fixed saturation values for mayo and dried fruits/mushrooms
+- Fixed Workbench Electronic category being empty
+- Fixed Cocoa Bean related crash
+- Fixed Torchflowers being bonemealable
+- Fixed Slime Block fermenting not working properly
+- Fixed issues with certain things not having quality
+- Fixed bait having durability
+- Fixed Red Merchant having emerald trades
+- Fixed sticks not dropping from sprinklers
+- Fixed being able to dump sticks into sprinklers 
+- Fixed Cornucopia not working on Vinery cherry/apple trees
+- Fixed Sea Biscut typo
+- Fixed Mana spreaders not working in claims
+- Fixed two recipes not using flour tags

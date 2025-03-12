@@ -11,6 +11,7 @@ BlockEvents.leftClicked(
     "society:ancient_vespertine",
     "society:dewy_star",
     "society:beer_london",
+    "society:beer_attunecore",
     "society:espresso",
     "society:steamed_milk",
     "society:mocha",
