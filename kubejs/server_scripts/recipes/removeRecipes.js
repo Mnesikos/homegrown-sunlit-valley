@@ -98,6 +98,7 @@ ServerEvents.recipes((e) => {
     "capsule:capsule",
     "minecraft:milk_bucket",
     "farm_and_charm:feeding_trough",
+    "farm_and_charm:pitchfork",
     "meadow:wooden_milk_bucket",
     "meadow:wooden_sheep_milk_bucket",
     "meadow:wooden_warped_milk_bucket",

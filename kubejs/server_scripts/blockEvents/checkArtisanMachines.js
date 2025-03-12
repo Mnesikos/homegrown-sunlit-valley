@@ -38,6 +38,7 @@ const idMap = new Map([
   ["society:aged_beer_barley", "Aged Barley Beer"],
   ["society:aged_beer_hops", "Aged Hops Beer"],
   ["society:aged_beer_london", "Aged London Beer"],
+  ["society:aged_beer_attunecore", "Aged Attunecore Beer"],
   ["society:aged_beer_haley", "Aged Haley Beer"],
   ["society:aged_beer_oat", "Aged Oat Beer"],
   ["society:aged_beer_wheat", "Aged Wheat Beer"],

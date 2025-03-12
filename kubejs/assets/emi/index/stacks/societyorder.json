@@ -31,6 +31,14 @@
     {
       "stack": "item:numismatics:prismatic_coin",
       "after": "item:numismatics:ancient_coin"
+    },
+    {
+      "stack": "item:croptania:cropnolia",
+      "after": "item:botania:floating_manastar"
+    },
+    {
+      "stack": "item:croptania:floating_cropnolia",
+      "after": "item:croptania:cropnolia"
     }
   ],
   "removed": [

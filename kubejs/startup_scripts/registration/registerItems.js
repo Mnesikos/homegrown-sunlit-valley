@@ -742,7 +742,7 @@ StartupEvents.registry("item", (e) => {
       .color(0, roeHex)
       .food((food) => {
         food.hunger(5);
-        food.saturation(4);
+        food.saturation(2);
       });
     e.create(`society:${fishId}_bait`)
       .texture("society:item/fish_bait")

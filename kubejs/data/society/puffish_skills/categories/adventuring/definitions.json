@@ -1,39 +1,57 @@
 {
-  "sprint+5%": {
-    "title": "+5% Sprinting Speed",
+  "ranged+2": {
+    "title": "+2 Ranged Damage",
     "icon": {
-      "type": "effect",
+      "type": "item",
       "data": {
-        "effect": "speed"
+        "item": "minecraft:spectral_arrow"
       }
     },
     "rewards": [
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_attributes:player.sprinting_speed",
-          "value": 0.05,
-          "operation": "multiply_total"
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 2,
+          "operation": "addition"
         }
       }
     ]
   },
-  "melee_resistance+1%": {
-    "title": "+1% Melee Resistance",
-    "description": "1% less damage taken from melee attacks",
+  "protection+1": {
+    "title": "+I Protection",
     "icon": {
       "type": "effect",
       "data": {
-        "effect": "herbalbrews:tough"
+        "effect": "minecraft:resistance"
       }
     },
     "rewards": [
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.melee_resistance",
-          "value": 0.01,
-          "operation": "multiply_total"
+          "attribute": "puffish_attributes:resistance",
+          "value": 0.16,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "looting+1": {
+    "title": "+I Looting",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "herbalbrews:fortune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:looting",
+          "value": 1,
+          "operation": "addition"
         }
       }
     ]
@@ -96,7 +114,7 @@
     "icon": {
       "type": "effect",
       "data": {
-        "effect": "resistance"
+        "effect": "herbalbrews:tough"
       }
     },
     "rewards": [
@@ -104,7 +122,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_skills:player.resistance",
-          "value": 0.1,
+          "value": 0.05,
           "operation": "multiply_total"
         }
       }
@@ -167,35 +185,9 @@
       }
     ]
   },
-  "bruiser": {
-    "title": "Specialization: Bruiser",
-    "description": "+10% Melee Damage",
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "challenge"
-      }
-    },
-    "icon": {
-      "type": "effect",
-      "data": {
-        "effect": "strength"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "puffish_skills:player.melee_damage",
-          "value": 0.1,
-          "operation": "multiply_total"
-        }
-      }
-    ]
-  },
-  "archer": {
-    "title": "Specialization: Archer",
-    "description": "+20% Ranged Damage",
+  "galaxy_smash": {
+    "title": "Axe Ability: §6Galaxy Smash",
+    "description": "Adds a smash attack to the Dragontooth Axe that only targets hostiles\n\n§cShift + Left click to use",
     "frame": {
       "type": "advancement",
       "data": {
@@ -205,16 +197,40 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "bow"
+        "item": "etcetera:hammer"
       }
     },
     "rewards": [
       {
-        "type": "puffish_skills:attribute",
+        "type": "puffish_skills:command",
         "data": {
-          "attribute": "puffish_skills:player.ranged_damage",
-          "value": 0.2,
-          "operation": "multiply_total"
+          "unlock_command": "kubejs stages add @s galaxy_smash",
+          "lock_command": "kubejs stages remove @s galaxy_smash"
+        }
+      }
+    ]
+  },
+  "handleshot": {
+    "title": "Axe Ability: §6Handleshot",
+    "description": "Adds a ranged ability to the Dragontooth Axe\n\n§cShift + Right click to use",
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "crossbow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s handleshot",
+          "lock_command": "kubejs stages remove @s handleshot"
         }
       }
     ]
@@ -296,7 +312,7 @@
   },
   "stuffed": {
     "title": "Stuffed",
-    "description": "+20 Health",
+    "description": "+10 Health",
     "frame": {
       "type": "advancement",
       "data": {
@@ -314,7 +330,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "generic.max_health",
-          "value": 20,
+          "value": 10,
           "operation": "addition"
         }
       }

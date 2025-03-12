@@ -648,7 +648,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
@@ -1654,6 +1654,29 @@
 			}]
 			x: 7.0d
 			y: -5.5d
+		}
+		{
+			dependencies: ["2C3FD9E2DA520620"]
+			description: [
+				"Don't just stuff your farm with nameless livestock- naming a farm animal will make them like you a good bit more!"
+				""
+				"&oRenaming will have no effect.&r"
+			]
+			id: "649860C19CAE0F17"
+			rewards: [{
+				count: 4
+				id: "4AFE198E5F10C429"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ECBA096B8007E7C"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			title: "Pet Names"
+			x: 1.0d
+			y: 3.0d
 		}
 	]
 	title: "II - Farm Building"

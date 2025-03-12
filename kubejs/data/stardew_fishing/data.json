@@ -426,10 +426,10 @@
 
     "unusualfishmod:raw_duality_damselfish": {
       "idle_time": 10,
-      "top_speed": 20,
+      "top_speed": 15,
       "up_acceleration": 0.9,
       "down_acceleration": 0.9,
-      "avg_distance": 20,
+      "avg_distance": 15,
       "move_variation": 0
     },
 
@@ -438,7 +438,7 @@
       "top_speed": 12,
       "up_acceleration": 0.9,
       "down_acceleration": 0.9,
-      "avg_distance": 20,
+      "avg_distance": 15,
       "move_variation": 10
     },
 
@@ -447,7 +447,7 @@
       "top_speed": 10,
       "up_acceleration": 0.9,
       "down_acceleration": 0.9,
-      "avg_distance": 20,
+      "avg_distance": 15,
       "move_variation": 50
     },
 
@@ -479,6 +479,15 @@
     },
 
     "unusualfishmod:raw_hatchetfish": {
+      "idle_time": 10,
+      "top_speed": 20,
+      "up_acceleration": 0.9,
+      "down_acceleration": 0.9,
+      "avg_distance": 20,
+      "move_variation": 62
+    },
+
+    "unusualfishmod:raw_aero_mono": {
       "idle_time": 10,
       "top_speed": 20,
       "up_acceleration": 0.9,

@@ -1,13 +1,14 @@
 // Why are entity type tags so weird
 global.checkEntityTag = (entity, checkedTag) => {
+  if (!entity || !entity.entityType || !entity.entityType.tags) return false;
   return entity.entityType.tags.anyMatch((tag) => tag.location() == checkedTag);
 };
 
 global.isFresh = (age, actionAge, interactionCooldown) => {
-    if (actionAge < interactionCooldown) return false;
-    return age < actionAge;
-  };
-  
+  if (actionAge < interactionCooldown) return false;
+  return age < actionAge;
+};
+
 const resolveMilk = (hearts, type, warped) => {
   let size = "";
   let resolvedType = "";
@@ -23,43 +24,46 @@ const resolveMilk = (hearts, type, warped) => {
 };
 
 global.getMilk = (level, target, data, player, interactionCooldown) => {
-    const ageLastMilked = data.getInt("ageLastMilked");
-    const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
-    const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
-    const affection = data.getInt("affection");
-    let hearts = Math.floor(affection / 100);
-    const freshAnimal = global.isFresh(
-      level.time,
-      ageLastMilked,
-      interactionCooldown
+  const ageLastMilked = data.getInt("ageLastMilked");
+  const hungry =
+    level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
+  const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+  const affection = data.getInt("affection");
+  let hearts = Math.floor(affection / 100);
+  const freshAnimal = global.isFresh(
+    level.time,
+    ageLastMilked,
+    interactionCooldown
+  );
+  let affectionIncrease = 0;
+  if (player)
+    affectionIncrease =
+      player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
+  let warped = false;
+  let quality = 0;
+
+  if (nonIdType === "wooly cow" && Number(target.getNbt().Variant) === 2) {
+    warped = true;
+  }
+  if (
+    !target.isBaby() &&
+    !hungry &&
+    (freshAnimal || level.time - ageLastMilked > interactionCooldown)
+  ) {
+    data.affection = affection + affectionIncrease;
+    data.ageLastMilked = level.time;
+    if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
+      quality = 3;
+    } else {
+      quality = (hearts % 5) - 2;
+    }
+    let milkId = resolveMilk(hearts, nonIdType, warped);
+    return Item.of(
+      `${player && player.stages.has("shepherd") ? 2 : 1}x ${
+        milkId.includes(":") ? milkId : `society:${milkId}`
+      }`,
+      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
     );
-    let affectionIncrease = 0
-    if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
-    let warped = false;
-    let quality = 0;
-  
-    if (nonIdType === "wooly cow" && Number(target.getNbt().Variant) === 2) {
-      warped = true;
-    }
-    if (
-      !target.isBaby() &&
-      !hungry &&
-      (freshAnimal || level.time - ageLastMilked > interactionCooldown)
-    ) {
-      data.affection = affection + affectionIncrease;
-      data.ageLastMilked = level.time;
-      if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
-        quality = 3;
-      } else {
-        quality = (hearts % 5) - 2;
-      }
-      let milkId = resolveMilk(hearts, nonIdType, warped);
-      return Item.of(
-        `${player && player.stages.has("shepherd") ? 2 : 1}x ${
-          milkId.includes(":") ? milkId : `society:${milkId}`
-        }`,
-        quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
-      ) 
-    }
-    return -1
-}
+  }
+  return -1;
+};

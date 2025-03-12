@@ -184,7 +184,7 @@
   },
   "high_roller": {
     "title": "High Roller",
-    "description": "+4 Fortune",
+    "description": "+IV Fortune",
     "frame": {
       "type": "advancement",
       "data": {

@@ -519,8 +519,8 @@
 				item: "vintagedelight:peanut"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -2.5d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
 			description: [
@@ -555,20 +555,15 @@
 			y: -2.5d
 		}
 		{
-			description: [
-				"Can be purchased from the &6Master Cultivator&r villager."
-				""
-				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to craft their workstation."
-			]
+			description: [""]
 			id: "267B2278B71805DD"
-			subtitle: "&6Master Cultivator"
 			tasks: [{
 				id: "6C217F92F9098809"
 				item: "vintagedelight:gearo_berry"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.0d
+			x: 15.5d
+			y: -2.5d
 		}
 		{
 			description: [
@@ -888,7 +883,13 @@
 			y: -5.5d
 		}
 		{
+			description: [
+				"Seeds can be purchased from the &6Master Cultivator&r villager."
+				""
+				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to craft their workstation."
+			]
 			id: "5C6688D9ADAB129D"
+			subtitle: "&6Master Cultivator"
 			tasks: [{
 				id: "5BC5D85279454506"
 				item: "society:tubabacco_leaf"
@@ -948,7 +949,13 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"Seeds can be purchased from the &6Master Cultivator&r villager."
+				""
+				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to craft their workstation."
+			]
 			id: "4CE5E17948C31E2A"
+			subtitle: "&6Master Cultivator"
 			tasks: [{
 				id: "53E8C57AF7BE0A8D"
 				item: "veggiesdelight:garlic"
@@ -978,7 +985,13 @@
 			y: -2.5d
 		}
 		{
+			description: [
+				"Seeds can be purchased from the &6Master Cultivator&r villager."
+				""
+				"You'll need to find a &dPrismatic Shard&r deep in the Skull Cavern to craft their workstation."
+			]
 			id: "530890B3F0CE32B1"
+			subtitle: "&6Master Cultivator"
 			tasks: [{
 				id: "3D7DDDF60546C23E"
 				item: "veggiesdelight:sweet_potato"

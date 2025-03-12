@@ -122,6 +122,7 @@ global.ageableProductInputs = [
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 10 },
   { item: "society:dewy_star", name: "Dewy Star", time: 10 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 10 },
+  { item: "society:beer_attunecore", name: "Attunecore Beer", time: 3 },
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");

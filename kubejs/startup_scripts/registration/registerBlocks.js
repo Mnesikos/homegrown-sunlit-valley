@@ -279,6 +279,26 @@ StartupEvents.registry("block", (e) => {
     })
     .displayName("London Beer");
 
+  e.create("society:beer_attunecore", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .defaultCutout()
+    .model("society:block/drinks/beer_attunecore")
+    .item((item) => {
+    item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/beer_attunecore",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.fastToEat(true);
+        food.effect("trials:oozing", 1200, 1, 1.0);
+      });
+      item.useAnimation("drink");
+    })
+    .displayName("Attunecore Beer");
+
   e.create("society:ancient_vespertine", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")

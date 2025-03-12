@@ -12,7 +12,7 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_attributes:player.healing",
+          "attribute": "puffish_attributes:healing",
           "value": 0.05,
           "operation": "multiply_total"
         }
@@ -32,7 +32,7 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "puffish_skills:player.stamina",
+          "attribute": "puffish_skills:stamina",
           "value": 0.05,
           "operation": "multiply_total"
         }

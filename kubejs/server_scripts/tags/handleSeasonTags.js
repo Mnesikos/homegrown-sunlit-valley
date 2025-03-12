@@ -315,6 +315,8 @@ const allSeasonCrops = [
   "atmospheric:currant_stalk",
   "atmospheric:hanging_currant",
   "atmospheric:currant_seedling",
+  "minecraft:chorus_flower",
+  "minecraft:chorus_fruit",
 ];
 
 ServerEvents.tags("item", (e) => {

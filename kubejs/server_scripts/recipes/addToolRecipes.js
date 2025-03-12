@@ -10,13 +10,13 @@ ServerEvents.recipes((e) => {
       if (type !== "watering_can") {
         e.smithing(
           `${modId}:stone_${type}`,
-          `numismatics:cog`,
+          "numismatics:cog",
           `${modId}:wooden_${type}`,
           "minecraft:cobblestone"
         );
         e.smithing(
           `${modId}:iron_${type}`,
-          `society:iron_upgrade_smithing_template`,
+          "society:iron_upgrade_smithing_template",
           `${modId}:stone_${type}`,
           "minecraft:iron_ingot"
         );
@@ -24,13 +24,13 @@ ServerEvents.recipes((e) => {
     } else {
       e.smithing(
         `${modId}:chainmail_${type}`,
-        `society:iron_upgrade_smithing_template`,
+        "society:iron_upgrade_smithing_template",
         `${modId}:leather_${type}`,
         "minecraft:chain"
       );
       e.smithing(
         `${modId}:iron_${type}`,
-        `society:iron_upgrade_smithing_template`,
+        "society:iron_upgrade_smithing_template",
         `${modId}:chainmail_${type}`,
         "minecraft:iron_ingot"
       );
@@ -50,24 +50,23 @@ ServerEvents.recipes((e) => {
     if (modId !== "aquaculture") {
       e.smithing(
         `${modId}:netherite_${type}`,
-        `minecraft:netherite_upgrade_smithing_template`,
+        "minecraft:netherite_upgrade_smithing_template",
         `${modId}:diamond_${type}`,
         "minecraft:netherite_ingot"
       );
     }
   };
   e.smithing(
-    `society:galaxy_sword`,
-    `minecraft:netherite_upgrade_smithing_template`,
-    `minecraft:netherite_sword`,
+    "society:galaxy_sword",
+    "minecraft:netherite_upgrade_smithing_template",
+    "minecraft:netherite_sword",
     "society:prismatic_shard"
   );
-  
-  
+
   const manasteelUpgrades = (type) => {
     e.smithing(
       `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
-      `society:botanical_tribute`,
+      "society:botanical_tribute",
       `minecraft:golden_${type}`,
       "botania:manasteel_ingot"
     );
@@ -75,13 +74,13 @@ ServerEvents.recipes((e) => {
   const elementiumUpgrades = (type) => {
     e.smithing(
       `botania:elementium_${type}`,
-      `society:botanical_tribute`,
+      "society:botanical_tribute",
       `botania:manasteel_${type === "pickaxe" ? "pick" : type}`,
       "botania:elementium_ingot"
     );
   };
   e.smithing(
-    'botania:glass_pickaxe',
+    "botania:glass_pickaxe",
     "society:botanical_tribute",
     "botania:manasteel_pick",
     "botania:mana_glass"
@@ -166,7 +165,7 @@ ServerEvents.recipes((e) => {
       e.smithing(
         `farmersdelight:${tier === "gold" ? "golden" : tier}_knife`,
         tier === "netherite"
-          ? `minecraft:netherite_upgrade_smithing_template`
+          ? "minecraft:netherite_upgrade_smithing_template"
           : `society:${tier}_upgrade_smithing_template`,
         `farmersdelight:${
           tier === "diamond" ? "golden" : knifeTiers[index - 1]
@@ -181,7 +180,7 @@ ServerEvents.recipes((e) => {
       e.smithing(
         `aquaculture:${tier}_fishing_rod`,
         tier === "netherite"
-          ? `minecraft:netherite_upgrade_smithing_template`
+          ? "minecraft:netherite_upgrade_smithing_template"
           : `society:${tier}_upgrade_smithing_template`,
         tier === "iron"
           ? "minecraft:fishing_rod"
@@ -224,7 +223,7 @@ ServerEvents.recipes((e) => {
   const upgradeWool = (type, mappedType) => {
     e.smithing(
       `minecraft:chainmail_${mappedType}`,
-      `society:iron_upgrade_smithing_template`,
+      "society:iron_upgrade_smithing_template",
       `sewingkit:wool_${type}`,
       "minecraft:chain"
     );
@@ -238,15 +237,15 @@ ServerEvents.recipes((e) => {
     upgradeWool(entry.wool, entry.upgrade);
   });
   e.smithing(
-    `society:dragontooth_axe`,
-    `minecraft:netherite_upgrade_smithing_template`,
+    "society:dragontooth_axe",
+    "minecraft:netherite_upgrade_smithing_template",
     "minecraft:diamond_axe",
-    "quark:dragon_scale"
+    "society:prismatic_shard"
   );
   // Watering Cans
   e.smithing(
     "dew_drop_watering_cans:iron_watering_can",
-    `society:iron_upgrade_smithing_template`,
+    "society:iron_upgrade_smithing_template",
     "dew_drop_watering_cans:copper_watering_can",
     "minecraft:iron_ingot"
   );

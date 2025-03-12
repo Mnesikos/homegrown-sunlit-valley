@@ -121,6 +121,7 @@ global.ancientCaskRecipes = [];
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 20 },
   { item: "society:dewy_star", name: "Dewy Star", time: 20 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 20 },
+  { item: "society:beer_attunecore", name: "Attunecore Beer", time: 13 },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
   global.ancientCaskRecipes.push({

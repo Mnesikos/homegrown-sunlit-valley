@@ -333,6 +333,8 @@ ItemEvents.tooltip((tooltip) => {
     "etcetera:handbell",
     Text.gray("Calls non-sitting pets and allays to you when rung")
   );
+  tooltip.add("farm_and_charm:pitchfork", Text.gray("Turns Fertilized Farmland into Dirt"))
+  tooltip.add("farm_and_charm:pitchfork", Text.green("50% chance to recover Fertilizer"))
   tooltip.add(
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
     Text.gray("Dries grains placed inside")

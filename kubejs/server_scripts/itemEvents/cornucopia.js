@@ -31,7 +31,6 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   player.addItemCooldown(item, 40);
-  player.damageHeldItem("main_hand", 1);
   let scannedBlock;
   let fruitDrop;
   let fruitType;
