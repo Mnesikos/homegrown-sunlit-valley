@@ -53,73 +53,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7CDF684F4FBDD1EB"
+				id: "6E67A8406FEEE79B"
 				item: {
 					Count: 1
-					id: "itemfilters:or"
+					id: "itemfilters:tag"
 					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "botania_seeds:black_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:red_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:green_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:brown_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:blue_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:purple_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:cyan_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:gray_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:pink_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:lime_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:yellow_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:light_blue_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:magenta_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:orange_mystical_flower_seed"
-							}
-							{
-								Count: 1b
-								id: "botania_seeds:white_mystical_flower_seed"
-							}
-						]
+						value: "society:botania_seeds"
 					}
 				}
 				title: "Any Mystical Flower Seed"
@@ -166,6 +105,11 @@
 		}
 		{
 			dependencies: ["5797BBD7788369E3"]
+			description: [
+				"There are certain fruits native to Alfheim that the elves will be willing to trade for."
+				""
+				"In return they require their overworldian counterparts."
+			]
 			icon: "vintagedelight:gearo_berry"
 			id: "42DA09B2A18E2ED1"
 			rewards: [{
@@ -323,8 +267,8 @@
 				type: "item"
 			}]
 			title: "Terrasteel Armor"
-			x: 14.0d
-			y: -1.5d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["46F86152B5B36A3B"]
@@ -378,7 +322,7 @@
 				type: "item"
 			}]
 			title: "Terra Tools"
-			x: 14.0d
+			x: 14.5d
 			y: 1.5d
 		}
 		{
@@ -748,11 +692,65 @@
 						value: "botania:functional_special_flowers"
 					}
 				}
-				title: "Any #botania:functional_special_flowers"
+				title: "Any Functional Flower"
 				type: "item"
 			}]
 			title: "Functional Flora"
-			x: 10.5d
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["46F86152B5B36A3B"]
+			description: [
+				"Keeping up with milking farm animals can be time consuming with all your other farming chores. The &6Mana Milker&r does this for you by gently milking farm animals using &bMana&r recieved from a Mana Spreader."
+				""
+				"Unlike Deployers, farm animals don't mind being milked by this, but they won't recieve affection from being milked like usual."
+			]
+			id: "18EDA9E2559C26E1"
+			rewards: [{
+				id: "6C28E320E6433D57"
+				item: "meadow:water_buffalo_spawn_egg"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B4DFFCF3C1F7C60"
+				item: "society:mana_milker"
+				type: "item"
+			}]
+			title: "Mana Milking"
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33B78DFDDC041570"]
+			description: [
+				"While the Cropnolia may be a good start for generating mana, it's far from the fastest."
+				""
+				"&6Generating Flora&r are classified as flowers that are able to synthesize mana. As you progress, look to utilize the different types to upgrade your mana generating capacity."
+				""
+				"The &6Lexica Botania&r will have information on all the different types."
+			]
+			icon: "botania:kekimurus"
+			id: "27437A0F629AF989"
+			rewards: [{
+				id: "3128A34A75484777"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6469A390C683349B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:generating_special_flowers"
+					}
+				}
+				title: "Any #botania:generating_special_flowers"
+				type: "item"
+			}]
+			title: "Generating Flora"
+			x: 6.0d
 			y: 1.5d
 		}
 	]

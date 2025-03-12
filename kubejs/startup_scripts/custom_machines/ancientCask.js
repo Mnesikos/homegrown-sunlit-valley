@@ -43,7 +43,7 @@ global.ancientCaskRecipes = [];
   { item: "vinery:jo_special_mixture", name: "Jo's Special Mixture", time: 20 },
   { item: "society:nutty_basil", name: "Nutty Basil", time: 20 },
   { item: "vintagedelight:century_egg", name: "Century Egg", time: 20 },
-  { item: "iwannaskate:energy_drink", name: "Energy Drink", time: 14 },
+  { item: "society:energy_drink", name: "Energy Drink", time: 14 },
   { item: "society:espresso", name: "Espresso", time: 12 },
   { item: "society:starcardi", name: "Starcardi", time: 14 },
   { item: "society:star_coquito", name: "Star Coquito", time: 20 },
@@ -121,6 +121,7 @@ global.ancientCaskRecipes = [];
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 20 },
   { item: "society:dewy_star", name: "Dewy Star", time: 20 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 20 },
+  { item: "society:beer_attunecore", name: "Attunecore Beer", time: 13 },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");
   global.ancientCaskRecipes.push({

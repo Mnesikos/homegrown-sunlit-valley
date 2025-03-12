@@ -19,6 +19,7 @@ const generateSprinkler = (e, tier, radius) => {
     .box(2, 0, 2, 14, 16, 14)
     .item((item) => {
       item.tooltip(Text.gray("Keeps surrounding farmland moist"));
+      item.tooltip(Text.gray("Can be given a stick for decoration"));
       item.tooltip(Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`));
       item.modelJson({
         parent: `society:block/${tier}_sprinkler`,
@@ -26,9 +27,9 @@ const generateSprinkler = (e, tier, radius) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand } = click;
-
+      const stickLogged = block.properties.get("sticklogged").toLowerCase() === "true"
       if (hand == "OFF_HAND") return;
-      if (hand == "MAIN_HAND" && item == "minecraft:stick") {
+      if (hand == "MAIN_HAND" && item == "minecraft:stick" && !stickLogged) {
         if (!player.isCreative()) item.count--;
         block.set(block.id, {
           sticklogged: true,
@@ -36,7 +37,7 @@ const generateSprinkler = (e, tier, radius) => {
       } else if (
         player.isCrouching() &&
         item === "minecraft:air" &&
-        block.properties.get("sticklogged").toLowerCase() === "true"
+        stickLogged
       ) {
         player.give(Item.of("minecraft:stick"));
         block.set(block.id, {

@@ -2825,7 +2825,6 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "farm_and_charm:pitchfork", count: 1 },
           { item: "farmersdelight:iron_knife", count: 1 },
         ],
       },
@@ -2833,7 +2832,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:raw_iron", count: 48 },
-          { item: "candlelight:plate", count: 64 },
+          { item: "farm_and_charm:pitchfork", count: 1 },
         ],
       },
       {

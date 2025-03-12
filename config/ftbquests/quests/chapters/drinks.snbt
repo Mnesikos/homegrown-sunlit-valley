@@ -668,8 +668,8 @@
 				item: "society:beer_london"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -2.5d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			id: "29C3F528FEC4D0C7"
@@ -680,7 +680,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "7B08E22C0E8DE900"
@@ -691,7 +691,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "20F2517A081999C2"
@@ -702,7 +702,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "4041362E384D0744"
@@ -713,7 +713,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "381A3B258ACE31FD"
@@ -724,7 +724,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "597C843B42219362"
@@ -735,7 +735,7 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "6742B0BA3DD56AE8"
@@ -746,7 +746,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "6327893DC34214E6"
@@ -757,7 +757,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			id: "6A5A513E8C0455AF"
@@ -768,7 +768,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			id: "580FA272625D0922"
@@ -779,7 +779,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			id: "56D3FE2A55620FFA"
@@ -1025,6 +1025,7 @@
 				"6327893DC34214E6"
 				"3FF6591FC54809B1"
 				"5D6623B36EC39685"
+				"3820DA7C3314E0AD"
 			]
 			hide_dependency_lines: true
 			icon: "brewery:netherite_brewingstation"
@@ -1177,7 +1178,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			id: "5D95CBE19118EAD4"
@@ -1205,6 +1206,16 @@
 			}]
 			x: -13.0d
 			y: 3.0d
+		}
+		{
+			id: "3820DA7C3314E0AD"
+			tasks: [{
+				id: "221FC963177CC334"
+				item: "society:beer_attunecore"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.5d
 		}
 	]
 	title: "Brews"

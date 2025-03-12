@@ -6,6 +6,28 @@ StartupEvents.registry("item", (e) => {
     .maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
+  const tiers = [
+    "Stone, Leather, Chainmail, and Cotton",
+    "Iron",
+    "Gold",
+    "Diamond",
+    "Neptunium",
+  ];
+  tiers.forEach((tier, index) => {
+    console.log(`society:item/smithing/${tier.toLowerCase()}`);
+    if (index > 0) {
+      e.create(`society:${tier.toLowerCase()}_upgrade_smithing_template`)
+        .texture(`society:item/smithing/${tier.toLowerCase()}`)
+        .displayName("Smithing Template")
+        .tooltip(Text.blue("Ingredients:"))
+        .tooltip(Text.gray(`${tier} Upgrade`))
+        .tooltip(Text.of(" "))
+        .tooltip(Text.gray("Applies to:"))
+        .tooltip(Text.blue(`${tiers[index - 1]} Equipment`))
+        .tooltip(Text.gray("Ingredients:"))
+        .tooltip(Text.blue(`${tier} Ingot`));
+    }
+  });
 
   e.create("society:tanuki_leaf")
     .texture("society:item/tanuki_leaf")
@@ -19,7 +41,9 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:broken_clock").texture("society:item/broken_clock");
-  e.create("society:sea_biscut").texture("society:item/sea_biscut");
+  e.create("society:sea_biscut")
+    .texture("society:item/sea_biscut")
+    .displayName("Sea Biscuit");
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
   e.create("society:ancient_cog").texture("society:item/ancient_cog");
@@ -73,6 +97,22 @@ StartupEvents.registry("item", (e) => {
     .useAnimation("drink");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
   e.create("society:furniture_box").texture("society:item/furniture_box");
+  const fantasyBoxes = [
+    "nordic",
+    "dunmer",
+    "venthyr",
+    "bone",
+    "royal",
+    "necrolord",
+  ];
+  fantasyBoxes.forEach((theme) => {
+    e.create(`society:fantasy_box_${theme}`)
+      .texture(`society:item/fantasy_box_${theme}`)
+      .tooltip(Text.gray("Right click to open"))
+      .displayName(
+        `Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`
+      );
+  });
   e.create("society:pine_tar").texture("society:item/pine_tar");
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");
@@ -103,10 +143,9 @@ StartupEvents.registry("item", (e) => {
   e.create("society:canvas")
     .texture("society:item/canvas")
     .displayName("Artisan Canvas");
-  Color.DYE.forEach((color) =>{
-    e.create(`society:${color}_sheet`)
-    .texture(`society:item/sheets/${color}`)
-  })
+  Color.DYE.forEach((color) => {
+    e.create(`society:${color}_sheet`).texture(`society:item/sheets/${color}`);
+  });
   e.create("society:merino_wool").texture("society:item/merino_wool");
   e.create("society:enriched_bone_meal").texture(
     "society:item/enriched_bonemeal"
@@ -176,6 +215,14 @@ StartupEvents.registry("item", (e) => {
   });
 
   // Food
+  e.create("society:energy_drink")
+    .texture("society:item/drinks/energy_drink")
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("botania:emptiness", 4800, 0, 1.0);
+      food.effect("minecraft:speed", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
   e.create("herbalbrews:ground_coffee").texture("society:item/ground_coffee");
 
   e.create("herbalbrews:cinnamon_coffee")
@@ -272,7 +319,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/mayo/mayonnaise")
     .food((food) => {
       food.hunger(4);
-      food.saturation(2);
+      food.saturation(0.5);
       food.effect("minecraft:nausea", 600, 1, 1.0);
     })
     .useAnimation("drink");
@@ -280,8 +327,8 @@ StartupEvents.registry("item", (e) => {
   e.create("society:large_mayonnaise")
     .texture("society:item/mayo/large_mayonnaise")
     .food((food) => {
-      food.hunger(6);
-      food.saturation(2);
+      food.hunger(8);
+      food.saturation(0.5);
       food.effect("minecraft:nausea", 1200, 1, 1.0);
     })
     .useAnimation("drink");
@@ -308,15 +355,15 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/mayo/${egg}_mayonnaise`)
       .food((food) => {
         food.hunger(4);
-        food.saturation(2);
+        food.saturation(0.5);
         food.effect("minecraft:nausea", 600, 1, 1.0);
       });
     if (largeMayoEggs.includes(egg)) {
       e.create(`society:large_${egg}_mayonnaise`)
         .texture(`society:item/mayo/large_${egg}_mayonnaise`)
         .food((food) => {
-          food.hunger(6);
-          food.saturation(2);
+          food.hunger(8);
+          food.saturation(0.5);
           food.effect("minecraft:nausea", 1200, 1, 1.0);
         });
     }
@@ -396,19 +443,18 @@ StartupEvents.registry("item", (e) => {
         });
   });
   // Dehydrator outputs
-
   e.create(`society:raisins`)
     .texture(`society:item/raisins`)
     .food((food) => {
-      food.hunger(6);
-      food.saturation(1);
+      food.hunger(9);
+      food.saturation(0.5);
       food.fastToEat(true);
     });
   e.create(`society:nether_raisins`)
     .texture(`society:item/nether_raisins`)
     .food((food) => {
-      food.hunger(6);
-      food.saturation(1);
+      food.hunger(9);
+      food.saturation(0.5);
       food.fastToEat(true);
     });
   e.create(`society:dried_shimmering_mushrooms`).texture(
@@ -431,8 +477,8 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/dried_mushrooms`)
       .color(0, itemHex)
       .food((food) => {
-        food.hunger(6);
-        food.saturation(2);
+        food.hunger(9);
+        food.saturation(0.5);
         food.fastToEat(true);
       });
   });
@@ -473,8 +519,8 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/dried_fruit`)
       .color(0, itemHex)
       .food((food) => {
-        food.hunger(6);
-        food.saturation(2);
+        food.hunger(9);
+        food.saturation(0.5);
         food.fastToEat(true);
       });
   });
@@ -662,6 +708,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_amber_goby", hex: 0xfcae2a },
     { item: "unusualfishmod:raw_eyelash", hex: 0xdc66a0 },
   ];
+  // Smoked fish, roe, aged roe, and bait
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
@@ -695,8 +742,13 @@ StartupEvents.registry("item", (e) => {
       .color(0, roeHex)
       .food((food) => {
         food.hunger(5);
-        food.saturation(4);
+        food.saturation(2);
       });
+    e.create(`society:${fishId}_bait`)
+      .texture("society:item/fish_bait")
+      .color(0, roeHex)
+      .tag("crabbersdelight:crab_trap_bait")
+      .tooltip(Text.gray(`Catches fish in any season or location`));
   });
 
   // Pristine gems

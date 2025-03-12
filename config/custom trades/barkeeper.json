@@ -136,7 +136,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
+        "itemKey": "numismatics:crown",
         "amount": 1,
         "priceModifier": 0
       },
@@ -145,25 +145,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "beachparty:barkeeper_cheese_pizza_slice_for_cog"
-    },
-    {
-      "offer": {
-        "itemKey": "vintagedelight:meat_pizza_slice",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 2,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 8,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "beachparty:barkeeper_meat_pizza_slice_for_cog"
+      "UTID": "beachparty:barkeeper_cheese_pizza_slice_for_crown"
     },
     {
       "offer": {

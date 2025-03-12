@@ -1,11 +1,28 @@
 StartupEvents.registry("block", (e) => {
-  e.create("society:treated_log")
+  e
+    .create("society:treated_log")
     .soundType("wood")
+    .property(BlockProperties.AXIS)
+    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
     .hardness(1.0)
     .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/axe");
-
+    .requiresTool(false)
+    .tagBlock("minecraft:mineable/axe").blockstateJson = {
+    variants: {
+      "axis=x": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+        y: 90,
+      },
+      "axis=y": {
+        model: "society:block/treated_log",
+      },
+      "axis=z": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+      },
+    },
+  };
   // Ores
   e.create("society:earth_crystal")
     .box(2, 0, 2, 14, 8, 14)
@@ -46,6 +63,16 @@ StartupEvents.registry("block", (e) => {
         },
       });
     });
+
+  // e.create("society:boulder")
+  //   .defaultCutout()
+  //   .soundType("stone")
+  //   .hardness(4.5)
+  //   .resistance(9.0)
+  //   .requiresTool(true)
+  //   .tagBlock("minecraft:mineable/pickaxe")
+  //   .tagBlock("minecraft:needs_stone_tool")
+  //   .model("society:block/boulder");
 
   e.create("society:geode_node")
     .box(4, 0, 4, 12, 9, 12)
@@ -252,6 +279,26 @@ StartupEvents.registry("block", (e) => {
     })
     .displayName("London Beer");
 
+  e.create("society:beer_attunecore", "cardinal")
+    .box(2, 0, 2, 14, 14, 14)
+    .defaultCutout()
+    .model("society:block/drinks/beer_attunecore")
+    .item((item) => {
+    item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/drinks/beer_attunecore",
+        },
+      });
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.fastToEat(true);
+        food.effect("trials:oozing", 1200, 1, 1.0);
+      });
+      item.useAnimation("drink");
+    })
+    .displayName("Attunecore Beer");
+
   e.create("society:ancient_vespertine", "cardinal")
     .box(2, 0, 2, 14, 14, 14)
     .soundType("glass")
@@ -453,13 +500,14 @@ StartupEvents.registry("block", (e) => {
       .texture("east", `society:block/${type}_crate_side`)
       .texture("south", `society:block/${type}_crate_side`)
       .texture("west", `society:block/${type}_crate_side`)
+      .texture("particle", `society:block/${type}_crate_top`)
       .mapColor("grass")
       .soundType("wood")
       .hardness(1.0)
       .resistance(1.0)
-      .requiresTool(false)
-      .texture("particle", `society:block/${type}_crate_top`);
+      .requiresTool(false);
   };
+
   createCrate("blueberry");
   createCrate("eggplant");
   createCrate("ancient_fruit");
@@ -473,6 +521,32 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .texture("particle", "herbalbrews:block/green_tea_leaf1");
 
+  e
+    .create("society:sturdy_bamboo_block")
+    .tag("minecraft:logs")
+    .property(BlockProperties.AXIS)
+    .placementState((e) => e.set(BlockProperties.AXIS, e.clickedFace.axis))
+    .displayName("Sturdy Block of Bamboo")
+    .soundType("wood")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/axe").blockstateJson = {
+    variants: {
+      "axis=x": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+        y: 90,
+      },
+      "axis=y": {
+        model: "society:block/treated_log",
+      },
+      "axis=z": {
+        model: "society:block/treated_log_horizontal",
+        x: 90,
+      },
+    },
+  };
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)
@@ -497,5 +571,4 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .model("society:block/fantasy_catalog")
     .displayName(":axe: §eFantasy Catalog");
-
 });

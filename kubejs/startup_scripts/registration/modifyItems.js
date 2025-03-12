@@ -72,7 +72,7 @@ ItemEvents.modification((e) => {
   });
   const goldHammers = [
     "justhammers:gold_reinforced_impact_hammer",
-    "justhammers:gold_hammer", 
+    "justhammers:gold_hammer",
     "justhammers:gold_impact_hammer",
     "justhammers:gold_reinforced_hammer",
   ];
@@ -127,4 +127,5 @@ ItemEvents.modification((e) => {
     item.maxDamage *= 3;
     item.setArmorProtection(2.5);
   });
+  e.modify("twigs:twig", (item) => (item.burnTime = 20));
 });

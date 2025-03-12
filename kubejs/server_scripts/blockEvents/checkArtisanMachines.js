@@ -38,6 +38,7 @@ const idMap = new Map([
   ["society:aged_beer_barley", "Aged Barley Beer"],
   ["society:aged_beer_hops", "Aged Hops Beer"],
   ["society:aged_beer_london", "Aged London Beer"],
+  ["society:aged_beer_attunecore", "Aged Attunecore Beer"],
   ["society:aged_beer_haley", "Aged Haley Beer"],
   ["society:aged_beer_oat", "Aged Oat Beer"],
   ["society:aged_beer_wheat", "Aged Wheat Beer"],
@@ -252,6 +253,12 @@ const artisanMachines = [
     id: "society:fish_smoker",
     recipes: global.fishSmokerRecipes,
     stageCount: 2,
+    maxInput: 1,
+  },
+  {
+    id: "society:bait_maker",
+    recipes: global.baitMakerRecipes,
+    stageCount: 1,
     maxInput: 1,
   },
   {

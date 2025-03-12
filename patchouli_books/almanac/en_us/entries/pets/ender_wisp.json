@@ -5,7 +5,7 @@
     "pages": [
       {
         "type": "patchouli:text",
-        "text": "$(l)Possible Gifts:$()$(br)Ender Pearl Skateboard wheels"
+        "text": "$(l)Possible Gifts:$()$(br)Pika Ears hat"
       },
       {
         "type": "patchouli:entity",

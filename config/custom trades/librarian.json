@@ -83,7 +83,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 8,
+        "amount": 16,
         "priceModifier": 0
       },
       "tradeExp": 1,

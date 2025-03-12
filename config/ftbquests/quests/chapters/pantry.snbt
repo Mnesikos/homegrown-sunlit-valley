@@ -37,7 +37,7 @@
 				{
 					count: 32L
 					id: "541D9F35016F7E24"
-					item: "farm_and_charm:onion"
+					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
@@ -62,9 +62,8 @@
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
 			rewards: [{
-				count: 8
-				id: "3A1BFD224BB0A496"
-				item: "farm_and_charm:silo_wood"
+				id: "6E15114F2B2D8547"
+				item: "society:gold_sprinkler"
 				type: "item"
 			}]
 			tasks: [
@@ -102,7 +101,8 @@
 			icon: "supplementaries:present_orange"
 			id: "2074A4FFF17266DB"
 			rewards: [{
-				id: "59DF687FC87404D8"
+				count: 3
+				id: "3AF5A0C4AE27B4CB"
 				item: "society:preserves_jar"
 				type: "item"
 			}]
@@ -281,21 +281,21 @@
 			]
 			tasks: [
 				{
-					count: 8L
+					count: 4L
 					id: "074AB3D6775DBD8A"
 					item: "minecraft:honeycomb_block"
 					type: "item"
 				}
 				{
-					count: 8L
+					count: 4L
 					id: "69CD6F1CEAD1E8E0"
 					item: "vintagedelight:honey_mason_jar"
 					type: "item"
 				}
 				{
-					count: 8L
+					count: 4L
 					id: "1212B461350C471A"
-					item: { Count: 8, id: "buzzier_bees:bee_bottle" }
+					item: "buzzier_bees:bee_bottle"
 					type: "item"
 				}
 			]

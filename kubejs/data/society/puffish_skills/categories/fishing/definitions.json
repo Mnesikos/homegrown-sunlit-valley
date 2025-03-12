@@ -18,6 +18,25 @@
       }
     ]
   },
+  "respiration+1": {
+    "title": "+I Respiration",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "water_breathing"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:respiration",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
   "fly_fisher": {
     "title": "Fly Fisher",
     "description": "+1 fish when catching with fishing rod",

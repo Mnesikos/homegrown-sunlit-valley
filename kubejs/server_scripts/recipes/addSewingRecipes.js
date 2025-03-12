@@ -230,7 +230,6 @@ ServerEvents.recipes((e) => {
     "largehorns",
     "lilbow",
     "mohawk",
-    "nekoears",
     "paperbag",
     "partyhat",
     "pighead",
@@ -281,7 +280,6 @@ ServerEvents.recipes((e) => {
     "camerabeard",
     "carrotonstick",
     "cat_hat",
-    "chi_ears",
     "chickenonhead",
     "cuphead",
     "dimmahat",
@@ -306,7 +304,6 @@ ServerEvents.recipes((e) => {
     "icedragonskull",
     "jesterhat",
     "ladybug_on_head",
-    "longfoxears",
     "megamanhat",
     "mimic_head",
     "monkeyking",
@@ -314,7 +311,6 @@ ServerEvents.recipes((e) => {
     "moreeyes",
     "orange_hat",
     "penguinhat",
-    "pika_ears",
     "questbook",
     "redstache",
     "rock",
@@ -456,7 +452,6 @@ ServerEvents.recipes((e) => {
     "rgbushanka",
     "slime_cube_dnd",
     "stinkycheeseman",
-    "teddy_bear",
     "the_noisier",
     "thumbnail",
     "tomato_splats",
@@ -473,17 +468,5 @@ ServerEvents.recipes((e) => {
       8,
       hat
     );
-  });
-  createSewingRecipe("iwannaskate:energy_drink", "iwannaskate:spiked_skater_helmet", {
-    count: 1,
-    ingredient: { item: 'society:froggy_helm' },
-  });
-  createSewingRecipe("iwannaskate:energy_drink", "iwannaskate:skater_cap", {
-    count: 1,
-    ingredient: { item: 'iwannaskate:skateboard_wheels_emerald' },
-  });
-  createSewingRecipe("iwannaskate:energy_drink", "iwannaskate:beanie", {
-    count: 1,
-    ingredient: { item: "society:merino_wool" },
   });
 });

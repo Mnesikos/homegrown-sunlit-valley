@@ -165,8 +165,8 @@
 				item: "society:espresso_machine"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.5d
+			x: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0C7D8F89BCF645AA"]
@@ -187,8 +187,8 @@
 				type: "item"
 			}]
 			title: "Growing Crystals"
-			x: 4.5d
-			y: 3.5d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -284,7 +284,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -536,8 +536,8 @@
 				type: "item"
 			}]
 			title: "Smarter Selling"
-			x: 1.5d
-			y: 3.5d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
@@ -734,6 +734,60 @@
 			}]
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["0C7D8F89BCF645AA"]
+			description: [
+				"Manually harvesting from Worm Farms gets old fast. An &6Auto Worm Farm&r cultivates worms in an automatable way, with the added bonus of not needing any inputs!"
+				""
+				"It can be used to automate Crab Traps, provided you have an automated way to turn Worms into Crab Trap Bait."
+			]
+			id: "345432E72BD82727"
+			rewards: [
+				{
+					id: "6AD9F9C1ED7E3787"
+					item: "society:aquamarine"
+					type: "item"
+				}
+				{
+					id: "617E724CEDDF6AC0"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7E0948BD5FC9E764"
+				item: "society:auto_worm_farm"
+				type: "item"
+			}]
+			title: "Worm Parade"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"If you haven't been paying attention to your skills, you'll find that some of them directly map to certain enchantments!"
+				""
+				"The &6Enchanting Table&r will allow you to unlock the final level of enchantment for things like Fortune or Efficency, alongside enchantments that aren't included in the skill tree."
+				""
+				"The maximums of enchantments that are in the skill tree has been lowered!"
+			]
+			id: "6DF608316146EDC9"
+			rewards: [{
+				count: 16
+				id: "7A28CAAEE5FDA0F2"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "00B95ACB5C6F40E1"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanter"
+			x: 5.0d
+			y: -3.0d
 		}
 	]
 	title: "III - Advanced Farming"

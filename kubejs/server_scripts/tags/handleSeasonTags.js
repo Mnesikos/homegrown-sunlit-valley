@@ -214,6 +214,9 @@ const autumnCrops = [
   "pamhc2trees:pampawpaw",
   "pamhc2trees:pawpaw_sapling",
   "pamhc2trees:pawpawitem",
+  "pamhc2trees:hazelnut_sapling",
+  "pamhc2trees:pamhazelnut",
+  "pamhc2trees:hazelnutitem",
 ];
 const winterCrops = [
   "farm_and_charm:barley_crop",
@@ -312,6 +315,8 @@ const allSeasonCrops = [
   "atmospheric:currant_stalk",
   "atmospheric:hanging_currant",
   "atmospheric:currant_seedling",
+  "minecraft:chorus_flower",
+  "minecraft:chorus_fruit",
 ];
 
 ServerEvents.tags("item", (e) => {

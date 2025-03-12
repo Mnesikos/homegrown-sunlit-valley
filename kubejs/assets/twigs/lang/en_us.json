@@ -20,6 +20,13 @@
   "block.twigs.mossy_cobblestone_bricks": "Mossy Cobblestone Tiles",
   "block.twigs.mossy_cobblestone_brick_stairs": "Mossy Cobblestone Tile Stairs",
   "block.twigs.mossy_cobblestone_brick_slab": "Mossy Cobblestone Tiles Slab",
-  "block.twigs.mossy_cobblestone_brick_wall": "Mossy Cobblestone Tiles Wall"
+  "block.twigs.mossy_cobblestone_brick_wall": "Mossy Cobblestone Tiles Wall",
+
+  "block.twigs.paper_lantern": "Small Paper Lantern",
+  "block.twigs.allium_paper_lantern": "Small Paper Lantern",
+  "block.twigs.dandelion_paper_lantern": "Small Paper Lantern",
+  "block.twigs.crimson_roots_paper_lantern": "Small Paper Lantern",
+  "block.twigs.blue_orchid_paper_lantern": "Small Paper Lantern",
+  "block.twigs.torchflower_paper_lantern": "Small Paper Lantern"
 
 }

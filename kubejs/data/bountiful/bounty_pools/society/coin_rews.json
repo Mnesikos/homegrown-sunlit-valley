@@ -63,13 +63,73 @@
     },
     "coin_rew_furniture_rew": {
       "type": "item",
-      "content": "#society:loot_furniture",
+      "content": "society:furniture_box",
       "amount": {
         "min": 1,
         "max": 1
       },
       "unitWorth": 1024,
-      "weightMult": 0.14
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_nordic": {
+      "type": "item",
+      "content": "society:fantasy_box_nordic",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024,
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_dunmer": {
+      "type": "item",
+      "content": "society:fantasy_box_dunmer",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024,
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_venthyr": {
+      "type": "item",
+      "content": "society:fantasy_box_venthyr",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024,
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_bone": {
+      "type": "item",
+      "content": "society:fantasy_box_bone",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024,
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_royal": {
+      "type": "item",
+      "content": "society:fantasy_box_royal",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 4096,
+      "weightMult": 0.02
+    },
+    "coin_rew_fantasy_box_": {
+      "type": "item",
+      "content": "society:fantasy_box_necrolord",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 1024,
+      "weightMult": 0.02
     },
     "coin_rew_combat_quarterly": {
       "type": "minecraft:item",

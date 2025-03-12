@@ -5,13 +5,14 @@
   "trades": [
     {
       "offer": {
-        "itemKey": "meadow:alpine_salt",
-        "amount": 8,
-        "priceModifier": 0
+        "itemKey": "patchouli:guide_book",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{\"patchouli:book\":\"patchouli:almanac\"}"
       },
       "request": {
-        "itemKey": "numismatics:sprocket",
-        "amount": 2,
+        "itemKey": "numismatics:cog",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -19,25 +20,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "meadow:farmer_alpine_salt_for_sprocket"
-    },
-    {
-      "offer": {
-        "itemKey": "minecraft:sugar",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:bevel",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 4,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:farmer_sugar_for_bevel"
+      "UTID": "minecraft:farmer_guide_book_for_cog"
     },
     {
       "offer": {
@@ -131,14 +114,13 @@
     },
     {
       "offer": {
-        "itemKey": "patchouli:guide_book",
-        "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{\"patchouli:book\":\"patchouli:almanac\"}"
+        "itemKey": "meadow:alpine_salt",
+        "amount": 8,
+        "priceModifier": 0
       },
       "request": {
         "itemKey": "numismatics:cog",
-        "amount": 1,
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -146,7 +128,25 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:farmer_guide_book_for_cog"
+      "UTID": "meadow:farmer_alpine_salt_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:sugar",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 4,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:farmer_sugar_for_sprocket"
     },
     {
       "offer": {
@@ -222,6 +222,24 @@
     },
     {
       "offer": {
+        "itemKey": "farm_and_charm:pitchfork",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 18,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:farmer_pitchfork_for_sun"
+    },
+    {
+      "offer": {
         "itemKey": "society:dehydrator",
         "amount": 1,
         "priceModifier": 0
@@ -255,24 +273,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:farmer_liltractor_for_sun"
-    },
-    {
-      "offer": {
-        "itemKey": "society:cornucopia",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 4,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:farmer_guide_book_for_cog"
     },
     {
       "offer": {

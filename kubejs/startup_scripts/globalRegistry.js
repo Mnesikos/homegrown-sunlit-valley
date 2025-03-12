@@ -1,4 +1,4 @@
-// priority: 0
+// priority: -20
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
     for (let z = 0; z <= 5; z++) {
@@ -364,6 +364,8 @@ global.crops = [
   { item: "verdantvibes:bracket_mushroom", value: 32 },
   { item: "species:alphacene_mushroom", value: 32 },
   { item: "minecraft:bamboo_block", value: 9 },
+  { item: "society:sturdy_bamboo_block", value: 81 },
+  { item: "twigs:bamboo_thatch", value: 3 },
   { item: "minecraft:cactus", value: 12 },
   { item: "quark:cactus_block", value: 108 },
   { item: "moreminecarts:glass_spines", value: 16 },
@@ -716,36 +718,69 @@ global.herbalBrews = [
 // Logs
 global.logs = [
   { item: "minecraft:oak_log", value: 2 },
+  { item: "minecraft:stripped_oak_log", value: 2 },
   { item: "minecraft:spruce_log", value: 2 },
+  { item: "minecraft:stripped_spruce_log", value: 2 },
   { item: "minecraft:birch_log", value: 2 },
+  { item: "minecraft:stripped_birch_log", value: 2 },
   { item: "minecraft:jungle_log", value: 2 },
+  { item: "minecraft:stripped_jungle_log", value: 2 },
   { item: "minecraft:dark_oak_log", value: 2 },
+  { item: "minecraft:stripped_dark_oak_log", value: 2 },
   { item: "quark:blossom_log", value: 2 },
+  { item: "quark:stripped_blossom_log", value: 2 },
   { item: "beachparty:palm_log", value: 4 },
+  { item: "beachparty:stripped_palm_log", value: 4 },
   { item: "meadow:pine_log", value: 3 },
+  { item: "meadow:stripped_pine_log", value: 3 },
   { item: "atmospheric:aspen_log", value: 3 },
+  { item: "atmospheric:stripped_aspen_log", value: 3 },
   { item: "atmospheric:watchful_aspen_log", value: 6 },
   { item: "atmospheric:crustose_log", value: 4 },
+  { item: "atmospheric:stripped_crustose_log", value: 4 },
   { item: "autumnity:maple_log", value: 2 },
+  { item: "autumnity:stripped_maple_log", value: 2 },
   { item: "atmospheric:kousa_log", value: 3 },
+  { item: "atmospheric:stripped_kousa_log", value: 3 },
   { item: "atmospheric:laurel_log", value: 3 },
+  { item: "atmospheric:stripped_laurel_log", value: 3 },
   { item: "atmospheric:yucca_log", value: 3 },
+  { item: "atmospheric:stripped_yucca_log", value: 3 },
   { item: "atmospheric:morado_log", value: 3 },
+  { item: "atmospheric:stripped_morado_log", value: 3 },
   { item: "atmospheric:rosewood_log", value: 3 },
+  { item: "atmospheric:stripped_rosewood_log", value: 3 },
   { item: "atmospheric:grimwood_log", value: 7 },
+  { item: "atmospheric:stripped_grimwood_log", value: 7 },
   { item: "botania:dreamwood_log", value: 32 },
+  { item: "botania:stripped_dreamwood_log", value: 32 },
   { item: "botania:livingwood_log", value: 16 },
+  { item: "botania:stripped_livingwood_log", value: 16 },
   { item: "vinery:dark_cherry_log", value: 3 },
+  { item: "vinery:stripped_dark_cherry_log", value: 3 },
   { item: "vinery:apple_log", value: 3 },
   { item: "minecraft:acacia_log", value: 3 },
+  { item: "minecraft:stripped_acacia_log", value: 3 },
   { item: "minecraft:mangrove_log", value: 4 },
+  { item: "minecraft:stripped_mangrove_log", value: 4 },
   { item: "minecraft:cherry_log", value: 4 },
+  { item: "minecraft:stripped_cherry_log", value: 4 },
   { item: "quark:azalea_log", value: 4 },
+  { item: "quark:stripped_azalea_log", value: 4 },
   { item: "quark:ancient_log", value: 8 },
+  { item: "quark:stripped_ancient_log", value: 8 },
   { item: "betterarcheology:rotten_log", value: 12 },
   { item: "minecraft:warped_stem", value: 16 },
+  { item: "minecraft:stripped_warped_stem", value: 16 },
   { item: "minecraft:crimson_stem", value: 16 },
+  { item: "minecraft:stripped_crimson_stem", value: 16 },
   { item: "vintagedelight:magic_vine", value: 16 },
+  { item: "vintagedelight:stripped_magic_vine", value: 16 },
+  // Log byproducts
+  { item: "farmersdelight:tree_bark", value: 2 },
+  { item: "farmersdelight:straw", value: 3 },
+  { item: "farmersdelight:straw_bale", value: 27 },
+  { item: "farmersdelight:canvas", value: 12 },
 ];
 
 /**
@@ -815,6 +850,7 @@ const brewingStationRecipes = [
   { item: "brewery:beer_oat", value: 76 },
   { item: "brewery:beer_haley", value: 49 },
   { item: "society:beer_london", value: 300 },
+  { item: "society:beer_attunecore", value: 106 },
   { item: "brewery:whiskey_carrasconlabel", value: 115 },
   { item: "brewery:whiskey_maggoallan", value: 142 },
   { item: "brewery:whiskey_jamesons_malt", value: 72 },
@@ -847,7 +883,7 @@ global.brews.forEach((brew) => {
 });
 const miscAged = [
   { item: "vintagedelight:century_egg", value: 192 * 3 },
-  { item: "iwannaskate:energy_drink", value: 566 },
+  { item: "society:energy_drink", value: 566 },
   { item: "society:espresso", value: 128 },
 ];
 
@@ -908,6 +944,7 @@ const craftingTableRecipes = [
   { item: "crabbersdelight:kelp_shake", value: 8 },
   { item: "crabbersdelight:sea_pickle_juice", value: 8 },
   { item: "create:chocolate_glazed_berries", value: 34 },
+  { item: "create:bar_of_chocolate", value: 30 },
   { item: "create:sweet_roll", value: 64 },
   { item: "create:builders_tea", value: 352 },
   { item: "create:honeyed_apple", value: 32 },
@@ -974,6 +1011,7 @@ const craftingTableRecipes = [
   { item: "vintagedelight:honey_roasted_peanut", value: 40 },
   { item: "vintagedelight:magic_peanut", value: 1000 },
   { item: "society:tubasmoke_stick", value: 197 },
+  { item: "society:tubasmoke_carton", value: 1773 },
   { item: "vintagedelight:fruity_granola_bar", value: 24 },
   { item: "vintagedelight:deluxe_granola_bar", value: 42 },
   { item: "vintagedelight:chocolate_nut_granola_bar", value: 41 },
@@ -983,7 +1021,7 @@ const craftingTableRecipes = [
   { item: "vintagedelight:pb_j", value: 208 },
   { item: "vintagedelight:cucumber_salad", value: 270 },
   { item: "vintagedelight:oatmeal_cookie", value: 10 },
-  { item: "iwannaskate:energy_drink", value: 277 },
+  { item: "society:energy_drink", value: 277 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },
@@ -1141,6 +1179,7 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "farmersdelight:tomato_sauce", value: 52 },
   { item: "minecraft:beetroot_soup", value: 72 },
   { item: "farm_and_charm:strawberry_tea", value: 40 },
   { item: "farm_and_charm:nettle_tea", value: 52 },
@@ -1197,7 +1236,7 @@ const cookingPotRecipes = [
   { item: "bakery:glowberry_jam", value: 27 },
   { item: "farm_and_charm:simple_tomato_soup", value: 55 },
   { item: "bakery:sweetberry_jam", value: 5 },
-  { item: "bakery:chocolate_donut", value: 3144 },
+{ item: "bakery:chocolate_donut", value: 3144 },
   { item: "farmersdelight:vegetable_noodles", value: 136 },
   { item: "vintagedelight:pad_thai", value: 372 },
   { item: "farm_and_charm:potato_soup", value: 36 },

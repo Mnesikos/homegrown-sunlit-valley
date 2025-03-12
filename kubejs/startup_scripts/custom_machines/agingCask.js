@@ -44,7 +44,7 @@ global.ageableProductInputs = [
   { item: "vinery:jo_special_mixture", name: "Jo's Special Mixture", time: 10 },
   { item: "society:nutty_basil", name: "Nutty Basil", time: 10 },
   { item: "vintagedelight:century_egg", name: "Century Egg", time: 10 },
-  { item: "iwannaskate:energy_drink", name: "Energy Drink", time: 4 },
+  { item: "society:energy_drink", name: "Energy Drink", time: 4 },
   { item: "society:espresso", name: "Espresso", time: 2 },
   { item: "society:starcardi", name: "Starcardi", time: 4 },
   { item: "society:star_coquito", name: "Star Coquito", time: 10 },
@@ -122,6 +122,7 @@ global.ageableProductInputs = [
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 10 },
   { item: "society:dewy_star", name: "Dewy Star", time: 10 },
   { item: "society:ancient_cider", name: "Ancient Cider", time: 10 },
+  { item: "society:beer_attunecore", name: "Attunecore Beer", time: 3 },
 ];
 global.ageableProductInputs.forEach((product) => {
   const splitProduct = product.item.split(":");
