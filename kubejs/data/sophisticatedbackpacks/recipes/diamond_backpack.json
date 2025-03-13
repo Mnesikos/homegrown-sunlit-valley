@@ -14,7 +14,7 @@
       "item": "minecraft:diamond_block"
     },
     "c": {
-      "item": "numismatics:sun"
+      "item": "society:diamond_upgrade_smithing_template"
     }
   },
   "pattern": [

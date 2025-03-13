@@ -14,13 +14,13 @@
       "item": "minecraft:copper_block"
     },
     "c": {
-      "item": "numismatics:cog"
+      "item": "numismatics:crown"
     }
   },
   "pattern": [
     "cCc",
-    "cBc",
-    "ccc"
+    "CBC",
+    "CCC"
   ],
   "result": {
     "item": "sophisticatedbackpacks:copper_backpack"

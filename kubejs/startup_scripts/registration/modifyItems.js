@@ -127,5 +127,5 @@ ItemEvents.modification((e) => {
     item.maxDamage *= 3;
     item.setArmorProtection(2.5);
   });
-  e.modify("twigs:twig", (item) => (item.burnTime = 20));
+  e.modify("twigs:twig", (item) => (item.burnTime = 200));
 });

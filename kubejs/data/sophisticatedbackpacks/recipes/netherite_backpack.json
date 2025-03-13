@@ -13,9 +13,6 @@
     "D": {
       "item": "minecraft:netherite_ingot"
     },
-    "c": {
-      "item": "numismatics:sun"
-    },
     "s": {
       "item": "minecraft:netherite_upgrade_smithing_template"
     },
@@ -24,9 +21,9 @@
     }
   },
   "pattern": [
-    "cDc",
-    "pBp",
-    "csc"
+    "sDs",
+    "sBs",
+    "sps"
   ],
   "result": {
     "item": "sophisticatedbackpacks:netherite_backpack"

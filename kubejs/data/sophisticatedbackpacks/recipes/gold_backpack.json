@@ -13,17 +13,14 @@
     "G": {
       "item": "minecraft:gold_block"
     },
-    "g": {
-      "item": "minecraft:gold_ingot"
-    },
     "c": {
-      "item": "numismatics:sun"
+      "item": "society:gold_upgrade_smithing_template"
     }
   },
   "pattern": [
     "cGc",
-    "gBg",
-    "cgc"
+    "cBc",
+    "ccc"
   ],
   "result": {
     "item": "sophisticatedbackpacks:gold_backpack"
