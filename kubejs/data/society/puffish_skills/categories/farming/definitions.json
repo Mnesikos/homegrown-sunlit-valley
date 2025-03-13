@@ -13,7 +13,7 @@
         "data": {
           "attribute": "puffish_attributes:axe_speed",
           "value": 1,
-          "operation": "multiply_base"
+          "operation": "addition"
         }
       }
     ]
@@ -32,7 +32,7 @@
         "data": {
           "attribute": "puffish_attributes:shovel_speed",
           "value": 1,
-          "operation": "multiply_base"
+          "operation": "addition"
         }
       }
     ]

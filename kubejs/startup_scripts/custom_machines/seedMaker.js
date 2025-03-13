@@ -174,6 +174,10 @@ global.seedMakerRecipes = [
     input: "botania:lime_mystical_flower",
     output: ["6x botania_seeds:lime_mystical_flower_seed"],
   },
+  {
+    input: "farmersdelight:rice_panicle",
+    output: ["6x farmersdelight:rice"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

@@ -59,7 +59,35 @@ ServerEvents.tags("item", (e) => {
     e.removeAllTagsFrom(item);
   });
 });
-
+const rawLogs = [
+  "quark:blossom_log",
+  "quark:ancient_log",
+  "quark:azalea_log",
+  "minecraft:dark_oak_log",
+  "minecraft:mangrove_log",
+  "minecraft:spruce_log",
+  "minecraft:acacia_log",
+  "meadow:pine_log",
+  "minecraft:oak_log",
+  "minecraft:birch_log",
+  "minecraft:jungle_log",
+  "minecraft:cherry_log",
+  "betterarcheology:rotten_log",
+  "vinery:dark_cherry_log",
+  "beachparty:palm_log",
+  "vinery:apple_log",
+  "autumnity:maple_log",
+  "atmospheric:rosewood_log",
+  "atmospheric:morado_log",
+  "atmospheric:yucca_log",
+  "atmospheric:laurel_log",
+  "atmospheric:aspen_log",
+  "atmospheric:watchful_aspen_log",
+  "atmospheric:kousa_log",
+  "atmospheric:crustose_log",
+  "atmospheric:grimwood_log",
+  "vintagedelight:magic_vine",
+];
 ServerEvents.tags("item", (e) => {
   // Misc tags
   e.add("forge:crops", "society:ancient_fruit");
@@ -145,35 +173,6 @@ ServerEvents.tags("item", (e) => {
   ].forEach((egg) => {
     e.add("society:large_eggs", egg);
   });
-  const rawLogs = [
-    "quark:blossom_log",
-    "quark:ancient_log",
-    "quark:azalea_log",
-    "minecraft:dark_oak_log",
-    "minecraft:mangrove_log",
-    "minecraft:spruce_log",
-    "minecraft:acacia_log",
-    "meadow:pine_log",
-    "minecraft:oak_log",
-    "minecraft:birch_log",
-    "minecraft:jungle_log",
-    "minecraft:cherry_log",
-    "betterarcheology:rotten_log",
-    "vinery:dark_cherry_log",
-    "beachparty:palm_log",
-    "vinery:apple_log",
-    "autumnity:maple_log",
-    "atmospheric:rosewood_log",
-    "atmospheric:morado_log",
-    "atmospheric:yucca_log",
-    "atmospheric:laurel_log",
-    "atmospheric:aspen_log",
-    "atmospheric:watchful_aspen_log",
-    "atmospheric:kousa_log",
-    "atmospheric:crustose_log",
-    "atmospheric:grimwood_log",
-    "vintagedelight:magic_vine",
-  ];
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
@@ -410,25 +409,6 @@ ServerEvents.tags("block", (e) => {
     e.add("buildinggadgets2:deny", block);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
-  const rawLogs = [
-    "quark:blossom_log",
-    "quark:ancient_log",
-    "quark:azalea_log",
-    "minecraft:dark_oak_log",
-    "minecraft:mangrove_log",
-    "minecraft:spruce_log",
-    "minecraft:acacia_log",
-    "meadow:pine_log",
-    "minecraft:oak_log",
-    "minecraft:birch_log",
-    "minecraft:jungle_log",
-    "minecraft:cherry_log",
-    "betterarcheology:rotten_log",
-    "vinery:dark_cherry_log",
-    "beachparty:palm_log",
-    "vinery:apple_log",
-    "society:sturdy_bamboo_block"
-  ];
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
