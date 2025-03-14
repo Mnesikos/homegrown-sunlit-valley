@@ -1,6 +1,22 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:twigs:silt",
+    {
+      "type": "item",
+      "id": "twigs:silt_ball",
+      "amount": 4
+    },
+    "item:create_central_kitchen:tomato_sauce_bucket",
+    {
+      "type": "item",
+      "id": "twigs:bloodstone",
+      "amount": 64
+    },
+    "item:twigs:schist",
+    "item:atmospheric:currant_stalk_bundle",
+    "item:atmospheric:arid_sandstone",
+    "item:atmospheric:chiseled_ivory_travertine",
     "item:twigs:twig",
     {
       "type": "item",

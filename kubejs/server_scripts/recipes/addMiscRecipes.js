@@ -11,6 +11,12 @@ ServerEvents.recipes((e) => {
     tool: { tag: "forge:tools/knives" },
     result: [{ item: "herbalbrews:lavender_blossom", count: 2 }],
   });
+  e.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [{ item: "twigs:silt" }],
+    tool: { tag: "forge:tools/shovels" },
+    result: [{ item: "twigs:silt_ball", count: 4 }],
+  });
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
