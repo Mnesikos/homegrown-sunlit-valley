@@ -1,7 +1,6 @@
 console.info("[SOCIETY] addToolRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const shapeTemplate = ["cmc", "cTc", "ccc"];
   const toolTypes = ["pickaxe", "shovel", "hoe", "sword", "axe"];
   const armorTypes = ["helmet", "chestplate", "leggings", "boots"];
 
@@ -24,7 +23,7 @@ ServerEvents.recipes((e) => {
     } else {
       e.smithing(
         `${modId}:chainmail_${type}`,
-        "society:iron_upgrade_smithing_template",
+        "numismatics:cog",
         `${modId}:leather_${type}`,
         "minecraft:chain"
       );
@@ -133,31 +132,24 @@ ServerEvents.recipes((e) => {
   );
 
   // BA brush
-  e.shaped(`betterarcheology:iron_brush`, shapeTemplate, {
-    T: Item.of(`minecraft:brush`),
-    m: "minecraft:iron_ingot",
-    c: "numismatics:cog",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of(`minecraft:brush`));
-    return result.withNBT(item.nbt);
-  });
-  e.shaped(`betterarcheology:diamond_brush`, shapeTemplate, {
-    T: Item.of("betterarcheology:iron_brush"),
-    m: "minecraft:diamond",
-    c: "numismatics:crown",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of("betterarcheology:iron_brush"));
-    return result.withNBT(item.nbt);
-  });
-  e.shaped(`betterarcheology:netherite_brush`, ["cmc", "cTc", "csc"], {
-    T: Item.of(`betterarcheology:diamond_brush`),
-    m: "minecraft:netherite_ingot",
-    c: "numismatics:sun",
-    s: "minecraft:netherite_upgrade_smithing_template",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of(`betterarcheology:diamond_brush`));
-    return result.withNBT(item.nbt);
-  });
+  e.smithing(
+    "betterarcheology:iron_brush",
+    "society:iron_upgrade_smithing_template",
+    "minecraft:brush",
+    "minecraft:iron_ingot"
+  );
+  e.smithing(
+    "betterarcheology:diamond_brush",
+    "society:diamond_upgrade_smithing_template",
+    "betterarcheology:iron_brush",
+    "minecraft:diamond"
+  );
+  e.smithing(
+    "betterarcheology:netherite_brush",
+    "minecraft:netherite_upgrade_smithing_template",
+    "betterarcheology:diamond_brush",
+    "minecraft:netherite_ingot"
+  );
   // Knives
   const knifeTiers = ["flint", "iron", "gold", "diamond", "netherite"];
   knifeTiers.forEach((tier, index) => {
@@ -192,33 +184,24 @@ ServerEvents.recipes((e) => {
     }
   });
   // Misc
-  e.shaped("create:netherite_backtank", ["cmc", "cTc", "csc"], {
-    T: Item.of("create:copper_backtank"),
-    m: "minecraft:netherite_ingot",
-    c: "numismatics:sun",
-    s: "minecraft:netherite_chestplate",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of("create:copper_backtank"));
-    return result.withNBT(item.nbt);
-  });
-  e.shaped("create:netherite_diving_helmet", ["cmc", "cTc", "csc"], {
-    T: Item.of("create:copper_diving_helmet"),
-    m: "minecraft:netherite_ingot",
-    c: "numismatics:sun",
-    s: "minecraft:netherite_helmet",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of("create:copper_diving_helmet"));
-    return result.withNBT(item.nbt);
-  });
-  e.shaped("create:netherite_diving_boots", ["cmc", "cTc", "csc"], {
-    T: Item.of("create:copper_diving_boots"),
-    m: "minecraft:netherite_ingot",
-    c: "numismatics:sun",
-    s: "minecraft:netherite_boots",
-  }).modifyResult((grid, result) => {
-    let item = grid.find(Item.of("create:copper_diving_boots"));
-    return result.withNBT(item.nbt);
-  });
+  e.smithing(
+    "create:netherite_backtank",
+    "minecraft:netherite_upgrade_smithing_template",
+    "create:copper_backtank",
+    "minecraft:netherite_ingot"
+  );
+  e.smithing(
+    "create:netherite_diving_helmet",
+    "minecraft:netherite_upgrade_smithing_template",
+    "create:copper_diving_helmet",
+    "minecraft:netherite_ingot"
+  );
+  e.smithing(
+    "create:netherite_diving_boots",
+    "minecraft:netherite_upgrade_smithing_template",
+    "create:copper_diving_boots",
+    "minecraft:netherite_ingot"
+  );
   // Wool armor
   const upgradeWool = (type, mappedType) => {
     e.smithing(

@@ -14,7 +14,7 @@
       "item": "minecraft:iron_block"
     },
     "c": {
-      "item": "numismatics:crown"
+      "item": "society:iron_upgrade_smithing_template"
     }
   },
   "pattern": [

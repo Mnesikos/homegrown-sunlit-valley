@@ -1,6 +1,7 @@
 JEIEvents.hideItems((e) => {
   const hiddenItems = [
     // Twigs
+    "extractinator:silt",
     "botania:pebble",
     "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",

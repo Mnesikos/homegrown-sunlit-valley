@@ -1,8 +1,9 @@
 ^^^
 ## A Tuned Fish
-### v2.1.0
+### v2.1.1
 ^^^
 --- 
+## 2.1.0
 *Note - New Villager trades won't be updated on existing villagers. Minor mods removed.* 
 - Added Targeted Fish Bait - renewable way to get fish using Crab Traps
 - Added Bait Maker
@@ -73,3 +74,16 @@
 - Fixed Sea Biscut typo
 - Fixed Mana spreaders not working in claims
 - Fixed two recipes not using flour tags
+
+## 2.1.1
+- Added Rice Seed Maker recipe
+- Added Snow Pig Spawn egg recipe
+- Added Silt Ball Cutting Board recipe
+- Rebalanced Efficiency skills to have reduced efficacy, increased the efficiency cap to normal 
+- Reduced Smithing Template prices
+- Reduced Flint and Steel price
+- Removed inaccurate quests
+- Fixed some recipes not using Smithing Templates
+- Fixed Twig burn time
+- Fixed not all raw logs having block tags
+- Fixed Seed Maker quality bugs

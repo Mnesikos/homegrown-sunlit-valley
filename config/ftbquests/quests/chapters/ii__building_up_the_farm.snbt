@@ -1556,36 +1556,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["02327F6FDF987266"]
-			description: [
-				"While combat isn't a central focus of the pack, it can be difficult to survive in some of the more challenging areas."
-				""
-				"&6Spirit Orbs&r can be found from breaking mob spawners and other means, allowing you to increase your health at a &6Goddess Statue&r."
-			]
-			icon: "paraglider:heart_container"
-			id: "513EEECC2F343363"
-			rewards: [{
-				id: "7DBACF73225A99A0"
-				item: "paraglider:spirit_orb"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "23DAEA36D0142DEF"
-					item: "paraglider:spirit_orb"
-					type: "item"
-				}
-				{
-					id: "138F31B4816FEF80"
-					item: "paraglider:goddess_statue"
-					type: "item"
-				}
-			]
-			title: "Increasing Health"
-			x: 6.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["230E02067CBC21CF"]
 			description: [
 				"&6Preserve Jars&r turn fruits and vegetables into preserves in &64&r days, multiplying their selling value by over &63&r."

@@ -31,7 +31,7 @@
 		{
 			dependencies: ["3862A7D1A471A215"]
 			description: [
-				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template either crafted or purchased from a &6Blacksmith Villager&r"
+				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r"
 				""
 				"Tools can be repaired in an anvil infinitely, and enchantments also carry over when upgrading!"
 				""

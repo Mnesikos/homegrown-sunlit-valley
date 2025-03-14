@@ -32,7 +32,7 @@
         "data": {
           "attribute": "puffish_attributes:pickaxe_speed",
           "value": 1,
-          "operation": "multiply_base"
+          "operation": "addition"
         }
       }
     ]

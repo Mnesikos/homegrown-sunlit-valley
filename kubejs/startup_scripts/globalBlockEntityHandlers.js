@@ -85,6 +85,15 @@ const hasWoolTag = (tags) => {
   return found;
 };
 
+const setQuality = (newProperties, itemQuality) => {
+  if (
+    (Number(newProperties.quality) === 0 &&
+      Number(newProperties.stage) === 1) ||
+    Number(itemQuality) < Number(newProperties.quality)
+  )
+    newProperties.quality = itemQuality;
+};
+
 const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
   let itemCheck = item == recipe.input;
   if (hasTag && recipe.input.includes("#")) {
@@ -136,8 +145,7 @@ global.handleBERightClick = (
           block.popItemFromFace(
             Item.of(
               id.replace("1x ", `${outputMult} `),
-              hasQuality &&
-                `{quality_food:{effects:[],quality:${newProperties.quality}}}`
+              hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
             ),
             facing
           );
@@ -146,7 +154,7 @@ global.handleBERightClick = (
             Item.of(
               id,
               hasQuality
-                ? `{quality_food:{effects:[],quality:${newProperties.quality}}}`
+                ? `{quality_food:{quality:${newProperties.quality}}}`
                 : null
             ),
             facing
@@ -183,20 +191,11 @@ global.handleBERightClick = (
             if (!player.isCreative())
               item.count = item.count - (stageCount - Number(blockStage));
             newProperties.stage = stageCount.toString();
-            if (itemQuality) {
-              newProperties.quality = itemQuality;
-            }
+            if (itemQuality) setQuality(newProperties, itemQuality);
           } else {
             if (!player.isCreative()) item.count--;
             newProperties.stage = increaseStage(blockStage);
-            if (itemQuality) {
-              if (
-                (Number(newProperties.quality) === 0 &&
-                  Number(newProperties.stage) === 1) ||
-                Number(itemQuality) < Number(newProperties.quality)
-              )
-                newProperties.quality = itemQuality;
-            }
+            if (itemQuality) setQuality(newProperties, itemQuality);
           }
         } else {
           if (!player.isCreative()) item.count--;

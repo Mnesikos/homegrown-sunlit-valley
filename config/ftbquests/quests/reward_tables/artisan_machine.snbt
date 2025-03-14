@@ -5,15 +5,6 @@
 	rewards: [
 		{ item: "society:mayonnaise_machine" }
 		{ item: "society:loom" }
-		{
-			item: {
-				Count: 1
-				id: "society:magic_shears"
-				tag: {
-					Damage: 0
-				}
-			}
-		}
 		{ item: "society:feeding_trough" }
 	]
 	title: "Artisan Machine"
