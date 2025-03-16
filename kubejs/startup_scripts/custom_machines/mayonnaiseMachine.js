@@ -133,7 +133,7 @@ StartupEvents.registry("block", (event) => {
             Item.of(
               id,
               quality !== "0"
-                ? `{quality_food:{effects:[],quality:${quality}}}`
+                ? `{quality_food:{quality:${quality}}}`
                 : null
             ),
             facing

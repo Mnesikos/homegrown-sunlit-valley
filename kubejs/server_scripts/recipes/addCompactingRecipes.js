@@ -28,6 +28,7 @@ ServerEvents.recipes((e) => {
   compact("numismatics:ancient_coin", "numismatics:sun", 62);
   compact("numismatics:prismatic_coin", "numismatics:ancient_coin", 64);
 
+  compact("etcetera:bismuth_ingot", "etcetera:bismuth_nugget", 9);
   const milks = [
     "milk",
     "goat_milk",

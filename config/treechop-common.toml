@@ -76,7 +76,7 @@
 	algorithm = "LOGARITHMIC"
 	#How to round the number of chops needed to fell a tree; this is more meaningful for smaller trees
 	#Allowed Values: DOWN, NEAREST, UP
-	rounding = "NEAREST"
+	rounding = "UP"
 	#Felling a tree can require more chops than the number of blocks in the tree
 	canRequireMoreChopsThanBlocks = false
 

@@ -148,16 +148,24 @@ JEIAddedEvents.registerRecipes((e) => {
     e.custom("society:furniture_catalog").add(item);
   });
 });
-// JEI Catalysts broken on JEI version
-JEIAddedEvents.registerRecipeCatalysts((e) => {
-  let helper = e.data.getJeiHelpers();
-  let recipeType = helper.getRecipeType("vinery:manual_juicing");
-  e.data.addRecipeCatalyst(Item.of("vinery:grapevine_pot"), recipeType.get());
-  e.data.addRecipeCatalyst(
-    "society:enriched_bone_meal",
-    "society:enriched_bone_mealing"
-  );
-});
+// // JEI Catalysts broken on JEI version
+// JEIAddedEvents.registerRecipeCatalysts((e) => {
+//   let helper = e.data.getJeiHelpers();
+//   let recipeType = helper.getRecipeType("vinery:manual_juicing");
+//   e.data.addRecipeCatalyst(Item.of("vinery:grapevine_pot"), recipeType.get());
+//   e.data.addRecipeCatalyst(
+//     "nethervinery:crimson_grapevine_pot",
+//     recipeType.get()
+//   );
+//   e.data.addRecipeCatalyst(
+//     "nethervinery:warped_grapevine_pot",
+//     recipeType.get()
+//   );
+//   e.data.addRecipeCatalyst(
+//     "society:enriched_bone_meal",
+//     "society:enriched_bone_mealing"
+//   );
+// });
 
 JEIEvents.removeCategories((e) => {
   e.remove("waystones:warp_plate");

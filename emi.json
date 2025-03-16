@@ -1,6 +1,24 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:etcetera:bismuth_ingot",
+    {
+      "type": "item",
+      "id": "etcetera:bismuth_nugget",
+      "amount": 9
+    },
+    {
+      "type": "item",
+      "id": "botania:mana_string",
+      "amount": 5
+    },
+    "item:botania:manaweave_cloth",
+    "item:snowyspirit:gingerbread_cookie",
+    "item:snowyspirit:ginger",
+    "item:minecraft:fishing_rod{Damage:0}",
+    "item:vinery:grapevine_pot",
+    "item:everycomp:q/vinery/dark_cherry_ladder",
+    "item:everycomp:q/vinery/dark_cherry_leaf_carpet",
     "item:trading_floor:trading_depot",
     "item:tradingpost:trading_post",
     "item:stardew_fishing:trap_bobber{Damage:0}",
@@ -588,7 +606,6 @@
     "item:botania:elementium_sword{Damage:0}",
     "item:minecraft:netherite_pickaxe{Damage:0}",
     "item:botania:elementium_pickaxe{Damage:0}",
-    "item:botania:manaweave_cloth",
     "item:botania:manaweave_leggings{Damage:0}",
     "item:botania:manaweave_chestplate{Damage:0}",
     "item:botania:manasteel_hoe{Damage:0}",

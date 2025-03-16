@@ -113,7 +113,7 @@ LootJS.modifiers((e) => {
         p.matchEntity((entity) => {
           entity.anyType("minecraft:player");
         });
-        p.randomChance(0.02).addLoot("society:omni_geode");
+        p.randomChance(0.04).addLoot("society:omni_geode");
       });
     e.addBlockLootModifier(ore)
       .biome("#society:is_skull_cavern")
@@ -122,7 +122,7 @@ LootJS.modifiers((e) => {
         p.not((n) =>
           n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
         );
-        p.randomChance(0.02).addLoot("society:omni_geode");
+        p.randomChance(0.04).addLoot("society:omni_geode");
       });
     e.addBlockLootModifier(ore)
       .biome("#society:is_skull_cavern")
