@@ -29,6 +29,27 @@
           "weight": 12
         },
         {
+          "type": "stardew_fishing:optional",
+          "name": "quark:diamond_heart",
+          "entryName": "diamond_heart",
+          "weight": 3
+        },
+        {
+          "type": "stardew_fishing:optional",
+          "name": "aquaculture:neptunium_nugget",
+          "entryName": "neptunium_nugget",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
           "type": "item",
           "name": "numismatics:sun",
           "entryName": "sun",
@@ -39,6 +60,12 @@
           "name": "simplehats:hatbag_epic",
           "entryName": "hatbag_epic",
           "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sniffer_egg",
+          "entryName": "sniffer_egg",
+          "weight": 1
         },
         {
           "type": "item",

@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:fisherman",
   "removeOtherTrades": true,
-  "maxTrades": 32,
+  "maxTrades": 45,
   "trades": [
     {
       "offer": {
@@ -136,24 +136,6 @@
     },
     {
       "offer": {
-        "itemKey": "aquaculture:iron_hook",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 4,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_iron_hook_for_cog"
-    },
-    {
-      "offer": {
         "itemKey": "aquaculture:light_hook",
         "amount": 1,
         "priceModifier": 0
@@ -174,29 +156,6 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fisherman_light_hook_for_cog_and_sprocket"
-    },
-    {
-      "offer": {
-        "itemKey": "aquaculture:redstone_hook",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 5,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "numismatics:sprocket",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_redstone_hook_for_cog_and_sprocket"
     },
     {
       "offer": {
@@ -223,6 +182,29 @@
     },
     {
       "offer": {
+        "itemKey": "aquaculture:redstone_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_redstone_hook_for_cog_and_sprocket"
+    },
+    {
+      "offer": {
         "itemKey": "aquaculture:gold_hook",
         "amount": 1,
         "priceModifier": 0
@@ -241,13 +223,13 @@
     },
     {
       "offer": {
-        "itemKey": "aquaculture:double_hook",
+        "itemKey": "aquaculture:iron_hook",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 5,
+        "itemKey": "numismatics:sun",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -255,7 +237,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_double_hook_for_crown"
+      "UTID": "minecraft:fisherman_iron_hook_for_cog"
     },
     {
       "offer": {
@@ -264,8 +246,13 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 5,
+        "itemKey": "numismatics:sun",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "aquaculture:neptunium_ingot",
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -274,6 +261,119 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:fisherman_diamond_hook_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "stardew_fishing:trap_bobber",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_trap_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "stardew_fishing:cork_bobber",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_cork_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "stardew_fishing:sonar_bobber",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_sonar_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "stardew_fishing:treasure_bobber",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_treasure_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "stardew_fishing:quality_bobber",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "aquaculture:neptunium_ingot",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_quality_bobber_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "aquaculture:double_hook",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fisherman_double_hook_for_crown"
     },
     {
       "offer": {

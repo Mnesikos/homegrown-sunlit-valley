@@ -29,16 +29,46 @@
           "weight": 16
         },
         {
+          "type": "stardew_fishing:optional",
+          "name": "quark:diamond_heart",
+          "entryName": "diamond_heart",
+          "weight": 1
+        },
+        {
+          "type": "stardew_fishing:optional",
+          "name": "crabbersdelight:deluxe_crab_trap_bait",
+          "entryName": "deluxe_crab_trap_bait",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 17
+              }
+            }
+          ]
+        },
+        {
+          "type": "stardew_fishing:optional",
+          "name": "aquaculture:neptunium_nugget",
+          "entryName": "neptunium_nugget",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
           "type": "item",
           "name": "society:aquamarine",
           "entryName": "aquamarine",
           "weight": 16
-        },
-        {
-          "type": "item",
-          "name": "advancedbook:book",
-          "entryName": "book",
-          "weight": 14
         },
         {
           "type": "item",
@@ -51,6 +81,12 @@
           "name": "herbalbrews:tea_blossom",
           "entryName": "tea_plant",
           "weight": 16
+        },
+        {
+          "type": "item",
+          "name": "supplementaries:antique_ink",
+          "entryName": "antique_ink",
+          "weight": 7
         },
         {
           "type": "item",

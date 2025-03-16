@@ -1,6 +1,29 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:trading_floor:trading_depot",
+    "item:tradingpost:trading_post",
+    "item:stardew_fishing:trap_bobber{Damage:0}",
+    "item:stardew_fishing:cork_bobber{Damage:0}",
+    "item:stardew_fishing:sonar_bobber{Damage:0}",
+    "item:stardew_fishing:treasure_bobber{Damage:0}",
+    "item:stardew_fishing:quality_bobber{Damage:0}",
+    "item:aquaculture:bobber",
+    "item:aquaculture:redstone_hook",
+    "item:botania:cosmetic_puffy_scarf",
+    "item:aquaculture:light_hook",
+    "item:aquaculture:gold_hook",
+    "item:aquaculture:iron_hook",
+    "item:aquaculture:double_hook",
+    "item:aquaculture:nether_star_hook",
+    "item:aquaculture:note_hook",
+    "item:aquaculture:diamond_hook",
+    "item:aquaculture:message_in_a_bottle",
+    {
+      "type": "item",
+      "id": "twigs:twig",
+      "amount": 12
+    },
     "item:twigs:silt",
     {
       "type": "item",
@@ -17,7 +40,6 @@
     "item:atmospheric:currant_stalk_bundle",
     "item:atmospheric:arid_sandstone",
     "item:atmospheric:chiseled_ivory_travertine",
-    "item:twigs:twig",
     {
       "type": "item",
       "id": "minecraft:stick",
