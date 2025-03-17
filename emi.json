@@ -1,6 +1,12 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:large_milk",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 18
+    },
     "item:minecraft:ice",
     "item:society:aquamagical_dust",
     {
@@ -362,7 +368,6 @@
     "item:supplementaries:flax_seeds",
     "item:minecraft:wheat_seeds",
     "item:society:mana_milker",
-    "item:society:large_milk",
     {
       "type": "item",
       "id": "veggiesdelight:mature_dandelion",
