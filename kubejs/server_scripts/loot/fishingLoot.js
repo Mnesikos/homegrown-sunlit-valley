@@ -22,10 +22,12 @@ LootJS.modifiers((e) => {
 
   e.addLootTypeModifier(LootType.FISHING)
     .playerPredicate((p) =>
-      p
-        .getHeldItem("main_hand")
-        .nbt.Inventory.Items.toString()
-        .contains("aquaculture:iron_hook")
+      p.getHeldItem("main_hand").nbt.Inventory
+        ? p
+            .getHeldItem("main_hand")
+            .nbt.Inventory.Items.toString()
+            .contains("aquaculture:iron_hook")
+        : false
     )
     .pool((p) => {
       p.randomChance(0.5).addLoot("crabbersdelight:crab_trap_bait");
@@ -34,10 +36,12 @@ LootJS.modifiers((e) => {
 
   e.addLootTypeModifier(LootType.FISHING)
     .playerPredicate((p) =>
-      p
-        .getHeldItem("main_hand")
-        .nbt.Inventory.Items.toString()
-        .contains("aquaculture:diamond_hook")
+      p.getHeldItem("main_hand").nbt.Inventory
+        ? p
+            .getHeldItem("main_hand")
+            .nbt.Inventory.Items.toString()
+            .contains("aquaculture:diamond_hook")
+        : false
     )
     .pool((p) => {
       console.log(p);

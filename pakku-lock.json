@@ -10489,28 +10489,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "waterframes-FORGE-mc1.20.1-v2.1.11.jar",
+                    "file_name": "waterframes-FORGE-mc1.20.1-v2.1.12.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6111/834/waterframes-FORGE-mc1.20.1-v2.1.11.jar",
-                    "id": "6111834",
+                    "url": "https://edge.forgecdn.net/files/6311/267/waterframes-FORGE-mc1.20.1-v2.1.12.jar",
+                    "id": "6311267",
                     "parent_id": "834607",
                     "hashes": {
-                        "sha1": "274ec46df2a9bfea2053cec3d1e18d9fdffb8f2d",
-                        "md5": "5a70324b1ad5608a5126d5fbf16de755"
+                        "sha1": "bdfaef3cc6443fa210e1d3bcc4f0ceafef01b54d",
+                        "md5": "f0d3459c24758fd61bf165c1dc2ffc94"
                     },
                     "required_dependencies": [
-                        "869524",
-                        "257814"
+                        "257814",
+                        "869524"
                     ],
-                    "size": 229358,
-                    "date_published": "2025-01-22T01:36:07.363Z"
+                    "size": 228229,
+                    "date_published": "2025-03-16T11:48:36.373Z"
                 }
             ]
         },
@@ -10530,7 +10529,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "watermedia-2.1.16.jar",
+                    "file_name": "watermedia-2.1.22.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10540,16 +10539,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6115/384/watermedia-2.1.16.jar",
-                    "id": "6115384",
+                    "url": "https://edge.forgecdn.net/files/6310/835/watermedia-2.1.22.jar",
+                    "id": "6310835",
                     "parent_id": "869524",
                     "hashes": {
-                        "sha1": "84ef5cc031c2047fc55212b51c9d16bb763bb4b5",
-                        "md5": "ef47093c6b20dec4738dd19506704d9c"
+                        "sha1": "043cd2e7c7154a8ab3793788ca8f821e1211921a",
+                        "md5": "c0d2f7ec54baca365980a1299e4ac36e"
                     },
                     "required_dependencies": [],
-                    "size": 37840085,
-                    "date_published": "2025-01-23T03:12:41.917Z"
+                    "size": 37850594,
+                    "date_published": "2025-03-16T08:46:06.080Z"
                 }
             ]
         },

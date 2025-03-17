@@ -1,8 +1,9 @@
 ^^^
 ## A Chopped Fish
-### v2.2.0
+### v2.2.1
 ^^^
 --- 
+### 2.2.0
 - Added Bobbers for Stardew Fishing minigame and Treasure Chests
 - Added Crabber's Hook and Deluxe Crabber's Hook (Replaces useless Iron/Diamond Hooks)
 - Added tree chopping/felling mechanics
@@ -20,3 +21,8 @@
 - Fixed Mayonnaise from Rancher skill not stacking
 - Fixed some crops being bonemealable
 - Fixed getting snowballs from salt
+
+
+### 2.2.1
+- Fixed basic Fishing Rods not working
+- Fixed watermedia/waterframes using archived versions of mods
