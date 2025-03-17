@@ -1,6 +1,8 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:ice",
+    "item:society:aquamagical_dust",
     {
       "type": "item",
       "id": "botania:mana_string",

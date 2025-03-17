@@ -5600,7 +5600,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "kubejsadditions-forge-4.3.4.jar",
+                    "file_name": "kubejsadditions-forge-4.3.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5608,19 +5608,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6302/185/kubejsadditions-forge-4.3.4.jar",
-                    "id": "6302185",
+                    "url": "https://edge.forgecdn.net/files/5817/338/kubejsadditions-forge-4.3.3.jar",
+                    "id": "5817338",
                     "parent_id": "594387",
                     "hashes": {
-                        "sha1": "c2720e589a292d5d168ef71a57f5dc3436db96b1",
-                        "md5": "3fd00cc0a566ed51706fedb677b19217"
+                        "sha1": "d7e6fc2b0ef6a1fb822af81cd558aa84a15f9ece",
+                        "md5": "177a9920bc3ddbd3725c93f80466c14c"
                     },
                     "required_dependencies": [
                         "419699",
                         "238086"
                     ],
-                    "size": 321976,
-                    "date_published": "2025-03-14T06:26:02.543Z"
+                    "size": 315140,
+                    "date_published": "2024-10-16T17:39:14.260Z"
                 }
             ]
         },
