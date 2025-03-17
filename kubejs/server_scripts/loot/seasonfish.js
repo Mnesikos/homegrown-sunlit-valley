@@ -219,4 +219,15 @@ LootJS.modifiers((e) => {
     global.winterFresh,
     true
   );
+  e.addLootTableModifier("minecraft:gameplay/fishing")
+  .hasAnyStage("fly_fisher")
+  .modifyLoot(Ingredient.all, (itemStack) => {
+    itemStack.setCount(itemStack.getCount() + 1);
+    return itemStack;
+  })
+  .hasAnyStage("school_fisher")
+  .modifyLoot(Ingredient.all, (itemStack) => {
+    itemStack.setCount(itemStack.getCount() + 3);
+    return itemStack;
+  });
 });

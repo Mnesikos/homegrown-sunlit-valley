@@ -1,89 +1,22 @@
 ^^^
-## A Tuned Fish
-### v2.1.1
+## A Chopped Fish
+### v2.2.0
 ^^^
 --- 
-## 2.1.0
-*Note - New Villager trades won't be updated on existing villagers. Minor mods removed.* 
-- Added Targeted Fish Bait - renewable way to get fish using Crab Traps
-- Added Bait Maker
-- Added Auto Worm Farm
-- Added Mana Milker
-- Added Iron, Gold, Diamond, and Neptunium smithing templates that are used for upgrading tools
-- Added Fantasy Furniture boxes to Bounty Board & switched bounty board furniture rewards to all types of boxes
-- Added Attunecore Beer
-- Added fertilizer recycling ability to Pitchfork
-- Added values to bamboo, bamboo, leaves, stripped logs, straw, and bark
-- Added EMI - New recipe viewer
-- Added villager trades to JEI/EMI and removed tooltips
-- Added tag/color searching in JEI/EMI
-- Added two Dragontooth Axe skills for Adventurer skill tree
-- Added JEI/EMI support for Ancient Goddess Statute
-- Added Rotten logs fermenting recipe
-- Added/rebalanced Storagesmith Trades
-- Added Sturdy Bamboo Block, a log alternative
-- Added Redstone trade to Blacksmith and increase max trade limits
-- Added burn time to twigs
-- Added Vine Stems to raw logs tag
-- Added crafting recipe for recycling unneeded experience books
-- Added Paraglider wind blocks
-- Added cobblestone compacting recipe
-- Bounty Boards and Slot Machines can not be interacted with in claims
-- Reworked health upgrades to use SOL onion diversity
-- Reworked tool upgrading -  now uses Smithing Templates
-- Reworked certain skills to be more impactful, mapping to enchant levels
-- Reworked enchanting to have lower maximums to accomodate
-- Removed duplicate Rocky Dirty/Pebble
-- Removed Zombie Sieges
-- Removed Iwannaskate. Replaced Energy Drink with society version. 
-- Removed Claim Chunk
-- Removed Create Connected to prep for Create 6.0
-- Removed Cornucopia from Farmer
-- Removed some SophisticatedStorage tier upgrades for cleanliness (eg, copper -> netherite. Diamond -> Netherite still exists) 
-- Reduced thunderstorm wake up chances
-- Reduced Fletcher Cinnamon Sapling cost
-- Reduced Fish Pond crafting recipe cost
-- Retextured London Beer
-- Pets now gift unique hats
-- Spring Bundle now requests Cauliflower instead of Onion
-- Chicken Nest now uses Straw Bale instead of Hay Bale 
-- Increased mining experience requirements
-- Increased adventurer experience from killing things
-- Changed manasteel/elementium tools to require upgrading
-- Changed Cropnolia to only eat plants one at a time
-- Elementium Hoe now created Hydrating Fertilizer like the Neptunium Hoe
-- Treated Log now placeable directionally
-- Pawpaw easter egg no random changes
-- Fixed Terrasteel leggings not having rune in recipe
-- Fixed Copy-Paste Gadget using wrong copycat
-- Fixed Multiplayer Pigracing not working
-- Fixed toolbet upgrades using wrong needles
-- Fixed some broken tags
-- Fixed cactus not being faster mined with hoe
-- Fixed saturation values for mayo and dried fruits/mushrooms
-- Fixed Workbench Electronic category being empty
-- Fixed Cocoa Bean related crash
-- Fixed Torchflowers being bonemealable
-- Fixed Slime Block fermenting not working properly
-- Fixed issues with certain things not having quality
-- Fixed bait having durability
-- Fixed Red Merchant having emerald trades
-- Fixed sticks not dropping from sprinklers
-- Fixed being able to dump sticks into sprinklers 
-- Fixed Cornucopia not working on Vinery cherry/apple trees
-- Fixed Sea Biscut typo
-- Fixed Mana spreaders not working in claims
-- Fixed two recipes not using flour tags
-
-## 2.1.1
-- Added Rice Seed Maker recipe
-- Added Snow Pig Spawn egg recipe
-- Added Silt Ball Cutting Board recipe
-- Rebalanced Efficiency skills to have reduced efficacy, increased the efficiency cap to normal 
-- Reduced Smithing Template prices
-- Reduced Flint and Steel price
-- Removed inaccurate quests
-- Fixed some recipes not using Smithing Templates
-- Fixed Twig burn time
-- Fixed not all raw logs having block tags
-- Fixed Seed Maker quality bugs
+- Added Bobbers for Stardew Fishing minigame and Treasure Chests
+- Added Crabber's Hook and Deluxe Crabber's Hook (Replaces useless Iron/Diamond Hooks)
+- Added tree chopping/felling mechanics
+- Added Snuffle - a frosty husbandry animal
+- Added Bismuth Nugget
+- Increased Omni Geode chance (2% -> 4%)
+- Increased chance of catching extremely rare fish
+- Improved Box/Lockbox/Treasure Chest loot pools
+- Reduced chance of common fish being hooked
+- Reduced difficulty of extremely hard fish
+- Reduced Mana Infused String recipe to output 2 (From 4)
+- Remove Bluegills from day fishing pool
+- Removed Trading Floor EMI category
+- Made fishing minigame quest kinder
+- Fixed Mayonnaise from Rancher skill not stacking
+- Fixed some crops being bonemealable
+- Fixed getting snowballs from salt

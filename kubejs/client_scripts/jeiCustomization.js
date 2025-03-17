@@ -171,4 +171,5 @@ JEIEvents.removeCategories((e) => {
   e.remove("waystones:warp_plate");
   e.remove("farm_and_charm:cooking_pot");
   e.remove("meadow:woodcutting");
+  e.remove("trading_floor:potential_villager_trade");
 });

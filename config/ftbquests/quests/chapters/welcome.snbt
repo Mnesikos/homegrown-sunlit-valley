@@ -159,7 +159,7 @@
 		{
 			dependencies: ["2B6877708A709B5C"]
 			description: [
-				"If you hate Stardew's fishing minigame like me, you can disable it!"
+				"The Stardew Fishing minigame can be turned off if desired!"
 				""
 				"In the modpack folder, go to the folder &6kubejs&r and then &6server_scripts&r"
 				""
@@ -169,13 +169,13 @@
 			]
 			icon: "minecraft:tropical_fish"
 			id: "6EA5618181628D34"
-			subtitle: "Learn how to disable it here!"
+			subtitle: "Learn how to turn it off here!"
 			tasks: [{
 				id: "56C063A91C4834B3"
 				title: "Understood!"
 				type: "checkmark"
 			}]
-			title: "Hate the fishing minigame?"
+			title: "Configuring the Fishing Minigame"
 			x: -1.5d
 			y: -1.5d
 		}

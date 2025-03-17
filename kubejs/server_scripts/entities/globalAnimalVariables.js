@@ -20,6 +20,7 @@ global.husbandryAnimals = [
   "etcetera:chapple",
   "minecraft:panda",
   "species:mammutilation",
+  "snuffles:snuffle"
 ];
 
 global.animalMessageSettings = `{anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-100}`;

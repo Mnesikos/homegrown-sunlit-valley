@@ -335,6 +335,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("farm_and_charm:pitchfork", Text.gray("Turns Fertilized Farmland into Dirt"))
   tooltip.add("farm_and_charm:pitchfork", Text.green("50% chance to recover Fertilizer"))
+  tooltip.add("farm_and_charm:pitchfork", Text.red("Does not work on Hydrating Farmland"))
   tooltip.add(
     ["farm_and_charm:silo_wood", "farm_and_charm:silo_copper"],
     Text.gray("Dries grains placed inside")

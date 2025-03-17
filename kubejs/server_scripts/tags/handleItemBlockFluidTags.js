@@ -460,6 +460,7 @@ ServerEvents.tags("block", (e) => {
     e.add("society:artisan_machine", log);
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
+  e.add("society:palm_leaves", "beachparty:palm_leaves");
 });
 
 ServerEvents.tags("fluid", (e) => {

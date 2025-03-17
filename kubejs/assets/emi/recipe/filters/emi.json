@@ -8,6 +8,9 @@
     },
     {
       "category": "meadow:woodcutting"
+    },
+    {
+      "category": "trading_floor:potential_villager_trade"
     }
   ]
 }

@@ -12,12 +12,15 @@ BlockEvents.rightClicked((e) => {
     if (
       e.block.hasTag("minecraft:crops") ||
       e.block.hasTag("minecraft:saplings") ||
+      e.block.hasTag("farmersdelight:wild_crops") ||
+      e.block.hasTag("farm_and_charm:wild_crops") ||
       [
         "atmospheric:dragon_roots",
         "atmospheric:aloe_vera",
         "atmospheric:aloe_kernels",
         "atmospheric:yucca_branch",
         "minecraft:kelp",
+        "farmersdelight:tomatoes",
         "farm_and_charm:wild_nettle",
         "farm_and_charm:wild_ribwort",
         "minecraft:cocoa",
@@ -41,7 +44,7 @@ BlockEvents.rightClicked((e) => {
         "farmersdelight:rice_panicles",
         "herbalbrews:lavender",
         "herbalbrews:hibiscus",
-        "minecraft:torchflower"
+        "minecraft:torchflower",
       ].includes(e.block.id)
     ) {
       e.player.tell("Bone Meal is too weak to grow this crop...");

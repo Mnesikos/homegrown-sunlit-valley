@@ -39,6 +39,10 @@
     {
       "stack": "item:croptania:floating_cropnolia",
       "after": "item:croptania:cropnolia"
+    },
+    {
+      "stack": "item:etcetera:bismuth_nugget",
+      "after": "item:etcetera:raw_bismuth"
     }
   ],
   "removed": [
@@ -49,6 +53,7 @@
     "item:numismatics:crown",
     "item:numismatics:sun",
     "item:numismatics:ancient_coin",
-    "item:numismatics:prismatic_coin"
+    "item:numismatics:prismatic_coin",
+    "item:etcetera:bismuth_nugget"
   ]
 }

@@ -1,5 +1,4 @@
 {
-  "replace": true,
   "behaviors": {
     "aquaculture:tuna": {
       "idle_time": 30,
@@ -42,9 +41,10 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
+    
 
     "aquaculture:red_grouper": {
       "idle_time": 30,
@@ -58,8 +58,8 @@
     "aquaculture:minnow": {
       "idle_time": 1,
       "top_speed": 2,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 25,
       "move_variation": 10
     },
@@ -67,8 +67,8 @@
     "aquaculture:boulti": {
       "idle_time": 1,
       "top_speed": 2,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 25,
       "move_variation": 10
     },
@@ -130,8 +130,8 @@
     "salmon": {
       "idle_time": 10,
       "top_speed": 1.5,
-      "up_acceleration": 0.7,
-      "down_acceleration": 0.7,
+      "up_acceleration": 0.8,
+      "down_acceleration": 0.8,
       "avg_distance": 55,
       "move_variation": 10
     },
@@ -177,7 +177,7 @@
       "top_speed": 4,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 15
     },
 
@@ -186,7 +186,7 @@
       "top_speed": 4,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 15
     },
 
@@ -200,12 +200,12 @@
     },
 
     "cod": {
-      "idle_time": 30,
+      "idle_time": 10,
       "top_speed": 1.5,
-      "up_acceleration": 0.4,
-      "down_acceleration": 0.4,
+      "up_acceleration": 0.7,
+      "down_acceleration": 0.7,
       "avg_distance": 55,
-      "move_variation": 2
+      "move_variation": 10
     },
 
     "tropical_fish": {
@@ -213,7 +213,7 @@
       "top_speed": 4,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 15
     },
 
@@ -222,10 +222,10 @@
       "top_speed": 5,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 15
     },
-
+    
     "aquaculture:piranha": {
       "idle_time": 10,
       "top_speed": 6,
@@ -240,7 +240,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -249,7 +249,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -258,7 +258,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -267,7 +267,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -276,7 +276,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -285,7 +285,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -391,8 +391,8 @@
     "unusualfishmod:raw_circus_fish": {
       "idle_time": 10,
       "top_speed": 8,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 15,
       "move_variation": 10
     },
@@ -420,15 +420,15 @@
       "top_speed": 7,
       "up_acceleration": 0.6,
       "down_acceleration": 0.6,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 0
     },
 
     "unusualfishmod:raw_duality_damselfish": {
       "idle_time": 10,
       "top_speed": 15,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 15,
       "move_variation": 0
     },
@@ -436,8 +436,8 @@
     "unusualfishmod:raw_spindlefish": {
       "idle_time": 2,
       "top_speed": 12,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 15,
       "move_variation": 10
     },
@@ -445,8 +445,8 @@
     "unusualfishmod:raw_eyelash": {
       "idle_time": 10,
       "top_speed": 10,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 15,
       "move_variation": 50
     },
@@ -465,7 +465,7 @@
       "top_speed": 7,
       "up_acceleration": 0.4,
       "down_acceleration": 0.4,
-      "avg_distance": 60,
+      "avg_distance": 50,
       "move_variation": 10
     },
 
@@ -480,37 +480,38 @@
 
     "unusualfishmod:raw_hatchetfish": {
       "idle_time": 10,
-      "top_speed": 20,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "top_speed": 15,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 20,
       "move_variation": 62
     },
 
     "unusualfishmod:raw_aero_mono": {
       "idle_time": 10,
-      "top_speed": 20,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "top_speed": 15,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 20,
       "move_variation": 62
     },
 
     "unusualfishmod:raw_demon_herring": {
       "idle_time": 30,
-      "top_speed": 20,
-      "up_acceleration": 0.9,
-      "down_acceleration": 0.9,
+      "top_speed": 15,
+      "up_acceleration": 0.6,
+      "down_acceleration": 0.6,
       "avg_distance": 40,
       "move_variation": 62
     }
+    
   },
   "defaultBehavior": {
-    "idle_time": 25,
-    "top_speed": 8,
-    "up_acceleration": 0.4,
-    "down_acceleration": 0.8,
-    "avg_distance": 50,
-    "move_variation": 35
+      "idle_time": 10,
+      "top_speed": 1.5,
+      "up_acceleration": 0.7,
+      "down_acceleration": 0.7,
+      "avg_distance": 55,
+      "move_variation": 10
   }
 }

@@ -4,6 +4,12 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    // Stardew Fishing
+    "stardew_fishing:trap_bobber",
+    "stardew_fishing:cork_bobber",
+    "stardew_fishing:sonar_bobber",
+    "stardew_fishing:treasure_bobber",
+    "stardew_fishing:quality_bobber",
     // Twigs
     "decorative_blocks:rocky_dirt",
     "twigs:polished_tuff",
