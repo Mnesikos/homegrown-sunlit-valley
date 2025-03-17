@@ -4644,6 +4644,42 @@
             ]
         },
         {
+            "pakku_id": "gvZ4gfBTIeT2y4Je",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "treechop"
+            },
+            "name": {
+                "curseforge": "HT's TreeChop"
+            },
+            "id": {
+                "curseforge": "421377"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TreeChop-1.20.1-forge-0.19.0-fixed.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5565/422/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
+                    "id": "5565422",
+                    "parent_id": "421377",
+                    "hashes": {
+                        "sha1": "ac5a20b5a2fd9ed7d6e9a0c033f53307947e5f3f",
+                        "md5": "e178293a133747657f802688b8c63d27"
+                    },
+                    "required_dependencies": [],
+                    "size": 517225,
+                    "date_published": "2024-07-25T18:04:52.807Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "s3v3W5kltWQ5iMH9",
             "type": "MOD",
             "slug": {
@@ -6927,6 +6963,53 @@
                     "required_dependencies": [],
                     "size": 777303,
                     "date_published": "2023-07-04T23:12:00.190Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Wm1mcgRhI79aSugV",
+            "pakku_links": [
+                "Z5ABSfuXE0jplGgO",
+                "UrMEAWKYah4t1gwn"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pandas-falling-trees"
+            },
+            "name": {
+                "curseforge": "Panda's Falling Tree's"
+            },
+            "id": {
+                "curseforge": "880630"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6231/30/fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar",
+                    "id": "6231030",
+                    "parent_id": "880630",
+                    "hashes": {
+                        "sha1": "e787f81ddc9e8afea8d859d57776e212ab2b6ff4",
+                        "md5": "542bd503ba871bb74f3ce229ebc45048"
+                    },
+                    "required_dependencies": [
+                        "419699",
+                        "975460"
+                    ],
+                    "size": 4025908,
+                    "date_published": "2025-02-24T19:38:27.470Z"
                 }
             ]
         },
@@ -9255,7 +9338,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-1.3.jar",
+                    "file_name": "dew_drop_farmland_growth-1.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9263,16 +9346,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6241/401/dew_drop_farmland_growth-1.3.jar",
-                    "id": "6241401",
+                    "url": "https://edge.forgecdn.net/files/6313/684/dew_drop_farmland_growth-1.4.jar",
+                    "id": "6313684",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "af0d3a6f97b04033d83777c3e3504682b0a3c756",
-                        "md5": "2e3dd0612340d5557b2cff9c5ee722ed"
+                        "sha1": "a6c2a5d664de08673c03e4e565d2de6a7efca487",
+                        "md5": "46944be2e8fc74cf6010ec9909d2927c"
                     },
-                    "required_dependencies": [],
-                    "size": 73133,
-                    "date_published": "2025-02-26T22:43:46.517Z"
+                    "required_dependencies": [
+                        "291874",
+                        "1062753"
+                    ],
+                    "size": 73888,
+                    "date_published": "2025-03-16T23:05:33.953Z"
                 }
             ]
         },
