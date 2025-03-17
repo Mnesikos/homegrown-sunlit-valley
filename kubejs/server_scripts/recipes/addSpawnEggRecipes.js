@@ -35,7 +35,7 @@ ServerEvents.recipes((e) => {
     { egg: "minecraft:turtle_spawn_egg", mineral: "society:star_shards", coin: "crown" },
     { egg: "quark:foxhound_spawn_egg", mineral: "society:tigerseye", coin: "crown" },
     { egg: "meadow:water_buffalo_spawn_egg", mineral: "society:neptunite", coin: "crown" },
-    { egg: "minecraft:piglin_spawn_egg", mineral: "society:lemon_stone", coin: "crown" },
+    { egg: "minecraft:piglin_spawn_egg", mineral: "society:ruby", coin: "crown" },
     { egg: "minecraft:zombie_horse_spawn_egg", mineral: "society:baryte", coin: "crown" },
     { egg: "minecraft:strider_spawn_egg", mineral: "society:basalt_shard", coin: "crown" },
     { egg: "minecraft:goat_spawn_egg", mineral: "society:bixbyite", coin: "crown" },
@@ -46,7 +46,8 @@ ServerEvents.recipes((e) => {
     { egg: "autumnity:turkey_spawn_egg", mineral: "society:jasper", coin: "crown" },
     { egg: "autumnity:snail_spawn_egg", mineral: "society:amethyst_chunk", coin: "crown" },
     { egg: "buzzier_bees:grizzly_bear_spawn_egg", mineral: "society:beemonican_seal", coin: "ancient_coin" },
-    { egg: 'snowpig:snow_pig_spawn_egg', mineral: "society:frozen_tear", coin: "crown"}
+    { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown"},
+    { egg: "snuffles:snuffle_spawn_egg", mineral: "society:lemon_stone", coin: "crown" },
   ];
 
   recipes.forEach((recipe) => {

@@ -503,6 +503,8 @@ global.animalProducts = [
   { item: "minecraft:feather", value: 16 },
   { item: "untitledduckmod:duck_feather", value: 64 },
   { item: "untitledduckmod:goose_foot", value: 96 },
+  { item: "snuffles:snuffle_fluff", value: 16 },
+  { item: 'snuffles:frosty_fluff', value: 64 }
 ];
 
 /**

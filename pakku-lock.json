@@ -6931,6 +6931,51 @@
             ]
         },
         {
+            "pakku_id": "UrMEAWKYah4t1gwn",
+            "pakku_links": [
+                "Z5ABSfuXE0jplGgO"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pandalib"
+            },
+            "name": {
+                "curseforge": "PandaLib"
+            },
+            "id": {
+                "curseforge": "975460"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "pandalib-forge-mc1.20-0.5.2-SNAPSHOT.jar",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.4"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6245/108/pandalib-forge-mc1.20-0.5.2-SNAPSHOT.jar",
+                    "id": "6245108",
+                    "parent_id": "975460",
+                    "hashes": {
+                        "sha1": "1e8d8e9688a04df5177a46036d6f34c83194686c",
+                        "md5": "019a3540059282663ce2ed634dbfd09c"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 864398,
+                    "date_published": "2025-02-27T21:20:03.207Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "2uWcdQJOAxevjd4T",
             "type": "MOD",
             "slug": {
@@ -8607,6 +8652,44 @@
                     ],
                     "size": 5362591,
                     "date_published": "2024-11-22T13:08:59.783Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "q4NHX06OzFmKs8dV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "snuffles"
+            },
+            "name": {
+                "curseforge": "Snuffles"
+            },
+            "id": {
+                "curseforge": "556372"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "snuffles-1.0.7.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4579/538/snuffles-1.0.7.jar",
+                    "id": "4579538",
+                    "parent_id": "556372",
+                    "hashes": {
+                        "sha1": "231822b118fff9627ddf8c5b9f58c8d28160cd86",
+                        "md5": "4d90f07e58e199db61fd57cdc4904bc2"
+                    },
+                    "required_dependencies": [],
+                    "size": 219393,
+                    "date_published": "2023-06-11T05:14:19.783Z"
                 }
             ]
         },
