@@ -201,6 +201,7 @@
 						]
 					}
 				}
+				title: "Any Gold Armor"
 				type: "item"
 			}]
 			title: "Gold Armor"
@@ -1417,7 +1418,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["38A0B8D54F85B846"]
+			dependencies: ["7A5974D470C5AA9C"]
 			icon: {
 				Count: 1
 				id: "botania:manasteel_chestplate"
@@ -1468,7 +1469,7 @@
 				type: "item"
 			}]
 			title: "Manasteel Armor"
-			x: 0.0d
+			x: -2.0d
 			y: -4.5d
 		}
 		{
@@ -1579,7 +1580,7 @@
 			}]
 			title: "Elementium Armor"
 			x: 0.0d
-			y: -6.0d
+			y: -4.5d
 		}
 	]
 	title: "Equipment"

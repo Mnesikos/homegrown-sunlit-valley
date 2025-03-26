@@ -684,10 +684,6 @@
     "modId": "naturescompass",
     "version": "1.20.1-1.11.2-forge"
   },
-  "nbtedit-forge-5.2.8.jar": {
-    "modId": "nbtedit",
-    "version": "5.2.8"
-  },
   "NeoAuth-1.20.1-1.0.3.jar": {
     "modId": "neo_auth",
     "version": "1.0.3"
@@ -803,10 +799,6 @@
   "Pretty Rain-1.20.1-Forge-1.0.8.jar": {
     "modId": "particlerain",
     "version": "1.0.8"
-  },
-  "probejs-6.0.1-forge.jar": {
-    "modId": "probejs",
-    "version": "6.0.1"
   },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "modId": "puffish_attributes",
