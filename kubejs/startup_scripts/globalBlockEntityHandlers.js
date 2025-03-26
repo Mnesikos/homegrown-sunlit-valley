@@ -88,7 +88,7 @@ const hasWoolTag = (tags) => {
 const setQuality = (newProperties, itemQuality) => {
   if (
     (Number(newProperties.quality) === 0 &&
-      Number(newProperties.stage) === 1) ||
+      Number(newProperties.stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
@@ -189,13 +189,13 @@ global.handleBERightClick = (
         if (multipleInputs) {
           if (item.count >= stageCount - Number(blockStage)) {
             if (!player.isCreative())
-              item.count = item.count - (stageCount - Number(blockStage));
-            newProperties.stage = stageCount.toString();
+              item.count = item.count - (stageCount - Number(blockStage))
             if (itemQuality) setQuality(newProperties, itemQuality);
+            newProperties.stage = stageCount.toString();
           } else {
             if (!player.isCreative()) item.count--;
-            newProperties.stage = increaseStage(blockStage);
             if (itemQuality) setQuality(newProperties, itemQuality);
+            newProperties.stage = increaseStage(blockStage);
           }
         } else {
           if (!player.isCreative()) item.count--;
