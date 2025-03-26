@@ -100,7 +100,6 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 3))
     .property(integerProperty.create("type", 0, global.baitMakerRecipes.length))
-    .property(integerProperty.create("quality", 0, 3))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .soundType("copper")
@@ -108,7 +107,6 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Turns a fish into 6 bait"));
-      item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
         parent: "society:block/bait_maker_off",
       });
@@ -123,7 +121,6 @@ StartupEvents.registry("block", (event) => {
           integerProperty.create("type", 0, global.baitMakerRecipes.length),
           0
         )
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
       state
@@ -135,7 +132,6 @@ StartupEvents.registry("block", (event) => {
           integerProperty.create("type", 0, global.baitMakerRecipes.length),
           0
         )
-        .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
       global.handleBERightClick(
@@ -221,6 +217,38 @@ StartupEvents.registry("block", (event) => {
         when: { working: true, facing: "west" },
         apply: {
           model: "society:block/bait_maker",
+          y: -90,
+          uvlock: false,
+        },
+      },
+      {
+        when: { mature: true, facing: "north" },
+        apply: {
+          model: "society:block/bait_maker_done",
+          y: 0,
+          uvlock: false,
+        },
+      },
+      {
+        when: { mature: true, facing: "east" },
+        apply: {
+          model: "society:block/bait_maker_done",
+          y: 90,
+          uvlock: false,
+        },
+      },
+      {
+        when: { mature: true, facing: "south" },
+        apply: {
+          model: "society:block/bait_maker_done",
+          y: 180,
+          uvlock: false,
+        },
+      },
+      {
+        when: { mature: true, facing: "west" },
+        apply: {
+          model: "society:block/bait_maker_done",
           y: -90,
           uvlock: false,
         },

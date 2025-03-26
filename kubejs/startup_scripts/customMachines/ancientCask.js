@@ -144,6 +144,7 @@ StartupEvents.registry("block", (event) => {
     )
     .box(2, 0, 1, 14, 14, 15)
     .defaultCutout()
+    .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {

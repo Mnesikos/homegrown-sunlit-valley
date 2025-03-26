@@ -455,7 +455,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "meadow:cheese_stick",
-    TextColor.gray("Made in Fondue with cheese and bread")
+    Text.gray("Made in Fondue with cheese and bread")
   );
   tooltip.add(
     "society:friendship_necklace",

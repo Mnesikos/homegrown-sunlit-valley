@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "society:block/seed_maker_upgraded_off",
-		"particle": "society:block/seed_maker_upgraded_off"
+		"0": "society:block/seed_maker_off_upgraded",
+		"particle": "society:block/seed_maker_off_upgraded"
 	},
 	"elements": [
 		{

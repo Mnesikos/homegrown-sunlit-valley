@@ -100,6 +100,7 @@ StartupEvents.registry("block", (event) => {
     .box(1, 0, 4, 15, 28, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Smokes a fish over a long period of time"));
@@ -200,40 +201,6 @@ StartupEvents.registry("block", (event) => {
         apply: { model: "society:block/fish_smoker_particle" },
       },
     ]
-      .concat(getCardinalMultipartJson("fish_smoker", true))
-      .concat([
-        {
-          when: { mature: true, working: false, facing: "north" },
-          apply: {
-            model: "society:block/fish_smoker_done",
-            y: 0,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "east" },
-          apply: {
-            model: "society:block/fish_smoker_done",
-            y: 90,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "south" },
-          apply: {
-            model: "society:block/fish_smoker_done",
-            y: 180,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "west" },
-          apply: {
-            model: "society:block/fish_smoker_done",
-            y: -90,
-            uvlock: false,
-          },
-        },
-      ]),
+      .concat(getCardinalMultipartJson("fish_smoker"))
   };
 });

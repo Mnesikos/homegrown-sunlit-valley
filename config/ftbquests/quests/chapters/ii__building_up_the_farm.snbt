@@ -878,7 +878,7 @@
 			description: [
 				"Upgraded rods can be equipped with attachments using a &6Tackle Box&r."
 				""
-				"They will also randomly upgrade enchantments from succesful catches."
+				"They will also have a chance to upgrade enchantments from succesful catches. The chance increases on higher upgraded rods."
 			]
 			icon: {
 				Count: 1

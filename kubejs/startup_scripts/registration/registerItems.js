@@ -14,7 +14,6 @@ StartupEvents.registry("item", (e) => {
     "Neptunium",
   ];
   tiers.forEach((tier, index) => {
-    console.log(`society:item/smithing/${tier.toLowerCase()}`);
     if (index > 0) {
       e.create(`society:${tier.toLowerCase()}_upgrade_smithing_template`)
         .texture(`society:item/smithing/${tier.toLowerCase()}`)

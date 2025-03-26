@@ -173,6 +173,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-    ].concat(getCardinalMultipartJson("crystalarium", true)),
+    ].concat(getCardinalMultipartJson("crystalarium")),
   };
 });

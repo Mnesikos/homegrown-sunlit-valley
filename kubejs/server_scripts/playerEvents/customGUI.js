@@ -111,7 +111,7 @@ const fishRadarPainter = (curios, e) => {
       fish = global.netherRadar(e, fish, setLocalConditions);
     }
     if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
-    let fishRadarStart = fish.length > 5 ? -64 : -42;
+    let fishRadarStart = fish.length > 5 ? -96 : -75;
     player.paint({
       fishRadarDisplay: {
         type: "text",

@@ -107,6 +107,7 @@ StartupEvents.registry("block", (event) => {
     .box(1, 0, 4, 15, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Dehydrates 8 fruit or mushrooms"));
@@ -202,40 +203,6 @@ StartupEvents.registry("block", (event) => {
         apply: { model: "society:block/machine_done" },
       },
     ]
-      .concat(getCardinalMultipartJson("dehydrator", true))
-      .concat([
-        {
-          when: { mature: true, working: false, facing: "north" },
-          apply: {
-            model: "society:block/dehydrator_done",
-            y: 0,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "east" },
-          apply: {
-            model: "society:block/dehydrator_done",
-            y: 90,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "south" },
-          apply: {
-            model: "society:block/dehydrator_done",
-            y: 180,
-            uvlock: false,
-          },
-        },
-        {
-          when: { mature: true, working: false, facing: "west" },
-          apply: {
-            model: "society:block/dehydrator_done",
-            y: -90,
-            uvlock: false,
-          },
-        },
-      ]),
+      .concat(getCardinalMultipartJson("dehydrator"))
   };
 });
