@@ -15,7 +15,7 @@
                   "block": "supplementaries:flax",
                   "properties": {
                     "age": "7",
-                    "half": "lower"
+                    "half": "upper"
 
                   }
                 }

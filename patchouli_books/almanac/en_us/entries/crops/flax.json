@@ -13,10 +13,12 @@
       "enable_visualize": false,
       "multiblock": {
         "pattern": [
+          ["1"],
           ["0"],
           ["F"]
         ],
         "mapping": {
+          "1": "supplementaries:flax[age=7,half=upper]",
           "0": "supplementaries:flax[age=7,half=lower]",
           "F": "minecraft:farmland[moisture=7]"
         }

@@ -2,7 +2,7 @@ console.info("[SOCIETY] addHammerRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   const materials = ["stone", "iron", "gold", "diamond", "netherite"];
-  const cores = ["impact", "reinforced", "reinforced_impact", "destructor"];
+  const cores = ["reinforced", "impact", "reinforced_impact", "destructor"];
 
   materials.forEach((material, materialIndex) => {
     // Base hammer recipes

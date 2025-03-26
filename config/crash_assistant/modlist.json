@@ -83,6 +83,10 @@
     "modId": "bcc",
     "version": "4.0.8"
   },
+  "BetterThirdPerson-Forge-1.20-1.9.0.jar": {
+    "modId": "betterthirdperson",
+    "version": "1.9.0"
+  },
   "biomespawnpoint-1.20.1-2.3.jar": {
     "modId": "biomespawnpoint",
     "version": "2.3"
@@ -279,9 +283,9 @@
     "modId": "defaultoptions",
     "version": "18.0.1"
   },
-  "dew_drop_farmland_growth-1.4.jar": {
+  "dew_drop_farmland_growth-1.5.jar": {
     "modId": "dew_drop_farmland_growth",
-    "version": "1.4"
+    "version": "1.5"
   },
   "dew_drop_watering_cans-1.0.2.jar": {
     "modId": "dew_drop_watering_cans",
@@ -964,9 +968,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "stardew_fishing-2.0-all.jar": {
+  "stardew_fishing-1.20.1-2.1.jar": {
     "modId": "stardew_fishing",
-    "version": "2.0"
+    "version": "2.1"
   },
   "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
     "modId": "railways",

@@ -44,7 +44,6 @@ LootJS.modifiers((e) => {
         : false
     )
     .pool((p) => {
-      console.log(p);
       p.randomChance(0.25).addLoot("crabbersdelight:deluxe_crab_trap_bait");
       p.limitCount([1, 4]);
     });

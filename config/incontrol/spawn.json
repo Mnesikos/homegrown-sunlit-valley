@@ -50,6 +50,11 @@
     "result": "deny"
   },
   {
+    "mob": "autumnity:turkey",
+    "mincount": 1,
+    "result": "deny"
+  },
+  {
     "mob": "balloonbox:balloonbox",
     "mincount": {
       "amount": 1,

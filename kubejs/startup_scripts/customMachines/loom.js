@@ -18,6 +18,7 @@ StartupEvents.registry("block", (event) => {
     .box(1, 0, 1, 15, 11, 15)
     .defaultCutout()
     .displayName("Canvas Loom")
+    .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
@@ -124,6 +125,6 @@ StartupEvents.registry("block", (event) => {
         when: { working: false, facing: "west" },
         apply: { model: "society:block/loom_empty", y: -90, uvlock: false },
       },
-    ].concat(getCardinalMultipartJson("loom")),
+    ].concat(getCardinalMultipartJsonLoom("loom")),
   };
 });

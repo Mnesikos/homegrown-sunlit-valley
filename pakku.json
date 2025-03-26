@@ -1,17 +1,19 @@
 {
     "name": "Society Capital Hill",
-    "version": "2.2.1",
+    "version": "2.3.1",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
         "patchouli_books",
-        "quests_structures"
+        "quests_structures",
+        "emi.json"
     ],
     "client_overrides": [
         "panoramas",
         "resourcepacks",
-        "shaderpacks"
+        "shaderpacks",
+        "emi.json"
     ],
     "projects": {
         "ambientsounds": {

@@ -148,7 +148,7 @@ JEIAddedEvents.registerCategories((e) => {
     "deluxe_worm_farm",
     "Bait Upgrading",
     4,
-    1
+    0.5
   );
   registerBECategory(e, "cask_aging", "aging_cask", "Cask Aging", 1, 10);
   registerBECategory(

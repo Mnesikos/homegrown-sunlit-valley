@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
@@ -11,12 +12,6 @@
   },
   "result": {
     "item": "quark:dirt_bricks",
-    "count": 4
-  },
-  "conditions": [
-    {
-      "type": "quark:flag",
-      "flag": "dirt_bricks"
-    }
-  ]
+    "count": 1
+  }
 } 

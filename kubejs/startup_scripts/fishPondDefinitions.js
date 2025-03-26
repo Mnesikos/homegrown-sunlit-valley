@@ -875,7 +875,7 @@ global.fishPondDefinitions = [
         item: "tanukidecor:red_clock",
         count: 1,
         chance: 0.04,
-      },
+      }
     ],
   },
   {

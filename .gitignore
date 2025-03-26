@@ -2,7 +2,7 @@ node_modules/
 backups/
 blueprints/
 crash-reports/
-emojiful/
+emojiful/cache
 journeymap/
 local/
 logs

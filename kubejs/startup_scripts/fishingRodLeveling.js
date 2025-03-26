@@ -6,9 +6,10 @@ let maxLuckOfTheSeaLevel = 6;
 ForgeEvents.onEvent(
   "net.minecraftforge.event.entity.player.ItemFishedEvent",
   (e) => {
-    let randCap = 20;
+    let randCap = 40;
     const player = e.getEntity();
     const mainHandItem = player.getHeldItem("main_hand");
+    const mainHandItemId = mainHandItem.getId();
     const enchantmentTags = mainHandItem.enchantmentTags;
     const validRods = [
       "aquaculture:iron_fishing_rod",
@@ -17,12 +18,23 @@ ForgeEvents.onEvent(
       "aquaculture:neptunium_fishing_rod",
       "netherdepthsupgrade:lava_fishing_rod",
     ];
-    if (!validRods.includes(mainHandItem.getId())) return;
+    if (!validRods.includes(mainHandItemId)) return;
 
     if (player.level.isRaining()) {
-      randCap = 10;
+      randCap = randCap - 10;
     }
-
+    switch (mainHandItemId) {
+      case "aquaculture:gold_fishing_rod":
+        randCap -= 5;
+        break;
+      case "aquaculture:diamond_fishing_rod":
+        randCap -= 10;
+        break;
+      case "aquaculture:neptunium_fishing_rod":
+        randCap -= 20;
+        break;
+      default:
+    }
     const randomNum = Math.floor(Math.random() * randCap);
     if (randomNum == 0) {
       const lureLevel = mainHandItem.getEnchantmentLevel("minecraft:lure");

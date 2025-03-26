@@ -76,6 +76,7 @@ StartupEvents.registry("block", (event) => {
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Turns an egg into mayonnaise"));
@@ -164,70 +165,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-      {
-        when: { working: false, facing: "north" },
-        apply: {
-          model: "society:block/mayonnaise_machine_off",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "east" },
-        apply: {
-          model: "society:block/mayonnaise_machine_off",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "south" },
-        apply: {
-          model: "society:block/mayonnaise_machine_off",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: false, facing: "west" },
-        apply: {
-          model: "society:block/mayonnaise_machine_off",
-          y: -90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "north" },
-        apply: {
-          model: "society:block/mayonnaise_machine",
-          y: 0,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "east" },
-        apply: {
-          model: "society:block/mayonnaise_machine",
-          y: 90,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "south" },
-        apply: {
-          model: "society:block/mayonnaise_machine",
-          y: 180,
-          uvlock: false,
-        },
-      },
-      {
-        when: { working: true, facing: "west" },
-        apply: {
-          model: "society:block/mayonnaise_machine",
-          y: -90,
-          uvlock: false,
-        },
-      },
-    ],
+    ].concat(getCardinalMultipartJson("mayonnaise_machine"))
   };
 });

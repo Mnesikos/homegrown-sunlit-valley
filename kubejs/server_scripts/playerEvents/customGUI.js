@@ -36,6 +36,11 @@ PlayerEvents.tick((e) => {
       });
     }
   }
+  bankMeterPainter(curios, player);
+  fishRadarPainter(curios, e);
+});
+
+const bankMeterPainter = (curios, player) => {
   if (
     player.age % 100 == 0 &&
     curios.toString().includes("society:bank_meter")
@@ -68,7 +73,7 @@ PlayerEvents.tick((e) => {
         alignY: "top",
       },
     });
-  } else if (!curios.toString().includes("society:bank_meter")) {
+  } else if (player.age % 100 == 0 && !curios.toString().includes("society:bank_meter")) {
     player.paint({
       coinDisplay: {
         type: "text",
@@ -84,4 +89,79 @@ PlayerEvents.tick((e) => {
     player.paint({ coinDisplay: { remove: true } });
     player.paint({ coinDisplayDropShadow: { remove: true } });
   }
-});
+};
+
+const fishRadarPadding = 4;
+const fishRadarPainter = (curios, e) => {
+  const { player, level } = e;
+  let localConditions = "";
+
+  function setLocalConditions(x) {
+    localConditions = x;
+  }
+  if (
+    player.age % 100 == 0 &&
+    curios.toString().includes("society:fish_radar")
+  ) {
+    let fish = [];
+
+    if (level.dimension !== "minecraft:the_nether") {
+      fish = global.overworldRadar(e, fish, setLocalConditions);
+    } else {
+      fish = global.netherRadar(e, fish, setLocalConditions);
+    }
+    if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
+    let fishRadarStart = fish.length > 5 ? -96 : -75;
+    player.paint({
+      fishRadarDisplay: {
+        type: "text",
+        x: -fishRadarPadding,
+        y: fishRadarStart,
+        text: "=[ §aFish Radar§7 ]=",
+        color: "#AAAAAA",
+        alignX: "right",
+        alignY: "bottom",
+      },
+      fishConditions: {
+        type: "text",
+        x: level.dimension == "minecraft:the_nether" ? -8 : 52,
+        y: fishRadarStart + 8 + fishRadarPadding,
+        text: localConditions,
+        color: "#FFAA00",
+        alignX: "right",
+        alignY: "bottom",
+      },
+      fishRadarBottom: {
+        type: "text",
+        x: -fishRadarPadding,
+        y: fishRadarStart + 16 + fishRadarPadding * 2,
+        text: "==============",
+        color: "#AAAAAA",
+        alignX: "right",
+        alignY: "bottom",
+      },
+    });
+    let fishUiElements = {};
+    let fishUiElementIds = [];
+    for (let index = 0; index < 10; index++) {
+      fishUiElementIds.push(`fish_radar_${index}`);
+    }
+    fish.forEach((fishItem, index) => {
+      fishUiElements[`fish_radar_${index}`] = {
+        type: "item",
+        x: -68 + (index >= 5 ? (index - 5) * 18 : index * 18),
+        y: fishRadarStart + 32 + fishRadarPadding * 4 + (index >= 5 ? 18 : 0),
+        item: fishItem,
+        alignX: "right",
+        alignY: "bottom",
+      };
+    });
+    global.renderUiItemText(player, fishUiElements, fishUiElementIds);
+  } else if (player.age % 100 == 0 && !curios.toString().includes("society:fish_radar")) {
+    let removedFishUiIds = ["fishRadarDisplay", "fishConditions", "fishRadarBottom"];
+    for (let index = 0; index < 10; index++) {
+      removedFishUiIds.push(`fish_radar_${index}`);
+    }
+    global.clearUiItemPaint(player, removedFishUiIds)
+  }
+};

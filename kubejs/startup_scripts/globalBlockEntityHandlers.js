@@ -88,7 +88,7 @@ const hasWoolTag = (tags) => {
 const setQuality = (newProperties, itemQuality) => {
   if (
     (Number(newProperties.quality) === 0 &&
-      Number(newProperties.stage) === 1) ||
+      Number(newProperties.stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
@@ -144,7 +144,7 @@ global.handleBERightClick = (
         if (outputMult) {
           block.popItemFromFace(
             Item.of(
-              id.replace("1x ", `${outputMult} `),
+              id.replace("1x ", `${outputMult}x `),
               hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
             ),
             facing
@@ -189,13 +189,13 @@ global.handleBERightClick = (
         if (multipleInputs) {
           if (item.count >= stageCount - Number(blockStage)) {
             if (!player.isCreative())
-              item.count = item.count - (stageCount - Number(blockStage));
-            newProperties.stage = stageCount.toString();
+              item.count = item.count - (stageCount - Number(blockStage))
             if (itemQuality) setQuality(newProperties, itemQuality);
+            newProperties.stage = stageCount.toString();
           } else {
             if (!player.isCreative()) item.count--;
-            newProperties.stage = increaseStage(blockStage);
             if (itemQuality) setQuality(newProperties, itemQuality);
+            newProperties.stage = increaseStage(blockStage);
           }
         } else {
           if (!player.isCreative()) item.count--;
@@ -273,45 +273,8 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     block.set(block.id, newProperties);
   }
 };
-
-const getCardinalMultipartJson = (name, offState) => {
+const getCardinalMultipartJsonLoom = (name) => {
   const path = `society:block/${name}`;
-  let offJson = offState
-    ? [
-        {
-          when: { working: false, upgraded: false, facing: "north" },
-          apply: { model: `${path}_off`, y: 0, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "east" },
-          apply: { model: `${path}_off`, y: 90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "south" },
-          apply: { model: `${path}_off`, y: 180, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "west" },
-          apply: { model: `${path}_off`, y: -90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "north" },
-          apply: { model: `${path}_off_upgraded`, y: 0, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "east" },
-          apply: { model: `${path}_off_upgraded`, y: 90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "south" },
-          apply: { model: `${path}_off_upgraded`, y: 180, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "west" },
-          apply: { model: `${path}_off_upgraded`, y: -90, uvlock: false },
-        },
-      ]
-    : [];
   return [
     {
       when: { working: true, upgraded: false, facing: "north" },
@@ -345,5 +308,110 @@ const getCardinalMultipartJson = (name, offState) => {
       when: { working: true, upgraded: true, facing: "west" },
       apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
     },
-  ].concat(offJson);
+  ]
+}
+const getCardinalMultipartJson = (name) => {
+  const path = `society:block/${name}`;
+  let offJson = [
+        {
+          when: { working: false, upgraded: false, facing: "north" },
+          apply: { model: `${path}_off`, y: 0, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: false, facing: "east" },
+          apply: { model: `${path}_off`, y: 90, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: false, facing: "south" },
+          apply: { model: `${path}_off`, y: 180, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: false, facing: "west" },
+          apply: { model: `${path}_off`, y: -90, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: true, facing: "north" },
+          apply: { model: `${path}_off_upgraded`, y: 0, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: true, facing: "east" },
+          apply: { model: `${path}_off_upgraded`, y: 90, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: true, facing: "south" },
+          apply: { model: `${path}_off_upgraded`, y: 180, uvlock: false },
+        },
+        {
+          when: { working: false, upgraded: true, facing: "west" },
+          apply: { model: `${path}_off_upgraded`, y: -90, uvlock: false },
+        },
+      ]
+      let doneJson = [
+        {
+          when: { mature: true, upgraded: false, facing: "north" },
+          apply: { model: `${path}_done`, y: 0, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: false, facing: "east" },
+          apply: { model: `${path}_done`, y: 90, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: false, facing: "south" },
+          apply: { model: `${path}_done`, y: 180, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: false, facing: "west" },
+          apply: { model: `${path}_done`, y: -90, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: true, facing: "north" },
+          apply: { model: `${path}_done_upgraded`, y: 0, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: true, facing: "east" },
+          apply: { model: `${path}_done_upgraded`, y: 90, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: true, facing: "south" },
+          apply: { model: `${path}_done_upgraded`, y: 180, uvlock: false },
+        },
+        {
+          when: { mature: true, upgraded: true, facing: "west" },
+          apply: { model: `${path}_done_upgraded`, y: -90, uvlock: false },
+        },
+      ]
+  return [
+    {
+      when: { working: true, upgraded: false, facing: "north" },
+      apply: { model: `${path}`, y: 0, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: false, facing: "east" },
+      apply: { model: `${path}`, y: 90, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: false, facing: "south" },
+      apply: { model: `${path}`, y: 180, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: false, facing: "west" },
+      apply: { model: `${path}`, y: -90, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: true, facing: "north" },
+      apply: { model: `${path}_upgraded`, y: 0, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: true, facing: "east" },
+      apply: { model: `${path}_upgraded`, y: 90, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: true, facing: "south" },
+      apply: { model: `${path}_upgraded`, y: 180, uvlock: false },
+    },
+    {
+      when: { working: true, upgraded: true, facing: "west" },
+      apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
+    },
+  ].concat(offJson).concat(doneJson);
 };

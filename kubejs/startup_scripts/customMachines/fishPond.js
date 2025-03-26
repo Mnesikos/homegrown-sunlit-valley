@@ -310,6 +310,7 @@ StartupEvents.registry("block", (event) => {
     )
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Cultivates fish, roe, and various items"));
@@ -405,12 +406,17 @@ StartupEvents.registry("block", (event) => {
               server.runCommandSilent(
                 `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
               );
+              let smokedFishId = fish.item.split(":")[1];
+              if (smokedFishId.includes("raw_")) {
+                if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
+                else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
+              }
               player.give(
                 Item.of(
                   `${player.stages.has("mitosis") ? 2 : 1}x ${
                     rnd25()
                       ? "minecraft:coal"
-                      : `society:smoked_${fish.item.split(":")[1]}`
+                      : `society:smoked_${smokedFishId}`
                   }`
                 )
               );

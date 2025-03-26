@@ -246,7 +246,7 @@ const artisanMachines = [
   {
     id: "society:deluxe_worm_farm",
     recipes: global.deluxeWormFarmRecipes,
-    stageCount: 1,
+    stageCount: 2,
     maxInput: 4,
   },
   {

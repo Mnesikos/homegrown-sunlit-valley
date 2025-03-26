@@ -878,7 +878,7 @@
 			description: [
 				"Upgraded rods can be equipped with attachments using a &6Tackle Box&r."
 				""
-				"They will also randomly upgrade enchantments from succesful catches."
+				"They will also have a chance to upgrade enchantments from succesful catches. The chance increases on higher upgraded rods."
 			]
 			icon: {
 				Count: 1
@@ -1024,7 +1024,7 @@
 			description: [
 				"Baits can be added using a &6Tackle Box&r and decrease the amount of time between bites."
 				""
-				"They are slowly consumed."
+				"They are slowly consumed, and better baits such as &6Leeches&r and &6Minnows&r have a higher amount of durability."
 			]
 			icon: {
 				Count: 1

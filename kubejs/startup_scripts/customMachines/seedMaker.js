@@ -193,6 +193,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .soundType("copper")
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(Text.gray("Turns 3 of the same crop into seeds"));
@@ -283,6 +284,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: "true" },
         apply: { model: "society:block/machine_done" },
       },
-    ].concat(getCardinalMultipartJson("seed_maker", true)),
+    ].concat(getCardinalMultipartJson("seed_maker")),
   };
 });

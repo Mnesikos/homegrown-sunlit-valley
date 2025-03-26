@@ -41,9 +41,28 @@ global.renderUiText = (player, server, messages, clearedMessages) => {
   });
 };
 
+global.clearUiItemPaint = (player, ids) => {
+  let removedItem = {};
+  // Spawn and clear instance of paint element to prevent warnings that they don't exist
+  ids.forEach((id) => {
+    removedItem[id] = { type: "item" };
+  });
+  player.paint(removedItem);
+  ids.forEach((id) => {
+    removedItem[id] = { remove: true };
+  });
+  player.paint(removedItem);
+};
+
+global.renderUiItemText = (player, items, ids) => {
+  global.clearUiItemPaint(player, ids);
+  player.paint(items);
+};
+
 global.formatPrice = (number) => {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
+
 global.calculateCoinValue = (coin) => {
   let value = 0;
   switch (coin.id.split(":")[1]) {
@@ -107,4 +126,142 @@ global.calculateCoinsFromValue = (price, output) => {
       return output;
     }
   }
+};
+
+const validateEntry = (entry, isDay, level, fishArray) => {
+  if (entry.requiresRain && !level.raining) return;
+  if (entry.requiresClear && (level.raining || level.thundering)) return;
+  if (isDay && entry.night) return;
+  if (!isDay && entry.night == undefined) return;
+  fishArray.push(entry.fish);
+};
+
+global.overworldRadar = (e, fish, printFunction, extraOutput) => {
+  let local = fish;
+  const { level, player } = e;
+  const season = global.getSeasonFromLevel(level);
+  const biomeTags = level.getBiome(player.pos).tags().toList().toString();
+  const isDay = level.getDayTime() % 24000 < 12999;
+  let weather = level.raining
+    ? `:cloud: ${extraOutput ? "§9Rain§r" : ""}`
+    : `:sunny:${extraOutput ? "§eClear§r" : ""}`;
+  let time = isDay
+    ? `:sunrise: ${extraOutput ? "§6Day§r" : ""}`
+    : `:moon: ${extraOutput ? "§8Night§r" : ""}`;
+  if (
+    biomeTags.includes("minecraft:is_ocean") ||
+    biomeTags.includes("minecraft:is_beach")
+  ) {
+    printFunction(
+      `    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`
+    );
+    switch (season) {
+      case "spring":
+        global.springOcean.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "summer":
+        global.summerOcean.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "autumn":
+        global.autumnOcean.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "winter":
+        global.winterOcean.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+    }
+  } else if (biomeTags.includes("minecraft:is_river")) {
+    printFunction(
+      `    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`
+    );
+    switch (season) {
+      case "spring":
+        global.springRiver.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "summer":
+        global.summerRiver.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "autumn":
+        global.autumnRiver.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "winter":
+        global.winterRiver.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+    }
+  } else {
+    printFunction(
+      `:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`
+    );
+    switch (season) {
+      case "spring":
+        global.springFresh.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "summer":
+        global.summerFresh.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "autumn":
+        global.autumnFresh.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+      case "winter":
+        global.winterFresh.forEach((fish) =>
+          validateEntry(fish, isDay, level, local)
+        );
+        break;
+    }
+  }
+  return local;
+};
+
+global.netherRadar = (e, local, printFunction) => {
+  let defaultFish = [
+    "netherdepthsupgrade:searing_cod",
+    "netherdepthsupgrade:lava_pufferfish",
+    "netherdepthsupgrade:blazefish",
+    "netherdepthsupgrade:fortress_grouper",
+  ];
+  let netherFish = local.concat(defaultFish);
+  const { level, player } = e;
+  let biome = level.getBiome(player.pos).toString();
+
+  if (biome.includes("minecraft:nether_wastes")) {
+    printFunction(`            §4Nether Wastes`);
+    netherFish.push("netherdepthsupgrade:bonefish");
+  } else if (biome.includes("minecraft:soul_sand_valley")) {
+    printFunction(`          §4Soul Sand Valley`);
+    netherFish.push("netherdepthsupgrade:wither_bonefish");
+    netherFish.push("netherdepthsupgrade:soulsucker");
+  } else if (biome.includes("minecraft:basalt_deltas")) {
+    printFunction(`            §4Basalt Deltas`);
+    netherFish.push("netherdepthsupgrade:magmacubefish");
+  } else if (biome.includes("minecraft:crimson_forest")) {
+    printFunction(`            §4Crimson Forest`);
+    netherFish.push("netherdepthsupgrade:eyeball_fish");
+  } else if (biome.includes("minecraft:warped_forest")) {
+    printFunction(`            §4Warped Forest`);
+    netherFish.push("netherdepthsupgrade:glowdine");
+  } else {
+    printFunction(`            §4The Nether`);
+  }
+  return netherFish;
 };

@@ -155,7 +155,6 @@ JEIEvents.hideItems((e) => {
     "sophisticatedstorage:iron_to_netherite_tier_upgrade",
     "sophisticatedstorage:basic_to_netherite_tier_upgrade",
     "sophisticatedstorage:copper_to_gold_tier_upgrade",
-    "vintagedelight:mason_jar",
     "rehooked:wood_chain",
     "rehooked:blaze_chain",
     "rehooked:ender_chain",
