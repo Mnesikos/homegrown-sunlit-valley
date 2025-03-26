@@ -15,6 +15,10 @@ BlockEvents.rightClicked((e) => {
       e.block.hasTag("farmersdelight:wild_crops") ||
       e.block.hasTag("farm_and_charm:wild_crops") ||
       [
+        "veggiesdelight:wild_bellpeppers",
+        "veggiesdelight:wild_sweet_potatoes",
+        "veggiesdelight:wild_garlic",
+        "veggiesdelight:wild_cauliflowers",
         "atmospheric:dragon_roots",
         "atmospheric:aloe_vera",
         "atmospheric:aloe_kernels",

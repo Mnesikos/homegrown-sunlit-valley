@@ -237,6 +237,8 @@ const winterCrops = [
   "atmospheric:kousa_sapling",
 ];
 const allSeasonCrops = [
+  "atmospheric:laurel_sapling",
+  "atmospheric:dry_laurel_sapling",
   "botania_seeds:white_mystical_flower_seed",
   "botania_seeds:orange_mystical_flower_seed",
   "botania_seeds:magenta_mystical_flower_seed",

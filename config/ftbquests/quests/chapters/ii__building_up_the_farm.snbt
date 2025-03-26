@@ -1024,7 +1024,7 @@
 			description: [
 				"Baits can be added using a &6Tackle Box&r and decrease the amount of time between bites."
 				""
-				"They are slowly consumed."
+				"They are slowly consumed, and better baits such as &6Leeches&r and &6Minnows&r have a higher amount of durability."
 			]
 			icon: {
 				Count: 1

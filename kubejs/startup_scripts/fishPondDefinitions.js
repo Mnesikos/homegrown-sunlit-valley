@@ -876,6 +876,12 @@ global.fishPondDefinitions = [
         count: 1,
         chance: 0.04,
       },
+      {
+        minPopulation: 9,
+        item: "society:hello",
+        count: 1,
+        chance: 0.01,
+      },
     ],
   },
   {

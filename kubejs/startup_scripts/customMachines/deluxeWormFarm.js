@@ -107,7 +107,7 @@ StartupEvents.registry("block", (event) => {
       }
     })
     .randomTick((tick) => {
-      global.handleBERandomTick(tick, rnd50(), 4);
+      global.handleBERandomTick(tick, rnd50(), 2);
     }).blockstateJson = {
     multipart: [
       {

@@ -4,6 +4,7 @@
     ],
     "slots": [
       "bank_meter",
+      "fish_radar",
       "clock",
       "chat_color",
       "calendarslot"

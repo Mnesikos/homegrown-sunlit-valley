@@ -144,7 +144,7 @@ global.handleBERightClick = (
         if (outputMult) {
           block.popItemFromFace(
             Item.of(
-              id.replace("1x ", `${outputMult} `),
+              id.replace("1x ", `${outputMult}x `),
               hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
             ),
             facing

@@ -219,6 +219,7 @@ global.artifacts = [
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
   { item: "society:steamy_gadget", value: 649 },
+  { item: "society:hello", value: 1200 },
   { item: "society:beemonican_seal", value: 2560 },
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
