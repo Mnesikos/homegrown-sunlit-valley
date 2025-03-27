@@ -26,8 +26,8 @@ global.seedMakerRecipes = [
   },
   { input: "supplementaries:flax", output: ["6x supplementaries:flax_seeds"] },
   {
-    input: "farm_and_charm:tomato",
-    output: ["6x farm_and_charm:tomato_seeds"],
+    input: "society:eggplant",
+    output: ["6x society:eggplant_seed"],
   },
   {
     input: "farm_and_charm:strawberry",

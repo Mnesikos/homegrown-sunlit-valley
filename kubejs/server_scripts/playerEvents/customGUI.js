@@ -91,7 +91,7 @@ const bankMeterPainter = (curios, player) => {
   }
 };
 
-const fishRadarPadding = 4;
+const fishRadarPadding = 2;
 const fishRadarPainter = (curios, e) => {
   const { player, level } = e;
   let localConditions = "";
@@ -111,34 +111,34 @@ const fishRadarPainter = (curios, e) => {
       fish = global.netherRadar(e, fish, setLocalConditions);
     }
     if (player.stages.has("mystical_ocean")) fish.push("society:neptuna");
-    let fishRadarStart = fish.length > 5 ? -96 : -75;
+    let fishRadarStart = 48;
     player.paint({
       fishRadarDisplay: {
         type: "text",
-        x: -fishRadarPadding,
+        x: fishRadarPadding,
         y: fishRadarStart,
         text: "=[ §aFish Radar§7 ]=",
         color: "#AAAAAA",
-        alignX: "right",
-        alignY: "bottom",
+        alignX: "left",
+        alignY: "top",
       },
       fishConditions: {
         type: "text",
-        x: level.dimension == "minecraft:the_nether" ? -8 : 52,
+        x: level.dimension == "minecraft:the_nether" ? -40 : 8,
         y: fishRadarStart + 8 + fishRadarPadding,
         text: localConditions,
         color: "#FFAA00",
-        alignX: "right",
-        alignY: "bottom",
+        alignX: "left",
+        alignY: "top",
       },
       fishRadarBottom: {
         type: "text",
-        x: -fishRadarPadding,
+        x: fishRadarPadding,
         y: fishRadarStart + 16 + fishRadarPadding * 2,
         text: "==============",
         color: "#AAAAAA",
-        alignX: "right",
-        alignY: "bottom",
+        alignX: "left",
+        alignY: "top",
       },
     });
     let fishUiElements = {};
@@ -149,11 +149,11 @@ const fishRadarPainter = (curios, e) => {
     fish.forEach((fishItem, index) => {
       fishUiElements[`fish_radar_${index}`] = {
         type: "item",
-        x: -68 + (index >= 5 ? (index - 5) * 18 : index * 18),
+        x: 10 + (index >= 5 ? (index - 5) * 18 : index * 18),
         y: fishRadarStart + 32 + fishRadarPadding * 4 + (index >= 5 ? 18 : 0),
         item: fishItem,
-        alignX: "right",
-        alignY: "bottom",
+        alignX: "left",
+        alignY: "top",
       };
     });
     global.renderUiItemText(player, fishUiElements, fishUiElementIds);

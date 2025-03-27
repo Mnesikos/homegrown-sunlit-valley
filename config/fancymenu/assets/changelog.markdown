@@ -1,6 +1,6 @@
 ^^^
 ## Texture Refresh
-### v2.3.1
+### v2.3.3
 ^^^
 --- 
 - Added new textures for Seeds, Mayo Machine, Preserves Jar, Seed Maker, Battery, Canvas, Merino Wool, Crab Trap Baits, Dried crops (Thanks Nitbe!)
@@ -26,4 +26,16 @@
 - Fixed Bait Maker preserving quality
 - Fixed Unusual Fish not being smoked with Hot Hands skill
 - Fixed `:skamtebord:`  emoji not being exported 
+
+## 2.3.1
 - Fixed Passion Vines randomly ticking
+
+## 2.3.2
+- Fixed infinite Flax glitch
+- Fixed Eggplant not having seed maker recipe
+- Fixed wrong version of Strawberry Seed being hidden
+
+## 2.3.3
+- Fixed hoe experience glitches
+- Fixed Fish Radar GUI positioning when worn as curio
+- Fixed Fish quest book section not having all fish

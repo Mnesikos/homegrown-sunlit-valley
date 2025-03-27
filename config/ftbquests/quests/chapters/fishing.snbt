@@ -598,6 +598,9 @@
 				"276AB91D9F9E4F10"
 				"2A51B962F55DBB92"
 				"7BE9B25EF273BDB9"
+				"6E4D5B648B0BDEC7"
+				"3A37BDD1FC16B8AF"
+				"39A4724958097814"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -743,7 +746,7 @@
 				item: "unusualfishmod:raw_duality_damselfish"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.5d
 			y: 5.5d
 		}
 		{
@@ -813,7 +816,7 @@
 				item: "unusualfishmod:raw_eyelash"
 				type: "item"
 			}]
-			x: 1.0d
+			x: -2.0d
 			y: 5.5d
 		}
 		{
@@ -845,6 +848,36 @@
 			}]
 			x: 2.5d
 			y: 4.0d
+		}
+		{
+			id: "3A37BDD1FC16B8AF"
+			tasks: [{
+				id: "64C9485723623185"
+				item: "netherdepthsupgrade:fortress_grouper"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 0.5d
+		}
+		{
+			id: "6E4D5B648B0BDEC7"
+			tasks: [{
+				id: "7A013265CAC9EC3A"
+				item: "aquaculture:goldfish"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			id: "39A4724958097814"
+			tasks: [{
+				id: "4EB6E2EB36456B86"
+				item: "netherdepthsupgrade:eyeball_fish"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.5d
 		}
 	]
 	title: "Fish"

@@ -6,6 +6,7 @@ const deniedCrops = [
   "minecraft:melon_stem",
   "minecraft:pumpkin_stem",
   "minecraft:cocoa",
+  "supplementaries:flax",
 ];
 const farmlands = [
   "minecraft:farmland",
@@ -19,7 +20,13 @@ BlockEvents.rightClicked((e) => {
   const { block, player, server, hand, item, level } = e;
   if (farmlands.includes(block.id) && player.isFake()) e.cancel();
   if (hand == "MAIN_HAND") {
-    if (block.hasTag("minecraft:crops")) {
+    const initialBlock = level.getBlockState(block.pos);
+    let checkBlocked;
+    let blockState;
+    if (
+      block.hasTag("minecraft:crops") &&
+      initialBlock.block.isMaxAge(initialBlock)
+    ) {
       let xpCount = 0;
       let radius = 0;
       if (item.hasTag("minecraft:hoes")) radius = 1;
@@ -35,18 +42,17 @@ BlockEvents.rightClicked((e) => {
         new BlockPos(block.x - radius, block.y, block.z - radius),
         [block.x + radius, block.y, block.z + radius]
       )) {
-        let checkBlocked = level.getBlock(pos);
+        checkBlocked = level.getBlock(pos);
+        blockState = level.getBlockState(pos);
         if (
           checkBlocked.hasTag("minecraft:crops") &&
           !deniedCrops.includes(checkBlocked.id)
         ) {
-          const blockState = level.getBlockState(pos);
-          const cropBlock = blockState.block;
-          if (cropBlock.isMaxAge(blockState)) {
+          if (blockState.block.isMaxAge(blockState)) {
             if (player.isFake()) {
               e.cancel();
             } else {
-              xpCount += cropBlock.getMaxAge();
+              xpCount += blockState.block.getMaxAge();
             }
           }
         }

@@ -517,7 +517,7 @@ JEIEvents.hideItems((e) => {
     "trofers:small_pillar",
     "fantasyfurniture:furniture_station",
     "brewery:hops_seeds",
-    "farm_and_charm:strawberry_seed",
+    "farm_and_charm:strawberry_seeds",
     "pamhc2trees:orangeitem",
     "farm_and_charm:water_sprinkler",
     "atmospheric:golden_dragon_fruit_crate",
