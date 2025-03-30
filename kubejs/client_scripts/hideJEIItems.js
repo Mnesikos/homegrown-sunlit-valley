@@ -1,6 +1,11 @@
 JEIEvents.hideItems((e) => {
   const hiddenItems = [
     // Twigs
+    "gamediscs:battery",
+    "gamediscs:redstone_circuit",
+    "gamediscs:processor",
+    "gamediscs:display",
+    "gamediscs:control_pad",
     "extractinator:silt",
     "botania:pebble",
     "decorative_blocks:rocky_dirt",

@@ -261,16 +261,6 @@ ServerEvents.recipes((e) => {
     l: "minecraft:leather",
     p: "society:prismatic_shard",
   });
-  e.shaped(
-    Item.of("minecraft:enchanted_book").enchant("minecraft:looting", 3),
-    [" j ", "cbc", " p "],
-    {
-      j: "society:fire_quartz",
-      b: "minecraft:book",
-      c: "numismatics:sun",
-      p: "society:prismatic_shard",
-    }
-  );
   e.shapeless("society:ancient_goddess_statue", [
     "paraglider:goddess_statue",
     "society:prismatic_shard",

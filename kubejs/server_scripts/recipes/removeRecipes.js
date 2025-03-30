@@ -4,6 +4,14 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "waterframes:remote",
+    "waterframes:frame",
+    "waterframes:tv",
+    "gamediscs:redstone_circuit",
+    "gamediscs:processor",
+    "gamediscs:display",
+    "gamediscs:control_pad",
+    "gamediscs:battery",
     // Stardew Fishing
     "stardew_fishing:trap_bobber",
     "stardew_fishing:cork_bobber",

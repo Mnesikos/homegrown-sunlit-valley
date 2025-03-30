@@ -170,6 +170,28 @@ ItemEvents.entityInteracted((e) => {
           false,
           e
         );
+        handleSpecialItem(
+          data,
+          0.25,
+          hungry,
+          5,
+          1,
+          "minecraft:sniffer_egg",
+          true,
+          e
+        );
+      }
+      if (target.type === "species:goober") {
+        handleSpecialItem(
+          data,
+          0.25,
+          hungry,
+          5,
+          1,
+          "species:petrified_egg",
+          true,
+          e
+        );
       }
       if (target.type === "minecraft:panda") {
         const pandaFruits = [

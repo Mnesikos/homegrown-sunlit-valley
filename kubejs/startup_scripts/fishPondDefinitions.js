@@ -476,7 +476,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:zombie_head", count: 1 },
           { item: "minecraft:bone", count: 16 },
-          { item: "vinery:cristel_wine", count: 1 },
+          { item: "vinery:bottle_mojang_noir", count: 1 },
         ],
       },
       {
@@ -487,7 +487,7 @@ global.fishPondDefinitions = [
             count: 4,
           },
           { item: "relics:relic_experience_bottle", count: 4 },
-          { item: "society:aged_cristel_wine", count: 1 },
+          { item: "society:aged_bottle_mojang_noir", count: 1 },
         ],
       },
     ],
@@ -875,7 +875,7 @@ global.fishPondDefinitions = [
         item: "tanukidecor:red_clock",
         count: 1,
         chance: 0.04,
-      }
+      },
     ],
   },
   {
@@ -2039,13 +2039,15 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "create:blaze_burner", count: 4 },
-          { item: "quark:blaze_lantern", count: 8 },
           { item: "society:jasper", count: 1 },
         ],
       },
       {
         population: 7,
-        requestedItems: [{ item: "create:blaze_cake", count: 4 }],
+        requestedItems: [
+          { item: "create:blaze_cake", count: 4 },
+          { item: "quark:blaze_lantern", count: 8 },
+        ],
       },
     ],
     additionalRewards: [
@@ -2824,9 +2826,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "farmersdelight:iron_knife", count: 1 },
-        ],
+        requestedItems: [{ item: "farmersdelight:iron_knife", count: 1 }],
       },
       {
         population: 5,
@@ -3405,9 +3405,9 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: 'society:large_goose_mayonnaise', count: 4 },
-          { item: 'society:large_turkey_mayonnaise', count: 4 },
-          { item: 'society:large_duck_mayonnaise', count: 4 }
+          { item: "society:large_goose_mayonnaise", count: 4 },
+          { item: "society:large_turkey_mayonnaise", count: 4 },
+          { item: "society:large_duck_mayonnaise", count: 4 },
         ],
       },
       {

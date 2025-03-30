@@ -1,6 +1,6 @@
 {
     "name": "Society Capital Hill",
-    "version": "2.3.3",
+    "version": "2.4.0",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -12,8 +12,7 @@
     "client_overrides": [
         "panoramas",
         "resourcepacks",
-        "shaderpacks",
-        "emi.json"
+        "shaderpacks"
     ],
     "projects": {
         "ambientsounds": {

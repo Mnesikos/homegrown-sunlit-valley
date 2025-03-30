@@ -31,7 +31,7 @@
               "function": "supplementaries:curse_loot"
             }
           ],
-          "name": "minecraft:diamond_helmet"
+          "name": "minecraft:gold_helmet"
         },
         {
           "type": "minecraft:item",
@@ -59,7 +59,7 @@
               "function": "supplementaries:curse_loot"
             }
           ],
-          "name": "minecraft:diamond_boots"
+          "name": "minecraft:gold_boots"
         },
         {
           "type": "minecraft:item",
@@ -177,6 +177,22 @@
             }
           ],
           "name": "society:legendary_ink"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 1.0
+              },
+              "add": false
+            }
+          ],
+          "name": "gamediscs:game_disc_pong"
         }
       ]
     }

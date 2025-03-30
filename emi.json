@@ -1,6 +1,57 @@
 {
   "favorites": [],
-  "lookup_history": [],
+  "lookup_history": [
+    "item:species:petrified_egg",
+    "item:society:geode",
+    "item:society:geode_buster",
+    "item:society:tigerseye",
+    "item:society:frozen_geode",
+    "item:society:ghost_crystal",
+    "item:society:ribbit_drum",
+    "item:society:slate",
+    "item:society:kyanite",
+    "item:society:sandstone_slate",
+    "item:society:hematite",
+    "item:society:sniffer_mayonnaise",
+    {
+      "type": "item",
+      "id": "society:frosty_fin_bait",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "society:red_grouper_bait",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:pufferfish_bait",
+      "amount": 6
+    },
+    "item:society:dragontooth_axe{Damage:0}",
+    "item:society:wither_bonefish_bait",
+    "item:society:catfish_bait",
+    "item:society:jellyfish_bait",
+    "item:crabbersdelight:deluxe_crab_trap_bait",
+    "item:gamediscs:game_disc_blocktris",
+    "item:gamediscs:gaming_console",
+    "item:waterframes:frame",
+    "item:waterframes:remote",
+    "item:waterframes:projector",
+    "item:waterframes:tv",
+    "item:waterframes:big_tv",
+    "item:waterframes:tv_box",
+    "item:gamediscs:display",
+    "item:gamediscs:processor",
+    "item:gamediscs:battery",
+    "item:society:quality_washer",
+    "item:vinery:bottle_mojang_noir{}",
+    "item:society:prismatic_shard",
+    "item:numismatics:prismatic_coin",
+    "item:numismatics:sun",
+    "item:numismatics:ancient_coin",
+    "item:botania:rune_greed"
+  ],
   "craft_history": [],
   "recipe_defaults": {
     "added": [
@@ -1419,6 +1470,7 @@
     "item:minecraft:suspicious_stew{Effects:[{EffectDuration:240,EffectId:58,\"forge:effect_id\":\"buzzier_bees:sunny\"}]}",
     "item:minecraft:suspicious_stew{Effects:[{EffectDuration:120,EffectId:116,\"forge:effect_id\":\"atmospheric:worsening\"}]}",
     "item:minecraft:suspicious_stew{Effects:[{EffectDuration:120,EffectId:115,\"forge:effect_id\":\"atmospheric:relief\"}]}",
-    "item:minecraft:suspicious_stew{Effects:[{EffectDuration:300,EffectId:118,\"forge:effect_id\":\"atmospheric:persistence\"}]}"
+    "item:minecraft:suspicious_stew{Effects:[{EffectDuration:300,EffectId:118,\"forge:effect_id\":\"atmospheric:persistence\"}]}",
+    "item:gamediscs:battery"
   ]
 }

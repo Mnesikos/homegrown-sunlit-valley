@@ -43,9 +43,10 @@ ItemEvents.firstLeftClicked((e) => {
     let damageableMobs = level
       .getEntitiesWithin(player.boundingBox.inflate(radius + 0.5))
       .filter((entity) => entity.isMonster());
-
+    let hammerDamage = player.potionEffects.isActive("minecraft:strength") ? 20 : 15;
+    
     damageableMobs.forEach((target) => {
-      target.isAttackable() && target.attack(15);
+      target.isAttackable() && target.attack(hammerDamage);
       level.spawnParticles(
         "species:ichor",
         true,
