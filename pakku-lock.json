@@ -4573,6 +4573,42 @@
             ]
         },
         {
+            "pakku_id": "MIVpGds0agAOKZR9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "game-discs"
+            },
+            "name": {
+                "curseforge": "Game Discs"
+            },
+            "id": {
+                "curseforge": "1099059"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "gamediscs-0.3.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5762/434/gamediscs-0.3.1.jar",
+                    "id": "5762434",
+                    "parent_id": "1099059",
+                    "hashes": {
+                        "sha1": "b4bcb7220f818ec8718108336ed8cbefcacb948b",
+                        "md5": "9a7db3e995bd5b47848e244270bd191a"
+                    },
+                    "required_dependencies": [],
+                    "size": 259432,
+                    "date_published": "2024-09-27T19:10:23.610Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ax6OmuUMn2ZMVIDp",
             "type": "MOD",
             "slug": {
