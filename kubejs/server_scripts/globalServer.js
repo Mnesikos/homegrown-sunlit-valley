@@ -254,6 +254,7 @@ global.netherRadar = (e, local, printFunction) => {
   } else if (biome.includes("minecraft:basalt_deltas")) {
     printFunction(`            §4Basalt Deltas`);
     netherFish.push("netherdepthsupgrade:magmacubefish");
+    netherFish.push("netherdepthsupgrade:obsidianfish");
   } else if (biome.includes("minecraft:crimson_forest")) {
     printFunction(`            §4Crimson Forest`);
     netherFish.push("netherdepthsupgrade:eyeball_fish");

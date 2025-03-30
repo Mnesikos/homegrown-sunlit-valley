@@ -499,7 +499,7 @@ StartupEvents.registry("item", (e) => {
     { item: "atmospheric:passion_fruit", hex: 0xebb020 },
     { item: "pamhc2trees:starfruititem", hex: 0xf8d035 },
     { item: "pamhc2trees:mangoitem", hex: 0xf1bc2e },
-    { item: "pamhc2trees:lycheeitem", hex: 0xc32b2b },
+    { item: "pamhc2trees:lycheeitem", hex: 0xd5dce2 },
     { item: "vinery:cherry", hex: 0xa2252e },
     { item: "pamhc2trees:peachitem", hex: 0xeb996e },
     { item: "pamhc2trees:plumitem", hex: 0xcc7dd1 },

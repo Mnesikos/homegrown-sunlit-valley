@@ -5,16 +5,14 @@ const NUMISMATICS = Java.loadClass(
 );
 const GLOBAL_BANK = NUMISMATICS.BANK;
 
-const updateLeaderboardMap = () => {
+const updateLeaderboardMap = (server) => {
   let playerName;
-  let playerList = JsonIO.read("kubejs/data/players_registered.json");
-
+  let playerList = server.persistentData.playerList;
   let leaderboardMap = new Map();
   GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     playerName = playerList[playerUUID];
     leaderboardMap.set(playerName, bankAccount.getBalance());
   });
-
   return Array.from(leaderboardMap)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10);
@@ -40,11 +38,11 @@ const clearOldLeaderboard = (block) => {
     });
 };
 
-const updateLeaderboard = (block) => {
+global.updateLeaderboard = (block, server) => {
   const { x, y, z } = block;
   let entity;
   let calcY = y + 1;
-  let leaderboardMap = updateLeaderboardMap();
+  let leaderboardMap = updateLeaderboardMap(server);
 
   clearOldLeaderboard(block);
 
@@ -96,7 +94,7 @@ StartupEvents.registry("block", (e) => {
     })
     .blockEntity((be) => {
       be.serverTick(200, 0, (tick) => {
-        updateLeaderboard(tick.block);
+        global.updateLeaderboard(tick.block, tick.level.server);
       });
     });
 });

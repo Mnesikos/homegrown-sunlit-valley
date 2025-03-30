@@ -3,7 +3,7 @@ console.info("[SOCIETY] registerWeapons.js loaded");
 ItemEvents.toolTierRegistry((e) => {
   e.add("prismatic", (tier) => {
     tier.uses = 1000;
-    tier.speed = 2.0;
+    tier.speed = 8;
     tier.attackDamageBonus = 2.0;
     tier.level = 2;
     tier.enchantmentValue = 14;

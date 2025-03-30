@@ -236,7 +236,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "society:black_opal",
     Text.green(
-      "Use on §2Crystalarium§a to give it a 25% chance of producing pristine items"
+      "Use on §2Crystalarium§a to give it a 10% chance of producing pristine items"
     )
   );
   tooltip.add(

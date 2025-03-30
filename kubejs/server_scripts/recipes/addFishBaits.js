@@ -9,7 +9,8 @@ ServerEvents.highPriorityData((e) => {
     )
       return;
     if (fishId.includes("raw_")) {
-      fishId = fishId.substring(4, fishId.length);
+      if (fishId === "raw_snowflake") fishId = "frosty_fin";
+      else fishId = fishId.substring(4, fishId.length);
     }
     e.addJson(
       `crabbersdelight:loot_tables/gameplay/crab_trap_loot/society/${fishId}_bait.json`,

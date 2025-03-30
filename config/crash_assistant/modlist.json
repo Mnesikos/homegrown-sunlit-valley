@@ -459,6 +459,10 @@
     "modId": "gallery",
     "version": "1.0.2"
   },
+  "gamediscs-0.3.1.jar": {
+    "modId": "gamediscs",
+    "version": "0.3.1"
+  },
   "geckolib-forge-1.20.1-4.7.jar": {
     "modId": "geckolib",
     "version": "4.7"
@@ -507,9 +511,9 @@
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"
   },
-  "Jade-1.20.1-forge-11.11.1.jar": {
+  "Jade-1.20.1-Forge-11.12.3.jar": {
     "modId": "jade",
-    "version": "11.11.1+forge"
+    "version": "11.12.3+forge"
   },
   "JadeAddons-1.20.1-Forge-5.3.1.jar": {
     "modId": "jadeaddons",
@@ -968,9 +972,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "stardew_fishing-1.20.1-2.1.jar": {
+  "stardew_fishing-1.20.1-2.2.jar": {
     "modId": "stardew_fishing",
-    "version": "2.1"
+    "version": "2.2"
   },
   "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
     "modId": "railways",

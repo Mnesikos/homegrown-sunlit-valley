@@ -68,6 +68,12 @@
           "weight": 1
         },
         {
+          "type": "minecraft:item",
+          "name": "gamediscs:game_disc_froggie",
+          "entryName": "game_disc_froggie",
+          "weight": 1
+        },
+        {
           "type": "item",
           "name": "society:furniture_box",
           "entryName": "furniture_box",

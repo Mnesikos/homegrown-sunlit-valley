@@ -787,6 +787,29 @@
 			x: 5.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"High quality items can lead to a huge increase in profits, but it can make automation and storage a hassle."
+				""
+				"The &6Quality Washer&r removes quality from crops inserted into it, pushing it into the inventory below."
+			]
+			id: "08CFE766C9645FC8"
+			rewards: [{
+				count: 4
+				id: "69E47AA8BD899E47"
+				item: "dew_drop_farmland_growth:high_quality_fertilizer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D2C8AFDDED732A1"
+				item: "society:quality_washer"
+				type: "item"
+			}]
+			title: "Removing Quality"
+			x: 6.0d
+			y: 0.5d
+		}
 	]
 	title: "III - Advanced Farming"
 }
