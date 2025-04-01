@@ -1,6 +1,6 @@
 ^^^
 ## Game Drop
-### v2.4.0
+### v2.4.2
 ^^^
 --- 
 - Added Game Discs to various loot
@@ -17,3 +17,12 @@
 - Fixed Coin Leaderboard not working right when updating the pack
 - Fixed Frosty Fin bait not working
 - Fixed Tea Blossoms having incorrect seasons
+
+### 2.4.1
+- Fixed Game discs not being exported
+
+### 2.4.2
+- Added new loom model from Nitbe
+- Reduced food values of certain items
+- Reduced quality food saturation/diversity boost
+- Fixed certain mods not being updated (packdev moment)

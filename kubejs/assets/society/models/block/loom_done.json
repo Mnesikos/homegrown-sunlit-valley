@@ -2,17 +2,18 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "society:block/loom/base_upgraded",
-		"1": "society:block/loom/wood_2_upgraded",
-		"2": "society:block/loom/wood_upgraded",
+		"0": "society:block/loom/base",
+		"1": "society:block/loom/wood_2",
+		"2": "society:block/loom/wood",
 		"3": "society:block/loom/bar_bottom",
 		"4": "society:block/loom/bar_top",
 		"5": "society:block/loom/bracket_2",
 		"6": "society:block/loom/bracket",
 		"7": "society:block/loom/fabric/top",
 		"8": "society:block/loom/fabric/bottom",
-		"9": "society:block/loom/fabric/making",
-		"particle": "society:block/loom/base_upgraded"
+		"9": "society:block/loom/fabric/done_top",
+		"10": "society:block/loom/fabric/done",
+		"particle": "society:block/loom/base"
 	},
 	"elements": [
 		{
@@ -153,6 +154,35 @@
 				"up": {"uv": [5, 0, 0, 0], "texture": "#9"},
 				"down": {"uv": [5, 0, 0, 0], "texture": "#9"}
 			}
+		},
+		{
+			"name": "fabricdone",
+			"from": [3, 4, 2.7],
+			"to": [13, 19, 2.7],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [7, 3, 2.7]},
+			"faces": {
+				"north": {"uv": [0, 0.05, 5, 7.55], "texture": "#10"},
+				"east": {"uv": [0, 0, 0, 7.5], "texture": "#10"},
+				"south": {"uv": [5, 0, 10, 7.5], "texture": "#10"},
+				"west": {"uv": [0, 0, 0, 7.5], "texture": "#10"},
+				"up": {"uv": [5, 0, 0, 0], "texture": "#10"},
+				"down": {"uv": [5, 0, 0, 0], "texture": "#10"}
+			}
+		}
+	],
+	"groups": [
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [7, 8, 9, 10]
 		}
 	],
 	"display": {
@@ -186,20 +216,5 @@
 		"fixed": {
 			"scale": [0.5, 0.5, 0.5]
 		}
-	},
-	"groups": [
-		0,
-		1,
-		2,
-		3,
-		4,
-		5,
-		6,
-		{
-			"name": "group",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [7, 8, 9]
-		}
-	]
+	}
 }

@@ -1,13 +1,12 @@
 {
     "name": "Society Capital Hill",
-    "version": "2.4.1",
+    "version": "2.4.2",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
         "patchouli_books",
-        "quests_structures",
-        "emi.json"
+        "quests_structures"
     ],
     "client_overrides": [
         "panoramas",

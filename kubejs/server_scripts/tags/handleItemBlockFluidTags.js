@@ -129,6 +129,8 @@ ServerEvents.tags("item", (e) => {
   });
   e.add("forge:milks", "meadow:wooden_grain_milk_bucket");
   e.add("farm_and_charm:milk", "meadow:wooden_grain_milk_bucket");
+
+  e.add('forge:shears', 'society:magic_shears')
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
@@ -150,7 +152,8 @@ ServerEvents.tags("item", (e) => {
     )
       return;
     if (fishId.includes("raw_")) {
-      fishId = fishId.substring(4, fishId.length);
+      if (fishId === "raw_snowflake") fishId = "frosty_fin";
+      else fishId = fishId.substring(4, fishId.length);
     }
 
     e.add(

@@ -128,4 +128,12 @@ ItemEvents.modification((e) => {
     item.setArmorProtection(2.5);
   });
   e.modify("twigs:twig", (item) => (item.burnTime = 200));
+  e.modify(
+    "beachparty:cooked_mussel_meat",
+    (item) =>
+      (item.foodProperties = (food) => {
+        food.hunger(5);
+        food.saturation(0.5);
+      })
+  );
 });

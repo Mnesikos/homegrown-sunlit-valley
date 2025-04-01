@@ -103,9 +103,9 @@
     "modId": "botania",
     "version": "1.20.1-447-FORGE"
   },
-  "botania_seeds-1.1.0.jar": {
+  "botania_seeds-1.1.1.jar": {
     "modId": "botania_seeds",
-    "version": "1.1.0"
+    "version": "1.1.1"
   },
   "bots_lib-4.0.jar": {
     "modId": "bots_lib",
@@ -255,9 +255,9 @@
     "modId": "creeperconfetti",
     "version": "4.3"
   },
-  "croptania-0.2.jar": {
+  "croptania-0.3.jar": {
     "modId": "croptania",
-    "version": "0.2"
+    "version": "0.3"
   },
   "cupboard-1.20.1-2.7.jar": {
     "modId": "cupboard",

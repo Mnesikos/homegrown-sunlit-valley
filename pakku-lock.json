@@ -1133,7 +1133,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "botania_seeds-1.1.0.jar",
+                    "file_name": "botania_seeds-1.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1141,16 +1141,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6180/471/botania_seeds-1.1.0.jar",
-                    "id": "6180471",
+                    "url": "https://edge.forgecdn.net/files/6353/856/botania_seeds-1.1.1.jar",
+                    "id": "6353856",
                     "parent_id": "1197807",
                     "hashes": {
-                        "sha1": "8f658d6156fb815524a3044b1cae1b84d6e018fa",
-                        "md5": "94aae54946bb8dd241c8fedabc2918fa"
+                        "sha1": "6f36454838bfba648914626643d40162a459e281",
+                        "md5": "845fb5d53c2d095a70673e54216872a6"
                     },
                     "required_dependencies": [],
-                    "size": 128686,
-                    "date_published": "2025-02-11T02:45:29.170Z"
+                    "size": 129070,
+                    "date_published": "2025-03-27T01:47:37.183Z"
                 }
             ]
         },
@@ -2666,7 +2666,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "croptania-0.2.jar",
+                    "file_name": "croptania-0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2674,16 +2674,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6261/19/croptania-0.2.jar",
-                    "id": "6261019",
+                    "url": "https://edge.forgecdn.net/files/6353/910/croptania-0.3.jar",
+                    "id": "6353910",
                     "parent_id": "1205372",
                     "hashes": {
-                        "sha1": "e2bd3a4fd01e0a4eb98ab53468d5368a8bddf7d1",
-                        "md5": "487430f12762099d474fd595f2d066ba"
+                        "sha1": "c19bf81ea1b8d81f09d1c8a27963b5c0e7fbb024",
+                        "md5": "c463465a5cb4ca97b923111153d68a23"
                     },
                     "required_dependencies": [],
-                    "size": 74922,
-                    "date_published": "2025-03-03T19:31:30.770Z"
+                    "size": 31377,
+                    "date_published": "2025-03-27T02:11:49.373Z"
                 }
             ]
         },
@@ -9182,7 +9182,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stardew_fishing-1.20.1-2.1.jar",
+                    "file_name": "stardew_fishing-1.20.1-2.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9191,16 +9191,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6324/807/stardew_fishing-1.20.1-2.1.jar",
-                    "id": "6324807",
+                    "url": "https://edge.forgecdn.net/files/6364/943/stardew_fishing-1.20.1-2.2.jar",
+                    "id": "6364943",
                     "parent_id": "1066037",
                     "hashes": {
-                        "sha1": "dd72d391c8499b787cfe2ab97e1556a9501c4dbd",
-                        "md5": "7f9369c37d663b224a91b473a059107f"
+                        "sha1": "dcf38817e8c78dbdcc653bbe599f60ebcb333724",
+                        "md5": "306127b042cfeb0baec7f9c0ea6b29ba"
                     },
                     "required_dependencies": [],
-                    "size": 555702,
-                    "date_published": "2025-03-20T09:14:30.777Z"
+                    "size": 556054,
+                    "date_published": "2025-03-29T22:24:38.963Z"
                 }
             ]
         },

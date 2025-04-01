@@ -15,7 +15,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 5))
     .property(integerProperty.create("type", 0, global.loomRecipes.length))
-    .box(1, 0, 1, 15, 11, 15)
+    .box(0, 0, 1, 16, 26, 16)
     .defaultCutout()
     .displayName("Canvas Loom")
     .tagBlock("minecraft:mineable/pickaxe")
@@ -24,7 +24,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Processes 5 fibers into artisan items"));
       item.modelJson({
-        parent: "society:block/loom_empty",
+        parent: "society:block/loom_off",
       });
     })
     .defaultState((state) => {
@@ -109,22 +109,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-      {
-        when: { working: false, facing: "north" },
-        apply: { model: "society:block/loom_empty", y: 0, uvlock: false },
-      },
-      {
-        when: { working: false, facing: "east" },
-        apply: { model: "society:block/loom_empty", y: 90, uvlock: false },
-      },
-      {
-        when: { working: false, facing: "south" },
-        apply: { model: "society:block/loom_empty", y: 180, uvlock: false },
-      },
-      {
-        when: { working: false, facing: "west" },
-        apply: { model: "society:block/loom_empty", y: -90, uvlock: false },
-      },
-    ].concat(getCardinalMultipartJsonLoom("loom")),
+    ].concat(getCardinalMultipartJson("loom")),
   };
 });

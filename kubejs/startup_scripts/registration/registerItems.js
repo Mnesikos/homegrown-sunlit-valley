@@ -118,7 +118,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:battery").texture("society:item/battery");
   e.create("society:neptuna")
     .food((food) => {
-      food.hunger(20).saturation(2).meat();
+      food.hunger(10).saturation(1).meat();
     })
     .texture("society:item/neptuna")
     .glow(true);
@@ -384,7 +384,7 @@ StartupEvents.registry("item", (e) => {
       .texture(`society:item/husbandry/${item}`)
       .food((food) => {
         food.hunger(item.includes("large") ? 5 : 1);
-        food.saturation(2);
+        food.saturation(1);
         food.effect("farm_and_charm:grandmas_blessing", 200, 0, 1.0);
         food.alwaysEdible(true);
       })

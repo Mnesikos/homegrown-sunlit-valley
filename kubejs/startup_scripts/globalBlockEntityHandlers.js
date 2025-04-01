@@ -273,43 +273,6 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     block.set(block.id, newProperties);
   }
 };
-const getCardinalMultipartJsonLoom = (name) => {
-  const path = `society:block/${name}`;
-  return [
-    {
-      when: { working: true, upgraded: false, facing: "north" },
-      apply: { model: `${path}`, y: 0, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: false, facing: "east" },
-      apply: { model: `${path}`, y: 90, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: false, facing: "south" },
-      apply: { model: `${path}`, y: 180, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: false, facing: "west" },
-      apply: { model: `${path}`, y: -90, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: true, facing: "north" },
-      apply: { model: `${path}_upgraded`, y: 0, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: true, facing: "east" },
-      apply: { model: `${path}_upgraded`, y: 90, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: true, facing: "south" },
-      apply: { model: `${path}_upgraded`, y: 180, uvlock: false },
-    },
-    {
-      when: { working: true, upgraded: true, facing: "west" },
-      apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
-    },
-  ]
-}
 const getCardinalMultipartJson = (name) => {
   const path = `society:block/${name}`;
   let offJson = [
