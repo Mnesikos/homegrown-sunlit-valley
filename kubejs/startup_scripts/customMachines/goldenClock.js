@@ -58,7 +58,7 @@ StartupEvents.registry("block", (event) => {
   event
     .create("society:golden_clock", "cardinal")
     .soundType("copper")
-    .box(0, 0, 4, 16, 16, 12)
+    .box(1, 0, 1, 15, 16, 15)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")

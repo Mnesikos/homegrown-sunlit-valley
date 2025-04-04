@@ -1,6 +1,6 @@
 ^^^
 ## Game Drop
-### v2.4.2
+### v2.4.3
 ^^^
 --- 
 - Added Game Discs to various loot
@@ -26,3 +26,8 @@
 - Reduced food values of certain items
 - Reduced quality food saturation/diversity boost
 - Fixed certain mods not being updated (packdev moment)
+
+### 2.4.3
+- Added new textures for Charging Rod, Deluxe Worm Farm, and Charging Rod
+- Fixed carrots being cheaper than sell price
+- Fixed multiplayer pigracing bugs

@@ -81,8 +81,8 @@
     {
       "output": "minecraft:carrot",
       "payment": {
-        "item": "numismatics:bevel",
-        "count": 1
+        "item": "numismatics:sprocket",
+        "count": 3
       }
     },
     {

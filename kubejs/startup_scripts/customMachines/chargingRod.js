@@ -8,7 +8,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 5))
     .soundType("copper")
-    .box(4, 0, 4, 12, 15, 12)
+    .box(4, 0, 4, 12, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
@@ -17,7 +17,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Makes batteries from lightning storms. Doesn't protect area")
       );
       item.modelJson({
-        parent: "society:block/charging_rod",
+        parent: "society:block/charging_rod_off",
       });
     })
     .defaultState((state) => {

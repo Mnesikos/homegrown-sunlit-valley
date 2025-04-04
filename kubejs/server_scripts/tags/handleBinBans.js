@@ -27,7 +27,8 @@ ServerEvents.tags("item", (e) => {
     "createutilities",
     "chimes",
     "botania",
-    "farmingforblockheads"
+    "farmingforblockheads",
+    "numismatics"
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
@@ -142,11 +143,6 @@ ServerEvents.tags("item", (e) => {
     "quark:pickarang",
     "quark:ancient_sapling",
     "quark:ancient_tome",
-    "numismatics:bevel",
-    "numismatics:sun",
-    "numismatics:sprocket",
-    "numismatics:crown",
-    "numismatics:cog",
     "nethervinery:warped_fermentation_barrel",
     "nethervinery:netherite_nectar",
     "minecraft:iron_pickaxe",

@@ -395,7 +395,10 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
     },
   });
 };
-
+const resetMP = (server) => {
+  server.persistentData.bets = [];
+  server.persistentData.pigraceInProgress = false;
+}
 const runPigRace = (player, server, bet, betPig, ranking, pigSpeeds) => {
   player.addItemCooldown("society:pig_race_ticket", 350);
   server.scheduleInTicks(0, () => {
@@ -487,13 +490,8 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
   let ranking = [];
   let players = [];
   let prizePool = 0;
-  if (
-    raceData.pigraceInProgress &&
-    (server.getTickCount() < raceData.ageRaceStarted ||
-      server.getTickCount() - raceData.ageRaceStarted > 250)
-  ) {
-    raceData.pigraceInProgress = false;
-  }
+  
+  resetMP(server);
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
       `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FFFFFFF",y:-60} 4 There's already a pig race happening! Type /pigrace <pig> to join!`
@@ -577,6 +575,8 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
             "Pig race cancelled! Multiple bets are required to start..."
           )
         );
+        clearPigPaint(player)
+        resetMP(server);
       }
     });
 
@@ -591,9 +591,11 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
               prizePool,
               ranking
             );
+            clearPigPaint(player)
           }
         }
       });
+      resetMP(server);
     });
   });
 });

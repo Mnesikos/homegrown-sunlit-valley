@@ -130,7 +130,8 @@ const sendProgressMessage = (
   }
   if (recipe?.input === item) return;
   let duration =
-    recipes[Number(block.properties.get("type").toLowerCase()) - 1].time ||
+    (block.properties.get("type") &&
+      recipes[Number(block.properties.get("type").toLowerCase()) - 1].time) ||
     stageCount;
   if (
     machineId == "society:aging_cask" &&
