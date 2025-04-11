@@ -1,6 +1,45 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": "item:farm_and_charm:corn_bag"
+    }
+  ],
   "lookup_history": [
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:weeping\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sweet\"}}",
+    {
+      "type": "item",
+      "id": "splendid_slimes:slime_heart",
+      "nbt": "{slime:{id:\"splendid_slimes:puddle\"}}",
+      "amount": 64
+    },
+    "item:netherdepthsupgrade:bonefish",
+    "item:botania:pixie_dust",
+    "item:betterarcheology:artifact_shards",
+    "item:gamediscs:game_disc_blocktris",
+    "item:society:earth_crystal",
+    "item:botania:overgrowth_seed",
+    "item:society:froggy_helm",
+    "item:herbalbrews:coffee_beans_sack",
+    "item:society:ancient_fruit_crate",
+    "item:snowyspirit:ginger",
+    {
+      "type": "item",
+      "id": "atmospheric:shimmering_passion_fruit_crate",
+      "amount": 56
+    },
+    {
+      "type": "item",
+      "id": "quark:golden_apple_crate",
+      "amount": 64
+    },
+    "item:society:tubabacco_leaf_block",
+    "item:farm_and_charm:onion_bag",
+    "item:candlelight:bamboo_stove",
+    "item:railways:track_bamboo",
+    "item:candlelight:bamboo_big_table",
+    "item:candlelight:bamboo_drawer",
     "item:society:deluxe_worm_farm",
     "item:society:large_goat_milk",
     "item:unusualfishmod:raw_snowflake",
@@ -36,7 +75,6 @@
     "item:society:catfish_bait",
     "item:society:jellyfish_bait",
     "item:crabbersdelight:deluxe_crab_trap_bait",
-    "item:gamediscs:game_disc_blocktris",
     "item:gamediscs:gaming_console",
     "item:waterframes:frame",
     "item:waterframes:remote",
@@ -55,7 +93,13 @@
     "item:numismatics:ancient_coin",
     "item:botania:rune_greed"
   ],
-  "craft_history": [],
+  "craft_history": [
+    "vintagedelight:gearo_bag_deconstruct",
+    "farm_and_charm:onion_bag",
+    "farm_and_charm:onion_from_bag",
+    "farm_and_charm:barley_ball",
+    "candlelight:bamboo_stove"
+  ],
   "recipe_defaults": {
     "added": [
       "minecraft:kjs/society_deluxe_worm_farm",

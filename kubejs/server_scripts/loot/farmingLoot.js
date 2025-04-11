@@ -6,8 +6,6 @@ const cropList = [
   "minecraft:potatoes",
   "minecraft:pumpkin_stem",
   "minecraft:melon_stem",
-  "minecraft:torchflower_crop",
-  "minecraft:pitcher_crop",
   "minecraft:beetroots",
   "snowyspirit:ginger",
   "supplementaries:flax",

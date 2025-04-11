@@ -39,9 +39,9 @@
     "modId": "armorstatues",
     "version": "8.0.6"
   },
-  "atmospheric-1.20.1-6.0.0.jar": {
+  "atmospheric-1.20.1-6.1.1.jar": {
     "modId": "atmospheric",
-    "version": "6.0.0"
+    "version": "6.1.1"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -51,9 +51,9 @@
     "modId": "automobility",
     "version": "0.4.2+1.20.1-forge"
   },
-  "autumnity-1.20.1-5.0.1.jar": {
+  "autumnity-1.20.1-5.0.2.jar": {
     "modId": "autumnity",
-    "version": "5.0.1"
+    "version": "5.0.2"
   },
   "badpackets-forge-0.4.3.jar": {
     "modId": "badpackets",
@@ -63,9 +63,9 @@
     "modId": "balloonbox",
     "version": "1.20.1-1.0.3"
   },
-  "balm-forge-1.20.1-7.3.10-all.jar": {
+  "balm-forge-1.20.1-7.3.27-all.jar": {
     "modId": "balm",
-    "version": "7.3.10"
+    "version": "7.3.27"
   },
   "beautify-2.0.2.jar": {
     "modId": "beautify",
@@ -91,9 +91,9 @@
     "modId": "biomespawnpoint",
     "version": "2.3"
   },
-  "blueprint-1.20.1-7.1.0.jar": {
+  "blueprint-1.20.1-7.1.3.jar": {
     "modId": "blueprint",
-    "version": "7.1.0"
+    "version": "7.1.3"
   },
   "Bookshelf-Forge-1.20.1-20.2.13.jar": {
     "modId": "bookshelf",
@@ -119,9 +119,9 @@
     "modId": "buildinggadgets2",
     "version": "1.0.7"
   },
-  "buzzier_bees-1.20.1-6.0.0.jar": {
+  "buzzier_bees-1.20.1-6.0.1.jar": {
     "modId": "buzzier_bees",
-    "version": "6.0.0"
+    "version": "6.0.1"
   },
   "bwncr-forge-1.20.1-3.17.2.jar": {
     "modId": "bwncr",
@@ -155,9 +155,9 @@
     "modId": "chimes",
     "version": "2.0.1"
   },
-  "clayworks-1.20.1-3.0.2.jar": {
+  "clayworks-1.20.1-3.0.4.jar": {
     "modId": "clayworks",
-    "version": "3.0.2"
+    "version": "3.0.4"
   },
   "cleanview-1.20.1-v1.jar": {
     "modId": "cleanview",
@@ -455,9 +455,9 @@
     "modId": "gag",
     "version": "3.0.0-build.12"
   },
-  "gallery-1.20.1-1.0.2.jar": {
+  "gallery-1.20.1-1.0.3.jar": {
     "modId": "gallery",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "gamediscs-0.3.1.jar": {
     "modId": "gamediscs",
@@ -511,9 +511,9 @@
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"
   },
-  "Jade-1.20.1-Forge-11.12.3.jar": {
+  "Jade-1.20.1-Forge-11.13.1.jar": {
     "modId": "jade",
-    "version": "11.12.3+forge"
+    "version": "11.13.1+forge"
   },
   "JadeAddons-1.20.1-Forge-5.3.1.jar": {
     "modId": "jadeaddons",
@@ -619,6 +619,10 @@
   "letsdo-vinery-forge-1.4.36.jar": {
     "modId": "vinery",
     "version": "1.4.36"
+  },
+  "littlejoys-forge-1.20.1-20.1.2.jar": {
+    "modId": "littlejoys",
+    "version": "20.1.2"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
@@ -820,9 +824,9 @@
     "modId": "quality_food",
     "version": "2.1.3"
   },
-  "Quark-4.0-460.jar": {
+  "Quark-4.0-461.jar": {
     "modId": "quark",
-    "version": "4.0-460"
+    "version": "4.0-461"
   },
   "QueenBee-Forge-1.20.1-3.1.4.jar": {
     "modId": "queen_bee",
@@ -972,6 +976,10 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
+  "splendid_slimes-0.1.0.jar": {
+    "modId": "splendid_slimes",
+    "version": "0.1.0"
+  },
   "stardew_fishing-1.20.1-2.2.jar": {
     "modId": "stardew_fishing",
     "version": "2.2"
@@ -1072,9 +1080,9 @@
     "modId": "twigs",
     "version": "1.20.1-3.1.1"
   },
-  "txnilib-forge-1.0.22-1.20.1.jar": {
+  "txnilib-forge-1.0.23-1.20.1.jar": {
     "modId": "txnilib",
-    "version": "1.0.21"
+    "version": "1.0.23"
   },
   "untitledduckmod-0.7.0-forge-1.20.1.jar": {
     "modId": "untitledduckmod",
@@ -1120,9 +1128,9 @@
     "modId": "yungsapi",
     "version": "1.20-Forge-4.0.6"
   },
-  "Zeta-1.0-24.jar": {
+  "Zeta-1.0-29.jar": {
     "modId": "zeta",
-    "version": "1.0-24"
+    "version": "1.0-29"
   },
   "zetter-1.20.1-0.21.5.jar": {
     "modId": "zetter",

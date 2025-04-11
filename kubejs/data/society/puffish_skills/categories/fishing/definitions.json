@@ -283,7 +283,7 @@
   },
   "mitosis": {
     "title": "Mitosis",
-    "description": "Double the fish when taking out fish from Fish Ponds.\n§cCan longer insert more than the first fish",
+    "description": "Double the fish when taking out fish from Fish Ponds.\n§cCan no longer insert more than the first fish",
     "frame": {
       "type": "advancement",
       "data": {

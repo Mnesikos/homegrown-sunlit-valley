@@ -51,10 +51,30 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "splendid_slimes": {
+    "splendid_slime": true
+  },
   "treechop": {
     "plugin": true,
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
+  },
+  "jade": {
+    "coordinates.rel": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "mod_name": true
+  },
+  "quality_food": {
+    "quality": true
+  },
+  "lootr": {
+    "info": true
+  },
+  "balm": {
+    "jade": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -69,14 +89,6 @@
   "supplementaries": {
     "hat_stand": true
   },
-  "jade": {
-    "coordinates.rel": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "mod_name": true
-  },
   "create": {
     "filter": true,
     "backtank_capacity": true,
@@ -90,12 +102,6 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "quality_food": {
-    "quality": true
-  },
-  "lootr": {
-    "info": true
   },
   "treetap": {
     "tap": true
