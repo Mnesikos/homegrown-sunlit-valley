@@ -127,10 +127,21 @@ ServerEvents.tags("item", (e) => {
   bakeryMilks.forEach((milk) => {
     e.add("bakery:milk", milk);
   });
+  [
+    "minecraft:potato",
+    "minecraft:carrot",
+    "farm_and_charm:onion",
+    "veggiesdelight:sweet_potato",
+    "vintagedelight:peanut",
+  ].forEach((crop) => {
+    e.add("society:need_seeds", crop);
+    e.remove("minecraft:villager_plantable_seeds", crop);
+    e.remove("quark:seed_pouch_holdable", crop);
+  });
   e.add("forge:milks", "meadow:wooden_grain_milk_bucket");
   e.add("farm_and_charm:milk", "meadow:wooden_grain_milk_bucket");
 
-  e.add('forge:shears', 'society:magic_shears')
+  e.add("forge:shears", "society:magic_shears");
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);

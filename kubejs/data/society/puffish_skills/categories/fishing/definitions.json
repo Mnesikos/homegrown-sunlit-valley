@@ -39,7 +39,7 @@
   },
   "fly_fisher": {
     "title": "Fly Fisher",
-    "description": "+1 fish when catching with fishing rod",
+    "description": "+1 fish when catching with fishing rod.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -64,7 +64,7 @@
   },
   "mystical_ocean": {
     "title": "Mystical Ocean",
-    "description": "§6Neptuna§7 can be caught anywhere",
+    "description": "§6Neptuna§7 can be caught anywhere.",
     "icon": {
       "type": "item",
       "data": {
@@ -83,7 +83,7 @@
   },
   "caper_catcher": {
     "title": "Caper Catcher",
-    "description": "+5 maximum roe from Fish Ponds",
+    "description": "+5 maximum roe from Fish Ponds.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -108,7 +108,7 @@
   },
   "caviar_catcher": {
     "title": "Caviar Catcher",
-    "description": "+5 maximum roe from Fish Pond",
+    "description": "+5 maximum roe from Fish Pond.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -133,7 +133,7 @@
   },
   "hot_hands": {
     "title": "Hot Hands",
-    "description": "Taking out fish from Fish Ponds smokes them\n\n§c25% chance they get charred into coal",
+    "description": "Taking out fish from Fish Ponds smokes them.\n\n§c25% chance they get charred into coal.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -158,7 +158,7 @@
   },
   "wooden_pollution": {
     "title": "Wooden Pollution",
-    "description": "Chance to find §6Furniture Boxes§7 from fishing",
+    "description": "Chance to find §6Furniture Boxes§7 from fishing.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -183,7 +183,7 @@
   },
   "frozen_treasure": {
     "title": "Frozen Treasure",
-    "description": "High Chance to find §6Treasure Chests§7 when catching fish in Winter",
+    "description": "High Chance to find §6Treasure Chests§7 when catching fish in Winter.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -208,7 +208,7 @@
   },
   "school_fisher": {
     "title": "School Fisher",
-    "description": "+3 fish when catching with fishing rod",
+    "description": "+3 fish when catching with fishing rod.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -233,7 +233,7 @@
   },
   "prismatic_bounty": {
     "title": "Prismatic Bounty",
-    "description": "Chance to find §dPrismatic Shards§7 in Neptune's Bounty",
+    "description": "Chance to find §dPrismatic Shards§7 in Neptune's Bounty.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -258,7 +258,7 @@
   },
   "scum_collector": {
     "title": "Scum Collector",
-    "description": "Doubles chance of receiving non-roe items from ponds",
+    "description": "Doubles chance of receiving non-roe items from ponds.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -283,7 +283,7 @@
   },
   "mitosis": {
     "title": "Mitosis",
-    "description": "Double the fish when taking out fish from Fish Ponds.\n§cCan no longer insert more than the first fish",
+    "description": "Doubles a fish being retrieved from a Fish Ponds.\n§cYou can no longer insert more than the first fish.",
     "frame": {
       "type": "advancement",
       "data": {

@@ -1,4 +1,4 @@
-console.info("[SOCIETY] adventurerLoot.js loaded");
+console.info("[SOCIETY] husbandryLoot.js loaded");
 
 LootJS.modifiers((e) => {
   e.addEntityLootModifier(global.husbandryAnimals)

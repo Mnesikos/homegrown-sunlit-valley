@@ -1,0 +1,20 @@
+{
+  "breed": "Dusty",
+  "name": "slime.splendid_slimes.dusty",
+  "color": "#C2B280",
+  "hat": {
+    "item": "simplehats:sandcastle"
+  },
+  "hat_y_offset": -1,
+  "diet": "diet.splendid_slimes.dusty",
+  "foods": [
+    { "item": "minecraft:bone" },
+    { "item": "aquaculture:fish_bones" },
+    { "item": "netherdepthsupgrade:bonefish" }
+  ],
+  "favorite_food": {
+    "item": "netherdepthsupgrade:bonefish"
+  },
+  "entities": ["minecraft:stray", "minecraft:skeleton", "trials:bogged"],
+  "favorite_entity": "trials:bogged"
+}

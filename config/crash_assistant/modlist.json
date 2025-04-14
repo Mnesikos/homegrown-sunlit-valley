@@ -27,9 +27,9 @@
     "modId": "appleskin",
     "version": "2.5.1+mc1.20.1"
   },
-  "Aquaculture-1.20.1-2.5.3.jar": {
+  "Aquaculture-1.20.1-2.5.5.jar": {
     "modId": "aquaculture",
-    "version": "2.5.3"
+    "version": "2.5.5"
   },
   "architectury-9.2.14-forge.jar": {
     "modId": "architectury",
@@ -275,6 +275,10 @@
     "modId": "customvillagertrades",
     "version": "20.25.0"
   },
+  "cyanide-forge-1.20.1-4.1.1.jar": {
+    "modId": "cyanide",
+    "version": "4.1.1"
+  },
   "decorative_blocks-forge-1.20.1-4.1.3.jar": {
     "modId": "decorative_blocks",
     "version": "4.1.3"
@@ -479,7 +483,7 @@
     "modId": "hamsters",
     "version": "1.20.1-1.0.3"
   },
-  "HopoBetterMineshaft-[1.20.2-1.20.4]-1.2.2b.jar": {
+  "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar": {
     "modId": "hopo",
     "version": "1.2.2"
   },
@@ -499,9 +503,9 @@
     "modId": "incontrol",
     "version": "1.20-9.2.11"
   },
-  "infernalmobs-1.20.1.3.jar": {
+  "infernalmobs-1.20.1.6.jar": {
     "modId": "infernalmobs",
-    "version": "1.20.1.3"
+    "version": "1.20.1.6"
   },
   "irons_rpg_tweaks-1.20-1.4.0.jar": {
     "modId": "irons_rpg_tweaks",
@@ -620,9 +624,9 @@
     "modId": "vinery",
     "version": "1.4.36"
   },
-  "littlejoys-forge-1.20.1-20.1.2.jar": {
+  "littlejoys-forge-1.20.1-20.1.4.jar": {
     "modId": "littlejoys",
-    "version": "20.1.2"
+    "version": "20.1.4"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
@@ -772,9 +776,9 @@
     "modId": "pickupnotifier",
     "version": "8.0.0"
   },
-  "Placebo-1.20.1-8.6.2.jar": {
+  "Placebo-1.20.1-8.6.3.jar": {
     "modId": "placebo",
-    "version": "8.6.2"
+    "version": "8.6.3"
   },
   "player-animation-lib-forge-1.0.2-rc1+1.20.jar": {
     "modId": "playeranimator",
@@ -807,6 +811,10 @@
   "Pretty Rain-1.20.1-Forge-1.0.8.jar": {
     "modId": "particlerain",
     "version": "1.0.8"
+  },
+  "probejs-6.0.1-forge.jar": {
+    "modId": "probejs",
+    "version": "6.0.1"
   },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "modId": "puffish_attributes",
@@ -1028,9 +1036,9 @@
     "modId": "toastcontrol",
     "version": "8.0.3"
   },
-  "toms_storage-1.20-1.7.0.jar": {
+  "toms_storage-1.20-1.7.1.jar": {
     "modId": "toms_storage",
-    "version": "1.7.0"
+    "version": "1.7.1"
   },
   "toofast-1.20-0.4.3.5.jar": {
     "modId": "toofast",

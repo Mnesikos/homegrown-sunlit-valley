@@ -330,24 +330,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Aquaculture-1.20.1-2.5.3.jar",
+                    "file_name": "Aquaculture-1.20.1-2.5.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5919/146/Aquaculture-1.20.1-2.5.3.jar",
-                    "id": "5919146",
+                    "url": "https://edge.forgecdn.net/files/6296/111/Aquaculture-1.20.1-2.5.5.jar",
+                    "id": "6296111",
                     "parent_id": "60028",
                     "hashes": {
-                        "sha1": "332c2cbcb6a76e367fc953756eb3870fd6f61f6b",
-                        "md5": "4de63e04dd2ed6ee53493be6a9c8afb8"
+                        "sha1": "726e1058f839e98786877d3f94527b1a0917e924",
+                        "md5": "515dde53d77858310af77cd93a5d1316"
                     },
                     "required_dependencies": [],
-                    "size": 601193,
-                    "date_published": "2024-11-19T11:22:17.457Z"
+                    "size": 601173,
+                    "date_published": "2025-03-12T13:57:50.437Z"
                 }
             ]
         },
@@ -483,7 +484,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "infernalmobs-1.20.1.3.jar",
+                    "file_name": "infernalmobs-1.20.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -491,16 +492,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5470/117/infernalmobs-1.20.1.3.jar",
-                    "id": "5470117",
+                    "url": "https://edge.forgecdn.net/files/6145/53/infernalmobs-1.20.1.6.jar",
+                    "id": "6145053",
                     "parent_id": "227875",
                     "hashes": {
-                        "sha1": "52eec19b90a755d1d9f7d687367bdc02b0e609af",
-                        "md5": "1ed151899fa837d5359f19fd4b1c9a0f"
+                        "sha1": "9f7f8e845af77874ee244b2d7ba3e11da00f8e65",
+                        "md5": "be3e4cae47c3ac5f349cd52452899243"
                     },
                     "required_dependencies": [],
-                    "size": 142170,
-                    "date_published": "2024-06-24T21:17:26.657Z"
+                    "size": 145587,
+                    "date_published": "2025-02-01T06:59:15.283Z"
                 }
             ]
         },
@@ -4803,7 +4804,7 @@
                 "curseforge": "hopo-better-mineshaft"
             },
             "name": {
-                "curseforge": "Hopo Better Mineshaft (Fabric/Forge/NeoForge)"
+                "curseforge": "Hopo Better Mineshaft"
             },
             "id": {
                 "curseforge": "623723"
@@ -4811,7 +4812,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HopoBetterMineshaft-[1.20.2-1.20.4]-1.2.2b.jar",
+                    "file_name": "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.3",
@@ -4824,16 +4825,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5252/58/HopoBetterMineshaft-[1.20.2-1.20.4]-1.2.2b.jar",
-                    "id": "5252058",
+                    "url": "https://edge.forgecdn.net/files/6337/939/HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
+                    "id": "6337939",
                     "parent_id": "623723",
                     "hashes": {
-                        "sha1": "f3baaee4150e5814cbe00c228cf13ad4fdef7a6f",
-                        "md5": "284afb41e51d9e9db222da027a46b7c2"
+                        "sha1": "ddd8f382a10e640bf54c6a45c1d0e8b63f1f5bba",
+                        "md5": "a0bd8f655df89adb1c42af848bc38108"
                     },
                     "required_dependencies": [],
-                    "size": 3379003,
-                    "date_published": "2024-04-10T18:38:20.807Z"
+                    "size": 3378764,
+                    "date_published": "2025-03-24T04:01:44.093Z"
                 }
             ]
         },
@@ -5835,24 +5836,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.2.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.4.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6403/592/littlejoys-forge-1.20.1-20.1.2.jar",
-                    "id": "6403592",
+                    "url": "https://edge.forgecdn.net/files/6411/823/littlejoys-forge-1.20.1-20.1.4.jar",
+                    "id": "6411823",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "f17a018773d9a9bb00944ea2bfcb3924278c52a4",
-                        "md5": "0f20cf55a28f062c1a43fcd9aac36a05"
+                        "sha1": "8b46a070284f179abe004cc26b49bc488e82527b",
+                        "md5": "b70f03164f88c8a3e90e8e954de8a7f0"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 700809,
-                    "date_published": "2025-04-09T16:47:09.060Z"
+                    "size": 703912,
+                    "date_published": "2025-04-11T18:15:24.787Z"
                 }
             ]
         },
@@ -7377,7 +7378,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Placebo-1.20.1-8.6.2.jar",
+                    "file_name": "Placebo-1.20.1-8.6.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7386,16 +7387,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5414/631/Placebo-1.20.1-8.6.2.jar",
-                    "id": "5414631",
+                    "url": "https://edge.forgecdn.net/files/6274/231/Placebo-1.20.1-8.6.3.jar",
+                    "id": "6274231",
                     "parent_id": "283644",
                     "hashes": {
-                        "sha1": "dacfb5429e4a7902203e417c78aab6e0d5087255",
-                        "md5": "0b7358e758257452184a3a8f82f60abe"
+                        "sha1": "e85f53de2e582a79ce25ff1df1e7b5b5fc08440f",
+                        "md5": "13133ab9989e8474931cd7a86bd19cc5"
                     },
                     "required_dependencies": [],
-                    "size": 285351,
-                    "date_published": "2024-06-10T07:10:27.317Z"
+                    "size": 282474,
+                    "date_published": "2025-03-07T09:06:06.367Z"
                 }
             ]
         },

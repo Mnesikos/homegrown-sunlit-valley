@@ -637,6 +637,58 @@ ItemEvents.tooltip((tooltip) => {
       }
     });
   };
+
+  tooltip.addAdvanced("splendid_slimes:plort", (item, advanced, text) => {
+    let plortType;
+    let price;
+    if (item.nbt && item.nbt.plort) {
+      plortType = item.nbt.plort.id;
+    }
+    global.plorts.forEach((plort) => {
+      if (plort.type == plortType) price = plort.value;
+    });
+    if (tooltip.shift) {
+      text.add(1, [
+        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.gray(" Stack value"),
+      ]);
+      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+    } else {
+      text.add(1, [
+        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.darkGray(" Hold ["),
+        Text.gray("Shift"),
+        Text.darkGray("]"),
+      ]);
+    }
+  });
+
+  tooltip.addAdvanced("splendid_slimes:slime_heart", (item, advanced, text) => {
+    let heartType;
+    let price;
+    if (item.nbt && item.nbt.slime) {
+      heartType = item.nbt.slime.id;
+    }
+    global.slimeHearts.forEach((heart) => {
+      if (heart.type == heartType) price = heart.value;
+    });
+    if (tooltip.shift) {
+      text.add(1, [
+        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.gray(" Stack value"),
+      ]);
+      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+    } else {
+      text.add(1, [
+        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.darkGray(" Hold ["),
+        Text.gray("Shift"),
+        Text.darkGray("]"),
+      ]);
+    }
+  });
+
+  Item.of("splendid_slimes:plort", '{plort:{id:"splendid_slimes:slimy"}}');
   // Ore
   global.ore.forEach((item) => {
     addPriceTooltip(item, "gem");

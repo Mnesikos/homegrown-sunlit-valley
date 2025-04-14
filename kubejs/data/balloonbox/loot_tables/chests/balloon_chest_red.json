@@ -380,6 +380,39 @@
         },
         {
           "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:rotting\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:bony\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:webby\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 2,
           "functions": [
             {

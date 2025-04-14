@@ -505,7 +505,7 @@ global.animalProducts = [
   { item: "untitledduckmod:duck_feather", value: 64 },
   { item: "untitledduckmod:goose_foot", value: 96 },
   { item: "snuffles:snuffle_fluff", value: 16 },
-  { item: 'snuffles:frosty_fluff', value: 64 }
+  { item: "snuffles:frosty_fluff", value: 64 },
 ];
 
 /**
@@ -585,8 +585,8 @@ global.preserves = [
   { item: "society:cauliflower_preserves", value: 784 },
 ];
 global.dehydrated = [
-  { item: "society:raisins", value: 96 },
-  { item: "society:nether_raisins", value: 128 },
+  { item: "society:raisins", value: 128 },
+  { item: "society:nether_raisins", value: 160 },
 ];
 global.fruits.forEach((fruit) => {
   let itemId = fruit.item.split(":")[1];
@@ -599,7 +599,7 @@ global.fruits.forEach((fruit) => {
   });
   global.dehydrated.push({
     item: `society:dried_${itemId}`,
-    value: fruit.value * 12 + 32,
+    value: fruit.value * 14 + 64,
   });
 });
 global.mushrooms = [
@@ -1239,7 +1239,7 @@ const cookingPotRecipes = [
   { item: "bakery:glowberry_jam", value: 27 },
   { item: "farm_and_charm:simple_tomato_soup", value: 55 },
   { item: "bakery:sweetberry_jam", value: 5 },
-{ item: "bakery:chocolate_donut", value: 3144 },
+  { item: "bakery:chocolate_donut", value: 3144 },
   { item: "farmersdelight:vegetable_noodles", value: 136 },
   { item: "vintagedelight:pad_thai", value: 372 },
   { item: "farm_and_charm:potato_soup", value: 36 },
@@ -1589,6 +1589,37 @@ global.miscAdventurer = [
   { item: "botania:terrasteel_ingot", value: 44096 },
   { item: "botania:terrasteel_block", value: 396864 },
 ];
+
+global.plorts = [
+  { type: "splendid_slimes:slimy", value: 32 },
+  { type: "splendid_slimes:dusty", value: 40 },
+  { type: "splendid_slimes:bony", value: 48 },
+  { type: "splendid_slimes:rotting", value: 48 },
+  { type: "splendid_slimes:webby", value: 46 },
+  { type: "splendid_slimes:puddle", value: 56 },
+  { type: "splendid_slimes:boomcat", value: 64 },
+  { type: "splendid_slimes:all_seeing", value: 72 },
+  { type: "splendid_slimes:bitwise", value: 72 },
+  { type: "splendid_slimes:blazing", value: 72 },
+  { type: "splendid_slimes:luminous", value: 72 },
+  { type: "splendid_slimes:weeping", value: 80 },
+  { type: "splendid_slimes:prisma", value: 100 },
+  { type: "splendid_slimes:sweet", value: 128 },
+  { type: "splendid_slimes:shulking", value: 256 },
+  { type: "splendid_slimes:ender", value: 256 },
+  { type: "splendid_slimes:phantom", value: 256 },
+  { type: "splendid_slimes:orby", value: 320 },
+  { type: "splendid_slimes:minty", value: 320 },
+  { type: "splendid_slimes:gold", value: 512 },
+];
+
+global.slimeHearts = [];
+global.plorts.forEach((plort) => {
+  global.slimeHearts.push({
+    type: plort.type,
+    value: plort.value * 32 * 2,
+  });
+});
 
 global.lootFurniture = [
   "tanukidecor:antique_bookcase",
@@ -2059,6 +2090,20 @@ global.logs.forEach((log) => {
 global.miscAdventurer.forEach((miscItem) => {
   const { item, value } = miscItem;
   global.trades.set(item, {
+    value: value,
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
+global.plorts.forEach((plort) => {
+  const { type, value } = plort;
+  global.trades.set(`splendid_slimes:plort/${type}`, {
+    value: value,
+    multiplier: "shippingbin:meat_sell_multiplier",
+  });
+});
+global.slimeHearts.forEach((heart) => {
+  const { type, value } = heart;
+  global.trades.set(`splendid_slimes:slime_heart/${type}`, {
     value: value,
     multiplier: "shippingbin:meat_sell_multiplier",
   });
