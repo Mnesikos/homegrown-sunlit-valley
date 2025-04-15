@@ -18,6 +18,11 @@
       "item": "minecraft:cobweb",
       "count": 1,
       "weight": 1
+    },
+    {
+      "item": "society:spider_silk",
+      "count": 1,
+      "weight": 1
     }
   ]
 }

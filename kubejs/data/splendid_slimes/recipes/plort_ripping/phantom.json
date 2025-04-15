@@ -11,7 +11,13 @@
   "results": [
     {
       "item": "minecraft:phantom_membrane",
-      "count": 1
+      "count": 3,
+      "weight": 4
+    },
+    {
+      "item": "society:jade",
+      "count": 1,
+      "weight": 1
     }
   ]
 }

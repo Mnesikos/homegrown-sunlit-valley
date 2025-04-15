@@ -3,13 +3,13 @@
 luck_multiplier = 0.0
 #The chance of quality crops dropping its own quality (also affects other qualities) - It affects a multiplier which is calculated as: <crop_target_chance> / <quality.chance>Meaning for Gold it would result in a multiplier of 20 (0.6 / 0.03) -> The chances for all qualities would then be: 20 * 0.10 (iron) = 2 (100%) | 20 * 0.03 (gold) = 0.6 (60%) | 20 * 0.005 = 0.1 (10%)
 #Range: 0.0 ~ 1.0
-crop_target_chance = 0.2
+crop_target_chance = 0.0
 #Multiplier on top of the crop target chance
 #Range: 0.0 ~ 100.0
-seed_chance_multiplier = 0.15
+seed_chance_multiplier = 0.0
 #Define multipliers to be applied per farmland on crops - Syntax: <index>;<crop>;<farmland>;<multiplier> (the index defines the sequence in which they will be checked - the first matching one is applied)
 #Example: ["2;minecraft:wheat;#farmersdelight:terrain;0.75", "3;#minecraft:crops;farmersdelight:rich_soil;1.25"]
-farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_fertilized_farmland;0","1;#minecraft:crops;minecraft:farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:low_quality_fertilized_farmland;0.1", "2;#minecraft:crops;#dew_drop_farmland_growth:high_quality_fertilized_farmland;0.5", "2;#minecraft:crops;#dew_drop_farmland_growth:pristine_quality_fertilized_farmland;2.5"]
+farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_fertilized_farmland;0", "1;#minecraft:crops;minecraft:farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:low_quality_fertilized_farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:high_quality_fertilized_farmland;0", "2;#minecraft:crops;#dew_drop_farmland_growth:pristine_quality_fertilized_farmland;0"]
 
 [Crafting]
 	#Define recipes (namespace:path) which should not result in quality being applied (e.g. when the items can be converted back and forth)
@@ -24,7 +24,7 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 [IRON]
 	#The chance for a quality to occur (with no luck or other bonus)
 	#Range: 0.0 ~ 1.0
-	chance = 0.5
+	chance = 0.0
 	#By how much the duration of the effect will get multiplied (beneficial) or divided (harmful) for
 	#Range: 1.0 ~ 100.0
 	duration_multiplier = 1.5
@@ -50,7 +50,7 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 [GOLD]
 	#The chance for a quality to occur (with no luck or other bonus)
 	#Range: 0.0 ~ 1.0
-	chance = 0.25
+	chance = 0.0
 	#By how much the duration of the effect will get multiplied (beneficial) or divided (harmful) for
 	#Range: 1.0 ~ 100.0
 	duration_multiplier = 2.0
@@ -76,7 +76,7 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 [DIAMOND]
 	#The chance for a quality to occur (with no luck or other bonus)
 	#Range: 0.0 ~ 1.0
-	chance = 0.125
+	chance = 0.0
 	#By how much the duration of the effect will get multiplied (beneficial) or divided (harmful) for
 	#Range: 1.0 ~ 100.0
 	duration_multiplier = 2.5
@@ -102,3 +102,4 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 [Compatibility]
 	#Handle Quark harvest & replant automatically (if you have custom behaviour configured regarding the quality block state turn this off)
 	quark_handle_config = true
+

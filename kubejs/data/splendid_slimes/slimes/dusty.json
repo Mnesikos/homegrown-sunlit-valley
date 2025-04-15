@@ -5,7 +5,8 @@
   "hat": {
     "item": "simplehats:sandcastle"
   },
-  "hat_y_offset": -1,
+  "hat_scale": 0.5,
+  "hat_y_offset": -1.8,
   "diet": "diet.splendid_slimes.dusty",
   "foods": [
     { "item": "minecraft:bone" },

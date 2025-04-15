@@ -11,7 +11,13 @@
   "results": [
     {
       "item": "minecraft:spider_eye",
-      "count": 3
+      "count": 3,
+      "weight": 16
+    },
+    {
+      "item": "society:pristine_tigerseye",
+      "count": 3,
+      "weight": 1
     }
   ]
 }

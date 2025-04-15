@@ -10,8 +10,14 @@
   },
   "results": [
     {
-      "item": "minecraft:gold_nugget",
-      "count": 3
+      "item": "numismatics:crown",
+      "count": 1,
+      "weight": 100
+    },
+    {
+      "item": "vintagedelight:golden_egg",
+      "count": 1,
+      "weight": 1
     }
   ]
 }

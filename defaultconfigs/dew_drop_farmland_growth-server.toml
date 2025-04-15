@@ -30,3 +30,6 @@ dailyDecayChance = 50
 shovelReverting = true
 #If crops should check for blocks with sprinkler tags to prevent drying
 checkSprinklers = true
+#Crops will not factor in greenhouse glass if a #dewdrop:waterable farmland is between them 
+strictGreenhouses = true
+

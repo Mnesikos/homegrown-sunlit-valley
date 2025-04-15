@@ -276,6 +276,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:gnome"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 6,
           "name": "aquaculture:tin_can"
         },

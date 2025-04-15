@@ -174,7 +174,6 @@
           "weight": 1,
           "name": "simplehats:hatbag_uncommon"
         },
-
         {
           "type": "minecraft:item",
           "weight": 2,
@@ -252,6 +251,11 @@
           ],
           "weight": 3,
           "name": "society:geode"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "society:gnome"
         },
         {
           "type": "minecraft:item",

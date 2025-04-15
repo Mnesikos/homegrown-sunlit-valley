@@ -307,7 +307,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "dew_drop_farmland_growth:hydrating_fertilizer",
-    Text.green("Keeps farmland watered until crop is fully grown")
+    Text.green("Keeps farmland watered until crop is half grown (rounded down)")
   );
   tooltip.add(
     "dew_drop_farmland_growth:bountiful_fertilizer",
@@ -556,10 +556,6 @@ ItemEvents.tooltip((tooltip) => {
     "farmersdelight:rich_soil",
     Text.gray("brown mushrooms planted on it")
   );
-  tooltip.add("farmersdelight:tomato_seeds", Text.white("Fertile Seasons:"));
-  tooltip.add("farmersdelight:tomato_seeds", Text.green(" Spring"));
-  tooltip.add("farmersdelight:tomato_seeds", Text.yellow(" Summer"));
-  tooltip.add("farmersdelight:tomato_seeds", Text.gold(" Autumn"));
   tooltip.add(
     "farmersdelight:tomato_seeds",
     Text.red("Quality of seed has no effect")

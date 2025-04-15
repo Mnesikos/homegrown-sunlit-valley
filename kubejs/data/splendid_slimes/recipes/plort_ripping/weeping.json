@@ -12,12 +12,17 @@
     {
       "item": "minecraft:ghast_tear",
       "count": 1,
-      "weight": 3
+      "weight": 4
     },
     {
       "item": "minecraft:crying_obsidian",
       "count": 1,
       "weight": 1
+    },
+    {
+      "item": "society:forzen_tear",
+      "count": 1,
+      "weight": 2
     }
   ]
 }

@@ -96,7 +96,6 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:blueberry");
   e.add("forge:berries", "society:blueberry");
   e.add("forge:crops", "society:eggplant");
-  e.add("forge:crops", "society:eggplant");
   e.add("forge:vegetables/eggplant", "society:eggplant");
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
@@ -399,9 +398,7 @@ ServerEvents.tags("item", (e) => {
 });
 
 ServerEvents.tags("block", (e) => {
-  e.add("sturdy_farmland:weak_fertilizer", "minecraft:gold_block");
-  e.add("sturdy_farmland:strong_fertilizer", "minecraft:diamond_block");
-  e.add("sturdy_farmland:hydrating_fertilizer", "minecraft:lapis_block");
+  e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
     "society:aging_cask",
     "society:ancient_cask",
