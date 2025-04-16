@@ -10,9 +10,12 @@
     "minecraft:seagrass",
     "aquaculture:tin_can",
     "society:furniture_box",
-    "society:geode",
-    "society:canvas",
+    "twigs:tangerine_seashell",
+    "twigs:roseate_seashell",
+    "twigs:opaline_seashell",
+    "twigs:bronzed_seashell",
     "crabbersdelight:coral_fragments",
-    "aquaculture:neptunium_nugget"
+    "aquaculture:neptunium_nugget",
+    "splendid_slimes:slime_heart"
   ]
 }

@@ -4,7 +4,7 @@
         "1.20.1"
     ],
     "loaders": {
-        "forge": "47.3.0"
+        "forge": "47.4.0"
     },
     "projects": [
         {
@@ -330,24 +330,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Aquaculture-1.20.1-2.5.3.jar",
+                    "file_name": "Aquaculture-1.20.1-2.5.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5919/146/Aquaculture-1.20.1-2.5.3.jar",
-                    "id": "5919146",
+                    "url": "https://edge.forgecdn.net/files/6296/111/Aquaculture-1.20.1-2.5.5.jar",
+                    "id": "6296111",
                     "parent_id": "60028",
                     "hashes": {
-                        "sha1": "332c2cbcb6a76e367fc953756eb3870fd6f61f6b",
-                        "md5": "4de63e04dd2ed6ee53493be6a9c8afb8"
+                        "sha1": "726e1058f839e98786877d3f94527b1a0917e924",
+                        "md5": "515dde53d77858310af77cd93a5d1316"
                     },
                     "required_dependencies": [],
-                    "size": 601193,
-                    "date_published": "2024-11-19T11:22:17.457Z"
+                    "size": 601173,
+                    "date_published": "2025-03-12T13:57:50.437Z"
                 }
             ]
         },
@@ -444,7 +445,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "atmospheric-1.20.1-6.0.0.jar",
+                    "file_name": "atmospheric-1.20.1-6.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -453,16 +454,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6057/624/atmospheric-1.20.1-6.0.0.jar",
-                    "id": "6057624",
+                    "url": "https://edge.forgecdn.net/files/6393/127/atmospheric-1.20.1-6.1.1.jar",
+                    "id": "6393127",
                     "parent_id": "362393",
                     "hashes": {
-                        "sha1": "479b0b008fc048fb66a9e1403728f94740a96ac6",
-                        "md5": "76b1dacc46ee4d1ff8cbabc22b93f066"
+                        "sha1": "9a655ae0953d0205c10315560466779228c08b18",
+                        "md5": "e63b3420f173976542e3e59c8107d5ff"
                     },
-                    "required_dependencies": [],
-                    "size": 3490171,
-                    "date_published": "2025-01-05T22:21:58.233Z"
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 5213524,
+                    "date_published": "2025-04-06T21:12:47.163Z"
                 }
             ]
         },
@@ -481,7 +484,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "infernalmobs-1.20.1.3.jar",
+                    "file_name": "infernalmobs-1.20.1.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -489,16 +492,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5470/117/infernalmobs-1.20.1.3.jar",
-                    "id": "5470117",
+                    "url": "https://edge.forgecdn.net/files/6145/53/infernalmobs-1.20.1.6.jar",
+                    "id": "6145053",
                     "parent_id": "227875",
                     "hashes": {
-                        "sha1": "52eec19b90a755d1d9f7d687367bdc02b0e609af",
-                        "md5": "1ed151899fa837d5359f19fd4b1c9a0f"
+                        "sha1": "9f7f8e845af77874ee244b2d7ba3e11da00f8e65",
+                        "md5": "be3e4cae47c3ac5f349cd52452899243"
                     },
                     "required_dependencies": [],
-                    "size": 142170,
-                    "date_published": "2024-06-24T21:17:26.657Z"
+                    "size": 145587,
+                    "date_published": "2025-02-01T06:59:15.283Z"
                 }
             ]
         },
@@ -591,7 +594,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "autumnity-1.20.1-5.0.1.jar",
+                    "file_name": "autumnity-1.20.1-5.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -600,16 +603,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5292/346/autumnity-1.20.1-5.0.1.jar",
-                    "id": "5292346",
+                    "url": "https://edge.forgecdn.net/files/6151/402/autumnity-1.20.1-5.0.2.jar",
+                    "id": "6151402",
                     "parent_id": "365045",
                     "hashes": {
-                        "sha1": "b7dcdc74db6c25c5c6f1644304491a161f459a14",
-                        "md5": "189c100aa96ed40efd1b3ad2a22a0061"
+                        "sha1": "1e74111aba8fe812adf7f2292bd51a391e32dc6d",
+                        "md5": "c4e1eaba25862c035bddbe06cf90c599"
                     },
-                    "required_dependencies": [],
-                    "size": 1219707,
-                    "date_published": "2024-04-26T05:23:36.673Z"
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 1221037,
+                    "date_published": "2025-02-02T20:06:43.880Z"
                 }
             ]
         },
@@ -703,7 +708,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "balm-forge-1.20.1-7.3.10-all.jar",
+                    "file_name": "balm-forge-1.20.1-7.3.27-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -712,16 +717,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5999/476/balm-forge-1.20.1-7.3.10-all.jar",
-                    "id": "5999476",
+                    "url": "https://edge.forgecdn.net/files/6362/504/balm-forge-1.20.1-7.3.27-all.jar",
+                    "id": "6362504",
                     "parent_id": "531761",
                     "hashes": {
-                        "sha1": "477c755055939e8514ab090ebc9e19a1066c0e3a",
-                        "md5": "53ab1e5640e1378bac5a933b05519f9a"
+                        "sha1": "8c0364c8e7fe47f86505d2a4c53c6022ebd7b9d2",
+                        "md5": "f602ed9d2c722942623165fec6eb538f"
                     },
                     "required_dependencies": [],
-                    "size": 373791,
-                    "date_published": "2024-12-17T19:29:29.777Z"
+                    "size": 475315,
+                    "date_published": "2025-03-29T09:50:06.680Z"
                 }
             ]
         },
@@ -980,7 +985,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "blueprint-1.20.1-7.1.0.jar",
+                    "file_name": "blueprint-1.20.1-7.1.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -989,16 +994,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5292/242/blueprint-1.20.1-7.1.0.jar",
-                    "id": "5292242",
+                    "url": "https://edge.forgecdn.net/files/6408/581/blueprint-1.20.1-7.1.3.jar",
+                    "id": "6408581",
                     "parent_id": "382216",
                     "hashes": {
-                        "sha1": "5ff3b2c8ff096d6481ed252f0371aeb60b460f27",
-                        "md5": "83f35ee21c8d632edde3f1cf650329a7"
+                        "sha1": "fdf9cb568546e80485ea4402a39656ed9acfa991",
+                        "md5": "de8703f1bd1de5c64ebd411e37b19d47"
                     },
                     "required_dependencies": [],
-                    "size": 1141553,
-                    "date_published": "2024-04-26T03:54:15.927Z"
+                    "size": 1151213,
+                    "date_published": "2025-04-10T21:44:55.807Z"
                 }
             ]
         },
@@ -1248,7 +1253,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "buzzier_bees-1.20.1-6.0.0.jar",
+                    "file_name": "buzzier_bees-1.20.1-6.0.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1257,16 +1262,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5229/11/buzzier_bees-1.20.1-6.0.0.jar",
-                    "id": "5229011",
+                    "url": "https://edge.forgecdn.net/files/6151/411/buzzier_bees-1.20.1-6.0.1.jar",
+                    "id": "6151411",
                     "parent_id": "355458",
                     "hashes": {
-                        "sha1": "5de23e8c0e88ded278bb7fd1bddd245c88c72eb4",
-                        "md5": "4b447a3dfeb382f4ca9b303b6239521d"
+                        "sha1": "d92322f51b864a40a6230cfb20692c0a98039917",
+                        "md5": "dccf6651fbdd405b29850fd7b5ef2a4d"
                     },
-                    "required_dependencies": [],
-                    "size": 557383,
-                    "date_published": "2024-04-02T03:52:05.673Z"
+                    "required_dependencies": [
+                        "382216"
+                    ],
+                    "size": 558630,
+                    "date_published": "2025-02-02T20:08:34.437Z"
                 }
             ]
         },
@@ -1498,6 +1505,43 @@
             ]
         },
         {
+            "pakku_id": "bzoNOLP7hjGdu45t",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cherished-worlds"
+            },
+            "name": {
+                "curseforge": "Cherished Worlds (Fabric/Forge/NeoForge/Quilt)"
+            },
+            "id": {
+                "curseforge": "308240"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cherishedworlds-forge-6.1.7+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5955/879/cherishedworlds-forge-6.1.7+1.20.1.jar",
+                    "id": "5955879",
+                    "parent_id": "308240",
+                    "hashes": {
+                        "sha1": "d3eb588c64691c9da83460e3b2e783401d337a34",
+                        "md5": "f05683884add93d912932c601dff8ef5"
+                    },
+                    "required_dependencies": [],
+                    "size": 60956,
+                    "date_published": "2024-12-02T08:22:35.773Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "tm3P2ZRXPGIpdOe7",
             "type": "MOD",
             "slug": {
@@ -1553,7 +1597,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "clayworks-1.20.1-3.0.2.jar",
+                    "file_name": "clayworks-1.20.1-3.0.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1562,18 +1606,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6044/223/clayworks-1.20.1-3.0.2.jar",
-                    "id": "6044223",
+                    "url": "https://edge.forgecdn.net/files/6321/200/clayworks-1.20.1-3.0.4.jar",
+                    "id": "6321200",
                     "parent_id": "592162",
                     "hashes": {
-                        "sha1": "2ccac14bc7c3d272597e0739054ba53f61d20dba",
-                        "md5": "44cd25ce46d8eb0a610f549df10fa653"
+                        "sha1": "579db4d7f02d8102d2c12e7423c1e9ebb055434c",
+                        "md5": "8fbd0a5d62ab7f35ddac918c771d7a26"
                     },
-                    "required_dependencies": [
-                        "382216"
-                    ],
-                    "size": 1096547,
-                    "date_published": "2025-01-01T23:24:22.533Z"
+                    "required_dependencies": [],
+                    "size": 1195583,
+                    "date_published": "2025-03-19T05:08:47.210Z"
                 }
             ]
         },
@@ -4548,7 +4590,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "gallery-1.20.1-1.0.2.jar",
+                    "file_name": "gallery-1.20.1-1.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4557,18 +4599,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6133/771/gallery-1.20.1-1.0.2.jar",
-                    "id": "6133771",
+                    "url": "https://edge.forgecdn.net/files/6321/203/gallery-1.20.1-1.0.3.jar",
+                    "id": "6321203",
                     "parent_id": "1173553",
                     "hashes": {
-                        "sha1": "77c964eaf2ee7240ba7edc005044812f2aef7cb7",
-                        "md5": "64580d42a83e883e20399701927e0fd2"
+                        "sha1": "d4cc9e69776c2955bfb688d57ad691bfd6cd3347",
+                        "md5": "27001f76b53b1089135df0f8ba47bbd8"
                     },
-                    "required_dependencies": [
-                        "382216"
-                    ],
-                    "size": 240791,
-                    "date_published": "2025-01-28T15:23:29.490Z"
+                    "required_dependencies": [],
+                    "size": 241777,
+                    "date_published": "2025-03-19T05:11:30.037Z"
                 }
             ]
         },
@@ -4801,7 +4841,7 @@
                 "curseforge": "hopo-better-mineshaft"
             },
             "name": {
-                "curseforge": "Hopo Better Mineshaft (Fabric/Forge/NeoForge)"
+                "curseforge": "Hopo Better Mineshaft"
             },
             "id": {
                 "curseforge": "623723"
@@ -4809,7 +4849,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HopoBetterMineshaft-[1.20.2-1.20.4]-1.2.2b.jar",
+                    "file_name": "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.3",
@@ -4822,16 +4862,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5252/58/HopoBetterMineshaft-[1.20.2-1.20.4]-1.2.2b.jar",
-                    "id": "5252058",
+                    "url": "https://edge.forgecdn.net/files/6337/939/HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
+                    "id": "6337939",
                     "parent_id": "623723",
                     "hashes": {
-                        "sha1": "f3baaee4150e5814cbe00c228cf13ad4fdef7a6f",
-                        "md5": "284afb41e51d9e9db222da027a46b7c2"
+                        "sha1": "ddd8f382a10e640bf54c6a45c1d0e8b63f1f5bba",
+                        "md5": "a0bd8f655df89adb1c42af848bc38108"
                     },
                     "required_dependencies": [],
-                    "size": 3379003,
-                    "date_published": "2024-04-10T18:38:20.807Z"
+                    "size": 3378764,
+                    "date_published": "2025-03-24T04:01:44.093Z"
                 }
             ]
         },
@@ -5201,7 +5241,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Jade-1.20.1-forge-11.11.1.jar",
+                    "file_name": "Jade-1.20.1-Forge-11.13.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -5210,17 +5250,17 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5672/13/Jade-1.20.1-forge-11.11.1.jar",
-                    "id": "5672013",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6271/651/Jade-1.20.1-Forge-11.13.1.jar",
+                    "id": "6271651",
                     "parent_id": "324717",
                     "hashes": {
-                        "sha1": "7ec2e10db945924166447ea64ebaad7a142651eb",
-                        "md5": "fafa657e924a26031c174e7ab1484c8e"
+                        "sha1": "0e5af2bdca3a600d3f0cf28cc9f735542d19e7fc",
+                        "md5": "e36b4d172480009220be7eae12490943"
                     },
                     "required_dependencies": [],
-                    "size": 547726,
-                    "date_published": "2024-08-28T18:28:43.690Z"
+                    "size": 550551,
+                    "date_published": "2025-03-06T16:47:24.837Z"
                 }
             ]
         },
@@ -5812,6 +5852,45 @@
                     "required_dependencies": [],
                     "size": 3482630,
                     "date_published": "2025-01-11T03:35:32.043Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "JvdV97v5mlBav90c",
+            "pakku_links": [
+                "1wXGOLseoQMWy0po"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "little-joys"
+            },
+            "name": {
+                "curseforge": "Little Joys"
+            },
+            "id": {
+                "curseforge": "1235950"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.4.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6411/823/littlejoys-forge-1.20.1-20.1.4.jar",
+                    "id": "6411823",
+                    "parent_id": "1235950",
+                    "hashes": {
+                        "sha1": "8b46a070284f179abe004cc26b49bc488e82527b",
+                        "md5": "b70f03164f88c8a3e90e8e954de8a7f0"
+                    },
+                    "required_dependencies": [
+                        "531761"
+                    ],
+                    "size": 703912,
+                    "date_published": "2025-04-11T18:15:24.787Z"
                 }
             ]
         },
@@ -7331,7 +7410,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Placebo-1.20.1-8.6.2.jar",
+                    "file_name": "Placebo-1.20.1-8.6.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7340,16 +7419,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5414/631/Placebo-1.20.1-8.6.2.jar",
-                    "id": "5414631",
+                    "url": "https://edge.forgecdn.net/files/6274/231/Placebo-1.20.1-8.6.3.jar",
+                    "id": "6274231",
                     "parent_id": "283644",
                     "hashes": {
-                        "sha1": "dacfb5429e4a7902203e417c78aab6e0d5087255",
-                        "md5": "0b7358e758257452184a3a8f82f60abe"
+                        "sha1": "e85f53de2e582a79ce25ff1df1e7b5b5fc08440f",
+                        "md5": "13133ab9989e8474931cd7a86bd19cc5"
                     },
                     "required_dependencies": [],
-                    "size": 285351,
-                    "date_published": "2024-06-10T07:10:27.317Z"
+                    "size": 282474,
+                    "date_published": "2025-03-07T09:06:06.367Z"
                 }
             ]
         },
@@ -7598,7 +7677,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Pretty Rain-1.20.1-Forge-1.0.8.jar",
+                    "file_name": "Pretty Rain-1.20.1-Forge-1.1.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7607,18 +7686,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6120/431/Pretty Rain-1.20.1-Forge-1.0.8.jar",
-                    "id": "6120431",
+                    "url": "https://edge.forgecdn.net/files/6411/988/Pretty Rain-1.20.1-Forge-1.1.3.jar",
+                    "id": "6411988",
                     "parent_id": "1163800",
                     "hashes": {
-                        "sha1": "d1069f4e0aa0cb36e4de347e2c482ae5a80faf9f",
-                        "md5": "86ad87616692b020895a0f7de9038fc7"
+                        "sha1": "9b787b001c0b573927e21fd7b04254f0170e8157",
+                        "md5": "34ce9bc4859c3d71c4ef2756bef60ea5"
                     },
-                    "required_dependencies": [
-                        "348521"
-                    ],
-                    "size": 597375,
-                    "date_published": "2025-01-24T17:32:42.663Z"
+                    "required_dependencies": [],
+                    "size": 601125,
+                    "date_published": "2025-04-11T19:12:41.200Z"
                 }
             ]
         },
@@ -7788,7 +7865,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Quark-4.0-460.jar",
+                    "file_name": "Quark-4.0-461.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7796,18 +7873,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5594/847/Quark-4.0-460.jar",
-                    "id": "5594847",
+                    "url": "https://edge.forgecdn.net/files/6312/787/Quark-4.0-461.jar",
+                    "id": "6312787",
                     "parent_id": "243121",
                     "hashes": {
-                        "sha1": "3aef3c60a7f77e17c630df05cbb9da72d274b683",
-                        "md5": "91c53aef2d48db703977309aea72c231"
+                        "sha1": "af3f31edacee8e5d7cea6e429db8a77707013db3",
+                        "md5": "c1fa0690e1dce6ec22f7e3019c287d2d"
                     },
                     "required_dependencies": [
                         "968868"
                     ],
-                    "size": 14818038,
-                    "date_published": "2024-08-04T08:00:02.187Z"
+                    "size": 14892320,
+                    "date_published": "2025-03-16T19:03:11.373Z"
                 }
             ]
         },
@@ -7984,7 +8061,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "relics-1.20.1-0.8.0.7.jar",
+                    "file_name": "relics-1.20.1-0.8.0.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7992,19 +8069,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5710/985/relics-1.20.1-0.8.0.7.jar",
-                    "id": "5710985",
+                    "url": "https://edge.forgecdn.net/files/6375/619/relics-1.20.1-0.8.0.8.jar",
+                    "id": "6375619",
                     "parent_id": "445274",
                     "hashes": {
-                        "sha1": "2116039a9b4718374d5617c2541c39a0d32cee40",
-                        "md5": "8bf34c497708e9d78a2f01c7a7c16382"
+                        "sha1": "a1cacd2e054e02387d0b1b9e543802a79e45d2a1",
+                        "md5": "7a0e2782837bbd83d8f0e60bb694c2bb"
                     },
-                    "required_dependencies": [
-                        "916747",
-                        "309927"
-                    ],
-                    "size": 1509760,
-                    "date_published": "2024-09-10T17:07:23.120Z"
+                    "required_dependencies": [],
+                    "size": 1520225,
+                    "date_published": "2025-04-01T20:42:49.307Z"
                 }
             ]
         },
@@ -9158,6 +9232,44 @@
             ]
         },
         {
+            "pakku_id": "evNLb56hrrDUMhyi",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "splendid-slimes"
+            },
+            "name": {
+                "curseforge": "Splendid Slimes"
+            },
+            "id": {
+                "curseforge": "1240935"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "splendid_slimes-0.3.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6427/399/splendid_slimes-0.3.0.jar",
+                    "id": "6427399",
+                    "parent_id": "1240935",
+                    "hashes": {
+                        "sha1": "4775ab4741862f1a101e6af06ccf4e4e085fe89f",
+                        "md5": "10db8ad26721b95df4dff324faa9b49d"
+                    },
+                    "required_dependencies": [
+                        "283644"
+                    ],
+                    "size": 299610,
+                    "date_published": "2025-04-15T23:15:13.177Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "wNV1GDYTYuUuDywu",
             "type": "MOD",
             "slug": {
@@ -9406,7 +9518,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-1.5.jar",
+                    "file_name": "dew_drop_farmland_growth-2.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9414,16 +9526,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6347/563/dew_drop_farmland_growth-1.5.jar",
-                    "id": "6347563",
+                    "url": "https://edge.forgecdn.net/files/6422/269/dew_drop_farmland_growth-2.0.jar",
+                    "id": "6422269",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "f004dd9cc47384b70c2ceb035ca7391a167283dc",
-                        "md5": "a56cb381d526825adf6cd61e89744ef2"
+                        "sha1": "fa633bdbd13f8deecca8181bc32d919c8077a83f",
+                        "md5": "c92fcada52433bbf7458df0aca70dc9e"
                     },
-                    "required_dependencies": [],
-                    "size": 74860,
-                    "date_published": "2025-03-25T19:04:25.867Z"
+                    "required_dependencies": [
+                        "291874",
+                        "1062753"
+                    ],
+                    "size": 75125,
+                    "date_published": "2025-04-14T13:51:33.867Z"
                 }
             ]
         },
@@ -10244,7 +10359,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "txnilib-forge-1.0.22-1.20.1.jar",
+                    "file_name": "txnilib-forge-1.0.23-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -10253,16 +10368,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6109/78/txnilib-forge-1.0.22-1.20.1.jar",
-                    "id": "6109078",
+                    "url": "https://edge.forgecdn.net/files/6303/219/txnilib-forge-1.0.23-1.20.1.jar",
+                    "id": "6303219",
                     "parent_id": "1104882",
                     "hashes": {
-                        "sha1": "52fc0e482ca7f50dfe1099150ca6c5623c70ef4f",
-                        "md5": "9b86ca9175cad1db43f14d444806f00e"
+                        "sha1": "24c7248313839cee8e15bb4571ed0274532acf03",
+                        "md5": "dbef37e77d39f0dc2d704a6adb2b5835"
                     },
                     "required_dependencies": [],
-                    "size": 3740385,
-                    "date_published": "2025-01-21T04:46:41.620Z"
+                    "size": 3740586,
+                    "date_published": "2025-03-14T14:05:20.277Z"
                 }
             ]
         },
@@ -10750,7 +10865,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Zeta-1.0-24.jar",
+                    "file_name": "Zeta-1.0-29.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10758,16 +10873,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5597/406/Zeta-1.0-24.jar",
-                    "id": "5597406",
+                    "url": "https://edge.forgecdn.net/files/6363/524/Zeta-1.0-29.jar",
+                    "id": "6363524",
                     "parent_id": "968868",
                     "hashes": {
-                        "sha1": "e261d5550bb66cd6802597b1b33462470e3b8dae",
-                        "md5": "5adf9331772be4b4eed0aca79f173ca6"
+                        "sha1": "e27a2cdd8f3938228140d082d97def5dd3147dd2",
+                        "md5": "78918c8adf342def98a0d95968ec57cf"
                     },
                     "required_dependencies": [],
-                    "size": 991472,
-                    "date_published": "2024-08-05T01:57:14.337Z"
+                    "size": 1006433,
+                    "date_published": "2025-03-29T15:35:29.610Z"
                 }
             ]
         },

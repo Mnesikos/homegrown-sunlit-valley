@@ -52,13 +52,23 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
-          "name": "society:geode"
-        },   
+          "name": "twigs:tangerine_seashell",
+          "weight": 3
+        },
         {
           "type": "minecraft:item",
-          "weight": 4,
-          "name": "society:canvas"
+          "name": "twigs:roseate_seashell",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:opaline_seashell",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "twigs:bronzed_seashell",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
@@ -72,13 +82,35 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "name": "society:furniture_box"
         },
         {
           "type": "minecraft:item",
           "weight": 2,
           "name": "society:aquamagical_dust"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:puddle\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "splendid_slimes:slime_heart",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{slime:{id:\"splendid_slimes:prisma\"}}"
+            }
+          ]
         }
       ]
     }

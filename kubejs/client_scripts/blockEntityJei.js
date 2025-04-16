@@ -141,7 +141,7 @@ const registerFishPondCategory = (event, categoryID, block, title) => {
 };
 JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "seed_making", "seed_maker", "Seed Making", 3, 1);
-  registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 4);
+  registerBECategory(e, "preserving", "preserves_jar", "Preserving", 5, 2);
   registerBECategory(
     e,
     "bait_upgrading",

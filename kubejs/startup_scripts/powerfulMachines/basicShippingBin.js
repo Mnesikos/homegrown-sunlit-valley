@@ -44,13 +44,12 @@ StartupEvents.registry("block", (event) => {
         let dayTime = level.dayTime();
         let morningModulo = dayTime % 24000;
         if (morningModulo >= 5 && morningModulo < 15) {
-          let slots = entity.inventory.getSlots();
-          let slotItem;
-          let slotNbt;
+          let slots = inventory.getSlots();
           let value = 0;
           let playerAttributes;
           let binPlayer;
           let removedSlots = [];
+          let calculationResults ;
           level.players.forEach((p) => {
             if (p.getUuid().toString() === block.getEntityData().data.owner) {
               playerAttributes = p.nbt.Attributes;
@@ -58,28 +57,14 @@ StartupEvents.registry("block", (event) => {
             }
           });
           if (playerAttributes) {
-            for (let i = 0; i < slots; i++) {
-              slotItem = inventory.getStackInSlot(i).item;
-              if (global.trades.has(String(slotItem.id))) {
-                let trade = global.trades.get(String(slotItem.id));
-                let quality;
-                if (inventory.getStackInSlot(i).hasNBT()) {
-                  slotNbt = inventory.getStackInSlot(i).nbt;
-                  if (slotNbt.quality_food) {
-                    quality = slotNbt.quality_food.quality;
-                  }
-                }
-                value +=
-                  calculateQualityValue(trade.value, quality) *
-                  inventory.getStackInSlot(i).count *
-                  (Number(
-                    playerAttributes.filter((obj) => {
-                      return obj.Name === trade.multiplier;
-                    })[0]?.Base
-                  ) || 1);
-                removedSlots.push(i);
-              }
-            }
+            calculationResults = global.processShippingBinInventory(
+              inventory,
+              slots,
+              playerAttributes,
+              true
+            );
+            value = calculationResults.calculatedValue
+            removedSlots = calculationResults.removedItems
             if (value > 0) {
               value = Math.round(value);
               let outputs = calculateCoinsFromValue(value, [], basicCoinMap);
@@ -162,5 +147,5 @@ StartupEvents.registry("block", (event) => {
             blockEntity.inventory.getStackInSlot(slot)
           )
       );
-    })
+    });
 });

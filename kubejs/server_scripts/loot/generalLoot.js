@@ -13,10 +13,10 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:entities/blaze")
     .randomChance(0.05)
     .addLoot("society:ember_crystal_cluster");
-    
+
   e.addLootTableModifier("minecraft:entities/spider")
-  .randomChance(0.05)
-  .addLoot("society:spider_silk");
+    .randomChance(0.05)
+    .addLoot("society:spider_silk");
 
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
@@ -25,7 +25,7 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:entities/pig")
     .randomChance(0.05)
     .addLoot("society:living_flesh");
-    
+
   // Chest Loot tables
   e.addLootTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.3)
@@ -112,6 +112,14 @@ LootJS.modifiers((e) => {
     .limitCount([1, 2]);
   e.addLootTableModifier("minecraft:chests/ancient_city")
     .randomChance(0.2)
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:orby"}}'
+      )
+    );
+  e.addLootTableModifier("minecraft:chests/ancient_city")
+    .randomChance(0.2)
     .addLoot("numismatics:sun")
     .limitCount([1, 1]);
   e.addLootTableModifier("minecraft:chests/ruined_portal")
@@ -138,6 +146,36 @@ LootJS.modifiers((e) => {
     .randomChance(0.6)
     .addLoot("numismatics:sprocket")
     .limitCount([1, 4], [5, 9]);
+  e.addLootTableModifier("minecraft:chests/bastion_treasure")
+    .randomChance(0.2)
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:blazing"}}'
+      )
+    );
+  e.addLootTableModifier("minecraft:chests/bastion_treasure")
+    .randomChance(0.6)
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:weeping"}}'
+      )
+    );
+
+  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
+    "minecraft:diamond_sword"
+  );
+  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
+    "minecraft:diamond_helmet"
+  );
+  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
+    "minecraft:diamond_chestplate"
+  );
+  e.addLootTableModifier("minecraft:chests/bastion_treasure").removeLoot(
+    "minecraft:diamond_leggings"
+  );
+
   e.addLootTableModifier("minecraft:chests/stronghold_corridor")
     .randomChance(0.9)
     .addLoot("numismatics:bevel")
@@ -166,7 +204,22 @@ LootJS.modifiers((e) => {
     .randomChance(0.2)
     .addLoot("numismatics:cog")
     .limitCount([1, 1]);
-
+  e.addLootTableModifier("minecraft:chests/end_city_treasure")
+    .randomChance(0.2)
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:shulking"}}'
+      )
+    );
+    e.addLootTableModifier("minecraft:chests/end_city_treasure")
+    .randomChance(0.2)
+    .addLoot(
+      Item.of(
+        "splendid_slimes:slime_heart",
+        '{slime:{id:"splendid_slimes:ender"}}'
+      )
+    );
   // Seeds
   e.addBlockLootModifier("minecraft:grass").removeLoot("#forge:seeds");
   e.addBlockLootModifier("minecraft:tall_grass").removeLoot("#forge:seeds");

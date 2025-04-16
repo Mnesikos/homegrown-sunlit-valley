@@ -1,0 +1,29 @@
+{
+  "breed": "orby",
+  "name": "slime.splendid_slimes.orby",
+  "color": "#b8e45a",
+  "hat_y_offset": -0.5,
+  "diet": "diet.splendid_slimes.orby",
+  "entities": [
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:pig",
+    "snowpig:snow_pig",
+    "minecraft:rabbit",
+    "minecraft:sheep",
+    "untitledduckmod:duck",
+    "untitledduckmod:goose",
+    "meadow:water_buffalo",
+    "meadow:wooly_cow",
+    "meadow:wooly_sheep",
+    "minecraft:zombie",
+    "minecraft:zombie_villager",
+    "minecraft:skeleton",
+    "minecraft:enderman",
+    "minecraft:husk",
+    "minecraft:stray",
+    "minecraft:drowned",
+    "minecraft:creeper"
+  ],
+  "favorite_entity": "minecraft:skeleton"
+}

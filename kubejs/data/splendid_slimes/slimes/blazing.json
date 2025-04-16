@@ -1,0 +1,19 @@
+{
+  "breed": "blazing",
+  "name": "slime.splendid_slimes.blazing",
+  "color": "#c96c03",
+  "diet": "diet.splendid_slimes.blazing",
+  "foods": [
+    { "tag": "society:cooked_meat" }
+  ],
+  "favorite_food": {
+    "item": "autumnity:cooked_turkey"
+  },
+  "negative_emit_effects": [
+    {
+      "effect": "supplementaries:flammable",
+      "duration": 300,
+      "amplifier": 1
+    }
+  ]
+}

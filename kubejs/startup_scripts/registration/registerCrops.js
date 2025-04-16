@@ -1,4 +1,14 @@
 StartupEvents.registry("block", (e) => {
+  const surviveCheck = (level, pos) => {
+    const FARMLAND = Java.loadClass(
+      "net.minecraft.world.level.block.FarmBlock"
+    );
+    let blockState = level.getBlockState(pos.below());
+    let mcBlock = blockState.block;
+    if (mcBlock instanceof FARMLAND) {
+      return true;
+    } else return false;
+  };
   e
     .create("society:ancient_fruit", "crop")
     .age(10, (builder) => {
@@ -15,16 +25,7 @@ StartupEvents.registry("block", (e) => {
         .shape(9, 0, 0, 0, 16, 21, 16)
         .shape(10, 0, 0, 0, 16, 24, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:ancient_fruit", 1)
     .tagBlock("minecraft:mineable/hoe")
@@ -93,16 +94,7 @@ StartupEvents.registry("block", (e) => {
         .shape(8, 0, 0, 0, 16, 16, 16)
         .shape(9, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:tubabacco_leaf", 1)
     .tagBlock("minecraft:mineable/hoe")
@@ -164,16 +156,7 @@ StartupEvents.registry("block", (e) => {
         .shape(4, 0, 0, 0, 16, 10, 16)
         .shape(5, 0, 0, 0, 16, 12, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("farm_and_charm:strawberry", 2)
     .tagBlock("minecraft:mineable/hoe")
@@ -220,16 +203,7 @@ StartupEvents.registry("block", (e) => {
         .shape(5, 0, 0, 0, 16, 22, 16)
         .shape(6, 0, 0, 0, 16, 22, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("brewery:hops", 1)
     .tagBlock("minecraft:mineable/hoe")
@@ -281,16 +255,7 @@ StartupEvents.registry("block", (e) => {
         .shape(6, 0, 0, 0, 16, 20, 16)
         .shape(7, 0, 0, 0, 16, 20, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:blueberry", 1)
     .tagBlock("minecraft:mineable/hoe")
@@ -345,16 +310,7 @@ StartupEvents.registry("block", (e) => {
         .shape(5, 0, 0, 0, 16, 13, 16)
         .shape(6, 0, 0, 0, 16, 16, 16);
     })
-    .survive((state, level, pos) => {
-      const FARMLAND = Java.loadClass(
-        "net.minecraft.world.level.block.FarmBlock"
-      );
-      let blockState = level.getBlockState(pos.below());
-      let mcBlock = blockState.block;
-      if (mcBlock instanceof FARMLAND) {
-        return true;
-      } else return false;
-    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
     .dropSeed(false)
     .crop("society:eggplant", 1)
     .tagBlock("minecraft:mineable/hoe")
@@ -391,5 +347,248 @@ StartupEvents.registry("block", (e) => {
         apply: { model: "society:block/crops/eggplant_crop_stage4" },
       },
     ],
+  };
+
+  e
+    .create("society:carrot", "crop")
+    .age(7, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 7, 16)
+        .shape(4, 0, 0, 0, 16, 13, 16)
+        .shape(5, 0, 0, 0, 16, 13, 16)
+        .shape(6, 0, 0, 0, 16, 16, 16)
+        .shape(7, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("minecraft:carrot", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .item((seedItem) => {
+      seedItem.texture("society:item/carrot_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": {
+        model: "minecraft:block/carrots_stage0",
+      },
+      "age=1": {
+        model: "minecraft:block/carrots_stage0",
+      },
+      "age=2": {
+        model: "minecraft:block/carrots_stage1",
+      },
+      "age=3": {
+        model: "minecraft:block/carrots_stage1",
+      },
+      "age=4": {
+        model: "minecraft:block/carrots_stage2",
+      },
+      "age=5": {
+        model: "minecraft:block/carrots_stage2",
+      },
+      "age=6": {
+        model: "minecraft:block/carrots_stage2",
+      },
+      "age=7": {
+        model: "minecraft:block/carrots_stage3",
+      },
+    },
+  };
+
+  e
+    .create("society:potato", "crop")
+    .age(7, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 7, 16)
+        .shape(4, 0, 0, 0, 16, 13, 16)
+        .shape(5, 0, 0, 0, 16, 13, 16)
+        .shape(6, 0, 0, 0, 16, 16, 16)
+        .shape(7, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("minecraft:potato", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .item((seedItem) => {
+      seedItem.texture("society:item/potato_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": {
+        model: "minecraft:block/potatoes_stage0",
+      },
+      "age=1": {
+        model: "minecraft:block/potatoes_stage0",
+      },
+      "age=2": {
+        model: "minecraft:block/potatoes_stage1",
+      },
+      "age=3": {
+        model: "minecraft:block/potatoes_stage1",
+      },
+      "age=4": {
+        model: "minecraft:block/potatoes_stage2",
+      },
+      "age=5": {
+        model: "minecraft:block/potatoes_stage2",
+      },
+      "age=6": {
+        model: "minecraft:block/potatoes_stage2",
+      },
+      "age=7": {
+        model: "minecraft:block/potatoes_stage3",
+      },
+    },
+  };
+
+  e
+    .create("society:onion", "crop")
+    .age(4, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 13, 16)
+        .shape(4, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("farm_and_charm:onion", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .item((seedItem) => {
+      seedItem.texture("society:item/onion_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": [
+        {
+          model: "farm_and_charm:block/onion_stage0",
+          weight: 1,
+        },
+      ],
+      "age=1": [
+        {
+          model: "farm_and_charm:block/onion_stage1",
+          weight: 1,
+        },
+      ],
+      "age=2": [
+        {
+          model: "farm_and_charm:block/onion_stage2",
+          weight: 1,
+        },
+      ],
+      "age=3": [
+        {
+          model: "farm_and_charm:block/onion_stage3",
+          weight: 1,
+        },
+      ],
+      "age=4": [
+        {
+          model: "farm_and_charm:block/onion_stage4_1",
+          weight: 1,
+        },
+        {
+          model: "farm_and_charm:block/onion_stage4_2",
+          weight: 1,
+        },
+        {
+          model: "farm_and_charm:block/onion_stage4_3",
+          weight: 1,
+        },
+      ],
+    },
+  };
+
+  e
+    .create("society:sweet_potato", "crop")
+    .age(5, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 3, 16)
+        .shape(4, 0, 0, 0, 16, 13, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("veggiesdelight:sweet_potato", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .item((seedItem) => {
+      seedItem.texture("society:item/sweet_potato_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": {
+        model: "veggiesdelight:block/sweet_potato_stage0",
+      },
+      "age=1": {
+        model: "veggiesdelight:block/sweet_potato_stage1",
+      },
+      "age=2": {
+        model: "veggiesdelight:block/sweet_potato_stage2",
+      },
+      "age=3": {
+        model: "veggiesdelight:block/sweet_potato_stage3",
+      },
+      "age=4": {
+        model: "veggiesdelight:block/sweet_potato_stage3",
+      },
+      "age=5": {
+        model: "veggiesdelight:block/sweet_potato_stage4",
+      },
+    },
+  };
+
+  e
+    .create("society:peanut", "crop")
+    .age(7, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 7, 16)
+        .shape(4, 0, 0, 0, 16, 13, 16)
+        .shape(5, 0, 0, 0, 16, 13, 16)
+        .shape(6, 0, 0, 0, 16, 16, 16)
+        .shape(7, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("vintagedelight:peanut", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .item((seedItem) => {
+      seedItem.texture("society:item/peanut_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": {
+        model: "vintagedelight:block/peanuts_stage0",
+      },
+      "age=1": {
+        model: "vintagedelight:block/peanuts_stage0",
+      },
+      "age=2": {
+        model: "vintagedelight:block/peanuts_stage1",
+      },
+      "age=3": {
+        model: "vintagedelight:block/peanuts_stage1",
+      },
+      "age=4": {
+        model: "vintagedelight:block/peanuts_stage2",
+      },
+      "age=5": {
+        model: "vintagedelight:block/peanuts_stage3",
+      },
+      "age=6": {
+        model: "vintagedelight:block/peanuts_stage3",
+      },
+      "age=7": {
+        model: "vintagedelight:block/peanuts_stage4",
+      },
+    },
   };
 });

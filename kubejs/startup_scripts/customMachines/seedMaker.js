@@ -178,6 +178,14 @@ global.seedMakerRecipes = [
     input: "farmersdelight:rice_panicle",
     output: ["6x farmersdelight:rice"],
   },
+  { input: "minecraft:potato", output: ["6x society:potato_seed"] },
+  { input: "minecraft:carrot", output: ["6x society:carrot_seed"] },
+  { input: "farm_and_charm:onion", output: ["6x society:onion_seed"] },
+  { input: "vintagedelight:peanut", output: ["6x society:peanut_seed"] },
+  {
+    input: "veggiesdelight:sweet_potato",
+    output: ["6x society:sweet_potato_seed"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

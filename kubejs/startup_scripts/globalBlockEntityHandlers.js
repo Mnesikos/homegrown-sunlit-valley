@@ -12,6 +12,58 @@ const calculateQualityValue = (number, quality) => {
   return value;
 };
 
+global.processShippingBinInventory = (
+  inventory,
+  inventorySlots,
+  attributes,
+  returnRemoved
+) => {
+  let calculatedValue = 0;
+  let removedItems = [];
+  let slotItem;
+  let slotNbt;
+  for (let i = 0; i < inventorySlots; i++) {
+    slotItem = inventory.getStackInSlot(i).item;
+    if (
+      global.trades.has(String(slotItem.id)) ||
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
+        slotItem.id
+      )
+    ) {
+      let trade = global.trades.get(String(slotItem.id));
+      let quality;
+      if (inventory.getStackInSlot(i).hasNBT()) {
+        slotNbt = inventory.getStackInSlot(i).nbt;
+      }
+      if (
+        slotNbt &&
+        ((slotNbt.slime && slotNbt.slime.id) ||
+          (slotNbt.plort && slotNbt.plort.id))
+      ) {
+        if (slotNbt.slime)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort)
+          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      }
+      
+      if (slotNbt && slotNbt.quality_food) {
+        quality = slotNbt.quality_food.quality;
+      }
+      calculatedValue +=
+        calculateQualityValue(trade.value, quality) *
+        inventory.getStackInSlot(i).count *
+        (Number(
+          attributes.filter((obj) => {
+            return obj.Name === trade.multiplier;
+          })[0]?.Base
+        ) || 1);
+    }
+    if (returnRemoved) removedItems.push(i);
+    else inventory.setStackInSlot(i, "minecraft:air");
+  }
+  return { calculatedValue: calculatedValue, removedItems: removedItems };
+};
+
 const artMachineTickRate = 20;
 
 const artMachineProgTime = 20;
@@ -189,7 +241,7 @@ global.handleBERightClick = (
         if (multipleInputs) {
           if (item.count >= stageCount - Number(blockStage)) {
             if (!player.isCreative())
-              item.count = item.count - (stageCount - Number(blockStage))
+              item.count = item.count - (stageCount - Number(blockStage));
             if (itemQuality) setQuality(newProperties, itemQuality);
             newProperties.stage = stageCount.toString();
           } else {
@@ -276,89 +328,89 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
 const getCardinalMultipartJson = (name) => {
   const path = `society:block/${name}`;
   let offJson = [
-        {
-          when: { working: false, upgraded: false, facing: "north" },
-          apply: { model: `${path}_off`, y: 0, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "east" },
-          apply: { model: `${path}_off`, y: 90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "south" },
-          apply: { model: `${path}_off`, y: 180, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: false, facing: "west" },
-          apply: { model: `${path}_off`, y: -90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "north" },
-          apply: { model: `${path}_off_upgraded`, y: 0, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "east" },
-          apply: { model: `${path}_off_upgraded`, y: 90, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "south" },
-          apply: { model: `${path}_off_upgraded`, y: 180, uvlock: false },
-        },
-        {
-          when: { working: false, upgraded: true, facing: "west" },
-          apply: { model: `${path}_off_upgraded`, y: -90, uvlock: false },
-        },
-      ]
-      let doneJson = [
-        {
-          when: { mature: true, upgraded: false, facing: "north" },
-          apply: { model: `${path}_done`, y: 0, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: false, facing: "east" },
-          apply: { model: `${path}_done`, y: 90, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: false, facing: "south" },
-          apply: { model: `${path}_done`, y: 180, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: false, facing: "west" },
-          apply: { model: `${path}_done`, y: -90, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: true, facing: "north" },
-          apply: { model: `${path}_done_upgraded`, y: 0, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: true, facing: "east" },
-          apply: { model: `${path}_done_upgraded`, y: 90, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: true, facing: "south" },
-          apply: { model: `${path}_done_upgraded`, y: 180, uvlock: false },
-        },
-        {
-          when: { mature: true, upgraded: true, facing: "west" },
-          apply: { model: `${path}_done_upgraded`, y: -90, uvlock: false },
-        },
-      ]
+    {
+      when: { working: false, upgraded: false, facing: "north" },
+      apply: { model: `${path}_off`, y: 0, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: false, facing: "east" },
+      apply: { model: `${path}_off`, y: 90, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: false, facing: "south" },
+      apply: { model: `${path}_off`, y: 180, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: false, facing: "west" },
+      apply: { model: `${path}_off`, y: -90, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: true, facing: "north" },
+      apply: { model: `${path}_off_upgraded`, y: 0, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: true, facing: "east" },
+      apply: { model: `${path}_off_upgraded`, y: 90, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: true, facing: "south" },
+      apply: { model: `${path}_off_upgraded`, y: 180, uvlock: false },
+    },
+    {
+      when: { working: false, upgraded: true, facing: "west" },
+      apply: { model: `${path}_off_upgraded`, y: -90, uvlock: false },
+    },
+  ];
+  let doneJson = [
+    {
+      when: { mature: true, upgraded: false, facing: "north" },
+      apply: { model: `${path}_done`, y: 0, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: false, facing: "east" },
+      apply: { model: `${path}_done`, y: 90, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: false, facing: "south" },
+      apply: { model: `${path}_done`, y: 180, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: false, facing: "west" },
+      apply: { model: `${path}_done`, y: -90, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: true, facing: "north" },
+      apply: { model: `${path}_done_upgraded`, y: 0, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: true, facing: "east" },
+      apply: { model: `${path}_done_upgraded`, y: 90, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: true, facing: "south" },
+      apply: { model: `${path}_done_upgraded`, y: 180, uvlock: false },
+    },
+    {
+      when: { mature: true, upgraded: true, facing: "west" },
+      apply: { model: `${path}_done_upgraded`, y: -90, uvlock: false },
+    },
+  ];
   return [
     {
       when: { working: true, upgraded: false, facing: "north" },
-      apply: { model: `${path}`, y: 0, uvlock: false },
+      apply: { model: path, y: 0, uvlock: false },
     },
     {
       when: { working: true, upgraded: false, facing: "east" },
-      apply: { model: `${path}`, y: 90, uvlock: false },
+      apply: { model: path, y: 90, uvlock: false },
     },
     {
       when: { working: true, upgraded: false, facing: "south" },
-      apply: { model: `${path}`, y: 180, uvlock: false },
+      apply: { model: path, y: 180, uvlock: false },
     },
     {
       when: { working: true, upgraded: false, facing: "west" },
-      apply: { model: `${path}`, y: -90, uvlock: false },
+      apply: { model: path, y: -90, uvlock: false },
     },
     {
       when: { working: true, upgraded: true, facing: "north" },
@@ -376,5 +428,29 @@ const getCardinalMultipartJson = (name) => {
       when: { working: true, upgraded: true, facing: "west" },
       apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
     },
-  ].concat(offJson).concat(doneJson);
+  ]
+    .concat(offJson)
+    .concat(doneJson);
+};
+const getGnomeState = (name, type) => {
+  const path = `society:block/gnome/${name}`;
+  let cardianal = [
+    {
+      when: { type: type, facing: "north" },
+      apply: { model: path, y: 0, uvlock: false },
+    },
+    {
+      when: { type: type, facing: "east" },
+      apply: { model: path, y: 90, uvlock: false },
+    },
+    {
+      when: { type: type, facing: "south" },
+      apply: { model: path, y: 180, uvlock: false },
+    },
+    {
+      when:  {type: type, facing: "west" },
+      apply: { model: path, y: -90, uvlock: false },
+    }
+  ];
+  return cardianal
 };

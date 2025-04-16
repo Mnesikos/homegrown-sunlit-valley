@@ -69,7 +69,6 @@ ItemEvents.entityInteracted((e) => {
     const affection = data.getInt("affection") || 0;
     const hearts = Math.floor(affection / 100);
     const heartBonus = hearts === 10 ? 2 : 1;
-    let resetCooldown = true;
     if (
       freshAnimal ||
       level.time - ageLastDroppedSpecial > interactionCooldown
@@ -126,12 +125,6 @@ ItemEvents.entityInteracted((e) => {
           true,
           e
         );
-      } else if (
-        ["minecraft:sheep", "meadow:wooly_sheep", "snuffles:snuffle"].includes(
-          target.type
-        )
-      ) {
-        resetCooldown = false;
       }
       if (target.type === "buzzier_bees:moobloom") {
         handleSpecialItem(
@@ -256,7 +249,19 @@ ItemEvents.entityInteracted((e) => {
           e
         );
       }
-      if (resetCooldown) data.ageLastDroppedSpecial = level.time;
+      if (player.stages.has("reaping_scythe")) {
+        handleSpecialItem(
+          data,
+          0.2,
+          hungry,
+          1,
+          1,
+          "quark:diamond_heart",
+          false,
+          e
+        );
+      }
+      data.ageLastDroppedSpecial = level.time;
     }
   }
 });

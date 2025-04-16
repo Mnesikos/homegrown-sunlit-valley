@@ -78,7 +78,7 @@
     "root": false
   },
   "vsjhhjhckikbiy0p": {
-    "definition": "crop_collector",
+    "definition": "reaping_scythe",
     "x": 96,
     "y": -128,
     "root": false
@@ -120,7 +120,7 @@
     "root": false
   },
   "4txqr6l6xvmthqvd": {
-    "definition": "crop_tycoon",
+    "definition": "crop_collector",
     "x": 352,
     "y": -64,
     "root": false

@@ -43,6 +43,11 @@ const stripTags = [
   "pamhc2trees:orangeitem",
   "pamhc2trees:pampassionfruit",
   "pamhc2trees:passionfruit_sapling",
+  "minecraft:potatoes",
+  "minecraft:carrots",
+  "vintagedelight:peanut_crop",
+  "veggiesdelight:sweet_potato_crop",
+  "farm_and_charm:onion_crop",
 ];
 const stripSeasons = (e, item) => {
   e.remove("sereneseasons:summer_crops", "vintagedelight:cucumber_crop");
@@ -112,7 +117,14 @@ const springCrops = [
   "veggiesdelight:garlic_crop",
   "veggiesdelight:garlic_seeds",
   "veggiesdelight:garlic",
+  "society:potato",
+  "society:potato_seed",
+  "society:carrot",
+  "society:carrot_seed",
+  "society:onion",
+  "society:onion_seed",
 ];
+
 const summerCrops = [
   "farm_and_charm:oat_crop",
   "farm_and_charm:corn_crop",
@@ -218,6 +230,12 @@ const autumnCrops = [
   "pamhc2trees:hazelnut_sapling",
   "pamhc2trees:pamhazelnut",
   "pamhc2trees:hazelnutitem",
+  "society:carrot",
+  "society:carrot_seed",
+  "society:peanut",
+  "society:peanut_seed",
+  "society:sweet_potato",
+  "society:sweet_potato_seed",
 ];
 const winterCrops = [
   "farm_and_charm:barley_crop",

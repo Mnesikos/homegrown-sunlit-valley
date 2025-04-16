@@ -40,11 +40,9 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 6);
       blockInfo.initialData({ owner: "-1" });
-      blockInfo.serverTick(6000, 0, (entity) => {
+      blockInfo.serverTick(4000, 0, (entity) => {
         const { inventory, block } = entity;
         let slots = entity.inventory.getSlots();
-        let slotItem;
-        let slotNbt;
         let value = 0;
         let playerAttributes;
         let binPlayer;
@@ -55,26 +53,11 @@ StartupEvents.registry("block", (event) => {
           }
         });
         if (playerAttributes) {
-          for (let i = 0; i < slots; i++) {
-            slotItem = inventory.getStackInSlot(i).item;
-            slotNbt = inventory.getStackInSlot(i).nbt
-            if (global.trades.has(String(slotItem.id))) {
-              let trade = global.trades.get(String(slotItem.id));
-              let quality;
-              if (slotNbt && slotNbt.quality_food) {
-                quality = slotNbt.quality_food.quality;
-              }
-              value +=
-                calculateQualityValue(trade.value, quality) *
-                inventory.getStackInSlot(i).count *
-                (Number(
-                  playerAttributes.filter((obj) => {
-                    return obj.Name === trade.multiplier;
-                  })[0]?.Base
-                ) || 1);
-              inventory.setStackInSlot(i, "minecraft:air");
-            }
-          }
+          value = global.processShippingBinInventory(
+            inventory,
+            slots,
+            playerAttributes
+          ).calculatedValue;
           if (value > 0) {
             value = Math.round(value);
             binPlayer.server.runCommandSilent(

@@ -113,17 +113,24 @@ const validatePond = (tickEvent, lavaFish) => {
     ).id === "society:fish_pond";
   let waterAmount = 0;
   let scannedId = "";
+  let scannedBlockProperties
 
   for (let pos of BlockPos.betweenClosed(
     new BlockPos(x + startX, y, z + startZ),
     [x + endX, y, z + endZ]
   )) {
+    scannedBlockProperties = level.getBlock(pos).properties;
     scannedId = level.getBlock(pos).id;
     if (lavaFish && scannedId === "minecraft:lava") {
       waterAmount += 1;
     } else if (
       !lavaFish &&
       (scannedId === "minecraft:water" || scannedId === "minecraft:ice")
+    ) {
+      waterAmount += 1;
+    } else if (
+      scannedBlockProperties &&
+      scannedBlockProperties.get("waterlogged") == "true"
     ) {
       waterAmount += 1;
     }
@@ -315,7 +322,9 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Cultivates fish, roe, and various items"));
       item.tooltip(Text.gray("Right Click with a fish to add it to the pond"));
-      item.tooltip(Text.gray("Shift + Right Click with an empty hand to take out fish"));
+      item.tooltip(
+        Text.gray("Shift + Right Click with an empty hand to take out fish")
+      );
       item.modelJson({
         parent: "society:block/fish_pond",
       });
@@ -408,8 +417,10 @@ StartupEvents.registry("block", (event) => {
               );
               let smokedFishId = fish.item.split(":")[1];
               if (smokedFishId.includes("raw_")) {
-                if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
-                else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
+                if (smokedFishId === "raw_snowflake")
+                  smokedFishId = "frosty_fin";
+                else
+                  smokedFishId = smokedFishId.substring(4, smokedFishId.length);
               }
               player.give(
                 Item.of(
@@ -601,6 +612,11 @@ StartupEvents.registry("block", (event) => {
       {
         when: { quest: true, mature: false },
         apply: { model: "society:block/pond_quest" },
+      },
+
+      {
+        when: { valid: false },
+        apply: { model: "society:block/error" },
       },
     ],
   };

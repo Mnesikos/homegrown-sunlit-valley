@@ -1,11 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "society:block/fish_pond_bottom",
-		"1": "society:block/fish_pod_bucket",
-		"2": "society:block/fish_pond_front",
-		"3": "society:block/fish_pond_side",
-		"4": "society:block/fish_pond_top",
-		"particle": "society:block/fish_pond_side"
+		"2": "society:block/fish_pond",
+		"3": "society:block/fish_pond_in",
+		"particle": "society:block/fish_pond"
 	}
 }

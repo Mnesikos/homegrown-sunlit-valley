@@ -1,0 +1,23 @@
+{
+  "type": "splendid_slimes:plort_ripping",
+  "ingredient": {
+    "item": "splendid_slimes:plort",
+    "nbt": {
+      "plort": {
+        "id": "splendid_slimes:gold"
+      }
+    }
+  },
+  "results": [
+    {
+      "item": "numismatics:crown",
+      "count": 1,
+      "weight": 100
+    },
+    {
+      "item": "vintagedelight:golden_egg",
+      "count": 1,
+      "weight": 1
+    }
+  ]
+}

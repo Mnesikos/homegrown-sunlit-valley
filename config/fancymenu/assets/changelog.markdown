@@ -1,6 +1,6 @@
 ^^^
-## Game Drop
-### v2.4.3
+## Splendid Slimes
+### v2.5.0
 ^^^
 --- 
 - Added Game Discs to various loot

@@ -114,6 +114,43 @@
     },
     {
       "offer": {
+        "itemKey": "splendid_slimes:slime_heart",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{slime:{id:\"splendid_slimes:slimy\"}}"
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:slime_heart_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "splendid_slimes:slime_incubator",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:slime_heart_for_sun"
+    },
+    {
+      "offer": {
         "itemKey": "society:magic_shears",
         "amount": 1,
         "priceModifier": 0
