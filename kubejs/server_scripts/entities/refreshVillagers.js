@@ -8,6 +8,7 @@ ItemEvents.entityInteracted((e) => {
   const nbt = target.nbt.toString();
   if (nbt.includes("shepherd") && !nbt.includes("slime_incubator")) updateThis = true;
   if (nbt.includes("botanist") && !nbt.includes("cornucopia")) updateThis = true;
+  if (nbt.includes("farmer") && !nbt.includes("bakery")) updateThis = true;
   if (nbt.includes("cook") && nbt.includes("veggiesdelight:sweet_potato")) updateThis = true;
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");

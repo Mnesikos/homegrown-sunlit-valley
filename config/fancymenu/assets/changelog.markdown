@@ -1,33 +1,40 @@
 ^^^
-## Game Drop
-### v2.4.3
+## Splendid Slimes
+### v2.5.0
 ^^^
 --- 
-- Added Game Discs to various loot
-- Added Skull Cavern Trial Chamber Map
-- Added Goober as a Farm animal
-- Added Sniffer Egg as husbandry drop
-- Added Strength scaling to Dragontooth Axe's Galaxy Smash
-- Added values to Petrified Eggs, Srtifact Shards
-- Removed Ancient Coin 1:5000 chance infernal drop
-- Fixed Coffee Bean Sack having incorrect value
-- Fixed Stardew Fishing related bugs
-- Fixed Fish Radar showing incorrect Nether Fish
-- Fixed Black Opal having wrong tooltip
-- Fixed Coin Leaderboard not working right when updating the pack
-- Fixed Frosty Fin bait not working
-- Fixed Tea Blossoms having incorrect seasons
-
-### 2.4.1
-- Fixed Game discs not being exported
-
-### 2.4.2
-- Added new loom model from Nitbe
-- Reduced food values of certain items
-- Reduced quality food saturation/diversity boost
-- Fixed certain mods not being updated (packdev moment)
-
-### 2.4.3
-- Added new textures for Charging Rod, Deluxe Worm Farm, and Charging Rod
-- Fixed carrots being cheaper than sell price
-- Fixed multiplayer pigracing bugs
+- Added Slime ranching mechanics using Splendid Slimes! 
+- Slime Hearts can be found in the world as loot and incubated into slimes. Their resources can be acquired by feeding them things they like.
+- Added Dig and Fishing spots that give unique rewards such as artifacts and slime eggs
+- Added new crop quality system- more dependent on fertilizers (For example, diamond crops require Pristine fertilizer)
+- Added new behavior for hydrating fertilizer: only stays hydrated for the first half of crop's growth
+- Added Gnome
+- Added invalid Fish Pond icon
+- Added Missing Bundle
+- Added done state for Charging Rod
+- Added new textures for blocks: Fish Pond, Crystalarium, and Coin Leaderboard
+- Added new textures for items: Animal Feed, Truffle
+- Added seeds to some re-seedable crops
+- Added Reaping Scythe skill to farmer tree  (Replaces gap left by Crop Collector replacing Crop Tycoon)
+- Added Jars to farmer
+- Added new villager updating system! No longer need to manually "update" them.
+- Added Shells to Crap Trap drops
+- Added compacting drawer recipes
+- Added Cornucopia and Kinetic Blueprint to Mystical Botanist
+- Updated many mods for stability
+- Nether Depth's Upgrade stews now use Eggplant in recipe
+- Increased value of Dehydrator products (fruit * 12) + 32 -> (fruit * 14) + 64
+- Increased Artisan bonus to 20%
+- Increased Mana Milker cost and cooldown
+- Reduced Preserves Jar processing time 4 days -> 2
+- Reduced Smart Shipping Bin selling delay
+- Reduced price of basic storage upgrades
+- Removed Canvas and Geodes from Crab Trap drops
+- Reduced Tiller bonus to 10%
+- Reduced Artful Tycoon bonus to 80%
+- Removed Plant Nutrient bonemealing affect
+- Fixed issue with BFF triggering too often
+- Fish Ponds now count waterlogged blocks as water
+- Fixed Cornucopia stacking
+- Fixed crop related duping glitch
+- Fixed certain food recipes using nonexistent food

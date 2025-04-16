@@ -5,6 +5,9 @@
     },
     {
       "stack": "item:dew_drop_watering_cans:diamond_watering_can{Damage:45}"
+    },
+    {
+      "stack": "item:minecraft:nautilus_shell"
     }
   ],
   "lookup_history": [
@@ -580,8 +583,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

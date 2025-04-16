@@ -1,7 +1,7 @@
 {
 	autofocus_id: "6EBAA004C1A50E98"
 	consume_items: true
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "abandoned_farm"
 	group: "106AD9AA3ADDE3AE"
@@ -122,13 +122,7 @@
 			y: -1.3d
 		}
 		{
-			dependencies: [
-				"76A35BBCA4E0CDD9"
-				"610AB8B499859791"
-				"4D00DF575B8FC1B2"
-				"03F3D0F74A5BC0C4"
-				"3129F3C2D43EE6EE"
-			]
+			dependencies: ["661A3A466ABF29BA"]
 			description: ["Completeting the Abandoned Farm gives you a &3Petal Apothecary&r. This is your entry point into Botania, a magical automation mod that will help with certain tasks around the farm."]
 			hide_details_until_startable: false
 			hide_until_deps_complete: false
