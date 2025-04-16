@@ -6,5 +6,6 @@
   "tooltip.farm_and_charm.thankyou_1": "Farm decoration",
   "tooltip.farm_and_charm.thankyou_2": "When placed:",
   "tooltip.farm_and_charm.thankyou_3": "Thank you for playing Farm & Charm!",
-  "tooltip.farm_and_charm.thankyou_4": "Gives you a sense of pride and accomplishment"
+  "tooltip.farm_and_charm.thankyou_4": "Gives you a sense of pride and accomplishment",
+  "block.farm_and_charm.onion_crop": "REMOVED! Purchase Onion seeds from Market!"
 }

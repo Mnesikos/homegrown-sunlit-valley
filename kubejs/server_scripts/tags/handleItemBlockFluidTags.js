@@ -415,6 +415,24 @@ ServerEvents.tags("block", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
+  [
+    "fantasyfurniture:necrolord/carpet",
+    "fantasyfurniture:nordic/carpet",
+    "fantasyfurniture:dunmer/carpet",
+    "fantasyfurniture:venthyr/carpet",
+    "fantasyfurniture:bone/skeleton/carpet",
+    "fantasyfurniture:bone/wither/carpet",
+    "fantasyfurniture:royal/carpet",
+    "fantasyfurniture:necrolord/wool",
+    "fantasyfurniture:royal/wool",
+    "fantasyfurniture:bone/wither/wool",
+    "fantasyfurniture:venthyr/wool",
+    "fantasyfurniture:bone/skeleton/wool",
+    "fantasyfurniture:dunmer/wool",
+    "fantasyfurniture:nordic/wool",
+  ].forEach((wool) => {
+    e.add("minecraft:mineable/axe", wool);
+  });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",
     "meadow:alpine_poppy",
@@ -425,6 +443,7 @@ ServerEvents.tags("block", (e) => {
     "meadow:eriophorum",
     "meadow:small_fir",
   ];
+
   flowersMissingBlockTags.forEach((flower) => {
     e.add("minecraft:flowers", flower);
     e.add(

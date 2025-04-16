@@ -112,11 +112,9 @@ ItemEvents.entityInteracted((e) => {
         );
       }
       if (
-        item === "minecraft:shears" &&
         ["minecraft:sheep", "meadow:wooly_sheep", "snuffles:snuffle"].includes(
           target.type
-        ) &&
-        !target.getNbt().Sheared
+        )
       ) {
         handleSpecialItem(
           data,

@@ -6731,7 +6731,8 @@
         {
             "pakku_id": "bl2D5cCtJwjIzKg4",
             "pakku_links": [
-                "Z5ABSfuXE0jplGgO"
+                "Z5ABSfuXE0jplGgO",
+                "Gt0q5vF9DOqCn3H8"
             ],
             "type": "MOD",
             "slug": {
@@ -6815,10 +6816,7 @@
             ]
         },
         {
-            "pakku_id": "YY95VDQ5ySSoD5jo",
-            "pakku_links": [
-                "Z5ABSfuXE0jplGgO"
-            ],
+            "pakku_id": "Gt0q5vF9DOqCn3H8",
             "type": "MOD",
             "slug": {
                 "curseforge": "octo-lib"
@@ -6832,27 +6830,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "OctoLib-FORGE-0.4.2+1.20.1.jar",
+                    "file_name": "OctoLib-FORGE-0.5.0.1+1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5644/693/OctoLib-FORGE-0.4.2+1.20.1.jar",
-                    "id": "5644693",
+                    "url": "https://edge.forgecdn.net/files/6274/623/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+                    "id": "6274623",
                     "parent_id": "916747",
                     "hashes": {
-                        "sha1": "d39a7e4d7ebd4e6f427f5c0958b7e2080ba02800",
-                        "md5": "1d54e1330f1f89a2544eeae005c3a4a6"
+                        "sha1": "9eab28baff36942e1c924489e34753df10f40208",
+                        "md5": "6b2fd012966b13a96ce4f68ae42eab8c"
                     },
-                    "required_dependencies": [
-                        "419699"
-                    ],
-                    "size": 401032,
-                    "date_published": "2024-08-19T18:20:15.213Z"
+                    "required_dependencies": [],
+                    "size": 424035,
+                    "date_published": "2025-03-07T11:54:51.647Z"
                 }
             ]
         },
@@ -7975,11 +7970,7 @@
             ]
         },
         {
-            "pakku_id": "STiWYfrbXgAuPmTw",
-            "pakku_links": [
-                "jPfd9p3GEQYsDOzN",
-                "YY95VDQ5ySSoD5jo"
-            ],
+            "pakku_id": "WbJjgA5u6klBa8T2",
             "type": "MOD",
             "slug": {
                 "curseforge": "relics-mod"
@@ -7998,7 +7989,6 @@
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
