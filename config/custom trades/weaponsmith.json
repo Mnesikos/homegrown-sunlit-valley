@@ -380,8 +380,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 1,
+        "itemKey": "numismatics:spur",
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,

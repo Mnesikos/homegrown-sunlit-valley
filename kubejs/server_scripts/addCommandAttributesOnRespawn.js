@@ -9,10 +9,9 @@ CommonAddedEvents.playerRespawn((e) => {
   const attributeCommand = (type, mult) =>
   `attribute ${player.username} shippingbin:${type}_sell_multiplier base set ${mult}`
   
-  if (stages.has("tiller")) server.runCommandSilent(attributeCommand("crop", 1.2));
-  if (stages.has("crop_tycoon")) server.runCommandSilent(attributeCommand("crop", 2));
-  if (stages.has("artisan")) server.runCommandSilent(attributeCommand("wood", 1.1));
-  if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 2));
+  if (stages.has("tiller")) server.runCommandSilent(attributeCommand("crop", 1.1));
+  if (stages.has("artisan")) server.runCommandSilent(attributeCommand("wood", 1.2));
+  if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 1.8));
   if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.5));
   if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 2));
   if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));

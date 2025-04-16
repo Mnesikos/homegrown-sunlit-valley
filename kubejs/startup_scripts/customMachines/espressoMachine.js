@@ -38,7 +38,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(
-        Text.gray("Turns Ground Coffee into Epresso and steams milk")
+        Text.gray("Turns Ground Coffee into Espresso and steams milk")
       );
       item.modelJson({
         parent: "society:block/espresso_machine",

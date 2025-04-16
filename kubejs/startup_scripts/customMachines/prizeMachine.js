@@ -304,6 +304,7 @@ global.prizeMachineRewards = [
       "society:ancient_cog",
       "society:ancient_roe",
       "society:infinity_worm",
+      "society:cordycep",
     ],
   },
 ];

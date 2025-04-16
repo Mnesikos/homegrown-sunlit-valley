@@ -2,14 +2,14 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "society:block/golden_clock/base",
-		"1": "society:block/golden_clock/bell_body",
 		"2": "society:block/golden_clock/bottom",
 		"3": "society:block/golden_clock/clock",
 		"4": "society:block/golden_clock/glass",
 		"5": "society:block/golden_clock/pendulum",
 		"6": "society:block/golden_clock/pillar",
 		"7": "society:block/golden_clock/pillar2",
-		"8": "society:block/golden_clock/top",
+		"9": "society:block/golden_clock/top",
+		"10": "society:block/golden_clock/bell_body",
 		"particle": "society:block/golden_clock/base"
 	},
 	"elements": [
@@ -33,12 +33,12 @@
 			"to": [14, 14, 14],
 			"rotation": {"angle": 0, "axis": "y", "origin": [13, 2, 13]},
 			"faces": {
-				"north": {"uv": [0, 0, 3, 3], "texture": "#1"},
-				"east": {"uv": [3, 0, 5.25, 3], "texture": "#1"},
-				"south": {"uv": [0, 3, 3, 6], "texture": "#1"},
-				"west": {"uv": [3, 3, 5.25, 6], "texture": "#1"},
-				"up": {"uv": [8.25, 2.25, 5.25, 0], "texture": "#1"},
-				"down": {"uv": [8.25, 2.25, 5.25, 4.5], "texture": "#1"}
+				"north": {"uv": [0, 0, 3, 3], "texture": "#10"},
+				"east": {"uv": [3, 0, 5.25, 3], "texture": "#10"},
+				"south": {"uv": [0, 3, 3, 6], "texture": "#10"},
+				"west": {"uv": [3, 3, 5.25, 6], "texture": "#10"},
+				"up": {"uv": [8.25, 2.25, 5.25, 0], "texture": "#10"},
+				"down": {"uv": [8.25, 2.25, 5.25, 4.5], "texture": "#10"}
 			}
 		},
 		{
@@ -47,12 +47,12 @@
 			"to": [15, 16, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14, 13]},
 			"faces": {
-				"north": {"uv": [7, 0, 14, 1], "texture": "#8"},
-				"east": {"uv": [7, 1, 14, 2], "texture": "#8"},
-				"south": {"uv": [7, 2, 14, 3], "texture": "#8"},
-				"west": {"uv": [7, 3, 14, 4], "texture": "#8"},
-				"up": {"uv": [7, 7, 0, 0], "texture": "#8"},
-				"down": {"uv": [7, 7, 0, 14], "texture": "#8"}
+				"north": {"uv": [7, 0, 14, 1], "texture": "#9"},
+				"east": {"uv": [7, 1, 14, 2], "texture": "#9"},
+				"south": {"uv": [7, 2, 14, 3], "texture": "#9"},
+				"west": {"uv": [7, 3, 14, 4], "texture": "#9"},
+				"up": {"uv": [7, 7, 0, 0], "texture": "#9"},
+				"down": {"uv": [7, 7, 0, 14], "texture": "#9"}
 			}
 		},
 		{

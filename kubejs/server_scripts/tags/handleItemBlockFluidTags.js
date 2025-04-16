@@ -96,7 +96,6 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:blueberry");
   e.add("forge:berries", "society:blueberry");
   e.add("forge:crops", "society:eggplant");
-  e.add("forge:crops", "society:eggplant");
   e.add("forge:vegetables/eggplant", "society:eggplant");
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
@@ -127,10 +126,59 @@ ServerEvents.tags("item", (e) => {
   bakeryMilks.forEach((milk) => {
     e.add("bakery:milk", milk);
   });
+  [
+    "minecraft:potato",
+    "minecraft:carrot",
+    "farm_and_charm:onion",
+    "veggiesdelight:sweet_potato",
+    "vintagedelight:peanut",
+  ].forEach((crop) => {
+    e.add("society:need_seeds", crop);
+    e.remove("minecraft:villager_plantable_seeds", crop);
+    e.remove("quark:seed_pouch_holdable", crop);
+  });
+  [
+    "minecraft:apple",
+    "minecraft:sweet_berries",
+    "minecraft:melon_slice",
+    "autumnity:foul_berries",
+    "minecraft:chorus_fruit",
+    "minecraft:glow_berries",
+  ].forEach((fruit) => {
+    e.add("forge:fruits", fruit);
+  });
+  [
+    "minecraft:porkchop",
+    "minecraft:beef",
+    "autumnity:turkey",
+    "minecraft:mutton",
+    "minecraft:chicken",
+    "autumnity:turkey_piece",
+    "minecraft:rabbit",
+    "meadow:raw_buffalo_meat",
+    "untitledduckmod:raw_duck",
+    "untitledduckmod:raw_goose",
+  ].forEach((meat) => {
+    e.add("society:raw_meat", meat);
+  });
+  [
+    "minecraft:cooked_rabbit",
+    "autumnity:cooked_turkey_piece",
+    "autumnity:cooked_turkey",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_beef",
+    "meadow:cooked_buffalo_meat",
+    "untitledduckmod:cooked_goose",
+    "untitledduckmod:cooked_duck",
+  ].forEach((meat) => {
+    e.add("society:cooked_meat", meat);
+  });
   e.add("forge:milks", "meadow:wooden_grain_milk_bucket");
   e.add("farm_and_charm:milk", "meadow:wooden_grain_milk_bucket");
 
-  e.add('forge:shears', 'society:magic_shears')
+  e.add("forge:shears", "society:magic_shears");
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
@@ -388,9 +436,7 @@ ServerEvents.tags("item", (e) => {
 });
 
 ServerEvents.tags("block", (e) => {
-  e.add("sturdy_farmland:weak_fertilizer", "minecraft:gold_block");
-  e.add("sturdy_farmland:strong_fertilizer", "minecraft:diamond_block");
-  e.add("sturdy_farmland:hydrating_fertilizer", "minecraft:lapis_block");
+  e.add("minecraft:crops", "farmersdelight:tomatoes");
   const buildingGadgetsDeny = [
     "society:aging_cask",
     "society:ancient_cask",

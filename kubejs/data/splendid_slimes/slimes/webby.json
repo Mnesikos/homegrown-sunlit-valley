@@ -1,0 +1,17 @@
+{
+  "breed": "webby",
+  "name": "slime.splendid_slimes.webby",
+  "color": "#bebfd2",
+  "diet": "diet.splendid_slimes.webby",
+  "foods": [{ "tag": "forge:vegetables" }],
+  "favorite_food": {
+    "item": "veggiesdelight:garlic"
+  },
+  "negative_emit_effects": [
+    {
+      "effect": "minecraft:slowness",
+      "duration": 120,
+      "amplifier": 2
+    }
+  ]
+}

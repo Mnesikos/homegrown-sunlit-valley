@@ -77,13 +77,13 @@
     },
     {
       "offer": {
-        "itemKey": "veggiesdelight:sweet_potato",
+        "itemKey": "society:sweet_potato_seed",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
         "itemKey": "numismatics:cog",
-        "amount": 2,
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -91,17 +91,17 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "candlelight:cook_peanut_for_sun"
+      "UTID": "candlelight:cook_peanut_for_cog"
     },
     {
       "offer": {
-        "itemKey": "vintagedelight:peanut",
+        "itemKey": "society:peanut_seed",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 2,
+        "itemKey": "numismatics:crown",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -109,7 +109,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "candlelight:cook_peanut_for_sun"
+      "UTID": "candlelight:cook_peanut_for_crown"
     },
     {
       "offer": {

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "perfection"
 	group: "15230846E14B6926"
-	icon: "society:book_of_stars"
+	icon: "society:golden_clock"
 	id: "4AA29866E19A65A8"
 	order_index: 0
 	quest_links: [ ]

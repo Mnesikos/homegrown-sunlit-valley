@@ -1,12 +1,9 @@
 console.info("[SOCIETY] disableBonemeal.js loaded");
-const DispenserBlock = Java.loadClass(
-  "net.minecraft.world.level.block.DispenserBlock"
-);
-DispenserBlock.registerBehavior(Item.of("minecraft:bone_meal").item, () => {});
 
 BlockEvents.rightClicked((e) => {
   if (
     e.player.isHoldingInAnyHand("minecraft:bone_meal") ||
+    e.player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
     e.player.isHoldingInAnyHand("meadow:watering_can")
   ) {
     if (
@@ -52,7 +49,6 @@ BlockEvents.rightClicked((e) => {
         "atmospheric:passion_vine",
       ].includes(e.block.id)
     ) {
-      e.player.tell("Bone Meal is too weak to grow this crop...");
       e.cancel();
     }
   }

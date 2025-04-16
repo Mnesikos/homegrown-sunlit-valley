@@ -390,7 +390,9 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
-  e.create(`society:cornucopia`).texture(`society:item/cornucopia`);
+  e.create(`society:cornucopia`)
+    .texture(`society:item/cornucopia`)
+    .maxStackSize(1);
   e.create("society:relic_trove").texture("society:item/relic_trove");
   e.create("society:artifact_trove").texture("society:item/artifact_trove");
   e.create("society:omni_geode").texture("society:item/omni_geode");

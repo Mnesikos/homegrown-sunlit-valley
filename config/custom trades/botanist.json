@@ -41,6 +41,29 @@
     },
     {
       "offer": {
+        "itemKey": "society:cornucopia",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 20,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "beautify:botanist_cornucopia_for_sun"
+    },
+    {
+      "offer": {
         "itemKey": "botania:apothecary_default",
         "amount": 1,
         "priceModifier": 0
@@ -50,12 +73,40 @@
         "amount": 48,
         "priceModifier": 0
       },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
       "tradeExp": 1,
       "maxUses": 64,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "beautify:botanist_apothecary_default_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "society:kinetic_blueprint",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 32,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "minecraft:nether_star",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "beautify:botanist_t_for_sun"
     },
     {
       "offer": {

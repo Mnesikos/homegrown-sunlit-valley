@@ -325,7 +325,7 @@ StartupEvents.registry("block", (event) => {
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, global.preservesJarRecipes, 4);
+        global.handleBETick(entity, global.preservesJarRecipes, 2);
       });
     }).blockstateJson = {
     multipart: [

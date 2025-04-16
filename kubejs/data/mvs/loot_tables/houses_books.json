@@ -28,7 +28,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "advancedbook:book",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_count",

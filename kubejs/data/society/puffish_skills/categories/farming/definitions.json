@@ -58,7 +58,7 @@
   },
   "tiller": {
     "title": "Tiller",
-    "description": ":corn: Farmer products worth 20% more",
+    "description": ":corn: Farmer products worth 10% more.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -75,7 +75,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1.2",
+          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1.1",
           "lock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1"
         }
       },
@@ -90,7 +90,7 @@
   },
   "soil_inspector": {
     "title": "Soil Inspector",
-    "description": "Chance to dig up §6Plant Nutrients§7 when manually harvesting crops",
+    "description": "Chance to dig up §6Plant Nutrients§7 when manually harvesting crops.",
     "icon": {
       "type": "item",
       "data": {
@@ -109,7 +109,7 @@
   },
   "sticky_crops": {
     "title": "Sticky Crops",
-    "description": "Chance to find §6Pine Tar§7 when manually harvesting crops",
+    "description": "Chance to find §6Pine Tar§7 when manually harvesting crops.",
     "icon": {
       "type": "item",
       "data": {
@@ -128,7 +128,7 @@
   },
   "artisan": {
     "title": "Artisan",
-    "description": ":art: Artisan products worth 10% more",
+    "description": ":art: Artisan products worth 20% more.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -145,7 +145,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1.1",
+          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1.2",
           "lock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1"
         }
       },
@@ -160,7 +160,7 @@
   },
   "aged_prize": {
     "title": "Aged Prize",
-    "description": "§65%§7 chance to find §6Prize Tickets§7 when collecting from §6Aging Cask",
+    "description": "§65%§7 chance to find §6Prize Tickets§7 when collecting from §6Aging Cask§7.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -210,7 +210,7 @@
   },
   "artful_tycoon": {
     "title": "Artful Tycoon",
-    "description": ":art: Artisan products worth 100% more.\n\n§cDoes not stack with previous skills.",
+    "description": ":art: Artisan products worth 80% more.\n\n§cDoes not stack with previous skills.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -227,7 +227,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 2",
+          "unlock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1.8",
           "lock_command": "attribute @s shippingbin:wood_sell_multiplier base set 1"
         }
       },
@@ -242,7 +242,7 @@
   },
   "rancher": {
     "title": "Rancher",
-    "description": "§6Mayo Machines§7 and §6Looms§7 output double",
+    "description": "§6Mayo Machines§7 and §6Looms§7 output double.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -265,9 +265,9 @@
       }
     ]
   },
-  "crop_collector": {
-    "title": "Crop Collector",
-    "description": "Crops drop double outputs when manually harvesting",
+  "reaping_scythe": {
+    "title": "Reaping Scythe",
+    "description": "Farm animals have a chance to gift a §6Heart of Diamond§7.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -277,22 +277,22 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "aquaculture:double_hook"
+        "item": "unusualfishmod:depth_scythe"
       }
     },
     "rewards": [
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "kubejs stages add @s crop_collector",
-          "lock_command": "kubejs stages remove @s crop_collector"
+          "unlock_command": "kubejs stages add @s reaping_scythe",
+          "lock_command": "kubejs stages remove @s reaping_scythe"
         }
       }
     ]
   },
   "tree_whisperer": {
     "title": "Tree Whisperer",
-    "description": "Fruit trees drop +2 fruit per harvest",
+    "description": "Fruit trees drop +2 fruit when manually harvesting.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -315,9 +315,9 @@
       }
     ]
   },
-  "crop_tycoon": {
-    "title": "Crop Tycoon",
-    "description": ":corn: Farmer products worth 100% more.\n\n§cDoes not stack with previous skills.",
+  "crop_collector": {
+    "title": "Crop Collector",
+    "description": "Crops drop double outputs when manually harvesting.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -327,29 +327,22 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "society:ancient_fruit"
+        "item": "aquaculture:double_hook"
       }
     },
     "rewards": [
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 2",
-          "lock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1"
-        }
-      },
-      {
-        "type": "puffish_skills:command",
-        "data": {
-          "unlock_command": "kubejs stages add @s crop_tycoon",
-          "lock_command": "kubejs stages remove @s crop_tycoon"
+          "unlock_command": "kubejs stages add @s crop_collector",
+          "lock_command": "kubejs stages remove @s crop_collector"
         }
       }
     ]
   },
   "farmers_blessing": {
     "title": "Farmer's Blessing",
-    "description": "Adds ability to use §6Ancient Goddess Statues",
+    "description": "Adds ability to use §6Ancient Goddess Statues.",
     "frame": {
       "type": "advancement",
       "data": {

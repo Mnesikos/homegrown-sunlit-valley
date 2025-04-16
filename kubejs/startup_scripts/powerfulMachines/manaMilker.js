@@ -1,6 +1,6 @@
 console.info("[SOCIETY] manaMilker.js loaded");
 
-const MANA_PER_MILK = 100;
+const MANA_PER_MILK = 400;
 const MAX_MANA = MANA_PER_MILK * 10;
 StartupEvents.registry("block", (event) => {
   event
@@ -19,7 +19,7 @@ StartupEvents.registry("block", (event) => {
     .model("society:block/mana_milker")
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
-      blockInfo.serverTick(100, 0, (entity) => {
+      blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
 
         let mana = entity.persistentData.getInt("mana");
