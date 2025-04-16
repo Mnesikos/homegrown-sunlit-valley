@@ -1,0 +1,14 @@
+{
+  "breed": "bitwise",
+  "name": "slime.splendid_slimes.bitwise",
+  "color": "#aa0f01",
+  "diet": "diet.splendid_slimes.bitwise",
+  "foods": [
+    {
+      "tag": "society:omni_geode_treasure"
+    }
+  ],
+  "favorite_food": {
+    "item": "society:fire_opal"
+  }
+}

@@ -17,5 +17,20 @@
     "item": "netherdepthsupgrade:bonefish"
   },
   "entities": ["minecraft:stray", "minecraft:skeleton", "trials:bogged"],
-  "favorite_entity": "trials:bogged"
+  "favorite_entity": "trials:bogged",
+  "positve_commands": [
+    "execute at @p[distance=..4] run summon minecraft:lightning_bolt",
+    "playsound trials:breeze_idle block @a[distance=..10]"
+  ],
+  "negative_commands": [
+    "execute at @p[distance=..8] run summon minecraft:lightning_bolt",
+    "playsound trials:breeze_idle block @a[distance=..10]"
+  ],
+  "negative_emit_effects": [
+    {
+      "effect": "legendarycreatures:convulsion",
+      "duration": 120,
+      "amplifier": 0
+    }
+  ]
 }

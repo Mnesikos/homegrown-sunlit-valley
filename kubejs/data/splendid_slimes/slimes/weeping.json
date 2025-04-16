@@ -1,0 +1,10 @@
+{
+  "breed": "weeping",
+  "name": "slime.splendid_slimes.weeping",
+  "color": "#cff1f1",
+  "diet": "diet.splendid_slimes.weeping",
+  "foods": [{ "tag": "forge:fruits" }],
+  "favorite_food": {
+    "item": "pamhc2trees:dragonfruititem"
+  }
+}

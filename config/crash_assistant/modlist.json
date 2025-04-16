@@ -732,9 +732,9 @@
     "modId": "observable",
     "version": "4.4.1"
   },
-  "OctoLib-FORGE-0.4.2+1.20.1.jar": {
+  "OctoLib-FORGE-0.5.0.1+1.20.1.jar": {
     "modId": "octolib",
-    "version": "0.4.2"
+    "version": "0.5.0.1"
   },
   "oculus-flywheel-compat-forge1.20.1+1.1.4.jar": {
     "modId": "irisflw",
@@ -856,9 +856,9 @@
     "modId": "rehooked",
     "version": "1.8.1-1.20.1"
   },
-  "relics-1.20.1-0.8.0.7.jar": {
+  "relics-1.20.1-0.8.0.9.jar": {
     "modId": "relics",
-    "version": "0.8.0.7"
+    "version": "0.8.0.9"
   },
   "resourcefulconfig-forge-1.20.1-2.1.2.jar": {
     "modId": "resourcefulconfig",
@@ -988,9 +988,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.2.0.jar": {
+  "splendid_slimes-0.3.0.jar": {
     "modId": "splendid_slimes",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "stardew_fishing-1.20.1-2.2.jar": {
     "modId": "stardew_fishing",

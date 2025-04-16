@@ -6,17 +6,15 @@ ServerEvents.recipes((e) => {
   global.plorts.forEach((plort) => {
     e.custom({
       type: "splendid_slimes:plort_pressing",
-      ingredients: [
-        {
-          count: 32,
-          item: "splendid_slimes:plort",
-          nbt: {
-            plort: {
-              id: `${plort.type}`,
-            },
+      ingredient: {
+        count: 32,
+        item: "splendid_slimes:plort",
+        nbt: {
+          plort: {
+            id: `${plort.type}`,
           },
         },
-      ],
+      },
       result: {
         item: "splendid_slimes:slime_heart",
         nbt: {
@@ -31,16 +29,38 @@ ServerEvents.recipes((e) => {
   const addFusion = (top, bottom, output) => {
     e.custom({
       type: "splendid_slimes:plort_pressing",
-      ingredients: [
-        {
-          item: "splendid_slimes:slime_heart",
-          nbt: {
-            slime: {
-              id: `splendid_slimes:${top}`,
-            },
+      ingredient: {
+        item: "splendid_slimes:slime_heart",
+        nbt: {
+          slime: {
+            id: `splendid_slimes:${top}`,
           },
         },
-      ],
+      },
+      output: {
+        item: "splendid_slimes:slime_heart",
+        nbt: {
+          slime: {
+            id: `splendid_slimes:${bottom}`,
+          },
+        },
+      },
+      result: {
+        item: "splendid_slimes:slime_heart",
+        nbt: {
+          slime: {
+            id: `splendid_slimes:${output}`,
+          },
+        },
+      },
+    });
+  };
+  const addItemFusion = (item, bottom, output) => {
+    e.custom({
+      type: "splendid_slimes:plort_pressing",
+      ingredient: {
+        item: item,
+      },
       output: {
         item: "splendid_slimes:slime_heart",
         nbt: {
@@ -63,29 +83,7 @@ ServerEvents.recipes((e) => {
   addFusion("boomcat", "blazing", "bitwise");
   addFusion("weeping", "puddle", "prisma");
 
-  
-  e.custom({
-    type: "splendid_slimes:plort_pressing",
-    ingredients: [
-      {
-        item: "society:magic_rock_candy",
-      },
-    ],
-    output: {
-      item: "splendid_slimes:slime_heart",
-      nbt: {
-        slime: {
-          id: "splendid_slimes:slimy",
-        },
-      },
-    },
-    result: {
-      item: "splendid_slimes:slime_heart",
-      nbt: {
-        slime: {
-          id: "splendid_slimes:sweet",
-        },
-      },
-    },
-  });
+  addItemFusion("society:magic_rock_candy", "slimy", "sweet");
+  addItemFusion("numismatics:ancient_coin", "bitwise", "gold");
+  addItemFusion("botania:life_essence", "ender", "minty");
 });

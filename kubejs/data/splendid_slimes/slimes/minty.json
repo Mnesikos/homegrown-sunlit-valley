@@ -1,0 +1,37 @@
+{
+  "breed": "minty",
+  "name": "slime.splendid_slimes.minty",
+  "color": "#cd75a4",
+  "hat_y_offset": -0.70,
+  "diet": "diet.splendid_slimes.minty",
+  "entities": [
+      "minecraft:zombie",
+      "minecraft:zombie_villager",
+      "minecraft:skeleton",
+      "minecraft:enderman",
+      "minecraft:husk",
+      "minecraft:stray",
+      "minecraft:drowned",
+      "minecraft:creeper"
+  ],
+  "favorite_entity": "minecraft:enderman",
+  "positive_emit_effects": [
+    {
+      "effect": "minecraft:regeneration",
+      "duration": 40,
+      "amplifier": 0
+    },
+    {
+      "effect": "brewery:pacify",
+      "duration": 300,
+      "amplifier": 0
+    }
+  ],
+  "negative_emit_effects": [
+    {
+      "effect": "brewery:drunk",
+      "duration": 60,
+      "amplifier": 2
+    }
+  ]
+}

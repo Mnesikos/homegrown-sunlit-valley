@@ -1,0 +1,24 @@
+{
+  "breed": "boomcat",
+  "name": "slime.splendid_slimes.boomcat",
+  "color": "#8a8a8a",
+  "diet": "diet.splendid_slimes.boomcat",
+  "foods": [{ "tag": "society:raw_meat" }, { "tag": "society:cooked_meat" }],
+  "favorite_food": {
+    "item": "untitledduckmod:cooked_duck"
+  },
+  "entities": [
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:pig",
+    "snowpig:snow_pig",
+    "minecraft:rabbit",
+    "minecraft:sheep",
+    "untitledduckmod:duck",
+    "untitledduckmod:goose",
+    "meadow:water_buffalo",
+    "meadow:wooly_cow",
+    "meadow:wooly_sheep"
+  ],
+  "favorite_entity": "untitledduckmod:duck"
+}

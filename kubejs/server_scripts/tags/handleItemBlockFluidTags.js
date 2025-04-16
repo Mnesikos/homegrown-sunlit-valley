@@ -137,6 +137,44 @@ ServerEvents.tags("item", (e) => {
     e.remove("minecraft:villager_plantable_seeds", crop);
     e.remove("quark:seed_pouch_holdable", crop);
   });
+  [
+    "minecraft:apple",
+    "minecraft:sweet_berries",
+    "minecraft:melon_slice",
+    "autumnity:foul_berries",
+    "minecraft:chorus_fruit",
+    "minecraft:glow_berries",
+  ].forEach((fruit) => {
+    e.add("forge:fruits", fruit);
+  });
+  [
+    "minecraft:porkchop",
+    "minecraft:beef",
+    "autumnity:turkey",
+    "minecraft:mutton",
+    "minecraft:chicken",
+    "autumnity:turkey_piece",
+    "minecraft:rabbit",
+    "meadow:raw_buffalo_meat",
+    "untitledduckmod:raw_duck",
+    "untitledduckmod:raw_goose",
+  ].forEach((meat) => {
+    e.add("society:raw_meat", meat);
+  });
+  [
+    "minecraft:cooked_rabbit",
+    "autumnity:cooked_turkey_piece",
+    "autumnity:cooked_turkey",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_beef",
+    "meadow:cooked_buffalo_meat",
+    "untitledduckmod:cooked_goose",
+    "untitledduckmod:cooked_duck",
+  ].forEach((meat) => {
+    e.add("society:cooked_meat", meat);
+  });
   e.add("forge:milks", "meadow:wooden_grain_milk_bucket");
   e.add("farm_and_charm:milk", "meadow:wooden_grain_milk_bucket");
 

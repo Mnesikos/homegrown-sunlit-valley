@@ -4,7 +4,6 @@ StartupEvents.registry("block", (event) => {
   event
     .create("society:gnome", "cardinal")
     .property(integerProperty.create("type", 0, 2))
-    .box(1, 0, 4, 15, 16, 12)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Right click to toggle poses"));

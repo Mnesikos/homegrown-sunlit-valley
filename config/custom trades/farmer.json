@@ -168,6 +168,24 @@
     },
     {
       "offer": {
+        "itemKey": "bakery:jar",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:farmer_glass_bottle_for_sprocket"
+    },
+    {
+      "offer": {
         "itemKey": "vinery:wine_bottle",
         "amount": 8,
         "priceModifier": 0
