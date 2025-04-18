@@ -5873,24 +5873,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.4.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.5.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6411/823/littlejoys-forge-1.20.1-20.1.4.jar",
-                    "id": "6411823",
+                    "url": "https://edge.forgecdn.net/files/6414/88/littlejoys-forge-1.20.1-20.1.5.jar",
+                    "id": "6414088",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "8b46a070284f179abe004cc26b49bc488e82527b",
-                        "md5": "b70f03164f88c8a3e90e8e954de8a7f0"
+                        "sha1": "21ea109ae7d84988248bb911ab1b4fd62814ebdf",
+                        "md5": "8dd8ac58a99f9695183d0e32cbc5e18f"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 703912,
-                    "date_published": "2025-04-11T18:15:24.787Z"
+                    "size": 706210,
+                    "date_published": "2025-04-12T07:03:41.753Z"
                 }
             ]
         },
@@ -8061,7 +8061,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "relics-1.20.1-0.8.0.8.jar",
+                    "file_name": "relics-1.20.1-0.8.0.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8069,16 +8069,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6375/619/relics-1.20.1-0.8.0.8.jar",
-                    "id": "6375619",
+                    "url": "https://edge.forgecdn.net/files/6376/192/relics-1.20.1-0.8.0.9.jar",
+                    "id": "6376192",
                     "parent_id": "445274",
                     "hashes": {
-                        "sha1": "a1cacd2e054e02387d0b1b9e543802a79e45d2a1",
-                        "md5": "7a0e2782837bbd83d8f0e60bb694c2bb"
+                        "sha1": "a0252af334ade7a6b48fcabea3b4947fbcb18b24",
+                        "md5": "18be53515d2feaa08da2196ef6c8b321"
                     },
                     "required_dependencies": [],
-                    "size": 1520225,
-                    "date_published": "2025-04-01T20:42:49.307Z"
+                    "size": 1520280,
+                    "date_published": "2025-04-02T00:29:22.850Z"
                 }
             ]
         },
@@ -9246,7 +9246,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.3.0.jar",
+                    "file_name": "splendid_slimes-0.4.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9254,18 +9254,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6427/399/splendid_slimes-0.3.0.jar",
-                    "id": "6427399",
+                    "url": "https://edge.forgecdn.net/files/6429/458/splendid_slimes-0.4.0.jar",
+                    "id": "6429458",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "4775ab4741862f1a101e6af06ccf4e4e085fe89f",
-                        "md5": "10db8ad26721b95df4dff324faa9b49d"
+                        "sha1": "720fd1ef266b691ff58b5ceb14ea27c56a080a5c",
+                        "md5": "66edc0d6c19f804504d80023557a1a35"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 299610,
-                    "date_published": "2025-04-15T23:15:13.177Z"
+                    "size": 304954,
+                    "date_published": "2025-04-16T15:44:50.517Z"
                 }
             ]
         },
@@ -11367,7 +11367,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "letsdo-vinery-forge-1.4.36.jar",
+                    "file_name": "letsdo-vinery-forge-1.4.39.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11376,18 +11376,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6076/11/letsdo-vinery-forge-1.4.36.jar",
-                    "id": "6076011",
+                    "url": "https://edge.forgecdn.net/files/6264/246/letsdo-vinery-forge-1.4.39.jar",
+                    "id": "6264246",
                     "parent_id": "704465",
                     "hashes": {
-                        "sha1": "8dd160fec649d958081dbd9ec3bf6766647cf53b",
-                        "md5": "e26d6eddffef0102785e85c4bcc6ec3e"
+                        "sha1": "60270b89585995ba235d142d92d0fb92a0d638fc",
+                        "md5": "271056de18c5f5efb5580075b4679341"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 3172526,
-                    "date_published": "2025-01-11T08:44:29.953Z"
+                    "size": 3174482,
+                    "date_published": "2025-03-04T17:00:37.933Z"
                 }
             ]
         },
