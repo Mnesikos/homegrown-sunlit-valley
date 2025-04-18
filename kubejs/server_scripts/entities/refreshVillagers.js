@@ -6,10 +6,11 @@ ItemEvents.entityInteracted((e) => {
   if (target.type !== "minecraft:villager") return;
   let updateThis = false;
   const nbt = target.nbt.toString();
-  if (nbt.includes("shepherd") && !nbt.includes("slime_incubator")) updateThis = true;
+  if (nbt.includes("shepherd") && (!nbt.includes("slime_incubator") || !nbt.includes("name_tag")) ) updateThis = true;
   if (nbt.includes("botanist") && !nbt.includes("cornucopia")) updateThis = true;
-  if (nbt.includes("farmer") && !nbt.includes("bakery")) updateThis = true;
-  if (nbt.includes("cook") && nbt.includes("veggiesdelight:sweet_potato")) updateThis = true;
+  if (nbt.includes("minecraft:farmer") && !nbt.includes("bakery")) updateThis = true;
+  if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
+
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");
     let villagerNbt = freshVillager.getNbt();

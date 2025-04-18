@@ -25,7 +25,6 @@ ServerEvents.recipes((e) => {
       },
     });
   });
-
   const addFusion = (top, bottom, output) => {
     e.custom({
       type: "splendid_slimes:plort_pressing",

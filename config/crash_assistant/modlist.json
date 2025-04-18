@@ -279,10 +279,6 @@
     "modId": "customvillagertrades",
     "version": "20.25.0"
   },
-  "cyanide-forge-1.20.1-4.1.1.jar": {
-    "modId": "cyanide",
-    "version": "4.1.1"
-  },
   "decorative_blocks-forge-1.20.1-4.1.3.jar": {
     "modId": "decorative_blocks",
     "version": "4.1.3"
@@ -624,9 +620,9 @@
     "modId": "nethervinery",
     "version": "1.2.16"
   },
-  "letsdo-vinery-forge-1.4.36.jar": {
+  "letsdo-vinery-forge-1.4.39.jar": {
     "modId": "vinery",
-    "version": "1.4.36"
+    "version": "1.4.39"
   },
   "littlejoys-forge-1.20.1-20.1.5.jar": {
     "modId": "littlejoys",
@@ -816,10 +812,6 @@
     "modId": "particlerain",
     "version": "1.1.3"
   },
-  "probejs-6.0.1-forge.jar": {
-    "modId": "probejs",
-    "version": "6.0.1"
-  },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "modId": "puffish_attributes",
     "version": "0.7.2"
@@ -988,9 +980,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.3.0.jar": {
+  "splendid_slimes-0.4.0.jar": {
     "modId": "splendid_slimes",
-    "version": "0.3.0"
+    "version": "0.4.0"
   },
   "stardew_fishing-1.20.1-2.2.jar": {
     "modId": "stardew_fishing",
@@ -1040,9 +1032,9 @@
     "modId": "toastcontrol",
     "version": "8.0.3"
   },
-  "toms_storage-1.20-1.7.1.jar": {
+  "toms_storage-1.20-1.7.0.jar": {
     "modId": "toms_storage",
-    "version": "1.7.1"
+    "version": "1.7.0"
   },
   "toofast-1.20-0.4.3.5.jar": {
     "modId": "toofast",
