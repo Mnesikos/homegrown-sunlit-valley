@@ -4,7 +4,7 @@
   "experience": 2.0,
   "ingredients": [
     {
-      "item": "farm_and_charm:strawberry"
+      "item": "minecraft:glow_berries"
     },
     {
       "item": "minecraft:sugar"
@@ -15,6 +15,6 @@
   },
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakery:strawberry_jam"
+    "item": "bakery:glowberry_jam"
   }
 }

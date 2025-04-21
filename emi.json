@@ -1,16 +1,249 @@
 {
   "favorites": [
     {
-      "stack": "item:atmospheric:aloe_kernels"
+      "stack": "item:herbalbrews:cinnamon_coffee"
     },
     {
-      "stack": "item:dew_drop_watering_cans:diamond_watering_can{Damage:45}"
-    },
-    {
-      "stack": "item:minecraft:nautilus_shell"
+      "stack": "item:herbalbrews:hazelnut_coffee"
     }
   ],
   "lookup_history": [
+    "item:minecraft:glow_berries",
+    "item:vinery:white_grape_bag",
+    "item:vinery:savanna_grapes_white",
+    "item:vinery:red_grape",
+    "item:society:white_grape_preserves",
+    "item:vinery:white_grape",
+    "item:vinery:savanna_grapes_red",
+    "item:vinery:taiga_grapes_red",
+    "item:vinery:jungle_grapes_red",
+    "item:vinery:taiga_grapes_white",
+    "item:vinery:jungle_grapes_white",
+    "item:vinery:taiga_grape_seeds_red",
+    {
+      "id": "minecraft:blindness"
+    },
+    {
+      "id": "minecraft:hunger"
+    },
+    {
+      "id": "atmospheric:worsening"
+    },
+    {
+      "id": "legendarycreatures:convulsion"
+    },
+    {
+      "id": "legendarycreatures:root"
+    },
+    {
+      "id": "trials:trial_curse"
+    },
+    {
+      "id": "vinery:creeper_effect"
+    },
+    {
+      "id": "via_romana:travellers_fatigue"
+    },
+    {
+      "id": "supplementaries:flammable"
+    },
+    {
+      "id": "trials:winded"
+    },
+    {
+      "id": "supplementaries:overencumbered"
+    },
+    {
+      "id": "trials:oozing"
+    },
+    {
+      "factor_data": {
+        "factor_current": 0.0,
+        "ticks_active": 0,
+        "factor_previous_frame": 0.0,
+        "had_effect_last_tick": false,
+        "padding_duration": 22,
+        "factor_start": 0.0,
+        "factor_target": 1.0
+      },
+      "id": "minecraft:darkness"
+    },
+    {
+      "id": "relics:stun"
+    },
+    {
+      "id": "minecraft:glowing"
+    },
+    {
+      "id": "minecraft:levitation"
+    },
+    {
+      "id": "minecraft:wither"
+    },
+    {
+      "id": "minecraft:weakness"
+    },
+    {
+      "id": "minecraft:instant_damage"
+    },
+    {
+      "id": "minecraft:nausea"
+    },
+    {
+      "id": "minecraft:slowness"
+    },
+    {
+      "id": "herbalbrews:tough"
+    },
+    {
+      "id": "trials:infested"
+    },
+    {
+      "id": "trials:weaving"
+    },
+    {
+      "id": "relics:confusion"
+    },
+    {
+      "id": "relics:paralysis"
+    },
+    {
+      "id": "vinery:frosty_armor"
+    },
+    {
+      "id": "relics:bleeding"
+    },
+    {
+      "id": "species:birtd"
+    },
+    {
+      "id": "species:gut_feeling"
+    },
+    {
+      "id": "minecraft:bad_omen"
+    },
+    {
+      "id": "brewery:partystarter"
+    },
+    {
+      "id": "brewery:renewingtouch"
+    },
+    "item:herbalbrews:cinnamon_coffee",
+    {
+      "type": "item",
+      "id": "herbalbrews:hazelnut_coffee",
+      "amount": 2
+    },
+    "item:herbalbrews:coffee",
+    "item:herbalbrews:ground_coffee",
+    {
+      "type": "item",
+      "id": "pamhc2trees:roastedhazelnutitem",
+      "amount": 63
+    },
+    "item:herbalbrews:coffee_beans",
+    "item:herbalbrews:tea_kettle",
+    "item:atmospheric:aloe_kernels",
+    "item:dew_drop_watering_cans:diamond_watering_can{Damage:45}",
+    "item:trofers:large_pillar",
+    "item:bakery:strawberry_jam",
+    "item:bakery:apple_jam",
+    "item:bakery:glowberry_jam",
+    "item:bakery:chocolate_jam",
+    "item:bakery:sweetberry_jam",
+    "#item:c:jams",
+    "item:botania:flight_tiara{variant:0}",
+    "item:society:prismatic_shard",
+    "item:minecraft:grindstone",
+    "item:brewery:hop_trellis_seed",
+    {
+      "type": "item",
+      "id": "twigs:pebble",
+      "amount": 16
+    },
+    {
+      "type": "item",
+      "id": "splendid_slimes:plort",
+      "nbt": "{plort:{id:\"splendid_slimes:bony\"}}",
+      "amount": 5
+    },
+    "item:minecraft:chainmail_chestplate{Damage:22}",
+    "item:sewingkit:wool_hat{Damage:19}",
+    {
+      "type": "item",
+      "id": "farm_and_charm:onion",
+      "amount": 13
+    },
+    "item:society:treated_log",
+    {
+      "type": "item",
+      "id": "farm_and_charm:lettuce",
+      "amount": 49
+    },
+    {
+      "type": "item",
+      "id": "farmersdelight:straw",
+      "amount": 5
+    },
+    "item:society:ruby",
+    "item:minecraft:chest{display:{Name:\u0027{\"translate\":\"Balloon Box\"}\u0027}}",
+    "item:society:topaz",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bitwise\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
+    "item:splendid_slimes:slime_incubator",
+    "item:simplehats:gnome",
+    "item:species:ichor_bottle",
+    "item:society:tiny_gnome",
+    "item:society:gnome",
+    "item:paraglider:spirit_orb",
+    "item:minecraft:fishing_rod{Damage:0}",
+    "item:simplehats:gnome_clover_wig",
+    "item:species:youth_potion",
+    "item:veggiesdelight:sweet_potato_mochi",
+    "item:veggiesdelight:whole_roasted_cauliflower",
+    "item:meadow:wheelbarrow",
+    "item:meadow:warped_bed",
+    "item:meadow:inky_bed",
+    "item:meadow:inky_carpet",
+    "item:betterarcheology:chicken_fossil_body",
+    "item:betterarcheology:unidentified_artifact",
+    "item:croptania:cropnolia",
+    "item:waterframes:tv_box",
+    "item:betterarcheology:soul_totem{Damage:0}",
+    "item:immersive_paintings:glow_painting",
+    "item:nightlights:fairy_lights_light_blue",
+    "item:nightlights:hanging_lights_blue",
+    "item:nightlights:mushroom_white",
+    "item:nightlights:mushroom_brown",
+    "item:nightlights:frog_light_blue",
+    "item:nightlights:mushroom_black",
+    "item:nightlights:frog_yellow",
+    "item:nightlights:mushroom_pink",
+    "item:nightlights:hanging_lights_purple",
+    "item:society:aged_eyelash_roe",
+    "item:society:starfruit_preserves",
+    "item:society:raisins",
+    "item:society:lemon_preserves",
+    "item:society:dried_sweet_berries",
+    "item:society:dried_alphacene_mushroom",
+    "item:refurbished_furniture:white_toilet",
+    "item:refurbished_furniture:oak_toilet",
+    "item:refurbished_furniture:purple_kitchen_sink",
+    "item:refurbished_furniture:oak_kitchen_sink",
+    "item:twigs:schist",
+    "item:twigs:rhyolite",
+    "item:twigs:bloodstone",
+    "item:twigs:polished_bloodstone_brick_wall",
+    "item:twigs:polished_rhyolite_brick_wall",
+    "item:farmingforblockheads:chicken_nest",
+    "item:botania:blood_pendant{brewKey:\"botania:regen\"}",
+    "item:botania:incense_stick{brewKey:\"botania:soul_cross\"}",
     "item:numismatics:ancient_coin",
     "item:minecraft:bamboo_block",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
@@ -21,7 +254,6 @@
     },
     "item:betterarcheology:torrent_totem{Damage:0}",
     "item:society:sturdy_bamboo_block",
-    "item:society:prismatic_shard",
     "item:automobility:dash_panel",
     "item:aquaculture:goldfish",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
@@ -40,7 +272,6 @@
     "item:unusualfishmod:weird_goldfish",
     "item:vinery:jellie_wine{}",
     "item:aquaculture:gold_fishing_rod{Damage:0}",
-    "item:society:starfruit_preserves",
     "item:vintagedelight:sweet_berry_mason_jar",
     "item:veggiesdelight:garlic",
     "item:vintagedelight:pickled_pitcher_pod",
@@ -121,12 +352,6 @@
     {
       "type": "item",
       "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:bitwise\"}}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
       "nbt": "{slime:{id:\"splendid_slimes:prisma\"}}",
       "amount": 64
     },
@@ -163,13 +388,6 @@
       "amount": 64
     },
     "item:minecraft:loom",
-    "item:splendid_slimes:slime_incubator",
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:slimy\"}}",
-      "amount": 64
-    },
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
     "item:botania:overgrowth_seed",
     "item:society:pristine_neptunite",
@@ -195,7 +413,6 @@
     "item:society:dried_passion_fruit",
     "item:society:dried_plum",
     "item:society:dried_crimson_fungus",
-    "item:society:dried_sweet_berries",
     "item:society:dried_bracket_mushroom",
     "item:society:dried_foul_berries",
     "item:society:dried_orange",
@@ -227,13 +444,6 @@
     "item:twigs:lamp",
     "item:twigs:silt_ball",
     "item:twigs:silt",
-    {
-      "type": "item",
-      "id": "twigs:bloodstone",
-      "amount": 64
-    },
-    "item:twigs:rhyolite",
-    "item:twigs:schist",
     "item:twigs:quartz_column",
     "item:atmospheric:carmine_husk",
     "item:atmospheric:carmine_block",
@@ -272,9 +482,7 @@
       "id": "beachparty:sandwaves",
       "amount": 32
     },
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
     {
       "type": "item",
       "id": "aquaculture:fish_bones",
@@ -303,10 +511,8 @@
     "item:society:cornucopia",
     "item:minecraft:oak_fence",
     "item:minecraft:oak_fence_gate",
-    "item:atmospheric:aloe_kernels",
     "item:minecraft:stripped_oak_wood",
     "item:quark:spruce_post",
-    "item:species:youth_potion",
     "item:botania:apothecary_default",
     {
       "type": "item",
@@ -376,8 +582,6 @@
     "item:herbalbrews:yerba_mate_leaf",
     "item:farm_and_charm:barley",
     "item:herbalbrews:rooibos_leaf",
-    "item:herbalbrews:coffee_beans",
-    "item:farm_and_charm:onion",
     "item:veggiesdelight:cauliflower_floret",
     "item:veggiesdelight:garlic_clove",
     "item:minecraft:oak_planks",
@@ -448,7 +652,6 @@
     "item:society:maple_syrup",
     "item:society:production_science_pack",
     "item:atmospheric:currant",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
     "item:minecraft:bone",
     "item:simplehats:bandana",
     "item:simplehats:unicornhorn",
@@ -488,7 +691,6 @@
     "item:society:onion_preserves",
     "item:society:eggplant_preserves",
     "item:society:plum_preserves",
-    "item:society:white_grape_preserves",
     {
       "type": "fluid",
       "id": "society:pine_tar",
@@ -555,7 +757,6 @@
     "item:waterframes:projector",
     "item:waterframes:tv",
     "item:waterframes:big_tv",
-    "item:waterframes:tv_box",
     "item:gamediscs:display",
     "item:gamediscs:processor",
     "item:gamediscs:battery",
@@ -565,6 +766,8 @@
     "item:botania:rune_greed"
   ],
   "craft_history": [
+    "minecraft:grindstone",
+    "farmersdelight:lead_from_straw",
     "splendid_slimes:plort_press",
     "vintagedelight:gearo_bag_deconstruct",
     "farm_and_charm:onion_bag",
@@ -574,8 +777,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

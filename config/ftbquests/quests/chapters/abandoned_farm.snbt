@@ -34,8 +34,8 @@
 			min_required_dependencies: 2
 			min_required_tasks: 6
 			rewards: [{
-				id: "57B2422A37EDD42A"
-				item: "botania:apothecary_default"
+				id: "3824080335045CE6"
+				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
 			tasks: [

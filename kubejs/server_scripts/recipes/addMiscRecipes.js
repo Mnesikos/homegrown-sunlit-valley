@@ -609,6 +609,13 @@ ServerEvents.recipes((e) => {
     h: "unusualfishmod:fluvial_shell",
     c: "society:charging_rod",
   });
+  
+  e.shaped("society:gnome", [" h ", "iti", " s "], {
+    t: "society:tiny_gnome",
+    i: "species:ichor_bottle",
+    h: "simplehats:gnome",
+    s: "paraglider:spirit_orb",
+  });
 
   e.shaped("society:cornucopia", [" p ", "php", " p "], {
     p: "botania:pixie_dust",
@@ -619,7 +626,7 @@ ServerEvents.recipes((e) => {
     r: "botania:rune_earth",
     t: "society:botanical_tribute",
     n: "botania:terrasteel_nugget",
-    M : "society:milk_pail",
+    M: "society:milk_pail",
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });

@@ -11,7 +11,8 @@
       "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
-      "trials:bogged"
+      "trials:bogged",
+      "splendid_slimes:splendid_slime"
     ],
     "minheight": 50,
     "dimension": "minecraft:overworld",
@@ -146,5 +147,155 @@
     "dimension": "mining_dimension:mining",
     "when": "onjoin",
     "result": "deny"
+  },
+
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "structure": "minecraft:mineshaft",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:webby"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "biometags": "forge:is_dry",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:dusty"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "maxheight": -40,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:boomcat"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "random": 0.2,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:slimy",
+      "SecondaryBreed": "splendid_slimes:bony"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "random": 0.1,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:rotting",
+      "SecondaryBreed": "splendid_slimes:slimy"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "random": 0.1,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:bony",
+      "SecondaryBreed": "splendid_slimes:slimy"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "random": 0.5,
+    "minheight": 40,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:bony"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "minheight": 40,
+    "random": 0.5,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:rotting"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:overworld",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:slimy"
+    }
+  },
+
+  {
+    "mob": "legendarycreatures:corpse_eater",
+    "dimension": "mining_dimension:mining",
+    "when": "onjoin",
+    "result": "deny"
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "block": "minecraft:nether_bricks",
+    "structure": "minecraft:fortress",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:blazing"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "biome": "minecraft:soul_sand_valley",
+    "block": "tag:minecraft:soul_fire_base_blocks",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:bony"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "minheight": 90,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:weeping"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "random": 0.2,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:luminous",
+      "SecondaryBreed": "splendid_slimes:bony"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "random": 0.1,
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:luminous",
+      "SecondaryBreed": "splendid_slimes:weeping"
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "dimension": "minecraft:the_nether",
+    "when": "finalize",
+    "nbt": {
+      "Breed": "splendid_slimes:luminous"
+    }
   }
 ]

@@ -32,6 +32,9 @@ ServerEvents.recipes((e) => {
       {
         item: "society:ground_cinnamon",
       },
+      {
+        item: "minecraft:glass_bottle",
+      },
     ],
     result: {
       item: "herbalbrews:chai_tea",
@@ -58,7 +61,7 @@ ServerEvents.recipes((e) => {
         item: "pamhc2trees:roastedhazelnutitem",
       },
       {
-        item: "herbalbrews:water_cup",
+        item: "minecraft:glass_bottle",
       },
     ],
     result: {
@@ -86,7 +89,7 @@ ServerEvents.recipes((e) => {
         item: "society:ground_cinnamon",
       },
       {
-        item: "herbalbrews:water_cup",
+        item: "minecraft:glass_bottle",
       },
     ],
     result: {

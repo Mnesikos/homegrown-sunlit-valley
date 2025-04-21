@@ -578,6 +578,7 @@
 				"769AC695FD3F8DC9"
 				"5875FF0D35A7E422"
 				"6C342B7B66C29823"
+				"4A708E01E3A3B8D3"
 			]
 			description: [
 				"You've done absolutely everything there is to offer in &6Society: Capital Hill&r. Your farm is the envy of all your neighbors for miles."
@@ -623,6 +624,30 @@
 			title: "&dPerfection"
 			x: 13.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["6EBAA004C1A50E98"]
+			id: "4A708E01E3A3B8D3"
+			size: 2.0d
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:abandoned_farm"
+						}
+					}
+				}
+				id: "31D755B4F7304289"
+				stat: "minecraft:play_time"
+				title: "Abandoned Farm complete"
+				type: "stat"
+				value: 1
+			}]
+			title: "Complete the Abandoned Farm"
+			x: 13.625000000000007d
+			y: -1.3214285714285765d
 		}
 	]
 	title: "Perfection"

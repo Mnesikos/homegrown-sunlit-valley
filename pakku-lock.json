@@ -3091,7 +3091,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "emi-1.1.20+1.20.1+forge.jar",
+                    "file_name": "emi-1.1.22+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3099,16 +3099,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6205/514/emi-1.1.20+1.20.1+forge.jar",
-                    "id": "6205514",
+                    "url": "https://edge.forgecdn.net/files/6420/945/emi-1.1.22+1.20.1+forge.jar",
+                    "id": "6420945",
                     "parent_id": "580555",
                     "hashes": {
-                        "sha1": "f6ee97d1f49e106b2dc887df3c238bb06b84bada",
-                        "md5": "dc29b4d99258b76f28aa3ad5ce5e6e2d"
+                        "sha1": "d8049d6ec86befcd100a0ff0fc8ebc289f735997",
+                        "md5": "441c582c6e8a1d6fd9e3d16a27c1a39e"
                     },
                     "required_dependencies": [],
-                    "size": 1028204,
-                    "date_published": "2025-02-18T04:58:55.627Z"
+                    "size": 1048567,
+                    "date_published": "2025-04-14T03:37:30.690Z"
                 }
             ]
         },
@@ -3756,7 +3756,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-library-forge-2001.2.7.jar",
+                    "file_name": "ftb-library-forge-2001.2.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3764,18 +3764,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6016/763/ftb-library-forge-2001.2.7.jar",
-                    "id": "6016763",
+                    "url": "https://edge.forgecdn.net/files/6164/53/ftb-library-forge-2001.2.9.jar",
+                    "id": "6164053",
                     "parent_id": "404465",
                     "hashes": {
-                        "sha1": "3a8836959ab3dd2a10afba192f174050efb37bc0",
-                        "md5": "3034d825d836273d79e7a453dd2a65f5"
+                        "sha1": "42639a90f91c79d6b323ede5e229a79c050f4dc7",
+                        "md5": "cdf8b270d3ee2c403a26206b10e0a749"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 791244,
-                    "date_published": "2024-12-23T16:06:54.433Z"
+                    "size": 791841,
+                    "date_published": "2025-02-06T12:34:16.087Z"
                 }
             ]
         },
@@ -3797,7 +3797,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-quests-forge-2001.4.9.jar",
+                    "file_name": "ftb-quests-forge-2001.4.13.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3805,20 +3805,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5816/794/ftb-quests-forge-2001.4.9.jar",
-                    "id": "5816794",
+                    "url": "https://edge.forgecdn.net/files/6431/737/ftb-quests-forge-2001.4.13.jar",
+                    "id": "6431737",
                     "parent_id": "289412",
                     "hashes": {
-                        "sha1": "8304908d8a236cd3ba4ebbf758d40f70868e71bc",
-                        "md5": "7bfa68ae939f181e7be4dc87485f4332"
+                        "sha1": "ad087e2dc897c7e2eea36901a05da9518bc0673f",
+                        "md5": "182d3bc7450d50ba9b71e5a08e903d9e"
                     },
                     "required_dependencies": [
-                        "419699",
                         "404468",
-                        "404465"
+                        "404465",
+                        "419699"
                     ],
-                    "size": 1183769,
-                    "date_published": "2024-10-16T13:32:18.673Z"
+                    "size": 1215007,
+                    "date_published": "2025-04-17T08:08:04.603Z"
                 }
             ]
         },
@@ -3841,7 +3841,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-teams-forge-2001.3.0.jar",
+                    "file_name": "ftb-teams-forge-2001.3.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3849,19 +3849,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5267/190/ftb-teams-forge-2001.3.0.jar",
-                    "id": "5267190",
+                    "url": "https://edge.forgecdn.net/files/6130/786/ftb-teams-forge-2001.3.1.jar",
+                    "id": "6130786",
                     "parent_id": "404468",
                     "hashes": {
-                        "sha1": "bb5a1f3ac9d44c5e9b319768e7166e877879aaaa",
-                        "md5": "31acf433df9d13282fa12bd6974c44f9"
+                        "sha1": "c2af94e0b86631cb75daa8de2377ff72527651ca",
+                        "md5": "98efb58ba7cecfb39034544eced0389f"
                     },
                     "required_dependencies": [
-                        "419699",
-                        "404465"
+                        "404465",
+                        "419699"
                     ],
-                    "size": 247666,
-                    "date_published": "2024-04-16T09:41:27.820Z"
+                    "size": 248592,
+                    "date_published": "2025-01-27T16:07:52.110Z"
                 }
             ]
         },
@@ -3883,7 +3883,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-xmod-compat-forge-2.1.2.jar",
+                    "file_name": "ftb-xmod-compat-forge-2.1.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3891,19 +3891,62 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6046/20/ftb-xmod-compat-forge-2.1.2.jar",
-                    "id": "6046020",
+                    "url": "https://edge.forgecdn.net/files/6402/486/ftb-xmod-compat-forge-2.1.3.jar",
+                    "id": "6402486",
                     "parent_id": "889915",
                     "hashes": {
-                        "sha1": "68e497eadb936bf9e92591f9c2e34288a52b01f4",
-                        "md5": "270efcd953102996e26d318ef8c3c09d"
+                        "sha1": "0584f628d2bc6a612d79dee368324357ebae1423",
+                        "md5": "6d01bd4bc73c6ce36d0d91c56bb27772"
                     },
                     "required_dependencies": [
-                        "404465",
-                        "419699"
+                        "419699",
+                        "404465"
                     ],
-                    "size": 129682,
-                    "date_published": "2025-01-02T15:28:42.713Z"
+                    "size": 129725,
+                    "date_published": "2025-04-09T10:47:38.837Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "LcnHY6ou3jgRYe0p",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "fairy-wings-elytra"
+            },
+            "name": {
+                "curseforge": "Fairy Wings Elytra"
+            },
+            "id": {
+                "curseforge": "1246471"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Fairy Wings Elytra.zip",
+                    "mc_versions": [
+                        "1.20.2",
+                        "1.20.5",
+                        "1.20.2-Snapshot",
+                        "1.20.5-Snapshot",
+                        "1.20.3-Snapshot",
+                        "1.20.3",
+                        "1.20.1",
+                        "1.20",
+                        "1.20.6",
+                        "1.20.4",
+                        "1.20-Snapshot"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6445/218/Fairy Wings Elytra.zip",
+                    "id": "6445218",
+                    "parent_id": "1246471",
+                    "hashes": {
+                        "sha1": "8d0b485a9dca77d56921f6a13b70cb9645ffe447",
+                        "md5": "c7443565bd88925ba00127ab33673c7e"
+                    },
+                    "required_dependencies": [],
+                    "size": 82334,
+                    "date_published": "2025-04-20T19:39:05.653Z"
                 }
             ]
         },
@@ -5873,24 +5916,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.5.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.6.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6414/88/littlejoys-forge-1.20.1-20.1.5.jar",
-                    "id": "6414088",
+                    "url": "https://edge.forgecdn.net/files/6441/295/littlejoys-forge-1.20.1-20.1.6.jar",
+                    "id": "6441295",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "21ea109ae7d84988248bb911ab1b4fd62814ebdf",
-                        "md5": "8dd8ac58a99f9695183d0e32cbc5e18f"
+                        "sha1": "10091bef5d46b6748439dc841cf36964287a6762",
+                        "md5": "3454c409d6b656a92118b7a8c79f7621"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 706210,
-                    "date_published": "2025-04-12T07:03:41.753Z"
+                    "size": 706705,
+                    "date_published": "2025-04-19T18:56:00.527Z"
                 }
             ]
         },
@@ -8498,6 +8541,43 @@
             ]
         },
         {
+            "pakku_id": "8i07dkiKKolvzNES",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "servercore"
+            },
+            "name": {
+                "curseforge": "ServerCore"
+            },
+            "id": {
+                "curseforge": "550579"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "servercore-forge-1.5.2+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5929/264/servercore-forge-1.5.2+1.20.1.jar",
+                    "id": "5929264",
+                    "parent_id": "550579",
+                    "hashes": {
+                        "sha1": "75c6418edc76da55ec89f417e8c43c9d1873fceb",
+                        "md5": "7ba2ff373f4f1a44a01513c49a2e8b65"
+                    },
+                    "required_dependencies": [],
+                    "size": 1508496,
+                    "date_published": "2024-11-22T21:48:02.250Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "KrH6lbs9P05d2BZ4",
             "type": "MOD",
             "slug": {
@@ -9284,7 +9364,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stardew_fishing-1.20.1-2.2.jar",
+                    "file_name": "stardew_fishing-1.20.1-2.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9293,16 +9373,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6364/943/stardew_fishing-1.20.1-2.2.jar",
-                    "id": "6364943",
+                    "url": "https://edge.forgecdn.net/files/6434/447/stardew_fishing-1.20.1-2.3.jar",
+                    "id": "6434447",
                     "parent_id": "1066037",
                     "hashes": {
-                        "sha1": "dcf38817e8c78dbdcc653bbe599f60ebcb333724",
-                        "md5": "306127b042cfeb0baec7f9c0ea6b29ba"
+                        "sha1": "375da28a2bdbd27dba3230642f59185767d1d6a8",
+                        "md5": "0ffdb59ecb4e1574db3a8d1e8985012c"
                     },
                     "required_dependencies": [],
-                    "size": 556054,
-                    "date_published": "2025-03-29T22:24:38.963Z"
+                    "size": 567590,
+                    "date_published": "2025-04-17T23:55:31.847Z"
                 }
             ]
         },
@@ -10479,22 +10559,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "updated_aquaculture-1.0.zip",
+                    "file_name": "updated_aquaculture-1.1.zip",
                     "mc_versions": [
+                        "1.20.2",
+                        "1.20.3",
                         "1.20.1",
-                        "1.20"
+                        "1.20",
+                        "1.20.4"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/3862/192/updated_aquaculture-1.0.zip",
-                    "id": "3862192",
+                    "url": "https://edge.forgecdn.net/files/6392/870/updated_aquaculture-1.1.zip",
+                    "id": "6392870",
                     "parent_id": "640645",
                     "hashes": {
-                        "sha1": "147695850a58cdcbdebeb4602076926f20593e65",
-                        "md5": "de1dcdd03db3e3f05199450f8af0f435"
+                        "sha1": "1c153018918de3d75417da9188b161ae850ab449",
+                        "md5": "b586f7c80fbf47ce459109dcc37971e6"
                     },
                     "required_dependencies": [],
-                    "size": 706121,
-                    "date_published": "2022-07-07T00:12:54.230Z"
+                    "size": 705425,
+                    "date_published": "2025-04-06T20:04:14.860Z"
                 }
             ]
         },

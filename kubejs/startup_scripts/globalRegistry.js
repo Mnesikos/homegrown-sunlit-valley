@@ -696,10 +696,10 @@ global.cocktails = [
 ];
 // Steamed milk = 32
 global.herbalBrews = [
-  { item: "herbalbrews:coffee", value: 32 },
+  { item: "herbalbrews:coffee", value: 48 },
   { item: "herbalbrews:hazelnut_coffee", value: 90 },
   { item: "herbalbrews:cinnamon_coffee", value: 138 },
-  { item: "herbalbrews:milk_coffee", value: 96 },
+  { item: "herbalbrews:milk_coffee", value: 112 },
   { item: "herbalbrews:yerba_mate_tea", value: 12 },
   { item: "herbalbrews:hibiscus_tea", value: 16 },
   { item: "herbalbrews:rooibos_tea", value: 20 },
