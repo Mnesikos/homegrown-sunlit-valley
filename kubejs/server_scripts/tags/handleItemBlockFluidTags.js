@@ -331,7 +331,7 @@ ServerEvents.tags("item", (e) => {
   global.pristine.forEach((mineral) => {
     e.add("society:pristine_mineral", mineral.item);
   });
-
+e.add("forge:eggs", "society:cracked_egg");
   [
     "society:large_egg",
     "society:large_duck_egg",

@@ -8,6 +8,8 @@
     }
   ],
   "lookup_history": [
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+    "item:society:cracked_egg",
     "item:aquaculture:pollock",
     "item:veggiesdelight:cauliflower",
     "item:numismatics:prismatic_coin",
@@ -29,7 +31,6 @@
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",

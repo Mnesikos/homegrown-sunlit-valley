@@ -34,8 +34,14 @@
 			min_required_dependencies: 2
 			min_required_tasks: 6
 			rewards: [{
-				id: "3824080335045CE6"
-				item: "minecraft:dragon_egg"
+				id: "23C19AD4A368AA0F"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			tasks: [

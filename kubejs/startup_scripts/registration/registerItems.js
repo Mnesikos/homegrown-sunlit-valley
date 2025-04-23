@@ -314,7 +314,7 @@ StartupEvents.registry("item", (e) => {
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
-
+  e.create("society:cracked_egg").texture("society:item/cracked_egg")
   e.create("society:mayonnaise")
     .texture("society:item/mayo/mayonnaise")
     .food((food) => {

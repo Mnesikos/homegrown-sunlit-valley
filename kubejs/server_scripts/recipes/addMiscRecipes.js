@@ -20,6 +20,8 @@ ServerEvents.recipes((e) => {
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
+  e.shapeless("4x society:cracked_egg", ["#society:large_eggs"]);
+  e.shapeless("1x society:cracked_egg", ["#forge:eggs"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
