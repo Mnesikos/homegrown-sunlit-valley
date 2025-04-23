@@ -2,8 +2,12 @@
   "breed": "rotting",
   "name": "slime.splendid_slimes.rotting",
   "color": "#6f4d1b",
+  "particle": { "item": "minecraft:rotten_flesh" },
   "diet": "diet.splendid_slimes.rotting",
-  "foods": [{ "tag": "society:raw_meat" }],
+  "foods": [
+    { "tag": "forge:raw_meat" },
+    { "tag": "splendid_slimes:animal_spawn_eggs" }
+  ],
   "favorite_food": {
     "item": "minecraft:chicken"
   },
@@ -11,8 +15,11 @@
     "minecraft:chicken",
     "minecraft:cow",
     "minecraft:pig",
+    "snowpig:snow_pig",
     "minecraft:rabbit",
-    "minecraft:sheep"
+    "minecraft:sheep",
+    "untitledduckmod:duck",
+    "untitledduckmod:goose"
   ],
   "favorite_entity": "minecraft:chicken",
   "negative_emit_effects": [

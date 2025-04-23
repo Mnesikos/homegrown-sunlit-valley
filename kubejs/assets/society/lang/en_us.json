@@ -74,5 +74,14 @@
   "effect.vinery.improved_regeneration.description": "Grants regeneration and increases maximum health.",
   "effect.vinery.improved_fire_resistance.description": "Grants fire resistance and absorption.",
   "effect.vinery.improved_water_breathing.description": "Grants water breathing and increases swimming speed.",
-  "effect.vinery.improved_night_vision.description": "Grants invisibility."
+  "effect.vinery.improved_night_vision.description": "Grants invisibility.",
+
+  "society.advancement.obtain_prismatic_coin.description": "Obtain your first Prismatic Coin. How will you spend it?",
+  "society.advancement.obtain_prismatic_coin.title": "Capitalist Realism",
+  "society.advancement.obtain_ancient_coin.description": "Obtain your first Ancient Coin. Don't lose it...",
+  "society.advancement.obtain_ancient_coin.title": "Coin Hoarder",
+  "society.advancement.obtain_sun.description": "Obtain your first Netherite Coin.",
+  "society.advancement.obtain_sun.title": "Seed Money",
+  "society.advancement.root.description": "Start your farm, lay claim to riches.",
+  "society.advancement.root.title": "Society: Capital Hill"
 }

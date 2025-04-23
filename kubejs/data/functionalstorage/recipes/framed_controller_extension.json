@@ -18,7 +18,7 @@
         "category": "misc",
         "key": {
           "C": {
-            "item": "functionalstorage:storage_controller"
+            "item": "functionalstorage:controller_extension"
           },
           "I": {
             "item": "minecraft:iron_nugget"

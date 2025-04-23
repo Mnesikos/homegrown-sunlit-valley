@@ -8,6 +8,92 @@
     }
   ],
   "lookup_history": [
+    "item:aquaculture:pollock",
+    "item:veggiesdelight:cauliflower",
+    "item:numismatics:prismatic_coin",
+    "item:atmospheric:arid_glass",
+    "item:atmospheric:arid_glass_pane",
+    "item:minecraft:light_gray_stained_glass_pane",
+    "item:minecraft:gray_stained_glass_pane",
+    "item:splendid_slimes:slime_vac",
+    "item:splendid_slimes:rocket_pod",
+    "item:society:battery",
+    "item:supplementaries:bomb",
+    "item:gamediscs:gaming_console{\"gamediscs:SlimeGame;Chakyl\":2}",
+    "item:functionalstorage:framed_controller_extension",
+    "item:functionalstorage:controller_extension",
+    "item:functionalstorage:framed_storage_controller",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:phantom\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:weeping\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bony\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:webby\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bitwise\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:orby\"}}",
+    "item:autumnity:turkey",
+    "item:minecraft:cooked_beef",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:dusty\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:weeping\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sweet\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:boomcat\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:corral_pane",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:all_seeing\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
+    "item:society:ribbit_gadget",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:shulking\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bony\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:blazing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:prisma\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:webby\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
+    "item:herbalbrews:ground_coffee",
+    "item:herbalbrews:hazelnut_coffee",
+    "item:atmospheric:dragon_fruit",
+    "#item:forge:fruits",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sweet\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:boomcat\"}}",
+    "#item:forge:vegetables",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:all_seeing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:gold\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:luminous\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:blazing\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:puddle\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:prisma\"}}",
+    {
+      "type": "item",
+      "id": "minecraft:glowstone_dust",
+      "amount": 4
+    },
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:rotting\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:dusty\"}}",
+    "item:minecraft:stray_spawn_egg",
+    "item:candlelight:red_nether_bricks_stove",
+    "item:numismatics:ancient_coin",
     "item:minecraft:glow_berries",
     "item:vinery:white_grape_bag",
     "item:vinery:savanna_grapes_white",
@@ -20,122 +106,8 @@
     "item:vinery:taiga_grapes_white",
     "item:vinery:jungle_grapes_white",
     "item:vinery:taiga_grape_seeds_red",
-    {
-      "id": "minecraft:blindness"
-    },
-    {
-      "id": "minecraft:hunger"
-    },
-    {
-      "id": "atmospheric:worsening"
-    },
-    {
-      "id": "legendarycreatures:convulsion"
-    },
-    {
-      "id": "legendarycreatures:root"
-    },
-    {
-      "id": "trials:trial_curse"
-    },
-    {
-      "id": "vinery:creeper_effect"
-    },
-    {
-      "id": "via_romana:travellers_fatigue"
-    },
-    {
-      "id": "supplementaries:flammable"
-    },
-    {
-      "id": "trials:winded"
-    },
-    {
-      "id": "supplementaries:overencumbered"
-    },
-    {
-      "id": "trials:oozing"
-    },
-    {
-      "factor_data": {
-        "factor_current": 0.0,
-        "ticks_active": 0,
-        "factor_previous_frame": 0.0,
-        "had_effect_last_tick": false,
-        "padding_duration": 22,
-        "factor_start": 0.0,
-        "factor_target": 1.0
-      },
-      "id": "minecraft:darkness"
-    },
-    {
-      "id": "relics:stun"
-    },
-    {
-      "id": "minecraft:glowing"
-    },
-    {
-      "id": "minecraft:levitation"
-    },
-    {
-      "id": "minecraft:wither"
-    },
-    {
-      "id": "minecraft:weakness"
-    },
-    {
-      "id": "minecraft:instant_damage"
-    },
-    {
-      "id": "minecraft:nausea"
-    },
-    {
-      "id": "minecraft:slowness"
-    },
-    {
-      "id": "herbalbrews:tough"
-    },
-    {
-      "id": "trials:infested"
-    },
-    {
-      "id": "trials:weaving"
-    },
-    {
-      "id": "relics:confusion"
-    },
-    {
-      "id": "relics:paralysis"
-    },
-    {
-      "id": "vinery:frosty_armor"
-    },
-    {
-      "id": "relics:bleeding"
-    },
-    {
-      "id": "species:birtd"
-    },
-    {
-      "id": "species:gut_feeling"
-    },
-    {
-      "id": "minecraft:bad_omen"
-    },
-    {
-      "id": "brewery:partystarter"
-    },
-    {
-      "id": "brewery:renewingtouch"
-    },
     "item:herbalbrews:cinnamon_coffee",
-    {
-      "type": "item",
-      "id": "herbalbrews:hazelnut_coffee",
-      "amount": 2
-    },
     "item:herbalbrews:coffee",
-    "item:herbalbrews:ground_coffee",
     {
       "type": "item",
       "id": "pamhc2trees:roastedhazelnutitem",
@@ -161,12 +133,6 @@
       "id": "twigs:pebble",
       "amount": 16
     },
-    {
-      "type": "item",
-      "id": "splendid_slimes:plort",
-      "nbt": "{plort:{id:\"splendid_slimes:bony\"}}",
-      "amount": 5
-    },
     "item:minecraft:chainmail_chestplate{Damage:22}",
     "item:sewingkit:wool_hat{Damage:19}",
     {
@@ -188,14 +154,6 @@
     "item:society:ruby",
     "item:minecraft:chest{display:{Name:\u0027{\"translate\":\"Balloon Box\"}\u0027}}",
     "item:society:topaz",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bitwise\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
     "item:splendid_slimes:slime_incubator",
     "item:simplehats:gnome",
     "item:species:ichor_bottle",
@@ -244,9 +202,7 @@
     "item:farmingforblockheads:chicken_nest",
     "item:botania:blood_pendant{brewKey:\"botania:regen\"}",
     "item:botania:incense_stick{brewKey:\"botania:soul_cross\"}",
-    "item:numismatics:ancient_coin",
     "item:minecraft:bamboo_block",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     {
       "type": "item",
       "id": "botania:life_essence",
@@ -256,7 +212,6 @@
     "item:society:sturdy_bamboo_block",
     "item:automobility:dash_panel",
     "item:aquaculture:goldfish",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
     "item:botania:elementium_pickaxe{Damage:0}",
     "item:society:eggplant",
     "item:netherdepthsupgrade:baked_obsidianfish_stew",
@@ -266,7 +221,6 @@
     "item:supplementaries:gold_trapdoor",
     "item:quark:gold_button",
     "item:simplehats:mimic_head_gold",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
     "item:numismatics:crown",
     "item:society:golden_clock",
     "item:unusualfishmod:weird_goldfish",
@@ -276,7 +230,6 @@
     "item:veggiesdelight:garlic",
     "item:vintagedelight:pickled_pitcher_pod",
     "item:veggiesdelight:bellpepper",
-    "item:veggiesdelight:cauliflower",
     "item:minecraft:glass_bottle",
     "item:bakery:jar",
     "item:minecraft:dripstone_block",
@@ -342,53 +295,9 @@
       "amount": 32
     },
     "item:minecraft:golden_helmet{Damage:0}",
-    {
-      "type": "item",
-      "id": "splendid_slimes:plort",
-      "nbt": "{plort:{id:\"splendid_slimes:boomcat\"}}",
-      "amount": 32
-    },
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:boomcat\"}}",
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:prisma\"}}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:all_seeing\"}}",
-      "amount": 64
-    },
     "item:society:magic_rock_candy",
     "item:society:jade",
-    {
-      "type": "item",
-      "id": "splendid_slimes:plort",
-      "nbt": "{plort:{id:\"splendid_slimes:prisma\"}}",
-      "amount": 32
-    },
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:rotting\"}}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:sweet\"}}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "splendid_slimes:slime_heart",
-      "nbt": "{slime:{id:\"splendid_slimes:orby\"}}",
-      "amount": 64
-    },
     "item:minecraft:loom",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
     "item:botania:overgrowth_seed",
     "item:society:pristine_neptunite",
     "item:furniture:jungle_grandfather_clock",
@@ -401,7 +310,6 @@
     "item:society:smoked_brown_trout",
     "item:brewery:whiskey_lilitusinglemalt",
     "item:automobility:launch_gel",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:dusty\"}}",
     {
       "type": "item",
       "id": "society:blueberry",
@@ -417,7 +325,6 @@
     "item:society:dried_foul_berries",
     "item:society:dried_orange",
     "item:society:dried_strawberry",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
     "item:gamediscs:game_disc_slime",
     "item:crabbersdelight:frog_leg_kebob",
     "item:society:froggy_helm",
@@ -425,7 +332,6 @@
     "item:nightlights:frog_black",
     "item:minecraft:iron_block",
     "item:society:quality_washer",
-    "item:society:battery",
     "item:nightlights:frog_gray",
     "item:nightlights:frog_orange",
     "item:nightlights:frog_white",
@@ -460,8 +366,6 @@
     "item:atmospheric:carmine_shingles",
     "item:society:enriched_bone_meal",
     "item:society:bonefish_bait",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
     {
       "type": "item",
       "id": "atmospheric:arid_sand",
@@ -482,7 +386,6 @@
       "id": "beachparty:sandwaves",
       "amount": 32
     },
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
     {
       "type": "item",
       "id": "aquaculture:fish_bones",
@@ -499,10 +402,6 @@
     "item:society:neptunium_upgrade_smithing_template",
     "item:society:diamond_upgrade_smithing_template",
     "item:society:ember_crystal_cluster",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:weeping\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:blazing\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
     "item:vintagedelight:peanut",
     "item:society:onion_seed",
     "item:society:ancient_cog",
@@ -567,7 +466,6 @@
     "item:species:bone_spike",
     "item:aquaculture:treasure_chest",
     "item:minecraft:clay",
-    "item:society:ribbit_gadget",
     "item:society:ribbit_drum",
     "item:botania:horn_grass",
     "item:vintagedelight:gearo_berry",
@@ -592,7 +490,6 @@
     "item:society:geode",
     "item:minecraft:calcite",
     "item:twigs:roseate_seashell",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:society:neptunite",
     "item:society:aged_neptuna_roe",
     "item:quark:diamond_heart",
@@ -751,7 +648,6 @@
     "item:society:catfish_bait",
     "item:society:jellyfish_bait",
     "item:crabbersdelight:deluxe_crab_trap_bait",
-    "item:gamediscs:gaming_console",
     "item:waterframes:frame",
     "item:waterframes:remote",
     "item:waterframes:projector",
@@ -761,7 +657,6 @@
     "item:gamediscs:processor",
     "item:gamediscs:battery",
     "item:vinery:bottle_mojang_noir{}",
-    "item:numismatics:prismatic_coin",
     "item:numismatics:sun",
     "item:botania:rune_greed"
   ],
@@ -777,8 +672,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

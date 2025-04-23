@@ -56,7 +56,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal")) return;
   if (hand == "MAIN_HAND") {
-    const interactionCooldown = 12000;
+    const interactionCooldown = global.animalInteractionCooldown;
     const data = target.persistentData;
     const ageLastFed = data.getInt("ageLastFed");
     const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;

@@ -19,7 +19,7 @@ const checkConditions = (e) => {
     target.boundingBox.inflate(1)
   ).length;
 
-  if (entities > 5) return false;
+  if (entities > 6) return false;
 
   return true;
 };
@@ -374,7 +374,7 @@ ItemEvents.entityInteracted((e) => {
   const pet = global.checkEntityTag(target, "society:pet_animal");
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
-  const interactionCooldown = 12000;
+  const interactionCooldown = global.animalInteractionCooldown;
   loginResetFarmAnimal(target, level, interactionCooldown);
 
   server.scheduleInTicks(1, () => {

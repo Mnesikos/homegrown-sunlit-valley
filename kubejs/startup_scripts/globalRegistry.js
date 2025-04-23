@@ -1589,36 +1589,42 @@ global.miscAdventurer = [
   { item: "botania:dragonstone_block", value: 12600 },
   { item: "botania:terrasteel_ingot", value: 44096 },
   { item: "botania:terrasteel_block", value: 396864 },
+  { item: "gamediscs:game_disc_flappy_bird", value: 490 },
+  { item: "gamediscs:game_disc_slime", value: 999 },
+  { item: "gamediscs:game_disc_blocktris", value: 100000 },
+  { item: "gamediscs:game_disc_tnt_sweeper", value: 2048 },
+  { item: "gamediscs:game_disc_pong", value: 4900 },
+  { item: "gamediscs:game_disc_froggie", value: 3200 },
 ];
 
 global.plorts = [
-  { type: "splendid_slimes:slimy", value: 32 },
-  { type: "splendid_slimes:dusty", value: 40 },
-  { type: "splendid_slimes:bony", value: 48 },
-  { type: "splendid_slimes:rotting", value: 48 },
-  { type: "splendid_slimes:webby", value: 46 },
-  { type: "splendid_slimes:puddle", value: 56 },
-  { type: "splendid_slimes:boomcat", value: 64 },
-  { type: "splendid_slimes:all_seeing", value: 72 },
-  { type: "splendid_slimes:bitwise", value: 72 },
-  { type: "splendid_slimes:blazing", value: 72 },
-  { type: "splendid_slimes:luminous", value: 72 },
-  { type: "splendid_slimes:weeping", value: 80 },
-  { type: "splendid_slimes:prisma", value: 100 },
-  { type: "splendid_slimes:sweet", value: 128 },
-  { type: "splendid_slimes:shulking", value: 256 },
-  { type: "splendid_slimes:ender", value: 256 },
-  { type: "splendid_slimes:phantom", value: 256 },
-  { type: "splendid_slimes:orby", value: 320 },
-  { type: "splendid_slimes:minty", value: 320 },
-  { type: "splendid_slimes:gold", value: 512 },
+  { type: "splendid_slimes:slimy", value: 128 },
+  { type: "splendid_slimes:dusty", value: 160 },
+  { type: "splendid_slimes:bony", value: 192 },
+  { type: "splendid_slimes:rotting", value: 192 },
+  { type: "splendid_slimes:webby", value: 184 },
+  { type: "splendid_slimes:puddle", value: 224 },
+  { type: "splendid_slimes:boomcat", value: 256 },
+  { type: "splendid_slimes:all_seeing", value: 288 },
+  { type: "splendid_slimes:bitwise", value: 288 },
+  { type: "splendid_slimes:blazing", value: 288 },
+  { type: "splendid_slimes:luminous", value: 288 },
+  { type: "splendid_slimes:weeping", value: 320 },
+  { type: "splendid_slimes:prisma", value: 400 },
+  { type: "splendid_slimes:sweet", value: 512 },
+  { type: "splendid_slimes:shulking", value: 1024 },
+  { type: "splendid_slimes:ender", value: 1024 },
+  { type: "splendid_slimes:phantom", value: 1024 },
+  { type: "splendid_slimes:orby", value: 1280 },
+  { type: "splendid_slimes:minty", value: 1280 },
+  { type: "splendid_slimes:gold", value: 2048 },
 ];
 
 global.slimeHearts = [];
 global.plorts.forEach((plort) => {
   global.slimeHearts.push({
     type: plort.type,
-    value: plort.value * 32 * 2,
+    value: plort.value * 16 * 2,
   });
 });
 

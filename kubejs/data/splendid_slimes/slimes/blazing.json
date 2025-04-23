@@ -3,6 +3,7 @@
   "name": "slime.splendid_slimes.blazing",
   "color": "#c96c03",
   "diet": "diet.splendid_slimes.blazing",
+  "particle": { "item": "minecraft:blaze_powder" },
   "foods": [
     { "tag": "society:cooked_meat" }
   ],

@@ -17,8 +17,6 @@ const qualityToInt = (quality) => {
 };
 const cropList = [
   "minecraft:wheat",
-  "minecraft:carrots",
-  "minecraft:potatoes",
   "minecraft:pumpkin_stem",
   "minecraft:melon_stem",
   "minecraft:beetroots",
@@ -68,7 +66,6 @@ const cropList = [
   "farmersdelight:cabbages",
   "farmersdelight:budding_tomatoes",
   "farmersdelight:tomatoes",
-  "vintagedelight:peanut_crop",
   "farmersdelight:rice",
   "farmersdelight:rice_panicles",
   "society:ancient_fruit",
@@ -79,8 +76,12 @@ const cropList = [
   "veggiesdelight:cauliflower_crop",
   "veggiesdelight:garlic_crop",
   "veggiesdelight:bellpepper_crop",
-  "veggiesdelight:sweet_potato_crop",
   "society:eggplant",
+  "society:potato",
+  "society:carrot",
+  "society:peanut",
+  "society:sweet_potato",
+  "society:onion",
 ];
 
 const checkMaxGrown = (destroyedBlock) => {
@@ -91,12 +92,21 @@ const checkMaxGrownWithChance = (destroyedBlock, chance) => {
   return chance > Math.random() && checkMaxGrown(destroyedBlock);
 };
 const getFertilizer = (crop) => {
-  const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0))
-  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
-  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
-  if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
-  return 0
-}
+  const block = crop
+    .getLevel()
+    .getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland"))
+    return 1;
+  if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland"))
+    return 2;
+  if (
+    block.hasTag(
+      "dew_drop_farmland_growth:pristine_quality_fertilized_farmland"
+    )
+  )
+    return 3;
+  return 0;
+};
 const getCropQuality = (crop, fertilizer) => {
   const qualityName = LevelData.get(
     crop.getLevel(),
@@ -116,11 +126,12 @@ const getCropQuality = (crop, fertilizer) => {
 };
 LootJS.modifiers((e) => {
   e.addBlockLootModifier(cropList).apply((c) => {
-    c.forEachLoot((item) =>{
+    c.forEachLoot((item) => {
       const fertilizer = getFertilizer(c.destroyedBlock);
-      const quality = getCropQuality(c.destroyedBlock, fertilizer)
-      if (quality > 0) item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
-    })
+      const quality = getCropQuality(c.destroyedBlock, fertilizer);
+      if (quality > 0)
+        item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
+    });
   });
   e.addBlockLootModifier(cropList)
     .hasAnyStage("sticky_crops")

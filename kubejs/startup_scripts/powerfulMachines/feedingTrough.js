@@ -46,7 +46,7 @@ StartupEvents.registry("block", (event) => {
             ) {
               data.ageLastFed = level.time;
             }
-            if (level.time - data.ageLastFed > 12000) {
+            if (level.time - data.ageLastFed > global.animalInteractionCooldown) {
               for (let i = 0; i < slots; i++) {
                 if (
                   inventory.getStackInSlot(i).item.id === "society:animal_feed"

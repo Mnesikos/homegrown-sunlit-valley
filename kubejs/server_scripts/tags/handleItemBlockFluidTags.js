@@ -54,6 +54,122 @@ ServerEvents.tags("item", (e) => {
     "farm_and_charm:strawberry_seed",
     "pamhc2trees:orangeitem",
     "veggiesdelight:dandelion_leaf",
+    "pamhc2trees:gooseberry_sapling",
+    "pamhc2trees:chestnut_sapling",
+    "pamhc2trees:avocado_sapling",
+    "pamhc2trees:candlenut_sapling",
+    "pamhc2trees:acorn_sapling",
+    "pamhc2trees:soursop_sapling",
+    "pamhc2trees:spiderweb_sapling",
+    "pamhc2trees:walnut_sapling",
+    "pamhc2trees:pear_sapling",
+    "pamhc2trees:nutmeg_sapling",
+
+    "pamhc2trees:grapefruit_sapling",
+    "pamhc2trees:pomegranate_sapling",
+    "pamhc2trees:guava_sapling",
+    "pamhc2trees:jackfruit_sapling",
+    "pamhc2trees:tamarind_sapling",
+    "pamhc2trees:maple_sapling",
+    "pamhc2trees:pinenut_sapling",
+    "pamhc2trees:rambutan_sapling",
+    "pamhc2trees:olive_sapling",
+    "pamhc2trees:papaya_sapling",
+    "pamhc2trees:paperbark_sapling",
+    "pamhc2trees:pecan_sapling",
+    "pamhc2trees:peppercorn_sapling",
+    "pamhc2trees:persimmon_sapling",
+    "pamhc2trees:pistachio_sapling",
+    "pamhc2trees:breadfruit_sapling",
+    "pamhc2trees:vanillabean_sapling",
+    "pamhc2trees:almond_sapling",
+    "pamhc2trees:apricot_sapling",
+    "pamhc2trees:cashew_sapling",
+    "pamhc2trees:coconut_sapling",
+    "pamhc2trees:date_sapling",
+    "pamhc2trees:durian_sapling",
+    "pamhc2trees:fig_sapling",
+    "pamhc2trees:lime_sapling",
+    "pamhc2trees:rambutanitem",
+    "pamhc2trees:tamarinditem",
+    "pamhc2trees:passionfruititem",
+    "pamhc2trees:papayaitem",
+    "pamhc2trees:guavaitem",
+    "pamhc2trees:pecanitem",
+    "pamhc2trees:durianitem",
+    "pamhc2trees:dateitem",
+    "pamhc2trees:breadfruititem",
+    "pamhc2trees:coconutitem",
+    "pamhc2trees:pistachioitem",
+    "pamhc2trees:jackfruititem",
+    "pamhc2trees:persimmonitem",
+    "pamhc2trees:walnutitem",
+    "pamhc2trees:avocadoitem",
+    "pamhc2trees:gooseberryitem",
+    "pamhc2trees:figitem",
+    "pamhc2trees:vanillabeanitem",
+    "pamhc2trees:almonditem",
+    "pamhc2trees:acornitem",
+    "pamhc2trees:pinenut_sapling",
+    "pamhc2trees:candlenutitem",
+    "pamhc2trees:nutmegitem",
+    "pamhc2trees:cashewitem",
+    "pamhc2trees:pomegranateitem",
+    "pamhc2trees:peppercornitem",
+    "pamhc2trees:limeitem",
+    "pamhc2trees:oliveitem",
+    "pamhc2trees:soursopitem",
+    "pamhc2trees:cherryitem",
+    "pamhc2trees:apricotitem",
+    "pamhc2trees:pearitem",
+    "pamhc2trees:maplesyrupitem",
+    "pamhc2trees:roastedpecanitem",
+    "pamhc2trees:pinenutitem",
+    "pamhc2trees:roastedchestnutitem",
+    "pamhc2trees:roastedwalnutitem",
+    "pamhc2trees:roastedalmonditem",
+    "pamhc2trees:roastedcashewitem",
+    "pamhc2trees:roastedpistachioitem",
+    "pamhc2trees:roastedpinenutitem",
+    "pamhc2trees:roastedacornitem",
+    "pamhc2trees:pamrambutan",
+    "pamhc2trees:pamtamarind",
+    "pamhc2trees:pampinenut",
+    "pamhc2trees:pammaple",
+    "pamhc2trees:grapefruititem",
+    "pamhc2trees:pampistachio",
+    "pamhc2trees:pamchestnut",
+    "pamhc2trees:chestnutitem",
+    "pamhc2trees:pamacorn",
+    "pamhc2trees:pamspiderweb",
+    "pamhc2trees:pamnutmeg",
+    "pamhc2trees:pamcoconut",
+    "pamhc2trees:pampear",
+    "pamhc2trees:pamolive",
+    "pamhc2trees:pamgrapefruit",
+    "pamhc2trees:pampomegranate",
+    "pamhc2trees:pamvanillabean",
+    "pamhc2trees:pamcandlenut",
+    "pamhc2trees:pamcashew",
+    "pamhc2trees:pampapaya",
+    "pamhc2trees:pampeppercorn",
+    "pamhc2trees:pampersimmon",
+    "pamhc2trees:pamsoursop",
+    "pamhc2trees:pamjackfruit",
+    "pamhc2trees:pampecan",
+    "pamhc2trees:pamfig",
+    "pamhc2trees:pamdurian",
+    "pamhc2trees:pambreadfruit",
+    "pamhc2trees:pamguava",
+    "pamhc2trees:pamgooseberry",
+    "pamhc2trees:pamlime",
+    "pamhc2trees:pamdate",
+    "pamhc2trees:pamwalnut",
+    "pamhc2trees:pamalmond",
+    "pamhc2trees:pamapricot",
+    "pamhc2trees:pampaperbark",
+    "pamhc2trees:pamavocado",
+    "atmospheric:dragon_fruit",
   ];
   stripTags.forEach((item) => {
     e.removeAllTagsFrom(item);
@@ -159,7 +275,7 @@ ServerEvents.tags("item", (e) => {
     "untitledduckmod:raw_duck",
     "untitledduckmod:raw_goose",
   ].forEach((meat) => {
-    e.add("society:raw_meat", meat);
+    e.add("forge:raw_meat", meat);
   });
   [
     "minecraft:cooked_rabbit",
@@ -173,7 +289,7 @@ ServerEvents.tags("item", (e) => {
     "untitledduckmod:cooked_goose",
     "untitledduckmod:cooked_duck",
   ].forEach((meat) => {
-    e.add("society:cooked_meat", meat);
+    e.add("forge:cooked_meat", meat);
   });
   e.add("forge:milks", "meadow:wooden_grain_milk_bucket");
   e.add("farm_and_charm:milk", "meadow:wooden_grain_milk_bucket");
@@ -422,6 +538,7 @@ ServerEvents.tags("item", (e) => {
   ];
   smallMilks.forEach((item) => {
     e.add("society:small_milk", item);
+    e.add("splendid_slimes:slime_vac_fireable", item);
   });
   const largeMilks = [
     "society:large_milk",
@@ -432,6 +549,14 @@ ServerEvents.tags("item", (e) => {
   ];
   largeMilks.forEach((item) => {
     e.add("society:large_milk", item);
+    e.add("splendid_slimes:slime_vac_fireable", item);
+  });
+  [
+    "snowpig:snow_pig_spawn_egg",
+    "untitledduckmod:duck_spawn_egg",
+    "untitledduckmod:goose_spawn_egg",
+  ].forEach((item) => {
+    e.add("splendid_slimes:animal_spawn_eggs", item);
   });
 });
 
