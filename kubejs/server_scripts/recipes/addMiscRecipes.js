@@ -20,6 +20,8 @@ ServerEvents.recipes((e) => {
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
+  e.shapeless("4x society:cracked_egg", ["#society:large_eggs"]);
+  e.shapeless("1x society:cracked_egg", ["#forge:eggs"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
@@ -609,6 +611,13 @@ ServerEvents.recipes((e) => {
     h: "unusualfishmod:fluvial_shell",
     c: "society:charging_rod",
   });
+  
+  e.shaped("society:gnome", [" h ", "iti", " s "], {
+    t: "society:tiny_gnome",
+    i: "species:ichor_bottle",
+    h: "simplehats:gnome",
+    s: "paraglider:spirit_orb",
+  });
 
   e.shaped("society:cornucopia", [" p ", "php", " p "], {
     p: "botania:pixie_dust",
@@ -619,7 +628,7 @@ ServerEvents.recipes((e) => {
     r: "botania:rune_earth",
     t: "society:botanical_tribute",
     n: "botania:terrasteel_nugget",
-    M : "society:milk_pail",
+    M: "society:milk_pail",
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });

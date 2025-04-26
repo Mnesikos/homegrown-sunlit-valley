@@ -66,6 +66,17 @@
         "value": 8
       }
     },
+    "stardew_fishing:line_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "additional_attributes:respiration": {
       "enabled": false,
       "min": {
@@ -97,6 +108,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "stardew_fishing:exp_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "confluence:mining_speed": {
@@ -163,6 +185,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "stardew_fishing:bar_size": {
+      "enabled": false,
+      "min": {
+        "default": 4,
+        "value": 4
+      },
+      "max": {
+        "default": 142,
+        "value": 142
       }
     },
     "additional_attributes:harvest": {
@@ -647,6 +680,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "stardew_fishing:treasure_chance_bonus": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "reforgingstation:magic_resist": {

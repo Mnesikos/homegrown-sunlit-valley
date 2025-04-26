@@ -3,6 +3,7 @@
   "name": "slime.splendid_slimes.prisma",
   "color": "#a4d1c2",
   "diet": "diet.splendid_slimes.prisma",
+  "particle": { "item": "minecraft:prismarine_shard" },
   "foods": [
     {
       "tag": "minecraft:fishes"

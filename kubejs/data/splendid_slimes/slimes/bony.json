@@ -3,22 +3,9 @@
   "name": "slime.splendid_slimes.bony",
   "color": "#e8e5d2",
   "diet": "diet.splendid_slimes.bony",
-  "foods": [{ "tag": "society:raw_meat" }, { "tag": "society:cooked_meat" }],
+  "particle": { "item": "minecraft:bone" },
+  "foods": [{ "tag": "society:small_milk" }, { "tag": "society:large_milk" }],
   "favorite_food": {
-    "item": "minecraft:mutton"
-  },
-  "entities": [
-    "minecraft:chicken",
-    "minecraft:cow",
-    "minecraft:pig",
-    "snowpig:snow_pig",
-    "minecraft:rabbit",
-    "minecraft:sheep",
-    "untitledduckmod:duck",
-    "untitledduckmod:goose",
-    "meadow:water_buffalo",
-    "meadow:wooly_cow",
-    "meadow:wooly_sheep"
-  ],
-  "favorite_entity": "meadow:wooly_sheep"
+    "item": "society:large_sheep_milk"
+  }
 }

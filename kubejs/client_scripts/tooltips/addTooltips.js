@@ -501,7 +501,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:dragontooth_axe",
-    Text.red("Will break if weilded by one without the Dragonslayer skill")
+    Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
   tooltip.add(
     "society:kinetic_blueprint",

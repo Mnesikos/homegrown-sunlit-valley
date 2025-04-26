@@ -405,8 +405,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 6,
+        "itemKey": "numismatics:sun",
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -414,7 +414,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_tackle_box_for_cog"
+      "UTID": "minecraft:fisherman_tackle_box_for_sun"
     },
     {
       "offer": {

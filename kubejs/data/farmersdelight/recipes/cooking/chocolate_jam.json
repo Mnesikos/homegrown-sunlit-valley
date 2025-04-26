@@ -4,7 +4,10 @@
   "experience": 2.0,
   "ingredients": [
     {
-      "item": "minecraft:sweet_berries"
+      "tag": "society:large_milk"
+    },
+    {
+      "tag": "bakery:chocolate"
     },
     {
       "item": "minecraft:sugar"
@@ -15,6 +18,6 @@
   },
   "recipe_book_tab": "meals",
   "result": {
-    "item": "bakery:sweetberry_jam"
+    "item": "bakery:chocolate_jam"
   }
 }

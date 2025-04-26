@@ -1,59 +1,48 @@
 ^^^
-## Splendid Slimes
-### v2.5.2
+## Wild Slimes
+### v2.6.1
 ^^^
 --- 
-- Added Slime ranching mechanics using Splendid Slimes! 
-- Slime Hearts can be found in the world as loot and incubated into slimes. Their resources can be acquired by feeding them things they like.
-- Added Dig and Fishing spots that give unique rewards such as artifacts and slime eggs
-- Added new crop quality system- more dependent on fertilizers (For example, diamond crops require Pristine fertilizer)
-- Added new behavior for hydrating fertilizer: only stays hydrated for the first half of crop's growth
-- Added Gnome
-- Added invalid Fish Pond icon
-- Added Missing Bundle
-- Added done state for Charging Rod
-- Added new textures for blocks: Fish Pond, Crystalarium, and Coin Leaderboard
-- Added new textures for items: Animal Feed, Truffle
-- Added seeds to some re-seedable crops
-- Added Reaping Scythe skill to farmer tree  (Replaces gap left by Crop Collector replacing Crop Tycoon)
-- Added Jars to farmer
-- Added new villager updating system! No longer need to manually "update" them.
-- Added Shells to Crap Trap drops
-- Added compacting drawer recipes
-- Added Cornucopia and Kinetic Blueprint to Mystical Botanist
-- Updated many mods for stability
-- Nether Depth's Upgrade stews now use Eggplant in recipe
-- Increased value of Dehydrator products (fruit * 12) + 32 -> (fruit * 14) + 64
-- Increased Artisan bonus to 20%
-- Increased Mana Milker cost and cooldown
-- Reduced Preserves Jar processing time 4 days -> 2
-- Reduced Smart Shipping Bin selling delay
-- Reduced price of basic storage upgrades
-- Removed Canvas and Geodes from Crab Trap drops
-- Reduced Tiller bonus to 10%
-- Reduced Artful Tycoon bonus to 80%
-- Removed Plant Nutrient bonemealing affect
-- Fixed issue with BFF triggering too often
-- Fish Ponds now count waterlogged blocks as water
-- Fixed Cornucopia stacking
-- Fixed crop related duping glitch
-- Fixed certain food recipes using nonexistent food
+- Added Splendid Slime spawns to areas of the world. These slimes start off unhappy and can be rehabilitated by the player.
+- Added money Advancements
+- Added Slime Vac to Shepherd, removed Slime Heart
+- Added Fairy Wings Elytra and updated Aquaculture resource packs (requires manual enabling on existing instances)
+- Added values to Game Discs
+- Added Cracked Egg- way to unify large and regular eggs 
+- Added config for animals/fishing in `kubejs/_config.js`
+- Abandoned Farm and Slime collection required for perfection
+- Missing Bundle now gives an Elytra
+- Bony slimes now require milk not meat
+- Dusty slimes no longer spawn lightning when happy
+- Increased Plort/Heart sell value
+- Increased husbandry animal crowded amount by 1
+- Increased price of Tackle Box
+- Reduced number of Plorts needed to make a Slime Heart
+- Re-added Quark sorting
+- Removed Numismatics advancements
+- Fixed shipping bin not selling when containing slime items at the beginning
+- Fixed lavender and hibiscus dropping Tea Blossoms
+- Fixed new seed crops not being applied skills or quality
+- Fixed some slimes not loading properly
+- Fixed certain kettle recipes not working correctly
+- Fixed certain removed items having tags
+- Fixed Framed Controller Extension recipe
+- Fixed Carrots only dropping 1 of the crop
+- Fixed structures being too sparse
 
-### 2.5.1
-- Added ability to pick up non-largo slimes using right click
-- Added warning to crops that now require seeds
-- Added name tag to Shepherd
-- Removed Low Quality Fertilizer drying 
-- Removed shears requirement for sheep's fine wool
-- Fixed Weeping Slime's favorite food being worth more than the sum of plorts
-- Fixed Slimy Heart being purchasable for less than it sells
-- Fixed slimes despawning
-- Fixed Tree Whisperer giving wrong fruits
-- Fixed Tree Whisperer not working on certain trees
-- Fixed Master Cultivator infinitely refreshing 
-- Fixed Game Console not working (probably)
-- Fixed Fantasy Furniture wool/carpets not having a mineable type
-
-### 2.5.2
-- Fixed items not working on right click
-- Fixed dupe
+### 2.6.1
+- Added Battery chance to Bitwise Plorts
+- Added Light Bulb chances to Luminous Plorts
+- Added Sugar Cube and increased sugar from Sweet Plort
+- Phantom Slimes now give the Hearthstone effect when unhappy
+- Bitwise Slimes now give the Confusion effect when unhappy
+- Reduced max trades for the Book of Stars for the Red Merchant
+- Tweaked overworld Slime spawning rules so Slimy Slimes don't dominate the pool
+- Fixed Weeping Plort ripping recipe
+- Fixed Plort Rippit not having recipe
+- Fixed Blazing Slimes not having proper food
+- Fixed console log in shipping bin
+- Fixed mistakenly added Panorama 
+- Fixed Fish Tanks and large barrels not dropping when broken
+- Fixed minerals not being fireable from Silme Vac
+- Fixed Slingshot recipe not using Canvas

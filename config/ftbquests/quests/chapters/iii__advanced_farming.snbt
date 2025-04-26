@@ -163,8 +163,8 @@
 				item: "society:espresso_machine"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.5d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0C7D8F89BCF645AA"]
@@ -185,8 +185,8 @@
 				type: "item"
 			}]
 			title: "Growing Crystals"
-			x: 4.0d
-			y: 4.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0F176FBF01ABB774"]
@@ -534,7 +534,7 @@
 				type: "item"
 			}]
 			title: "Smarter Selling"
-			x: 1.5d
+			x: 2.0d
 			y: 3.5d
 		}
 		{
@@ -811,9 +811,9 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["0C7D8F89BCF645AA"]
+			dependencies: ["632578AFE8A0D12D"]
 			description: [
-				"During exploration you may have come across a &6Slime Heart&r. These are precious items that can be used to begin Slime Ranching!"
+				"During exploration you may have come across a &6Slime Heart&r. These are precious items that can be used to begin Slime Incubating!"
 				""
 				"To start, right click a &6Slime Incubator&r with the heart. Both can be purchased from a &6Shepherd&r as well."
 			]
@@ -844,9 +844,9 @@
 					type: "item"
 				}
 			]
-			title: "Slime Ranching"
-			x: 5.0d
-			y: 2.5d
+			title: "Slime Incubating"
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["139B02AFBCBBF350"]
@@ -877,18 +877,23 @@
 				}
 			]
 			title: "Rippit!"
-			x: 6.5d
-			y: 1.5d
+			x: 5.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["139B02AFBCBBF350"]
+			dependencies: [
+				"139B02AFBCBBF350"
+				"0C7D8F89BCF645AA"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Slimes cannot reproduce by breeding. Instead, their &6Plorts&r must be pressed using a &6Plort Press&r into another &6Slime Hearts&r."
 				""
 				"Hearts can also be combined to make new ones using the top and bottom slots."
 				""
-				"&oHearts are worth twice as much as their Plort! This is how you make money ranching slimes&r"
+				"&oHearts are worth twice as much as their Plort!&r"
 			]
+			hide_dependency_lines: false
 			id: "01071E36A0370E13"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -902,8 +907,8 @@
 				type: "item"
 			}]
 			title: "Pressit!"
-			x: 6.5d
-			y: 3.5d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -923,11 +928,15 @@
 				item: "splendid_slimes:corral_block"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: 5.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["01071E36A0370E13"]
+			dependencies: [
+				"01071E36A0370E13"
+				"5C9C7A5A88613109"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Sllimes can be turned into a &6Largo&r by feeding a &6Plort&r of a breed to it!"
 				""
@@ -943,8 +952,102 @@
 				type: "checkmark"
 			}]
 			title: "Largoit!"
-			x: 6.5d
-			y: 5.0d
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"&6Splendid Sliems&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
+				""
+				"They're simpler than farm animals, though you may find they cause a bit more chaos..."
+			]
+			id: "632578AFE8A0D12D"
+			rewards: [{
+				id: "61DCF25489EF651E"
+				item: "minecraft:slime_block"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Wrong Game?"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "splendid_slimes:slime_heart"
+					tag: {
+						slime: {
+							id: "splendid_slimes:slimy"
+						}
+					}
+				}
+				id: "65C4C6928BF2A227"
+				observe_type: 5
+				timer: 0L
+				title: "Observe Splendid Slime"
+				to_observe: "splendid_slimes:splendid_slime"
+				type: "observation"
+			}]
+			title: "Slime Ranching"
+			x: -1.5d
+			y: 6.75d
+		}
+		{
+			dependencies: ["632578AFE8A0D12D"]
+			description: [
+				"Slimes can be found throughout the world. The Slime Vac can suck them up into inventory form using &6Shift + Right Click&r. "
+				""
+				"You can then fire them out using Right Click, if the Slime item is in your other hand. You can also suck up and shoot out items!"
+				""
+				"&oIf you look at the recipe in JEI using the Slime icon, you may find hints on where some types may be hiding.&r"
+			]
+			id: "5C9C7A5A88613109"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "577C0F0F5A40DFD6"
+				table_id: 2207679701817321554L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5B3FC5C7783BB680"
+				item: "splendid_slimes:slime_vac"
+				type: "item"
+			}]
+			title: "Slime Stealing"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5C9C7A5A88613109"]
+			description: [
+				"Slimes you capture in the wild are feral and require building trust! Every time they eat, their &6happiness&r will increase. It will increase even more if they're surrounded by similar types of Slimes."
+				""
+				"When unhappy, Slimes may cause effects to their surroundings. The more valuable their Plorts are, the more deadly they may be..."
+				""
+				"Incubated Slimes are less fussy and start out in a neutral happiness state."
+			]
+			icon: {
+				Count: 1
+				id: "splendid_slimes:slime_item"
+				tag: {
+					slime: {
+						id: "splendid_slimes:bitwise"
+					}
+				}
+			}
+			id: "07A551F04BB9A117"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AF350DA4D7F6BE5"
+				table_id: 2207679701817321554L
+				type: "random"
+			}]
+			tasks: [{
+				id: "380838F0BF3B7E91"
+				title: "I will nurture Slimes"
+				type: "checkmark"
+			}]
+			title: "Slime Happiness"
+			x: 3.0d
+			y: 8.0d
 		}
 	]
 	title: "III - Advanced Farming"

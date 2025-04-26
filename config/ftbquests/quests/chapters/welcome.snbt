@@ -159,23 +159,23 @@
 		{
 			dependencies: ["2B6877708A709B5C"]
 			description: [
-				"The Stardew Fishing minigame can be turned off if desired!"
+				"This pack has a configuration! Things like the Stardew Fishing minigame can be turned off, or animal feeding time changed."
 				""
-				"In the modpack folder, go to the folder &6kubejs&r and then &6server_scripts&r"
+				"In the modpack folder, go to the folder &6kubejs&r and then &6startup_scripts&r."
 				""
-				"Find the file &6removeFishingGame.js&r, and open it up with Notepad. Replace the &6false&r with &6true&r, save the file, and restart the game."
+				"Find the file &6_config.js&r, and open it up with Notepad. Update the values save the file, and restart the game."
 				""
-				"&lDo not just remove the mod as it will cause crashes!&r"
+				"If you're on a server, the server admin may need to change these values as well."
 			]
-			icon: "minecraft:tropical_fish"
+			icon: "gamediscs:gaming_console"
 			id: "6EA5618181628D34"
-			subtitle: "Learn how to turn it off here!"
+			subtitle: "Want to change something? Do it!"
 			tasks: [{
 				id: "56C063A91C4834B3"
 				title: "Understood!"
 				type: "checkmark"
 			}]
-			title: "Configuring the Fishing Minigame"
+			title: "Configuring the Pack"
 			x: -1.5d
 			y: -1.5d
 		}

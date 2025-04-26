@@ -315,9 +315,9 @@
     "modId": "embeddium",
     "version": "0.3.31+mc1.20.1"
   },
-  "emi-1.1.20+1.20.1+forge.jar": {
+  "emi-1.1.22+1.20.1+forge.jar": {
     "modId": "emi",
-    "version": "1.1.20+1.20.1+forge"
+    "version": "1.1.22+1.20.1+forge"
   },
   "Emojiful-Forge-1.20.1-4.2.0.jar": {
     "modId": "emojiful",
@@ -427,21 +427,21 @@
     "modId": "framework",
     "version": "0.7.12"
   },
-  "ftb-library-forge-2001.2.7.jar": {
+  "ftb-library-forge-2001.2.9.jar": {
     "modId": "ftblibrary",
-    "version": "2001.2.7"
+    "version": "2001.2.9"
   },
-  "ftb-quests-forge-2001.4.9.jar": {
+  "ftb-quests-forge-2001.4.13.jar": {
     "modId": "ftbquests",
-    "version": "2001.4.9"
+    "version": "2001.4.13"
   },
-  "ftb-teams-forge-2001.3.0.jar": {
+  "ftb-teams-forge-2001.3.1.jar": {
     "modId": "ftbteams",
-    "version": "2001.3.0"
+    "version": "2001.3.1"
   },
-  "ftb-xmod-compat-forge-2.1.2.jar": {
+  "ftb-xmod-compat-forge-2.1.3.jar": {
     "modId": "ftbxmodcompat",
-    "version": "2.1.2"
+    "version": "2.1.3"
   },
   "ftbbackups2-forge-1.20-1.0.23.jar": {
     "modId": "ftbbackups2",
@@ -624,9 +624,9 @@
     "modId": "vinery",
     "version": "1.4.39"
   },
-  "littlejoys-forge-1.20.1-20.1.5.jar": {
+  "littlejoys-forge-1.20.1-20.1.6.jar": {
     "modId": "littlejoys",
-    "version": "20.1.5"
+    "version": "20.1.6"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
@@ -896,6 +896,10 @@
     "modId": "serverconfigupdater",
     "version": "4.0.2"
   },
+  "servercore-forge-1.5.2+1.20.1.jar": {
+    "modId": "servercore",
+    "version": "1.5.2+1.20.1"
+  },
   "SewingKit-1.20.1-1.8.1.jar": {
     "modId": "sewingkit",
     "version": "1.8.1"
@@ -980,13 +984,13 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.4.0.jar": {
+  "splendid_slimes-0.5.3.jar": {
     "modId": "splendid_slimes",
-    "version": "0.4.0"
+    "version": "0.5.3"
   },
-  "stardew_fishing-1.20.1-2.2.jar": {
+  "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",
-    "version": "2.2"
+    "version": "2.3"
   },
   "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
     "modId": "railways",

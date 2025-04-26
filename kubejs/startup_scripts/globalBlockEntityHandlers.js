@@ -21,7 +21,6 @@ global.processShippingBinInventory = (
   let calculatedValue = 0;
   let removedItems = [];
   let slotItem;
-  let slotNbt;
   for (let i = 0; i < inventorySlots; i++) {
     slotItem = inventory.getStackInSlot(i).item;
     if (
@@ -31,7 +30,9 @@ global.processShippingBinInventory = (
       )
     ) {
       let trade = global.trades.get(String(slotItem.id));
+      console.log(trade)
       let quality;
+      let slotNbt;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }

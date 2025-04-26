@@ -1,9 +1,14 @@
 {
   "breed": "orby",
   "name": "slime.splendid_slimes.orby",
+  "particle": { "item": "minecraft:experience_bottle" },
   "color": "#b8e45a",
   "hat_y_offset": -0.5,
   "diet": "diet.splendid_slimes.orby",
+  "foods": [
+    { "tag": "splendid_slimes:animal_spawn_eggs" },
+    { "tag": "splendid_slimes:monster_spawn_eggs" }
+  ],
   "entities": [
     "minecraft:chicken",
     "minecraft:cow",
@@ -13,9 +18,6 @@
     "minecraft:sheep",
     "untitledduckmod:duck",
     "untitledduckmod:goose",
-    "meadow:water_buffalo",
-    "meadow:wooly_cow",
-    "meadow:wooly_sheep",
     "minecraft:zombie",
     "minecraft:zombie_villager",
     "minecraft:skeleton",
@@ -25,5 +27,19 @@
     "minecraft:drowned",
     "minecraft:creeper"
   ],
-  "favorite_entity": "minecraft:skeleton"
+  "favorite_entity": "minecraft:skeleton",
+  "negative_emit_effects": [
+    {
+      "effect": "minecraft:darkness",
+      "duration": 220,
+      "amplifier": 0
+    }
+  ],
+  "positive_emit_effects": [
+    {
+      "effect": "minecraft:darkness",
+      "duration": 220,
+      "amplifier": 0
+    }
+  ]
 }

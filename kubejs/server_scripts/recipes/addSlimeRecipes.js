@@ -7,7 +7,7 @@ ServerEvents.recipes((e) => {
     e.custom({
       type: "splendid_slimes:plort_pressing",
       ingredient: {
-        count: 32,
+        count: 16,
         item: "splendid_slimes:plort",
         nbt: {
           plort: {

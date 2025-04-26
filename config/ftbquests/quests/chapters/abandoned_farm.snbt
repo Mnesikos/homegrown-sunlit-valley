@@ -34,8 +34,14 @@
 			min_required_dependencies: 2
 			min_required_tasks: 6
 			rewards: [{
-				id: "57B2422A37EDD42A"
-				item: "botania:apothecary_default"
+				id: "23C19AD4A368AA0F"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			tasks: [

@@ -114,14 +114,13 @@
     },
     {
       "offer": {
-        "itemKey": "splendid_slimes:slime_heart",
+        "itemKey": "splendid_slimes:slime_vac",
         "amount": 1,
-        "priceModifier": 0,
-        "advancedNBTData": "{slime:{id:\"splendid_slimes:slimy\"}}"
+        "priceModifier": 0
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 1,
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -129,7 +128,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:slime_heart_for_sun"
+      "UTID": "minecraft:slime_vac_for_sun"
     },
     {
       "offer": {
