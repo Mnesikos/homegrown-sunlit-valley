@@ -1,6 +1,6 @@
 ^^^
 ## Wild Slimes
-### v2.6.0
+### v2.6.1
 ^^^
 --- 
 - Added Splendid Slime spawns to areas of the world. These slimes start off unhappy and can be rehabilitated by the player.
@@ -29,3 +29,20 @@
 - Fixed Framed Controller Extension recipe
 - Fixed Carrots only dropping 1 of the crop
 - Fixed structures being too sparse
+
+### 2.6.1
+- Added Battery chance to Bitwise Plorts
+- Added Light Bulb chances to Luminous Plorts
+- Added Sugar Cube and increased sugar from Sweet Plort
+- Phantom Slimes now give the Hearthstone effect when unhappy
+- Bitwise Slimes now give the Confusion effect when unhappy
+- Reduced max trades for the Book of Stars for the Red Merchant
+- Tweaked overworld Slime spawning rules so Slimy Slimes don't dominate the pool
+- Fixed Weeping Plort ripping recipe
+- Fixed Plort Rippit not having recipe
+- Fixed Blazing Slimes not having proper food
+- Fixed console log in shipping bin
+- Fixed mistakenly added Panorama 
+- Fixed Fish Tanks and large barrels not dropping when broken
+- Fixed minerals not being fireable from Silme Vac
+- Fixed Slingshot recipe not using Canvas

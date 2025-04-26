@@ -5,7 +5,7 @@
   "diet": "diet.splendid_slimes.blazing",
   "particle": { "item": "minecraft:blaze_powder" },
   "foods": [
-    { "tag": "society:cooked_meat" }
+    { "tag": "forge:cooked_meat" }
   ],
   "favorite_food": {
     "item": "autumnity:cooked_turkey"

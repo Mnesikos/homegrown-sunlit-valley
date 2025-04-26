@@ -11,5 +11,12 @@
   ],
   "favorite_food": {
     "item": "society:fire_opal"
-  }
+  },
+  "negative_emit_effects": [
+    {
+      "effect": "relics:confusion",
+      "duration": 1000,
+      "amplifier": 0
+    }
+  ]
 }

@@ -12,5 +12,12 @@
   ],
   "favorite_food": {
     "item": "minecraft:purple_bed"
-  }
+  },
+  "negative_emit_effects": [
+    {
+      "effect": "nethervinery:hearthstone",
+      "duration": 360,
+      "amplifier": 0
+    }
+  ]
 }

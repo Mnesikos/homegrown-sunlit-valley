@@ -11,7 +11,18 @@
   "results": [
     {
       "item": "minecraft:glowstone_dust",
-      "count": 4
+      "count": 16,
+      "weight": 12
+    },
+    {
+      "item": "etcetera:light_bulb",
+      "count": 1,
+      "weight": 4
+    },
+    {
+      "item": "etcetera:tinted_light_bulb",
+      "count": 1,
+      "weight": 1
     }
   ]
 }

@@ -50,7 +50,6 @@ global.processShippingBinInventory = (
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
-      console.log(trade)
       calculatedValue +=
         calculateQualityValue(trade.value, quality) *
         inventory.getStackInSlot(i).count *

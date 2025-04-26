@@ -885,6 +885,7 @@
 				"139B02AFBCBBF350"
 				"0C7D8F89BCF645AA"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Slimes cannot reproduce by breeding. Instead, their &6Plorts&r must be pressed using a &6Plort Press&r into another &6Slime Hearts&r."
 				""
@@ -892,6 +893,7 @@
 				""
 				"&oHearts are worth twice as much as their Plort!&r"
 			]
+			hide_dependency_lines: false
 			id: "01071E36A0370E13"
 			rewards: [{
 				exclude_from_claim_all: true

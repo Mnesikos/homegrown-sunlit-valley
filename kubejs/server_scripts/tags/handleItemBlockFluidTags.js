@@ -383,6 +383,7 @@ e.add("forge:eggs", "society:cracked_egg");
     e.add("society:geode_treasure", geodeItem.item);
     e.add("society:omni_geode_treasure", geodeItem.item);
   });
+  e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure")
   const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
   geodeRelic.forEach((geodeItem) => {
     e.add("society:geode_relic", geodeItem);
@@ -538,8 +539,8 @@ e.add("forge:eggs", "society:cracked_egg");
   ];
   smallMilks.forEach((item) => {
     e.add("society:small_milk", item);
-    e.add("splendid_slimes:slime_vac_fireable", item);
   });
+  e.add("splendid_slimes:slime_vac_fireable", "#society:small_milk");
   const largeMilks = [
     "society:large_milk",
     "society:large_goat_milk",
@@ -549,8 +550,8 @@ e.add("forge:eggs", "society:cracked_egg");
   ];
   largeMilks.forEach((item) => {
     e.add("society:large_milk", item);
-    e.add("splendid_slimes:slime_vac_fireable", item);
   });
+  e.add("splendid_slimes:slime_vac_fireable", "#society:large_milk");
   [
     "snowpig:snow_pig_spawn_egg",
     "untitledduckmod:duck_spawn_egg",
