@@ -641,6 +641,7 @@ ServerEvents.recipes((e) => {
   const removeById = [
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
+    "moredelight:cutting/sliced_bread",
     // Botania
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",
@@ -655,9 +656,11 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinating/stone",
     "extractinator:extractinating/slush",
     "extractinator:extractinating/silt",
-    "extractinator:extractinating/cobblestone",
+    "extractinator:extractinating/cobblestone", 
     "extractinator:extractinating/sand",
     "extractinator:extractinating/gravel",
+    "aquaculture:tin_can_to_iron_nugget",
+    "aquaculture:tin_can_to_iron_nugget_from_blasting",
     // Create
     "create:mixing/andesite_alloy_from_zinc",
     "create:crafting/materials/andesite_alloy_from_zinc",

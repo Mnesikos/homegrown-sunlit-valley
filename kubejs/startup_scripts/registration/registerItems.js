@@ -112,6 +112,7 @@ StartupEvents.registry("item", (e) => {
         `Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`
       );
   });
+  e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
   e.create("society:pine_tar").texture("society:item/pine_tar");
   e.create("society:oak_resin").texture("society:item/oak_resin");
   e.create("society:maple_syrup").texture("society:item/maple_syrup");
@@ -433,6 +434,8 @@ StartupEvents.registry("item", (e) => {
     );
   });
 
+  e.create("society:sparkstone").texture("society:item/sparkstone");
+  
   global.preserves.forEach((jar) => {
     if (jar.item.includes("society"))
       e.create(`society:${jar.item.split(":")[1]}`)

@@ -1,4 +1,4 @@
-console.info("[SOCIETY] placeShippingBin.js loaded");
+console.info("[SOCIETY] placeOwnedBlock.js loaded");
 
 BlockEvents.placed(["shippingbin:smart_shipping_bin", "shippingbin:basic_shipping_bin"], (e) => {
   const playerUUID = e.player.getUuid().toString();

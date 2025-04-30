@@ -524,6 +524,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Crops underneath grow in any season")
   );
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
+  tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")

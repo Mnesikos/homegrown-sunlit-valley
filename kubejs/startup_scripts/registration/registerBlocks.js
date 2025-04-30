@@ -107,6 +107,28 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  e.create("society:sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .texture("all", `society:block/sparkstone_ore`)
+    .lightLevel(0.5);
+
+  e.create("society:deepslate_sparkstone_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .texture("all", `society:block/deepslate_sparkstone_ore`)
+    .lightLevel(0.5);
+
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)
@@ -284,7 +306,7 @@ StartupEvents.registry("block", (e) => {
     .defaultCutout()
     .model("society:block/drinks/beer_attunecore")
     .item((item) => {
-    item.modelJson({
+      item.modelJson({
         parent: "minecraft:item/generated",
         textures: {
           layer0: "society:item/drinks/beer_attunecore",
