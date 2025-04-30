@@ -174,6 +174,10 @@ ServerEvents.tags("item", (e) => {
   stripTags.forEach((item) => {
     e.removeAllTagsFrom(item);
   });
+  global.removedItems.forEach((item) => {
+    e.removeAllTagsFrom(item);
+    e.add("furniture:trash_bag_blacklist", item);
+  });
 });
 const rawLogs = [
   "quark:blossom_log",

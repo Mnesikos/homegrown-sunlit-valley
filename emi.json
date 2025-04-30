@@ -14,6 +14,15 @@
     }
   ],
   "lookup_history": [
+    "#item:furniture:trash_bag_blacklist",
+    "item:comforts:hammock_magenta",
+    "item:legendarycreatures:straw_hat{Damage:0}",
+    "item:minecraft:dragon_head",
+    "item:comforts:sleeping_bag_white",
+    "item:comforts:sleeping_bag_black",
+    "item:trofers:large_pillar",
+    "item:buildinggadgets2:gadget_cut_paste",
+    "item:numismatics:spur",
     "item:society:recycling_machine",
     "item:society:bouquet_bag",
     {
@@ -256,7 +265,6 @@
     "item:herbalbrews:tea_kettle",
     "item:atmospheric:aloe_kernels",
     "item:dew_drop_watering_cans:diamond_watering_can{Damage:45}",
-    "item:trofers:large_pillar",
     "item:bakery:strawberry_jam",
     "item:bakery:apple_jam",
     "item:bakery:glowberry_jam",

@@ -932,4 +932,10 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.red("Not placeable in Wine Racks")
   );
+  global.removedItems.forEach((item) => {
+    tooltip.add(
+      item,
+      Text.red("REMOVED! You shouldn't have this...")
+    );
+  });
 });
