@@ -780,6 +780,10 @@
     "modId": "placebo",
     "version": "8.6.3"
   },
+  "Platform-forge-1.20.1-1.2.7.1.jar": {
+    "modId": "platform",
+    "version": "1.2.7.1"
+  },
   "player-animation-lib-forge-1.0.2-rc1+1.20.jar": {
     "modId": "playeranimator",
     "version": "1.0.2-rc1+1.20"
@@ -875,6 +879,14 @@
   "Ribbits-1.20.1-Forge-3.0.2.jar": {
     "modId": "ribbits",
     "version": "1.20.1-Forge-3.0.2"
+  },
+  "rottencreatures-forge-1.20.1-1.1.0.jar": {
+    "modId": "rottencreatures",
+    "version": "1.1.0"
+  },
+  "RunicLib-forge-1.20.1-4.1.5.jar": {
+    "modId": "runiclib",
+    "version": "4.1.5"
   },
   "sawmill-1.20-1.4.6.jar": {
     "modId": "sawmill",

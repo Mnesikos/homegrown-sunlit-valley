@@ -1,8 +1,53 @@
 console.info("[SOCIETY] autoGrabber.js loaded");
 
+const handleSpecialItem = (
+  data,
+  chance,
+  hungry,
+  minHearts,
+  mult,
+  item,
+  hasQuality,
+  e
+) => {
+  const { player, target, level, server, block, inventory } = e;
+  const affection = data.getInt("affection") || 0;
+  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  let quality = 0;
+
+  if (!hungry && hearts >= minHearts && Math.random() <= chance) {
+    if (hasQuality && hearts > 0) {
+      quality = Math.floor((hearts % 11) / 2 - 2);
+    }
+    let specialItem = Item.of(
+      `${mult}x ${item}`,
+      quality > 0 ? `{quality_food:{effects:[],quality:${quality}}}` : null
+    );
+    let specialItemResultCode = global.insertBelow(level, block, specialItem);
+    if (specialItemResultCode == 1) {
+      if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1) console.error("Sparkstone not consumed when it should have been!");
+      server.runCommandSilent(
+        `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+      );
+      level.spawnParticles(
+        "farmersdelight:star",
+        true,
+        target.x,
+        target.y + 1,
+        target.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        3,
+        0.01
+      );
+    }
+  }
+};
+
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:auto_grabber")
+    .create("society:auto_grabber", "cardinal")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
@@ -20,7 +65,7 @@ StartupEvents.registry("block", (event) => {
     })
     .model("society:block/auto_grabber")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 1);
+      blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
@@ -30,7 +75,7 @@ StartupEvents.registry("block", (event) => {
         inventory.allItems;
         let nearbyFarmAnimals;
         nearbyFarmAnimals = level
-          .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
+          .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
           .filter((entity) =>
             global.checkEntityTag(entity, "society:husbandry_animal")
           );
@@ -43,30 +88,22 @@ StartupEvents.registry("block", (event) => {
         });
         if (playerAttributes) {
           nearbyFarmAnimals.forEach((animal) => {
+            if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
             let data = animal.persistentData;
             let interactionCooldown = global.animalInteractionCooldown;
-            if (global.checkEntityTag(entity, "society:milkable_animal")) {
-              if (
-                animal.type === "minecraft:goat" ||
-                animal.type === "species:mammutilation"
-              ) {
-                interactionCooldown *= 2;
-              } else if (animal.type === "minecraft:sheep") {
-                interactionCooldown *= 1.5;
-              }
-
+            if (global.checkEntityTag(animal, "society:milkable_animal")) {
+              interactionCooldown *= global.getMilkingTimeMult(animal.type);
               let milkItem = global.getMilk(
                 level,
                 animal,
                 data,
-                undefined,
+                attachedPlayer,
                 interactionCooldown
               );
               if (milkItem !== -1) {
-                let success = entity.inventory.insertItem(milkItem, false);
-                if (success) {
-                  entity.persistentData.putInt("mana", mana - MANA_PER_MILK);
-
+                let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
+                if (insertedMilk) {
+                  if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1) console.error("Sparkstone not consumed when it should have been!");
                   level.server.runCommandSilent(
                     `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
                   );
@@ -85,6 +122,16 @@ StartupEvents.registry("block", (event) => {
                 }
               }
             }
+            if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
+            global.handleSpecialHarvest(
+              level,
+              animal,
+              attachedPlayer,
+              attachedPlayer.server,
+              block,
+              inventory,
+              handleSpecialItem
+            );
           });
         }
       }),

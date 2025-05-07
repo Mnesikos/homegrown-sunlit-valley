@@ -315,7 +315,7 @@ StartupEvents.registry("item", (e) => {
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
-  e.create("society:cracked_egg").texture("society:item/cracked_egg")
+  e.create("society:cracked_egg").texture("society:item/cracked_egg");
   e.create("society:mayonnaise")
     .texture("society:item/mayo/mayonnaise")
     .food((food) => {
@@ -391,6 +391,9 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
+  e.create(`society:magnifying_glass`)
+    .texture(`society:item/magnifying_glass`)
+    .maxStackSize(1);
   e.create(`society:cornucopia`)
     .texture(`society:item/cornucopia`)
     .maxStackSize(1);
@@ -435,7 +438,7 @@ StartupEvents.registry("item", (e) => {
   });
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
-  
+
   global.preserves.forEach((jar) => {
     if (jar.item.includes("society"))
       e.create(`society:${jar.item.split(":")[1]}`)

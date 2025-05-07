@@ -115,8 +115,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .texture("all", `society:block/sparkstone_ore`)
-    .lightLevel(0.5);
+    .model("society:block/sparkstone_ore")
 
   e.create("society:deepslate_sparkstone_ore")
     .defaultCutout()
@@ -126,8 +125,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .texture("all", `society:block/deepslate_sparkstone_ore`)
-    .lightLevel(0.5);
+    .model("society:block/deepslate_sparkstone_ore")
 
   // Drinks
   e.create("society:espresso")

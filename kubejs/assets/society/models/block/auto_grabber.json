@@ -4,7 +4,7 @@
 		"0": "society:block/auto_grabber/auto_grabber",
 		"2": "society:block/auto_grabber/head",
 		"3": "society:block/auto_grabber/hand",
-		"particle": "Auto-Grabber"
+		"particle": "society:block/auto_grabber/auto_grabber"
 	},
 	"elements": [
 		{
@@ -227,8 +227,8 @@
 		},
 		"gui": {
 			"rotation": [30, 225, 0],
-			"translation": [0, -2.5, 0],
-			"scale": [0.5, 0.5, 0.5]
+			"translation": [0, -2.25, 0],
+			"scale": [0.45, 0.45, 0.45]
 		},
 		"fixed": {
 			"translation": [0, -2.25, 0],

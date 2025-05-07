@@ -1,12 +1,16 @@
-console.info("[SOCIETY] chargingRod.js loaded");
-
+console.info("[SOCIETY] tapper.js loaded");
+global.tapperRecipes = [
+  { input: "minecraft:spurce_log", output: ["1x society:pine_tar"], time: 5 },
+  { input: "minecraft:oak_log", output: ["1x society:oak_resin"], time: 7 },
+];
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:charging_rod", "cardinal")
+    .create("society:tapper", "cardinal")
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 5))
+    .property(booleanProperty.create("error"))
+    .property(integerProperty.create("stage", 0, 7))
     .soundType("copper")
     .box(4, 0, 4, 12, 16, 12)
     .defaultCutout()
@@ -17,7 +21,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Makes batteries from lightning storms. Doesn't protect area")
       );
       item.modelJson({
-        parent: "society:block/charging_rod_off",
+        parent: "society:block/tapper",
       });
     })
     .defaultState((state) => {
@@ -25,14 +29,16 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("error"), false)
+        .set(integerProperty.create("stage", 0, 7), 0);
     })
     .placementState((state) => {
       state
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 5), 0);
+        .set(booleanProperty.create("error"), false)
+        .set(integerProperty.create("stage", 0, 7), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level, server } = click;
@@ -130,35 +136,14 @@ StartupEvents.registry("block", (event) => {
       });
     }).blockstateJson = {
     multipart: [
-      { apply: { model: "society:block/charging_rod_particle" } },
-      {
-        when: { working: false, upgraded: false, mature: false  },
-        apply: { model: "society:block/charging_rod_off" },
-      },
-      {
-        when: { working: true, upgraded: false, mature: false },
-        apply: { model: "society:block/charging_rod" },
-      },
-      {
-        when: { working: false, upgraded: false, mature: true },
-        apply: { model: "society:block/charging_rod_done" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: false  },
-        apply: { model: "society:block/charging_rod_upgraded_off" },
-      },
-      {
-        when: { working: true, upgraded: true, mature: false  },
-        apply: { model: "society:block/charging_rod_upgraded" },
-      },
-      {
-        when: { working: false, upgraded: true, mature: true },
-        apply: { model: "society:block/charging_rod_upgraded_done" },
-      },
       {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-    ],
+      {
+        when: { error: true },
+        apply: { model: "society:block/error" },
+      },
+  ].concat(getCardinalMultipartJsonBasic("tapper")),
   };
 });

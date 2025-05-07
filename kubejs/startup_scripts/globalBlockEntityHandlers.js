@@ -30,7 +30,7 @@ global.processShippingBinInventory = (
       )
     ) {
       let trade = global.trades.get(String(slotItem.id));
-      console.log(trade)
+      console.log(trade);
       let quality;
       let slotNbt;
       if (inventory.getStackInSlot(i).hasNBT()) {
@@ -46,7 +46,7 @@ global.processShippingBinInventory = (
         if (slotNbt.plort)
           trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
-      
+
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
@@ -326,6 +326,103 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
     block.set(block.id, newProperties);
   }
 };
+
+/**
+ * @returns result code:
+ * -1 - Failure - Operation attempted but couldn't be inserted
+ * 0 - Neutral - Operation not attempted due to no below inventory or item
+ * 1 - Success - Item successfully inserted
+ */
+global.insertBelow = (level, block, item) => {
+  let belowItem;
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
+    for (let j = 0; j < belowBlock.inventory.slots; j++) {
+      belowItem = belowBlock.inventory.getStackInSlot(j);
+      if (
+        belowItem === Item.of(item) &&
+        belowItem.count < belowBlock.inventory.getSlotLimit(j)
+      ) {
+        belowBlock.inventory.insertItem(j, item, false);
+        return 1;
+      }
+    }
+    for (let j = 0; j < belowBlock.inventory.slots; j++) {
+      belowItem = belowBlock.inventory.getStackInSlot(j);
+      if (belowItem === Item.of("minecraft:air")) {
+        belowBlock.inventory.insertItem(j, item, false);
+        return 1;
+      }
+    }
+    return -1;
+  }
+  return 0;
+};
+
+/**
+ * @returns result code:
+ * -1 - Failure - Operation attempted but not enough items
+ * 0 - Neutral - Operation not attempted due to no inventory
+ * 1 - Success - inventory has items of id, and of at least count
+ */
+global.inventoryHasItems = (inventory, id, count) => {
+  if (inventory) {
+    const slots = inventory.getSlots();
+    let slotStack;
+    for (let i = 0; i < slots; i++) {
+      slotStack = inventory.getStackInSlot(i);
+      if (slotStack.item.id === id && slotStack.count >= count) {
+        return 1;
+      }
+    }
+    return -1;
+  }
+  return 0;
+};
+
+/**
+ * @returns result code:
+ * -1 - Failure - Operation attempted but nothing to use
+ * 0 - Neutral - Operation not attempted due to no inventory
+ * 1 - Success - Item successfully consumed
+ */
+global.useInventoryItems = (inventory, id, count) => {
+  if (inventory) {
+    const slots = inventory.getSlots();
+    let slotStack;
+    for (let i = 0; i < slots; i++) {
+      slotStack = inventory.getStackInSlot(i);
+      if (slotStack.item.id === id && slotStack.count >= count) {
+        inventory.getStackInSlot(i).count -= count;
+        return 1;
+      }
+    }
+    return -1;
+  }
+  return 0;
+};
+const getCardinalMultipartJsonBasic = (name) => {
+  const path = `society:block/${name}`;
+  return [
+    {
+      when: {  facing: "north" },
+      apply: { model: path, y: 0, uvlock: false },
+    },
+    {
+      when: {  facing: "east" },
+      apply: { model: path, y: 90, uvlock: false },
+    },
+    {
+      when: { facing: "south" },
+      apply: { model: path, y: 180, uvlock: false },
+    },
+    {
+      when: { facing: "west" },
+      apply: { model: path, y: -90, uvlock: false },
+    }
+  ]
+};
 const getCardinalMultipartJson = (name) => {
   const path = `society:block/${name}`;
   let offJson = [
@@ -449,9 +546,9 @@ const getGnomeState = (name, type) => {
       apply: { model: path, y: 180, uvlock: false },
     },
     {
-      when:  {type: type, facing: "west" },
+      when: { type: type, facing: "west" },
       apply: { model: path, y: -90, uvlock: false },
-    }
+    },
   ];
-  return cardianal
+  return cardianal;
 };

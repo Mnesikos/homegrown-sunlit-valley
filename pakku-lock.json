@@ -4743,27 +4743,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "glow_up-1.1-1.20.zip",
+                    "file_name": "glow_up-1.2-1.20.1.zip",
                     "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
+                        "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6194/444/glow_up-1.1-1.20.zip",
-                    "id": "6194444",
+                    "url": "https://edge.forgecdn.net/files/6503/839/glow_up-1.2-1.20.1.zip",
+                    "id": "6503839",
                     "parent_id": "1162010",
                     "hashes": {
-                        "sha1": "456943ede155af5e48930269d348b47f77d97c96",
-                        "md5": "dd2d7bf17be06a16b7d682ae927c91f8"
+                        "sha1": "d0f58464753976d5f9c7022485272b5be5e72718",
+                        "md5": "23acc07641c3acea63bfb841eaf2b7d9"
                     },
                     "required_dependencies": [],
-                    "size": 259956,
-                    "date_published": "2025-02-15T00:43:15.363Z"
+                    "size": 291132,
+                    "date_published": "2025-05-07T00:25:48.870Z"
                 }
             ]
         },
