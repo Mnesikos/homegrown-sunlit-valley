@@ -546,10 +546,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Place next to water to make salt")
   );
   tooltip.add(
-    "treetap:tap",
-    Text.gray("Place on logs then click with a bucket")
-  );
-  tooltip.add(
     "farmersdelight:rich_soil",
     Text.gray("Grows colonies from red and")
   );

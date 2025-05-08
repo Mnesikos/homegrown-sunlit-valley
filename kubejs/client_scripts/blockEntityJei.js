@@ -205,6 +205,15 @@ JEIAddedEvents.registerCategories((e) => {
     1,
     1
   );
+  
+  registerBECategory(
+    e,
+    "tapping",
+    "tapper",
+    "Tapping",
+    1,
+    7
+  );
 });
 
 // JEI Catalysts broken on JEI version
@@ -306,5 +315,8 @@ JEIAddedEvents.registerRecipes((e) => {
   });
   global.recyclingMachineRecipes.forEach((element) => {
     e.custom("society:recycling").add(element);
+  });
+  global.tapperRecipes.forEach((element) => {
+    e.custom("society:tapping").add(element);
   });
 });

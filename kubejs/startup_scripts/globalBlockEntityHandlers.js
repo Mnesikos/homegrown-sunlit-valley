@@ -168,7 +168,8 @@ global.handleBERightClick = (
   stageCount,
   multipleInputs,
   hasTag,
-  outputMult
+  outputMult,
+  disableInput
 ) => {
   const { item, block, hand, player, level, server } = clickEvent;
   let blockStage = block.properties.get("stage").toLowerCase();
@@ -222,49 +223,104 @@ global.handleBERightClick = (
         block.set(block.id, newProperties);
       });
     }
-    newProperties = block.getProperties();
-    blockStage = block.properties.get("stage").toLowerCase();
-    recipes.forEach((recipe, index) => {
-      if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
-        newProperties = block.getProperties();
-        successParticles(level, block);
-        server.runCommandSilent(
-          `playsound ${stockSound} block @a ${player.x} ${player.y} ${player.z}`
-        );
-        newProperties.type = String(index + 1);
-        newProperties.working = false;
-        newProperties.mature = false;
-        if (newProperties.quality && itemNbt && itemNbt.quality_food) {
-          itemQuality = String(itemNbt.quality_food.quality);
-        } else if (newProperties.quality) {
-          itemQuality = "0";
-        }
-        if (multipleInputs) {
-          if (item.count >= stageCount - Number(blockStage)) {
-            if (!player.isCreative())
-              item.count = item.count - (stageCount - Number(blockStage));
-            if (itemQuality) setQuality(newProperties, itemQuality);
-            newProperties.stage = stageCount.toString();
+    
+    if (!disableInput) {
+      newProperties = block.getProperties();
+      blockStage = block.properties.get("stage").toLowerCase();
+      recipes.forEach((recipe, index) => {
+        if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
+          newProperties = block.getProperties();
+          successParticles(level, block);
+          server.runCommandSilent(
+            `playsound ${stockSound} block @a ${player.x} ${player.y} ${player.z}`
+          );
+          newProperties.type = String(index + 1);
+          newProperties.working = false;
+          newProperties.mature = false;
+          if (newProperties.quality && itemNbt && itemNbt.quality_food) {
+            itemQuality = String(itemNbt.quality_food.quality);
+          } else if (newProperties.quality) {
+            itemQuality = "0";
+          }
+          if (multipleInputs) {
+            if (item.count >= stageCount - Number(blockStage)) {
+              if (!player.isCreative())
+                item.count = item.count - (stageCount - Number(blockStage));
+              if (itemQuality) setQuality(newProperties, itemQuality);
+              newProperties.stage = stageCount.toString();
+            } else {
+              if (!player.isCreative()) item.count--;
+              if (itemQuality) setQuality(newProperties, itemQuality);
+              newProperties.stage = increaseStage(blockStage);
+            }
           } else {
             if (!player.isCreative()) item.count--;
-            if (itemQuality) setQuality(newProperties, itemQuality);
-            newProperties.stage = increaseStage(blockStage);
+            if (itemQuality) {
+              newProperties.quality = itemQuality;
+            }
           }
-        } else {
-          if (!player.isCreative()) item.count--;
-          if (itemQuality) {
-            newProperties.quality = itemQuality;
+          if (newProperties.duration)
+            newProperties.duration = String(recipe.time);
+          if (
+            !multipleInputs ||
+            newProperties.stage === stageCount.toString()
+          ) {
+            newProperties.working = true;
+            newProperties.stage = "0";
           }
         }
-        if (newProperties.duration)
+        block.set(block.id, newProperties);
+      });
+    }
+  }
+};
+const getOpposite = (facing, pos) => {
+  switch (facing) {
+    case "north":
+      return pos.offset(0, 0, 1);
+    case "south":
+      return pos.offset(0, 0, -1);
+    case "west":
+      return pos.offset(1, 0, 0);
+    case "east":
+      return pos.offset(-1, 0, 0);
+  }
+};
+
+global.handleTapperRandomTick = (tickEvent) => {
+  const { block, level, server } = tickEvent;
+  const facing = block.properties.get("facing");
+  let newProperties = block.getProperties();
+  let behindPos = getOpposite(facing, block.getPos());
+  const attachedBlock = level.getBlock(behindPos);
+  if (attachedBlock.hasTag("society:tappable_blocks")) {
+    if (
+      block.properties.get("working").toLowerCase() === "false" &&
+      block.properties.get("mature").toLowerCase() === "false"
+    ) {
+      global.tapperRecipes.forEach((recipe, index) => {
+        if (
+          getCanTakeItems(attachedBlock, block.properties, recipe, index, false)
+        ) {
+          newProperties = block.getProperties();
+          successParticles(level, block);
+          server.runCommandSilent(
+            `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
+          );
+          newProperties.type = String(index + 1);
+          newProperties.working = false;
+          newProperties.mature = false;
           newProperties.duration = String(recipe.time);
-        if (!multipleInputs || newProperties.stage === stageCount.toString()) {
           newProperties.working = true;
           newProperties.stage = "0";
         }
-      }
-      block.set(block.id, newProperties);
-    });
+      });
+    }
+    newProperties.error = false;
+    block.set(block.id, newProperties);
+  } else {
+    newProperties.error = true;
+    block.set(block.id, newProperties);
   }
 };
 
@@ -406,11 +462,11 @@ const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/${name}`;
   return [
     {
-      when: {  facing: "north" },
+      when: { facing: "north" },
       apply: { model: path, y: 0, uvlock: false },
     },
     {
-      when: {  facing: "east" },
+      when: { facing: "east" },
       apply: { model: path, y: 90, uvlock: false },
     },
     {
@@ -420,8 +476,8 @@ const getCardinalMultipartJsonBasic = (name) => {
     {
       when: { facing: "west" },
       apply: { model: path, y: -90, uvlock: false },
-    }
-  ]
+    },
+  ];
 };
 const getCardinalMultipartJson = (name) => {
   const path = `society:block/${name}`;

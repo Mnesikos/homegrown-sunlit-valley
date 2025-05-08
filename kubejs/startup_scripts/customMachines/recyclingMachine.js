@@ -6,6 +6,15 @@ global.recyclingMachineRecipes = [
   { input: "furniture:trash_bag", output: ["4x society:bouquet_bag"] },
   { input: "society:fire_quartz", output: ["24x minecraft:quartz"] },
   { input: "betterarcheology:artifact_shards", output: ["1x society:sparkstone"] },
+  { input: "zetter:canvas", output: ["4x society:canvas"] },
+  { input: "simplehats:hatbag_common", output: ["1x society:canvas"] },
+  { input: "simplehats:hatbag_uncommon", output: ["2x society:canvas"] },
+  { input: "simplehats:hatbag_rare", output: ["3x society:canvas"] },
+  { input: "simplehats:hatbag_epic", output: ["4x society:canvas"] },
+  { input: "simplehats:hatbag_easter", output: ["5x society:canvas"] },
+  { input: "simplehats:hatbag_summer", output: ["5x society:canvas"] },
+  { input: "simplehats:hatbag_halloween", output: ["5x society:canvas"] },
+  { input: "simplehats:hatbag_festive", output: ["5x society:canvas"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -18,7 +27,7 @@ StartupEvents.registry("block", (event) => {
     .property(
       integerProperty.create("type", 0, global.recyclingMachineRecipes.length)
     )
-    .box(2, 0, 3, 14, 15, 13)
+    .box(1, 0, 3, 15, 16, 13)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
@@ -61,7 +70,7 @@ StartupEvents.registry("block", (event) => {
     })
     .rightClick((click) => {
       global.handleBERightClick(
-        "farmersdelight:block.skillet.add_food",
+        "twigs:block.basalt_bricks.fall",
         click,
         global.recyclingMachineRecipes,
         1,

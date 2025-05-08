@@ -1,6 +1,8 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
+  e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("herbalbrews:water_cup")
     .texture("society:item/water_cup")
     .maxStackSize(16);
@@ -37,7 +39,6 @@ StartupEvents.registry("item", (e) => {
   e.create("society:fantasy_dust")
     .texture("society:item/fantasy_dust")
     .displayName(Text.yellow(":crystal_ball: Fantasy Dust"));
-
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut")

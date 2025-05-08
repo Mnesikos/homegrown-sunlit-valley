@@ -656,7 +656,7 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinating/stone",
     "extractinator:extractinating/slush",
     "extractinator:extractinating/silt",
-    "extractinator:extractinating/cobblestone", 
+    "extractinator:extractinating/cobblestone",
     "extractinator:extractinating/sand",
     "extractinator:extractinating/gravel",
     "aquaculture:tin_can_to_iron_nugget",

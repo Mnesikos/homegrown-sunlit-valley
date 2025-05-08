@@ -1,4 +1,5 @@
 global.removedItems = [
+    "treetap:tap",
     // Twigs
     "gamediscs:battery",
     "gamediscs:redstone_circuit",

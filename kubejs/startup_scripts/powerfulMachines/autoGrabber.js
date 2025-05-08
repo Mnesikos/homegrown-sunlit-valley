@@ -55,7 +55,12 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(
         Text.gray(
-          "Harvests Milk and Special items from Farm Animals.\nUses skills of player that places it."
+          "Harvests Milk and Special items from Farm Animals."
+        )
+      );
+      item.tooltip(
+        Text.gray(
+          "Uses skills of player that places it."
         )
       );
       item.tooltip(Text.lightPurple("Requires Sparkstone"));

@@ -519,7 +519,7 @@ ItemEvents.entityInteracted((e) => {
         !data.bff
       ) {
         data.bff = true;
-        item.count--;
+        if (!player.isCreative()) item.count--;
         server.runCommandSilent(
           `playsound legendarycreatures:wisp_idle block @a ${player.x} ${player.y} ${player.z}`
         );
@@ -549,7 +549,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
         data.affection = affection + 100;
-        item.count--;
+        if (!player.isCreative()) item.count--;
         server.runCommandSilent(
           `playsound aquaculture:fish_flop block @a ${player.x} ${player.y} ${player.z}`
         );

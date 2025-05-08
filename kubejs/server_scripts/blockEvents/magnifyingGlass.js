@@ -10,7 +10,8 @@ const magnifyingGlassBlocks = [
   { id: "society:gold_sprinkler", radius: 2 },
   { id: "society:diamond_sprinkler", radius: 3 },
   { id: "society:netherite_sprinkler", radius: 4 },
-  { id: "society:mana_milker", radius: 10, includeY: true }
+  { id: "society:mana_milker", radius: 10, includeY: true },
+  { id: "society:golden_clock", radius: 2, includeY: true }
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {

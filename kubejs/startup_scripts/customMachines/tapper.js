@@ -1,7 +1,40 @@
 console.info("[SOCIETY] tapper.js loaded");
 global.tapperRecipes = [
-  { input: "minecraft:spurce_log", output: ["1x society:pine_tar"], time: 5 },
-  { input: "minecraft:oak_log", output: ["1x society:oak_resin"], time: 7 },
+  {
+    input: "minecraft:spruce_log",
+    leaves: ["minecraft:spruce_leaves"],
+    output: ["1x society:pine_tar"],
+    time: 5,
+  },
+  {
+    input: "meadow:pine_log",
+    leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
+    output: ["1x society:pine_tar"],
+    time: 5,
+  },
+  {
+    input: "minecraft:oak_log",
+    output: ["1x society:oak_resin"],
+    leaves: ["minecraft:oak_leaves"],
+    time: 7,
+  },
+  {
+    input: "minecraft:dark_oak_log",
+    leaves: ["minecraft:dark_oak_leaves"],
+    output: ["1x society:oak_resin"],
+    time: 7,
+  },
+  {
+    input: "autumnity:maple_log",
+    leaves: [
+      "autumnity:maple_leaves",
+      "autumnity:orange_maple_leaves",
+      "autumnity:yellow_maple_leaves",
+      "autumnity:red_maple_leaves",
+    ],
+    output: ["1x society:maple_syrup"],
+    time: 7,
+  },
 ];
 StartupEvents.registry("block", (event) => {
   event
@@ -11,14 +44,16 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(booleanProperty.create("error"))
     .property(integerProperty.create("stage", 0, 7))
+    .property(integerProperty.create("type", 0, global.tapperRecipes.length))
     .soundType("copper")
-    .box(4, 0, 4, 12, 16, 12)
+    .box(4, 1, 8, 12, 14, 16)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
       item.tooltip(
-        Text.gray("Makes batteries from lightning storms. Doesn't protect area")
+        Text.gray("Place on tree to tap for resources")
       );
       item.modelJson({
         parent: "society:block/tapper",
@@ -30,7 +65,8 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0);
+        .set(integerProperty.create("stage", 0, 7), 0)
+        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -38,16 +74,16 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(booleanProperty.create("error"), false)
-        .set(integerProperty.create("stage", 0, 7), 0);
+        .set(integerProperty.create("stage", 0, 7), 0)
+        .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level, server } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
-      const season = global.getSeasonFromLevel(level);
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
-        if (!upgraded && item == "society:frosted_tip") {
+        if (!upgraded && item == "society:slime_gel") {
           if (!player.isCreative()) item.count--;
           level.spawnParticles(
             "farmersdelight:star",
@@ -65,77 +101,35 @@ StartupEvents.registry("block", (event) => {
             working: block.properties.get("working"),
             mature: block.properties.get("mature"),
             upgraded: true,
+            error: block.properties.get("error"),
             stage: block.properties.get("stage"),
           });
         }
       }
-      if (block.properties.get("mature").toLowerCase() === "true") {
-        block.popItemFromFace(
-          Item.of(
-            `${upgraded && season === "winter" ? 3 : 1}x society:battery`
-          ),
-          "up"
-        );
-        server.runCommandSilent(
-          `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:farming 15`
-        );
-        block.set(block.id, {
-          working: false,
-          mature: false,
-          upgraded: block.properties.get("upgraded"),
-          stage: "0",
-        });
-      }
+      global.handleBERightClick(
+        "vinery:cabinet_close",
+        click,
+        global.tapperRecipes,
+        7,
+        false,
+        false,
+        false,
+        true
+      );
+
     })
     .randomTick((tick) => {
-      const { block, level } = tick;
-      const { x, y, z } = block;
-      const upgraded = block.properties.get("upgraded") == "true";
-
-      if (
-        block.properties.get("working").toLowerCase() === "false" &&
-        block.properties.get("mature").toLowerCase() === "false"
-      ) {
-        const season = global.getSeasonFromLevel(level);
-        if (
-          (!upgraded && season === "winter") ||
-          !level.raining ||
-          !block.canSeeSky
-        )
-          return;
-        if (season !== "winter" && !level.thundering) return;
-        level.spawnParticles(
-          "minecraft:campfire_cosy_smoke",
-          true,
-          x + 0.5,
-          y + 1,
-          z + 0.5,
-          0.1 * rnd(1, 2),
-          0.1 * rnd(1, 2),
-          0.1 * rnd(1, 2),
-          rnd(1, 4),
-          0.1
-        );
-        Utils.server.runCommandSilent(
-          `execute in ${level.dimension} run summon lightning_bolt ${block.x} ${block.y} ${block.z}`
-        );
-        block.set(block.id, {
-          working: true,
-          mature: false,
-          upgraded: upgraded,
-          stage: "0",
-        });
-      }
+      global.handleTapperRandomTick(tick)
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(entity, null, 5);
+        if (entity.block.properties.get("error") !== "true") global.handleBETick(entity, global.tapperRecipes, 7);
       });
     }).blockstateJson = {
     multipart: [
+      {
+        apply: { model: "society:block/tapper_particle" },
+      },
       {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
@@ -144,6 +138,6 @@ StartupEvents.registry("block", (event) => {
         when: { error: true },
         apply: { model: "society:block/error" },
       },
-  ].concat(getCardinalMultipartJsonBasic("tapper")),
+    ].concat(getCardinalMultipartJsonBasic("tapper")),
   };
 });

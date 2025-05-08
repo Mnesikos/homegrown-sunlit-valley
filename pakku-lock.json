@@ -8309,6 +8309,43 @@
             ]
         },
         {
+            "pakku_id": "RmYbwleoqp74F1bQ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rotten-creatures"
+            },
+            "name": {
+                "curseforge": "Rotten Creatures"
+            },
+            "id": {
+                "curseforge": "371033"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "rottencreatures-forge-1.20.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6336/745/rottencreatures-forge-1.20.1-1.1.0.jar",
+                    "id": "6336745",
+                    "parent_id": "371033",
+                    "hashes": {
+                        "sha1": "def7db68bb8a89bdbbda7d9eee85778f93b5884c",
+                        "md5": "b93a055c1819d1c24cf3bf4d4ca490e3"
+                    },
+                    "required_dependencies": [],
+                    "size": 2595007,
+                    "date_published": "2025-03-23T19:38:15.693Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Cub2qq5lbAsk5e9x",
             "type": "MOD",
             "slug": {
