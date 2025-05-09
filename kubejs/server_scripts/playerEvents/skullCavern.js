@@ -4,7 +4,7 @@ console.info("[SOCIETY] skullCavern.js loaded");
    const player = e.player;
    if (
      player.age % 200 == 0 &&
-     player.level.dimension === "mining_dimension:mining"
+     player.level.dimension === "society:skull_cavern"
    ) {
      const timeModulo = player.level.dayTime() % 24000;
      const server = player.getServer();

@@ -14,7 +14,7 @@
 // // }
 // global.chunkLoadManager = (e) => {
 //   const { chunk, level } = e;
-//   if (level.dimension === "mining_dimension:mining" && !level.isClientSide()) {
+//   if (level.dimension === "society:skull_cavern" && !level.isClientSide()) {
 //     const day = (level.time / 24000).toFixed(0);
 //     // const chunkToRead = ChunkSerializer.read(level, chunk)
 //     // const chunkDay = ChunkSerializer.read(level, null, chunk.pos, "day");

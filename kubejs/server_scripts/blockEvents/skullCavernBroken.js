@@ -18,7 +18,7 @@ BlockEvents.broken(
   (e) => {
     const { level, block, server } = e;
     const pos = block.getPos();
-    if (level.dimension === "mining_dimension:mining") {
+    if (level.dimension === "society:skull_cavern") {
       server.scheduleInTicks(5, () => {
         if (level.getBlock(pos) == "minecraft:air") {
           block.set("society:cavern_air", {
@@ -47,7 +47,7 @@ BlockEvents.broken(
   (e) => {
     const { level, block, server } = e;
     const pos = block.getPos();
-    if (level.dimension === "mining_dimension:mining") {
+    if (level.dimension === "society:skull_cavern") {
       server.scheduleInTicks(5, () => {
         if (level.getBlock(pos) == "minecraft:air") {
           block.set("society:cavern_air", {
@@ -68,7 +68,7 @@ BlockEvents.broken(
   (e) => {
     const { level, block, server } = e;
     const pos = block.getPos();
-    if (level.dimension === "mining_dimension:mining") {
+    if (level.dimension === "society:skull_cavern") {
       server.scheduleInTicks(5, () => {
         if (level.getBlock(pos) == "minecraft:air") {
           block.set("society:cavern_air", {

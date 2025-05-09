@@ -21,7 +21,6 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
-
         let mana = entity.persistentData.getInt("mana");
         inventory.allItems;
         let nearbyFarmAnimals;

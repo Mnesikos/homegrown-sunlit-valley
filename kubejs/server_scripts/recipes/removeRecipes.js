@@ -399,7 +399,7 @@ ServerEvents.recipes((e) => {
     "extractinator:extractinator",
     "create:mechanical_harvester",
     "create:brown_toolbox",
-    "mining_dimension:teleporter",
+    "society:teleporter",
     "minecraft:flint_and_steel",
     // Armorer
     "sophisticatedbackpacks:stack_upgrade_tier_4",
