@@ -350,7 +350,7 @@ ServerEvents.tags("item", (e) => {
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
   });
-  const mirrors = [
+  [
     "furniture:cherry_mirror",
     "furniture:mangrove_mirror",
     "furniture:dark_oak_mirror",
@@ -359,9 +359,11 @@ ServerEvents.tags("item", (e) => {
     "furniture:jungle_mirror",
     "furniture:oak_mirror",
     "furniture:birch_mirror",
-  ];
-  mirrors.forEach((mirror) => {
+  ].forEach((mirror) => {
     e.add("society:mirrors", mirror);
+  });
+  ['society:oak_resin', 'society:maple_syrup', 'society:pine_tar'].forEach((bottle) => {
+    e.add('create:upright_on_belt', bottle);
   });
   // Geodes
   const geodeJunk = [
