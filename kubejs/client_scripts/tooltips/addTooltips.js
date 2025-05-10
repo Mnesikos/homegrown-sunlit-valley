@@ -511,6 +511,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:kinetic_blueprint",
     Text.gold(":classical_building: Boiler Room reward")
   );
+    tooltip.add(
+    "botania:apothecary_default",
+    Text.gold(":classical_building: Abandoned Farm reward")
+  );
   tooltip.add(
     "mining_dimension:teleporter",
     Text.gold(":classical_building: Vault reward")
@@ -721,6 +725,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(gem.item, Text.gray(":gem: Gem"));
   });
   [
+    "society:sparkstone",
     "minecraft:emerald",
     "minecraft:diamond",
     "minecraft:amethyst_shard",
@@ -929,9 +934,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Not placeable in Wine Racks")
   );
   global.removedItems.forEach((item) => {
-    tooltip.add(
-      item,
-      Text.red("REMOVED! You shouldn't have this...")
-    );
+    tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
   });
 });

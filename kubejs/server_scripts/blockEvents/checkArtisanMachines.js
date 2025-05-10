@@ -1,4 +1,4 @@
-console.info("[SOCIETY] checkArtisanMachines.js.js loaded");
+console.info("[SOCIETY] checkArtisanMachines.js loaded");
 
 const idMap = new Map([
   ["vinery:savanna_grape_seeds_red", "Red Savanna Grape Seeds"],

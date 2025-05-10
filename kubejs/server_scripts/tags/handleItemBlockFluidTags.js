@@ -1,5 +1,5 @@
 // priority: 0
-console.info("[SOCIETY] handleItemBlockFluidTags.js.js loaded");
+console.info("[SOCIETY] handleItemBlockFluidTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
@@ -209,6 +209,10 @@ const rawLogs = [
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
+  e.add('forge:plates/lead', 'oreganized:lead_sheet')
+  e.add('forge:plates', 'oreganized:lead_sheet')
+  e.add('forge:plates/silver', 'oreganized:silver_sheet')
+  e.add('forge:plates', 'oreganized:silver_sheet')
   e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:salt", "meadow:alpine_salt");
   e.add("forge:crops", "society:tubabbaco");

@@ -8,6 +8,7 @@ const GLOBAL_BANK = NUMISMATICS.BANK;
 const updateLeaderboardMap = (server) => {
   let playerName;
   let playerList = server.persistentData.playerList;
+  if (!playerList) return undefined
   let leaderboardMap = new Map();
   GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     playerName = playerList[playerUUID];
@@ -43,7 +44,7 @@ global.updateLeaderboard = (block, server) => {
   let entity;
   let calcY = y + 1;
   let leaderboardMap = updateLeaderboardMap(server);
-
+  if (!leaderboardMap) return;
   clearOldLeaderboard(block);
 
   // Display leaderboard name

@@ -4,24 +4,28 @@ global.tapperRecipes = [
     input: "minecraft:spruce_log",
     leaves: ["minecraft:spruce_leaves"],
     output: ["1x society:pine_tar"],
+    liquidOutput: "society:pine_tar",
     time: 5,
   },
   {
     input: "meadow:pine_log",
     leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
     output: ["1x society:pine_tar"],
+    liquidOutput: "society:pine_tar",
     time: 5,
   },
   {
     input: "minecraft:oak_log",
     output: ["1x society:oak_resin"],
     leaves: ["minecraft:oak_leaves"],
+    liquidOutput: "society:oak_resin",
     time: 7,
   },
   {
     input: "minecraft:dark_oak_log",
     leaves: ["minecraft:dark_oak_leaves"],
     output: ["1x society:oak_resin"],
+    liquidOutput: "society:oak_resin",
     time: 7,
   },
   {
@@ -33,9 +37,18 @@ global.tapperRecipes = [
       "autumnity:red_maple_leaves",
     ],
     output: ["1x society:maple_syrup"],
+    liquidOutput: "society:maple_syrup",
     time: 7,
   },
+  {
+    input: "minecraft:acacia_log",
+    leaves: ["minecraft:acacia_leaves"],
+    output: ["4x society:sap"],
+    liquidOutput: "create_central_kitchen:sap",
+    time: 1,
+  }
 ];
+
 StartupEvents.registry("block", (event) => {
   event
     .create("society:tapper", "cardinal")
@@ -78,7 +91,7 @@ StartupEvents.registry("block", (event) => {
         .set(integerProperty.create("type", 0, global.tapperRecipes.length), 0);
     })
     .rightClick((click) => {
-      const { player, item, block, hand, level, server } = click;
+      const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
 
       if (hand == "OFF_HAND") return;

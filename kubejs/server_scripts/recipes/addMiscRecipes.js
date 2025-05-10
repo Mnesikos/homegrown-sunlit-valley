@@ -5,6 +5,7 @@ ServerEvents.recipes((e) => {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
   });
+  e.smelting('society:rubber', 'society:sap')
   e.custom({
     type: "farmersdelight:cutting",
     ingredients: [{ item: "herbalbrews:lavender" }],
@@ -78,7 +79,8 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     s: "meadow:alpine_salt",
   });
-  e.shaped("society:loom", ["t  ", "t  ", "ttt"], {
+  e.shaped("society:loom", ["l  ", "l  ", "ltl"], {
+    l: "meadow:fire_log",
     t: "society:treated_log",
   });
   e.shaped("minecraft:beehive", ["ppp", "hhh", "pop"], {
@@ -322,10 +324,9 @@ ServerEvents.recipes((e) => {
     c: "minecraft:netherite_upgrade_smithing_template",
   });
   // Fish
-  e.shaped("society:fish_pond", ["rNr", "PwP", "rCr"], {
+  e.shaped("society:fish_pond", ["PwP", "rNr"], {
     N: "aquaculture:neptunium_ingot",
     P: "crabbersdelight:pearl",
-    C: "numismatics:sun",
     r: "society:oak_resin",
     w: "meadow:wooden_water_bucket",
   });
@@ -365,7 +366,7 @@ ServerEvents.recipes((e) => {
   });
 
   // Jade
-  e.shaped("society:aging_cask", ["SjS", "pbp", "SpS"], {
+  e.shaped("society:aging_cask", ["SjS", "pbp", "SSS"], {
     b: "vinery:fermentation_barrel",
     S: "numismatics:sun",
     j: "society:jade",
@@ -392,11 +393,11 @@ ServerEvents.recipes((e) => {
   // Dramatic Doors
   e.shapeless("dramaticdoors:short_silver_door", [
     "dramaticdoors:short_iron_door",
-    "minecraft:light_blue_dye",
+    "oreganized:silver_ingot",
   ]);
   e.shapeless("dramaticdoors:tall_silver_door", [
     "dramaticdoors:tall_iron_door",
-    "minecraft:light_blue_dye",
+    "oreganized:silver_ingot",
   ]);
   // Neptuna
   e.custom({

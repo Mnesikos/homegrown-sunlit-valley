@@ -48,6 +48,7 @@ const handleSpecialItem = (
 StartupEvents.registry("block", (event) => {
   event
     .create("society:auto_grabber", "cardinal")
+    .displayName("Auto-Grabber")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
@@ -60,9 +61,10 @@ StartupEvents.registry("block", (event) => {
       );
       item.tooltip(
         Text.gray(
-          "Uses skills of player that places it."
+          "Uses the skills of player that places it."
         )
       );
+      item.tooltip(Text.green(`Area: 5x5`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
         parent: "society:block/auto_grabber",

@@ -3,6 +3,7 @@ console.info("[SOCIETY] autoTapper.js loaded");
 StartupEvents.registry("block", (event) => {
   event
     .create("society:auto_tapper", "cardinal")
+    .displayName("Auto-Tapper")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
@@ -10,7 +11,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Collects Tapper resources automatically."));
       item.tooltip(
-        Text.gray("Stores tapped fluid in its tank to be pumped out.")
+        Text.gray("Tapped fluid in its tank must be pumped out.")
       );
       item.modelJson({
         parent: "society:block/auto_tapper",
@@ -37,9 +38,8 @@ StartupEvents.registry("block", (event) => {
             const fluidData = blockInfo.persistentData.getInt("Fluid");
             const filled = Math.min(10000 - fluidData, fluid.getAmount());
             if (!sim) {
-              console.log(fluid.getFluidStack().toString());
-              console.log(fluid.getFluidStack().getName());
-              console.log(fluid.getFluid());
+              console.log(fluid.getFluid().fluidType);
+              console.log(fluid.getFluid().getFluidType().descriptionId);
               blockInfo.persistentData.putString(
                 "FluidType",
                 "society:pine_tar"
@@ -61,14 +61,14 @@ StartupEvents.registry("block", (event) => {
 global.runAutoTapper = (blockInfo) => {
   const { block } = blockInfo;
 
-  console.log("yeet");
+  // console.log("yeet");
   const fluidHandler = blockInfo
     .getCapability(ForgeCapabilities.FLUID_HANDLER)
     .orElse(null);
   const blockData = blockInfo.persistentData;
-  console.log("yoot");
-  console.log(blockData);
-  console.log(fluidHandler.getFluidInTank(0));
+  // console.log("yoot");
+  // console.log(blockData);
+  // console.log(fluidHandler.getFluidInTank(0));
   blockData.putString("FluidType", "society:pine_tar");
   fluidHandler.fill(Fluid.of("society:pine_tar", 100), "execute");
 };
