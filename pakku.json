@@ -1,6 +1,6 @@
 {
     "name": "Society Capital Hill",
-    "version": "2.6.1",
+    "version": "2.6.2",
     "overrides": [
         "config",
         "defaultconfigs",
