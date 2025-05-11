@@ -101,9 +101,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 8))
-    .property(
-      integerProperty.create("type", 0, global.dehydratorRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.dehydratorRecipes.length))
     .box(1, 0, 4, 15, 16, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -121,10 +119,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 8), 0)
-        .set(
-          integerProperty.create("type", 0, global.dehydratorRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -132,10 +127,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 8), 0)
-        .set(
-          integerProperty.create("type", 0, global.dehydratorRecipes.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.dehydratorRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -170,9 +162,7 @@ StartupEvents.registry("block", (event) => {
       }
       if (upgraded && block.properties.get("mature") === "true") {
         let recipe =
-          global.dehydratorRecipes[
-            Number(block.properties.get("type").toLowerCase()) - 1
-          ];
+          global.dehydratorRecipes[Number(block.properties.get("type").toLowerCase()) - 1];
         recipe.output.forEach((id) => {
           if (global.dehydratableMushrooms.includes(recipe.input)) {
             block.popItemFromFace(Item.of(id), facing);
@@ -184,9 +174,7 @@ StartupEvents.registry("block", (event) => {
         click,
         global.dehydratorRecipes,
         8,
-        true,
-        false,
-        false
+        true
       );
     })
     .blockEntity((blockInfo) => {
@@ -202,7 +190,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-    ]
-      .concat(getCardinalMultipartJson("dehydrator"))
+    ].concat(getCardinalMultipartJson("dehydrator")),
   };
 });

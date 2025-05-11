@@ -72,9 +72,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 5))
-    .property(
-      integerProperty.create("type", 0, global.crystalariumCrystals.length)
-    )
+    .property(integerProperty.create("type", 0, global.crystalariumCrystals.length))
     .box(2, 0, 2, 14, 16, 14)
     .defaultCutout()
     .soundType("stone")
@@ -93,10 +91,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 5), 0)
-        .set(
-          integerProperty.create("type", 0, global.crystalariumCrystals.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.crystalariumCrystals.length), 0);
     })
     .placementState((state) => {
       state
@@ -104,10 +99,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 5), 0)
-        .set(
-          integerProperty.create("type", 0, global.crystalariumCrystals.length),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.crystalariumCrystals.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
@@ -152,17 +144,12 @@ StartupEvents.registry("block", (event) => {
         "minecraft:block.amethyst_block.step",
         click,
         global.crystalariumCrystals,
-        5,
-        false
+        5
       );
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.handleBETick(
-          entity,
-          global.crystalariumCrystals,
-          5
-        );
+        global.handleBETick(entity, global.crystalariumCrystals, 5);
       });
     }).blockstateJson = {
     multipart: [

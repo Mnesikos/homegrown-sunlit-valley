@@ -1,6 +1,5 @@
 console.info("[SOCIETY] goldenClock.js loaded");
 
-// TODO: Add more machines
 global.handleProgress = (level, block) => {
   const eventObj = { level: level, block: block };
   let id = block.id;
@@ -9,25 +8,13 @@ global.handleProgress = (level, block) => {
       global.handleBETick(eventObj, global.loomRecipes, 1, false, true);
       break;
     case "society:mayonnaise_machine":
-      global.handleBETick(
-        eventObj,
-        global.mayonnaiseMachineRecipes,
-        1,
-        false,
-        true
-      );
+      global.handleBETick(eventObj, global.mayonnaiseMachineRecipes, 1, false, true);
       break;
     case "society:preserves_jar":
-      global.handleBETick(eventObj, global.preservesJarRecipes, 4, false, true);
+      global.handleBETick(eventObj, global.preservesJarRecipes, 3, false, true);
       break;
     case "society:crystalarium":
-      global.handleBETick(
-        eventObj,
-        global.crystalariumCrystals,
-        5,
-        false,
-        true
-      );
+      global.handleBETick(eventObj, global.crystalariumCrystals, 5, false, true);
       break;
     case "society:aging_cask":
       global.handleBETick(eventObj, global.agingCaskRecipes, 10, true, true);
@@ -50,6 +37,15 @@ global.handleProgress = (level, block) => {
     case "society:bait_maker":
       global.handleBETick(eventObj, global.baitMakerRecipes, 1, false, true);
       break;
+    case "society:recycling_machine":
+      global.handleBETick(eventObj, global.recyclingMachineRecipes, 1, false, true);
+      break;
+    case "society:bait_maker":
+      global.handleBETick(eventObj, global.tapperRecipes, 7, false, false, false, true);
+      break;
+    case "society:charging_rod":
+      global.handleBETick(eventObj, null, 5);
+      break;
     default:
       console.log("Invalid artisan machine!");
   }
@@ -64,9 +60,8 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Randomly progresses artisan machines in a 5x5x5 area")
-      );
+      item.tooltip(Text.gray("Randomly progresses artisan machines around it."));
+      item.tooltip(Text.green(`Area: 5x5`));
       item.modelJson({
         parent: "society:block/golden_clock",
       });
@@ -78,10 +73,11 @@ StartupEvents.registry("block", (event) => {
       const radius = 2;
       let scanBlock;
       if (rnd5()) {
-        for (let pos of BlockPos.betweenClosed(
-          new BlockPos(x - radius, y - radius, z - radius),
-          [x + radius, y + radius, z + radius]
-        )) {
+        for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+          x + radius,
+          y + radius,
+          z + radius,
+        ])) {
           scanBlock = level.getBlock(pos);
           if (scanBlock.hasTag("society:golden_clock_advanced")) {
             global.handleProgress(level, scanBlock);

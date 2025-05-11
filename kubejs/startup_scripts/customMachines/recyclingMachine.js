@@ -5,7 +5,10 @@ global.recyclingMachineRecipes = [
   { input: "aquaculture:driftwood", output: ["1x meadow:fire_log"] },
   { input: "furniture:trash_bag", output: ["4x society:bouquet_bag"] },
   { input: "society:fire_quartz", output: ["24x minecraft:quartz"] },
-  { input: "betterarcheology:artifact_shards", output: ["1x society:sparkstone"] },
+  {
+    input: "betterarcheology:artifact_shards",
+    output: ["2x society:sparkstone"],
+  },
   { input: "zetter:canvas", output: ["4x society:canvas"] },
   { input: "simplehats:hatbag_common", output: ["1x society:canvas"] },
   { input: "simplehats:hatbag_uncommon", output: ["2x society:canvas"] },
@@ -24,9 +27,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 1))
-    .property(
-      integerProperty.create("type", 0, global.recyclingMachineRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.recyclingMachineRecipes.length))
     .box(1, 0, 3, 15, 16, 13)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -44,14 +45,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 1), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.recyclingMachineRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.recyclingMachineRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -59,24 +53,14 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 1), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.recyclingMachineRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.recyclingMachineRecipes.length), 0);
     })
     .rightClick((click) => {
       global.handleBERightClick(
         "twigs:block.basalt_bricks.fall",
         click,
         global.recyclingMachineRecipes,
-        1,
-        false,
-        false,
-        false
+        1
       );
     })
     .blockEntity((blockInfo) => {

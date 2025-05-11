@@ -12,12 +12,7 @@ const calculateQualityValue = (number, quality) => {
   return value;
 };
 
-global.processShippingBinInventory = (
-  inventory,
-  inventorySlots,
-  attributes,
-  returnRemoved
-) => {
+global.processShippingBinInventory = (inventory, inventorySlots, attributes, returnRemoved) => {
   let calculatedValue = 0;
   let removedItems = [];
   let slotItem;
@@ -25,26 +20,17 @@ global.processShippingBinInventory = (
     slotItem = inventory.getStackInSlot(i).item;
     if (
       global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
-        slotItem.id
-      )
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id)
     ) {
       let trade = global.trades.get(String(slotItem.id));
-      console.log(trade);
       let quality;
       let slotNbt;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (
-        slotNbt &&
-        ((slotNbt.slime && slotNbt.slime.id) ||
-          (slotNbt.plort && slotNbt.plort.id))
-      ) {
-        if (slotNbt.slime)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
+        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
 
       if (slotNbt && slotNbt.quality_food) {
@@ -140,8 +126,7 @@ const hasWoolTag = (tags) => {
 
 const setQuality = (newProperties, itemQuality) => {
   if (
-    (Number(newProperties.quality) === 0 &&
-      Number(newProperties.stage) === 0) ||
+    (Number(newProperties.quality) === 0 && Number(newProperties.stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
@@ -161,6 +146,52 @@ const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
   );
 };
 
+global.artisanHarvest = (
+  block,
+  newProperties,
+  recipes,
+  stageCount,
+  outputMult,
+  artisanHopper,
+  server,
+  player
+) => {
+  const hasQuality = newProperties.quality && newProperties.quality !== "0";
+  if (block.properties.get("mature").toLowerCase() === "true") {
+    let harvestOutput;
+    if (!artisanHopper) {
+      server.runCommandSilent(
+        `puffish_skills experience add ${player.username} society:farming ${stageCount * 20}`
+      );
+      server.runCommandSilent(
+        `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+      );
+    }
+    recipes[Number(block.properties.get("type").toLowerCase()) - 1].output.forEach((id) => {
+      if (outputMult) {
+        harvestOutput = Item.of(
+          id.replace("1x ", `${outputMult}x `),
+          hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
+        );
+      } else {
+        harvestOutput = Item.of(
+          id,
+          hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
+        );
+      }
+      if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
+      newProperties.type = "0";
+      newProperties.working = false;
+      newProperties.mature = false;
+      newProperties.stage = "0";
+      if (newProperties.duration) newProperties.duration = "0";
+      if (newProperties.quality) newProperties.quality = "0";
+      block.set(block.id, newProperties);
+    });
+    if (artisanHopper) return harvestOutput;
+  }
+};
+
 global.handleBERightClick = (
   stockSound,
   clickEvent,
@@ -173,57 +204,24 @@ global.handleBERightClick = (
 ) => {
   const { item, block, hand, player, level, server } = clickEvent;
   let blockStage = block.properties.get("stage").toLowerCase();
-  const facing = block.properties.get("facing");
   let newProperties = block.getProperties();
-  const hasQuality = newProperties.quality && newProperties.quality !== "0";
   const itemNbt = item.nbt;
   let itemQuality;
   // Prevent Deployers from using artisan machines
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    if (block.properties.get("mature").toLowerCase() === "true") {
-      //reset block and drop items
-      server.runCommandSilent(
-        `puffish_skills experience add ${player.username} society:farming ${
-          stageCount * 20
-        }`
-      );
-      server.runCommandSilent(
-        `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
-      );
-      recipes[
-        Number(block.properties.get("type").toLowerCase()) - 1
-      ].output.forEach((id) => {
-        if (outputMult) {
-          block.popItemFromFace(
-            Item.of(
-              id.replace("1x ", `${outputMult}x `),
-              hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
-            ),
-            facing
-          );
-        } else {
-          block.popItemFromFace(
-            Item.of(
-              id,
-              hasQuality
-                ? `{quality_food:{quality:${newProperties.quality}}}`
-                : null
-            ),
-            facing
-          );
-        }
-        newProperties.type = "0";
-        newProperties.working = false;
-        newProperties.mature = false;
-        newProperties.stage = "0";
-        if (newProperties.duration) newProperties.duration = "0";
-        if (newProperties.quality) newProperties.quality = "0";
-        block.set(block.id, newProperties);
-      });
-    }
-    
+    global.artisanHarvest(
+      block,
+      newProperties,
+      recipes,
+      stageCount,
+      outputMult,
+      false,
+      server,
+      player
+    );
+
     if (!disableInput) {
       newProperties = block.getProperties();
       blockStage = block.properties.get("stage").toLowerCase();
@@ -244,8 +242,7 @@ global.handleBERightClick = (
           }
           if (multipleInputs) {
             if (item.count >= stageCount - Number(blockStage)) {
-              if (!player.isCreative())
-                item.count = item.count - (stageCount - Number(blockStage));
+              if (!player.isCreative()) item.count = item.count - (stageCount - Number(blockStage));
               if (itemQuality) setQuality(newProperties, itemQuality);
               newProperties.stage = stageCount.toString();
             } else {
@@ -259,12 +256,8 @@ global.handleBERightClick = (
               newProperties.quality = itemQuality;
             }
           }
-          if (newProperties.duration)
-            newProperties.duration = String(recipe.time);
-          if (
-            !multipleInputs ||
-            newProperties.stage === stageCount.toString()
-          ) {
+          if (newProperties.duration) newProperties.duration = String(recipe.time);
+          if (!multipleInputs || newProperties.stage === stageCount.toString()) {
             newProperties.working = true;
             newProperties.stage = "0";
           }
@@ -287,40 +280,51 @@ const getOpposite = (facing, pos) => {
   }
 };
 
-global.handleTapperRandomTick = (tickEvent) => {
+global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
   const facing = block.properties.get("facing");
   let newProperties = block.getProperties();
   let behindPos = getOpposite(facing, block.getPos());
   const attachedBlock = level.getBlock(behindPos);
+  let foundFluidData = undefined;
   if (attachedBlock.hasTag("society:tappable_blocks")) {
     if (
-      block.properties.get("working").toLowerCase() === "false" &&
-      block.properties.get("mature").toLowerCase() === "false"
+      returnFluidData ||
+      (block.properties.get("working").toLowerCase() === "false" &&
+        block.properties.get("mature").toLowerCase() === "false")
     ) {
-      global.tapperRecipes.forEach((recipe, index) => {
-        if (
-          getCanTakeItems(attachedBlock, block.properties, recipe, index, false)
-        ) {
-          newProperties = block.getProperties();
-          successParticles(level, block);
-          server.runCommandSilent(
-            `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
-          );
-          newProperties.type = String(index + 1);
-          newProperties.working = false;
-          newProperties.mature = false;
-          newProperties.duration = String(recipe.time);
-          newProperties.working = true;
-          newProperties.stage = "0";
-        }
-      });
+      global.tapperRecipes &&
+        global.tapperRecipes.forEach((recipe, index) => {
+          if (returnFluidData && !foundFluidData && attachedBlock.getId() === recipe.input) {
+            foundFluidData = { fluid: recipe.fluidOutput, time: recipe.time };
+          }
+          if (
+            !returnFluidData &&
+            getCanTakeItems(attachedBlock.getId(), block.properties, recipe, index, false)
+          ) {
+            newProperties = block.getProperties();
+            successParticles(level, block);
+            server.runCommandSilent(
+              `playsound vinery:cabinet_close block @a ${block.x} ${block.y} ${block.z}`
+            );
+            newProperties.type = String(index + 1);
+            newProperties.working = false;
+            newProperties.mature = false;
+            newProperties.duration = String(recipe.time);
+            newProperties.working = true;
+            newProperties.stage = "0";
+          }
+        });
+    }
+    if (returnFluidData) {
+      return foundFluidData;
     }
     newProperties.error = false;
     block.set(block.id, newProperties);
   } else {
     newProperties.error = true;
     block.set(block.id, newProperties);
+    if (returnFluidData) return undefined;
   }
 };
 
@@ -359,12 +363,10 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
 
   if (
     forced ||
-    (morningModulo >= artMachineProgTime &&
-      morningModulo < artMachineProgTime + artMachineTickRate)
+    (morningModulo >= artMachineProgTime && morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
     let resolvedStageCount =
-      (recipes &&
-        recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
+      (recipes && recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
       stageCount;
 
     const blockStage = blockProperties.get("stage").toLowerCase();
@@ -396,10 +398,7 @@ global.insertBelow = (level, block, item) => {
   if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
-      if (
-        belowItem === Item.of(item) &&
-        belowItem.count < belowBlock.inventory.getSlotLimit(j)
-      ) {
+      if (belowItem === Item.of(item) && belowItem.count < belowBlock.inventory.getSlotLimit(j)) {
         belowBlock.inventory.insertItem(j, item, false);
         return 1;
       }

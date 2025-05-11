@@ -4,28 +4,28 @@ global.tapperRecipes = [
     input: "minecraft:spruce_log",
     leaves: ["minecraft:spruce_leaves"],
     output: ["1x society:pine_tar"],
-    liquidOutput: "society:pine_tar",
+    fluidOutput: "society:pine_tar",
     time: 5,
   },
   {
     input: "meadow:pine_log",
     leaves: ["meadow:pine_leaves", "meadow:pine_leaves_2"],
     output: ["1x society:pine_tar"],
-    liquidOutput: "society:pine_tar",
+    fluidOutput: "society:pine_tar",
     time: 5,
   },
   {
     input: "minecraft:oak_log",
     output: ["1x society:oak_resin"],
     leaves: ["minecraft:oak_leaves"],
-    liquidOutput: "society:oak_resin",
+    fluidOutput: "society:oak_resin",
     time: 7,
   },
   {
     input: "minecraft:dark_oak_log",
     leaves: ["minecraft:dark_oak_leaves"],
     output: ["1x society:oak_resin"],
-    liquidOutput: "society:oak_resin",
+    fluidOutput: "society:oak_resin",
     time: 7,
   },
   {
@@ -37,16 +37,16 @@ global.tapperRecipes = [
       "autumnity:red_maple_leaves",
     ],
     output: ["1x society:maple_syrup"],
-    liquidOutput: "society:maple_syrup",
+    fluidOutput: "society:maple_syrup",
     time: 7,
   },
   {
     input: "minecraft:acacia_log",
     leaves: ["minecraft:acacia_leaves"],
     output: ["4x society:sap"],
-    liquidOutput: "create_central_kitchen:sap",
+    fluidOutput: "create_central_kitchen:sap",
     time: 1,
-  }
+  },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -65,9 +65,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Place on tree to tap for resources")
-      );
+      item.tooltip(Text.gray("Place on tree to tap for resources"));
       item.modelJson({
         parent: "society:block/tapper",
       });
@@ -129,14 +127,14 @@ StartupEvents.registry("block", (event) => {
         false,
         true
       );
-
     })
     .randomTick((tick) => {
-      global.handleTapperRandomTick(tick)
+      global.handleTapperRandomTick(tick);
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        if (entity.block.properties.get("error") !== "true") global.handleBETick(entity, global.tapperRecipes, 7);
+        if (entity.block.properties.get("error") !== "true")
+          global.handleBETick(entity, global.tapperRecipes, 7);
       });
     }).blockstateJson = {
     multipart: [

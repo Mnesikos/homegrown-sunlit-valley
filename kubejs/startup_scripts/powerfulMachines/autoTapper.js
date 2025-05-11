@@ -6,18 +6,22 @@ StartupEvents.registry("block", (event) => {
     .displayName("Auto-Tapper")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 16, 16, 16)
+    .property(booleanProperty.create("error"))
+    .defaultState((state) => {
+      state.set(booleanProperty.create("error"), false);
+    })
+    .placementState((state) => {
+      state.set(booleanProperty.create("error"), false);
+    })
+    .box(0, 0, 0, 16, 18, 16)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Collects Tapper resources automatically."));
-      item.tooltip(
-        Text.gray("Tapped fluid in its tank must be pumped out.")
-      );
+      item.tooltip(Text.gray("Tapped fluid in its tank must be pumped out."));
       item.modelJson({
         parent: "society:block/auto_tapper",
       });
     })
-    .model("society:block/auto_tapper")
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ Fluid: 0, FluidType: "" });
       blockInfo.serverTick(200, 0, (entity) => {
@@ -38,13 +42,20 @@ StartupEvents.registry("block", (event) => {
             const fluidData = blockInfo.persistentData.getInt("Fluid");
             const filled = Math.min(10000 - fluidData, fluid.getAmount());
             if (!sim) {
-              console.log(fluid.getFluid().fluidType);
-              console.log(fluid.getFluid().getFluidType().descriptionId);
-              blockInfo.persistentData.putString(
-                "FluidType",
-                "society:pine_tar"
-              );
-              blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+              const storedFluidId =
+                blockInfo.persistentData.getString("FluidType");
+              const incomingFluidId = fluid.getId();
+              if (storedFluidId === "" || fluidData === 0) {
+                blockInfo.persistentData.putString(
+                  "FluidType",
+                  incomingFluidId
+                );
+                blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+              } else if (storedFluidId === incomingFluidId) {
+                blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+              } else {
+                return (filled = 0);
+              }
             }
             return filled;
           })
@@ -56,19 +67,34 @@ StartupEvents.registry("block", (event) => {
             return drained;
           })
       );
-    });
+    }).blockstateJson = {
+    multipart: [
+      {
+        apply: { model: "society:block/auto_tapper_particle" },
+      },
+      {
+        when: { error: true },
+        apply: { model: "society:block/error" },
+      },
+    ].concat(getCardinalMultipartJsonBasic("auto_tapper")),
+  };
 });
 global.runAutoTapper = (blockInfo) => {
-  const { block } = blockInfo;
+  const { block, level, server } = blockInfo;
 
-  // console.log("yeet");
   const fluidHandler = blockInfo
     .getCapability(ForgeCapabilities.FLUID_HANDLER)
     .orElse(null);
   const blockData = blockInfo.persistentData;
-  // console.log("yoot");
-  // console.log(blockData);
-  // console.log(fluidHandler.getFluidInTank(0));
-  blockData.putString("FluidType", "society:pine_tar");
-  fluidHandler.fill(Fluid.of("society:pine_tar", 100), "execute");
+  const fluidData = global.handleTapperRandomTick(
+    { block: block, level: level, server: server },
+    true
+  );
+  // console.log(fluidData);
+  if (fluidData) {
+    fluidHandler.fill(
+      Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)),
+      "execute"
+    );
+  }
 };

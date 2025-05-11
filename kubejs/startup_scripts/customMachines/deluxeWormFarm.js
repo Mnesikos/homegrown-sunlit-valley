@@ -14,9 +14,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 4))
-    .property(
-      integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length))
     .box(2, 0, 2, 14, 15, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -34,14 +32,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 4), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.deluxeWormFarmRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length), 0);
     })
     .placementState((state) => {
       state
@@ -49,14 +40,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 4), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.deluxeWormFarmRecipes.length
-          ),
-          0
-        );
+        .set(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length), 0);
     })
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;

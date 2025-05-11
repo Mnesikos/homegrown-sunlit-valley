@@ -584,6 +584,75 @@
 			x: 3.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["018699F88064119B"]
+			description: [
+				"&6Translocators&r are handy tools for moving around items and fluids in a single blockspace."
+				""
+				"They can be upgraded by right clicking them with various items. Most notable upgrade is the &6Precision Mechanism&r upgrade, which allows Translocators to keep an exact amount of items in stock. Useful for complex Cooking Pot recipes."
+			]
+			id: "32605975ECF63278"
+			tasks: [{
+				icon: "translocators:item_translocator"
+				id: "7CC25BDA32E340A5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "translocators:item_translocator"
+							}
+							{
+								Count: 1b
+								id: "translocators:fluid_translocator"
+							}
+						]
+					}
+				}
+				title: "Any Translocator"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25B8A904433E17B3"]
+			icon: "create:track"
+			id: "6567E5C1943E4C4D"
+			tasks: [
+				{
+					id: "2D5FEE7690075EEF"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "73AF0E9F20EAF820"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "47F17ED9D4CC1796"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "Choo Choo"
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D532DC93531B0D0"]
+			id: "523925A720130B12"
+			tasks: [{
+				id: "40A1470DE98DD6B9"
+				item: "createrailwaysnavigator:navigator"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.5d
+		}
 	]
 	title: "IV.I - Mechanical Farming"
 }

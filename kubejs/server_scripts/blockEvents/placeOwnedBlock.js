@@ -4,6 +4,7 @@ BlockEvents.placed(
   [
     "shippingbin:smart_shipping_bin",
     "shippingbin:basic_shipping_bin",
+    "society:artisan_hopper",
     "society:auto_grabber",
   ],
   (e) => {

@@ -277,7 +277,7 @@ const artisanMachines = [
   {
     id: "society:preserves_jar",
     recipes: global.preservesJarRecipes,
-    stageCount: 2,
+    stageCount: 3,
     maxInput: 5,
   },
   {

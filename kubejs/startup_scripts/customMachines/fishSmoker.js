@@ -94,9 +94,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 2))
     .property(integerProperty.create("quality", 0, 3))
-    .property(
-      integerProperty.create("type", 0, global.fishSmokerRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.fishSmokerRecipes.length))
     .box(1, 0, 4, 15, 28, 12)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -115,10 +113,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 2), 0)
-        .set(
-          integerProperty.create("type", 0, global.fishSmokerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.fishSmokerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
@@ -127,10 +122,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 2), 0)
-        .set(
-          integerProperty.create("type", 0, global.fishSmokerRecipes.length),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.fishSmokerRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
@@ -171,12 +163,7 @@ StartupEvents.registry("block", (event) => {
           Number(block.properties.get("type").toLowerCase()) - 1
         ].output.forEach((id) => {
           block.popItemFromFace(
-            Item.of(
-              id,
-              quality !== "0"
-                ? `{quality_food:{effects:[],quality:${quality}}}`
-                : null
-            ),
+            Item.of(id, quality !== "0" ? `{quality_food:{effects:[],quality:${quality}}}` : null),
             facing
           );
         });
@@ -185,10 +172,7 @@ StartupEvents.registry("block", (event) => {
         "farmersdelight:block.skillet.add_food",
         click,
         global.fishSmokerRecipes,
-        5,
-        false,
-        false,
-        false
+        5
       );
     })
     .blockEntity((blockInfo) => {
@@ -200,7 +184,6 @@ StartupEvents.registry("block", (event) => {
       {
         apply: { model: "society:block/fish_smoker_particle" },
       },
-    ]
-      .concat(getCardinalMultipartJson("fish_smoker"))
+    ].concat(getCardinalMultipartJson("fish_smoker")),
   };
 });

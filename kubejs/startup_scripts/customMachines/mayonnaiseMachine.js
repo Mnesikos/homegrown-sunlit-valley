@@ -70,9 +70,7 @@ StartupEvents.registry("block", (event) => {
     .property(integerProperty.create("stage", 0, 3))
     .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
-    .property(
-      integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length)
-    )
+    .property(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -92,14 +90,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.mayonnaiseMachineRecipes.length
-          ),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .placementState((state) => {
@@ -108,14 +99,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
         .set(integerProperty.create("stage", 0, 3), 0)
-        .set(
-          integerProperty.create(
-            "type",
-            0,
-            global.mayonnaiseMachineRecipes.length
-          ),
-          0
-        )
+        .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
@@ -123,20 +107,12 @@ StartupEvents.registry("block", (event) => {
       const facing = block.properties.get("facing").toLowerCase();
       const quality = block.properties.get("quality");
 
-      if (
-        player.stages.has("rancher") &&
-        block.properties.get("mature") === "true"
-      ) {
+      if (player.stages.has("rancher") && block.properties.get("mature") === "true") {
         global.mayonnaiseMachineRecipes[
           Number(block.properties.get("type").toLowerCase()) - 1
         ].output.forEach((id) => {
           block.popItemFromFace(
-            Item.of(
-              id,
-              quality !== "0"
-                ? `{quality_food:{quality:${quality}}}`
-                : null
-            ),
+            Item.of(id, quality !== "0" ? `{quality_food:{quality:${quality}}}` : null),
             facing
           );
         });
@@ -146,10 +122,7 @@ StartupEvents.registry("block", (event) => {
         "minecraft:block.sniffer_egg.plop",
         click,
         global.mayonnaiseMachineRecipes,
-        3,
-        false,
-        false,
-        false
+        3
       );
     })
     .blockEntity((blockInfo) => {
@@ -165,6 +138,6 @@ StartupEvents.registry("block", (event) => {
         when: { mature: true },
         apply: { model: "society:block/machine_done" },
       },
-    ].concat(getCardinalMultipartJson("mayonnaise_machine"))
+    ].concat(getCardinalMultipartJson("mayonnaise_machine")),
   };
 });

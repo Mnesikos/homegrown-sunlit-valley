@@ -1,15 +1,6 @@
 console.info("[SOCIETY] autoGrabber.js loaded");
 
-const handleSpecialItem = (
-  data,
-  chance,
-  hungry,
-  minHearts,
-  mult,
-  item,
-  hasQuality,
-  e
-) => {
+const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
   const { player, target, level, server, block, inventory } = e;
   const affection = data.getInt("affection") || 0;
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
@@ -25,7 +16,8 @@ const handleSpecialItem = (
     );
     let specialItemResultCode = global.insertBelow(level, block, specialItem);
     if (specialItemResultCode == 1) {
-      if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1) console.error("Sparkstone not consumed when it should have been!");
+      if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+        console.error("Sparkstone not consumed when it should have been!");
       server.runCommandSilent(
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
@@ -54,16 +46,8 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray(
-          "Harvests Milk and Special items from Farm Animals."
-        )
-      );
-      item.tooltip(
-        Text.gray(
-          "Uses the skills of player that places it."
-        )
-      );
+      item.tooltip(Text.gray("Harvests Milk and Special items from Farm Animals."));
+      item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.green(`Area: 5x5`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
@@ -77,23 +61,16 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
         let attachedPlayer;
-        let playerAttributes;
-        let playerStages;
-        inventory.allItems;
         let nearbyFarmAnimals;
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
-          .filter((entity) =>
-            global.checkEntityTag(entity, "society:husbandry_animal")
-          );
+          .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
         level.players.forEach((p) => {
           if (p.getUuid().toString() === block.getEntityData().data.owner) {
-            playerAttributes = p.nbt.Attributes;
-            playerStages = p.stages;
             attachedPlayer = p;
           }
         });
-        if (playerAttributes) {
+        if (attachedPlayer) {
           nearbyFarmAnimals.forEach((animal) => {
             if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
             let data = animal.persistentData;
@@ -110,7 +87,8 @@ StartupEvents.registry("block", (event) => {
               if (milkItem !== -1) {
                 let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
                 if (insertedMilk) {
-                  if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1) console.error("Sparkstone not consumed when it should have been!");
+                  if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+                    console.error("Sparkstone not consumed when it should have been!");
                   level.server.runCommandSilent(
                     `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
                   );
@@ -148,13 +126,9 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     });
 });
