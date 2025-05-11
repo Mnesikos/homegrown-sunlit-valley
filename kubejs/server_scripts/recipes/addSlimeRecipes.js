@@ -85,4 +85,5 @@ ServerEvents.recipes((e) => {
   addItemFusion("society:magic_rock_candy", "slimy", "sweet");
   addItemFusion("numismatics:ancient_coin", "bitwise", "gold");
   addItemFusion("botania:life_essence", "ender", "minty");
+  addItemFusion("minecraft:dragon_egg", "ender", "minty");
 });
