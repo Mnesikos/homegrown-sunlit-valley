@@ -46,3 +46,13 @@
 - Fixed Fish Tanks and large barrels not dropping when broken
 - Fixed minerals not being fireable from Silme Vac
 - Fixed Slingshot recipe not using Canvas
+
+### 2.6.2
+- Added non-Botania recipe for Minty Slime Heart
+- Sprinklers will now make farmland moist in the morning
+- Improved Plort Press performance and logic, fixing some bugs
+- Fixed z-fighting issue with Artisan Machine exclamation mark
+- Fixed Bones and Preserves not being fireable from Slime Vac
+- Fixed Ghost Pepper drop amount not matching Alamanc
+- Fixed crash with slimes that run commands
+- Fixed crash with Coin Leaderboard

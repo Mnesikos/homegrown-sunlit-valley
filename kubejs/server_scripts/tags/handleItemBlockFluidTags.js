@@ -384,6 +384,8 @@ e.add("forge:eggs", "society:cracked_egg");
     e.add("society:omni_geode_treasure", geodeItem.item);
   });
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure")
+  e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
+  e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
   const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
   geodeRelic.forEach((geodeItem) => {
     e.add("society:geode_relic", geodeItem);

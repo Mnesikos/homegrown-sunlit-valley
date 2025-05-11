@@ -9326,7 +9326,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.5.3.jar",
+                    "file_name": "splendid_slimes-0.7.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9334,18 +9334,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6454/601/splendid_slimes-0.5.3.jar",
-                    "id": "6454601",
+                    "url": "https://edge.forgecdn.net/files/6477/269/splendid_slimes-0.7.0.jar",
+                    "id": "6477269",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "74031cab8e01afc85a2642edafd131b8e3aae379",
-                        "md5": "272729244b1831b3ddd31157f39aa0c5"
+                        "sha1": "ff8d25a24242d526468cd0b2d4115aac3e0a0494",
+                        "md5": "656fee6f2de0781e2f6b6018ea578e17"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 347239,
-                    "date_published": "2025-04-23T03:46:12.740Z"
+                    "size": 356956,
+                    "date_published": "2025-04-29T17:30:17.013Z"
                 }
             ]
         },
@@ -9598,7 +9598,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-2.0.jar",
+                    "file_name": "dew_drop_farmland_growth-2.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9606,19 +9606,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6422/269/dew_drop_farmland_growth-2.0.jar",
-                    "id": "6422269",
+                    "url": "https://edge.forgecdn.net/files/6512/649/dew_drop_farmland_growth-2.1.jar",
+                    "id": "6512649",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "fa633bdbd13f8deecca8181bc32d919c8077a83f",
-                        "md5": "c92fcada52433bbf7458df0aca70dc9e"
+                        "sha1": "9cc90629a007ecb89f5122bf82f5f72b054a6066",
+                        "md5": "f603d49b99438d6126d2fdcdb5bffd02"
                     },
                     "required_dependencies": [
                         "291874",
                         "1062753"
                     ],
-                    "size": 75125,
-                    "date_published": "2025-04-14T13:51:33.867Z"
+                    "size": 75161,
+                    "date_published": "2025-05-09T14:17:00.150Z"
                 }
             ]
         },
