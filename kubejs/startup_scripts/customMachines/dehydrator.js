@@ -29,7 +29,9 @@ global.dehydratableMushrooms = [
   "species:alphacene_mushroom",
   "verdantvibes:bracket_mushroom",
 ];
+global.dehydratableMushroomOutputs = ["society:dried_shimmering_mushrooms"];
 global.dehydratableMushrooms.forEach((item) => {
+  global.dehydratableMushroomOutputs.push(`society:dried_${item.split(":")[1]}`);
   global.dehydratorRecipes.push({
     input: item,
     output: [`1x society:dried_${item.split(":")[1]}`],
@@ -161,8 +163,7 @@ StartupEvents.registry("block", (event) => {
         }
       }
       if (upgraded && block.properties.get("mature") === "true") {
-        let recipe =
-          global.dehydratorRecipes[Number(block.properties.get("type").toLowerCase()) - 1];
+        let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
         recipe.output.forEach((id) => {
           if (global.dehydratableMushrooms.includes(recipe.input)) {
             block.popItemFromFace(Item.of(id), facing);

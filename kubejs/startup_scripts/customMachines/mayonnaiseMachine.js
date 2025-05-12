@@ -103,26 +103,15 @@ StartupEvents.registry("block", (event) => {
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
-      const { player, block } = click;
-      const facing = block.properties.get("facing").toLowerCase();
-      const quality = block.properties.get("quality");
-
-      if (player.stages.has("rancher") && block.properties.get("mature") === "true") {
-        global.mayonnaiseMachineRecipes[
-          Number(block.properties.get("type").toLowerCase()) - 1
-        ].output.forEach((id) => {
-          block.popItemFromFace(
-            Item.of(id, quality !== "0" ? `{quality_food:{quality:${quality}}}` : null),
-            facing
-          );
-        });
-      }
-
+      const { player } = click;
       global.handleBERightClick(
         "minecraft:block.sniffer_egg.plop",
         click,
         global.mayonnaiseMachineRecipes,
-        3
+        3,
+        false,
+        false,
+        player.stages.has("rancher") ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {

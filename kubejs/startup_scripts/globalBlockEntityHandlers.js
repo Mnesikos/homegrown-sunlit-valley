@@ -146,16 +146,11 @@ const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
   );
 };
 
-global.artisanHarvest = (
-  block,
-  newProperties,
-  recipes,
-  stageCount,
-  outputMult,
-  artisanHopper,
-  server,
-  player
-) => {
+global.getArtisanRecipe = (recipes, block) =>
+  recipes[Number(block.properties.get("type").toLowerCase()) - 1];
+
+global.artisanHarvest = (block, recipes, stageCount, outputMult, artisanHopper, server, player) => {
+  let newProperties = block.getProperties();
   const hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
@@ -167,18 +162,12 @@ global.artisanHarvest = (
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
     }
-    recipes[Number(block.properties.get("type").toLowerCase()) - 1].output.forEach((id) => {
-      if (outputMult) {
-        harvestOutput = Item.of(
-          id.replace("1x ", `${outputMult}x `),
-          hasQuality && `{quality_food:{quality:${newProperties.quality}}}`
-        );
-      } else {
-        harvestOutput = Item.of(
-          id,
-          hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
-        );
-      }
+    global.getArtisanRecipe(recipes, block).output.forEach((id) => {
+      harvestOutput = Item.of(
+        id,
+        hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
+      );
+      if (outputMult > 1) harvestOutput.count = outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       newProperties.type = "0";
       newProperties.working = false;
@@ -192,6 +181,65 @@ global.artisanHarvest = (
   }
 };
 
+global.artisanInsert = (
+  block,
+  item,
+  level,
+  recipes,
+  stageCount,
+  stockSound,
+  multipleInputs,
+  hasTag,
+  artisanHopper,
+  server,
+  player
+) => {
+  let newProperties = block.getProperties();
+  let blockStage = block.properties.get("stage").toLowerCase();
+  const itemNbt = item.nbt;
+  let itemQuality;
+  let useCount = 0;
+  recipes.forEach((recipe, index) => {
+    if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
+      newProperties = block.getProperties();
+      successParticles(level, block);
+      server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
+      newProperties.type = String(index + 1);
+      newProperties.working = false;
+      newProperties.mature = false;
+      if (newProperties.quality && itemNbt && itemNbt.quality_food) {
+        itemQuality = String(itemNbt.quality_food.quality);
+      } else if (newProperties.quality) {
+        itemQuality = "0";
+      }
+      if (multipleInputs) {
+        if (item.count >= stageCount - Number(blockStage)) {
+          useCount = stageCount - Number(blockStage);
+          if (itemQuality) setQuality(newProperties, itemQuality);
+          newProperties.stage = stageCount.toString();
+        } else {
+          useCount = 1;
+          if (itemQuality) setQuality(newProperties, itemQuality);
+          newProperties.stage = increaseStage(blockStage);
+        }
+      } else {
+        useCount = 1;
+        if (itemQuality) {
+          newProperties.quality = itemQuality;
+        }
+      }
+      if (newProperties.duration) newProperties.duration = String(recipe.time);
+      if (!multipleInputs || newProperties.stage === stageCount.toString()) {
+        newProperties.working = true;
+        newProperties.stage = "0";
+      }
+      block.set(block.id, newProperties);
+      if (player && !player.isCreative()) item.count -= useCount;
+    }
+  });
+  if (artisanHopper) return useCount;
+};
+
 global.handleBERightClick = (
   stockSound,
   clickEvent,
@@ -203,70 +251,30 @@ global.handleBERightClick = (
   disableInput
 ) => {
   const { item, block, hand, player, level, server } = clickEvent;
-  let blockStage = block.properties.get("stage").toLowerCase();
-  let newProperties = block.getProperties();
-  const itemNbt = item.nbt;
-  let itemQuality;
   // Prevent Deployers from using artisan machines
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    global.artisanHarvest(
-      block,
-      newProperties,
-      recipes,
-      stageCount,
-      outputMult,
-      false,
-      server,
-      player
-    );
+    global.artisanHarvest(block, recipes, stageCount, outputMult, false, server, player);
 
     if (!disableInput) {
-      newProperties = block.getProperties();
-      blockStage = block.properties.get("stage").toLowerCase();
-      recipes.forEach((recipe, index) => {
-        if (getCanTakeItems(item, block.properties, recipe, index, hasTag)) {
-          newProperties = block.getProperties();
-          successParticles(level, block);
-          server.runCommandSilent(
-            `playsound ${stockSound} block @a ${player.x} ${player.y} ${player.z}`
-          );
-          newProperties.type = String(index + 1);
-          newProperties.working = false;
-          newProperties.mature = false;
-          if (newProperties.quality && itemNbt && itemNbt.quality_food) {
-            itemQuality = String(itemNbt.quality_food.quality);
-          } else if (newProperties.quality) {
-            itemQuality = "0";
-          }
-          if (multipleInputs) {
-            if (item.count >= stageCount - Number(blockStage)) {
-              if (!player.isCreative()) item.count = item.count - (stageCount - Number(blockStage));
-              if (itemQuality) setQuality(newProperties, itemQuality);
-              newProperties.stage = stageCount.toString();
-            } else {
-              if (!player.isCreative()) item.count--;
-              if (itemQuality) setQuality(newProperties, itemQuality);
-              newProperties.stage = increaseStage(blockStage);
-            }
-          } else {
-            if (!player.isCreative()) item.count--;
-            if (itemQuality) {
-              newProperties.quality = itemQuality;
-            }
-          }
-          if (newProperties.duration) newProperties.duration = String(recipe.time);
-          if (!multipleInputs || newProperties.stage === stageCount.toString()) {
-            newProperties.working = true;
-            newProperties.stage = "0";
-          }
-        }
-        block.set(block.id, newProperties);
-      });
+      global.artisanInsert(
+        block,
+        item,
+        level,
+        recipes,
+        stageCount,
+        stockSound,
+        multipleInputs,
+        hasTag,
+        false,
+        server,
+        player
+      );
     }
   }
 };
+
 const getOpposite = (facing, pos) => {
   switch (facing) {
     case "north":
@@ -436,6 +444,22 @@ global.inventoryHasItems = (inventory, id, count) => {
   return 0;
 };
 
+global.hasInventoryItems = (inventory, id, count) => {
+  if (inventory) {
+    const slots = inventory.getSlots();
+    let slotStack;
+    let foundCount = 0;
+    for (let i = 0; i < slots; i++) {
+      slotStack = inventory.getStackInSlot(i);
+      if (slotStack.item.id === id) {
+        foundCount += slotStack.count;
+      }
+      if (foundCount >= count) return true;
+    }
+  }
+  return false;
+};
+
 /**
  * @returns result code:
  * -1 - Failure - Operation attempted but nothing to use
@@ -449,7 +473,7 @@ global.useInventoryItems = (inventory, id, count) => {
     for (let i = 0; i < slots; i++) {
       slotStack = inventory.getStackInSlot(i);
       if (slotStack.item.id === id && slotStack.count >= count) {
-        inventory.getStackInSlot(i).count -= count;
+        inventory.extractItem(i, count, false);
         return 1;
       }
     }

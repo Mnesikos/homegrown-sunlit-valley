@@ -78,19 +78,14 @@ StartupEvents.registry("block", (event) => {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
       }
-      if (player.stages.has("rancher") && block.properties.get("mature") === "true") {
-        block.popItemFromFace(
-          global.loomRecipes[Number(block.properties.get("type").toLowerCase()) - 1].output[0],
-          facing
-        );
-      }
       global.handleBERightClick(
         "minecraft:block.wool.fall",
         click,
         global.loomRecipes,
         5,
         true,
-        true
+        true,
+        player.stages.has("rancher") ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {

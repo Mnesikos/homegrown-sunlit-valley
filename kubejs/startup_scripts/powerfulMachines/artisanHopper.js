@@ -1,26 +1,75 @@
 console.info("[SOCIETY] artisanHopper.js loaded");
 
-global.getArtisanMachineData = (block) => {
+const artisanMachineCanHaveAdditionalOutput = [
+  "society:loom",
+  "society:crystalarium",
+  "society:seed_maker",
+  "society:aging_cask",
+];
+
+global.handleAdditionalArtisanMachineOutputs = (
+  level,
+  block,
+  artisanMachine,
+  recipes,
+  type,
+  upgraded,
+  stages
+) => {
+  switch (artisanMachine.id) {
+    case "society:loom": {
+      if (upgraded && rnd25()) {
+        global.insertBelow(level, block,  Ingredient.of("#society:loot_furniture").itemIds[Math.floor(Math.random() * Ingredient.of("#society:loot_furniture").itemIds.length)]);
+      }
+      break;
+    }
+    case "society:crystalarium": {
+      if (upgraded && rnd10()) {
+        recipes[type - 1].output.forEach((item) => {
+          global.insertBelow(level, block, `society:pristine_${Item.of(item).id.split(":")[1]}`);
+        });
+      }
+      break;
+    }
+    case "society:seed_maker": {
+      if (upgraded && rnd5()) {
+        global.insertBelow(level, block, "society:ancient_fruit_seed");
+      }
+      break;
+    }
+    case "society:aging_cask": {
+      if (stages.has("aged_prize") && rnd5()) {
+        global.insertBelow(level, block, "society:prize_ticket");
+      }
+      break;
+    }
+  }
+};
+
+global.getArtisanMachineData = (block, upgraded, stages) => {
   let machineData = {
     recipes: [],
     stageCount: 0,
     multipleInputs: false,
     hasTag: false,
-    outputMult: undefined,
+    outputMult: 1,
   };
-  let id = block.id;
-  const upgraded = block.properties.get("upgraded");
-  switch (id) {
+  switch (block.id) {
     case "society:loom":
       machineData = {
         recipes: global.loomRecipes,
         stageCount: 5,
         multipleInputs: true,
         hasTag: true,
+        outputMult: stages.has("rancher") ? 2 : 1,
       };
       break;
     case "society:mayonnaise_machine":
-      machineData = { recipes: global.mayonnaiseMachineRecipes, stageCount: 3 };
+      machineData = {
+        recipes: global.mayonnaiseMachineRecipes,
+        stageCount: 3,
+        outputMult: stages.has("rancher") ? 2 : 1,
+      };
       break;
     case "society:preserves_jar":
       machineData = {
@@ -36,17 +85,17 @@ global.getArtisanMachineData = (block) => {
       machineData = { recipes: global.agingCaskRecipes, stageCount: 10 };
       break;
     case "society:ancient_cask":
-      if (upgraded) {
-        machineData = {
-          recipes: global.ancientCaskRecipes,
-          stageCount: 4,
-          multipleInputs: true,
-          hasTag: false,
-          outputMult: 4,
-        };
-      } else {
-        machineData = { recipes: global.ancientCaskRecipes, stageCount: 20 };
-      }
+      if (stages.has("ancient_aging")) {
+        if (upgraded) {
+          machineData = {
+            recipes: global.ancientCaskRecipes,
+            stageCount: 4,
+            multipleInputs: true,
+            hasTag: false,
+            outputMult: 4,
+          };
+        } else machineData = { recipes: global.ancientCaskRecipes, stageCount: 20 };
+      } else machineData = undefined;
       break;
     case "society:dehydrator":
       machineData = { recipes: global.dehydratorRecipes, stageCount: 8, multipleInputs: true };
@@ -58,7 +107,14 @@ global.getArtisanMachineData = (block) => {
       machineData = { recipes: global.seedMakerRecipes, stageCount: 3, multipleInputs: true };
       break;
     case "society:fish_smoker":
-      machineData = { recipes: global.fishSmokerRecipes, stageCount: 5 };
+      machineData = {
+        recipes: global.fishSmokerRecipes,
+        stageCount: 5,
+        outputMult: upgraded ? 2 : 1,
+      };
+      break;
+    case "society:espresso_machine":
+      machineData = { recipes: global.espressoMachineRecipes, stageCount: 4, multipleInputs: true };
       break;
     case "society:bait_maker":
       machineData = { recipes: global.baitMakerRecipes, stageCount: 1 };
@@ -73,49 +129,122 @@ global.getArtisanMachineData = (block) => {
       machineData = { recipes: null, stageCount: 5 };
       break;
     default:
-      console.log("Invalid artisan machine!");
+      machineData = undefined;
   }
   return machineData;
 };
-global.runArtisanHopper = (tickEvent, artisanMachine, player, delay) => {
-  console.log("running");
+
+/**
+ * TODO:
+ * - Make sure inventory below has space to insert
+ * - Consume sparkstone on insert
+ */
+global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   const { level, block, inventory } = tickEvent;
-  const { x, y, z } = artisanMachine;
-  const machineData = global.getArtisanMachineData(artisanMachine);
-  let machineOutput;
-  let newProperties = artisanMachine.getProperties();
-  console.log(newProperties);
-  if (
-    newProperties.get("mature").toLowerCase() === "true" &&
-    global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
-  ) {
-    level.server.runCommandSilent(`playsound twigs:block.shroomlamp.place block @a ${x} ${y} ${z}`);
-    machineOutput = global.artisanHarvest(
-      artisanMachine,
-      newProperties,
-      machineData.recipes,
-      machineData.stageCount,
-      machineData.outputMult,
-      true
-    );
-    if (machineOutput) {
-      let specialItemResultCode = global.insertBelow(level, block, machineOutput);
-      if (specialItemResultCode == 1) {
-        level.spawnParticles(
-          "species:ascending_dust",
-          true,
-          x,
-          y + 1,
-          z,
-          0.2 * rnd(1, 1.5),
-          0.2 * rnd(1, 1.5),
-          0.2 * rnd(1, 1.5),
-          3,
-          0.01
-        );
+  const server = level.server;
+  server.scheduleInTicks(delay, () => {
+    const artisanMachine = level.getBlock(artisanMachinePos);
+    const { x, y, z } = artisanMachine;
+    const upgraded = artisanMachine.properties.get("upgraded") == "true";
+    const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
+    if (loadedData) {
+      const { recipes, stageCount, multipleInputs, hasTag, outputMult } = loadedData;
+      let machineOutput;
+      let type;
+      let newProperties = artisanMachine.getProperties();
+      if (
+        newProperties.get("mature").toLowerCase() === "true" &&
+        global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+      ) {
+        server.runCommandSilent(`playsound twigs:block.shroomlamp.place block @a ${x} ${y} ${z}`);
+        if (artisanMachine.id === "society:charging_rod") {
+          const season = global.getSeasonFromLevel(level);
+          machineOutput = Item.of(`${upgraded && season === "winter" ? 3 : 1}x society:battery`);
+          artisanMachine.set(artisanMachine.id, {
+            working: false,
+            mature: false,
+            upgraded: upgraded,
+            stage: "0",
+          });
+        } else {
+          if (newProperties.get("type")) type = Number(newProperties.get("type"))
+          machineOutput = global.artisanHarvest(
+            artisanMachine,
+            recipes,
+            stageCount,
+            outputMult,
+            true
+          );
+        }
+
+        if (machineOutput) {
+          if (
+            artisanMachine.id === "society:dehydrator" &&
+            upgraded &&
+            global.dehydratableMushroomOutputs.includes(machineOutput.id)
+          ) {
+            machineOutput.count = 2;
+          }
+          if (artisanMachineCanHaveAdditionalOutput.includes(artisanMachine.id)) {
+            global.handleAdditionalArtisanMachineOutputs(
+              level,
+              block,
+              artisanMachine,
+              recipes,
+              type,
+              upgraded,
+              player.stages
+            );
+          }
+          let specialItemResultCode = global.insertBelow(level, block, machineOutput);
+          if (specialItemResultCode == 1) {
+            level.spawnParticles(
+              "species:ascending_dust",
+              true,
+              x,
+              y + 1,
+              z,
+              0.2 * rnd(1, 1.5),
+              0.2 * rnd(1, 1.5),
+              0.2 * rnd(1, 1.5),
+              3,
+              0.01
+            );
+          }
+        }
+      }
+
+      const abovePos = block.getPos().above();
+      const aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
+      if (recipes && aboveBlock.inventory) {
+        const slots = aboveBlock.inventory.getSlots();
+
+        let slotStack;
+        let outputCount;
+        for (let i = 0; i < slots; i++) {
+          slotStack = aboveBlock.inventory.getStackInSlot(i);
+          if (!(multipleInputs && slotStack.count <= 1)) {
+            outputCount = global.artisanInsert(
+              artisanMachine,
+              slotStack,
+              level,
+              recipes,
+              stageCount,
+              "create:fwoomp",
+              multipleInputs,
+              hasTag,
+              true,
+              server
+            );
+            if (outputCount > 0) {
+              aboveBlock.inventory.extractItem(i, outputCount, false);
+              break;
+            }
+          }
+        }
       }
     }
-  }
+  });
 };
 
 StartupEvents.registry("block", (event) => {
@@ -160,7 +289,7 @@ StartupEvents.registry("block", (event) => {
           ])) {
             scanBlock = level.getBlock(pos);
             if (scanBlock.hasTag("society:artisan_machine")) {
-              global.runArtisanHopper(entity, scanBlock, attachedPlayer, scannedBlocks * 5);
+              global.runArtisanHopper(entity, pos.immutable(), attachedPlayer, scannedBlocks * 5);
               scannedBlocks++;
             }
           }

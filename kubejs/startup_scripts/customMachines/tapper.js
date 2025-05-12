@@ -124,7 +124,7 @@ StartupEvents.registry("block", (event) => {
         7,
         false,
         false,
-        false,
+        1,
         true
       );
     })

@@ -131,9 +131,7 @@ StartupEvents.registry("block", (event) => {
         }
       }
       if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
-        global.crystalariumCrystals[
-          Number(block.properties.get("type").toLowerCase()) - 1
-        ].output.forEach((item) => {
+        global.getArtisanRecipe(global.crystalariumCrystals, block).output.forEach((item) => {
           block.popItemFromFace(
             `society:pristine_${Item.of(item).id.split(":")[1]}`,
             block.properties.get("facing").toLowerCase()

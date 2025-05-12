@@ -20,23 +20,12 @@ const hasFishTag = (tags) => {
   return found;
 };
 
-const sendFishPondMessage = (
-  clickEvent,
-  recipes,
-  population,
-  maxPopulation
-) => {
+const sendFishPondMessage = (clickEvent, recipes, population, maxPopulation) => {
   const { player, block, server } = clickEvent;
-  const fishId = String(
-    Item.of(
-      recipes[Number(block.properties.get("type").toLowerCase()) - 1].item
-    ).id
-  );
+  const fishId = String(Item.of(global.getArtisanOutputs(recipes, block).item).id);
   let fishName = fishId
     .split(":")[1]
-    .replace(/^_*(.)|_+(.)/g, (s, c, d) =>
-      c ? c.toUpperCase() : " " + d.toUpperCase()
-    );
+    .replace(/^_*(.)|_+(.)/g, (s, c, d) => (c ? c.toUpperCase() : " " + d.toUpperCase()));
   if (fishName.includes("Raw ")) {
     if (fishName === "Raw Snowflake") fishName = "Frosty Fin";
     else fishName = fishName.substring(4, fishName.length);
@@ -47,8 +36,7 @@ const sendFishPondMessage = (
     if (index < population) fishIcons += "§3🐟§r";
     else fishIcons += "§7🐟§r";
   }
-  const upgrade =
-    block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
+  const upgrade = block.properties.get("upgraded").toLowerCase() == "true" ? `🡅` : "";
 
   global.renderUiText(
     player,
@@ -139,17 +127,10 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
     e.server.scheduleInTicks(1, () => {
       if (mature == "false") {
         if (type !== "0") {
-          sendFishPondMessage(
-            e,
-            global.fishPondDefinitions,
-            population,
-            max_population
-          );
+          sendFishPondMessage(e, global.fishPondDefinitions, population, max_population);
         } else if (!(item && hasFishTag(item.getTags().toList()))) {
           player.tell(
-            Text.gray(
-              "This Fish Pond is Empty! Right click with a fish to place it in the pond."
-            )
+            Text.gray("This Fish Pond is Empty! Right click with a fish to place it in the pond.")
           );
         }
         if (type !== "0" && item && hasFishTag(item.getTags().toList())) {
@@ -164,9 +145,7 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
         )[quest_id];
         const questItem = Item.of(questContent.item).displayName;
         player.tell(
-          Text.green(
-            `🐟: We'd feel more at home with §3${questContent.count}§r of these:`
-          )
+          Text.green(`🐟: We'd feel more at home with §3${questContent.count}§r of these:`)
         );
         player.tell(questItem);
       }

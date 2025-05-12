@@ -158,21 +158,14 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      if (upgraded && block.properties.get("mature") === "true") {
-        global.fishSmokerRecipes[
-          Number(block.properties.get("type").toLowerCase()) - 1
-        ].output.forEach((id) => {
-          block.popItemFromFace(
-            Item.of(id, quality !== "0" ? `{quality_food:{effects:[],quality:${quality}}}` : null),
-            facing
-          );
-        });
-      }
       global.handleBERightClick(
         "farmersdelight:block.skillet.add_food",
         click,
         global.fishSmokerRecipes,
-        5
+        5,
+        false,
+        false,
+        upgraded ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {

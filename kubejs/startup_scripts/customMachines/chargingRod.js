@@ -75,7 +75,7 @@ StartupEvents.registry("block", (event) => {
         block.set(block.id, {
           working: false,
           mature: false,
-          upgraded: block.properties.get("upgraded"),
+          upgraded: upgraded,
           stage: "0",
         });
       }

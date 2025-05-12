@@ -39,9 +39,39 @@
     {
       "stack": "item:beachparty:rubber_ring_axolotl{Damage:17}",
       "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_axolotl/minecraft/dried_kelp"
+    },
+    {
+      "stack": "item:society:fish_smoker"
+    },
+    {
+      "stack": "item:minecraft:light_blue_wool"
     }
   ],
   "lookup_history": [
+    "item:society:earth_crystal",
+    {
+      "type": "item",
+      "id": "society:canvas",
+      "amount": 14
+    },
+    "item:relics:wool_mitten{abilities:{mold:{points:0,stats:{damage:0.12591d,freeze:1.8299d,size:28.20948d,stun:0.04291d}}}}",
+    {
+      "type": "item",
+      "id": "botania:white_mushroom",
+      "amount": 8
+    },
+    {
+      "type": "item",
+      "id": "society:dried_shimmering_mushrooms",
+      "amount": 2
+    },
+    "item:society:aged_jellie_wine",
+    {
+      "type": "item",
+      "id": "herbalbrews:ground_coffee",
+      "amount": 64
+    },
+    "item:beachparty:crocs{Damage:168}",
     "item:botania:crafty_crate",
     "item:society:artisan_hopper",
     "item:society:auto_grabber",
@@ -292,7 +322,6 @@
     "item:beachparty:trunks{Damage:0}",
     "item:minecraft:dried_kelp",
     "item:beachparty:rubber_ring_blue{Damage:0}",
-    "item:beachparty:crocs{Damage:0}",
     "item:beachparty:floaty",
     {
       "type": "fluid",
@@ -318,7 +347,6 @@
     "item:railways:smokestack_oilburner",
     "item:create:metal_girder",
     "item:create:metal_bracket",
-    "item:escalated:metal_walkway_steps",
     "item:minecraft:acacia_log",
     "item:quark:hollow_acacia_log",
     "item:minecraft:dark_oak_log",
@@ -329,7 +357,6 @@
     "item:numismatics:cog",
     "item:create:andesite_ladder",
     "item:society:fire_quartz",
-    "item:society:earth_crystal",
     "item:society:iron_sprinkler",
     "item:society:bowl_of_soul",
     "item:etcetera:light_bulb",
@@ -366,11 +393,6 @@
     },
     "item:society:recycling_machine",
     "item:minecraft:oak_wood",
-    {
-      "type": "item",
-      "id": "society:canvas",
-      "amount": 4
-    },
     "item:zetter:canvas",
     "item:aquaculture:tin_can",
     "item:ribbits:toadstool",
@@ -574,7 +596,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:prisma\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:webby\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
-    "item:herbalbrews:ground_coffee",
     "item:herbalbrews:hazelnut_coffee",
     "item:atmospheric:dragon_fruit",
     "#item:forge:fruits",
@@ -884,7 +905,6 @@
       "amount": 64
     },
     "item:society:baryte",
-    "item:society:dried_shimmering_mushrooms",
     "item:candlelight:gold_ring{Damage:0}",
     "item:candlelight:chocolate_box",
     {
@@ -915,7 +935,6 @@
     "item:society:aged_bonefish_roe",
     "item:society:aged_goldfish_roe",
     "item:vinery:chenet_wine",
-    "item:society:aged_jellie_wine",
     "item:vinery:bolvar_wine",
     "item:vinery:jo_special_mixture",
     "item:society:aged_jo_special_mixture",
@@ -1113,8 +1132,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

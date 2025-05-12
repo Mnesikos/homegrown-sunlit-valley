@@ -374,17 +374,6 @@
         "value": 10000
       }
     },
-    "runiclib:generic.burning_retaliation_chance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "shippingbin:gem_sell_multiplier": {
       "enabled": false,
       "min": {
@@ -394,6 +383,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "runiclib:generic.burning_retaliation_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "reforgingstation:dig_speed": {

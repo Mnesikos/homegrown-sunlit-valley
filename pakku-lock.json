@@ -3703,6 +3703,51 @@
             ]
         },
         {
+            "pakku_id": "8x3kCrw30hwfHu04",
+            "pakku_links": [
+                "gJUVmYOCW3BpVIu5",
+                "Z5ABSfuXE0jplGgO",
+                "m9vabFkcFlm2Oo9d"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-chunks-forge"
+            },
+            "name": {
+                "curseforge": "FTB Chunks (Forge)"
+            },
+            "id": {
+                "curseforge": "314906"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-chunks-forge-2001.3.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6431/735/ftb-chunks-forge-2001.3.6.jar",
+                    "id": "6431735",
+                    "parent_id": "314906",
+                    "hashes": {
+                        "sha1": "7fde7917655a3356cab92f17ad2bca34962c4928",
+                        "md5": "64af750c0cbcadd4b27fb58236654814"
+                    },
+                    "required_dependencies": [
+                        "404465",
+                        "419699",
+                        "404468"
+                    ],
+                    "size": 1158842,
+                    "date_published": "2025-04-17T08:07:07.033Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "gJUVmYOCW3BpVIu5",
             "pakku_links": [
                 "Z5ABSfuXE0jplGgO"
@@ -5335,6 +5380,48 @@
                     "required_dependencies": [],
                     "size": 65610,
                     "date_published": "2024-03-09T23:28:06.960Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "WflwhwmxMl24cQOp",
+            "pakku_links": [
+                "rGgcpypoYU1A0zgM"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "journeymap-integration"
+            },
+            "name": {
+                "curseforge": "JourneyMap Integration"
+            },
+            "id": {
+                "curseforge": "525447"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jmi-forge-1.20.1-0.14-48.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5510/356/jmi-forge-1.20.1-0.14-48.jar",
+                    "id": "5510356",
+                    "parent_id": "525447",
+                    "hashes": {
+                        "sha1": "f2be323d589b953eaa303f8b74913831a5a9b77b",
+                        "md5": "9ca3febdf066b2dd900ab6c0c59852e1"
+                    },
+                    "required_dependencies": [
+                        "32274"
+                    ],
+                    "size": 69022,
+                    "date_published": "2024-07-07T11:46:16.467Z"
                 }
             ]
         },
@@ -7471,6 +7558,43 @@
                     "required_dependencies": [],
                     "size": 282474,
                     "date_published": "2025-03-07T09:06:06.367Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "rnUVx6UTgHozgbGe",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "platform"
+            },
+            "name": {
+                "curseforge": "Platform"
+            },
+            "id": {
+                "curseforge": "997634"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Platform-forge-1.20.1-1.2.7.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6385/223/Platform-forge-1.20.1-1.2.7.1.jar",
+                    "id": "6385223",
+                    "parent_id": "997634",
+                    "hashes": {
+                        "sha1": "49de3ad8ad9f95d83abb6b141f7023997a41c72b",
+                        "md5": "20c6c2118628dcfe62d262340f2f9dfb"
+                    },
+                    "required_dependencies": [],
+                    "size": 403689,
+                    "date_published": "2025-04-04T20:13:16.653Z"
                 }
             ]
         },
