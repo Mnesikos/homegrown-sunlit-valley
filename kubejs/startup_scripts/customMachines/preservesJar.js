@@ -283,13 +283,7 @@ StartupEvents.registry("block", (event) => {
     .rightClick((click) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
-      global.handleBERightClick(
-        "minecraft:block.wood.place",
-        click,
-        global.preservesJarRecipes,
-        upgraded ? 3 : 5,
-        true
-      );
+
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && !upgraded && item == "society:stone_hand") {
         if (!player.isCreative()) item.count--;
@@ -314,6 +308,14 @@ StartupEvents.registry("block", (event) => {
           stage: block.properties.get("stage"),
         });
       }
+      
+      global.handleBERightClick(
+        "minecraft:block.wood.place",
+        click,
+        global.preservesJarRecipes,
+        upgraded ? 3 : 5,
+        true
+      );
     })
     .blockEntity((blockInfo) => {
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {

@@ -208,6 +208,7 @@ StartupEvents.registry("block", (event) => {
             player.tell(Text.red(`This can only be upgraded when not in use`));
           }
         }
+
         if (upgraded)
           global.handleBERightClick(
             "minecraft:block.wood.place",

@@ -151,7 +151,6 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/aging_cask",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
@@ -206,9 +205,11 @@ StartupEvents.registry("block", (event) => {
           player.tell(Text.red(`This can only be upgraded when not in use`));
         }
       }
+
       if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
+
       global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
     })
     .blockEntity((blockInfo) => {

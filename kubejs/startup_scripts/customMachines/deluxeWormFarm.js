@@ -15,6 +15,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("upgraded"))
     .property(integerProperty.create("stage", 0, 4))
     .property(integerProperty.create("type", 0, global.deluxeWormFarmRecipes.length))
+    .soundType("copper")
     .box(2, 0, 2, 14, 15, 14)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
@@ -25,7 +26,6 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/deluxe_worm_farm",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
@@ -72,6 +72,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       global.handleBERightClick(
         "aquaculture:fish_flop",
         click,
@@ -79,6 +80,7 @@ StartupEvents.registry("block", (event) => {
         4,
         true
       );
+      
       if (upgraded && block.properties.get("working") === "false") {
         block.set(block.id, {
           facing: block.properties.get("facing"),

@@ -260,9 +260,11 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       if (upgraded && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:ancient_fruit_seed", facing);
       }
+      
       global.handleBERightClick(
         "unusualfishmod:crab_scuttling",
         click,

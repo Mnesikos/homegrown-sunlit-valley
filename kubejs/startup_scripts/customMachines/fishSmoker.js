@@ -158,6 +158,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       global.handleBERightClick(
         "farmersdelight:block.skillet.add_food",
         click,

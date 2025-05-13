@@ -48,6 +48,41 @@
     }
   ],
   "lookup_history": [
+    "item:society:aged_nutty_basil",
+    "item:society:double_aged_nutty_basil",
+    "item:society:aged_dark_brew",
+    "item:society:aged_blackfish_roe",
+    "item:society:aged_grain_cheese_block",
+    "item:society:double_aged_starcardi",
+    "item:society:double_aged_nether_fizz",
+    "item:society:double_aged_whiskey_smokey_reverie",
+    "item:society:double_aged_strad_wine",
+    "item:society:aged_cristel_wine",
+    "item:society:aged_bottle_mojang_noir",
+    "item:society:aged_apple_cider",
+    "item:society:aged_century_egg",
+    "item:society:aged_bluegill_roe",
+    {
+      "type": "item",
+      "id": "society:bouquet_bag",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "furniture:trash_bag",
+      "amount": 64
+    },
+    "item:aquaculture:tin_can",
+    {
+      "type": "fluid",
+      "id": "create_central_kitchen:sap",
+      "amount": 0
+    },
+    {
+      "type": "item",
+      "id": "society:pine_tar",
+      "amount": 18
+    },
     "item:society:earth_crystal",
     {
       "type": "item",
@@ -123,7 +158,6 @@
     "item:society:wet_weekly",
     "item:society:broken_clock",
     "item:society:sap",
-    "item:society:bouquet_bag",
     "item:society:maple_syrup",
     "item:society:neptuna",
     "item:society:fish_radar",
@@ -131,7 +165,6 @@
     "item:society:eggplant",
     "item:society:oak_resin",
     "item:society:elytra_wing",
-    "item:society:pine_tar",
     "item:society:tubabacco_leaf",
     "item:society:black_opal",
     "item:society:frosted_tip",
@@ -323,11 +356,6 @@
     "item:minecraft:dried_kelp",
     "item:beachparty:rubber_ring_blue{Damage:0}",
     "item:beachparty:floaty",
-    {
-      "type": "fluid",
-      "id": "create_central_kitchen:sap",
-      "amount": 1000
-    },
     "item:create_central_kitchen:sap_bucket",
     "item:create:copper_sheet",
     "item:create:bar_of_chocolate",
@@ -394,7 +422,6 @@
     "item:society:recycling_machine",
     "item:minecraft:oak_wood",
     "item:zetter:canvas",
-    "item:aquaculture:tin_can",
     "item:ribbits:toadstool",
     "item:ribbits:toadstool_stem",
     "item:quark:glow_shroom_stem",
@@ -440,7 +467,6 @@
     },
     "#item:minecraft:flowers",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:slimy\"}}",
-    "item:furniture:trash_bag",
     "item:etcetera:bismuth_nugget",
     "item:automobility:launch_gel",
     {

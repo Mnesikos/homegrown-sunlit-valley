@@ -162,6 +162,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       if (upgraded && block.properties.get("mature") === "true") {
         let recipe = global.dehydratorglobal.getArtisanOutputs(recipes, block);
         recipe.output.forEach((id) => {
@@ -170,6 +171,7 @@ StartupEvents.registry("block", (event) => {
           }
         });
       }
+
       global.handleBERightClick(
         "species:block.alphacene_foliage.place",
         click,

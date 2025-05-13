@@ -117,6 +117,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+      
       global.handleBERightClick(
         "vinery:cabinet_close",
         click,

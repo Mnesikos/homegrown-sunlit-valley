@@ -84,7 +84,6 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/crystalarium",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)
@@ -130,6 +129,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+
       if (upgraded && block.properties.get("mature") === "true" && rnd10()) {
         global.getArtisanRecipe(global.crystalariumCrystals, block).output.forEach((item) => {
           block.popItemFromFace(
@@ -138,6 +138,7 @@ StartupEvents.registry("block", (event) => {
           );
         });
       }
+      
       global.handleBERightClick(
         "minecraft:block.amethyst_block.step",
         click,

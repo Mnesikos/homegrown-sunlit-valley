@@ -83,7 +83,6 @@ StartupEvents.registry("block", (event) => {
         parent: "society:block/mayonnaise_machine_off",
       });
     })
-
     .defaultState((state) => {
       state
         .set(booleanProperty.create("working"), false)

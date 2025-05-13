@@ -19,7 +19,13 @@ global.handleAdditionalArtisanMachineOutputs = (
   switch (artisanMachine.id) {
     case "society:loom": {
       if (upgraded && rnd25()) {
-        global.insertBelow(level, block,  Ingredient.of("#society:loot_furniture").itemIds[Math.floor(Math.random() * Ingredient.of("#society:loot_furniture").itemIds.length)]);
+        global.insertBelow(
+          level,
+          block,
+          Ingredient.of("#society:loot_furniture").itemIds[
+            Math.floor(Math.random() * Ingredient.of("#society:loot_furniture").itemIds.length)
+          ]
+        );
       }
       break;
     }
@@ -53,6 +59,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
     multipleInputs: false,
     hasTag: false,
     outputMult: 1,
+    soundType: "minecraft:ui.toast.in",
   };
   switch (block.id) {
     case "society:loom":
@@ -62,6 +69,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         multipleInputs: true,
         hasTag: true,
         outputMult: stages.has("rancher") ? 2 : 1,
+        soundType: "minecraft:block.wool.fall",
       };
       break;
     case "society:mayonnaise_machine":
@@ -69,6 +77,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.mayonnaiseMachineRecipes,
         stageCount: 3,
         outputMult: stages.has("rancher") ? 2 : 1,
+        soundType: "minecraft:block.sniffer_egg.plop",
       };
       break;
     case "society:preserves_jar":
@@ -76,13 +85,22 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.preservesJarRecipes,
         stageCount: upgraded ? 3 : 5,
         multipleInputs: true,
+        soundType: "minecraft:block.wood.place",
       };
       break;
     case "society:crystalarium":
-      machineData = { recipes: global.crystalariumCrystals, stageCount: 5 };
+      machineData = {
+        recipes: global.crystalariumCrystals,
+        stageCount: 5,
+        soundType: "minecraft:block.amethyst_block.step",
+      };
       break;
     case "society:aging_cask":
-      machineData = { recipes: global.agingCaskRecipes, stageCount: 10 };
+      machineData = {
+        recipes: global.agingCaskRecipes,
+        stageCount: 10,
+        soundType: "minecraft:block.wood.place",
+      };
       break;
     case "society:ancient_cask":
       if (stages.has("ancient_aging")) {
@@ -93,40 +111,79 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
             multipleInputs: true,
             hasTag: false,
             outputMult: 4,
+            soundType: "",
           };
-        } else machineData = { recipes: global.ancientCaskRecipes, stageCount: 20 };
+        } else
+          machineData = {
+            recipes: global.ancientCaskRecipes,
+            stageCount: 20,
+            soundType: "minecraft:block.wood.place",
+          };
       } else machineData = undefined;
       break;
     case "society:dehydrator":
-      machineData = { recipes: global.dehydratorRecipes, stageCount: 8, multipleInputs: true };
+      machineData = {
+        recipes: global.dehydratorRecipes,
+        stageCount: 8,
+        multipleInputs: true,
+        soundType: "species:block.alphacene_foliage.place",
+      };
       break;
     case "society:deluxe_worm_farm":
-      machineData = { recipes: global.deluxeWormFarmRecipes, stageCount: 4, multipleInputs: true };
+      machineData = {
+        recipes: global.deluxeWormFarmRecipes,
+        stageCount: 4,
+        multipleInputs: true,
+        soundType: "aquaculture:fish_flop",
+      };
       break;
     case "society:seed_maker":
-      machineData = { recipes: global.seedMakerRecipes, stageCount: 3, multipleInputs: true };
+      machineData = {
+        recipes: global.seedMakerRecipes,
+        stageCount: 3,
+        multipleInputs: true,
+        soundType: "unusualfishmod:crab_scuttling",
+      };
       break;
     case "society:fish_smoker":
       machineData = {
         recipes: global.fishSmokerRecipes,
         stageCount: 5,
         outputMult: upgraded ? 2 : 1,
+        soundType: "farmersdelight:block.skillet.add_food",
       };
       break;
     case "society:espresso_machine":
-      machineData = { recipes: global.espressoMachineRecipes, stageCount: 4, multipleInputs: true };
+      machineData = {
+        recipes: global.espressoMachineRecipes,
+        stageCount: 4,
+        multipleInputs: true,
+        soundType: "doapi:brewstation_whistle",
+      };
       break;
     case "society:bait_maker":
-      machineData = { recipes: global.baitMakerRecipes, stageCount: 1 };
+      machineData = {
+        recipes: global.baitMakerRecipes,
+        stageCount: 1,
+        soundType: "aquaculture:fish_death",
+      };
       break;
     case "society:recycling_machine":
-      machineData = { recipes: global.recyclingMachineRecipes, stageCount: 1 };
+      machineData = {
+        recipes: global.recyclingMachineRecipes,
+        stageCount: 1,
+        soundType: "twigs:block.basalt_bricks.fall",
+      };
       break;
     case "society:tapper":
-      machineData = { recipes: global.tapperRecipes, stageCount: 1 };
+      machineData = {
+        recipes: global.tapperRecipes,
+        stageCount: 1,
+        soundType: "vinery:cabinet_close",
+      };
       break;
     case "society:charging_rod":
-      machineData = { recipes: null, stageCount: 5 };
+      machineData = { recipes: null, stageCount: 5, soundType: "" };
       break;
     default:
       machineData = undefined;
@@ -137,6 +194,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
 /**
  * TODO:
  * - Make sure inventory below has space to insert
+ * - Check sparkstone before both operations
  * - Consume sparkstone on insert
  */
 global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
@@ -148,7 +206,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
     if (loadedData) {
-      const { recipes, stageCount, multipleInputs, hasTag, outputMult } = loadedData;
+      const { recipes, stageCount, multipleInputs, hasTag, outputMult, soundType } = loadedData;
       let machineOutput;
       let type;
       let newProperties = artisanMachine.getProperties();
@@ -156,7 +214,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         newProperties.get("mature").toLowerCase() === "true" &&
         global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
       ) {
-        server.runCommandSilent(`playsound twigs:block.shroomlamp.place block @a ${x} ${y} ${z}`);
+        server.runCommandSilent(`playsound stardew_fishing:dwop block @a ${x} ${y} ${z}`);
         if (artisanMachine.id === "society:charging_rod") {
           const season = global.getSeasonFromLevel(level);
           machineOutput = Item.of(`${upgraded && season === "winter" ? 3 : 1}x society:battery`);
@@ -166,8 +224,17 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             upgraded: upgraded,
             stage: "0",
           });
+        } else if (artisanMachine.id === "society:deluxe_worm_farm" && upgraded) {
+          artisanMachine.set(artisanMachine.id, {
+            facing: artisanMachine.properties.get("facing"),
+            type: "1",
+            working: true,
+            mature: false,
+            upgraded: upgraded,
+            stage: "0",
+          });
         } else {
-          if (newProperties.get("type")) type = Number(newProperties.get("type"))
+          if (newProperties.get("type")) type = Number(newProperties.get("type"));
           machineOutput = global.artisanHarvest(
             artisanMachine,
             recipes,
@@ -216,9 +283,13 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
 
       const abovePos = block.getPos().above();
       const aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
-      if (recipes && aboveBlock.inventory) {
+      if (
+        recipes &&
+        newProperties.get("working").toLowerCase() === "false" &&
+        aboveBlock.inventory &&
+        !aboveBlock.inventory.isEmpty()
+      ) {
         const slots = aboveBlock.inventory.getSlots();
-
         let slotStack;
         let outputCount;
         for (let i = 0; i < slots; i++) {
@@ -230,13 +301,14 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               level,
               recipes,
               stageCount,
-              "create:fwoomp",
+              soundType,
               multipleInputs,
               hasTag,
               true,
               server
             );
             if (outputCount > 0) {
+              level.runCommandSilent(`playsound create:fwoomp block @a ${x} ${y} ${z} 0.8`);
               aboveBlock.inventory.extractItem(i, outputCount, false);
               break;
             }

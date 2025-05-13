@@ -74,10 +74,12 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
+      
       if (upgraded && block.properties.get("mature") === "true" && rnd25()) {
         const furniture = Ingredient.of("#society:loot_furniture").itemIds;
         block.popItemFromFace(furniture[Math.floor(Math.random() * furniture.length)], facing);
       }
+
       global.handleBERightClick(
         "minecraft:block.wool.fall",
         click,
