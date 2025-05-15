@@ -45,9 +45,84 @@
     },
     {
       "stack": "item:minecraft:light_blue_wool"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:gilded_blackstone",
+        "amount": 48
+      }
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:battery",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "society:sparkstone",
+      "amount": 64
+    },
+    "item:candlelight:gold_ring{Damage:0}",
+    {
+      "type": "item",
+      "id": "unusualfishmod:tendril",
+      "amount": 8
+    },
+    {
+      "type": "item",
+      "id": "society:hatchetfish_roe",
+      "amount": 87
+    },
+    {
+      "type": "item",
+      "id": "society:lemon_stone",
+      "amount": 10
+    },
+    {
+      "type": "item",
+      "id": "unusualfishmod:relucent_shard",
+      "amount": 64
+    },
+    "item:vintagedelight:ghost_pepper",
+    "item:unusualfishmod:relucent_eggs",
+    "item:aquaculture:goldfish",
+    {
+      "type": "item",
+      "id": "unusualfishmod:crimson_shard",
+      "amount": 64
+    },
+    "item:society:jade",
+    "item:society:fire_quartz",
+    "item:society:pine_tar",
+    "item:vinery:fermentation_barrel",
+    "item:numismatics:bevel",
+    "item:numismatics:sprocket",
+    "item:numismatics:cog",
+    "item:numismatics:crown",
+    "item:numismatics:sun",
+    "item:minecraft:redstone",
+    "#item:society:raw_logs",
+    "item:meadow:fire_log",
+    "item:numismatics:ancient_coin",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
+    "item:minecraft:netherite_scrap",
+    "item:society:auto_grabber",
+    "item:society:artisan_hopper",
+    "item:society:artifact_trove",
+    "item:farmersdelight:cutting_board",
+    "item:society:sap",
+    "item:pamhc2trees:orange_sapling",
+    "item:society:maple_syrup",
+    "item:vinery:oak_wine_rack_small",
+    {
+      "type": "item",
+      "id": "society:amber_goby_roe",
+      "amount": 26
+    },
+    "item:society:fish_pond",
     "item:society:aged_nutty_basil",
     "item:society:double_aged_nutty_basil",
     "item:society:aged_dark_brew",
@@ -78,11 +153,6 @@
       "id": "create_central_kitchen:sap",
       "amount": 0
     },
-    {
-      "type": "item",
-      "id": "society:pine_tar",
-      "amount": 18
-    },
     "item:society:earth_crystal",
     {
       "type": "item",
@@ -108,12 +178,8 @@
     },
     "item:beachparty:crocs{Damage:168}",
     "item:botania:crafty_crate",
-    "item:society:artisan_hopper",
-    "item:society:auto_grabber",
-    "item:society:sparkstone",
     "item:minecraft:netherite_ingot",
     "item:society:crystalarium",
-    "item:minecraft:netherite_scrap",
     "item:botania:terrasteel_ingot",
     "item:botania:terrasteel_nugget",
     "item:society:mana_milker",
@@ -121,15 +187,9 @@
     "item:buildinggadgets2:template_manager",
     "item:society:botanical_tribute",
     "item:botania:mana_fluxfield",
-    {
-      "type": "item",
-      "id": "numismatics:ancient_coin",
-      "amount": 62
-    },
     "item:minecraft:netherite_upgrade_smithing_template",
     "item:society:iron_upgrade_smithing_template",
     "item:society:gold_upgrade_smithing_template",
-    "item:numismatics:sun",
     "item:minecraft:dispenser",
     "item:society:animal_feed",
     "item:farmersdelight:straw_bale",
@@ -157,8 +217,6 @@
     "item:society:energy_drink",
     "item:society:wet_weekly",
     "item:society:broken_clock",
-    "item:society:sap",
-    "item:society:maple_syrup",
     "item:society:neptuna",
     "item:society:fish_radar",
     "item:society:bank_meter",
@@ -170,7 +228,6 @@
     "item:society:frosted_tip",
     "item:society:ancient_juice",
     "item:society:steamed_milk",
-    "item:society:fish_pond",
     "item:society:fish_smoker",
     "item:society:coin_leaderboard",
     "item:society:auto_tapper",
@@ -319,7 +376,6 @@
     "item:rottencreatures:magma_rotten_flesh",
     "item:minecraft:potion{Potion:\"rottencreatures:corrupted\"}",
     "item:rottencreatures:corrupted_wart",
-    "item:meadow:fire_log",
     "item:create:deployer",
     "item:create:encased_fan",
     "item:oreganized:silver_sheet",
@@ -382,14 +438,11 @@
     "#item:create:create_ingots",
     "item:create:andesite_door",
     "item:railways:light_gray_brass_wrapped_locometal",
-    "item:numismatics:cog",
     "item:create:andesite_ladder",
-    "item:society:fire_quartz",
     "item:society:iron_sprinkler",
     "item:society:bowl_of_soul",
     "item:etcetera:light_bulb",
     "item:create:redstone_link",
-    "item:minecraft:redstone",
     "item:minecraft:redstone_ore",
     "item:createutilities:polished_amethyst",
     "item:create:golden_sheet",
@@ -432,7 +485,6 @@
     "item:society:blueberry",
     "item:society:dried_blueberry",
     "item:society:blueberry_seed",
-    "item:vintagedelight:ghost_pepper",
     "item:vintagedelight:ghost_charcoal",
     "item:veggiesdelight:smoked_bellpepper",
     "item:vintagedelight:ghost_pepper_crate",
@@ -518,7 +570,6 @@
     "item:oreganized:electrum_helmet{Damage:0}",
     "item:oreganized:orange_crystal_glass",
     "item:botania:glass_pickaxe{Damage:0}",
-    "item:society:battery",
     "item:splendid_slimes:plort_press",
     "item:quark:birch_post",
     "item:supplementaries:sugar_cube",
@@ -545,7 +596,6 @@
     "item:veggiesdelight:carrot_juice",
     "item:dramaticdoors:tall_rotten_door",
     "item:unusualfishmod:strange_broth",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
     "item:etcetera:tinted_light_bulb",
     "item:refurbished_furniture:light_blue_lamp",
     "item:society:charging_rod",
@@ -751,7 +801,6 @@
     },
     "item:society:sturdy_bamboo_block",
     "item:automobility:dash_panel",
-    "item:aquaculture:goldfish",
     "item:botania:elementium_pickaxe{Damage:0}",
     "item:netherdepthsupgrade:baked_obsidianfish_stew",
     "item:netherdepthsupgrade:baked_lava_pufferfish_stew",
@@ -760,7 +809,6 @@
     "item:supplementaries:gold_trapdoor",
     "item:quark:gold_button",
     "item:simplehats:mimic_head_gold",
-    "item:numismatics:crown",
     "item:unusualfishmod:weird_goldfish",
     "item:vinery:jellie_wine{}",
     "item:aquaculture:gold_fishing_rod{Damage:0}",
@@ -771,13 +819,7 @@
     "item:minecraft:dripstone_block",
     "item:minecraft:pointed_dripstone",
     "item:twigs:compacted_dripstone",
-    "item:unusualfishmod:crimson_shard",
     "item:unusualfishmod:crimson_bricks",
-    {
-      "type": "item",
-      "id": "unusualfishmod:relucent_shard",
-      "amount": 4
-    },
     "item:unusualfishmod:relucent_bricks",
     {
       "type": "item",
@@ -826,7 +868,6 @@
       "amount": 32
     },
     "item:minecraft:golden_helmet{Damage:0}",
-    "item:society:jade",
     "item:minecraft:loom",
     "item:botania:overgrowth_seed",
     "item:society:pristine_neptunite",
@@ -931,7 +972,6 @@
       "amount": 64
     },
     "item:society:baryte",
-    "item:candlelight:gold_ring{Damage:0}",
     "item:candlelight:chocolate_box",
     {
       "type": "item",
@@ -1158,8 +1198,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

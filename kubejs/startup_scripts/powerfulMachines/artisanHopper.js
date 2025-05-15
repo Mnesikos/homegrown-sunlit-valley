@@ -324,7 +324,6 @@ StartupEvents.registry("block", (event) => {
     .create("society:artisan_hopper", "cardinal")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Inserts items into Artisan Machines from inventory above."));
