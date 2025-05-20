@@ -1,5 +1,12 @@
 console.info("[SOCIETY] generalLoot.js loaded");
 
+const fixedStackSize = (itemStack) => {
+  if (itemStack.maxStackSize == 1) {
+    itemStack.setCount(1);
+    return itemStack;
+  }
+  return itemStack;
+};
 LootJS.modifiers((e) => {
   // Entities
   e.addLootTableModifier("minecraft:entities/witch")
@@ -210,8 +217,15 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:chests/bastion_treasure")
     .randomChance(0.85)
     .replaceLoot("etcetera:golden_eggple", "numismatics:crown", true);
-
   e.addLootTableModifier("minecraft:chests/ruined_portal")
     .randomChance(1)
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
+
+  // Fix
+  e.addLootTypeModifier(LootType.CHEST).modifyLoot(
+    Ingredient.all,
+    (itemStack) => {
+      return fixedStackSize(itemStack);
+    }
+  );
 });

@@ -42,6 +42,18 @@
     }
   ],
   "lookup_history": [
+    "item:beachparty:rubber_ring_axolotl{Damage:0}",
+    "item:beachparty:rubber_ring_pelican{Damage:0}",
+    "item:society:ribbit_gadget",
+    "item:gamediscs:gaming_console",
+    "item:waterframes:remote",
+    "item:create:redstone_link",
+    "item:create:linked_controller",
+    "item:waterframes:frame",
+    "item:minecraft:iron_ingot",
+    "item:gamediscs:game_disc_blocktris",
+    "item:gamediscs:game_disc_slime",
+    "item:minecraft:torch",
     "item:society:fish_pond{max_population:5,population:5,type:8}",
     "item:botania:cosmetic_engineer_goggles",
     "item:aquaculture:treasure_chest",
@@ -480,9 +492,7 @@
     "item:create:depot",
     "item:create:speedometer",
     "item:beachparty:swim_wings{Damage:0}",
-    "item:beachparty:rubber_ring_pelican{Damage:0}",
     "item:beachparty:rubber_ring_pink{Damage:0}",
-    "item:beachparty:rubber_ring_axolotl{Damage:0}",
     "item:minecraft:spruce_button",
     "item:society:merino_wool",
     "item:beachparty:trunks{Damage:0}",
@@ -518,7 +528,6 @@
     "item:society:iron_sprinkler",
     "item:society:bowl_of_soul",
     "item:etcetera:light_bulb",
-    "item:create:redstone_link",
     "item:minecraft:redstone_ore",
     "item:createutilities:polished_amethyst",
     "item:create:golden_sheet",
@@ -541,11 +550,6 @@
       "type": "fluid",
       "id": "society:pine_tar",
       "amount": 0
-    },
-    {
-      "type": "item",
-      "id": "minecraft:iron_ingot",
-      "amount": 6
     },
     "item:society:recycling_machine",
     "item:minecraft:oak_wood",
@@ -669,7 +673,6 @@
     "item:etcetera:tinted_light_bulb",
     "item:refurbished_furniture:light_blue_lamp",
     "item:society:charging_rod",
-    "item:society:ribbit_gadget",
     "item:botania:redstone_root",
     "item:beachparty:cocoa_cocktail",
     "item:beachparty:mini_fridge",
@@ -698,7 +701,6 @@
     "item:minecraft:gray_stained_glass_pane",
     "item:splendid_slimes:rocket_pod",
     "item:supplementaries:bomb",
-    "item:gamediscs:gaming_console{\"gamediscs:SlimeGame;Chakyl\":2}",
     "item:functionalstorage:framed_controller_extension",
     "item:functionalstorage:controller_extension",
     "item:functionalstorage:framed_storage_controller",
@@ -953,7 +955,6 @@
     "item:society:dried_foul_berries",
     "item:society:dried_orange",
     "item:society:dried_strawberry",
-    "item:gamediscs:game_disc_slime",
     "item:crabbersdelight:frog_leg_kebob",
     "item:society:froggy_helm",
     "item:minecraft:frog_spawn_egg",
@@ -1018,7 +1019,6 @@
       "id": "aquaculture:fish_bones",
       "amount": 4
     },
-    "item:gamediscs:game_disc_blocktris",
     "item:society:pig_race_ticket",
     "item:society:husbandry_hourly",
     "item:society:inserter",
@@ -1233,8 +1233,6 @@
     "item:society:catfish_bait",
     "item:society:jellyfish_bait",
     "item:crabbersdelight:deluxe_crab_trap_bait",
-    "item:waterframes:frame",
-    "item:waterframes:remote",
     "item:waterframes:projector",
     "item:waterframes:tv",
     "item:waterframes:big_tv",
@@ -1256,9 +1254,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

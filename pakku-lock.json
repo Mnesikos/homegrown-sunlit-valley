@@ -7675,43 +7675,6 @@
             ]
         },
         {
-            "pakku_id": "DwnWE8rQmChkKBsT",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "polymorph"
-            },
-            "name": {
-                "curseforge": "Polymorph (Fabric/Forge/Quilt)"
-            },
-            "id": {
-                "curseforge": "388800"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "polymorph-forge-0.49.8+1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5995/253/polymorph-forge-0.49.8+1.20.1.jar",
-                    "id": "5995253",
-                    "parent_id": "388800",
-                    "hashes": {
-                        "sha1": "60be345312d425fc1cff5af7ae1acd46d941dc62",
-                        "md5": "54dd12ec95207f5d8bbdc7d24a7817a0"
-                    },
-                    "required_dependencies": [],
-                    "size": 299140,
-                    "date_published": "2024-12-16T05:37:49.990Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "jJHuQkL72KE8fCaQ",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
