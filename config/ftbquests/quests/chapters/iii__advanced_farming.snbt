@@ -1115,6 +1115,20 @@
 			x: 13.0d
 			y: 0.0d
 		}
+		{
+			dependencies: [
+				"70D15F67E3880A3A"
+				"17D2933C4B133AA8"
+			]
+			id: "4CD98E31EC569CC3"
+			tasks: [{
+				id: "209753824F6D75ED"
+				item: "society:fish_pond_basket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
 	]
 	title: "III - Advanced Farming"
 }

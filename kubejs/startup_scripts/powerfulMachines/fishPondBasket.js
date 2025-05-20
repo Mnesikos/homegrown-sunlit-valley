@@ -5,7 +5,6 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   const server = level.server;
   const fishPond = level.getBlock(fishPondPos);
   const { x, y, z } = fishPond;
-  console.log("runFishPondBasket!")
   let machineOutputs;
   let newProperties = fishPond.getProperties();
   if (

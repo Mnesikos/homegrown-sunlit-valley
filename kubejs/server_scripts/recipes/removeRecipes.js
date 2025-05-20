@@ -642,6 +642,7 @@ ServerEvents.recipes((e) => {
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
     "moredelight:cutting/sliced_bread",
+    "everycomp:db/betterarcheology/rotten_beam",
     // Botania
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",

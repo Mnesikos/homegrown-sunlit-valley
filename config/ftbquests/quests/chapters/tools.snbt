@@ -347,8 +347,8 @@
 				type: "item"
 			}]
 			title: "Building Wand Cores"
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["31F6C5811A72396C"]
@@ -621,6 +621,22 @@
 			}]
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			description: [
+				"The &6Magnifying Glass&r shows the working area of certain blocks using right click (Use while crouching if the block has an inventory)."
+				""
+				"A list of blocks it works on is in the tooltip when holding shift."
+			]
+			id: "3A5DF5AD3C5299DE"
+			tasks: [{
+				id: "4FB6C9BF2CA1409A"
+				item: "society:magnifying_glass"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
 		}
 	]
 	title: "Building Tools"

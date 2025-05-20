@@ -81,6 +81,18 @@ ServerEvents.recipes((e) => {
       amount: 250,
       container: "minecraft:glass_bottle",
     },
+    {
+      item: "vintagedelight:vinegar_bottle",
+      fluid: "society:vinegar",
+      amount: 250,
+      container: "minecraft:glass_bottle",
+    },
+    {
+      item: "vintagedelight:vinegar_mason_jar",
+      fluid: "society:vinegar",
+      amount: 750,
+      container: "bakery:jar",
+    },
   ];
   recipes.forEach((recipe) => {
     bottleRecipes(recipe.item, recipe.fluid, recipe.amount, recipe.container);

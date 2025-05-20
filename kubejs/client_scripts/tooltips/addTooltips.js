@@ -176,12 +176,6 @@ ItemEvents.tooltip((tooltip) => {
   // Hammers
   tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
   tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
-  tooltip.add("justhammers:reinforced_core", Text.gray("Crafts hammers that mine a 5x5x1 area"));
-  tooltip.add(
-    "justhammers:reinforced_impact_core",
-    Text.gray("Crafts hammers that mine a 5x5x3 area")
-  );
-  tooltip.add("justhammers:destructor_core", Text.gray("Crafts hammers that mine a 5x5x5 area"));
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
@@ -741,6 +735,26 @@ ItemEvents.tooltip((tooltip) => {
       }
     }
   );
+  const magnifyingBlocks = [
+    "Auto-Grabber",
+    "Artisan Hopper",
+    "Feeding Trough",
+    "Fish Pond Basket",
+    "Golden Clock",
+    "Mana Milker",
+    "All Sprinklers",
+  ];
+  // Translocators
+  tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {
+    if (tooltip.shift) {
+      magnifyingBlocks.forEach((block, index) => {
+        text.add(index + 1, Text.gold(block));
+      });
+    } else {
+      text.add(1, Text.green("Displays working area of some machines"));
+      text.add(2, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("] to view blocks")]);
+    }
+  });
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));

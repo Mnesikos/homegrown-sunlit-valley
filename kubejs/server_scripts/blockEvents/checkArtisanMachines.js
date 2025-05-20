@@ -82,14 +82,14 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
 
   if (recipes === "society:battery") id = "society:battery";
   else {
-    recipe = global.getArtisanOutputs(recipes, block);
+    recipe = global.getArtisanRecipe(recipes, block);
     if (!recipe) return;
     id = String(Item.of(recipe.output[0]).id);
     primaryOutput = idMap.get(id);
   }
   if (recipe?.input === item) return;
   let duration =
-    (block.properties.get("type") && global.getArtisanOutputs(recipes, block).time) || stageCount;
+    (block.properties.get("type") && global.getArtisanRecipe(recipes, block).time) || stageCount;
   if (
     machineId == "society:aging_cask" &&
     block.properties.get("upgraded").toLowerCase() === "true"

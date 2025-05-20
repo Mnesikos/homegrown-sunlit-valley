@@ -1,4 +1,17 @@
 global.removedItems = [
+  // Hammers
+  "justhammers:netherite_destructor_hammer",
+  "justhammers:diamond_destructor_hammer",
+  "justhammers:gold_destructor_hammer",
+  "justhammers:iron_destructor_hammer",
+  "justhammers:stone_destructor_hammer",
+  "justhammers:netherite_reinforced_impact_hammer",
+  "justhammers:diamond_reinforced_impact_hammer",
+  "justhammers:gold_reinforced_impact_hammer",
+  "justhammers:iron_reinforced_impact_hammer",
+  "justhammers:stone_reinforced_impact_hammer",
+  "justhammers:reinforced_impact_core",
+  "justhammers:destructor_core",
   // FE
   "moreminecarts:battery_cart",
   "moreminecarts:transport_battery",

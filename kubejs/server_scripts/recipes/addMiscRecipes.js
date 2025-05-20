@@ -31,6 +31,10 @@ ServerEvents.recipes((e) => {
     f: "farm_and_charm:fertilizer",
     b: "minecraft:bone_block",
   });
+  e.shaped("society:magnifying_glass", [" g", "c "], {
+    g: "minecraft:glass",
+    c: "minecraft:copper_ingot",
+  });
   // Greenhouse glass
   e.shaped("moreminecarts:chiseled_organic_glass", [" C ", "ege", " C "], {
     C: "numismatics:crown",
@@ -276,10 +280,7 @@ ServerEvents.recipes((e) => {
     "paraglider:goddess_statue",
     "society:prismatic_shard",
   ]);
-  e.shapeless("rehooked:red_hook", [
-    "rehooked:diamond_hook",
-    "society:prismatic_shard",
-  ]);
+  e.shapeless("rehooked:red_hook", ["rehooked:diamond_hook", "society:prismatic_shard"]);
   e.shaped("society:ancient_cask", [" p ", "vav", " p "], {
     a: "society:aging_cask",
     p: "society:prismatic_shard",
@@ -342,6 +343,14 @@ ServerEvents.recipes((e) => {
     b: "society:battery",
     s: "society:sparkstone",
     z: "create:zinc_ingot",
+  });
+  e.shaped("society:fish_pond_basket", ["NaN", "bhb", "nsn"], {
+    a: "farmersdelight:safety_net",
+    n: "minecraft:netherite_ingot",
+    h: "minecraft:hopper",
+    b: "society:battery",
+    s: "society:sparkstone",
+    N: "aquaculture:neptunium_ingot",
   });
   // Fish
   e.shaped("society:fish_pond", ["PwP", "rNr"], {
@@ -409,9 +418,7 @@ ServerEvents.recipes((e) => {
     P: "create:precision_mechanism",
   });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
-  e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(
-    0.35
-  );
+  e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
   // Crab trap bait
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);
   e.shapeless("4x crabbersdelight:crab_trap_bait", ["aquaculture:minnow"]);
@@ -452,26 +459,18 @@ ServerEvents.recipes((e) => {
   // Pristine uncrafting
   global.geodeList.forEach((geode) => {
     if (geode.item === "society:froggy_helm") return;
-    e.shapeless(`3x ${geode.item}`, [
-      `society:pristine_${geode.item.split(":")[1]}`,
-    ]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
   });
   global.frozenGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_drum") return;
-    e.shapeless(`3x ${geode.item}`, [
-      `society:pristine_${geode.item.split(":")[1]}`,
-    ]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
   });
   global.magmaGeodeList.forEach((geode) => {
     if (geode.item === "society:ribbit_gadget") return;
-    e.shapeless(`3x ${geode.item}`, [
-      `society:pristine_${geode.item.split(":")[1]}`,
-    ]);
+    e.shapeless(`3x ${geode.item}`, [`society:pristine_${geode.item.split(":")[1]}`]);
   });
   global.gems.forEach((gem) => {
-    e.shapeless(`3x ${gem.item}`, [
-      `society:pristine_${gem.item.split(":")[1]}`,
-    ]);
+    e.shapeless(`3x ${gem.item}`, [`society:pristine_${gem.item.split(":")[1]}`]);
   });
   const vanillaPristine = [
     "minecraft:emerald",
@@ -591,10 +590,7 @@ ServerEvents.recipes((e) => {
     "netherdepthsupgrade:eyeball_fish",
     "society:neptuna",
   ].forEach((fish) => {
-    e.shapeless(fish, [
-      `society:smoked_${fish.split(":")[1]}`,
-      "1x minecraft:blue_ice",
-    ]);
+    e.shapeless(fish, [`society:smoked_${fish.split(":")[1]}`, "1x minecraft:blue_ice"]);
   });
   // Sprinklers
   e.shaped("society:iron_sprinkler", [" C ", "IlI", " l "], {

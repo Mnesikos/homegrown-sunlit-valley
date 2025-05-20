@@ -105,7 +105,7 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/sparkstone_ore")
+    .model("society:block/sparkstone_ore");
 
   e.create("society:deepslate_sparkstone_ore")
     .defaultCutout()
@@ -115,10 +115,17 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(true)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/deepslate_sparkstone_ore")
-  // Skull Cavern
+    .model("society:block/deepslate_sparkstone_ore");
 
-  
+  // Skull Cavern
+  e.create("society:stone_boulder")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2)
+    .resistance(1.0)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_iron_tool")
+    .textureAll("society:block/stone_boulder");
 
   e.create("society:skull_stone")
     .defaultCutout()
@@ -126,7 +133,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(-1)
     .resistance(3600000)
     .requiresTool(true)
-    .textureAll("minecraft:block/stone")
+    .textureAll("minecraft:block/stone");
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)

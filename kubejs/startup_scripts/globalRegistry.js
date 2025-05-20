@@ -662,6 +662,8 @@ global.artisanGoods = [
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 64 },
   { item: "society:pine_tar", value: 48 },
+  { item: "society:sap", value: 20 },
+  { item: "society:rubber", value: 30 },
   { item: "society:aged_cheese_block", value: 768 },
   { item: "society:aged_goat_cheese_block", value: 4608 },
   { item: "society:aged_warped_cheese_block", value: 4608 },
