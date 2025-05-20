@@ -125,7 +125,13 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_iron_tool")
-    .textureAll("society:block/stone_boulder");
+    .texture("up", `society:block/stone_boulder_top`)
+    .texture("down", "fsociety:block/stone_boulder_top")
+    .texture("north", `society:block/stone_boulder`)
+    .texture("east", `society:block/stone_boulder`)
+    .texture("south", `society:block/stone_boulder`)
+    .texture("west", `society:block/stone_boulder`)
+    .texture("particle", `society:block/stone_boulder`)
 
   e.create("society:skull_stone")
     .defaultCutout()

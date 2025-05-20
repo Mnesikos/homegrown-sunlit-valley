@@ -23,6 +23,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
   e.shapeless("4x society:cracked_egg", ["#society:large_eggs"]);
   e.shapeless("1x society:cracked_egg", ["#forge:eggs"]);
+  e.shapeless("1x society:fish_pond", ["society:fish_pond"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
@@ -35,6 +36,7 @@ ServerEvents.recipes((e) => {
     g: "minecraft:glass",
     c: "minecraft:copper_ingot",
   });
+  
   // Greenhouse glass
   e.shaped("moreminecarts:chiseled_organic_glass", [" C ", "ege", " C "], {
     C: "numismatics:crown",
@@ -481,7 +483,7 @@ ServerEvents.recipes((e) => {
     "minecraft:quartz",
   ];
   vanillaPristine.forEach((gem) => {
-    e.shapeless(`6x ${gem}`, [`society:pristine_${gem.split(":")[1]}`]);
+    e.shapeless(`3x ${gem}`, [`society:pristine_${gem.split(":")[1]}`]);
   });
   e.custom({
     type: "vintagedelight:fermenting",

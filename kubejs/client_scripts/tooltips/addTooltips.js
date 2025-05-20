@@ -143,7 +143,17 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
     tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
   });
-  tooltip.add("society:fish_pond", Text.darkAqua("Needs a 3x4 of water behind pond"));
+  tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
+    if (item.nbt) {
+      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type")].item}`))
+      text.add(2, Text.aqua(`Population: ${item.nbt.get("population")}/${item.nbt.get("max_population")} :fish:`));
+    } else {
+      text.add(1,Text.gray("Cultivates fish, roe, and various items"));
+      text.add(2,Text.gray("Right Click with a fish to add it to the pond"));
+      text.add(3,Text.gray("Shift + Right Click with an empty hand to take one out"));
+      text.add(4,Text.darkAqua("Needs a 3x4 of water behind pond"));
+    }
+  });
   // Furniture
   tooltip.add("tanukidecor:diy_workbench", Text.gray("Crafts any Catalog item for cheap"));
   tooltip.add("society:tanuki_catalog", [

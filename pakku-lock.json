@@ -7675,6 +7675,43 @@
             ]
         },
         {
+            "pakku_id": "DwnWE8rQmChkKBsT",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "polymorph"
+            },
+            "name": {
+                "curseforge": "Polymorph (Fabric/Forge/Quilt)"
+            },
+            "id": {
+                "curseforge": "388800"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "polymorph-forge-0.49.8+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5995/253/polymorph-forge-0.49.8+1.20.1.jar",
+                    "id": "5995253",
+                    "parent_id": "388800",
+                    "hashes": {
+                        "sha1": "60be345312d425fc1cff5af7ae1acd46d941dc62",
+                        "md5": "54dd12ec95207f5d8bbdc7d24a7817a0"
+                    },
+                    "required_dependencies": [],
+                    "size": 299140,
+                    "date_published": "2024-12-16T05:37:49.990Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "jJHuQkL72KE8fCaQ",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
@@ -9671,6 +9708,48 @@
             ]
         },
         {
+            "pakku_id": "DdlNL4XrImM1QWKj",
+            "pakku_links": [
+                "6a3LhwGbJe9ZoJYG"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "structurify"
+            },
+            "name": {
+                "curseforge": "Structurify"
+            },
+            "id": {
+                "curseforge": "1087551"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "structurify-forge-mc1.20.1-1.0.11.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5975/418/structurify-forge-mc1.20.1-1.0.11.jar",
+                    "id": "5975418",
+                    "parent_id": "1087551",
+                    "hashes": {
+                        "sha1": "d71d9d1c4a045d29b80826a1c9044ab6947547da",
+                        "md5": "593ba549c2567548b6f1af1deef9eb6e"
+                    },
+                    "required_dependencies": [
+                        "667299"
+                    ],
+                    "size": 1326023,
+                    "date_published": "2024-12-08T21:22:03.253Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NOPqa5QHmIK3rdO1",
             "type": "MOD",
             "slug": {
@@ -10981,6 +11060,43 @@
                     "required_dependencies": [],
                     "size": 370524,
                     "date_published": "2024-09-30T06:13:49.387Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "6a3LhwGbJe9ZoJYG",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "yacl"
+            },
+            "name": {
+                "curseforge": "YetAnotherConfigLib"
+            },
+            "id": {
+                "curseforge": "667299"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6336/646/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
+                    "id": "6336646",
+                    "parent_id": "667299",
+                    "hashes": {
+                        "sha1": "644731e321c53a35a0b3177a3cc6347fe38002f4",
+                        "md5": "2437cb642e24726a83f864e345f24479"
+                    },
+                    "required_dependencies": [],
+                    "size": 1105891,
+                    "date_published": "2025-03-23T19:12:56.087Z"
                 }
             ]
         },

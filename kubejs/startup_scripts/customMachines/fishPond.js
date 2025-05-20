@@ -36,9 +36,9 @@ const handleFishInsertion = (fish, recipeIndex, clickEvent) => {
       level.spawnParticles(
         "minecraft:splash",
         true,
-        x + 0.5,
-        y + 0.9,
-        z + 0.5,
+        block.x + 0.5,
+        block.y + 0.9,
+        block.z + 0.5,
         0.1 * rnd(1, 4),
         0.1 * rnd(1, 4),
         0.1 * rnd(1, 4),
@@ -114,9 +114,6 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Cultivates fish, roe, and various items"));
-      item.tooltip(Text.gray("Right Click with a fish to add it to the pond"));
-      item.tooltip(Text.gray("Shift + Right Click with an empty hand to take out fish"));
       item.modelJson({
         parent: "society:block/fish_pond",
       });

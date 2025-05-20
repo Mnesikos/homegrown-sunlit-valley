@@ -42,6 +42,16 @@
     }
   ],
   "lookup_history": [
+    "item:society:fish_pond{max_population:5,population:5,type:8}",
+    "item:botania:cosmetic_engineer_goggles",
+    "item:aquaculture:treasure_chest",
+    "item:simplehats:hatbag_epic",
+    "item:society:aquamarine",
+    "item:society:pristine_quartz",
+    "item:society:pristine_diamond",
+    "item:society:pristine_lapis_lazuli",
+    "item:society:pristine_emerald",
+    "item:society:pristine_nekoite",
     {
       "type": "item",
       "id": "betterarcheology:rotten_log",
@@ -155,7 +165,6 @@
     "item:society:oak_resin",
     "item:create:empty_blaze_burner",
     "item:numismatics:ancient_coin",
-    "item:society:fish_pond",
     "item:beachparty:beach_hat{Damage:0}",
     "item:minecraft:splash_potion{Potion:\"minecraft:long_water_breathing\"}",
     "item:botania:water_ring",
@@ -1058,7 +1067,6 @@
     "item:fantasyfurniture:bone/skeleton/bench",
     "item:netherdepthsupgrade:wither_bonefish",
     "item:species:bone_spike",
-    "item:aquaculture:treasure_chest",
     "item:minecraft:clay",
     "item:society:ribbit_drum",
     "item:botania:horn_grass",
