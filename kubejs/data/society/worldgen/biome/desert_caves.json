@@ -24,40 +24,34 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:phantom",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 50
-      },
-      {
-        "type": "legendarycreatures:desert_mojo",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 50
-      },
-      {
-        "type": "minecraft:skeleton",
+        "type": "rottencreatures:mummy",
         "weight": 100,
         "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "legendarycreatures:scorpion",
-        "maxCount": 1,
-        "minCount": 1,
+        "type": "minecraft:phantom",
+        "maxCount": 4,
+        "minCount": 4,
         "weight": 50
       },
       {
-        "type": "minecraft:wither_skeleton",
-        "weight": 80,
+        "type": "legendarycreatures:desert_mojo",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 50
+      },
+      {
+        "type": "rottencreatures:scarab",
+        "weight": 50,
         "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "minecraft:blaze",
+        "type": "minecraft:creeper",
         "weight": 80,
-        "minCount": 1,
-        "maxCount": 1
+        "minCount": 4,
+        "maxCount": 4
       }
     ],
     "creature": [],
@@ -85,17 +79,9 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-    [
-      "society:ladder",
-      "society:rock"
-    ],
-    [
-      "minecraft:lake_lava_underground"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
+    ["society:desert_caves/sandstone_ladder", "society:desert_caves/sandstone_rock"],
+    ["minecraft:lake_lava_underground"],
+    ["minecraft:monster_room", "minecraft:monster_room_deep"],
     [],
     [],
     [
@@ -107,9 +93,7 @@
       "minecraft:ore_andesite_lower"
     ],
     [],
-    [
-      "minecraft:spring_water"
-    ],
+    ["minecraft:spring_water"],
     [
       "minecraft:glow_lichen",
       "society:desert_caves/dull_sand_patch_floor",
@@ -118,8 +102,6 @@
       "society:desert_caves/organic_glass_patch_ceiling",
       "society:desert_caves/sandstone_patch_ceiling"
     ],
-    [
-      "minecraft:freeze_top_layer"
-    ]
+    ["minecraft:freeze_top_layer"]
   ]
 }

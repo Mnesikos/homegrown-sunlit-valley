@@ -8,20 +8,10 @@
     "water_fog_color": 329011
   },
   "features": [
-    [
-      "society:ladder",
-      "society:rock"
-    ],
-    [
-      "minecraft:lake_lava_underground"
-    ],
-    [
-      "minecraft:amethyst_geode"
-    ],
-    [
-      "minecraft:monster_room",
-      "minecraft:monster_room_deep"
-    ],
+    ["society:ladder", "society:rock"],
+    ["minecraft:lake_lava_underground"],
+    ["minecraft:amethyst_geode"],
+    ["minecraft:monster_room", "minecraft:monster_room_deep"],
     [],
     [],
     [
@@ -33,15 +23,8 @@
       "minecraft:ore_andesite_lower"
     ],
     [],
-    [
-      "minecraft:spring_water",
-      "minecraft:spring_lava"
-    ],
-    [
-      "minecraft:glow_lichen",
-      "minecraft:brown_mushroom_normal",
-      "minecraft:red_mushroom_normal"
-    ],
+    ["minecraft:spring_water", "minecraft:spring_lava"],
+    ["minecraft:glow_lichen", "minecraft:brown_mushroom_normal", "minecraft:red_mushroom_normal"],
     []
   ],
   "has_precipitation": true,
@@ -57,64 +40,40 @@
     ],
     "monster": [
       {
-        "type": "minecraft:spider",
-        "weight": 100,
+        "type": "minecraft:skeleton",
+        "maxCount": 4,
         "minCount": 4,
-        "maxCount": 4
+        "weight": 100
       },
       {
         "type": "minecraft:zombie",
-        "weight": 95,
+        "maxCount": 4,
         "minCount": 4,
-        "maxCount": 4
+        "weight": 95
       },
       {
-        "type": "minecraft:zombie_villager",
-        "weight": 5,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:skeleton",
-        "weight": 100,
+        "type": "minecraft:spider",
+        "maxCount": 4,
         "minCount": 4,
-        "maxCount": 4
+        "weight": 95
       },
       {
         "type": "minecraft:creeper",
-        "weight": 100,
+        "maxCount": 4,
         "minCount": 4,
-        "maxCount": 4
+        "weight": 100
       },
       {
-        "type": "minecraft:slime",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:enderman",
-        "weight": 10,
+        "type": "rottencreatures:undead_miner",
+        "maxCount": 4,
         "minCount": 1,
-        "maxCount": 4
+        "weight": 40
       },
       {
-        "type": "minecraft:witch",
-        "weight": 5,
+        "type": "quark:forgotten",
         "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "minecraft:wither_skeleton",
-        "weight": 80,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:blaze",
-        "weight": 80,
-        "minCount": 1,
-        "maxCount": 1
+        "maxCount": 4,
+        "weight": 10
       }
     ],
     "underground_water_creature": [

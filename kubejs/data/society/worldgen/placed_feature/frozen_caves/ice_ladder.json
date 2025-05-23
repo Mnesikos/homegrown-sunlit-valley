@@ -1,5 +1,5 @@
 {
-  "feature": "society:ladder",
+  "feature": "society:frozen_caves/ice_ladder",
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",

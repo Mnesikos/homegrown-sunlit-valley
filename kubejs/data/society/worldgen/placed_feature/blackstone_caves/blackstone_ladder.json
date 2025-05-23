@@ -1,5 +1,5 @@
 {
-  "feature": "society:ladder",
+  "feature": "society:blackstone_caves/blackstone_ladder",
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",

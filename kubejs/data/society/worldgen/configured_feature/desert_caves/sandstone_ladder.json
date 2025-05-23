@@ -37,37 +37,43 @@
             {
               "weight": 90,
               "data": {
-                "Name": "society:stone_boulder"
-              }
-            },
-            {
-              "weight": 25,
-              "data": {
-                "Name": "minecraft:coal_ore"
+                "Name": "society:sandstone_boulder"
               }
             },
             {
               "weight": 20,
               "data": {
-                "Name": "minecraft:copper_ore"
+                "Name": "minecraft:gold_ore"
               }
             },
             {
-              "weight": 15,
+              "weight": 10,
               "data": {
-                "Name": "minecraft:iron_ore"
+                "Name": "oreganized:lead_ore"
               }
             },
             {
-              "weight": 13,
+              "weight": 6,
               "data": {
-                "Name": "create:zinc_ore"
+                "Name": "minecraft:redstone_ore"
               }
             },
             {
-              "weight": 2,
+              "weight": 4,
               "data": {
-                "Name": "minecraft:lapis_ore"
+                "Name": "minecraft:diamond_ore"
+              }
+            },
+            {
+              "weight": 4,
+              "data": {
+                "Name": "society:sparkstone_ore"
+              }
+            },
+            {
+              "weight": 1,
+              "data": {
+                "Name": "oreganized:silver_ore"
               }
             }
           ]

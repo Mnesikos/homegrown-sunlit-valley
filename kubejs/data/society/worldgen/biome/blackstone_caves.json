@@ -18,7 +18,7 @@
   "spawners": {
     "monster": [
       {
-        "type": "minecraft:skeleton",
+        "type": "rottencreatures:burned",
         "maxCount": 4,
         "minCount": 4,
         "weight": 100
@@ -27,19 +27,13 @@
         "type": "minecraft:creeper",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 100
+        "weight": 80
       },
       {
         "type": "minecraft:magma_cube",
         "maxCount": 4,
-        "minCount": 1,
+        "minCount": 4,
         "weight": 40
-      },
-      {
-        "type": "minecraft:witch",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 5
       },
       {
         "type": "minecraft:wither_skeleton",
@@ -49,15 +43,15 @@
       },
       {
         "type": "minecraft:blaze",
-        "weight": 120,
-        "minCount": 1,
+        "weight": 100,
+        "minCount": 4,
         "maxCount": 4
       },
       {
-        "type": "legendarycreatures:peacock_spider",
+        "type": "legendarycreatures:nether_wisp",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 1
+        "weight": 4
       }
     ],
     "creature": [],
@@ -86,8 +80,8 @@
   "carvers": {},
   "features": [
     [
-      "society:ladder",
-      "society:rock"
+      "society:blackstone_caves/blackstone_ladder",
+      "society:blackstone_caves/blackstone_rock"
     ],
     ["minecraft:lake_lava_underground"],
     ["minecraft:monster_room", "minecraft:monster_room_deep"],

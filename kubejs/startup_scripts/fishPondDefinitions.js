@@ -2602,7 +2602,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:pristine_tigerseye", count: 1 },
-          { item: "society:mini_oni_eye", count: 1 },
+          { item: "botania:ender_eye_block", count: 8 },
           { item: "minecraft:eye_armor_trim_smithing_template", count: 1 },
         ],
       },

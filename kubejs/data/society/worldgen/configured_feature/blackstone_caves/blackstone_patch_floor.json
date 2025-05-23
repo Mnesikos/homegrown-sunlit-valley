@@ -5,13 +5,13 @@
     "depth": {
       "type": "minecraft:uniform",
       "value": {
-        "min_inclusive": 2,
-        "max_inclusive": 4
+        "min_inclusive": 7,
+        "max_inclusive": 9
       }
     },
     "vertical_range": 5,
     "extra_bottom_block_chance": 0,
-    "extra_edge_column_chance": 0.3,    
+    "extra_edge_column_chance": 0.3,
     "vegetation_chance": 0.001,
     "vegetation_feature": {
       "feature": {
@@ -38,21 +38,16 @@
     "xz_radius": {
       "type": "minecraft:uniform",
       "value": {
-        "min_inclusive": 2,
-        "max_inclusive": 4
+        "min_inclusive": 5,
+        "max_inclusive": 6
       }
     },
     "replaceable": "#society:skull_block",
     "ground_state": {
-      "type": "minecraft:weighted_state_provider",
-      "entries": [
-        {
-          "weight": 5,
-          "data": {
-            "Name": "minecraft:blackstone"
-          }
-        }
-      ]
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "society:skull_blackstone"
+      }
     }
   }
 }

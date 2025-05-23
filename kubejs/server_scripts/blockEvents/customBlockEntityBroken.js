@@ -52,7 +52,7 @@ BlockEvents.broken("society:fish_pond", (e) => {
         "society:fish_pond",
         `{type:${block.properties.get("type")},population:${block.properties.get(
           "population"
-        )},max_population:${block.properties.get("max_population")}}`
+        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get("quest")},quest_id:${block.properties.get("quest_id")}}`
       )
     );
   } else {

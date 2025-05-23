@@ -1,5 +1,5 @@
 {
-  "feature": "society:rock",
+  "feature": "society:desert_caves/sandstone_rock",
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",

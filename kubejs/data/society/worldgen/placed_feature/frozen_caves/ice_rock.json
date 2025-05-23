@@ -1,5 +1,5 @@
 {
-  "feature": "society:rock",
+  "feature": "society:frozen_caves/ice_rock",
   "placement": [
     {
       "type": "minecraft:count_on_every_layer",

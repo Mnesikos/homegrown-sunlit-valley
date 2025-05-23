@@ -78,7 +78,6 @@ global.ore = [
 ];
 [
   { item: "minecraft:emerald", value: 32 },
-  { item: "society:sparkstone", value: 64 },
   { item: "minecraft:diamond", value: 256 },
   { item: "minecraft:lapis_lazuli", value: 6 },
   { item: "minecraft:quartz", value: 8 },

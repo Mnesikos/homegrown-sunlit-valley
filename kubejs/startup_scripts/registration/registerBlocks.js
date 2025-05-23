@@ -118,28 +118,40 @@ StartupEvents.registry("block", (e) => {
     .model("society:block/deepslate_sparkstone_ore");
 
   // Skull Cavern
-  e.create("society:stone_boulder")
-    .defaultCutout()
-    .soundType("stone")
-    .hardness(2)
-    .resistance(1.0)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_iron_tool")
-    .texture("up", `society:block/stone_boulder_top`)
-    .texture("down", "fsociety:block/stone_boulder_top")
-    .texture("north", `society:block/stone_boulder`)
-    .texture("east", `society:block/stone_boulder`)
-    .texture("south", `society:block/stone_boulder`)
-    .texture("west", `society:block/stone_boulder`)
-    .texture("particle", `society:block/stone_boulder`)
+  const createBoulder = (type) => {
+    e.create(`society:${type}_boulder`)
+      .texture("up", `society:block/${type}_boulder_top`)
+      .texture("down", `society:block/${type}_boulder`)
+      .texture("north", `society:block/${type}_boulder`)
+      .texture("east", `society:block/${type}_boulder`)
+      .texture("south", `society:block/${type}_boulder`)
+      .texture("west", `society:block/${type}_boulder`)
+      .texture("particle", `society:block/${type}_boulder`)
+      .soundType("stone")
+      .hardness(2)
+      .resistance(1.0)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:needs_iron_tool");
+  };
+  createBoulder("stone");
+  createBoulder("ice");
+  createBoulder("sandstone");
+  createBoulder("blackstone");
 
-  e.create("society:skull_stone")
-    .defaultCutout()
-    .soundType("stone")
-    .hardness(-1)
-    .resistance(3600000)
-    .requiresTool(true)
-    .textureAll("minecraft:block/stone");
+  const createSkullVariant = (type, path) => {
+    e.create(`society:skull_${type}`)
+      .defaultCutout()
+      .soundType("stone")
+      .hardness(-1)
+      .resistance(3600000)
+      .requiresTool(true)
+      .textureAll(path);
+  };
+  createSkullVariant("stone", "minecraft:block/stone");
+  createSkullVariant("permafrost", "quark:block/permafrost");
+  createSkullVariant("sandstone", "minecraft:block/sandstone");
+  createSkullVariant("blackstone", "minecraft:block/blackstone");
+  
   // Drinks
   e.create("society:espresso")
     .box(6, 0, 6, 10, 4, 10)

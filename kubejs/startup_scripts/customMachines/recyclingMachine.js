@@ -5,6 +5,7 @@ global.recyclingMachineRecipes = [
   { input: "aquaculture:driftwood", output: ["1x meadow:fire_log"] },
   { input: "furniture:trash_bag", output: ["4x society:bouquet_bag"] },
   { input: "society:fire_quartz", output: ["24x minecraft:quartz"] },
+  { input: "minecraft:ancient_debris", output: ["2x minecraft:netherite_scrap"] },
   {
     input: "betterarcheology:artifact_shards",
     output: ["2x society:sparkstone"],

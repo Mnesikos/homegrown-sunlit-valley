@@ -6,37 +6,42 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "weight": 270
+        },
+        {
+          "type": "minecraft:item",
           "name": "society:geode",
-          "weight": 4
+          "weight": 25
         },
         {
           "type": "minecraft:item",
           "name": "society:earth_crystal",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:emerald",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "weight": 2
+          "weight": 20
         },
         {
           "type": "minecraft:item",
           "name": "society:aquamarine",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:pristine_amethyst_chunk",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "name": "society:amethyst_chunk",
-          "weight": 2
+          "name": "society:wheel_of_adaptation",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "society:furniture_box",
+          "name": "society:gnome",
           "weight": 1
         }
       ]
