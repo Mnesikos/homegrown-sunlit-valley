@@ -25,19 +25,27 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
         );
       })
       .handleLookup((builder, recipe) => {
-        const { input, output } = recipe.data;
+        const { input, output, fluidOutput } = recipe.data;
         const slotSize = 21;
         builder
           .addSlot("INPUT", 2, 2)
           .addItemStack(`${output[0].includes("steamed_milk") ? 1 : inputCount}x ${input}`)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
-        output.forEach((item, index) => {
+        if (fluidOutput && categoryID !== "tapping") {
+          console.log(fluidOutput);
           builder
-            .addSlot("OUTPUT", 104 + index * slotSize, 2)
-            .addItemStack(Item.of(`${item}`))
+            .addSlot("OUTPUT", 104, 2)
+            .addFluidStack(`${fluidOutput}`)
             .setBackground(guiHelper.getSlotDrawable(), -1, -1);
-        });
+        } else {
+          output.forEach((item, index) => {
+            builder
+              .addSlot("OUTPUT", 104 + index * slotSize, 2)
+              .addItemStack(Item.of(`${item}`))
+              .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+          });
+        }
       });
   });
 };
@@ -131,8 +139,8 @@ JEIAddedEvents.registerCategories((e) => {
   registerBECategory(e, "espresso_brewing", "espresso_machine", "Espresso Brewing", 4, 0.5);
   registerBECategory(e, "goddess_offering", "ancient_goddess_statue", "Goddess Offering", 64, 0);
   registerBECategory(e, "recycling", "recycling_machine", "Recycling", 1, 1);
-
   registerBECategory(e, "tapping", "tapper", "Tapping", 1, 7);
+  registerBECategory(e, "auto_tapping", "auto_tapper", "Auto-Tapping", 1, 0.5);
 });
 
 // JEI Catalysts broken on JEI version
@@ -237,5 +245,8 @@ JEIAddedEvents.registerRecipes((e) => {
   });
   global.tapperRecipes.forEach((element) => {
     e.custom("society:tapping").add(element);
+  });
+  global.tapperRecipes.forEach((element) => {
+    e.custom("society:auto_tapping").add(element);
   });
 });

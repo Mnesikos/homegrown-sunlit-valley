@@ -11,6 +11,7 @@ ServerEvents.recipes((e) => {
   compact("numismatics:crown", "numismatics:cog", 8);
   compact("numismatics:sun", "numismatics:crown", 8);
 
+  compact("society:sparkstone_block", "society:sparkstone", 9);
   compact("society:animal_feed_sack", "society:animal_feed", 9);
   compact("herbalbrews:coffee_beans_sack", "herbalbrews:coffee_beans", 9);
   compact("herbalbrews:rooibos_leaf_block", "herbalbrews:rooibos_leaf", 9);

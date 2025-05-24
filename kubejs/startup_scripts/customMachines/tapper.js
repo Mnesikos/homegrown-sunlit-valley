@@ -1,4 +1,5 @@
 console.info("[SOCIETY] tapper.js loaded");
+
 global.tapperRecipes = [
   {
     input: "minecraft:spruce_log",

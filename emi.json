@@ -5,49 +5,95 @@
     },
     {
       "stack": "item:herbalbrews:hazelnut_coffee"
-    },
-    {
-      "stack": "item:minecraft:bread"
-    },
-    {
-      "stack": "#item:forge:tools/knives"
-    },
-    {
-      "stack": "item:beachparty:crocs{Damage:168}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/crocs/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:swim_wings{Damage:265}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/swim_wings/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:rubber_ring_blue{Damage:274}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_blue/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:rubber_ring_pink{Damage:0}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_pink/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:rubber_ring_stripped{Damage:117}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_stripped/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:rubber_ring_pelican{Damage:0}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_pelican/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:beachparty:rubber_ring_axolotl{Damage:17}",
-      "recipe": "emi:/anvil/repairing/material/beachparty/rubber_ring_axolotl/minecraft/dried_kelp"
-    },
-    {
-      "stack": "item:quark:nether_brick_trapped_chest"
-    },
-    {
-      "stack": "item:rottencreatures:zombie_lackey_spawn_egg"
     }
   ],
   "lookup_history": [
+    "item:society:smoked_smallmouth_bass",
+    "#item:forge:cooked_fishes",
+    "item:society:smoked_atlantic_herring",
+    "item:herbalbrews:hazelnut_coffee",
+    "item:herbalbrews:cinnamon_coffee",
+    "item:bakery:bread_knife{Damage:0}",
+    "item:bakery:bundt_cake",
+    "item:beachparty:rubber_ring_pink{Damage:0}",
+    "item:beachparty:rubber_ring_axolotl{Damage:17}",
+    "item:vinery:fermentation_barrel",
+    "item:society:smoked_perch",
+    "item:society:smoked_minnow",
+    "item:society:smoked_beaked_herring",
+    "item:aquaculture:fish_fillet_raw",
+    "item:aquaculture:fish_fillet_cooked",
+    "item:unusualfishmod:cooked_aero_mono_stick",
+    "item:crabbersdelight:cooked_tropical_fish",
+    "item:netherdepthsupgrade:cooked_soulsucker_slice",
+    "item:unusualfishmod:cooked_shockcat",
+    "item:unusualfishmod:cooked_lobster",
+    "item:farmersdelight:cooked_bacon",
+    "item:unusualfishmod:cooked_unusual_fillet",
+    "item:minecraft:cooked_salmon",
+    "item:autumnity:cooked_turkey_piece",
+    "item:farmersdelight:cooked_cod_slice",
+    "item:beachparty:cooked_mussel_meat",
+    {
+      "type": "item",
+      "id": "netherdepthsupgrade:cooked_lava_pufferfish_slice",
+      "amount": 64
+    },
+    "item:netherdepthsupgrade:cooked_glowdine_slice",
+    "item:veggiesdelight:uncooked_mhadjeb",
+    "item:unusualfishmod:cooked_mossthorn",
+    "item:minecraft:cooked_cod",
+    "item:farmersdelight:cabbage",
+    "#item:forge:cabbage",
+    "#item:forge:cabbage",
+    "item:farmersdelight:cabbage_seeds",
+    "item:candlelight:pasta_with_lettuce",
+    "item:farm_and_charm:lettuce",
+    "item:farm_and_charm:wild_lettuce",
+    "item:farm_and_charm:lettuce_seeds",
+    "item:numismatics:iridium_coin",
+    "item:numismatics:ancient_coin",
+    {
+      "type": "item",
+      "id": "society:oak_resin",
+      "amount": 3
+    },
+    "item:society:auto_tapper",
+    "fluid:create_central_kitchen:sap",
+    "item:society:sap",
+    "item:pamhc2trees:banana_sapling",
+    {
+      "type": "fluid",
+      "id": "minecraft:lava",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "nethervinery:crimson_grape_juice",
+      "amount": 0
+    },
+    "item:everycomp:q/atmospheric/stripped_grimwood_post",
+    {
+      "type": "fluid",
+      "id": "nethervinery:warped_grape_juice",
+      "amount": 0
+    },
+    "item:society:tapper",
+    "item:minecraft:jungle_fence",
+    "item:minecraft:netherite_scrap",
+    {
+      "type": "item",
+      "id": "minecraft:ancient_debris",
+      "amount": 32
+    },
+    "item:etcetera:bismuth_nugget",
+    {
+      "type": "item",
+      "id": "oreganized:netherite_nugget",
+      "amount": 9
+    },
+    "item:minecraft:netherite_ingot",
+    "item:bakery:baker_station",
     "item:society:sparkstone",
     "item:fantasyfurniture:nordic/desk_right",
     "item:fantasyfurniture:nordic/dresser",
@@ -61,15 +107,10 @@
     "item:fantasyfurniture:bone/skeleton/stool",
     "item:fantasyfurniture:bone/skeleton/shelf",
     "item:fantasyfurniture:royal/wall_light",
-    {
-      "id": "vinery:lava_walker"
-    },
     "item:immersive_paintings:painting",
     "item:society:animal_feed_sack",
     "item:society:animal_feed",
-    "item:numismatics:iridium_coin",
     "item:numismatics:prismatic_coin",
-    "item:numismatics:ancient_coin",
     "item:numismatics:sun",
     "item:farmersdelight:melon_juice",
     "item:farmersdelight:egg_sandwich",
@@ -102,16 +143,13 @@
     "item:dew_drop_watering_cans:netherite_watering_can{Damage:0}",
     "item:farmersdelight:netherite_knife{Damage:0}",
     "item:minecraft:netherite_block",
-    "item:minecraft:netherite_ingot",
     "item:create:netherite_diving_boots{Damage:0}",
-    "item:minecraft:netherite_scrap",
     "item:sophisticatedstorage:diamond_to_netherite_tier_upgrade",
     "item:quark:waxed_blue_corundum",
     "item:quark:blue_corundum_cluster",
     "item:minecraft:netherite_chestplate{Damage:0}",
     "item:create:netherite_backtank{Air:900}",
     "item:create:netherite_diving_helmet{Damage:0}",
-    "item:minecraft:ancient_debris",
     "item:society:ice_boulder",
     "item:society:stone_boulder",
     "item:society:sandstone_boulder",
@@ -222,7 +260,6 @@
     "item:oreganized:silver_ingot",
     "item:oreganized:raw_silver",
     "item:oreganized:lead_ingot",
-    "item:beachparty:rubber_ring_axolotl{Damage:0}",
     "item:beachparty:rubber_ring_pelican{Damage:0}",
     "item:society:ribbit_gadget",
     "item:gamediscs:gaming_console",
@@ -255,8 +292,6 @@
     "item:everycomp:q/betterarcheology/rotten_ladder",
     "item:society:magnifying_glass",
     "item:atmospheric:arid_glass",
-    "item:society:tapper",
-    "item:society:auto_tapper",
     "item:society:fish_smoker",
     "item:createrailwaysnavigator:navigator",
     "item:automobility:launch_gel",
@@ -326,7 +361,6 @@
     "item:create:white_sail",
     "item:create:windmill_bearing",
     "item:create:andesite_alloy",
-    "item:society:sap",
     "item:justhammers:impact_core{Damage:0}",
     "item:justhammers:small_core",
     "item:justhammers:destructor_core{Damage:0}",
@@ -344,7 +378,6 @@
       "id": "botania:manasteel_ingot",
       "amount": 63
     },
-    "item:society:oak_resin",
     "item:create:empty_blaze_burner",
     "item:beachparty:beach_hat{Damage:0}",
     "item:minecraft:splash_potion{Potion:\"minecraft:long_water_breathing\"}",
@@ -397,7 +430,6 @@
     "item:society:jade",
     "item:society:fire_quartz",
     "item:society:pine_tar",
-    "item:vinery:fermentation_barrel",
     "item:numismatics:bevel",
     "item:numismatics:sprocket",
     "item:numismatics:cog",
@@ -439,11 +471,6 @@
       "amount": 64
     },
     "item:aquaculture:tin_can",
-    {
-      "type": "fluid",
-      "id": "create_central_kitchen:sap",
-      "amount": 0
-    },
     "item:society:earth_crystal",
     {
       "type": "item",
@@ -648,7 +675,6 @@
     "item:create:depot",
     "item:create:speedometer",
     "item:beachparty:swim_wings{Damage:0}",
-    "item:beachparty:rubber_ring_pink{Damage:0}",
     "item:minecraft:spruce_button",
     "item:society:merino_wool",
     "item:beachparty:trunks{Damage:0}",
@@ -753,7 +779,6 @@
     },
     "#item:minecraft:flowers",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:slimy\"}}",
-    "item:etcetera:bismuth_nugget",
     {
       "type": "item",
       "id": "minecraft:iron_nugget",
@@ -765,7 +790,6 @@
     "item:fantasyfurniture:decorations/paper_stack",
     "item:twigs:torchflower_paper_lantern",
     "item:betterarcheology:artifact_shards",
-    "item:minecraft:bread",
     "item:refurbished_furniture:bread_slice",
     "item:buzzier_bees:honey_bread",
     "item:snowyspirit:gingerbread_cookie",
@@ -893,7 +917,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:prisma\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:webby\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
-    "item:herbalbrews:hazelnut_coffee",
     "item:atmospheric:dragon_fruit",
     "#item:forge:fruits",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sweet\"}}",
@@ -925,7 +948,6 @@
     "item:vinery:jungle_grapes_red",
     "item:vinery:taiga_grapes_white",
     "item:vinery:taiga_grape_seeds_red",
-    "item:herbalbrews:cinnamon_coffee",
     "item:herbalbrews:coffee",
     {
       "type": "item",
@@ -953,11 +975,6 @@
       "type": "item",
       "id": "farm_and_charm:onion",
       "amount": 13
-    },
-    {
-      "type": "item",
-      "id": "farm_and_charm:lettuce",
-      "amount": 49
     },
     {
       "type": "item",
@@ -1217,7 +1234,6 @@
     "item:minecraft:clay",
     "item:botania:horn_grass",
     "item:vintagedelight:gearo_berry",
-    "item:farmersdelight:cabbage_seeds",
     "item:atmospheric:orange",
     "item:atmospheric:passion_fruit",
     "item:snowyspirit:ginger",
@@ -1246,47 +1262,7 @@
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:feather_falling\",lvl:1s}]}",
     "item:botania:brew_vial{brewKey:\"botania:feather_feet\"}",
     "item:minecraft:feather",
-    "item:untitledduckmod:duck_feather",
-    "item:society:fine_wool",
-    "item:society:truffle",
-    "item:society:large_goose_mayonnaise",
-    "item:society:mining_monthly",
-    "item:society:turtle_mayonnaise",
-    "item:society:cruncher_mayonnaise",
-    "item:society:mayonnaise",
-    "item:society:petrified_mayonnaise",
-    "item:society:milk_bucket",
-    "item:society:crystal_of_regret_adventuring",
-    "item:society:purple_sheet",
-    "item:society:large_mayonnaise",
-    "item:society:large_buffalo_milk",
-    "item:society:friendship_necklace",
-    "item:society:warped_milk",
-    "item:society:golden_mayonnaise",
-    "item:society:large_duck_mayonnaise",
-    "item:society:goose_mayonnaise",
-    "item:society:blue_sheet",
-    "item:society:deluxe_worm_farm",
-    "item:society:double_aged_century_egg",
-    "item:society:aged_netherite_nectar",
-    "item:society:double_aged_goat_cheese_block",
-    "item:society:aged_improved_nether_fizz",
-    "item:society:aged_star_coquito",
-    "item:society:double_aged_improved_lava_fizz",
-    "item:society:double_aged_buffalo_cheese_block",
-    "item:society:aged_pollock_roe",
-    "item:society:geminite",
-    "item:society:star_shards",
-    "item:society:sniffer_mayonnaise",
-    "item:society:dried_tubabacco_leaf",
-    "item:society:crystal_of_regret_fishing",
-    "item:society:large_warped_milk",
-    "item:society:thunder_egg",
-    "item:society:helvite",
-    "item:society:prize_ticket",
-    "item:society:starfruit_juice",
-    "item:atmospheric:currant",
-    "item:simplehats:bandana"
+    "item:untitledduckmod:duck_feather"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1300,9 +1276,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

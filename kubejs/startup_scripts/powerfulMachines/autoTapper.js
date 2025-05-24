@@ -85,13 +85,11 @@ global.runAutoTapper = (blockInfo) => {
   const fluidHandler = blockInfo
     .getCapability(ForgeCapabilities.FLUID_HANDLER)
     .orElse(null);
-  const blockData = blockInfo.persistentData;
   const fluidData = global.handleTapperRandomTick(
     { block: block, level: level, server: server },
     true
   );
-  // console.log(fluidData);
-  if (fluidData) {
+  if (fluidData && block.properties.get("error") == "false") {
     fluidHandler.fill(
       Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)),
       "execute"

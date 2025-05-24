@@ -288,14 +288,20 @@ const getOpposite = (facing, pos) => {
   }
 };
 
+global.getTapperLog = (level, block) =>
+  level.getBlock(getOpposite(block.properties.get("facing"), block.getPos()));
+
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
-  const facing = block.properties.get("facing");
   let newProperties = block.getProperties();
-  let behindPos = getOpposite(facing, block.getPos());
-  const attachedBlock = level.getBlock(behindPos);
+  const attachedBlock = global.getTapperLog(level, block);
   let foundFluidData = undefined;
+  let hasError = false;
+
   if (attachedBlock.hasTag("society:tappable_blocks")) {
+    if (global.hasMultipleTappers(level, block)) {
+      hasError = true;
+    }
     if (
       returnFluidData ||
       (block.properties.get("working").toLowerCase() === "false" &&
@@ -325,15 +331,41 @@ global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
         });
     }
     if (returnFluidData) {
+      if (hasError) newProperties.error = true;
+      else newProperties.error = false;
+      block.set(block.id, newProperties);
       return foundFluidData;
     }
-    newProperties.error = false;
+    if (hasError) newProperties.error = true;
+    else newProperties.error = false;
     block.set(block.id, newProperties);
   } else {
     newProperties.error = true;
     block.set(block.id, newProperties);
     if (returnFluidData) return undefined;
   }
+};
+
+global.hasMultipleTappers = (level, block) => {
+  const attachedBlock = global.getTapperLog(level, block);
+  const offsetsToCheck = [
+    [1, 0],
+    [0, 1],
+    [-1, 0],
+    [0, -1],
+  ];
+  let tapperCount = 0;
+  offsetsToCheck.forEach((offset) => {
+    if (
+      ["society:tapper", "society:auto_tapper"].includes(
+        level.getBlock(
+          new BlockPos(attachedBlock.x + offset[0], attachedBlock.y, attachedBlock.z + offset[1])
+        ).id
+      )
+    )
+      tapperCount++;
+  });
+  return tapperCount > 1;
 };
 
 global.handleBERandomTick = (tickEvent, rndFunction, stageCount) => {

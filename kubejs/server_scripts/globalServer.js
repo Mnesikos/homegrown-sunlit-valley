@@ -10,6 +10,7 @@ global.mainUiElementIds = [
   "fishIcon",
   "fishName",
   "population",
+  "tapperMessage"
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};

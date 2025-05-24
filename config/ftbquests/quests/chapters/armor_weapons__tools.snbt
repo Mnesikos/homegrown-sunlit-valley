@@ -1626,7 +1626,11 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
-			description: ["&eElectrum Tools&r increase in damage the faster the wearer is. This combines well with the armor, allowing you to rip and tear through mobs."]
+			description: [
+				"&eElectrum Tools&r increase in damage the faster the wearer is. This combines well with the armor, allowing you to rip and tear through mobs."
+				""
+				"They also come built in with &6Fortune II&r."
+			]
 			icon: {
 				Count: 1
 				id: "oreganized:electrum_pickaxe"

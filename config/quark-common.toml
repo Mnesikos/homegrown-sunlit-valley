@@ -616,13 +616,13 @@
 
 	[tweaks.gold_tools_have_fortune]
 		#Allowed values: [0,)
-		"Fortune Level" = 2
+		"Fortune Level" = 0
 		#Allowed values: [0,4]
-		"Harvest Level" = 2
+		"Harvest Level" = 3
 		"Display Baked Enchantments In Tooltip" = true
 		"Italic Tooltip" = true
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = []
+		"Baked Enchantments" = ["oreganized:electrum_pickaxe+fortune@2", "oreganized:electrum_axe+fortune@2", "oreganized:electrum_hoe+fortune@2", "oreganized:electrum_shovel+fortune@2", "oreganized:electrum_knife+looting@2", "oreganized:electrum_sword+looting@2"]
 
 	[tweaks.grab_chickens]
 		"Needs No Helmet" = true
