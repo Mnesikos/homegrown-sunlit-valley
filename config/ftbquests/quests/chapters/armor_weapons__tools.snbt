@@ -366,10 +366,10 @@
 						]
 					}
 				}
-				title: "Any Netherite Armor"
+				title: "Any Iridium Armor"
 				type: "item"
 			}]
-			title: "Netherite Armor"
+			title: "Iridium Armor"
 			x: 2.0d
 			y: -3.5d
 		}
@@ -798,10 +798,10 @@
 						]
 					}
 				}
-				title: "Any Netherite tool"
+				title: "Any Iridium tool"
 				type: "item"
 			}]
-			title: "Netherite Tools"
+			title: "Iridium Tools"
 			x: 2.0d
 			y: -0.5d
 		}
@@ -1168,9 +1168,9 @@
 		{
 			dependencies: ["4EFD1F876D69591E"]
 			description: [
-				"The &6Netherite&r variants of the Backtank and Diving Helmet let you dive in lava, provided you have air."
+				"The &6Iridium&r variants of the Backtank and Diving Helmet let you dive in lava, provided you have air."
 				""
-				"You'll also need the full set of &6Netherite&r equipment to do so."
+				"You'll also need the full set of &6Iridium&r equipment to do so."
 			]
 			icon: {
 				Count: 1

@@ -4928,6 +4928,42 @@
             ]
         },
         {
+            "pakku_id": "4OqJ30HtM3xRdzFz",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "horseman"
+            },
+            "name": {
+                "curseforge": "Horseman"
+            },
+            "id": {
+                "curseforge": "1082085"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "horseman-1.20.1-1.3.8-forge.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6523/990/horseman-1.20.1-1.3.8-forge.jar",
+                    "id": "6523990",
+                    "parent_id": "1082085",
+                    "hashes": {
+                        "sha1": "2ce1a46711e526fc247375bc8946a12df2d8043c",
+                        "md5": "fc83fec5480e35b886923b51c065c5b3"
+                    },
+                    "required_dependencies": [],
+                    "size": 327459,
+                    "date_published": "2025-05-12T22:43:30.603Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "eG7Zr5rCjZa17lF8",
             "type": "MOD",
             "slug": {

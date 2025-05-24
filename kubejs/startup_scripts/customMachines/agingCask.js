@@ -49,7 +49,7 @@ global.ageableProductInputs = [
   { item: "society:starcardi", name: "Starcardi", time: 4 },
   { item: "society:star_coquito", name: "Star Coquito", time: 10 },
   { item: "nethervinery:blazewine_pinot", name: "Blazewine Pinot", time: 10 },
-  { item: "nethervinery:netherite_nectar", name: "Netherite Nectar", time: 10 },
+  { item: "nethervinery:netherite_nectar", name: "Iridium Nectar", time: 10 },
   { item: "nethervinery:ghastly_grenache", name: "Ghastly Grenache", time: 10 },
   { item: "nethervinery:lava_fizz", name: "Lava Fizz", time: 10 },
   { item: "nethervinery:nether_fizz", name: "Nether Fizz", time: 10 },

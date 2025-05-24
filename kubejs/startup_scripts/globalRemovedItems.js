@@ -1,4 +1,8 @@
 global.removedItems = [
+  // Brushes
+  "betterarcheology:netherite_brush",
+  "betterarcheology:iron_brush",
+  "betterarcheology:diamond_brush",
   // Hammers
   "justhammers:netherite_destructor_hammer",
   "justhammers:diamond_destructor_hammer",

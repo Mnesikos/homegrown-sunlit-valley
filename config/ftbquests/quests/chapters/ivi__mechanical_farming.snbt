@@ -631,7 +631,7 @@
 		}
 		{
 			dependencies: ["7282287A6621FF82"]
-			description: ["&6Void Steel&r is an optional alloy of Netherite and Eye of Ender. It's used to craft machines fueled by ender power for teleportation."]
+			description: ["&6Void Steel&r is an optional alloy of Iridium and Eye of Ender. It's used to craft machines fueled by ender power for teleportation."]
 			id: "48C83D8D34DBFB4B"
 			rewards: [{
 				id: "6901D568CABDDAC2"

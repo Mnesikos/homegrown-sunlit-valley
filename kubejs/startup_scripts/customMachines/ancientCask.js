@@ -49,7 +49,7 @@ global.ancientCaskRecipes = [];
   { item: "society:starcardi", name: "Starcardi", time: 14 },
   { item: "society:star_coquito", name: "Star Coquito", time: 20 },
   { item: "nethervinery:blazewine_pinot", name: "Blazewine Pinot", time: 20 },
-  { item: "nethervinery:netherite_nectar", name: "Netherite Nectar", time: 20 },
+  { item: "nethervinery:netherite_nectar", name: "Iridium Nectar", time: 20 },
   { item: "nethervinery:ghastly_grenache", name: "Ghastly Grenache", time: 20 },
   { item: "nethervinery:lava_fizz", name: "Lava Fizz", time: 20 },
   { item: "nethervinery:nether_fizz", name: "Nether Fizz", time: 20 },

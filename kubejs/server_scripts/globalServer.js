@@ -84,8 +84,11 @@ global.calculateCoinValue = (coin) => {
     case "sun":
       value = 4096;
       break;
+    case "iridium_coin":
+      value = 32768;
+      break;
     case "ancient_coin":
-      value = 253952;
+      value = 262144;
       break;
     case "prismatic_coin":
       value = 16252928;
@@ -240,42 +243,42 @@ global.artisanMachineDefinitions = [
     recipes: global.loomRecipes,
     stageCount: 1,
     maxInput: 5,
-    upgrade: "society:tiny_gnome"
+    upgrade: "society:tiny_gnome",
   },
   {
     id: "society:aging_cask",
     recipes: global.agingCaskRecipes,
     stageCount: 10,
     maxInput: 1,
-    upgrade: "society:broken_clock"
+    upgrade: "society:broken_clock",
   },
   {
     id: "society:ancient_cask",
     recipes: global.ancientCaskRecipes,
     stageCount: 20,
     maxInput: 1,
-    upgrade: "society:inserter"
+    upgrade: "society:inserter",
   },
   {
     id: "society:crystalarium",
     recipes: global.crystalariumCrystals,
     stageCount: 5,
     maxInput: 1,
-    upgrade: "society:black_opal"
+    upgrade: "society:black_opal",
   },
   {
     id: "society:deluxe_worm_farm",
     recipes: global.deluxeWormFarmRecipes,
     stageCount: 2,
     maxInput: 4,
-    upgrade: 'society:infinity_worm'
+    upgrade: "society:infinity_worm",
   },
   {
     id: "society:fish_smoker",
     recipes: global.fishSmokerRecipes,
     stageCount: 2,
     maxInput: 1,
-    upgrade: "society:ancient_roe"
+    upgrade: "society:ancient_roe",
   },
   {
     id: "society:bait_maker",
@@ -288,7 +291,7 @@ global.artisanMachineDefinitions = [
     recipes: global.dehydratorRecipes,
     stageCount: 1,
     maxInput: 8,
-    upgrade: "society:cordycep"
+    upgrade: "society:cordycep",
   },
   {
     id: "society:mayonnaise_machine",
@@ -301,14 +304,14 @@ global.artisanMachineDefinitions = [
     recipes: global.preservesJarRecipes,
     stageCount: 3,
     maxInput: 5,
-    upgrade: "society:stone_hand"
+    upgrade: "society:stone_hand",
   },
   {
     id: "society:seed_maker",
     recipes: global.seedMakerRecipes,
     stageCount: 1,
     maxInput: 3,
-    upgrade: "society:ancient_cog"
+    upgrade: "society:ancient_cog",
   },
   {
     id: "society:charging_rod",

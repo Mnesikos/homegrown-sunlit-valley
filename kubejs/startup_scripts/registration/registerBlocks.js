@@ -506,6 +506,14 @@ StartupEvents.registry("block", (e) => {
     });
 
   // Compressed Crops block
+    e.create("society:animal_feed_sack", "cardinal")
+    .model("society:block/animal_feed_sack")
+    .mapColor("dirt")
+    .soundType("sand")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+
   e.create("herbalbrews:coffee_beans_sack")
     .texture("up", "quark:block/cocoa_beans_sack_top")
     .texture("down", "quark:block/cocoa_beans_sack_bottom")
