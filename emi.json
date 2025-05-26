@@ -8,10 +8,27 @@
     }
   ],
   "lookup_history": [
+    "item:society:deepslate_iridium_ore",
+    "item:minecraft:ancient_debris",
+    "item:minecraft:netherite_shovel{Damage:0}",
+    "item:snuffles:frosty_fluff",
+    "item:atmospheric:smooth_red_arid_sandstone",
+    "item:oreganized:waxed_spotted_glance",
+    "item:oreganized:glance_brick_wall",
+    "item:oreganized:glance_brick_stairs",
+    {
+      "type": "item",
+      "id": "oreganized:glance",
+      "amount": 64
+    },
+    "item:oreganized:spotted_glance",
+    "item:minecraft:smooth_sandstone",
+    "item:minecraft:dark_oak_door",
+    "item:numismatics:iridium_coin",
+    "item:numismatics:ancient_coin",
     "item:everycomp:rfm/atmospheric/morado_mail_box",
     "item:everycomp:rfm/atmospheric/yucca_mail_box",
     "item:numismatics:sun",
-    "item:numismatics:iridium_coin",
     "item:everycomp:rfm/atmospheric/laurel_mail_box",
     "item:refurbished_furniture:acacia_mail_box",
     "item:everycomp:rfm/atmospheric/kousa_mail_box",
@@ -85,7 +102,6 @@
     "item:farm_and_charm:lettuce",
     "item:farm_and_charm:wild_lettuce",
     "item:farm_and_charm:lettuce_seeds",
-    "item:numismatics:ancient_coin",
     {
       "type": "item",
       "id": "society:oak_resin",
@@ -113,11 +129,6 @@
     "item:society:tapper",
     "item:minecraft:jungle_fence",
     "item:minecraft:netherite_scrap",
-    {
-      "type": "item",
-      "id": "minecraft:ancient_debris",
-      "amount": 32
-    },
     "item:etcetera:bismuth_nugget",
     {
       "type": "item",
@@ -383,7 +394,6 @@
     "item:create_enchantment_industry:hyper_experience_bottle",
     "item:create_enchantment_industry:disenchanter",
     "item:minecraft:stripped_spruce_log",
-    "item:oreganized:glance",
     "item:oreganized:lead_block",
     "item:create:mechanical_press",
     "item:create:water_wheel",
@@ -649,7 +659,6 @@
     },
     "item:vinery:apple_juice",
     "item:vinery:red_jungle_grapejuice",
-    "item:oreganized:spotted_glance",
     "item:minecraft:gold_nugget",
     "item:create:crushed_raw_lead",
     "item:oreganized:lead_nugget",
@@ -1255,16 +1264,7 @@
     "item:society:aged_bonefish_roe",
     "item:society:aged_goldfish_roe",
     "item:vinery:chenet_wine",
-    "item:vinery:bolvar_wine",
-    "item:vinery:jo_special_mixture",
-    "item:society:aged_jo_special_mixture",
-    "item:fantasyfurniture:bone/skeleton/bench",
-    "item:netherdepthsupgrade:wither_bonefish",
-    "item:species:bone_spike",
-    "item:minecraft:clay",
-    "item:botania:horn_grass",
-    "item:vintagedelight:gearo_berry",
-    "item:atmospheric:orange"
+    "item:vinery:bolvar_wine"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1278,9 +1278,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

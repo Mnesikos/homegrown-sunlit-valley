@@ -18,40 +18,52 @@
   "spawners": {
     "monster": [
       {
-        "type": "rottencreatures:burned",
+        "type": "minecraft:husk",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "rottencreatures:mummy",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:phantom",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 100
+        "weight": 50
+      },
+      {
+        "type": "legendarycreatures:desert_mojo",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 50
+      },
+      {
+        "type": "legendarycreatures:scorpion",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 50
+      },
+      {
+        "type": "legendarycreatures:peacock_spider",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 1
       },
       {
         "type": "minecraft:creeper",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 80
-      },
-      {
-        "type": "minecraft:magma_cube",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 40
-      },
-      {
-        "type": "minecraft:wither_skeleton",
         "weight": 80,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "minecraft:blaze",
-        "weight": 100,
+        "weight": 80,
         "minCount": 4,
         "maxCount": 4
-      },
-      {
-        "type": "legendarycreatures:nether_wisp",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 4
       }
     ],
     "creature": [],
@@ -79,10 +91,7 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
-    [
-      "society:blackstone_caves/blackstone_ladder",
-      "society:blackstone_caves/blackstone_rock"
-    ],
+    ["society:desert_caves/sandstone_ladder", "society:desert_caves/sandstone_rock"],
     ["minecraft:lake_lava_underground"],
     ["minecraft:monster_room", "minecraft:monster_room_deep"],
     [],
@@ -99,9 +108,11 @@
     ["minecraft:spring_water"],
     [
       "minecraft:glow_lichen",
-      "society:blackstone_caves/magma_patch_floor",
-      "society:blackstone_caves/basalt_patch_floor",
-      "minecraft:lake_lava_underground"
+      "society:desert_caves/dull_sand_patch_floor",
+      "society:desert_caves/sand_patch_floor",
+      "society:desert_caves/sandstone_patch_floor",
+      "society:desert_caves/organic_glass_patch_ceiling",
+      "society:desert_caves/sandstone_patch_ceiling"
     ],
     ["minecraft:freeze_top_layer"]
   ]

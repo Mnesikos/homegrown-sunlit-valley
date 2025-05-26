@@ -97,6 +97,26 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
+  e.create("society:iridium_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/iridium_ore");
+
+  e.create("society:deepslate_iridium_ore")
+    .defaultCutout()
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_iridium_ore");
+
   e.create("society:sparkstone_ore")
     .defaultCutout()
     .soundType("stone")
@@ -145,11 +165,11 @@ StartupEvents.registry("block", (e) => {
       .hardness(-1)
       .resistance(3600000)
       .requiresTool(true)
-      .textureAll(path);
+      .textureAll(path).tagBlock("society:skull_block")
   };
   createSkullVariant("stone", "minecraft:block/stone");
   createSkullVariant("permafrost", "quark:block/permafrost");
-  createSkullVariant("sandstone", "minecraft:block/sandstone");
+  createSkullVariant("sandstone", "minecraft:block/sandstone_top");
   createSkullVariant("blackstone", "minecraft:block/blackstone");
 
   e.create(`society:sparkstone_block`)

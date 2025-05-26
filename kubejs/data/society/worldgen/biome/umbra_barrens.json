@@ -18,37 +18,13 @@
   "spawners": {
     "monster": [
       {
-        "type": "rottencreatures:burned",
+        "type": "minecraft:enderman",
         "maxCount": 4,
         "minCount": 4,
         "weight": 100
       },
       {
-        "type": "minecraft:creeper",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 80
-      },
-      {
-        "type": "minecraft:magma_cube",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 40
-      },
-      {
-        "type": "minecraft:wither_skeleton",
-        "weight": 80,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "minecraft:blaze",
-        "weight": 100,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "legendarycreatures:nether_wisp",
+        "type": "legendarycreatures:ender_wisp",
         "maxCount": 1,
         "minCount": 1,
         "weight": 4

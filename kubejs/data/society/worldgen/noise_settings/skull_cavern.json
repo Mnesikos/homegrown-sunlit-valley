@@ -75,28 +75,6 @@
       {
         "type": "minecraft:condition",
         "if_true": {
-          "type": "minecraft:not",
-          "invert": {
-            "type": "minecraft:vertical_gradient",
-            "false_at_and_above": {
-              "below_top": 0
-            },
-            "random_name": "minecraft:bedrock_roof",
-            "true_at_and_below": {
-              "below_top": 5
-            }
-          }
-        },
-        "then_run": {
-          "type": "minecraft:block",
-          "result_state": {
-            "Name": "society:skull_stone"
-          }
-        }
-      },
-      {
-        "type": "minecraft:condition",
-        "if_true": {
           "type": "minecraft:vertical_gradient",
           "false_at_and_above": {
             "above_bottom": 5
@@ -110,6 +88,110 @@
           "type": "minecraft:block",
           "result_state": {
             "Name": "minecraft:bedrock"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:skull_caves"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_stone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:lush_caverns"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_stone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:frozen_caves"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_permafrost"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:frozen_maelstrom"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_permafrost"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:desert_caves"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_sandstone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:desert_fault"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "atmospheric:smooth_red_arid_sandstone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:blackstone_caves"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "society:skull_blackstone"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:biome",
+          "biome_is": ["society:umbra_barrens"]
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:end_stone"
           }
         }
       }
