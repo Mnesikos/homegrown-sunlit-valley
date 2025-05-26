@@ -4,6 +4,7 @@
 		"0": "society:block/feed_side_ribbon",
 		"1": "society:block/feed_side",
 		"2": "society:block/feed_top",
+		"3": "society:block/feed_bottom",
 		"particle": "society:block/feed_side"
 	},
 	"elements": [
@@ -16,7 +17,7 @@
 				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#1"},
 				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#missing"}
+				"down": {"uv": [0, 0, 16, 16], "texture": "#3"}
 			}
 		}
 	],

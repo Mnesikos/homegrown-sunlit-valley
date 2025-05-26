@@ -33,7 +33,6 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder.addSlot("CATALYST", 52, 2).addItemStack(`society:${block}`);
         if (fluidOutput && categoryID !== "tapping") {
-          console.log(fluidOutput);
           builder
             .addSlot("OUTPUT", 104, 2)
             .addFluidStack(`${fluidOutput}`)
