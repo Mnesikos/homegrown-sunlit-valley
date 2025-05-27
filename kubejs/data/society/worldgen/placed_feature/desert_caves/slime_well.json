@@ -1,15 +1,9 @@
 {
-  "feature": "minecraft:rooted_azalea_tree",
+  "feature": "society:desert_caves/slime_well",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": {
-        "type": "minecraft:uniform",
-        "value": {
-          "max_inclusive": 2,
-          "min_inclusive": 1
-        }
-      }
+      "count": 1
     },
     {
       "type": "minecraft:in_square"
@@ -19,10 +13,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": 384
+          "absolute": 128
         },
         "max_inclusive": {
-          "absolute": 511
+          "absolute": 256
         }
       }
     },
@@ -33,15 +27,10 @@
         "blocks": "minecraft:air"
       },
       "direction_of_search": "up",
-      "max_steps": 4,
+      "max_steps": 1,
       "target_condition": {
         "type": "minecraft:solid"
       }
-    },
-    {
-      "type": "minecraft:random_offset",
-      "xz_spread": 0,
-      "y_spread": -1
     },
     {
       "type": "minecraft:biome"

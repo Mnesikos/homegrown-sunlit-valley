@@ -7,6 +7,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("society:spawns_magma_geodes", "#minecraft:is_nether");
   e.add("forge:is_snowy", "society:frozen_caves");
   e.add("forge:is_snowy", "society:frozen_malestrom");
+
   const magmaGeodeBiomes = [
     "society:blackstone_caves",
     "society:desert_caves",
@@ -15,6 +16,8 @@ ServerEvents.tags("worldgen/biome", (e) => {
   magmaGeodeBiomes.forEach((biome) => {
     e.add("society:spawns_magma_geodes", biome);
   });
+    e.add("society:has_structure/desert", "society:desert_caves");
+    e.add("society:has_structure/desert", "society:desert_fault");
   const cavernBiomes = [
     "society:skull_caves",
     "society:lush_caverns",

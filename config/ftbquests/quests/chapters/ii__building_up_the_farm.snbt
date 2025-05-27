@@ -32,7 +32,7 @@
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"
-				title: "Buying Seeds"
+				title: "Craft a market to buy seeds"
 				type: "item"
 			}]
 			title: "Starting Farming"

@@ -49,6 +49,7 @@
       "society:lush_caverns/spore_blossom",
       "society:lush_caverns/classic_vines_cave_feature"
     ],
+    [],
     ["minecraft:freeze_top_layer"]
   ],
   "has_precipitation": true,

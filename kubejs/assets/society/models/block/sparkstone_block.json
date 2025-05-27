@@ -1,5 +1,5 @@
 {
-  "credit": "Made with Blockbench",
+  "parent": "block/block",
   "textures": {
     "1": "society:block/sparkstone_block",
     "particle": "society:block/sparkstone_block"

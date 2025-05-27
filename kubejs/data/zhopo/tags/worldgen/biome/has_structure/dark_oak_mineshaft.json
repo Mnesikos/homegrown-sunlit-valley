@@ -1,5 +1,4 @@
 {
-    "replace": true,
-    "values": ["society:frozen_caves"]
-  }
-  
+  "replace": true,
+  "values": ["society:frozen_caves"]
+}

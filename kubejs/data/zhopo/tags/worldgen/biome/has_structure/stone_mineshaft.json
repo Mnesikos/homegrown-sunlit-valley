@@ -1,5 +1,4 @@
 {
-    "replace": true,
-    "values": ["society:skull_cavern"]
-  }
-  
+  "replace": true,
+  "values": ["society:skull_cavern"]
+}

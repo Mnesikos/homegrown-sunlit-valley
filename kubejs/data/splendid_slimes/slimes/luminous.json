@@ -13,6 +13,7 @@
   "favorite_food": {
     "item": "minecraft:quartz_block"
   },
+  "emit_effect_particle": "legendarycreatures:wisp_particle",
   "negative_emit_effects": [
     {
       "effect": "minecraft:glowing",

@@ -13,6 +13,14 @@
   "favorite_food": {
     "item": "minecraft:purple_bed"
   },
+  "traits": ["floating"],
+  "emit_effect_particle": "species:snoring",
+  "innate_effects": [
+    {
+      "effect": "minecraft:slow_falling",
+      "amplifier": 0
+    }
+  ],
   "negative_emit_effects": [
     {
       "effect": "nethervinery:hearthstone",
