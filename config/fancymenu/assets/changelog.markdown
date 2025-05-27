@@ -1,58 +1,56 @@
 ^^^
-## Wild Slimes
-### v2.6.1
+## Sunlit Valley
+### v3.0.0
 ^^^
 --- 
-- Added Splendid Slime spawns to areas of the world. These slimes start off unhappy and can be rehabilitated by the player.
-- Added money Advancements
-- Added Slime Vac to Shepherd, removed Slime Heart
-- Added Fairy Wings Elytra and updated Aquaculture resource packs (requires manual enabling on existing instances)
-- Added values to Game Discs
-- Added Cracked Egg- way to unify large and regular eggs 
-- Added config for animals/fishing in `kubejs/_config.js`
-- Abandoned Farm and Slime collection required for perfection
-- Missing Bundle now gives an Elytra
-- Bony slimes now require milk not meat
-- Dusty slimes no longer spawn lightning when happy
-- Increased Plort/Heart sell value
-- Increased husbandry animal crowded amount by 1
-- Increased price of Tackle Box
-- Reduced number of Plorts needed to make a Slime Heart
-- Re-added Quark sorting
-- Removed Numismatics advancements
-- Fixed shipping bin not selling when containing slime items at the beginning
-- Fixed lavender and hibiscus dropping Tea Blossoms
-- Fixed new seed crops not being applied skills or quality
-- Fixed some slimes not loading properly
-- Fixed certain kettle recipes not working correctly
-- Fixed certain removed items having tags
-- Fixed Framed Controller Extension recipe
-- Fixed Carrots only dropping 1 of the crop
-- Fixed structures being too sparse
-
-### 2.6.1
-- Added Battery chance to Bitwise Plorts
-- Added Light Bulb chances to Luminous Plorts
-- Added Sugar Cube and increased sugar from Sweet Plort
-- Phantom Slimes now give the Hearthstone effect when unhappy
-- Bitwise Slimes now give the Confusion effect when unhappy
-- Reduced max trades for the Book of Stars for the Red Merchant
-- Tweaked overworld Slime spawning rules so Slimy Slimes don't dominate the pool
-- Fixed Weeping Plort ripping recipe
-- Fixed Plort Rippit not having recipe
-- Fixed Blazing Slimes not having proper food
-- Fixed console log in shipping bin
-- Fixed mistakenly added Panorama 
-- Fixed Fish Tanks and large barrels not dropping when broken
-- Fixed minerals not being fireable from Silme Vac
-- Fixed Slingshot recipe not using Canvas
-
-### 2.6.2
-- Added non-Botania recipe for Minty Slime Heart
-- Sprinklers will now make farmland moist in the morning
-- Improved Plort Press performance and logic, fixing some bugs
-- Fixed z-fighting issue with Artisan Machine exclamation mark
-- Fixed Bones and Preserves not being fireable from Slime Vac
-- Fixed Ghost Pepper drop amount not matching Alamanc
-- Fixed crash with slimes that run commands
-- Fixed crash with Coin Leaderboard
+- Renamed pack to Society: Sunlit Valley! Curseforge page renamed next update!
+- Added completely redone Skull Cavern dimension and mechanics
+- Added Tapper - Replaces old Tap (Right click/craft to update)
+- Added Sparkstone ores & Sparkstone, a gem used for automating Artisan machines
+- Added Artisan Hopper, a machine for automating Artisan Machines using Sparkstone
+- Added Auto-Petter, a machine for automating husbandry animal collection using Sparkstone
+- Added Auto-Tapper, a machine for collecting Tapper resources using Create
+- Added Silver Coin to replace Netherite coin (Rename/retexture, items won't be lost)
+- Added Iridium coin as tier between Silver and Ancient 
+- Added Iridium Ore
+- Added Iridium Tier to replace Netherite (Just a rename/retexture)
+- Added Recycling Machine
+- Added Magnifying Glass
+- Added Bouquet Bag
+- Added Sap and Rubber
+- Added Create-focused quest chapter and reworked entire Create progression/balance
+- Added Silver and Lead - Create focused resources
+- Added Electrum tier of tools/armor 
+- Added tooltip to removed items
+- Added Animal Feed Sack (Storage Block)
+- Added new Cornucopia texture
+- Added Horseman mod for better horses 
+- Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone
+- Artisan Machines now drop unfinished inputs when broken
+- Changed Gaming Console recipe to not require Create
+- Fish Ponds now mature once a day in the morning to match other mechanics
+- Fish Ponds in JEI display chances of items as well as minimum population on hover
+- Fish Ponds preserve type, population, and max population when broken
+- Heretic Skill now also makes farm animals drop Sparkstone
+- Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
+- Increased cost of Turkey spawn eggs
+- Removed Bread cutting board recipe that outputted nothing
+- Reduced Tapper resource ingredient costs for some recipes
+- Reduced cost of Fish Pond
+- Reduced cost of Conjuration catalyst
+- Reduced cost of Mechanical Saw, Drill, and Harvester 
+- Removed Destruction and Reinforced tiers of Hammers. Previously purchased Hammers not affected
+- Removed all recipe conflicts + Polymorph
+- Removed rubber rings from loot table
+- Removed Bronzed Seashell from Crab Trap loot table because it doesn't stack and was annoying me
+- Removed Ancient Coin trades due to new coin tier
+- Increased Auto Worm Farm production speed
+- Fixed Feeding Trough and Mana Milker having incorrect radius on the tooltip
+- Fixed Charging Rods only taking 1 day to process
+- Fixed juices not having draining recipes
+- Fixed Tomato Crop drop amount not matching Almanac
+- Fixed fishing skills causing non-stackable items to duplicate
+- Fixed Lettuce not having tag
+- Fixed smoked fish not having cooked fish tag
+- Fixed Animal Feed recipes that outputted over a stack of items
+- Fixed modded wood Mailboxes not having crafting table recipe

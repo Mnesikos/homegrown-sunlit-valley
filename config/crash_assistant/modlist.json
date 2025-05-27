@@ -992,10 +992,6 @@
     "modId": "sophisticatedstorage",
     "version": "1.2.7.1044"
   },
-  "spanorama-1.5.2.jar": {
-    "modId": "spanorama",
-    "version": "1.5.2"
-  },
   "spark-1.10.53-forge.jar": {
     "modId": "spark",
     "version": "1.10.53"

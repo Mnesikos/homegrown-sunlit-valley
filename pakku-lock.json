@@ -7387,42 +7387,6 @@
             ]
         },
         {
-            "pakku_id": "2uWcdQJOAxevjd4T",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "panorama-creator"
-            },
-            "name": {
-                "curseforge": "Panorama Creator"
-            },
-            "id": {
-                "curseforge": "366866"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "spanorama-1.5.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5424/724/spanorama-1.5.2.jar",
-                    "id": "5424724",
-                    "parent_id": "366866",
-                    "hashes": {
-                        "sha1": "6b87717a2edad31d1db7bd24b743508fbdd9ad80",
-                        "md5": "100d8079cac35f9496576ff496749045"
-                    },
-                    "required_dependencies": [],
-                    "size": 16944,
-                    "date_published": "2024-06-13T18:20:33.570Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "IoTtsJ7CDSeWJDOE",
             "type": "MOD",
             "slug": {
