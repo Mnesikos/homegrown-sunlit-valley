@@ -106,11 +106,9 @@
     [],
     ["minecraft:spring_water"],
     [
-      "minecraft:glow_lichen",
-      "society:frozen_caves/ice_patch_floor",
-      "society:frozen_caves/snow_patch_floor",
-      "society:frozen_caves/powder_snow_patch_floor",
-      "society:frozen_caves/slush_patch_floor",
+      "society:glow_lichen",
+      "society:frozen_maelstrom/glance_patch_floor",
+      "society:frozen_maelstrom/ancient_glance_patch_floor",
       "society:frozen_caves/ice_patch_ceiling",
       "society:frozen_caves/slush_patch_ceiling"
     ],

@@ -5,7 +5,7 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 90,
+          "weight": 91,
           "data": {
             "Name": "society:ice_boulder"
           }
@@ -32,6 +32,12 @@
           "weight": 4,
           "data": {
             "Name": "minecraft:diamond_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:omni_geode_node"
           }
         },
         {

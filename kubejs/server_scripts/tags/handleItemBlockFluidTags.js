@@ -431,7 +431,7 @@ ServerEvents.tags("item", (e) => {
     "minecraft:raw_iron",
     "minecraft:raw_gold",
     "minecraft:raw_zinc",
-    "minecraft:ancient_debris",
+    "minecraft:netherite_scrap",
   ];
   omniGeodeBonus.forEach((geodeItem) => {
     e.add("society:omni_geode_bonus", geodeItem);

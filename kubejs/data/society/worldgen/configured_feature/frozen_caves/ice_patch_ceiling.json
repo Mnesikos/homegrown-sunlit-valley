@@ -38,6 +38,6 @@
         }
       ]
     },
-    "vegetation_feature": "society:frozen_caves/blue_ice"
+    "vegetation_feature": "minecraft:ice_spike"
   }
 }

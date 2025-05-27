@@ -1,10 +1,9 @@
 {
-  "feature": "society:frozen_caves/blue_ice",
+  "feature": "minecraft:vines",
   "placement": [
     {
-      "type": "minecraft:random_offset",
-      "xz_spread": -8,
-      "y_spread": 0
+      "type": "minecraft:count",
+      "count": 256
     },
     {
       "type": "minecraft:in_square"
@@ -14,12 +13,15 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": 256
+          "absolute": 384
         },
         "max_inclusive": {
-          "absolute": 384
+          "absolute": 511
         }
       }
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }

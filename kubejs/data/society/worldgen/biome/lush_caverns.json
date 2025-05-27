@@ -41,14 +41,13 @@
     [],
     ["minecraft:spring_water", "minecraft:spring_lava"],
     [
-      "minecraft:glow_lichen",
-      "minecraft:patch_tall_grass_2",
-      "minecraft:lush_caves_ceiling_vegetation",
-      "minecraft:cave_vines",
-      "minecraft:lush_caves_vegetation",
-      "minecraft:rooted_azalea_tree",
-      "minecraft:spore_blossom",
-      "minecraft:classic_vines_cave_feature"
+      "society:glow_lichen",
+      "society:lush_caverns/ceiling_vegetation",
+      "society:lush_caverns/cave_vines",
+      "society:lush_caverns/vegetation",
+      "society:lush_caverns/rooted_azalea_tree",
+      "society:lush_caverns/spore_blossom",
+      "society:lush_caverns/classic_vines_cave_feature"
     ],
     ["minecraft:freeze_top_layer"]
   ],

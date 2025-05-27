@@ -69,6 +69,12 @@
               "data": {
                 "Name": "oreganized:deepslate_silver_ore"
               }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:deepslate_iridium_ore"
+              }
             }
           ]
         }

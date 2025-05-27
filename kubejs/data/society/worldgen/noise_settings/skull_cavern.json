@@ -20,13 +20,58 @@
     "fluid_level_spread": 0,
     "lava": 0,
     "temperature": {
-      "type": "minecraft:shifted_noise",
-      "noise": "minecraft:temperature",
-      "xz_scale": 0.25,
-      "y_scale": 0,
-      "shift_x": "minecraft:shift_x",
-      "shift_y": 0,
-      "shift_z": "minecraft:shift_z"
+      "type": "minecraft:range_choice",
+      "input": "minecraft:y",
+      "min_inclusive": 0,
+      "max_exclusive": 512,
+      "when_in_range": {
+        "type": "minecraft:range_choice",
+        "input": "minecraft:y",
+        "min_inclusive": 0,
+        "max_exclusive": 256,
+        "when_in_range": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:spaghetti_2d",
+          "xz_scale": 1,
+          "y_scale": 0,
+          "shift_x": 0,
+          "shift_y": 0,
+          "shift_z": 0
+        },
+        "when_out_of_range": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:spaghetti_2d",
+          "xz_scale": 1,
+          "y_scale": 0,
+          "shift_x": 0,
+          "shift_y": 256,
+          "shift_z": 0
+        }
+      },
+      "when_out_of_range": {
+        "type": "minecraft:range_choice",
+        "input": "minecraft:y",
+        "min_inclusive": 512,
+        "max_exclusive": 768,
+        "when_in_range": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:spaghetti_2d",
+          "xz_scale": 1,
+          "y_scale": 0,
+          "shift_x": 0,
+          "shift_y": 512,
+          "shift_z": 0
+        },
+        "when_out_of_range": {
+          "type": "minecraft:shifted_noise",
+          "noise": "minecraft:spaghetti_2d",
+          "xz_scale": 1,
+          "y_scale": 0,
+          "shift_x": 0,
+          "shift_y": 768,
+          "shift_z": 0
+        }
+      }
     },
     "vegetation": {
       "type": "minecraft:shifted_noise",
@@ -165,7 +210,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "atmospheric:smooth_red_arid_sandstone"
+            "Name": "society:skull_arid_sandstone"
           }
         }
       },
@@ -191,7 +236,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:end_stone"
+            "Name": "society:skull_end_stone"
           }
         }
       }

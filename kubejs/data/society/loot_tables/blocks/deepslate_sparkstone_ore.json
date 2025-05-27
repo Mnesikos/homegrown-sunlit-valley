@@ -35,6 +35,15 @@
                   "function": "minecraft:apply_bonus"
                 },
                 {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2,
+                    "max": 4
+                  },
+                  "add": false
+                },
+                {
                   "function": "minecraft:explosion_decay"
                 }
               ],

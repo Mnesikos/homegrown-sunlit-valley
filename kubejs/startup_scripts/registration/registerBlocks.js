@@ -157,6 +157,7 @@ StartupEvents.registry("block", (e) => {
   createBoulder("ice");
   createBoulder("sandstone");
   createBoulder("blackstone");
+  createBoulder("end_stone");
 
   const createSkullVariant = (type, path) => {
     e.create(`society:skull_${type}`)
@@ -165,12 +166,15 @@ StartupEvents.registry("block", (e) => {
       .hardness(-1)
       .resistance(3600000)
       .requiresTool(true)
-      .textureAll(path).tagBlock("society:skull_block")
+      .textureAll(path)
+      .tagBlock("society:skull_block");
   };
   createSkullVariant("stone", "minecraft:block/stone");
   createSkullVariant("permafrost", "quark:block/permafrost");
   createSkullVariant("sandstone", "minecraft:block/sandstone_top");
+  createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
   createSkullVariant("blackstone", "minecraft:block/blackstone");
+  createSkullVariant("end_stone", "minecraft:block/end_stone");
 
   e.create(`society:sparkstone_block`)
     .defaultCutout()

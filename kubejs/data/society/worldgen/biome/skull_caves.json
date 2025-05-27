@@ -24,7 +24,7 @@
     ],
     [],
     ["minecraft:spring_water", "minecraft:spring_lava"],
-    ["minecraft:glow_lichen", "minecraft:brown_mushroom_normal", "minecraft:red_mushroom_normal"],
+    ["society:glow_lichen", "minecraft:brown_mushroom_normal", "minecraft:red_mushroom_normal"],
     []
   ],
   "has_precipitation": true,

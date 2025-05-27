@@ -73,7 +73,7 @@ global.ore = [
   { item: "oreganized:raw_silver_block", value: 576 },
   { item: "minecraft:diamond", value: 256 },
   { item: "minecraft:diamond_block", value: 2304 },
-  { item: "minecraft:ancient_debris", value: 1024 },
+  { item: "minecraft:netherite_scrap", value: 1024 },
   { item: "aquaculture:neptunium_ingot", value: 2560 },
   { item: "aquaculture:neptunium_block", value: 23040 },
 ];

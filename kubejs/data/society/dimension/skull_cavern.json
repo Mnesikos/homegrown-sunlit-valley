@@ -8,7 +8,7 @@
         {
           "biome": "society:skull_caves",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [-1, 0],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -20,7 +20,7 @@
         {
           "biome": "society:lush_caverns",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [0, 1],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -32,7 +32,7 @@
         {
           "biome": "society:frozen_caves",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [-1, 0],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -44,7 +44,7 @@
         {
           "biome": "society:frozen_maelstrom",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [0, 1],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -56,7 +56,7 @@
         {
           "biome": "society:desert_caves",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [-1, 0],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -68,7 +68,7 @@
         {
           "biome": "society:desert_fault",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [0, 1],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -80,7 +80,7 @@
         {
           "biome": "society:blackstone_caves",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [-1, 0],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,
@@ -92,7 +92,7 @@
         {
           "biome": "society:umbra_barrens",
           "parameters": {
-            "temperature": [0, 0],
+            "temperature": [0, 1],
             "humidity": [0, 0],
             "continentalness": 0,
             "erosion": 0,

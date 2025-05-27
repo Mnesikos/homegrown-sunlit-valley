@@ -5,7 +5,7 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 90,
+          "weight": 92,
           "data": {
             "Name": "society:sandstone_boulder"
           }
@@ -41,9 +41,21 @@
           }
         },
         {
+          "weight": 2,
+          "data": {
+            "Name": "society:omni_geode_node"
+          }
+        },
+        {
           "weight": 1,
           "data": {
             "Name": "oreganized:silver_ore"
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:iridium_ore"
           }
         }
       ]

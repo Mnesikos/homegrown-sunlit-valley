@@ -5,7 +5,7 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 90,
+          "weight": 94,
           "data": {
             "Name": "society:blackstone_boulder"
           }
@@ -35,9 +35,21 @@
           }
         },
         {
+          "weight": 4,
+          "data": {
+            "Name": "society:omni_geode_node"
+          }
+        },
+        {
           "weight": 3,
           "data": {
             "Name": "oreganized:deepslate_silver_ore"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:deepslate_iridium_ore"
           }
         }
       ]

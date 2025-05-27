@@ -137,7 +137,7 @@
 				{
 					count: 4L
 					id: "6FB30BF21127F74A"
-					item: { Count: 4, id: "minecraft:ancient_debris" }
+					item: { Count: 4, id: "minecraft:netherite_scrap" }
 					type: "item"
 				}
 			]

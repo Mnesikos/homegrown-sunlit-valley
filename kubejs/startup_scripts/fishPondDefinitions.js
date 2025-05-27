@@ -1021,7 +1021,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "society:prismatic_shard", count: 1 },
-          { item: "minecraft:ancient_debris", count: 16 },
+          { item: "minecraft:netherite_scrap", count: 16 },
           { item: "create:sturdy_sheet", count: 64 },
         ],
       },
@@ -2573,7 +2573,7 @@ global.fishPondDefinitions = [
       { minPopulation: 6, item: "society:ruby", count: 1, chance: 0.12 },
       {
         minPopulation: 8,
-        item: "minecraft:ancient_debris",
+        item: "minecraft:netherite_scrap",
         count: 1,
         chance: 0.09,
       },
@@ -3185,7 +3185,7 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "minecraft:ancient_debris", count: 4 },
+          { item: "minecraft:netherite_scrap", count: 4 },
           { item: "society:aged_chorus_wine", count: 4 },
           { item: "minecraft:end_rod", count: 16 },
         ],

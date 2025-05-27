@@ -636,6 +636,10 @@
     "modId": "vinery",
     "version": "1.4.39"
   },
+  "lithostitched-forge-1.20.1-1.4.8.jar": {
+    "modId": "lithostitched",
+    "version": "1.4.8"
+  },
   "littlejoys-forge-1.20.1-20.1.8.jar": {
     "modId": "littlejoys",
     "version": "20.1.8"

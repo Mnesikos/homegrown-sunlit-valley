@@ -5,23 +5,72 @@
     },
     {
       "stack": "item:herbalbrews:hazelnut_coffee"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "society:geode",
+        "amount": 6
+      }
+    },
+    {
+      "stack": "item:relics:relic_experience_bottle"
+    },
+    {
+      "stack": "item:minecraft:honeycomb"
     }
   ],
   "lookup_history": [
-    "item:society:deepslate_iridium_ore",
+    "item:society:aquamagical_dust",
+    "item:society:pristine_neptunite",
+    {
+      "type": "item",
+      "id": "society:prismatic_shard",
+      "amount": 12
+    },
+    "item:society:neptuna",
     "item:minecraft:ancient_debris",
+    "item:society:artifact_trove",
+    "item:society:relic_trove",
+    {
+      "type": "item",
+      "id": "minecraft:netherite_scrap",
+      "amount": 21
+    },
+    "item:minecraft:dragon_breath",
+    "item:botania:dragonstone_block",
+    "item:botania:ender_air_bottle",
+    "item:minecraft:friend_pottery_sherd",
+    "item:minecraft:ender_eye",
+    "item:botania:blood_pendant{brewKey:\"botania:fire_resistance\"}",
+    "item:tanukidecor:slot_machine",
+    "item:botania:cosmetic_anaglyph_glasses",
+    "item:botania:cosmetic_alien_antenna",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+    "item:minecraft:end_stone_bricks",
+    "item:oreganized:gargoyle",
+    "item:oreganized:cut_lead",
+    "item:oreganized:lead_pillar",
+    "item:oreganized:lead_bulb",
+    "item:quark:violet_crystal_lamp",
+    "item:tanukidecor:blue_rocket_lamp",
+    "item:twigs:soul_lamp",
+    "item:moreminecarts:rail_signal_magenta",
+    "item:unusualfishmod:thunderous_shell{Damage:0}",
+    "item:botania:thunder_sword{Damage:0}",
+    "item:oreganized:glance",
+    "item:oreganized:spotted_glance",
+    "item:oreganized:polished_glance",
+    "item:oreganized:chiseled_glance",
+    "item:oreganized:glance_wall",
+    "item:society:deepslate_iridium_ore",
     "item:minecraft:netherite_shovel{Damage:0}",
     "item:snuffles:frosty_fluff",
     "item:atmospheric:smooth_red_arid_sandstone",
     "item:oreganized:waxed_spotted_glance",
     "item:oreganized:glance_brick_wall",
     "item:oreganized:glance_brick_stairs",
-    {
-      "type": "item",
-      "id": "oreganized:glance",
-      "amount": 64
-    },
-    "item:oreganized:spotted_glance",
     "item:minecraft:smooth_sandstone",
     "item:minecraft:dark_oak_door",
     "item:numismatics:iridium_coin",
@@ -128,7 +177,6 @@
     },
     "item:society:tapper",
     "item:minecraft:jungle_fence",
-    "item:minecraft:netherite_scrap",
     "item:etcetera:bismuth_nugget",
     {
       "type": "item",
@@ -200,11 +248,6 @@
     "item:minecraft:sandstone",
     "item:minecraft:blackstone",
     "item:society:heart_of_neptunium",
-    {
-      "type": "item",
-      "id": "society:prismatic_shard",
-      "amount": 6
-    },
     "item:relics:aqua_walker{abilities:{walking:{points:0,stats:{time:49.76651d}}}}",
     "item:relics:ice_skates{abilities:{ram:{points:0,stats:{damage:0.21432d}},skating:{points:0,stats:{duration:42.89144d,speed:0.02435d}}}}",
     "item:relics:elytra_booster{abilities:{boost:{points:0,stats:{capacity:99.66607d,speed:1.42202d}}}}",
@@ -257,7 +300,6 @@
       "amount": 64
     },
     "item:society:spider_silk",
-    "item:society:aquamagical_dust",
     "item:society:wheel_of_adaptation",
     "item:society:production_science_pack",
     "item:society:mini_oni_eye",
@@ -276,7 +318,6 @@
     "item:botania:forest_eye",
     "item:minecraft:eye_armor_trim_smithing_template",
     "item:botania:cosmetic_wicked_eyepatch",
-    "item:minecraft:ender_eye",
     "item:minecraft:oxeye_daisy",
     "item:botania:third_eye",
     "item:society:ribbit_drum",
@@ -284,8 +325,6 @@
     "item:atmospheric:blood_orange",
     "item:simplehats:eyeholder_beeholder",
     "item:society:beer_attunecore",
-    "item:society:artifact_trove",
-    "item:society:relic_trove",
     "item:society:princess_hairbrush{Damage:0}",
     "item:society:source_gem",
     "item:society:starcardi",
@@ -563,7 +602,6 @@
     "item:society:energy_drink",
     "item:society:wet_weekly",
     "item:society:broken_clock",
-    "item:society:neptuna",
     "item:society:fish_radar",
     "item:society:bank_meter",
     "item:society:eggplant",
@@ -663,7 +701,6 @@
     "item:create:crushed_raw_lead",
     "item:oreganized:lead_nugget",
     "item:oreganized:lead_bolt",
-    "item:oreganized:polished_glance",
     "#item:oreganized:stone_types/glance",
     "item:create_enchantment_industry:printer",
     "item:createutilities:void_tank",
@@ -679,7 +716,6 @@
     "item:oreganized:raw_silver_block",
     "item:oreganized:electrum_hoe{Damage:0}",
     "item:oreganized:molten_lead_bucket",
-    "item:oreganized:lead_bulb",
     "item:oreganized:silver_mirror",
     "item:oreganized:electrum_upgrade_smithing_template",
     "item:rottencreatures:burned_head",
@@ -941,7 +977,6 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:boomcat\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
@@ -950,7 +985,6 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:shulking\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bony\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:blazing\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:prisma\"}}",
@@ -1143,7 +1177,6 @@
     "item:minecraft:golden_helmet{Damage:0}",
     "item:minecraft:loom",
     "item:botania:overgrowth_seed",
-    "item:society:pristine_neptunite",
     "item:furniture:jungle_grandfather_clock",
     "item:candlelight:jungle_table",
     "item:meadow:rennet",
@@ -1244,27 +1277,7 @@
     "item:society:baryte",
     "item:candlelight:chocolate_box",
     "item:minecraft:smoker",
-    "item:everycomp:db/botania/livingwood_palisade",
-    "item:create:blue_seat",
-    "item:waystones:green_sharestone",
-    "item:waystones:waystone",
-    "item:farmersdelight:rich_soil",
-    "item:create:crafter_slot_cover",
-    "item:farmersdelight:light_gray_hanging_canvas_sign",
-    "item:create:tree_fertilizer",
-    "item:farmersdelight:golden_knife{Damage:0}",
-    "item:create:copycat_panel",
-    "item:farmersdelight:sweet_berry_cheesecake_slice",
-    "item:society:aged_tambaqui_roe",
-    "item:society:aged_blind_sailfin_roe",
-    "item:society:aged_boulti_roe",
-    "item:society:aged_arapaima_roe",
-    "item:society:aged_shrimp_roe",
-    "item:society:aged_fortress_grouper_roe",
-    "item:society:aged_bonefish_roe",
-    "item:society:aged_goldfish_roe",
-    "item:vinery:chenet_wine",
-    "item:vinery:bolvar_wine"
+    "item:everycomp:db/botania/livingwood_palisade"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1278,9 +1291,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
