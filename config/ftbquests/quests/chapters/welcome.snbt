@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"Welcome to &l&6Society: Capital Hill&r!"
+				"Welcome to &l&6Society: Sunlit Valley&r!"
 				""
 				"Where farming meets lightly industrialized capitalism."
 				""
@@ -181,7 +181,7 @@
 		}
 		{
 			description: [
-				"Capital Hill is a more peaceful oriented modpack! This means:"
+				"Sunlit Valley is a more peaceful oriented modpack! This means:"
 				""
 				"- Inventory is kept on death (Though tool durability will be lost)"
 				"- Mobs don't spawn above ground"
