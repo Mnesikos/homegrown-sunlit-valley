@@ -8,6 +8,8 @@
     }
   ],
   "lookup_history": [
+    "item:society:fish_pond",
+    "item:society:sea_biscut",
     "item:minecraft:dragon_egg",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     "item:botania:life_essence",

@@ -25,7 +25,7 @@ ItemEvents.entityInteracted((e) => {
       `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
     );
     player.tell(
-      Text.green("Villager updated! Thanks for playing Capital Hill!")
+      Text.green("Villager updated! Thanks for playing Sunlit Valley!")
     );
   }
 });

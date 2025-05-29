@@ -2,12 +2,6 @@ console.info("[SOCIETY] fishingLoot.js loaded");
 
 LootJS.modifiers((e) => {
   e.addLootTypeModifier(LootType.FISHING)
-    .hasAnyStage("mystical_ocean")
-    .pool((p) => {
-      p.randomChance(0.05).addLoot("society:neptuna");
-    });
-
-  e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:furniture_box");
