@@ -2169,7 +2169,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "crash_assistant-forge-1.3.9.jar",
+                    "file_name": "CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2178,16 +2178,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6204/812/crash_assistant-forge-1.3.9.jar",
-                    "id": "6204812",
+                    "url": "https://edge.forgecdn.net/files/6593/864/CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar",
+                    "id": "6593864",
                     "parent_id": "1154099",
                     "hashes": {
-                        "sha1": "a2d99a321552fba357340bd01d319a33707a85b6",
-                        "md5": "66143c667b5ed129f2272806808f2974"
+                        "sha1": "4772bfd20661744086e4736dc697d99695361619",
+                        "md5": "fe1d8e1e3f5b5d003484614669953326"
                     },
                     "required_dependencies": [],
-                    "size": 3253053,
-                    "date_published": "2025-02-17T22:49:49.840Z"
+                    "size": 1727810,
+                    "date_published": "2025-05-29T12:33:32.613Z"
                 }
             ]
         },
@@ -3735,6 +3735,51 @@
                     ],
                     "size": 1954591,
                     "date_published": "2023-11-02T08:11:16.840Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "0Ll9NBDeb7ogsTmI",
+            "pakku_links": [
+                "gJUVmYOCW3BpVIu5",
+                "Z5ABSfuXE0jplGgO",
+                "m9vabFkcFlm2Oo9d"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-chunks-forge"
+            },
+            "name": {
+                "curseforge": "FTB Chunks (Forge)"
+            },
+            "id": {
+                "curseforge": "314906"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-chunks-forge-2001.3.6.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6431/735/ftb-chunks-forge-2001.3.6.jar",
+                    "id": "6431735",
+                    "parent_id": "314906",
+                    "hashes": {
+                        "sha1": "7fde7917655a3356cab92f17ad2bca34962c4928",
+                        "md5": "64af750c0cbcadd4b27fb58236654814"
+                    },
+                    "required_dependencies": [
+                        "404465",
+                        "419699",
+                        "404468"
+                    ],
+                    "size": 1158842,
+                    "date_published": "2025-04-17T08:07:07.033Z"
                 }
             ]
         },
@@ -5381,52 +5426,44 @@
             ]
         },
         {
-            "pakku_id": "DQ1Bee3NQyKCUxZp",
+            "pakku_id": "Kq0UTSPgWc4BAjia",
             "pakku_links": [
-                "xVs6QgeyKQCzlTxd",
                 "rGgcpypoYU1A0zgM"
             ],
             "type": "MOD",
-            "side": "CLIENT",
             "slug": {
-                "curseforge": "journeypac"
+                "curseforge": "journeymap-integration"
             },
             "name": {
-                "curseforge": "JourneyPAC"
+                "curseforge": "JourneyMap Integration"
             },
             "id": {
-                "curseforge": "1121777"
+                "curseforge": "525447"
             },
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "JourneyPAC-forge-1.20.1-1.1.5.jar",
+                    "file_name": "jmi-forge-1.20.1-0.14-48.jar",
                     "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20.6",
-                        "1.20.4"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5812/885/JourneyPAC-forge-1.20.1-1.1.5.jar",
-                    "id": "5812885",
-                    "parent_id": "1121777",
+                    "url": "https://edge.forgecdn.net/files/5510/356/jmi-forge-1.20.1-0.14-48.jar",
+                    "id": "5510356",
+                    "parent_id": "525447",
                     "hashes": {
-                        "sha1": "e774b9c0cd75e7771a911c2c45d5cfe14f62f4c4",
-                        "md5": "b5c496bef75dbfe3a6efa3edccd7f926"
+                        "sha1": "f2be323d589b953eaa303f8b74913831a5a9b77b",
+                        "md5": "9ca3febdf066b2dd900ab6c0c59852e1"
                     },
                     "required_dependencies": [
-                        "636608",
                         "32274"
                     ],
-                    "size": 34611,
-                    "date_published": "2024-10-14T22:39:30.040Z"
+                    "size": 69022,
+                    "date_published": "2024-07-07T11:46:16.467Z"
                 }
             ]
         },
@@ -5916,24 +5953,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.6.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.8.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6441/295/littlejoys-forge-1.20.1-20.1.6.jar",
-                    "id": "6441295",
+                    "url": "https://edge.forgecdn.net/files/6463/240/littlejoys-forge-1.20.1-20.1.8.jar",
+                    "id": "6463240",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "10091bef5d46b6748439dc841cf36964287a6762",
-                        "md5": "3454c409d6b656a92118b7a8c79f7621"
+                        "sha1": "5cfeaf0e79f7ee35f200cb361f046bb888d3bcf0",
+                        "md5": "2182267073c0fbcf55e24e9dcc136118"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 706705,
-                    "date_published": "2025-04-19T18:56:00.527Z"
+                    "size": 706726,
+                    "date_published": "2025-04-25T14:24:27.113Z"
                 }
             ]
         },
@@ -7249,42 +7289,6 @@
                     ],
                     "size": 864398,
                     "date_published": "2025-02-27T21:20:03.207Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2uWcdQJOAxevjd4T",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "panorama-creator"
-            },
-            "name": {
-                "curseforge": "Panorama Creator"
-            },
-            "id": {
-                "curseforge": "366866"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "spanorama-1.5.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5424/724/spanorama-1.5.2.jar",
-                    "id": "5424724",
-                    "parent_id": "366866",
-                    "hashes": {
-                        "sha1": "6b87717a2edad31d1db7bd24b743508fbdd9ad80",
-                        "md5": "100d8079cac35f9496576ff496749045"
-                    },
-                    "required_dependencies": [],
-                    "size": 16944,
-                    "date_published": "2024-06-13T18:20:33.570Z"
                 }
             ]
         },
@@ -9197,42 +9201,6 @@
             ]
         },
         {
-            "pakku_id": "QStXFEQjZUCEP81V",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ssr"
-            },
-            "name": {
-                "curseforge": "Sparse Structures Reforged"
-            },
-            "id": {
-                "curseforge": "912104"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "sparsestructuresreforged-1.20.1-0.0.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5179/463/sparsestructuresreforged-1.20.1-0.0.1.jar",
-                    "id": "5179463",
-                    "parent_id": "912104",
-                    "hashes": {
-                        "sha1": "06ff9088a1ffce096b4826337cd571c5517a3a8b",
-                        "md5": "e3815a7ec7ff7ba8994701437992aa62"
-                    },
-                    "required_dependencies": [],
-                    "size": 9240,
-                    "date_published": "2024-03-13T14:22:28.480Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "wa9OpDVfxEkwdBII",
             "type": "MOD",
             "slug": {
@@ -9326,7 +9294,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.7.0.jar",
+                    "file_name": "splendid_slimes-0.10.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9334,18 +9302,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6477/269/splendid_slimes-0.7.0.jar",
-                    "id": "6477269",
+                    "url": "https://edge.forgecdn.net/files/6588/16/splendid_slimes-0.10.0.jar",
+                    "id": "6588016",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "ff8d25a24242d526468cd0b2d4115aac3e0a0494",
-                        "md5": "656fee6f2de0781e2f6b6018ea578e17"
+                        "sha1": "ee74b36b6ad18f75a97f1502a1af824864dbc61e",
+                        "md5": "b4da6efc5b5dea2cc7f243a34b8a0269"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 356956,
-                    "date_published": "2025-04-29T17:30:17.013Z"
+                    "size": 441558,
+                    "date_published": "2025-05-28T21:49:02.127Z"
                 }
             ]
         },

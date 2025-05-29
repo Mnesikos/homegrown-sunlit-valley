@@ -10,7 +10,7 @@
 	quests: [
 		{
 			description: [
-				"Welcome to &l&6Society: Capital Hill&r!"
+				"Welcome to &l&6Society: Sunlit Valley&r!"
 				""
 				"Where farming meets lightly industrialized capitalism."
 				""
@@ -181,7 +181,7 @@
 		}
 		{
 			description: [
-				"Capital Hill is a more peaceful oriented modpack! This means:"
+				"Sunlit Valley is a more peaceful oriented modpack! This means:"
 				""
 				"- Inventory is kept on death (Though tool durability will be lost)"
 				"- Mobs don't spawn above ground"
@@ -256,11 +256,11 @@
 			description: [
 				"Want to protect your base or keep it loaded? Chunks can be claimed using the JourneyMap - &6j&r key by default."
 				""
-				"- Hold &6Tab&r + &6Left-Click&r to claim a chunk"
-				"- Hold &6Tab&r + &6Right-Click&r to remove the claim"
+				"- &6Left-Click&r to claim a chunk"
+				"- &6Right-Click&r to remove the claim"
 				""
-				"- Hold &6q&r + &6Left-Clicking&r to forceload a chunk"
-				"- Hold &6q&r + &6Right-Clicking&r to un-forceload the chunk"
+				"- &6Shift&r + &6Left-Clicking&r to forceload a chunk (up to 2)"
+				"- &6Shift&r + &6Right-Clicking&r to un-forceload the chunk"
 			]
 			icon: "supplementaries:flag_light_blue"
 			id: "1375AE2ECAC8C147"

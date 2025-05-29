@@ -1,6 +1,6 @@
 {
-    "name": "Society Capital Hill",
-    "version": "2.6.2",
+    "name": "Society Sunlit Valley",
+    "version": "2.7.0",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -9,7 +9,6 @@
         "quests_structures"
     ],
     "client_overrides": [
-        "panoramas",
         "resourcepacks",
         "shaderpacks"
     ],

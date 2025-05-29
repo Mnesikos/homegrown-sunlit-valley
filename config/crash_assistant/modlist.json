@@ -1,4 +1,8 @@
 {
+  "fmlloader-1.20.1-47.4.0.jar (modloader)": {
+    "modId": "forge",
+    "version": "fmlloader-1.20.1-47.4.0.jar"
+  },
   "additional_attributes-1.20.1-1.3.1-all.jar": {
     "modId": "additional_attributes",
     "version": "1.3.1"
@@ -219,9 +223,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "crash_assistant-forge-1.3.9.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar": {
     "modId": "crash_assistant",
-    "version": "1.3.9"
+    "version": "1.9.0"
   },
   "create-1.20.1-0.5.1.j.jar": {
     "modId": "create",
@@ -427,6 +431,10 @@
     "modId": "framework",
     "version": "0.7.12"
   },
+  "ftb-chunks-forge-2001.3.6.jar": {
+    "modId": "ftbchunks",
+    "version": "2001.3.6"
+  },
   "ftb-library-forge-2001.2.9.jar": {
     "modId": "ftblibrary",
     "version": "2001.2.9"
@@ -535,13 +543,13 @@
     "modId": "jei",
     "version": "15.20.0.106"
   },
+  "jmi-forge-1.20.1-0.14-48.jar": {
+    "modId": "jmi",
+    "version": "1.20.1-0.14-48"
+  },
   "journeymap-1.20.1-5.10.3-forge.jar": {
     "modId": "journeymap",
     "version": "5.10.3"
-  },
-  "JourneyPAC-forge-1.20.1-1.1.5.jar": {
-    "modId": "journeypac",
-    "version": "1.1.5"
   },
   "justhammers-forge-2.0.3+mc1.20.1.jar": {
     "modId": "justhammers",
@@ -624,9 +632,9 @@
     "modId": "vinery",
     "version": "1.4.39"
   },
-  "littlejoys-forge-1.20.1-20.1.6.jar": {
+  "littlejoys-forge-1.20.1-20.1.8.jar": {
     "modId": "littlejoys",
-    "version": "20.1.6"
+    "version": "20.1.8"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
@@ -968,25 +976,17 @@
     "modId": "sophisticatedstorage",
     "version": "1.2.7.1044"
   },
-  "spanorama-1.5.2.jar": {
-    "modId": "spanorama",
-    "version": "1.5.2"
-  },
   "spark-1.10.53-forge.jar": {
     "modId": "spark",
     "version": "1.10.53"
-  },
-  "sparsestructuresreforged-1.20.1-0.0.1.jar": {
-    "modId": "sparsestructuresreforged",
-    "version": "1.20.1-0.0.1"
   },
   "Species-1.20.1-2.3-forge.jar": {
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.7.1.jar": {
+  "splendid_slimes-0.10.0.jar": {
     "modId": "splendid_slimes",
-    "version": "0.7.1"
+    "version": "0.10.0"
   },
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",

@@ -20,6 +20,6 @@
 	pause_game: false
 	progression_mode: "linear"
 	show_lock_icons: true
-	title: "&l&6Society: Capital Hill"
+	title: "&l&6Society: Sunlit Valley"
 	version: 13
 }

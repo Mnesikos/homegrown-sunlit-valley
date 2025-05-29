@@ -44,7 +44,6 @@
       "avg_distance": 50,
       "move_variation": 10
     },
-    
 
     "aquaculture:red_grouper": {
       "idle_time": 30,
@@ -225,7 +224,7 @@
       "avg_distance": 50,
       "move_variation": 15
     },
-    
+
     "aquaculture:piranha": {
       "idle_time": 10,
       "top_speed": 6,
@@ -396,7 +395,7 @@
       "avg_distance": 15,
       "move_variation": 10
     },
-    
+
     "unusualfishmod:raw_picklefish": {
       "idle_time": 16,
       "top_speed": 5,
@@ -503,15 +502,23 @@
       "down_acceleration": 0.6,
       "avg_distance": 40,
       "move_variation": 62
+    },
+
+    "society:neptuna": {
+      "idle_time": 4,
+      "top_speed": 6,
+      "up_acceleration": 0.4,
+      "down_acceleration": 0.4,
+      "avg_distance": 50,
+      "move_variation": 15
     }
-    
   },
   "defaultBehavior": {
-      "idle_time": 10,
-      "top_speed": 1.5,
-      "up_acceleration": 0.7,
-      "down_acceleration": 0.7,
-      "avg_distance": 55,
-      "move_variation": 10
+    "idle_time": 10,
+    "top_speed": 1.5,
+    "up_acceleration": 0.7,
+    "down_acceleration": 0.7,
+    "avg_distance": 55,
+    "move_variation": 10
   }
 }
