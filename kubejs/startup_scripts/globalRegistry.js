@@ -29,10 +29,7 @@ const roundPrice = (price) => {
     if (price % value === 0) {
       for (let k = 0; k < global.coinMap.length; k++) {
         if (price / global.coinMap[i - k].value <= 64) {
-          return (
-            global.coinMap[i - k].value *
-            Math.round(price / global.coinMap[i - k].value)
-          );
+          return global.coinMap[i - k].value * Math.round(price / global.coinMap[i - k].value);
         }
       }
     }
@@ -50,7 +47,7 @@ global.ore = [
   { item: "minecraft:raw_iron_block", value: 72 },
   { item: "minecraft:coal", value: 8 },
   { item: "minecraft:coal_block", value: 72 },
-  { item: "minecraft:raw_gold", value: 16  },
+  { item: "minecraft:raw_gold", value: 16 },
   { item: "minecraft:raw_gold_block", value: 144 },
   { item: "create:raw_zinc", value: 8 },
   { item: "create:raw_zinc_block", value: 72 },
@@ -500,6 +497,7 @@ global.animalProducts = [
   // Misc
   { item: "minecraft:leather", value: 8 },
   { item: "netherdepthsupgrade:soul_sucker_leather", value: 16 },
+  { item: "netherdepthsupgrade:fortress_grouper_plate", value: 16 },
   { item: "quark:bonded_leather", value: 72 },
   { item: "minecraft:rabbit_hide", value: 12 },
   { item: "quark:bonded_rabbit_hide", value: 108 },
@@ -598,9 +596,7 @@ global.fruits.forEach((fruit) => {
   let itemId = fruit.item.split(":")[1];
   if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
   global.preserves.push({
-    item: fruit.altPreserveOutput
-      ? fruit.altPreserveOutput
-      : `society:${itemId}_preserves`,
+    item: fruit.altPreserveOutput ? fruit.altPreserveOutput : `society:${itemId}_preserves`,
     value: fruit.value * 15 + 64,
   });
   global.dehydrated.push({
@@ -999,16 +995,16 @@ const craftingTableRecipes = [
   { item: "minecraft:mushroom_stew", value: 8 },
   { item: "minecraft:cake", value: 318 },
   { item: "minecraft:rabbit_stew", value: 239 },
-  { item: "netherdepthsupgrade:lava_pufferfish_roll", value: 96 },
-  { item: "netherdepthsupgrade:obsidianfish_roll", value: 144 },
-  { item: "netherdepthsupgrade:searing_cod_roll", value: 97 },
-  { item: "netherdepthsupgrade:blazefish_roll", value: 249 },
-  { item: "netherdepthsupgrade:magmacubefish_roll", value: 176 },
-  { item: "netherdepthsupgrade:glowdine_roll", value: 80 },
-  { item: "netherdepthsupgrade:soulsucker_roll", value: 144 },
+  { item: "netherdepthsupgrade:lava_pufferfish_roll", value: 552 },
+  { item: "netherdepthsupgrade:obsidianfish_roll", value: 1048 },
+  { item: "netherdepthsupgrade:searing_cod_roll", value: 552 },
+  { item: "netherdepthsupgrade:blazefish_roll", value: 840 },
+  { item: "netherdepthsupgrade:magmacubefish_roll", value: 1264 },
+  { item: "netherdepthsupgrade:glowdine_roll", value: 920 },
+  { item: "netherdepthsupgrade:soulsucker_roll", value: 648 },
   { item: "netherdepthsupgrade:warped_kelp_roll", value: 96 },
   { item: "netherdepthsupgrade:warped_kelp_roll_slice", value: 32 },
-  { item: "netherdepthsupgrade:nether_rice_roll_medley_block", value: 2048 },
+  { item: "netherdepthsupgrade:nether_rice_roll_medley_block", value: 7252 },
   { item: "refurbished_furniture:bread_slice", value: 5 },
   { item: "refurbished_furniture:glow_berry_jam_toast", value: 49 },
   { item: "refurbished_furniture:sweet_berry_jam_toast", value: 16 },
@@ -1219,13 +1215,13 @@ const cookingPotRecipes = [
   { item: "farmersdelight:glow_berry_custard", value: 215 },
   { item: "farmersdelight:ratatouille", value: 129 },
   { item: "vintagedelight:nut_milk_bottle", value: 51 },
-  { item: "netherdepthsupgrade:baked_soulsucker_stew", value: 291 },
-  { item: "netherdepthsupgrade:baked_glowdine_stew", value: 195 },
-  { item: "netherdepthsupgrade:baked_magmacubefish_stew", value: 33 },
-  { item: "netherdepthsupgrade:baked_blazefish_stew", value: 435 },
-  { item: "netherdepthsupgrade:baked_searing_cod_stew", value: 219 },
-  { item: "netherdepthsupgrade:baked_obsidianfish_stew", value: 291 },
-  { item: "netherdepthsupgrade:baked_lava_pufferfish_stew", value: 219 },
+  { item: "netherdepthsupgrade:baked_soulsucker_stew", value: 1224 },
+  { item: "netherdepthsupgrade:baked_glowdine_stew", value: 1632 },
+  { item: "netherdepthsupgrade:baked_magmacubefish_stew", value: 2148 },
+  { item: "netherdepthsupgrade:baked_blazefish_stew", value: 1512 },
+  { item: "netherdepthsupgrade:baked_searing_cod_stew", value: 1080 },
+  { item: "netherdepthsupgrade:baked_obsidianfish_stew", value: 1824 },
+  { item: "netherdepthsupgrade:baked_lava_pufferfish_stew", value: 1080 },
   { item: "bakery:pudding", value: 100 },
   { item: "brewery:dumplings", value: 60 },
   { item: "bakery:hazelnut_ella", value: 1000 },
@@ -1458,17 +1454,17 @@ global.fish = [
   { item: "crabbersdelight:clam_barrel", value: 36 },
   { item: "crabbersdelight:raw_clam_meat", value: 8 },
   // Nether
-  { item: "netherdepthsupgrade:searing_cod", value: 64 },
-  { item: "netherdepthsupgrade:blazefish", value: 208 },
-  { item: "netherdepthsupgrade:lava_pufferfish", value: 64 },
-  { item: "netherdepthsupgrade:obsidianfish", value: 112 },
-  { item: "netherdepthsupgrade:bonefish", value: 64 },
-  { item: "netherdepthsupgrade:wither_bonefish", value: 112 },
-  { item: "netherdepthsupgrade:magmacubefish", value: 140 },
-  { item: "netherdepthsupgrade:glowdine", value: 48 },
-  { item: "netherdepthsupgrade:soulsucker", value: 112 },
-  { item: "netherdepthsupgrade:fortress_grouper", value: 232 },
-  { item: "netherdepthsupgrade:eyeball_fish", value: 208 },
+  { item: "netherdepthsupgrade:searing_cod", value: 264 },
+  { item: "netherdepthsupgrade:blazefish", value: 408 },
+  { item: "netherdepthsupgrade:lava_pufferfish", value: 264 },
+  { item: "netherdepthsupgrade:obsidianfish", value: 512 },
+  { item: "netherdepthsupgrade:bonefish", value: 364 },
+  { item: "netherdepthsupgrade:wither_bonefish", value: 412 },
+  { item: "netherdepthsupgrade:magmacubefish", value: 620 },
+  { item: "netherdepthsupgrade:glowdine", value: 448 },
+  { item: "netherdepthsupgrade:soulsucker", value: 312 },
+  { item: "netherdepthsupgrade:fortress_grouper", value: 666 },
+  { item: "netherdepthsupgrade:eyeball_fish", value: 408 },
 ];
 // 54
 global.smokedFish = [];
@@ -1508,6 +1504,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },
   { item: "create:experience_block", value: 18 },
   { item: "society:gnome", value: 360 },

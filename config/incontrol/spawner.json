@@ -32,7 +32,7 @@
   },
   {
     "mobsfrombiome": "monster",
-    "persecond": 0.5,
+    "persecond": 0.25,
     "attempts": 10,
     "amount": {
       "minimum": 2,
@@ -40,9 +40,10 @@
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxthis": 200,
+      "maxhostile": 200,
       "mindist": 12,
-      "maxdist": 50
+      "maxdist": 50,
+      "maxverticaldist": 20
     }
   }
 ]

@@ -15,14 +15,15 @@ const basicQuests = [
       { item: "minecraft:raw_gold", count: 4 },
       { item: "society:oak_resin", count: 1 },
       { item: "farmersdelight:tomato", count: 1 },
+      { item: "society:sap", count: 4 },
     ],
   },
   {
     population: 7,
     requestedItems: [
-      { item: "crabbersdelight:clawster", count: 1 },
+      { item: "farm_and_charm:nettle_tea", count: 1 },
       { item: "minecraft:honey_bottle", count: 4 },
-      { item: "society:jade", count: 2 },
+      { item: "farm_and_charm:ribwort_tea", count: 2 },
       { item: "meadow:alpine_poppy", count: 4 },
     ],
   },
@@ -164,7 +165,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:spider_eye", count: 4 },
+          { item: "minecraft:rotten_flesh", count: 16 },
           { item: "minecraft:poisonous_potato", count: 4 },
           { item: "farmersdelight:rotten_tomato", count: 4 },
         ],
@@ -173,14 +174,13 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "vinery:rotten_cherry", count: 4 },
-          { item: "society:jamborite", count: 1 },
           { item: "herbalbrews:yerba_mate_tea", count: 1 },
           { item: "autumnity:foul_berries", count: 16 },
         ],
       },
       {
         population: 7,
-        requestedItems: [{ item: "relics:spore_sack", count: 1 }],
+        requestedItems: [{ item: "veggiesdelight:stuffed_bellpeppers", count: 16 }],
       },
     ],
     additionalRewards: [
@@ -249,15 +249,15 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:clay", count: 8 },
-          { item: "society:marble", count: 1 },
+          { item: "supplementaries:soap_block", count: 1 },
         ],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "create:clockwork_bearing", count: 4 },
+          { item: "simplehats:clockface", count: 1 },
           { item: "society:broken_clock", count: 1 },
-          { item: "createrailwaysnavigator:train_station_clock", count: 8 },
+          { item: "supplementaries:hourglass", count: 64 },
         ],
       },
     ],
@@ -334,15 +334,12 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:raw_iron", count: 16 },
           { item: "minecraft:iron_block", count: 8 },
-          { item: "justhammers:iron_hammer", count: 1 },
+          { item: "society:earth_crystal", count: 2 },
         ],
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "pamhc2trees:mangoitem", count: 3 },
-          { item: "society:earth_crystal", count: 2 },
-        ],
+        requestedItems: [{ item: "pamhc2trees:mangoitem", count: 3 }],
       },
       {
         population: 7,
@@ -381,13 +378,12 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:packed_mud", count: 32 },
           { item: "minecraft:mud", count: 48 },
-          { item: "society:mudstone", count: 1 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "vintagedelight:peanut", count: 32 },
+          { item: "veggiesdelight:cauliflower", count: 16 },
           { item: "society:earth_crystal", count: 2 },
         ],
       },
@@ -426,7 +422,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "society:frozen_tear", count: 2 },
+          { item: "society:ginger_preserves", count: 2 },
           { item: "snowyspirit:gingerbread_cookie", count: 16 },
         ],
       },
@@ -434,13 +430,13 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "pamhc2trees:peachitem", count: 3 },
-          { item: "society:geminite", count: 1 },
+          { item: "bakery:linzer_tart", count: 1 },
         ],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "minecraft:rotten_flesh", count: 24 },
+          { item: "minecraft:rotten_flesh", count: 64 },
           { item: "crabbersdelight:raw_frog_leg", count: 3 },
         ],
       },
@@ -465,11 +461,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "minecraft:experience_bottle", count: 16 },
-          { item: "create:experience_nugget", count: 16 },
-          { item: "create_enchantment_industry:experience_rotor", count: 4 },
-        ],
+        requestedItems: [{ item: "minecraft:experience_bottle", count: 16 }],
       },
       {
         population: 5,
@@ -487,7 +479,7 @@ global.fishPondDefinitions = [
             count: 4,
           },
           { item: "relics:relic_experience_bottle", count: 4 },
-          { item: "society:aged_bottle_mojang_noir", count: 1 },
+          { item: "vinery:bottle_mojang_noir", count: 1 },
         ],
       },
     ],
@@ -618,14 +610,12 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "bakery:strawberry_jam", count: 8 },
-          { item: "society:petrified_slime", count: 1 },
+          { item: "bakery:strawberry_cake", count: 1 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "betterarcheology:unidentified_artifact", count: 1 },
-        ],
+        requestedItems: [{ item: "betterarcheology:unidentified_artifact", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -658,9 +648,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "snowyspirit:glow_lights_prismatic", count: 64 },
-        ],
+        requestedItems: [{ item: "snowyspirit:glow_lights_prismatic", count: 64 }],
       },
       {
         population: 7,
@@ -705,8 +693,8 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "refurbished_furniture:pink_grill", count: 1 },
-          { item: "numismatics:pink_card", count: 1 },
-          { item: "tanukidecor:pink_rocket_lamp", count: 1 },
+          { item: "etcetera:pink_sweater", count: 1 },
+          { item: "vintagedelight:salt_lamp_pink", count: 4 },
         ],
       },
     ],
@@ -916,7 +904,6 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:chorus_flower", count: 1 },
-          { item: "minecraft:phantom_membrane", count: 16 },
           { item: "minecraft:chorus_fruit", count: 4 },
         ],
       },
@@ -931,7 +918,7 @@ global.fishPondDefinitions = [
       {
         population: 7,
         requestedItems: [
-          { item: "society:aged_nutty_basil", count: 1 },
+          { item: "society:nutty_basil", count: 1 },
           { item: "minecraft:emerald", count: 16 },
           { item: "minecraft:carrot", count: 64 },
         ],
@@ -966,24 +953,20 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:gold_ingot", count: 32 },
           { item: "minecraft:raw_gold", count: 16 },
-          { item: "atmospheric:orange", count: 4 },
+          { item: "numismatics:crown", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
           { item: "vinery:glowing_wine", count: 1 },
-          { item: "society:pyrite", count: 1 },
-          { item: "create:golden_sheet", count: 4 },
+          { item: "farm_and_charm:corn", count: 64 },
+          { item: "atmospheric:orange", count: 4 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:aged_glowing_wine", count: 1 },
-          { item: "create:precision_mechanism", count: 4 },
-          { item: "numismatics:crown", count: 16 },
-        ],
+        requestedItems: [{ item: "create:precision_mechanism", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -1002,7 +985,7 @@ global.fishPondDefinitions = [
       {
         minPopulation: 8,
         item: "create:precision_mechanism",
-        count: 2,
+        count: 1,
         chance: 0.09,
       },
     ],
@@ -1013,8 +996,8 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:pointed_dripstone", count: 16 },
-          { item: "minecraft:dripstone_block", count: 64 },
+          { item: "minecraft:wither_skeleton_skull", count: 1 },
+          { item: "minecraft:skeleton_skull", count: 1 },
         ],
       },
       {
@@ -1022,12 +1005,11 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "society:prismatic_shard", count: 1 },
           { item: "minecraft:netherite_scrap", count: 16 },
-          { item: "create:sturdy_sheet", count: 64 },
         ],
       },
       {
         population: 7,
-        requestedItems: [{ item: "society:omni_geode", count: 64 }],
+        requestedItems: [{ item: "society:omni_geode", count: 32 }],
       },
     ],
     additionalRewards: [
@@ -1069,9 +1051,9 @@ global.fishPondDefinitions = [
       {
         population: 7,
         requestedItems: [
-          { item: "society:aged_jo_special_mixture", count: 4 },
-          { item: "society:aged_beer_barley", count: 4 },
-          { item: "society:aged_sheep_cheese_block", count: 4 },
+          { item: "society:aged_jo_special_mixture", count: 1 },
+          { item: "society:aged_beer_barley", count: 1 },
+          { item: "society:aged_sheep_cheese_block", count: 1 },
         ],
       },
     ],
@@ -1108,8 +1090,8 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:granite", count: 32 },
           { item: "create:raw_zinc", count: 16 },
+          { item: "create:zinc_ingot", count: 48 },
         ],
       },
       {
@@ -1173,7 +1155,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [{ item: "society:helvite", count: 1 }],
+        requestedItems: [{ item: "society:truffle", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -1234,11 +1216,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "society:kyanite", count: 1 },
-          { item: "society:beer_london", count: 1 },
-          { item: "society:ancient_vespertine", count: 1 },
-        ],
+        requestedItems: [{ item: "farm_and_charm:cat_food", count: 24 }],
       },
       {
         population: 7,
@@ -1331,10 +1309,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:relic_trove", count: 1 },
-          { item: "society:dirty_chai", count: 8 },
-        ],
+        requestedItems: [{ item: "society:dirty_chai", count: 8 }],
       },
     ],
     additionalRewards: [
@@ -1371,7 +1346,6 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "society:malachite", count: 1 },
           { item: "vintagedelight:peanut", count: 32 },
           { item: "pamhc2trees:hazelnutitem", count: 4 },
         ],
@@ -1414,13 +1388,13 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:raw_copper", count: 16 },
           { item: "minecraft:copper_block", count: 16 },
-          { item: "society:geode", count: 4 },
+          { item: "minecraft:melon_slice", count: 32 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:geode", count: 8 },
+          { item: "society:earth_crystal", count: 4 },
           { item: "meadow:piece_of_grain_cheese", count: 16 },
           { item: "vinery:cherry", count: 4 },
         ],
@@ -1429,7 +1403,6 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:aged_cherry_wine", count: 1 },
-          { item: "minecraft:redstone", count: 64 },
           { item: "smallships:cherry_brigg", count: 1 },
         ],
       },
@@ -1524,10 +1497,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 8,
-        requestedItems: [
-          { item: "society:prismatic_shard", count: 1 },
-          { item: "farmersdelight:mushroom_rice", count: 64 },
-        ],
+        requestedItems: [{ item: "farmersdelight:mushroom_rice", count: 64 }],
       },
     ],
     additionalRewards: [
@@ -1595,10 +1565,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:prismatic_shard", count: 1 },
-          { item: "candlelight:mushroom_soup", count: 16 },
-        ],
+        requestedItems: [{ item: "candlelight:mushroom_soup", count: 16 }],
       },
     ],
     additionalRewards: [
@@ -1708,24 +1675,21 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "crabbersdelight:crab_trap_bait", count: 16 },
-          { item: "society:earth_crystal", count: 4 },
+          { item: "twigs:rhyolite", count: 16 },
           { item: "minecraft:torchflower", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:geode", count: 4 },
+          { item: "twigs:tangerine_seashell", count: 2 },
           { item: "minecraft:cactus", count: 16 },
-          { item: "society:limestone_pebble", count: 1 },
+          { item: "twigs:pebble", count: 16 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:prize_ticket", count: 2 },
-          { item: "society:ribbit_gadget", count: 1 },
-        ],
+        requestedItems: [{ item: "society:prize_ticket", count: 4 }],
       },
     ],
     additionalRewards: [
@@ -1765,10 +1729,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:furniture_box", count: 4 },
-          { item: "minecraft:shulker_shell", count: 2 },
-        ],
+        requestedItems: [{ item: "society:furniture_box", count: 4 }],
       },
     ],
     additionalRewards: [
@@ -1804,7 +1765,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "society:granite_slate", count: 1 },
+          { item: "supplementaries:candy", count: 4 },
           { item: "pamhc2trees:lycheeitem", count: 16 },
           { item: "vinery:bottle_mojang_noir", count: 1 },
         ],
@@ -1819,11 +1780,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:ocean_stone", count: 1 },
-          { item: "society:battery", count: 4 },
-          { item: "buildinggadgets2:gadget_core", count: 1 },
-        ],
+        requestedItems: [{ item: "society:battery", count: 4 }],
       },
     ],
     additionalRewards: [
@@ -1858,24 +1815,15 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "society:ruby", count: 16 },
-          { item: "minecraft:gold_block", count: 32 },
-        ],
+        requestedItems: [{ item: "minecraft:gold_block", count: 32 }],
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "society:pyrite", count: 16 },
-          { item: "minecraft:gilded_blackstone", count: 16 },
-        ],
+        requestedItems: [{ item: "minecraft:gilded_blackstone", count: 16 }],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "candlelight:gold_ring", count: 1 },
-          { item: "society:golden_mayonnaise", count: 1 },
-        ],
+        requestedItems: [{ item: "society:golden_mayonnaise", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -1926,15 +1874,14 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:coal", count: 32 },
-          { item: "minecraft:coal_ore", count: 16 },
-          { item: "minecraft:deepslate_coal_ore", count: 2 },
+          { item: "minecraft:quartz", count: 32 },
+          { item: "etcetera:raw_bismuth", count: 8 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:baryte", count: 1 },
+          { item: "farm_and_charm:roaster", count: 4 },
           { item: "minecraft:furnace", count: 32 },
           { item: "farmersdelight:skillet", count: 16 },
         ],
@@ -2031,23 +1978,20 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:torchflower", count: 4 },
-          { item: "minecraft:wither_skeleton_skull", count: 1 },
-          { item: "create:blaze_burner", count: 1 },
+          { item: "atmospheric:firethorn", count: 1 },
+          { item: "meadow:fire_lily", count: 1 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "create:blaze_burner", count: 4 },
-          { item: "society:jasper", count: 1 },
+          { item: "supplementaries:lumisene_bottle", count: 8 },
+          { item: "minecraft:wither_skeleton_skull", count: 1 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "create:blaze_cake", count: 4 },
-          { item: "quark:blaze_lantern", count: 8 },
-        ],
+        requestedItems: [{ item: "simplehats:fakefire", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -2081,22 +2025,19 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:quartz", count: 64 },
           { item: "create:rose_quartz", count: 16 },
-          { item: "society:topaz", count: 1 },
+          { item: "society:fire_quartz", count: 1 },
         ],
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "society:fire_quartz", count: 4 },
-          { item: "society:aged_blazewine_pinot", count: 4 },
-        ],
+        requestedItems: [{ item: "snethervinery:crimson_grapejuice", count: 16 }],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "society:furniture_box", count: 4 },
-          { item: "society:fire_quartz", count: 8 },
-          { item: "society:aged_blazewine_pinot", count: 8 },
+          { item: "society:aged_bolvar_wine", count: 3 },
+          { item: "society:aged_good_catawba", count: 3 },
+          { item: "society:aged_lava_fizz", count: 3 },
         ],
       },
     ],
@@ -2155,21 +2096,16 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:obsidian", count: 16 },
           { item: "nethervinery:obsidian_stem", count: 8 },
-        ],
-      },
-      {
-        population: 5,
-        requestedItems: [
-          { item: "society:aged_lava_fizz", count: 2 },
           { item: "minecraft:crying_obsidian", count: 4 },
         ],
       },
       {
+        population: 5,
+        requestedItems: [{ item: "society:nether_raisins", count: 16 }],
+      },
+      {
         population: 7,
-        requestedItems: [
-          { item: "society:pure_obsidian", count: 1 },
-          { item: "create:powdered_obsidian", count: 8 },
-        ],
+        requestedItems: [{ item: "society:aged_lava_fizz", count: 2 }],
       },
     ],
     additionalRewards: [
@@ -2200,8 +2136,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:bone_meal", count: 32 },
-          { item: "betterarcheology:iron_brush", count: 16 },
+          { item: "society:large_milk", count: 4 },
           { item: "meadow:cheese_block", count: 1 },
         ],
       },
@@ -2209,7 +2144,6 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "minecraft:skeleton_skull", count: 1 },
-          { item: "society:limestone_pebble", count: 1 },
           { item: "minecraft:bone_block", count: 32 },
           { item: "vintagedelight:organic_mash", count: 16 },
         ],
@@ -2274,25 +2208,19 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "minecraft:wither_rose", count: 10 },
-          { item: "minecraft:wither_skeleton_skull", count: 3 },
-        ],
+        requestedItems: [{ item: "species:wraptor_egg", count: 1 }],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:neptunite", count: 1 },
-          { item: "numismatics:sun", count: 4 },
-          { item: "brewery:dark_brew", count: 4 },
+          { item: "pamhc2trees:pawpawitem", count: 4 },
+          { item: "society:energy_drink", count: 1 },
+          { item: "nethervinery:nether_fizz", count: 1 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "minecraft:nether_star", count: 1 },
-          { item: "society:aged_dark_brew", count: 16 },
-        ],
+        requestedItems: [{ item: "society:aged_dark_brew", count: 16 }],
       },
     ],
     additionalRewards: [
@@ -2359,10 +2287,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "minecraft:magma_cream", count: 32 },
-          { item: "society:magma_geode", count: 8 },
-        ],
+        requestedItems: [{ item: "society:magma_geode", count: 8 }],
       },
       {
         population: 5,
@@ -2374,11 +2299,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:magma_geode", count: 32 },
-          { item: "netherdepthsupgrade:lava_sponge", count: 4 },
-          { item: "nethervinery:lava_fizz", count: 1 },
-        ],
+        requestedItems: [{ item: "nethervinery:lava_fizz", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -2410,24 +2331,24 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:glowstone_dust", count: 32 },
-          { item: "minecraft:glowstone", count: 12 },
+          { item: "bakery:glowberry_jam", count: 7 },
+          { item: "bakery:glowberry_tart", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "minecraft:glowstone_dust", count: 64 },
-          { item: "minecraft:glowstone", count: 24 },
-          { item: "society:topaz", count: 1 },
+          { item: "vinery:glowing_wine", count: 1 },
+          { item: "crabbersdelight:raw_glow_squid_tentacles", count: 1 },
+          { item: "vintagedelight:glow_berry_mason_jar", count: 4 },
         ],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "quark:glowberry_sack", count: 16 },
-          { item: "minecraft:glowstone", count: 64 },
-          { item: "vinery:glowing_wine", count: 1 },
+          { item: "farmersdelight:glow_berry_custard", count: 8 },
+          { item: "society:aged_glowing_wine", count: 2 },
+          { item: "atmospheric:orange", count: 16 },
         ],
       },
     ],
@@ -2496,8 +2417,8 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:soul_sand", count: 48 },
-          { item: "quark:soul_bead", count: 8 },
+          { item: "autumnity:soul_jack_o_lantern", count: 8 },
+          { item: "farm_and_charm:corn_grits", count: 16 },
           { item: "minecraft:wither_skeleton_skull", count: 1 },
         ],
       },
@@ -2511,11 +2432,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:magma_geode", count: 4 },
-          { item: "society:fire_quartz", count: 8 },
-          { item: "society:aged_improved_lava_fizz", count: 1 },
-        ],
+        requestedItems: [{ item: "society:aged_lava_fizz", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -2542,7 +2459,6 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:nether_bricks", count: 16 },
-          { item: "create:blaze_burner", count: 1 },
           { item: "minecraft:wither_skeleton_skull", count: 1 },
         ],
       },
@@ -2550,8 +2466,8 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "netherdepthsupgrade:lava_sponge", count: 1 },
-          { item: "minecraft:nether_bricks", count: 64 },
-          { item: "society:ruby", count: 4 },
+          { item: "minecraft:magma_cream", count: 32 },
+          { item: "society:magma_geode", count: 16 },
         ],
       },
       {
@@ -2559,7 +2475,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:nether_star", count: 1 },
           { item: "minecraft:netherite_ingot", count: 1 },
-          { item: "numismatics:sun", count: 8 },
         ],
       },
     ],
@@ -2588,20 +2503,18 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "minecraft:spider_eye", count: 8 },
           { item: "beachparty:sunglasses", count: 1 },
-          { item: "etcetera:raw_bismuth", count: 32 },
         ],
       },
       {
         population: 5,
         requestedItems: [
           { item: "minecraft:ender_eye", count: 8 },
-          { item: "society:tigerseye", count: 1 },
+          { item: "simplehats:cyclopseye", count: 1 },
         ],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "society:pristine_tigerseye", count: 1 },
           { item: "botania:ender_eye_block", count: 8 },
           { item: "minecraft:eye_armor_trim_smithing_template", count: 1 },
         ],
@@ -2636,14 +2549,14 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "aquaculture:neptunium_ingot", count: 4 },
+          { item: "society:aquamagical_dust", count: 1 },
+          { item: "aquaculture:neptunium_ingot", count: 2 },
           { item: "aquaculture:neptunes_bounty", count: 1 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:aquamagical_dust", count: 4 },
           { item: "aquaculture:neptunium_sword", count: 1 },
           { item: "aquaculture:neptunium_chestplate", count: 1 },
         ],
@@ -2688,19 +2601,18 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "minecraft:lapis_lazuli", count: 48 },
-          { item: "vinery:bottle_mojang_noir", count: 1 },
-          { item: "create:experience_block", count: 16 },
+          { item: "herbalbrews:hibiscus_tea", count: 1 },
         ],
       },
       {
         population: 5,
-        requestedItems: [{ item: "society:aerinite", count: 1 }],
+        requestedItems: [{ item: "vinery:bottle_mojang_noir", count: 1 }],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "crabbersdelight:pearl", count: 32 },
-          { item: "society:ancient_fruit_preserves", count: 1 },
+          { item: "crabbersdelight:pearl", count: 16 },
+          { item: "crabbersdelight:coral_fragments", count: 64 },
           { item: "aquaculture:neptunium_ingot", count: 1 },
         ],
       },
@@ -2732,7 +2644,7 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "meadow:cobbled_limestone", count: 32 },
+          { item: "farmersdelight:red_mushroom_colony", count: 4 },
           { item: "meadow:alpine_salt", count: 32 },
           { item: "vintagedelight:salt_lamp_light_blue", count: 1 },
         ],
@@ -2740,9 +2652,9 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "create:raw_zinc", count: 16 },
-          { item: "create:zinc_ingot", count: 16 },
-          { item: "create:zinc_block", count: 16 },
+          { item: "brewery:beer_oat", count: 8 },
+          { item: "brewery:whiskey_carrasconlabel", count: 4 },
+          { item: "brewery:whiskey_ak", count: 4 },
         ],
       },
       {
@@ -2751,7 +2663,6 @@ global.fishPondDefinitions = [
           { item: "society:geode", count: 32 },
           { item: "society:frozen_geode", count: 16 },
           { item: "society:magma_geode", count: 16 },
-          { item: "society:omni_geode", count: 8 },
         ],
       },
     ],
@@ -2872,15 +2783,15 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:packed_ice", count: 32 },
+          { item: "snowpig:frozen_porkchop", count: 8 },
           { item: "society:brown_sheet", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
-          { item: "society:frozen_tear", count: 8 },
-          { item: "minecraft:blue_ice", count: 32 },
+          { item: "snuffles:snuffle_fluff", count: 4 },
+          { item: "species:frozen_meat", count: 4 },
           { item: "herbalbrews:cinnamon_coffee", count: 4 },
         ],
       },
@@ -2889,7 +2800,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "society:frozen_geode", count: 16 },
           { item: "extractinator:slush", count: 64 },
-          { item: "society:aged_eiswein", count: 2 },
         ],
       },
     ],
@@ -3244,16 +3154,14 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "society:sandstone_slate", count: 4 },
+          { item: "society:rubber", count: 16 },
           { item: "beautify:crimson_blinds", count: 32 },
           { item: "society:bowl_of_soul", count: 8 },
         ],
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "society:pristine_sandstone_slate", count: 4 },
-        ],
+        requestedItems: [{ item: "society:aged_forks_of_blue", count: 4 }],
       },
     ],
     additionalRewards: [
@@ -3284,7 +3192,7 @@ global.fishPondDefinitions = [
         population: 3,
         requestedItems: [
           { item: "farm_and_charm:oat_ball", count: 48 },
-          { item: "society:lemon_stone", count: 4 },
+          { item: "beachparty:sweetberry_milkshake", count: 4 },
           { item: "society:aged_grain_cheese_block", count: 16 },
         ],
       },
@@ -3293,7 +3201,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "atmospheric:orange", count: 16 },
           { item: "veggiesdelight:bellpepper", count: 32 },
-          { item: "create:ochrum", count: 64 },
         ],
       },
       {
@@ -3301,7 +3208,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "bakery:bundt_cake", count: 32 },
           { item: "vintagedelight:pickled_pepper", count: 32 },
-          { item: "create:crimsite", count: 64 },
         ],
       },
     ],
@@ -3352,7 +3258,6 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "society:aged_magnetic_wine", count: 4 },
           { item: "minecraft:verdant_froglight", count: 8 },
           { item: "trials:copper_bulb", count: 16 },
         ],
@@ -3360,8 +3265,7 @@ global.fishPondDefinitions = [
       {
         population: 7,
         requestedItems: [
-          { item: "society:aged_magnetic_wine", count: 32 },
-          { item: "create:steam_engine", count: 1 },
+          { item: "vinery:magnetic_wine", count: 1 },
           { item: "aquaculture:neptunium_ingot", count: 1 },
         ],
       },
@@ -3398,9 +3302,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "society:aged_whiskey_lilitusinglemalt", count: 16 },
-        ],
+        requestedItems: [{ item: "society:aged_whiskey_lilitusinglemalt", count: 16 }],
       },
       {
         population: 5,
@@ -3455,7 +3357,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "pamhc2trees:bananaitem", count: 32 },
-          { item: "society:aged_espresso", count: 4 },
+          { item: "society:espresso", count: 4 },
           { item: "unusualfishmod:cooked_unusual_fillet", count: 32 },
         ],
       },
@@ -3500,16 +3402,16 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "society:amethyst_chunk", count: 7 },
+          { item: "society:purple_sheet", count: 4 },
           { item: "minecraft:budding_amethyst", count: 4 },
-          { item: "society:aged_amethyst_cheese_block", count: 5 },
+          { item: "nightlights:octopus_purple", count: 2 },
         ],
       },
       {
         population: 7,
         requestedItems: [
           { item: "pamhc2trees:plumitem", count: 32 },
-          { item: "society:pristine_amethyst_chunk", count: 1 },
+          { item: "farmersdelight:melon_juice", count: 16 },
           { item: "society:aged_amethyst_cheese_block", count: 32 },
         ],
       },
@@ -3553,7 +3455,6 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "minecraft:cobbled_deepslate", count: 64 },
           { item: "quark:lavender_blossom_sapling", count: 64 },
           { item: "pamhc2trees:peachitem", count: 16 },
         ],
@@ -3562,14 +3463,12 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "society:merino_wool", count: 4 },
-          { item: "minecraft:calcite", count: 64 },
-          { item: "society:neptunite", count: 4 },
+          { item: "society:truffle", count: 4 },
         ],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "society:lunarite", count: 4 },
           { item: "create:scorchia", count: 64 },
           { item: "minecraft:white_concrete", count: 64 },
         ],
@@ -3608,16 +3507,15 @@ global.fishPondDefinitions = [
       {
         population: 3,
         requestedItems: [
-          { item: "society:opal", count: 1 },
+          { item: "twigs:silt", count: 1 },
           { item: "netherdepthsupgrade:eyeball", count: 32 },
-          { item: "society:tubasmoke_carton", count: 4 },
         ],
       },
       {
         population: 5,
         requestedItems: [
           { item: "society:black_opal", count: 1 },
-          { item: "society:relic_trove", count: 1 },
+          { item: "society:tubasmoke_carton", count: 4 },
           { item: "society:starfruit_preserves", count: 32 },
         ],
       },
