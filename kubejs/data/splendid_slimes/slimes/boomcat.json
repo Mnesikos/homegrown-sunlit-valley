@@ -22,5 +22,6 @@
     "untitledduckmod:duck",
     "untitledduckmod:goose"
   ],
-  "favorite_entity": "untitledduckmod:duck"
+  "favorite_entity": "untitledduckmod:duck",
+  "traits": ["explosive"]
 }

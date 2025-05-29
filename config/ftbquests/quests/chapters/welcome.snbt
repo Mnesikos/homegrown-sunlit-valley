@@ -256,6 +256,7 @@
 			description: [
 				"Want to protect your base or keep it loaded? Chunks can be claimed using the JourneyMap - &6j&r key by default."
 				""
+				"First, click the \"FTBChunks Claming Mode\" button on the right side. Then:"
 				"- &6Left-Click&r to claim a chunk"
 				"- &6Right-Click&r to remove the claim"
 				""

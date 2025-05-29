@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Valley
-### v2.7.0
+### v2.7.1
 ^^^
 --- 
 - Renamed pack to Society: Sunlit Valley! This is a smaller update to prepare for the large content update that is 3.0!
@@ -12,3 +12,10 @@
 - Removed Bronzed Seashell from Crab Trap loot table because it doesn't stack and was annoying me
 - Fixed fishing skills causing non-stackable items to duplicate
 - Fixed Fly Fisher and School Fisher adding non-fish loot
+
+### 2.7.1
+- Added Blackfish to Autumn/Winter Ocean day pool
+- Added more clear quest book text on claiming
+- Added Slime behaviors from Splendid Slimes update! Boomcats Slimes explode when hungry, Blazing Slimes light things on fire, and more!
+- Fixed fishing rods not working in specific circumstances
+- Fixed console log left in

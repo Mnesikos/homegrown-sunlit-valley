@@ -30,7 +30,6 @@ global.processShippingBinInventory = (
       )
     ) {
       let trade = global.trades.get(String(slotItem.id));
-      console.log(trade)
       let quality;
       let slotNbt;
       if (inventory.getStackInSlot(i).hasNBT()) {

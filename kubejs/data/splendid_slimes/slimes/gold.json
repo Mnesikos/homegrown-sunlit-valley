@@ -13,6 +13,8 @@
   "favorite_food": {
     "item": "society:bell_pepper_preserves"
   },
+  "traits": ["moody"],
+  "emit_effect_particle": "atmospheric:morado_blossom",
   "negative_commands": [
     "numismatics deduct @p[distance=..8,limit=1] 1 CROWN",
     "immersivemessages sendcustom @p[distance=..8,limit=1] {anchor:3,background:1,wrap:1,align:0,y:-60} 5 A Gold Slime stole from your bank account!",

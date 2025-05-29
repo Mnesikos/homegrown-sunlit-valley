@@ -28,6 +28,14 @@
     "minecraft:creeper"
   ],
   "favorite_entity": "minecraft:skeleton",
+  "traits": ["defiant", "handy"],
+  "emit_effect_particle": "minecraft:sculk_charge_pop",
+  "innate_effects": [
+    {
+      "effect": "minecraft:strength",
+      "amplifier": 0
+    }
+  ],
   "negative_emit_effects": [
     {
       "effect": "minecraft:darkness",
