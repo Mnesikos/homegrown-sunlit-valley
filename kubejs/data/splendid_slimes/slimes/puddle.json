@@ -12,6 +12,14 @@
   "favorite_food": {
     "item": "unusualfishmod:raw_sneep_snorp"
   },
+  "traits": ["aquatic", "spiky"],
+  "innate_effects": [
+    {
+      "effect": "minecraft:water_breathing",
+      "amplifier": 0
+    }
+  ],
+  "emit_effect_particle": "minecraft:splash",
   "positive_emit_effects": [
     {
       "effect": "minecraft:water_breathing",

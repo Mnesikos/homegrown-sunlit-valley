@@ -22,6 +22,7 @@
   },
   "entities": ["minecraft:stray", "minecraft:skeleton", "trials:bogged"],
   "favorite_entity": "trials:bogged",
+  "emit_effect_particle": "supplementaries:air_burst",
   "negative_commands": [
     "execute at @p[distance=..6] run summon minecraft:lightning_bolt",
     "playsound trials:breeze_idle block @a[distance=..10]"

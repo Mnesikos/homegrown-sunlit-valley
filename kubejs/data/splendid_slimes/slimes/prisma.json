@@ -12,6 +12,14 @@
   "favorite_food": {
     "item": "aquaculture:boulti"
   },
+  "traits": ["aquatic", "spiky"],
+  "innate_effects": [
+    {
+      "effect": "minecraft:water_breathing",
+      "amplifier": 0
+    }
+  ],
+  "emit_effect_particle": "supplementaries:suds",
   "negative_emit_effects": [
     {
       "effect": "minecraft:mining_fatigue",

@@ -16,5 +16,7 @@
       "duration": 300,
       "amplifier": 1
     }
-  ]
+  ],
+  "emit_effect_particle": "supplementaries:bomb_smoke",
+  "traits": ["flaming"]
 }
