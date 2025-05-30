@@ -14,7 +14,7 @@
 				""
 				"Where farming meets lightly industrialized capitalism."
 				""
-				"Become a wealthy land-owning baron with a farming empire."
+				"Expand your farming empire and become wealthy in the process."
 				""
 				"This questbook will give you an introduction to the concepts of the pack, and serve as a journal for collectable items."
 			]
@@ -78,7 +78,7 @@
 			description: [
 				"Teleportation does exist, however you will have to build out a network of roads to use it."
 				""
-				"Additionally, Elytras are very expensive and difficult to obtain... (Currently unobtainable)"
+				"Additionally, Elytras are very expensive and difficult to obtain..."
 			]
 			icon: "minecraft:chorus_fruit"
 			id: "25777939975C3CEE"

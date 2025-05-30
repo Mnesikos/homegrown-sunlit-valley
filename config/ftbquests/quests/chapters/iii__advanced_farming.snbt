@@ -12,7 +12,7 @@
 			description: [
 				"The &6Nether&r is the next area to exploit for its natural resources."
 				""
-				"Getting there will prove fairly trivial, but surviving remains a trial..."
+				"Getting there will prove fairly trivial, but surviving is a trial for the unprepared..."
 			]
 			id: "66E1AC55824DF1D9"
 			rewards: [{
@@ -906,6 +906,8 @@
 		{
 			description: [
 				"&6Splendid Sliems&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
+				""
+				"They start out as wild, but once you feed them a food in their diet, they'll be tamed and won't despawn."
 				""
 				"They're simpler than farm animals, though you may find they cause a bit more chaos..."
 			]

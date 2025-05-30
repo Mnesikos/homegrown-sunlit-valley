@@ -1,9 +1,8 @@
 ^^^
-## Sunlit Valley
+## Iridium Sparks
 ### v3.0.0
 ^^^
 --- 
-- Renamed pack to Society: Sunlit Valley! Curseforge page renamed next update!
 - Added completely redone Skull Cavern dimension and mechanics
 - Added Tapper - Replaces old Tap (Right click/craft to update)
 - Added Sparkstone ores & Sparkstone, a gem used for automating Artisan machines
@@ -29,7 +28,6 @@
 - Artisan Machines now drop unfinished inputs when broken
 - Changed Gaming Console recipe to not require Create
 - Fish Ponds now mature once a day in the morning to match other mechanics
-- Fish Ponds in JEI display chances of items as well as minimum population on hover
 - Fish Ponds preserve type, population, and max population when broken
 - Heretic Skill now also makes farm animals drop Sparkstone
 - Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
@@ -49,7 +47,6 @@
 - Fixed Charging Rods only taking 1 day to process
 - Fixed juices not having draining recipes
 - Fixed Tomato Crop drop amount not matching Almanac
-- Fixed fishing skills causing non-stackable items to duplicate
 - Fixed Lettuce not having tag
 - Fixed smoked fish not having cooked fish tag
 - Fixed Animal Feed recipes that outputted over a stack of items

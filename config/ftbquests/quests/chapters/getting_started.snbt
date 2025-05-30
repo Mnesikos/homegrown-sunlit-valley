@@ -31,7 +31,7 @@
 		{
 			dependencies: ["3862A7D1A471A215"]
 			description: [
-				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r"
+				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r."
 				""
 				"Tools can be repaired in an anvil infinitely, and enchantments also carry over when upgrading!"
 				""
@@ -203,7 +203,7 @@
 		{
 			dependencies: ["3C54AC272D438F76"]
 			description: [
-				"Tired of paying the Blacksmith to open &6Geodes?&r Buy the &6Extractinator&r from one!"
+				"Tired of paying the Blacksmith to open &6Geodes&r? Buy the &6Extractinator&r from one!"
 				""
 				"Right click it with a &6Geode&r to pop it open, free of charge."
 			]
@@ -324,7 +324,7 @@
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"Hoarding your coins in random chests isn't ideal. The &6Bank Terminal&r is an ATM, allowing you to store your coins safely."
+				"Hoarding your coins in random chests isn't ideal. The &6Bank Terminal&r is an ATM, allowing you to store your coins safely. You can access your money from any other Bank Terminal, like an Ender Chest."
 				""
 				"It can be purchased from the &6Banker&r villager."
 			]

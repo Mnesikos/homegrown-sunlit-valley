@@ -313,14 +313,14 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:gameplay/fishing")
     .hasAnyStage("fly_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {
-      if (!itemStack.hasTag("minecraft:fishes")) return;
+      if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 1);
       return itemStack;
     })
     .hasAnyStage("school_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {
-      if (!itemStack.hasTag("minecraft:fishes")) return;
+      if (!itemStack.hasTag("minecraft:fishes")) return itemStack;
       if (itemStack.maxStackSize == 1) return itemStack;
       itemStack.setCount(itemStack.getCount() + 3);
       return itemStack;
