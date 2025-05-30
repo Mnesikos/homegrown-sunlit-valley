@@ -11,6 +11,10 @@
     "modId": "advancementplaques",
     "version": "1.6.7"
   },
+  "alltheleaks-0.1.0-beta+1.20.1-forge.jar": {
+    "modId": "alltheleaks",
+    "version": "0.1.0-beta+1.20.1-forge"
+  },
   "alternate_current-mc1.20-1.7.0.jar": {
     "modId": "alternate_current",
     "version": "1.7.0"
@@ -219,9 +223,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.8.0.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar": {
     "modId": "crash_assistant",
-    "version": "1.8.0"
+    "version": "1.9.0"
   },
   "create-1.20.1-0.5.1.j.jar": {
     "modId": "create",
@@ -278,10 +282,6 @@
   "customvillagertrades-forge-20.25.0.jar": {
     "modId": "customvillagertrades",
     "version": "20.25.0"
-  },
-  "cyanide-forge-1.20.1-4.1.1.jar": {
-    "modId": "cyanide",
-    "version": "4.1.1"
   },
   "decorative_blocks-forge-1.20.1-4.1.3.jar": {
     "modId": "decorative_blocks",
@@ -343,6 +343,7 @@
     "modId": "entityjs",
     "version": "0.4.0-1.20.1"
   },
+  "Essential_1-3-6-2_forge_1-20-1.jar": {},
   "Etcetera-1.20.1-1.1.3-Forge.jar": {
     "modId": "etcetera",
     "version": "1.20.1-1.1.3"
@@ -554,6 +555,10 @@
   "journeymap-1.20.1-5.10.3-forge.jar": {
     "modId": "journeymap",
     "version": "5.10.3"
+  },
+  "JourneyPAC-forge-1.20.1-1.1.5.jar": {
+    "modId": "journeypac",
+    "version": "1.1.5"
   },
   "justhammers-forge-2.0.3+mc1.20.1.jar": {
     "modId": "justhammers",

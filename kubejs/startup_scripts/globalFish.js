@@ -199,6 +199,15 @@ global.winterFresh = [
   { fish: "unusualfishmod:raw_hatchetfish", night: true, weight: 2 },
 ];
 
+global.getRoe = (fish) => {
+  let fishId = fish.split(":")[1];
+  if (fishId.includes("raw_")) {
+    if (fishId === "raw_snowflake") fishId = "frosty_fin";
+    else fishId = fishId.substring(4, fishId.length);
+  }
+  return `society:${fishId}_roe`;
+};
+
 global.getPondProperties = (block) => {
   const properties = block.getProperties();
   return {
@@ -221,17 +230,13 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
   let harvestOutputs = [];
   if (player.stages.has("caper_catcher")) additionalMaxRoe += 5;
   if (player.stages.has("caviar_catcher")) additionalMaxRoe += 5;
-  let fishId = fish.item.split(":")[1];
-  if (fishId.includes("raw_")) {
-    if (fishId === "raw_snowflake") fishId = "frosty_fin";
-    else fishId = fishId.substring(4, fishId.length);
-  }
+  const fishRoe = global.getRoe(fish.item);
   const calculateRoe = rnd(
     Math.floor(population / 4),
     Math.floor(population / 2) + additionalMaxRoe
   );
   const roeCount = calculateRoe > 1 ? calculateRoe : 1;
-  harvestOutputs.push(`${roeCount}x society:${fishId}_roe`);
+  harvestOutputs.push(`${roeCount}x ${fishRoe}`);
   if (fish.additionalRewards) {
     let fishPondRoll = 0;
     fish.additionalRewards.forEach((reward) => {

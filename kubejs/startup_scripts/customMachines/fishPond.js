@@ -176,7 +176,7 @@ StartupEvents.registry("block", (event) => {
         }
         global.fishPondDefinitions.forEach((fish, index) => {
           if (!player.isCrouching()) {
-            if (quest === "true" && type == `${index + 1}`) {
+            if (item && quest === "true" && type == `${index + 1}`) {
               handleQuestSubmission(fish, click);
             }
             handleFishInsertion(fish, index, click);

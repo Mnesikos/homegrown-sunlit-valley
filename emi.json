@@ -5,6 +5,10 @@
     }
   ],
   "lookup_history": [
+    "item:queen_bee:antenna",
+    "item:quark:stripped_oak_post",
+    "item:quark:azalea_log",
+    "item:atmospheric:yucca_log",
     "item:minecraft:ancient_debris",
     "item:netherdepthsupgrade:baked_lava_pufferfish_stew",
     "item:netherdepthsupgrade:baked_obsidianfish_stew",
@@ -1230,11 +1234,7 @@
     "item:society:cracked_egg",
     "item:aquaculture:pollock",
     "item:atmospheric:arid_glass_pane",
-    "item:minecraft:light_gray_stained_glass_pane",
-    "item:minecraft:gray_stained_glass_pane",
-    "item:splendid_slimes:rocket_pod",
-    "item:supplementaries:bomb",
-    "item:functionalstorage:framed_controller_extension"
+    "item:minecraft:light_gray_stained_glass_pane"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1248,9 +1248,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

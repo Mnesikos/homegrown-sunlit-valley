@@ -425,6 +425,33 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   }
 };
 
+global.inventoryBelowHasRoom = (level, block, item) => {
+  let belowItem;
+  const belowPos = block.getPos().below();
+  const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+  if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
+    for (let j = 0; j < belowBlock.inventory.slots; j++) {
+      belowItem = belowBlock.inventory.getStackInSlot(j);
+      if (
+        belowItem === Item.of(item) &&
+        belowItem.count + item.count < belowBlock.inventory.getSlotLimit(j)
+      ) {
+        console.log(`Fish Basket inserted! ${item}`);
+        return true;
+      }
+    }
+    for (let j = 0; j < belowBlock.inventory.slots; j++) {
+      belowItem = belowBlock.inventory.getStackInSlot(j);
+      if (belowItem === Item.of("minecraft:air")) {
+        console.log(`Fish Basket inserted! ${item}`);
+        return true;
+      }
+    }
+  }
+  console.log(`Fish Basket cannot insert! ${item}`);
+  return false;
+};
+
 /**
  * @returns result code:
  * -1 - Failure - Operation attempted but couldn't be inserted
@@ -438,7 +465,10 @@ global.insertBelow = (level, block, item) => {
   if (belowBlock.inventory && item && item !== Item.of("minecraft:air")) {
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
-      if (belowItem === Item.of(item) && belowItem.count < belowBlock.inventory.getSlotLimit(j)) {
+      if (
+        belowItem === Item.of(item) &&
+        belowItem.count + item.count < belowBlock.inventory.getSlotLimit(j)
+      ) {
         belowBlock.inventory.insertItem(j, item, false);
         return 1;
       }
