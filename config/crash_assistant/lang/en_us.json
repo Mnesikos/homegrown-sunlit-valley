@@ -73,6 +73,7 @@
   "commands.crash_command_2": "$DEFAULT",
   "warnings.atio6axx": "$DEFAULT",
   "gui.comment_under_title_screenshot_notice": "$DEFAULT",
+  "warnings.server_config_corrupted": "$DEFAULT",
   "gui.comment_under_title": "$DEFAULT",
   "msg.crashed": "$DEFAULT",
   "warnings.optifine": "$DEFAULT",

@@ -2,16 +2,16 @@ console.info("[SOCIETY] seasonFish.js loaded");
 
 const checkSeasonNeptuna = (p, season, needsSkil) =>
   global.getSeasonFromLevel(p.level) === season && p.stages.has("mystical_ocean") === needsSkil;
-
 const convertToLootEntry = (entries, insertNeptuna) => {
   let pool = [];
   let weights = 0;
   entries.forEach((entry) => {
     const { fish, weight } = entry;
-    weights +=weight;
+    weights += weight;
     pool.push(LootEntry.of(fish).withWeight(weight));
   });
-  if (insertNeptuna) pool.push(LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.35)));
+  if (insertNeptuna)
+    pool.push(LootEntry.of("society:neptuna").withWeight(Math.floor(weights * 0.35)));
   return pool;
 };
 
@@ -152,6 +152,16 @@ LootJS.modifiers((e) => {
     }
   );
 
+  createSeasonLootTable(
+    e,
+    "spring",
+    global.springOcean,
+    global.springRiver,
+    global.springFresh,
+    false,
+    false
+  );
+
   createSeasonLootTable(e, "spring", global.springOcean, global.springRiver, global.springFresh);
   createSeasonLootTable(
     e,
@@ -159,37 +169,65 @@ LootJS.modifiers((e) => {
     global.springOcean,
     global.springRiver,
     global.springFresh,
-    true
+    true,
+    false
   );
 
-  createSeasonLootTable(e, "summer", global.summerOcean, global.summerRiver, global.summerFresh);
   createSeasonLootTable(
     e,
     "summer",
     global.summerOcean,
     global.summerRiver,
     global.summerFresh,
-    true
+    false,
+    false
+  );
+  createSeasonLootTable(
+    e,
+    "summer",
+    global.summerOcean,
+    global.summerRiver,
+    global.summerFresh,
+    true,
+    false
   );
 
-  createSeasonLootTable(e, "autumn", global.autumnOcean, global.autumnRiver, global.autumnFresh);
   createSeasonLootTable(
     e,
     "autumn",
     global.autumnOcean,
     global.autumnRiver,
     global.autumnFresh,
-    true
+    false,
+    false
+  );
+  createSeasonLootTable(
+    e,
+    "autumn",
+    global.autumnOcean,
+    global.autumnRiver,
+    global.autumnFresh,
+    true,
+    false
   );
 
-  createSeasonLootTable(e, "winter", global.winterOcean, global.winterRiver, global.winterFresh);
   createSeasonLootTable(
     e,
     "winter",
     global.winterOcean,
     global.winterRiver,
     global.winterFresh,
-    true
+    false,
+    false
+  );
+  createSeasonLootTable(
+    e,
+    "winter",
+    global.winterOcean,
+    global.winterRiver,
+    global.winterFresh,
+    true,
+    false
   );
 
   // Mystical Ocean
@@ -200,6 +238,7 @@ LootJS.modifiers((e) => {
     global.springOcean,
     global.springRiver,
     global.springFresh,
+    false,
     true
   );
   createSeasonLootTable(
@@ -218,6 +257,7 @@ LootJS.modifiers((e) => {
     global.summerOcean,
     global.summerRiver,
     global.summerFresh,
+    false,
     true
   );
   createSeasonLootTable(
@@ -236,6 +276,7 @@ LootJS.modifiers((e) => {
     global.autumnOcean,
     global.autumnRiver,
     global.autumnFresh,
+    false,
     true
   );
   createSeasonLootTable(
@@ -254,6 +295,7 @@ LootJS.modifiers((e) => {
     global.winterOcean,
     global.winterRiver,
     global.winterFresh,
+    false,
     true
   );
   createSeasonLootTable(

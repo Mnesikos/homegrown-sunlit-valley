@@ -90,6 +90,7 @@ global.summerFresh = [
 // Autumn Fish
 global.autumnOcean = [
   { fish: "aquaculture:blackfish", weight: 22, night: true },
+  { fish: "aquaculture:blackfish", weight: 22 },
   {
     fish: "minecraft:pufferfish",
     weight: 22,
@@ -148,6 +149,7 @@ global.winterOcean = [
   { fish: "aquaculture:atlantic_herring", weight: 27 },
   { fish: "aquaculture:atlantic_herring", weight: 27, night: true },
   { fish: "aquaculture:blackfish", night: true, weight: 26 },
+  { fish: "aquaculture:blackfish", weight: 26 },
   { fish: "aquaculture:pollock", weight: 25, requiresRain: true },
   { fish: "aquaculture:atlantic_cod", weight: 22 },
   { fish: "unusualfishmod:raw_triple_twirl_pleco", night: true, weight: 20 },

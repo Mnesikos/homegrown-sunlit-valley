@@ -9,7 +9,6 @@
         "quests_structures"
     ],
     "client_overrides": [
-        "panoramas",
         "resourcepacks",
         "shaderpacks"
     ],
