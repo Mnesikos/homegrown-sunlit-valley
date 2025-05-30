@@ -8,6 +8,17 @@
     }
   ],
   "lookup_history": [
+    "item:quark:spruce_post",
+    "item:minecraft:birch_trapdoor",
+    "item:minecraft:dark_oak_door",
+    "item:numismatics:sun",
+    "item:justhammers:small_core",
+    "item:justhammers:stone_hammer{Damage:0}",
+    "item:justhammers:iron_hammer{Damage:0}",
+    "item:justhammers:gold_hammer{Damage:0}",
+    "item:minecraft:wooden_pickaxe{Damage:0}",
+    "item:justhammers:netherite_hammer{Damage:0}",
+    "item:minecraft:stone_pickaxe{Damage:0}",
     "item:society:fish_pond",
     "item:society:sea_biscut",
     "item:minecraft:dragon_egg",
@@ -455,7 +466,6 @@
     "item:minecraft:oak_fence",
     "item:minecraft:oak_fence_gate",
     "item:minecraft:stripped_oak_wood",
-    "item:quark:spruce_post",
     "item:botania:apothecary_default",
     {
       "type": "item",
@@ -701,7 +711,6 @@
     "item:gamediscs:processor",
     "item:gamediscs:battery",
     "item:vinery:bottle_mojang_noir{}",
-    "item:numismatics:sun",
     "item:botania:rune_greed"
   ],
   "craft_history": [
@@ -716,8 +725,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},
