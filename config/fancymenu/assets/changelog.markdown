@@ -30,8 +30,13 @@
 ### 2.7.3
 - Added value to Large Pumpkin Slices
 - Added visual indicator the first time you pet a farm animal
+- Added recipes for crafting special wool into regular wool
+- Added extra tooltip to Kinetic Blueprint to make it clear how to obtain it
+- Updated Waterframes/Watermedia 
 - Increased Slime Spawner cooldown (5 minutes ->)
+- Removed some advancements
 - Reduced Peach Sapling price (6 Netherite Coins -> 4)
+- Reduced check radius for dig spots to increase performance on servers
 - Fixed Shipping bin voiding items not sellable
 - Fixed Strawberries having duplicate tooltips
 - Fixed voiding bug with loot chests having stacks of non-stackable items

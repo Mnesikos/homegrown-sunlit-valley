@@ -8,6 +8,20 @@
     }
   ],
   "lookup_history": [
+    "item:meadow:warped_wool",
+    "item:meadow:highland_wool",
+    "item:meadow:flecked_wool",
+    "item:create:white_seat",
+    "item:meadow:patched_wool",
+    "item:meadow:rocky_wool",
+    "item:meadow:umbra_wool",
+    "#item:minecraft:wool",
+    "item:brewery:patterned_wool",
+    "item:society:kinetic_blueprint",
+    "item:fantasyfurniture:decorations/berry_basket_strawberry",
+    "item:farm_and_charm:strawberry_seed",
+    "item:minecraft:spruce_wood",
+    "item:minecraft:oak_fence_gate",
     "item:autumnity:large_pumpkin_slice",
     "item:quark:spruce_post",
     "item:minecraft:birch_trapdoor",
@@ -465,7 +479,6 @@
     "item:farm_and_charm:carrot_bag",
     "item:society:cornucopia",
     "item:minecraft:oak_fence",
-    "item:minecraft:oak_fence_gate",
     "item:minecraft:stripped_oak_wood",
     "item:botania:apothecary_default",
     {
@@ -726,8 +739,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},
