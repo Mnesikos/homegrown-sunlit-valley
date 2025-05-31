@@ -407,6 +407,13 @@ ItemEvents.tooltip((tooltip) => {
     "botania:apothecary_default",
     Text.gold(":classical_building: Abandoned Farm reward")
   );
+    "society:kinetic_blueprint",
+    Text.gray(
+      "Given for free for completing the Boiler Room chapter in the questbook."
+    )
+  );
+  tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
+  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add("mining_dimension:teleporter", Text.gold(":classical_building: Vault reward"));
   tooltip.add("relics:magic_mirror", Text.gold(":classical_building: Crafts Room reward"));
   tooltip.add(

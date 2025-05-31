@@ -664,4 +664,16 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
+
+  [
+    { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },
+    { input: "meadow:highland_wool", output: "minecraft:brown_wool" },
+    { input: "meadow:patched_wool", output: "minecraft:blue_wool" },
+    { input: "meadow:rocky_wool", output: "minecraft:light_gray_wool" },
+    { input: "meadow:umbra_wool", output: "minecraft:light_blue_wool" },
+    { input: "meadow:inky_wool", output: "minecraft:black_wool" },
+    { input: "meadow:warped_wool", output: "minecraft:cyan_wool" },
+  ].forEach((recipe) => {
+    e.shapeless(recipe.output, [recipe.input]);
+  });
 });
