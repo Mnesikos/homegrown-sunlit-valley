@@ -390,6 +390,7 @@ global.crops = [
   { item: "farmersdelight:rice", value: 16 },
   { item: "farmersdelight:rice_bag", value: 144 },
   { item: "minecraft:pumpkin", value: 80 },
+  { item: "autumnity:large_pumpkin_slice", value: 80 },
   { item: "farmersdelight:pumpkin_slice", value: 20 },
   { item: "supplementaries:flax", value: 68 },
   { item: "supplementaries:flax_block", value: 612 },

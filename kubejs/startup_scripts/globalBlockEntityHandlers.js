@@ -16,12 +16,13 @@ global.processShippingBinInventory = (inventory, inventorySlots, attributes, ret
   let calculatedValue = 0;
   let removedItems = [];
   let slotItem;
+  let isSellable;
   for (let i = 0; i < inventorySlots; i++) {
     slotItem = inventory.getStackInSlot(i).item;
-    if (
+    isSellable =
       global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id)
-    ) {
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
+    if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
       let quality;
       let slotNbt;
@@ -45,8 +46,10 @@ global.processShippingBinInventory = (inventory, inventorySlots, attributes, ret
           })[0]?.Base
         ) || 1);
     }
-    if (returnRemoved) removedItems.push(i);
-    else inventory.setStackInSlot(i, "minecraft:air");
+    if (isSellable) {
+      if (returnRemoved) removedItems.push(i);
+      else inventory.setStackInSlot(i, "minecraft:air");
+    }
   }
   return { calculatedValue: calculatedValue, removedItems: removedItems };
 };

@@ -31,11 +31,11 @@
 		{
 			dependencies: ["3862A7D1A471A215"]
 			description: [
-				"Unlike normal, upgrading your tools requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r."
+				"Upgrading your tools past wood requires a &6Smithing Table&r. At higher tiers it will require a Smithing Template purchased from a &6Blacksmith Villager&r."
 				""
 				"Tools can be repaired in an anvil infinitely, and enchantments also carry over when upgrading!"
 				""
-				"Search for an item in the item list sidebar and hit &6r&r or &6Left Click&r to see its recipes."
+				"Search for an item in the item list sidebar and &6Left Click&r on it to see its recipes."
 			]
 			id: "1E5531421815CDB3"
 			rewards: [
@@ -122,8 +122,6 @@
 				"To get started making money, you'll need a &6Basic Shipping Bin&r."
 				""
 				"Items placed inside that have will be sold at &66 AM&r for the value listed in the tooltip."
-				""
-				"You can search &6Coin&r in the item sidebar to see everything sellable in the Shipping Bin."
 			]
 			id: "3F759C6DEEBC61FD"
 			rewards: [
@@ -529,7 +527,7 @@
 				""
 				"There's one small tradeoff: these tools lose 15% + 15 durability on death. This only applies to equipment in your hotbar and armor."
 				""
-				"Tools can be repaired in an anvil infinitely, significantly less experience scaling. Unbreaking also reduces the amount of durability lost."
+				"Tools can be repaired in an anvil infinitely, with significantly lower experience costs. Unbreaking also reduces the amount of durability lost."
 			]
 			icon: "minecraft:anvil"
 			id: "28029230D7FD63D6"

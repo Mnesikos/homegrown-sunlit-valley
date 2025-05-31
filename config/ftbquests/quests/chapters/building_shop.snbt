@@ -639,7 +639,7 @@
 				""
 				"&6Right Click&r on a block to lock the structure preview in place"
 				""
-				"&6Left Click&r the \"Preview structure\" again to close the preview"
+				"&6Left Click&r the \"Preview structure\" task again to close the preview"
 			]
 			icon: "exposure:camera"
 			id: "6A4ABA3348125A3C"
