@@ -12,40 +12,28 @@ const calculateQualityValue = (number, quality) => {
   return value;
 };
 
-global.processShippingBinInventory = (
-  inventory,
-  inventorySlots,
-  attributes,
-  returnRemoved
-) => {
+global.processShippingBinInventory = (inventory, inventorySlots, attributes, returnRemoved) => {
   let calculatedValue = 0;
   let removedItems = [];
   let slotItem;
+  let isSellable;
   for (let i = 0; i < inventorySlots; i++) {
     slotItem = inventory.getStackInSlot(i).item;
-    if (
+    isSellable =
       global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(
-        slotItem.id
-      )
-    ) {
+      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
+    if (isSellable) {
       let trade = global.trades.get(String(slotItem.id));
       let quality;
       let slotNbt;
       if (inventory.getStackInSlot(i).hasNBT()) {
         slotNbt = inventory.getStackInSlot(i).nbt;
       }
-      if (
-        slotNbt &&
-        ((slotNbt.slime && slotNbt.slime.id) ||
-          (slotNbt.plort && slotNbt.plort.id))
-      ) {
-        if (slotNbt.slime)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort)
-          trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
+      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
+        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
+        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
       }
-      
+
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
@@ -58,8 +46,10 @@ global.processShippingBinInventory = (
           })[0]?.Base
         ) || 1);
     }
-    if (returnRemoved) removedItems.push(i);
-    else inventory.setStackInSlot(i, "minecraft:air");
+    if (isSellable) {
+      if (returnRemoved) removedItems.push(i);
+      else inventory.setStackInSlot(i, "minecraft:air");
+    }
   }
   return { calculatedValue: calculatedValue, removedItems: removedItems };
 };
@@ -139,8 +129,7 @@ const hasWoolTag = (tags) => {
 
 const setQuality = (newProperties, itemQuality) => {
   if (
-    (Number(newProperties.quality) === 0 &&
-      Number(newProperties.stage) === 0) ||
+    (Number(newProperties.quality) === 0 && Number(newProperties.stage) === 0) ||
     Number(itemQuality) < Number(newProperties.quality)
   )
     newProperties.quality = itemQuality;
@@ -183,16 +172,12 @@ global.handleBERightClick = (
     if (block.properties.get("mature").toLowerCase() === "true") {
       //reset block and drop items
       server.runCommandSilent(
-        `puffish_skills experience add ${player.username} society:farming ${
-          stageCount * 20
-        }`
+        `puffish_skills experience add ${player.username} society:farming ${stageCount * 20}`
       );
       server.runCommandSilent(
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
-      recipes[
-        Number(block.properties.get("type").toLowerCase()) - 1
-      ].output.forEach((id) => {
+      recipes[Number(block.properties.get("type").toLowerCase()) - 1].output.forEach((id) => {
         if (outputMult) {
           block.popItemFromFace(
             Item.of(
@@ -203,12 +188,7 @@ global.handleBERightClick = (
           );
         } else {
           block.popItemFromFace(
-            Item.of(
-              id,
-              hasQuality
-                ? `{quality_food:{quality:${newProperties.quality}}}`
-                : null
-            ),
+            Item.of(id, hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null),
             facing
           );
         }
@@ -240,8 +220,7 @@ global.handleBERightClick = (
         }
         if (multipleInputs) {
           if (item.count >= stageCount - Number(blockStage)) {
-            if (!player.isCreative())
-              item.count = item.count - (stageCount - Number(blockStage));
+            if (!player.isCreative()) item.count = item.count - (stageCount - Number(blockStage));
             if (itemQuality) setQuality(newProperties, itemQuality);
             newProperties.stage = stageCount.toString();
           } else {
@@ -255,8 +234,7 @@ global.handleBERightClick = (
             newProperties.quality = itemQuality;
           }
         }
-        if (newProperties.duration)
-          newProperties.duration = String(recipe.time);
+        if (newProperties.duration) newProperties.duration = String(recipe.time);
         if (!multipleInputs || newProperties.stage === stageCount.toString()) {
           newProperties.working = true;
           newProperties.stage = "0";
@@ -302,12 +280,10 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
 
   if (
     forced ||
-    (morningModulo >= artMachineProgTime &&
-      morningModulo < artMachineProgTime + artMachineTickRate)
+    (morningModulo >= artMachineProgTime && morningModulo < artMachineProgTime + artMachineTickRate)
   ) {
     let resolvedStageCount =
-      (recipes &&
-        recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
+      (recipes && recipes[Number(blockProperties.get("type").toLowerCase()) - 1].time) ||
       stageCount;
 
     const blockStage = blockProperties.get("stage").toLowerCase();
@@ -448,9 +424,9 @@ const getGnomeState = (name, type) => {
       apply: { model: path, y: 180, uvlock: false },
     },
     {
-      when:  {type: type, facing: "west" },
+      when: { type: type, facing: "west" },
       apply: { model: path, y: -90, uvlock: false },
-    }
+    },
   ];
-  return cardianal
+  return cardianal;
 };

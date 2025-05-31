@@ -75,7 +75,7 @@
 					layer: false
 					name: "barn"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -148,7 +148,7 @@
 					layer: false
 					name: "barn_cherry"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -221,7 +221,7 @@
 					layer: false
 					name: "shed"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -297,7 +297,7 @@
 					layer: false
 					name: "large_shed"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -370,7 +370,7 @@
 					layer: false
 					name: "large_shed_cherry"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -463,7 +463,7 @@
 					layer: false
 					name: "shed_cherry"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -525,6 +525,7 @@
 			icon: "minecraft:spruce_door"
 			id: "049EB48B999881A3"
 			size: 2.0d
+			subtitle: "&6Left Click&r the \"Preview structure\" task again to close the preview!"
 			tasks: [{
 				id: "2584D5E401EEFB26"
 				title: "Understood"
@@ -601,7 +602,7 @@
 					layer: false
 					name: "deluxe_barn_entrana"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -639,7 +640,7 @@
 				""
 				"&6Right Click&r on a block to lock the structure preview in place"
 				""
-				"&6Left Click&r the \"Preview structure\" again to close the preview"
+				"&6Left Click&r the \"Preview structure\" task again to close the preview"
 			]
 			icon: "exposure:camera"
 			id: "6A4ABA3348125A3C"
@@ -730,7 +731,7 @@
 					layer: false
 					name: "home_tudor"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -803,7 +804,7 @@
 					layer: false
 					name: "home_siberian"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -876,7 +877,7 @@
 					layer: false
 					name: "shed_siberian"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -947,7 +948,7 @@
 					layer: false
 					name: "barn_siberian"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1022,7 +1023,7 @@
 					layer: false
 					name: "shed_entrana"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1162,7 +1163,7 @@
 					layer: false
 					name: "barn_entrana"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1237,7 +1238,7 @@
 					layer: false
 					name: "large_shed_entrana"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1308,7 +1309,7 @@
 					layer: false
 					name: "large_shed_siberian"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1372,7 +1373,7 @@
 					layer: false
 					name: "home_cherry"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1443,7 +1444,7 @@
 					layer: false
 					name: "deluxe_barn_siberian"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1514,7 +1515,7 @@
 					layer: false
 					name: "deluxe_barn_cherry"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]
@@ -1585,7 +1586,7 @@
 					layer: false
 					name: "deluxe_barn"
 					rightclick: false
-					title: "Preview structure (Not required)"
+					title: "Preview structure. Left Click again to cancel preview."
 					type: "questsadditions:structure"
 				}
 			]

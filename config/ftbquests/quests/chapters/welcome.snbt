@@ -58,7 +58,7 @@
 		{
 			dependencies: ["2B6877708A709B5C"]
 			description: [
-				"Many recipes in this pack are either disabled or require currency. "
+				"Many recipes in this pack are modified or require currency. "
 				""
 				"Like games such as Stardew Valley and Harvest Moon, exploit the earth for profit!"
 			]
@@ -75,11 +75,7 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			description: [
-				"Teleportation does exist, however you will have to build out a network of roads to use it."
-				""
-				"Additionally, Elytras are very expensive and difficult to obtain..."
-			]
+			description: ["Teleportation does exist, however you will have to invest massive amounts of cash to buy it. Alternatively, you can build out a network of roads and teleport between them using signs."]
 			icon: "minecraft:chorus_fruit"
 			id: "25777939975C3CEE"
 			tasks: [{
@@ -96,9 +92,7 @@
 			description: [
 				"Spice of Life: Onion Edition has been added to incentivize eating different foods."
 				""
-				"Reaching certain thresholds of food diversity will give you benefits listed in the book- Most notably extra hearts!"
-				""
-				"More diverse foods are better!"
+				"Reaching certain thresholds of food diversity will give you benefits listed in the book. Most notably: extra health!"
 			]
 			icon: "solonion:food_book"
 			id: "7A7B131D229E5279"
