@@ -1,0 +1,32 @@
+{
+  "parent": "society:main/money/obtain_sun",
+  "criteria": {
+    "iridium_coin": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["numismatics:iridium_coin"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "society.advancement.obtain_iridium_coin.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "numismatics:iridium_coin"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "society.advancement.obtain_iridium_coin.title"
+    }
+  },
+  "requirements": [["iridium_coin"]],
+  "sends_telemetry_event": true
+}

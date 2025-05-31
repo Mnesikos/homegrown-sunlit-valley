@@ -5,6 +5,22 @@
     }
   ],
   "lookup_history": [
+    "item:society:fire_quartz",
+    "item:society:tapper",
+    "item:society:earth_crystal",
+    "item:numismatics:crown",
+    "item:society:omni_geode",
+    "item:society:preserves_jar",
+    "item:society:pine_tar",
+    "item:society:jade",
+    "item:society:aging_cask",
+    {
+      "type": "item",
+      "id": "society:prismatic_shard",
+      "amount": 64
+    },
+    "item:minecraft:stripped_spruce_log",
+    "item:quark:oak_vertical_slab",
     "item:queen_bee:antenna",
     "item:quark:stripped_oak_post",
     "item:quark:azalea_log",
@@ -222,7 +238,6 @@
     "item:society:aged_bolvar_wine",
     "item:society:good_catawba",
     "item:society:aged_good_catawba",
-    "item:society:jade",
     "item:society:pristine_jade",
     "item:nethervinery:crimson_grape_crate",
     "item:nethervinery:warped_grape",
@@ -345,7 +360,6 @@
     "item:farmingforblockheads:market",
     "item:minecraft:cartography_table",
     "item:numismatics:ancient_coin",
-    "item:numismatics:crown",
     "item:minecraft:oak_trapdoor",
     "item:quark:hollow_birch_log",
     "item:supplementaries:fire_pit",
@@ -361,11 +375,6 @@
     "item:society:deluxe_worm_farm",
     "item:society:aquamagical_dust",
     "item:society:pristine_neptunite",
-    {
-      "type": "item",
-      "id": "society:prismatic_shard",
-      "amount": 12
-    },
     "item:society:artifact_trove",
     "item:society:relic_trove",
     {
@@ -507,7 +516,6 @@
       "id": "nethervinery:warped_grape_juice",
       "amount": 0
     },
-    "item:society:tapper",
     "item:minecraft:jungle_fence",
     "item:etcetera:bismuth_nugget",
     {
@@ -581,7 +589,6 @@
     "item:relics:relic_experience_bucket",
     "item:relics:holy_locket{abilities:{belief:{points:0,stats:{amount:0.11648d,capacity:11.15499d,count:1.29946d,radius:3.72915d}},blessing:{points:0,stats:{consumption:7.03859d},temp:{ticking:1b}},repentance:{points:0,stats:{damage:0.17065d,radius:3.46905d}}}}",
     "item:relics:horse_flute{abilities:{heal:{points:0,stats:{amount:0.08905d}}}}",
-    "item:society:omni_geode",
     "item:society:omni_geode_node",
     "item:etcetera:raw_bismuth",
     "item:society:frozen_geode",
@@ -740,7 +747,6 @@
     "item:create:fluid_tank",
     "item:create:sturdy_sheet",
     "item:create_enchantment_industry:disenchanter",
-    "item:minecraft:stripped_spruce_log",
     "item:oreganized:lead_block",
     "item:create:mechanical_press",
     "item:create:water_wheel",
@@ -814,8 +820,6 @@
       "id": "unusualfishmod:crimson_shard",
       "amount": 64
     },
-    "item:society:fire_quartz",
-    "item:society:pine_tar",
     "item:numismatics:bevel",
     "item:numismatics:sprocket",
     "item:numismatics:cog",
@@ -853,7 +857,6 @@
       "amount": 64
     },
     "item:aquaculture:tin_can",
-    "item:society:earth_crystal",
     "item:relics:wool_mitten{abilities:{mold:{points:0,stats:{damage:0.12591d,freeze:1.8299d,size:28.20948d,stun:0.04291d}}}}",
     {
       "type": "item",
@@ -1231,10 +1234,7 @@
     "item:supplementaries:slingshot{Damage:0}",
     "item:botania:slingshot",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
-    "item:society:cracked_egg",
-    "item:aquaculture:pollock",
-    "item:atmospheric:arid_glass_pane",
-    "item:minecraft:light_gray_stained_glass_pane"
+    "item:society:cracked_egg"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1248,9 +1248,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

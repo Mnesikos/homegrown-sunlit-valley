@@ -1,13 +1,11 @@
 {
-  "parent": "society:main/obtain_ancient_coin",
+  "parent": "society:main/money/obtain_ancient_coin",
   "criteria": {
     "obtain_prismatic_coin": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "numismatics:prismatic_coin"
-            ]
+            "items": ["numismatics:prismatic_coin"]
           }
         ]
       },
@@ -29,10 +27,6 @@
       "translate": "society.advancement.obtain_prismatic_coin.title"
     }
   },
-  "requirements": [
-    [
-      "obtain_prismatic_coin"
-    ]
-  ],
+  "requirements": [["obtain_prismatic_coin"]],
   "sends_telemetry_event": true
 }

@@ -1,13 +1,11 @@
 {
-  "parent": "society:main/obtain_sun",
+  "parent": "society:main/money/obtain_iridium_coin",
   "criteria": {
     "ancient_coin": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "numismatics:ancient_coin"
-            ]
+            "items": ["numismatics:ancient_coin"]
           }
         ]
       },
@@ -29,10 +27,6 @@
       "translate": "society.advancement.obtain_ancient_coin.title"
     }
   },
-  "requirements": [
-    [
-      "ancient_coin"
-    ]
-  ],
+  "requirements": [["ancient_coin"]],
   "sends_telemetry_event": true
 }

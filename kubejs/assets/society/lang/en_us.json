@@ -77,11 +77,30 @@
   "effect.vinery.improved_water_breathing.description": "Grants water breathing and increases swimming speed.",
   "effect.vinery.improved_night_vision.description": "Grants invisibility.",
 
+  "society.advancement.obtain_aging_cask.description": "Craft an Aging Cask to age various goods, multiplying their value over long periods of time.",
+  "society.advancement.obtain_aging_cask.title": "Set and Forget",
+  "society.advancement.obtain_preserves_jar.description": "Craft a Preserves Jar to turn crops into higher value Preserves.",
+  "society.advancement.obtain_preserves_jar.title": "Preservin'",
+  "society.advancement.obtain_tapper.description": "Craft a Tapper to collect resources from Trees.",
+  "society.advancement.obtain_tapper.title": "Mon Bazou",
+
+
+  "society.advancement.obtain_prismatic_shard.description": "Find a Prismatic Shard in the Skull Cavern or a max level skill.",
+  "society.advancement.obtain_prismatic_shard.title": "Prismatic",
+  "society.advancement.obtain_jade.description": "Venture into the Skull Cavern and obtain Jade, the final tier of commonn crafting material.",
+  "society.advancement.obtain_jade.title": "Entrana's Elegance",
+  "society.advancement.obtain_fire_quartz.description": "Enter then Nether and find Fire Quartz, a common crafting material.",
+  "society.advancement.obtain_fire_quartz.title": "Camo Quartz",
+  "society.advancement.obtain_earth_crystal.description": "Obtain an Earth Crystal, a common crafting material.",
+  "society.advancement.obtain_earth_crystal.title": "From the Earth",
+
   "society.advancement.obtain_prismatic_coin.description": "Obtain your first Prismatic Coin. How will you spend it?",
   "society.advancement.obtain_prismatic_coin.title": "Capitalist Realism",
   "society.advancement.obtain_ancient_coin.description": "Obtain your first Ancient Coin. Don't lose it...",
   "society.advancement.obtain_ancient_coin.title": "Coin Hoarder",
-  "society.advancement.obtain_sun.description": "Obtain your first Iridium Coin.",
+  "society.advancement.obtain_iridium_coin.description": "Obtain your first Iridium Coin.",
+  "society.advancement.obtain_iridium_coin.title": "Splendid Savings",
+  "society.advancement.obtain_sun.description": "Obtain your first Silver Coin.",
   "society.advancement.obtain_sun.title": "Seed Money",
   "society.advancement.root.description": "Start your farm, lay claim to riches.",
   "society.advancement.root.title": "Society: Sunlit Valley"
