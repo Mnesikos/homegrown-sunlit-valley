@@ -8,6 +8,7 @@
     }
   ],
   "lookup_history": [
+    "item:autumnity:large_pumpkin_slice",
     "item:quark:spruce_post",
     "item:minecraft:birch_trapdoor",
     "item:minecraft:dark_oak_door",
@@ -725,8 +726,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

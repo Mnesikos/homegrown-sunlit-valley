@@ -561,9 +561,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Quality of seed has no effect")
   );
 
-  tooltip.add("farm_and_charm:strawberry_seed", Text.white("Fertile Seasons:"));
-  tooltip.add("farm_and_charm:strawberry_seed", Text.green(" Spring"));
-
   const craftingMaterials = [
     "society:fire_quartz",
     "society:earth_crystal",
