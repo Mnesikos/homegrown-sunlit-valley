@@ -149,100 +149,6 @@
     "when": "onjoin",
     "result": "deny"
   },
-
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "structure": "minecraft:mineshaft",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:webby"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "biometags": "forge:is_dry",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:dusty"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "random": 0.5,
-    "maxheight": 0,
-    "minheight": -20,
-    "maxlight_full": 1,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bony"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "maxheight": 0,
-    "minheight": -20,
-    "maxlight_full": 1,
-    "random": 0.5,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:rotting"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "random": 0.2,
-    "minheight": 0,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:slimy",
-      "SecondaryBreed": "splendid_slimes:bony"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "random": 0.1,
-    "minheight": 0,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:rotting",
-      "SecondaryBreed": "splendid_slimes:slimy"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "random": 0.1,
-    "minheight": 0,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bony",
-      "SecondaryBreed": "splendid_slimes:slimy"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "maxheight": -10,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:boomcat"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:overworld",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:slimy"
-    }
-  },
-
   {
     "mob": "splendid_slimes:splendid_slime",
     "dimension": "minecraft:the_nether",
@@ -369,15 +275,6 @@
     "when": "finalize",
     "nbt": {
       "Breed": "splendid_slimes:blazing"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "minheight": 50,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:phantom"
     }
   },
   {

@@ -1,13 +1,11 @@
 {
   "parent": "society:main/root",
   "criteria": {
-    "cash": {
+    "prismatic_shard": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "numismatics:sun"
-            ]
+            "items": ["society:prismatic_shard"]
           }
         ]
       },
@@ -17,22 +15,18 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "society.advancement.obtain_sun.description"
+      "translate": "society.advancement.obtain_prismatic_shard.description"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": false,
     "icon": {
-      "item": "numismatics:sun"
+      "item": "society:prismatic_shard"
     },
     "show_toast": true,
     "title": {
-      "translate": "society.advancement.obtain_sun.title"
+      "translate": "society.advancement.obtain_prismatic_shard.title"
     }
   },
-  "requirements": [
-    [
-      "cash"
-    ]
-  ],
+  "requirements": [["prismatic_shard"]],
   "sends_telemetry_event": true
 }

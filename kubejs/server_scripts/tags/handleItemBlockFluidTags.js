@@ -657,6 +657,20 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
+  
+  const ftbChunksWhitelist = [
+    "minecraft:crafting_table",
+    "numismatics:andesite_depositor",
+    "numismatics:brass_depositor",
+    "numismatics:vendor",
+    "numismatics:bank_terminal",
+    "refurbished_furniture:post_box",
+    "bountiful:bountyboard",
+    "tanukidecor:slot_machine",
+  ];
+  ftbChunksWhitelist.forEach((item) => {
+    e.add("ftbchunks:interact_whitelist", item);
+  });
 });
 
 ServerEvents.tags("fluid", (e) => {
