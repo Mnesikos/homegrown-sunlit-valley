@@ -47,5 +47,6 @@
 - Added chance for Boomcat Slimes to spawn when creepers killed
 - Removed aggressive Splendid Slimes spawns from the overworld
 - Removed Phantom Slime spawns from the Skull Cavern
+- Removed Queen Bee mod due to sound related crashes
 - Fixed some blocks not being usable in claims
 - Fixed certain crop related exploits
