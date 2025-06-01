@@ -8065,51 +8065,6 @@
             ]
         },
         {
-            "pakku_id": "hGxnSam84lbom4ug",
-            "pakku_links": [
-                "pRFrDZxJxqpldoNg"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "queen-bee"
-            },
-            "name": {
-                "curseforge": "Queen Bee"
-            },
-            "id": {
-                "curseforge": "523596"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "QueenBee-Forge-1.20.1-3.1.4.jar",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4996/963/QueenBee-Forge-1.20.1-3.1.4.jar",
-                    "id": "4996963",
-                    "parent_id": "523596",
-                    "hashes": {
-                        "sha1": "43437242ca12c7270ef29897ef276abc8d589bfb",
-                        "md5": "5a57b648af23b4a97ae36f401c9d248d"
-                    },
-                    "required_dependencies": [
-                        "388172",
-                        "955605"
-                    ],
-                    "size": 99321,
-                    "date_published": "2023-12-31T14:56:17.297Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "AltCesQxOLO8WaLh",
             "pakku_links": [
                 "D3WNDlpUyoHOZWmi"

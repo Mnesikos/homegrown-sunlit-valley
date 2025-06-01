@@ -645,7 +645,6 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
-
   const ftbChunksWhitelist = [
     "minecraft:crafting_table",
     "numismatics:andesite_depositor",
