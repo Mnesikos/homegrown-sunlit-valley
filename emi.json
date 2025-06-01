@@ -8,6 +8,7 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:spruce_log",
     "item:society:ancient_fruit_juice_bucket",
     "item:twigs:rhyolite",
     "item:minecraft:red_sand",
@@ -92,7 +93,6 @@
     },
     "item:minecraft:stripped_spruce_log",
     "item:quark:oak_vertical_slab",
-    "item:queen_bee:antenna",
     "item:quark:stripped_oak_post",
     "item:quark:azalea_log",
     "item:atmospheric:yucca_log",
@@ -1282,8 +1282,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
