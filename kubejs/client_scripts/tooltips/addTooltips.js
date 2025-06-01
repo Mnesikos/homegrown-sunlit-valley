@@ -149,13 +149,18 @@ ItemEvents.tooltip((tooltip) => {
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type")].item}`))
-      text.add(2, Text.aqua(`Population: ${item.nbt.get("population")}/${item.nbt.get("max_population")} :fish:`));
+      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type")].item}`));
+      text.add(
+        2,
+        Text.aqua(
+          `Population: ${item.nbt.get("population")}/${item.nbt.get("max_population")} :fish:`
+        )
+      );
     } else {
-      text.add(1,Text.gray("Cultivates fish, roe, and various items"));
-      text.add(2,Text.gray("Right Click with a fish to add it to the pond"));
-      text.add(3,Text.gray("Shift + Right Click with an empty hand to take one out"));
-      text.add(4,Text.darkAqua("Needs a 3x4 of water behind pond"));
+      text.add(1, Text.gray("Cultivates fish, roe, and various items"));
+      text.add(2, Text.gray("Right Click with a fish to add it to the pond"));
+      text.add(3, Text.gray("Shift + Right Click with an empty hand to take one out"));
+      text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
     }
   });
   // Furniture
@@ -407,11 +412,8 @@ ItemEvents.tooltip((tooltip) => {
     "botania:apothecary_default",
     Text.gold(":classical_building: Abandoned Farm reward")
   );
-    "society:kinetic_blueprint",
-    Text.gray(
-      "Given for free for completing the Boiler Room chapter in the questbook."
-    )
-  );
+  "society:kinetic_blueprint",
+    Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");
   tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
   tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add("mining_dimension:teleporter", Text.gold(":classical_building: Vault reward"));

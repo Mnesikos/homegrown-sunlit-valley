@@ -11,6 +11,10 @@ BlockEvents.rightClicked((e) => {
       e.block.hasTag("minecraft:saplings") ||
       e.block.hasTag("farmersdelight:wild_crops") ||
       e.block.hasTag("farm_and_charm:wild_crops") ||
+      e.block.hasTag("sereneseasons:summer_crops") ||
+      e.block.hasTag("sereneseasons:autumn_crops") ||
+      e.block.hasTag("sereneseasons:spring_crops") ||
+      e.block.hasTag("sereneseasons:winter_crops") ||
       [
         "veggiesdelight:wild_bellpeppers",
         "veggiesdelight:wild_sweet_potatoes",

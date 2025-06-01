@@ -7252,43 +7252,6 @@
             ]
         },
         {
-            "pakku_id": "xVs6QgeyKQCzlTxd",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "open-parties-and-claims"
-            },
-            "name": {
-                "curseforge": "Open Parties and Claims"
-            },
-            "id": {
-                "curseforge": "636608"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "open-parties-and-claims-forge-1.20.1-0.23.7.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6055/478/open-parties-and-claims-forge-1.20.1-0.23.7.jar",
-                    "id": "6055478",
-                    "parent_id": "636608",
-                    "hashes": {
-                        "sha1": "8f59207176cdc2fe53e5f7e65debc08a7dca3882",
-                        "md5": "29b434029c7960a57ea1b70cb73bf7a9"
-                    },
-                    "required_dependencies": [],
-                    "size": 1245092,
-                    "date_published": "2025-01-05T08:54:48.380Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "3pHMTrCd5bC1LSjx",
             "pakku_links": [
                 "UgI7EbeCzWodOBqx"

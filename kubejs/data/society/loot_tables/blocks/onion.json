@@ -24,15 +24,11 @@
                 }
               ],
               "name": "farm_and_charm:onion"
-            },
-            {
-              "type": "minecraft:item",
-              "name": "farm_and_charm:onion"
             }
           ]
         }
       ],
-      "rolls": 1.0
+      "rolls": 2.0
     },
     {
       "bonus_rolls": 0.0,

@@ -2,17 +2,88 @@
   "favorites": [
     {
       "stack": "item:twigs:black_packed_silt"
+    },
+    {
+      "stack": "item:farm_and_charm:mincer"
     }
   ],
   "lookup_history": [
+    "item:society:ancient_fruit_juice_bucket",
+    "item:twigs:rhyolite",
+    "item:minecraft:red_sand",
+    "item:society:auto_grabber",
+    "item:minecraft:diamond_block",
+    "item:numismatics:orange_card",
+    "item:numismatics:white_card",
+    "item:vintagedelight:fermenting_jar",
     "item:society:fire_quartz",
+    "item:society:beemonican_seal",
+    "item:buzzier_bees:grizzly_bear_spawn_egg",
+    "item:society:battery",
+    "item:society:jade",
+    "item:create:millstone",
+    {
+      "type": "item",
+      "id": "society:auto_worm_farm",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:preserves_jar",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:fish_smoker",
+      "amount": 63
+    },
+    {
+      "type": "item",
+      "id": "society:golden_clock",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:fish_pond_basket",
+      "amount": 64
+    },
+    "item:society:mayonnaise_machine",
+    "item:society:crystalarium",
+    {
+      "type": "item",
+      "id": "society:loom",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:espresso_machine",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:fish_pond",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:mana_milker",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "society:charging_rod",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "oreganized:silver_ingot",
+      "amount": 64
+    },
     "item:society:tapper",
     "item:society:earth_crystal",
     "item:numismatics:crown",
     "item:society:omni_geode",
-    "item:society:preserves_jar",
     "item:society:pine_tar",
-    "item:society:jade",
     "item:society:aging_cask",
     {
       "type": "item",
@@ -247,11 +318,6 @@
     "item:supplementaries:candy",
     "item:farmersdelight:sweet_berry_cheesecake",
     "item:twigs:tangerine_seashell",
-    {
-      "type": "item",
-      "id": "twigs:rhyolite",
-      "amount": 16
-    },
     "item:twigs:rocky_dirt",
     "item:twigs:pebble",
     "item:farm_and_charm:cat_food",
@@ -297,7 +363,6 @@
     "item:tanukidecor:station_clock",
     "item:furniture:oak_clock",
     "item:society:broken_clock",
-    "item:society:golden_clock",
     "item:tanukidecor:rococo_clock",
     "item:create:clockwork_bearing",
     "item:simplehats:clockface",
@@ -371,7 +436,6 @@
     "item:autumnity:turkey_spawn_egg",
     "item:meadow:woodcutter",
     "item:create:precision_mechanism",
-    "item:society:auto_worm_farm",
     "item:society:deluxe_worm_farm",
     "item:society:aquamagical_dust",
     "item:society:pristine_neptunite",
@@ -593,12 +657,10 @@
     "item:etcetera:raw_bismuth",
     "item:society:frozen_geode",
     "item:minecraft:prismarine_crystals",
-    "item:society:crystalarium",
     "item:simplehats:simsgem",
     "item:fantasyfurniture:decorations/nordic_soul_gems_dark",
     "item:minecraft:cobblestone",
     "item:society:steamy_gadget",
-    "item:society:beemonican_seal",
     "item:everycomp:rfm/atmospheric/aspen_crate",
     "item:minecraft:lapis_lazuli",
     "item:society:pristine_lapis_lazuli",
@@ -655,7 +717,6 @@
     "item:quark:permafrost",
     "item:rottencreatures:frostbitten_head",
     "item:oreganized:silver_sheet",
-    "item:oreganized:silver_ingot",
     "item:oreganized:raw_silver",
     "item:oreganized:lead_ingot",
     "item:beachparty:rubber_ring_pelican{Damage:0}",
@@ -669,7 +730,6 @@
     "item:gamediscs:game_disc_blocktris",
     "item:gamediscs:game_disc_slime",
     "item:minecraft:torch",
-    "item:society:fish_pond{max_population:5,population:5,type:8}",
     "item:botania:cosmetic_engineer_goggles",
     "item:aquaculture:treasure_chest",
     "item:simplehats:hatbag_epic",
@@ -690,19 +750,16 @@
     "item:everycomp:q/betterarcheology/rotten_ladder",
     "item:society:magnifying_glass",
     "item:atmospheric:arid_glass",
-    "item:society:fish_smoker",
     "item:createrailwaysnavigator:navigator",
     "item:automobility:launch_gel",
     "item:automobility:crowbar",
     "item:oreganized:scribe{Damage:0}",
-    "item:society:fish_pond_basket",
     "item:justhammers:reinforced_core{Damage:0}",
     "item:justhammers:netherite_reinforced_hammer{Damage:0}",
     "item:justhammers:iron_reinforced_hammer{Damage:0}",
     "item:justhammers:stone_impact_hammer{Damage:0}",
     "item:justhammers:stone_reinforced_hammer{Damage:0}",
     "item:justhammers:reinforced_impact_core{Damage:0}",
-    "item:society:auto_grabber",
     "item:society:artisan_hopper",
     "item:railways:locometal_boiler",
     "item:railways:brown_brass_wrapped_locometal_boiler",
@@ -786,11 +843,6 @@
     "item:minecraft:spruce_fence",
     "item:atmospheric:yucca_fruit",
     "item:atmospheric:roasted_yucca_fruit",
-    {
-      "type": "item",
-      "id": "society:battery",
-      "amount": 4
-    },
     "item:candlelight:gold_ring{Damage:0}",
     {
       "type": "item",
@@ -878,7 +930,6 @@
     "item:botania:crafty_crate",
     "item:botania:terrasteel_ingot",
     "item:botania:terrasteel_nugget",
-    "item:society:mana_milker",
     "item:botania:rune_earth",
     "item:buildinggadgets2:template_manager",
     "item:society:botanical_tribute",
@@ -895,7 +946,6 @@
     "item:create:mechanical_piston",
     "item:farmersdelight:cooking_pot",
     "item:create:steam_engine",
-    "item:society:espresso_machine",
     "item:society:large_goat_milk",
     "item:society:combat_quarterly",
     "item:society:cornucopia",
@@ -954,7 +1004,6 @@
     "item:create:clipboard",
     "item:create:stressometer",
     "item:create:basin",
-    "item:create:millstone",
     "item:create:chute",
     "item:create:weighted_ejector",
     "item:trading_floor:trading_depot",
@@ -1062,7 +1111,6 @@
     "item:create:industrial_iron_block",
     "item:railways:semaphore",
     "item:society:treated_log",
-    "item:society:loom",
     "item:dramaticdoors:tall_silver_door",
     "item:create:nozzle",
     "item:railways:smokestack_oilburner",
@@ -1214,27 +1262,13 @@
     "item:unusualfishmod:strange_broth",
     "item:etcetera:tinted_light_bulb",
     "item:refurbished_furniture:light_blue_lamp",
-    "item:society:charging_rod",
     "item:botania:redstone_root",
     "item:beachparty:cocoa_cocktail",
     "item:beachparty:mini_fridge",
     "item:beachparty:sweetberries_cocktail",
     "item:beachparty:pumpkin_cocktail",
     "item:beachparty:honey_cocktail",
-    "item:splendid_slimes:plort",
-    "item:splendid_slimes:plort_rippit",
-    {
-      "type": "item",
-      "id": "splendid_slimes:plort",
-      "nbt": "{plort:{id:\"splendid_slimes:all_seeing\"}}",
-      "amount": 64
-    },
-    "item:minecraft:slime_ball",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:blazing\"}}",
-    "item:supplementaries:slingshot{Damage:0}",
-    "item:botania:slingshot",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
-    "item:society:cracked_egg"
+    "item:splendid_slimes:plort"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1248,8 +1282,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "create:crafting/kinetics/mechanical_crafter",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},

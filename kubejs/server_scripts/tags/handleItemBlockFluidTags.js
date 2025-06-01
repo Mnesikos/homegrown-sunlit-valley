@@ -219,7 +219,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:blueberry");
   e.add("forge:berries", "society:blueberry");
   e.add("forge:crops", "society:eggplant");
-  e.add("forge:crops/cabbage", "farm_and_charm:lettuce")
+  e.add("forge:crops/cabbage", "farm_and_charm:lettuce");
   e.add("forge:vegetables/eggplant", "society:eggplant");
   e.add("forge:vegetables", "society:eggplant");
   e.add("meadow:water_bottles", "herbalbrews:water_cup");
@@ -645,6 +645,20 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
+
+  const ftbChunksWhitelist = [
+    "minecraft:crafting_table",
+    "numismatics:andesite_depositor",
+    "numismatics:brass_depositor",
+    "numismatics:vendor",
+    "numismatics:bank_terminal",
+    "refurbished_furniture:post_box",
+    "bountiful:bountyboard",
+    "tanukidecor:slot_machine",
+  ];
+  ftbChunksWhitelist.forEach((item) => {
+    e.add("ftbchunks:interact_whitelist", item);
+  });
 });
 
 ServerEvents.tags("fluid", (e) => {
