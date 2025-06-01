@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Valley
-### v2.7.2
+### v2.7.4
 ^^^
 --- 
 - Renamed pack to Society: Sunlit Valley! This is a smaller update to prepare for the large content update that is 3.0!
@@ -40,3 +40,13 @@
 - Fixed Shipping bin voiding items not sellable
 - Fixed Strawberries having duplicate tooltips
 - Fixed voiding bug with loot chests having stacks of non-stackable items
+
+### 2.7.4
+- Added some additional Society advancements
+- Added Slimes to more structures
+- Added chance for Boomcat Slimes to spawn when creepers killed
+- Removed aggressive Splendid Slimes spawns from the overworld
+- Removed Phantom Slime spawns from the Skull Cavern
+- Removed Queen Bee mod due to sound related crashes
+- Fixed some blocks not being usable in claims
+- Fixed certain crop related exploits
