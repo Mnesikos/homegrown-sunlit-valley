@@ -119,7 +119,7 @@
 				""
 				"&6Left Click&r to travel once linked"
 				""
-				"You can search \"&6$path_block&r\" in JEI to see all the valid path blocks."
+				"You can search \"&6#path_block&r\" in JEI to see all the valid path blocks."
 			]
 			icon: "supplementaries:sign_post_oak"
 			id: "42A10CEE57513522"

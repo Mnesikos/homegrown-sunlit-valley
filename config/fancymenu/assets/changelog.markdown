@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Valley
-### v2.7.4
+### v2.7.5
 ^^^
 --- 
 - Renamed pack to Society: Sunlit Valley! This is a smaller update to prepare for the large content update that is 3.0!
@@ -50,3 +50,10 @@
 - Removed Queen Bee mod due to sound related crashes
 - Fixed some blocks not being usable in claims
 - Fixed certain crop related exploits
+
+### 2.7.5
+- Reduced amount of Splendid Slimes spawning in Nether and Skull Cavern
+- Reduced Neptuna's weight in fishing pool
+- More quest cleanup/corrections
+- Fixed modded wood Mailboxes not having crafting table recipe
+- Fixed Untyped Splendid Slimes spawning in the overworld

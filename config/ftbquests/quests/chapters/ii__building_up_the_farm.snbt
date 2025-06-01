@@ -94,7 +94,11 @@
 			y: -2.5d
 		}
 		{
-			description: ["Once you find an appropriate place to start your farm, your first step should be preparing a field of farmland."]
+			description: [
+				"Once you find an appropriate place to start your farm, your first step should be preparing a field of farmland."
+				""
+				"Once fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
+			]
 			icon: "minecraft:farmland"
 			id: "0A39B0C0A77E57B0"
 			rewards: [{
@@ -113,7 +117,7 @@
 						value: "minecraft:hoes"
 					}
 				}
-				title: "Any #minecraft:hoes"
+				title: "Any Hoe"
 				type: "item"
 			}]
 			title: "Preparing the Fields"
@@ -525,10 +529,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"66D159252C70D5F2"
-				"5B6FD08D6063D6AA"
-			]
+			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
 				"The next place to exploit for its resources is the &6Nether&r."
 				""
@@ -653,7 +654,7 @@
 		{
 			dependencies: ["3D324E99DF28D224"]
 			description: [
-				"Birds such as Chickens will produce eggs, but only when they have at least 2 hearts of affection."
+				"Birds such as Chickens will produce eggs, but only when they are fed and have at least 2 hearts of affection."
 				""
 				"They'll produce larger eggs at high levels of affection."
 			]
@@ -1647,6 +1648,35 @@
 			title: "Pet Names"
 			x: 1.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["02327F6FDF987266"]
+			description: [
+				"&6Watering Cans&r can be upgraded to hold more water, work faster, and also work in an area!"
+				""
+				"Hold &6Right Click&r to charge up the area of affect watering ability. Higher tiers have higher areas!"
+			]
+			id: "0EE5A175B0417403"
+			rewards: [{
+				count: 4
+				id: "27BF0222781D6112"
+				item: "bakery:vegetable_sandwich"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24B3E911968C0BDC"
+				item: {
+					Count: 1
+					id: "dew_drop_watering_cans:iron_watering_can"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Upgraded Watering"
+			x: 6.0d
+			y: -3.0d
 		}
 	]
 	title: "II - Farm Building"

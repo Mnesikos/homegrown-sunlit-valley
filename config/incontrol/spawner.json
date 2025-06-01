@@ -61,7 +61,7 @@
   },
   {
     "mob": "legendarycreatures:corpse_eater",
-    "persecond": 1,
+    "persecond": 0.5,
     "attempts": 20,
     "amount": {
       "minimum": 2,
@@ -75,23 +75,7 @@
   },
   {
     "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "minecraft:overworld",
-      "maxthis": 40,
-      "minheight": -50,
-      "maxheight": 0
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
+    "persecond": 0.1,
     "attempts": 10,
     "amount": {
       "minimum": 2,
@@ -105,7 +89,7 @@
   },
   {
     "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.5,
+    "persecond": 0.1,
     "attempts": 10,
     "amount": {
       "minimum": 2,
@@ -114,7 +98,7 @@
     },
     "conditions": {
       "dimension": "mining_dimension:mining",
-      "maxthis": 50
+      "maxthis": 25
     }
   }
 ]
