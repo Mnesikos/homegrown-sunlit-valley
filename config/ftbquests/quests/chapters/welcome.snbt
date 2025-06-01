@@ -75,7 +75,11 @@
 		}
 		{
 			dependencies: ["2B6877708A709B5C"]
-			description: ["Teleportation does exist, however you will have to invest massive amounts of cash to buy it. Alternatively, you can build out a network of roads and teleport between them using signs."]
+			description: [
+				"Teleportation does exist, however you will have to invest massive amounts of cash to buy it. "
+				""
+				"Alternatively, you can build out a network of roads and teleport between them using signs."
+			]
 			icon: "minecraft:chorus_fruit"
 			id: "25777939975C3CEE"
 			tasks: [{
