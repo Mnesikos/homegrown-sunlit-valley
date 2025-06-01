@@ -233,7 +233,7 @@
 				"- Iron (&616&r)"
 				"- Brass (&664&r)"
 				"- Gold (&6512&r)"
-				"- Silver (&64096&r)"
+				"- Netherite (&64096&r)"
 			]
 			id: "73A85902CE35A43A"
 			rewards: [{
@@ -282,7 +282,7 @@
 			description: [
 				"By now you've probably become annoyed with storing the many items on your journey."
 				""
-				"A backpack will come in handy, purchase one from the &6Leatherworker&r villager."
+				"A &6Backpack&r will come in handy, purchase one from the &6Leatherworker&r villager."
 			]
 			id: "679F77E46148B5D1"
 			rewards: [{
