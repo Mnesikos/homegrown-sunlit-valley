@@ -32,6 +32,12 @@ ItemEvents.modification((e) => {
   e.modify("society:sparkstone", (item) => {
     item.rarity = "epic";
   });
+  e.modify(
+    ["numismatics:neptunium_coin", "numismatics:ancient_coin", "numismatics:prismatic_coin"],
+    (item) => {
+      item.rarity = "epic";
+    }
+  );
   e.modify(["society:bank_meter", "society:milk_pail"], (item) => {
     item.maxStackSize = 1;
   });

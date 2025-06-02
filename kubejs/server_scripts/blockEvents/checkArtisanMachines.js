@@ -176,7 +176,7 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
 
 BlockEvents.rightClicked(global.artisanMachineIds, (e) => {
   const { block, hand } = e;
-  console.log(block)
+  console.log(global.artisanMachineIds)
   if (hand == "OFF_HAND") return;
   const machine = global.artisanMachineDefinitions.filter((obj) => {
     return obj.id === block.id;

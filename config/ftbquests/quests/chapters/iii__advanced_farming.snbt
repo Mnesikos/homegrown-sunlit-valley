@@ -1131,6 +1131,28 @@
 			x: 6.0d
 			y: -4.0d
 		}
+		{
+			dependencies: ["44A512703C4A9990"]
+			description: [
+				"There are 3 advanced tiers of &6Coins&r. The first two can be crafted up or down from the previous &dPrismatic Coins&r must be traded using a &6Bankers&r,"
+				""
+				"These are their values:"
+				""
+				"- Neptunium (&632,768&r) "
+				"- Ancient (&6262,144&r)"
+				"- Prismatic (&616,252,928&r)"
+				""
+				"These coins are needed for very late game items. Don't expect to need them anytime soon."
+			]
+			id: "527F7721ED60868C"
+			tasks: [{
+				id: "0FBC71E396E14EB1"
+				item: "numismatics:neptunium_coin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
 	]
 	title: "III - Advanced Farming"
 }

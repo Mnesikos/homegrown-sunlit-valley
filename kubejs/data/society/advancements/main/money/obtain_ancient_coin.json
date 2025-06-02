@@ -1,5 +1,5 @@
 {
-  "parent": "society:main/money/obtain_iridium_coin",
+  "parent": "society:main/money/obtain_neptunium_coin",
   "criteria": {
     "ancient_coin": {
       "conditions": {

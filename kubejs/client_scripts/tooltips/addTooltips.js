@@ -31,7 +31,7 @@ ItemEvents.tooltip((tooltip) => {
       case "sun":
         value = 4096;
         break;
-      case "iridium_coin":
+      case "neptunium_coin":
         value = 32768;
         break;
       case "ancient_coin":
@@ -66,7 +66,7 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics:cog",
     "numismatics:crown",
     "numismatics:sun",
-    "numismatics:iridium_coin",
+    "numismatics:neptunium_coin",
     "numismatics:ancient_coin",
     "numismatics:prismatic_coin",
   ];

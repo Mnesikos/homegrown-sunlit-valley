@@ -9,7 +9,7 @@
 - Added Artisan Hopper, a machine for automating Artisan Machines using Sparkstone
 - Added Auto-Petter, a machine for automating husbandry animal collection using Sparkstone
 - Added Auto-Tapper, a machine for collecting Tapper resources using Create
-- Added Silver Coin to replace Netherite coin (Rename/retexture, items won't be lost)
+- Added Iridium Coin to replace Netherite coin (Rename/retexture, items won't be lost)
 - Added Iridium coin as tier between Silver and Ancient 
 - Added Iridium Ore
 - Added Iridium Tier to replace Netherite (Just a rename/retexture)

@@ -12,7 +12,7 @@ global.showPonderLayer = (scene, speed, height, exclude) => {
 global.coinMap = [
   { coin: "numismatics:prismatic_coin", value: 16252928 },
   { coin: "numismatics:ancient_coin", value: 262144 },
-  { coin: "numismatics:iridium_coin", value: 32768 },
+  { coin: "numismatics:neptunium_coin", value: 32768 },
   { coin: "numismatics:sun", value: 4096 },
   { coin: "numismatics:crown", value: 512 },
   { coin: "numismatics:cog", value: 64 },

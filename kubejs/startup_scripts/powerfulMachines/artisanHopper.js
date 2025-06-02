@@ -205,6 +205,10 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     const { x, y, z } = artisanMachine;
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
+    const season = global.getSeasonFromLevel(level);
+    const chargingRodOutput = Item.of(
+      `${upgraded && season === "winter" ? 3 : 1}x society:battery`
+    );
     if (loadedData) {
       const { recipes, stageCount, multipleInputs, hasTag, outputMult, soundType } = loadedData;
       let machineOutput;
@@ -212,12 +216,18 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       let newProperties = artisanMachine.getProperties();
       if (
         newProperties.get("mature").toLowerCase() === "true" &&
+        global.inventoryBelowHasRoom(
+          level,
+          block,
+          artisanMachine.id === "society:charging_rod"
+            ? chargingRodOutput
+            : global.getArtisanRecipe(recipes, artisanMachine).output[0]
+        ) &&
         global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
       ) {
         server.runCommandSilent(`playsound stardew_fishing:dwop block @a ${x} ${y} ${z}`);
         if (artisanMachine.id === "society:charging_rod") {
-          const season = global.getSeasonFromLevel(level);
-          machineOutput = Item.of(`${upgraded && season === "winter" ? 3 : 1}x society:battery`);
+          machineOutput = chargingRodOutput;
           artisanMachine.set(artisanMachine.id, {
             working: false,
             mature: false,

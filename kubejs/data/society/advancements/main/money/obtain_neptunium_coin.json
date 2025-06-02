@@ -1,11 +1,11 @@
 {
   "parent": "society:main/money/obtain_sun",
   "criteria": {
-    "iridium_coin": {
+    "neptunium_coin": {
       "conditions": {
         "items": [
           {
-            "items": ["numismatics:iridium_coin"]
+            "items": ["numismatics:neptunium_coin"]
           }
         ]
       },
@@ -15,18 +15,18 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "society.advancement.obtain_iridium_coin.description"
+      "translate": "society.advancement.obtain_neptunium_coin.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "numismatics:iridium_coin"
+      "item": "numismatics:neptunium_coin"
     },
     "show_toast": true,
     "title": {
-      "translate": "society.advancement.obtain_iridium_coin.title"
+      "translate": "society.advancement.obtain_neptunium_coin.title"
     }
   },
-  "requirements": [["iridium_coin"]],
+  "requirements": [["neptunium_coin"]],
   "sends_telemetry_event": true
 }

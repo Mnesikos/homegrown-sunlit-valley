@@ -16,7 +16,7 @@ ServerEvents.commandRegistry((event) => {
     const coins = [
       "numismatics:crown",
       "numismatics:sun",
-      "numismatics:iridium_coin",
+      "numismatics:neptunium_coin",
       "numismatics:ancient_coin",
       "numismatics:prismatic_coin",
     ];

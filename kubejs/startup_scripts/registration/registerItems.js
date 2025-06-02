@@ -127,7 +127,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/neptuna")
     .glow(true);
 
-  e.create("numismatics:iridium_coin").texture("society:item/iridium_coin");
+  e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin");
   e.create("numismatics:ancient_coin").texture("society:item/ancient_coin");
   e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin");
 

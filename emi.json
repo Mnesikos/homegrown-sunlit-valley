@@ -8,6 +8,16 @@
     }
   ],
   "lookup_history": [
+    "item:sophisticatedbackpacks:backpack",
+    "item:candlelight:bowl",
+    "item:society:bowl_of_soul",
+    "item:farm_and_charm:crafting_bowl",
+    "item:unusualfishmod:raw_eyelash",
+    "item:minecraft:oak_wood",
+    "item:numismatics:ancient_coin",
+    "item:numismatics:prismatic_coin",
+    "item:numismatics:sun",
+    "item:numismatics:neptunium_coin",
     "item:minecraft:spruce_log",
     "item:society:ancient_fruit_juice_bucket",
     "item:twigs:rhyolite",
@@ -424,7 +434,6 @@
     "item:botania:mycelium_seeds",
     "item:farmingforblockheads:market",
     "item:minecraft:cartography_table",
-    "item:numismatics:ancient_coin",
     "item:minecraft:oak_trapdoor",
     "item:quark:hollow_birch_log",
     "item:supplementaries:fire_pit",
@@ -482,10 +491,8 @@
     "item:oreganized:glance_brick_stairs",
     "item:minecraft:smooth_sandstone",
     "item:minecraft:dark_oak_door",
-    "item:numismatics:iridium_coin",
     "item:everycomp:rfm/atmospheric/morado_mail_box",
     "item:everycomp:rfm/atmospheric/yucca_mail_box",
-    "item:numismatics:sun",
     "item:everycomp:rfm/atmospheric/laurel_mail_box",
     "item:refurbished_furniture:acacia_mail_box",
     "item:everycomp:rfm/atmospheric/kousa_mail_box",
@@ -605,7 +612,6 @@
     "item:immersive_paintings:painting",
     "item:society:animal_feed_sack",
     "item:society:animal_feed",
-    "item:numismatics:prismatic_coin",
     "item:farmersdelight:egg_sandwich",
     "item:simplehats:hatbag_common",
     "item:farmersdelight:steak_and_potatoes",
@@ -695,7 +701,6 @@
     "item:society:aged_eyeball_fish_roe",
     "item:botania:tigerseye",
     "item:botania:cosmetic_googly_eyes",
-    "item:unusualfishmod:raw_eyelash",
     "item:society:eyelash_bait",
     "item:fantasyfurniture:decorations/tankards_honeymead",
     "item:botania:forest_eye",
@@ -1125,7 +1130,6 @@
     "item:railways:light_gray_brass_wrapped_locometal",
     "item:create:andesite_ladder",
     "item:society:iron_sprinkler",
-    "item:society:bowl_of_soul",
     "item:etcetera:light_bulb",
     "item:minecraft:redstone_ore",
     "item:createutilities:polished_amethyst",
@@ -1151,7 +1155,6 @@
       "amount": 0
     },
     "item:society:recycling_machine",
-    "item:minecraft:oak_wood",
     "item:zetter:canvas",
     "item:ribbits:toadstool",
     "item:ribbits:toadstool_stem",
@@ -1265,10 +1268,7 @@
     "item:botania:redstone_root",
     "item:beachparty:cocoa_cocktail",
     "item:beachparty:mini_fridge",
-    "item:beachparty:sweetberries_cocktail",
-    "item:beachparty:pumpkin_cocktail",
-    "item:beachparty:honey_cocktail",
-    "item:splendid_slimes:plort"
+    "item:beachparty:sweetberries_cocktail"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1282,9 +1282,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

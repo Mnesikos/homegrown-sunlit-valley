@@ -98,7 +98,6 @@ StartupEvents.registry("block", (e) => {
     .model("society:block/omni_geode_node");
 
   e.create("society:iridium_ore")
-    .defaultCutout()
     .soundType("stone")
     .hardness(2.5)
     .resistance(1.0)
@@ -108,7 +107,6 @@ StartupEvents.registry("block", (e) => {
     .model("society:block/iridium_ore");
 
   e.create("society:deepslate_iridium_ore")
-    .defaultCutout()
     .soundType("stone")
     .hardness(2.5)
     .resistance(1.0)
@@ -118,7 +116,6 @@ StartupEvents.registry("block", (e) => {
     .model("society:block/deepslate_iridium_ore");
 
   e.create("society:sparkstone_ore")
-    .defaultCutout()
     .soundType("stone")
     .hardness(2.5)
     .resistance(1.0)
@@ -128,7 +125,6 @@ StartupEvents.registry("block", (e) => {
     .model("society:block/sparkstone_ore");
 
   e.create("society:deepslate_sparkstone_ore")
-    .defaultCutout()
     .soundType("stone")
     .hardness(2.5)
     .resistance(1.0)
@@ -161,7 +157,6 @@ StartupEvents.registry("block", (e) => {
 
   const createSkullVariant = (type, path) => {
     e.create(`society:skull_${type}`)
-      .defaultCutout()
       .soundType("stone")
       .hardness(-1)
       .resistance(3600000)
@@ -177,7 +172,6 @@ StartupEvents.registry("block", (e) => {
   createSkullVariant("end_stone", "minecraft:block/end_stone");
 
   e.create(`society:sparkstone_block`)
-    .defaultCutout()
     .soundType("amethyst")
     .hardness(2)
     .resistance(1.0)

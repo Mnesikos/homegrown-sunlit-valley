@@ -2,7 +2,7 @@
   "type": "functionalstorage:custom_compacting",
   "higher_input": {
     "count": 1,
-    "item": "numismatics:iridium_coin"
+    "item": "numismatics:neptunium_coin"
   },
   "lower_input": {
     "count": 8,

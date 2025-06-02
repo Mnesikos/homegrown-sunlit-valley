@@ -27,8 +27,8 @@ ServerEvents.recipes((e) => {
   compact("society:tubasmoke_carton", "society:tubasmoke_stick", 9);
   compact("society:sturdy_bamboo_block", "minecraft:bamboo_block", 9);
  
-  compact("numismatics:iridium_coin", "numismatics:sun", 8);
-  compact("numismatics:ancient_coin", "numismatics:iridium_coin", 8);
+  compact("numismatics:neptunium_coin", "numismatics:sun", 8);
+  compact("numismatics:ancient_coin", "numismatics:neptunium_coin", 8);
   compact("numismatics:prismatic_coin", "numismatics:ancient_coin", 64);
 
   compact("etcetera:bismuth_ingot", "etcetera:bismuth_nugget", 9);

@@ -85,7 +85,7 @@ global.calculateCoinValue = (coin) => {
     case "sun":
       value = 4096;
       break;
-    case "iridium_coin":
+    case "neptunium_coin":
       value = 32768;
       break;
     case "ancient_coin":
