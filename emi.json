@@ -5,6 +5,9 @@
     },
     {
       "stack": "item:farm_and_charm:mincer"
+    },
+    {
+      "stack": "item:minecraft:spruce_wood"
     }
   ],
   "lookup_history": [

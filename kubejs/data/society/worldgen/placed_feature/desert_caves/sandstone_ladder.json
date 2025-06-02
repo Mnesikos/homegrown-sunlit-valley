@@ -47,6 +47,11 @@
                     "type": "minecraft:matching_blocks",
                     "offset": [0, -12, 0],
                     "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -13, 0],
+                    "blocks": "minecraft:air"
                   }
                 ]
               },
@@ -56,6 +61,11 @@
                   {
                     "type": "minecraft:inside_world_bounds",
                     "offset": [0, -16, 0]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -15, 0],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",
@@ -75,6 +85,11 @@
                     "type": "minecraft:matching_blocks",
                     "offset": [0, -28, 0],
                     "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -29, 0],
+                    "blocks": "minecraft:air"
                   }
                 ]
               },
@@ -84,6 +99,11 @@
                   {
                     "type": "minecraft:inside_world_bounds",
                     "offset": [0, -32, 0]
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -31, 0],
+                    "blocks": "minecraft:air"
                   },
                   {
                     "type": "minecraft:matching_blocks",

@@ -15,38 +15,22 @@
         "predicates": [
           {
             "type": "minecraft:has_sturdy_face",
-            "offset": [
-              1,
-              -1,
-              0
-            ],
+            "offset": [1, -1, 0],
             "direction": "up"
           },
           {
             "type": "minecraft:has_sturdy_face",
-            "offset": [
-              -1,
-              -1,
-              0
-            ],
+            "offset": [-1, -1, 0],
             "direction": "up"
           },
           {
             "type": "minecraft:has_sturdy_face",
-            "offset": [
-              0,
-              -1,
-              1
-            ],
+            "offset": [0, -1, 1],
             "direction": "up"
           },
           {
             "type": "minecraft:has_sturdy_face",
-            "offset": [
-              0,
-              -1,
-              -1
-            ],
+            "offset": [0, -1, -1],
             "direction": "up"
           },
           {
@@ -57,19 +41,16 @@
                 "predicates": [
                   {
                     "type": "minecraft:inside_world_bounds",
-                    "offset": [
-                      0,
-                      -12,
-                      0
-                    ]
+                    "offset": [0, -12, 0]
                   },
                   {
                     "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      -12,
-                      0
-                    ],
+                    "offset": [0, -12, 0],
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -13, 0],
                     "blocks": "minecraft:air"
                   }
                 ]
@@ -79,19 +60,16 @@
                 "predicates": [
                   {
                     "type": "minecraft:inside_world_bounds",
-                    "offset": [
-                      0,
-                      -16,
-                      0
-                    ]
+                    "offset": [0, -16, 0]
                   },
                   {
                     "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      -16,
-                      0
-                    ],
+                    "offset": [0, -15, 0],
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -16, 0],
                     "blocks": "minecraft:air"
                   }
                 ]
@@ -101,19 +79,16 @@
                 "predicates": [
                   {
                     "type": "minecraft:inside_world_bounds",
-                    "offset": [
-                      0,
-                      -28,
-                      0
-                    ]
+                    "offset": [0, -28, 0]
                   },
                   {
                     "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      -28,
-                      0
-                    ],
+                    "offset": [0, -28, 0],
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -29, 0],
                     "blocks": "minecraft:air"
                   }
                 ]
@@ -123,19 +98,16 @@
                 "predicates": [
                   {
                     "type": "minecraft:inside_world_bounds",
-                    "offset": [
-                      0,
-                      -32,
-                      0
-                    ]
+                    "offset": [0, -32, 0]
                   },
                   {
                     "type": "minecraft:matching_blocks",
-                    "offset": [
-                      0,
-                      -32,
-                      0
-                    ],
+                    "offset": [0, -31, 0],
+                    "blocks": "minecraft:air"
+                  },
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [0, -32, 0],
                     "blocks": "minecraft:air"
                   }
                 ]
