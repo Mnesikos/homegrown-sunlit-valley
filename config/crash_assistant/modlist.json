@@ -11,10 +11,6 @@
     "modId": "advancementplaques",
     "version": "1.6.7"
   },
-  "alltheleaks-0.1.4-beta+1.20.1-forge.jar": {
-    "modId": "alltheleaks",
-    "version": "0.1.4-beta+1.20.1-forge"
-  },
   "alternate_current-mc1.20-1.7.0.jar": {
     "modId": "alternate_current",
     "version": "1.7.0"
@@ -111,9 +107,9 @@
     "modId": "botania_seeds",
     "version": "1.1.1"
   },
-  "bots_lib-4.0.jar": {
+  "bots_lib-4.1.jar": {
     "modId": "bots_lib",
-    "version": "4.0"
+    "version": "4.1"
   },
   "Bountiful-6.0.4+1.20.1-forge.jar": {
     "modId": "bountiful",
@@ -290,6 +286,10 @@
   "defaultoptions-forge-1.20-18.0.1.jar": {
     "modId": "defaultoptions",
     "version": "18.0.1"
+  },
+  "dew_drop_daily_weather-1.1.jar": {
+    "modId": "dew_drop_daily_weather",
+    "version": "1.1"
   },
   "dew_drop_farmland_growth-2.1.jar": {
     "modId": "dew_drop_farmland_growth",

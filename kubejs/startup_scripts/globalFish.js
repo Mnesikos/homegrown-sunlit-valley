@@ -410,7 +410,6 @@ global.handleFishPondTick = (tickEvent) => {
   if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
     if (type !== "0" && valid === "true") {
       if (Number(population) > 1) {
-        console.log("making mature");
         level.spawnParticles(
           "supplementaries:suds",
           true,

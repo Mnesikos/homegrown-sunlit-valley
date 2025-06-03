@@ -218,6 +218,8 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:tubabbaco");
   e.add("forge:crops", "society:blueberry");
   e.add("forge:berries", "society:blueberry");
+  e.add("forge:grapes", "nethervinery:warped_grape");
+  e.add("forge:grapes", "nethervinery:crimson_grape");
   e.add("forge:crops", "society:eggplant");
   e.add("forge:crops/cabbage", "farm_and_charm:lettuce");
   e.add("forge:vegetables/eggplant", "society:eggplant");

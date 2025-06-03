@@ -1059,24 +1059,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "bots_lib-4.0.jar",
+                    "file_name": "bots_lib-4.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5550/32/bots_lib-4.0.jar",
-                    "id": "5550032",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6607/248/bots_lib-4.1.jar",
+                    "id": "6607248",
                     "parent_id": "1062753",
                     "hashes": {
-                        "sha1": "721c1cbb12fe80bfb8a27425e86668681e7d82a6",
-                        "md5": "02f0059f45817ea6b60c6ae1f1def3eb"
+                        "sha1": "6170ec46ade600885f459295a1fde914b1606d09",
+                        "md5": "2c4c419c8870c27b909756bb3d4ef7b8"
                     },
                     "required_dependencies": [],
-                    "size": 21206,
-                    "date_published": "2024-07-21T01:22:15.133Z"
+                    "size": 24222,
+                    "date_published": "2025-06-02T07:06:14.490Z"
                 }
             ]
         },
@@ -2881,6 +2881,47 @@
                     "required_dependencies": [],
                     "size": 55863,
                     "date_published": "2024-05-30T10:03:51.667Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "PYQFbZ16CnzTu22i",
+            "pakku_links": [
+                "aVFeFGvdjjGDIeXW"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "daily-weather"
+            },
+            "name": {
+                "curseforge": "Daily Weather"
+            },
+            "id": {
+                "curseforge": "1062904"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "dew_drop_daily_weather-1.1.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6609/254/dew_drop_daily_weather-1.1.1.jar",
+                    "id": "6609254",
+                    "parent_id": "1062904",
+                    "hashes": {
+                        "sha1": "58959b8a1114d4730c3d6ba3996f26bd97fd61c8",
+                        "md5": "850c45bce9b41974dea4488fc43afa21"
+                    },
+                    "required_dependencies": [
+                        "1062753"
+                    ],
+                    "size": 15834,
+                    "date_published": "2025-06-02T22:24:53.020Z"
                 }
             ]
         },

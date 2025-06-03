@@ -742,6 +742,7 @@ StartupEvents.registry("item", (e) => {
       .texture(baseTexturePath)
       .color(0, 0x785246)
       .tag("forge:cooked_fishes")
+      .tag("society:smoked_fish")
       .food((food) => {
         food.hunger(3);
         food.saturation(2);

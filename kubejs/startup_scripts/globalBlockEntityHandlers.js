@@ -439,19 +439,16 @@ global.inventoryBelowHasRoom = (level, block, item) => {
         belowItem === Item.of(item) &&
         belowItem.count + item.count < belowBlock.inventory.getSlotLimit(j)
       ) {
-        console.log(`Fish Basket inserted! ${item}`);
         return true;
       }
     }
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
       if (belowItem === Item.of("minecraft:air")) {
-        console.log(`Fish Basket inserted! ${item}`);
         return true;
       }
     }
   }
-  console.log(`Fish Basket cannot insert! ${item}`);
   return false;
 };
 
