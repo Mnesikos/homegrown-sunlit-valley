@@ -8,6 +8,18 @@
     }
   ],
   "lookup_history": [
+    "item:society:jamborite",
+    "item:society:nekoite",
+    "item:society:ancient_cog",
+    "item:society:ancient_goddess_statue",
+    "item:society:ancient_cider",
+    "item:botania:cosmetic_ancient_mask",
+    {
+      "type": "item",
+      "id": "society:ancient_fruit",
+      "amount": 3
+    },
+    "item:society:ancient_fruit_seed",
     "item:everycomp:rfm/botania/livingwood_mail_box",
     "item:everycomp:rfm/autumnity/maple_mail_box",
     "item:everycomp:rfm/quark/blossom_mail_box",
@@ -486,7 +498,6 @@
     "item:society:ember_crystal_cluster",
     "item:vintagedelight:peanut",
     "item:society:onion_seed",
-    "item:society:ancient_cog",
     "item:minecraft:poisonous_potato",
     "item:farm_and_charm:carrot_bag",
     "item:society:cornucopia",
@@ -503,12 +514,6 @@
     "item:candlelight:gold_ring{Damage:0}",
     "item:candlelight:chocolate_box",
     "item:beachparty:trunks{Damage:0}",
-    {
-      "type": "item",
-      "id": "society:ancient_fruit",
-      "nbt": "{quality_food:{effects:[],quality:2}}",
-      "amount": 5
-    },
     "item:society:fish_smoker",
     "item:minecraft:smoker",
     "item:society:cordycep",
@@ -751,8 +756,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

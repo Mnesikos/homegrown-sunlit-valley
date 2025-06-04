@@ -1,6 +1,6 @@
 ^^^
 ## Sunlit Valley
-### v2.7.5
+### v2.7.6
 ^^^
 --- 
 - Renamed pack to Society: Sunlit Valley! This is a smaller update to prepare for the large content update that is 3.0!
@@ -57,3 +57,10 @@
 - More quest cleanup/corrections
 - Fixed modded wood Mailboxes not having crafting table recipe
 - Fixed Untyped Splendid Slimes spawning in the overworld
+
+### 2.7.6
+- Splendid Slimes in Nether and Skull cavern now spawn as Neutral instead of Furious and size 2 to prevent confusion 
+- Quest cleanup, made the crowding requirements for farm animals/slimes more clear
+- Hid Building Shop until "Getting Started" questline close to finished.
+- Fixed Fish Pond not dropping when broken
+- Fixed Plort Press not loading inventory correctly, voiding contents (Splendid Slimes update)

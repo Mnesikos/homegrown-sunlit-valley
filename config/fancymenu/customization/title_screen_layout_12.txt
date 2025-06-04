@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1748314656524
+  last_edited_time = 1748973463566
   is_enabled = true
   randommode = true
   randomgroup = 10
-  randomonlyfirsttime = false
+  randomonlyfirsttime = true
   layout_index = 0
   custom_menu_title = Society: Sunlit Valley
-  [loading_requirement_container_meta:4bc855c6-3562-429b-9261-5d9051ddb7b5-1748314518149] = [groups:][instances:]
+  [loading_requirement_container_meta:e1462001-db61-476f-b8d0-7522da1b6011-1748973405373] = [groups:][instances:]
 }
 
 customization {
