@@ -6,6 +6,7 @@
 	default_repeatable_quest: true
 	filename: "building_shop"
 	group: ""
+	hide_quest_until_deps_complete: true
 	icon: "liltractor:liltractor"
 	id: "61126DF67FF815EC"
 	order_index: 1
@@ -380,7 +381,7 @@
 		}
 		{
 			can_repeat: false
-			dependencies: ["049EB48B999881A3"]
+			dependencies: ["6A4ABA3348125A3C"]
 			description: [
 				"Sheds are utility buildings for storing Artisan Machines, chests, and anything else you need."
 				""
@@ -473,7 +474,7 @@
 		}
 		{
 			can_repeat: false
-			dependencies: ["049EB48B999881A3"]
+			dependencies: ["6A4ABA3348125A3C"]
 			description: [
 				"Large Sheds are as you may expect; larger sheds. They have plenty of room, and fit neatly in a single chunk (excluding walls). Press &6F3&r + &6G&r to see chunk boundries."
 				""
@@ -493,7 +494,7 @@
 		}
 		{
 			can_repeat: false
-			dependencies: ["049EB48B999881A3"]
+			dependencies: ["6A4ABA3348125A3C"]
 			description: [
 				"Barns are perfectly sized for indoor farm animals. The first floor is intended for animals, perfectly spaced so Feeding Troughs don't leave them hungry."
 				""
@@ -513,6 +514,7 @@
 		}
 		{
 			can_repeat: false
+			dependencies: ["66D159252C70D5F2"]
 			description: [
 				"This chapter has prebuilt buildings for sale in the form of capsules. They can be bought as many times as you wish."
 				""
@@ -525,7 +527,6 @@
 			icon: "minecraft:spruce_door"
 			id: "049EB48B999881A3"
 			size: 2.0d
-			subtitle: "&6Left Click&r the \"Preview structure\" task again to close the preview!"
 			tasks: [{
 				id: "2584D5E401EEFB26"
 				title: "Understood"
@@ -533,7 +534,7 @@
 			}]
 			title: "Building Shop"
 			x: -10.0d
-			y: -6.25d
+			y: -9.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -612,7 +613,7 @@
 		}
 		{
 			can_repeat: false
-			dependencies: ["049EB48B999881A3"]
+			dependencies: ["6A4ABA3348125A3C"]
 			description: [
 				"Deluxe Barns are larger, grander versions of barns, with seperate sections to divide up animals."
 				""
@@ -631,19 +632,22 @@
 			y: -5.0d
 		}
 		{
+			can_repeat: false
 			dependencies: ["049EB48B999881A3"]
 			description: [
 				"Each building has a preview task that can be used to check out what a building looks like in-world."
 				""
 				""
-				"&6Left Click&r the \"Preview structure\" task to start previewing"
+				"&6Left Click&r the \"Preview structure\" task to start previewing."
 				""
-				"&6Right Click&r on a block to lock the structure preview in place"
+				"&6Right Click&r on a block to lock the structure preview in place."
 				""
-				"&6Left Click&r the \"Preview structure\" task again to close the preview"
+				"&6Left Click&r the \"Preview structure\" task again to close the preview. If this doesn't work, right click on a block and try again!"
 			]
 			icon: "exposure:camera"
 			id: "6A4ABA3348125A3C"
+			size: 2.0d
+			subtitle: "&6Left Click&r the \"Preview structure\" task again to close the preview!"
 			tasks: [{
 				id: "26CC337AED0A141A"
 				title: "Understood!"
@@ -651,7 +655,7 @@
 			}]
 			title: "Seeing the buildings in-world"
 			x: -10.0d
-			y: -8.5d
+			y: -6.0d
 		}
 		{
 			can_repeat: false

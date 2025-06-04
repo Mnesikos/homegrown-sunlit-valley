@@ -73,11 +73,7 @@
     "maxheight": 50,
     "speedmultiply": 1.2,
     "random": 0.4,
-    "armorhelmet": [
-      "simplehats:santaclaus",
-      "simplehats:frozenhead",
-      "minecraft:ice"
-    ],
+    "armorhelmet": ["simplehats:santaclaus", "simplehats:frozenhead", "minecraft:ice"],
     "helditem": [
       "2=simplehats:hatscraps_festive",
       "1=simplehats:hatbag_festive",
@@ -156,7 +152,9 @@
     "structure": "minecraft:fortress",
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:blazing"
+      "Breed": "splendid_slimes:blazing",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -166,7 +164,9 @@
     "block": "tag:minecraft:soul_fire_base_blocks",
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:bony"
+      "Breed": "splendid_slimes:bony",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -175,35 +175,19 @@
     "minheight": 90,
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:weeping"
+      "Breed": "splendid_slimes:weeping",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
     "mob": "splendid_slimes:splendid_slime",
     "dimension": "minecraft:the_nether",
-    "random": 0.2,
     "when": "finalize",
     "nbt": {
       "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:bony"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "random": 0.1,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:weeping"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "minecraft:the_nether",
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous"
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -231,7 +215,9 @@
     ],
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:webby"
+      "Breed": "splendid_slimes:webby",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -254,7 +240,9 @@
     ],
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:all_seeing"
+      "Breed": "splendid_slimes:all_seeing",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -264,7 +252,9 @@
     "block": "minecraft:sand",
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:dusty"
+      "Breed": "splendid_slimes:dusty",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -274,27 +264,9 @@
     "block": "minecraft:blackstone",
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:blazing"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "random": 0.2,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:luminous",
-      "SecondaryBreed": "splendid_slimes:bitwise"
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "dimension": "mining_dimension:mining",
-    "random": 0.1,
-    "when": "finalize",
-    "nbt": {
-      "Breed": "splendid_slimes:bony",
-      "SecondaryBreed": "splendid_slimes:bitwise"
+      "Breed": "splendid_slimes:blazing",
+      "Happiness": 500,
+      "Size": 1
     }
   },
   {
@@ -302,7 +274,9 @@
     "dimension": "mining_dimension:mining",
     "when": "finalize",
     "nbt": {
-      "Breed": "splendid_slimes:bitwise"
+      "Breed": "splendid_slimes:bitwise",
+      "Happiness": 500,
+      "Size": 1
     }
   }
 ]

@@ -122,6 +122,7 @@ BlockEvents.broken("society:fish_pond", (e) => {
   if (e.block.properties.get("upgraded").toLowerCase() == "true") {
     e.block.popItem(Item.of("society:sea_biscut"));
   }
+    e.block.popItem(Item.of("society:fish_pond"));
 });
 
 BlockEvents.broken("society:deluxe_worm_farm", (e) => {
