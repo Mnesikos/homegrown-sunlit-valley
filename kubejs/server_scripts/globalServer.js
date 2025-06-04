@@ -10,7 +10,7 @@ global.mainUiElementIds = [
   "fishIcon",
   "fishName",
   "population",
-  "tapperMessage"
+  "tapperMessage",
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -59,11 +59,6 @@ global.renderUiItemText = (player, items, ids) => {
   global.clearUiItemPaint(player, ids);
   player.paint(items);
 };
-
-global.formatPrice = (number) => {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
-
 global.calculateCoinValue = (coin) => {
   let value = 0;
   switch (coin.id.split(":")[1]) {
@@ -341,3 +336,71 @@ global.artisanMachineDefinitions = [
 ];
 
 global.artisanMachineIds = global.artisanMachineDefinitions.map((x) => x.id);
+
+global.handleFee = (server, player, reason) => {
+  const UUID = player.getUuid();
+  let amountToDeduct = 0;
+  let balance = 0;
+  let account = null;
+  let maxFee = 0;
+  let minimumFee = 512;
+
+  global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
+    if (UUID.toString() == playerUUID.toString()) {
+      balance = bankAccount.getBalance();
+      account = bankAccount;
+    }
+  });
+  if (reason === "death") {
+    maxFee = 4096;
+
+    amountToDeduct = Math.min(Math.round(balance * 0.1), maxFee);
+  }
+    if (reason === "skull_cavern") {
+    minimumFee = 1024;
+    maxFee = 8192;
+
+    amountToDeduct = Math.min(Math.round(balance * 0.15), maxFee);
+  }
+  if (amountToDeduct < minimumFee) {
+    let currentDebt = null;
+    let foundIndex = -1;
+    if (!server.persistentData.debts) server.persistentData.debts = [];
+    for (let index = 0; index < server.persistentData.debts.length; index++) {
+      if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
+        currentDebt = Number(server.persistentData.debts[index].amount);
+        server.persistentData.debts[index].amount = currentDebt + minimumFee;
+        foundIndex = index;
+        break;
+      }
+    }
+    if (!currentDebt) {
+      server.persistentData.debts.push({ uuid: UUID.toString(), amount: 512 });
+    }
+    player.give(
+      Item.of(
+        "candlelight:note_paper_written",
+        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take 512 :coin: out of your profits until the fee is paid off. Be careful next time!
+
+Debt: ${global.formatPrice(server.persistentData.debts[foundIndex].amount)} :coin:
+"],title:"Hospital Receipt"}`
+      )
+    );
+  } else {
+    account.setBalance(balance - amountToDeduct);
+    player.give(
+      Item.of(
+        "candlelight:note_paper_written",
+        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+Looks like you passed out again! We\'ve treated you for a small fee.
+
+We\'ve taken it out of your bank account for convenience. Be careful next time!
+
+:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
+      )
+    );
+  }
+};

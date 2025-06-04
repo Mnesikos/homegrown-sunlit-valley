@@ -1,4 +1,7 @@
 // priority: -20
+const NUMISMATICS = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
+global.GLOBAL_BANK = NUMISMATICS.BANK;
+
 global.showPonderLayer = (scene, speed, height, exclude) => {
   for (let x = 0; x <= 5; x++) {
     for (let z = 0; z <= 5; z++) {
@@ -20,6 +23,11 @@ global.coinMap = [
   { coin: "numismatics:bevel", value: 8 },
   { coin: "numismatics:spur", value: 1 },
 ];
+
+global.formatPrice = (number) => {
+  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+
 
 // For cases where prices are auto-generated, round
 const roundPrice = (price) => {
@@ -1619,6 +1627,7 @@ global.plorts = [
   { type: "splendid_slimes:bony", value: 192 },
   { type: "splendid_slimes:rotting", value: 192 },
   { type: "splendid_slimes:webby", value: 184 },
+  { type: "splendid_slimes:juicy", value: 200 },
   { type: "splendid_slimes:puddle", value: 224 },
   { type: "splendid_slimes:boomcat", value: 256 },
   { type: "splendid_slimes:all_seeing", value: 288 },
@@ -1633,6 +1642,7 @@ global.plorts = [
   { type: "splendid_slimes:phantom", value: 1024 },
   { type: "splendid_slimes:orby", value: 1280 },
   { type: "splendid_slimes:minty", value: 1280 },
+  { type: "splendid_slimes:sparkcat", value: 1400 },
   { type: "splendid_slimes:gold", value: 2048 },
 ];
 

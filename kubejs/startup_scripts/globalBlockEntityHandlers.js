@@ -278,6 +278,15 @@ global.handleBERightClick = (
   }
 };
 
+global.setDebt = (server, UUID, amount) => {
+  for (let index = 0; index < server.persistentData.debts.length; index++) {
+    if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
+      server.persistentData.debts[index].amount = amount;
+      break;
+    }
+  }
+};
+
 const getOpposite = (facing, pos) => {
   switch (facing) {
     case "north":

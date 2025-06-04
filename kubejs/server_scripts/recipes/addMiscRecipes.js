@@ -36,7 +36,7 @@ ServerEvents.recipes((e) => {
     g: "minecraft:glass",
     c: "minecraft:copper_ingot",
   });
-  
+
   // Greenhouse glass
   e.shaped("moreminecarts:chiseled_organic_glass", [" C ", "ege", " C "], {
     C: "numismatics:crown",
@@ -201,6 +201,13 @@ ServerEvents.recipes((e) => {
     G: "society:raisins",
     f: "society:fire_quartz",
     p: "society:pine_tar",
+  });
+  e.shaped("society:recycling_machine", ["LGL", "fbf", "LIL"], {
+    b: "minecraft:barrel",
+    L: "meadow:fire_log",
+    G: "numismatics:crown",
+    f: "society:fire_quartz",
+    I: "minecraft:iron_block",
   });
   // Battery
   e.shaped("society:crystalarium", ["SiS", "iDi", "SbS"], {

@@ -968,11 +968,11 @@
 		{
 			dependencies: ["5C9C7A5A88613109"]
 			description: [
-				"Slimes you capture in the wild are feral and require building trust! Every time they eat, their &6happiness&r will increase. It will increase even more if they're surrounded by similar types of Slimes."
+				"Slimes you capture in the wild are feral and require building trust! Every time they eat, their &6happiness&r will increase. It will increase even more if they're surrounded by similar types of Slimes"
+				""
+				"Happiness decreases when Slimes are hungry or crowded (more than &67&r in an area)."
 				""
 				"When unhappy, Slimes may cause effects to their surroundings. The more valuable their Plorts are, the more deadly they may be..."
-				""
-				"Incubated Slimes are less fussy and start out in a neutral happiness state."
 			]
 			icon: {
 				Count: 1

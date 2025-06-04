@@ -4,14 +4,14 @@
     "item": "splendid_slimes:plort",
     "nbt": {
       "plort": {
-        "id": "splendid_slimes:bitwise"
+        "id": "splendid_slimes:sparkcat"
       }
     }
   },
   "results": [
     {
       "item": "society:sparkstone",
-      "count": 8,
+      "count": 16,
       "weight": 12
     }, 
     {

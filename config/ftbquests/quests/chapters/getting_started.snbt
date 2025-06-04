@@ -274,7 +274,7 @@
 				type: "checkmark"
 			}]
 			title: "Starting Your Village"
-			x: 7.0d
+			x: 7.5d
 			y: -1.5d
 		}
 		{
@@ -316,7 +316,7 @@
 				type: "item"
 			}]
 			title: "Early Game Storage"
-			x: 8.5d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -486,7 +486,7 @@
 				}
 			]
 			title: "Constructing a Farmhouse"
-			x: 9.5d
+			x: 10.0d
 			y: -1.5d
 		}
 		{
@@ -634,8 +634,8 @@
 			description: [
 				"&6Villagers&r can be tough to move around. You can carry them by &6shift + right clicking&r when both hands are empty. This also works on animals too!"
 				""
-				"If you ever run out of &6Villager Spawn Crates&r, more can be purchased from the "
-				"{ \"text\": \"Market.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6ADD884F3FFE5D42\" } }"
+				"If you're out of &6Villager Spawn Crates&r, "
+				"{ \"text\": \"more can be bought from the Market.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6ADD884F3FFE5D42\" } }"
 			]
 			icon: "minecraft:villager_spawn_egg"
 			id: "443F42C8AFDA0C36"
@@ -650,7 +650,36 @@
 				type: "item"
 			}]
 			title: "Managing Villagers"
-			x: 7.0d
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2134CA6B3880D089"
+				"73A85902CE35A43A"
+			]
+			description: [
+				"Some biomes such as &6Savannas&r and &6Jungles&r will always be treated as &6Summer&r for crop growth only. They will be marked as \"Wet Season\" and \"Dry Season\"."
+				""
+				"This can be used to create a secondary farm that has no need to worry about seasons!"
+				""
+				"The same applies to frozen biomes for &6Winter&r."
+			]
+			icon: "atmospheric:sun_pottery_sherd"
+			id: "7D1394F6356086D0"
+			rewards: [{
+				id: "03D8946C4D97A2B3"
+				item: "beachparty:coconut_cocktail"
+				type: "item"
+			}]
+			tasks: [{
+				biome: "#sereneseasons:tropical_biomes"
+				id: "62FF92E353562969"
+				title: "Visit a Summer Biome"
+				type: "biome"
+			}]
+			title: "Eternal Summer"
+			x: 6.0d
 			y: 0.0d
 		}
 	]

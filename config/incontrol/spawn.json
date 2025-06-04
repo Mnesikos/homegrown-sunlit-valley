@@ -76,11 +76,7 @@
     "maxheight": 50,
     "speedmultiply": 1.2,
     "random": 0.4,
-    "armorhelmet": [
-      "simplehats:santaclaus",
-      "simplehats:frozenhead",
-      "minecraft:ice"
-    ],
+    "armorhelmet": ["simplehats:santaclaus", "simplehats:frozenhead", "minecraft:ice"],
     "helditem": [
       "2=simplehats:hatscraps_festive",
       "1=simplehats:hatbag_festive",

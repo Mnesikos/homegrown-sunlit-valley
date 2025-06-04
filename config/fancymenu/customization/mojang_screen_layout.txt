@@ -7,7 +7,7 @@ layout-meta {
   is_enabled = true
   randommode = false
   randomgroup = 1
-  randomonlyfirsttime = false
+  randomonlyfirsttime = true
   layout_index = 0
   [loading_requirement_container_meta:bb97eb07-4406-4cd5-a52d-f3edbf871033-1737123955533] = [groups:][instances:]
 }

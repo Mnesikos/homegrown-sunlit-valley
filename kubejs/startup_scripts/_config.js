@@ -11,5 +11,13 @@ global.animalInteractionCooldown = 12000;
 /** 
  * Only server needs to change this
  * Replace true with false below if you want to remove the fishing minigame!
+ * Fish will no longer have quality and you won't get the extra loot chests
  */
 global.enableFishingMinigame = true
+
+/**
+ * Only server needs to change this
+ * Enables a small fee when a player dies to discourage players from dying on purpose.
+ * Setting this to false is not recommended.
+ */
+global.enableDeathDebt = true

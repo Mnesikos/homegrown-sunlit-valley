@@ -174,20 +174,41 @@ const sendProgressMessage = (clickEvent, recipes, blockStage, stageCount, machin
   );
 };
 
-BlockEvents.rightClicked(global.artisanMachineIds, (e) => {
-  const { block, hand } = e;
-  if (hand == "OFF_HAND") return;
-  const machine = global.artisanMachineDefinitions.filter((obj) => {
-    return obj.id === block.id;
-  })[0];
-  if (block.properties.get("mature").toLowerCase() === "false") {
-    sendProgressMessage(
-      e,
-      machine.recipes,
-      block.properties.get("stage").toLowerCase(),
-      machine.stageCount,
-      machine.id,
-      block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1
-    );
+BlockEvents.rightClicked(
+  [
+    "society:bait_maker",
+    "society:aging_cask",
+    "society:ancient_cask",
+    "society:ancient_goddess_statue",
+    "society:charging_rod",
+    "society:crystalarium",
+    "society:deluxe_worm_farm",
+    "society:dehydrator",
+    "society:espresso_machine",
+    "society:fish_pond",
+    "society:fish_smoker",
+    "society:loom",
+    "society:mayonnaise_machine",
+    "society:preserves_jar",
+    "society:seed_maker",
+    "society:tapper",
+    "society:recycling_machine",
+  ],
+  (e) => {
+    const { block, hand } = e;
+    if (hand == "OFF_HAND") return;
+    const machine = global.artisanMachineDefinitions.filter((obj) => {
+      return obj.id === block.id;
+    })[0];
+    if (block.properties.get("mature").toLowerCase() === "false") {
+      sendProgressMessage(
+        e,
+        machine.recipes,
+        block.properties.get("stage").toLowerCase(),
+        machine.stageCount,
+        machine.id,
+        block.properties.get("working").toLowerCase() === "false" ? machine.maxInput : -1
+      );
+    }
   }
-});
+);

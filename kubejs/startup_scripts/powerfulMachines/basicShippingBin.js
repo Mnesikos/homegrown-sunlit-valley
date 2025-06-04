@@ -28,9 +28,7 @@ StartupEvents.registry("block", (event) => {
     .create("shippingbin:basic_shipping_bin", "cardinal")
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
-      item.tooltip(
-        Text.gray("Sells items every morning and leaves coins in its inventory")
-      );
+      item.tooltip(Text.gray("Sells items every morning and leaves coins in its inventory"));
       item.modelJson({
         parent: "shippingbin:block/shipping_bin",
       });
@@ -48,12 +46,16 @@ StartupEvents.registry("block", (event) => {
           let value = 0;
           let playerAttributes;
           let binPlayer;
+          let binPlayerUUID;
+          let binDebt;
+          let debtPaid
           let removedSlots = [];
-          let calculationResults ;
+          let calculationResults;
           level.players.forEach((p) => {
             if (p.getUuid().toString() === block.getEntityData().data.owner) {
               playerAttributes = p.nbt.Attributes;
               binPlayer = p;
+              binPlayerUUID = binPlayer.getUuid().toString();
             }
           });
           if (playerAttributes) {
@@ -63,18 +65,56 @@ StartupEvents.registry("block", (event) => {
               playerAttributes,
               true
             );
-            value = calculationResults.calculatedValue
-            removedSlots = calculationResults.removedItems
+            value = calculationResults.calculatedValue;
+            removedSlots = calculationResults.removedItems;
             if (value > 0) {
+              binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
+                return debt.uuid === binPlayerUUID;
+              });
+              if (binDebt.length > 0) {
+                if (value >= binDebt) {
+                  binPlayer.server.runCommandSilent(
+                    `immersivemessages sendcustom ${
+                      binPlayer.username
+                    } {anchor:7,background:1,color:"#55FF55",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 You paid off your :coin: ${global.formatPrice(
+                      binDebt[0].amount
+                    )} §7Debt!`
+                  );
+
+                  value = value - binDebt[0].amount;
+                  debtPaid = binDebt[0].amount
+                  global.setDebt(binPlayer.server, binPlayerUUID, 0);
+                } else {
+                  binPlayer.server.runCommandSilent(
+                    `immersivemessages sendcustom ${
+                      binPlayer.username
+                    } {anchor:7,background:1,color:"#FF5555",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${global.formatPrice(
+                      binDebt[0].amount - value
+                    )} §7of your debt paid off...`
+                  );
+                  value = 0;
+                  debtPaid = binDebt[0].amount - value
+                  global.setDebt(binPlayer.server, binPlayerUUID, binDebt[0].amount - value);
+                }
+              }
               value = Math.round(value);
               let outputs = calculateCoinsFromValue(value, [], basicCoinMap);
+              if (!outputs) outputs = []
+              outputs.push(
+       Item.of(
+        "candlelight:note_paper_written",
+        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+Your profits were used to pay off your debt!
+
+:coin: ${global.formatPrice(debtPaid)} paid out of your ${global.formatPrice(binDebt[0].amount)}"],title:"Hospital Receipt"}`
+      )
+              );
               if (debug) {
                 console.log(`slots: ${slots}`);
                 console.log(`countNonEmpty: ${inventory.countNonEmpty()}`);
                 console.log(`RemovedSlots: ${removedSlots.length}`);
-                console.log(
-                  `calculateSlotsNeeded: ${calculateSlotsNeeded(outputs)}`
-                );
+                console.log(`calculateSlotsNeeded: ${calculateSlotsNeeded(outputs)}`);
               }
               if (
                 slots -
@@ -91,10 +131,7 @@ StartupEvents.registry("block", (event) => {
                     binPlayer.username
                   } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${value
                     .toString()
-                    .replace(
-                      /\B(?=(\d{3})+(?!\d))/g,
-                      ","
-                    )} §7worth of goods sold`
+                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §7worth of goods sold`
                 );
                 for (let i = 0; i < removedSlots.length; i++) {
                   inventory.setStackInSlot(removedSlots[i], "minecraft:air");
@@ -104,14 +141,10 @@ StartupEvents.registry("block", (event) => {
                   for (let index = 0; index <= count; index += 64) {
                     let difference = count - index;
                     for (let i = 0; i < slots; i++) {
-                      if (
-                        inventory.getStackInSlot(i).item.id === "minecraft:air"
-                      ) {
+                      if (inventory.getStackInSlot(i).item.id === "minecraft:air") {
                         inventory.setStackInSlot(
                           i,
-                          Item.of(
-                            `${difference > 64 ? 64 : difference}x ${coin}`
-                          )
+                          Item.of(`${difference > 64 ? 64 : difference}x ${coin}`)
                         );
                         break;
                       }
@@ -139,13 +172,9 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     });
 });
