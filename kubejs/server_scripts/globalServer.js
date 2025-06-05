@@ -11,6 +11,7 @@ global.mainUiElementIds = [
   "fishName",
   "population",
   "tapperMessage",
+  "skullTeleportMessage"
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -356,7 +357,7 @@ global.handleFee = (server, player, reason) => {
 
     amountToDeduct = Math.min(Math.round(balance * 0.1), maxFee);
   }
-    if (reason === "skull_cavern") {
+  if (reason === "skull_cavern") {
     minimumFee = 1024;
     maxFee = 8192;
 
@@ -403,4 +404,17 @@ We\'ve taken it out of your bank account for convenience. Be careful next time!
       )
     );
   }
+};
+
+global.teleportHome = (player, server) => {
+  let respawnPosition = player.getRespawnPosition();
+  player.teleportTo(
+    server.getLevel(player.getRespawnDimension().location()),
+    respawnPosition.x,
+    respawnPosition.y,
+    respawnPosition.z,
+    [],
+    0.0,
+    0.0
+  );
 };

@@ -27,12 +27,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "splendid_slimes:slime_heart",
+          "name": "splendid_slimes:plort",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{slime:{id:\"splendid_slimes:phantom\"}}"
+              "tag": "{plort:{id:\"splendid_slimes:phantom\"}}"
             }
           ]
         },

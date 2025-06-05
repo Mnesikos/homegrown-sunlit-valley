@@ -378,6 +378,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:animal_feed",
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
+  tooltip.add(
+    "society:animal_feed_sack",
+    Text.red("Too large to feed farm animals manually or using Feeding Troughs")
+  );
   tooltip.add("society:magic_shears", Text.gray("Harvests drops from farm animals"));
   tooltip.add("vintagedelight:deluxe_burger", Text.gray("Burger? I hardly..."));
   tooltip.add("society:magic_shears", Text.gray("with only a little discomfort!"));
@@ -416,7 +420,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");
   tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
   tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
-  tooltip.add("mining_dimension:teleporter", Text.gold(":classical_building: Vault reward"));
+  tooltip.add("society:skull_cavern_teleporter", Text.gold(":classical_building: Vault reward"));
   tooltip.add("relics:magic_mirror", Text.gold(":classical_building: Crafts Room reward"));
   tooltip.add(
     "moreminecarts:chiseled_organic_glass",
@@ -441,6 +445,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
   tooltip.add("farmersdelight:tomato_seeds", Text.red("Quality of seed has no effect"));
+  tooltip.add("relics:jellyfish_necklace", Text.red("Hurts nearby animals when worn!"));
 
   const craftingMaterials = [
     "society:fire_quartz",

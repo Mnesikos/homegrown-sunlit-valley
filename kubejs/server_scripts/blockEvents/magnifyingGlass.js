@@ -2,7 +2,6 @@ console.info("[SOCIETY] neptuniumHoe.js loaded");
 const DELAY = 10;
 const REPETITIONS = 10;
 
-// TODO: fish pond
 const magnifyingGlassBlocks = [
   { id: "society:auto_grabber", radius: 5, includeY: true },
   { id: "society:artisan_hopper", radius: 3, includeY: true },

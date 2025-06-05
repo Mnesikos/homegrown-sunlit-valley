@@ -356,7 +356,7 @@
 			subtitle: "Complete the Vault Bundle"
 			tasks: [{
 				id: "142ACE7B003D9236"
-				item: "mining_dimension:teleporter"
+				item: "society:skull_cavern_teleporter"
 				type: "item"
 			}]
 			title: "The Skull Cavern"

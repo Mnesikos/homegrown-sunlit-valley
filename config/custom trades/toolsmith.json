@@ -239,7 +239,7 @@
     },
     {
       "offer": {
-        "itemKey": "mining_dimension:teleporter",
+        "itemKey": "society:skull_cavern_teleporter",
         "amount": 1,
         "priceModifier": 0
       },

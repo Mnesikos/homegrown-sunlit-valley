@@ -191,12 +191,6 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
   return machineData;
 };
 
-/**
- * TODO:
- * - Make sure inventory below has space to insert
- * - Check sparkstone before both operations
- * - Consume sparkstone on insert
- */
 global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   const { level, block, inventory } = tickEvent;
   const server = level.server;
@@ -223,7 +217,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             ? chargingRodOutput
             : global.getArtisanRecipe(recipes, artisanMachine).output[0]
         ) &&
-        global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+        global.hasInventoryItems(inventory, "society:sparkstone", 1)
       ) {
         server.runCommandSilent(`playsound stardew_fishing:dwop block @a ${x} ${y} ${z}`);
         if (artisanMachine.id === "society:charging_rod") {
@@ -273,6 +267,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               player.stages
             );
           }
+          global.useInventoryItems(inventory, "society:sparkstone", 1);
           let specialItemResultCode = global.insertBelow(level, block, machineOutput);
           if (specialItemResultCode == 1) {
             level.spawnParticles(
@@ -296,6 +291,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       if (
         recipes &&
         newProperties.get("working").toLowerCase() === "false" &&
+        global.hasInventoryItems(inventory, "society:sparkstone", 1) &&
         aboveBlock.inventory &&
         !aboveBlock.inventory.isEmpty()
       ) {
@@ -318,6 +314,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               server
             );
             if (outputCount > 0) {
+              global.useInventoryItems(inventory, "society:sparkstone", 1);
               level.runCommandSilent(`playsound create:fwoomp block @a ${x} ${y} ${z} 0.8`);
               aboveBlock.inventory.extractItem(i, outputCount, false);
               break;

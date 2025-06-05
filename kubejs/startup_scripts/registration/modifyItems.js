@@ -145,4 +145,35 @@ ItemEvents.modification((e) => {
         food.saturation(0.5);
       })
   );
+  const netheriteTools = [
+    "minecraft:netherite_axe",
+    "minecraft:netherite_hoe",
+    "minecraft:netherite_pickaxe",
+    "minecraft:netherite_shovel",
+  ];
+  netheriteTools.forEach((armor) => {
+    e.modify(armor, (item) => {
+      item.setDigSpeed(item.digSpeed + 1);
+      item.setAttackDamage(item.attackDamage + 2);
+    });
+  });
+  e.modify("minecraft:netherite_sword", (item) => {
+    item.setAttackDamage(10);
+  });
+  e.modify("minecraft:netherite_helmet", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(4);
+  });
+  e.modify("minecraft:netherite_chestplate", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(9);
+  });
+  e.modify("minecraft:netherite_leggings", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(7);
+  });
+  e.modify("minecraft:netherite_boots", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(3);
+  });
 });

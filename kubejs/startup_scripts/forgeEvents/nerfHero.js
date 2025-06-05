@@ -7,7 +7,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.living.MobEffectEvent$Appli
     [
       "effect.minecraft.hero_of_the_village",
       "effect.vinery.trading",
-      "brewery:pintcharisma",
+      "effect.brewery.pintcharisma",
     ].includes(event.getEffectInstance().getEffect().getDescriptionId()) &&
     event.getEntity().getType().toString() == "minecraft:player"
   ) {

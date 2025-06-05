@@ -86,7 +86,7 @@ baitFish.forEach((fish) => {
     }
     global.baitMakerRecipes.push({
       input: fish,
-      output: [`6x society:${fishId}_bait`],
+      output: [`3x society:${fishId}_bait`],
     });
   }
 });

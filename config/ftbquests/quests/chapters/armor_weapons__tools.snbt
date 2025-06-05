@@ -155,6 +155,7 @@
 		}
 		{
 			dependencies: ["0ACB2E342421B74E"]
+			description: ["&6Gold&r armors have increased protection and durability to &6Iron&r, unlike what you might expect in vanilla Minecraft."]
 			icon: {
 				Count: 1
 				id: "minecraft:golden_chestplate"
@@ -320,6 +321,7 @@
 		}
 		{
 			dependencies: ["38A0B8D54F85B846"]
+			description: ["&6Iridium&r armors are the equivalent of &6Netherite&r in vanilla minecraft, with slightly increased protection."]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_chestplate"
@@ -559,6 +561,7 @@
 		}
 		{
 			dependencies: ["08241E18191275AE"]
+			description: ["&6Gold&r tools have increased attack damage, dig speed, and durability to &6Iron&r, unlike what you might expect in vanilla Minecraft."]
 			icon: {
 				Count: 1
 				id: "minecraft:golden_pickaxe"
@@ -745,6 +748,7 @@
 		}
 		{
 			dependencies: ["54301E900FFA56D7"]
+			description: ["&6Iridium&r tools and weapons are the equivalent of &6Netherite&r in vanilla minecraft, with slightly increased attack damage and dig speed."]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_pickaxe"

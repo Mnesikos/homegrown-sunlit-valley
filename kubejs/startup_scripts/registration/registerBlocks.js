@@ -97,43 +97,22 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:needs_diamond_tool")
     .model("society:block/omni_geode_node");
 
-  e.create("society:iridium_ore")
-    .soundType("stone")
-    .hardness(2.5)
-    .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/iridium_ore");
-
-  e.create("society:deepslate_iridium_ore")
-    .soundType("stone")
-    .hardness(2.5)
-    .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/deepslate_iridium_ore");
-
-  e.create("society:sparkstone_ore")
-    .soundType("stone")
-    .hardness(2.5)
-    .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/sparkstone_ore");
-
-  e.create("society:deepslate_sparkstone_ore")
-    .soundType("stone")
-    .hardness(2.5)
-    .resistance(1.0)
-    .requiresTool(true)
-    .tagBlock("minecraft:mineable/pickaxe")
-    .tagBlock("minecraft:needs_diamond_tool")
-    .model("society:block/deepslate_sparkstone_ore");
-
   // Skull Cavern
+  e.create("society:skull_cavern_teleporter")
+    .texture("up", "society:block/teleporter_top")
+    .texture("down", "society:block/teleporter_bottom")
+    .texture("north", "society:block/teleporter_side")
+    .texture("east", "society:block/teleporter_side")
+    .texture("south", "society:block/teleporter_side")
+    .texture("west", "society:block/teleporter_side")
+    .texture("particle", "society:block/teleporter_side")
+    .mapColor("stone")
+    .soundType("stone")
+    .hardness(1.0)
+    .resistance(1.0)
+    .lightLevel(1)
+    .requiresTool(false);
+
   const createBoulder = (type) => {
     e.create(`society:${type}_boulder`)
       .texture("up", `society:block/${type}_boulder_top`)
@@ -171,6 +150,42 @@ StartupEvents.registry("block", (e) => {
   createSkullVariant("blackstone", "minecraft:block/blackstone");
   createSkullVariant("end_stone", "minecraft:block/end_stone");
 
+  e.create("society:iridium_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/iridium_ore");
+
+  e.create("society:deepslate_iridium_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_iridium_ore");
+
+  e.create("society:sparkstone_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/sparkstone_ore");
+
+  e.create("society:deepslate_sparkstone_ore")
+    .soundType("stone")
+    .hardness(2.5)
+    .resistance(1.0)
+    .requiresTool(true)
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_diamond_tool")
+    .model("society:block/deepslate_sparkstone_ore");
+
   e.create(`society:sparkstone_block`)
     .soundType("amethyst")
     .hardness(2)
@@ -199,7 +214,6 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .texture("particle", "quark:block/cocoa_beans_sack");
-
   e.create("herbalbrews:yerba_mate_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf2")
     .mapColor("grass")

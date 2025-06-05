@@ -48,7 +48,8 @@ StartupEvents.registry("block", (event) => {
           let binPlayer;
           let binPlayerUUID;
           let binDebt;
-          let debtPaid
+          let debtPaid;
+          let totalDebt;
           let removedSlots = [];
           let calculationResults;
           level.players.forEach((p) => {
@@ -65,51 +66,43 @@ StartupEvents.registry("block", (event) => {
               playerAttributes,
               true
             );
-            value = calculationResults.calculatedValue;
+            value = Math.round(calculationResults.calculatedValue);
             removedSlots = calculationResults.removedItems;
             if (value > 0) {
               binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
                 return debt.uuid === binPlayerUUID;
               });
               if (binDebt.length > 0) {
-                if (value >= binDebt) {
+                totalDebt = binDebt[0].amount;
+                if (value >= totalDebt) {
+                  value = value - totalDebt;
+                  debtPaid = totalDebt;
                   binPlayer.server.runCommandSilent(
                     `immersivemessages sendcustom ${
                       binPlayer.username
                     } {anchor:7,background:1,color:"#55FF55",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 You paid off your :coin: ${global.formatPrice(
-                      binDebt[0].amount
-                    )} §7Debt!`
+                      debtPaid
+                    )} §7debt!`
                   );
 
-                  value = value - binDebt[0].amount;
-                  debtPaid = binDebt[0].amount
                   global.setDebt(binPlayer.server, binPlayerUUID, 0);
                 } else {
+                  debtPaid = value;
+                  value = 0;
                   binPlayer.server.runCommandSilent(
                     `immersivemessages sendcustom ${
                       binPlayer.username
                     } {anchor:7,background:1,color:"#FF5555",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${global.formatPrice(
-                      binDebt[0].amount - value
+                      debtPaid
                     )} §7of your debt paid off...`
                   );
-                  value = 0;
-                  debtPaid = binDebt[0].amount - value
-                  global.setDebt(binPlayer.server, binPlayerUUID, binDebt[0].amount - value);
+                  global.setDebt(binPlayer.server, binPlayerUUID, totalDebt - debtPaid);
                 }
               }
               value = Math.round(value);
               let outputs = calculateCoinsFromValue(value, [], basicCoinMap);
-              if (!outputs) outputs = []
-              outputs.push(
-       Item.of(
-        "candlelight:note_paper_written",
-        `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+              if (!outputs) outputs = [];
 
-Your profits were used to pay off your debt!
-
-:coin: ${global.formatPrice(debtPaid)} paid out of your ${global.formatPrice(binDebt[0].amount)}"],title:"Hospital Receipt"}`
-      )
-              );
               if (debug) {
                 console.log(`slots: ${slots}`);
                 console.log(`countNonEmpty: ${inventory.countNonEmpty()}`);
@@ -151,6 +144,27 @@ Your profits were used to pay off your debt!
                     }
                   }
                 });
+                if (debtPaid > 0) {
+                  for (let j = 0; j < inventory.slots; j++) {
+                    if (inventory.getStackInSlot(j) === Item.of("minecraft:air")) {
+                      inventory.insertItem(
+                        j,
+                        Item.of(
+                          "candlelight:note_paper_written",
+                          `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
+
+${binPlayer.username}, your profits were used to pay off your debt!
+
+:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
+                            totalDebt
+                          )} debt."],title:"Debt Payement Receipt"}`
+                        ),
+                        false
+                      );
+                      break;
+                    }
+                  }
+                }
               } else {
                 binPlayer.server.runCommandSilent(
                   `playsound stardew_fishing:fish_escape block @a ${binPlayer.x} ${binPlayer.y} ${binPlayer.z} 0.3`

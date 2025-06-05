@@ -607,20 +607,20 @@ ServerEvents.recipes((e) => {
     C: "minecraft:copper_block",
     l: "#society:raw_logs",
   });
-  e.shaped("society:gold_sprinkler", ["efe", "GsG", " f "], {
-    s: "society:iron_sprinkler",
+  e.shaped("society:gold_sprinkler", ["fef", "GlG", " l "], {
+    l: "#society:raw_logs",
     G: "minecraft:gold_block",
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
-  e.shaped("society:diamond_sprinkler", ["n n", "bsb", " D "], {
-    s: "society:gold_sprinkler",
+  e.shaped("society:diamond_sprinkler", ["nDn", "blb", " l "], {
+    l: "#society:raw_logs",
     D: "minecraft:diamond_block",
     b: "society:battery",
     n: "aquaculture:neptunium_nugget",
   });
-  e.shaped("society:netherite_sprinkler", ["n n", "jsj", " N "], {
-    s: "society:diamond_sprinkler",
+  e.shaped("society:netherite_sprinkler", ["nNn", "jlj", " l "], {
+    l: "#society:raw_logs",
     j: "society:jade",
     N: "minecraft:netherite_ingot",
     n: "aquaculture:neptunium_ingot",
