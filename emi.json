@@ -11,6 +11,18 @@
     }
   ],
   "lookup_history": [
+    "item:beautify:botanist_workbench",
+    "item:society:cornucopia",
+    "item:society:tapper",
+    "item:minecraft:netherite_axe{Damage:928}",
+    "item:society:ancient_fruit_seed",
+    "item:vinery:red_grape_seeds",
+    "item:vinery:grapevine_pot",
+    "item:society:dried_toadstool",
+    "item:ribbits:toadstool",
+    "item:farm_and_charm:flour",
+    "item:farm_and_charm:flour_bag",
+    "item:create:wheat_flour",
     "item:society:gold_sprinkler",
     "item:society:beaked_herring_bait",
     "item:society:diamond_sprinkler",
@@ -85,7 +97,6 @@
     "item:minecraft:flint_and_steel{Damage:0}",
     "item:tanukidecor:small_clock_tower_dial",
     "item:society:jade",
-    "item:society:ancient_fruit_seed",
     "item:society:ancient_cog",
     "item:society:ancient_fruit",
     "item:society:pristine_ruby",
@@ -341,7 +352,6 @@
       "id": "society:charging_rod",
       "amount": 64
     },
-    "item:society:tapper",
     "item:society:omni_geode",
     "item:society:pine_tar",
     "item:society:aging_cask",
@@ -1164,7 +1174,6 @@
     "item:create:steam_engine",
     "item:society:large_goat_milk",
     "item:society:combat_quarterly",
-    "item:society:cornucopia",
     "item:society:truffle_oil",
     "item:society:energy_drink",
     "item:society:fish_radar",
@@ -1274,16 +1283,7 @@
     "item:oreganized:molten_lead_bucket",
     "item:oreganized:silver_mirror",
     "item:oreganized:electrum_upgrade_smithing_template",
-    "item:rottencreatures:burned_head",
-    "item:rottencreatures:swampy_head",
-    "item:rottencreatures:zap_head",
-    "item:rottencreatures:dead_beard_head",
-    "item:rottencreatures:glacial_hunter_head",
-    "item:rottencreatures:undead_miner_head",
-    "item:minecraft:potion{Potion:\"rottencreatures:corrupted\"}",
-    "item:rottencreatures:corrupted_wart",
-    "item:create:deployer",
-    "item:create:encased_fan"
+    "item:rottencreatures:burned_head"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1297,9 +1297,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

@@ -26,6 +26,7 @@ global.dehydratableMushrooms = [
   "minecraft:crimson_fungus",
   "minecraft:warped_fungus",
   "quark:glow_shroom",
+  "ribbits:toadstool",
   "species:alphacene_mushroom",
   "verdantvibes:bracket_mushroom",
 ];

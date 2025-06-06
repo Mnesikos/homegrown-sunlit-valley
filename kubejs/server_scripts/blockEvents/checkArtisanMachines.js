@@ -185,7 +185,6 @@ BlockEvents.rightClicked(
     "society:deluxe_worm_farm",
     "society:dehydrator",
     "society:espresso_machine",
-    "society:fish_pond",
     "society:fish_smoker",
     "society:loom",
     "society:mayonnaise_machine",

@@ -3,18 +3,10 @@ console.info("[SOCIETY] registerItems.js loaded");
 StartupEvents.registry("item", (e) => {
   e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
   e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
-  e.create("herbalbrews:water_cup")
-    .texture("society:item/water_cup")
-    .maxStackSize(16);
+  e.create("herbalbrews:water_cup").texture("society:item/water_cup").maxStackSize(16);
   e.create("justhammers:small_core").texture("society:item/small_core");
   e.create("buildinggadgets2:gadget_core").texture("society:item/gadget_core");
-  const tiers = [
-    "Stone, Leather, Chainmail, and Cotton",
-    "Iron",
-    "Gold",
-    "Diamond",
-    "Neptunium",
-  ];
+  const tiers = ["Stone, Leather, Chainmail, and Cotton", "Iron", "Gold", "Diamond", "Neptunium"];
   tiers.forEach((tier, index) => {
     if (index > 0) {
       e.create(`society:${tier.toLowerCase()}_upgrade_smithing_template`)
@@ -41,9 +33,7 @@ StartupEvents.registry("item", (e) => {
     .displayName(Text.yellow(":crystal_ball: Fantasy Dust"));
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:broken_clock").texture("society:item/broken_clock");
-  e.create("society:sea_biscut")
-    .texture("society:item/sea_biscut")
-    .displayName("Sea Biscuit");
+  e.create("society:sea_biscut").texture("society:item/sea_biscut").displayName("Sea Biscuit");
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
   e.create("society:ancient_cog").texture("society:item/ancient_cog");
@@ -97,21 +87,12 @@ StartupEvents.registry("item", (e) => {
     .useAnimation("drink");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
   e.create("society:furniture_box").texture("society:item/furniture_box");
-  const fantasyBoxes = [
-    "nordic",
-    "dunmer",
-    "venthyr",
-    "bone",
-    "royal",
-    "necrolord",
-  ];
+  const fantasyBoxes = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
   fantasyBoxes.forEach((theme) => {
     e.create(`society:fantasy_box_${theme}`)
       .texture(`society:item/fantasy_box_${theme}`)
       .tooltip(Text.gray("Right click to open"))
-      .displayName(
-        `Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`
-      );
+      .displayName(`Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
   e.create("society:sap").texture("society:item/sap");
@@ -134,32 +115,17 @@ StartupEvents.registry("item", (e) => {
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:bank_meter").texture("society:item/bank_meter");
   e.create("society:fish_radar").texture("society:item/fish_radar");
-  e.create("society:car_key")
-    .texture("society:item/car_key")
-    .maxStackSize(1)
-    .rarity("epic");
-  e.create("society:kinetic_blueprint").texture(
-    "society:item/kinetic_blueprint"
-  );
-  e.create("society:botanical_tribute").texture(
-    "society:item/botanical_tribute"
-  );
-  e.create("society:canvas")
-    .texture("society:item/canvas")
-    .displayName("Artisan Canvas");
+  e.create("society:car_key").texture("society:item/car_key").maxStackSize(1).rarity("epic");
+  e.create("society:kinetic_blueprint").texture("society:item/kinetic_blueprint");
+  e.create("society:botanical_tribute").texture("society:item/botanical_tribute");
+  e.create("society:canvas").texture("society:item/canvas").displayName("Artisan Canvas");
   Color.DYE.forEach((color) => {
     e.create(`society:${color}_sheet`).texture(`society:item/sheets/${color}`);
   });
   e.create("society:merino_wool").texture("society:item/merino_wool");
-  e.create("society:enriched_bone_meal").texture(
-    "society:item/enriched_bonemeal"
-  );
-  e.create("crabbersdelight:crab_trap_bait").texture(
-    "society:item/crab_trap_bait"
-  );
-  e.create("crabbersdelight:deluxe_crab_trap_bait").texture(
-    "society:item/deluxe_crab_trap_bait"
-  );
+  e.create("society:enriched_bone_meal").texture("society:item/enriched_bonemeal");
+  e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
+  e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(
@@ -170,43 +136,31 @@ StartupEvents.registry("item", (e) => {
   e.create(`society:crystal_of_regret_farming`)
     .displayName("Crystal of Regret: Farming")
     .texture("society:item/crystal_of_regret")
-    .tooltip(
-      Text.red("Right click to reset Farming skills. Refunds 5 Skill Points")
-    )
+    .tooltip(Text.red("Right click to reset Farming skills. Refunds 5 Skill Points"))
     .color(0, 0x087814);
 
   e.create(`society:crystal_of_regret_husbandry`)
     .displayName("Crystal of Regret: Husbandry")
     .texture("society:item/crystal_of_regret")
-    .tooltip(
-      Text.red("Right click to reset Husbandry skills. Refunds 5 Skill Points")
-    )
+    .tooltip(Text.red("Right click to reset Husbandry skills. Refunds 5 Skill Points"))
     .color(0, 0x4f370d);
 
   e.create(`society:crystal_of_regret_mining`)
     .displayName("Crystal of Regret: Mining")
     .texture("society:item/crystal_of_regret")
-    .tooltip(
-      Text.red("Right click to reset Mining skills. Refunds 5 Skill Points")
-    )
+    .tooltip(Text.red("Right click to reset Mining skills. Refunds 5 Skill Points"))
     .color(0, 0x383735);
 
   e.create(`society:crystal_of_regret_fishing`)
     .displayName("Crystal of Regret: Fishing")
     .texture("society:item/crystal_of_regret")
-    .tooltip(
-      Text.red("Right click to reset Fishing skills. Refunds 5 Skill Points")
-    )
+    .tooltip(Text.red("Right click to reset Fishing skills. Refunds 5 Skill Points"))
     .color(0, 0x1eabd6);
 
   e.create(`society:crystal_of_regret_adventuring`)
     .displayName("Crystal of Regret: Adventuring")
     .texture("society:item/crystal_of_regret")
-    .tooltip(
-      Text.red(
-        "Right click to reset Adventuring skills. Refunds 5 Skill Points"
-      )
-    )
+    .tooltip(Text.red("Right click to reset Adventuring skills. Refunds 5 Skill Points"))
     .color(0, 0x6e1313);
 
   // Artifacts
@@ -395,12 +349,8 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
-  e.create(`society:magnifying_glass`)
-    .texture(`society:item/magnifying_glass`)
-    .maxStackSize(1);
-  e.create(`society:cornucopia`)
-    .texture(`society:item/cornucopia`)
-    .maxStackSize(1);
+  e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`).maxStackSize(1);
+  e.create(`society:cornucopia`).texture(`society:item/cornucopia`).maxStackSize(1);
   e.create("society:relic_trove").texture("society:item/relic_trove");
   e.create("society:artifact_trove").texture("society:item/artifact_trove");
   e.create("society:omni_geode").texture("society:item/omni_geode");
@@ -415,18 +365,14 @@ StartupEvents.registry("item", (e) => {
       );
   });
 
-  e.create("society:frozen_geode").texture(
-    "society:item/frozen_geode/frozen_geode"
-  );
+  e.create("society:frozen_geode").texture("society:item/frozen_geode/frozen_geode");
 
   global.frozenGeodeList.forEach((geode) => {
     e.create(`society:${geode.item.split(":")[1]}`).texture(
       `society:item/frozen_geode/${geode.item.split(":")[1]}`
     );
   });
-  e.create("society:magma_geode").texture(
-    "society:item/magma_geode/magma_geode"
-  );
+  e.create("society:magma_geode").texture("society:item/magma_geode/magma_geode");
 
   global.magmaGeodeList.forEach((geode) => {
     if (geode.item !== "society:fire_quartz")
@@ -469,22 +415,19 @@ StartupEvents.registry("item", (e) => {
       food.saturation(0.5);
       food.fastToEat(true);
     });
-  e.create(`society:dried_shimmering_mushrooms`).texture(
-    `society:item/dried_shimmering_mushrooms`
-  );
+  e.create(`society:dried_shimmering_mushrooms`).texture(`society:item/dried_shimmering_mushrooms`);
   const dehydratorMushroomMapping = [
     { item: "minecraft:brown_mushroom", hex: 0xca9777 },
     { item: "minecraft:red_mushroom", hex: 0xfb2929 },
     { item: "minecraft:crimson_fungus", hex: 0xa82812 },
     { item: "minecraft:warped_fungus", hex: 0x14b283 },
     { item: "quark:glow_shroom", hex: 0xc1f0dc },
+    { item: "ribbits:toadstool", hex: 0xab1c2c },
     { item: "species:alphacene_mushroom", hex: 0xecdb74 },
     { item: "verdantvibes:bracket_mushroom", hex: 0x7d563b },
   ];
   global.dehydratableMushrooms.forEach((item) => {
-    const itemHex = dehydratorMushroomMapping.find(
-      (val) => val.item === item
-    )?.hex;
+    const itemHex = dehydratorMushroomMapping.find((val) => val.item === item)?.hex;
     e.create(`society:dried_${item.split(":")[1]}`)
       .texture(`society:item/dried_mushrooms`)
       .color(0, itemHex)
@@ -521,12 +464,9 @@ StartupEvents.registry("item", (e) => {
     { item: "pamhc2trees:lemonitem", hex: 0xf8d035 },
   ];
   global.dehydratableFruits.forEach((item) => {
-    const itemHex = dehydratorFruitMapping.find(
-      (val) => val.item === item
-    )?.hex;
+    const itemHex = dehydratorFruitMapping.find((val) => val.item === item)?.hex;
     let itemId = item.split(":")[1];
-    if (itemId.includes("item"))
-      itemId = itemId.substring(0, itemId.length - 4);
+    if (itemId.includes("item")) itemId = itemId.substring(0, itemId.length - 4);
     e.create(`society:dried_${itemId}`)
       .texture(`society:item/dried_fruit`)
       .color(0, itemHex)
@@ -724,10 +664,7 @@ StartupEvents.registry("item", (e) => {
   global.fish.forEach((fish) => {
     const splitFish = fish.item.split(":");
     let fishId = splitFish[1];
-    if (
-      ["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))
-    )
-      return;
+    if (["barrel", "roe", "meat"].some((denied) => splitFish[1].includes(denied))) return;
     let baseTexturePath = `${splitFish[0]}:item/${splitFish[1]}`;
     if (fishId.includes("raw_")) {
       fishId = fishId.substring(4, fishId.length);
@@ -748,9 +685,7 @@ StartupEvents.registry("item", (e) => {
         food.saturation(2);
       });
     const roeHex = fishRoeMapping.find((val) => val.item === fish.item)?.hex;
-    e.create(`society:${fishId}_roe`)
-      .texture("society:item/roe")
-      .color(0, roeHex);
+    e.create(`society:${fishId}_roe`).texture("society:item/roe").color(0, roeHex);
     e.create(`society:aged_${fishId}_roe`)
       .texture("society:item/aged_roe")
       .color(0, roeHex)

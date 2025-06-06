@@ -28,7 +28,6 @@ global.formatPrice = (number) => {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
-
 // For cases where prices are auto-generated, round
 const roundPrice = (price) => {
   for (let i = 0; i < global.coinMap.length; i++) {
@@ -233,6 +232,7 @@ global.artifacts = [
   { item: "society:beemonican_seal", value: 2560 },
   { item: "society:princess_hairbrush", value: 3584 },
   { item: "society:heart_of_neptunium", value: 4096 },
+  { item: "society:token_of_unity", value: 3 },
 ];
 
 // Relics
@@ -394,6 +394,7 @@ global.crops = [
   { item: "minecraft:sugar_cane", value: 12 },
   { item: "quark:sugar_cane_block", value: 108 },
   { item: "brewery:hops", value: 21 },
+  { item: "ribbits:toadstool", value: 20 },
   { item: "quark:glow_shroom", value: 24 },
   { item: "farmersdelight:rice", value: 16 },
   { item: "farmersdelight:rice_bag", value: 144 },
@@ -621,6 +622,7 @@ global.mushrooms = [
   { item: "verdantvibes:bracket_mushroom", value: 32 },
   { item: "species:alphacene_mushroom", value: 32 },
   { item: "quark:glow_shroom", value: 24 },
+  { item: "ribbits:toadstool", value: 20 },
   // Tag equivalent
   { item: "botania:shimmering_mushrooms", value: 16 },
 ];

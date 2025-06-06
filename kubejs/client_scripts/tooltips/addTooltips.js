@@ -113,6 +113,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
     },
+        {
+      item: "society:token_of_unity",
+      tooltip: "I love making mazes! I'm going to design the biggest maze ever!",
+    },
     {
       item: "society:mini_oni_eye",
       tooltip: "Fits nicely on a banana",
