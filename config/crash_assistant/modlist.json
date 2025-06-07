@@ -295,9 +295,9 @@
     "modId": "dew_drop_daily_weather",
     "version": "1.1.1"
   },
-  "dew_drop_farmland_growth-2.1.jar": {
+  "dew_drop_farmland_growth-2.2.jar": {
     "modId": "dew_drop_farmland_growth",
-    "version": "2.1"
+    "version": "2.2"
   },
   "dew_drop_watering_cans-1.0.2.jar": {
     "modId": "dew_drop_watering_cans",
@@ -311,13 +311,9 @@
     "modId": "dramaticdoors",
     "version": "1.20.1-3.2.9_1"
   },
-  "drippyloadingscreen_forge_3.0.11_MC_1.20.1.jar": {
+  "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar": {
     "modId": "drippyloadingscreen",
-    "version": "3.0.11"
-  },
-  "ears-forge-1.19.4-1.4.7.jar": {
-    "modId": "ears",
-    "version": "1.4.7"
+    "version": "3.0.12"
   },
   "EasyAnvils-v8.0.2-1.20.1-Forge.jar": {
     "modId": "easyanvils",
@@ -391,9 +387,9 @@
     "modId": "fallingtrees",
     "version": "0.13.2"
   },
-  "fancymenu_forge_3.4.4_MC_1.20.1.jar": {
+  "fancymenu_forge_3.5.2_MC_1.20.1.jar": {
     "modId": "fancymenu",
-    "version": "3.4.4"
+    "version": "3.5.2"
   },
   "fantasyfurniture-1.20.1-9.0.0.jar": {
     "modId": "fantasyfurniture",
@@ -588,9 +584,9 @@
     "modId": "kubejsadditions",
     "version": "4.3.3"
   },
-  "labels-1.20-1.20.1.jar": {
+  "labels-1.20-2.0.0.jar": {
     "modId": "labels",
-    "version": "1.20-1.20.1"
+    "version": "1.20-2.0.0"
   },
   "LeavesBeGone-v8.0.0-1.20.1-Forge.jar": {
     "modId": "leavesbegone",
@@ -1004,9 +1000,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.10.2.jar": {
+  "splendid_slimes-0.10.4.jar": {
     "modId": "splendid_slimes",
-    "version": "0.10.2"
+    "version": "0.10.4"
   },
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",

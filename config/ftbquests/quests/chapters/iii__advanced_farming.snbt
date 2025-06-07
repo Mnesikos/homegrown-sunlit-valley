@@ -618,7 +618,7 @@
 		}
 		{
 			dependencies: ["711AC0F5208316D5"]
-			description: ["&6Fertilizer&r can be used for crafting, but can be spread across multiple plants using right click to induce growth. "]
+			description: ["&6Plant Nutrients&r are made from Weak Fertilizer and can be used for crafting more advanced versions of them."]
 			id: "07938A28F31B7473"
 			rewards: [{
 				count: 4

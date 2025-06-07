@@ -1985,7 +1985,7 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "supplementaries:lumisene_bottle", count: 8 },
+          { item: "supplementaries:fire_pit", count: 8 },
           { item: "minecraft:wither_skeleton_skull", count: 1 },
         ],
       },

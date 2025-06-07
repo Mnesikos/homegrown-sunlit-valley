@@ -19,13 +19,13 @@
     "monster": [
       {
         "type": "minecraft:husk",
-        "weight": 100,
+        "weight": 160,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "rottencreatures:mummy",
-        "weight": 100,
+        "weight": 80,
         "minCount": 4,
         "maxCount": 4
       },
@@ -40,12 +40,6 @@
         "maxCount": 4,
         "minCount": 4,
         "weight": 50
-      },
-      {
-        "type": "rottencreatures:scarab",
-        "weight": 50,
-        "minCount": 4,
-        "maxCount": 4
       },
       {
         "type": "minecraft:creeper",
@@ -98,7 +92,6 @@
       "minecraft:glow_lichen",
       "society:desert_caves/dull_sand_patch_floor",
       "society:desert_caves/sand_patch_floor",
-      "society:desert_caves/sandstone_patch_floor",
       "society:desert_caves/organic_glass_patch_ceiling",
       "society:desert_caves/sandstone_patch_ceiling"
     ],

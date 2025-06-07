@@ -19,13 +19,13 @@
     "monster": [
       {
         "type": "minecraft:husk",
-        "weight": 100,
+        "weight": 130,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "rottencreatures:mummy",
-        "weight": 100,
+        "weight": 40,
         "minCount": 4,
         "maxCount": 4
       },
@@ -108,11 +108,10 @@
     ["minecraft:spring_water"],
     [
       "minecraft:glow_lichen",
-      "society:desert_caves/dull_sand_patch_floor",
-      "society:desert_caves/sand_patch_floor",
-      "society:desert_caves/sandstone_patch_floor",
-      "society:desert_caves/organic_glass_patch_ceiling",
-      "society:desert_caves/sandstone_patch_ceiling"
+      "society:desert_fault/arid_sand_patch_floor",
+      "society:desert_fault/red_arid_sand_patch_floor",
+      "society:desert_fault/red_glass_patch_ceiling",
+      "society:desert_fault/arid_sandstone_patch_ceiling"
     ],
     ["minecraft:freeze_top_layer"]
   ]

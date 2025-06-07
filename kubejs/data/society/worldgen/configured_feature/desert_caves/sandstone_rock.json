@@ -53,6 +53,12 @@
           }
         },
         {
+          "weight": 2,
+          "data": {
+            "Name": "society:magma_geode_node"
+          }
+        },
+        {
           "weight": 1,
           "data": {
             "Name": "society:iridium_ore"

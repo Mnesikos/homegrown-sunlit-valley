@@ -41,9 +41,9 @@
           }
         },
         {
-          "weight": 1,
+          "weight": 2,
           "data": {
-            "Name": "society:omni_geode_node"
+            "Name": "society:geode_node"
           }
         }
       ]

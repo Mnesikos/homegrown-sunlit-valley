@@ -414,9 +414,9 @@
 		{
 			dependencies: ["71C32483EE2418CA"]
 			description: [
-				"The &6Hearthstone&r is an expensive one-use item sold by the &6Cleric&r that teleports you to your spawn point from anywhere."
+				"The &6Hearthstone&r is an expensive item with limited uses sold by the &6Cleric&r that teleports you to your spawn point from anywhere."
 				""
-				"&oYou can get some extra uses out if it by enchanting it with Unbreaking. Mending however is worthless as it only has 1 durability.&r"
+				"&oYou can get some extra uses out if it by enchanting it with Unbreaking and Mending.&r"
 			]
 			id: "2D553026BFCB2CF0"
 			rewards: [{

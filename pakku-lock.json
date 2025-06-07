@@ -46,6 +46,43 @@
             ]
         },
         {
+            "pakku_id": "3w6weNYVB0B9zYTH",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "advanced-loot-info"
+            },
+            "name": {
+                "curseforge": "Advanced Loot Info"
+            },
+            "id": {
+                "curseforge": "1205426"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.1.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6564/780/AdvancedLootInfo-forge-1.20.1-1.1.7.jar",
+                    "id": "6564780",
+                    "parent_id": "1205426",
+                    "hashes": {
+                        "sha1": "17a432e84d8c3068849018337f8391e3179d003e",
+                        "md5": "3ef138d05d43c11efead9f8f51d7d039"
+                    },
+                    "required_dependencies": [],
+                    "size": 275199,
+                    "date_published": "2025-05-25T15:45:23.743Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3TI9E5ZNU05cvezm",
             "type": "MOD",
             "slug": {
@@ -3055,7 +3092,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "drippyloadingscreen_forge_3.0.11_MC_1.20.1.jar",
+                    "file_name": "drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3063,19 +3100,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6172/518/drippyloadingscreen_forge_3.0.11_MC_1.20.1.jar",
-                    "id": "6172518",
+                    "url": "https://edge.forgecdn.net/files/6412/211/drippyloadingscreen_forge_3.0.12_MC_1.20.1.jar",
+                    "id": "6412211",
                     "parent_id": "511770",
                     "hashes": {
-                        "sha1": "04a0dacd153d8809877f663057004bba04668bee",
-                        "md5": "a49a0e0bf7b5b48204328ed415e6bedd"
+                        "sha1": "ea21436917b84780835b041cd27b7f86679dc6a1",
+                        "md5": "a8cbcca4541cb6eb794ded4a10c57ac9"
                     },
                     "required_dependencies": [
                         "410295",
                         "367706"
                     ],
-                    "size": 240085,
-                    "date_published": "2025-02-08T20:40:01.767Z"
+                    "size": 239365,
+                    "date_published": "2025-04-11T20:29:43.010Z"
                 }
             ]
         },
@@ -4053,7 +4090,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fancymenu_forge_3.4.4_MC_1.20.1.jar",
+                    "file_name": "fancymenu_forge_3.5.2_MC_1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4061,19 +4098,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6186/995/fancymenu_forge_3.4.4_MC_1.20.1.jar",
-                    "id": "6186995",
+                    "url": "https://edge.forgecdn.net/files/6523/977/fancymenu_forge_3.5.2_MC_1.20.1.jar",
+                    "id": "6523977",
                     "parent_id": "367706",
                     "hashes": {
-                        "sha1": "6cd3c371360b5877c2ad92db3d895cf23df555dd",
-                        "md5": "98df96bde1661e7c7c0500243f7b5907"
+                        "sha1": "35caa7f22f09dd7004e68c7387205a1bb1707b4b",
+                        "md5": "c67bc748e4099f0a9ac24ef90241a02d"
                     },
                     "required_dependencies": [
                         "938643",
                         "410295"
                     ],
-                    "size": 3086571,
-                    "date_published": "2025-02-12T21:34:57.267Z"
+                    "size": 3280719,
+                    "date_published": "2025-05-12T22:40:16.317Z"
                 }
             ]
         },
@@ -9408,7 +9445,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.10.2.jar",
+                    "file_name": "splendid_slimes-0.10.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9416,18 +9453,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6611/70/splendid_slimes-0.10.2.jar",
-                    "id": "6611070",
+                    "url": "https://edge.forgecdn.net/files/6626/199/splendid_slimes-0.10.4.jar",
+                    "id": "6626199",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "ea8413f30c4f31c10cd477f075fb2b7497aa4de1",
-                        "md5": "6a58719c6e6c25f9ab4e9c2f961e3c94"
+                        "sha1": "e00642eb901aadc4502d261d56a756071a67a590",
+                        "md5": "19b55df7c5b0d0ebc7a626325da13511"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 440735,
-                    "date_published": "2025-06-03T16:58:49.827Z"
+                    "size": 440978,
+                    "date_published": "2025-06-07T16:07:11.353Z"
                 }
             ]
         },
@@ -9564,7 +9601,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "labels-1.20-1.20.1.jar",
+                    "file_name": "labels-1.20-2.0.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9572,18 +9609,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5138/873/labels-1.20-1.20.1.jar",
-                    "id": "5138873",
+                    "url": "https://edge.forgecdn.net/files/6201/654/labels-1.20-2.0.0.jar",
+                    "id": "6201654",
                     "parent_id": "688223",
                     "hashes": {
-                        "sha1": "84b18917639c1e2d87dbe226bbb32bb25d2b3bcd",
-                        "md5": "2d1bba708ae7bea7227c921a608edb67"
+                        "sha1": "884db2252492f0ba38f48b2da3d0b11f2e9a644e",
+                        "md5": "1b3b916aa6c7617a26bbec174c8584e3"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 93255,
-                    "date_published": "2024-02-26T20:48:14.230Z"
+                    "size": 252608,
+                    "date_published": "2025-02-17T00:45:39.030Z"
                 }
             ]
         },
@@ -9722,7 +9759,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-2.1.jar",
+                    "file_name": "dew_drop_farmland_growth-2.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9730,19 +9767,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6512/649/dew_drop_farmland_growth-2.1.jar",
-                    "id": "6512649",
+                    "url": "https://edge.forgecdn.net/files/6621/725/dew_drop_farmland_growth-2.2.jar",
+                    "id": "6621725",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "9cc90629a007ecb89f5122bf82f5f72b054a6066",
-                        "md5": "f603d49b99438d6126d2fdcdb5bffd02"
+                        "sha1": "d4ddfeec3ea0004e140fd00343998b2cfc5e5220",
+                        "md5": "ac33821717f8ebb16008df11a6835def"
                     },
                     "required_dependencies": [
-                        "291874",
-                        "1062753"
+                        "1062753",
+                        "291874"
                     ],
-                    "size": 75161,
-                    "date_published": "2025-05-09T14:17:00.150Z"
+                    "size": 75182,
+                    "date_published": "2025-06-06T14:37:33.727Z"
                 }
             ]
         },

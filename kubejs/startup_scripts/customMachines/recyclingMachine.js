@@ -10,6 +10,8 @@ global.recyclingMachineRecipes = [
     output: ["2x society:sparkstone"],
   },
   { input: "zetter:canvas", output: ["4x society:canvas"] },
+  { input: "aquaculture:fish_bones", output: ["4x dew_drop_farmland_growth:strong_fertilizer"] },
+  { input: "aquaculture:algae", output: ["dew_drop_farmland_growth:high_quality_fertilizer"] },
   { input: "simplehats:hatbag_common", output: ["1x society:canvas"] },
   { input: "simplehats:hatbag_uncommon", output: ["2x society:canvas"] },
   { input: "simplehats:hatbag_rare", output: ["3x society:canvas"] },
