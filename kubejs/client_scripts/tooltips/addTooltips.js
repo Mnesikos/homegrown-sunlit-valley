@@ -113,7 +113,7 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
     },
-        {
+    {
       item: "society:token_of_unity",
       tooltip: "I love making mazes! I'm going to design the biggest maze ever!",
     },
@@ -443,8 +443,9 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "moreminecarts:chunk_loader",
-    Text.green("Loads a 3x3 area using Chunkroderite and other items")
+    Text.green("Loads a 3x3 chunk area using Chunkroderite and other items")
   );
+  tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));

@@ -27,17 +27,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "splendid_slimes:plort",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{plort:{id:\"splendid_slimes:phantom\"}}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 1,
           "functions": [
             {

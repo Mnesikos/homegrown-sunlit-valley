@@ -1624,24 +1624,24 @@ global.miscAdventurer = [
 ];
 
 global.plorts = [
-  { type: "splendid_slimes:slimy", value: 128 },
-  { type: "splendid_slimes:dusty", value: 160 },
-  { type: "splendid_slimes:bony", value: 192 },
-  { type: "splendid_slimes:rotting", value: 192 },
-  { type: "splendid_slimes:webby", value: 184 },
-  { type: "splendid_slimes:juicy", value: 200 },
+  { type: "splendid_slimes:slimy", value: 32 },
+  { type: "splendid_slimes:dusty", value: 64 },
+  { type: "splendid_slimes:bony", value: 72 },
+  { type: "splendid_slimes:rotting", value: 72 },
+  { type: "splendid_slimes:webby", value: 128 },
+  { type: "splendid_slimes:luminous", value: 132 },
+  { type: "splendid_slimes:juicy", value: 148 },
   { type: "splendid_slimes:puddle", value: 224 },
   { type: "splendid_slimes:boomcat", value: 256 },
-  { type: "splendid_slimes:all_seeing", value: 288 },
+  { type: "splendid_slimes:all_seeing", value: 256 },
   { type: "splendid_slimes:bitwise", value: 288 },
-  { type: "splendid_slimes:blazing", value: 288 },
-  { type: "splendid_slimes:luminous", value: 288 },
+  { type: "splendid_slimes:blazing", value: 256 },
   { type: "splendid_slimes:weeping", value: 320 },
   { type: "splendid_slimes:prisma", value: 400 },
-  { type: "splendid_slimes:sweet", value: 512 },
+  { type: "splendid_slimes:phantom", value: 512 },
+  { type: "splendid_slimes:sweet", value: 768 },
   { type: "splendid_slimes:shulking", value: 1024 },
   { type: "splendid_slimes:ender", value: 1024 },
-  { type: "splendid_slimes:phantom", value: 1024 },
   { type: "splendid_slimes:orby", value: 1280 },
   { type: "splendid_slimes:minty", value: 1280 },
   { type: "splendid_slimes:sparkcat", value: 1400 },
@@ -1652,7 +1652,7 @@ global.slimeHearts = [];
 global.plorts.forEach((plort) => {
   global.slimeHearts.push({
     type: plort.type,
-    value: plort.value * 16 * 2,
+    value: Math.floor(plort.value * 16 * 1.5),
   });
 });
 

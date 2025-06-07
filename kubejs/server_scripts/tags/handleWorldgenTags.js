@@ -16,8 +16,6 @@ ServerEvents.tags("worldgen/biome", (e) => {
   magmaGeodeBiomes.forEach((biome) => {
     e.add("society:spawns_magma_geodes", biome);
   });
-    e.add("society:has_structure/desert", "society:desert_caves");
-    e.add("society:has_structure/desert", "society:desert_fault");
   const cavernBiomes = [
     "society:skull_caves",
     "society:lush_caverns",
