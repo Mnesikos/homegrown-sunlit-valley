@@ -339,7 +339,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [{ item: "pamhc2trees:mangoitem", count: 3 }],
+        requestedItems: [{ item: 'pamhc2trees:peachitem', count: 3 }],
       },
       {
         population: 7,
@@ -2948,7 +2948,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "society:oak_resin", count: 16 },
           { item: "society:pine_tar", count: 16 },
-          { item: "furniture:oak_grandfather_clock", count: 1 },
+          { item: "society:sap", count: 64 },
         ],
       },
     ],
