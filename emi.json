@@ -15,6 +15,7 @@
     }
   ],
   "lookup_history": [
+    "item:society:wheel_of_adaptation",
     "item:paraglider:goddess_statue",
     "item:numismatics:ancient_coin",
     "item:numismatics:sun",
@@ -987,7 +988,6 @@
       "amount": 64
     },
     "item:society:spider_silk",
-    "item:society:wheel_of_adaptation",
     "item:society:production_science_pack",
     "item:society:froggy_helm",
     "item:society:aged_eyeball_fish_roe",
@@ -1305,9 +1305,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

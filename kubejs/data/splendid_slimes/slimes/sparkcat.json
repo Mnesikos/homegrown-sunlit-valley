@@ -13,11 +13,11 @@
   "innate_effects": [
     {
       "effect": "minecraft:speed",
-      "amplifier": 3
+      "amplifier": 4
     },
     {
       "effect": "minecraft:jump_boost",
-      "amplifier": 3
+      "amplifier": 4
     },
     {
       "effect": "brewery:lightning_strike",
