@@ -15,6 +15,7 @@
     }
   ],
   "lookup_history": [
+    "item:paraglider:goddess_statue",
     "item:numismatics:ancient_coin",
     "item:numismatics:sun",
     "item:numismatics:neptunium_coin",
@@ -1290,8 +1291,7 @@
     "item:railways:fuel_tank",
     "item:railways:portable_fuel_interface",
     "item:railways:jukeboxcart",
-    "item:railways:red_conductor_cap",
-    "item:railways:conductor_whistle"
+    "item:railways:red_conductor_cap"
   ],
   "craft_history": [
     "minecraft:grindstone",
@@ -1306,8 +1306,8 @@
   "recipe_defaults": {
     "added": [
       "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},
