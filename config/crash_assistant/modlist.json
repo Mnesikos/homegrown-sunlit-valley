@@ -315,6 +315,10 @@
     "modId": "drippyloadingscreen",
     "version": "3.0.12"
   },
+  "ears-forge-1.19.4-1.4.7.jar": {
+    "modId": "ears",
+    "version": "1.4.7"
+  },
   "EasyAnvils-v8.0.2-1.20.1-Forge.jar": {
     "modId": "easyanvils",
     "version": "8.0.2"
@@ -495,7 +499,7 @@
     "modId": "hamsters",
     "version": "1.20.1-1.0.3"
   },
-  "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar": {
+  "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar": {
     "modId": "hopo",
     "version": "1.2.2"
   },
@@ -1000,9 +1004,9 @@
     "modId": "species",
     "version": "1.20.1-2.3-forge"
   },
-  "splendid_slimes-0.10.4.jar": {
+  "splendid_slimes-0.11.0.jar": {
     "modId": "splendid_slimes",
-    "version": "0.10.4"
+    "version": "0.11.0"
   },
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",

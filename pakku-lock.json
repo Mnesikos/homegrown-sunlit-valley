@@ -3153,6 +3153,43 @@
             ]
         },
         {
+            "pakku_id": "fyMdfOoVcwAh4V86",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ears"
+            },
+            "name": {
+                "curseforge": "Ears (+ Snouts/Muzzles, Tails, Horns, Wings, and More)"
+            },
+            "id": {
+                "curseforge": "412013"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ears-forge-1.19.4-1.4.7.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6166/552/ears-forge-1.19.4-1.4.7.jar",
+                    "id": "6166552",
+                    "parent_id": "412013",
+                    "hashes": {
+                        "sha1": "cbfdee60bbe65076fc0d0e293631aeb377c23e2a",
+                        "md5": "1eb8315bf587b6862dd298743e328ba2"
+                    },
+                    "required_dependencies": [],
+                    "size": 160424,
+                    "date_published": "2025-02-07T04:59:18.960Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "BBk8UEHhXmtRfqPF",
             "pakku_links": [
                 "h4bdqeioqgqc7T24"
@@ -4974,7 +5011,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
+                    "file_name": "HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar",
                     "mc_versions": [
                         "1.20.2",
                         "1.20.3",
@@ -4987,16 +5024,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6337/939/HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2c.jar",
-                    "id": "6337939",
+                    "url": "https://edge.forgecdn.net/files/6631/774/HopoBetterMineshaft-[1.20.1-1.20.4]-1.2.2d.jar",
+                    "id": "6631774",
                     "parent_id": "623723",
                     "hashes": {
-                        "sha1": "ddd8f382a10e640bf54c6a45c1d0e8b63f1f5bba",
-                        "md5": "a0bd8f655df89adb1c42af848bc38108"
+                        "sha1": "d06445736ba2462f4dd1489f66ee57c298f5dbc4",
+                        "md5": "4e2e590c029999e6d35863268e160fcd"
                     },
                     "required_dependencies": [],
-                    "size": 3378764,
-                    "date_published": "2025-03-24T04:01:44.093Z"
+                    "size": 4046100,
+                    "date_published": "2025-06-09T01:33:46.203Z"
                 }
             ]
         },
@@ -9445,7 +9482,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.10.4.jar",
+                    "file_name": "splendid_slimes-0.11.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9453,18 +9490,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6626/199/splendid_slimes-0.10.4.jar",
-                    "id": "6626199",
+                    "url": "https://edge.forgecdn.net/files/6631/146/splendid_slimes-0.11.0.jar",
+                    "id": "6631146",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "e00642eb901aadc4502d261d56a756071a67a590",
-                        "md5": "19b55df7c5b0d0ebc7a626325da13511"
+                        "sha1": "9bac7f2fcc278b24cee6c083fe3eb822cc2e3216",
+                        "md5": "f68d4c288d118ef064c1d60445fea12f"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 440978,
-                    "date_published": "2025-06-07T16:07:11.353Z"
+                    "size": 442026,
+                    "date_published": "2025-06-08T21:07:53.997Z"
                 }
             ]
         },

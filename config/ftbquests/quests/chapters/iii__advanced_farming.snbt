@@ -224,6 +224,7 @@
 				"18EB59F2591BAD51"
 				"3492FA6A5DFCC390"
 				"25569C0D687E6FA5"
+				"0F176FBF01ABB774"
 			]
 			description: [
 				"By now, your farm should have enough tools in order to make a steady income. Your next step should be unlocking the Skull Cavern."
@@ -335,18 +336,18 @@
 			description: [
 				"The one thing that stands between you and mining wealth is the &6Skull Cavern Teleporter&r."
 				""
-				"Inside you'll find far tougher mobs, and difficult chambers that can be looted."
+				"Inside you'll find a deep mine that goes all the way down to y=0. The deeper you go, the better the reward. But there's a catch:"
 				""
-				"But you'll obtain more ore than you'll ever need, as well as &6Omni Geodes&r."
+				"&lYou will faint and be sent home if you're out past 5:50 AM.&r"
 				""
 				"&oBe sure you're absolutely prepared before entering, with enchanted armor and extra hearts..."
 			]
 			id: "3291A30C1D1B009D"
 			rewards: [{
-				id: "2A104B462D635A44"
+				id: "38538EA8C9CD5981"
 				item: {
 					Count: 1
-					id: "gag:hearthstone"
+					id: "gag:escape_rope"
 					tag: {
 						Damage: 0
 					}
@@ -377,7 +378,7 @@
 				item: "society:jade"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -444,7 +445,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -534,28 +535,6 @@
 			title: "Smarter Selling"
 			x: 1.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["401FD6FD108EA784"]
-			description: [
-				"Working underground can be a pain with mobs spawning."
-				""
-				"The magic of the shard can craft a &6Megatorch&r, blocking hostile spawns."
-			]
-			id: "4A98D8C1F1005F47"
-			rewards: [{
-				id: "4ED3547DA6F94C4F"
-				item: "gag:sacred_salve"
-				type: "item"
-			}]
-			tasks: [{
-				id: "01886E774607EF68"
-				item: "torchmaster:megatorch"
-				type: "item"
-			}]
-			title: "Blocking Mob Spawns"
-			x: 11.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["572D70993411EA53"]
@@ -863,7 +842,11 @@
 				"01071E36A0370E13"
 				"41029F073ADDDC2F"
 			]
-			description: ["&6Corral Blocks&r keep your Slimes mostly safe, keeping them contained while allowing anything else to move in and out. When given a redstone signal, they will prevent non-slime mobs from leaving as well."]
+			description: [
+				"&6Corral Blocks&r keep your Slimes mostly safe, keeping them contained while allowing anything else to move in and out. "
+				""
+				"When given a redstone signal, they will prevent non-slime mobs from leaving as well."
+			]
 			id: "648FD0A599A54A0F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -905,7 +888,7 @@
 		}
 		{
 			description: [
-				"&6Splendid Sliems&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
+				"&6Splendid Slimes&r are lovely creatures that produce a valuable byproduct when fed: &6Plorts&r!"
 				""
 				"They start out as wild, but once you feed them a food in their diet, they'll be tamed and won't despawn."
 				""
@@ -968,7 +951,7 @@
 		{
 			dependencies: ["5C9C7A5A88613109"]
 			description: [
-				"Slimes you capture in the wild are feral and require building trust! Every time they eat, their &6happiness&r will increase. It will increase even more if they're surrounded by similar types of Slimes"
+				"Slimes happiness depends on their hunger and living conditions. Every time they eat, their &6happiness&r will increase. If they're surrounded by similar types of Slimes, they'll get happier!"
 				""
 				"Happiness decreases when Slimes are hungry or crowded (more than &67&r in an area)."
 				""
@@ -1007,8 +990,8 @@
 				item: "society:sparkstone"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -2.5d
+			x: 8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["70D15F67E3880A3A"]
@@ -1018,8 +1001,8 @@
 				item: "society:artisan_hopper"
 				type: "item"
 			}]
-			x: 7.0d
-			y: -4.5d
+			x: 8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["70D15F67E3880A3A"]
@@ -1029,8 +1012,8 @@
 				item: "society:auto_grabber"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["401FD6FD108EA784"]
@@ -1128,8 +1111,8 @@
 				item: "society:fish_pond_basket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["44A512703C4A9990"]

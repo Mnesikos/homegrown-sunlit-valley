@@ -12,6 +12,7 @@ ItemEvents.entityInteracted((e) => {
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
   if (nbt.includes("toolsmith") && nbt.includes("destructor_core")) updateThis = true;
   if (nbt.includes("cleric") && !nbt.includes("goddess")) updateThis = true;
+  if (nbt.includes("cartographer") && !nbt.includes("blaze_banker")) updateThis = true;
   if (nbt.includes("fletcher") && !nbt.includes("ancient_debris")) updateThis = true;
   
   if (updateThis) {

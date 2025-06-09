@@ -185,7 +185,7 @@
     },
     {
       "offer": {
-        "itemKey": "numismatics:banking_guide",
+        "itemKey": "numismatics:blaze_banker",
         "amount": 1,
         "priceModifier": 0
       },
@@ -199,7 +199,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:cartographer_banking_guide_for_crown"
+      "UTID": "minecraft:cartographer_blaze_banker_for_crown"
     },
     {
       "offer": {

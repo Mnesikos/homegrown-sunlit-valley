@@ -605,7 +605,6 @@ ServerEvents.recipes((e) => {
     // Butcher
     "numismatics:bank_terminal",
     "numismatics:vendor",
-    "numismatics:banking_guide",
     "numismatics:brass_depositor",
     "furniture:coffer",
     "numismatics:andesite_depositor",

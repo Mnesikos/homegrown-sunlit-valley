@@ -25,17 +25,16 @@ BlockEvents.rightClicked((e) => {
     let blockState;
     if (
       block.hasTag("minecraft:crops") &&
+      !deniedCrops.includes(checkBlocked.id) &&
       initialBlock.block.isMaxAge(initialBlock)
     ) {
       let xpCount = 0;
       let radius = 0;
       if (item.hasTag("minecraft:hoes")) radius = 1;
       if (
-        [
-          "minecraft:netherite_hoe",
-          "minecraft:diamond_hoe",
-          "botania:elementium_hoe",
-        ].includes(item.id)
+        ["minecraft:netherite_hoe", "minecraft:diamond_hoe", "botania:elementium_hoe"].includes(
+          item.id
+        )
       )
         radius = 2;
       for (let pos of BlockPos.betweenClosed(
@@ -44,10 +43,7 @@ BlockEvents.rightClicked((e) => {
       )) {
         checkBlocked = level.getBlock(pos);
         blockState = level.getBlockState(pos);
-        if (
-          checkBlocked.hasTag("minecraft:crops") &&
-          !deniedCrops.includes(checkBlocked.id)
-        ) {
+        if (checkBlocked.hasTag("minecraft:crops") && !deniedCrops.includes(checkBlocked.id)) {
           if (blockState.block.isMaxAge(blockState)) {
             if (player.isFake()) {
               e.cancel();
@@ -62,9 +58,7 @@ BlockEvents.rightClicked((e) => {
         xp.mergeNbt({ Value: xpCount });
         xp.spawn();
         server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:farming ${
-            xpCount * 2
-          }`
+          `puffish_skills experience add ${player.username} society:farming ${xpCount * 2}`
         );
       }
     }
