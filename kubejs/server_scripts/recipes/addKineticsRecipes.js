@@ -41,14 +41,4 @@ ServerEvents.recipes((e) => {
     c: "create:copper_casing"
   }).keepIngredient("society:kinetic_blueprint")
 
-  e.shaped("meadow:woodcutter", [
-    " B ", 
-    " a ",
-    " L "
-  ], {
-    B: "society:kinetic_blueprint",
-    L: "#minecraft:logs",
-    a: "minecraft:iron_axe"
-  }).keepIngredient("society:kinetic_blueprint")
-
 });

@@ -60,7 +60,6 @@ StartupEvents.registry("block", (event) => {
     .property(integerProperty.create("stage", 0, 7))
     .property(integerProperty.create("type", 0, global.tapperRecipes.length))
     .soundType("copper")
-    .box(4, 1, 8, 12, 14, 16)
     .defaultCutout()
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
@@ -129,6 +128,7 @@ StartupEvents.registry("block", (event) => {
         1,
         true
       );
+      global.handleTapperRandomTick(click);
     })
     .randomTick((tick) => {
       global.handleTapperRandomTick(tick);

@@ -638,6 +638,25 @@
 			x: -2.5d
 			y: -1.0d
 		}
+		{
+			dependencies: ["31F6C5811A72396C"]
+			description: ["Tired of hearing your Villagers? Click the \"mute\" icon in your inventory to open up the &6Extreme Sound Muffler&r GUI, allowing you to mute specific sounds!"]
+			icon: "simplehats:headphonesblue"
+			id: "7E94B1934D0257E8"
+			rewards: [{
+				id: "4EC96CD71AFA7A8A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F9BEDE31C44BA36"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Muting Sounds"
+			x: -1.0d
+			y: -2.5d
+		}
 	]
 	title: "Building Tools"
 }

@@ -407,7 +407,7 @@
 		{
 			dependencies: ["73A85902CE35A43A"]
 			description: [
-				"There are 4 skill trees that can be leveled, unlocking special abilities useful to you. You can view these trees using &6K&r by default."
+				"There are 5 skill trees that can be leveled, unlocking special abilities useful to you. You can view these trees using &6K&r by default."
 				""
 				"&6Farming&r experience comes from harvesting crops, eating cooked meals, and using Artisan Machines (Such as Preserves Jars or Looms)"
 				""

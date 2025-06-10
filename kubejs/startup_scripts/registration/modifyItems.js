@@ -82,6 +82,7 @@ ItemEvents.modification((e) => {
   const goldHammers = [
     "justhammers:gold_reinforced_impact_hammer",
     "justhammers:gold_hammer",
+    "justhammers:gold_destructor_hammer",
     "justhammers:gold_impact_hammer",
     "justhammers:gold_reinforced_hammer",
   ];

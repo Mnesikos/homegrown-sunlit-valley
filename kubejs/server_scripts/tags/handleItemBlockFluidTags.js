@@ -385,6 +385,7 @@ ServerEvents.tags("item", (e) => {
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
+  e.add('aquaculture:bobber', 'society:neptunium_bobber');
   const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
   geodeRelic.forEach((geodeItem) => {
     e.add("society:geode_relic", geodeItem);

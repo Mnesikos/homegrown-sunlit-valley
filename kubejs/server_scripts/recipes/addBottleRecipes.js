@@ -97,4 +97,21 @@ ServerEvents.recipes((e) => {
   recipes.forEach((recipe) => {
     bottleRecipes(recipe.item, recipe.fluid, recipe.amount, recipe.container);
   });
+  e.custom({
+    type: "create:filling",
+    ingredients: [
+      {
+        tag: "society:raw_logs",
+      },
+      {
+        amount: 50,
+        fluid: "society:oak_resin"
+      },
+    ],
+    results: [
+      {
+        item: "society:treated_log",
+      },
+    ],
+  });
 });

@@ -114,7 +114,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "with jaded fruit",
-    possibleOutputs: ["pamhc2trees:pawpaw_sapling", "pamhc2trees:hazelnut_sapling"],
+    possibleOutputs: ["pamhc2trees:pawpaw_sapling"],
   },
   {
     hint: "soothing and refreshing... Again",
@@ -161,6 +161,9 @@ global.prizeMachineRewards = [
   {
     hint: "only enjoyed by those of age",
     possibleOutputs: ["society:aging_cask", "tanukidecor:slot_machine"],
+  },  {
+    hint: "with jaded fruit... Again",
+    possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
   },
   {
     hint: "spicy",
