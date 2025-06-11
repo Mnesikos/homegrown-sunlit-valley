@@ -233,9 +233,8 @@ ServerEvents.tags("item", (e) => {
   e.add("candlelight:butter", "farm_and_charm:butter");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
-  e.remove("candlelight:red_effect", "minecraft:potion");
-  e.remove("candlelight:white_effect", "minecraft:potion");
-  e.remove("candlelight:all_effects", "minecraft:potion");
+  e.remove("forge:chests/ender", "minecraft:ender_chest");
+  e.remove("forge:chests", "minecraft:ender_chest");
   // Vinery leaf fix
   e.add("minecraft:mineable/hoe", "vinery:apple_leaves");
   e.add("minecraft:mineable/hoe", "vinery:dark_cherry_leaves");

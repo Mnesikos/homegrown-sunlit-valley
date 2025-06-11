@@ -17,15 +17,15 @@
       "item": "herbalbrews:ground_coffee"
     },
     {
-      "item": "herbalbrews:ground_coffee"
+      "item": "society:ground_cinnamon"
     },
     {
       "item": "minecraft:glass_bottle"
     }
   ],
   "result": {
-    "item": "herbalbrews:coffee",
-    "effect": "herbalbrews:deeprush",
+    "item": "herbalbrews:chai_tea",
+    "effect": "vinery:lava_walker",
     "effectduration": 1800
   }
 }

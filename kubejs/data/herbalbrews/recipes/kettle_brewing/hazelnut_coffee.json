@@ -17,15 +17,15 @@
       "item": "herbalbrews:ground_coffee"
     },
     {
-      "item": "herbalbrews:ground_coffee"
+      "item": "pamhc2trees:roastedhazelnutitem"
     },
     {
       "item": "minecraft:glass_bottle"
     }
   ],
   "result": {
-    "item": "herbalbrews:coffee",
+    "item": "herbalbrews:hazelnut_coffee",
     "effect": "herbalbrews:deeprush",
-    "effectduration": 1800
+    "effectduration": 3600
   }
 }

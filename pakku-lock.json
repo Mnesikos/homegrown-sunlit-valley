@@ -4562,7 +4562,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "framework-forge-1.20.1-0.7.12.jar",
+                    "file_name": "framework-forge-1.20.1-0.7.15.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4570,16 +4570,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5911/986/framework-forge-1.20.1-0.7.12.jar",
-                    "id": "5911986",
+                    "url": "https://edge.forgecdn.net/files/6531/428/framework-forge-1.20.1-0.7.15.jar",
+                    "id": "6531428",
                     "parent_id": "549225",
                     "hashes": {
-                        "sha1": "e8c9dd2b134b8f9516b9428dad351abad97d4e76",
-                        "md5": "1b6b6ccc60c5a6ef2c232553f8a060f4"
+                        "sha1": "0963ba5c19634030dbf1358b5c5f5fb341fede73",
+                        "md5": "135716c910b1036a6dd2f0fe0bc7b03d"
                     },
                     "required_dependencies": [],
-                    "size": 308420,
-                    "date_published": "2024-11-17T13:45:52.247Z"
+                    "size": 309560,
+                    "date_published": "2025-05-15T06:06:10.217Z"
                 }
             ]
         },
@@ -6698,7 +6698,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "refurbished_furniture-forge-1.20.1-1.0.8.jar",
+                    "file_name": "refurbished_furniture-forge-1.20.1-1.0.14.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6706,18 +6706,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5893/833/refurbished_furniture-forge-1.20.1-1.0.8.jar",
-                    "id": "5893833",
+                    "url": "https://edge.forgecdn.net/files/6623/931/refurbished_furniture-forge-1.20.1-1.0.14.jar",
+                    "id": "6623931",
                     "parent_id": "897116",
                     "hashes": {
-                        "sha1": "d9cd91ba83b49143f42e1045e63bf8b8adf85b5f",
-                        "md5": "135e50d0323ff403e7771649419bc69d"
+                        "sha1": "b4aa83b3ad88939625da29c0adbad7eddc88c148",
+                        "md5": "cf49bb5867f7d060b82fc143e2ca0201"
                     },
                     "required_dependencies": [
                         "549225"
                     ],
-                    "size": 6681214,
-                    "date_published": "2024-11-11T12:56:50.797Z"
+                    "size": 6686700,
+                    "date_published": "2025-06-07T02:24:05.743Z"
                 }
             ]
         },

@@ -319,7 +319,7 @@ ServerEvents.recipes((e) => {
     ],
     heatRequirement: "superheated",
   });
-    e.custom({
+  e.custom({
     type: "create:mixing",
     ingredients: [
       {
@@ -331,7 +331,7 @@ ServerEvents.recipes((e) => {
     ],
     results: [
       {
-        item: "oreganized:electrum_upgrade_smithing_template"
+        item: "oreganized:electrum_upgrade_smithing_template",
       },
     ],
     heatRequirement: "superheated",

@@ -14,6 +14,7 @@ ItemEvents.entityInteracted((e) => {
   if (nbt.includes("cleric") && !nbt.includes("goddess")) updateThis = true;
   if (nbt.includes("cartographer") && !nbt.includes("blaze_banker")) updateThis = true;
   if (nbt.includes("fletcher") && !nbt.includes("ancient_debris")) updateThis = true;
+  if (nbt.includes("fisher") && nbt.includes("nether_star_hook")) updateThis = true;
   
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");

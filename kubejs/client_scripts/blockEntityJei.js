@@ -11,13 +11,10 @@ const registerBECategory = (event, categoryID, block, title, inputCount, days) =
         return !!(recipe?.data?.input !== undefined && recipe?.data?.output !== undefined);
       })
       .setDrawHandler((recipe, recipeSlotsView, guiGraphics) => {
+        let dayCount = recipe.getRecipeData().time || days;
         guiGraphics.drawWordWrap(
           Client.font,
-          Text.of(
-            days < 1
-              ? "< than a day"
-              : `${recipe.getRecipeData().time || days} day${days > 1 ? "s" : ""}`
-          ),
+          Text.of(dayCount < 1 ? "< than a day" : `${dayCount} day${dayCount > 1 ? "s" : ""}`),
           72,
           29,
           177,

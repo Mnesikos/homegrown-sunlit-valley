@@ -1417,6 +1417,7 @@
 				}
 			}
 			id: "6080E8F9B0DDAE72"
+			subtitle: "Requires Botania"
 			tasks: [{
 				id: "12DAF95F0B50680C"
 				item: {
@@ -1583,6 +1584,7 @@
 				}
 			}
 			id: "6FDA9C1E5D681CDA"
+			subtitle: "Requires Create or Botania"
 			tasks: [{
 				id: "652F7B6F053D1586"
 				item: {
@@ -1643,6 +1645,7 @@
 				}
 			}
 			id: "11207C347FC407E1"
+			subtitle: "Requires Create or Botania"
 			tasks: [{
 				id: "2712211EC08C9471"
 				item: {

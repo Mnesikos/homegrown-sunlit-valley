@@ -14,18 +14,13 @@
   ],
   "ingredients": [
     {
-      "item": "herbalbrews:ground_coffee"
+      "tag": "society:small_milk"
     },
     {
-      "item": "herbalbrews:ground_coffee"
-    },
-    {
-      "item": "minecraft:glass_bottle"
+      "item": "society:chai_blend"
     }
   ],
   "result": {
-    "item": "herbalbrews:coffee",
-    "effect": "herbalbrews:deeprush",
-    "effectduration": 1800
+    "item": "herbalbrews:chai_tea"
   }
 }

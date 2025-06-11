@@ -487,6 +487,7 @@
 				}
 			}
 			id: "2DD84A5F127B1463"
+			min_required_tasks: 1
 			rewards: [{
 				id: "0EE0C090E1074FF2"
 				item: "brewery:beer_hops"
@@ -1260,7 +1261,7 @@
 			description: [
 				"Fruit trees slowly grow fruits that can be hand picked. "
 				""
-				"They are subject to the same seasonal restrictions as crops, but tend to be more valuable."
+				"They are subject to the same seasonal restrictions as crops, but tend to be more valuable. "
 				""
 				"A handfull of basic ones can be purchased from the Market, but you'll need to dive into the &6Skull Cavern&r for more advanced ones."
 			]

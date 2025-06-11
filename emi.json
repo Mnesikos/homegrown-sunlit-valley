@@ -12,10 +12,104 @@
     {
       "stack": "item:farm_and_charm:carrot_bag",
       "recipe": "farm_and_charm:carrot_bag"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:wheat_seeds",
+        "amount": 3
+      }
     }
   ],
   "lookup_history": [
+    "item:rehooked:iron_hook",
+    "item:aquaculture:iron_hook",
+    "item:numismatics:neptunium_coin",
+    "item:rehooked:wood_hook",
+    "item:numismatics:ancient_coin",
+    "item:society:cornucopia",
+    "item:herbalbrews:dried_black_tea",
+    {
+      "type": "item",
+      "id": "society:chai_blend",
+      "amount": 64
+    },
+    "item:minecraft:water_bucket",
+    "item:herbalbrews:cinnamon_coffee",
+    {
+      "type": "item",
+      "id": "society:ground_cinnamon",
+      "amount": 55
+    },
+    "item:herbalbrews:coffee{Effect:\"herbalbrews:deeprush\",EffectDuration:3600}",
+    {
+      "type": "item",
+      "id": "pamhc2trees:roastedhazelnutitem",
+      "amount": 64
+    },
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
+    "item:herbalbrews:ground_coffee",
+    "item:herbalbrews:hazelnut_coffee",
+    "item:aquaculture:nether_star_hook",
+    "item:botania:overgrowth_seed",
+    "item:everycomp:rfm/autumnity/maple_lattice_fence",
+    "item:refurbished_furniture:mangrove_lattice_fence_gate",
+    "item:beautify:acacia_trellis",
+    "item:refurbished_furniture:workbench",
+    "item:vinery:apple_press",
+    "item:farmingforblockheads:market",
+    "item:minecraft:ender_chest",
+    "item:numismatics:sun",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:dusty\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:webby\"}}",
+    "item:pamhc2trees:dragonfruititem",
+    "item:society:dragon_mayonnaise",
+    "item:society:dragontooth_axe{Damage:0}",
+    "item:pamhc2trees:pamdragonfruit",
+    {
+      "type": "item",
+      "id": "pamhc2trees:lemon_sapling",
+      "amount": 64
+    },
+    "item:furniture:trash_bag",
+    "item:society:recycling_machine",
+    "item:railways:track_create_andesite_wide",
+    "item:railways:track_ender_wide",
+    "item:railways:track_acacia",
+    "item:candlelight:beef_with_mushroom_in_wine_and_potatoes",
+    "item:candlelight:salmon_on_white_wine",
+    "item:vinery:red_wine",
+    "item:society:aged_red_wine",
+    "item:society:prismatic_shard",
+    "item:society:fish_pond_basket",
+    "item:society:sparkstone",
+    {
+      "type": "item",
+      "id": "verdantvibes:bracket_mushroom",
+      "amount": 8
+    },
+    "item:society:crystalarium",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
+    {
+      "type": "item",
+      "id": "society:sap",
+      "amount": 4
+    },
+    "item:society:tapper",
+    "item:minecraft:netherite_scrap",
+    "item:minecraft:netherite_ingot",
+    "item:society:netherite_sprinkler",
+    "item:society:sparkstone_block",
     "item:oreganized:electrum_upgrade_smithing_template",
+    "item:society:skull_cavern_teleporter",
+    "item:mining_dimension:teleporter",
+    "item:simplehats:dragonskullender",
+    "item:minecraft:dark_oak_slab",
     "item:oreganized:electrum_ingot",
     "item:minecraft:netherite_upgrade_smithing_template",
     {
@@ -26,19 +120,16 @@
     "item:society:pristine_sandstone_slate",
     "item:society:pristine_fluorapatite",
     "item:society:pristine_quartz",
-    "item:mining_dimension:teleporter",
     "item:minecraft:chorus_fruit",
     "item:minecraft:chorus_flower",
     "item:vinery:villagers_fright{}",
     "item:minecraft:ancient_debris",
-    "item:numismatics:sun",
     "item:minecraft:netherite_hoe{Damage:0}",
     "item:minecraft:netherite_chestplate{Damage:0}",
     "item:farmersdelight:rice",
     "item:minecraft:sweet_berries",
     "item:create:andesite_alloy",
     "item:create:clipboard",
-    "item:society:prismatic_shard",
     "item:society:token_of_unity",
     "item:society:diamond_sprinkler",
     {
@@ -51,14 +142,11 @@
       "id": "snowyspirit:ginger",
       "amount": 64
     },
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:juicy\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:blazing\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bitwise\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:bony\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:boomcat\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bony\"}}",
@@ -102,7 +190,6 @@
       "amount": 64
     },
     "item:atmospheric:golden_growths",
-    "item:numismatics:neptunium_coin",
     "item:minecraft:spruce_planks",
     "item:minecraft:stone_axe{Damage:0}",
     "item:create:belt_connector",
@@ -116,7 +203,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:weeping\"}}",
     "item:minecraft:stone_shovel{Damage:0}",
     "item:numismatics:cog",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:society:aged_dark_brew",
     "item:vinery:dark_cherry_log",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:dusty\"}}",
@@ -144,16 +230,13 @@
     "item:minecraft:netherite_axe{Damage:0}",
     "item:dramaticdoors:short_netherite_door",
     "item:sophisticatedstorage:diamond_to_netherite_tier_upgrade",
-    "item:society:netherite_sprinkler",
     "item:create:zinc_ore",
     "item:etcetera:nether_bismuth_ore",
     "item:oreganized:lead_ore",
     "item:oreganized:deepslate_lead_ore",
     "item:create:deepslate_zinc_ore",
     "item:society:iridium_ore",
-    "item:minecraft:netherite_ingot",
     "item:etcetera:bismuth_ingot",
-    "item:minecraft:netherite_scrap",
     "item:minecraft:stripped_oak_log",
     "item:numismatics:banking_guide",
     "item:society:crystal_of_regret_farming",
@@ -168,7 +251,6 @@
     "item:society:preserves_jar",
     "item:society:wheel_of_adaptation",
     "item:paraglider:goddess_statue",
-    "item:numismatics:ancient_coin",
     "item:society:magma_geode_node",
     "item:farm_and_charm:fertilizer",
     "item:society:blackstone_boulder",
@@ -176,11 +258,6 @@
     "item:oreganized:red_crystal_glass",
     "item:quark:hollow_acacia_log",
     "item:atmospheric:smooth_arid_sandstone",
-    {
-      "type": "item",
-      "id": "society:recycling_machine",
-      "amount": 64
-    },
     "item:botania:slime_bottle",
     "item:minecraft:slime_block",
     "item:splendid_slimes:slime_incubator",
@@ -200,7 +277,6 @@
     "item:society:crystal_of_regret_adventuring",
     "item:farm_and_charm:carrot_bag",
     "item:minecraft:carrot",
-    "item:society:sparkstone",
     "item:quark:trowel",
     "item:supplementaries:lumisene_bottle",
     "item:numismatics:andesite_depositor",
@@ -208,7 +284,6 @@
     "item:numismatics:red_card",
     "item:numismatics:white_id_card",
     "item:vinery:fermentation_barrel",
-    "item:rehooked:iron_hook",
     "item:create:netherite_diving_helmet{Damage:0}",
     "item:society:heart_of_neptunium",
     {
@@ -234,8 +309,6 @@
     "item:society:geode_node",
     "item:oreganized:electrum_sword{Damage:0}",
     "item:beautify:botanist_workbench",
-    "item:society:cornucopia",
-    "item:society:tapper",
     "item:society:ancient_fruit_seed",
     "item:vinery:red_grape_seeds",
     "item:vinery:grapevine_pot",
@@ -276,7 +349,6 @@
     "item:society:sailor_barb_bait",
     "item:society:minnow_bait",
     "item:brewery:beer_barley",
-    "item:society:dragontooth_axe{Damage:0}",
     "item:society:galaxy_sword{Damage:0}",
     "item:quark:spruce_post",
     "item:minecraft:birch_log",
@@ -379,8 +451,6 @@
     "item:minecraft:ender_eye",
     "item:supplementaries:enderman_head",
     "item:minecraft:ender_pearl",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:boomcat\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:orby\"}}",
     "item:stardew_fishing:sonar_bobber{Damage:0}",
     {
@@ -415,7 +485,6 @@
       "id": "minecraft:slime_ball",
       "amount": 64
     },
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
@@ -510,12 +579,6 @@
     },
     {
       "type": "item",
-      "id": "society:fish_pond_basket",
-      "amount": 64
-    },
-    "item:society:crystalarium",
-    {
-      "type": "item",
       "id": "society:loom",
       "amount": 64
     },
@@ -575,11 +638,6 @@
       "amount": 5
     },
     "item:society:smoked_lava_pufferfish",
-    {
-      "type": "item",
-      "id": "society:sparkstone_block",
-      "amount": 2
-    },
     "item:twigs:pink_packed_silt",
     "item:twigs:purple_packed_silt",
     "item:twigs:blue_packed_silt",
@@ -598,8 +656,6 @@
       "id": "society:geode",
       "amount": 6
     },
-    "item:herbalbrews:hazelnut_coffee",
-    "item:herbalbrews:cinnamon_coffee",
     "item:minecraft:honeycomb",
     "item:twigs:black_packed_silt",
     "item:twigs:black_silt_shingle_slab",
@@ -647,7 +703,6 @@
     },
     "item:society:double_aged_aegis_wine",
     "item:society:double_aged_good_catawba",
-    "item:society:sap",
     "item:betterarcheology:sheep_fossil_body",
     "item:snuffles:snuffle_fluff",
     {
@@ -715,7 +770,6 @@
     "item:bakery:glowberry_tart",
     "item:pamhc2trees:pawpawitem",
     "item:nethervinery:nether_fizz",
-    "item:aquaculture:nether_star_hook",
     "item:farmersdelight:nether_salad",
     "item:quark:nether_wart_sack",
     "item:species:cracked_wraptor_egg",
@@ -834,7 +888,6 @@
     "item:crabbersdelight:squid_kebob",
     "item:crabbersdelight:stuffed_nautilus_shell",
     "item:crabbersdelight:surf_and_turf",
-    "item:vinery:red_wine",
     "item:vinery:mellohi_wine",
     "item:vinery:noir_wine",
     "item:vinery:solaris_wine",
@@ -857,7 +910,6 @@
     "item:minecraft:spore_blossom",
     "item:relics:spore_sack{abilities:{buffer:{points:0,stats:{capacity:2.52091d,chance:0.07462d}},explosion:{points:0,stats:{size:0.0628d}},multiplying:{points:0,stats:{amount:0.10931d,chance:0.08103d,size:0.08026d}},spore:{points:0,stats:{cooldown:12.92707d,damage:0.47729d,duration:3.20284d,size:0.26444d}}}}",
     "item:botania:mycelium_seeds",
-    "item:farmingforblockheads:market",
     "item:minecraft:cartography_table",
     "item:minecraft:oak_trapdoor",
     "item:quark:hollow_birch_log",
@@ -1058,21 +1110,10 @@
     "item:minecraft:iron_ore",
     "item:minecraft:copper_ore",
     "item:minecraft:coal_ore",
-    "item:minecraft:water_bucket",
-    {
-      "type": "item",
-      "id": "herbalbrews:dried_black_tea",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "minecraft:blaze_powder",
       "amount": 61
-    },
-    {
-      "type": "item",
-      "id": "society:ground_cinnamon",
-      "amount": 64
     },
     "item:society:spider_silk",
     "item:society:production_science_pack",
@@ -1245,59 +1286,10 @@
       "id": "society:amber_goby_roe",
       "amount": 26
     },
-    "item:society:aged_nutty_basil",
-    "item:society:double_aged_nutty_basil",
-    "item:society:aged_blackfish_roe",
-    "item:society:aged_grain_cheese_block",
-    "item:society:double_aged_starcardi",
-    "item:society:double_aged_nether_fizz",
-    "item:society:double_aged_whiskey_smokey_reverie",
-    "item:society:double_aged_strad_wine",
-    "item:society:aged_cristel_wine",
-    "item:society:aged_apple_cider",
-    "item:society:aged_century_egg",
-    "item:society:aged_bluegill_roe",
-    {
-      "type": "item",
-      "id": "society:bouquet_bag",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "furniture:trash_bag",
-      "amount": 64
-    },
-    "item:aquaculture:tin_can",
-    "item:relics:wool_mitten{abilities:{mold:{points:0,stats:{damage:0.12591d,freeze:1.8299d,size:28.20948d,stun:0.04291d}}}}",
-    {
-      "type": "item",
-      "id": "botania:white_mushroom",
-      "amount": 8
-    },
-    {
-      "type": "item",
-      "id": "society:dried_shimmering_mushrooms",
-      "amount": 2
-    },
-    "item:society:aged_jellie_wine",
-    {
-      "type": "item",
-      "id": "herbalbrews:ground_coffee",
-      "amount": 64
-    },
-    "item:beachparty:crocs{Damage:168}",
-    "item:botania:crafty_crate",
-    "item:botania:terrasteel_ingot",
-    "item:botania:terrasteel_nugget",
-    "item:botania:rune_earth",
-    "item:buildinggadgets2:template_manager",
-    "item:society:botanical_tribute",
-    "item:botania:mana_fluxfield",
-    "item:society:iron_upgrade_smithing_template",
-    "item:society:gold_upgrade_smithing_template",
-    "item:minecraft:dispenser"
+    "item:society:aged_nutty_basil"
   ],
   "craft_history": [
+    "minecraft:dark_oak_slab",
     "minecraft:kjs/numismatics_neptunium_coin",
     "minecraft:grindstone",
     "farmersdelight:lead_from_straw",
@@ -1310,9 +1302,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

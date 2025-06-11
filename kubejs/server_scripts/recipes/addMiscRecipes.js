@@ -663,6 +663,11 @@ ServerEvents.recipes((e) => {
     p: "botania:pixie_dust",
     h: "botania:horn_grass",
   });
+  e.shaped("society:cornucopia", [" c ", "shs", " s "], {
+    c: "numismatics:neptunium_coin",
+    s: "society:sparkstone_block",
+    h: "minecraft:goat_horn",
+  });
 
   e.shaped("society:mana_milker", ["rtr", "nMn", "lTl"], {
     r: "botania:rune_earth",

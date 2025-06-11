@@ -31,4 +31,6 @@ ServerEvents.tags("worldgen/biome", (e) => {
     e.add("supplementaries:has_cave_urns", biome);
     e.add("society:mining_biomes", biome);
   });
+  e.add("sereneseasons:infertile_biomes", "#minecraft:is_nether");
+  e.add("sereneseasons:infertile_biomes", "#minecraft:is_skull_cavern");
 });

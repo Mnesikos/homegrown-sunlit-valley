@@ -52,6 +52,7 @@ BlockEvents.rightClicked((e) => {
         "herbalbrews:hibiscus",
         "minecraft:torchflower",
         "atmospheric:passion_vine",
+        "verdantvibes:bracket_mushroom",
       ].includes(block.id)
     ) {
       e.cancel();

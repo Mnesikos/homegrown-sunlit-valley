@@ -231,6 +231,7 @@ StartupEvents.registry("item", (e) => {
     });
 
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
+  e.create("society:chai_blend").texture("society:item/chai_blend");
 
   e.create("society:magic_rock_candy")
     .texture("society:item/magic_rock_candy")
