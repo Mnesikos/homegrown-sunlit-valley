@@ -47,7 +47,7 @@ StartupEvents.registry("block", (event) => {
           let playerAttributes;
           let binPlayer;
           let binPlayerUUID;
-          let binDebt;
+          let binDebt = 0;
           let debtPaid;
           let totalDebt;
           let removedSlots = [];
@@ -69,10 +69,12 @@ StartupEvents.registry("block", (event) => {
             value = Math.round(calculationResults.calculatedValue);
             removedSlots = calculationResults.removedItems;
             if (value > 0) {
-              binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
-                return debt.uuid === binPlayerUUID;
-              });
-              if (binDebt.length > 0) {
+              if (binPlayer.server.persistentData.debts) {
+                binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
+                  return debt.uuid === binPlayerUUID;
+                });
+              }
+              if (binDebt.length > 0 && binDebt[0].amount > 0) {
                 totalDebt = binDebt[0].amount;
                 if (value >= totalDebt) {
                   value = value - totalDebt;
@@ -82,7 +84,7 @@ StartupEvents.registry("block", (event) => {
                       binPlayer.username
                     } {anchor:7,background:1,color:"#55FF55",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 You paid off your :coin: ${global.formatPrice(
                       debtPaid
-                    )} §7debt!`
+                    )} debt!`
                   );
 
                   global.setDebt(binPlayer.server, binPlayerUUID, 0);

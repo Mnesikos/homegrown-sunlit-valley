@@ -28,7 +28,7 @@ ServerEvents.recipes((e) => {
     {
       input: {
         amount: 250,
-        fluid: "create_central_kitchen:sap"
+        fluid: "create_central_kitchen:sap",
       },
       output: "society:sap",
       compacting: true,
@@ -36,5 +36,22 @@ ServerEvents.recipes((e) => {
   ];
   recipes.forEach((recipe) => {
     createPressingRecipe(recipe.input, recipe.output, recipe.compacting);
+  });
+  e.custom({
+    type: "create:compacting",
+    ingredients: [
+      {
+        item: "netherdepthsupgrade:lava_pufferfish",
+      },
+    ],
+    results: [
+      {
+        item: "netherdepthsupgrade:lava_pufferfish",
+      },
+      {
+        amount: 10,
+        fluid: "minecraft:lava",
+      },
+    ],
   });
 });

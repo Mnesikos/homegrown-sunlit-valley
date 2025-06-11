@@ -19,7 +19,7 @@ const generateSprinkler = (e, tier, radius) => {
     .transparent(true)
     .box(2, 0, 2, 14, 16, 14)
     .item((item) => {
-      item.tooltip(Text.gray("Keeps surrounding farmland moist"));
+      item.tooltip(Text.gray("Waters crops before they dry out at 6am"));
       item.tooltip(Text.gray("Can be given a stick for decoration"));
       item.tooltip(Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`));
       item.modelJson({

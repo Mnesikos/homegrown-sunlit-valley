@@ -2,7 +2,11 @@ console.info("[SOCIETY] skullCavern.js loaded");
 
 PlayerEvents.tick((e) => {
   const player = e.player;
-  if (player.age % 200 == 0 && player.level.dimension === "society:skull_cavern") {
+  if (
+    !global.relaxedSkullCavern &&
+    player.age % 200 == 0 &&
+    player.level.dimension === "society:skull_cavern"
+  ) {
     const timeModulo = player.level.dayTime() % 24000;
     const server = player.getServer();
     // 11 PM
@@ -29,16 +33,14 @@ PlayerEvents.tick((e) => {
       );
     }
     // 6AM
-    console.log(timeModulo)
     if (timeModulo >= 23800) {
-      console.log("hehe")
-      global.teleportHome(player, server);
+      global.teleportHome(player, server, level);
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#AAAAAA",y:-60} 10 You fainted in the Skull Cavern...`
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
-      global.handleFee(server, player, "skull_cavern");
+      if (global.enableDeathDebt) global.handleFee(server, player, "skull_cavern");
     }
   }
 });

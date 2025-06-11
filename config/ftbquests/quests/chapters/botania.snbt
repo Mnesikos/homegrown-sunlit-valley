@@ -755,6 +755,24 @@
 			x: 6.0d
 			y: 1.5d
 		}
+		{
+			dependencies: [
+				"221306DB217B8F93"
+				"5E5E6E09E6C6DF02"
+				"1D1F8EA9D17BCF81"
+			]
+			description: ["&6Mystical Flowers&r cannot be found in the world and &6Floral Fertilizer&r are disabled in this pack. Don't bother searching for hours around the world for either! "]
+			icon: "botania:orange_mystical_flower"
+			id: "078F0A0A709A1C67"
+			tasks: [{
+				id: "1840F64E466C295B"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "Why can't I find Mystical Flowers?"
+			x: -5.0d
+			y: 0.0d
+		}
 	]
 	title: "IV.II - Mystical Farming"
 }

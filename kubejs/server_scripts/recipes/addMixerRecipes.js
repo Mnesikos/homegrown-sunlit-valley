@@ -319,4 +319,21 @@ ServerEvents.recipes((e) => {
     ],
     heatRequirement: "superheated",
   });
+    e.custom({
+    type: "create:mixing",
+    ingredients: [
+      {
+        item: "minecraft:netherite_upgrade_smithing_template",
+      },
+      {
+        item: "create:powdered_obsidian",
+      },
+    ],
+    results: [
+      {
+        item: "oreganized:electrum_upgrade_smithing_template"
+      },
+    ],
+    heatRequirement: "superheated",
+  });
 });

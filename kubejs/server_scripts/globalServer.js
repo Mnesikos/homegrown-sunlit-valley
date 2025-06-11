@@ -1,4 +1,5 @@
 console.info("[SOCIETY] globalServer.js loaded");
+
 global.mainUiElementIds = [
   "animalName",
   "animalNameIcons",
@@ -11,7 +12,8 @@ global.mainUiElementIds = [
   "fishName",
   "population",
   "tapperMessage",
-  "skullTeleportMessage"
+  "seedBiomeMessage",
+  "skullTeleportMessage",
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -36,8 +38,8 @@ global.renderUiText = (player, server, messages, clearedMessages) => {
     clearUiPaint(player, clearedMessages);
     player.paint(messages);
     player.persistentData.ageLastShownMessage = player.age;
-    server.scheduleInTicks(80, () => {
-      if (player.age - player.persistentData.get("ageLastShownMessage") >= 80)
+    server.scheduleInTicks(100, () => {
+      if (player.age - player.persistentData.get("ageLastShownMessage") >= 100)
         clearUiPaint(player, clearedMessages);
     });
   });
@@ -376,7 +378,7 @@ global.handleFee = (server, player, reason) => {
       }
     }
     if (!currentDebt) {
-      server.persistentData.debts.push({ uuid: UUID.toString(), amount: 512 });
+      server.persistentData.debts.push({ uuid: UUID.toString(), amount: maxFee });
     }
     player.give(
       Item.of(
@@ -406,8 +408,11 @@ We\'ve taken it out of your bank account for convenience. Be careful next time!
   }
 };
 
-global.teleportHome = (player, server) => {
+global.teleportHome = (player, server, level) => {
   let respawnPosition = player.getRespawnPosition();
+  if (respawnPosition == null) {
+    respawnPosition = level.getSharedSpawnPos();
+  }
   player.teleportTo(
     server.getLevel(player.getRespawnDimension().location()),
     respawnPosition.x,
@@ -417,4 +422,20 @@ global.teleportHome = (player, server) => {
     0.0,
     0.0
   );
+};
+
+/**
+ * Normally this behaivor would be handled buy Pufferfish Skills, but it's broken with shippingbin attributes
+ **/
+global.addAttributesFromStages = (player, server) => {
+  const stages = player.stages;
+  const attributeCommand = (type, mult) =>
+    `attribute ${player.username} shippingbin:${type}_sell_multiplier base set ${mult}`;
+  if (stages.has("tiller")) server.runCommandSilent(attributeCommand("crop", 1.1));
+  if (stages.has("artisan")) server.runCommandSilent(attributeCommand("wood", 1.2));
+  if (stages.has("artful_tycoon")) server.runCommandSilent(attributeCommand("wood", 1.8));
+  if (stages.has("gem_seller")) server.runCommandSilent(attributeCommand("gem", 1.5));
+  if (stages.has("gem_tycoon")) server.runCommandSilent(attributeCommand("gem", 2));
+  if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));
+  if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 2));
 };

@@ -1,7 +1,7 @@
 console.info("[SOCIETY] recyclingMachine.js loaded");
 
 global.recyclingMachineRecipes = [
-  { input: "aquaculture:tin_can", output: ["6x minecraft:iron_ingot"] },
+  { input: "aquaculture:tin_can", output: ["3x numismatics:cog"] },
   { input: "aquaculture:driftwood", output: ["1x meadow:fire_log"] },
   { input: "furniture:trash_bag", output: ["4x society:bouquet_bag"] },
   { input: "society:fire_quartz", output: ["24x minecraft:quartz"] },

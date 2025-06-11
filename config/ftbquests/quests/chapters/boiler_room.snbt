@@ -368,8 +368,9 @@
 					type: "item"
 				}
 				{
-					id: "18D411584A557A02"
-					item: "minecraft:nether_star"
+					count: 3L
+					id: "7FCA758588C563A4"
+					item: { Count: 3, id: "minecraft:wither_skeleton_skull" }
 					type: "item"
 				}
 			]

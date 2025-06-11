@@ -102,6 +102,7 @@
 			]
 			id: "4575948F05E18615"
 			rewards: [{
+				count: 4
 				id: "1A04AEC85EDDB536"
 				item: "oreganized:silver_sheet"
 				type: "item"
@@ -900,6 +901,66 @@
 			}]
 			x: 10.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["25B8A904433E17B3"]
+			description: [
+				"&6Item Pipes&r transfer items between inventories in easier ways than Mechanical Belts. "
+				""
+				"You can place them in a line from one inventory to another, and the &6Shift + Right click&r the pipe that's next to the inventory you want to take items out from."
+				""
+				"&oPipes also cannot automate Artisan Machines&r"
+			]
+			id: "36ACACFB9D5A97F9"
+			rewards: [{
+				count: 16
+				id: "492A34DDC06691E0"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			subtitle: "Get your Strong Allan wrench"
+			tasks: [{
+				id: "5BF79EC021D56A30"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			title: "Pipes!"
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"1A1129507F643085"
+				"4575948F05E18615"
+			]
+			description: [
+				"&6Item Pipes&r are handy, but relatively slow to move items around, and don't have the filtering properties of Brass."
+				""
+				"The &6Advanced Pipe Upgrade&r can be inserted into an extracting pipe to increase the amount of items moved at once. It also unlocks complex filtering options."
+				""
+				"You can also set the destination of items in complex pipe networks using the &6Filter Destination Tool&r."
+			]
+			icon: "pipez:advanced_upgrade"
+			id: "45D9A962F73792EA"
+			rewards: [{
+				id: "27FC316449EF8E78"
+				item: "numismatics:crown"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5617C9C45A6CCB27"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+				{
+					id: "6231D0BB5641ADB8"
+					item: "pipez:filter_destination_tool"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
 		}
 	]
 	title: "IV.I - Mechanical Farming"

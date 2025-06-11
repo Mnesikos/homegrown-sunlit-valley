@@ -25,7 +25,7 @@ BlockEvents.rightClicked((e) => {
     let blockState;
     if (
       block.hasTag("minecraft:crops") &&
-      !deniedCrops.includes(checkBlocked.id) &&
+      !deniedCrops.includes(block.id) &&
       initialBlock.block.isMaxAge(initialBlock)
     ) {
       let xpCount = 0;

@@ -4,6 +4,15 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "pipez:energy_pipe",
+    "pipez:fluid_pipe",
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:ultimate_upgrade",
+    "pipez:improved_upgrade",
+    "pipez:infinity_upgrade",
+    "pipez:basic_upgrade",
+    "pipez:wrench",
     "waterframes:remote",
     "waterframes:frame",
     "waterframes:tv",
@@ -638,6 +647,7 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "oreganized:electrum_upgrade_smithing_template",
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
     "moredelight:cutting/sliced_bread",

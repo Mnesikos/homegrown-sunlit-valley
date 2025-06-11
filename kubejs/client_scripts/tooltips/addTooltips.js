@@ -368,7 +368,9 @@ ItemEvents.tooltip((tooltip) => {
   ["society:large_warped_milk", "society:warped_milk"].forEach((milk) => {
     tooltip.add(
       milk,
-      Text.aqua("Milked from Wooly Cows that come through portals in Warped Forests")
+      Text.aqua(
+        "Milked from Wooly Cows that come through portals in Warped Forests. They take a while to spawn on the Nether side!"
+      )
     );
   });
   tooltip.add("society:fine_wool", Text.gray("Collected from happy Sheep and Rabbits"));
@@ -783,6 +785,7 @@ ItemEvents.tooltip((tooltip) => {
       text.add(2, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("] to view blocks")]);
     }
   });
+  tooltip.add("trials:ominous_bottle", Text.blue("Bad Omen (10:00)"));
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));

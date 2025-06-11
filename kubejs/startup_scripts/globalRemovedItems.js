@@ -1,4 +1,14 @@
 global.removedItems = [
+  // Pipez
+  "pipez:energy_pipe",
+  "pipez:fluid_pipe",
+  "pipez:gas_pipe",
+  "pipez:universal_pipe",
+  "pipez:ultimate_upgrade",
+  "pipez:improved_upgrade",
+  "pipez:infinity_upgrade",
+  "pipez:basic_upgrade",
+  "pipez:wrench",
   // Brushes
   "betterarcheology:netherite_brush",
   "betterarcheology:iron_brush",

@@ -648,9 +648,9 @@
     "modId": "lithostitched",
     "version": "1.4.8"
   },
-  "littlejoys-forge-1.20.1-20.1.8.jar": {
+  "littlejoys-forge-1.20.1-20.1.11.jar": {
     "modId": "littlejoys",
-    "version": "20.1.8"
+    "version": "20.1.11"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "modId": "liltractor",
@@ -799,6 +799,10 @@
   "PickUpNotifier-v8.0.0-1.20.1-Forge.jar": {
     "modId": "pickupnotifier",
     "version": "8.0.0"
+  },
+  "pipez-forge-1.20.1-1.2.21.jar": {
+    "modId": "pipez",
+    "version": "1.20.1-1.2.21"
   },
   "Placebo-1.20.1-8.6.3.jar": {
     "modId": "placebo",
@@ -1056,9 +1060,9 @@
     "modId": "toastcontrol",
     "version": "8.0.3"
   },
-  "toms_storage-1.20-1.7.0.jar": {
+  "toms_storage-1.20-1.7.1.jar": {
     "modId": "toms_storage",
-    "version": "1.7.0"
+    "version": "1.7.1"
   },
   "toofast-1.20-0.4.3.5.jar": {
     "modId": "toofast",

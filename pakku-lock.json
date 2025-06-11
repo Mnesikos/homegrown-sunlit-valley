@@ -6274,6 +6274,41 @@
             ]
         },
         {
+            "pakku_id": "EcqbqPTtKRyFjmyZ",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "create-pipez"
+            },
+            "name": {
+                "curseforge": "Lopy's Create Style Pipez"
+            },
+            "id": {
+                "curseforge": "901091"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Lopy-Create-Pipez.zip",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4691/998/Lopy-Create-Pipez.zip",
+                    "id": "4691998",
+                    "parent_id": "901091",
+                    "hashes": {
+                        "sha1": "beb8333c34b897f1e5dfd0a607753ac73d66e4b9",
+                        "md5": "6c7aafdc169fd1b9c5caeb8c3ebead55"
+                    },
+                    "required_dependencies": [],
+                    "size": 107979,
+                    "date_published": "2023-08-10T10:41:22.940Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "j5fhLJpms8zTnyMd",
             "type": "MOD",
             "slug": {
@@ -7592,6 +7627,42 @@
                     ],
                     "size": 102164,
                     "date_published": "2023-06-28T09:11:56.270Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Gtu34NPDq27uGOTK",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "pipez"
+            },
+            "name": {
+                "curseforge": "Pipez"
+            },
+            "id": {
+                "curseforge": "443900"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "pipez-forge-1.20.1-1.2.21.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/6368/313/pipez-forge-1.20.1-1.2.21.jar",
+                    "id": "6368313",
+                    "parent_id": "443900",
+                    "hashes": {
+                        "sha1": "b9a24189cf1dbc0597a98ecd46920fbc476a7a48",
+                        "md5": "277bb1f28f6752a00ba3f78ddf53367d"
+                    },
+                    "required_dependencies": [],
+                    "size": 431585,
+                    "date_published": "2025-03-30T20:32:36.123Z"
                 }
             ]
         },
@@ -9482,7 +9553,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.11.0.jar",
+                    "file_name": "splendid_slimes-0.12.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9490,18 +9561,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6631/146/splendid_slimes-0.11.0.jar",
-                    "id": "6631146",
+                    "url": "https://edge.forgecdn.net/files/6635/19/splendid_slimes-0.12.1.jar",
+                    "id": "6635019",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "9bac7f2fcc278b24cee6c083fe3eb822cc2e3216",
-                        "md5": "f68d4c288d118ef064c1d60445fea12f"
+                        "sha1": "db48cca0eecd577dacf379a9c1064c47817dea54",
+                        "md5": "51362baf3fb253d0c86987aa371f9231"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 442026,
-                    "date_published": "2025-06-08T21:07:53.997Z"
+                    "size": 448326,
+                    "date_published": "2025-06-10T00:41:24.920Z"
                 }
             ]
         },
@@ -10179,7 +10250,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "toms_storage-1.20-1.7.0.jar",
+                    "file_name": "toms_storage-1.20-1.7.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -10188,16 +10259,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6093/707/toms_storage-1.20-1.7.0.jar",
-                    "id": "6093707",
+                    "url": "https://edge.forgecdn.net/files/6418/133/toms_storage-1.20-1.7.1.jar",
+                    "id": "6418133",
                     "parent_id": "378609",
                     "hashes": {
-                        "sha1": "92ae8df283ab361e0a4fd0c9c535c1f68ba3e71b",
-                        "md5": "a12cba85bc79469050311446e3d93490"
+                        "sha1": "8b70aed9e35ad78fdc2f9fcb94a29dc64ba8d757",
+                        "md5": "9fac0628fc9767b1bc50dbae38851e11"
                     },
                     "required_dependencies": [],
-                    "size": 519961,
-                    "date_published": "2025-01-16T18:06:24.327Z"
+                    "size": 520148,
+                    "date_published": "2025-04-13T11:20:31.313Z"
                 }
             ]
         },

@@ -5,7 +5,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
   const { x, z } = block;
   let errorText;
   if (level.dimension === "society:skull_cavern") {
-    global.teleportHome(player, server);
+    global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {
     if (level.dayTime() % 24000 > 18000) {
       errorText = "It's too late at night to enter the Skull Cavern...";

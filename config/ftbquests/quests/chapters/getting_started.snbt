@@ -268,12 +268,19 @@
 			]
 			icon: "betterarcheology:villager_fossil"
 			id: "66D159252C70D5F2"
-			rewards: [{
-				count: 2
-				id: "3960776966CF1ACC"
-				item: "minecraft:villager_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "3960776966CF1ACC"
+					item: "minecraft:villager_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "71BC141AEB9C3428"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0E99D2F7380F51CF"
 				title: "Understood!"
