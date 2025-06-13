@@ -962,6 +962,40 @@
 			x: 7.5d
 			y: 1.0d
 		}
+		{
+			dependencies: ["4C9E6CB01631C0B6"]
+			description: [
+				"&6Hypertubes&r are a transportation method that uses rotational power to zoop you around your base."
+				""
+				"The &6Entrance Block&r requires rotational power, and two of them can be linked using &6Hypertube Blocks&r using the same rules as train tracks."
+			]
+			icon: "create_hypertube:hypertube_entrance"
+			id: "75472A79424BCD40"
+			rewards: [{
+				id: "489B88094397CA13"
+				item: "create_hypertube:hypertube_entrance"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7CE6FA58BC2C4BA4"
+					item: "create_hypertube:hypertube_entrance"
+					type: "item"
+				}
+				{
+					id: "68C293A0255E3B25"
+					item: {
+						Count: 1
+						id: "create_hypertube:hypertube"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Tubular Transport"
+			x: 10.5d
+			y: 2.0d
+		}
 	]
 	title: "IV.I - Mechanical Farming"
 }

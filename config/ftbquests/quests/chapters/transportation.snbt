@@ -317,9 +317,11 @@
 		{
 			dependencies: ["4622E3EC44CED1B6"]
 			description: [
-				"The &6Elytra&r can no longer be found in End Cities, only &6Dragon Eggs&r."
+				"The End does not exist in Sunlit Valley."
 				""
-				"You'll need to purchase the expensive parts, and conquer to &6Skull Cavern&r to conquer the skies."
+				"To craft an &6Elytra&r, you'll need to purchase the expensive parts, and conquer to &6Skull Cavern&r."
+				""
+				"Alternatively, an &6Abandoned Farm&r may be repaired to obtain one..."
 			]
 			id: "164AAAAD6433695A"
 			rewards: [{

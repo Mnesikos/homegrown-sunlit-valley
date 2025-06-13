@@ -6,7 +6,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
   e.add("minecraft:without_zombie_sieges", "#minecraft:is_overworld");
   e.add("society:spawns_magma_geodes", "#minecraft:is_nether");
   e.add("forge:is_snowy", "society:frozen_caves");
-  e.add("forge:is_snowy", "society:frozen_malestrom");
+  e.add("forge:is_snowy", "society:frozen_maelstrom");
 
   const magmaGeodeBiomes = [
     "society:blackstone_caves",
@@ -20,7 +20,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
     "society:skull_caves",
     "society:lush_caverns",
     "society:frozen_caves",
-    "society:frozen_malestrom",
+    "society:frozen_maelstrom",
     "society:desert_caves",
     "society:desert_fault",
     "society:blackstone_caves",

@@ -17,7 +17,7 @@
         {
           "type": "minecraft:item",
           "name": "society:earth_crystal",
-          "weight": 20
+          "weight": 22
         },
         {
           "type": "minecraft:item",
@@ -28,11 +28,6 @@
           "type": "minecraft:item",
           "name": "society:pristine_amethyst_chunk",
           "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_scrap",
-          "weight": 2
         },
         {
           "type": "minecraft:item",

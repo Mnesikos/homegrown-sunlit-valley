@@ -316,6 +316,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("farmersdelight:cooking_pot", Text.green("Automatable using cooking guide"));
   tooltip.add("meadow:cooking_cauldron", Text.gray("Decorative, has no recipes"));
+  tooltip.add("trading_floor:trading_depot", Text.red("Causes crashes with Simple Storage Networks!"))
   tooltip.add(
     [
       "candlelight:red_nether_bricks_stove",

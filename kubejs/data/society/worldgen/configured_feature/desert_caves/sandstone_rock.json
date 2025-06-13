@@ -59,6 +59,12 @@
           }
         },
         {
+          "weight": 2,
+          "data": {
+            "Name": "society:fire_quartz"
+          }
+        },
+        {
           "weight": 1,
           "data": {
             "Name": "society:iridium_ore"

@@ -45,6 +45,12 @@
           "data": {
             "Name": "society:geode_node"
           }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:earth_crystal"
+          }
         }
       ]
     }

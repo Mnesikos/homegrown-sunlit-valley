@@ -76,7 +76,8 @@ StartupEvents.registry("block", (event) => {
             let data = animal.persistentData;
             let interactionCooldown = global.animalInteractionCooldown;
             const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
-            if (hungry || !global.getAnimalIsNotCramped(animal)) return;
+            if (hungry) return;
+            if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
             if (global.checkEntityTag(animal, "society:milkable_animal")) {
               interactionCooldown *= global.getMilkingTimeMult(animal.type);
               let milkItem = global.getMilk(

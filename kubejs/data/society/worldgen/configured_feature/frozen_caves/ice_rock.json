@@ -35,6 +35,12 @@
           }
         },
         {
+          "weight": 2,
+          "data": {
+            "Name": "society:earth_crystal"
+          }
+        },
+        {
           "weight": 1,
           "data": {
             "Name": "society:omni_geode_node"

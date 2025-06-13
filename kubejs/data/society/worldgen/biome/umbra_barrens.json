@@ -70,7 +70,7 @@
     [],
     ["society:umbra_barrens/uni_geode"],
     [],
-    ["minecraft:chorus_plant"],
+    ["minecraft:chorus_plant", "society:umbra_barrens/endstone_patch_floor"],
     ["minecraft:freeze_top_layer"]
   ]
 }

@@ -25,7 +25,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.initialData({ fill: "0" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTick(300, 0, (entity) => {
         const { inventory, block, level } = entity;
         if (global.inventoryHasItems(inventory, "society:animal_feed", 1) != 1) return;
         let slots = inventory.getSlots();

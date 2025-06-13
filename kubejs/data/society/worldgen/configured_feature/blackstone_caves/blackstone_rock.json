@@ -35,6 +35,18 @@
           }
         },
         {
+          "weight": 2,
+          "data": {
+            "Name": "society:magma_geode_node"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:fire_quartz"
+          }
+        },
+        {
           "weight": 4,
           "data": {
             "Name": "society:omni_geode_node"
