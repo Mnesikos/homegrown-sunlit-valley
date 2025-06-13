@@ -9,6 +9,13 @@ global.isFresh = (age, actionAge, interactionCooldown) => {
   return age < actionAge;
 };
 
+global.getAnimalIsNotCramped = (target) => {
+  const level = target.getLevel();
+  const entities = level.getEntitiesWithin(target.boundingBox.inflate(1)).length;
+
+  return entities <= 6
+};
+
 global.getMilkingTimeMult = (type) => {
   if (type === "minecraft:goat" || type === "species:mammutilation") return 2;
   else if (type === "minecraft:sheep") return 1.5;
@@ -29,8 +36,7 @@ const resolveMilk = (hearts, type, warped) => {
   return `${size}${resolvedType}${resolvedType === "" ? "" : "_"}milk`;
 };
 
-// TODO, add param for affection increase
-global.getMilk = (level, target, data, player, interactionCooldown) => {
+global.getMilk = (level, target, data, player, interactionCooldown, raiseEffection) => {
   const ageLastMilked = data.getInt("ageLastMilked");
   const hungry =
     level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
@@ -57,7 +63,7 @@ global.getMilk = (level, target, data, player, interactionCooldown) => {
     !hungry &&
     (freshAnimal || level.time - ageLastMilked > interactionCooldown)
   ) {
-    data.affection = affection + affectionIncrease;
+    if (raiseEffection) data.affection = affection + affectionIncrease;
     data.ageLastMilked = level.time;
     if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
       quality = 3;
@@ -65,6 +71,7 @@ global.getMilk = (level, target, data, player, interactionCooldown) => {
       quality = (hearts % 5) - 2;
     }
     let milkId = resolveMilk(hearts, nonIdType, warped);
+    if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3; 
     return Item.of(
       `${player && player.stages.has("shepherd") ? 2 : 1}x ${
         milkId.includes(":") ? milkId : `society:${milkId}`

@@ -529,12 +529,6 @@ global.removedItems = [
   "waystones:warp_dust",
   "waystones:return_scroll",
   // Trofers
-  "trofers:small_plate",
-  "trofers:medium_plate",
-  "trofers:large_pillar",
-  "trofers:medium_pillar",
-  "trofers:large_plate",
-  "trofers:small_pillar",
   "fantasyfurniture:furniture_station",
   "brewery:hops_seeds",
   "farm_and_charm:strawberry_seeds",

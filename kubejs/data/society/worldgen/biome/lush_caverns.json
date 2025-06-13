@@ -21,10 +21,7 @@
   "downfall": 0.5,
   "features": [
     [],
-    ["society:lush_caverns/bee_hive"],
-    [],
     ["society:ladder", "society:rock"],
-    [],
     ["minecraft:lake_lava_underground", "minecraft:lake_lava_surface"],
     ["minecraft:amethyst_geode"],
 
@@ -50,6 +47,9 @@
       "society:lush_caverns/spore_blossom",
       "society:lush_caverns/classic_vines_cave_feature"
     ],
+    [],
+    ["society:lush_caverns/bee_hive"],
+    [],
     [],
     ["minecraft:freeze_top_layer"]
   ],

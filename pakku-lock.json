@@ -9553,7 +9553,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.12.1.jar",
+                    "file_name": "splendid_slimes-0.12.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9561,18 +9561,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6635/19/splendid_slimes-0.12.1.jar",
-                    "id": "6635019",
+                    "url": "https://edge.forgecdn.net/files/6641/622/splendid_slimes-0.12.2.jar",
+                    "id": "6641622",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "db48cca0eecd577dacf379a9c1064c47817dea54",
-                        "md5": "51362baf3fb253d0c86987aa371f9231"
+                        "sha1": "5c69b1375059461b39d9296f715b006055b1256c",
+                        "md5": "00bb78f147b83904524416cd657510e8"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 448326,
-                    "date_published": "2025-06-10T00:41:24.920Z"
+                    "size": 448423,
+                    "date_published": "2025-06-11T21:45:57.317Z"
                 }
             ]
         },

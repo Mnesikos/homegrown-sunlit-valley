@@ -1,5 +1,8 @@
 console.info("[SOCIETY] skullTeleporter.js loaded");
 
+BlockEvents.leftClicked("society:skull_cavern_teleporter", (e) => {
+  if (e.level.dimension === "society:skull_cavern") e.cancel();
+});
 BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
   const { block, player, level, server } = e;
   const { x, z } = block;

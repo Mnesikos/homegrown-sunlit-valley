@@ -20,9 +20,9 @@ StartupEvents.registry("block", (e) => {
         .shape(4, 0, 0, 0, 16, 8, 16)
         .shape(5, 0, 0, 0, 16, 16, 16)
         .shape(6, 0, 0, 0, 16, 16, 16)
-        .shape(7, 0, 0, 0, 16, 21, 16)
-        .shape(8, 0, 0, 0, 16, 21, 16)
-        .shape(9, 0, 0, 0, 16, 21, 16)
+        .shape(7, 0, 0, 0, 16, 16, 16)
+        .shape(8, 0, 0, 0, 16, 16, 16)
+        .shape(9, 0, 0, 0, 16, 16, 16)
         .shape(10, 0, 0, 0, 16, 24, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))
@@ -195,12 +195,12 @@ StartupEvents.registry("block", (e) => {
     .create("brewery:hop_trellis", "crop")
     .age(6, (builder) => {
       builder
-        .shape(0, 0, 0, 0, 16, 22, 16)
-        .shape(1, 0, 0, 0, 16, 22, 16)
-        .shape(2, 0, 0, 0, 16, 22, 16)
-        .shape(3, 0, 0, 0, 16, 22, 16)
-        .shape(4, 0, 0, 0, 16, 22, 16)
-        .shape(5, 0, 0, 0, 16, 22, 16)
+        .shape(0, 0, 0, 0, 16, 16, 16)
+        .shape(1, 0, 0, 0, 16, 16, 16)
+        .shape(2, 0, 0, 0, 16, 16, 16)
+        .shape(3, 0, 0, 0, 16, 16, 16)
+        .shape(4, 0, 0, 0, 16, 16, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
         .shape(6, 0, 0, 0, 16, 22, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))
@@ -251,8 +251,8 @@ StartupEvents.registry("block", (e) => {
         .shape(2, 0, 0, 0, 16, 6, 16)
         .shape(3, 0, 0, 0, 16, 12, 16)
         .shape(4, 0, 0, 0, 16, 12, 16)
-        .shape(5, 0, 0, 0, 16, 20, 16)
-        .shape(6, 0, 0, 0, 16, 20, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16)
+        .shape(6, 0, 0, 0, 16, 16, 16)
         .shape(7, 0, 0, 0, 16, 20, 16);
     })
     .survive((state, level, pos) => surviveCheck(level, pos))

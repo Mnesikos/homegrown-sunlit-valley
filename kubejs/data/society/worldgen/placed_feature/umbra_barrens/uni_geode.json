@@ -1,9 +1,9 @@
 {
-  "feature": "society:umbra_barrens/end_room",
+  "feature": "society:umbra_barrens/uni_geode",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 80
+      "chance": 100
     },
     {
       "type": "minecraft:random_offset",
@@ -15,10 +15,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": 40
+          "absolute": 0
         },
         "max_inclusive": {
-          "absolute": 128
+          "absolute": 64
         }
       }
     },

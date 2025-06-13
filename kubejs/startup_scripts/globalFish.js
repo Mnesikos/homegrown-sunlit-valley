@@ -246,9 +246,10 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
       if (player.stages.has("scum_collector")) rewardChance *= 2;
       if (population >= reward.minPopulation && fishPondRoll <= rewardChance) {
         // Rewards scale to amount of fish population relative to when reward starts spawning
-        const calculateCount = Math.floor(
+        let calculateCount = Math.floor(
           reward.count * ((population - reward.minPopulation) / (10 - reward.minPopulation))
         );
+        if(population == 10) calculateCount = reward.count
         harvestOutputs.push(`${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`);
       }
     });

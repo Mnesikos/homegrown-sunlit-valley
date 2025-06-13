@@ -12,16 +12,6 @@ const debugData = (player, level, data, hearts) => {
   player.tell(`Magic Harvested: ${data.getInt("ageLastMagicHarvested")}`);
 };
 
-const checkConditions = (e) => {
-  const { target } = e;
-  const level = target.getLevel();
-  const entities = level.getEntitiesWithin(target.boundingBox.inflate(1)).length;
-
-  if (entities > 6) return false;
-
-  return true;
-};
-
 const initializeFarmAnimal = (data, target, level) => {
   if (!data.getInt("affection")) {
     data.affection = 1;
@@ -83,12 +73,11 @@ const handlePet = (name, type, data, interactionCooldown, peckish, hungry, e) =>
   let errorText = "";
 
   if (level.time - ageLastPet > interactionCooldown) {
-    const livableArea = checkConditions(e);
+    const livableArea = global.getAnimalIsNotCramped(target);
     debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
     data.affection = affection + affectionIncrease;
 
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
-      affectionIncrease = 0;
       data.affection = affection - (hungry ? 25 : 50);
     }
     data.ageLastPet = level.time;
@@ -203,7 +192,7 @@ const handleMilk = (name, type, data, interactionCooldown, hungry, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   const capitalizedType = type.charAt(0).toUpperCase() + type.slice(1);
   let errorText;
-  let milkItem = global.getMilk(level, target, data, player, interactionCooldown);
+  let milkItem = global.getMilk(level, target, data, player, interactionCooldown, true);
 
   if (milkItem !== -1) {
     let milk = level.createEntity("minecraft:item");

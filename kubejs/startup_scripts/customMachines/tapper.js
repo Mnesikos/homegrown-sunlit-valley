@@ -68,6 +68,7 @@ StartupEvents.registry("block", (event) => {
     .property(integerProperty.create("type", 0, global.tapperRecipes.length))
     .soundType("copper")
     .defaultCutout()
+    .box(3, 0, 6, 13, 16, 16)
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")

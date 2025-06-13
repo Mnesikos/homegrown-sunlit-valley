@@ -278,7 +278,7 @@
 				"The Terra set of tools and weapons have various bonues."
 				""
 				"- &6Truncators&r fell trees in a single blow"
-				"- &6Shatterers&r allow you to mine in a large area, and can be upgraded using mana to increase the area mined"
+				"- &6Shatterers&r allow you to mine in a large area, and can be upgraded using mana to increase the area mined up to 9x9"
 				"- &6Blades&r come with an additional ranged attack using mana"
 			]
 			icon: {

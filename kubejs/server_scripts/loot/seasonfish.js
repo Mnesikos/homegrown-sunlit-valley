@@ -309,7 +309,6 @@ LootJS.modifiers((e) => {
   );
 
   // + Fish skills
-
   e.addLootTableModifier("minecraft:gameplay/fishing")
     .hasAnyStage("fly_fisher")
     .modifyLoot(Ingredient.all, (itemStack) => {

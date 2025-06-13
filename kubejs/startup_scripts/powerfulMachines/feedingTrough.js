@@ -76,6 +76,7 @@ StartupEvents.registry("block", (event) => {
           else if (feedCount >= 128) fill = 2;
           else if (feedCount >= 8) fill = 1;
           entity.block.set(entity.block.id, {
+            facing: entity.block.properties.facing,
             fill: String(fill),
           });
         }

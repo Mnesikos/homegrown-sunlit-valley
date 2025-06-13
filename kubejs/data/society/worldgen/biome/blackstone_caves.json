@@ -103,6 +103,9 @@
       "society:blackstone_caves/basalt_patch_floor",
       "minecraft:lake_lava_underground"
     ],
+    [],
+    ["society:blackstone_caves/dino_den"],
+    [],
     ["minecraft:freeze_top_layer"]
   ]
 }

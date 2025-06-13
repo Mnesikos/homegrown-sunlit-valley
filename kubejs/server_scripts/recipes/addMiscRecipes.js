@@ -167,7 +167,7 @@ ServerEvents.recipes((e) => {
     z: "create:zinc_ingot",
   });
   e.shaped("farm_and_charm:mincer", ["iCi", "ici", "ifi"], {
-    c: "create:millstone",
+    c: "minecraft:iron_block",
     C: "numismatics:crown",
     f: "society:fire_quartz",
     i: "minecraft:iron_ingot",

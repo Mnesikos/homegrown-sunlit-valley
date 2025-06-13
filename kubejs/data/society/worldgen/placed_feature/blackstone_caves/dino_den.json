@@ -1,13 +1,13 @@
 {
-  "feature": "society:umbra_barrens/end_room",
+  "feature": "society:blackstone_caves/dino_den",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 80
+      "chance": 100
     },
     {
       "type": "minecraft:random_offset",
-      "xz_spread": -6,
+      "xz_spread": -10,
       "y_spread": 0
     },
     {
