@@ -40,10 +40,52 @@
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxhostile": 200,
+      "maxhostile": 175,
       "mindist": 12,
       "maxdist": 50,
       "maxverticaldist": 20
+    }
+  },
+  {
+    "mob": "legendarycreatures:corpse_eater",
+    "persecond": 0.5,
+    "attempts": 20,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5
+    },
+    "conditions": {
+      "norestrictions": true,
+      "dimension": "society:skull_cavern",
+      "maxthis": 10
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "persecond": 0.1,
+    "attempts": 10,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5,
+      "groupdistance": 3
+    },
+    "conditions": {
+      "dimension": "minecraft:the_nether",
+      "maxthis": 25
+    }
+  },
+  {
+    "mob": "splendid_slimes:splendid_slime",
+    "persecond": 0.1,
+    "attempts": 10,
+    "amount": {
+      "minimum": 2,
+      "maximum": 5,
+      "groupdistance": 3
+    },
+    "conditions": {
+      "dimension": "society:skull_cavern",
+      "maxthis": 25
     }
   }
 ]

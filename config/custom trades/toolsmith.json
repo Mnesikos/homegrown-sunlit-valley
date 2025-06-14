@@ -10,12 +10,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -28,12 +28,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -46,12 +46,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sprocket",
-        "amount": 2,
+        "itemKey": "numismatics:cog",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -65,11 +65,11 @@
       },
       "request": {
         "itemKey": "numismatics:sprocket",
-        "amount": 1,
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -83,11 +83,11 @@
       },
       "request": {
         "itemKey": "numismatics:cog",
-        "amount": 2,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
@@ -100,12 +100,12 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
-      "maxUses": 64,
+      "maxUses": 4096,
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,

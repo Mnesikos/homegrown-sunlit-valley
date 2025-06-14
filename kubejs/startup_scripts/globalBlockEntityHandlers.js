@@ -411,7 +411,8 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
   let blockProperties = level.getBlock(block.pos).getProperties();
-  if (!block.getEntityData().placer) {
+  // Schematiccannon check
+  if (block.getEntityData() && !block.getEntityData().placer) {
     block.popItemFromFace(block.id, "up");
     block.set("minecraft:air");
   }

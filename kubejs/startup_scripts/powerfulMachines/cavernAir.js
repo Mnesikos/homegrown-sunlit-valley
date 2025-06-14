@@ -54,8 +54,7 @@ const endstoneRockTable = [
   { block: "society:end_stone_boulder", weight: 139 },
   { block: "society:deepslate_sparkstone_ore", weight: 14 },
   { block: "society:omni_geode_node", weight: 4, sturdy: true },
-  { block: "society:deepslate_iridium_ore", weight: 3 },
-  { block: "minecraft:chorus_flower", weight: 1 },
+  { block: "society:deepslate_iridium_ore", weight: 3 }
 ];
 
 const rollReplaceTable = (table, hasRope) => {

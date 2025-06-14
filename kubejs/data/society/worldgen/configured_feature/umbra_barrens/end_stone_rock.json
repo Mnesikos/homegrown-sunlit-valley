@@ -27,12 +27,6 @@
           "data": {
             "Name": "society:deepslate_iridium_ore"
           }
-        },
-        {
-          "weight": 1,
-          "data": {
-            "Name": "minecraft:chorus_flower"
-          }
         }
       ]
     }

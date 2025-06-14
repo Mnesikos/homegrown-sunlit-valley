@@ -9146,43 +9146,6 @@
             ]
         },
         {
-            "pakku_id": "EhilvTedsU6cwart",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "snow-under-trees"
-            },
-            "name": {
-                "curseforge": "Snow Under Trees"
-            },
-            "id": {
-                "curseforge": "353942"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "snowundertrees-1.20.1-1.4.9.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "neoforge",
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6173/30/snowundertrees-1.20.1-1.4.9.jar",
-                    "id": "6173030",
-                    "parent_id": "353942",
-                    "hashes": {
-                        "sha1": "0f1d4060971502ed310bd072d1218b40e1a66c1b",
-                        "md5": "7c1e1b6203893b10596588a3a64e64ae"
-                    },
-                    "required_dependencies": [],
-                    "size": 27120,
-                    "date_published": "2025-02-08T23:26:45.233Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "6zxwdUYpbEqPrAuO",
             "type": "MOD",
             "slug": {

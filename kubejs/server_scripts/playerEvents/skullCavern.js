@@ -34,7 +34,7 @@ PlayerEvents.tick((e) => {
     }
     // 6AM
     if (timeModulo >= 23800) {
-      global.teleportHome(player, server, level);
+      global.teleportHome(player, server, player.level);
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#AAAAAA",y:-60} 10 You fainted in the Skull Cavern...`
       );
