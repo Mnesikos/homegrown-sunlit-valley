@@ -4,8 +4,8 @@ global.chunkLoadManager = (e) => {
   const { chunk, level } = e;
 
   if (level.dimension === "society:skull_cavern" && !level.isClientSide()) {
-    const day = Number((level.time / 24000).toFixed(0));
-    console.log(level.time);
+    const day = Number((level.dayTime / 24000).toFixed(0));
+    console.log(level.dayTime())
     if (!level.persistentData.chunkParityMap) level.persistentData.chunkParityMap = {};
     let chunkPos = chunk.pos.toString();
     let chunkMap = level.persistentData.chunkParityMap;

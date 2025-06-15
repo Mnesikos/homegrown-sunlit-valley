@@ -82,17 +82,20 @@ if (!global.relaxedSkullCavern) {
       "oreganized:deepslate_lead_ore",
     ],
     (e) => {
-      const { level, block, player, server } = e;
+      const { level, block, server } = e;
       const pos = block.getPos();
+
       if (level.dimension === "society:skull_cavern") {
         console.log(block.biomeId);
         let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
-        console.log(rockType);
         server.scheduleInTicks(5, () => {
           if (level.getBlock(pos) == "minecraft:air") {
+            let toggleBit =
+              level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
+        console.log(toggleBit);
             block.set("society:cavern_air", {
               type: String(rockType),
-              chunkbit: "0",
+              chunkbit: toggleBit.toString(),
             });
           }
         });

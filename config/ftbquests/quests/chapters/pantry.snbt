@@ -344,7 +344,7 @@
 				"314D5DDD65659FDE"
 				"3EF57F71C1C786FE"
 			]
-			description: ["Collecting crops of every season and animal products completes the Pantry. This gives you &648 Greenhouse Glass&r, an expensive material that allows crops of any season to grow when placed at most 16 blocks above it."]
+			description: ["Collecting crops of every season and animal products completes the Pantry. This gives you &648 Greenhouse Glass&r, an expensive material that allows crops of any season to grow when glass is at most 16 blocks above the crop."]
 			icon: "furniture:explorers_box"
 			id: "7CBAF0748446A0C2"
 			rewards: [

@@ -546,7 +546,7 @@
 				""
 				"The &6Smart Shipping Bin&r fixes many issues with not being able to sell goods, such as when there's not enough space for coins. It sells every 5 minutes."
 				""
-				"A &6Basket&r can be placed in front of it to capture coins."
+				"A &6Basket&r can be placed underneath the output face to capture coins."
 			]
 			id: "1AA78CF8A14DEE76"
 			rewards: [{

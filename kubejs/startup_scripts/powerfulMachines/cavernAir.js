@@ -54,7 +54,7 @@ const endstoneRockTable = [
   { block: "society:end_stone_boulder", weight: 139 },
   { block: "society:deepslate_sparkstone_ore", weight: 14 },
   { block: "society:omni_geode_node", weight: 4, sturdy: true },
-  { block: "society:deepslate_iridium_ore", weight: 3 }
+  { block: "society:deepslate_iridium_ore", weight: 3 },
 ];
 
 const rollReplaceTable = (table, hasRope) => {
@@ -79,8 +79,9 @@ const rollReplaceTable = (table, hasRope) => {
 
 global.handleRegen = (e) => {
   const { level, block } = e;
-  console.log("running");
-  // console.log(level.getChunkSource().chunkMap.getChunks());
+  let toggleBit = level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
+
+  if (String(toggleBit) === block.properties.get("chunkbit")) return;
   const belowPos = block.getPos().below();
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   const belowBelowPos = belowBlock.getPos().below();

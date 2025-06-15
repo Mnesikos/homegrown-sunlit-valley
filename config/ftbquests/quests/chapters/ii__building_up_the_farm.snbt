@@ -1261,9 +1261,9 @@
 			description: [
 				"Fruit trees slowly grow fruits that can be hand picked. "
 				""
-				"They are subject to the same seasonal restrictions as crops, but tend to be more valuable. "
-				""
 				"A handfull of basic ones can be purchased from the Market, but you'll need to dive into the &6Skull Cavern&r for more advanced ones."
+				""
+				"The fruits can be moved by breaking them with &6Shears&r and placed under other leaves."
 			]
 			icon: "pamhc2trees:starfruit_sapling"
 			id: "0E68DD5DFB2DFD97"

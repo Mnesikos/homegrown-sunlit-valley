@@ -25,9 +25,29 @@
     },
     {
       "stack": "item:decorative_blocks:spruce_beam"
+    },
+    {
+      "stack": "item:meadow:amethyst_cheese_block",
+      "recipe": "jei:/meadow/cheese_form/amethyst_cheese"
     }
   ],
   "lookup_history": [
+    "item:farmersdelight:sweet_berry_cheesecake",
+    "item:veggiesdelight:sweet_potato_dough",
+    "item:veggiesdelight:sweet_potato_cupcake",
+    "item:meadow:amethyst_cheese_block",
+    "item:meadow:wooden_amethyst_milk_bucket",
+    "item:bakery:cake_dough",
+    "item:bakery:sweet_dough",
+    "item:farm_and_charm:dough",
+    "item:simplehats:cheeseslice",
+    "item:society:double_aged_sheep_cheese_block",
+    "item:society:aged_amethyst_cheese_block",
+    "item:society:aged_grain_cheese_block",
+    "item:meadow:warped_cheese_block",
+    "item:veggiesdelight:carrot_cake",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
+    "item:quark:vertical_oak_planks",
     {
       "type": "item",
       "id": "minecraft:netherite_scrap",
@@ -62,7 +82,6 @@
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:slimy\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:luminous\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:weeping\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:webby\"}}",
@@ -146,9 +165,6 @@
       "nbt": "{}",
       "amount": 64
     },
-    "item:farm_and_charm:dough",
-    "item:bakery:sweet_dough",
-    "item:veggiesdelight:sweet_potato_dough",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
     "item:vinery:chenet_wine",
@@ -799,7 +815,6 @@
       "id": "farmersdelight:melon_juice",
       "amount": 16
     },
-    "item:society:aged_amethyst_cheese_block",
     "item:society:amethyst_chunk",
     "item:twigs:cut_amethyst",
     "item:twigs:polished_amethyst",
@@ -918,7 +933,6 @@
     "item:nethervinery:crimson_grapejuice",
     "item:quark:flamerang{Damage:0}",
     "item:supplementaries:candy",
-    "item:farmersdelight:sweet_berry_cheesecake",
     "item:twigs:tangerine_seashell",
     "item:twigs:rocky_dirt",
     "item:farm_and_charm:cat_food",
@@ -1247,21 +1261,7 @@
     "item:create:linked_controller",
     "item:gamediscs:game_disc_blocktris",
     "item:gamediscs:game_disc_slime",
-    "item:minecraft:torch",
-    "item:botania:cosmetic_engineer_goggles",
-    "item:aquaculture:treasure_chest",
-    "item:simplehats:hatbag_epic",
-    "item:society:pristine_diamond",
-    "item:society:pristine_emerald",
-    "item:society:pristine_nekoite",
-    {
-      "type": "item",
-      "id": "betterarcheology:rotten_log",
-      "amount": 64
-    },
-    "item:everycomp:db/betterarcheology/rotten_beam",
-    "item:decorative_blocks:oak_beam",
-    "item:betterarcheology:rotten_planks"
+    "item:minecraft:torch"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1277,9 +1277,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
