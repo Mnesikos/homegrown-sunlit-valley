@@ -330,7 +330,6 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   const interactionCooldown = global.animalInteractionCooldown;
   loginResetFarmAnimal(target, level, interactionCooldown);
-
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
       const data = target.persistentData;

@@ -660,10 +660,6 @@ ServerEvents.tags("block", (e) => {
   ftbChunksWhitelist.forEach((item) => {
     e.add("ftbchunks:interact_whitelist", item);
   });
-  e.add("society:skull_cavern_top", "society:skull_stone");
-  e.add("society:skull_cavern_top", "minecraft:moss");
-  e.add("society:skull_cavern_top", "farmersdelight:rope");
-  e.add("society:skull_cavern_top", "twigs:silt");
 });
 
 ServerEvents.tags("fluid", (e) => {

@@ -13,7 +13,8 @@ global.getAnimalIsNotCramped = (target) => {
   const level = target.getLevel();
   const entities = level.getEntitiesWithin(target.boundingBox.inflate(1)).length;
 
-  return entities <= 6
+  if (target.getFeetBlockState().getBlock().getId().includes("seat")) return false;
+  return entities <= 6;
 };
 
 global.getMilkingTimeMult = (type) => {
@@ -38,20 +39,13 @@ const resolveMilk = (hearts, type, warped) => {
 
 global.getMilk = (level, target, data, player, interactionCooldown, raiseEffection) => {
   const ageLastMilked = data.getInt("ageLastMilked");
-  const hungry =
-    level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
+  const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
   const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
   const affection = data.getInt("affection");
   let hearts = Math.floor(affection / 100);
-  const freshAnimal = global.isFresh(
-    level.time,
-    ageLastMilked,
-    interactionCooldown
-  );
+  const freshAnimal = global.isFresh(level.time, ageLastMilked, interactionCooldown);
   let affectionIncrease = 0;
-  if (player)
-    affectionIncrease =
-      player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
+  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
   let warped = false;
   let quality = 0;
 
@@ -71,7 +65,7 @@ global.getMilk = (level, target, data, player, interactionCooldown, raiseEffecti
       quality = (hearts % 5) - 2;
     }
     let milkId = resolveMilk(hearts, nonIdType, warped);
-    if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3; 
+    if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3;
     return Item.of(
       `${player && player.stages.has("shepherd") ? 2 : 1}x ${
         milkId.includes(":") ? milkId : `society:${milkId}`
@@ -96,21 +90,13 @@ global.handleSpecialHarvest = (
   const ageLastFed = data.getInt("ageLastFed");
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;
   const type = target.type;
-  const freshAnimal = global.isFresh(
-    level.time,
-    ageLastDroppedSpecial,
-    interactionCooldown
-  );
+  const freshAnimal = global.isFresh(level.time, ageLastDroppedSpecial, interactionCooldown);
   const hungry = level.time - ageLastFed > interactionCooldown * 2;
   const affection = data.getInt("affection") || 0;
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   const heartBonus = hearts === 10 ? 2 : 1;
   if (freshAnimal || level.time - ageLastDroppedSpecial > interactionCooldown) {
-    if (
-      ["minecraft:pig", "snowpig:snow_pig", "minecraft:mooshroom"].includes(
-        type
-      )
-    )
+    if (["minecraft:pig", "snowpig:snow_pig", "minecraft:mooshroom"].includes(type))
       harvestFunction(
         data,
         0.3,
@@ -164,92 +150,52 @@ global.handleSpecialHarvest = (
         }
       );
     }
-    if (
-      ["minecraft:sheep", "meadow:wooly_sheep", "snuffles:snuffle"].includes(
-        type
-      )
-    ) {
-      harvestFunction(
-        data,
-        0.5,
-        hungry,
-        4,
-        heartBonus,
-        "society:fine_wool",
-        true,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+    if (["minecraft:sheep", "meadow:wooly_sheep", "snuffles:snuffle"].includes(type)) {
+      harvestFunction(data, 0.5, hungry, 4, heartBonus, "society:fine_wool", true, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
     }
     if (type === "buzzier_bees:moobloom") {
-      harvestFunction(
-        data,
-        0.01,
-        hungry,
-        10,
-        1,
-        "betterarcheology:growth_totem",
-        false,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+      harvestFunction(data, 0.01, hungry, 10, 1, "betterarcheology:growth_totem", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
     }
     if (type === "autumnity:snail") {
-      harvestFunction(
-        data,
-        1,
-        hungry,
-        3,
-        heartBonus * 2,
-        "autumnity:snail_shell_piece",
-        false,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+      harvestFunction(data, 1, hungry, 3, heartBonus * 2, "autumnity:snail_shell_piece", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
     }
     if (type === "minecraft:sniffer") {
-      harvestFunction(
-        data,
-        1,
-        hungry,
-        5,
-        heartBonus,
-        "betterarcheology:artifact_shards",
-        false,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+      harvestFunction(data, 1, hungry, 5, heartBonus, "betterarcheology:artifact_shards", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
       harvestFunction(data, 0.25, hungry, 5, 1, "minecraft:sniffer_egg", true, {
         level: level,
         target: target,
         player: player,
         server: server,
         block: block,
-          inventory: inventory,
+        inventory: inventory,
       });
     }
     if (type === "species:goober") {
@@ -259,7 +205,7 @@ global.handleSpecialHarvest = (
         player: player,
         server: server,
         block: block,
-          inventory: inventory,
+        inventory: inventory,
       });
     }
     if (type === "minecraft:panda") {
@@ -318,42 +264,24 @@ global.handleSpecialHarvest = (
         "autumnity:turkey",
       ].includes(type)
     ) {
-      harvestFunction(
-        data,
-        0.02,
-        hungry,
-        1,
-        1,
-        "vintagedelight:golden_egg",
-        false,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+      harvestFunction(data, 0.02, hungry, 1, 1, "vintagedelight:golden_egg", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
     }
     if (data.bff) {
-      harvestFunction(
-        data,
-        0.1,
-        hungry,
-        10,
-        1,
-        "society:prismatic_shard",
-        false,
-        {
-          level: level,
-          target: target,
-          player: player,
-          server: server,
-          block: block,
-          inventory: inventory,
-        }
-      );
+      harvestFunction(data, 0.1, hungry, 10, 1, "society:prismatic_shard", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
     }
     if (player.stages.has("reaping_scythe")) {
       harvestFunction(data, 0.2, hungry, 1, 1, "quark:diamond_heart", false, {
@@ -362,7 +290,7 @@ global.handleSpecialHarvest = (
         player: player,
         server: server,
         block: block,
-          inventory: inventory,
+        inventory: inventory,
       });
     }
     data.ageLastDroppedSpecial = level.time;

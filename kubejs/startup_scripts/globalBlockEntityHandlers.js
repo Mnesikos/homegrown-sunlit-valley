@@ -458,7 +458,6 @@ global.inventoryBelowHasRoom = (level, block, item) => {
     }
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
-      console.log(belowItem)
       if (belowItem === Item.of("minecraft:air")) {
         return true;
       }

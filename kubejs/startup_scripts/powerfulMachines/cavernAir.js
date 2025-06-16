@@ -63,7 +63,6 @@ const rollReplaceTable = (table, hasRope) => {
     (acc, current) => (hasRope && current.sturdy ? acc : acc + current.weight),
     0
   );
-  console.log(totalWeight);
   let currentWeight = 0;
   if (totalWeight > 1) {
     roll = rnd(0, totalWeight);
@@ -107,7 +106,6 @@ global.handleRegen = (e) => {
       newBlock = rollReplaceTable(stoneRockTable, hasRope);
       break;
   }
-  console.log(newBlock);
   block.set(newBlock);
 };
 
