@@ -186,6 +186,10 @@ global.seedMakerRecipes = [
     input: "veggiesdelight:sweet_potato",
     output: ["6x society:sweet_potato_seed"],
   },
+  {
+    input: "mysticaloaktree:wise_oak",
+    output: ["1x botania:overgrowth_seed"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -264,7 +268,7 @@ StartupEvents.registry("block", (event) => {
       if (upgraded && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:ancient_fruit_seed", facing);
       }
-      
+
       global.handleBERightClick(
         "unusualfishmod:crab_scuttling",
         click,

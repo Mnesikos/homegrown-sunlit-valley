@@ -86,13 +86,11 @@ if (!global.relaxedSkullCavern) {
       const pos = block.getPos();
 
       if (level.dimension === "society:skull_cavern") {
-        console.log(block.biomeId);
         let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
         server.scheduleInTicks(5, () => {
           if (level.getBlock(pos) == "minecraft:air") {
             let toggleBit =
               level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
-        console.log(toggleBit);
             block.set("society:cavern_air", {
               type: String(rockType),
               chunkbit: toggleBit.toString(),

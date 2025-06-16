@@ -450,14 +450,15 @@ global.inventoryBelowHasRoom = (level, block, item) => {
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
       if (
-        belowItem === Item.of(item) &&
-        belowItem.count + item.count < belowBlock.inventory.getSlotLimit(j)
+        belowItem.id === Item.of(item).id &&
+        belowItem.count + Item.of(item).count < belowBlock.inventory.getSlotLimit(j)
       ) {
         return true;
       }
     }
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
+      console.log(belowItem)
       if (belowItem === Item.of("minecraft:air")) {
         return true;
       }
@@ -480,8 +481,8 @@ global.insertBelow = (level, block, item) => {
     for (let j = 0; j < belowBlock.inventory.slots; j++) {
       belowItem = belowBlock.inventory.getStackInSlot(j);
       if (
-        belowItem === Item.of(item) &&
-        belowItem.count + item.count < belowBlock.inventory.getSlotLimit(j)
+        belowItem.id === Item.of(item).id &&
+        belowItem.count + Item.of(item).count < belowBlock.inventory.getSlotLimit(j)
       ) {
         belowBlock.inventory.insertItem(j, item, false);
         return 1;

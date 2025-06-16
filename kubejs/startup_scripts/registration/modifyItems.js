@@ -177,4 +177,20 @@ ItemEvents.modification((e) => {
     item.maxDamage *= 1.5;
     item.setArmorProtection(3);
   });
+  e.modify("botania:terrasteel_helmet", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(4);
+  });
+  e.modify("botania:terrasteel_chestplate", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(9);
+  });
+  e.modify("botania:terrasteel_leggings", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(7);
+  });
+  e.modify("botania:terrasteel_boots", (item) => {
+    item.maxDamage *= 1.5;
+    item.setArmorProtection(3);
+  });
 });

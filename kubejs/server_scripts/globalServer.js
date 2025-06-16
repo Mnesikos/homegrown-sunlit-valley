@@ -365,29 +365,31 @@ global.handleFee = (server, player, reason) => {
 
     amountToDeduct = Math.min(Math.round(balance * 0.15), maxFee);
   }
-  if (amountToDeduct < minimumFee) {
+  if (amountToDeduct < minimumFee) amountToDeduct = minimumFee;
+  if (balance < maxFee && player.stages.has("entered_skull_cavern")) amountToDeduct = maxFee;
+  if (balance < amountToDeduct) {
     let currentDebt = null;
     let foundIndex = -1;
     if (!server.persistentData.debts) server.persistentData.debts = [];
     for (let index = 0; index < server.persistentData.debts.length; index++) {
       if (String(UUID) === String(server.persistentData.debts[index].uuid)) {
         currentDebt = Number(server.persistentData.debts[index].amount);
-        server.persistentData.debts[index].amount = currentDebt + minimumFee;
+        server.persistentData.debts[index].amount = currentDebt + amountToDeduct;
         foundIndex = index;
         break;
       }
     }
     if (!currentDebt) {
-      server.persistentData.debts.push({ uuid: UUID.toString(), amount: maxFee });
+      server.persistentData.debts.push({ uuid: UUID.toString(), amount: amountToDeduct });
     }
     player.give(
       Item.of(
         "candlelight:note_paper_written",
         `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
 
-Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take 512 :coin: out of your profits until the fee is paid off. Be careful next time!
+Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(amountToDeduct)} :coin: out of your profits until the fee is paid off. Be careful next time!
 
-Debt: ${global.formatPrice(server.persistentData.debts[foundIndex].amount)} :coin:
+Debt: ${global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount)} :coin:
 "],title:"Hospital Receipt"}`
       )
     );

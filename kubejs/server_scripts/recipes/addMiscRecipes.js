@@ -189,7 +189,7 @@ ServerEvents.recipes((e) => {
     C: "numismatics:crown",
     f: "society:fire_quartz",
   });
-  e.shaped("society:preserves_jar", ["LLL", "pbp", "CiC"], {
+  e.shaped("society:preserves_jar", ["LpL", "LbL", "CiC"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     C: "#forge:storage_blocks/coal",
@@ -376,7 +376,7 @@ ServerEvents.recipes((e) => {
     C: "numismatics:sun",
     l: "meadow:fire_log",
   });
-  e.shaped("society:bait_maker", ["lNl", "asa", "lCl"], {
+  e.shaped("society:bait_maker", ["CNC", "asa", "lll"], {
     s: "society:seed_maker",
     N: "aquaculture:neptunium_ingot",
     a: "crabbersdelight:pearl_block",
@@ -608,17 +608,35 @@ ServerEvents.recipes((e) => {
     C: "minecraft:copper_block",
     l: "#society:raw_logs",
   });
+  e.shaped("society:gold_sprinkler", ["fef", " s ", " G "], {
+    G: "minecraft:gold_block",
+    s: "society:iron_sprinkler",
+    f: "society:fire_quartz",
+    e: "society:earth_crystal",
+  });
   e.shaped("society:gold_sprinkler", ["fef", "GlG", " l "], {
     l: "#society:raw_logs",
     G: "minecraft:gold_block",
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
+  e.shaped("society:diamond_sprinkler", ["nDn", " s ", " b "], {
+    s: "society:gold_sprinkler",
+    D: "minecraft:diamond_block",
+    b: "society:battery",
+    n: "aquaculture:neptunium_nugget",
+  });
   e.shaped("society:diamond_sprinkler", ["nDn", "blb", " l "], {
     l: "#society:raw_logs",
     D: "minecraft:diamond_block",
     b: "society:battery",
     n: "aquaculture:neptunium_nugget",
+  });
+  e.shaped("society:netherite_sprinkler", ["nNn", " s ", " j "], {
+    s: "society:diamond_sprinkler",
+    j: "society:jade",
+    N: "minecraft:netherite_ingot",
+    n: "aquaculture:neptunium_ingot",
   });
   e.shaped("society:netherite_sprinkler", ["nNn", "jlj", " l "], {
     l: "#society:raw_logs",

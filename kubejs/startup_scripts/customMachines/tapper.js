@@ -55,6 +55,13 @@ global.tapperRecipes = [
     fluidOutput: "create_central_kitchen:sap",
     time: 1,
   },
+  {
+    input: "mysticaloaktree:wise_oak",
+    output: ["4x botania:black_lotus"],
+    leaves: ["minecraft:oak_leaves"],
+    fluidOutput: "society:oak_resin",
+    time: 1,
+  },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -125,7 +132,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      
+
       global.handleBERightClick(
         "vinery:cabinet_close",
         click,

@@ -448,7 +448,7 @@
 			description: [
 				"Mining ore in the Skull Cavern has a chance to drop &6Omni Geodes&r."
 				""
-				"They can be extracted for any tier of mineral, and have a chance to drop &6Ancient Debris&r and &dPrismatic Shards&r when extracted."
+				"They can be extracted for any tier of mineral, and have a chance to drop &6Iridium Scrap&r and &dPrismatic Shards&r when extracted."
 			]
 			id: "4EE2AD7C7BA3A6DE"
 			rewards: [{
@@ -1164,10 +1164,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"70D15F67E3880A3A"
-				"17D2933C4B133AA8"
-			]
+			dependencies: ["70D15F67E3880A3A"]
 			description: [
 				"The &6Fish Pond Basket&r is a machine powered by &dSparkstone&r that can automate collection from adjacent &6Fish Ponds&r!"
 				""

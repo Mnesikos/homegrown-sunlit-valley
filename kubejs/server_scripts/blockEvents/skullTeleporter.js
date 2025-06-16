@@ -7,6 +7,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
   const { block, player, level, server } = e;
   const { x, z } = block;
   let errorText;
+  if (!player.stages.has("entered_skull_cavern")) player.stages.add("entered_skull_cavern");
   if (level.dimension === "society:skull_cavern") {
     global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {

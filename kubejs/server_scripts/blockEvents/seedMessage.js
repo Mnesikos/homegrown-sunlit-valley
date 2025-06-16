@@ -44,6 +44,9 @@ BlockEvents.rightClicked(
     ) {
       errorText = "This Biome is always treated as Winter for planted crops.";
     }
+    if (biomeTags.toString().includes("sereneseasons:infertile_biomes")) {
+      errorText = "This Biome cannot grow crops...";
+    }
     if (!seedMessageThrottle(player, 6000, "seed_message_throttle") && errorText) {
       global.renderUiText(
         player,

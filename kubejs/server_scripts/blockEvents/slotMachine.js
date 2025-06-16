@@ -2,7 +2,7 @@ console.info("[SOCIETY] slotMachine.js loaded");
 
 BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
   const { block, player, hand, item, server } = e;
-  if (player.isFake()) return;
+  if (player.isFake() || player.isCrouching()) return;
   if (hand == "OFF_HAND") return;
   const coins = [
     "numismatics:spur",
@@ -12,12 +12,14 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
     "numismatics:crown",
     "numismatics:sun",
     "numismatics:ancient_coin",
-    "numismatics:prismatic_coin"
+    "numismatics:neptunium_coin",
+    "numismatics:prismatic_coin",
   ];
   const prismaticCoins = [
     "numismatics:sun",
+    "numismatics:neptunium_coin",
     "numismatics:ancient_coin",
-    "numismatics:prismatic_coin"
+    "numismatics:prismatic_coin",
   ];
   const heldItem = item.getId();
   const facing = block.getProperties().facing;
@@ -47,9 +49,12 @@ BlockEvents.rightClicked("tanukidecor:slot_machine", (e) => {
         server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
-        if (prismaticCoins.includes(heldItem) && Math.random() < (heldItem ==="numismatics:sun" ? 0.005 : 0.1)) {
+        if (
+          prismaticCoins.includes(heldItem) &&
+          Math.random() < (heldItem === "numismatics:sun" ? 0.005 : 0.1)
+        ) {
           block.popItemFromFace(`1x society:prismatic_shard`, facing);
-          server.tell(Text.gray(`§6${player.username}§r won big at the slots!`))
+          server.tell(Text.gray(`§6${player.username}§r won big at the slots!`));
         }
       } else {
         server.runCommandSilent(

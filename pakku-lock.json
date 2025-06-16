@@ -2504,7 +2504,7 @@
             ]
         },
         {
-            "pakku_id": "0iS3mjW7fqUzhlLl",
+            "pakku_id": "Kc0n4ZgigIDGzRBh",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
             ],
@@ -2521,7 +2521,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_hypertube-0.1.3-CREATE-0.5.1.jar",
+                    "file_name": "create_hypertube-0.1.4-CREATE-0.5.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2529,18 +2529,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6646/938/create_hypertube-0.1.3-CREATE-0.5.1.jar",
-                    "id": "6646938",
+                    "url": "https://edge.forgecdn.net/files/6658/10/create_hypertube-0.1.4-CREATE-0.5.1.jar",
+                    "id": "6658010",
                     "parent_id": "1281336",
                     "hashes": {
-                        "sha1": "8649ee9ba7309454e09d24d0ce57d92aef979463",
-                        "md5": "a7310903c171765be40850eea1679882"
+                        "sha1": "23cc174839788b98c3785de1402e06a366ca915f",
+                        "md5": "8233ebef1658960cbf8c127d7c77f43e"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 252128,
-                    "date_published": "2025-06-13T13:40:21.353Z"
+                    "size": 257620,
+                    "date_published": "2025-06-16T15:31:42.200Z"
                 }
             ]
         },

@@ -2708,7 +2708,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [{ item: "society:aged_century_egg", count: 16 }],
+        requestedItems: [{ item: "society:aged_century_egg", count: 8 }],
       },
     ],
     additionalRewards: [
@@ -3440,6 +3440,12 @@ global.fishPondDefinitions = [
         item: "society:production_science_pack",
         count: 1,
         chance: 0.1,
+      },
+      {
+        minPopulation: 10,
+        item: "society:sparkstone",
+        count: 4,
+        chance: 0.25,
       },
       {
         minPopulation: 10,
