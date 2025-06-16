@@ -249,7 +249,7 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
         let calculateCount = Math.floor(
           reward.count * ((population - reward.minPopulation) / (10 - reward.minPopulation))
         );
-        if(population == 10) calculateCount = reward.count
+        if (population == 10) calculateCount = reward.count;
         harvestOutputs.push(`${calculateCount > 1 ? calculateCount : 1}x ${reward.item}`);
       }
     });
@@ -388,7 +388,8 @@ global.handleFishPondTick = (tickEvent) => {
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
   let blockProperties = level.getBlock(block.pos).getProperties();
-  if (!block.getEntityData().placer) {
+  // Schematiccannon check
+  if (tickEvent.tick == 0 && !block.getEntityData().placer) {
     block.popItemFromFace(block.id, "up");
     block.set("minecraft:air");
   }

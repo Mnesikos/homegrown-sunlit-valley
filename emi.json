@@ -32,7 +32,29 @@
     }
   ],
   "lookup_history": [
+    "item:minecraft:diamond",
+    "item:minecraft:diamond_block",
+    {
+      "type": "item",
+      "id": "society:crystalarium",
+      "amount": 64
+    },
+    "item:society:netherite_sprinkler",
+    "item:society:diamond_sprinkler",
+    "item:society:gold_sprinkler",
+    "item:society:iron_sprinkler",
+    "item:minecraft:stripped_spruce_wood",
+    "item:pamhc2trees:pamlychee",
+    "item:pamhc2trees:lychee_sapling",
     "item:farmersdelight:sweet_berry_cheesecake",
+    "item:botania:shimmerwood_planks",
+    "item:minecraft:oak_fence_gate",
+    "item:minecraft:oak_slab",
+    "item:treetap:tap",
+    "item:mining_dimension:teleporter",
+    "item:create:electron_tube",
+    "item:create:deployer",
+    "item:vinery:fermentation_barrel",
     "item:veggiesdelight:sweet_potato_dough",
     "item:veggiesdelight:sweet_potato_cupcake",
     "item:meadow:amethyst_cheese_block",
@@ -67,7 +89,6 @@
     "item:quark:spruce_vertical_slab",
     "item:minecraft:stripped_spruce_log",
     "item:society:sparkstone",
-    "item:mining_dimension:teleporter",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:rotting\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bitwise\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:bony\"}}",
@@ -139,7 +160,6 @@
     "item:minecraft:ender_pearl",
     "item:botania:flight_tiara{variant:0}",
     "item:paraglider:spirit_orb",
-    "item:minecraft:diamond",
     "item:farm_and_charm:dog_food",
     "item:society:froggy_helm",
     "item:aquaculture:tin_can",
@@ -152,7 +172,6 @@
     "item:society:tubabacco_leaf_block",
     "item:society:recycling_machine",
     "item:society:dehydrator",
-    "item:society:diamond_sprinkler",
     "item:society:tapper",
     "item:unusualfishmod:thunderous_shell{Damage:0}",
     "item:society:charging_rod",
@@ -290,7 +309,6 @@
       "id": "verdantvibes:bracket_mushroom",
       "amount": 8
     },
-    "item:society:crystalarium",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
     {
       "type": "item",
@@ -298,7 +316,6 @@
       "amount": 4
     },
     "item:minecraft:netherite_ingot",
-    "item:society:netherite_sprinkler",
     "item:society:sparkstone_block",
     "item:oreganized:electrum_upgrade_smithing_template",
     "item:society:skull_cavern_teleporter",
@@ -461,7 +478,6 @@
     "item:numismatics:white_card",
     "item:numismatics:red_card",
     "item:numismatics:white_id_card",
-    "item:vinery:fermentation_barrel",
     "item:create:netherite_diving_helmet{Damage:0}",
     "item:society:heart_of_neptunium",
     {
@@ -495,9 +511,7 @@
     "item:farm_and_charm:flour",
     "item:farm_and_charm:flour_bag",
     "item:create:wheat_flour",
-    "item:society:gold_sprinkler",
     "item:society:beaked_herring_bait",
-    "item:society:iron_sprinkler",
     "item:botania:yellow_mushroom",
     "item:minecraft:wheat",
     "item:botania:magnet_ring",
@@ -567,7 +581,6 @@
       "amount": 0
     },
     "item:numismatics:crown",
-    "item:minecraft:oak_slab",
     "item:aquaculture:neptunium_ingot",
     "item:botania:gaia_ingot",
     "item:sophisticatedstorage:basic_to_copper_tier_upgrade",
@@ -704,7 +717,6 @@
     "item:society:ancient_fruit_juice_bucket",
     "item:twigs:rhyolite",
     "item:minecraft:red_sand",
-    "item:minecraft:diamond_block",
     "item:numismatics:orange_card",
     "item:vintagedelight:fermenting_jar",
     "item:society:beemonican_seal",
@@ -1253,15 +1265,7 @@
     "item:herbalbrews:dried_oolong_tea",
     "item:herbalbrews:tea_kettle",
     "item:quark:permafrost",
-    "item:rottencreatures:frostbitten_head",
-    "item:oreganized:silver_sheet",
-    "item:oreganized:raw_silver",
-    "item:waterframes:remote",
-    "item:create:redstone_link",
-    "item:create:linked_controller",
-    "item:gamediscs:game_disc_blocktris",
-    "item:gamediscs:game_disc_slime",
-    "item:minecraft:torch"
+    "item:rottencreatures:frostbitten_head"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1277,8 +1281,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},

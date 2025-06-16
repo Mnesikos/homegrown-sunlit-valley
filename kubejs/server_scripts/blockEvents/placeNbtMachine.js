@@ -14,15 +14,15 @@ BlockEvents.placed("society:fish_pond", (e) => {
   const pondNbt = e.player.getHeldItem("main_hand").getNbt();
   if (pondNbt) {
     e.block.set(e.block.id, {
-      facing: e.block.properties.get("facing"),
+      facing: e.player.getFacing().getOpposite().toString(),
       valid: true,
       mature: false,
       upgraded: false,
-      quest: pondNbt.get("quest"),
-      quest_id: pondNbt.get("quest_id"),
-      population: pondNbt.get("population"),
-      max_population: pondNbt.get("max_population"),
-      type: pondNbt.get("type"),
+      quest: pondNbt.get("quest").toString() == "1",
+      quest_id: pondNbt.get("quest_id").toString(),
+      population: pondNbt.get("population").toString(),
+      max_population: pondNbt.get("max_population").toString(),
+      type: pondNbt.get("type").toString(),
     });
   }
 });

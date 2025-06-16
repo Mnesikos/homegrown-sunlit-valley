@@ -18,7 +18,7 @@
 	wider_gui = true
 	#Determines if GUI will have search bar or not. Automatic only enables the bar statically when you have enough mods that add wood recipes. Dynamic changes the gui dynamically depending on how many recipe its displaying
 	#Allowed Values: OFF, ON, AUTOMATIC, DYNAMIC
-	search_bar_mode = "AUTOMATIC"
+	search_bar_mode = "ON"
 	#At how many recipes the search bar should appear
 	#Range: 0 ~ 200
 	search_bar_threshold = 32

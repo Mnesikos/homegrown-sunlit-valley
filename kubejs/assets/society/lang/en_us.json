@@ -122,5 +122,14 @@
   "society.advancement.obtain_sun.description": "Obtain your first Neptunium Coin.",
   "society.advancement.obtain_sun.title": "Seed Money",
   "society.advancement.root.description": "Start your farm, lay claim to riches.",
-  "society.advancement.root.title": "Society: Sunlit Valley"
+  "society.advancement.root.title": "Society: Sunlit Valley",
+
+  "biome.society.skull_caves": ":pick: Skull Caves",
+  "biome.society.lush_caverns": ":pick: Lush Caverns",
+  "biome.society.frozen_caves": " :pick: Frozen Caves",
+  "biome.society.frozen_maelstrom": ":pick: Frozen Maelstrom",
+  "biome.society.desert_caves": ":pick: Desert Caves",
+  "biome.society.desert_fault": ":pick: Fault",
+  "biome.society.blackstone_caves": ":pick: Blackstone Caves",
+  "biome.society.umbra_barrens": ":pick: Umbra Barrens"
 }

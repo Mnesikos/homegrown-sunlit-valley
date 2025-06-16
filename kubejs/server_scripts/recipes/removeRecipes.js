@@ -4,6 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "mining_dimension:teleporter",
+    "treetap:tap",
     "pipez:energy_pipe",
     "pipez:fluid_pipe",
     "pipez:gas_pipe",

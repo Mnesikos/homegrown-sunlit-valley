@@ -1,7 +1,7 @@
 console.info("[SOCIETY] addPlankRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
-  const recipes = [
+  [
     { plank: "autumnity:maple_planks", slab: "autumnity:maple_slab" },
     { plank: "atmospheric:kousa_planks", slab: "atmospheric:kousa_slab" },
     { plank: "meadow:pine_planks", slab: "meadow:pine_slab" },
@@ -13,10 +13,26 @@ ServerEvents.recipes((e) => {
     { plank: "atmospheric:grimwood_planks", slab: "atmospheric:grimwood_slab" },
     { plank: "atmospheric:laurel_planks", slab: "atmospheric:laurel_slab" },
     { plank: "vinery:dark_cherry_planks", slab: "vinery:dark_cherry_slab" },
-  ];
-  recipes.forEach((recipe) => {
+  ].forEach((recipe) => {
     const { plank, slab } = recipe;
     e.shaped(`6x ${slab}`, ["   ", "ppp", "   "], {
+      p: plank,
+    });
+  });
+
+  [
+    "atmospheric:kousa_planks",
+    "atmospheric:laurel_planks",
+    "atmospheric:morado_planks",
+    "atmospheric:yucca_planks",
+    "autumnity:maple_planks",
+    "atmospheric:rosewood_planks",
+    "atmospheric:grimwood_planks",
+    "betterarcheology:rotten_planks",
+    "meadow:pine_planks",
+    "beachparty:palm_planks",
+  ].forEach((plank) => {
+    e.shaped("minecraft:chest", ["ppp", "p p", "ppp"], {
       p: plank,
     });
   });

@@ -159,7 +159,7 @@ ${binPlayer.username}, your profits were used to pay off your debt!
 
 :coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
                             totalDebt
-                          )} debt."],title:"Debt Payement Receipt"}`
+                          )} debt."],title:"Debt Payment Receipt"}`
                         ),
                         false
                       );

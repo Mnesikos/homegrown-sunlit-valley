@@ -1,23 +1,25 @@
 console.info("[SOCIETY] replaceDeprecation.js loaded");
 
 BlockEvents.rightClicked("treetap:tap", (e) => {
-  const { block } = e;
-  const facing = block.properties.facing;
-  block.set("society:tapper");
-  const newProperties = block.properties;
-  newProperties.facing = facing;
-  block.set("society:tapper", newProperties);
+  const { block, level } = e;
+  const tapperLog = global.getTapperLog(level, block);
+  block.set("minecraft:air");
+  block.popItem(Item.of("society:tapper"))
+  global.tapperRecipes.forEach((recipe) => {
+    if (recipe.input === tapperLog.id) block.popItem(Item.of(recipe.output[0]));
+  });
 });
 
 BlockEvents.rightClicked(["treetap:wooden_sap_collector", "treetap:sap_collector"], (e) => {
   const { block, level } = e;
+  const tapperLog = global.getTapperLog(level, block);
   const aboveBlock = level.getBlock(block.getPos().above());
-  const facing = aboveBlock.properties.facing;
-  block.set("society:tapper");
-  const newProperties = block.properties;
-  newProperties.facing = facing;
-  block.set("society:tapper", newProperties);
   aboveBlock.set("minecraft:air");
+  block.set("minecraft:air");
+  block.popItem(Item.of("society:tapper"))
+  global.tapperRecipes.forEach((recipe) => {
+    if (recipe.input == tapperLog.id) block.popItem(Item.of(recipe.output));
+  });
 });
 
 BlockEvents.rightClicked("mining_dimension:teleporter", (e) => {

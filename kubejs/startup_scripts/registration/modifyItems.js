@@ -95,7 +95,7 @@ ItemEvents.modification((e) => {
     });
   });
   e.modify("minecraft:golden_sword", (item) => {
-    item.setAttackDamage(6.5);
+    item.setAttackDamage(5.5);
   });
   e.modify("minecraft:golden_axe", (item) => {
     item.setAttackDamage(8);
