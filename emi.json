@@ -35,6 +35,31 @@
     }
   ],
   "lookup_history": [
+    "item:oreganized:electrum_pickaxe{Damage:0}",
+    "item:oreganized:electrum_ingot",
+    "item:oreganized:electrum_upgrade_smithing_template",
+    "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:fortune\",lvl:1s}]}",
+    "item:minecraft:wither_skeleton_skull",
+    "item:society:jade",
+    "item:buildinggadgets2:template{}",
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:gold\"}}",
+    "item:dew_drop_farmland_growth:low_quality_fertilizer",
+    "item:dew_drop_farmland_growth:high_quality_fertilizer",
+    "item:dew_drop_farmland_growth:bountiful_fertilizer",
+    "item:dew_drop_farmland_growth:pristine_quality_fertilizer",
+    "item:dew_drop_farmland_growth:strong_fertilizer",
+    "item:dew_drop_farmland_growth:hyper_fertilizer",
+    "#item:minecraft:fishes",
+    "item:dew_drop_farmland_growth:weak_fertilizer",
+    "item:twigs:roseate_seashell",
+    "item:twigs:opaline_seashell",
+    "item:create:tree_fertilizer",
+    {
+      "type": "item",
+      "id": "society:sap",
+      "amount": 4
+    },
+    "item:society:tapper",
     "item:species:cracked_wraptor_egg",
     "item:society:cracked_egg",
     "item:betterarcheology:cracked_mud_brick_stairs",
@@ -116,7 +141,6 @@
     "item:society:beaked_herring_roe",
     "item:society:sneep_snorp_roe",
     "item:minecraft:netherite_scrap",
-    "item:unusualfishmod:raw_spindlefish",
     "item:society:spindlefish_roe",
     "item:society:sparkstone",
     "item:minecraft:raw_iron",
@@ -128,7 +152,6 @@
     "item:society:aged_amethyst_cheese_block",
     "item:numismatics:banking_guide",
     "item:minecraft:golden_apple",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:gold\"}}",
     "item:minecraft:diamond",
     "item:minecraft:diamond_block",
     {
@@ -255,7 +278,6 @@
     "item:society:tubabacco_leaf_block",
     "item:society:recycling_machine",
     "item:society:dehydrator",
-    "item:society:tapper",
     "item:unusualfishmod:thunderous_shell{Damage:0}",
     "item:society:charging_rod",
     "item:society:ancient_goddess_statue",
@@ -318,7 +340,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:luminous\"}}",
     "item:splendid_slimes:corral_block",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:orby\"}}",
-    "item:society:jade",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
@@ -328,7 +349,6 @@
     "item:candlelight:end_counter",
     "item:herbalbrews:lavender_tea",
     "item:botania:cosmetic_four_leaf_clover",
-    "item:minecraft:wither_skeleton_skull",
     "item:herbalbrews:chai_tea",
     "item:rehooked:iron_hook",
     "item:aquaculture:iron_hook",
@@ -390,18 +410,11 @@
       "amount": 8
     },
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
-    {
-      "type": "item",
-      "id": "society:sap",
-      "amount": 4
-    },
     "item:minecraft:netherite_ingot",
     "item:society:sparkstone_block",
-    "item:oreganized:electrum_upgrade_smithing_template",
     "item:society:skull_cavern_teleporter",
     "item:simplehats:dragonskullender",
     "item:minecraft:dark_oak_slab",
-    "item:oreganized:electrum_ingot",
     "item:minecraft:netherite_upgrade_smithing_template",
     {
       "type": "item",
@@ -530,8 +543,6 @@
     "item:splendid_slimes:slime_incubator",
     "item:simplehats:slime_cube_dnd",
     "item:aquaculture:algae",
-    "item:dew_drop_farmland_growth:high_quality_fertilizer",
-    "item:dew_drop_farmland_growth:strong_fertilizer",
     "item:aquaculture:fish_bones",
     {
       "type": "item",
@@ -1252,19 +1263,7 @@
     "item:society:animal_feed",
     "item:farmersdelight:egg_sandwich",
     "item:simplehats:hatbag_common",
-    "item:farmersdelight:steak_and_potatoes",
-    "item:farmersdelight:rice_roll_medley_block",
-    "item:simplehats:hatbag_festive",
-    "item:brewery:netherite_brewingstation",
-    "item:supplementaries:netherite_door",
-    "item:supplementaries:netherite_trapdoor",
-    "item:quark:cocoa_beans_sack",
-    "item:herbalbrews:coffee_beans_sack",
-    "item:botania:rosa_arcana",
-    "item:betterarcheology:diamond_brush{Damage:0}",
-    "item:betterarcheology:netherite_brush{Damage:0}",
-    "item:betterarcheology:iron_brush{Damage:0}",
-    "item:justhammers:netherite_hammer{Damage:0}"
+    "item:farmersdelight:steak_and_potatoes"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1280,9 +1279,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

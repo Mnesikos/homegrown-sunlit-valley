@@ -14,6 +14,7 @@ global.mainUiElementIds = [
   "tapperMessage",
   "seedBiomeMessage",
   "skullTeleportMessage",
+  "skullCavernPlaceBlockMessage",
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -387,9 +388,13 @@ global.handleFee = (server, player, reason) => {
         "candlelight:note_paper_written",
         `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
 
-Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(amountToDeduct)} :coin: out of your profits until the fee is paid off. Be careful next time!
+Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(
+          amountToDeduct
+        )} :coin: out of your profits until the fee is paid off. Be careful next time!
 
-Debt: ${global.formatPrice(!currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount)} :coin:
+Debt: ${global.formatPrice(
+          !currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount
+        )} :coin:
 "],title:"Hospital Receipt"}`
       )
     );

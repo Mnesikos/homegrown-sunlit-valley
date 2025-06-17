@@ -2504,7 +2504,7 @@
             ]
         },
         {
-            "pakku_id": "Kc0n4ZgigIDGzRBh",
+            "pakku_id": "UvpZynXcQoV0AbnW",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
             ],
@@ -2521,7 +2521,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_hypertube-0.1.4-CREATE-0.5.1.jar",
+                    "file_name": "create_hypertube-0.1.4-fix-CREATE-0.5.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2529,18 +2529,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6658/10/create_hypertube-0.1.4-CREATE-0.5.1.jar",
-                    "id": "6658010",
+                    "url": "https://edge.forgecdn.net/files/6661/797/create_hypertube-0.1.4-fix-CREATE-0.5.1.jar",
+                    "id": "6661797",
                     "parent_id": "1281336",
                     "hashes": {
-                        "sha1": "23cc174839788b98c3785de1402e06a366ca915f",
-                        "md5": "8233ebef1658960cbf8c127d7c77f43e"
+                        "sha1": "062106002b09903a9ee64d92e733a80b198e78c5",
+                        "md5": "a583a12d8d74a2791b43b1bbb111d1ff"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 257620,
-                    "date_published": "2025-06-16T15:31:42.200Z"
+                    "size": 258360,
+                    "date_published": "2025-06-17T16:34:01.930Z"
                 }
             ]
         },
@@ -10951,7 +10951,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "via_romana-forge-1.4.0.jar",
+                    "file_name": "Via_Romana-1.20.1-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10959,17 +10959,19 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6489/722/via_romana-forge-1.4.0.jar",
-                    "id": "6489722",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5664/670/Via_Romana-1.20.1-1.2.4.jar",
+                    "id": "5664670",
                     "parent_id": "1026508",
                     "hashes": {
-                        "sha1": "323c6f62a1ea1f3d3742b2528d6cfc3aee89ac5b",
-                        "md5": "f45287f2d07c9dee0379d5d408ff2b15"
+                        "sha1": "680c5a1a0b0298fa48a0259f659025f92b9738db",
+                        "md5": "aaec9119066eb12324c910494c1ba083"
                     },
-                    "required_dependencies": [],
-                    "size": 122380,
-                    "date_published": "2025-05-03T02:29:06.770Z"
+                    "required_dependencies": [
+                        "306770"
+                    ],
+                    "size": 180447,
+                    "date_published": "2024-08-26T09:14:45.310Z"
                 }
             ]
         },

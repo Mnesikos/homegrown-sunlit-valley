@@ -1,4 +1,9 @@
 global.removedItems = [
+  // Removed due to exploits :(
+  "create:schematicannon",
+  "create:empty_schematic",
+  "create:schematic_and_quill",
+  "create:schematic_table",
   // Pipez
   "pipez:energy_pipe",
   "pipez:fluid_pipe",
@@ -143,7 +148,6 @@ global.removedItems = [
   "unusualfishmod:depth_scythe",
   "unusualfishmod:ripsaw",
   "capsule:capsulemarker",
-  "capsule:capsule",
   "farm_and_charm:feeding_trough",
   "minecraft:milk_bucket",
   "minecraft:milk",

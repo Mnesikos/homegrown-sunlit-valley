@@ -388,11 +388,7 @@ global.handleFishPondTick = (tickEvent) => {
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
   let blockProperties = level.getBlock(block.pos).getProperties();
-  // Schematiccannon check
-  if (tickEvent.tick == 0 && !block.getEntityData().placer) {
-    block.popItemFromFace(block.id, "up");
-    block.set("minecraft:air");
-  }
+
   if (blockProperties.get("mature") === "true") return;
   const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
     global.getPondProperties(level.getBlock(block.pos));

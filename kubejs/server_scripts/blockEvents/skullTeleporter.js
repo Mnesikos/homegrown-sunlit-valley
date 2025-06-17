@@ -9,12 +9,14 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
   let errorText;
   if (!player.stages.has("entered_skull_cavern")) player.stages.add("entered_skull_cavern");
   if (level.dimension === "society:skull_cavern") {
+    player.persistentData.skullCavernEnterDay = -1;
     global.teleportHome(player, server, level);
   } else if (level.dimension === "minecraft:overworld") {
     if (level.dayTime() % 24000 > 18000) {
       errorText = "It's too late at night to enter the Skull Cavern...";
     } else {
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
+      player.persistentData.skullCavernEnterDay = Number((level.dayTime() / 24000).toFixed(0));
       player.level.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {

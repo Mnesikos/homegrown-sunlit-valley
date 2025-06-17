@@ -657,6 +657,28 @@
 			x: -1.0d
 			y: -2.5d
 		}
+		{
+			dependencies: ["5837B77D1243D30F"]
+			description: [
+				"The &6Template Manager&r allows you to create and upload schematics! These can be used in other worlds, making it a good way to design buildings in creative and auto-build them in survival."
+				""
+				"A &6Copy-Paste&r gadget is needed for this to be useful."
+			]
+			id: "07D5EB5853F9A357"
+			rewards: [{
+				id: "70DD9DC359B7F1E6"
+				item: "buildinggadgets2:gadget_core"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10D95304948010B2"
+				item: "buildinggadgets2:template_manager"
+				type: "item"
+			}]
+			title: "Schematics!"
+			x: 1.0d
+			y: -2.5d
+		}
 	]
 	title: "Building Tools"
 }

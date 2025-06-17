@@ -46,7 +46,9 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Harvests Milk and Special items from Farm Animals into inventory below."));
+      item.tooltip(
+        Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
+      );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.green(`Area: 5x5`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
@@ -77,8 +79,12 @@ StartupEvents.registry("block", (event) => {
             let interactionCooldown = global.animalInteractionCooldown;
             const hungry = level.time - data.getInt("ageLastFed") > interactionCooldown * 2;
             if (hungry) return;
-            if (!global.getAnimalIsNotCramped(animal)) data.affection = data.getInt("affection") - 50;
-            if (global.checkEntityTag(animal, "society:milkable_animal")) {
+            if (!global.getAnimalIsNotCramped(animal))
+              data.affection = data.getInt("affection") - 50;
+            if (
+              global.checkEntityTag(animal, "society:milkable_animal") &&
+              Number(data.getInt("affection")) > 1
+            ) {
               interactionCooldown *= global.getMilkingTimeMult(animal.type);
               let milkItem = global.getMilk(
                 level,

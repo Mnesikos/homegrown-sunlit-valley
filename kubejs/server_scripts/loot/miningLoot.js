@@ -202,6 +202,11 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.randomChance(0.02).addLoot("society:geode");
     });
+      e.addBlockLootModifier("minecraft:netherrack")
+    .hasAnyStage("filthy_excavator")
+    .pool((p) => {
+      p.randomChance(0.01).addLoot("society:magma_geode");
+    });
   const netherOres = [
     "minecraft:nether_gold_ore",
     "minecraft:nether_quartz_ore",

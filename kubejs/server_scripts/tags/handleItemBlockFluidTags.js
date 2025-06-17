@@ -566,6 +566,8 @@ ServerEvents.tags("block", (e) => {
     "society:prize_machine",
     "society:seed_maker",
     "society:dehydrator",
+    "society:recycling_machine",
+    "society:tapper",
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);
@@ -592,15 +594,8 @@ ServerEvents.tags("block", (e) => {
   ].forEach((wool) => {
     e.add("minecraft:mineable/axe", wool);
   });
-  [
-    "minecraft:dark_oak_log",
-    "meadow:pine_log",
-    "minecraft:spruce_log",
-    "autumnity:maple_log",
-    "minecraft:acacia_log",
-    "minecraft:oak_log",
-  ].forEach((block) => {
-    e.add("society:tappable_blocks", block);
+  global.tapperRecipes.forEach((recipe) => {
+    e.add("society:tappable_blocks", recipe.input);
   });
   const flowersMissingBlockTags = [
     "meadow:eriophorum_tall",

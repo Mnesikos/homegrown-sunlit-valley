@@ -82,7 +82,7 @@
       "shift_y": 0,
       "shift_z": "minecraft:shift_z"
     },
-    "final_density": "society:test",
+    "final_density": "society:chakyldf",
     "initial_density_without_jaggedness": 0,
     "continents": "minecraft:overworld/continents",
     "erosion": "minecraft:overworld/erosion",
@@ -122,7 +122,7 @@
         "if_true": {
           "type": "minecraft:y_above",
           "anchor": {
-            "below_top": 5
+            "below_top": 10
           },
           "surface_depth_multiplier": 1,
           "add_stone_depth": false
@@ -130,7 +130,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "twigs:silt"
+            "Name": "minecraft:grass_block"
           }
         }
       },

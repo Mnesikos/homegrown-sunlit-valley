@@ -18,6 +18,12 @@
     "result": "deny"
   },
   {
+    "hostile": true,
+    "dimension": "society:skull_cavern",
+    "minheight": 503,
+    "result": "deny"
+  },
+  {
     "mob": [
       "minecraft:zombie",
       "minecraft:skeleton",
@@ -40,7 +46,7 @@
     "dimension": "minecraft:overworld",
     "result": "deny"
   },
-    {
+  {
     "mod": "rottencreatures",
     "dimension": "minecraft:overworld",
     "result": "deny"
@@ -259,7 +265,7 @@
   {
     "mob": "splendid_slimes:splendid_slime",
     "dimension": "society:skull_cavern",
-    "biome": ["society:desert_caves","society:desert_fault"],
+    "biome": ["society:desert_caves", "society:desert_fault"],
     "when": "finalize",
     "nbt": {
       "Breed": "splendid_slimes:dusty",

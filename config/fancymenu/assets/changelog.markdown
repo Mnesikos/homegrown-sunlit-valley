@@ -1,6 +1,6 @@
 ^^^
 ## Iridium Sparks
-### v3.0.0 - PLAYTEST 1
+### v3.0.0 - PLAYTEST 2
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
@@ -18,6 +18,7 @@
 - Added Magnifying Glass
 - Added Bouquet Bag
 - Added Sap and Rubber
+- Added tapping recipes to Birch and Wise Oak
 - Added Create-focused quest chapter and reworked entire Create progression/balance
 - Added Juicy and Sparkcat Splendid Slimes
 - Added Silver and Lead - Create focused resources
@@ -47,6 +48,7 @@
 - Seeds will now explain biomes that are always one season when planting incorrectly
 - Fish Ponds now mature once a day in the morning to match other mechanics
 - Fish Ponds preserve type, population, and max population when broken
+- Husbandry animals no longer appreciate being kept on a seat for eternity
 - Heretic Skill now also makes farm animals drop Sparkstone
 - Sprinklers now no longer need the previous tier to craft
 - Improved some loot pools
@@ -71,7 +73,9 @@
 - Reduced chance of catching Neptuna
 - Reduced Chunkroderite Block value from Neptunium Ingots (24 -> 8)
 - Reduced cost of Conjuration catalyst
-- Reduced cost of Mechanical Saw, Drill, and Harvester 
+- Reduced cost of Preserves Jars & Canvas Loom
+- Reduced cost of Mechanical Saw, Drill, and Harvester
+- Reduced cost of quality fertilizers
 - Reduced Plort value of low difficulty Slimes
 - Reduced value of Slime Hearts (2 x Plort value -> 1.5 x Plort Value)
 - Reduced Bait Maker output from 6 -> 3
@@ -117,3 +121,5 @@
 - Fixed some impossible fish pond quests
 - Fixed mixers creating wrong amounts of dough
 - Fixed Evaporator Salt turning into snowballs again
+- Fixed Gold Swords being stronger than diamond
+- Fixed certain planks not being able to be crafted into chests

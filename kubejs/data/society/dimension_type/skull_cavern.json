@@ -2,7 +2,7 @@
   "ambient_light": 0,
   "bed_works": false,
   "coordinate_scale": 1,
-  "effects": "minecraft:overworld",
+  "effects": "minecraft:the_nether",
   "has_ceiling": false,
   "has_raids": false,
   "has_skylight": false,
@@ -14,8 +14,8 @@
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "value": {
-      "min_inclusive": 7,
-      "max_inclusive": 7
+      "min_inclusive": 0,
+      "max_inclusive": 14
     }
   },
   "natural": true,

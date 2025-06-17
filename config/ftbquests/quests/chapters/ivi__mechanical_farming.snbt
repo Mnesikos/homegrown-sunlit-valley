@@ -387,7 +387,7 @@
 			}]
 			title: "Where is the Mechanical Bearing \\& Cart Assembler?"
 			x: -5.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6A931F456D6FEA3E"]
@@ -907,7 +907,7 @@
 			description: [
 				"&6Item Pipes&r transfer items between inventories in easier ways than Mechanical Belts. "
 				""
-				"You can place them in a line from one inventory to another, and the &6Shift + Right click&r the pipe that's next to the inventory you want to take items out from."
+				"You can place them in a line from one inventory to another, then with a Create Wrench &6Shift + Right click&r the pipe that's next to the inventory you want to take items out from."
 				""
 				"&oPipes also cannot automate Artisan Machines&r"
 			]
@@ -995,6 +995,27 @@
 			title: "Tubular Transport"
 			x: 10.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["221306DB217B8F93"]
+			description: [
+				"The &6Schematicannon&r has been removed from the pack due to several crashes and exploits."
+				""
+				"Luckily there's a good replacement! The &6Template Manager&r can handle all the same use cases."
+				""
+				""
+				"{ \"text\": \"See this quest for details.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"07D5EB5853F9A357\" } }"
+			]
+			icon: "create:schematicannon"
+			id: "4694534F6E99EAAD"
+			tasks: [{
+				id: "19676C8502E80842"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "No Schematicannon?"
+			x: -5.0d
+			y: 1.0d
 		}
 	]
 	title: "IV.I - Mechanical Farming"

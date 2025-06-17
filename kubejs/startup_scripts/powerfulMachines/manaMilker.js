@@ -27,22 +27,14 @@ StartupEvents.registry("block", (event) => {
         let nearbyFarmAnimals;
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
-          .filter((entity) =>
-            global.checkEntityTag(entity, "society:milkable_animal")
-          );
+          .filter((entity) => global.checkEntityTag(entity, "society:milkable_animal"));
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           let interactionCooldown = global.animalInteractionCooldown;
-          if (mana >= MANA_PER_MILK) {
+          if (mana >= MANA_PER_MILK && Number(data.getInt("affection")) > 1) {
             interactionCooldown *= global.getMilkingTimeMult(animal.type);
 
-            let milkItem = global.getMilk(
-              level,
-              animal, 
-              data,
-              undefined,
-              interactionCooldown
-            );
+            let milkItem = global.getMilk(level, animal, data, undefined, interactionCooldown);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);
               if (success) {
@@ -74,13 +66,9 @@ StartupEvents.registry("block", (event) => {
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
       blockInfo.attachCapability(
         BotaniaCapabilityBuilder.MANA.blockEntity()
