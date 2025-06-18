@@ -42,6 +42,9 @@
 			yellow_blossom = true
 			red_blossom = true
 
+		[types.leaves_type.vanillabackport]
+			pale_oak = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]
@@ -76,6 +79,9 @@
 		[types.wood_type.botania]
 			livingwood = true
 			dreamwood = true
+
+		[types.wood_type.vanillabackport]
+			pale_oak = true
 
 	[types.cake]
 

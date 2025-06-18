@@ -417,7 +417,6 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
   tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
-  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
   tooltip.add(
     "botania:apothecary_default",
     Text.gold(":classical_building: Abandoned Farm reward")

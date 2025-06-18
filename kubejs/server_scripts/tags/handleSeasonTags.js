@@ -338,6 +338,7 @@ const allSeasonCrops = [
   "atmospheric:currant_seedling",
   "minecraft:chorus_flower",
   "minecraft:chorus_fruit",
+  "vanillabackport:pale_oak_sapling",
 ];
 
 ServerEvents.tags("item", (e) => {

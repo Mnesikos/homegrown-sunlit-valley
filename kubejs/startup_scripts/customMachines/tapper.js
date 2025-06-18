@@ -62,6 +62,13 @@ global.tapperRecipes = [
     fluidOutput: "society:oak_resin",
     time: 1,
   },
+  {
+    input: "vanillabackport:pale_oak_log",
+    output: ["32x vanillabackport:resin_clump"],
+    leaves: ["vanillabackport:pale_oak_leaves"],
+    fluidOutput: "society:oak_resin",
+    time: 1,
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

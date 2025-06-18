@@ -10862,6 +10862,48 @@
             ]
         },
         {
+            "pakku_id": "EgWVdjYBRhE1ZUey",
+            "pakku_links": [
+                "rnUVx6UTgHozgbGe"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "vanillabackport"
+            },
+            "name": {
+                "curseforge": "Vanilla Backport"
+            },
+            "id": {
+                "curseforge": "417430"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "vanillabackport-forge-1.20.1-1.1.3.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6430/157/vanillabackport-forge-1.20.1-1.1.3.jar",
+                    "id": "6430157",
+                    "parent_id": "417430",
+                    "hashes": {
+                        "sha1": "85785ec21f552f49c8270f4e93f2095893556dad",
+                        "md5": "006348ca27017615638b04c6f2be1d10"
+                    },
+                    "required_dependencies": [
+                        "997634"
+                    ],
+                    "size": 3951691,
+                    "date_published": "2025-04-16T19:34:48.220Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "HsbTNDvbDZH8DHpH",
             "type": "MOD",
             "slug": {
