@@ -31,7 +31,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           let interactionCooldown = global.animalInteractionCooldown;
-          if (mana >= MANA_PER_MILK && Number(data.getInt("affection")) > 1) {
+          if (mana >= MANA_PER_MILK) {
             interactionCooldown *= global.getMilkingTimeMult(animal.type);
 
             let milkItem = global.getMilk(level, animal, data, undefined, interactionCooldown);

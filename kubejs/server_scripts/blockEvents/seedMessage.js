@@ -47,7 +47,7 @@ BlockEvents.rightClicked(
     if (biomeTags.toString().includes("sereneseasons:infertile_biomes")) {
       errorText = "This Biome cannot grow crops...";
     }
-    if (!seedMessageThrottle(player, 6000, "seed_message_throttle") && errorText) {
+    if (!seedMessageThrottle(player, 1200, "seed_message_throttle") && errorText) {
       global.renderUiText(
         player,
         server,

@@ -1,9 +1,10 @@
 ^^^
 ## Iridium Sparks
-### v3.0.0 - PLAYTEST 2
+### v3.0.0
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
+- Skull Cavern has new layer-based cave generation courtesy of Uni
 - Added new weather mechanics. No more watering plants right before rain! (Thanks coolbot100s)
 - Added Tapper - Replaces old Tap (Right click/craft to update)
 - Added Sparkstone ores & Sparkstone, a gem used for automating Artisan machines
@@ -18,6 +19,7 @@
 - Added Magnifying Glass
 - Added Bouquet Bag
 - Added Sap and Rubber
+- Added Happy Ghast and Pale Garden
 - Added tapping recipes to Birch and Wise Oak
 - Added Create-focused quest chapter and reworked entire Create progression/balance
 - Added Juicy and Sparkcat Splendid Slimes
@@ -38,7 +40,7 @@
 - Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone
 - Artisan Machines now drop unfinished inputs when broken
 - All-Seeing and Webby Slimes now climb walls
-- Nether, Skull Cavern, and River biomes are now infertile
+- Nether, Skull Cavern, and overworld blacklisted biomes (such as rivers) are now infertile
 - Gold Slimes now Largoless
 - Slimy Slimes are now Picky
 - Phantom Slimes are now Photosynthesizing 
@@ -123,3 +125,4 @@
 - Fixed Evaporator Salt turning into snowballs again
 - Fixed Gold Swords being stronger than diamond
 - Fixed certain planks not being able to be crafted into chests
+- Fixed Deployers triggering "could use something to eat..." message

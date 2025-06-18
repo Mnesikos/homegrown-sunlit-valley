@@ -121,16 +121,22 @@
 	# Allows for resetting the zoom with the middle mouse button.
 	# default: true
 	reset_zoom_with_mouse = true
+	# Improves performance by making the game render less of the world while zoomed in. This feature depends on the Sodium mod in order to work.
+	# default: true
+	smart_occlusion = true
 	# Expands the entity distance while zooming in, allowing creatures and certain blocks to be seen from afar. This may have a performance impact during zoom.
-	# options: OFF, ON
-	# default: OFF
+	# options: OFF, SAFE, ON
+	# default: SAFE
 	see_distant_entities = "OFF"
+	# Adds the spyglass's sounds effects on zooming in and out
+	# default: false
+	spyglass_sounds = false
+	# Adds sound effects on zoom scrolling.
+	# default: false
+	scroll_sounds = false
 	# If enabled, the current zoom divisor is forgotten once zooming is finished.
 	# default: true
 	forget_zoom_divisor = true
-	# If enabled, the zoom will use spyglass sounds on zooming in and out.
-	# default: false
-	use_spyglass_sounds = false
 	# Displays debug information for exponential zoom scrolling. Currently it may help with configuring the zoom scrolling.
 	# default: false
 	debug_scrolling = false

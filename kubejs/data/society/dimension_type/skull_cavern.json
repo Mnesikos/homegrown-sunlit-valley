@@ -7,6 +7,7 @@
   "has_raids": false,
   "has_skylight": false,
   "height": 512,
+  "fixed_time": 18000,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "logical_height": 512,
   "min_y": 0,
@@ -18,7 +19,7 @@
       "max_inclusive": 14
     }
   },
-  "natural": true,
+  "natural": false,
   "piglin_safe": true,
   "respawn_anchor_works": false,
   "ultrawarm": false

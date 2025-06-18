@@ -249,7 +249,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AmbientSounds_FORGE_v6.1.4_mc1.20.1.jar",
+                    "file_name": "AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -258,18 +258,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5968/59/AmbientSounds_FORGE_v6.1.4_mc1.20.1.jar",
-                    "id": "5968059",
+                    "url": "https://edge.forgecdn.net/files/6570/130/AmbientSounds_FORGE_v6.1.11_mc1.20.1.jar",
+                    "id": "6570130",
                     "parent_id": "254284",
                     "hashes": {
-                        "sha1": "4ed2c5bee5988f40cebef3bbc9dec39ab9096bf1",
-                        "md5": "10709a88a6c11f0c4d6cf9759297a704"
+                        "sha1": "af412170c07febfb5c611b7237d806230dc83584",
+                        "md5": "78270b771d833d9f2936a2bd95a7ec21"
                     },
                     "required_dependencies": [
                         "257814"
                     ],
-                    "size": 83885724,
-                    "date_published": "2024-12-06T14:06:33.837Z"
+                    "size": 51722248,
+                    "date_published": "2025-05-26T09:57:49.020Z"
                 }
             ]
         },
@@ -7333,7 +7333,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ok_zoomer-forge-5.4.0-beta.4.jar",
+                    "file_name": "ok_zoomer-forge-5.4.0-beta.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7342,16 +7342,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6121/880/ok_zoomer-forge-5.4.0-beta.4.jar",
-                    "id": "6121880",
+                    "url": "https://edge.forgecdn.net/files/6404/9/ok_zoomer-forge-5.4.0-beta.8.jar",
+                    "id": "6404009",
                     "parent_id": "354047",
                     "hashes": {
-                        "sha1": "b93fcfbde9e82b722ca81ed316933b9eeba0c141",
-                        "md5": "5c2ccd59a986b7b4d20b2c96c838764d"
+                        "sha1": "67acab195fe6f74feee2837419da38ce8ac9a99d",
+                        "md5": "b7186e5d53962614bc6f1b540715c7ee"
                     },
                     "required_dependencies": [],
-                    "size": 510492,
-                    "date_published": "2025-01-25T02:30:14.560Z"
+                    "size": 520782,
+                    "date_published": "2025-04-09T18:17:42.640Z"
                 }
             ]
         },
@@ -9873,27 +9873,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "structurify-forge-mc1.20.1-1.0.11.jar",
+                    "file_name": "structurify-forge-1.0.14+mc1.20.1.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5975/418/structurify-forge-mc1.20.1-1.0.11.jar",
-                    "id": "5975418",
+                    "url": "https://edge.forgecdn.net/files/6655/523/structurify-forge-1.0.14+mc1.20.1.jar",
+                    "id": "6655523",
                     "parent_id": "1087551",
                     "hashes": {
-                        "sha1": "d71d9d1c4a045d29b80826a1c9044ab6947547da",
-                        "md5": "593ba549c2567548b6f1af1deef9eb6e"
+                        "sha1": "e64c13a26340cc09f6aa0eaf8a46b58294e09ff8",
+                        "md5": "d41f518ad831288aac47fd52afa4842c"
                     },
                     "required_dependencies": [
                         "667299"
                     ],
-                    "size": 1326023,
-                    "date_published": "2024-12-08T21:22:03.253Z"
+                    "size": 804913,
+                    "date_published": "2025-06-15T20:04:10.380Z"
                 }
             ]
         },

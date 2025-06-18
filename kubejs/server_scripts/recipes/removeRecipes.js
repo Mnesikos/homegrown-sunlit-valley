@@ -6,6 +6,11 @@ ServerEvents.recipes((e) => {
   const removeByOutput = [
     "mining_dimension:teleporter",
     "treetap:tap",
+    "create:schematicannon",
+    "create:empty_schematic",
+    "create:schematic_and_quill",
+    "create:schematic_table",
+    // Pipez
     "pipez:energy_pipe",
     "pipez:fluid_pipe",
     "pipez:gas_pipe",
@@ -23,6 +28,9 @@ ServerEvents.recipes((e) => {
     "gamediscs:display",
     "gamediscs:control_pad",
     "gamediscs:battery",
+    "betterarcheology:netherite_brush",
+    "betterarcheology:iron_brush",
+    "betterarcheology:diamond_brush",
     // Stardew Fishing
     "stardew_fishing:trap_bobber",
     "stardew_fishing:cork_bobber",

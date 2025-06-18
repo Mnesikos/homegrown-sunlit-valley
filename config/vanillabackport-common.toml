@@ -9,7 +9,7 @@
 	#Determine if Pale Gardens should generate in the overworld
 	generatePaleGarden = true
 	#Determine if the wandering trader should have trades from the pale garden
-	paleTradesFromWanderer = true
+	paleTradesFromWanderer = false
 
 ["Summer Drop"]
 	#Determine if dried ghasts should generate in Nether Fossils
