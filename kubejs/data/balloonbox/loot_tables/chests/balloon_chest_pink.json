@@ -149,6 +149,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 7,
+          "name": "splendid_slimes:slime_ticket"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 5,
           "functions": [
             {

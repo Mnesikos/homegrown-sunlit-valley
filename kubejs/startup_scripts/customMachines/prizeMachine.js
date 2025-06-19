@@ -161,9 +161,14 @@ global.prizeMachineRewards = [
   {
     hint: "only enjoyed by those of age",
     possibleOutputs: ["society:aging_cask", "tanukidecor:slot_machine"],
-  },  {
+  },
+  {
     hint: "with jaded fruit... Again",
     possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
+  },
+  {
+    hint: "some tickets?",
+    possibleOutputs: ["3x splendid_slimes:slime_ticket"],
   },
   {
     hint: "spicy",

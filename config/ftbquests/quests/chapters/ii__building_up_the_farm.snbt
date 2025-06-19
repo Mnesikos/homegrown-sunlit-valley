@@ -135,6 +135,7 @@
 				"It is sold by the &6Farmer&r and &6Shepherd&r"
 			]
 			id: "596D2298299CCEED"
+			min_required_dependencies: 1
 			rewards: [{
 				count: 8
 				id: "7CA8E1317ECA8880"
@@ -1629,11 +1630,7 @@
 		}
 		{
 			dependencies: ["2C3FD9E2DA520620"]
-			description: [
-				"Don't just stuff your farm with nameless livestock- naming a farm animal will make them like you a good bit more!"
-				""
-				"&oRenaming will have no effect.&r"
-			]
+			description: ["Don't just stuff your farm with nameless livestock- naming a farm animal will make them like you a good bit more!"]
 			id: "649860C19CAE0F17"
 			rewards: [{
 				count: 4

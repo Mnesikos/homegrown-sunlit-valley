@@ -3350,7 +3350,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "moreminecarts:chunkrodite_block", count: 16 },
           { item: "moreminecarts:chunkrodite", count: 48 },
-          { item: "society:sparkstone", count: 16 },
         ],
       },
       {
@@ -3411,7 +3410,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "pamhc2trees:plumitem", count: 32 },
-          { item: "farmersdelight:melon_juice", count: 16 },
+          { item: "society:sparkstone_block", count: 16 },
           { item: "society:aged_amethyst_cheese_block", count: 32 },
         ],
       },

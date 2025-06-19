@@ -11,7 +11,8 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .soundType("copper")
     .item((item) => {
-      item.tooltip(Text.gray("Milks farm animals up to 10 blocks away"));
+      item.tooltip(Text.gray("Milks nearby farm animals"));
+      item.tooltip(Text.green(`Area: 10x10x10`));
       item.tooltip(Text.aqua("Requires Botania mana from spreader"));
       item.modelJson({
         parent: "society:block/mana_milker",
@@ -63,6 +64,9 @@ StartupEvents.registry("block", (event) => {
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )

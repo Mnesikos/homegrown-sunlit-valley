@@ -45,7 +45,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Harvests outputs of Fish Ponds into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 3x3`));
+      item.tooltip(Text.green(`Area: 3x3x3`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
         parent: "society:block/fish_pond_basket",
@@ -83,6 +83,9 @@ StartupEvents.registry("block", (event) => {
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )

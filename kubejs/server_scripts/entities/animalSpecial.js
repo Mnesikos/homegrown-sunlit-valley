@@ -1,23 +1,13 @@
 console.info("[SOCIETY] animalSpecial.js loaded");
 
-const handleSpecialItem = (
-  data,
-  chance,
-  hungry,
-  minHearts,
-  mult,
-  item,
-  hasQuality,
-  e
-) => {
+const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuality, e) => {
   const { player, target, level, server } = e;
   const affection = data.getInt("affection") || 0;
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let quality = 0;
 
   if (!hungry && hearts >= minHearts && Math.random() <= chance) {
-    data.affection =
-      affection + (player.stages.has("animal_whisperer") ? 20 : 10);
+    data.affection = affection + (player.stages.has("animal_whisperer") ? 20 : 10);
     let specialItem = level.createEntity("minecraft:item");
     if (hasQuality && hearts > 0) {
       quality = Math.floor((hearts % 11) / 2 - 2);
@@ -56,6 +46,14 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:husbandry_animal")) return;
   if (hand == "MAIN_HAND") {
-    global.handleSpecialHarvest(level, target, player, server, undefined, undefined, handleSpecialItem);
+    global.handleSpecialHarvest(
+      level,
+      target,
+      player,
+      server,
+      undefined,
+      undefined,
+      handleSpecialItem
+    );
   }
 });

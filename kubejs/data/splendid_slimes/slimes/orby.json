@@ -27,7 +27,7 @@
     "minecraft:drowned",
     "minecraft:creeper"
   ],
-  "favorite_entity": "minecraft:skeleton",
+  "favorite_entity": "minecraft:drowned",
   "traits": ["defiant", "handy"],
   "emit_effect_particle": "minecraft:sculk_charge_pop",
   "innate_effects": [

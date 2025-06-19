@@ -143,6 +143,11 @@
 		}
 		{
 			dependencies: ["4575948F05E18615"]
+			description: [
+				"&6Mechanical Arms&r are a method for transporting items to multiple inputs and outputs. It's handy for automating specific tasks!"
+				""
+				"You can see a list of valid targets for it on the left side of the ponder menu."
+			]
 			id: "065A8A3BFFA00CB7"
 			rewards: [{
 				id: "0B18D3785CB7B346"
@@ -154,6 +159,7 @@
 				item: "create:mechanical_arm"
 				type: "item"
 			}]
+			title: "Mechanical Movement"
 			x: 8.0d
 			y: 0.0d
 		}
@@ -1002,9 +1008,6 @@
 				"The &6Schematicannon&r has been removed from the pack due to several crashes and exploits."
 				""
 				"Luckily there's a good replacement! The &6Template Manager&r can handle all the same use cases."
-				""
-				""
-				"{ \"text\": \"See this quest for details.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"07D5EB5853F9A357\" } }"
 			]
 			icon: "create:schematicannon"
 			id: "4694534F6E99EAAD"

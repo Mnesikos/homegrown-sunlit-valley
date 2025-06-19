@@ -407,6 +407,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
   tooltip.add("society:prize_ticket", Text.gray("Use on a Prize Machine for something good!"));
+  tooltip.add("splendid_slimes:slime_ticket", Text.gray("Use on a Splendid Slime to learn their primary breed's favorite food."));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
   tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));

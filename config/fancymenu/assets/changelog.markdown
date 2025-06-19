@@ -35,6 +35,8 @@
 - Added Chai Blend as crafting ingredient for Chait Tea
 - Added ores to Botania Orechids
 - Added fishing spots
+- Added recipes for Create Trains that don't require Create
+- Added chance for Neptune's Bounty to Stardew Fishing chests
 - Added Neptunium-Infused Hook to replace Fish Tank reward (Replaces Nether Star Hook)
 - Added Goddess Statues for sale from Cleric (removed from Wandering Trader)
 - Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone

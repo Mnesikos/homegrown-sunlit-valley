@@ -50,7 +50,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
       );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 5x5`));
+      item.tooltip(Text.green(`Area: 5x5x5`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
         parent: "society:block/auto_grabber",
@@ -129,6 +129,9 @@ StartupEvents.registry("block", (event) => {
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )

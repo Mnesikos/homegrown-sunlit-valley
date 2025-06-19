@@ -86,6 +86,7 @@ StartupEvents.registry("item", (e) => {
     })
     .useAnimation("drink");
   e.create("society:prize_ticket").texture("society:item/prize_ticket");
+  e.create("splendid_slimes:slime_ticket").texture("splendid_slimes:item/slime_ticket");
   e.create("society:furniture_box").texture("society:item/furniture_box");
   const fantasyBoxes = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
   fantasyBoxes.forEach((theme) => {

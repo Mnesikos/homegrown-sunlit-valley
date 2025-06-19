@@ -150,21 +150,37 @@
 			description: [
 				"Create Trains are the ultimate form of railway transport, allowing you to build large custom locomotives with multiple cars."
 				""
+				"Tracks and Train gear can be crafted without Create Progression!"
+				""
 				"They can also be automated using &6Train Schedules&r to transport items and fluids."
 			]
 			icon: "create:track"
 			id: "53836B96EE81A695"
-			rewards: [{
-				count: 4
-				id: "59D4EC38634F8F5E"
-				item: "create:sturdy_sheet"
-				type: "item"
-			}]
-			tasks: [{
-				id: "385A1E8476DE731F"
-				item: "create:controls"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "35A8601CD1E7D811"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "66D9AB0D6B734412"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "385A1E8476DE731F"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "6BB2A011FACDFB66"
+					item: "railways:track_oak"
+					type: "item"
+				}
+			]
 			title: "Advanced Trains"
 			x: -1.5d
 			y: -3.0d
@@ -512,7 +528,7 @@
 			description: [
 				"Teleportation is rare and expensive in this pack, encouraging you to build out your infrastructure at first."
 				""
-				"[ \"If you cannot live without it, take a look at the \", { \"text\": \"Paving The Road\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"42A10CEE57513522\" } }, \" quest first!\" ]"
+				"If you cannot live without it, take a look at the \"Paving The Road\" quest first."
 			]
 			icon: "minecraft:ender_eye"
 			id: "71C32483EE2418CA"

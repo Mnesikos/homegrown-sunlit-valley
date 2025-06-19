@@ -16,6 +16,11 @@
         {
           "type": "minecraft:item",
           "weight": 1,
+          "name": "splendid_slimes:slime_ticket"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
           "name": "gamediscs:game_disc_slime"
         },
         {

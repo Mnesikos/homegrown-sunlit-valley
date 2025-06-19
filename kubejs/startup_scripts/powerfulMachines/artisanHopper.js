@@ -336,7 +336,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Inserts items into Artisan Machines from inventory above."));
       item.tooltip(Text.gray("Harvests outputs from Artisan Machines into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 7x7`));
+      item.tooltip(Text.green(`Area: 7x7x7`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
         parent: "society:block/artisan_hopper",
@@ -376,6 +376,9 @@ StartupEvents.registry("block", (event) => {
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )

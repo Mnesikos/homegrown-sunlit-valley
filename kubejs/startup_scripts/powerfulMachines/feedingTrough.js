@@ -9,9 +9,8 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 2, 16, 12, 14)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray("Feeds farm animals up to 6 blocks away using Animal Feed")
-      );
+      item.tooltip(Text.gray("Feeds nearby farm animals using Animal Feed"));
+      item.tooltip(Text.green(`Area: 6x6x6`));
       item.modelJson({
         parent: "farm_and_charm:block/feeding_trough_size_0",
       });
@@ -36,15 +35,10 @@ StartupEvents.registry("block", (event) => {
         if (inventory.toString().includes("animal_feed")) {
           nearbyFarmAnimals = level
             .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
-            .filter((entity) =>
-              global.checkEntityTag(entity, "society:husbandry_animal")
-            );
+            .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
           nearbyFarmAnimals.forEach((animal) => {
             let data = animal.persistentData;
-            if (
-              !data.getInt("ageLastFed") ||
-              level.time < data.getInt("ageLastFed")
-            ) {
+            if (!data.getInt("ageLastFed") || level.time < data.getInt("ageLastFed")) {
               data.ageLastFed = level.time;
             }
             if (level.time - data.ageLastFed > global.animalInteractionCooldown) {
@@ -87,13 +81,12 @@ StartupEvents.registry("block", (event) => {
           .insertItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.insertItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
+          .extractItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.extractItem(slot, stack, simulate)
           )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     }).blockstateJson = {
     multipart: [

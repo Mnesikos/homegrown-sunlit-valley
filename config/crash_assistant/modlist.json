@@ -471,6 +471,10 @@
     "modId": "ftbbackups2",
     "version": "1.0.23"
   },
+  "ftbquestlocalizer-1.20.1-forge-3.2.0.jar": {
+    "modId": "ftbquestlocalizer",
+    "version": "3.2.0"
+  },
   "functionalstorage-1.20.1-1.2.10.jar": {
     "modId": "functionalstorage",
     "version": "1.20.1-1.2.10"

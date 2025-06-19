@@ -8,11 +8,28 @@
         {
           "type": "stardew_fishing:optional",
           "name": "aquaculture:lockbox",
-          "weight": 2
+          "weight": 8
         },
         {
           "type": "stardew_fishing:optional",
           "name": "aquaculture:treasure_chest",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_contents",
+              "type": "aquaculture:neptunes_bounty",
+              "entries": [
+                {
+                  "type": "minecraft:loot_table",
+                  "name": "aquaculture:box/neptunes_bounty"
+                }
+              ]
+            }
+          ],
+          "name": "aquaculture:neptunes_bounty",
           "weight": 1
         }
       ]
