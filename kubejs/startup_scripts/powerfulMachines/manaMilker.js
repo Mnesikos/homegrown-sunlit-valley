@@ -9,8 +9,10 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:needs_stone_tool")
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
+    .soundType("copper")
     .item((item) => {
-      item.tooltip(Text.gray("Milks farm animals up to 8 blocks away"));
+      item.tooltip(Text.gray("Milks nearby farm animals"));
+      item.tooltip(Text.green(`Area: 10x10x10`));
       item.tooltip(Text.aqua("Requires Botania mana from spreader"));
       item.modelJson({
         parent: "society:block/mana_milker",
@@ -21,35 +23,19 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(1200, 0, (entity) => {
         const { inventory, block, level } = entity;
-
         let mana = entity.persistentData.getInt("mana");
         inventory.allItems;
         let nearbyFarmAnimals;
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(10))
-          .filter((entity) =>
-            global.checkEntityTag(entity, "society:milkable_animal")
-          );
+          .filter((entity) => global.checkEntityTag(entity, "society:milkable_animal"));
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           let interactionCooldown = global.animalInteractionCooldown;
           if (mana >= MANA_PER_MILK) {
-            if (
-              animal.type === "minecraft:goat" ||
-              animal.type === "species:mammutilation"
-            ) {
-              interactionCooldown *= 2;
-            } else if (animal.type === "minecraft:sheep") {
-              interactionCooldown *= 1.5;
-            }
+            interactionCooldown *= global.getMilkingTimeMult(animal.type);
 
-            let milkItem = global.getMilk(
-              level,
-              animal,
-              data,
-              undefined,
-              interactionCooldown
-            );
+            let milkItem = global.getMilk(level, animal, data, undefined, interactionCooldown);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);
               if (success) {
@@ -78,16 +64,15 @@ StartupEvents.registry("block", (event) => {
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
         CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
           .extractItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.extractItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
-          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
       blockInfo.attachCapability(
         BotaniaCapabilityBuilder.MANA.blockEntity()

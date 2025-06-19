@@ -5,3 +5,11 @@ BlockEvents.rightClicked((e) => {
     e.cancel();
   }
 });
+BlockEvents.rightClicked((e) => {
+  if (
+    e.block.hasTag("dewdrop:waterable") &&
+    e.level.getBlock(e.block.getPos().above()).hasTag("botania:mystical_flowers")
+  ) {
+    e.cancel();
+  }
+});

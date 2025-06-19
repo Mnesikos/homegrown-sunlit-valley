@@ -130,26 +130,6 @@ ServerEvents.recipes((e) => {
     `aquaculture:diamond_fillet_knife`,
     "aquaculture:neptunium_ingot"
   );
-
-  // BA brush
-  e.smithing(
-    "betterarcheology:iron_brush",
-    "society:iron_upgrade_smithing_template",
-    "minecraft:brush",
-    "minecraft:iron_ingot"
-  );
-  e.smithing(
-    "betterarcheology:diamond_brush",
-    "society:diamond_upgrade_smithing_template",
-    "betterarcheology:iron_brush",
-    "minecraft:diamond"
-  );
-  e.smithing(
-    "betterarcheology:netherite_brush",
-    "minecraft:netherite_upgrade_smithing_template",
-    "betterarcheology:diamond_brush",
-    "minecraft:netherite_ingot"
-  );
   // Knives
   const knifeTiers = ["flint", "iron", "gold", "diamond", "netherite"];
   knifeTiers.forEach((tier, index) => {
@@ -223,7 +203,7 @@ ServerEvents.recipes((e) => {
     "society:dragontooth_axe",
     "minecraft:netherite_upgrade_smithing_template",
     "minecraft:diamond_axe",
-    "society:prismatic_shard"
+    "minecraft:bone_block"
   );
   // Watering Cans
   e.smithing(

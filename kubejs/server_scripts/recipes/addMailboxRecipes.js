@@ -19,8 +19,8 @@ ServerEvents.recipes((e) => {
     { type: "quark:blossom", mailbox: "everycomp:rfm/quark/blossom_mail_box" },
     { type: "botania:dreamwood", mailbox: "everycomp:rfm/botania/dreamwood_mail_box" },
     { type: "botania:livingwood", mailbox: "everycomp:rfm/botania/livingwood_mail_box" },
+    { type: "vanillabackport:pale_oak", mailbox: 'everycomp:rfm/vanillabackport/pale_oak_mail_box'}
   ];
-  [];
   recipes.forEach((recipe) => {
     const { type, mailbox } = recipe;
     // Thanks Vaskii for having slabs be x_planks_slab

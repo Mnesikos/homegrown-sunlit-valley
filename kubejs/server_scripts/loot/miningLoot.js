@@ -160,7 +160,7 @@ LootJS.modifiers((e) => {
       });
     e.addBlockLootModifier(ore)
       .hasAnyStage("star_blessing")
-      .anyDimension("mining_dimension:mining")
+      .anyDimension("society:skull_cavern")
       .pool((p) => {
         p.not((n) =>
           n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))
@@ -201,6 +201,11 @@ LootJS.modifiers((e) => {
     .hasAnyStage("filthy_excavator")
     .pool((p) => {
       p.randomChance(0.02).addLoot("society:geode");
+    });
+      e.addBlockLootModifier("minecraft:netherrack")
+    .hasAnyStage("filthy_excavator")
+    .pool((p) => {
+      p.randomChance(0.01).addLoot("society:magma_geode");
     });
   const netherOres = [
     "minecraft:nether_gold_ore",
@@ -260,7 +265,7 @@ LootJS.modifiers((e) => {
       });
     e.addBlockLootModifier(ore)
       .hasAnyStage("star_blessing")
-      .anyDimension("mining_dimension:mining")
+      .anyDimension("society:skull_cavern")
       .pool((p) => {
         p.not((n) =>
           n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch"))

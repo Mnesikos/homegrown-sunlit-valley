@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:cleric",
   "removeOtherTrades": true,
-  "maxTrades": 40,
+  "maxTrades": 41,
   "trades": [
     {
       "offer": {
@@ -187,8 +187,13 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 32,
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 5,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -197,6 +202,24 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:cleric_hearthstone_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "paraglider:goddess_statue",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_goddess_statue_for_sun"
     },
     {
       "offer": {

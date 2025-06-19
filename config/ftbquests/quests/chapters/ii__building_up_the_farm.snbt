@@ -15,13 +15,13 @@
 				"0A39B0C0A77E57B0"
 			]
 			description: [
-				"Your journey into farming starts with the &6Market&r, which sells a variety of basic seeds and saplings."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description1}"
 				""
-				"Some crops only grow in certain seasons, which is designated in the crops's tooltip. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description2}"
 				""
-				"Seasons last &630 minecraft days&r, and hot or cold biomes will be always be Summer and Winter respectively."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description3}"
 				""
-				"Equipping the Calendar will show the current sub-season in the top left of your screen."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description4}"
 			]
 			id: "6ADD884F3FFE5D42"
 			rewards: [{
@@ -32,19 +32,19 @@
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"
-				title: "Buying Seeds"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest1.task_8001065941662381881.title}"
 				type: "item"
 			}]
-			title: "Starting Farming"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest1.title}"
 			x: 1.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
-				"The &6Farmer&r sells supplies that'll help increase the efficiency of your farming, such as fertilizers."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest2.description1}"
 				""
-				"You can place the villager on the &6Seat&r to keep them from wandering off. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest2.description2}"
 			]
 			id: "2134CA6B3880D089"
 			rewards: [
@@ -64,20 +64,20 @@
 				item: "minecraft:composter"
 				type: "item"
 			}]
-			title: "Farmer Villager"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest2.title}"
 			x: 3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
-				"Watering your crops every morning gets old fast."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest3.description1}"
 				""
-				"&6Sprinklers&r help you out by keeping farmland hydrated in a radius around them."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest3.description2}"
 				""
-				"The basic Iron tier works in a 3x3 area centered around it."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest3.description3}"
 				""
-				"They can also be right clicked with a stick to add support for decoration."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest3.description4}"
 			]
 			id: "54B618CF0AB9DC20"
 			rewards: [{
@@ -95,9 +95,9 @@
 		}
 		{
 			description: [
-				"Once you find an appropriate place to start your farm, your first step should be preparing a field of farmland."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest4.description1}"
 				""
-				"Once fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest4.description2}"
 			]
 			icon: "minecraft:farmland"
 			id: "0A39B0C0A77E57B0"
@@ -117,10 +117,10 @@
 						value: "minecraft:hoes"
 					}
 				}
-				title: "Any Hoe"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest4.task_2727805727690354665.title}"
 				type: "item"
 			}]
-			title: "Preparing the Fields"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest4.title}"
 			x: -1.5d
 			y: -1.5d
 		}
@@ -130,11 +130,12 @@
 				"3D324E99DF28D224"
 			]
 			description: [
-				"The &6Farmer's Almanac&r has detailed information of crops and farm animals, which is essential when deciding what to focus on every season."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest5.description1}"
 				""
-				"It is sold by the &6Farmer&r and &6Shepherd&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest5.description2}"
 			]
 			id: "596D2298299CCEED"
+			min_required_dependencies: 1
 			rewards: [{
 				count: 8
 				id: "7CA8E1317ECA8880"
@@ -152,7 +153,7 @@
 				}
 				type: "item"
 			}]
-			title: "All on Farming"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest5.title}"
 			x: 3.0d
 			y: 2.0d
 		}
@@ -162,9 +163,9 @@
 				"2134CA6B3880D089"
 			]
 			description: [
-				"By now you might have ran out of money while getting your crops started. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest6.description1}"
 				""
-				"It's a good time to dig into stone to get materials needed to craft sprinklers or upgrade tools."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest6.description2}"
 			]
 			icon: {
 				Count: 1
@@ -191,18 +192,18 @@
 				item: { Count: 16, id: "minecraft:raw_iron" }
 				type: "item"
 			}]
-			title: "Hitting the Mines"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest6.title}"
 			x: 5.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["02327F6FDF987266"]
 			description: [
-				"While caving, you might come across these rare minerals."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7.description1}"
 				""
-				"&6Earth Crystals&r are an important crafting ingredient, so collect as many as you can."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7.description2}"
 				""
-				"Their soft glow gives them away in dark caves."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest7.description3}"
 			]
 			id: "07858B887B222BC2"
 			rewards: [{
@@ -215,16 +216,16 @@
 				item: "society:earth_crystal"
 				type: "item"
 			}]
-			title: "Hidden in the Stone"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest7.title}"
 			x: 7.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2134CA6B3880D089"]
 			description: [
-				"&6Fertilizer&r is a huge step in upgrading how much your farm produces."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest8.description1}"
 				""
-				"Simply right click on the farmland to gain the affects. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest8.description2}"
 			]
 			icon: "dew_drop_farmland_growth:weak_fertilizer"
 			id: "1D5820FBDD8EB900"
@@ -276,21 +277,21 @@
 						]
 					}
 				}
-				title: "Any Fertilizer"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest8.task_6402161856581112065.title}"
 				type: "item"
 			}]
-			title: "All on Fertilizers"
-			x: 2.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest8.title}"
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
 			description: [
-				"Cooking is essential early on, for both keeping you alive in the mines and making profit."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest9.description1}"
 				""
-				"A few basic ones can be crafted using &6Earth Crystals&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest9.description2}"
 				""
-				"In general, cooked meals are worth &61.2x-2x the sum of their ingredients&r! Complex dishes (ones with many ingredients) have an additional boost to their value as well."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest9.description3}"
 			]
 			icon: "farmersdelight:cooking_pot"
 			id: "122BB9885C33C85F"
@@ -322,19 +323,19 @@
 						]
 					}
 				}
-				title: "Any cooking station"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest9.task_6290272260704251579.title}"
 				type: "item"
 			}]
-			title: "Getting Cooking"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest9.title}"
 			x: 8.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
 			description: [
-				"Oak, Dark Oak, Spruce, and Pine trees can be tapped using a &6Tree Tap&r. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest10.description1}"
 				""
-				"Hang a bucket of any kind from the tap and it will slowly accumulate fluid."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest10.description2}"
 			]
 			id: "2B3BEC36F6C0F6BE"
 			rewards: [{
@@ -344,21 +345,21 @@
 			}]
 			tasks: [{
 				id: "405D4A05415335C3"
-				item: "treetap:tap"
+				item: "society:tapper"
 				type: "item"
 			}]
-			title: "Tapping Wood"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest10.title}"
 			x: 9.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["230E02067CBC21CF"]
 			description: [
-				"Buying seeds for crops that require them really eats into your margins. The &6Seed Maker&r turns crops into seeds for free."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest11.description1}"
 				""
-				"Using crops with any quality will turn the seed into the lowest quality inputed into the &6Seed Maker&r in &61&r day. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest11.description2}"
 				""
-				"Quality seeds will have a higher chance to grow quality crops, making it worth your time to produce good seeds!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest11.description3}"
 			]
 			id: "057A1891E5864EBF"
 			rewards: [{
@@ -377,9 +378,9 @@
 		{
 			dependencies: ["07858B887B222BC2"]
 			description: [
-				"&6Greenhouse Glass&r is a special material that lets crops up to 16 blocks underneath grow during any season."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest12.description1}"
 				""
-				"It's probably far too expensive at this point in the game to craft, but a few blocks over key crops can make a difference."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest12.description2}"
 			]
 			id: "477FFAD808985736"
 			rewards: [{
@@ -397,7 +398,7 @@
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
-			description: ["&6Pine Tar&r is tapped from Spruce and Pine trees and is mainly used for advanced farming devices."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest13.description1}"]
 			id: "230E02067CBC21CF"
 			rewards: [{
 				id: "5D513DA30D642A58"
@@ -414,7 +415,7 @@
 		}
 		{
 			dependencies: ["2B3BEC36F6C0F6BE"]
-			description: ["&6Oak Resin&r is tapped from oak logs, and is used as a sealant for many fluid-related items."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest14.description1}"]
 			id: "7B2EB2B56F155E49"
 			rewards: [{
 				id: "1FB60E6724AEDA99"
@@ -432,11 +433,11 @@
 		{
 			dependencies: ["7B2EB2B56F155E49"]
 			description: [
-				"Brewing beer is a good way to start on producing &6Artisan Goods&r on your farm."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest15.description1}"
 				""
-				"Dried ingredients need to be processed in the &6Silo&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest15.description2}"
 				""
-				"The Brewing process itself requires attention and is slightly complex. You can hold &6W&r while hovering over the Brewingstation to learn how to brew beer."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest15.description3}"
 			]
 			icon: "brewery:beer_wheat"
 			id: "1AADE5D96B701A97"
@@ -458,7 +459,7 @@
 					type: "item"
 				}
 			]
-			title: "Brewing Beer"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest15.title}"
 			x: 12.5d
 			y: 0.5d
 		}
@@ -468,14 +469,14 @@
 				"230E02067CBC21CF"
 			]
 			description: [
-				"Each sellable item in the pack has one of four categories:"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description1}"
 				""
-				"- :corn: &6Farmer&r - Raw crops and cooked meals"
-				"- :art: &6Artisan&r - Items made in Artisan Machines by hand, such as Preserves, Beer, Wine, Cheese, etc."
-				"- :gem: &6Geologist&r - Ores, gems, and minerals. Anything out of the ground."
-				"- :crossed_swords: &6Adventurer&r - Looted artifacts and other rare items."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description2}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description3}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description4}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description5}"
 				""
-				"The category is only relevant when it comes to skills, which may increase certain categories if taken."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description6}"
 			]
 			icon: {
 				Count: 1
@@ -487,6 +488,7 @@
 				}
 			}
 			id: "2DD84A5F127B1463"
+			min_required_tasks: 1
 			rewards: [{
 				id: "0EE0C090E1074FF2"
 				item: "brewery:beer_hops"
@@ -494,23 +496,23 @@
 			}]
 			tasks: [{
 				id: "029277086FFC13F5"
-				title: "Understood!"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest16.task_185341412797846517.title}"
 				type: "checkmark"
 			}]
-			title: "Artisan Goods?"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest16.title}"
 			x: 13.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2DD84A5F127B1463"]
 			description: [
-				"Bundles are the first large goal of the pack. They require certain items to be submitted, giving small rewards for each bundle, and large rewards when all bundles are completed."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest17.description1}"
 				""
-				"The most important right now is:"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest17.description2}"
 				""
-				"{ \"text\": \"The Spring Crops Bundle (Click Me)\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7D155FD0EFEEB5AC\" } }"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.ii__building_up_the_farm.quest17.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D155FD0EFEEB5AC\"}}]"
 				""
-				"Consisting of products that can grow on your farm."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest17.description4}"
 			]
 			icon: "supplementaries:present_green"
 			id: "5B6FD08D6063D6AA"
@@ -522,7 +524,7 @@
 			}]
 			tasks: [{
 				id: "46F8239D1B4C5FC4"
-				title: "Bundles"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest17.task_5113876534554025924.title}"
 				type: "checkmark"
 			}]
 			x: 15.0d
@@ -531,9 +533,9 @@
 		{
 			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
-				"The next place to exploit for its resources is the &6Nether&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest18.description1}"
 				""
-				"It's a dangerous place, but has the important resource &6Fire Quartz&r, needed for advanced farm building."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest18.description2}"
 			]
 			id: "1DC8E69A916864DC"
 			rewards: [{
@@ -553,15 +555,15 @@
 				}
 				type: "item"
 			}]
-			title: "Getting to the Nether"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest18.title}"
 			x: 18.0d
 			y: -1.5d
 		}
 		{
 			description: [
-				"In this pack, raising farm animals requires care, money and attention. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest19.description1}"
 				""
-				"A &6Shepherd&r villager will be needed for basic supplies."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest19.description2}"
 			]
 			icon: "minecraft:cow_spawn_egg"
 			id: "6EEBD017839FF628"
@@ -576,16 +578,16 @@
 				item: "minecraft:loom"
 				type: "item"
 			}]
-			title: "Raising Farm Animals"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest19.title}"
 			x: -1.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["6EEBD017839FF628"]
 			description: [
-				"All farm animals require &6Animal Feed&r regularly to produce their products. They need to be fed at least once every Minecraft day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest20.description1}"
 				""
-				"If an animal goes too long without being fed, they won't be very happy with you..."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest20.description2}"
 			]
 			id: "2C3FD9E2DA520620"
 			rewards: [{
@@ -597,21 +599,21 @@
 			tasks: [{
 				id: "64A0EB754F93BA1D"
 				item: "society:animal_feed"
-				title: "Feeding Animals"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest20.task_7251054289145281053.title}"
 				type: "item"
 			}]
-			title: "Raising Animals"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest20.title}"
 			x: 1.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2C3FD9E2DA520620"]
 			description: [
-				"Farm animals require love and attention! They can be pet once a day with an added bonus if you feed them by hand."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest21.description1}"
 				""
-				"Cramped conditions where more than 4 or so animals are walled in or packed together will make them lose happiness."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest21.description2}"
 				""
-				"Right click a farm animal with an empty hand to see their affection."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest21.description3}"
 			]
 			icon: "candlelight:hearth"
 			id: "3D324E99DF28D224"
@@ -623,19 +625,19 @@
 			}]
 			tasks: [{
 				id: "7F4B6A5EB91157E6"
-				title: "Understood"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest21.task_9172542021134538726.title}"
 				type: "checkmark"
 			}]
-			title: "Affection"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest21.title}"
 			x: 3.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2C3FD9E2DA520620"]
 			description: [
-				"Hand feeding animals can be a challenge with the amount of everyday farming chores. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest22.description1}"
 				""
-				"A &6Feeding Trough&r does this for you to any animals in range, provided it has Animal Feed."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest22.description2}"
 			]
 			id: "6D534E699BF820CE"
 			rewards: [{
@@ -654,9 +656,9 @@
 		{
 			dependencies: ["3D324E99DF28D224"]
 			description: [
-				"Birds such as Chickens will produce eggs, but only when they are fed and have at least 2 hearts of affection."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest23.description1}"
 				""
-				"They'll produce larger eggs at high levels of affection."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest23.description2}"
 			]
 			icon: "minecraft:egg"
 			id: "45739CCE73037CBB"
@@ -691,21 +693,21 @@
 						]
 					}
 				}
-				title: "Any egg"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest23.task_1148775013169337410.title}"
 				type: "item"
 			}]
-			title: "Eggs"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest23.title}"
 			x: 4.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
 			description: [
-				"Cows, Sheep, Goats, Wooly Cows, and Water Buffalos can all be milked."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest24.description1}"
 				""
-				"Milking animals requires a special &6Milk Pail&r for collection."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest24.description2}"
 				""
-				"The size of the milk willl depend on how much the animal likes you!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest24.description3}"
 			]
 			icon: "society:milk"
 			id: "5B5A764F0E02E5FF"
@@ -746,7 +748,7 @@
 							]
 						}
 					}
-					title: "Any milk"
+					title: "{ftbquests.chapter.ii__building_up_the_farm.quest24.task_7634611771616641652.title}"
 					type: "item"
 				}
 				{
@@ -755,13 +757,13 @@
 					type: "item"
 				}
 			]
-			title: "Milk"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest24.title}"
 			x: 5.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3D324E99DF28D224"]
-			description: ["&6Truffles&r are valuable goods, found by Pigs when they have at least 5 hearts of affection."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest25.description1}"]
 			id: "3719F024051F60DA"
 			rewards: [{
 				id: "66CC0638F629C86F"
@@ -779,11 +781,11 @@
 		{
 			dependencies: ["3D324E99DF28D224"]
 			description: [
-				"There's no reason to kill your farm animals you love and care for!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest26.description1}"
 				""
-				"&6Magic Shears&r will allow you to harvest their drops using otherworldy magic on right click."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest26.description2}"
 				""
-				"Animals will only let you do this if they have high enough affection, and it can only be done once per day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest26.description3}"
 			]
 			id: "729467D224F25987"
 			rewards: [{
@@ -796,18 +798,18 @@
 				item: "society:magic_shears"
 				type: "item"
 			}]
-			title: "Cruelty Free Meat"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest26.title}"
 			x: 3.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["45739CCE73037CBB"]
 			description: [
-				"Turning Eggs into Mayonnaise is a good way of increasing profits from chickens."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest27.description1}"
 				""
-				"This can be done with a &6Mayonnaise Machine&r in &61&r day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest27.description2}"
 				""
-				"&oYou'll want to take a look at the farming quest line for information on how to get the ingredients for one.&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest27.description3}"
 			]
 			hide_dependency_lines: false
 			id: "1A300B5030B2A1C1"
@@ -827,13 +829,13 @@
 		{
 			dependencies: ["5B5A764F0E02E5FF"]
 			description: [
-				"Milk can be pressed into cheese using an aptly named &6Cheese Press&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description1}"
 				""
-				"You'll also need a little &6Rennet&r, made from Eggs and Salt."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description2}"
 				""
-				"&6Salt&r can be mined in Meadow biomes or bought from a &6Farmer&r villager."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description3}"
 				""
-				"&oYou'll want to take a look at the farming quest line for information on how to get the ingredients for one.&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description4}"
 			]
 			id: "75181B22DAF5E9A6"
 			rewards: [{
@@ -853,9 +855,9 @@
 		{
 			dependencies: ["20C76D194ECEDB76"]
 			description: [
-				"Fish are valuable, and a great way to make money early game."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest29.description1}"
 				""
-				"Your first rod will come from the &6Fisher&r villager, and they otherwise sell aquatic and fishing related supplies."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest29.description2}"
 			]
 			id: "429FEBEC239B975F"
 			rewards: [{
@@ -864,22 +866,22 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "Barrel"
+			subtitle: "{ftbquests.chapter.ii__building_up_the_farm.quest29.subtitle}"
 			tasks: [{
 				id: "64812EE7AA8EA20D"
 				item: "minecraft:barrel"
 				type: "item"
 			}]
-			title: "Fishing"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest29.title}"
 			x: -1.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["26315E4AC203348C"]
 			description: [
-				"Upgraded rods can be equipped with attachments using a &6Tackle Box&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest30.description1}"
 				""
-				"They will also have a chance to upgrade enchantments from succesful catches. The chance increases on higher upgraded rods."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest30.description2}"
 			]
 			icon: {
 				Count: 1
@@ -932,19 +934,19 @@
 						]
 					}
 				}
-				title: "Any upgraded fishing rod"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest30.task_7635794675418631031.title}"
 				type: "item"
 			}]
-			title: "Upgrading Your Rod"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest30.title}"
 			x: 3.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["21B07E7D0C412FFA"]
 			description: [
-				"&6Tackle Box&r are used to customize your rod using the slots on the right. They also retain their inventory when broken."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest31.description1}"
 				""
-				"&oOnly upgraded rods can be customized&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest31.description2}"
 			]
 			id: "63FDC7BA6801CF64"
 			rewards: [{
@@ -962,7 +964,7 @@
 		}
 		{
 			dependencies: ["63FDC7BA6801CF64"]
-			description: ["Baits can be added using a &6Tackle Box&r and have various effects on your rod."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest32.description1}"]
 			icon: "aquaculture:iron_hook"
 			id: "3E48E03F3F044FF2"
 			rewards: [{
@@ -1013,19 +1015,19 @@
 						]
 					}
 				}
-				title: "Any fishing hook"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest32.task_283285729118796432.title}"
 				type: "item"
 			}]
-			title: "Fishing Hooks"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest32.title}"
 			x: 7.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["63FDC7BA6801CF64"]
 			description: [
-				"Baits can be added using a &6Tackle Box&r and decrease the amount of time between bites."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest33.description1}"
 				""
-				"They are slowly consumed, and better baits such as &6Leeches&r and &6Minnows&r have a higher amount of durability."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest33.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1077,19 +1079,19 @@
 						]
 					}
 				}
-				title: "Any Bait"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest33.task_3295843451434019663.title}"
 				type: "item"
 			}]
-			title: "Baiting Fish"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest33.title}"
 			x: 5.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["63FDC7BA6801CF64"]
 			description: [
-				"Any compostable material can be used on a &6Worm Farm&r to produce worms."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest34.description1}"
 				""
-				"A much cheaper alternative to pruchasing them."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest34.description2}"
 			]
 			id: "187FBE0E4FB5B7AD"
 			rewards: [{
@@ -1108,7 +1110,7 @@
 		}
 		{
 			dependencies: ["26315E4AC203348C"]
-			description: ["&6Geode Nodes&r rarely found in caves have a chance of dropping &6Aquamarine,&r the main crafting material for fishing related tools. "]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest35.description1}"]
 			id: "03773C88CA88552A"
 			rewards: [{
 				id: "5BA652C925897448"
@@ -1125,7 +1127,7 @@
 		}
 		{
 			dependencies: ["03773C88CA88552A"]
-			description: ["Crab Traps will provide certain fish, junk, or treasure over time. They must be surrounded by a 3x3 of water, and be provided with &6Crab Trap Bait&r."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest36.description1}"]
 			id: "761F68396065119B"
 			rewards: [{
 				count: 8
@@ -1144,9 +1146,9 @@
 		{
 			dependencies: ["4A48308E11476E9B"]
 			description: [
-				"&6Deluxe Crab Trap Bait&r improves the chance of catching seafood and treasure from Crab traps, and decreases the chance of junk."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest37.description1}"
 				""
-				"The Deluxe Worm Bin upgrades basic &6Crab Trap Bait&r in &61&r day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest37.description2}"
 			]
 			id: "238D909D360FC27C"
 			rewards: [{
@@ -1165,7 +1167,7 @@
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
-			description: ["&6Fish Smokers&r are used to create smoked fish, which multiplies the value of a fish by &64&r in &62&r days. "]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest38.description1}"]
 			id: "6132A6DBE97F16BD"
 			rewards: [{
 				count: 4
@@ -1178,27 +1180,27 @@
 				item: "society:fish_smoker"
 				type: "item"
 			}]
-			title: "Artisan Fish"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest38.title}"
 			x: 9.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
 			description: [
-				"&6Fish Ponds&r cultivate fish over time once a single fish is placed in. Roe and other items can be harvested from them, and more items are unlocked at certain fish populations. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description1}"
 				""
-				"Sometimes the fish will request items in order to grow their populaton."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description2}"
 				""
-				"You'll need a 3x4 of water (or lava for nether fish) behind the pond according to this professional diagram:"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description3}"
 				""
-				"&3⬜⬜⬜"
-				"&3⬜⬜⬜"
-				"&3⬜⬜⬜ <- Water/Lava"
-				"&3⬜⬜⬜"
-				"  &6⬜   <- Fish Pond block"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description4}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description5}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description6}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description7}"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.description8}"
 				""
-				"{image:society:textures/gui/fish_pond_example.png width:150 height:150 align:center}"
-				" "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest39.image0}"
+				""
 			]
 			id: "6FE9F992ACD90629"
 			rewards: [{
@@ -1212,13 +1214,13 @@
 				item: "society:fish_pond"
 				type: "item"
 			}]
-			title: "Farming Fish"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest39.title}"
 			x: 9.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["7B2EB2B56F155E49"]
-			description: ["&6Treated Logs&r can be made by right clicking Oak Resin onto any Log in world."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest40.description1}"]
 			id: "55FAFBCDEDDA41A5"
 			rewards: [{
 				count: 4
@@ -1237,9 +1239,9 @@
 		{
 			dependencies: ["761F68396065119B"]
 			description: [
-				"&3Neptunium&r is a precious material used in crafting advanced fishing gear."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest41.description1}"
 				""
-				"It can be found in &3Neptune's Bounty&r you fish up, or rarely in Crab Traps."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest41.description2}"
 			]
 			id: "4A48308E11476E9B"
 			rewards: [{
@@ -1258,11 +1260,11 @@
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
-				"Fruit trees slowly grow fruits that can be hand picked. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42.description1}"
 				""
-				"They are subject to the same seasonal restrictions as crops, but tend to be more valuable."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42.description2}"
 				""
-				"A handfull of basic ones can be purchased from the Market, but you'll need to dive into the &6Skull Cavern&r for more advanced ones."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest42.description3}"
 			]
 			icon: "pamhc2trees:starfruit_sapling"
 			id: "0E68DD5DFB2DFD97"
@@ -1321,16 +1323,16 @@
 						]
 					}
 				}
-				title: "Any Fruit Tree"
+				title: "{ftbquests.chapter.ii__building_up_the_farm.quest42.task_5141610586995787649.title}"
 				type: "item"
 			}]
-			title: "Fruit Trees"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest42.title}"
 			x: 0.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6ADD884F3FFE5D42"]
-			description: ["Bone Meal cannot be used to grow crops, so you'll need to find more advanced and expensive options."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest43.description1}"]
 			id: "66DEF5ED5F277804"
 			rewards: [{
 				count: 8
@@ -1343,16 +1345,16 @@
 				item: "minecraft:bone_meal"
 				type: "item"
 			}]
-			title: "Weaker Bone Meal"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest43.title}"
 			x: 0.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["55FAFBCDEDDA41A5"]
 			description: [
-				"The &6Canvas Loom&r is an artisan machine for making &6Artisan Canvas&r and &6Merino Wool&r in &61&r day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest44.description1}"
 				""
-				"These products can either be sold, crafted into useful items, or sewn into clothing using a &6Sewing Table&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest44.description2}"
 			]
 			id: "5AD7C2BCDA001A53"
 			rewards: [{
@@ -1370,7 +1372,7 @@
 		}
 		{
 			dependencies: ["55FAFBCDEDDA41A5"]
-			description: ["Some large fruits will need to be mashed using an &6Apple Press&r to process into other drinks."]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest45.description1}"]
 			id: "0F643DD3F3B61A7D"
 			rewards: [{
 				id: "0837A666AB8B54FB"
@@ -1382,16 +1384,16 @@
 				item: "vinery:apple_press"
 				type: "item"
 			}]
-			title: "Pressing Large Fruits"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest45.title}"
 			x: 12.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
 			description: [
-				"&6Small Ships&r can be crafted using &6Artisan Canvas&r, allowing quicker sailing through the ocean. By default, the &6R&r hotkey can be used to drop the sail."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest46.description1}"
 				""
-				"These can be used to transport large amounts of exotic farm animals from far away lands."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest46.description2}"
 			]
 			icon: "smallships:acacia_brigg"
 			id: "4513A91DA55E8069"
@@ -1405,16 +1407,16 @@
 				item: "smallships:sail"
 				type: "item"
 			}]
-			title: "Set Sail"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest46.title}"
 			x: 9.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
 			description: [
-				"Beds can keep you stuck in one place to avoid losing your home. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest47.description1}"
 				""
-				"The &6Sleeping Bag&r solves this by allowing you to sleep away the night while not setting your spawn."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest47.description2}"
 			]
 			id: "546AA268840CA5B3"
 			rewards: [{
@@ -1427,7 +1429,7 @@
 				item: "comforts:sleeping_bag_white"
 				type: "item"
 			}]
-			title: "Sleep Anywhere"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest47.title}"
 			x: 8.5d
 			y: 2.5d
 		}
@@ -1435,11 +1437,11 @@
 			dependencies: ["429FEBEC239B975F"]
 			description: [
 				""
-				"The fish you'll catch depends on two things: &aSeason&r, &6Location&r and &5Time&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest48.description1}"
 				""
-				"Each of the four &aseasons&r have their own fish. Each &6location&r (Ocean, River, or Freshwater) has its own pool."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest48.description2}"
 				""
-				"Finally, some fish can only be caught during night or day."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest48.description3}"
 			]
 			id: "26315E4AC203348C"
 			tasks: [{
@@ -1459,9 +1461,9 @@
 		{
 			dependencies: ["5B6FD08D6063D6AA"]
 			description: [
-				"Mining ores in cold biomes or &bWinter&r will have a chance to give you &6Frozen Geodes&r. "
+				"{ftbquests.chapter.ii__building_up_the_farm.quest49.description1}"
 				""
-				"Outside of that they can drop from &6Slush&r in cold biomes (affected by fortune), or frozen zombies in &bWinter&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest49.description2}"
 			]
 			id: "242D49A4D71EDBEA"
 			rewards: [{
@@ -1481,11 +1483,11 @@
 		{
 			dependencies: ["5AD7C2BCDA001A53"]
 			description: [
-				"The &6Sewing Table&r can cut Artisan Canvas into clothing and hats when combined with other materials."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest50.description1}"
 				""
-				"It requires a &6Sewing Needle&r to craft."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest50.description2}"
 				""
-				"Crafting it with a &6Chest&r allows it to retain its inventory."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest50.description3}"
 			]
 			icon: "sewingkit:sewing_station"
 			id: "1E2D2FF9428F96DA"
@@ -1512,7 +1514,7 @@
 					type: "item"
 				}
 			]
-			title: "Sewing Clothing"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest50.title}"
 			x: 11.0d
 			y: 3.5d
 		}
@@ -1522,9 +1524,9 @@
 				"1E2D2FF9428F96DA"
 			]
 			description: [
-				"Is your hotbar a mess? A &6Toolbelt&r can store your tools for quick access using a single hotkey (&6X&r by default)."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest51.description1}"
 				""
-				"By default it can only carry two slots, but multiple &6Belt Pouches&r can be sewn in for more slots."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest51.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1559,9 +1561,9 @@
 		{
 			dependencies: ["230E02067CBC21CF"]
 			description: [
-				"&6Preserve Jars&r turn fruits and vegetables into preserves in &64&r days, multiplying their selling value by over &63&r."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest52.description1}"
 				""
-				"Having many run in the background is worth the investment."
+				"{ftbquests.chapter.ii__building_up_the_farm.quest52.description2}"
 			]
 			id: "166D3A381C5C9A8F"
 			rewards: [{
@@ -1578,39 +1580,13 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["2134CA6B3880D089"]
-			description: [
-				"Tropical biomes such as &6Savannas&r and &6Jungles&r will always be treated as &6Summer&r for crop growth only."
-				""
-				"This can be used to create a secondary farm that has no need to worry about seasons!"
-				""
-				"The same applies to frozen biomes for &6Winter&r."
-			]
-			icon: "atmospheric:sun_pottery_sherd"
-			id: "24F09C4D4D9DDF79"
-			rewards: [{
-				id: "46FC4901A1D7B8C2"
-				item: "beachparty:coconut_cocktail"
-				type: "item"
-			}]
-			tasks: [{
-				biome: "#sereneseasons:tropical_biomes"
-				id: "556DB951D3C9AA77"
-				title: "Visit a tropical Biome"
-				type: "biome"
-			}]
-			title: "Eternal Summer"
-			x: 4.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["4A48308E11476E9B"]
 			description: [
-				"There are occasions where you may need a large quantity of one specific fish. The &6Bait Maker&r turns one of any type of fish into targed bait!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54.description1}"
 				""
-				"This bait can be placed inside of a &6Crab Trap&r,"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54.description2}"
 				""
-				"&oNether Fish can be caught in a Crab Trap placed in water... Strange.&r"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest54.description3}"
 			]
 			id: "73E15D00539BF7CD"
 			rewards: [{
@@ -1628,11 +1604,7 @@
 		}
 		{
 			dependencies: ["2C3FD9E2DA520620"]
-			description: [
-				"Don't just stuff your farm with nameless livestock- naming a farm animal will make them like you a good bit more!"
-				""
-				"&oRenaming will have no effect.&r"
-			]
+			description: ["{ftbquests.chapter.ii__building_up_the_farm.quest55.description1}"]
 			id: "649860C19CAE0F17"
 			rewards: [{
 				count: 4
@@ -1645,16 +1617,16 @@
 				item: "minecraft:name_tag"
 				type: "item"
 			}]
-			title: "Pet Names"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest55.title}"
 			x: 1.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["02327F6FDF987266"]
 			description: [
-				"&6Watering Cans&r can be upgraded to hold more water, work faster, and also work in an area!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest56.description1}"
 				""
-				"Hold &6Right Click&r to charge up the area of affect watering ability. Higher tiers have higher areas!"
+				"{ftbquests.chapter.ii__building_up_the_farm.quest56.description2}"
 			]
 			id: "0EE5A175B0417403"
 			rewards: [{
@@ -1674,10 +1646,10 @@
 				}
 				type: "item"
 			}]
-			title: "Upgraded Watering"
+			title: "{ftbquests.chapter.ii__building_up_the_farm.quest56.title}"
 			x: 6.0d
 			y: -3.0d
 		}
 	]
-	title: "II - Farm Building"
+	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"
 }

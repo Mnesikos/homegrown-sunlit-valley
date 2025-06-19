@@ -10,6 +10,12 @@
       "category": "meadow:woodcutting"
     },
     {
+      "category": "ali:hero_loot"
+    },
+    {
+      "category": "ali:fishing_loot"
+    },
+    {
       "category": "trading_floor:potential_villager_trade"
     }
   ]

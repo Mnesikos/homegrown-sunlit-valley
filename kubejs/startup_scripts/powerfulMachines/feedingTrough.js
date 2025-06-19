@@ -9,9 +9,8 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 2, 16, 12, 14)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(
-        Text.gray("Feeds farm animals up to 5 blocks away using Animal Feed")
-      );
+      item.tooltip(Text.gray("Feeds nearby farm animals using Animal Feed"));
+      item.tooltip(Text.green(`Area: 6x6x6`));
       item.modelJson({
         parent: "farm_and_charm:block/feeding_trough_size_0",
       });
@@ -25,8 +24,9 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.initialData({ fill: "0" });
-      blockInfo.serverTick(600, 0, (entity) => {
+      blockInfo.serverTick(300, 0, (entity) => {
         const { inventory, block, level } = entity;
+        if (global.inventoryHasItems(inventory, "society:animal_feed", 1) != 1) return;
         let slots = inventory.getSlots();
         let feedCount = 0;
 
@@ -35,38 +35,28 @@ StartupEvents.registry("block", (event) => {
         if (inventory.toString().includes("animal_feed")) {
           nearbyFarmAnimals = level
             .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
-            .filter((entity) =>
-              global.checkEntityTag(entity, "society:husbandry_animal")
-            );
+            .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
           nearbyFarmAnimals.forEach((animal) => {
             let data = animal.persistentData;
-            if (
-              !data.getInt("ageLastFed") ||
-              level.time < data.getInt("ageLastFed")
-            ) {
+            if (!data.getInt("ageLastFed") || level.time < data.getInt("ageLastFed")) {
               data.ageLastFed = level.time;
             }
             if (level.time - data.ageLastFed > global.animalInteractionCooldown) {
-              for (let i = 0; i < slots; i++) {
-                if (
-                  inventory.getStackInSlot(i).item.id === "society:animal_feed"
-                ) {
-                  inventory.getStackInSlot(i).count--;
-                  data.ageLastFed = level.time;
-                  level.spawnParticles(
-                    "legendarycreatures:wisp_particle",
-                    true,
-                    animal.x,
-                    animal.y + 1.5,
-                    animal.z,
-                    0.1 * rnd(1, 4),
-                    0.1 * rnd(1, 4),
-                    0.1 * rnd(1, 4),
-                    5,
-                    0.01
-                  );
-                  break;
-                }
+              let feedingResultCode = global.useInventoryItems(inventory, "society:animal_feed", 1);
+              if (feedingResultCode == 1) {
+                data.ageLastFed = level.time;
+                level.spawnParticles(
+                  "legendarycreatures:wisp_particle",
+                  true,
+                  animal.x,
+                  animal.y + 1.5,
+                  animal.z,
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  5,
+                  0.01
+                );
               }
             }
           });
@@ -80,6 +70,7 @@ StartupEvents.registry("block", (event) => {
           else if (feedCount >= 128) fill = 2;
           else if (feedCount >= 8) fill = 1;
           entity.block.set(entity.block.id, {
+            facing: entity.block.properties.facing,
             fill: String(fill),
           });
         }
@@ -90,13 +81,12 @@ StartupEvents.registry("block", (event) => {
           .insertItem((blockEntity, slot, stack, simulate) =>
             blockEntity.inventory.insertItem(slot, stack, simulate)
           )
-          .getSlotLimit((blockEntity, slot) =>
-            blockEntity.inventory.getSlotLimit(slot)
+          .extractItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.extractItem(slot, stack, simulate)
           )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
           .getSlots((blockEntity) => blockEntity.inventory.slots)
-          .getStackInSlot((blockEntity, slot) =>
-            blockEntity.inventory.getStackInSlot(slot)
-          )
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     }).blockstateJson = {
     multipart: [

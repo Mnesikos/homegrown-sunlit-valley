@@ -1,66 +1,133 @@
 ^^^
-## Sunlit Valley
-### v2.7.6
+## Iridium Sparks
+### v3.0.0
 ^^^
 --- 
-- Renamed pack to Society: Sunlit Valley! This is a smaller update to prepare for the large content update that is 3.0!
-- Replaced OPAC with FTB Chunks. Both are enabled for server backwards compatibility, but OPAC will be removed next update
-- Added Chance and required population for Fish pond items in JEI
-- Reworked Fish Pond quests to be more balanced and not depend on Create (Thanks providencedaemon!)
-- Increased value of all Nether fish significantly 
-- Neptuna now works like any other fish once the Skill is obtained
-- Removed Bronzed Seashell from Crab Trap loot table because it doesn't stack and was annoying me
-- Fixed fishing skills causing non-stackable items to duplicate
-- Fixed Fly Fisher and School Fisher adding non-fish loot
-
-### 2.7.1
-- Added Blackfish to Autumn/Winter Ocean day pool
-- Added more clear quest book text on claiming
-- Added Slime behaviors from Splendid Slimes update! Boomcats Slimes explode when hungry, Blazing Slimes light things on fire, and more!
-- Fixed fishing rods not working in specific circumstances
-- Fixed console log left in
-
-### 2.7.2
-- Added Slime Spawners to some structures
-- Cleaned up some quests
-- Fixed Fly Fisher/School Fisher skills resulting in no loot
-- Fixed some structures having ugly placement
-- Fixed issue with some fish pond quests not working after upgrading newer version
-
-### 2.7.3
-- Added value to Large Pumpkin Slices
-- Added visual indicator the first time you pet a farm animal
-- Added recipes for crafting special wool into regular wool
-- Added extra tooltip to Kinetic Blueprint to make it clear how to obtain it
-- Updated Waterframes/Watermedia 
-- Increased Slime Spawner cooldown (5 minutes ->)
-- Removed some advancements
-- Reduced Peach Sapling price (6 Netherite Coins -> 4)
-- Reduced check radius for dig spots to increase performance on servers
-- Fixed Shipping bin voiding items not sellable
-- Fixed Strawberries having duplicate tooltips
-- Fixed voiding bug with loot chests having stacks of non-stackable items
-
-### 2.7.4
-- Added some additional Society advancements
-- Added Slimes to more structures
-- Added chance for Boomcat Slimes to spawn when creepers killed
-- Removed aggressive Splendid Slimes spawns from the overworld
-- Removed Phantom Slime spawns from the Skull Cavern
-- Removed Queen Bee mod due to sound related crashes
-- Fixed some blocks not being usable in claims
-- Fixed certain crop related exploits
-
-### 2.7.5
-- Reduced amount of Splendid Slimes spawning in Nether and Skull Cavern
-- Reduced Neptuna's weight in fishing pool
-- More quest cleanup/corrections
-- Fixed modded wood Mailboxes not having crafting table recipe
-- Fixed Untyped Splendid Slimes spawning in the overworld
-
-### 2.7.6
-- Splendid Slimes in Nether and Skull cavern now spawn as Neutral instead of Furious and size 2 to prevent confusion 
-- Quest cleanup, made the crowding requirements for farm animals/slimes more clear
-- Hid Building Shop until "Getting Started" questline close to finished.
-- Fixed Fish Pond not dropping when broken
-- Fixed Plort Press not loading inventory correctly, voiding contents (Splendid Slimes update)
+- Added completely redone Skull Cavern dimension and mechanics
+- Skull Cavern has new layer-based cave generation courtesy of Uni
+- Added new weather mechanics. No more watering plants right before rain! (Thanks coolbot100s)
+- Added Tapper - Replaces old Tap (Right click/craft to update)
+- Added Sparkstone ores & Sparkstone, a gem used for automating Artisan machines
+- Added Artisan Hopper, a machine for automating Artisan Machines using Sparkstone
+- Added Auto-Grabber, a machine for automating husbandry animal collection using Sparkstone
+- Added Auto-Tapper, a machine for collecting Tapper resources using Create
+- Added Iridium Coin to replace Netherite coin (Rename/retexture, items won't be lost)
+- Added Neptunium coin as tier between Iridium and Ancient 
+- Added Iridium Ore
+- Added Iridium Tier to replace Netherite (Just a rename/retexture)
+- Added Recycling Machine
+- Added Magnifying Glass
+- Added Bouquet Bag
+- Added Sap and Rubber
+- Added Happy Ghast and Pale Garden
+- Added tapping recipes to Birch and Wise Oak
+- Added Create-focused quest chapter and reworked entire Create progression/balance
+- Added Juicy and Sparkcat Splendid Slimes
+- Added Slime Ticket
+- Added Silver and Lead - Create focused resources
+- Added Electrum tier of tools/armor 
+- Added Hypertubes
+- Added tooltip to removed items
+- Added Animal Feed Sack (Storage Block)
+- Added new Cornucopia texture
+- Added Token of Unity Artifact
+- Added Smithing Templates to dig spot pool
+- Added Horseman and Ears mods
+- Added Chai Blend as crafting ingredient for Chait Tea
+- Added ores to Botania Orechids
+- Added fishing spots
+- Added Neptunium-Infused Hook to replace Fish Tank reward (Replaces Nether Star Hook)
+- Added recipes for Create Trains that don't require Create
+- Added chance for Neptune's Bounty to Stardew Fishing chests
+- Added Goddess Statues for sale from Cleric (removed from Wandering Trader)
+- Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone
+- Artisan Machines now drop unfinished inputs when broken
+- All-Seeing and Webby Slimes now climb walls
+- Nether, Skull Cavern, and certain overworld blacklisted biomes (such as rivers) are now infertile
+- Most oceans and beaches are now tropical biomes
+- Gold Slimes now Largoless
+- Slimy Slimes are now Picky
+- Phantom Slimes are now Photosynthesizing 
+- Luminous Slimes now eat Veggies
+- Dragontooth Axe now requires Bone Block instead of Prismatic Shard
+- Changed Gaming Console recipe to not require Create
+- Seeds will now explain biomes that are always one season when planting incorrectly
+- Fish Ponds now mature once a day in the morning to match other mechanics
+- Fish Ponds preserve type, population, and max population when broken
+- Husbandry animals no longer appreciate being kept on a seat for eternity
+- Heretic Skill now also makes farm animals drop Sparkstone
+- Sprinklers now no longer need the previous tier to craft
+- Improved some loot pools
+- Increased max trades of common villager purchases to 4096
+- Increased prices of Blacksmith resources
+- Increased Dig speed, attack damage, and armor of all Netherite (Iridium) gear
+- Increased attack damage of Galaxy Sword by 2
+- Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
+- Increased Splendid Slime feeding cooldown (10 minutes -> 20 minutes)
+- Increased cost of Iron Hook
+- Increased cost of Turkey spawn eggs
+- Increased Auto Worm Farm production speed
+- Increased Prismatic Bounty odds
+- Increased chance/output of Fish Pond resources due to new mechanics
+- Increased Fishing skill leveling experience requirements
+- Increased Adventuring experience from killing mobs
+- Paw Paw and Hazelnut Saplings now guaranteed from Prize Machine
+- Replaced Bee Bundle in Pantry with Quality Crops Bundle (Pantry)
+- Replaced Nether Star requirement with Wither Skeleton Skulls in Adventurer's Bundle (Boiler Room)
+- Reduced Pantry crop requirements from 32 ->16
+- Reduced Tapper resource ingredient costs for some recipes
+- Reduced crafting cost of Fish Pond
+- Reduced chance of catching Neptuna
+- Reduced Chunkroderite Block value from Neptunium Ingots (24 -> 8)
+- Reduced cost of Conjuration catalyst
+- Reduced cost of Preserves Jars & Canvas Loom
+- Reduced cost of Mechanical Saw, Drill, and Harvester
+- Reduced cost of quality fertilizers
+- Reduced Plort value of low difficulty Slimes
+- Reduced value of Slime Hearts (2 x Plort value -> 1.5 x Plort Value)
+- Reduced Bait Maker output from 6 -> 3
+- Reduced feeding cooldown of Feeding Trough (5m -> 3m)
+- Removed Sweet Berries from market
+- Removed Destruction and Reinforced tiers of Hammers. Previously purchased Hammers not affected
+- Removed Bread cutting board recipe that outputted nothing
+- Removed all recipe conflicts + Polymorph
+- Removed rubber rings from loot table
+- Removed Ancient Coin trades due to new coin tier
+- Removed Pint Charisma effect
+- Removed Cornucopia from Mystical Botanist and added cheaper recipe
+- Removed Create items from Red Balloons and replaced them with upgrade templates
+- Removed potions from red/white wine tag
+- Reduced difficulty of Minnow in Fishing Minigame
+- Removed Phantom Slime Hearts from Balloon Chests
+- Removed Ancient Debris (Can be turned into iridium)
+- Removed Lava Lakes from the surface
+- Removed Kinetic Mechanic
+- Removed Curse of Vanishing and Binding
+- Removed some broken/sequence breaking blocks from structures 
+- Removed the End dimension by Removing Strongholds
+- Fixed Crimson/Warped fungus triggering treechop without felling
+- Fixed Feeding Trough and Mana Milker having incorrect radius on the tooltip
+- Fixed Charging Rods only taking 1 day to process
+- Fixed juices not having draining recipes
+- Fixed Apple and Cherry trees from vinery not working with greenhouse glass
+- Fixed Tomato Crop drop amount not matching Almanac
+- Fixed Lettuce not having tag
+- Fixed smoked fish not having cooked fish tag
+- Fixed Animal Feed recipes that outputted over a stack of items
+- Fixed Wooly Sheep not having an almanac entry
+- Fixed Fantasy Furniture paintings not dropping when broken
+- Fixed so many exploits and dupes
+- Fixed Gold Destructor Hammer having wrong tier
+- Fixed weirdness with not being able to spam attack'
+- Fixed issue where selling multipliers not applying on login
+- Fixed Kettle recipes weirdly not working sometimes
+- Fixed Fish Pond outputs sometimes minizing at 10 population
+- Fixed Atmospheric rainforest/dunes biomes not being considered tropical
+- Fixed Mammutilation milking resetting quality at 6 hearts of affection
+- Fixed bounding box making it difficult to water some crops
+- Fixed some impossible fish pond quests
+- Fixed mixers creating wrong amounts of dough
+- Fixed Evaporator Salt turning into snowballs again
+- Fixed Gold Swords being stronger than diamond
+- Fixed certain planks not being able to be crafted into chests
+- Fixed Deployers triggering "could use something to eat..." message

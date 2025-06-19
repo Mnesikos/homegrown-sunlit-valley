@@ -3,20 +3,16 @@
   "category": "misc",
   "key": {
     "s": {
-      "item": "minecraft:netherite_scrap"
+      "tag": "minecraft:fishes"
     },
     "c": {
-      "item": "minecraft:charcoal"
+      "item": "society:sap"
     },
     "F": {
       "item": "farm_and_charm:fertilizer"
     }
   },
-  "pattern": [
-    "FcF",
-    "csc",
-    "FcF"
-  ],
+  "pattern": ["FcF", "csc", "FcF"],
   "result": {
     "item": "dew_drop_farmland_growth:high_quality_fertilizer",
     "count": 4
