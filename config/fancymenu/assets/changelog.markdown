@@ -1,6 +1,6 @@
 ^^^
 ## Iridium Sparks
-### v3.0.0
+### v3.0.1
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
@@ -63,7 +63,6 @@
 - Increased Dig speed, attack damage, and armor of all Netherite (Iridium) gear
 - Increased attack damage of Galaxy Sword by 2
 - Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
-- Increased Splendid Slime feeding cooldown (10 minutes -> 20 minutes)
 - Increased cost of Iron Hook
 - Increased cost of Turkey spawn eggs
 - Increased Auto Worm Farm production speed

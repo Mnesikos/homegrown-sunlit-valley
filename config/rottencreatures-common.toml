@@ -15,5 +15,5 @@ mummyWeight = 0
 #determine how often will Dead Beard spawn
 deadBeardWeight = 0
 #determine the chance of spawning for Immortals
-immortalChance = 0.025
+immortalChance = 0.0
 
