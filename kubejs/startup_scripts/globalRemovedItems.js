@@ -15,6 +15,7 @@ global.removedItems = [
   "pipez:basic_upgrade",
   "pipez:wrench",
   // Brushes
+  "meadow:watering_can",
   "betterarcheology:netherite_brush",
   "betterarcheology:iron_brush",
   "betterarcheology:diamond_brush",

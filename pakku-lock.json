@@ -3944,6 +3944,48 @@
             ]
         },
         {
+            "pakku_id": "fGYQBs0y2TR37al8",
+            "pakku_links": [
+                "D3WNDlpUyoHOZWmi"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-quest-localizer"
+            },
+            "name": {
+                "curseforge": "FTB Quest Localizer"
+            },
+            "id": {
+                "curseforge": "1071737"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftbquestlocalizer-1.20.1-forge-3.2.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6163/276/ftbquestlocalizer-1.20.1-forge-3.2.0.jar",
+                    "id": "6163276",
+                    "parent_id": "1071737",
+                    "hashes": {
+                        "sha1": "df04326376a7abdf3df5e8234979cb3e2b7f426d",
+                        "md5": "d144c91fe8f9eeedf0b4c5e781d1fa39"
+                    },
+                    "required_dependencies": [
+                        "289412"
+                    ],
+                    "size": 36820,
+                    "date_published": "2025-02-06T06:55:02.170Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "D3WNDlpUyoHOZWmi",
             "pakku_links": [
                 "Z5ABSfuXE0jplGgO"

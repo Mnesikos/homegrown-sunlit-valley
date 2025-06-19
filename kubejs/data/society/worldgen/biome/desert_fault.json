@@ -39,13 +39,13 @@
         "type": "legendarycreatures:desert_mojo",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 50
+        "weight": 20
       },
       {
         "type": "legendarycreatures:scorpion",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 50
+        "weight": 15
       },
       {
         "type": "legendarycreatures:peacock_spider",

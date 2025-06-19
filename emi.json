@@ -35,6 +35,14 @@
     }
   ],
   "lookup_history": [
+    "item:meadow:watering_can{Damage:0}",
+    "item:dew_drop_watering_cans:copper_watering_can{Damage:0}",
+    "item:numismatics:prismatic_coin",
+    "item:numismatics:ancient_coin",
+    "item:numismatics:sun",
+    "item:numismatics:crown",
+    "item:numismatics:neptunium_coin",
+    "item:society:eggplant_crate",
     "item:unusualfishmod:pickledish",
     "item:splendid_slimes:slime_ticket",
     "item:minecraft:golden_carrot",
@@ -255,7 +263,6 @@
     "item:society:box_turtle_bait",
     "item:society:pacific_halibut_bait",
     "item:society:brown_shrooma_bait",
-    "item:numismatics:neptunium_coin",
     "item:society:bait_maker",
     "item:society:starshell_turtle_bait",
     "item:society:arapaima_bait",
@@ -471,7 +478,6 @@
     "item:rehooked:iron_hook",
     "item:aquaculture:iron_hook",
     "item:rehooked:wood_hook",
-    "item:numismatics:ancient_coin",
     "item:herbalbrews:dried_black_tea",
     "item:minecraft:water_bucket",
     "item:herbalbrews:cinnamon_coffee",
@@ -496,7 +502,6 @@
     "item:vinery:apple_press",
     "item:farmingforblockheads:market",
     "item:minecraft:ender_chest",
-    "item:numismatics:sun",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:webby\"}}",
     "item:pamhc2trees:dragonfruititem",
     "item:society:dragon_mayonnaise",
@@ -762,7 +767,6 @@
       "id": "society:ancient_fruit_juice",
       "amount": 0
     },
-    "item:numismatics:crown",
     "item:aquaculture:neptunium_ingot",
     "item:botania:gaia_ingot",
     "item:sophisticatedstorage:basic_to_copper_tier_upgrade",
@@ -891,7 +895,6 @@
     "item:society:bowl_of_soul",
     "item:unusualfishmod:raw_eyelash",
     "item:minecraft:oak_wood",
-    "item:numismatics:prismatic_coin",
     "item:minecraft:spruce_log",
     "item:society:ancient_fruit_juice_bucket",
     "item:twigs:rhyolite",
@@ -1241,10 +1244,7 @@
     "item:tanukidecor:blue_rocket_lamp",
     "item:moreminecarts:rail_signal_magenta",
     "item:botania:thunder_sword{Damage:0}",
-    "item:oreganized:glance",
-    "item:oreganized:spotted_glance",
-    "item:oreganized:polished_glance",
-    "item:oreganized:chiseled_glance"
+    "item:oreganized:glance"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1260,10 +1260,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/golden_chestplate",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "minecraft:kjs/golden_chestplate",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},
