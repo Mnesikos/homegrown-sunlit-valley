@@ -281,8 +281,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest8.title}"
-			x: 2.0d
-			y: 1.0d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -1578,32 +1578,6 @@
 			}]
 			x: 9.5d
 			y: -3.5d
-		}
-		{
-			dependencies: ["2134CA6B3880D089"]
-			description: [
-				"{ftbquests.chapter.ii__building_up_the_farm.quest53.description1}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest53.description2}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest53.description3}"
-			]
-			icon: "atmospheric:sun_pottery_sherd"
-			id: "24F09C4D4D9DDF79"
-			rewards: [{
-				id: "46FC4901A1D7B8C2"
-				item: "beachparty:coconut_cocktail"
-				type: "item"
-			}]
-			tasks: [{
-				biome: "#sereneseasons:tropical_biomes"
-				id: "556DB951D3C9AA77"
-				title: "{ftbquests.chapter.ii__building_up_the_farm.quest53.task_6155780026782034551.title}"
-				type: "biome"
-			}]
-			title: "{ftbquests.chapter.ii__building_up_the_farm.quest53.title}"
-			x: 4.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]

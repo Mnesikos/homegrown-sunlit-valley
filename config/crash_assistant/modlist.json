@@ -1056,6 +1056,10 @@
     "modId": "tanukidecor",
     "version": "20.1.1.0"
   },
+  "TerraBlender-forge-1.20.1-3.0.1.7.jar": {
+    "modId": "terrablender",
+    "version": "3.0.1.7"
+  },
   "Tips-Forge-1.20.1-12.1.8.jar": {
     "modId": "tipsmod",
     "version": "12.1.8"

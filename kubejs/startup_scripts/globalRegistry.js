@@ -73,6 +73,7 @@ global.ore = [
   { item: "oreganized:raw_lead", value: 48 },
   { item: "oreganized:raw_lead_block", value: 432 },
   { item: "society:sparkstone", value: 64 },
+  { item: "society:sparkstone_block", value: 576 },
   { item: "oreganized:raw_silver", value: 64 },
   { item: "oreganized:raw_silver_block", value: 576 },
   { item: "minecraft:diamond", value: 256 },

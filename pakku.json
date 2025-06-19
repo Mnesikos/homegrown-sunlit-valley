@@ -37,6 +37,9 @@
         "controlling": {
             "side": "CLIENT"
         },
+        "crash-assistant": {
+            "side": "CLIENT"
+        },
         "default-options": {
             "side": "CLIENT"
         },
@@ -86,6 +89,9 @@
             "side": "CLIENT"
         },
         "selectivebounds": {
+            "side": "CLIENT"
+        },
+        "shoulder-surfing-reloaded": {
             "side": "CLIENT"
         },
         "tips": {

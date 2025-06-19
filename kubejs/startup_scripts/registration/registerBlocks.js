@@ -274,15 +274,15 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/axe").blockstateJson = {
     variants: {
       "axis=x": {
-        model: "society:block/treated_log_horizontal",
+        model: "society:block/sturdy_bamboo_block_horizontal",
         x: 90,
         y: 90,
       },
       "axis=y": {
-        model: "society:block/treated_log",
+        model: "society:block/sturdy_bamboo_block",
       },
       "axis=z": {
-        model: "society:block/treated_log_horizontal",
+        model: "society:block/sturdy_bamboo_block_horizontal",
         x: 90,
       },
     },

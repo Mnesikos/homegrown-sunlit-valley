@@ -2,7 +2,7 @@
   "ambient_light": 0,
   "bed_works": false,
   "coordinate_scale": 1,
-  "effects": "minecraft:overworld",
+  "effects": "minecraft:the_nether",
   "has_ceiling": false,
   "has_raids": false,
   "has_skylight": false,
