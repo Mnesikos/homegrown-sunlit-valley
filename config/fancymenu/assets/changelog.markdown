@@ -23,6 +23,7 @@
 - Added tapping recipes to Birch and Wise Oak
 - Added Create-focused quest chapter and reworked entire Create progression/balance
 - Added Juicy and Sparkcat Splendid Slimes
+- Added Slime Ticket
 - Added Silver and Lead - Create focused resources
 - Added Electrum tier of tools/armor 
 - Added Hypertubes
@@ -35,14 +36,15 @@
 - Added Chai Blend as crafting ingredient for Chait Tea
 - Added ores to Botania Orechids
 - Added fishing spots
+- Added Neptunium-Infused Hook to replace Fish Tank reward (Replaces Nether Star Hook)
 - Added recipes for Create Trains that don't require Create
 - Added chance for Neptune's Bounty to Stardew Fishing chests
-- Added Neptunium-Infused Hook to replace Fish Tank reward (Replaces Nether Star Hook)
 - Added Goddess Statues for sale from Cleric (removed from Wandering Trader)
 - Ancient Goddess Statue Artifact Trove trade changed to give Sparkstone
 - Artisan Machines now drop unfinished inputs when broken
 - All-Seeing and Webby Slimes now climb walls
-- Nether, Skull Cavern, and overworld blacklisted biomes (such as rivers) are now infertile
+- Nether, Skull Cavern, and certain overworld blacklisted biomes (such as rivers) are now infertile
+- Most oceans and beaches are now tropical biomes
 - Gold Slimes now Largoless
 - Slimy Slimes are now Picky
 - Phantom Slimes are now Photosynthesizing 
@@ -65,6 +67,7 @@
 - Increased cost of Iron Hook
 - Increased cost of Turkey spawn eggs
 - Increased Auto Worm Farm production speed
+- Increased Prismatic Bounty odds
 - Increased chance/output of Fish Pond resources due to new mechanics
 - Increased Fishing skill leveling experience requirements
 - Increased Adventuring experience from killing mobs

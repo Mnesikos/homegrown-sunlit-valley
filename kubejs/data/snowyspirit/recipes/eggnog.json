@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {"item": "snowyspirit:ginger"},
-    {"item": "minecraft:egg"},
+    {"tag": "forge:eggs"},
     {"tag": "society:small_milk"},
     {"item": "minecraft:glass_bottle"}
 

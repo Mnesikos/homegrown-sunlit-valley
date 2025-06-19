@@ -6,8 +6,6 @@ PlayerEvents.loggedIn((e) => {
     const chunkDay =
       level.persistentData.chunkParityMap[level.getChunkAt(player.getPos()).pos.toString()].day;
       
-    console.log(chunkDay)
-    console.log(Number(player.persistentData.skullCavernEnterDay))
     if (Number(chunkDay) > Number(player.persistentData.skullCavernEnterDay)) {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);

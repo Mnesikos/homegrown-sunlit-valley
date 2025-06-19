@@ -2466,7 +2466,10 @@
             ]
         },
         {
-            "pakku_id": "RSUTkQFnh4F6e0MV",
+            "pakku_id": "Ddce9ghkG55fY5dJ",
+            "pakku_links": [
+                "OjsYMehqACUhUBxE"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "copycats"
@@ -2480,26 +2483,27 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "copycats-2.1.4+mc.1.20.1-forge.jar",
+                    "file_name": "copycats-2.2.2+mc.1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5725/773/copycats-2.1.4+mc.1.20.1-forge.jar",
-                    "id": "5725773",
+                    "url": "https://edge.forgecdn.net/files/6284/685/copycats-2.2.2+mc.1.20.1-forge.jar",
+                    "id": "6284685",
                     "parent_id": "968398",
                     "hashes": {
-                        "sha1": "3dd96514d88508e01707908ebefe44b81c3556b4",
-                        "md5": "e4c60c4625db2de2b93f460506e986f7"
+                        "sha1": "88817143499b27e2fff0961c6a43a12fece1fe65",
+                        "md5": "c2898d510ffedcb31ed888646de63b56"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 1747441,
-                    "date_published": "2024-09-15T15:24:10.253Z"
+                    "size": 1942561,
+                    "date_published": "2025-03-09T16:21:25.790Z"
                 }
             ]
         },

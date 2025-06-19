@@ -21,18 +21,18 @@
               "points": [
                 {
                   "location": -4,
-                  "derivative": 0.25,
+                  "derivative": 0.15,
                   "value": -0.5
                 },
                 {
-                  "location": 0,
+                  "location": 2,
                   "derivative": 0,
                   "value": 0
                 },
                 {
                   "location": 4,
-                  "derivative": 0.25,
-                  "value": 0.5
+                  "derivative": 0.2,
+                  "value": 0.7
                 }
               ]
             }
@@ -44,18 +44,18 @@
               "points": [
                 {
                   "location": -4,
-                  "derivative": 0.25,
+                  "derivative": 0.15,
                   "value": -0.5
                 },
                 {
-                  "location": 0,
+                  "location": 2,
                   "derivative": 0,
                   "value": 0
                 },
                 {
                   "location": 4,
-                  "derivative": 0.25,
-                  "value": 0.5
+                  "derivative": 0.2,
+                  "value": 0.7
                 }
               ]
             }

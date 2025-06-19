@@ -35,6 +35,19 @@
     }
   ],
   "lookup_history": [
+    "item:farm_and_charm:bacon_with_eggs",
+    "item:aquaculture:message_in_a_bottle",
+    "item:society:combat_quarterly",
+    "item:society:yard_work_yearly",
+    "item:herbalbrews:yerba_mate_leaf",
+    "item:vintagedelight:ghost_pepper",
+    "item:minecraft:sweet_berries",
+    "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"society:sweet_potato_seed\"}}",
+    "item:society:ancient_fruit",
+    "item:veggiesdelight:bellpepper",
+    "item:vintagedelight:gearo_berry",
+    "item:minecraft:cauldron",
+    "item:veggiesdelight:cauliflower",
     "item:meadow:watering_can{Damage:0}",
     "item:dew_drop_watering_cans:copper_watering_can{Damage:0}",
     "item:numismatics:prismatic_coin",
@@ -398,7 +411,6 @@
     "item:society:froggy_helm",
     "item:aquaculture:tin_can",
     "#item:forge:jolly_boxes/small_present_common",
-    "item:aquaculture:message_in_a_bottle",
     "item:botania_seeds:red_mystical_flower_seed",
     "item:furniture:mangrove_clock",
     "item:toms_storage:ts.storage_terminal",
@@ -448,7 +460,6 @@
     "item:minecraft:chorus_flower",
     "item:farm_and_charm:farmers_breakfast",
     "item:farm_and_charm:roaster",
-    "item:farm_and_charm:bacon_with_eggs",
     "item:minecraft:moss_block",
     "item:society:fish_pond_basket",
     "item:quark:vertical_spruce_planks",
@@ -544,7 +555,6 @@
     "item:minecraft:netherite_hoe{Damage:0}",
     "item:minecraft:netherite_chestplate{Damage:0}",
     "item:farmersdelight:rice",
-    "item:minecraft:sweet_berries",
     "item:create:andesite_alloy",
     "item:create:clipboard",
     {
@@ -752,7 +762,6 @@
     "item:minecraft:flint_and_steel{Damage:0}",
     "item:tanukidecor:small_clock_tower_dial",
     "item:society:ancient_cog",
-    "item:society:ancient_fruit",
     "item:society:pristine_ruby",
     "item:society:ruby",
     {
@@ -887,7 +896,6 @@
     "item:society:crab_roe",
     "item:society:aged_blazefish_roe",
     "item:farmersdelight:cabbage_seeds",
-    "item:vintagedelight:gearo_berry",
     "item:vinery:taiga_grapes_red",
     "item:nethervinery:warped_grape",
     "item:sophisticatedbackpacks:backpack",
@@ -1151,7 +1159,6 @@
     "item:society:ginger_preserves",
     "item:brewery:gingerbread",
     "item:snowyspirit:gingerbread_cookie",
-    "item:veggiesdelight:cauliflower",
     "item:candlelight:mud_kitchen_sink",
     "item:society:mudstone",
     "item:supplementaries:hourglass",
@@ -1237,14 +1244,7 @@
     "item:botania:cosmetic_alien_antenna",
     "item:minecraft:end_stone_bricks",
     "item:oreganized:gargoyle",
-    "item:oreganized:cut_lead",
-    "item:oreganized:lead_pillar",
-    "item:oreganized:lead_bulb",
-    "item:quark:violet_crystal_lamp",
-    "item:tanukidecor:blue_rocket_lamp",
-    "item:moreminecarts:rail_signal_magenta",
-    "item:botania:thunder_sword{Damage:0}",
-    "item:oreganized:glance"
+    "item:oreganized:cut_lead"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1260,10 +1260,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/golden_chestplate",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

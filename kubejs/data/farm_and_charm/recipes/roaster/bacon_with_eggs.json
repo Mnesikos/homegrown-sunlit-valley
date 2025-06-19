@@ -8,10 +8,10 @@
       "item": "farmersdelight:bacon"
     },
     {
-      "item": "minecraft:egg"
+      "tag": "forge:eggs"
     },
     {
-      "item": "minecraft:egg"
+      "tag": "forge:eggs"
     },
     {
       "tag": "farm_and_charm:butter"

@@ -13,7 +13,7 @@
     },
     "replaceable": "#society:skull_block",
     "surface": "floor",
-    "vegetation_chance": 0.01,
+    "vegetation_chance": 0,
     "vegetation_feature": {
       "feature": {
         "type": "minecraft:simple_block",
