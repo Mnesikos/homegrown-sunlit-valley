@@ -38,7 +38,7 @@ ItemEvents.tooltip((tooltip) => {
         value = 262144;
         break;
       case "prismatic_coin":
-        value = 16252928;
+        value = 16777216;
         break;
       default:
         console.log(`Invalid coin`);

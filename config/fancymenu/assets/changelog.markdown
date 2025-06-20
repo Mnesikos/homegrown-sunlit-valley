@@ -1,6 +1,6 @@
 ^^^
 ## Iridium Sparks
-### v3.0.0
+### v3.0.1
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
@@ -63,7 +63,6 @@
 - Increased Dig speed, attack damage, and armor of all Netherite (Iridium) gear
 - Increased attack damage of Galaxy Sword by 2
 - Increased amount of fluid outputted from mechanically pressing fruits that have Apple Press recipe
-- Increased Splendid Slime feeding cooldown (10 minutes -> 20 minutes)
 - Increased cost of Iron Hook
 - Increased cost of Turkey spawn eggs
 - Increased Auto Worm Farm production speed
@@ -131,3 +130,23 @@
 - Fixed Gold Swords being stronger than diamond
 - Fixed certain planks not being able to be crafted into chests
 - Fixed Deployers triggering "could use something to eat..." message
+
+# 3.0.1
+- Made Fish Pond population growth guaranteed every morning
+- Increased chance of Fish Pond quests (25% -> 75%)
+- Increased durability of escape rope so it can be used at the bottom of the Skull Cavern
+- Changed middle Triple Twirl Pleco quest requirements to not require Skull Cavern goods
+- Reduced ladder/rope climbing speed
+- Reduced Slime Spawner cooldown (70m -> 20m)
+- Removed masochistic Photosynthesizing trait from Phantom slimes
+- Fixed Immortals spawning
+- Fixed Reinforced Core not being properly removed
+- Fixed Prismatic Coin being wrong value
+- Fixed Fishing spots causing lag
+- Fixed Lead/Silver appearing in overworld
+- Fixed Golden Clock not working properly
+- Fixed Lava Pufferfish quest
+- Fixed Dandelion Leaves being improperly marked as removed
+- Fixed some errors with Skull Cavern regenerating air
+- Fixed certain blocks being placeable in the Skull Cavern
+- Fixed top layer boulders not regenerating

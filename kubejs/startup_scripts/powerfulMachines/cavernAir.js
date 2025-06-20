@@ -78,6 +78,7 @@ const rollReplaceTable = (table, hasRope) => {
 
 global.handleRegen = (e) => {
   const { level, block } = e;
+  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
   let toggleBit = level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
 
   if (String(toggleBit) === block.properties.get("chunkbit")) return;

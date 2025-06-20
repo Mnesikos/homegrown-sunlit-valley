@@ -9,7 +9,7 @@ ItemEvents.modification((e) => {
     item.maxDamage = 2;
   });
   e.modify("gag:escape_rope", (item) => {
-    item.maxDamage = 512;
+    item.maxDamage = 1024;
   });
   global.geodeList.forEach((geodeItem) => {
     const { item } = geodeItem;
@@ -38,7 +38,7 @@ ItemEvents.modification((e) => {
       item.rarity = "epic";
     }
   );
-  e.modify(["society:bank_meter", "society:milk_pail"], (item) => {
+  e.modify(["society:bank_meter", "society:milk_pail", "society:magic_shears"], (item) => {
     item.maxStackSize = 1;
   });
   e.modify("society:aquamarine", (item) => {

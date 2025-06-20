@@ -40,6 +40,10 @@ global.handleProgress = (level, block) => {
     case "society:recycling_machine":
       global.handleBETick(eventObj, global.recyclingMachineRecipes, 1, false, true);
       break;
+    case "society:tapper":
+      if (block.properties.get("error") !== "true")
+        global.handleBETick(eventObj, global.tapperRecipes, 7, false, false);
+      break;
     case "society:bait_maker":
       global.handleBETick(eventObj, global.tapperRecipes, 7, false, false, false, true);
       break;
@@ -72,7 +76,7 @@ StartupEvents.registry("block", (event) => {
       const { x, y, z } = block;
       const radius = 2;
       let scanBlock;
-      if (rnd5()) {
+      if (rnd25()) {
         for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
           x + radius,
           y + radius,
