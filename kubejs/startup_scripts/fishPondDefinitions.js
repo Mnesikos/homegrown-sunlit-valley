@@ -3095,16 +3095,17 @@ global.fishPondDefinitions = [
       {
         population: 5,
         requestedItems: [
-          { item: "minecraft:netherite_scrap", count: 4 },
-          { item: "society:aged_chorus_wine", count: 4 },
-          { item: "minecraft:end_rod", count: 16 },
+          { item: "netherdepthsupgrade:warped_kelp_roll", count: 4 },
+          { item: "society:purple_sheet", count: 4 },
+          { item: "society:eggplant", count: 16 },
         ],
       },
       {
         population: 7,
         requestedItems: [
           { item: "minecraft:netherite_ingot", count: 4 },
-          { item: "createutilities:void_steel_ingot", count: 1 },
+          { item: "society:aged_chorus_wine", count: 4 },
+          { item: "minecraft:end_rod", count: 16 },
         ],
       },
     ],

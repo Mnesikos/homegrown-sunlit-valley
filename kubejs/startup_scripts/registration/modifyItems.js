@@ -9,7 +9,7 @@ ItemEvents.modification((e) => {
     item.maxDamage = 2;
   });
   e.modify("gag:escape_rope", (item) => {
-    item.maxDamage = 512;
+    item.maxDamage = 1024;
   });
   global.geodeList.forEach((geodeItem) => {
     const { item } = geodeItem;

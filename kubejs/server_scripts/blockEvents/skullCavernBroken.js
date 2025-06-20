@@ -1,6 +1,7 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
 const biomeAirTypeMap = new Map([
+  ["society:cavern_top", 0],
   ["society:skull_caves", 0],
   ["society:lush_caverns", 0],
   ["society:frozen_caves", 1],

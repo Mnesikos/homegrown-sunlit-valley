@@ -69,6 +69,13 @@ BlockEvents.placed(
     "minecraft:deepslate_gold_ore",
     "minecraft:gold_ore",
     "oreganized:deepslate_lead_ore",
+    "waystones:white_sharestone",
+    "waystones:purple_sharestone",
+    "waystones:blue_sharestone",
+    "waystones:green_sharestone",
+    "waystones:red_sharestone",
+    "waystones:waystone",
+    "torchmaster:megatorch",
   ],
   (e) => {
     const { player, level, server } = e;
