@@ -2030,7 +2030,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [{ item: "snethervinery:crimson_grapejuice", count: 16 }],
+        requestedItems: [{ item: "nethervinery:crimson_grapejuice", count: 16 }],
       },
       {
         population: 7,

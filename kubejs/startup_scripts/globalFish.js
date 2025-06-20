@@ -436,7 +436,7 @@ global.handleFishPondTick = (tickEvent) => {
           type: type,
         });
       }
-      if (max_population !== "10" && quest !== "true" && rnd25() && population == max_population) {
+      if (max_population !== "10" && quest !== "true" && rnd75() && population == max_population) {
         block.set(block.id, {
           facing: facing,
           valid: valid,
@@ -451,7 +451,7 @@ global.handleFishPondTick = (tickEvent) => {
           max_population: max_population,
           type: type,
         });
-      } else if (population !== max_population && rnd25()) {
+      } else if (population !== max_population) {
         successParticles(level, block);
         level.server.runCommandSilent(
           `playsound supplementaries:item.bubble_blower block @a ${block.x} ${block.y} ${block.z}`

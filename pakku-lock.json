@@ -2156,6 +2156,7 @@
         {
             "pakku_id": "f37MJzQXzY5J8XMA",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "crash-assistant"
             },
@@ -9007,6 +9008,7 @@
         {
             "pakku_id": "XDcU2JXbq7xBaWyi",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "shoulder-surfing-reloaded"
             },
@@ -10133,7 +10135,7 @@
                     "date_published": "2024-02-26T21:52:44.983Z"
                 }
             ]
-        },        
+        },
         {
             "pakku_id": "sT2XuJvcyq3sUz4J",
             "type": "MOD",

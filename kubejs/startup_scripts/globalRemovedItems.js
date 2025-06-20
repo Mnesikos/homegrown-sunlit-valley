@@ -32,6 +32,12 @@ global.removedItems = [
   "justhammers:stone_reinforced_impact_hammer",
   "justhammers:reinforced_impact_core",
   "justhammers:destructor_core",
+  "justhammers:netherite_reinforced_hammer",
+  "justhammers:diamond_reinforced_hammer", 
+  "justhammers:gold_reinforced_hammer",
+  "justhammers:iron_reinforced_hammer",
+  "justhammers:stone_reinforced_hammer",
+  "justhammers:reinforced_core",
   // FE
   "moreminecarts:battery_cart",
   "moreminecarts:transport_battery",
@@ -117,7 +123,6 @@ global.removedItems = [
   "botania:floating_pollidisiac",
   "botania:pollidisiac",
   // Veggiesdelight
-  "veggiesdelight:dandelion_leaf",
   "veggiesdelight:dandelion_juice",
   "veggiesdelight:vegan_pizza",
   "veggiesdelight:vegan_pizza_slice",

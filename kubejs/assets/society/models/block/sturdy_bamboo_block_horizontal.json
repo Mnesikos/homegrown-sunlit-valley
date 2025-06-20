@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column_horizontal",
   "textures": {
     "end": "society:block/stripped_bamboo_block_top",
-    "side": "society:block/bamboo_mat_side"
+    "side": "quark:block/bamboo_mat_side"
   }
 }
