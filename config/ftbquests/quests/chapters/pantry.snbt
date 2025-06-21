@@ -29,25 +29,25 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "1477F70DF8BDF00F"
 					item: "minecraft:potato"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "541D9F35016F7E24"
 					item: "veggiesdelight:cauliflower"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "1E18344D245791C0"
 					item: "farm_and_charm:lettuce"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "367F96A16FB9F550"
 					item: "farm_and_charm:strawberry"
 					type: "item"
@@ -68,28 +68,29 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "739D0A34606397D0"
 					item: "veggiesdelight:bellpepper"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "00B8FD8C3A592142"
 					item: "minecraft:melon_slice"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 16L
+					count: 32L
 					id: "719F4811D89D19A8"
 					item: "society:blueberry"
 					type: "item"
 				}
 				{
-					count: 16L
+					consume_items: true
+					count: 32L
 					id: "1E0BCCAB8CFEAD6B"
-					item: { Count: 16, id: "farm_and_charm:oat" }
+					item: "farm_and_charm:oat"
 					type: "item"
 				}
 			]
@@ -108,26 +109,26 @@
 			}]
 			tasks: [
 				{
-					count: 16L
+					count: 32L
 					id: "525A25679B6E936D"
 					item: "minecraft:beetroot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "404255E4E397C094"
 					item: "minecraft:pumpkin"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 32L
 					id: "4DFD6480E8FF485B"
 					item: "farm_and_charm:corn"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 16L
+					count: 32L
 					id: "720B181BB226B422"
 					item: "society:eggplant"
 					type: "item"

@@ -79,7 +79,8 @@ const rollReplaceTable = (table, hasRope) => {
 global.handleRegen = (e) => {
   const { level, block } = e;
   if (!level.persistentData || !level.persistentData.chunkParityMap) return;
-  let toggleBit = level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
+  let toggleBit =
+    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
 
   if (String(toggleBit) === block.properties.get("chunkbit")) return;
   const belowPos = block.getPos().below();
@@ -117,6 +118,8 @@ StartupEvents.registry("block", (event) => {
     .property(integerProperty.create("type", 0, 4))
     .property(integerProperty.create("chunkbit", 0, 1))
     .model("minecraft:block/air")
+    .hardness(-1)
+    .resistance(3600000)
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);
       state.set(integerProperty.create("chunkbit", 0, 1), 0);

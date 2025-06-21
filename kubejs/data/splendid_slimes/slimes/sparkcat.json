@@ -17,7 +17,7 @@
     },
     {
       "effect": "minecraft:jump_boost",
-      "amplifier": 4
+      "amplifier": 2
     },
     {
       "effect": "brewery:lightning_strike",

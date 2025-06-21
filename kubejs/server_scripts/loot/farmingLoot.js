@@ -47,6 +47,7 @@ const cropList = [
   "vinery:taiga_grape_bush_red",
   "vinery:taiga_grape_bush_white",
   "vinery:jungle_grape_bush_white",
+  "vinery:jungle_grape_bush_red",
   "pamhc2trees:pamorange",
   "pamhc2trees:pamdragonfruit",
   "pamhc2trees:pampeach",
