@@ -35,6 +35,10 @@
     }
   ],
   "lookup_history": [
+    "item:veggiesdelight:bellpepper",
+    "item:society:animal_feed_sack",
+    "item:society:auto_grabber",
+    "item:create:mechanical_harvester",
     "item:botania:light_launcher",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:luminous\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:bitwise\"}}",
@@ -134,7 +138,6 @@
     "item:minecraft:sweet_berries",
     "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"society:sweet_potato_seed\"}}",
     "item:society:ancient_fruit",
-    "item:veggiesdelight:bellpepper",
     "item:vintagedelight:gearo_berry",
     "item:minecraft:cauldron",
     "item:veggiesdelight:cauliflower",
@@ -366,7 +369,6 @@
     "item:minecraft:netherite_scrap",
     "item:society:spindlefish_roe",
     "item:minecraft:raw_iron",
-    "item:society:auto_grabber",
     "item:meadow:sheep_cheese_block",
     "item:society:aged_sheep_cheese_block",
     "item:society:double_aged_sheep_cheese_block",
@@ -635,7 +637,6 @@
     "item:oreganized:lead_ingot",
     "item:waterframes:frame",
     "item:gamediscs:gaming_console",
-    "item:create:mechanical_harvester",
     "item:create:brass_ingot",
     "item:create:hand_crank",
     "item:netherdepthsupgrade:lava_pufferfish",
@@ -1243,8 +1244,7 @@
     "item:crabbersdelight:squid_kebob",
     "item:crabbersdelight:stuffed_nautilus_shell",
     "item:crabbersdelight:surf_and_turf",
-    "item:vinery:solaris_wine",
-    "item:vinery:jellie_wine"
+    "item:vinery:solaris_wine"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1260,10 +1260,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
     "resolutions": {},

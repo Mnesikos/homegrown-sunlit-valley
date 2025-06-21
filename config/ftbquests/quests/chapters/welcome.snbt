@@ -273,12 +273,26 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["18490F31FFAB134E"]
+			description: [
+				"Due to the complex worldgeneration of the Skull Cavern, we suggest pre-generating the dimension using Chunky! To do so, run the following commands:"
+				""
+				"&6/chunky world society:skull_cavern&r"
+				"&6chunky radius 1000&r (increase number for larger servers)"
+				"&6chunky start&r"
+				""
+				"For additional info on chunky, run &6/chunky help&r"
+				""
+				"&oIt's best to do this when nobody is online for performance reasons&r"
+			]
+			icon: "minecraft:skeleton_skull"
 			id: "25305BECA3C32315"
 			tasks: [{
 				id: "5F3330533AD364D1"
 				title: "Understood!"
 				type: "checkmark"
 			}]
+			title: "Pregenerating the Skull Cavern"
 			x: -2.5d
 			y: 2.5d
 		}

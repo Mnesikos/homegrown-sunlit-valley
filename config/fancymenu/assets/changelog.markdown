@@ -152,6 +152,7 @@
 - Fixed top layer boulders not regenerating
 
 ## 3.0.2
+- Reverted pantry bundle change to fix bug preventing the completion of bundles (If you already completed the task/bundle, it will stay completed!)
 - Added Chunky and quest for Skull Cavern pre-generation
 - Added more clarity to Goobers in Farmer's Almanac
 - Added tooltip to vinery fruit trees stating season
@@ -171,3 +172,4 @@
 - Fixed Cavern Air dropping in certain situations
 - Fixed error with jungle grapes
 - Fixed Fish Ponds voiding data when placed at certain angles
+- Fixed incorrect Feeding Trough tooltip
