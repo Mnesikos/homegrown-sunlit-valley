@@ -170,6 +170,7 @@
 - Fixed Auto-Grabber bounding box freeing animals
 - Fixed EMI cheat mode being enabled by default
 - Fixed Cavern Air dropping in certain situations
+- Fixed Skull Cavern top layer not being infertile
 - Fixed error with jungle grapes
 - Fixed Fish Ponds voiding data when placed at certain angles
 - Fixed incorrect Feeding Trough tooltip

@@ -25,6 +25,7 @@ ServerEvents.tags("worldgen/biome", (e) => {
     "society:desert_fault",
     "society:blackstone_caves",
     "society:umbra_barrens",
+    "society:cavern_top",
   ];
   cavernBiomes.forEach((biome) => {
     e.add("society:is_skull_cavern", biome);
