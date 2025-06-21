@@ -150,3 +150,24 @@
 - Fixed some errors with Skull Cavern regenerating air
 - Fixed certain blocks being placeable in the Skull Cavern
 - Fixed top layer boulders not regenerating
+
+## 3.0.2
+- Added Chunky and quest for Skull Cavern pre-generation
+- Added more clarity to Goobers in Farmer's Almanac
+- Added tooltip to vinery fruit trees stating season
+- Added Phantoms to Umbra Barrens to reduce Shulker spawns
+- Tweaked Skull Cavern enemy spawning to be less aggressive, especially in desert layer
+- Increased amount of stress Windmills produce by double
+- Increased chance of clear weather
+- Reduced Slime furious threshold from 200 -> 50. This makes it easier to get Slimes from furious to sad
+- Removed Phantoms from Desert Caves
+- Removed photosynthesizing trait from Luminous slime 
+- Removed login check for Skull Cavern to fix server issue
+- Reduced Sparkcat jump height
+- Reduced Slime sad threshold 400 -> 300
+- Removed peacock spiders from Desert Fault
+- Fixed Auto-Grabber bounding box freeing animals
+- Fixed EMI cheat mode being enabled by default
+- Fixed Cavern Air dropping in certain situations
+- Fixed error with jungle grapes
+- Fixed Fish Ponds voiding data when placed at certain angles
