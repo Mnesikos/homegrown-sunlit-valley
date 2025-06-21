@@ -38,13 +38,13 @@
       {
         "type": "minecraft:wither_skeleton",
         "weight": 80,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:blaze",
         "weight": 100,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {

@@ -272,6 +272,16 @@
 			x: 1.5d
 			y: -1.5d
 		}
+		{
+			id: "25305BECA3C32315"
+			tasks: [{
+				id: "5F3330533AD364D1"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"
 }

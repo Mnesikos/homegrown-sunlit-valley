@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:fletcher",
   "removeOtherTrades": true,
-  "maxTrades": 31,
+  "maxTrades": 41,
   "trades": [
     {
       "offer": {

@@ -30,6 +30,12 @@
         "weight": 60
       },
       {
+        "type": "minecraft:phantom",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 80
+      },
+      {
         "type": "legendarycreatures:ender_wisp",
         "maxCount": 1,
         "minCount": 1,

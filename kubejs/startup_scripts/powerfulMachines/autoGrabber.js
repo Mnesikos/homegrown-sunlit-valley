@@ -43,7 +43,7 @@ StartupEvents.registry("block", (event) => {
     .displayName("Auto-Grabber")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
-    .box(0, 0, 0, 16, 16, 16)
+    .box(0, 0, 0, 16, 32, 16)
     .defaultCutout()
     .item((item) => {
       item.tooltip(
