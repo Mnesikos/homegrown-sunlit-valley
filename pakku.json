@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "overrides": [
         "config",
         "defaultconfigs",

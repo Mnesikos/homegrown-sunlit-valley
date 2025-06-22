@@ -184,7 +184,7 @@ StartupEvents.registry("block", (event) => {
               global.handleFishHarvest(fish, block, player, server);
             }
             if (population == "0" && type == `${index + 1}`) {
-              if (item.hasTag("forge:tools/fishing_rods")) {
+              if (item && item.hasTag("forge:tools/fishing_rods")) {
                 if (!player.stages.has("mitosis")) {
                   block.set(block.id, {
                     facing: facing,

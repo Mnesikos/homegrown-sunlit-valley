@@ -5,6 +5,32 @@
       "name": "Chakyl",
       "uniqueId": "8d3c8e31-8b73-4336-9adb-df8508f79251"
     },
+    "time": 1750602530457,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ZgA05ujStr"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Chakyl",
+      "uniqueId": "8d3c8e31-8b73-4336-9adb-df8508f79251"
+    },
+    "time": 1750601951397,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/SlFvr8wnIb"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Chakyl",
+      "uniqueId": "8d3c8e31-8b73-4336-9adb-df8508f79251"
+    },
     "time": 1750110582961,
     "type": "Profiler",
     "data": {

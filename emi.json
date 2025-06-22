@@ -35,6 +35,20 @@
     }
   ],
   "lookup_history": [
+    "item:society:aged_jo_special_mixture",
+    "item:justhammers:diamond_impact_hammer{Damage:0}",
+    "item:minecraft:netherite_scrap",
+    "item:pamhc2trees:plumitem",
+    "item:oreganized:raw_silver_block",
+    {
+      "type": "item",
+      "id": "oreganized:raw_silver",
+      "amount": 64
+    },
+    "item:vintagedelight:mason_jar",
+    "item:vintagedelight:apple_sauce_mason_jar",
+    "item:herbalbrews:cinnamon_coffee",
+    "item:society:ground_cinnamon",
     "item:oreganized:lead_block",
     "item:oreganized:silver_block",
     "item:veggiesdelight:bellpepper",
@@ -245,7 +259,6 @@
     "item:moreminecarts:transport_tank",
     "item:moreminecarts:corrugated_silica_steel",
     "item:justhammers:netherite_impact_hammer{Damage:0}",
-    "item:justhammers:diamond_impact_hammer{Damage:0}",
     "item:justhammers:gold_impact_hammer{Damage:0}",
     "item:justhammers:iron_impact_hammer{Damage:0}",
     "item:justhammers:stone_impact_hammer{Damage:0}",
@@ -366,7 +379,6 @@
     "item:society:piranha_roe",
     "item:society:beaked_herring_roe",
     "item:society:sneep_snorp_roe",
-    "item:minecraft:netherite_scrap",
     "item:society:spindlefish_roe",
     "item:minecraft:raw_iron",
     "item:meadow:sheep_cheese_block",
@@ -546,12 +558,6 @@
     "item:rehooked:wood_hook",
     "item:herbalbrews:dried_black_tea",
     "item:minecraft:water_bucket",
-    "item:herbalbrews:cinnamon_coffee",
-    {
-      "type": "item",
-      "id": "society:ground_cinnamon",
-      "amount": 55
-    },
     "item:herbalbrews:coffee{Effect:\"herbalbrews:deeprush\",EffectDuration:3600}",
     {
       "type": "item",
@@ -1238,8 +1244,7 @@
     "item:crabbersdelight:frog_leg_kebob",
     "item:crabbersdelight:squid_kebob",
     "item:crabbersdelight:stuffed_nautilus_shell",
-    "item:crabbersdelight:surf_and_turf",
-    "item:vinery:solaris_wine"
+    "item:crabbersdelight:surf_and_turf"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1255,8 +1260,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/golden_chestplate",
       "minecraft:kjs/society_deluxe_worm_farm",
+      "minecraft:kjs/golden_chestplate",
       "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],

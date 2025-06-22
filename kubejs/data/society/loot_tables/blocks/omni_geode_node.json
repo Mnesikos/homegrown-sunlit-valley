@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "society:omni_geode",
-          "weight": 8
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -23,11 +23,6 @@
           "type": "minecraft:item",
           "name": "quark:diamond_heart",
           "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "society:steamy_gadget",
-          "weight": 1
         }
       ]
     }

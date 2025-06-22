@@ -22,9 +22,9 @@
 	#Should the toasts slide out of the way when they are added?
 	"No Slide" = false
 	#Should the title be translucent
-	"Title Translucent" = true
+	"Title Translucent" = false
 	#Should the exp amount be translucent
-	"Exp Translucent" = true
+	"Exp Translucent" = false
 	#Should the background be translucent
 	"Background Translucent" = false
 	#Should the background be disabled
@@ -50,9 +50,9 @@
 
 	["Text Settings"."Text Style"]
 		#The Color Of The Title
-		"Title Color" = 16777215
+		"Title Color" = 16755200
 		#The Color Of The Exp Amount
-		"Exp Color" = 16777215
+		"Exp Color" = 16755200
 		#Should The Title Be Bold
 		"Bold Title" = false
 		#Should The Exp Amount Be Bold

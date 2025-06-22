@@ -6270,7 +6270,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.11.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.12.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -6279,18 +6279,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6636/802/littlejoys-forge-1.20.1-20.1.11.jar",
-                    "id": "6636802",
+                    "url": "https://edge.forgecdn.net/files/6674/603/littlejoys-forge-1.20.1-20.1.12.jar",
+                    "id": "6674603",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "7f20e5216afa31e6faf568b106f996244afa6c14",
-                        "md5": "749f8e75c1bd7c2a1576fa6550c6f959"
+                        "sha1": "db00d738fbfe9ef0131d9ea757eb1256f1240254",
+                        "md5": "33d3cb1ae8b9d9ecd008910202d75b4a"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 709537,
-                    "date_published": "2025-06-10T14:33:07.913Z"
+                    "size": 716855,
+                    "date_published": "2025-06-20T11:19:29.203Z"
                 }
             ]
         },
@@ -9164,6 +9164,42 @@
                     ],
                     "size": 140496,
                     "date_published": "2024-10-20T18:03:16.380Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Cd2KOWdkVfoPKkld",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "skillexpnotifier"
+            },
+            "name": {
+                "curseforge": "SkillExpNotifier"
+            },
+            "id": {
+                "curseforge": "1290362"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "skillsexpnotifier-3.3.5-SNAPSHOT.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6680/859/skillsexpnotifier-3.3.5-SNAPSHOT.jar",
+                    "id": "6680859",
+                    "parent_id": "1290362",
+                    "hashes": {
+                        "sha1": "706e59b485462f0700c2e4a94e8b2b88c4280fcd",
+                        "md5": "573ed22a1da5e73323e5dd1bac97f892"
+                    },
+                    "required_dependencies": [],
+                    "size": 29428,
+                    "date_published": "2025-06-22T00:00:31.683Z"
                 }
             ]
         },
