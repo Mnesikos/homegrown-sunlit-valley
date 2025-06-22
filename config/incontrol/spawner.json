@@ -74,7 +74,7 @@
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxthis": 50,
+      "maxthis": 35,
       "mindist": 12,
       "maxdist": 40,
       "maxheight": 282,
@@ -91,7 +91,7 @@
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxthis": 70,
+      "maxthis": 40,
       "mindist": 12,
       "maxdist": 40,
       "maxheight": 142,

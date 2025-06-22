@@ -186,9 +186,12 @@
 - Adjusted Skull Cavern loot tables (Sparkstone/geodes up, Iridium/Prismatic Gems down)
 - Increased chance of Wandering Winemaker of replacing Wandering Trader (10% -> 20%)
 - Increased Electrum tools' based fortune to III
+- Increased Sparkstone from Spindlefish ponds 4 -> 8
+- Increased Sparkstone from Reycling Artifact Shards 2 -> 6
+- Increased Sparkstone from Ancient Goddes Statue trade 16 -> 32
 - Reduced height drowned spawn
 - Updated Little Joys to fix fishing spot performance
-- Changed Spindlefish 7 population quest from Aged Amethyst Cheese to Aged Jo's Special Mixture
+- Changed Spindlefish 7 population quest from Aged Amethyst Cheese to 8 Aged Jo's Special Mixture
 - Change Super Glue recipe to not require Create 
 - Fixed Lead and Silver not giving mining experience
 - Fixed blocks of raw Lead and Silver not having blasting recipe
@@ -202,3 +205,4 @@
 - Fixed Small Ships zoom not working
 - Fixed vanilla Slimes spawning below ground
 - Fixed Splendid Slimes not spawning often in Skull Cavern
+- Fixed aging Iridium Nectar not showing right text

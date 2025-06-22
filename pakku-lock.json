@@ -9168,7 +9168,7 @@
             ]
         },
         {
-            "pakku_id": "Cd2KOWdkVfoPKkld",
+            "pakku_id": "Y2Ni93h7aHWr6N29",
             "type": "MOD",
             "slug": {
                 "curseforge": "skillexpnotifier"
@@ -9182,7 +9182,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "skillsexpnotifier-3.3.5-SNAPSHOT.jar",
+                    "file_name": "skillsexpnotifier-4.1-PATCH.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9190,16 +9190,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6680/859/skillsexpnotifier-3.3.5-SNAPSHOT.jar",
-                    "id": "6680859",
+                    "url": "https://edge.forgecdn.net/files/6685/40/skillsexpnotifier-4.1-PATCH.jar",
+                    "id": "6685040",
                     "parent_id": "1290362",
                     "hashes": {
-                        "sha1": "706e59b485462f0700c2e4a94e8b2b88c4280fcd",
-                        "md5": "573ed22a1da5e73323e5dd1bac97f892"
+                        "sha1": "a2525ded3b8a5e77cb4600f21ff9edaaec356203",
+                        "md5": "0f5a8edbfe1da6e0bafde1f84d28c5a7"
                     },
                     "required_dependencies": [],
-                    "size": 29428,
-                    "date_published": "2025-06-22T00:00:31.683Z"
+                    "size": 30300,
+                    "date_published": "2025-06-22T22:53:30.050Z"
                 }
             ]
         },

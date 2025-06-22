@@ -35,6 +35,9 @@
     }
   ],
   "lookup_history": [
+    "item:quark:hollow_oak_log",
+    "item:farm_and_charm:fertilized_soil",
+    "item:society:sparkstone",
     "item:quark:pickarang{Damage:0}",
     "item:create:super_glue{Damage:0}",
     "item:relics:shadow_glaive{abilities:{glaive:{points:0,stats:{bounces:4.93263d,damage:4.02531d,radius:2.72371d,recharge:12.72812d}},saw:{points:0,stats:{damage:1.41657d,speed:16.89744d}}},charges:8}",
@@ -194,7 +197,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
     "item:betterarcheology:artifact_shards",
-    "item:society:sparkstone",
     "item:crabbersdelight:clam",
     "#item:minecraft:fishes",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
@@ -1234,9 +1236,7 @@
     "item:rottencreatures:frozen_rotten_flesh",
     "item:rottencreatures:magma_rotten_flesh",
     "item:vintagedelight:smooth_salt_block",
-    "item:farm_and_charm:nettle_tea",
-    "item:farm_and_charm:sausage_with_oat_patty",
-    "item:veggiesdelight:stuffed_bellpeppers"
+    "item:farm_and_charm:nettle_tea"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1252,10 +1252,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

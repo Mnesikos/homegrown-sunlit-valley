@@ -3415,7 +3415,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "pamhc2trees:plumitem", count: 32 },
           { item: "society:sparkstone_block", count: 16 },
-          { item: "society:aged_jo_special_mixture", count: 32 },
+          { item: "society:aged_jo_special_mixture", count: 8 },
         ],
       },
     ],
@@ -3447,7 +3447,7 @@ global.fishPondDefinitions = [
       {
         minPopulation: 10,
         item: "society:sparkstone",
-        count: 4,
+        count: 8,
         chance: 0.25,
       },
       {
