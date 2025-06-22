@@ -153,7 +153,7 @@ ItemEvents.tooltip((tooltip) => {
   });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
-      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type") -1].item}`));
+      text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type") - 1].item}`));
       text.add(
         2,
         Text.aqua(
@@ -316,7 +316,10 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("farmersdelight:cooking_pot", Text.green("Automatable using cooking guide"));
   tooltip.add("meadow:cooking_cauldron", Text.gray("Decorative, has no recipes"));
-  tooltip.add("trading_floor:trading_depot", Text.red("Causes crashes with Simple Storage Networks!"))
+  tooltip.add(
+    "trading_floor:trading_depot",
+    Text.red("Causes crashes with Simple Storage Networks!")
+  );
   tooltip.add(
     [
       "candlelight:red_nether_bricks_stove",
@@ -407,7 +410,10 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
   tooltip.add("society:prize_ticket", Text.gray("Use on a Prize Machine for something good!"));
-  tooltip.add("splendid_slimes:slime_ticket", Text.gray("Use on a Splendid Slime to learn their primary breed's favorite food."));
+  tooltip.add(
+    "splendid_slimes:slime_ticket",
+    Text.gray("Use on a Splendid Slime to learn their primary breed's favorite food.")
+  );
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
   tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));
@@ -432,6 +438,11 @@ ItemEvents.tooltip((tooltip) => {
     "moreminecarts:chiseled_organic_glass",
     Text.gray("Crops underneath grow in any season")
   );
+  tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
+  tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
+
+  tooltip.add("vinery:dark_cherry_sapling", "Fruit Season:");
+  tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
   tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add(
@@ -450,8 +461,23 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
-  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
-  tooltip.add("farmersdelight:tomato_seeds", Text.red("Quality of seed has no effect"));
+  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));  
+    tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(1, [Text.white("Fertile Seasons:"), Text.green(" Spring,"), Text.yellow(" Summer,"), Text.gold(" Autumn")]);
+      text.add(1, []);
+    } else {
+      text.add(1, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("]")]);
+    }
+  });
+  tooltip.addAdvanced("farm_and_charm:strawberry_seed", (item, advanced, text) => {
+    if (tooltip.shift) {
+      text.add(1, [Text.white("Fertile Seasons:"), Text.green(" Spring")]);
+      text.add(1, []);
+    } else {
+      text.add(1, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("]")]);
+    }
+  });
   tooltip.add("relics:jellyfish_necklace", Text.red("Hurts nearby animals when worn!"));
 
   const craftingMaterials = [

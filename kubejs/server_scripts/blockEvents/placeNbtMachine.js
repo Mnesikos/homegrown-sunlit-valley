@@ -12,9 +12,11 @@ BlockEvents.placed("society:prize_machine", (e) => {
 
 BlockEvents.placed("society:fish_pond", (e) => {
   const pondNbt = e.player.getHeldItem("main_hand").getNbt();
+  let facing = e.player.getFacing().getOpposite().toString() || "north";
+  if (facing.equals("down") || facing.equals("up")) facing = "north";
   if (pondNbt) {
     e.block.set(e.block.id, {
-      facing: e.player.getFacing().getOpposite().toString(),
+      facing: facing,
       valid: true,
       mature: false,
       upgraded: false,

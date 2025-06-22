@@ -20,31 +20,31 @@
       {
         "type": "rottencreatures:zap",
         "weight": 100,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:drowned",
         "weight": 100,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:creeper",
         "weight": 80,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "trials:breeze",
-        "weight": 80,
-        "minCount": 4,
+        "weight": 40,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "minecraft:cave_spider",
         "weight": 80,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {

@@ -10,7 +10,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .item((item) => {
       item.tooltip(Text.gray("Feeds nearby farm animals using Animal Feed"));
-      item.tooltip(Text.green(`Area: 6x6x6`));
+      item.tooltip(Text.green(`Area: 13x13x13`));
       item.modelJson({
         parent: "farm_and_charm:block/feeding_trough_size_0",
       });

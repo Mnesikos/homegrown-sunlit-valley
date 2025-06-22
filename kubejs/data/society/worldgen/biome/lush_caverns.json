@@ -108,13 +108,13 @@
       {
         "type": "rottencreatures:swampy",
         "weight": 100,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       },
       {
         "type": "trials:bogged",
         "weight": 100,
-        "minCount": 4,
+        "minCount": 1,
         "maxCount": 4
       }
     ],
