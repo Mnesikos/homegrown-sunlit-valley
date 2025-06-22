@@ -35,6 +35,22 @@
     }
   ],
   "lookup_history": [
+    "item:society:smoked_neptuna",
+    "item:botania:pixie_dust",
+    "item:botania:spectrolus",
+    "item:botania:life_essence",
+    "item:botania:dandelifeon",
+    "item:botania:fallen_kanade",
+    "item:botania:tangleberrie",
+    "item:botania:hyacidus",
+    "item:botania:daffomill",
+    "item:botania:bubbell",
+    "item:bakery:chocolate_cake",
+    "item:bakery:chocolate_gateau",
+    "item:pamhc2trees:lemon_sapling",
+    "item:pamhc2trees:hazelnut_sapling",
+    "item:pamhc2trees:dragonfruit_sapling",
+    "item:society:prize_machine",
     "item:society:aged_jo_special_mixture",
     "item:justhammers:diamond_impact_hammer{Damage:0}",
     "item:minecraft:netherite_scrap",
@@ -453,7 +469,6 @@
     "item:beachparty:rubber_ring_pelican{Damage:0}",
     "item:beachparty:rubber_ring_blue{Damage:0}",
     "item:botania:marimorphosis",
-    "item:botania:hyacidus",
     "item:botania:loonium",
     "item:botania:medumone",
     "item:botania:marimorphosis_chibi",
@@ -577,11 +592,6 @@
     "item:society:dragon_mayonnaise",
     "item:society:dragontooth_axe{Damage:0}",
     "item:pamhc2trees:pamdragonfruit",
-    {
-      "type": "item",
-      "id": "pamhc2trees:lemon_sapling",
-      "amount": 64
-    },
     "item:furniture:trash_bag",
     "item:railways:track_create_andesite_wide",
     "item:railways:track_ender_wide",
@@ -1230,21 +1240,7 @@
       "amount": 16
     },
     "item:farm_and_charm:beef_patty_with_vegetables",
-    "item:farm_and_charm:roasted_chicken",
-    "item:veggiesdelight:dandelion_and_eggs",
-    "item:farm_and_charm:lamb_with_corn",
-    "item:farm_and_charm:chicken_wrapped_in_bacon",
-    "item:farm_and_charm:cooked_cod",
-    "item:brewery:mashed_potatoes",
-    "item:brewery:fried_chicken",
-    "item:bakery:vegetable_sandwich",
-    "item:bakery:grilled_salmon_sandwich",
-    "item:bakery:waffle",
-    "item:crabbersdelight:clam_bake",
-    "item:crabbersdelight:frog_leg_kebob",
-    "item:crabbersdelight:squid_kebob",
-    "item:crabbersdelight:stuffed_nautilus_shell",
-    "item:crabbersdelight:surf_and_turf"
+    "item:farm_and_charm:roasted_chicken"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1260,9 +1256,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
       "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},
