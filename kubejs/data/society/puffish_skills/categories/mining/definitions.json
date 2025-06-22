@@ -229,7 +229,7 @@
   },
   "gold_rush": {
     "title": "Gold Rush",
-    "description": "Mining §6Gold Ore§7 drops 4 §6Blocks of Raw Gold.",
+    "description": "Mining non-nether §6Gold Ore§7 drops 4 §6Blocks of Raw Gold.",
     "frame": {
       "type": "advancement",
       "data": {

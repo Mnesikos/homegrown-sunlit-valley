@@ -105,6 +105,11 @@
     "result": "deny"
   },
   {
+    "mob": "quark:toretoise",
+    "dimension": "society:skull_cavern",
+    "result": "deny"
+  },
+  {
     "mob": "unusualfishmod:ripper",
     "result": "deny"
   },
@@ -129,8 +134,27 @@
   },
   {
     "dimension": "society:skull_cavern",
+    "maxheight": 142,
+    "healthmultiply": 2.5,
+    "damagemultiply": 2
+  },
+  {
+    "dimension": "society:skull_cavern",
+    "maxheight": 282,
     "healthmultiply": 2,
-    "damagemultiply": 2.5
+    "damagemultiply": 1.5
+  },
+  {
+    "dimension": "society:skull_cavern",
+    "maxheight": 425,
+    "healthmultiply": 1.5,
+    "damagemultiply": 1.3
+  },
+  {
+    "dimension": "society:skull_cavern",
+    "maxheight": 511,
+    "healthmultiply": 1.2,
+    "damagemultiply": 1.2
   },
   {
     "mob": "legendarycreatures:corpse_eater",

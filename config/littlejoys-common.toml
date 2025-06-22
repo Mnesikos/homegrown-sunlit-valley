@@ -12,10 +12,10 @@
 [fishingSpots]
 	#The minimum distance between fishing spots, preventing them from spawning too close together.
 	#Range: > -2147483648
-	minimumDistanceBetween = 64
+	minimumDistanceBetween = 128
 	#The distance fishing spots will spawn from the player.
 	#Range: > -2147483648
-	spawnDistance = 8
+	spawnDistance = 32
 	#The seconds that must pass after a fishing spot appeared before another fishing spot can appear for a player.
 	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	spawnIntervalSeconds = 600.0

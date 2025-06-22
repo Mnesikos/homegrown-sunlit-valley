@@ -258,7 +258,7 @@
   },
   "scum_collector": {
     "title": "Scum Collector",
-    "description": "Doubles chance of receiving non-roe items from ponds.",
+    "description": "Doubles chance of receiving non-roe items from ponds.\n§aStacks with Sea Biscuits.",
     "frame": {
       "type": "advancement",
       "data": {
