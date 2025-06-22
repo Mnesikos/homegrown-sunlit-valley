@@ -1,6 +1,6 @@
 ^^^
 ## Iridium Sparks
-### v3.0.1
+### v3.0.3
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
@@ -174,3 +174,31 @@
 - Fixed error with jungle grapes
 - Fixed Fish Ponds voiding data when placed at certain angles
 - Fixed incorrect Feeding Trough tooltip
+
+## 3.0.3
+- Added Skill experience toasts (Thanks Space_Mex!)
+- Added bulk blasting for Raw Lead and Raw Silver blocks
+- Added Mason jar to bottle conversion recipe
+- Added special new trades to Wandering Baker 
+- Added every grape seed to Wandering Winemaker and changed trades to use Coins
+- Added additional clarity to skills Scum Collector and Gold Rush
+- Adjusted Skull Cavern mob spawning again. Mobs now scale in both frequency and difficulty the lower you go. No more ghost town ice caves and hell deserts!
+- Adjusted Skull Cavern loot tables (Sparkstone/geodes up, Iridium/Prismatic Gems down)
+- Increased chance of Wandering Winemaker of replacing Wandering Trader (10% -> 20%)
+- Increased Electrum tools' based fortune to III
+- Reduced height drowned spawn
+- Updated Little Joys to fix fishing spot performance
+- Changed Spindlefish 7 population quest from Aged Amethyst Cheese to Aged Jo's Special Mixture
+- Change Super Glue recipe to not require Create 
+- Fixed Lead and Silver not giving mining experience
+- Fixed blocks of raw Lead and Silver not having blasting recipe
+- Fixed infinite experience exploit
+- Fixed mincing Neptunium Ingot not matching crushing
+- Fixed Quality Bundle not completing at 3 tasks complete
+- Fixed structure that had non-working mob spawners and had skeletons in it
+- Fixed Cinnamon Coffee recipe
+- Fixed seasonal zombies not spawning
+- Fixed Fish Pond placement being weird and bad
+- Fixed Small Ships zoom not working
+- Fixed vanilla Slimes spawning below ground
+- Fixed Splendid Slimes not spawning often in Skull Cavern
