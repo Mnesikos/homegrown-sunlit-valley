@@ -35,6 +35,8 @@
     }
   ],
   "lookup_history": [
+    "item:oreganized:lead_block",
+    "item:oreganized:silver_block",
     "item:veggiesdelight:bellpepper",
     "item:society:animal_feed_sack",
     "item:society:auto_grabber",
@@ -1254,8 +1256,8 @@
   "recipe_defaults": {
     "added": [
       "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge"
     ],
     "tags": {},

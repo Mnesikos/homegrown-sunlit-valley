@@ -30,7 +30,7 @@
 		transparent = true
 		#How many toasts will be displayed on screen at once.
 		#Range: 1 ~ 7
-		toast_count = 3
+		toast_count = 1
 		#The X offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
 		x_offset = 0

@@ -6,9 +6,9 @@
 	"Auto Register Data" = true
 	#The Max Amount Of Toasts To Display (Ignored If Toast Control Is Enabled)
 	#Range: 1 ~ 5
-	"Max Toasts" = 5
+	"Max Toasts" = 1
 	#The Direction Of The Toast Animation Options Are Left/Right (Direction It Come in From Left, Right, Top, Down
-	"Animation Direction" = "Bottom"
+	"Animation Direction" = "Down"
 	#The Left / Right Offset Of The Toast
 	"Base X" = 0
 	#The Up / Down Offset Of The Toast
