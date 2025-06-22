@@ -80,12 +80,17 @@
     "attempts": 10,
     "amount": {
       "minimum": 2,
-      "maximum": 5,
+      "maximum": 3,
       "groupdistance": 3
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxthis": 25
+      "maxthis": 25,
+      "mindist": 5,
+      "maxdist": 20,
+      "validspawn": false,
+      "sturdy": false,
+      "maxverticaldist": 10
     }
   }
 ]

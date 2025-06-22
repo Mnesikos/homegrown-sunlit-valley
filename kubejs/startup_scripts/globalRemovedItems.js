@@ -544,8 +544,6 @@ global.removedItems = [
   "farm_and_charm:strawberry_seeds",
   "pamhc2trees:orangeitem",
   "farm_and_charm:water_sprinkler",
-  "atmospheric:golden_dragon_fruit_crate",
-  "atmospheric:golden_dragon_fruit",
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
 ];

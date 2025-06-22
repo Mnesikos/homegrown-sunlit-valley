@@ -93,7 +93,7 @@ ServerEvents.recipes((e) => {
     },
     recipe_type: "STONE",
     result: {
-      count: 24,
+      count: 8,
       item: "moreminecarts:chunkrodite_block",
     },
   });

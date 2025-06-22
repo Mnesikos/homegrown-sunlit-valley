@@ -1,20 +1,8 @@
 [
   {
-    "mob": [
-      "minecraft:zombie",
-      "minecraft:skeleton",
-      "minecraft:enderman",
-      "minecraft:spider",
-      "minecraft:creeper",
-      "minecraft:witch",
-      "minecraft:drowned",
-      "minecraft:zombie_villager",
-      "minecraft:husk",
-      "minecraft:stray",
-      "trials:bogged"
-    ],
+    "mob": ["minecraft:drowned"],
     "dimension": "minecraft:overworld",
-    "minheight": 50,
+    "minheight": 30,
     "result": "deny"
   },
   {
@@ -25,7 +13,78 @@
       "minecraft:spider",
       "minecraft:creeper",
       "minecraft:witch",
+      "minecraft:zombie_villager",
+      "minecraft:husk",
+      "minecraft:stray",
+      "minecraft:slime",
+      "trials:bogged"
+    ],
+    "dimension": "minecraft:overworld",
+    "minheight": 50,
+    "result": "deny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mob": ["minecraft:zombie"],
+    "winter": true,
+    "result": "allow",
+    "maxheight": 50,
+    "speedmultiply": 1.2,
+    "random": 0.4,
+    "armorhelmet": ["simplehats:santaclaus", "simplehats:frozenhead", "minecraft:ice"],
+    "helditem": [
+      "2=simplehats:hatscraps_festive",
+      "1=simplehats:hatbag_festive",
+      "3=society:frozen_geode",
+      "4=society:frozen_tear",
+      "1=pamhc2trees:cinnamon_sapling",
+      "1=snowyspirit:candy_cane"
+    ]
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "mob": ["minecraft:zombie"],
+    "result": "allow",
+    "maxheight": 50,
+    "autumn": true,
+    "speedmultiply": 0.6,
+    "random": 0.6,
+    "armorhelmet": [
+      "simplehats:jackohat",
+      "minecraft:pumpkin",
+      "autumnity:redstone_jack_o_lantern",
+      "minecraft:carved_pumpkin",
+      "autumnity:soul_jack_o_lantern",
+      "simplehats:spiderweb",
+      "simplehats:hockeymask",
+      "simplehats:ghostmask"
+    ],
+    "helditem": [
+      "1=simplehats:hatscraps_halloween",
+      "1=simplehats:hatbag_halloween",
+      "3=farmersdelight:iron_knife",
+      "3=vinery:basket",
+      "4=minecraft:apple",
+      "1=pamhc2trees:cinnamon_sapling",
+      "4=supplementaries:candy"
+    ]
+  },
+  {
+    "mob": ["minecraft:drowned"],
+    "dimension": "minecraft:overworld",
+    "maxheight": 30,
+    "result": "allow"
+  },
+  {
+    "mob": [
+      "minecraft:zombie",
+      "minecraft:skeleton",
+      "minecraft:enderman",
+      "minecraft:spider",
+      "minecraft:creeper",
+      "minecraft:witch",
       "minecraft:drowned",
+      "minecraft:slime",
       "minecraft:zombie_villager",
       "minecraft:husk",
       "minecraft:stray",
@@ -67,51 +126,6 @@
       "mob": "balloonbox:balloonbox"
     },
     "result": "deny"
-  },
-  {
-    "dimension": "minecraft:overworld",
-    "mob": ["minecraft:zombie"],
-    "winter": true,
-    "result": "allow",
-    "maxheight": 50,
-    "speedmultiply": 1.2,
-    "random": 0.4,
-    "armorhelmet": ["simplehats:santaclaus", "simplehats:frozenhead", "minecraft:ice"],
-    "helditem": [
-      "2=simplehats:hatscraps_festive",
-      "1=simplehats:hatbag_festive",
-      "3=society:frozen_geode",
-      "4=society:frozen_tear",
-      "1=pamhc2trees:cinnamon_sapling",
-      "1=snowyspirit:candy_cane"
-    ]
-  },
-  {
-    "mob": ["minecraft:zombie"],
-    "result": "allow",
-    "maxheight": 50,
-    "autumn": true,
-    "speedmultiply": 0.6,
-    "random": 0.6,
-    "armorhelmet": [
-      "simplehats:jackohat",
-      "minecraft:pumpkin",
-      "autumnity:redstone_jack_o_lantern",
-      "minecraft:carved_pumpkin",
-      "autumnity:soul_jack_o_lantern",
-      "simplehats:spiderweb",
-      "simplehats:hockeymask",
-      "simplehats:ghostmask"
-    ],
-    "helditem": [
-      "1=simplehats:hatscraps_halloween",
-      "1=simplehats:hatbag_halloween",
-      "3=farmersdelight:iron_knife",
-      "3=vinery:basket",
-      "4=minecraft:apple",
-      "1=pamhc2trees:cinnamon_sapling",
-      "4=supplementaries:candy"
-    ]
   },
   {
     "dimension": "society:skull_cavern",

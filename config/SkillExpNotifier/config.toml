@@ -1,0 +1,68 @@
+
+[Settings]
+	#Enable Toast Control
+	"Toast Control" = true
+	#**Extremely Experimental** Automatically Register categories and set the icon ** Overrides IconMappings.json **
+	"Auto Register Data" = true
+	#The Max Amount Of Toasts To Display (Ignored If Toast Control Is Enabled)
+	#Range: 1 ~ 5
+	"Max Toasts" = 5
+	#The Direction Of The Toast Animation Options Are Left/Right (Direction It Come in From Left, Right, Top, Down
+	"Animation Direction" = "Bottom"
+	#The Left / Right Offset Of The Toast
+	"Base X" = 0
+	#The Up / Down Offset Of The Toast
+	"Base Y" = 240
+	#How long (in ms) a stacked/updated XP toast stays visible after the last gain
+	#Range: 100 ~ 10000
+	"Stack XP Timer" = 5000
+	#How long (in ms) the toast animation takes to complete(Ignored if Toast Control Is Enabled
+	#Range: 100 ~ 10000
+	"Animation Time" = 1000
+	#Should the toasts slide out of the way when they are added?
+	"No Slide" = false
+	#Should the title be translucent
+	"Title Translucent" = true
+	#Should the exp amount be translucent
+	"Exp Translucent" = true
+	#Should the background be translucent
+	"Background Translucent" = false
+	#Should the background be disabled
+	"Disable Background" = false
+
+["Text Settings"]
+	#The Title Part To Display
+	Title = "%title%"
+	#The Exp Part Of The Message
+	Exp = " +%exp% xp"
+	#Should the text be forced to be inline
+	"Force Inline" = true
+	#The Alpha Of The Title
+	#Range: 0 ~ 255
+	"Title Alpha" = 127
+	#The Alpha Of The Exp Amount
+	#Range: 0 ~ 255
+	"Exp Alpha" = 127
+	#Where to anchor toasts on screen: "top-left", "top-center", "top-right",
+	#"middle-left", "middle-center", "middle-right",
+	#"bottom-left", "bottom-center", "bottom-right"
+	"Anchor Position" = "bottom-left"
+
+	["Text Settings"."Text Style"]
+		#The Color Of The Title
+		"Title Color" = 16777215
+		#The Color Of The Exp Amount
+		"Exp Color" = 16777215
+		#Should The Title Be Bold
+		"Bold Title" = false
+		#Should The Exp Amount Be Bold
+		"Bold Exp" = false
+		#Should The Title Have A Drop Shadow
+		"Title Drop Shadow" = false
+		#Should The Exp Amount Have A Drop Shadow
+		"Exp Drop Shadow" = false
+		#The Color Of The Exp Amount Drop Shadow
+		"Exp Drop Shadow Color" = 0
+		#The Color Of The Title Drop Shadow
+		"Title Drop Shadow Color" = 0
+
