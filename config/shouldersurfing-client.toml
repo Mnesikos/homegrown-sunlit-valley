@@ -211,7 +211,7 @@
 	#Whether or not to remember the last perspective used.
 	remember_last_perspective = true
 	#Whether or not to replace the default third person perspective.
-	replace_default_perspective = true
+	replace_default_perspective = false
 	#Whether or not the first person perspective is enabled.
 	first_person_enabled = true
 	#Whether or not the third person front perspective is enabled.

@@ -226,7 +226,7 @@ JEIAddedEvents.registerRecipes((e) => {
     { input: "society:ancient_fruit", output: ["society:prismatic_shard"] },
     {
       input: "vintagedelight:ghost_pepper",
-      output: ["16x society:sparkstone"],
+      output: ["32x society:sparkstone"],
     },
     {
       input: "farm_and_charm:corn",

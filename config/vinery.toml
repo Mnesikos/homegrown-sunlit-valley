@@ -60,7 +60,7 @@
 	[Items.WanderingTrader]
 		#Chance for the custom trader to spawn. Range: 0.0 to 1.0
 		#Range: 0.0 ~ 1.0
-		spawnChance = 0.1
+		spawnChance = 0.2
 		#If true, the trader will spawn with mules.
 		spawnWithMules = true
 		#Spawn delay for the trader in ticks.

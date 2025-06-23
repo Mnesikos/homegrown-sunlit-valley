@@ -7,12 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ice",
-          "weight": 380
+          "weight": 480
         },
         {
           "type": "minecraft:item",
           "name": "society:frozen_geode",
-          "weight": 31
+          "weight": 34
         },
         {
           "type": "minecraft:item",
@@ -59,7 +59,7 @@
         {
           "type": "minecraft:item",
           "name": "society:steamy_gadget",
-          "weight": 3
+          "weight": 1
         }
       ]
     }

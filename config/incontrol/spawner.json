@@ -40,12 +40,62 @@
     },
     "conditions": {
       "dimension": "society:skull_cavern",
-      "maxhostile": 115,
+      "maxthis": 20,
       "mindist": 12,
       "maxdist": 40,
-      "validspawn": false,
-      "sturdy": false,
-      "maxverticaldist": 20
+      "maxheight": 511,
+      "minheight": 425
+    }
+  },
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 0.15,
+    "attempts": 10,
+    "amount": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "conditions": {
+      "dimension": "society:skull_cavern",
+      "maxthis": 30,
+      "mindist": 12,
+      "maxdist": 40,
+      "maxheight": 425,
+      "minheight": 282
+    }
+  },
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 0.15,
+    "attempts": 10,
+    "amount": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "conditions": {
+      "dimension": "society:skull_cavern",
+      "maxthis": 35,
+      "mindist": 12,
+      "maxdist": 40,
+      "maxheight": 282,
+      "minheight": 142
+    }
+  },
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 0.15,
+    "attempts": 10,
+    "amount": {
+      "minimum": 2,
+      "maximum": 4
+    },
+    "conditions": {
+      "dimension": "society:skull_cavern",
+      "maxthis": 40,
+      "mindist": 12,
+      "maxdist": 40,
+      "maxheight": 142,
+      "minheight": 0
     }
   },
   {
@@ -73,20 +123,6 @@
     },
     "conditions": {
       "dimension": "minecraft:the_nether",
-      "maxthis": 25
-    }
-  },
-  {
-    "mob": "splendid_slimes:splendid_slime",
-    "persecond": 0.1,
-    "attempts": 10,
-    "amount": {
-      "minimum": 2,
-      "maximum": 5,
-      "groupdistance": 3
-    },
-    "conditions": {
-      "dimension": "society:skull_cavern",
       "maxthis": 25
     }
   }

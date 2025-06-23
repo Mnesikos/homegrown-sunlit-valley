@@ -27,7 +27,11 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("minecraft:entities/pig")
     .randomChance(0.05)
     .addLoot("society:living_flesh");
-
+  e.addLootTableModifier("minecraft:entities/hoglin").replaceLoot(
+    "*",
+    "minecraft:rotten_flesh",
+    true
+  );
   // Chest Loot tables
   e.addLootTableModifier("minecraft:chests/simple_dungeon")
     .randomChance(0.3)
@@ -222,10 +226,7 @@ LootJS.modifiers((e) => {
     .replaceLoot("minecraft:flint_and_steel", "numismatics:cog", true);
 
   // Fix
-  e.addLootTypeModifier(LootType.CHEST).modifyLoot(
-    Ingredient.all,
-    (itemStack) => {
-      return fixedStackSize(itemStack);
-    }
-  );
+  e.addLootTypeModifier(LootType.CHEST).modifyLoot(Ingredient.all, (itemStack) => {
+    return fixedStackSize(itemStack);
+  });
 });

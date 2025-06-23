@@ -183,6 +183,27 @@ StartupEvents.registry("block", (event) => {
             if (mature === "true" && type == `${index + 1}`) {
               global.handleFishHarvest(fish, block, player, server);
             }
+            if (population == "0" && type == `${index + 1}`) {
+              if (item && item.hasTag("forge:tools/fishing_rods")) {
+                if (!player.stages.has("mitosis")) {
+                  block.set(block.id, {
+                    facing: facing,
+                    valid: valid,
+                    mature: false,
+                    upgraded: upgraded,
+                    quest: false,
+                    quest_id: "0",
+                    population: "0",
+                    max_population: "3",
+                    type: "0",
+                  });
+                } else {
+                  player.tell(Text.red("Fish Ponds can not be reset with mitosis skill."));
+                }
+              } else {
+                player.tell(Text.red("Right click with a fishing rod to clear fish type."));
+              }
+            }
           } else if (population !== "0" && type == `${index + 1}`) {
             if (player.stages.has("hot_hands")) {
               server.runCommandSilent(

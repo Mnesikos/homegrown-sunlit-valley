@@ -60,10 +60,10 @@
         "maxCount": 1
       },
       {
-        "type": "species:limpet",
-        "weight": 60,
+        "type": "splendid_slimes:splendid_slime",
+        "weight": 10,
         "minCount": 1,
-        "maxCount": 1
+        "maxCount": 4
       }
     ],
     "creature": [],

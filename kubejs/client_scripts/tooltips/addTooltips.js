@@ -501,7 +501,7 @@ ItemEvents.tooltip((tooltip) => {
       "etcetera:eggple",
       "etcetera:golden_eggple",
     ],
-    Text.gold(":ticket: Prize Machine exclusive")
+    Text.gold(":ticket: Prize Machine reward")
   );
   const workstation = [
     { villager: "Bard", block: "minecraft:note_block" },

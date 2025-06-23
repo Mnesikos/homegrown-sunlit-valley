@@ -7,12 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cobblestone",
-          "weight": 370
+          "weight": 470
         },
         {
           "type": "minecraft:item",
           "name": "society:geode",
-          "weight": 25
+          "weight": 35
         },
         {
           "type": "minecraft:item",

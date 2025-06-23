@@ -361,6 +361,58 @@
               }
             ]
           },
+          "silver_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:silver_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_silver_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:deepslate_silver_ore"
+                }
+              }
+            ]
+          },
+          "lead_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:lead_ore"
+                }
+              }
+            ]
+          },
+          "deepslate_lead_ore": {
+            "operations": [
+              {
+                "type": "get_mined_block_state"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "block": "oreganized:deepslate_lead_ore"
+                }
+              }
+            ]
+          },
           "deepslate_sparkstone_ore": {
             "operations": [
               {
@@ -438,8 +490,24 @@
             "expression": "40"
           },
           {
+            "condition": "!silk_touch & lead_ore",
+            "expression": "60"
+          },
+          {
+            "condition": "!silk_touch & silver_ore",
+            "expression": "80"
+          },
+          {
             "condition": "!silk_touch & sparkstone_ore",
             "expression": "100"
+          },
+          {
+            "condition": "!silk_touch & deepslate_lead_ore",
+            "expression": "120"
+          },
+          {
+            "condition": "!silk_touch & deepslate_silver_ore",
+            "expression": "160"
           },
           {
             "condition": "!silk_touch & deepslate_sparkstone_ore",

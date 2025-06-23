@@ -7,7 +7,7 @@ global.recyclingMachineRecipes = [
   { input: "society:fire_quartz", output: ["24x minecraft:quartz"] },
   {
     input: "betterarcheology:artifact_shards",
-    output: ["2x society:sparkstone"],
+    output: ["6x society:sparkstone"],
   },
   { input: "zetter:canvas", output: ["4x society:canvas"] },
   { input: "aquaculture:fish_bones", output: ["dew_drop_farmland_growth:strong_fertilizer"] },

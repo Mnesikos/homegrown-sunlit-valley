@@ -24,12 +24,12 @@ ServerEvents.recipes((e) => {
   e.shapeless("4x minecraft:quartz", ["minecraft:quartz_block"]);
   e.shapeless("4x society:cracked_egg", ["#society:large_eggs"]);
   e.shapeless("1x society:cracked_egg", ["#forge:eggs"]);
-  e.shapeless("1x society:fish_pond", ["society:fish_pond"]);
+  e.shapeless("3x minecraft:glass_bottle", ["vintagedelight:mason_jar"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
   });
-  e.shaped("32x society:enriched_bone_meal", ["bbb", "bfb", "bbb"], {
+  e.shaped("16x society:enriched_bone_meal", ["bbb", "bfb", "bbb"], {
     f: "farm_and_charm:fertilizer",
     b: "minecraft:bone_block",
   });
