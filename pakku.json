@@ -76,6 +76,9 @@
         "my-server-is-compatible": {
             "side": "CLIENT"
         },
+        "skillexpnotifier": {
+            "side": "CLIENT"
+        },
         "iris-flywheel-compat": {
             "side": "CLIENT"
         },

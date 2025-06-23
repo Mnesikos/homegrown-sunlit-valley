@@ -27,10 +27,10 @@
 		#If toasts are translucent.
 		translucent = true
 		#If toasts are transparent.  Overrides translucency.
-		transparent = true
+		transparent = false
 		#How many toasts will be displayed on screen at once.
 		#Range: 1 ~ 7
-		toast_count = 1
+		toast_count = 3
 		#The X offset for toasts to be drawn at.
 		#Range: -8192 ~ 8192
 		x_offset = 0
@@ -38,7 +38,7 @@
 		#Range: -8192 ~ 8192
 		y_offset = 0
 		#If toasts automatically pop into the screen without animations.
-		no_slide = true
+		no_slide = false
 		#If toasts show on the left of the screen.
 		start_left = false
 		#If toasts will come in from the top of the screen, rather than the side.

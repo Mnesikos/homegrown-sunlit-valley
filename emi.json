@@ -35,6 +35,11 @@
     }
   ],
   "lookup_history": [
+    "item:pamhc2trees:lemonitem",
+    "item:beautify:botanist_workbench",
+    "item:minecraft:crafting_table",
+    "item:tanukidecor:diy_workbench",
+    "item:refurbished_furniture:workbench",
     "item:quark:hollow_oak_log",
     "item:farm_and_charm:fertilized_soil",
     "item:society:sparkstone",
@@ -593,7 +598,6 @@
     "item:everycomp:rfm/autumnity/maple_lattice_fence",
     "item:refurbished_furniture:mangrove_lattice_fence_gate",
     "item:beautify:acacia_trellis",
-    "item:refurbished_furniture:workbench",
     "item:vinery:apple_press",
     "item:farmingforblockheads:market",
     "item:pamhc2trees:dragonfruititem",
@@ -773,7 +777,6 @@
     "item:minecraft:enchanting_table",
     "item:society:geode_node",
     "item:oreganized:electrum_sword{Damage:0}",
-    "item:beautify:botanist_workbench",
     "item:society:ancient_fruit_seed",
     "item:vinery:red_grape_seeds",
     "item:vinery:grapevine_pot",
@@ -1233,10 +1236,7 @@
     "item:tanukidecor:anniversary_clock",
     "item:createrailwaysnavigator:train_station_clock",
     "item:rottencreatures:tnt_barrel",
-    "item:rottencreatures:frozen_rotten_flesh",
-    "item:rottencreatures:magma_rotten_flesh",
-    "item:vintagedelight:smooth_salt_block",
-    "item:farm_and_charm:nettle_tea"
+    "item:rottencreatures:frozen_rotten_flesh"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1252,10 +1252,10 @@
   ],
   "recipe_defaults": {
     "added": [
+      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

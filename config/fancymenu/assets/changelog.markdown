@@ -190,6 +190,7 @@
 - Increased Sparkstone from Reycling Artifact Shards 2 -> 6
 - Increased Sparkstone from Ancient Goddes Statue trade 16 -> 32
 - Reduced height drowned spawn
+- Reduced crafting amount of Enriched Bonemeal 32 -> 16
 - Updated Little Joys to fix fishing spot performance
 - Changed Spindlefish 7 population quest from Aged Amethyst Cheese to 8 Aged Jo's Special Mixture
 - Change Super Glue recipe to not require Create 
@@ -204,5 +205,6 @@
 - Fixed Fish Pond placement being weird and bad
 - Fixed Small Ships zoom not working
 - Fixed vanilla Slimes spawning below ground
+- Fixed Hoglins dropping sellable items
 - Fixed Splendid Slimes not spawning often in Skull Cavern
 - Fixed aging Iridium Nectar not showing right text

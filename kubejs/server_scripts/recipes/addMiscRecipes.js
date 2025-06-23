@@ -29,7 +29,7 @@ ServerEvents.recipes((e) => {
     s: "minecraft:string",
     l: "minecraft:leather",
   });
-  e.shaped("32x society:enriched_bone_meal", ["bbb", "bfb", "bbb"], {
+  e.shaped("16x society:enriched_bone_meal", ["bbb", "bfb", "bbb"], {
     f: "farm_and_charm:fertilizer",
     b: "minecraft:bone_block",
   });
