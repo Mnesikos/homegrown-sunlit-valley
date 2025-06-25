@@ -43,6 +43,7 @@
       "maxthis": 20,
       "mindist": 12,
       "maxdist": 40,
+      "minverticaldist": 10,
       "maxheight": 511,
       "minheight": 425
     }
@@ -60,6 +61,7 @@
       "maxthis": 30,
       "mindist": 12,
       "maxdist": 40,
+      "minverticaldist": 10,
       "maxheight": 425,
       "minheight": 282
     }
@@ -77,6 +79,7 @@
       "maxthis": 35,
       "mindist": 12,
       "maxdist": 40,
+      "minverticaldist": 10,
       "maxheight": 282,
       "minheight": 142
     }
@@ -94,6 +97,7 @@
       "maxthis": 40,
       "mindist": 12,
       "maxdist": 40,
+      "minverticaldist": 10,
       "maxheight": 142,
       "minheight": 0
     }

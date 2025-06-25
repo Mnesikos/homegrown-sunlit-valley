@@ -1,6 +1,6 @@
 ^^^
 ## Iridium Sparks
-### v3.0.3
+### v3.0.4
 ^^^
 --- 
 - Added completely redone Skull Cavern dimension and mechanics
@@ -208,3 +208,9 @@
 - Fixed Hoglins dropping sellable items
 - Fixed Splendid Slimes not spawning often in Skull Cavern
 - Fixed aging Iridium Nectar not showing right text
+
+## 3.0.4
+- Skull Cavern mobs no longer spawn around the same y-level as player, which gives you a break when a cave is cleared out
+- Removed skill experience gained sound
+- Fixed Sprinkler typo
+- Fixed performance in the Skull Cavern tanking as blocks broken
