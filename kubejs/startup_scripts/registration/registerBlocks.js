@@ -149,7 +149,21 @@ StartupEvents.registry("block", (e) => {
   createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
   createSkullVariant("blackstone", "minecraft:block/blackstone");
   createSkullVariant("end_stone", "minecraft:block/end_stone");
-
+  e.create("society:cavern_air")
+    .box(0, 0, 0, 0, 0, 0)
+    .property(integerProperty.create("type", 0, 4))
+    .property(integerProperty.create("chunkbit", 0, 1))
+    .model("minecraft:block/air")
+    .hardness(-1)
+    .resistance(3600000)
+    .defaultState((state) => {
+      state.set(integerProperty.create("type", 0, 4), 0);
+      state.set(integerProperty.create("chunkbit", 0, 1), 0);
+    })
+    .placementState((state) => {
+      state.set(integerProperty.create("type", 0, 4), 0);
+      state.set(integerProperty.create("chunkbit", 0, 1), 0);
+    });
   e.create("society:iridium_ore")
     .soundType("stone")
     .hardness(2.5)

@@ -4,8 +4,6 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
-    "mining_dimension:teleporter",
-    "treetap:tap",
     "create:schematicannon",
     "create:empty_schematic",
     "create:schematic_and_quill",
@@ -666,8 +664,6 @@ ServerEvents.recipes((e) => {
     "botania:mana_infusion/mana_diamond_block",
     "farm_and_charm:mincer/hops_seeds",
     "functionalstorage:oak_drawer_alternate_x1",
-    "treetap:syrup_from_maple_pams",
-    "treetap:water_from_crying_obsidian",
     "translocators:diamond",
     "translocators:diamond_nugget",
     // Seeds

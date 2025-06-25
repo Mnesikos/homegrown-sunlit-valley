@@ -55,7 +55,6 @@ ServerEvents.recipes((e) => {
     g: "moreminecarts:organic_glass",
   });
   // Earth Crystal
-  e.shapeless("society:tapper", ["treetap:tap"]);
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
     l: "meadow:fire_log",
@@ -433,15 +432,7 @@ ServerEvents.recipes((e) => {
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);
   e.shapeless("4x crabbersdelight:crab_trap_bait", ["aquaculture:minnow"]);
   e.shapeless("16x crabbersdelight:crab_trap_bait", ["aquaculture:leech"]);
-  // Dramatic Doors
-  e.shapeless("dramaticdoors:short_silver_door", [
-    "dramaticdoors:short_iron_door",
-    "oreganized:silver_ingot",
-  ]);
-  e.shapeless("dramaticdoors:tall_silver_door", [
-    "dramaticdoors:tall_iron_door",
-    "oreganized:silver_ingot",
-  ]);
+
   // Neptuna
   e.custom({
     type: "farmersdelight:cutting",

@@ -42,7 +42,6 @@ global.removedItems = [
   "moreminecarts:battery_cart",
   "moreminecarts:transport_battery",
   "sophisticatedbackpacks:battery_upgrade",
-  "treetap:tap",
   // Twigs
   "gamediscs:battery",
   "gamediscs:redstone_circuit",
