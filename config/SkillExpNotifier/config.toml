@@ -89,3 +89,11 @@
 		#The Color Of The Title Drop Shadow
 		"Title Drop Shadow Color" = 0
 
+[Sounds]
+	#Disable All Sounds Made By Toast
+	"Disable Toast Sounds" = true
+	#A list of "dimension=sound_event" entries for the toast-in sound
+	"Sound Mapping In" = ["minecraft:overworld=minecraft:ui.toast.in", "minecraft:the_nether=minecraft:ui.toast.in", "minecraft:the_end=minecraft:ui.toast.in"]
+	#A list of "dimension=sound_event" entries for the toast-out sound
+	"Sound Mapping Out" = ["minecraft:overworld=minecraft:ui.toast.out", "minecraft:the_nether=minecraft:ui.toast.out", "minecraft:the_end=minecraft:ui.toast.out"]
+
