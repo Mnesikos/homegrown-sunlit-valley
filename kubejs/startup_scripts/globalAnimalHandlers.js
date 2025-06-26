@@ -11,9 +11,11 @@ global.isFresh = (age, actionAge, interactionCooldown) => {
 
 global.getAnimalIsNotCramped = (target) => {
   const level = target.getLevel();
-  const entities = level.getEntitiesWithin(target.boundingBox.inflate(1.1)).length;
+  const entities = level
+    .getEntitiesWithin(target.boundingBox.inflate(1.1))
+    .filter(e => global.checkEntityTag(e, "society:husbandry_animal"));
 
-  return entities <= 6;
+  return entities.length <= 6;
 };
 
 global.getMilkingTimeMult = (type) => {
