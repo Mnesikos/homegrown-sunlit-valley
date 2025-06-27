@@ -66,13 +66,13 @@ owlMinGroupSize = 3
 owlMaxGroupSize = 3
 #Boar Spawn Weight
 #Range: 0 ~ 1000
-boarSpawnWeight = 14
+boarSpawnWeight = 0
 #Boar Min Group Size
 #Range: 1 ~ 10
-boarMinGroupSize = 4
+boarMinGroupSize = 1
 #Boar Max Group Size
 #Range: 1 ~ 10
-boarMaxGroupSize = 5
+boarMaxGroupSize = 1
 #Bison Spawn Weight
 #Range: 0 ~ 1000
 bisonSpawnWeight = 10
@@ -84,13 +84,13 @@ bisonMinGroupSize = 3
 bisonMaxGroupSize = 5
 #Turkey Spawn Weight
 #Range: 0 ~ 1000
-turkeySpawnWeight = 12
+turkeySpawnWeight = 0
 #Turkey Min Group Size
 #Range: 1 ~ 10
-turkeyMinGroupSize = 3
+turkeyMinGroupSize = 1
 #Turkey Max Group Size
 #Range: 1 ~ 10
-turkeyMaxGroupSize = 5
+turkeyMaxGroupSize = 1
 #Dog Spawn Weight
 #Range: 0 ~ 1000
 dogSpawnWeight = 2
@@ -102,13 +102,13 @@ dogMinGroupSize = 1
 dogMaxGroupSize = 1
 #MiniSheep Spawn Weight
 #Range: 0 ~ 1000
-minisheepSpawnWeight = 8
+minisheepSpawnWeight = 0
 #MiniSheep Min Group Size
 #Range: 1 ~ 10
-minisheepMinGroupSize = 2
+minisheepMinGroupSize = 1
 #MiniSheep Max Group Size
 #Range: 1 ~ 10
-minisheepMaxGroupSize = 4
+minisheepMaxGroupSize = 1
 #Penguin Spawn Weight
 #Range: 0 ~ 1000
 penguinSpawnWeight = 10

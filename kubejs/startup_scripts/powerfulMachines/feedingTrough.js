@@ -33,18 +33,19 @@ StartupEvents.registry("block", (event) => {
         inventory.allItems;
         let nearbyFarmAnimals;
         if (inventory.toString().includes("animal_feed")) {
+          let day = Number((level.dayTime() / 24000).toFixed(0));
           nearbyFarmAnimals = level
             .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
             .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
           nearbyFarmAnimals.forEach((animal) => {
             let data = animal.persistentData;
-            if (!data.getInt("ageLastFed") || level.time < data.getInt("ageLastFed")) {
-              data.ageLastFed = level.time;
+            if (!data.getInt("ageLastFed") || day < data.getInt("ageLastFed")) {
+              data.ageLastFed = day;
             }
-            if (level.time - data.ageLastFed > global.animalInteractionCooldown) {
+            if (day > data.ageLastFed) {
               let feedingResultCode = global.useInventoryItems(inventory, "society:animal_feed", 1);
               if (feedingResultCode == 1) {
-                data.ageLastFed = level.time;
+                data.ageLastFed = day;
                 level.spawnParticles(
                   "legendarycreatures:wisp_particle",
                   true,

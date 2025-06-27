@@ -96,6 +96,7 @@ StartupEvents.registry("item", (e) => {
       .displayName(`Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
+  e.create("society:scavenged_food_bag").texture("wildernature:item/loot_bag");
   e.create("society:sap").texture("society:item/sap");
   e.create("society:rubber").texture("society:item/rubber");
   e.create("society:pine_tar").texture("society:item/pine_tar");
@@ -272,6 +273,7 @@ StartupEvents.registry("item", (e) => {
     "large_duck_egg",
     "large_goose_egg",
     "large_turkey_egg",
+    "large_galliraptor_egg",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
@@ -298,6 +300,7 @@ StartupEvents.registry("item", (e) => {
     "duck",
     "goose",
     "turkey",
+    "galliraptor",
     "turtle",
     "parrot",
     "birt",
@@ -310,7 +313,7 @@ StartupEvents.registry("item", (e) => {
     "dragon",
   ];
 
-  const largeMayoEggs = ["duck", "goose", "turkey"];
+  const largeMayoEggs = ["duck", "goose", "turkey", "galliraptor"];
   mayoEggs.forEach((egg) => {
     e.create(`society:${egg}_mayonnaise`)
       .texture(`society:item/mayo/${egg}_mayonnaise`)
@@ -340,6 +343,12 @@ StartupEvents.registry("item", (e) => {
     "sheep_milk",
     "warped_milk",
     "large_warped_milk",
+    "tri_bull_milk",
+    "large_tri_bull_milk",
+    "amethyst_milk",
+    "large_amethyst_milk",
+    "grain_milk",
+    "large_grain_milk",
   ].forEach((item) => {
     e.create(`society:${item}`)
       .texture(`society:item/husbandry/${item}`)

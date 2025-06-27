@@ -15,6 +15,10 @@
     "aquaculture:box_turtle",
     "aquaculture:arrau_turtle",
     "aquaculture:starshell_turtle",
+    "aquaculture:jellyfish",
+    "species:petrified_egg",
+    "vintagedelight:golden_egg",
+    "minecraft:sniffer_egg",
     {
       "id": "species:ichor_bottle",
       "required": false

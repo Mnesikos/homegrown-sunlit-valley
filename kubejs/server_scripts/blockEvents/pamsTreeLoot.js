@@ -28,7 +28,10 @@ BlockEvents.rightClicked(
     if (
       player.isHoldingInAnyHand("minecraft:bone_meal") ||
       player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
-      player.isHoldingInAnyHand("meadow:watering_can")
+      player.isHoldingInAnyHand("meadow:watering_can") ||
+      player.isHoldingInAnyHand("minecraft:shears")||
+      player.isHoldingInAnyHand("botania:manasteel_shears")||
+      player.isHoldingInAnyHand("botania:elementium_shears")
     )
       return;
     if (player.stages.has("tree_whisperer") && Number(block.properties.get("age")) == 7) {

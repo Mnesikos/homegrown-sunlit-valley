@@ -231,6 +231,9 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:salad_ingredients", "farm_and_charm:lettuce");
   e.add("forge:grain/corn", "farm_and_charm:corn");
   e.add("candlelight:butter", "farm_and_charm:butter");
+  e.add("forge:cheeses", "farmlife:tribull_cheese_wedge");
+  e.add("c:cheeses", "farmlife:tribull_cheese_wedge");
+  e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_block");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
@@ -243,11 +246,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:food/pastas", "#forge:foods/pastas");
   e.add("letsdo_addon_compat:tools/knives", "#forge:tools/knives");
   // Milk
-  const bakeryMilks = [
-    "minecraft:milk_bucket",
-    "meadow:wooden_milk_bucket",
-    "meadow:wooden_grain_milk_bucket",
-  ];
+  const bakeryMilks = ["minecraft:milk_bucket"];
   bakeryMilks.forEach((milk) => {
     e.add("bakery:milk", milk);
   });
@@ -523,6 +522,9 @@ ServerEvents.tags("item", (e) => {
     "society:sheep_milk",
     "society:buffalo_milk",
     "society:warped_milk",
+    "society:tri_bull_milk",
+    "society:amethyst_milk",
+    "society:grain_milk",
   ];
   smallMilks.forEach((item) => {
     e.add("society:small_milk", item);
@@ -534,6 +536,9 @@ ServerEvents.tags("item", (e) => {
     "society:large_buffalo_milk",
     "society:large_sheep_milk",
     "society:large_warped_milk",
+    "society:large_tri_bull_milk",
+    "society:large_amethyst_milk",
+    "society:large_grain_milk",
   ];
   largeMilks.forEach((item) => {
     e.add("society:large_milk", item);
