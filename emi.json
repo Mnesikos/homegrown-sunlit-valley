@@ -84,6 +84,31 @@
     }
   ],
   "lookup_history": [
+    "item:opposing_force:slippery_top",
+    "item:opposing_force:raincap",
+    "item:opposing_force:powder_gnome",
+    "item:opposing_force:vile_boulder{Damage:0}",
+    "item:opposing_force:tomahawk",
+    "item:opposing_force:slug_eggs",
+    "item:opposing_force:deepwoven_pants{Damage:0}",
+    "item:opposing_force:deepwoven_tunic{Damage:0}",
+    "item:opposing_force:deepwoven_hat{Damage:0}",
+    "item:opposing_force:deep_silk",
+    "item:opposing_force:copper_enoki",
+    {
+      "id": "opposing_force:electrified"
+    },
+    {
+      "id": "opposing_force:gloom_toxin"
+    },
+    {
+      "id": "opposing_force:slug_infestation"
+    },
+    "item:opposing_force:tesla_bow{Damage:0}",
+    "item:opposing_force:electric_charge",
+    "item:opposing_force:cave_patty",
+    "item:opposing_force:cream_cap",
+    "item:opposing_force:trembler_shell",
     "item:species:wicked_wax",
     "item:species:wicked_swapper",
     "item:species:wicked_mask{}",
@@ -1209,23 +1234,7 @@
     "item:relics:arrow_quiver{abilities:{agility:{points:0,stats:{modifier:1.0d}},leap:{points:0,stats:{cooldown:14.71845d,duration:4.81819d,multiplier:0.24694d}},rain:{points:0,stats:{delay:0.86456d,duration:14.50233d,radius:3.47607d}},receptacle:{points:0,stats:{slots:3.7832d}}}}",
     "item:relics:horse_flute{abilities:{heal:{points:0,stats:{amount:0.05603d}}}}",
     "item:relics:ice_breaker{abilities:{impact:{points:0,stats:{damage:3.1047d,size:3.30875d}},sustainability:{points:0,stats:{modifier:0.55491d}}}}",
-    "item:relics:roller_skates{abilities:{skating:{points:0,stats:{duration:27.0012d,speed:0.00427d}}}}",
-    "item:relics:infinity_ham{abilities:{autophagy:{points:0,stats:{feed:1.38704d}},infusion:{points:0,stats:{duration:2.05257d}}}}",
-    "item:relics:ice_skates{abilities:{ram:{points:0,stats:{damage:0.13896d}},skating:{points:0,stats:{duration:28.64348d,speed:0.03403d}}}}",
-    "item:relics:jellyfish_necklace{abilities:{paralysis:{points:0,stats:{duration:1.44117d}},shock:{points:0,stats:{damage:1.43962d},temp:{ticking:1b}}}}",
-    "item:relics:aqua_walker{abilities:{walking:{points:0,stats:{time:49.61692d}}}}",
-    "item:society:pristine_aquamarine",
-    "item:society:aquamarine",
-    "item:minecraft:enchanting_table",
-    "item:society:geode_node",
-    "item:oreganized:electrum_sword{Damage:0}",
-    "item:vinery:red_grape_seeds",
-    "item:vinery:grapevine_pot",
-    "item:society:dried_toadstool",
-    "item:ribbits:toadstool",
-    "item:farm_and_charm:flour",
-    "item:farm_and_charm:flour_bag",
-    "item:create:wheat_flour"
+    "item:relics:roller_skates{abilities:{skating:{points:0,stats:{duration:27.0012d,speed:0.00427d}}}}"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1243,8 +1252,8 @@
     "added": [
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},
