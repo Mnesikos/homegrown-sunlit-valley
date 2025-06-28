@@ -51,7 +51,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     }
   }
 };
-
+// TODO: make artisan hopper set tappers
 global.getArtisanMachineData = (block, upgraded, stages) => {
   let machineData = {
     recipes: [],

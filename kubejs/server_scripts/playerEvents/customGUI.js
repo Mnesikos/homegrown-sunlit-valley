@@ -46,9 +46,7 @@ const bankMeterPainter = (curios, player) => {
     curios.toString().includes("society:bank_meter")
   ) {
     const balance = getPlayerBalance(player);
-    const balanceText = balance
-      .toString()
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const balanceText = global.formatPrice(balance);
 
     player.paint({
       coinDisplayDropShadow: {

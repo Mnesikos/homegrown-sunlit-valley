@@ -1,5 +1,5 @@
 
 [logbegone]
-	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "farmlife:platefish", "Failed to deserialize gossips: Not a list: END"]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "farmlife:platefish", "Failed to deserialize gossips: Not a list: END", "EMI", "was not registered", "Something went wrong. Could not find JEI Search Text Field object", "Received passengers for unknown entity"]
 	regex = ["Disconnecting VANILLA connection attempt", "Channels "]
 

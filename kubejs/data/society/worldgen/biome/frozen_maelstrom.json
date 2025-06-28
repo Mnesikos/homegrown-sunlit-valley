@@ -42,6 +42,12 @@
         "maxCount": 4
       },
       {
+        "type": "species:quake",
+        "maxCount": 1,
+        "minCount": 1,
+        "weight": 20
+      },
+      {
         "type": "minecraft:cave_spider",
         "weight": 80,
         "minCount": 1,

@@ -1,6 +1,6 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = false;
+const debug = true;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
@@ -42,7 +42,7 @@ const initializeFarmAnimal = (day, target, level) => {
 // Anti-frustration feature to be forgiving when re-logging
 const handleFarmAnimalBackwardsCompat = (target, day) => {
   const data = target.persistentData;
-  if (day < data.getInt("ageLastPet") || data.getInt("ageLastPet") > 5000) {
+  if (day < data.getInt("ageLastPet") || data.getInt("ageLastPet") - day > 5000) {
     let newDay = day - 1;
     data.ageLastPet = newDay;
     data.ageLastMagicHarvested = newDay;

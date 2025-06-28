@@ -1317,10 +1317,10 @@
     "modId": "spark",
     "version": "1.10.53"
   },
-  "Species-1.20.1-2.3-forge.jar": {
-    "jarName": "Species-1.20.1-2.3-forge.jar",
+  "species-3.2.jar": {
+    "jarName": "species-3.2.jar",
     "modId": "species",
-    "version": "1.20.1-2.3-forge"
+    "version": "3.2"
   },
   "splendid_slimes-0.12.2.jar": {
     "jarName": "splendid_slimes-0.12.2.jar",

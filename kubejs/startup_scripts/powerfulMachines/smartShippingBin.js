@@ -66,9 +66,7 @@ StartupEvents.registry("block", (event) => {
             binPlayer.server.runCommandSilent(
               `immersivemessages sendcustom ${
                 binPlayer.username
-              } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${value
-                .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §7worth of goods sold `
+              } {anchor:7,background:1,color:"#FFAA00",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 :coin: ${global.formatPrice(value)} §7worth of goods sold `
             );
             let outputs = calculateCoinsFromValue(value, []);
             outputs.forEach((output) => {

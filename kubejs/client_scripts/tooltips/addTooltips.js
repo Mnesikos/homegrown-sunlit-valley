@@ -8,7 +8,7 @@ ItemEvents.tooltip((tooltip) => {
     } else {
       value = number;
     }
-    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return global.formatPrice(value);
   };
   const calculateCost = (coin, count, stackSize) => {
     let value = 0;
@@ -164,7 +164,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
     {
       item: "society:intro_to_algorithms",
-      description: "Brain Damage will periodically be cleared from you.",
+      description: "Mining Lead ore will no longer cause Brain Damage.",
     },
     {
       item: "society:slouching_towards_artistry",
@@ -634,7 +634,6 @@ ItemEvents.tooltip((tooltip) => {
     }
   });
 
-  Item.of("splendid_slimes:plort", '{plort:{id:"splendid_slimes:slimy"}}');
   // Ore
   global.ore.forEach((item) => {
     addPriceTooltip(item, "gem");
