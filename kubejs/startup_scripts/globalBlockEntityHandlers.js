@@ -681,25 +681,3 @@ const getCardinalMultipartJson = (name) => {
     .concat(offJson)
     .concat(doneJson);
 };
-const getGnomeState = (name, type) => {
-  const path = `society:block/gnome/${name}`;
-  let cardianal = [
-    {
-      when: { type: type, facing: "north" },
-      apply: { model: path, y: 0, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "east" },
-      apply: { model: path, y: 90, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "south" },
-      apply: { model: path, y: 180, uvlock: false },
-    },
-    {
-      when: { type: type, facing: "west" },
-      apply: { model: path, y: -90, uvlock: false },
-    },
-  ];
-  return cardianal;
-};

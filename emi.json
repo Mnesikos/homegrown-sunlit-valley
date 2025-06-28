@@ -84,34 +84,10 @@
     }
   ],
   "lookup_history": [
-    "item:opposing_force:slippery_top",
-    "item:opposing_force:raincap",
-    "item:opposing_force:powder_gnome",
-    "item:opposing_force:vile_boulder{Damage:0}",
-    "item:opposing_force:tomahawk",
-    "item:opposing_force:slug_eggs",
-    "item:opposing_force:deepwoven_pants{Damage:0}",
-    "item:opposing_force:deepwoven_tunic{Damage:0}",
-    "item:opposing_force:deepwoven_hat{Damage:0}",
-    "item:opposing_force:deep_silk",
-    "item:opposing_force:copper_enoki",
-    {
-      "id": "opposing_force:electrified"
-    },
-    {
-      "id": "opposing_force:gloom_toxin"
-    },
-    {
-      "id": "opposing_force:slug_infestation"
-    },
-    "item:opposing_force:tesla_bow{Damage:0}",
-    "item:opposing_force:electric_charge",
-    "item:opposing_force:cave_patty",
-    "item:opposing_force:cream_cap",
-    "item:opposing_force:trembler_shell",
-    "item:species:wicked_wax",
-    "item:species:wicked_swapper",
+    "item:society:lantern_gnome",
     "item:species:wicked_mask{}",
+    "item:species:wicked_swapper",
+    "item:species:wicked_wax",
     "item:gag:sacred_salve",
     "item:gag:sacred_balm",
     "item:gag:sacred_salt",
@@ -1251,9 +1227,9 @@
   "recipe_defaults": {
     "added": [
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/golden_chestplate"
+      "minecraft:kjs/golden_chestplate",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
