@@ -357,7 +357,7 @@ global.handleFee = (server, player, reason) => {
   });
   if (reason === "death") {
     maxFee = 4096;
-
+    if (player.stages.has("first_aid_guide")) maxFee = 2048;
     amountToDeduct = Math.min(Math.round(balance * 0.1), maxFee);
   }
   if (reason === "skull_cavern") {

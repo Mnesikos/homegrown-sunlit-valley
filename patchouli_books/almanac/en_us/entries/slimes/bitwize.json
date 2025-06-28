@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biome: Frozen Maelstrom (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes the Confusion effect when upset."
+      "text": "$(l)Locations:$()$(li)Biome: Frozen Maelstrom (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes the Confusion effect when upset."
     },
     {
       "type": "patchouli:entity",

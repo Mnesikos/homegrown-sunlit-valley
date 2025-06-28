@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biome: Blackstone Caves (Skull Cavern)$(li)Structure: Nether Fortress, Bastion chests, Nether Slime Spawners$(li)Dig spots: Nether blocks$(br2)$(l)Risks:$()$(br)Starts fires when hungry and increase fire damage when mad."
+      "text": "$(l)Locations:$()$(li)Biome: Blackstone Caves (Skull Cavern)$(li)Structure: Nether Fortress, Bastion chests, Nether Slime Spawners$(li)Dig spots: Nether blocks$(br2)$(l)Risks:$()$(br)Starts fires when hungry and increase fire damage when mad."
     },
     {
       "type": "patchouli:entity",

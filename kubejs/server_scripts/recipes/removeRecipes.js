@@ -663,6 +663,7 @@ ServerEvents.recipes((e) => {
     "refurbished_furniture:meatlovers_pizza_slice",
   ];
   const removeById = [
+    "untitledduckmod:crafting_shaped/pumpkin_pie",
     "oreganized:electrum_upgrade_smithing_template",
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",

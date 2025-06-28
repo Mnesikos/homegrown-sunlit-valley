@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biome: Soul Sand Valley$(li)Structure: Overworld Slime Spawners$(li)Dig spots: All$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Just happy to be here!"
+      "text": "$(l)Locations:$()$(li)Biome: Soul Sand Valley$(li)Structure: Overworld Slime Spawners$(li)Dig spots: All$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Just happy to be here!"
     },
     {
       "type": "patchouli:entity",

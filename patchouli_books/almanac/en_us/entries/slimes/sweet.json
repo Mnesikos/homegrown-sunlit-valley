@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Causes Speed effect when upset. Extremely volatile moods."
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Causes Speed effect when upset. Extremely volatile moods."
     },
     {
       "type": "patchouli:entity",

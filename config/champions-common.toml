@@ -11,10 +11,10 @@
 	#Range: > 0
 	deathMessageTier = 0
 	#A list of dimension names that are blacklisted/whitelisted for champions
-	dimensionList = []
+	dimensionList = ["society:skull_cavern"]
 	#Set whether the dimension list is a blacklist or whitelist
 	#Allowed Values: BLACKLIST, WHITELIST
-	dimensionPermission = "BLACKLIST"
+	dimensionPermission = "WHITELIST"
 	#A list of entities that are blacklisted/whitelisted for champions
 	entitiesList = []
 	#Set whether the entities list is a blacklist or whitelist

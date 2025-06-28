@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biome: Lush Caverns (Skull Cavern)$(li)Structure: Bee Hives (Skull Cavern)$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls! Causes Drunk effect when upset."
+      "text": "$(l)Locations:$()$(li)Biome: Lush Caverns (Skull Cavern)$(li)Structure: Bee Hives (Skull Cavern)$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls! Causes Drunk effect when upset."
     },
     {
       "type": "patchouli:entity",

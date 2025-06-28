@@ -256,9 +256,24 @@ StartupEvents.registry("item", (e) => {
     "mining_monthly",
     "wet_weekly",
     "combat_quarterly",
+    "animal_fancy",
+    "banana_karenina",
+    "canadian_and_famous",
+    "first_aid_guide",
+    "intro_to_algorithms",
+    "slouching_towards_artistry",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/books/${item}`);
   });
+  e.create("society:debt_caverns")
+    .displayName("Debt: The First 5000 Caverns")
+    .texture("society:item/books/debt_caverns");
+  e.create("society:frogs_bounty_bazaar")
+    .displayName("Frog's Bounty Bazaar")
+    .texture("society:item/books/frogs_bounty_bazaar");
+  e.create("society:phenomenology_of_treasure")
+    .displayName("The Phenomenology of Treasure")
+    .texture("society:item/books/phenomenology_of_treasure");
   // Husbandry
   [
     "animal_feed",

@@ -1,0 +1,5 @@
+
+[logbegone]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "farmlife:platefish", "Failed to deserialize gossips: Not a list: END"]
+	regex = ["Disconnecting VANILLA connection attempt", "Channels "]
+

@@ -41,7 +41,7 @@ PlayerEvents.tick((e) => {
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);
-      if (global.enableDeathDebt) global.handleFee(server, player, "skull_cavern");
+      if (global.enableDeathDebt && !player.stages.has("debt_caverns")) global.handleFee(server, player, "skull_cavern");
     }
   }
 });

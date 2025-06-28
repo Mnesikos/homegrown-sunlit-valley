@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biomes: Desert Caves, Desert Fault (Skull Cavern)$(li)Dig spots: Sand/stone$(br2)$(l)Risks:$()$(br)Causes the Convulsion effect and lightning strikes when upset."
+      "text": "$(l)Locations:$()$(li)Biomes: Desert Caves, Desert Fault (Skull Cavern)$(li)Dig spots: Sand/stone$(br2)$(l)Risks:$()$(br)Causes the Convulsion effect and lightning strikes when upset."
     },
     {
       "type": "patchouli:entity",

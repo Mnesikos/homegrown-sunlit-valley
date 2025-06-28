@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Attacks players, has Strength III, flies, and causes the Drunk effect when upset. Has a chance to revive when killed by high damage attacks. Extremely dangerous."
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Attacks players, has Strength III, flies, and causes the Drunk effect when upset. Has a chance to revive when killed by high damage attacks. Extremely dangerous."
     },
     {
       "type": "patchouli:entity",

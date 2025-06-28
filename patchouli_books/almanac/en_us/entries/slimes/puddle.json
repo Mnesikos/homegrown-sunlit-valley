@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text", 
-      "text": "$(l)Locations$()$(li)Crab Traps: Crab Trap Bait, Deluxe Crab Trap Bait$(li)Fishing spots$(br2)$(l)Risks:$()$(br)Has thorns and gets unhappy when outside of water!"
+      "text": "$(l)Locations:$()$(li)Crab Traps: Crab Trap Bait, Deluxe Crab Trap Bait$(li)Fishing spots$(br2)$(l)Risks:$()$(br)Has thorns and gets unhappy when outside of water!"
     },
     {
       "type": "patchouli:entity",

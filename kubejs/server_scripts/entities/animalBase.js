@@ -1,6 +1,6 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = true;
+const debug = false;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);

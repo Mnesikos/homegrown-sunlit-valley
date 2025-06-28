@@ -704,11 +704,6 @@
     "modId": "incontrol",
     "version": "1.20-9.3.2"
   },
-  "infernalmobs-1.20.1.6.jar": {
-    "jarName": "infernalmobs-1.20.1.6.jar",
-    "modId": "infernalmobs",
-    "version": "1.20.1.6"
-  },
   "irons_rpg_tweaks-1.20-1.4.0.jar": {
     "jarName": "irons_rpg_tweaks-1.20-1.4.0.jar",
     "modId": "irons_rpg_tweaks",
@@ -881,6 +876,11 @@
     "jarName": "lmft-1.0.4+1.20.1-forge.jar",
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
+  },
+  "Log-Begone-Forge-1.20.1-1.0.8.jar": {
+    "jarName": "Log-Begone-Forge-1.20.1-1.0.8.jar",
+    "modId": "logbegone",
+    "version": "1.0.8"
   },
   "lootjs-forge-1.20.1-2.12.0.jar": {
     "jarName": "lootjs-forge-1.20.1-2.12.0.jar",
@@ -1136,6 +1136,11 @@
     "jarName": "questsadditions-1.4.7.jar",
     "modId": "questsadditions",
     "version": "1.4.7"
+  },
+  "radium-mc1.20.1-0.12.4+git.26c9d8e.jar": {
+    "jarName": "radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
+    "modId": "radium",
+    "version": "0.12.4+git.26c9d8e"
   },
   "refurbished_furniture-forge-1.20.1-1.0.14.jar": {
     "jarName": "refurbished_furniture-forge-1.20.1-1.0.14.jar",

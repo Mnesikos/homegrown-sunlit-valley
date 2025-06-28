@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls and causes the Poison effect when upset."
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Climbs walls and causes the Poison effect when upset."
     },
     {
       "type": "patchouli:entity",

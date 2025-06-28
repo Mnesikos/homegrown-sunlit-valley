@@ -1549,6 +1549,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "betterarcheology:growth_totem", value: 32000 },
   { item: "botania:black_lotus", value: 128 },
   { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },

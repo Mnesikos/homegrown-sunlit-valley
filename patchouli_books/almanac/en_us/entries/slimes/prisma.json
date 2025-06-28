@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text", 
-      "text": "$(l)Locations$()$(li)Crab Traps: Deluxe Crab Trap Bait$(br2)$(l)Risks:$()$(br)Has thorns and will cause the Mining Fatigue effect when upset. Gets unhappy when outside of water!"
+      "text": "$(l)Locations:$()$(li)Crab Traps: Deluxe Crab Trap Bait$(li)Slime Heart Fusion$(br2)$(l)Risks:$()$(br)Has thorns and will cause the Mining Fatigue effect when upset. Gets unhappy when outside of water!"
     },
     {
       "type": "patchouli:entity",

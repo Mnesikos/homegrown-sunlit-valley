@@ -339,10 +339,11 @@ StartupEvents.registry("block", (event) => {
           10,
           0.1
         );
-        block.popItemFromFace(
-          prizeOutput[rnd(0, prizeOutput.length - 1)],
-          block.properties.get("facing")
-        );
+        const prize = prizeOutput[rnd(0, prizeOutput.length - 1)];
+        block.popItemFromFace(prize, block.properties.get("facing"));
+        if (player.stages.has("frogs_bounty_bazaar")) {
+          block.popItemFromFace(prize, block.properties.get("facing"));
+        }
         block.set(block.id, {
           facing: block.properties.get("facing"),
           prize:

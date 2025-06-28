@@ -151,6 +151,36 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
     tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
   });
+  [
+    {
+      item: "society:animal_fancy",
+      description: "Increases affection gained from petting farm animals.",
+    },
+    { item: "society:banana_karenina", description: "Doubles Banana Tree output." },
+    {
+      item: "society:canadian_and_famous",
+      description: "Tappers output double. Doesn't affect Auto-Tappers.",
+    },
+    { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
+    {
+      item: "society:intro_to_algorithms",
+      description: "Brain Damage will periodically be cleared from you.",
+    },
+    {
+      item: "society:slouching_towards_artistry",
+      description:
+        "Filling an artisan machine progresses it by 1 day if the production time is greater than 1.",
+    },
+    {
+      item: "society:debt_caverns",
+      description: "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
+    },
+    { item: "society:phenomenology_of_treasure", description: "The Phenomenology of Treasure" },
+    { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
+  ].forEach((book) => {
+    tooltip.add(book.item, Text.gray(book.description));
+    tooltip.add(book.item, Text.green("Right click to learn this skill!"));
+  });
   tooltip.addAdvanced("society:fish_pond", (item, advanced, text) => {
     if (item.nbt) {
       text.add(1, Text.aqua(`Fish: ${global.fishPondDefinitions[item.nbt.get("type") - 1].item}`));
@@ -461,10 +491,15 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
-  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));  
-    tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
+  tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
+  tooltip.addAdvanced("farmersdelight:tomato_seeds", (item, advanced, text) => {
     if (tooltip.shift) {
-      text.add(1, [Text.white("Fertile Seasons:"), Text.green(" Spring,"), Text.yellow(" Summer,"), Text.gold(" Autumn")]);
+      text.add(1, [
+        Text.white("Fertile Seasons:"),
+        Text.green(" Spring,"),
+        Text.yellow(" Summer,"),
+        Text.gold(" Autumn"),
+      ]);
       text.add(1, []);
     } else {
       text.add(1, [Text.darkGray("Hold ["), Text.gray("Shift"), Text.darkGray("]")]);

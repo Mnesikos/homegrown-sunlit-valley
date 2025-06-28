@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Biome: Frozen Caves (Skull Cavern)$(li)Structure: Slime Spawners$(li)Dig spots: Overworld$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Causes Hunger effect when upset. Summons Slime Zombies when attacking Villagers."
+      "text": "$(l)Locations:$()$(li)Biome: Frozen Caves (Skull Cavern)$(li)Structure: Slime Spawners$(li)Dig spots: Overworld$(li)Balloon Boxes: Red$(br2)$(l)Risks:$()$(br)Causes Hunger effect when upset. Summons Slime Zombies when attacking Villagers."
     },
     {
       "type": "patchouli:entity",

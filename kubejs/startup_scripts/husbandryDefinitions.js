@@ -24,10 +24,51 @@ const fineWoolForage = [
 global.husbandryForagingDefinitions = [
   { animal: "minecraft:pig", forages: truffleForage },
   { animal: "snowpig:snow_pig", forages: truffleForage },
-  { animal: "minecraft:mooshroom", forages: truffleForage },
+  {
+    animal: "minecraft:mooshroom",
+    forages: [
+      {
+        item: "society:truffle",
+        countMult: 1,
+        chance: 0.3,
+        minHearts: 4,
+        hasQuality: true,
+        stage: { name: "triple_truffle", locale: "Triple Truffle", newCountMult: 3 },
+      },
+      {
+        itemPool: [
+          "tanukidecor:brown_mushroom_log_stool",
+          "tanukidecor:red_mushroom_log_stool",
+          "tanukidecor:brown_mushroom_stool",
+          "tanukidecor:red_mushroom_stool",
+        ],
+        countMult: 1,
+        chance: 0.04,
+        minHearts: 8,
+      },
+    ],
+  },
+
   { animal: "minecraft:sheep", forages: fineWoolForage },
   { animal: "meadow:wooly_sheep", forages: fineWoolForage },
-  { animal: "snuffles:snuffle", forages: fineWoolForage },
+  {
+    animal: "snuffles:snuffle",
+    forages: [
+      {
+        item: "society:fine_wool",
+        countMult: 1,
+        chance: 0.5,
+        minHearts: 4,
+        hasQuality: true,
+      },
+      {
+        item: "species:frozen_hair",
+        countMult: 4,
+        chance: 0.2,
+        minHearts: 7,
+      },
+    ],
+  },
   {
     animal: "wildernature:minisheep",
     forages: [
@@ -52,7 +93,7 @@ global.husbandryForagingDefinitions = [
         stage: { name: "coopmaster", locale: "Coopmaster", newCountMult: 2 },
       },
       {
-        item: "society:rabbit_foot",
+        item: "minecraft:rabbit_foot",
         countMult: 1,
         chance: 0.16,
         minHearts: 5,

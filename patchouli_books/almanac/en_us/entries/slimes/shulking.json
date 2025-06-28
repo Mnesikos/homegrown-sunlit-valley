@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations$()$(li)Structure: Umbra Barrens Slime Spawners (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes Levitation effect when upset and teleports to nearby food."
+      "text": "$(l)Locations:$()$(li)Structure: Umbra Barrens Slime Spawners (Skull Cavern)$(br2)$(l)Risks:$()$(br)Causes Levitation effect when upset and teleports to nearby food."
     },
     {
       "type": "patchouli:entity",

@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text", 
-      "text": "$(l)Locations$()$(li)Biome: Umbra Barrens (Skull Cavern)$(br2)$(l)Risks:$()$(br)Flies and causes Hearthstone effect (teleports you to your spawn) when upset."
+      "text": "$(l)Locations:$()$(li)Biome: Umbra Barrens (Skull Cavern)$(br2)$(l)Risks:$()$(br)Flies and causes Hearthstone effect (teleports you to your spawn) when upset."
     },
     {
       "type": "patchouli:entity",
