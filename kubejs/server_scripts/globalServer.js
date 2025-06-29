@@ -390,11 +390,11 @@ global.handleFee = (server, player, reason) => {
 
 Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(
           amountToDeduct
-        )} :coin: out of your profits until the fee is paid off. Be careful next time!
+        )} ● out of your profits until the fee is paid off. Be careful next time!
 
 Debt: ${global.formatPrice(
           !currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount
-        )} :coin:
+        )} ●
 "],title:"Hospital Receipt"}`
       )
     );
@@ -409,7 +409,7 @@ Looks like you passed out again! We\'ve treated you for a small fee.
 
 We\'ve taken it out of your bank account for convenience. Be careful next time!
 
-:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
+● ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
       )
     );
   }

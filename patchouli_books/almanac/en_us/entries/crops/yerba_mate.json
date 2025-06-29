@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 6$(li)🌼 §2Spring§r 🔥 §6Summer§r 🍂 §4Autumn$(li)Yield: 1-4$(li)Grow time: 3 days$(li)Seeds itself$(br2)$(l)Notes$()$(br)Wild Yerba Mate can be found in mountainous biomes."
+      "text": "$(l)Stats$()$(li)● 6$(li)🌼 §2Spring§r 🔥 §6Summer§r 🍂 §4Autumn$(li)Yield: 1-4$(li)Grow time: 3 days$(li)Seeds itself$(br2)$(l)Notes$()$(br)Wild Yerba Mate can be found in mountainous biomes."
     },
     {
       "type": "patchouli:multiblock",

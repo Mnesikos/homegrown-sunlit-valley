@@ -472,7 +472,7 @@
 				"Each sellable item in the pack has one of four categories:"
 				""
 				"- :corn: &6Farmer&r - Raw crops and cooked meals"
-				"- :art: &6Artisan&r - Items made in Artisan Machines by hand, such as Preserves, Beer, Wine, Cheese, etc."
+				"- ✎ &6Artisan&r - Items made in Artisan Machines by hand, such as Preserves, Beer, Wine, Cheese, etc."
 				"- :gem: &6Geologist&r - Ores, gems, and minerals. Anything out of the ground."
 				"- :crossed_swords: &6Adventurer&r - Looted artifacts and other rare items."
 				""

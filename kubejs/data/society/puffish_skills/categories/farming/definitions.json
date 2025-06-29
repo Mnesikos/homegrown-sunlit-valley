@@ -128,7 +128,7 @@
   },
   "artisan": {
     "title": "Artisan",
-    "description": ":art: Artisan products worth 20% more.",
+    "description": "✎ Artisan products worth 20% more.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -210,7 +210,7 @@
   },
   "artful_tycoon": {
     "title": "Artful Tycoon",
-    "description": ":art: Artisan products worth 80% more.\n\n§cDoes not stack with previous skills.",
+    "description": "✎ Artisan products worth 80% more.\n\n§cDoes not stack with previous skills.",
     "frame": {
       "type": "advancement",
       "data": {

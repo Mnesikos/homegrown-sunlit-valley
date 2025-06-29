@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 2$(li)🌼 §2Spring§r 🍂 §4Autumn$(li)Seed Price: :coin: 8$(li)Yield: 1-2 on day 2, 2-3 on mature$(li)Grow time: 3 days total, 1 day after first$(li)Seeds itself"
+      "text": "$(l)Stats$()$(li)● 2$(li)🌼 §2Spring§r 🍂 §4Autumn$(li)Seed Price: ● 8$(li)Yield: 1-2 on day 2, 2-3 on mature$(li)Grow time: 3 days total, 1 day after first$(li)Seeds itself"
     },
     {
       "type": "patchouli:multiblock",

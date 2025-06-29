@@ -2482,7 +2482,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "createutilities-0.3.1+1.20.1.jar",
+                    "file_name": "createutilities-0.3.2+1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2490,16 +2490,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6293/834/createutilities-0.3.1+1.20.1.jar",
-                    "id": "6293834",
+                    "url": "https://edge.forgecdn.net/files/6701/786/createutilities-0.3.2+1.20.1.jar",
+                    "id": "6701786",
                     "parent_id": "881586",
                     "hashes": {
-                        "sha1": "5d66fc55ae8d53f1f60740cec5564a58e1ec85a1",
-                        "md5": "82eb21562c6f1ecd02c0694e307f4c7c"
+                        "sha1": "60eff24cdd0f167643e75f14062845c584245e80",
+                        "md5": "c2be7c7e4a7f232575a90bc2208181be"
                     },
                     "required_dependencies": [],
-                    "size": 358402,
-                    "date_published": "2025-03-11T21:22:14.530Z"
+                    "size": 358535,
+                    "date_published": "2025-06-27T16:30:05.400Z"
                 }
             ]
         },
@@ -2639,7 +2639,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_hypertube-0.1.5-FORGE.jar",
+                    "file_name": "create_hypertube-0.2.0-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2648,18 +2648,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6672/284/create_hypertube-0.1.5-FORGE.jar",
-                    "id": "6672284",
+                    "url": "https://edge.forgecdn.net/files/6703/211/create_hypertube-0.2.0-FORGE.jar",
+                    "id": "6703211",
                     "parent_id": "1281336",
                     "hashes": {
-                        "sha1": "6cc485bd13f4b28ab239a094153facf9976fbcd8",
-                        "md5": "95574f0d2d2571c28b82c431aae458d2"
+                        "sha1": "ccd17b87bca28756909ad8b1036ebf23a3c37340",
+                        "md5": "5766db9d81d95484b4d2ea3776ac0023"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 267387,
-                    "date_published": "2025-06-19T19:21:54.143Z"
+                    "size": 293222,
+                    "date_published": "2025-06-28T00:41:02.063Z"
                 }
             ]
         },
@@ -4525,26 +4525,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FarmersDelight-1.20.1-1.2.6.jar",
+                    "file_name": "FarmersDelight-1.20.1-1.2.8.jar",
                     "mc_versions": [
-                        "1.20.1",
-                        "1.20"
+                        "1.20.1"
                     ],
                     "loaders": [
                         "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5962/797/FarmersDelight-1.20.1-1.2.6.jar",
-                    "id": "5962797",
+                    "url": "https://edge.forgecdn.net/files/6597/298/FarmersDelight-1.20.1-1.2.8.jar",
+                    "id": "6597298",
                     "parent_id": "398521",
                     "hashes": {
-                        "sha1": "9534a0724ad9426fbfc795e4eeb814d7e8f76b25",
-                        "md5": "3bedf3198980957b909a2ce41557960d"
+                        "sha1": "a3402ee46cf12583416b8fbe84a97dd20ba1401a",
+                        "md5": "56aed09101bcbf0790154f8d8f09d9aa"
                     },
                     "required_dependencies": [],
-                    "size": 2944818,
-                    "date_published": "2024-12-04T18:10:25.977Z"
+                    "size": 2962947,
+                    "date_published": "2025-05-30T01:49:22.850Z"
                 }
             ]
         },
@@ -5958,16 +5957,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6134/582/jeed-1.20-2.2.5.jar",
-                    "id": "6134582",
+                    "url": "https://edge.forgecdn.net/files/6172/935/jeed-1.20-2.2.5.jar",
+                    "id": "6172935",
                     "parent_id": "532286",
                     "hashes": {
-                        "sha1": "02b057c1c2a75ea9922f421e5abd68315884a3e6",
-                        "md5": "86cb30a03c76c11ae28e03bcb570fa11"
+                        "sha1": "9f6b1884ad8b81c0e8796daf7871eeb54271f27b",
+                        "md5": "6792ef4a197457dcff0b4353e956a94d"
                     },
                     "required_dependencies": [],
-                    "size": 159137,
-                    "date_published": "2025-01-28T19:59:33.970Z"
+                    "size": 159288,
+                    "date_published": "2025-02-08T22:50:21.437Z"
                 }
             ]
         },
@@ -9513,7 +9512,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SnowRealMagic-1.20.1-Forge-10.6.0.jar",
+                    "file_name": "SnowRealMagic-1.20.1-Forge-10.6.2.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -9522,19 +9521,19 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6167/249/SnowRealMagic-1.20.1-Forge-10.6.0.jar",
-                    "id": "6167249",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6531/952/SnowRealMagic-1.20.1-Forge-10.6.2.jar",
+                    "id": "6531952",
                     "parent_id": "308663",
                     "hashes": {
-                        "sha1": "35ba46d68dd605f96afd505bf35d455c1536c4d7",
-                        "md5": "17b37bf273018cc100cf9f505392d1f5"
+                        "sha1": "e58a0d40553664520892b1879df51082659a3dc9",
+                        "md5": "8a80ff59dd78b2ddde62a549b53005ee"
                     },
                     "required_dependencies": [
                         "303657"
                     ],
-                    "size": 343961,
-                    "date_published": "2025-02-07T11:23:38.960Z"
+                    "size": 388668,
+                    "date_published": "2025-05-15T11:11:04.093Z"
                 }
             ]
         },

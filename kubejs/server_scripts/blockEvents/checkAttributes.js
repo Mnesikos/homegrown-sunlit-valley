@@ -39,9 +39,9 @@ BlockEvents.leftClicked(
       });
       if (binPlayer) {
         player.tell(`§6${binPlayer.username}'s§7 Shipping Bin`);
-        player.tell(":coin: §7Current sell multipliers:");
+        player.tell("● §7Current sell multipliers:");
         player.tell(`:corn: Farmer products: §ax${crop[0] ? crop[0].Base : 1}`);
-        player.tell(`:art: Artisan products: §ax${artisan[0] ? artisan[0].Base : 1}`);
+        player.tell(`✎ Artisan products: §ax${artisan[0] ? artisan[0].Base : 1}`);
         player.tell(`:gem: Geologist products: §ax${gem[0] ? gem[0].Base : 1}`);
         player.tell(
           `:crossed_swords: Adventurer products: §ax${adventurer[0] ? adventurer[0].Base : 1}`

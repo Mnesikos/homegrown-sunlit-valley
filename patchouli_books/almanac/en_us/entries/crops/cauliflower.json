@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 48$(li)🌼 §2Spring§r$(li)Seed Price: :coin: 6$(li)Yield: 2$(li)Grow time: 7 days"
+      "text": "$(l)Stats$()$(li)● 48$(li)🌼 §2Spring§r$(li)Seed Price: ● 6$(li)Yield: 2$(li)Grow time: 7 days"
     },
     {
       "type": "patchouli:multiblock",

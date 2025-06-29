@@ -50,7 +50,7 @@ ItemEvents.tooltip((tooltip) => {
       case "crop":
         return ":corn: Farmer product";
       case "wood":
-        return ":art: Artisan product";
+        return "✎ Artisan product";
       case "gem":
         return ":gem: Geologist product";
       case "meat":
@@ -74,12 +74,12 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} :coin:`),
+          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} ●`),
           Text.gray(" Stack value"),
         ]);
       } else {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, 1)} :coin:`),
+          Text.white(`${calculateCost(coin.split(":")[1], 1, 1)} ●`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -149,7 +149,7 @@ ItemEvents.tooltip((tooltip) => {
   ];
   artifactTooltips.forEach((artifact) => {
     tooltip.add(artifact.item, Text.darkPurple(artifact.tooltip));
-    tooltip.add(artifact.item, Text.gray(":funeral_urn: Artifact"));
+    tooltip.add(artifact.item, Text.gray("🪣 Artifact"));
   });
   [
     {
@@ -225,7 +225,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:architects_digest", Text.gray("Used to craft :house: §fModern§r furniture"));
   tooltip.add("society:tanuki_leaf", Text.gray("Used to craft :leaves: §aTanuki§r furniture"));
   tooltip.add(/fantasyfurniture/, Text.yellow(":crystal_ball: Fantasy collection"));
-  tooltip.add("society:fantasy_dust", Text.gray("Used to craft :leaves: §eFantasy§r furniture"));
+  tooltip.add("society:fantasy_dust", Text.gray("Used to craft :crystal_ball: §eFantasy§r furniture"));
   // Hammers
   tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
   tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
@@ -569,13 +569,13 @@ ItemEvents.tooltip((tooltip) => {
       }
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${formatNumber(value * item.count, quality)} :coin:`),
+          Text.white(`${formatNumber(value * item.count, quality)} ●`),
           Text.gray(" Stack value"),
         ]);
         text.add(2, [Text.gold(getAttributeStr(attribute))]);
       } else {
         text.add(1, [
-          Text.white(`${formatNumber(value, quality)} :coin:`),
+          Text.white(`${formatNumber(value, quality)} ●`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -595,13 +595,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
       text.add(2, [Text.gold(getAttributeStr("meat"))]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.white(`${formatNumber(price, 0)} ●`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),
@@ -620,13 +620,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} :coin:`),
+        Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
       text.add(2, [Text.gold(getAttributeStr("meat"))]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} :coin:`),
+        Text.white(`${formatNumber(price, 0)} ●`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),

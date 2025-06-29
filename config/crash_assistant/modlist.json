@@ -319,10 +319,10 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.3-for-create-6.0.6"
   },
-  "create_hypertube-0.1.5-FORGE.jar": {
-    "jarName": "create_hypertube-0.1.5-FORGE.jar",
+  "create_hypertube-0.2.0-FORGE.jar": {
+    "jarName": "create_hypertube-0.2.0-FORGE.jar",
     "modId": "create_hypertube",
-    "version": "0.1.5"
+    "version": "0.2.0"
   },
   "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar": {
     "jarName": "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar",
@@ -339,10 +339,10 @@
     "modId": "createrailwaysnavigator",
     "version": "1.20.1-beta-0.8.4-C6"
   },
-  "createutilities-0.3.1+1.20.1.jar": {
-    "jarName": "createutilities-0.3.1+1.20.1.jar",
+  "createutilities-0.3.2+1.20.1.jar": {
+    "jarName": "createutilities-0.3.2+1.20.1.jar",
     "modId": "createutilities",
-    "version": "0.3.1+1.20.1"
+    "version": "0.3.2+1.20.1"
   },
   "CreativeCore_FORGE_v2.12.28_mc1.20.1.jar": {
     "jarName": "CreativeCore_FORGE_v2.12.28_mc1.20.1.jar",
@@ -534,10 +534,10 @@
     "modId": "fantasyfurniture",
     "version": "9.0.0"
   },
-  "FarmersDelight-1.20.1-1.2.6.jar": {
-    "jarName": "FarmersDelight-1.20.1-1.2.6.jar",
+  "FarmersDelight-1.20.1-1.2.8.jar": {
+    "jarName": "FarmersDelight-1.20.1-1.2.8.jar",
     "modId": "farmersdelight",
-    "version": "1.20.1-1.2.6"
+    "version": "1.20.1-1.2.8"
   },
   "farmingforblockheads-forge-1.20.1-14.0.2.jar": {
     "jarName": "farmingforblockheads-forge-1.20.1-14.0.2.jar",
@@ -663,6 +663,11 @@
     "jarName": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
     "modId": "glitchcore",
     "version": "0.0.1.1"
+  },
+  "grieflogger-1.2.3-1.20.1-forge.jar": {
+    "jarName": "grieflogger-1.2.3-1.20.1-forge.jar",
+    "modId": "grieflogger",
+    "version": "1.2.3-1.20.1"
   },
   "guiclock-1.20.1-4.6.jar": {
     "jarName": "guiclock-1.20.1-4.6.jar",
@@ -1267,10 +1272,10 @@
     "modId": "snowpig",
     "version": "1.20.1-6.0.3"
   },
-  "SnowRealMagic-1.20.1-Forge-10.6.0.jar": {
-    "jarName": "SnowRealMagic-1.20.1-Forge-10.6.0.jar",
+  "SnowRealMagic-1.20.1-Forge-10.6.2.jar": {
+    "jarName": "SnowRealMagic-1.20.1-Forge-10.6.2.jar",
     "modId": "snowrealmagic",
-    "version": "10.6.0"
+    "version": "10.6.2"
   },
   "snowyspirit-1.20-3.0.10.jar": {
     "jarName": "snowyspirit-1.20-3.0.10.jar",

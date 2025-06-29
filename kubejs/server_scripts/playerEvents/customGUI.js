@@ -51,10 +51,10 @@ const bankMeterPainter = (curios, player) => {
     player.paint({
       coinDisplayDropShadow: {
         type: "text",
-        x: 16.5 + xOffset,
+        x: 1+ xOffset,
         z: -1,
         y: 19,
-        text: balanceText,
+        text: `● ${balanceText}`,
         color: "#000000",
         alignX: "left",
         alignY: "top",
@@ -63,10 +63,10 @@ const bankMeterPainter = (curios, player) => {
     player.paint({
       coinDisplay: {
         type: "text",
-        x: 1.5 + xOffset,
+        x: xOffset,
         y: 18,
-        text: `:coin: ${balanceText}`,
-        color: "#FFAA00",
+        text: `● §6${balanceText}`,
+        color: "#FFFFFF",
         alignX: "left",
         alignY: "top",
       },

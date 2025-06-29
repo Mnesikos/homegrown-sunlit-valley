@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 4$(li)🍂 §4Autumn§r$(li)Yield: 2 (per bush half)$(li)Growth Stages: 3$(li)Seeds itself$(br2)$(l)Notes$()$(br)Found in rarely in Maple Forest biomes"
+      "text": "$(l)Stats$()$(li)● 4$(li)🍂 §4Autumn§r$(li)Yield: 2 (per bush half)$(li)Growth Stages: 3$(li)Seeds itself$(br2)$(l)Notes$()$(br)Found in rarely in Maple Forest biomes"
     },
     {
       "type": "patchouli:multiblock",

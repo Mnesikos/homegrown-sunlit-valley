@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Causes Bad Omen effect when upset and drains 512 :coin: from nearby players' bank accounts at a time. Extremely volatile moods."
+      "text": "$(l)Locations:$()$(li)Heart fusion$(br2)$(l)Risks:$()$(br)Causes Bad Omen effect when upset and drains 512 ● from nearby players' bank accounts at a time. Extremely volatile moods."
     },
     {
       "type": "patchouli:entity",

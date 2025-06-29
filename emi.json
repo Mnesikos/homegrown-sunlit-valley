@@ -84,9 +84,20 @@
     }
   ],
   "lookup_history": [
+    "item:society:truffle",
+    "item:minecraft:white_concrete",
+    "item:minecraft:white_concrete_powder",
+    "item:supplementaries:present_white",
+    "item:clayworks:concrete_powder",
+    "item:minecraft:gravel",
+    "item:minecraft:light_gray_concrete",
+    "item:minecraft:sand",
+    "item:species:wicked_swapper",
+    "item:numismatics:sun",
+    "item:quark:hollow_oak_log",
+    "item:numismatics:neptunium_coin",
     "item:society:lantern_gnome",
     "item:species:wicked_mask{}",
-    "item:species:wicked_swapper",
     "item:species:wicked_wax",
     "item:gag:sacred_salve",
     "item:gag:sacred_balm",
@@ -146,7 +157,6 @@
     "item:botania:narslimmus",
     "item:botania:kekimurus",
     "item:quark:flamerang{Damage:0}",
-    "item:society:truffle",
     "item:vinery:wine_bottle",
     "item:society:milk_pail",
     "item:society:yard_work_yearly",
@@ -214,12 +224,6 @@
     "item:wildernature:fur_cloak{Damage:0}",
     "item:numismatics:prismatic_coin",
     "item:numismatics:ancient_coin",
-    "item:numismatics:neptunium_coin",
-    {
-      "type": "item",
-      "id": "numismatics:sun",
-      "amount": 8
-    },
     "item:create:package_frogport",
     "item:create:repackager",
     "item:atmospheric:golden_dragon_fruit",
@@ -566,7 +570,6 @@
     "item:pamhc2trees:lemonitem",
     "item:beautify:botanist_workbench",
     "item:tanukidecor:diy_workbench",
-    "item:quark:hollow_oak_log",
     "item:farm_and_charm:fertilized_soil",
     "item:society:sparkstone",
     "item:quark:pickarang{Damage:0}",
@@ -1226,10 +1229,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/golden_chestplate",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
