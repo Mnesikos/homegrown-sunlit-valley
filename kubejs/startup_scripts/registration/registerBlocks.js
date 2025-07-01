@@ -660,7 +660,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .model("society:block/tanuki_catalog")
-    .displayName(":leaves: §aTanuki Catalog");
+    .displayName("♤ §aTanuki Catalog");
 
   e.create("society:modern_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)
@@ -668,7 +668,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .model("society:block/modern_catalog")
-    .displayName(":house: Modern Catalog");
+    .displayName("♧ Modern Catalog");
 
   e.create("society:fantasy_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)

@@ -24,13 +24,13 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:tanuki_leaf")
     .texture("society:item/tanuki_leaf")
-    .displayName(Text.green(":leaves: Tanuki Leaf"));
+    .displayName(Text.green("♤ Tanuki Leaf"));
   e.create("society:architects_digest")
     .texture("society:item/architects_digest")
-    .displayName(":house: Architect's Digest");
+    .displayName("♧ Architect's Digest");
   e.create("society:fantasy_dust")
     .texture("society:item/fantasy_dust")
-    .displayName(Text.yellow(":crystal_ball: Fantasy Dust"));
+    .displayName(Text.yellow("♡ Fantasy Dust"));
   e.create("society:stone_hand").texture("society:item/stone_hand");
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut").texture("society:item/sea_biscut").displayName("Sea Biscuit");

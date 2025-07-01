@@ -67,10 +67,15 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     p: "society:pine_tar",
   });
-  e.shaped("meadow:cheese_form", [" C ", "pcp", " e "], {
-    c: "meadow:cheese_rack",
-    C: "numismatics:crown",
+  e.shaped("society:cheese_press", [" p ", "fef", "fff"], {
+    f: "meadow:fire_log",
     e: "society:earth_crystal",
+    p: "society:pine_tar",
+  });
+  e.shaped("meadow:cheese_form", [" C ", "pcp", " b "], {
+    c: "society:cheese_press",
+    C: "numismatics:sun",
+    b: "society:battery",
     p: "society:pine_tar",
   });
   e.shaped("brewery:wooden_brewingstation", ["eee", "lll", "fcc"], {

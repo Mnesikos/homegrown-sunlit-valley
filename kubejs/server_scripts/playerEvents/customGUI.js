@@ -125,7 +125,7 @@ const fishRadarPainter = (curios, e) => {
         x: level.dimension == "minecraft:the_nether" ? -40 : 8,
         y: fishRadarStart + 8 + fishRadarPadding,
         text: localConditions,
-        color: "#FFAA00",
+        color: "#FFFFFFF",
         alignX: "left",
         alignY: "top",
       },

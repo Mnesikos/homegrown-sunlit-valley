@@ -194,6 +194,7 @@ BlockEvents.rightClicked(
     "society:seed_maker",
     "society:tapper",
     "society:recycling_machine",
+    "society:cheese_press",
   ],
   (e) => {
     const { block, hand } = e;
@@ -201,6 +202,7 @@ BlockEvents.rightClicked(
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];
+    console.log(machine);
     if (block.properties.get("mature").toLowerCase() === "false") {
       sendProgressMessage(
         e,

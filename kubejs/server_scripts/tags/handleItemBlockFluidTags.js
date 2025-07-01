@@ -361,118 +361,15 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-  // Geodes
-  const geodeJunk = [
-    "minecraft:granite",
-    "minecraft:diorite",
-    "minecraft:andesite",
-    "minecraft:clay_ball",
-    "aquaculture:tin_can",
-  ];
-  geodeJunk.forEach((geodeItem) => {
-    e.add("society:geode_junk", geodeItem);
-  });
-  const geodeBonus = ["minecraft:raw_iron", "minecraft:raw_copper", "minecraft:coal"];
-  geodeBonus.forEach((geodeItem) => {
-    e.add("society:geode_bonus", geodeItem);
-  });
-  global.geodeList.forEach((geodeItem) => {
-    e.add("society:geode_treasure", geodeItem.item);
-    e.add("society:omni_geode_treasure", geodeItem.item);
-  });
+  
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
   e.add("aquaculture:bobber", "society:neptunium_bobber");
-  const geodeRelic = ["relics:horse_flute", "relics:hunter_belt"];
-  geodeRelic.forEach((geodeItem) => {
-    e.add("society:geode_relic", geodeItem);
-  });
-  // Frozen Geode
-  const frozenGeodeBonus = [
-    "minecraft:raw_iron",
-    "minecraft:raw_copper",
-    "minecraft:ice",
-    "minecraft:raw_zinc",
-    "minecraft:coal",
-  ];
-  frozenGeodeBonus.forEach((geodeItem) => {
-    e.add("society:frozen_geode_bonus", geodeItem);
-  });
-  global.frozenGeodeList.forEach((geodeItem) => {
-    e.add("society:frozen_geode_treasure", geodeItem.item);
-    e.add("society:omni_geode_treasure", geodeItem.item);
-  });
-  const frozenGeodeRelic = ["relics:wool_mitten", "relics:ice_skates"];
-  frozenGeodeRelic.forEach((geodeItem) => {
-    e.add("society:frozen_geode_relic", geodeItem);
-  });
-  // Magma Geode
-  const magmaGeodeBonus = [
-    "minecraft:raw_iron",
-    "minecraft:raw_copper",
-    "minecraft:raw_gold",
-    "minecraft:raw_zinc",
-    "minecraft:clay_ball",
-    "minecraft:coal",
-  ];
-  magmaGeodeBonus.forEach((geodeItem) => {
-    e.add("society:magma_geode_bonus", geodeItem);
-  });
-  global.magmaGeodeList.forEach((geodeItem) => {
-    e.add("society:magma_geode_treasure", geodeItem.item);
-    e.add("society:omni_geode_treasure", geodeItem.item);
-  });
-  const magmaGeodeRelic = ["relics:bastion_ring", "relics:magma_walker"];
-  magmaGeodeRelic.forEach((geodeItem) => {
-    e.add("society:magma_geode_relic", geodeItem);
-  });
-  // Omni Geode
-  const omniGeodeBonus = [
-    "minecraft:raw_iron",
-    "minecraft:raw_gold",
-    "minecraft:raw_zinc",
-    "minecraft:netherite_scrap",
-  ];
-  omniGeodeBonus.forEach((geodeItem) => {
-    e.add("society:omni_geode_bonus", geodeItem);
-  });
-  e.add("society:omni_geode_special", "society:prismatic_shard");
 
   global.cooking.forEach((meal) => {
     e.add("society:dish", meal.item);
   });
-  // Relics
-  const relics = [
-    "relics:aqua_walker",
-    "relics:amphibian_boot",
-    "relics:arrow_quiver",
-    "relics:bastion_ring",
-    "relics:rage_glove",
-    "relics:chorus_inhibitor",
-    "relics:drowned_belt",
-    "relics:elytra_booster",
-    "relics:enders_hand",
-    "relics:holy_locket",
-    "relics:horse_flute",
-    "relics:hunter_belt",
-    "relics:ice_breaker",
-    "relics:ice_skates",
-    "relics:infinity_ham",
-    "relics:jellyfish_necklace",
-    "relics:leather_belt",
-    "relics:magma_walker",
-    "relics:midnight_robe",
-    "relics:reflection_necklace",
-    "relics:roller_skates",
-    "relics:shadow_glaive",
-    "relics:space_dissector",
-    "relics:spatial_sign",
-    "relics:spore_sack",
-    "relics:wool_mitten",
-    "relics:blazing_flask",
-  ];
-  relics.forEach((relic) => e.add("society:relics", relic));
 
   Color.DYE.forEach((color) => {
     e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
@@ -481,10 +378,6 @@ ServerEvents.tags("item", (e) => {
   ["aquaculture:jellyfish", "aquaculture:goldfish", "aquaculture:leech", "society:neptuna"].forEach(
     (fish) => e.add("minecraft:fishes", fish)
   );
-  // Artifacts
-  global.artifacts.forEach((artifact) => {
-    e.add("society:artifacts", artifact.item);
-  });
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
     if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);

@@ -146,13 +146,11 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   const biomeTags = level.getBiome(player.pos).tags().toList().toString();
   const isDay = level.getDayTime() % 24000 < 12999;
   let weather = level.raining
-    ? `:cloud: ${extraOutput ? "§9Rain§r" : ""}`
-    : `:sunny:${extraOutput ? "§eClear§r" : ""}`;
-  let time = isDay
-    ? `:sunrise: ${extraOutput ? "§6Day§r" : ""}`
-    : `:moon: ${extraOutput ? "§8Night§r" : ""}`;
+    ? `☔ ${extraOutput ? "§9Rain§r" : ""}`
+    : `☂ ${extraOutput ? "§eClear§r" : ""}`;
+  let time = isDay ? `☀ ${extraOutput ? "§6Day§r" : ""}` : `⛈ ${extraOutput ? "§8Night§r" : ""}`;
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
-    printFunction(`    :ocean: ${extraOutput ? "§3Ocean§r" : ""}${weather} ${time}`);
+    printFunction(`   🌊 ${extraOutput ? "§3Ocean§r" : ""} ${weather} ${time}`);
     switch (season) {
       case "spring":
         global.springOcean.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -168,7 +166,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(`    :droplet: ${extraOutput ? "§9River§r" : ""}${weather} ${time}`);
+    printFunction(`   🌧 ${extraOutput ? "§9River§r" : ""} ${weather} ${time}`);
     switch (season) {
       case "spring":
         global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -184,7 +182,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else {
-    printFunction(`:bubbles: ${extraOutput ? "§bFresh§r" : ""}${weather} ${time}`);
+    printFunction(`   :bubbles: ${extraOutput ? "§bFresh§r" : ""} ${weather} ${time}`);
     switch (season) {
       case "spring":
         global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));
@@ -243,6 +241,13 @@ global.artisanMachineDefinitions = [
     recipes: global.loomRecipes,
     stageCount: 1,
     maxInput: 5,
+    upgrade: "society:tiny_gnome",
+  },
+  {
+    id: "society:cheese_press",
+    recipes: global.cheesePressRecipes,
+    stageCount: 2,
+    maxInput: 1,
     upgrade: "society:tiny_gnome",
   },
   {
@@ -390,11 +395,11 @@ global.handleFee = (server, player, reason) => {
 
 Looks like you passed out again! You didn\'t have enough in your bank account to cover the fee, so we\'ll take ${global.formatPrice(
           amountToDeduct
-        )} ● out of your profits until the fee is paid off. Be careful next time!
+        )} :coin: out of your profits until the fee is paid off. Be careful next time!
 
 Debt: ${global.formatPrice(
           !currentDebt ? amountToDeduct : server.persistentData.debts[foundIndex].amount
-        )} ●
+        )} :coin:
 "],title:"Hospital Receipt"}`
       )
     );
@@ -409,7 +414,7 @@ Looks like you passed out again! We\'ve treated you for a small fee.
 
 We\'ve taken it out of your bank account for convenience. Be careful next time!
 
-● ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
+:COIN: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
       )
     );
   }

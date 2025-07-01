@@ -471,10 +471,10 @@
 			description: [
 				"Each sellable item in the pack has one of four categories:"
 				""
-				"- :corn: &6Farmer&r - Raw crops and cooked meals"
+				"- 🔱 &6Farmer&r - Raw crops and cooked meals"
 				"- ✎ &6Artisan&r - Items made in Artisan Machines by hand, such as Preserves, Beer, Wine, Cheese, etc."
-				"- :gem: &6Geologist&r - Ores, gems, and minerals. Anything out of the ground."
-				"- :crossed_swords: &6Adventurer&r - Looted artifacts and other rare items."
+				"- 🎣 &6Geologist&r - Ores, gems, and minerals. Anything out of the ground."
+				"- 🗡 &6Adventurer&r - Looted artifacts and other rare items."
 				""
 				"The category is only relevant when it comes to skills, which may increase certain categories if taken."
 			]
@@ -829,11 +829,7 @@
 		{
 			dependencies: ["5B5A764F0E02E5FF"]
 			description: [
-				"Milk can be pressed into cheese using an aptly named &6Cheese Press&r."
-				""
-				"You'll also need a little &6Rennet&r, made from Eggs and Salt."
-				""
-				"&6Salt&r can be mined in Meadow biomes or bought from a &6Farmer&r villager."
+				"Milk can be pressed into cheese using an &6Artisan Cheese Press&r."
 				""
 				"&oYou'll want to take a look at the farming quest line for information on how to get the ingredients for one.&r"
 			]

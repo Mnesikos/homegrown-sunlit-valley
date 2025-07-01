@@ -48,13 +48,13 @@ ItemEvents.tooltip((tooltip) => {
   const getAttributeStr = (attribute) => {
     switch (attribute) {
       case "crop":
-        return ":corn: Farmer product";
+        return "🔱 §6Farmer product";
       case "wood":
-        return "✎ Artisan product";
+        return "✎ §6Artisan product";
       case "gem":
-        return ":gem: Geologist product";
+        return "🎣 §6Geologist product";
       case "meat":
-        return ":crossed_swords: Adventurer product";
+        return "🗡 §6Adventurer product";
       default:
         console.log(`Invalid attribute`);
     }
@@ -215,17 +215,17 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Shift + Right click to bulk purchase"),
   ]);
   global.lootFurniture.forEach((item) => {
-    tooltip.add(item, Text.gold(":chair: Rare furniture drop"));
+    tooltip.add(item, "♢ §6Rare furniture drop");
     if (!item.includes("tanuki")) {
-      tooltip.add(item, Text.white(":house: Modern collection"));
+      tooltip.add(item, Text.white("♧ Modern collection"));
     } else {
-      tooltip.add(item, Text.green(":leaves: Tanuki collection"));
+      tooltip.add(item, "♤ §aTanuki collection");
     }
   });
-  tooltip.add("society:architects_digest", Text.gray("Used to craft :house: §fModern§r furniture"));
-  tooltip.add("society:tanuki_leaf", Text.gray("Used to craft :leaves: §aTanuki§r furniture"));
-  tooltip.add(/fantasyfurniture/, Text.yellow(":crystal_ball: Fantasy collection"));
-  tooltip.add("society:fantasy_dust", Text.gray("Used to craft :crystal_ball: §eFantasy§r furniture"));
+  tooltip.add("society:architects_digest", Text.gray("Used to craft ♧ §fModern§r furniture"));
+  tooltip.add("society:tanuki_leaf", Text.gray("Used to craft ♤ §aTanuki§r furniture"));
+  tooltip.add(/fantasyfurniture/, "♡ §eFantasy collection");
+  tooltip.add("society:fantasy_dust", Text.gray("Used to craft ♡ §eFantasy§r furniture"));
   // Hammers
   tooltip.add("justhammers:small_core", Text.gray("Crafts hammers that mine a 3x3x1 area"));
   tooltip.add("justhammers:impact_core", Text.gray("Crafts hammers that mine a 3x3x3 area"));
@@ -454,16 +454,13 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
   tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
-  tooltip.add(
-    "botania:apothecary_default",
-    Text.gold(":classical_building: Abandoned Farm reward")
-  );
+  tooltip.add("botania:apothecary_default", "🏹 §6Abandoned Farm reward");
   "society:kinetic_blueprint",
     Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");
   tooltip.add("society:kinetic_blueprint", Text.green("Not consumed in crafting"));
-  tooltip.add("society:kinetic_blueprint", Text.gold(":classical_building: Boiler Room reward"));
-  tooltip.add("society:skull_cavern_teleporter", Text.gold(":classical_building: Vault reward"));
-  tooltip.add("relics:magic_mirror", Text.gold(":classical_building: Crafts Room reward"));
+  tooltip.add("society:kinetic_blueprint", "🏹 §6Boiler Room reward");
+  tooltip.add("society:skull_cavern_teleporter", "🏹 §6Vault reward");
+  tooltip.add("relics:magic_mirror", "🏹 §6Crafts Room reward");
   tooltip.add(
     "moreminecarts:chiseled_organic_glass",
     Text.gray("Crops underneath grow in any season")
@@ -486,7 +483,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "moreminecarts:chunk_loader",
-    Text.green("Loads a 3x3 chunk area using Chunkroderite and other items")
+    Text.green("Loads a 5x5 chunk area using Chunkroderite and other items")
   );
   tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
@@ -536,7 +533,7 @@ ItemEvents.tooltip((tooltip) => {
       "etcetera:eggple",
       "etcetera:golden_eggple",
     ],
-    Text.gold(":ticket: Prize Machine reward")
+    "🍖 §6Prize Machine reward"
   );
   const workstation = [
     { villager: "Bard", block: "minecraft:note_block" },
@@ -572,7 +569,7 @@ ItemEvents.tooltip((tooltip) => {
           Text.white(`${formatNumber(value * item.count, quality)} ●`),
           Text.gray(" Stack value"),
         ]);
-        text.add(2, [Text.gold(getAttributeStr(attribute))]);
+        text.add(2, [getAttributeStr(attribute)]);
       } else {
         text.add(1, [
           Text.white(`${formatNumber(value, quality)} ●`),
@@ -598,7 +595,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+      text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
         Text.white(`${formatNumber(price, 0)} ●`),
@@ -623,7 +620,7 @@ ItemEvents.tooltip((tooltip) => {
         Text.white(`${formatNumber(price * item.count, 0)} ●`),
         Text.gray(" Stack value"),
       ]);
-      text.add(2, [Text.gold(getAttributeStr("meat"))]);
+      text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
         Text.white(`${formatNumber(price, 0)} ●`),
@@ -646,7 +643,7 @@ ItemEvents.tooltip((tooltip) => {
   global.geodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:froggy_helm") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -654,7 +651,7 @@ ItemEvents.tooltip((tooltip) => {
   global.frozenGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_drum") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -662,7 +659,7 @@ ItemEvents.tooltip((tooltip) => {
   global.magmaGeodeList.forEach((geodeItem) => {
     if (geodeItem.item !== "society:ribbit_gadget") {
       addPriceTooltip(geodeItem, "gem");
-      tooltip.add(geodeItem.item, Text.gray(":rock: Mineral"));
+      tooltip.add(geodeItem.item, "🪓 §7Mineral");
     } else {
       addPriceTooltip(geodeItem, "meat");
     }
@@ -670,7 +667,7 @@ ItemEvents.tooltip((tooltip) => {
   // Gem
   global.gems.forEach((gem) => {
     addPriceTooltip(gem, "gem");
-    tooltip.add(gem.item, Text.gray(":gem: Gem"));
+    tooltip.add(gem.item, "🎣 §7Gem");
   });
   [
     "society:sparkstone",
@@ -681,7 +678,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:prismatic_shard",
     "minecraft:prismarine_crystals",
   ].forEach((gem) => {
-    tooltip.add(gem, Text.gray(":gem: Gem"));
+    tooltip.add(gem, "🎣 §7Gem");
   });
   global.miscGeologist.forEach((gem) => {
     addPriceTooltip(gem, "gem");
@@ -866,6 +863,25 @@ ItemEvents.tooltip((tooltip) => {
       "society:dewy_star",
     ],
     Text.red("Not placeable in Wine Racks")
+  );
+  tooltip.add(
+    [
+      "fantasyfurniture:nordic/bed_single",
+      "fantasyfurniture:nordic/bed_double",
+      "fantasyfurniture:dunmer/bed_single",
+      "fantasyfurniture:dunmer/bed_double",
+      "fantasyfurniture:venthyr/bed_single",
+      "fantasyfurniture:venthyr/bed_double",
+      "fantasyfurniture:bone/skeleton/bed_single",
+      "fantasyfurniture:bone/skeleton/bed_double",
+      "fantasyfurniture:bone/wither/bed_single",
+      "fantasyfurniture:bone/wither/bed_double",
+      "fantasyfurniture:royal/bed_single",
+      "fantasyfurniture:royal/bed_double",
+      "fantasyfurniture:necrolord/bed_single",
+      "fantasyfurniture:necrolord/bed_double",
+    ],
+    Text.red("Does not work with Magic Mirror!")
   );
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));

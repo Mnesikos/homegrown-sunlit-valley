@@ -155,7 +155,7 @@ StartupEvents.registry("block", (event) => {
 
 ${binPlayer.username}, your profits were used to pay off your debt!
 
-● ${global.formatPrice(debtPaid)} paid out of your ● ${global.formatPrice(
+:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
                             totalDebt
                           )} debt."],title:"Debt Payment Receipt"}`
                         ),

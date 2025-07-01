@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li)● 4$(li)🌐 §5Year-round$(br2)$(l)Notes$()$(br)Grapes can be found in specific Biomes depending on the name. They can be grown on grass or the top half of Grapevine Stems for a boost."
+      "text": "$(l)Stats$()$(li):coin: 4$(li)🌐 §5Year-round$(br2)$(l)Notes$()$(br)Grapes can be found in specific Biomes depending on the name. They can be grown on grass or the top half of Grapevine Stems for a boost."
     },
     {
       "type": "patchouli:multiblock",

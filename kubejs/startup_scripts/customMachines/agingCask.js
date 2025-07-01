@@ -204,7 +204,6 @@ StartupEvents.registry("block", (event) => {
             mature: block.properties.get("mature"),
             upgraded: true,
             stage: block.properties.get("stage"),
-            duration: block.properties.get("duration"),
           });
         } else if (!upgraded && item == "society:broken_clock") {
           player.tell(Text.red(`This can only be upgraded when not in use`));
