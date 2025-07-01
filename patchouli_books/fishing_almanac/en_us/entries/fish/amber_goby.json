@@ -1,0 +1,18 @@
+{
+  "name": "Amber Goby",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_amber_goby",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 288$(li)Season: Autumn$(li)Water: Fresh$(li)Weather: Clear$(li)Time: Night Only$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:amber_goby",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Amber Goby glows like a sunken ember, flickering on the seafloor."
+    }
+  ]
+}

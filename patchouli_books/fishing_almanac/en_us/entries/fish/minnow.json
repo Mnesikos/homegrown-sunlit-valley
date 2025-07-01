@@ -1,0 +1,18 @@
+{
+  "name": "Minnow",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:minnow",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 16$(li)Season: Year-Round$(li)Water: Fresh/River$(li)Weather: Any$(li)Time: Day Only$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:minnow",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A tiny, darting fish that travels in schools and feeds the food chain."
+    }
+  ]
+}

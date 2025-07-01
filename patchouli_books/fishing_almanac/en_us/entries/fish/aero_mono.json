@@ -1,0 +1,18 @@
+{
+  "name": "Aero Mono",
+  "category": "patchouli:fish",
+  "icon": "unusualfishmod:raw_aero_mono",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 128$(li)Season: Winter$(li)Water: Fresh$(li)Weather: Any$(li)Time: Day Only$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "unusualfishmod:aero_mono",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "Aero Mono cuts through water like a blade through air, sleek and swift."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Perch",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:perch",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li)Price: :coin: 16$(li)Season: Spring/Autumn/Winter$(li)Water: Fresh$(li)Weather: Any$(li)Time: Spring/Autumn Day, Winter Night$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:perch",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A striped freshwater favorite, known for its quick bites and bold colors."
+    }
+  ]
+}
