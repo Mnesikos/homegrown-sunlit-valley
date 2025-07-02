@@ -136,6 +136,8 @@ StartupEvents.registry("block", (event) => {
       const { player, item, block, hand, level } = click;
       const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
       const facing = block.properties.get("facing");
+      const type = global.dehydratorRecipes[block.properties.get("type")];
+      const isMushroom = global.dehydratableMushrooms.includes(type);
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
@@ -178,7 +180,9 @@ StartupEvents.registry("block", (event) => {
         click,
         global.dehydratorRecipes,
         8,
-        true
+        true,
+        false,
+        upgraded && isMushroom ? 2 : 1
       );
     })
     .blockEntity((blockInfo) => {
