@@ -1,0 +1,18 @@
+{
+  "name": "Goldfish",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:goldfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 240$(li)\uD83D\uDD25 §6Summer§0$(li)Water: Ocean$(li)Weather: Clear$(li)Time: Day$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:starshell_turtle",
+      "scale": 0,
+      "rotate": true,
+      "text": "A tiny burst of shimmer, darting through sunlit shallows."
+    }
+  ]
+}
