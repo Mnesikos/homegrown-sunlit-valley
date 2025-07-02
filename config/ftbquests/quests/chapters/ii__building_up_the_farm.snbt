@@ -834,6 +834,11 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest28.description2}"
 			]
 			id: "75181B22DAF5E9A6"
+			rewards: [{
+				id: "5BC6F281781D8AF3"
+				item: "society:large_milk"
+				type: "item"
+			}]
 			tasks: [{
 				id: "10B6EDC1EF4BD4DE"
 				item: "society:cheese_press"

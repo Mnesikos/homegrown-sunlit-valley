@@ -32,11 +32,12 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/fantasy_dust")
     .displayName(Text.yellow("♡ Fantasy Dust"));
   e.create("society:stone_hand").texture("society:item/stone_hand");
+  e.create("society:ancient_cog").texture("society:item/ancient_cog");
+  e.create("society:pink_matter").texture("society:item/pink_matter");
   e.create("society:broken_clock").texture("society:item/broken_clock");
   e.create("society:sea_biscut").texture("society:item/sea_biscut").displayName("Sea Biscuit");
   e.create("society:black_opal").texture("society:item/black_opal");
   e.create("society:tiny_gnome").texture("society:item/tiny_gnome");
-  e.create("society:ancient_cog").texture("society:item/ancient_cog");
   e.create("society:ancient_roe").texture("society:item/aged_roe");
   e.create("society:infinity_worm").texture("society:item/infinity_worm");
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
@@ -289,7 +290,7 @@ StartupEvents.registry("item", (e) => {
     "large_goose_egg",
     "large_turkey_egg",
     "large_galliraptor_egg",
-    "candied_animal_feed"
+    "candied_animal_feed",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });
@@ -351,12 +352,12 @@ StartupEvents.registry("item", (e) => {
   [
     "milk",
     "large_milk",
-    "goat_milk",
+    "sheep_milk",
     "large_sheep_milk",
     "buffalo_milk",
     "large_buffalo_milk",
+    "goat_milk",
     "large_goat_milk",
-    "sheep_milk",
     "warped_milk",
     "large_warped_milk",
     "tri_bull_milk",

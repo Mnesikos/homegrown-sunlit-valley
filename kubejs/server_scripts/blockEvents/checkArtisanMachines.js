@@ -202,7 +202,6 @@ BlockEvents.rightClicked(
     const machine = global.artisanMachineDefinitions.filter((obj) => {
       return obj.id === block.id;
     })[0];
-    console.log(machine);
     if (block.properties.get("mature").toLowerCase() === "false") {
       sendProgressMessage(
         e,

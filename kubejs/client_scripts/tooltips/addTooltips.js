@@ -232,42 +232,48 @@ ItemEvents.tooltip((tooltip) => {
   // Upgrades:
   tooltip.add(
     "society:ancient_cog",
-    Text.green("Use on §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed")
+    Text.green("Use on a §2Seed Maker§a to give it a 5% chance of producing an Ancient Fruit Seed")
+  );
+  tooltip.add(
+    "society:pink_matter",
+    Text.green(
+      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels"
+    )
   );
   tooltip.add(
     "society:stone_hand",
-    Text.green("Use on §2Preserves Jar§a to decrease input amount by 2")
+    Text.green("Use on a §2Preserves Jar§a to decrease input amount by 2")
   );
   tooltip.add(
     "society:broken_clock",
-    Text.green("Use on §2Aging Cask§a to decrease aging time by half")
+    Text.green("Use on an §2Aging Cask§a to decrease aging time by half")
   );
   tooltip.add(
     "society:sea_biscut",
-    Text.green("Use on §2Fish Pond§a to double chance of non-Roe items")
+    Text.green("Use on a §2Fish Pond§a to double chance of non-Roe items")
   );
   tooltip.add(
     "society:black_opal",
-    Text.green("Use on §2Crystalarium§a to give it a 10% chance of producing pristine items")
+    Text.green("Use on a §2Crystalarium§a to give it a 10% chance of producing pristine items")
   );
   tooltip.add(
     "society:tiny_gnome",
-    Text.green("Use on §2Loom§a to give it a 25% chance of producing rare furniture")
+    Text.green("Use on a §2Loom§a to give it a 25% chance of producing rare furniture")
   );
-  tooltip.add("society:ancient_roe", Text.green("Use on §2Fish Smoker§a to double output"));
+  tooltip.add("society:ancient_roe", Text.green("Use on a §2Fish Smoker§a to double output"));
   tooltip.add(
     "society:frosted_tip",
-    Text.green("Use on §2Charging Rod§a to work and triple output in winter")
+    Text.green("Use on a §2Charging Rod§a to work and triple output in winter")
   );
   tooltip.add(
     "society:infinity_worm",
-    Text.green("Use on §2Deluxe Worm Farm§a to let it work without inputs")
+    Text.green("Use on a §2Deluxe Worm Farm§a to let it work without inputs")
   );
   tooltip.add(
     "society:inserter",
-    Text.green("Use on §2Ancient Cask§a to let it process 4 items at a time")
+    Text.green("Use on an §2Ancient Cask§a to let it process 4 items at a time")
   );
-  tooltip.add("society:cordycep", Text.green("Use on §2Dehydrator§a to double mushroom output"));
+  tooltip.add("society:cordycep", Text.green("Use on a §2Dehydrator§a to double mushroom output"));
   tooltip.add(
     ["vintagedelight:gearo_berry", "minecraft:sweet_berries"],
     Text.gray("Will only grow when planted on farmland")
@@ -385,6 +391,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:seed_maker",
       "society:tapper",
       "society:recycling_machine",
+      "society:cheese_press",
     ],
     Text.gold(":gear: Artisan Machine")
   );
@@ -439,10 +446,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Displays certain Farmer's Delight foods as blocks")
   );
   tooltip.add("liltractor:liltractor", Text.gray("Dyeable"));
-  tooltip.add("society:prize_ticket", Text.gray("Use on a Prize Machine for something good!"));
+  tooltip.add("society:prize_ticket", Text.gray("Use on an a Prize Machine for something good!"));
   tooltip.add(
     "splendid_slimes:slime_ticket",
-    Text.gray("Use on a Splendid Slime to learn their primary breed's favorite food.")
+    Text.gray("Use on an a Splendid Slime to learn their primary breed's favorite food.")
   );
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));

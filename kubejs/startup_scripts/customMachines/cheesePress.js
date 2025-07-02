@@ -67,11 +67,7 @@ StartupEvents.registry("block", (event) => {
 
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND") {
-        if (
-          !upgraded &&
-          block.properties.get("working").toLowerCase() == "false" &&
-          item == "society:broken_clock"
-        ) {
+        if (!upgraded && item == "society:pink_matter") {
           if (!player.isCreative()) item.count--;
           level.spawnParticles(
             "farmersdelight:star",
@@ -94,19 +90,19 @@ StartupEvents.registry("block", (event) => {
             stage: block.properties.get("stage"),
             quality: block.properties.get("quality"),
           });
-        } else if (!upgraded && item == "society:broken_clock") {
-          player.tell(Text.red(`This can only be upgraded when not in use`));
-        }
+        } 
       }
 
       global.handleBERightClick(
-        "minecraft:block.sniffer_egg.plop",
+        "species:block.frozen_meat.place",
         click,
         global.cheesePressRecipes,
         3,
         false,
         false,
-        player.stages.has("rancher") ? 2 : 1
+        player.stages.has("rancher") ? 2 : 1,
+        false,
+        true
       );
     })
     .blockEntity((blockInfo) => {

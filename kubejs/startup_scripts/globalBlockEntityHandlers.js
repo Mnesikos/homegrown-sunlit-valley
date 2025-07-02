@@ -152,7 +152,16 @@ const getCanTakeItems = (item, properties, recipe, recipeIndex, hasTag) => {
 global.getArtisanRecipe = (recipes, block) =>
   recipes[Number(block.properties.get("type").toLowerCase()) - 1];
 
-global.artisanHarvest = (block, recipes, stageCount, outputMult, artisanHopper, server, player) => {
+global.artisanHarvest = (
+  block,
+  recipes,
+  stageCount,
+  outputMult,
+  isCheesePress,
+  artisanHopper,
+  server,
+  player
+) => {
   let newProperties = block.getProperties();
   const hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
@@ -170,6 +179,17 @@ global.artisanHarvest = (block, recipes, stageCount, outputMult, artisanHopper, 
         id,
         hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
       );
+      // Artisan Cheese Press upgrade: auto age cheese wheels only
+      if (
+        isCheesePress &&
+        (id.includes("wheel") || id.includes("block")) &&
+        block.properties.get("upgraded").toLowerCase() === "true"
+      ) {
+        harvestOutput = Item.of(
+          `society:aged_${id.split(":")[1]}`,
+          hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
+        );
+      }
       if (outputMult > 1) harvestOutput.count = outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       newProperties.type = "0";
@@ -251,14 +271,24 @@ global.handleBERightClick = (
   multipleInputs,
   hasTag,
   outputMult,
-  disableInput
+  disableInput,
+  isCheesePress
 ) => {
   const { item, block, hand, player, level, server } = clickEvent;
   // Prevent Deployers from using artisan machines
   if (player.isFake()) return;
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND") {
-    global.artisanHarvest(block, recipes, stageCount, outputMult, false, server, player);
+    global.artisanHarvest(
+      block,
+      recipes,
+      stageCount,
+      outputMult,
+      isCheesePress,
+      false,
+      server,
+      player
+    );
 
     if (!disableInput) {
       global.artisanInsert(

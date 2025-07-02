@@ -529,6 +529,7 @@ ServerEvents.tags("block", (e) => {
     "society:bait_maker",
     "society:recycling_machine",
     "society:tapper",
+    "society:cheese_press"
   ];
   tickArtisanMachines.forEach((log) => {
     e.add("society:artisan_machine", log);

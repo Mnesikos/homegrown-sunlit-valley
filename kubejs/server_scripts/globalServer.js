@@ -248,7 +248,7 @@ global.artisanMachineDefinitions = [
     recipes: global.cheesePressRecipes,
     stageCount: 2,
     maxInput: 1,
-    upgrade: "society:tiny_gnome",
+    upgrade: "society:pink_matter",
   },
   {
     id: "society:aging_cask",

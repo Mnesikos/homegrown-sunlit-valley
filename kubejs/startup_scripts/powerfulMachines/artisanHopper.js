@@ -102,6 +102,14 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         soundType: "minecraft:block.wood.place",
       };
       break;
+    case "society:cheese_press":
+      machineData = {
+        recipes: global.cheesePressRecipes,
+        stageCount: 2,
+        outputMult: stages.has("rancher") ? 2 : 1,
+        soundType: "species:block.frozen_meat.place",
+      };
+      break;
     case "society:ancient_cask":
       if (stages.has("ancient_aging")) {
         if (upgraded) {
@@ -244,6 +252,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             recipes,
             stageCount,
             outputMult,
+            artisanMachine.id === "society:cheese_press",
             true
           );
         }
