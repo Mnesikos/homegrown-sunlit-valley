@@ -1,0 +1,19 @@
+{
+  "name": "Obsidianfish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:obsidianfish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 512$(li)Dimension: Nether$(li)Biome: Basalt Deltas$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:obsidianfish",
+      "scale": 0.8,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Its rocky armor makes it nearly indestructible in the molten depths."
+    }
+  ]
+}

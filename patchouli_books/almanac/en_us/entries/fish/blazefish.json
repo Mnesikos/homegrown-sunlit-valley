@@ -1,0 +1,19 @@
+{
+  "name": "Blazefish",
+  "category": "patchouli:fish",
+  "icon": "netherdepthsupgrade:blazefish",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 408$(li)Dimension: Nether$(li)Biome: Any$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "netherdepthsupgrade:blazefish",
+      "scale": 0.5,
+      "offset": -0.3,
+      "rotate": true,
+      "text": "Fueled by flame, this fiery fish leaves scorch marks in its wake."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Tuna",
+  "category": "patchouli:fish",
+  "icon": "aquaculture:tuna",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Stats$()$(li):coin: 192$(li)\u00a70\ud83d\udd25 \u00a76Summer\u00a70$(li)Water: Ocean$(li)Weather: Any$(li)Time: Day$(br2)$(l)Notes$()$(br)"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "aquaculture:tuna",
+      "scale": 0.8,
+      "rotate": true,
+      "text": "A streamlined speedster built for long-distance chases and deep-sea dominance."
+    }
+  ]
+}
