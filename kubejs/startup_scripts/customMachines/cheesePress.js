@@ -1,22 +1,22 @@
 console.info("[SOCIETY] mayonnaiseMachine.js loaded");
 
 global.cheesePressRecipes = [
-  { time: 1, input: "society:sheep_milk", output: ["1x meadow:piece_of_sheep_cheese"] },
-  { time: 1, input: "society:milk", output: ["1x meadow:piece_of_cheese"] },
-  { time: 1, input: "society:buffalo_milk", output: ["1x meadow:piece_of_buffalo_cheese"] },
-  { time: 1, input: "society:goat_milk", output: ["1x meadow:piece_of_goat_cheese"] },
-  { time: 1, input: "society:warped_milk", output: ["1x meadow:piece_of_warped_cheese"] },
-  { time: 1, input: "society:tri_bull_milk", output: ["1x farmlife:tribull_cheese_wedge"] },
-  { time: 1, input: "society:grain_milk", output: ["1x meadow:piece_of_grain_cheese"] },
-  { time: 1, input: "society:amethyst_milk", output: ["1x meadow:piece_of_amethyst_cheese"] },
-  { time: 2, input: "society:large_sheep_milk", output: ["1x meadow:sheep_cheese_block"] },
-  { time: 2, input: "society:large_milk", output: ["1x meadow:cheese_block"] },
-  { time: 2, input: "society:large_buffalo_milk", output: ["1x meadow:buffalo_cheese_block"] },
-  { time: 2, input: "society:large_goat_milk", output: ["1x meadow:goat_cheese_block"] },
-  { time: 2, input: "society:large_warped_milk", output: ["1x meadow:warped_cheese_block"] },
-  { time: 2, input: "society:large_tri_bull_milk", output: ["1x farmlife:tribull_cheese_wheel"] },
-  { time: 2, input: "society:large_grain_milk", output: ["1x meadow:grain_cheese_block"] },
-  { time: 2, input: "society:large_amethyst_milk", output: ["1x meadow:amethyst_cheese_block"] },
+  { input: "society:sheep_milk", output: ["1x meadow:piece_of_sheep_cheese"] },
+  { input: "society:milk", output: ["1x meadow:piece_of_cheese"] },
+  { input: "society:buffalo_milk", output: ["1x meadow:piece_of_buffalo_cheese"] },
+  { input: "society:goat_milk", output: ["1x meadow:piece_of_goat_cheese"] },
+  { input: "society:warped_milk", output: ["1x meadow:piece_of_warped_cheese"] },
+  { input: "society:tri_bull_milk", output: ["1x farmlife:tribull_cheese_wedge"] },
+  { input: "society:grain_milk", output: ["1x meadow:piece_of_grain_cheese"] },
+  { input: "society:amethyst_milk", output: ["1x meadow:piece_of_amethyst_cheese"] },
+  { input: "society:large_sheep_milk", output: ["1x meadow:sheep_cheese_block"] },
+  { input: "society:large_milk", output: ["1x meadow:cheese_block"] },
+  { input: "society:large_buffalo_milk", output: ["1x meadow:buffalo_cheese_block"] },
+  { input: "society:large_goat_milk", output: ["1x meadow:goat_cheese_block"] },
+  { input: "society:large_warped_milk", output: ["1x meadow:warped_cheese_block"] },
+  { input: "society:large_tri_bull_milk", output: ["1x farmlife:tribull_cheese_wheel"] },
+  { input: "society:large_grain_milk", output: ["1x meadow:grain_cheese_block"] },
+  { input: "society:large_amethyst_milk", output: ["1x meadow:amethyst_cheese_block"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -90,7 +90,7 @@ StartupEvents.registry("block", (event) => {
             stage: block.properties.get("stage"),
             quality: block.properties.get("quality"),
           });
-        } 
+        }
       }
 
       global.handleBERightClick(

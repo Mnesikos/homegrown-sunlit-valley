@@ -103,20 +103,20 @@ global.ancientCaskRecipes = [];
     time: 16,
   },
   { item: "brewery:dark_brew", name: "Dark Brew", time: 16 },
-  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 12 },
-  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 12 },
-  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 14 },
-  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 12 },
-  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 12 },
+  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 13 },
+  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 13 },
+  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 13 },
+  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 13 },
+  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 13 },
   {
     item: "meadow:amethyst_cheese_block",
     name: "Amethyst Cheese Wheel",
-    time: 12,
+    time: 13,
   },
   {
     item: "meadow:buffalo_cheese_block",
     name: "Buffalo Cheese Wheel",
-    time: 12,
+    time: 13,
   },
   { item: "society:beer_london", name: "London Beer", time: 13 },
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 20 },
@@ -126,7 +126,7 @@ global.ancientCaskRecipes = [];
   {
     item: "farmlife:tribull_cheese_wheel",
     name: "Tri-Bull Cheese Wheel",
-    time: 14,
+    time: 13,
   },
 ].forEach((product) => {
   const splitProduct = product.item.split(":");

@@ -28,7 +28,6 @@ const resolveMilk = (hearts, type, warped) => {
   let milk;
   global.husbandryMilkingDefinitions.forEach((definition) => {
     if (!milk && definition.animal.equals(type.toString())) {
-      console.log(definition.warped)
       if (warped && definition.warped) milk = large ? definition.milk.lg : definition.milk.sm;
       if (!warped) milk = large ? definition.milk.lg : definition.milk.sm;
     }

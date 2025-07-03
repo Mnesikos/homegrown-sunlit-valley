@@ -104,7 +104,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Turns a fish into 6 bait"));
+      item.tooltip(Text.gray("Turns a fish into 3 bait"));
       item.modelJson({
         parent: "society:block/bait_maker_off",
       });

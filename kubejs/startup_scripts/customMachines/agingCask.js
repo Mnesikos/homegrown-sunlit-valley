@@ -103,20 +103,20 @@ global.ageableProductInputs = [
     time: 4,
   },
   { item: "brewery:dark_brew", name: "Dark Brew", time: 6 },
-  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 2 },
-  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 2 },
-  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 4 },
-  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 2 },
-  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 2 },
+  { item: "meadow:cheese_block", name: "Cheese Wheel", time: 3 },
+  { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 3 },
+  { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 3 },
+  { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 3 },
+  { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 3 },
   {
     item: "meadow:amethyst_cheese_block",
     name: "Amethyst Cheese Wheel",
-    time: 2,
+    time: 3,
   },
   {
     item: "meadow:buffalo_cheese_block",
     name: "Buffalo Cheese Wheel",
-    time: 2,
+    time: 3,
   },
   { item: "society:beer_london", name: "London Beer", time: 3 },
   { item: "society:ancient_vespertine", name: "Ancient Vespertine", time: 10 },
@@ -126,7 +126,7 @@ global.ageableProductInputs = [
   {
     item: "farmlife:tribull_cheese_wheel",
     name: "Tri-Bull Cheese Wheel",
-    time: 4,
+    time: 3,
   },
 ];
 global.ageableProductInputs.forEach((product) => {
