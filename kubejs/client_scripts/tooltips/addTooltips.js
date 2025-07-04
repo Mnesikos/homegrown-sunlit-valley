@@ -175,7 +175,10 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:debt_caverns",
       description: "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
     },
-    { item: "society:phenomenology_of_treasure", description: "Artifacts and Relics are worth 200% more" },
+    {
+      item: "society:phenomenology_of_treasure",
+      description: "Artifacts and Relics are worth 200% more",
+    },
     { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));
@@ -236,9 +239,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels"
-    )
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels")
   );
   tooltip.add(
     "society:stone_hand",
@@ -479,6 +480,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
   tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
+  tooltip.add("society:scavenged_food_bag", Text.gray("Right click to open"));
   tooltip.add(
     "gag:time_sand_pouch",
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")

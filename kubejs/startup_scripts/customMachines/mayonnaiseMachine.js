@@ -59,6 +59,22 @@ global.mayonnaiseMachineRecipes = [
     input: "species:cruncher_egg",
     output: ["1x society:cruncher_mayonnaise"],
   },
+  {
+    input: "society:flamingo_egg",
+    output: ["1x society:flamingo_mayonnaise"],
+  },
+  {
+    input: "society:penguin_egg",
+    output: ["1x society:penguin_mayonnaise"],
+  },
+  {
+    input: "farmlife:galliraptor_egg",
+    output: ["1x society:galliraptor_mayonnaise"],
+  },
+  {
+    input: "society:large_galliraptor_egg",
+    output: ["1x society:large_galliraptor_mayonnaise"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

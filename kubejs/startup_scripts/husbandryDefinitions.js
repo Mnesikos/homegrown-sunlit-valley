@@ -272,7 +272,7 @@ global.husbandryForagingDefinitions = [
     animal: "wildernature:flamingo",
     forages: [
       {
-        item: "wildernature:flamingo_egg",
+        item: "society:flamingo_egg",
         countMult: 1,
         chance: 1,
         minHearts: 4,
@@ -284,10 +284,10 @@ global.husbandryForagingDefinitions = [
     animal: "wildernature:penguin",
     forages: [
       {
-        item: "wildernature:penguin_egg",
+        item: "society:penguin_egg",
         countMult: 1,
         chance: 1,
-        minHearts: 4,
+        minHearts: 2,
         hasQuality: true,
       },
     ],

@@ -1,11 +1,11 @@
 {
-  "parent": "society:main/root",
+  "parent": "society:main/machines/obtain_cheese_press",
   "criteria": {
-    "preserves_jar": {
+    "press": {
       "conditions": {
         "items": [
           {
-            "items": ["society:preserves_jar"]
+            "items": ["society:cheese_press"]
           }
         ]
       },
@@ -15,18 +15,18 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "society.advancement.obtain_preserves_jar.description"
+      "translate": "society.advancement.cheese_press.description"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "society:preserves_jar"
+      "item": "society:cheese_press"
     },
     "show_toast": true,
     "title": {
-      "translate": "society.advancement.obtain_preserves_jar.title"
+      "translate": "society.advancement.cheese_press.title"
     }
   },
-  "requirements": [["preserves_jar"]],
+  "requirements": [["cheese_press"]],
   "sends_telemetry_event": true
 }

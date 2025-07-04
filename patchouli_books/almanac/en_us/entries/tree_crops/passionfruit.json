@@ -1,7 +1,7 @@
 {
     "name": "Passionfruit 🌼",
     "category": "patchouli:tree_crops",
-    "icon": "pamhc2trees:passionfruititem",
+    "icon": "atmospheric:passion_fruit",
     "pages": [
         {
             "type": "patchouli:text",
