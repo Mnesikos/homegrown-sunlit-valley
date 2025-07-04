@@ -434,6 +434,7 @@ global.teleportHome = (player, server, level) => {
     0.0,
     0.0
   );
+  server.runCommandSilent(`experience add ${player.username} 1`)
 };
 
 /**

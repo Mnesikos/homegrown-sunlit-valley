@@ -10,17 +10,10 @@ global.enableFishingMinigame = true;
 /**
  * Only server needs to change this
  * Enables a fee when a player dies to discourage players from dying on purpose.
+ * Also disables fee from fainting in Skull Caverns
  * Setting this to false is not recommended.
  */
 global.enableDeathDebt = true;
-
-/**
- * Only server needs to change this
- * Enables more cottagecore mechanics for the Skull Cavern:
- * - No longer faint and get sent home at 6AM with a fee
- * - Ores/Bolders no longer regenerate
- */
-global.relaxedSkullCavern = false;
 
 /**
  * Only server needs to change this

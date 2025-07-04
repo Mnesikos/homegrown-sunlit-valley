@@ -14,11 +14,11 @@ const registerExtractingCategory = (event, title) => {
         const { input, outputs } = recipe.data;
         const slotSize = 18;
         builder
-          .addSlot("CATALYST", 82, 2)
+          .addSlot("CATALYST", 55, 2)
           .addItemStack(Item.of("extractinator:extractinator"))
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
-          .addSlot("INPUT", 64, 2)
+          .addSlot("INPUT", 73, 2)
           .addItemStack(input)
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         for (let i = 0; i < 8; i++) {

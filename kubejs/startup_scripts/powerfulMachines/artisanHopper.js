@@ -188,6 +188,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.tapperRecipes,
         stageCount: 1,
         soundType: "vinery:cabinet_close",
+        outputMult: stages.has("canadian_and_famous") ? 2 : 1,
       };
       break;
     case "society:charging_rod":

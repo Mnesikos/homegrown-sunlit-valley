@@ -64,6 +64,7 @@ StartupEvents.registry("block", (event) => {
               inventory,
               slots,
               playerAttributes,
+              binPlayer.stages,
               true
             );
             value = Math.round(calculationResults.calculatedValue);

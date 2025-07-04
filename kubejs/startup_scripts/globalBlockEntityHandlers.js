@@ -12,8 +12,15 @@ const calculateQualityValue = (number, quality) => {
   return value;
 };
 
-global.processShippingBinInventory = (inventory, inventorySlots, attributes, returnRemoved) => {
+global.processShippingBinInventory = (
+  inventory,
+  inventorySlots,
+  attributes,
+  stages,
+  returnRemoved
+) => {
   let calculatedValue = 0;
+  let itemValue = 0;
   let removedItems = [];
   let slotItem;
   let isSellable;
@@ -37,8 +44,15 @@ global.processShippingBinInventory = (inventory, inventorySlots, attributes, ret
       if (slotNbt && slotNbt.quality_food) {
         quality = slotNbt.quality_food.quality;
       }
+      itemValue = calculateQualityValue(trade.value, quality);
+      if (
+        stages.has("phenomenology_of_treasure") &&
+        (Item.of(slotItem).hasTag("society:artifacts") || Item.of(slotItem).hasTag("society:relics"))
+      ) {
+        itemValue *= 3;
+      }
       calculatedValue +=
-        calculateQualityValue(trade.value, quality) *
+        itemValue *
         inventory.getStackInSlot(i).count *
         (Number(
           attributes.filter((obj) => {
@@ -190,7 +204,7 @@ global.artisanHarvest = (
           hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
         );
       }
-      if (outputMult > 1) harvestOutput.count = outputMult;
+      if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));
       newProperties.type = "0";
       newProperties.working = false;

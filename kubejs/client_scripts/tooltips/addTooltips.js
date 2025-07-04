@@ -164,7 +164,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
     {
       item: "society:intro_to_algorithms",
-      description: "Mining Lead ore will no longer cause Brain Damage.",
+      description: "Lead ore no longer causes Brain Damage clouds.",
     },
     {
       item: "society:slouching_towards_artistry",
@@ -175,7 +175,7 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:debt_caverns",
       description: "Fainting in the Skull Cavern no longer costs a fee or adds to debt.",
     },
-    { item: "society:phenomenology_of_treasure", description: "The Phenomenology of Treasure" },
+    { item: "society:phenomenology_of_treasure", description: "Artifacts and Relics are worth 200% more" },
     { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));

@@ -84,20 +84,54 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:heart_of_neptunium",
+      "amount": 64
+    },
+    "item:society:phenomenology_of_treasure",
+    "item:society:debt_caverns",
+    "item:society:banana_karenina",
+    "item:society:intro_to_algorithms",
+    "item:society:combat_quarterly",
+    "item:society:canvas",
+    "item:society:wet_weekly",
+    {
+      "type": "item",
+      "id": "oreganized:lead_ore",
+      "amount": 43
+    },
+    {
+      "type": "item",
+      "id": "create_enchantment_industry:hyper_experience_bottle",
+      "amount": 61
+    },
+    {
+      "type": "item",
+      "id": "botania:black_lotus",
+      "amount": 8
+    },
+    {
+      "type": "item",
+      "id": "verdantvibes:bracket_mushroom",
+      "amount": 8
+    },
+    {
+      "type": "item",
+      "id": "society:sap",
+      "amount": 2
+    },
+    "item:sophisticatedbackpacks:inception_upgrade",
+    "item:society:aged_chenet_wine",
+    "item:vinery:chenet_wine",
+    "item:clayworks:red_terracotta_brick_slab",
+    "item:minecraft:stripped_jungle_log",
+    "item:society:maple_syrup_bucket",
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:juicy\"}}",
     "item:society:meowmageddon{Damage:0}",
     "item:society:galaxy_sword{Damage:0}",
     "item:brewery:whiskey_maggoallan",
-    {
-      "id": "brewery:healingtouch"
-    },
-    {
-      "id": "minecraft:health_boost"
-    },
-    {
-      "id": "species:tanked"
-    },
     "item:minecraft:chainmail_leggings{Damage:0}",
-    "item:society:banana_karenina",
     "item:pamhc2trees:dragonfruit_sapling",
     "item:extractinator:extractinator",
     "item:etcetera:cotton_flower",
@@ -154,11 +188,6 @@
     "item:quark:hollow_oak_log",
     "item:numismatics:prismatic_coin",
     "item:minecraft:oak_trapdoor",
-    {
-      "type": "item",
-      "id": "verdantvibes:bracket_mushroom",
-      "amount": 56
-    },
     "item:society:aged_warped_cheese_block",
     "item:society:aged_grain_cheese_block",
     "item:meadow:warped_cheese_block",
@@ -226,7 +255,6 @@
     "item:society:frozen_tear",
     "item:society:living_flesh",
     "item:society:aquamagical_dust",
-    "item:society:heart_of_neptunium",
     "item:society:artifact_trove",
     "item:society:token_of_unity",
     "item:splendid_slimes:slime_ticket",
@@ -280,7 +308,6 @@
     "item:society:ribbit_gadget",
     "item:society:fire_opal",
     "item:society:friendship_necklace",
-    "item:society:intro_to_algorithms",
     "item:netherdepthsupgrade:baked_lava_pufferfish_stew",
     "item:minecraft:lava_bucket",
     "item:botania:mana_string",
@@ -416,7 +443,6 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:minty\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:juicy\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:gold\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:ender\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
@@ -702,7 +728,6 @@
     "item:sophisticatedstorage:compression_upgrade",
     "item:sophisticatedbackpacks:void_upgrade",
     "item:sophisticatedbackpacks:advanced_void_upgrade",
-    "item:sophisticatedbackpacks:inception_upgrade",
     "item:sophisticatedbackpacks:tank_upgrade",
     "item:sophisticatedbackpacks:magnet_upgrade",
     "item:sophisticatedbackpacks:stack_downgrade_tier_1",
@@ -833,7 +858,6 @@
     "item:buzzier_bees:silverfish_bottle",
     "item:farm_and_charm:bacon_with_eggs",
     "item:aquaculture:message_in_a_bottle",
-    "item:society:combat_quarterly",
     "item:herbalbrews:yerba_mate_leaf",
     "item:vintagedelight:ghost_pepper",
     "item:minecraft:sweet_berries",
@@ -900,7 +924,6 @@
     "item:society:double_aged_cheese_block",
     "item:numismatics:spur",
     "item:create:tree_fertilizer",
-    "item:society:sap",
     "item:society:rubber",
     "item:society:bouquet_bag",
     "item:society:car_key",
@@ -1003,11 +1026,6 @@
     "item:vintagedelight:century_egg",
     "item:simplehats:tanuki_leaf",
     "item:botania:terra_sword{Damage:0}",
-    {
-      "type": "item",
-      "id": "botania:black_lotus",
-      "amount": 4
-    },
     "item:mysticaloaktree:wise_oak",
     "item:society:pine_tar",
     "item:society:preserves_jar",
@@ -1117,7 +1135,6 @@
     "item:unusualfishmod:thunderous_shell{Damage:0}",
     "item:society:ancient_goddess_statue",
     "item:minecraft:dried_kelp",
-    "item:vinery:chenet_wine",
     "item:vinery:jo_special_mixture",
     "item:vinery:mellohi_wine",
     "item:vinery:apple_wine",
@@ -1252,8 +1269,7 @@
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:juicy\"}}",
     "item:minecraft:stone_shovel{Damage:0}",
     "item:society:aged_dark_brew",
-    "item:vinery:dark_cherry_log",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}"
+    "item:vinery:dark_cherry_log"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1269,10 +1285,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/golden_chestplate",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},

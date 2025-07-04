@@ -3,12 +3,20 @@ const relicTroveTable = [
     drop: "#society:relics",
     drop_chance: 1,
   },
+  {
+    drop: "#society:treasure_books",
+    drop_chance: 0.05,
+  },
 ];
 
 const artifactTroveTable = [
   {
     drop: "#society:artifacts",
     drop_chance: 1,
+  },
+  {
+    drop: "#society:treasure_books",
+    drop_chance: 0.05,
   },
 ];
 const geodeLootTable = [
@@ -82,7 +90,7 @@ const omniGeodeLootTable = [
     drop: "#society:omni_geode_special",
     drop_chance: 0.03,
   },
-];  
+];
 
 global.extractinatorRecipes = [
   { input: "society:relic_trove", output: relicTroveTable },

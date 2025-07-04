@@ -5,7 +5,7 @@ global.chunkLoadManager = (e) => {
 
   if (level.dimension === "society:skull_cavern" && !level.isClientSide()) {
     const day = Number((level.dayTime() / 24000).toFixed(0));
-    
+
     if (!level.persistentData.chunkParityMap) level.persistentData.chunkParityMap = {};
     let chunkPos = chunk.pos.toString();
     let chunkMap = level.persistentData.chunkParityMap;
@@ -22,8 +22,6 @@ global.chunkLoadManager = (e) => {
   }
 };
 
-if (!global.relaxedSkullCavern) {
-  ForgeEvents.onEvent("net.minecraftforge.event.level.ChunkEvent$Load", (e) => {
-    global.chunkLoadManager(e);
-  });
-}
+ForgeEvents.onEvent("net.minecraftforge.event.level.ChunkEvent$Load", (e) => {
+  global.chunkLoadManager(e);
+});

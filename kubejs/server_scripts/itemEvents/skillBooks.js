@@ -14,7 +14,6 @@ console.info("[SOCIETY] skillBooks.js loaded");
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
     const stageName = item.id.split(":")[1];
-    player.tell(stageName)
     if (!player.stages.has(stageName)) {
       server.runCommandSilent(
         `puffish_skills skills unlock ${player.username} society:books ${book.skillId}`

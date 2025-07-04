@@ -115,7 +115,7 @@
   },
   "intro_to_algorithms": {
     "title": "Introduction to Algorithms",
-    "description": "Brain Damage will periodically be cleared from you.",
+    "description": "Lead ore no longer causes Brain Damage clouds.",
     "icon": {
       "type": "item",
       "data": {
@@ -134,7 +134,7 @@
   },
   "phenomenology_of_treasure": {
     "title": "The Phenomenology of Treasure",
-    "description": "Increases value of Artifacts when sold by 100%.",
+    "description": "Artifacts and Relics are worth 200% more.",
     "icon": {
       "type": "item",
       "data": {
