@@ -425,6 +425,14 @@ ItemEvents.tooltip((tooltip) => {
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
   tooltip.add(
+    "society:candied_animal_feed",
+    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+  );
+  tooltip.add(
+    "society:mana_animal_feed",
+    Text.gray("Feeds farm animals manually or using Feeding Troughs")
+  );
+  tooltip.add(
     "society:animal_feed_sack",
     Text.red("Too large to feed farm animals manually or using Feeding Troughs")
   );
