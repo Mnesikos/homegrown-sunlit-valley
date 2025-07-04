@@ -10,7 +10,7 @@ global.chunkLoadManager = (e) => {
     let chunkPos = chunk.pos.toString();
     let chunkMap = level.persistentData.chunkParityMap;
     if (chunkMap && chunkMap[chunkPos]) {
-      if (Number(chunkMap[chunkPos].day) < day) {
+      if (Number(chunkMap[chunkPos].day) !== day) {
         level.persistentData.chunkParityMap[chunkPos] = {
           day: day,
           toggleBit: Number(chunkMap[chunkPos].toggleBit) == 0 ? 1 : 0,
