@@ -84,6 +84,21 @@
     }
   ],
   "lookup_history": [
+    "item:society:meowmageddon{Damage:0}",
+    "item:society:galaxy_sword{Damage:0}",
+    "item:brewery:whiskey_maggoallan",
+    {
+      "id": "brewery:healingtouch"
+    },
+    {
+      "id": "minecraft:health_boost"
+    },
+    {
+      "id": "species:tanked"
+    },
+    "item:minecraft:chainmail_leggings{Damage:0}",
+    "item:society:banana_karenina",
+    "item:pamhc2trees:dragonfruit_sapling",
     "item:extractinator:extractinator",
     "item:etcetera:cotton_flower",
     "item:atmospheric:stripped_yucca_log",
@@ -559,7 +574,6 @@
     "item:brewery:beer_wheat",
     "item:brewery:whiskey_jojannik",
     "item:brewery:beer_mug",
-    "item:brewery:whiskey_maggoallan",
     "item:brewery:copper_brewingstation",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"garnished:quick_step\",lvl:2s}]}",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"garnished:leeching_curse\",lvl:1s}]}",
@@ -724,7 +738,6 @@
     "item:botania:daffomill",
     "item:botania:bubbell",
     "item:pamhc2trees:lemon_sapling",
-    "item:pamhc2trees:dragonfruit_sapling",
     "item:society:prize_machine",
     "item:society:aged_jo_special_mixture",
     "item:justhammers:diamond_impact_hammer{Damage:0}",
@@ -1240,20 +1253,7 @@
     "item:minecraft:stone_shovel{Damage:0}",
     "item:society:aged_dark_brew",
     "item:vinery:dark_cherry_log",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}",
-    "item:oreganized:lime_crystal_glass",
-    "item:constructionwand:core_destruction",
-    "item:society:treated_log",
-    "item:create:spout",
-    "item:etcetera:iridescent_glass_pane",
-    "item:etcetera:iridescent_lantern",
-    "item:minecraft:netherite_shovel{Damage:0}",
-    "item:sophisticatedbackpacks:netherite_backpack",
-    "item:society:double_aged_netherite_nectar",
-    "item:minecraft:netherite_helmet{Damage:0}",
-    "item:minecraft:netherite_sword{Damage:0}",
-    "item:minecraft:netherite_leggings{Damage:0}",
-    "item:minecraft:netherite_axe{Damage:0}"
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1269,10 +1269,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter",
       "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
-      "minecraft:kjs/golden_chestplate"
+      "minecraft:kjs/golden_chestplate",
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

@@ -2,8 +2,8 @@ console.info("[SOCIETY] skillBooks.js loaded");
 
 [
   { id: "society:animal_fancy", skillId: "dk83vl5zi9fw3ovi" },
-  { id: "society:banana_karenina", skillId: "x52wa6t39ywp17zu" },
-  { id: "society:canadian_and_famous", skillId: "12wl5sjx8vy7q0xl" },
+  { id: "society:banana_karenina", skillId: "76yv8nz8x47d80oe" },
+  { id: "society:canadian_and_famous", skillId: "x52wa6t39ywp17zu" },
   { id: "society:first_aid_guide", skillId: "12wl5sjx8vy7q0xl" },
   { id: "society:intro_to_algorithms", skillId: "gv808dy0r2fo6ire" },
   { id: "society:slouching_towards_artistry", skillId: "pitrguemps2735n3" },
@@ -14,6 +14,7 @@ console.info("[SOCIETY] skillBooks.js loaded");
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
     const stageName = item.id.split(":")[1];
+    player.tell(stageName)
     if (!player.stages.has(stageName)) {
       server.runCommandSilent(
         `puffish_skills skills unlock ${player.username} society:books ${book.skillId}`

@@ -31,8 +31,8 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "kubejs stages add @s animal_fancy",
-          "lock_command": "kubejs stages remove @s animal_fancy"
+          "unlock_command": "kubejs stages add @s banana_karenina",
+          "lock_command": "kubejs stages remove @s banana_karenina"
         }
       }
     ]

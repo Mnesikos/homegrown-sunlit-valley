@@ -230,6 +230,27 @@
       "demand": 0
     },
     {
+      "isRare": true,
+      "offer": {
+        "itemKey": "patchouli:guide_book",
+        "amount": 1,
+        "advancedNBTData": "{\"patchouli:book\":\"patchouli:fish_finder\"}"
+      },
+      "request": {
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 1
+      },
+      
+      "additionalRequest": {
+        "itemKey": "aquaculture:neptunium_block",
+        "amount": 1
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
       "isRare": false,
       "offer": {
         "itemKey": "supplementaries:globe",
