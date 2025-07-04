@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li)🍂 §4Autumn§r $(li)Size: 1x1$(li)Grows:$(l:crops/tree/pawpaw)8x Pawpaw$(/l)$(br2)$(l)Notes$()$(li)Saplings won from Prize Machine."
+            "text": "$(l)Stats$()$(li)🍂 §4Autumn§r $(li)Size: 1x1$(li)Grows:$(l:tree_crops/pawpaw)8x Pawpaw$(/l)$(br2)$(l)Notes$()$(li)Saplings won from Prize Machine."
         },
         {
             "type": "patchouli:multiblock",

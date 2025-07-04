@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li)🌼 §2Spring§r 🔥 §6Summer§r$(li)Size: 1x1$(li)Grows:$(l:crops/tree/lemon)8x lemons$(/l)$(br2)$(l)Notes$()$(li)Saplings traded at Elven Trade."
+            "text": "$(l)Stats$()$(li)🌼 §2Spring§r 🔥 §6Summer§r$(li)Size: 1x1$(li)Grows:$(l:tree_crops/lemon)8x lemons$(/l)$(br2)$(l)Notes$()$(li)Saplings traded at Elven Trade."
         },
         {
             "type": "patchouli:multiblock",

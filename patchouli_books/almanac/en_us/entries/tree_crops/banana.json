@@ -1,20 +1,20 @@
 {
-    "name": "Pawpaw 🍂",
-    "category": "patchouli:crops",
-    "icon": "pamhc2trees:pawpawitem",
+    "name": "Banana 🔥",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:bananaitem",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li):coin: 80$(li)🍂 §4Autumn§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/pawpaw)Pawpaw Tree$(/l)"
+            "text": "$(l)Stats$()$(li):coin: 16$(li)🔥 §6Summer§r$(li)Yield: 3$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/banana)Banana Tree$(/l)"
         },
         {
             "type": "patchouli:multiblock",
-            "name ": "Pawpaw Tree",
+            "name ": "Banana Tree",
             "enable_visualize": false,
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pampawpaw[age=7]"
+                    "F": "pamhc2trees:pambanana[age=7]"
                 },
                 "pattern": [
                     ["0"],

@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li)🔥 §6Summer§r $(li)Price: :coin: 16,384$(li)Size: 1x1$(li)Grows:$(l:crops/tree/mango)8x Mango$(/l)$(br2)$(l)Notes$()$(li)Saplings bought from Master Cultivator."
+            "text": "$(l)Stats$()$(li)🔥 §6Summer§r $(li)Price: :coin: 16,384$(li)Size: 1x1$(li)Grows:$(l:tree_crops/mango)8x Mango$(/l)$(br2)$(l)Notes$()$(li)Saplings bought from Master Cultivator."
         },
         {
             "type": "patchouli:multiblock",

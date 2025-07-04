@@ -6,7 +6,7 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li)🌼 §2Spring§r $(li)Size: 1x1$(li)Grows:$(l:crops/tree/passionfruit)8x Passionfruit$(/l)$(br2)$(l)Notes$()$(li)Saplings won from Prize Machine."
+            "text": "$(l)Stats$()$(li)🌼 §2Spring§r $(li)Size: 1x1$(li)Grows:$(l:tree_crops/passionfruit)8x Passionfruit$(/l)$(br2)$(l)Notes$()$(li)Saplings won from Prize Machine."
         },
         {
             "type": "patchouli:multiblock",

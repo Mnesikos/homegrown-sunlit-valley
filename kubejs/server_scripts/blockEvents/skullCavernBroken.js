@@ -130,6 +130,21 @@ const handleRegen = (server, level, block) => {
     block.set(newBlock);
   }
 };
+const scheduleFunction = (level, pos, server, rockType) => {
+  server.scheduleInTicks(5, () => {
+    if (level.getBlock(pos) == "minecraft:air") {
+      let toggleBit =
+        level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
+      level.getBlock(pos).set("society:cavern_air", {
+        type: String(rockType),
+        chunkbit: toggleBit.toString(),
+      });
+      server.scheduleInTicks(4800, () => {
+        handleRegen(server, level, level.getBlock(pos));
+      });
+    }
+  });
+};
 BlockEvents.broken(
   [
     "society:stone_boulder",
@@ -167,7 +182,7 @@ BlockEvents.broken(
     "oreganized:silver_ore",
     "minecraft:deepslate_gold_ore",
     "minecraft:gold_ore",
-    "oreganized:deepslate_lead_ore"
+    "oreganized:deepslate_lead_ore",
   ],
   (e) => {
     const { level, block, server } = e;
@@ -175,19 +190,7 @@ BlockEvents.broken(
 
     if (level.dimension === "society:skull_cavern") {
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
-      server.scheduleInTicks(5, () => {
-        if (level.getBlock(pos) == "minecraft:air") {
-          let toggleBit =
-            level.persistentData.chunkParityMap[level.getChunkAt(pos).pos.toString()].toggleBit;
-          block.set("society:cavern_air", {
-            type: String(rockType),
-            chunkbit: toggleBit.toString(),
-          });
-          server.scheduleInTicks(4800, () => {
-            handleRegen(server, level, level.getBlock(pos));
-          });
-        }
-      });
+      scheduleFunction(level, pos.immutable(), server, rockType);
     }
   }
 );

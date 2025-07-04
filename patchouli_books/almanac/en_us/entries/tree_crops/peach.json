@@ -1,20 +1,20 @@
 {
-    "name": "Hazelnut 🍂",
-    "category": "patchouli:crops",
-    "icon": "pamhc2trees:hazelnutitem",
+    "name": "Peach 🔥",
+    "category": "patchouli:tree_crops",
+    "icon": "pamhc2trees:peachitem",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "$(l)Stats$()$(li):coin: 32$(li)🍂 §4Autumn§r$(li)Yield: 3$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/hazelnut)Hazelnut Tree$(/l)"
+            "text": "$(l)Stats$()$(li):coin: 64$(li)🔥 §6Summer§r$(li)Yield: 1$(li)Grow stages: 8$(br2)$(l)Notes$()$(li)See: $(l:trees/pams/peach)Peach Tree$(/l)"
         },
         {
             "type": "patchouli:multiblock",
-            "name ": "Hazelnut Tree",
+            "name ": "Orange Tree",
             "enable_visualize": false,
             "multiblock": {
                 "mapping": {
                     "0": "minecraft:oak_leaves",
-                    "F": "pamhc2trees:pamhazelnut[age=7]"
+                    "F": "pamhc2trees:pampeach[age=7]"
                 },
                 "pattern": [
                     ["0"],
