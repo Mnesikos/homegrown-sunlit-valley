@@ -318,6 +318,7 @@ global.artisanMachineDefinitions = [
     recipes: "society:battery",
     stageCount: 5,
     maxInput: 1,
+    upgrade: "society:frosted_tip",
   },
   {
     id: "society:espresso_machine",
