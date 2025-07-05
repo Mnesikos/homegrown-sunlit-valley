@@ -1,4 +1,12 @@
 global.removedItems = [
+  "sophisticatedbackpacks:alchemy_upgrade",
+  "sophisticatedbackpacks:advanced_alchemy_upgrade",
+  "sophisticatedstorage:advanced_alchemy_upgrade",
+  "sophisticatedstorage:alchemy_upgrade",
+  "sophisticatedbackpacks:infinity_upgrade",
+  "sophisticatedbackpacks:survival_infinity_upgrade",
+  "sophisticatedstorage:infinity_upgrade",
+  "sophisticatedstorage:survival_infinity_upgrade",
   "farmlife:sunstreak_burst_poppy",
   "farmlife:rusty_burst_poppy",
   "farmlife:olive_burst_poppy",
@@ -18,6 +26,7 @@ global.removedItems = [
   "wildernature:turkey_spawn_egg",
   "wildernature:fish_oil",
   "wildernature:loot_bag",
+  "wildernature:hazelnut",
   "meadow:wooden_grain_milk_bucket",
   "meadow:wooden_amethyst_milk_bucket",
   // Removed due to exploits :(

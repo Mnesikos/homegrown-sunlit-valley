@@ -18,7 +18,7 @@
       }
     ]
   },
-    "banana_karenina": {
+  "banana_karenina": {
     "title": "Banana Karenina",
     "description": "Doubles Banana Tree output.",
     "icon": {
@@ -33,6 +33,44 @@
         "data": {
           "unlock_command": "kubejs stages add @s banana_karenina",
           "lock_command": "kubejs stages remove @s banana_karenina"
+        }
+      }
+    ]
+  },
+  "brine_and_punishment": {
+    "title": "Brine And Punishment",
+    "description": "Pickled items are worth 100% more.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:brine_and_punishment"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s brine_and_punishment",
+          "lock_command": "kubejs stages remove @s brine_and_punishment"
+        }
+      }
+    ]
+  },
+  "bluegill_meridian": {
+    "title": "Bluegill Meridian",
+    "description": "Bluegill are now worth 666 §f●.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:bluegill_meridian"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s bluegill_meridian",
+          "lock_command": "kubejs stages remove @s bluegill_meridian"
         }
       }
     ]
@@ -113,6 +151,33 @@
       }
     ]
   },
+  "hitting_hard_and_soft": {
+    "title": "Hitting Hard and Soft",
+    "description": "Melee attacks do an extra 4 damage.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:hitting_hard_and_soft"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s hitting_hard_and_soft",
+          "lock_command": "kubejs stages remove @s hitting_hard_and_soft"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 4,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
   "intro_to_algorithms": {
     "title": "Introduction to Algorithms",
     "description": "Lead ore no longer causes Brain Damage clouds.",
@@ -128,6 +193,52 @@
         "data": {
           "unlock_command": "kubejs stages add @s intro_to_algorithms",
           "lock_command": "kubejs stages remove @s intro_to_algorithms"
+        }
+      }
+    ]
+  },
+  "no_name_for_the_sheep": {
+    "title": "No Name For the Sheep",
+    "description": "Naming animals grants an additional heart of affection.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:no_name_for_the_sheep"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s no_name_for_the_sheep",
+          "lock_command": "kubejs stages remove @s no_name_for_the_sheep"
+        }
+      }
+    ]
+  },
+  "paradise_crop": {
+    "title": "Paradise Crop",
+    "description": "1 additional crop drops per harvest.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:paradise_crop"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s paradise_crop",
+          "lock_command": "kubejs stages remove @s paradise_crop"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:harvest",
+          "value": 1,
+          "operation": "addition"
         }
       }
     ]
@@ -151,9 +262,28 @@
       }
     ]
   },
+  "slime_contain_protect": {
+    "title": "Slime Contain Protect",
+    "description": "Incubating a Slime Heart has a chance to give you a Slime Ticket.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:slime_contain_protect"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s slime_contain_protect",
+          "lock_command": "kubejs stages remove @s slime_contain_protect"
+        }
+      }
+    ]
+  },
   "slouching_towards_artistry": {
     "title": "Slouching Towards Artistry",
-    "description": "Filling an artisan machine progresses it by 1 day if the production time is greater than 1.",
+    "description": "TBD",
     "icon": {
       "type": "item",
       "data": {

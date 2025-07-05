@@ -45,12 +45,21 @@ global.processShippingBinInventory = (
         quality = slotNbt.quality_food.quality;
       }
       itemValue = calculateQualityValue(trade.value, quality);
+      if (stages.has("bluegill_meridian") && slotItem.id == "aquaculture:bluegill") {
+        itemValue = calculateQualityValue(trade.value, quality);
+      }
       if (
         stages.has("phenomenology_of_treasure") &&
         (Item.of(slotItem).hasTag("society:artifacts") ||
           Item.of(slotItem).hasTag("society:relics"))
       ) {
         itemValue *= 3;
+      }
+      if (
+        stages.has("brine_and_punishment") &&
+        Item.of(slotItem).hasTag("society:brine_and_punishment")
+      ) {
+        itemValue *= 2;
       }
       calculatedValue +=
         itemValue *

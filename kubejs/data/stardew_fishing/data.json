@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "behaviors": {
     "aquaculture:tuna": {
       "idle_time": 30,

@@ -157,6 +157,9 @@ ItemEvents.tooltip((tooltip) => {
       description: "Increases affection gained from petting farm animals.",
     },
     { item: "society:banana_karenina", description: "Doubles Banana Tree output." },
+    { item: "society:brine_and_punishment", description: "Pickled items are worth 100% more." },
+    { item: "society:bluegill_meridian", description: "Bluegill are now worth 666 §f●." },
+    { item: "society:hitting_hard_and_soft", description: "Melee attacks do an extra 4 damage." },
     {
       item: "society:canadian_and_famous",
       description: "Tappers output double. Doesn't affect Auto-Tappers.",
@@ -167,9 +170,18 @@ ItemEvents.tooltip((tooltip) => {
       description: "Lead ore no longer causes Brain Damage clouds.",
     },
     {
+      item: "society:no_name_for_the_sheep",
+      description: "Naming animals grants an additional heart of affection.",
+    },
+    { item: "society:paradise_crop", description: "1 additional crop drops per harvest." },
+    {
+      item: "society:slime_contain_protect",
+      description: "Incubating a Slime Heart has a chance to give you a Slime Ticket.",
+    },
+    {
       item: "society:slouching_towards_artistry",
       description:
-        "Filling an artisan machine progresses it by 1 day if the production time is greater than 1.",
+        "TBD",
     },
     {
       item: "society:debt_caverns",
@@ -462,6 +474,17 @@ ItemEvents.tooltip((tooltip) => {
     "splendid_slimes:slime_ticket",
     Text.gray("Use on an a Splendid Slime to learn their primary breed's favorite food.")
   );
+  tooltip.add(
+    "splendid_slimes:slime_candy",
+    Text.gray("Feed to a Splendid Slime to greatly increase their affection.")
+  );
+  tooltip.add(
+    "splendid_slimes:slime_feeder",
+    Text.gray(
+      "Feeds nearby Splendid Slimes automatically. Handles tricky traits such as 'Picky' when applicable."
+    )
+  );
+  tooltip.add("splendid_slimes:slime_feeder", Text.green(`Area: 13x13x13`));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
   tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));
@@ -471,7 +494,6 @@ ItemEvents.tooltip((tooltip) => {
     "society:dragontooth_axe",
     Text.red("Will break if wielded by one without the Dragonslayer skill")
   );
-  tooltip.add("society:kinetic_blueprint", Text.gray("Not consumed in crafting"));
   tooltip.add("botania:apothecary_default", "🏹 §6Abandoned Farm reward");
   "society:kinetic_blueprint",
     Text.gray("Given for free for completing the Boiler Room chapter in the questbook.");

@@ -471,42 +471,6 @@
             ]
         },
         {
-            "pakku_id": "le30HsEtOdqmKGRl",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "atomicstrykers-infernal-mobs"
-            },
-            "name": {
-                "curseforge": "AtomicStryker's Infernal Mobs"
-            },
-            "id": {
-                "curseforge": "227875"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "infernalmobs-1.20.1.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6145/53/infernalmobs-1.20.1.6.jar",
-                    "id": "6145053",
-                    "parent_id": "227875",
-                    "hashes": {
-                        "sha1": "9f7f8e845af77874ee244b2d7ba3e11da00f8e65",
-                        "md5": "be3e4cae47c3ac5f349cd52452899243"
-                    },
-                    "required_dependencies": [],
-                    "size": 145587,
-                    "date_published": "2025-02-01T06:59:15.283Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "79B6d8O8JRqhGXmU",
             "type": "MOD",
             "slug": {
@@ -1889,7 +1853,7 @@
             ]
         },
         {
-            "pakku_id": "Tln3RCuQnjEMblbe",
+            "pakku_id": "ngOcECe7CwQC7HQ1",
             "type": "MOD",
             "slug": {
                 "curseforge": "colorwheel-patcher"
@@ -1903,7 +1867,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "colorwheel_patcher-forge-0.2.2+mc1.20.1.jar",
+                    "file_name": "colorwheel_patcher-forge-0.2.3+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1911,16 +1875,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6684/443/colorwheel_patcher-forge-0.2.2+mc1.20.1.jar",
-                    "id": "6684443",
+                    "url": "https://edge.forgecdn.net/files/6709/278/colorwheel_patcher-forge-0.2.3+mc1.20.1.jar",
+                    "id": "6709278",
                     "parent_id": "1285475",
                     "hashes": {
-                        "sha1": "7c025cfc777908c1d7472844f8a6e20fa30c1dff",
-                        "md5": "483682f5ce2fae49e35d939c72fa0097"
+                        "sha1": "24fc386074f21afd2648add1380ea598932bacf6",
+                        "md5": "a48eb798d49167fe0c5213a1b7aa8f27"
                     },
                     "required_dependencies": [],
-                    "size": 128146,
-                    "date_published": "2025-06-22T19:37:08.293Z"
+                    "size": 129443,
+                    "date_published": "2025-06-29T19:30:16.600Z"
                 }
             ]
         },
@@ -2622,6 +2586,47 @@
             ]
         },
         {
+            "pakku_id": "02OntDWdb1blnFhq",
+            "pakku_links": [
+                "OjsYMehqACUhUBxE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-extra-gauges"
+            },
+            "name": {
+                "curseforge": "Create: Extra Gauges"
+            },
+            "id": {
+                "curseforge": "1263228"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "extra_gauges-1.1.2-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6577/508/extra_gauges-1.1.2-all.jar",
+                    "id": "6577508",
+                    "parent_id": "1263228",
+                    "hashes": {
+                        "sha1": "81e3b87df8e14dd17c9ed02c1587a10667408889",
+                        "md5": "3739ab35b41479e8e87ca0de4f453f7b"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 885280,
+                    "date_published": "2025-05-26T15:08:39.893Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "UvpZynXcQoV0AbnW",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
@@ -2703,7 +2708,10 @@
             ]
         },
         {
-            "pakku_id": "2NfFQYqjkiKCKtd8",
+            "pakku_id": "TvEetpbzUJWffc1f",
+            "pakku_links": [
+                "OjsYMehqACUhUBxE"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "create-steam-n-rails"
@@ -2717,7 +2725,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Steam_Rails-1.6.7+forge-mc1.20.1.jar",
+                    "file_name": "Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2725,19 +2733,19 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5840/17/Steam_Rails-1.6.7+forge-mc1.20.1.jar",
-                    "id": "5840017",
+                    "release_type": "alpha",
+                    "url": "https://edge.forgecdn.net/files/6688/860/Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",
+                    "id": "6688860",
                     "parent_id": "688231",
                     "hashes": {
-                        "sha1": "7449e9cbaae6a23a31127a3cf0886899c28639dc",
-                        "md5": "32a83dba6630165e1415f9e78d4aaf2e"
+                        "sha1": "22744c2e0c9b7f6b238de7b8cbd90fe1ed6be559",
+                        "md5": "10a30be6956c72fa4769d41580527e84"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 9997801,
-                    "date_published": "2024-10-23T21:20:27.887Z"
+                    "size": 10111314,
+                    "date_published": "2025-06-23T21:54:57.917Z"
                 }
             ]
         },
@@ -5779,42 +5787,6 @@
                     "required_dependencies": [],
                     "size": 550551,
                     "date_published": "2025-03-06T16:47:24.837Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "gc2pLuita7PmL6ra",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "jagms-kiwis"
-            },
-            "name": {
-                "curseforge": "Jagm's Kiwis"
-            },
-            "id": {
-                "curseforge": "890444"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "jagmkiwis-forge-1.20.1-1.2.1.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6399/496/jagmkiwis-forge-1.20.1-1.2.1.jar",
-                    "id": "6399496",
-                    "parent_id": "890444",
-                    "hashes": {
-                        "sha1": "0643640a22da738fdaf49629b3879a48770f8e32",
-                        "md5": "1428b386579b69df7ec3c3c051e03c93"
-                    },
-                    "required_dependencies": [],
-                    "size": 163714,
-                    "date_published": "2025-04-08T15:29:25.063Z"
                 }
             ]
         },
@@ -9816,7 +9788,7 @@
             ]
         },
         {
-            "pakku_id": "wa9OpDVfxEkwdBII",
+            "pakku_id": "Hie8zKSHDY5QtxJo",
             "type": "MOD",
             "slug": {
                 "curseforge": "species"
@@ -9831,7 +9803,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Species-1.20.1-2.3-forge.jar",
+                    "file_name": "species-3.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9839,16 +9811,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6131/829/Species-1.20.1-2.3-forge.jar",
-                    "id": "6131829",
+                    "url": "https://edge.forgecdn.net/files/6706/237/species-3.2.jar",
+                    "id": "6706237",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "1bc4305fb83b28015461d63452a4a01cf5337dc3",
-                        "md5": "a3aef474219746f567b71fd4af0a74dd"
+                        "sha1": "f389c110978444582f97b8d4ae5c0b32928c003e",
+                        "md5": "6e7f2fd29b23fa2d88db0667ea2c1598"
                     },
                     "required_dependencies": [],
-                    "size": 19593288,
-                    "date_published": "2025-01-27T22:01:14.603Z"
+                    "size": 41136976,
+                    "date_published": "2025-06-28T22:54:26.570Z"
                 }
             ]
         },

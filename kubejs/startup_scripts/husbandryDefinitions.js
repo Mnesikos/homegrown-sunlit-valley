@@ -79,6 +79,12 @@ global.husbandryForagingDefinitions = [
         minHearts: 6,
         hasQuality: true,
       },
+      {
+        item: "society:no_name_for_the_sheep",
+        countMult: 1,
+        chance: 0.01,
+        minHearts: 1,
+      },
     ],
   },
   {

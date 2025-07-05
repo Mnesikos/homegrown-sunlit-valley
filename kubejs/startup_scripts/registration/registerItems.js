@@ -259,9 +259,15 @@ StartupEvents.registry("item", (e) => {
     "combat_quarterly",
     "animal_fancy",
     "banana_karenina",
+    "brine_and_punishment",
+    "bluegill_meridian",
     "canadian_and_famous",
     "first_aid_guide",
+    "hitting_hard_and_soft",
     "intro_to_algorithms",
+    "no_name_for_the_sheep",
+    "paradise_crop",
+    "slime_contain_protect",
     "slouching_towards_artistry",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/books/${item}`);

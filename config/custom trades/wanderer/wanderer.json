@@ -101,8 +101,8 @@
         "amount": 1
       },
       "request": {
-        "itemKey": "numismatics:neptunium_coin",
-        "amount": 2
+        "itemKey": "numismatics:sun",
+        "amount": 16
       },
       "tradeExp": 4,
       "maxUses": 3,
@@ -118,6 +118,51 @@
       "request": {
         "itemKey": "numismatics:sun",
         "amount": 16
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:brine_and_punishment",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:bluegill_meridian",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 24
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:bluegill_meridian",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 24
       },
       "tradeExp": 4,
       "maxUses": 3,
@@ -157,6 +202,21 @@
     {
       "isRare": true,
       "offer": {
+        "itemKey": "society:hitting_hard_and_soft",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
         "itemKey": "society:intro_to_algorithms",
         "amount": 1
       },
@@ -170,7 +230,22 @@
       "demand": 0
     },
     {
-      "isRare": false,
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:no_name_for_the_sheep",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
       "offer": {
         "itemKey": "society:slouching_towards_artistry",
         "amount": 1
@@ -193,6 +268,36 @@
       "request": {
         "itemKey": "numismatics:neptunium_coin",
         "amount": 3
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:paradise_crop",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 24
+      },
+      "tradeExp": 4,
+      "maxUses": 3,
+      "priceMultiplier": 0.0,
+      "demand": 0
+    },
+    {
+      "isRare": true,
+      "offer": {
+        "itemKey": "society:slime_contain_protect",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 8
       },
       "tradeExp": 4,
       "maxUses": 3,
@@ -240,7 +345,7 @@
         "itemKey": "numismatics:neptunium_coin",
         "amount": 1
       },
-      
+
       "additionalRequest": {
         "itemKey": "aquaculture:neptunium_block",
         "amount": 1

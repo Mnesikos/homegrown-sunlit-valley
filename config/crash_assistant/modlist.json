@@ -189,10 +189,10 @@
     "modId": "cerbons_api",
     "version": "1.0.0"
   },
-  "champions-forge-1.20.1-2.1.12.0.jar": {
-    "jarName": "champions-forge-1.20.1-2.1.12.0.jar",
+  "champions-forge-1.20.1-2.1.12.2.jar": {
+    "jarName": "champions-forge-1.20.1-2.1.12.2.jar",
     "modId": "champions",
-    "version": "1.20.1-2.1.12.0"
+    "version": "1.20.1-2.1.12.2"
   },
   "chat_heads-0.13.7-forge-1.20.jar": {
     "jarName": "chat_heads-0.13.7-forge-1.20.jar",
@@ -299,10 +299,10 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.9.7.jar": {
-    "jarName": "CrashAssistant-forge-1.19.2-1.20.1-1.9.7.jar",
+  "CrashAssistant-forge-1.19.2-1.20.1-1.9.8.jar": {
+    "jarName": "CrashAssistant-forge-1.19.2-1.20.1-1.9.8.jar",
     "modId": "crash_assistant",
-    "version": "1.9.7"
+    "version": "1.9.8"
   },
   "create-1.20.1-6.0.6.jar": {
     "jarName": "create-1.20.1-6.0.6.jar",
@@ -729,11 +729,6 @@
     "modId": "jadeaddons",
     "version": "5.5.0+forge"
   },
-  "jagmkiwis-forge-1.20.1-1.2.1.jar": {
-    "jarName": "jagmkiwis-forge-1.20.1-1.2.1.jar",
-    "modId": "jagmkiwis",
-    "version": "1.2.1"
-  },
   "jeed-1.20-2.2.5.jar": {
     "jarName": "jeed-1.20-2.2.5.jar",
     "modId": "jeed",
@@ -881,11 +876,6 @@
     "jarName": "lmft-1.0.4+1.20.1-forge.jar",
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
-  },
-  "Log-Begone-Forge-1.20.1-1.0.8.jar": {
-    "jarName": "Log-Begone-Forge-1.20.1-1.0.8.jar",
-    "modId": "logbegone",
-    "version": "1.0.8"
   },
   "lootjs-forge-1.20.1-2.13.0.jar": {
     "jarName": "lootjs-forge-1.20.1-2.13.0.jar",
@@ -1082,11 +1072,6 @@
     "modId": "polylib",
     "version": "2000.0.3-build.143"
   },
-  "polymorph-forge-0.49.10+1.20.1.jar": {
-    "jarName": "polymorph-forge-0.49.10+1.20.1.jar",
-    "modId": "polymorph",
-    "version": "0.49.10+1.20.1"
-  },
   "ponderjs-1.20.1-2.0.6.jar": {
     "jarName": "ponderjs-1.20.1-2.0.6.jar",
     "modId": "ponderjs",
@@ -1106,11 +1091,6 @@
     "jarName": "Pretty Rain-1.20.1-Forge-1.1.3.jar",
     "modId": "particlerain",
     "version": "1.1.3"
-  },
-  "probejs-6.0.1-forge.jar": {
-    "jarName": "probejs-6.0.1-forge.jar",
-    "modId": "probejs",
-    "version": "6.0.1"
   },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "jarName": "puffish_attributes-0.7.2-1.20-forge.jar",
@@ -1457,10 +1437,10 @@
     "modId": "twigs",
     "version": "1.20.1-3.1.1"
   },
-  "txnilib-forge-1.0.24-1.20.1.jar": {
-    "jarName": "txnilib-forge-1.0.24-1.20.1.jar",
+  "txnilib-forge-1.0.23-1.20.1.jar": {
+    "jarName": "txnilib-forge-1.0.23-1.20.1.jar",
     "modId": "txnilib",
-    "version": "1.0.24"
+    "version": "1.0.23"
   },
   "untitledduckmod-0.7.0-forge-1.20.1.jar": {
     "jarName": "untitledduckmod-0.7.0-forge-1.20.1.jar",
@@ -1502,10 +1482,10 @@
     "modId": "visual_keybinder",
     "version": "1.20.1 - 0.1.6"
   },
-  "waterframes-FORGE-mc1.20.1-v2.1.14.jar": {
-    "jarName": "waterframes-FORGE-mc1.20.1-v2.1.14.jar",
+  "waterframes-FORGE-mc1.20.1-v2.1.15.jar": {
+    "jarName": "waterframes-FORGE-mc1.20.1-v2.1.15.jar",
     "modId": "waterframes",
-    "version": "2.1.14"
+    "version": "2.1.15"
   },
   "watermedia-2.1.25.jar": {
     "jarName": "watermedia-2.1.25.jar",
