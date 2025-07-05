@@ -293,6 +293,7 @@ StartupEvents.registry("item", (e) => {
     "penguin_egg",
     "flamingo_egg",
     "candied_animal_feed",
+    "mana_animal_feed",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });

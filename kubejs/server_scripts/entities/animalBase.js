@@ -103,7 +103,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
     }
-    if (!hungry && peckish && !player.isFake() && item !== "society:animal_feed") {
+    if (!hungry && peckish && !player.isFake() && !global.animalFeed.includes(item.id)) {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FFAA00",y:-100} 2 ${name} could use something to eat...`
       );
@@ -127,7 +127,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           y: -88,
           text: `${data.clockwork ? "⚙" : ""}${data.bff ? "❤" : ""}${
             data.bribed && data.clockwork ? " " : ""
-          }${data.bribed ? "💰" : ""}`,
+            }${data.bribed ? "💰" : ""}`,
           color: nameColor,
           alignX: "center",
           alignY: "bottom",
@@ -157,7 +157,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           y: -66,
           text: `§c${hearts > 0 ? `❤`.repeat(hearts) : ""}§0${
             hearts < 10 ? `❤`.repeat(10 - hearts) : ""
-          }`,
+            }`,
           color: "#FFAA00",
           alignX: "center",
           alignY: "bottom",
@@ -235,13 +235,20 @@ const handleFeed = (data, day, e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   const ageLastFed = data.getInt("ageLastFed");
   const affection = data.getInt("affection");
+  const affectionIncrease = {
+    "society:animal_feed": 10,
+    "society:candied_animal_feed": 20,
+    "society:mana_animal_feed": 20
+  }[item.id];
+  const affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
 
   if (day > ageLastFed) {
     server.runCommandSilent(
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(`puffish_skills experience add ${player.username} society:husbandry 5`);
-    data.affection = affection + (player.stages.has("animal_whisperer") || data.bribed ? 20 : 10);
+    data.affection = affection + affectionIncrease * affectionIncreaseMult;
+    debug && player.tell(`Increased Affection by: ${affectionIncrease * affectionIncreaseMult} from feeding`);
     data.ageLastFed = day;
     level.spawnParticles(
       "legendarycreatures:wisp_particle",
@@ -345,7 +352,7 @@ ItemEvents.entityInteracted((e) => {
 
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
-      if (item === "society:animal_feed" && !pet) handleFeed(data, day, e);
+      if (global.animalFeed.includes(item.id) && !pet) handleFeed(data, day, e);
       if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
