@@ -3,8 +3,8 @@
   "input": {
     "item": "society:animal_feed"
   },
-  "mana": 1000,
+  "mana": 10000,
   "output": {
-    "item": "society:mana_animal_feed"
+    "item": "society:mana_feed"
   }
 }

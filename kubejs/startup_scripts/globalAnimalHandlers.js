@@ -12,7 +12,7 @@ global.getAnimalIsNotCramped = (target) => {
   const level = target.getLevel();
   const entities = level
     .getEntitiesWithin(target.boundingBox.inflate(1.1))
-    .filter(e => global.checkEntityTag(e, "society:husbandry_animal"));
+    .filter((e) => global.checkEntityTag(e, "society:husbandry_animal"));
 
   return entities.length <= 6;
 };
@@ -137,6 +137,16 @@ global.handleSpecialHarvest = (
     }
     if (data.bff) {
       harvestFunction(data, 0.1, hungry, 10, 1, "society:prismatic_shard", false, {
+        level: level,
+        target: target,
+        player: player,
+        server: server,
+        block: block,
+        inventory: inventory,
+      });
+    }
+    if (!player.stages.has("animal_fancy")) {
+      harvestFunction(data, 0.05, hungry, 4, 1, "society:animal_fancy", false, {
         level: level,
         target: target,
         player: player,

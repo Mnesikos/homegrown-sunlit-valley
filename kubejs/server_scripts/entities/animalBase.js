@@ -1,6 +1,6 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = true;
+const debug = false;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
@@ -67,7 +67,9 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
   }
   if (hearts > 10) hearts = 10;
   else if (hearts < 0) hearts = 0;
-  let affectionIncrease = 10 * (player.stages.has("animal_whisperer") || data.bribed ? 2 : 1);
+  let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+  if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
+  let affectionIncrease = 20 * affectionIncreaseMult;
 
   if (target.isBaby()) {
     affectionIncrease = affectionIncrease * (player.stages.has("fostering") ? 10 : 2);
@@ -127,7 +129,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           y: -88,
           text: `${data.clockwork ? "⚙" : ""}${data.bff ? "❤" : ""}${
             data.bribed && data.clockwork ? " " : ""
-            }${data.bribed ? "💰" : ""}`,
+          }${data.bribed ? "💰" : ""}`,
           color: nameColor,
           alignX: "center",
           alignY: "bottom",
@@ -157,7 +159,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
           y: -66,
           text: `§c${hearts > 0 ? `❤`.repeat(hearts) : ""}§0${
             hearts < 10 ? `❤`.repeat(10 - hearts) : ""
-            }`,
+          }`,
           color: "#FFAA00",
           alignX: "center",
           alignY: "bottom",
@@ -236,19 +238,21 @@ const handleFeed = (data, day, e) => {
   const ageLastFed = data.getInt("ageLastFed");
   const affection = data.getInt("affection");
   const affectionIncrease = {
-    "society:animal_feed": 10,
-    "society:candied_animal_feed": 20,
-    "society:mana_animal_feed": 20
+    "society:animal_feed": 20,
+    "society:candied_animal_feed": 100,
+    "society:mana_feed": 40,
   }[item.id];
-  const affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
-
+  let affectionIncreaseMult = player.stages.has("animal_whisperer") || data.bribed ? 2 : 1;
+  if (player.stages.has("animal_fancy")) affectionIncreaseMult += 0.5;
+  // Cap affection increase at 100
+  const totalNewAffection = Math.min(affectionIncrease * affectionIncreaseMult, 100);
   if (day > ageLastFed) {
     server.runCommandSilent(
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(`puffish_skills experience add ${player.username} society:husbandry 5`);
-    data.affection = affection + affectionIncrease * affectionIncreaseMult;
-    debug && player.tell(`Increased Affection by: ${affectionIncrease * affectionIncreaseMult} from feeding`);
+    data.affection = affection + totalNewAffection;
+    debug && player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);
     data.ageLastFed = day;
     level.spawnParticles(
       "legendarycreatures:wisp_particle",

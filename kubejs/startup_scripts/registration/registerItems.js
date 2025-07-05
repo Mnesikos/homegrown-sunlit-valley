@@ -278,6 +278,8 @@ StartupEvents.registry("item", (e) => {
   // Husbandry
   [
     "animal_feed",
+    "mana_feed",
+    "candied_animal_feed",
     "milk_pail",
     "friendship_necklace",
     "fine_wool",
@@ -292,8 +294,6 @@ StartupEvents.registry("item", (e) => {
     "large_galliraptor_egg",
     "penguin_egg",
     "flamingo_egg",
-    "candied_animal_feed",
-    "mana_animal_feed",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/husbandry/${item}`);
   });

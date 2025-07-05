@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:desert",
-    "#atmospheric:is_dunes"
+    "#minecraft:is_jungle"
   ]
 }

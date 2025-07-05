@@ -1995,7 +1995,7 @@ global.lootFurniture = [
 global.animalFeed = [
   "society:animal_feed",
   "society:candied_animal_feed",
-  "society:mana_animal_feed"
+  "society:mana_feed"
 ]
 
 global.trades = new Map();

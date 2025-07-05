@@ -27,8 +27,9 @@ StartupEvents.registry("block", (event) => {
       blockInfo.serverTick(300, 0, (entity) => {
         const { inventory, block, level } = entity;
         let hasAnimalFeed = global.inventoryHasItems(inventory, "society:animal_feed", 1) == 1;
-        let hasCandiedFeed = global.inventoryHasItems(inventory, "society:candied_animal_feed", 1) == 1;
-        let hasManaFeed = global.inventoryHasItems(inventory, "society:mana_animal_feed", 1) == 1;
+        let hasCandiedFeed =
+          global.inventoryHasItems(inventory, "society:candied_animal_feed", 1) == 1;
+        let hasManaFeed = global.inventoryHasItems(inventory, "society:mana_feed", 1) == 1;
         if (!hasAnimalFeed && !hasCandiedFeed && !hasManaFeed) return;
         let slots = inventory.getSlots();
         let feedCount = 0;
@@ -48,22 +49,29 @@ StartupEvents.registry("block", (event) => {
             if (day > data.ageLastFed) {
               let fed = false;
               let boost = 0;
-              // prefer mana > candied > normal
-              if (hasManaFeed && global.useInventoryItems(inventory, "society:mana_animal_feed", 1) == 1) {
+              // prefer candied > mana > normal
+              if (
+                hasCandiedFeed &&
+                global.useInventoryItems(inventory, "society:candied_animal_feed", 1) == 1
+              ) {
                 fed = true;
-                boost = 5;
-              }
-              else if (hasCandiedFeed && global.useInventoryItems(inventory, "society:candied_animal_feed", 1) == 1) {
+                boost = 100;
+              } else if (
+                hasManaFeed &&
+                global.useInventoryItems(inventory, "society:mana_feed", 1) == 1
+              ) {
                 fed = true;
-                boost = 5;
-              } else if (hasAnimalFeed && global.useInventoryItems(inventory, "society:animal_feed", 1) == 1) {
+                boost = 20;
+              } else if (
+                hasAnimalFeed &&
+                global.useInventoryItems(inventory, "society:animal_feed", 1) == 1
+              ) {
                 fed = true;
               }
 
               if (fed) {
                 data.ageLastFed = day;
-                if (boost > 0)
-                  data.affection = data.getInt("affection") + boost;
+                if (boost > 0) data.affection = data.getInt("affection") + boost;
                 level.spawnParticles(
                   "legendarycreatures:wisp_particle",
                   true,
@@ -80,7 +88,7 @@ StartupEvents.registry("block", (event) => {
             }
           });
           for (let i = 0; i < slots; i++) {
-            if (global.animalFeed.contains(inventory.getStackInSlot(i).item.id))
+            if (global.animalFeed.includes(inventory.getStackInSlot(i).item.id))
               feedCount += inventory.getStackInSlot(i).count;
           }
           let fill = 0;

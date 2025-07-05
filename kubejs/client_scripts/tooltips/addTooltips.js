@@ -429,9 +429,14 @@ ItemEvents.tooltip((tooltip) => {
     "society:candied_animal_feed",
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
+  tooltip.add("society:candied_animal_feed", Text.green("Increases affection by a full heart"));
   tooltip.add(
-    "society:mana_animal_feed",
+    "society:mana_feed",
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
+  );
+  tooltip.add(
+    "society:mana_feed",
+    Text.green("Increases affection more than basic Animal Feed")
   );
   tooltip.add(
     "society:animal_feed_sack",

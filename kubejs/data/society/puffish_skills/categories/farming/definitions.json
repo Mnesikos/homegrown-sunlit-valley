@@ -128,7 +128,7 @@
   },
   "artisan": {
     "title": "Artisan",
-    "description": "✎ Artisan products worth 20% more.",
+    "description": "§f✎§7 Artisan products worth 20% more.",
     "frame": {
       "type": "advancement",
       "data": {
