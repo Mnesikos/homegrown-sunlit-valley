@@ -96,7 +96,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Turns an egg into mayonnaise"));
       item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
-        parent: "society:block/mayonnaise_machine_off",
+        parent: "society:block/mayonnaise_machine/mayonnaise_machine_off",
       });
     })
     .defaultState((state) => {
@@ -134,14 +134,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.mayonnaiseMachineRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/mayonnaise_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("mayonnaise_machine")),
+    multipart: getCardinalMultipartJson("mayonnaise_machine"),
   };
 });

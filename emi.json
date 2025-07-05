@@ -84,6 +84,8 @@
     }
   ],
   "lookup_history": [
+    "item:botania:horn_grass",
+    "item:botania:horn_snow",
     "item:nethervinery:netherite_nectar",
     "item:wildernature:penguin_spawn_egg",
     "item:aquaculture:tin_can",
@@ -1255,9 +1257,7 @@
     "item:translocators:item_translocator",
     "item:pipez:advanced_upgrade",
     "item:pipez:ultimate_upgrade",
-    "item:betterarcheology:villager_fossil_head",
-    "item:create:mechanical_roller",
-    "item:oreganized:lead_ingot"
+    "item:betterarcheology:villager_fossil_head"
   ],
   "craft_history": [
     "minecraft:dark_oak_slab",
@@ -1273,10 +1273,10 @@
   ],
   "recipe_defaults": {
     "added": [
-      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/golden_chestplate",
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "minecraft:kjs/golden_chestplate"
+      "jei:/sewingkit/kjs/23iuf4j9xvgbkbs5d9uaflgge",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

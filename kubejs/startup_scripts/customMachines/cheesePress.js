@@ -39,7 +39,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Turns any milk into cheese"));
       item.tooltip(Text.green("Preserves input quality"));
       item.modelJson({
-        parent: "society:block/cheese_press_off",
+        parent: "society:block/cheese_press/cheese_press_off",
       });
     })
     .defaultState((state) => {
@@ -110,14 +110,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.cheesePressRecipes, 2);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/cheese_press_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("cheese_press")),
+    multipart: getCardinalMultipartJson("cheese_press"),
   };
 });

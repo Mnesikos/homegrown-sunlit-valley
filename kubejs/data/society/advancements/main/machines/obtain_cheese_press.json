@@ -1,5 +1,5 @@
 {
-  "parent": "society:main/machines/obtain_cheese_press",
+  "parent": "society:main/machines/obtain_tapper",
   "criteria": {
     "press": {
       "conditions": {
@@ -15,7 +15,7 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "society.advancement.cheese_press.description"
+      "translate": "society.advancement.obtain_cheese_press.description"
     },
     "frame": "task",
     "hidden": false,
@@ -24,9 +24,9 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "society.advancement.cheese_press.title"
+      "translate": "society.advancement.obtain_cheese_press.title"
     }
   },
-  "requirements": [["cheese_press"]],
+  "requirements": [["press"]],
   "sends_telemetry_event": true
 }

@@ -659,10 +659,10 @@
     "modId": "gamediscs",
     "version": "0.3.2-forge"
   },
-  "geckolib-forge-1.20.1-4.7.1.2.jar": {
-    "jarName": "geckolib-forge-1.20.1-4.7.1.2.jar",
+  "geckolib-forge-1.20.1-4.7.2.jar": {
+    "jarName": "geckolib-forge-1.20.1-4.7.2.jar",
     "modId": "geckolib",
-    "version": "4.7.1.2"
+    "version": "4.7.2"
   },
   "GlitchCore-forge-1.20.1-0.0.1.1.jar": {
     "jarName": "GlitchCore-forge-1.20.1-0.0.1.1.jar",

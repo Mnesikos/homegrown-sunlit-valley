@@ -5191,7 +5191,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geckolib-forge-1.20.1-4.7.1.2.jar",
+                    "file_name": "geckolib-forge-1.20.1-4.7.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5199,16 +5199,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6333/474/geckolib-forge-1.20.1-4.7.1.2.jar",
-                    "id": "6333474",
+                    "url": "https://edge.forgecdn.net/files/6658/942/geckolib-forge-1.20.1-4.7.2.jar",
+                    "id": "6658942",
                     "parent_id": "388172",
                     "hashes": {
-                        "sha1": "c2b5d7ccf77f505996701ba477741d7e5cd034e1",
-                        "md5": "cd951c81b5551b8a3f215a825d2934fa"
+                        "sha1": "3626c6e40677f1db48edc81f4fdb16caf1dc1254",
+                        "md5": "72e8d82f49593bc4ee1f8e4ecd351d3f"
                     },
                     "required_dependencies": [],
-                    "size": 1012500,
-                    "date_published": "2025-03-22T23:44:29.837Z"
+                    "size": 1012626,
+                    "date_published": "2025-06-16T20:13:31.843Z"
                 }
             ]
         },

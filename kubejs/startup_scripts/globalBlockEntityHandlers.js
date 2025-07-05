@@ -47,7 +47,8 @@ global.processShippingBinInventory = (
       itemValue = calculateQualityValue(trade.value, quality);
       if (
         stages.has("phenomenology_of_treasure") &&
-        (Item.of(slotItem).hasTag("society:artifacts") || Item.of(slotItem).hasTag("society:relics"))
+        (Item.of(slotItem).hasTag("society:artifacts") ||
+          Item.of(slotItem).hasTag("society:relics"))
       ) {
         itemValue *= 3;
       }
@@ -618,8 +619,17 @@ const getCardinalMultipartJsonBasic = (name) => {
     },
   ];
 };
-const getCardinalMultipartJson = (name) => {
-  const path = `society:block/${name}`;
+const getCardinalMultipartJson = (name, disableExclamation) => {
+  const path = `society:block/${name}/${name}`;
+  let exclamationJson = [
+    {
+      when: { mature: true },
+      apply: { model: "society:block/machine_done" },
+    },
+  ];
+  if (disableExclamation) {
+    exclamationJson = [];
+  }
   let offJson = [
     {
       when: { working: false, upgraded: false, facing: "north" },
@@ -690,6 +700,13 @@ const getCardinalMultipartJson = (name) => {
   ];
   return [
     {
+      apply: { model: `society:block/${name}/${name}_particle` },
+    },
+    {
+      when: { mature: true },
+      apply: { model: "society:block/machine_done" },
+    },
+    {
       when: { working: true, upgraded: false, facing: "north" },
       apply: { model: path, y: 0, uvlock: false },
     },
@@ -722,6 +739,7 @@ const getCardinalMultipartJson = (name) => {
       apply: { model: `${path}_upgraded`, y: -90, uvlock: false },
     },
   ]
+    .concat(exclamationJson)
     .concat(offJson)
     .concat(doneJson);
 };

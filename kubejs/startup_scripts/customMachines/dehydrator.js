@@ -113,7 +113,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Dehydrates 8 fruit or mushrooms"));
       item.modelJson({
-        parent: "society:block/dehydrator_off",
+        parent: "society:block/dehydrator/dehydrator_off",
       });
     })
     .defaultState((state) => {
@@ -187,14 +187,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.dehydratorRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/dehydrator_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("dehydrator")),
+    multipart: getCardinalMultipartJson("dehydrator"),
   };
 });
