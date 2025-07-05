@@ -259,6 +259,10 @@ global.prizeMachineRewards = [
     ],
   },
   {
+    hint: "something not of this world.",
+    possibleOutputs: ["1x minecraft:eye_armor_trim_smithing_template"],
+  },
+  {
     hint: "soothing and refreshing... Again",
     possibleOutputs: ["2x herbalbrews:oolong_tea"],
   },
@@ -294,6 +298,7 @@ global.prizeMachineRewards = [
       "society:ancient_roe",
       "society:infinity_worm",
       "society:cordycep",
+      "society:pink_matter",
     ],
   },
 ];

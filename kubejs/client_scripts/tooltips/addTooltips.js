@@ -434,10 +434,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:mana_feed",
     Text.gray("Feeds farm animals manually or using Feeding Troughs")
   );
-  tooltip.add(
-    "society:mana_feed",
-    Text.green("Increases affection more than basic Animal Feed")
-  );
+  tooltip.add("society:mana_feed", Text.green("Increases affection more than basic Animal Feed"));
   tooltip.add(
     "society:animal_feed_sack",
     Text.red("Too large to feed farm animals manually or using Feeding Troughs")
@@ -548,6 +545,7 @@ ItemEvents.tooltip((tooltip) => {
   // Prize Machine
   tooltip.add(
     [
+      "minecraft:eye_armor_trim_smithing_template",
       "pamhc2trees:hazelnut_sapling",
       "pamhc2trees:pawpaw_sapling",
       "pamhc2trees:pawpaw_sapling",

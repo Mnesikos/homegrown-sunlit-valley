@@ -1,4 +1,11 @@
 global.removedItems = [
+  "farmlife:sunstreak_burst_poppy",
+  "farmlife:rusty_burst_poppy",
+  "farmlife:olive_burst_poppy",
+  "farmlife:fancy_burst_poppy",
+  "farmlife:peacock_burst_poppy",
+  "farmlife:electric_burst_poppy",
+  "farmlife:tribull_milk",
   "wildernature:leveling_contract",
   "wildernature:uncommon_contract",
   "wildernature:rare_contract",

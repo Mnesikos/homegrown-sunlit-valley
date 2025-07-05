@@ -415,7 +415,7 @@
 				item: "society:botanical_tribute"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
@@ -784,16 +784,55 @@
 			rewards: [{
 				count: 4
 				id: "74BCC347C67AF91F"
-				item: "society:mana_animal_feed"
+				item: "society:mana_feed"
 				type: "item"
 			}]
 			tasks: [{
 				id: "6C39686522168FA9"
-				item: "society:mana_animal_feed"
+				item: "society:mana_feed"
 				type: "item"
 			}]
 			title: "Mana Feed"
 			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B0A3083FFE1416B"]
+			description: [
+				"The &6Galliraptor&r and &6Tri-Bull&r are mysterious farm animals conjured from massive amounts of mana."
+				""
+				"You'll need an &bentire Mana Pool&r worth of mana to summon one, alongside an array of animal products to graft onto the hungry rune."
+			]
+			icon: "farmlife:galliraptor_spawn_egg"
+			id: "656E19A85C1146B4"
+			rewards: [{
+				id: "2ACF2741BA79BC87"
+				item: "society:candied_animal_feed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B98D183C624AEA4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "farmlife:domestic_tribull_spawn_egg"
+							}
+							{
+								Count: 1b
+								id: "farmlife:galliraptor_spawn_egg"
+							}
+						]
+					}
+				}
+				title: "Any Magical Farm Animal Crate"
+				type: "item"
+			}]
+			title: "Magical Animals"
+			x: 12.5d
 			y: -1.5d
 		}
 	]
