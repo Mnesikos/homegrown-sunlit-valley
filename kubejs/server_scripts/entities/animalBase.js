@@ -337,7 +337,7 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
-      const day = Number((level.dayTime() / 24000).toFixed(0));
+      const day = Number((level.dayTime() / 24000).toFixed(0)) + 1;
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
