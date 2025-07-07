@@ -9803,7 +9803,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "species-3.2.jar",
+                    "file_name": "species-3.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9811,16 +9811,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6706/237/species-3.2.jar",
-                    "id": "6706237",
+                    "url": "https://edge.forgecdn.net/files/6736/993/species-3.3.jar",
+                    "id": "6736993",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "f389c110978444582f97b8d4ae5c0b32928c003e",
-                        "md5": "6e7f2fd29b23fa2d88db0667ea2c1598"
+                        "sha1": "7bcbdea144a75934da7d57879dc6c85c3aba18e8",
+                        "md5": "e9c5e75b517ac95595366ec0ef0fec15"
                     },
                     "required_dependencies": [],
-                    "size": 41136976,
-                    "date_published": "2025-06-28T22:54:26.570Z"
+                    "size": 42086433,
+                    "date_published": "2025-07-06T12:53:48.593Z"
                 }
             ]
         },
@@ -11708,7 +11708,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "letsdo-bakery-forge-2.0.5.jar",
+                    "file_name": "letsdo-bakery-forge-2.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11717,16 +11717,20 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6508/308/letsdo-bakery-forge-2.0.5.jar",
-                    "id": "6508308",
+                    "url": "https://edge.forgecdn.net/files/5824/482/letsdo-bakery-forge-2.0.3.jar",
+                    "id": "5824482",
                     "parent_id": "1038130",
                     "hashes": {
-                        "sha1": "b2ec99a66d1b76d4c9d0f46a8a0bdc8c7277d24e",
-                        "md5": "eb077d2688da1f715750c2fe6b492df3"
+                        "sha1": "3328df3a266d10c3c8d4fb14751f9f450c9fd77c",
+                        "md5": "15eb37ec33a9f9dff00f5dc1003679ff"
                     },
-                    "required_dependencies": [],
-                    "size": 1222083,
-                    "date_published": "2025-05-08T10:47:41.283Z"
+                    "required_dependencies": [
+                        "864599",
+                        "419699",
+                        "1038103"
+                    ],
+                    "size": 1084974,
+                    "date_published": "2024-10-19T12:28:09.967Z"
                 }
             ]
         },
@@ -11792,7 +11796,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "letsdo-brewery-forge-2.0.5.jar",
+                    "file_name": "letsdo-brewery-forge-2.0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11800,20 +11804,21 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6195/389/letsdo-brewery-forge-2.0.5.jar",
-                    "id": "6195389",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5652/315/letsdo-brewery-forge-2.0.3.jar",
+                    "id": "5652315",
                     "parent_id": "1038106",
                     "hashes": {
-                        "sha1": "fe69212fb76b23aa86902d76206049de7df7b02a",
-                        "md5": "3b20bcaec81583ded8b2c49588bab98c"
+                        "sha1": "83e0dfdd18d3abd7f8bccebbcc1effd567acb2a8",
+                        "md5": "00d05e12929f3190d7f164023ff4833b"
                     },
                     "required_dependencies": [
-                        "1038103",
-                        "419699"
+                        "419699",
+                        "864599",
+                        "1038103"
                     ],
-                    "size": 2043361,
-                    "date_published": "2025-02-15T10:01:21.210Z"
+                    "size": 1409972,
+                    "date_published": "2024-08-22T09:16:53.913Z"
                 }
             ]
         },
@@ -11837,7 +11842,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "letsdo-candlelight-forge-2.0.4.jar",
+                    "file_name": "letsdo-candlelight-forge-2.0.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11845,20 +11850,21 @@
                         "neoforge",
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6195/385/letsdo-candlelight-forge-2.0.4.jar",
-                    "id": "6195385",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5652/318/letsdo-candlelight-forge-2.0.2.jar",
+                    "id": "5652318",
                     "parent_id": "1038117",
                     "hashes": {
-                        "sha1": "75e1c6bf4adb677fab0000f7019cec5adc481c6c",
-                        "md5": "18ec0e96636c467de3e6103e39c9ce63"
+                        "sha1": "664790682a40b29ee5f3ab8ae4913aaa12028291",
+                        "md5": "e84d46d1705e8b50e73318fa257b5860"
                     },
                     "required_dependencies": [
+                        "864599",
                         "1038103",
                         "419699"
                     ],
-                    "size": 2501672,
-                    "date_published": "2025-02-15T09:59:49.007Z"
+                    "size": 2359843,
+                    "date_published": "2024-08-22T09:18:34.687Z"
                 }
             ]
         },
@@ -11880,7 +11886,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "letsdo-farm_and_charm-forge-1.0.9.jar",
+                    "file_name": "letsdo-farm_and_charm-forge-1.0.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11889,18 +11895,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6561/948/letsdo-farm_and_charm-forge-1.0.9.jar",
-                    "id": "6561948",
+                    "url": "https://edge.forgecdn.net/files/5824/225/letsdo-farm_and_charm-forge-1.0.4.jar",
+                    "id": "5824225",
                     "parent_id": "1038103",
                     "hashes": {
-                        "sha1": "0f6fcdf24121b933e3448e68a22ea6f82443dbc3",
-                        "md5": "2ce36ffe0d32d6f2aaf4009d03fab779"
+                        "sha1": "328c8c7ef062da6213c2f2ecea42b99f44d3955b",
+                        "md5": "7e908f0676ab6458061e963a1795c29d"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 2134269,
-                    "date_published": "2025-05-24T17:33:51.700Z"
+                    "size": 1838745,
+                    "date_published": "2024-10-19T10:35:35.093Z"
                 }
             ]
         },

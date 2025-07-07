@@ -11,9 +11,7 @@
       "item": "minecraft:sugar"
     }
   ],
-  "result": {
-    "item": "bakery:cornet",
-    "count": 4
-  },
+  "item": "bakery:cornet",
+  "count": 4,
   "experience": 0.35
 }

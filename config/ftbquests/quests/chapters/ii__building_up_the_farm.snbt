@@ -24,11 +24,18 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest1.description4}"
 			]
 			id: "6ADD884F3FFE5D42"
-			rewards: [{
-				id: "2040ACC30B4DC0CC"
-				item: "sereneseasons:calendar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2040ACC30B4DC0CC"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+				{
+					id: "74190C8983D52EF8"
+					item: "quark:seed_pouch"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6F097F151D433739"
 				item: "farmingforblockheads:market"

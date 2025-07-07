@@ -16,7 +16,8 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
       errorText = "It's too late at night to enter the Skull Cavern...";
     } else {
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
-      player.persistentData.skullCavernEnterDay = Number((level.dayTime() / 24000).toFixed(0));
+      player.persistentData.skullCavernEnterday =
+        Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
       player.level.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {

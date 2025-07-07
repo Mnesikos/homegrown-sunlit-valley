@@ -802,30 +802,30 @@
     "modId": "doapi",
     "version": "1.2.15"
   },
-  "letsdo-bakery-forge-2.0.5.jar": {
-    "jarName": "letsdo-bakery-forge-2.0.5.jar",
+  "letsdo-bakery-forge-2.0.3.jar": {
+    "jarName": "letsdo-bakery-forge-2.0.3.jar",
     "modId": "bakery",
-    "version": "2.0.5"
+    "version": "2.0.3"
   },
   "letsdo-beachparty-forge-1.1.5.jar": {
     "jarName": "letsdo-beachparty-forge-1.1.5.jar",
     "modId": "beachparty",
     "version": "1.1.5"
   },
-  "letsdo-brewery-forge-2.0.5.jar": {
-    "jarName": "letsdo-brewery-forge-2.0.5.jar",
+  "letsdo-brewery-forge-2.0.3.jar": {
+    "jarName": "letsdo-brewery-forge-2.0.3.jar",
     "modId": "brewery",
-    "version": "2.0.5"
+    "version": "2.0.3"
   },
-  "letsdo-candlelight-forge-2.0.4.jar": {
-    "jarName": "letsdo-candlelight-forge-2.0.4.jar",
+  "letsdo-candlelight-forge-2.0.2.jar": {
+    "jarName": "letsdo-candlelight-forge-2.0.2.jar",
     "modId": "candlelight",
-    "version": "2.0.4"
+    "version": "2.0.2"
   },
-  "letsdo-farm_and_charm-forge-1.0.9.jar": {
-    "jarName": "letsdo-farm_and_charm-forge-1.0.9.jar",
+  "letsdo-farm_and_charm-forge-1.0.4.jar": {
+    "jarName": "letsdo-farm_and_charm-forge-1.0.4.jar",
     "modId": "farm_and_charm",
-    "version": "1.0.9"
+    "version": "1.0.4"
   },
   "letsdo-furniture-forge-1.0.4.jar": {
     "jarName": "letsdo-furniture-forge-1.0.4.jar",
@@ -1302,10 +1302,10 @@
     "modId": "spark",
     "version": "1.10.53"
   },
-  "species-3.2.jar": {
-    "jarName": "species-3.2.jar",
+  "species-3.3.jar": {
+    "jarName": "species-3.3.jar",
     "modId": "species",
-    "version": "3.2"
+    "version": "3.3"
   },
   "splendid_slimes-0.13.2.jar": {
     "jarName": "splendid_slimes-0.13.2.jar",

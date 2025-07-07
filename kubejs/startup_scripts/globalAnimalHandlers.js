@@ -77,7 +77,7 @@ global.handleSpecialHarvest = (
   inventory,
   harvestFunction
 ) => {
-  const day = Number((level.dayTime() / 24000).toFixed(0));
+  const day = Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
   const data = target.persistentData;
   const ageLastFed = data.getInt("ageLastFed");
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;
@@ -145,7 +145,7 @@ global.handleSpecialHarvest = (
         inventory: inventory,
       });
     }
-    if (!player.stages.has("animal_fancy")) {
+    if (!player.isFake() && !player.stages.has("animal_fancy")) {
       harvestFunction(data, 0.05, hungry, 4, 1, "society:animal_fancy", false, {
         level: level,
         target: target,

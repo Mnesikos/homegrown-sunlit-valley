@@ -187,10 +187,32 @@ BlockEvents.broken(
   (e) => {
     const { level, block, server } = e;
     const pos = block.getPos();
-
+    console.log("broken block at: " + pos);
     if (level.dimension === "society:skull_cavern") {
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
       scheduleFunction(level, pos.immutable(), server, rockType);
     }
   }
 );
+
+LevelEvents.beforeExplosion((e) => {
+  const { x, y, z, level, server } = e;
+
+  if (level.dimension !== "society:skull_cavern") return;
+  const radius = 4;
+  let scanBlock;
+  let rockType 
+  for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+    x + radius,
+    y + radius,
+    z + radius,
+  ])) {
+    scanBlock = level.getBlock(pos);
+    if (scanBlock.hasTag("society:skull_cavern_regens")) {
+      level.destroyBlock(pos, true);
+      rockType = biomeAirTypeMap.get(`${scanBlock.biomeId.toString()}`);
+      scheduleFunction(level, pos.immutable(), server, rockType);
+    }
+  }
+  e.cancel();
+});

@@ -76,7 +76,7 @@ StartupEvents.registry("block", (event) => {
           nearbyFarmAnimals.forEach((animal) => {
             if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
             let data = animal.persistentData;
-            const day = Number((level.dayTime() / 24000).toFixed(0));
+            const day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
             const hungry = day - data.getInt("ageLastFed") > 1;
             if (hungry) return;
             if (!global.getAnimalIsNotCramped(animal))

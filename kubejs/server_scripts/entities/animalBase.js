@@ -1,10 +1,10 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = false;
+const debug = true;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
-  player.tell(`Day: ${Number((level.dayTime() / 24000).toFixed(0))}`);
+  player.tell(`Day: ${Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1}`);
   player.tell(`Pet: ${data.getInt("ageLastPet")}`);
   player.tell(`Fed: ${data.getInt("ageLastFed")}`);
   player.tell(`Dropped Special: ${data.getInt("ageLastDroppedSpecial")}`);
@@ -337,7 +337,7 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
-      const day = Number((level.dayTime() / 24000).toFixed(0)) + 1;
+      const day = Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
@@ -363,7 +363,7 @@ ItemEvents.entityInteracted((e) => {
       ) {
         // TODO: Handle time mult
         let timeMult = global.getMilkingTimeMult(target.type);
-        handleMilk(name, data, day * timeMult, hungry, e);
+        handleMilk(name, data, day, hungry, e);
       }
       if (
         player.stages.has("biomancer") &&

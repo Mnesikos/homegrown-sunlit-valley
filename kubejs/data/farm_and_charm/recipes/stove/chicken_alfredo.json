@@ -11,9 +11,7 @@
       "tag": "candlelight:all_effects"
     }
   ],
-  "result": {
-    "item": "candlelight:chicken_alfredo",
-    "count": 2
-  },
+  "item": "candlelight:chicken_alfredo",
+  "count": 2,
   "experience": 0.25
 }

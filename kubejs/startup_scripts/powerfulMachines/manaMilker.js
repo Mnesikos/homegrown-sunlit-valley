@@ -32,7 +32,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
-          const day = Number((level.dayTime() / 24000).toFixed(0));
+          const day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
            // TODO: Milk mult
             // interactionCooldown *= global.getMilkingTimeMult(animal.type);
 

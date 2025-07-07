@@ -129,5 +129,19 @@
       "dimension": "minecraft:the_nether",
       "maxthis": 25
     }
+  },
+  {
+    "mob": "meadow:wooly_cow",
+    "persecond": 0.1,
+    "attempts": 10,
+    "amount": {
+      "minimum": 1,
+      "maximum": 3,
+      "groupdistance": 3
+    },
+    "conditions": {
+      "dimension": "minecraft:the_nether",
+      "maxthis": 4
+    }
   }
 ]

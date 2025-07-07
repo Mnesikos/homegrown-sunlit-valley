@@ -331,6 +331,11 @@ global.husbandryMilkingDefinitions = [
   { animal: "meadow:wooly_sheep", cooldown: 2, milk: sheepMilk },
   { animal: "wildernature:minisheep", cooldown: 2, milk: sheepMilk },
   {
+    animal: "minecraft:goat",
+    cooldown: 1,
+    milk: { sm: "society:goat_milk", lg: "society:large_goat_milk" },
+  },
+  {
     animal: "meadow:water_buffalo",
     cooldown: 1,
     milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },

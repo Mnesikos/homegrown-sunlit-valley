@@ -11,9 +11,7 @@
       "tag": "candlelight:red_effect"
     }
   ],
-  "result": {
-    "item": "candlelight:pork_ribs",
-    "count": 4
-  },
+  "item": "candlelight:pork_ribs",
+  "count": 4,
   "experience": 0.25
 }

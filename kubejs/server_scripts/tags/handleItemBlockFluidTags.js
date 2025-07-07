@@ -206,6 +206,7 @@ const rawLogs = [
   "atmospheric:crustose_log",
   "atmospheric:grimwood_log",
   "vintagedelight:magic_vine",
+  "vanillabackport:pale_oak_log",
 ];
 ServerEvents.tags("item", (e) => {
   // Misc tags
@@ -250,6 +251,7 @@ ServerEvents.tags("item", (e) => {
   bakeryMilks.forEach((milk) => {
     e.add("bakery:milk", milk);
   });
+  e.add("quark:seed_pouch_holdable", "farmersdelight:tomato_seeds");
   [
     "minecraft:potato",
     "minecraft:carrot",
@@ -342,6 +344,7 @@ ServerEvents.tags("item", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
+  e.add("forge:stripped_logs", "vanillabackport:stripped_pale_oak_log");
   // Furniture
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
@@ -361,7 +364,7 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-  
+
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
@@ -529,7 +532,7 @@ ServerEvents.tags("block", (e) => {
     "society:bait_maker",
     "society:recycling_machine",
     "society:tapper",
-    "society:cheese_press"
+    "society:cheese_press",
   ];
   tickArtisanMachines.forEach((log) => {
     e.add("society:artisan_machine", log);

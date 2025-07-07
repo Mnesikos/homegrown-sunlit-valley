@@ -11,9 +11,7 @@
       "tag": "bakery:eggs"
     }
   ],
-  "result": {
-    "item": "farmersdelight:honey_cookie",
-    "count": 4
-  },
+  "item": "farmersdelight:honey_cookie",
+  "count": 4,
   "experience": 0.3
 }

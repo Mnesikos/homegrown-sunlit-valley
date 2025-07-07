@@ -11,9 +11,7 @@
       "tag": "bakery:dough"
     }
   ],
-  "result": {
-    "item": "bakery:toast",
-    "count": 3
-  },
+  "item": "bakery:toast",
+  "count": 3,
   "experience": 0.35
 }

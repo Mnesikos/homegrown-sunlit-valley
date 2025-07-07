@@ -815,8 +815,10 @@ global.logs = [
   { item: "minecraft:stripped_warped_stem", value: 16 },
   { item: "minecraft:crimson_stem", value: 16 },
   { item: "minecraft:stripped_crimson_stem", value: 16 },
-  { item: "vintagedelight:magic_vine", value: 16 },
-  { item: "vintagedelight:stripped_magic_vine", value: 16 },
+  { item: "vintagedelight:magic_vine", value: 32 },
+  { item: "vintagedelight:stripped_magic_vine", value: 32 },
+  { item: "vanillabackport:pale_oak_log", value: 8 },
+  { item: "vanillabackport:stripped_pale_oak_log", value: 8 },
   // Log byproducts
   { item: "farmersdelight:tree_bark", value: 2 },
   { item: "farmersdelight:straw", value: 3 },
@@ -1992,11 +1994,7 @@ global.lootFurniture = [
   "furniture:coffer",
 ];
 
-global.animalFeed = [
-  "society:animal_feed",
-  "society:candied_animal_feed",
-  "society:mana_feed"
-]
+global.animalFeed = ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"];
 
 global.trades = new Map();
 global.ore.forEach((oreItem) => {

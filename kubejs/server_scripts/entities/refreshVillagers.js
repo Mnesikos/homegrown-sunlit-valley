@@ -6,8 +6,7 @@ ItemEvents.entityInteracted((e) => {
   if (target.type !== "minecraft:villager") return;
   let updateThis = false;
   const nbt = target.nbt.toString();
-  if (nbt.includes("shepherd") && (!nbt.includes("stylin_purple_hat") || !nbt.includes("name_tag")))
-    updateThis = true;
+  if (nbt.includes("leatherworker") && !nbt.includes("stylin_purple_hat")) updateThis = true;
   if (nbt.includes("botanist") && nbt.includes("cornucopia")) updateThis = true;
   if (nbt.includes("minecraft:farmer") && !nbt.includes("bakery")) updateThis = true;
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
