@@ -9803,7 +9803,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "species-3.3.jar",
+                    "file_name": "species-3.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9811,16 +9811,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6736/993/species-3.3.jar",
-                    "id": "6736993",
+                    "url": "https://edge.forgecdn.net/files/6744/903/species-3.4.jar",
+                    "id": "6744903",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "7bcbdea144a75934da7d57879dc6c85c3aba18e8",
-                        "md5": "e9c5e75b517ac95595366ec0ef0fec15"
+                        "sha1": "9a382083142bf27992fbe0836d297f89265dd24a",
+                        "md5": "eff659ebb9c4a822f480a4c27d13a8af"
                     },
                     "required_dependencies": [],
-                    "size": 42086433,
-                    "date_published": "2025-07-06T12:53:48.593Z"
+                    "size": 42101496,
+                    "date_published": "2025-07-08T16:03:05.663Z"
                 }
             ]
         },

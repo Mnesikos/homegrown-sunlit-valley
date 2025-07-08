@@ -37,7 +37,7 @@ StartupEvents.registry("block", (event) => {
         inventory.allItems;
         let nearbyFarmAnimals;
         if (inventory.toString().includes("animal_feed")) {
-          let day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
+          let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
           nearbyFarmAnimals = level
             .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
             .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));

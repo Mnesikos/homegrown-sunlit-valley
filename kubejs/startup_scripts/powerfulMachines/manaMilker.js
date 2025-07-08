@@ -32,7 +32,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
-          const day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
+          const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
             let milkItem = global.getMilk(animal, data, undefined, day);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);

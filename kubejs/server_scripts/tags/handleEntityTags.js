@@ -48,6 +48,10 @@ ServerEvents.tags("entity_type", (e) => {
     "minecraft:horse",
     "minecraft:polar_bear",
     "hamsters:hamster",
+    "wildernature:red_wolf",
+    "wildernature:owl",
+    "wildernature:dog",
+    "minecraft:axolotl",
   ];
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);

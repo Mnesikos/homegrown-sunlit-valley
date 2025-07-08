@@ -1363,7 +1363,7 @@ const stoveRecipes = [
   { item: "bakery:braided_bread", value: 6 },
   { item: "farm_and_charm:roasted_corn", value: 88 },
   { item: "candlelight:chicken_alfredo", value: 112 },
-  { item: "farm_and_charm:farmers_bread", value: 7 },
+  { item: "farm_and_charm:farmers_bread", value: 12 },
   { item: "bakery:crusty_bread", value: 8 },
   { item: "bakery:bundt_cake", value: 104 },
   { item: "candlelight:pork_ribs", value: 64 },

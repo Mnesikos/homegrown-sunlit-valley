@@ -1659,6 +1659,40 @@
 			x: 6.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["4A48308E11476E9B"]
+			description: [
+				"Figuring out which Fish can be caught in a given location can be tricky. Some have very specific spawning conditions on top of being very rare."
+				""
+				"The &6Fish Finder&r lists out every fish in the game and its exact spawn conditions. It can either be found or purchased from a &6Fisher&r."
+			]
+			id: "2A02C6E45ED944F4"
+			rewards: [{
+				id: "719226375F98A0BA"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:fish_finder"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BE2D06B565E866E"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:fish_finder"
+					}
+				}
+				type: "item"
+			}]
+			title: "Fishing Guide"
+			x: 11.0d
+			y: -7.0d
+		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"
 }

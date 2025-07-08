@@ -9,7 +9,7 @@ removeForestAnimals = true
 #Add Jungle Animals
 addJungleAnimals = true
 #Spawn Hazelnut Bush
-spawnHazelnutBush = true
+spawnHazelnutBush = false
 #Pelican Spawn Weight
 #Range: 0 ~ 1000
 pelicanSpawnWeight = 5
