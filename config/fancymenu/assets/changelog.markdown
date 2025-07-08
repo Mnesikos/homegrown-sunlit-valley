@@ -1,6 +1,6 @@
 ^^^
 ## Library of Animals
-### v3.1.0-PLAYTEST - 2
+### v3.1.0-PLAYTEST - 3
 ^^^
 --- 
 - Updated the pack to Create 6
@@ -8,15 +8,18 @@
 - Added 15 skill books found from certain actions or bought from Wandering Trader
 - Added Artisan Cheese Press and Pink Matter upgrade
 - Added Slime Feeder and Slime Candy
-- Added Miking and Special items to JEI
-- Added Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
-- Added Tri-Bull, Galliraptors - Botania exclusive husbandry animals
+- Added Miking Special items, and Pet Gifts to JEI
+- Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
+- Added husbandry mechanics to animals: Frog, Wraptor
+- Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
+- Added new animals: Tri-Bull, Galliraptors - Botania exclusive husbandry animals
 - Added Slimes locations and risks to Farmer's Almanac
 - Added Bubonic Billionic Beach Hat to Leatherworker
 - Added values to Cheese Pieces and Growth Totem
 - Added Scavenged Loot Bag
 - Added Fruit/Trees to Farmer's Almanac (Thanks Devon!)
 - Added Fish Finder - Book with all fish locations obtained through loot or trading (Thanks Copixel!)
+- Added Magic Rope (Staircase equivalent to Stardew) to Exotic Trader
 - Added Meowmageddon 
 - Added Candied Animal feed and Mana Animal Feed (Thanks Devon!)
 - Added new models for Aging Cask and Ancient Cask
@@ -25,20 +28,25 @@
 - Added "Eye" Smithing Template as Prize Machine reward
 - Added new Spawn Crate textures for some Spawn eggs
 - Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
+- Added Inception upgrade to Leatherworker and removed original recipe
 - Sniffer, Golden, and Petrified eggs now have quality
 - Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
 - Increased animal affection gain by 2x
 - Increased Panda forage multiplier by 2
-- Increased chance of Skull Cavern boulders replacing ores by 25%
+- Increased chance of Skull Cavern boulders
+- Increased Fletcher trade amount by double
 - Improved recipe category sort order so loot/block drops are always last
+- Minty Slimes now give Bloodlust effect, Juicy now give mining fatigue
 - Fish Ponds no longer burn in lava
 - Updated Flamarang texture (Thanks Tilles)
 - Reduced cost of Preserves Jars to not use Pine Tar
+- Reduced Hay Bale spawn chance
 - Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
 - Reworked Wooly Cows to spawn in Warped Forests and give milk less often
 - Renamed old Cheese Press to Auto-Cheese Press
 - Removed crafting recipe for Milk Bottles to Large Milk
 - Removed Hearthstone cross-dimension durability debuff
+- Removed Powdered Snow from Frozen Caves in the Skull Cavern
 - Re-wrote extractinator to fix bugs
 - Fixed brewfest gear having old recipes
 - Fixed Jellyfish not having quality
@@ -51,4 +59,12 @@
 - Fixed experience showing as 0 when fainting from Skull Cavern
 - Fixed ores broken with a hammer/shatterer not regenerating
 - Fixed Skull Cavern not regenerating in certain cases
+- Fixed Skull Cavern marking things as the next day at 6pm instead of 6am
 - Fixed Frosted Tip upgrade not dropping (Thanks MCSuchter!)
+- Fixed Toolbelt having its own slot
+- Fixed Impact Hammer not being craftable
+- Fixed Pale Oak not having the correct tags
+- Fixed Ancient Goddess Statue console spam
+- Fixed Pine/Dark Cherry Beam recipe conflicts
+- Fixed Electrum Swords/Knife only having looting II
+- Fixed Warped Tower's Slime Spawners being on cooldown
