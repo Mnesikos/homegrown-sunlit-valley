@@ -27,6 +27,12 @@
           "data": {
             "Name": "society:deepslate_iridium_ore"
           }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "Name": "society:skull_cavern_teleporter"
+          }
         }
       ]
     }

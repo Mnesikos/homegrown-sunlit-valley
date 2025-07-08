@@ -29,12 +29,6 @@
           "data": {
             "Name": "minecraft:snow_block"
           }
-        },
-        {
-          "weight": 1,
-          "data": {
-            "Name": "minecraft:powder_snow"
-          }
         }
       ]
     },

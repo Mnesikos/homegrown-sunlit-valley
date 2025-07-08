@@ -81,7 +81,10 @@
   "features": [
     [],
 
-    ["society:umbra_barrens/end_stone_ladder", "society:umbra_barrens/end_stone_rock"],
+    [
+      "society:umbra_barrens/end_stone_ladder",
+      "society:umbra_barrens/end_stone_rock"
+    ],
     [],
     [],
     ["society:umbra_barrens/end_room", "society:umbra_barrens/end_room_2"],

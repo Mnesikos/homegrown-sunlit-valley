@@ -1635,7 +1635,7 @@
 			description: [
 				"&eElectrum Tools&r increase in damage the faster the wearer is. This combines well with the armor, allowing you to rip and tear through mobs."
 				""
-				"They also come built in with &6Fortune II&r."
+				"They also come built in with &6Fortune III&r."
 			]
 			icon: {
 				Count: 1

@@ -1,7 +1,7 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
 const stoneRockTable = [
-  { block: "society:stone_boulder", weight: 113 },
+  { block: "society:stone_boulder", weight: 163 },
   { block: "minecraft:coal_ore", weight: 25 },
   { block: "minecraft:copper_ore", weight: 20 },
   { block: "minecraft:iron_ore", weight: 15 },
@@ -12,7 +12,7 @@ const stoneRockTable = [
 ];
 
 const iceRockTable = [
-  { block: "society:ice_boulder", weight: 114 },
+  { block: "society:ice_boulder", weight: 164 },
   { block: "minecraft:iron_ore", weight: 25 },
   { block: "create:zinc_ore", weight: 15 },
   { block: "oreganized:lead_ore", weight: 10 },
@@ -23,7 +23,7 @@ const iceRockTable = [
 ];
 
 const sandstoneRockTable = [
-  { block: "society:sandstone_boulder", weight: 113 },
+  { block: "society:sandstone_boulder", weight: 163 },
   { block: "minecraft:gold_ore", weight: 20 },
   { block: "oreganized:lead_ore", weight: 10 },
   { block: "minecraft:redstone_ore", weight: 6 },
@@ -37,7 +37,7 @@ const sandstoneRockTable = [
 ];
 
 const blackstoneRockTable = [
-  { block: "society:blackstone_boulder", weight: 118 },
+  { block: "society:blackstone_boulder", weight: 148 },
   { block: "minecraft:deepslate_gold_ore", weight: 20 },
   { block: "oreganized:deepslate_lead_ore", weight: 10 },
   { block: "minecraft:deepslate_redstone_ore", weight: 15 },
@@ -51,7 +51,7 @@ const blackstoneRockTable = [
 ];
 
 const endstoneRockTable = [
-  { block: "society:end_stone_boulder", weight: 174 },
+  { block: "society:end_stone_boulder", weight: 194 },
   { block: "society:deepslate_sparkstone_ore", weight: 14 },
   { block: "society:omni_geode_node", weight: 4, sturdy: true },
   { block: "society:deepslate_iridium_ore", weight: 3 },
@@ -196,12 +196,15 @@ BlockEvents.broken(
 );
 
 LevelEvents.beforeExplosion((e) => {
-  const { x, y, z, level, server } = e;
-
-  if (level.dimension !== "society:skull_cavern") return;
-  const radius = 4;
+  const { x, y, z, level, server, exploder } = e;
+  if (
+    level.dimension !== "society:skull_cavern" ||
+    exploder.type == "splendid_slimes:splendid_slime"
+  )
+    return;
+  const radius = 2;
   let scanBlock;
-  let rockType 
+  let rockType;
   for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
     x + radius,
     y + radius,
@@ -216,3 +219,10 @@ LevelEvents.beforeExplosion((e) => {
   }
   e.cancel();
 });
+BlockEvents.broken(
+  "society:skull_cavern_teleporter",
+  (e) => {
+    const { level } = e;
+    if (level.dimension === "society:skull_cavern") e.cancel();
+  }
+);

@@ -61,6 +61,7 @@ const registerMilkingCategory = (event, equipment, title) => {
       });
   });
 };
+
 const registerForagingCategory = (event, title) => {
   event.custom("society:foraging", (category) => {
     const {
@@ -103,20 +104,28 @@ const registerForagingCategory = (event, title) => {
         forages.forEach((forage, index) => {
           if (forage.itemPool) {
             forage.itemPool.forEach((poolItem, poolIndex) => {
-            // Keep itemPool forages at end of pool to ensure calculation correct
-            builder
-              .addSlot("OUTPUT", 50 + (index + poolIndex) * slotSize, 2)
-              .addItemStack(Item.of(`${forage.countMult}x ${poolItem}`))
-              .addTooltipCallback((slotView, tooltip) => {
-                tooltip.add(1, Text.lightPurple(`${forage.minHearts}+ ❤ affection required`));
-                tooltip.add(2, Text.gold(`Part of an item pool:`));
-                tooltip.add(3, Text.gold(` ${Math.round(forage.chance * 100)}% chance to roll the pool`));
-                tooltip.add(4, Text.gold(` ${Math.round((1 / forage.itemPool.length) * 100)}% chance to be selected`));
-                if (forage.hasQuality) {
-                  tooltip.add(5, Text.green("Affection raises quality"));
-                }
-              })
-              .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+              // Keep itemPool forages at end of pool to ensure calculation correct
+              builder
+                .addSlot("OUTPUT", 50 + (index + poolIndex) * slotSize, 2)
+                .addItemStack(Item.of(`${forage.countMult}x ${poolItem}`))
+                .addTooltipCallback((slotView, tooltip) => {
+                  tooltip.add(1, Text.lightPurple(`${forage.minHearts}+ ❤ affection required`));
+                  tooltip.add(2, Text.gold(`Part of an item pool:`));
+                  tooltip.add(
+                    3,
+                    Text.gold(` ${Math.round(forage.chance * 100)}% chance to roll the pool`)
+                  );
+                  tooltip.add(
+                    4,
+                    Text.gold(
+                      ` ${Math.round((1 / forage.itemPool.length) * 100)}% chance to be selected`
+                    )
+                  );
+                  if (forage.hasQuality) {
+                    tooltip.add(5, Text.green("Affection raises quality"));
+                  }
+                })
+                .setBackground(guiHelper.getSlotDrawable(), -1, -1);
             });
           } else {
             builder
@@ -135,9 +144,67 @@ const registerForagingCategory = (event, title) => {
       });
   });
 };
+
+const registerGiftCategory = (event, title) => {
+  event.custom("society:pet_gifts", (category) => {
+    const {
+      jeiHelpers: { guiHelper },
+    } = category;
+    category
+      .title(title)
+      .background(guiHelper.createDrawable("society:textures/gui/gifting.png", 1, 1, 174, 40))
+      .icon(guiHelper.createDrawableItemStack(Item.of("supplementaries:present_magenta")))
+      .isRecipeHandled((recipe) => {
+        return !!(recipe?.data?.animal !== undefined);
+      })
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+        global["textDrawHandler"](
+          category.jeiHelpers,
+          recipe,
+          recipeSlotsView,
+          guiGraphics,
+          mouseX,
+          mouseY
+        );
+      })
+      .handleLookup((builder, recipe) => {
+        const { animal, gifts } = recipe.data;
+        const slotSize = 21;
+        builder
+          .addSlot("INPUT", 2, 2)
+          .addItemStack(`${animal}_spawn_egg`)
+          .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        global["textDrawHandler"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics) => {
+          guiGraphics.drawWordWrap(
+            Client.font,
+            Text.of("Hover over items for more info."),
+            2,
+            28,
+            177,
+            0
+          );
+        };
+        gifts.forEach((item, index) => {
+          builder
+            .addSlot("OUTPUT", 50 + index * slotSize, 2)
+            .addItemStack(Item.of(`1x ${item}`))
+            .addTooltipCallback((slotView, tooltip) => {
+              tooltip.add(1, Text.lightPurple(`At 10 ❤ affection`));
+              tooltip.add(
+                2,
+                Text.gold(`${Math.round((1 / gifts.length) * 100)}% chance to be selected`)
+              );
+            })
+            .setBackground(guiHelper.getSlotDrawable(), -1, -1);
+        });
+      });
+  });
+};
+
 JEIAddedEvents.registerCategories((e) => {
   registerMilkingCategory(e, "society:milk_pail", "Milking");
   registerForagingCategory(e, "Farm Animal Foraging");
+  registerGiftCategory(e, "Pet Gifts");
 });
 
 JEIAddedEvents.registerRecipes((e) => {
@@ -146,5 +213,8 @@ JEIAddedEvents.registerRecipes((e) => {
   });
   global.husbandryForagingDefinitions.forEach((element) => {
     e.custom("society:foraging").add(element);
+  });
+  global.petGifts.forEach((element) => {
+    e.custom("society:pet_gifts").add(element);
   });
 });

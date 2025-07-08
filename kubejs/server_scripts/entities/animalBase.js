@@ -1,10 +1,10 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = true;
+const debug = false;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
-  player.tell(`Day: ${Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1}`);
+  player.tell(`Day: ${Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed())}`);
   player.tell(`Pet: ${data.getInt("ageLastPet")}`);
   player.tell(`Fed: ${data.getInt("ageLastFed")}`);
   player.tell(`Dropped Special: ${data.getInt("ageLastDroppedSpecial")}`);
@@ -337,7 +337,7 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") && !pet) return;
   server.scheduleInTicks(1, () => {
     if (hand == "MAIN_HAND") {
-      const day = Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
+      const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
       handleFarmAnimalBackwardsCompat(target, day);
       initializeFarmAnimal(day, target, level);
       const data = target.persistentData;
@@ -361,8 +361,6 @@ ItemEvents.entityInteracted((e) => {
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
-        // TODO: Handle time mult
-        let timeMult = global.getMilkingTimeMult(target.type);
         handleMilk(name, data, day, hungry, e);
       }
       if (

@@ -180,8 +180,7 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:slouching_towards_artistry",
-      description:
-        "TBD",
+      description: "TBD",
     },
     {
       item: "society:debt_caverns",
@@ -313,7 +312,11 @@ ItemEvents.tooltip((tooltip) => {
     "tradingpost:trading_post",
     Text.gray("Trade with all nearby villagers in one place")
   );
-
+  tooltip.add("society:magic_rope", Text.gray("Teleports you down a level in the Skull Cavern"));
+  tooltip.add(
+    "society:magic_rope",
+    Text.red("Make sure you're carrying an Escape rope in case you get stuck...")
+  );
   // Fertilizers
   tooltip.add(
     "dew_drop_farmland_growth:weak_fertilizer",

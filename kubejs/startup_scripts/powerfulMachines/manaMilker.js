@@ -33,9 +33,6 @@ StartupEvents.registry("block", (event) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
           const day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
-           // TODO: Milk mult
-            // interactionCooldown *= global.getMilkingTimeMult(animal.type);
-
             let milkItem = global.getMilk(animal, data, undefined, day);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);

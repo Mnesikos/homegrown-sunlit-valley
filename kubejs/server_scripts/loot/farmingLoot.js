@@ -82,7 +82,26 @@ const cropList = [
   "society:sweet_potato",
   "society:onion",
 ];
-const reeseedableCops = ["herbalbrews:yerba_mate","herbalbrews:rooibos","herbalbrews:coffee"];
+const cropCollectorDenied = [
+  "herbalbrews:yerba_mate",
+  "herbalbrews:rooibos",
+  "herbalbrews:coffee",
+  "pamhc2trees:pamapple",
+  "pamhc2trees:pamcherry",
+  "pamhc2trees:pamorange",
+  "pamhc2trees:pampeach",
+  "pamhc2trees:pamplum",
+  "pamhc2trees:pamhazelnut",
+  "pamhc2trees:pampawpaw",
+  "pamhc2trees:pambanana",
+  "pamhc2trees:pamcinnamon",
+  "pamhc2trees:pamdragonfruit",
+  "pamhc2trees:pammango",
+  "pamhc2trees:pamstarfruit",
+  "pamhc2trees:pamlychee",
+  "pamhc2trees:pamlemon",
+  "pamhc2trees:pampassionfruit",
+];
 const checkMaxGrown = (destroyedBlock) => {
   return destroyedBlock.blockState.block.isMaxAge(destroyedBlock.blockState);
 };
@@ -148,7 +167,7 @@ LootJS.modifiers((e) => {
   e.addBlockLootModifier(cropList)
     .hasAnyStage("crop_collector")
     .modifyLoot(Ingredient.all, (itemStack) => {
-      if (!reeseedableCops.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
+      if (!cropCollectorDenied.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
       return itemStack;
     });
 });

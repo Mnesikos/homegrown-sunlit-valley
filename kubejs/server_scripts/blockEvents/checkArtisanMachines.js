@@ -181,7 +181,6 @@ BlockEvents.rightClicked(
     "society:bait_maker",
     "society:aging_cask",
     "society:ancient_cask",
-    "society:ancient_goddess_statue",
     "society:charging_rod",
     "society:crystalarium",
     "society:deluxe_worm_farm",

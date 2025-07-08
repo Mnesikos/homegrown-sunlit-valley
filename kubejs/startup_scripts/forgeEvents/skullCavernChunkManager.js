@@ -4,7 +4,7 @@ global.chunkLoadManager = (e) => {
   const { chunk, level } = e;
 
   if (level.dimension === "society:skull_cavern" && !level.isClientSide()) {
-    const day = Math.floor(Number(level.dayTime() / 24000)).toFixed()+ 1;
+    const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
 
     if (!level.persistentData.chunkParityMap) level.persistentData.chunkParityMap = {};
     let chunkPos = chunk.pos.toString();
@@ -16,9 +16,7 @@ global.chunkLoadManager = (e) => {
           toggleBit: Number(chunkMap[chunkPos].toggleBit) == 0 ? 1 : 0,
         };
       }
-    } else {
-      level.persistentData.chunkParityMap[chunkPos] = { day: day, toggleBit: 0 };
-    }
+    } else if (chunkMap) level.persistentData.chunkParityMap[chunkPos] = { day: day, toggleBit: 0 };
   }
 };
 

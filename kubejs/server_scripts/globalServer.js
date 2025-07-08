@@ -15,6 +15,7 @@ global.mainUiElementIds = [
   "seedBiomeMessage",
   "skullTeleportMessage",
   "skullCavernPlaceBlockMessage",
+  "magicRopeMessage",
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};
@@ -435,7 +436,7 @@ global.teleportHome = (player, server, level) => {
     0.0,
     0.0
   );
-  server.runCommandSilent(`experience add ${player.username} 1`)
+  server.runCommandSilent(`experience add ${player.username} 1`);
 };
 
 /**

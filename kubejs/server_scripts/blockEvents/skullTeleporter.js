@@ -17,7 +17,7 @@ BlockEvents.rightClicked("society:skull_cavern_teleporter", (e) => {
     } else {
       player.teleportTo("society:skull_cavern", x, 512, z, 0, 0);
       player.persistentData.skullCavernEnterday =
-        Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
+        Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
       player.level.getBlock(x, 511, z).set("society:skull_cavern_teleporter");
     }
   } else {

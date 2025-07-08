@@ -134,5 +134,9 @@
   "biome.society.desert_caves": ":pick: Desert Caves",
   "biome.society.desert_fault": ":pick: Desert Fault",
   "biome.society.blackstone_caves": ":pick: Blackstone Caves",
-  "biome.society.umbra_barrens": ":pick: Umbra Barrens"
+  "biome.society.umbra_barrens": ":pick: Umbra Barrens",
+
+  "affix.society.famine": "Famine",
+  "affix.society.partystarter": "Partystarter",
+  "affix.society.slime_pinata": "Slime Pinata"
 }

@@ -88,6 +88,12 @@
         "weight": 40
       },
       {
+        "type": "minecraft:zombie",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 100
+      },
+      {
         "type": "legendarycreatures:forest_mojo",
         "maxCount": 4,
         "minCount": 4,

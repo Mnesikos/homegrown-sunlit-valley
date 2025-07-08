@@ -16,16 +16,25 @@ global.getAnimalIsNotCramped = (target) => {
 
   return entities.length <= 6;
 };
+global.isWarpedCow = (target) =>
+  target.type === "meadow:wooly_cow" && Number(target.getNbt().Variant) === 2;
 
-global.getMilkingTimeMult = (type) => {
-  if (type === "minecraft:goat" || type === "species:mammutilation") return 2;
-  else if (type === "minecraft:sheep") return 1.5;
-  return 1;
+global.getMilkingTimeMult = (target, type) => {
+  const warped = global.isWarpedCow(target);
+  let mult;
+  global.husbandryMilkingDefinitions.forEach((definition) => {
+    if (!mult && definition.animal.equals(type.toString())) {
+      if (warped && definition.warped) mult = definition.cooldown;
+      if (!warped) mult = definition.cooldown;
+    }
+  });
+  return mult;
 };
 
-const resolveMilk = (hearts, type, warped) => {
+const resolveMilk = (hearts, target, type) => {
   const large = hearts > 5;
   let milk;
+  const warped = global.isWarpedCow(target);
   global.husbandryMilkingDefinitions.forEach((definition) => {
     if (!milk && definition.animal.equals(type.toString())) {
       if (warped && definition.warped) milk = large ? definition.milk.lg : definition.milk.sm;
@@ -38,19 +47,18 @@ const resolveMilk = (hearts, type, warped) => {
 global.getMilk = (target, data, player, day, raiseEffection) => {
   const ageLastMilked = data.getInt("ageLastMilked");
   const hungry = day - data.getInt("ageLastFed") > 1;
-  const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
   const affection = data.getInt("affection");
   let hearts = Math.floor(affection / 100);
   const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
-  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
-  let warped = false;
+  if (player) affectionIncrease = player.stages.has("animal_whisper.er") || data.bribed ? 20 : 10;
   let quality = 0;
 
-  if (nonIdType === "wooly cow" && Number(target.getNbt().Variant) === 2) {
-    warped = true;
-  }
-  if (!target.isBaby() && !hungry && (freshAnimal || day > ageLastMilked)) {
+  if (
+    !target.isBaby() &&
+    !hungry &&
+    (freshAnimal || day > ageLastMilked + global.getMilkingTimeMult(target, target.type))
+  ) {
     if (raiseEffection) data.affection = affection + affectionIncrease;
     data.ageLastMilked = day;
     if (hearts >= 10 || (hearts > 0 && hearts % 5 === 0)) {
@@ -58,7 +66,7 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
     } else {
       quality = (hearts % 5) - 2;
     }
-    let milkId = resolveMilk(hearts, target.type, warped);
+    let milkId = resolveMilk(hearts, target, target.type);
     if (milkId == "species:ichor_bottle" && hearts >= 5) quality = 3;
     return Item.of(
       `${player && player.stages.has("shepherd") ? 2 : 1}x ${milkId}`,
@@ -77,7 +85,7 @@ global.handleSpecialHarvest = (
   inventory,
   harvestFunction
 ) => {
-  const day = Math.floor(Number(level.dayTime() / 24000)).toFixed() + 1;
+  const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
   const data = target.persistentData;
   const ageLastFed = data.getInt("ageLastFed");
   const ageLastDroppedSpecial = data.getInt("ageLastDroppedSpecial") || 0;

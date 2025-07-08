@@ -320,7 +320,7 @@ global.crops = [
   { item: "atmospheric:yucca_bundle", value: 72 },
   { item: "atmospheric:yucca_cask", value: 72 },
   { item: "atmospheric:currant", value: 8 },
-  { item: "atmospheric:currant_crate", value: 144 },
+  { item: "atmospheric:currant_crate", value: 72 },
   { item: "vintagedelight:peanut", value: 24 },
   { item: "vintagedelight:peanut_crate", value: 216 },
   { item: "vintagedelight:gearo_berry", value: 24 },

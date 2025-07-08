@@ -106,6 +106,12 @@ global.husbandryForagingDefinitions = [
         hasQuality: true,
         stage: { name: "coopmaster", locale: "Coopmaster", newCountMult: 2 },
       },
+      {
+        item: "wildernature:bunny_stalker_banner",
+        countMult: 1,
+        chance: 0.01,
+        minHearts: 10,
+      },
     ],
   },
   {
@@ -211,6 +217,33 @@ global.husbandryForagingDefinitions = [
         countMult: 1,
         chance: 0.5,
         minHearts: 3,
+      },
+    ],
+  },
+  {
+    animal: "minecraft:frog",
+    forages: [
+      {
+        item: "society:sap",
+        countMult: 4,
+        chance: 0.2,
+        minHearts: 1,
+      },
+      {
+        item: "society:ribbit_gadget",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 7,
+      },
+      {
+        itemPool: [
+          "minecraft:ochre_froglight",
+          "minecraft:verdant_froglight",
+          "minecraft:pearlescent_froglight",
+        ],
+        countMult: 8,
+        chance: 0.25,
+        minHearts: 5,
       },
     ],
   },
@@ -354,5 +387,30 @@ global.husbandryMilkingDefinitions = [
     animal: "species:mammutilation",
     cooldown: 1,
     milk: { sm: "species:ichor_bottle", lg: "species:ichor_bottle" },
+  },
+];
+
+global.petGifts = [
+  { animal: "buzzier_bees:grizzly_bear", gifts: ["society:beemonican_seal"] },
+  { animal: "legendarycreatures:nether_wisp", gifts: ["legendarycreatures:nether_wisp_spawn_egg"] },
+  { animal: "legendarycreatures:ender_wisp", gifts: ["simplehats:pika_ears"] },
+  { animal: "minecraft:wolf", gifts: ["simplehats:longfoxears", "betterarcheology:wolf_fossil"] },
+  { animal: "minecraft:cat", gifts: ["simplehats:nekoears", "betterarcheology:ocelot_fossil"] },
+  { animal: "quark:foxhound", gifts: ["simplehats:fireworks"] },
+  { animal: "quark:shiba", gifts: ["simplehats:eevee_ears"] },
+  { animal: "minecraft:allay", gifts: ["simplehats:chi_ears"] },
+  { animal: "minecraft:horse", gifts: ["relics:horse_flute"] },
+  { animal: "minecraft:polar_bear", gifts: ["simplehats:teddy_bear"] },
+  { animal: "hamsters:hamster", gifts: ["society:tiny_gnome"] },
+  { animal: "wildernature:hedgehog", gifts: ["simplehats:sonichood"] },
+  {
+    animal: "wildernature:red_wolf",
+    gifts: ["betterarcheology:wolf_fossil", "wildernature:wolf_trapper_banner"],
+  },
+  { animal: "wildernature:owl", gifts: ["tanukidecor:owl_clock"] },
+  { animal: "wildernature:dog", gifts: ["betterarcheology:sheep_fossil"] },
+  {
+    animal: "minecraft:axolotl",
+    gifts: ["simplehats:axolotl_on_head", "beachparty:rubber_ring_axolotl"],
   },
 ];

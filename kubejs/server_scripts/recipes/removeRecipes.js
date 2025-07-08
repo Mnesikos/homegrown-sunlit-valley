@@ -420,6 +420,7 @@ ServerEvents.recipes((e) => {
     "minecraft:flint_and_steel",
     // Armorer
     "sophisticatedbackpacks:stack_upgrade_tier_4",
+    "sophisticatedbackpacks:stack_upgrade_omega_tier",
     "sophisticatedbackpacks:stack_upgrade_starter_tier",
     "automobility:auto_mechanic_table",
     "automobility:automobile_assembler",
@@ -583,6 +584,8 @@ ServerEvents.recipes((e) => {
     "sophisticatedstorage:stack_upgrade_tier_3",
     "functionalstorage:gold_upgrade",
     "sophisticatedstorage:stack_upgrade_tier_4",
+    "sophisticatedbackpacks:inception_upgrade",
+    "sophisticatedstorage:stack_upgrade_omega_tier",
     "sophisticatedstorage:stack_upgrade_tier_5",
     "functionalstorage:copper_upgrade",
     // Farmer

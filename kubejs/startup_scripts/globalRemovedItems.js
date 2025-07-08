@@ -27,6 +27,9 @@ global.removedItems = [
   "wildernature:fish_oil",
   "wildernature:loot_bag",
   "wildernature:hazelnut",
+  "wildernature:bison_trophy",
+  "wildernature:red_wolf_trophy",
+  "wildernature:deer_trophy",
   "meadow:wooden_grain_milk_bucket",
   "meadow:wooden_amethyst_milk_bucket",
   // Removed due to exploits :(
