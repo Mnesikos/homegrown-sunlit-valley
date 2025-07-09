@@ -225,12 +225,18 @@ StartupEvents.registry("item", (e) => {
       food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
     });
 
+  e.create("society:chicken_tortilla_soup")
+    .texture("society:item/chicken_tortilla_soup")
+    .food((food) => {
+      food.hunger(3);
+      food.saturation(5);
+      food.effect("farm_and_charm:feast", 800, 0, 1.0);
+    });
   e.create("bakery:chocolate_donut")
     .texture("society:item/chocolate_donut")
     .food((food) => {
       food.hunger(5);
       food.saturation(2);
-      food.effect("farm_and_charm:sweets", 1200, 0, 1.0);
     });
 
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");

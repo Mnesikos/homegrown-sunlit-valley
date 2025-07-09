@@ -314,7 +314,7 @@
 	[management.expanded_item_interactions]
 		"Enable Armor Interaction" = true
 		"Enable Shulker Box Interaction" = false
-		"Enable Lava Interaction" = true
+		"Enable Lava Interaction" = false
 		"Allow Opening Shulker Boxes" = true
 		"Allow Rotating Bundles" = true
 

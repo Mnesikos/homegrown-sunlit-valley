@@ -18,6 +18,32 @@ ServerEvents.recipes((e) => {
     tool: { tag: "forge:tools/shovels" },
     result: [{ item: "twigs:silt_ball", count: 4 }],
   });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    container: {
+      item: "minecraft:bowl",
+    },
+    ingredients: [
+      {
+        tag: "forge:raw_chicken",
+      },
+      {
+        item: "farm_and_charm:onion",
+      },
+      {
+        item: "farm_and_charm:corn",
+      },
+      {
+        item: "meadow:piece_of_cheese",
+      },
+      { item: "farmersdelight:tomato_sauce" },
+    ],
+    result: {
+      item: "society:chicken_tortilla_soup",
+    },
+  });
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);

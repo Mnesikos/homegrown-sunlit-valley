@@ -409,7 +409,7 @@ ItemEvents.tooltip((tooltip) => {
       "society:recycling_machine",
       "society:cheese_press",
     ],
-    Text.gold(":gear: Artisan Machine")
+    "✉ §6Artisan Machine"
   );
   tooltip.add(
     [
@@ -460,6 +460,8 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:magic_shears", Text.red("Requires animals to trust you"));
   tooltip.add("society:miracle_potion", Text.gray("Used to breed farm animals"));
   tooltip.add("meadow:cheese_stick", Text.gray("Made in Fondue with cheese and bread"));
+  tooltip.add("meadow:cheese_form", Text.gray("Turns Large Milks into Cheese Wheels using Rennet"));
+  tooltip.add("meadow:cheese_form", Text.green("Automatable using hoppers"));
   tooltip.add(
     "society:friendship_necklace",
     Text.gray('Used with the "Best Friends Forever" Husbandry skill')
@@ -598,7 +600,7 @@ ItemEvents.tooltip((tooltip) => {
   ];
   workstation.forEach((station) => {
     const { villager, block } = station;
-    tooltip.add(block, Text.gold(`:moneybag: ${villager} workstation`));
+    tooltip.add(block, `✂ §6${villager} workstation`);
   });
   Item.of("farm_and_charm:barley", "{quality_food:{quality:3}}");
   // Prices
@@ -872,6 +874,7 @@ ItemEvents.tooltip((tooltip) => {
     "Auto-Grabber",
     "Artisan Hopper",
     "Feeding Trough",
+    "Slime Feeder",
     "Fish Pond Basket",
     "Golden Clock",
     "Mana Milker",

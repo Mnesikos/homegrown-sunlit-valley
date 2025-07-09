@@ -183,7 +183,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else {
-    printFunction(`   :bubbles: ${extraOutput ? "§bFresh§r" : ""} ${weather} ${time}`);
+    printFunction(`   ☄ ${extraOutput ? "§bFresh§r" : ""} ${weather} ${time}`);
     switch (season) {
       case "spring":
         global.springFresh.forEach((fish) => validateEntry(fish, isDay, level, local));

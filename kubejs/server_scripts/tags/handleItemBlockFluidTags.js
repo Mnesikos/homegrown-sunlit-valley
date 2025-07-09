@@ -469,6 +469,8 @@ ServerEvents.tags("block", (e) => {
     "society:dehydrator",
     "society:recycling_machine",
     "society:tapper",
+    "translocators:item_translocator",
+    "translocators:fluid_translocator",
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);

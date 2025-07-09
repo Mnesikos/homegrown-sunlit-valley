@@ -67,7 +67,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals = level
           .getEntitiesWithin(AABB.ofBlock(block).inflate(5))
           .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
-        level.players.forEach((p) => {
+        level.getServer().players.forEach((p) => {
           if (p.getUuid().toString() === block.getEntityData().data.owner) {
             attachedPlayer = p;
           }
@@ -82,7 +82,7 @@ StartupEvents.registry("block", (event) => {
             if (!global.getAnimalIsNotCramped(animal))
               data.affection = data.getInt("affection") - 50;
             if (global.checkEntityTag(animal, "society:milkable_animal")) {
-              let milkItem = global.getMilk(animal, data, attachedPlayer, day, cooldown);
+              let milkItem = global.getMilk(animal, data, attachedPlayer, day);
               if (milkItem !== -1) {
                 let insertedMilk = global.insertBelow(level, block, milkItem) == 1;
                 if (insertedMilk) {

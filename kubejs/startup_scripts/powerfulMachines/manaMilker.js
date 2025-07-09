@@ -12,8 +12,9 @@ StartupEvents.registry("block", (event) => {
     .soundType("copper")
     .item((item) => {
       item.tooltip(Text.gray("Milks nearby farm animals"));
-      item.tooltip(Text.green(`Area: 10x10x10`));
+      item.tooltip(Text.green("Automatable using hoppers"));
       item.tooltip(Text.aqua("Requires Botania mana from spreader"));
+      item.tooltip(Text.green(`Area: 10x10x10`));
       item.modelJson({
         parent: "society:block/mana_milker",
       });
@@ -32,7 +33,7 @@ StartupEvents.registry("block", (event) => {
         nearbyFarmAnimals.forEach((animal) => {
           let data = animal.persistentData;
           if (mana >= MANA_PER_MILK) {
-          const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+            const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
             let milkItem = global.getMilk(animal, data, undefined, day);
             if (milkItem !== -1) {
               let success = entity.inventory.insertItem(milkItem, false);

@@ -1236,6 +1236,7 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "society:chicken_tortilla_soup", value: 279 },
   { item: "farmersdelight:tomato_sauce", value: 52 },
   { item: "minecraft:beetroot_soup", value: 72 },
   { item: "farm_and_charm:strawberry_tea", value: 40 },

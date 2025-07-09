@@ -40,7 +40,7 @@ StartupEvents.registry("block", (event) => {
         let value = 0;
         let playerAttributes;
         let binPlayer;
-        entity.level.players.forEach((p) => {
+        entity.level.getServer().players.forEach((p) => {
           if (p.getUuid().toString() === block.getEntityData().data.owner) {
             playerAttributes = p.nbt.Attributes;
             binPlayer = p;

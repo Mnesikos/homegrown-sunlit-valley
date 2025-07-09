@@ -546,7 +546,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
         for (let index = 0; index < raceData.bets.length; index++) {
           prizePool += raceData.bets[index].bet;
         }
-        level.players.forEach((p) => {
+        level.getServer().players.forEach((p) => {
           for (let index = 0; index < raceData.bets.length; index++) {
             if (String(p.username) === String(raceData.bets[index].player)) {
               players.push(p);
@@ -582,7 +582,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     });
 
     server.scheduleInTicks(210 + 40 + bettingPeriod, () => {
-      level.players.forEach((p) => {
+      level.getServer().players.forEach((p) => {
         for (let index = 0; index < raceData.bets.length; index++) {
           if (String(p.username) === String(raceData.bets[index].player)) {
             handleMPResults(
