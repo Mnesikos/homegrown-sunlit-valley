@@ -164,7 +164,7 @@ global.handleSpecialHarvest = (
       });
     }
     if (player.stages.has("reaping_scythe")) {
-      harvestFunction(data, 0.2, hungry, 1, 1, "quark:diamond_heart", false, {
+      harvestFunction(data, 0.1, hungry, 1, 1, "quark:diamond_heart", false, {
         level: level,
         target: target,
         player: player,

@@ -33,7 +33,7 @@
         {
           "type": "minecraft:item",
           "name": "society:omni_geode",
-          "weight": 15
+          "weight": 7
         },
         {
           "type": "minecraft:item",
@@ -49,7 +49,7 @@
               "add": false
             }
           ],
-          "weight": 15
+          "weight": 7
         },
         {
           "type": "minecraft:item",

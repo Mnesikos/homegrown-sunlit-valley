@@ -238,6 +238,12 @@ StartupEvents.registry("item", (e) => {
       food.hunger(5);
       food.saturation(2);
     });
+  e.create("society:blueberry_icecream")
+    .texture("society:item/blueberry_icecream")
+    .food((food) => {
+      food.hunger(5);
+      food.saturation(2);
+    });
 
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");

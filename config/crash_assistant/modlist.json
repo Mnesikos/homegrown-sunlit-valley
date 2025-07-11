@@ -1127,6 +1127,11 @@
     "modId": "questsadditions",
     "version": "1.4.7"
   },
+  "radiantgear-forge-2.2.0+1.20.1.jar": {
+    "jarName": "radiantgear-forge-2.2.0+1.20.1.jar",
+    "modId": "radiantgear",
+    "version": "2.2.0+1.20.1"
+  },
   "radium-mc1.20.1-0.12.4+git.26c9d8e.jar": {
     "jarName": "radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
     "modId": "radium",
@@ -1476,6 +1481,11 @@
     "jarName": "Via_Romana-1.20.1-1.2.4.jar",
     "modId": "via_romana",
     "version": "1.2.4"
+  },
+  "Vintage-Vibes-1.20.1-1.0.1.jar": {
+    "jarName": "Vintage-Vibes-1.20.1-1.0.1.jar",
+    "modId": "vintagevibes",
+    "version": "1.0.1"
   },
   "vintagedelight-0.1.5.jar": {
     "jarName": "vintagedelight-0.1.5.jar",

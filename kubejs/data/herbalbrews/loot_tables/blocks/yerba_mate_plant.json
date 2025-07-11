@@ -16,26 +16,25 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "herbalbrews:rooibos_plant",
+                  "block": "herbalbrews:yerba_mate_plant",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "age": "3"
                   }
                 }
               ],
-              "name": "herbalbrews:rooibos_leaf"
+              "name": "herbalbrews:yerba_mate_leaf"
             }
           ]
         }
       ],
-      "rolls": 1
-
+      "rolls": 1.0
     },
     {
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "herbalbrews:rooibos_plant",
+          "block": "herbalbrews:yerba_mate_plant",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "3"
@@ -51,17 +50,15 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 1,
-                "probability": 0.5714286
+                "extra": 3,
+                "probability": 0.5715286
               }
             }
           ],
-          "name": "herbalbrews:rooibos_leaf"
+          "name": "herbalbrews:yerba_mate_leaf"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ]
 }
-
- 

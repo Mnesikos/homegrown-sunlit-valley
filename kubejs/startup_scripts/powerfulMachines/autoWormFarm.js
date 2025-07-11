@@ -8,7 +8,7 @@ StartupEvents.registry("block", (event) => {
     .box(0, 0, 0, 16, 16, 16)
     .defaultCutout()
     .item((item) => {
-      item.tooltip(Text.gray("Cultivates worms without any inputs every 30 seconds"));
+      item.tooltip(Text.gray("Cultivates worms without any inputs every 60 seconds"));
       item.tooltip(Text.green("Automatable using hoppers"));
       item.modelJson({
         parent: "society:block/auto_worm_farm",

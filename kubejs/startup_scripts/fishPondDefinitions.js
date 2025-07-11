@@ -1892,7 +1892,6 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "farm_and_charm:roaster", count: 4 },
           { item: "minecraft:furnace", count: 32 },
-          { item: "candlelight:cooking_hat", count: 4 },
         ],
       },
       {

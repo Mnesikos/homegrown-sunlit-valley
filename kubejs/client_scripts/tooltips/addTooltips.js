@@ -121,6 +121,7 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:mini_oni_eye",
       tooltip: "Fits nicely on a banana",
     },
+    { item: "society:glitched_vhs", tooltip: '"Whispers: Don\'t rewind..."' },
     {
       item: "society:production_science_pack",
       tooltip: "What was it used to research?",
@@ -516,6 +517,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("vinery:dark_cherry_sapling", "Fruit Season:");
   tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
+  tooltip.add("furniture:bin", Text.red("Deletes any items you click into it"));
+  tooltip.add("furniture:bin", Text.green("Creates Trash Bags"));
+  tooltip.add("furniture:trash_bag", Text.gray("Created from trashing items in a Bin"));
+  tooltip.add("society:bouquet_bag", Text.green("Contains random flowers"));
   tooltip.add("society:bouquet_bag", Text.gray("Right click to open"));
   tooltip.add("society:scavenged_food_bag", Text.gray("Right click to open"));
   tooltip.add(

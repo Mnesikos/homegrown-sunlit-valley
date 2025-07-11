@@ -83,9 +83,6 @@ const cropList = [
   "society:onion",
 ];
 const cropCollectorDenied = [
-  "herbalbrews:yerba_mate",
-  "herbalbrews:rooibos",
-  "herbalbrews:coffee",
   "pamhc2trees:pamapple",
   "pamhc2trees:pamcherry",
   "pamhc2trees:pamorange",

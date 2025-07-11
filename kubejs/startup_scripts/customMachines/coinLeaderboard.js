@@ -22,12 +22,6 @@ const clearOldLeaderboard = (block) => {
     .forEach((entity) => {
       entity.getTags().forEach((tag) => {
         if (tag === `leaderboard-${x}-${y}-${z}`) {
-          entity.getHandSlots().forEach((entry) => {
-            block.popItemFromFace(entry, "up");
-          })
-          entity.getArmorSlots().forEach((entry) => {
-            block.popItemFromFace(entry, "up");
-          })
           entity.kill();
         }
       });
@@ -37,20 +31,24 @@ const clearOldLeaderboard = (block) => {
 global.updateLeaderboard = (block, server) => {
   const { x, y, z } = block;
   let entity;
-  let calcY = y + 1;
+  let calcY = y + 2;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
   clearOldLeaderboard(block);
 
   // Display leaderboard name
-  entity = block.createEntity("minecraft:armor_stand");
-  entity.setCustomName(`● Leaderboard`);
-  entity.setCustomNameVisible(true);
+  entity = block.createEntity("minecraft:text_display");
+  let newNbt = entity.getNbt();
+  newNbt.text = '{"text":"● Leaderboard"}';
+  newNbt.see_through = 1;
+  newNbt.transformation.left_rotation = [0, 0, 0, 1];
+  newNbt.transformation.right_rotation = [0, 1, 0, 1];
+  newNbt.transformation.translation = [0, 0, 0];
+  newNbt.transformation.scale = [0.5, 0.5, 0.5];
+  entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(calcY);
   entity.setZ(z + 0.5);
-  entity.setInvisible(true);
-  entity.setNoGravity(true);
   entity.addTag(`leaderboard-${x}-${y}-${z}`);
   entity.spawn();
 
@@ -59,16 +57,18 @@ global.updateLeaderboard = (block, server) => {
     const balanceStr = playerName.toString().split(`,`);
     if (balanceStr[0].length <= 1) return;
     calcY -= 0.3;
-    entity = block.createEntity("minecraft:armor_stand");
-    entity.setCustomName(
-      `§6${balanceStr[0]} §7- §6${balanceStr[1].replace(
-        /\B(?=(\d{3})+(?!\d))/g,
-        ","
-      )} ●`
-    );
-    entity.setCustomNameVisible(true);
-    entity.setInvisible(true);
-    entity.setNoGravity(true);
+    entity = block.createEntity("minecraft:text_display");
+    let newNbt = entity.getNbt();
+    newNbt.text = `{"text":"§6${balanceStr[0]} §7- §6${balanceStr[1].replace(
+      /\B(?=(\d{3})+(?!\d))/g,
+      ","
+    )} §f●"}`;
+  newNbt.transformation.left_rotation = [0, 0, 0, 1];
+  newNbt.transformation.right_rotation = [0, 1, 0, 1];
+  newNbt.transformation.translation = [0, 0, 0];
+  newNbt.transformation.scale = [0.5, 0.5, 0.5];
+    newNbt.see_through = 1;
+    entity.setNbt(newNbt);
     entity.setX(x + 0.5);
     entity.setY(calcY);
     entity.setZ(z + 0.5);

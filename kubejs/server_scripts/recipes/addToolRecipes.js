@@ -167,6 +167,24 @@ ServerEvents.recipes((e) => {
       );
     }
   });
+  e.smithing(
+    "constructionwand:iron_wand",
+    "society:iron_upgrade_smithing_template",
+    "constructionwand:stone_wand",
+    "minecraft:iron_block"
+  );
+  e.smithing(
+    "constructionwand:diamond_wand",
+    "society:diamond_upgrade_smithing_template",
+    "constructionwand:iron_wand",
+    "minecraft:diamond_block"
+  );
+  e.smithing(
+    "constructionwand:infinity_wand",
+    "minecraft:netherite_upgrade_smithing_template",
+    "constructionwand:diamond_wand",
+    "minecraft:netherite_block"
+  );
   // Misc
   e.smithing(
     "create:netherite_backtank",
