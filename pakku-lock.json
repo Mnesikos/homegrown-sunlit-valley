@@ -8491,6 +8491,48 @@
             ]
         },
         {
+            "pakku_id": "iPck26mmJgO6gonH",
+            "pakku_links": [
+                "jPfd9p3GEQYsDOzN"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "radiant-gear"
+            },
+            "name": {
+                "curseforge": "Radiant Gear (Fabric/Forge/Quilt)"
+            },
+            "id": {
+                "curseforge": "602199"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "radiantgear-forge-2.2.0+1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6029/352/radiantgear-forge-2.2.0+1.20.1.jar",
+                    "id": "6029352",
+                    "parent_id": "602199",
+                    "hashes": {
+                        "sha1": "525b3ebccece23ed6bf4945a1c054c21599fc083",
+                        "md5": "19cb99849c8fe9856530b8173240b90a"
+                    },
+                    "required_dependencies": [
+                        "309927"
+                    ],
+                    "size": 47170,
+                    "date_published": "2024-12-28T05:54:52.323Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "ODSmiQQ2AtsKdJXY",
             "type": "MOD",
             "slug": {

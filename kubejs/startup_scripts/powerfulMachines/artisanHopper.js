@@ -206,6 +206,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   server.scheduleInTicks(delay, () => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
+    const currentStage = artisanMachine.properties.get("stage");
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
     const season = global.getSeasonFromLevel(level);
@@ -277,7 +278,26 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               player.stages
             );
           }
-          global.useInventoryItems(inventory, "society:sparkstone", 1);
+          let sparkstoneSaveChance = 0;
+          if (player.stages.has("slouching_towards_artistry")) {
+            sparkstoneSaveChance = Number(currentStage) * 0.05;
+          }
+          if (Math.random() > sparkstoneSaveChance) {
+            global.useInventoryItems(inventory, "society:sparkstone", 1);
+          } else {
+            level.spawnParticles(
+              "species:youth_potion",
+              true,
+              x,
+              y + 0.5,
+              z,
+              0.1 * rnd(1, 4),
+              0.1 * rnd(1, 4),
+              0.1 * rnd(1, 4),
+              5,
+              0.01
+            );
+          }
           let specialItemResultCode = global.insertBelow(level, block, machineOutput);
           if (specialItemResultCode == 1) {
             level.spawnParticles(
@@ -347,7 +367,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Harvests outputs from Artisan Machines into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.green(`Area: 7x7x7`));
-      item.tooltip(Text.lightPurple("Requires Sparkstone"));
+      item.tooltip(Text.lightPurple("Requires Sparkstone for each insert and extract"));
       item.modelJson({
         parent: "society:block/artisan_hopper",
       });

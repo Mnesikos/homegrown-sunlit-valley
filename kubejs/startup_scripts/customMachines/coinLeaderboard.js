@@ -3,7 +3,7 @@ console.info("[SOCIETY] coinLeaderboard.js loaded");
 const updateLeaderboardMap = (server) => {
   let playerName;
   let playerList = server.persistentData.playerList;
-  if (!playerList) return undefined
+  if (!playerList) return undefined;
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     playerName = playerList[playerUUID];
@@ -31,7 +31,7 @@ const clearOldLeaderboard = (block) => {
 global.updateLeaderboard = (block, server) => {
   const { x, y, z } = block;
   let entity;
-  let calcY = y + 2;
+  let calcY = y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
   clearOldLeaderboard(block);
@@ -40,11 +40,8 @@ global.updateLeaderboard = (block, server) => {
   entity = block.createEntity("minecraft:text_display");
   let newNbt = entity.getNbt();
   newNbt.text = '{"text":"● Leaderboard"}';
-  newNbt.see_through = 1;
-  newNbt.transformation.left_rotation = [0, 0, 0, 1];
-  newNbt.transformation.right_rotation = [0, 1, 0, 1];
-  newNbt.transformation.translation = [0, 0, 0];
-  newNbt.transformation.scale = [0.5, 0.5, 0.5];
+  newNbt.billboard = "vertical";
+  newNbt.background = 0;
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(calcY);
@@ -63,11 +60,8 @@ global.updateLeaderboard = (block, server) => {
       /\B(?=(\d{3})+(?!\d))/g,
       ","
     )} §f●"}`;
-  newNbt.transformation.left_rotation = [0, 0, 0, 1];
-  newNbt.transformation.right_rotation = [0, 1, 0, 1];
-  newNbt.transformation.translation = [0, 0, 0];
-  newNbt.transformation.scale = [0.5, 0.5, 0.5];
-    newNbt.see_through = 1;
+    newNbt.billboard = "vertical";
+    newNbt.background = 0;
     entity.setNbt(newNbt);
     entity.setX(x + 0.5);
     entity.setY(calcY);

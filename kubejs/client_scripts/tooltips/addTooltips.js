@@ -174,14 +174,14 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:no_name_for_the_sheep",
       description: "Naming animals grants an additional heart of affection.",
     },
-    { item: "society:paradise_crop", description: "1 additional crop drops per harvest." },
+    { item: "society:paradise_crop", description: "1 additional crop drop per harvest." },
     {
       item: "society:slime_contain_protect",
       description: "Incubating a Slime Heart has a chance to give you a Slime Ticket.",
     },
     {
       item: "society:slouching_towards_artistry",
-      description: "TBD",
+      description: "Artisan Hoppers have a chance to not consume Sparkstone when harvesting. The chance increases the longer the product took to make.",
     },
     {
       item: "society:debt_caverns",
@@ -369,6 +369,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add("farmersdelight:cooking_pot", Text.green("Automatable using cooking guide"));
   tooltip.add("meadow:cooking_cauldron", Text.gray("Decorative, has no recipes"));
+  tooltip.add("candlelight:cooking_pot", Text.gray("Only a villager workstation, has no recipes"));
   tooltip.add(
     "trading_floor:trading_depot",
     Text.red("Causes crashes with Simple Storage Networks!")

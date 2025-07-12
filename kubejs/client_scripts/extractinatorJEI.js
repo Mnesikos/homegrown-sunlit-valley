@@ -32,9 +32,6 @@ const registerExtractingCategory = (event, title) => {
             }
           }
         }
-        outputs.forEach((item, index) => {
-          const line = index > 9 ? 46 : 28;
-        });
       });
   });
 };

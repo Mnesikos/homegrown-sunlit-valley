@@ -724,6 +724,7 @@ global.cocktails = [
   { item: "beachparty:sweetberry_icecream", value: 32 },
   { item: "beachparty:coconut_icecream", value: 20 },
   { item: "beachparty:chocolate_icecream", value: 12 },
+  { item: "society:blueberry_icecream", value: 64 },
   { item: "beachparty:icecream_cactus", value: 40 },
   { item: "beachparty:icecream_melon", value: 28 },
   { item: "beachparty:icecream_coconut", value: 20 },
@@ -1238,6 +1239,7 @@ cakingStationRecipes.forEach((recipe) => {
 });
 const cookingPotRecipes = [
   { item: "society:chicken_tortilla_soup", value: 279 },
+  { item: "society:mexican_street_corn", value: 162 },
   { item: "farmersdelight:tomato_sauce", value: 52 },
   { item: "minecraft:beetroot_soup", value: 72 },
   { item: "farm_and_charm:strawberry_tea", value: 40 },

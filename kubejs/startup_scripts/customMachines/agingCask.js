@@ -212,7 +212,14 @@ StartupEvents.registry("block", (event) => {
       if (player.stages.has("aged_prize") && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace("society:prize_ticket", facing);
       }
-
+      if (
+        !player.stages.has("slouching_towards_artistry") &&
+        block.properties.get("mature") === "true" &&
+        Number(block.properties.get("stage")) > 5 &&
+        Math.random() <= 0.01
+      ) {
+        block.popItemFromFace("society:slouching_towards_artistry", block.properties.get("facing"));
+      }
       global.handleBERightClick("minecraft:block.wood.place", click, global.agingCaskRecipes, 10);
     })
     .blockEntity((blockInfo) => {

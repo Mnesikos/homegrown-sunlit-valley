@@ -228,20 +228,31 @@ StartupEvents.registry("item", (e) => {
   e.create("society:chicken_tortilla_soup")
     .texture("society:item/chicken_tortilla_soup")
     .food((food) => {
-      food.hunger(3);
-      food.saturation(5);
+      food.hunger(8);
+      food.saturation(1);
       food.effect("farm_and_charm:feast", 800, 0, 1.0);
     });
+
+  e.create("society:mexican_street_corn")
+    .texture("society:item/mexican_street_corn")
+    .food((food) => {
+      food.hunger(7);
+      food.saturation(1);
+      food.fastToEat(true);
+      food.effect("farm_and_charm:feast", 200, 0, 1.0);
+    });
+
   e.create("bakery:chocolate_donut")
     .texture("society:item/chocolate_donut")
     .food((food) => {
       food.hunger(5);
       food.saturation(2);
     });
+
   e.create("society:blueberry_icecream")
     .texture("society:item/blueberry_icecream")
     .food((food) => {
-      food.hunger(5);
+      food.hunger(2);
       food.saturation(2);
     });
 

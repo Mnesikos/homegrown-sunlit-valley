@@ -44,6 +44,23 @@ ServerEvents.recipes((e) => {
       item: "society:chicken_tortilla_soup",
     },
   });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 3.0,
+    ingredients: [
+      {
+        item: "farm_and_charm:corn",
+      },
+      {
+        item: "meadow:piece_of_cheese",
+      },
+      { item: "society:mayonnaise" },
+    ],
+    result: {
+      item: "society:mexican_street_corn",
+    },
+  });
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);

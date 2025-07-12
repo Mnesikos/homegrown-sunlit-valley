@@ -107,6 +107,9 @@
       "society:frozen_caves/ice_patch_ceiling",
       "society:frozen_caves/slush_patch_ceiling"
     ],
+    [],
+    ["society:frozen_maelstrom/spectralibur_chamber"],
+    [],
     ["minecraft:freeze_top_layer"]
   ]
 }

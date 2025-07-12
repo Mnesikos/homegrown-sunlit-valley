@@ -4,6 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "constructionwand:core_angel",
+    "constructionwand:core_destruction",
     "create:schematicannon",
     "create:empty_schematic",
     "create:schematic_and_quill",

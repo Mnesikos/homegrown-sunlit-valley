@@ -7,6 +7,6 @@
       "item": "society:book_of_stars"
     }
   },
-  "background": "minecraft:textures/block/chiseled_bookshelf_side.png",
+  "background": "decorative_blocks:textures/block/spruce_beam_side.png",
   "spent_points_limit": 0
 }

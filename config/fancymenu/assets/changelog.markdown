@@ -1,14 +1,15 @@
 ^^^
 ## Library of Animals
-### v3.1.0-PLAYTEST - 3
+### v3.1.0
 ^^^
 --- 
+- IMPORTANT: backup worlds before updating!
 - Updated the pack to Create 6
 - Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
 - Added 15 skill books found from certain actions or bought from Wandering Trader
 - Added Artisan Cheese Press and Pink Matter upgrade
 - Added Slime Feeder and Slime Candy
-- Added Miking Special items, and Pet Gifts to JEI
+- Added Miking, Special items, Pet Gifts, and loot boxes to JEI
 - Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
 - Added husbandry mechanics to animals: Frog, Wraptor
 - Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
@@ -16,21 +17,25 @@
 - Added Slimes locations and risks to Farmer's Almanac
 - Added Bubonic Billionic Beach Hat to Leatherworker
 - Added values to Cheese Pieces and Growth Totem
-- Added Scavenged Loot Bag
+- Added Scavenged Food Bag
 - Added Fruit/Trees to Farmer's Almanac (Thanks Devon!)
 - Added Fish Finder - Book with all fish locations obtained through loot or trading (Thanks Copixel!)
 - Added Magic Rope (Staircase equivalent to Stardew) to Exotic Trader
 - Added Meowmageddon 
 - Added Candied Animal feed and Mana Animal Feed (Thanks Devon!)
-- Added new models for Aging Cask and Ancient Cask
+- Added new models for Mayonnaise Machine, Aging Cask and Ancient Cask
 - Added new Quality Washer texture
 - Added forages: Snuffle forages Frozen Hair, Mooshrooms forage for mushroom seats
+- Added Chicken Tortilla Soup
 - Added "Eye" Smithing Template as Prize Machine reward
 - Added new Spawn Crate textures for some Spawn eggs
 - Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
 - Added Inception upgrade to Leatherworker and removed original recipe
+- Added lanterns to charm slot 
 - Sniffer, Golden, and Petrified eggs now have quality
+- Changed Prismatic Bounty skill due to it not working: Neptune's Bounties drops a Prismatic Shard when mined without Silk Touch.
 - Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
+- Fly Fisher/School Fisher now work with Nether fishing (Reduced nether fish back to their original values because of this)
 - Increased animal affection gain by 2x
 - Increased Panda forage multiplier by 2
 - Increased chance of Skull Cavern boulders
@@ -39,21 +44,31 @@
 - Minty Slimes now give Bloodlust effect, Juicy now give mining fatigue
 - Fish Ponds no longer burn in lava
 - Updated Flamarang texture (Thanks Tilles)
+- Updated Hazelnut texture to use Wildernature's
 - Reduced cost of Preserves Jars to not use Pine Tar
+- Reduced chance of Reaping Scythe triggers 20% -> 10%
+- Reduced the cost of Flint and Steel (8 -> 6 Iridium Coins)
 - Reduced Hay Bale spawn chance
 - Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
+- Reworked Coin Leaderboard to use Text Displays instead of Armor Stands (no more losing items!)
 - Reworked Wooly Cows to spawn in Warped Forests and give milk less often
+- Reworked Construction Wand progression and added cores to cleric
 - Renamed old Cheese Press to Auto-Cheese Press
 - Removed crafting recipe for Milk Bottles to Large Milk
 - Removed Hearthstone cross-dimension durability debuff
+- Removed ability to cage Chickens
+- Removed advancement for bakery item
 - Removed Powdered Snow from Frozen Caves in the Skull Cavern
+- Removed Minecraft Cake from Bakery banner requirements
 - Re-wrote extractinator to fix bugs
+- Rivers are no longer infertile and instead use the global season
 - Fixed brewfest gear having old recipes
 - Fixed Jellyfish not having quality
 - Fixed Iridium tools and armor being repaired with diamond
 - Fixed crops growing underground in any season
 - Fixed newly domesticated husbandry animals not being able to be fed/milked/pet/etc
 - Fixed Crystals of Regret giving an inconsistent amount of points depending on the skill tree
+- Fixed Blaze Banker being unbreakable
 - Fixed Wool armor upgrade costing too much
 - Fixed Juicy Slime heart not being craftable
 - Fixed experience showing as 0 when fainting from Skull Cavern
@@ -68,3 +83,6 @@
 - Fixed Pine/Dark Cherry Beam recipe conflicts
 - Fixed Electrum Swords/Knife only having looting II
 - Fixed Warped Tower's Slime Spawners being on cooldown
+- Fixed Farmers Bread recipe conflict
+- Fixed certain blocks such as Shipping Bins not working when bound player not in the same Dimension
+- Fixed Searing Cod having incompletable quest
