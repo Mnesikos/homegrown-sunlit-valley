@@ -5,6 +5,28 @@
     }
   ],
   "lookup_history": [
+    {
+      "id": "minecraft:weakness"
+    },
+    "item:dew_drop_farmland_growth:weak_fertilizer",
+    "item:botania:brew_flask{brewKey:\"botania:overload\"}",
+    "item:minecraft:lingering_potion{Potion:\"minecraft:weakness\"}",
+    "item:minecraft:splash_potion{Potion:\"minecraft:weakness\"}",
+    "item:minecraft:potion{Potion:\"minecraft:weakness\"}",
+    "item:minecraft:potion{Potion:\"minecraft:long_weakness\"}",
+    "item:minecraft:splash_potion{Potion:\"minecraft:long_weakness\"}",
+    "item:vinery:bolvar_wine",
+    "item:vinery:cherry",
+    "item:vinery:cherry_wine",
+    "item:botania:invisibility_cloak",
+    "item:minecraft:splash_potion{Potion:\"minecraft:long_night_vision\"}",
+    "item:minecraft:splash_potion{Potion:\"minecraft:long_invisibility\"}",
+    {
+      "id": "brewery:partystarter"
+    },
+    {
+      "id": "nethervinery:improved_hearthstone"
+    },
     "item:minecraft:gunpowder",
     "item:quark:gunpowder_sack",
     "item:minecraft:glowstone_dust",
@@ -382,19 +404,19 @@
     "item:create:andesite_casing",
     [
       "item:minecraft:stripped_warped_hyphae",
-      "item:vintagedelight:stripped_magic_vine",
-      "item:vintagedelight:stripped_magic_vine_block",
+      "item:minecraft:stripped_crimson_hyphae",
       "item:minecraft:crimson_hyphae",
-      "item:minecraft:warped_stem",
-      "item:minecraft:stripped_crimson_stem",
+      "item:vintagedelight:magic_vine",
+      "item:meadow:alpine_oak_log",
       "item:vintagedelight:magic_vine_block",
       "item:minecraft:warped_hyphae",
-      "item:vintagedelight:magic_vine",
+      "item:minecraft:warped_stem",
+      "item:vintagedelight:stripped_magic_vine_block",
+      "item:minecraft:stripped_crimson_stem",
       "item:society:sturdy_bamboo_block",
-      "item:meadow:alpine_oak_log",
       "item:minecraft:crimson_stem",
       "item:minecraft:stripped_warped_stem",
-      "item:minecraft:stripped_crimson_hyphae",
+      "item:vintagedelight:stripped_magic_vine",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -648,7 +670,6 @@
     "item:dew_drop_farmland_growth:high_quality_fertilizer",
     "item:dew_drop_farmland_growth:bountiful_fertilizer",
     "item:dew_drop_farmland_growth:pristine_quality_fertilizer",
-    "item:dew_drop_farmland_growth:weak_fertilizer",
     "item:dew_drop_farmland_growth:strong_fertilizer",
     "item:dew_drop_farmland_growth:hyper_fertilizer",
     "item:dew_drop_farmland_growth:low_quality_fertilizer",
@@ -787,9 +808,7 @@
     "item:minecraft:potion{Potion:\"atmospheric:relief\"}",
     "item:minecraft:potion{Potion:\"atmospheric:worsening_strong\"}",
     "item:minecraft:potion{Potion:\"rottencreatures:long_freeze\"}",
-    "item:minecraft:splash_potion{Potion:\"minecraft:long_night_vision\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_invisibility\"}",
-    "item:minecraft:potion{Potion:\"minecraft:weakness\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_fire_resistance\"}",
     "item:minecraft:potion{Potion:\"minecraft:swiftness\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_slowness\"}",
@@ -1185,24 +1204,7 @@
     "item:create:controls",
     "item:create:train_door",
     "item:create:track_observer",
-    "item:railways:track_oak_narrow",
-    "item:railways:track_oak_wide",
-    "item:railways:track_quark_ancient_wide",
-    "item:railways:track_quark_ancient_narrow",
-    "item:railways:track_quark_ancient",
-    {
-      "type": "item",
-      "id": "railways:track_jungle",
-      "amount": 64
-    },
-    "item:railways:track_blackstone_narrow",
-    "item:railways:track_jungle_wide",
-    "item:railways:track_warped_wide",
-    "item:minecraft:golden_chestplate{Damage:0}",
-    "item:create:mechanical_drill",
-    "item:botania:lens_phantom",
-    "item:society:chai_blend",
-    "item:aquaculture:neptunes_bounty"
+    "item:railways:track_oak_narrow"
   ],
   "craft_history": [
     "minecraft:kjs/candlelight_cooking_pot",
@@ -1219,9 +1221,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

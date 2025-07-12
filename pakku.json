@@ -34,6 +34,12 @@
         "colorful-hearts": {
             "side": "CLIENT"
         },
+        "colorwheel": {
+            "side": "CLIENT"
+        },
+        "colorwheel-patcher": {
+            "side": "CLIENT"
+        },
         "controlling": {
             "side": "CLIENT"
         },
@@ -89,6 +95,9 @@
             "side": "CLIENT"
         },
         "ok-zoomer": {
+            "side": "CLIENT"
+        },
+        "radiant-gear": {
             "side": "CLIENT"
         },
         "selectivebounds": {
