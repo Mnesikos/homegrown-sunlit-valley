@@ -141,7 +141,7 @@ global.husbandryForagingDefinitions = [
     forages: [
       {
         item: "betterarcheology:artifact_shards",
-        countMult: 1,
+        countMult: 2,
         chance: 1,
         minHearts: 5,
       },

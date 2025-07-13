@@ -137,10 +137,10 @@ StartupEvents.registry("block", (e) => {
   const createSkullVariant = (type, path) => {
     e.create(`society:skull_${type}`)
       .soundType("stone")
-      .hardness(-1)
       .resistance(3600000)
       .requiresTool(true)
       .textureAll(path)
+      .unbreakable()
       .tagBlock("society:skull_block");
   };
   createSkullVariant("stone", "minecraft:block/stone");
@@ -228,6 +228,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .texture("particle", "quark:block/cocoa_beans_sack");
+
   e.create("herbalbrews:yerba_mate_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf2")
     .mapColor("grass")
@@ -262,9 +263,35 @@ StartupEvents.registry("block", (e) => {
       .requiresTool(false);
   };
 
-  createCrate("blueberry");
-  createCrate("eggplant");
-  createCrate("ancient_fruit");
+  const crates = [
+    "blueberry",
+    "eggplant",
+    "ancient_fruit",
+    "salmonberry",
+    "boysenberry",
+    "cranberry",
+    "crystalberry",
+  ];
+  crates.forEach((crate) => {
+    createCrate(crate);
+  });
+
+  e.create("society:forage_berry_bush")
+    .defaultCutout()
+    .hardness(0)
+    .resistance(0)
+    .mapColor("grass")
+    .noCollision()
+    .soundType("azalea_leaves")
+    .model("society:block/forage_berry_bush")
+    .item((item) => {
+      item.modelJson({
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/forage_bush_seed",
+        },
+      });
+    });
 
   e.create("society:tubabacco_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf1")

@@ -416,7 +416,7 @@ Looks like you passed out again! We\'ve treated you for a small fee.
 
 We\'ve taken it out of your bank account for convenience. Be careful next time!
 
-:COIN: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
+:coin: ${global.formatPrice(amountToDeduct)} paid."],title:"Hospital Receipt"}`
       )
     );
   }

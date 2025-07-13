@@ -229,6 +229,7 @@ ServerEvents.tags("item", (e) => {
   e.add("farm_and_charm:water_bottles", "herbalbrews:water_cup");
   e.add("forge:water_bottles", "herbalbrews:water_cup");
   e.add("forge:food/raw_pasta", "farm_and_charm:raw_pasta");
+  e.add("forge:seeds", "farm_and_charm:strawberry_seed");
   e.add("forge:salad_ingredients", "farm_and_charm:lettuce");
   e.add("forge:grain/corn", "farm_and_charm:corn");
   e.add("candlelight:butter", "farm_and_charm:butter");

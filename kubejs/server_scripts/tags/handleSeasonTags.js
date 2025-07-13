@@ -71,6 +71,7 @@ ServerEvents.tags("block", (e) => {
   });
 });
 const springCrops = [
+  "society:salmonberry",
   "farm_and_charm:onion",
   "farm_and_charm:strawberry",
   "farm_and_charm:strawberry_crop",
@@ -126,6 +127,7 @@ const springCrops = [
 ];
 
 const summerCrops = [
+  "society:boysenberry",
   "farm_and_charm:oat_crop",
   "farm_and_charm:corn_crop",
   "farm_and_charm:oat",
@@ -187,6 +189,7 @@ const summerCrops = [
   "veggiesdelight:bellpepper_seeds",
 ];
 const autumnCrops = [
+  "society:cranberry",
   "farm_and_charm:barley_crop",
   "farm_and_charm:corn_crop",
   "minecraft:beetroot",
@@ -238,6 +241,7 @@ const autumnCrops = [
   "society:sweet_potato_seed",
 ];
 const winterCrops = [
+  "society:crystalberry",
   "farm_and_charm:barley_crop",
   "farm_and_charm:barley_seeds",
   "farm_and_charm:barley",

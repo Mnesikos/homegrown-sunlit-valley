@@ -6,8 +6,30 @@
   ],
   "lookup_history": [
     {
-      "id": "minecraft:weakness"
+      "type": "item",
+      "id": "society:boysenberry",
+      "amount": 31
     },
+    "item:society:blueberry_icecream",
+    {
+      "type": "item",
+      "id": "society:cranberry",
+      "amount": 18
+    },
+    {
+      "type": "item",
+      "id": "society:salmonberry",
+      "amount": 5
+    },
+    "item:society:crystalberry",
+    {
+      "type": "item",
+      "id": "wildernature:hazelnut",
+      "amount": 50
+    },
+    "item:society:aging_cask",
+    "item:betterarcheology:artifact_shards",
+    "item:society:sparkstone",
     "item:dew_drop_farmland_growth:weak_fertilizer",
     "item:botania:brew_flask{brewKey:\"botania:overload\"}",
     "item:minecraft:lingering_potion{Potion:\"minecraft:weakness\"}",
@@ -21,19 +43,12 @@
     "item:botania:invisibility_cloak",
     "item:minecraft:splash_potion{Potion:\"minecraft:long_night_vision\"}",
     "item:minecraft:splash_potion{Potion:\"minecraft:long_invisibility\"}",
-    {
-      "id": "brewery:partystarter"
-    },
-    {
-      "id": "nethervinery:improved_hearthstone"
-    },
     "item:minecraft:gunpowder",
     "item:quark:gunpowder_sack",
     "item:minecraft:glowstone_dust",
     "item:society:chicken_tortilla_soup",
     "item:society:galliraptor_mayonnaise",
     "item:society:mexican_street_corn",
-    "item:society:blueberry_icecream",
     "item:beachparty:icecream_cactus",
     "item:numismatics:prismatic_coin",
     "item:numismatics:crown",
@@ -49,7 +64,6 @@
     "item:society:fish_pond",
     "item:society:bait_maker",
     "item:society:ancient_cask",
-    "item:society:aging_cask",
     "item:numismatics:white_id_card",
     "item:beachparty:icecream_sweetberries",
     "item:beachparty:coconut_icecream",
@@ -113,11 +127,6 @@
     "item:crabbersdelight:deluxe_crab_trap_bait",
     "item:netherdepthsupgrade:lava_fishing_rod{Damage:130,Enchantments:[{id:\"minecraft:lure\",lvl:1s}]}",
     "item:minecraft:oak_fence",
-    {
-      "type": "item",
-      "id": "society:sparkstone",
-      "amount": 5
-    },
     "item:minecraft:raw_iron",
     "item:species:wicked_treat",
     "item:minecraft:bucket",
@@ -403,19 +412,19 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
-      "item:minecraft:stripped_warped_hyphae",
       "item:minecraft:stripped_crimson_hyphae",
+      "item:minecraft:stripped_warped_hyphae",
       "item:minecraft:crimson_hyphae",
-      "item:vintagedelight:magic_vine",
-      "item:meadow:alpine_oak_log",
       "item:vintagedelight:magic_vine_block",
-      "item:minecraft:warped_hyphae",
-      "item:minecraft:warped_stem",
-      "item:vintagedelight:stripped_magic_vine_block",
-      "item:minecraft:stripped_crimson_stem",
       "item:society:sturdy_bamboo_block",
-      "item:minecraft:crimson_stem",
       "item:minecraft:stripped_warped_stem",
+      "item:vintagedelight:stripped_magic_vine_block",
+      "item:minecraft:crimson_stem",
+      "item:meadow:alpine_oak_log",
+      "item:minecraft:warped_stem",
+      "item:vintagedelight:magic_vine",
+      "item:minecraft:warped_hyphae",
+      "item:minecraft:stripped_crimson_stem",
       "item:vintagedelight:stripped_magic_vine",
       "#item:minecraft:logs_that_burn"
     ],
@@ -434,11 +443,6 @@
     "item:candlelight:beef_with_mushroom_in_wine_and_potatoes",
     "item:candlelight:roastbeef_with_glazed_carrots",
     "item:candlelight:roasted_lamb_with_lettuce",
-    {
-      "type": "item",
-      "id": "wildernature:hazelnut",
-      "amount": 2
-    },
     "item:justhammers:gold_impact_hammer{Damage:0}",
     "item:minecraft:enchanted_book{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}",
     "item:justhammers:netherite_hammer{Damage:0}",
@@ -1193,7 +1197,6 @@
     "item:veggiesdelight:carrot_juice",
     "item:veggiesdelight:carrot_cake",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:minty\"}}",
-    "item:betterarcheology:artifact_shards",
     "item:crabbersdelight:clam",
     "#item:minecraft:fishes",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:puddle\"}}",
@@ -1203,8 +1206,7 @@
     "item:create:track_station",
     "item:create:controls",
     "item:create:train_door",
-    "item:create:track_observer",
-    "item:railways:track_oak_narrow"
+    "item:create:track_observer"
   ],
   "craft_history": [
     "minecraft:kjs/candlelight_cooking_pot",
@@ -1221,9 +1223,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

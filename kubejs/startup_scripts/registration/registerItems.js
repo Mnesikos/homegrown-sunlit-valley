@@ -70,6 +70,34 @@ StartupEvents.registry("item", (e) => {
       food.saturation(3);
       food.fastToEat(true);
     });
+  e.create("society:salmonberry")
+    .texture("society:item/salmonberry")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(2);
+      food.fastToEat(true);
+    });
+  e.create("society:boysenberry")
+    .texture("society:item/boysenberry")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(3);
+      food.fastToEat(true);
+    });
+  e.create("society:cranberry")
+    .texture("society:item/cranberry")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(2);
+      food.fastToEat(true);
+    });
+  e.create("society:crystalberry")
+    .texture("society:item/crystalberry")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.fastToEat(true);
+    });
   e.create("society:ancient_juice")
     .texture("society:item/ancient_juice")
     .food((food) => {
@@ -140,30 +168,35 @@ StartupEvents.registry("item", (e) => {
     .displayName("Crystal of Regret: Farming")
     .texture("society:item/crystal_of_regret")
     .tooltip(Text.red("Right click to reset Farming skills. Refunds 5 Skill Points"))
+    .tooltip(Text.red("Must be level 7 or higher to use"))
     .color(0, 0x087814);
 
   e.create(`society:crystal_of_regret_husbandry`)
     .displayName("Crystal of Regret: Husbandry")
     .texture("society:item/crystal_of_regret")
     .tooltip(Text.red("Right click to reset Husbandry skills. Refunds 5 Skill Points"))
+    .tooltip(Text.red("Must be level 7 or higher to use"))
     .color(0, 0x4f370d);
 
   e.create(`society:crystal_of_regret_mining`)
     .displayName("Crystal of Regret: Mining")
     .texture("society:item/crystal_of_regret")
     .tooltip(Text.red("Right click to reset Mining skills. Refunds 5 Skill Points"))
+    .tooltip(Text.red("Must be level 7 or higher to use"))
     .color(0, 0x383735);
 
   e.create(`society:crystal_of_regret_fishing`)
     .displayName("Crystal of Regret: Fishing")
     .texture("society:item/crystal_of_regret")
     .tooltip(Text.red("Right click to reset Fishing skills. Refunds 5 Skill Points"))
+    .tooltip(Text.red("Must be level 7 or higher to use"))
     .color(0, 0x1eabd6);
 
   e.create(`society:crystal_of_regret_adventuring`)
     .displayName("Crystal of Regret: Adventuring")
     .texture("society:item/crystal_of_regret")
     .tooltip(Text.red("Right click to reset Adventuring skills. Refunds 5 Skill Points"))
+    .tooltip(Text.red("Must be level 7 or higher to use"))
     .color(0, 0x6e1313);
 
   // Artifacts
@@ -525,6 +558,10 @@ StartupEvents.registry("item", (e) => {
     { item: "pamhc2trees:bananaitem", hex: 0xe0c930 },
     { item: "pamhc2trees:dragonfruititem", hex: 0xd5dce2 },
     { item: "pamhc2trees:lemonitem", hex: 0xf8d035 },
+    { item: "society:salmonberry", hex: 0xe83b3b },
+    { item: "society:boysenberry", hex: 0xcf657f },
+    { item: "society:cranberry", hex: 0xb33831 },
+    { item: "society:crystalberry", hex: 0xb33831 },
   ];
   global.dehydratableFruits.forEach((item) => {
     const itemHex = dehydratorFruitMapping.find((val) => val.item === item)?.hex;

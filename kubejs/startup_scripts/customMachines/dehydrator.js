@@ -63,6 +63,10 @@ global.dehydratableFruits = [
   "atmospheric:passion_fruit",
   "pamhc2trees:starfruititem",
   "pamhc2trees:lemonitem",
+  "society:salmonberry",
+  "society:boysenberry",
+  "society:cranberry",
+  "society:crystalberry",
 ];
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.split(":")[1];
