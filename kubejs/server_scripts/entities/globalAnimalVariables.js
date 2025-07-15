@@ -37,6 +37,7 @@ global.husbandryAnimals = [
   "wildernature:penguin",
   "farmlife:galliraptor",
   "minecraft:frog",
+  "wildernature:squirrel",
 ];
 
 global.animalMessageSettings = `{anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-100}`;

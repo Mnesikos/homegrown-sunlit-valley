@@ -671,6 +671,11 @@ ServerEvents.recipes((e) => {
     "quark:building/crafting/furnaces/blackstone_furnace",
     "untitledduckmod:crafting_shaped/pumpkin_pie",
     "oreganized:electrum_upgrade_smithing_template",
+    "farmersdelight:bread_from_smelting",
+    "vintagedelight:bread_from_smelting",
+    "farmersdelight:bread_from_smoking",
+    "vintagedelight:bread_from_smoking",
+    "jei:/farmersdelight/bread_from_smoking",
     // VegiesDelight
     "vintagedelight:cooking/shakshouka",
     "moredelight:cutting/sliced_bread",

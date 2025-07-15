@@ -6,7 +6,7 @@ const SlimeFavoriteFoods = {
   blazing: { item: "autumnity:cooked_turkey" },
   bony: { item: "society:large_sheep_milk" },
   boomcat: { item: "untitledduckmod:cooked_duck", entity: "untitledduckmod:duck_spawn_egg" },
-  dusty: { item: "netherdepthsupgrade:bonefish", entity: "minecraft:chicken_spawn_egg" },
+  dusty: { item: "netherdepthsupgrade:bonefish", entity: "trials:bogged_spawn_egg" },
   ender: { item: "minecraft:amethyst_shard" },
   gold: { item: "society:bell_pepper_preserves" },
   juicy: { item: "vinery:jungle_grapes_red" },
@@ -58,7 +58,7 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       );
     }
     if (favorites.entity) {
-              player.give(
+      player.give(
         Item.of(
           "supplementaries:present_pink",
           `{BlockEntityTag:{Description:"${

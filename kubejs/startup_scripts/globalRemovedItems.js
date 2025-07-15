@@ -12,6 +12,8 @@ global.removedItems = [
   "farmlife:sunstreak_burst_poppy",
   "farmlife:rusty_burst_poppy",
   "farmlife:olive_burst_poppy",
+  "atmospheric:golden_dragon_fruit_crate",
+  "atmospheric:golden_dragon_fruit",
   "farmlife:fancy_burst_poppy",
   "farmlife:peacock_burst_poppy",
   "farmlife:electric_burst_poppy",

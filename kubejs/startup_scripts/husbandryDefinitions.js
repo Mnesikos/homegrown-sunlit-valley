@@ -185,6 +185,29 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
+    animal: "wildernature:squirrel",
+    forages: [
+      {
+        item: "pamhc2trees:hazelnutitem",
+        countMult: 4,
+        chance: 0.25,
+        minHearts: 6,
+        hasQuality: true,
+      },
+      {
+        itemPool: [
+          "society:salmonberry",
+          "society:boysenberry",
+          "society:cranberry",
+          "society:crystalberry",
+        ],
+        countMult: 8,
+        chance: 1,
+        minHearts: 2,
+      },
+    ],
+  },
+  {
     animal: "wildernature:deer",
     forages: [
       {

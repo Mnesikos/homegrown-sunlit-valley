@@ -5,5 +5,5 @@ randomticks_blocks = ["society:eggplant", "farm_and_charm:strawberry", "brewery:
 #You can prevent TICKING of any block in the game. Be it vanilla or modded.
 #USE AT YOUR OWN DISCRETION. YOU MUST KNOW WHAT YOU ARE DOING OR YOU CAN BREAK GAMEPLAY.
 #E.G. ["minecraft:fire"]
-ticks_blocks = [""]
+ticks_blocks = []
 

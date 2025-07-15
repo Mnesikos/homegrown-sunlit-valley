@@ -276,23 +276,6 @@ StartupEvents.registry("block", (e) => {
     createCrate(crate);
   });
 
-  e.create("society:forage_berry_bush")
-    .defaultCutout()
-    .hardness(0)
-    .resistance(0)
-    .mapColor("grass")
-    .noCollision()
-    .soundType("azalea_leaves")
-    .model("society:block/forage_berry_bush")
-    .item((item) => {
-      item.modelJson({
-        parent: "minecraft:item/generated",
-        textures: {
-          layer0: "society:item/forage_bush_seed",
-        },
-      });
-    });
-
   e.create("society:tubabacco_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf1")
     .mapColor("grass")

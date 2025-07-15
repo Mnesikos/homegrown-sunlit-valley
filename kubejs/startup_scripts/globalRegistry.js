@@ -963,6 +963,7 @@ miscAged.forEach((brew) => {
  * Cheese slice = 48
  * Dough/pasta = 16
  * P. Noodle = 16
+ * Vegetable tag = 20
  * Bread = 16
  * Sweet dough = 8
  * Cake dough = 16
@@ -1250,6 +1251,7 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: 'veggiesdelight:garlic_chicken_stew', value: 185 },
   { item: "society:chicken_tortilla_soup", value: 279 },
   { item: "society:mexican_street_corn", value: 162 },
   { item: "farmersdelight:tomato_sauce", value: 52 },

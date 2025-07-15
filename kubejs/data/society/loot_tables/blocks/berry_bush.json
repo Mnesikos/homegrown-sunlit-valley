@@ -1,0 +1,88 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "society:berry_bush",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "1"
+                  }
+                }
+              ],
+              "name": "society:salmonberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "society:berry_bush",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "2"
+                  }
+                }
+              ],
+              "name": "society:boysenberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "society:berry_bush",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "3"
+                  }
+                }
+              ],
+              "name": "society:cranberry"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "society:berry_bush",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "4"
+                  }
+                }
+              ],
+              "name": "society:crystalberry"
+            }
+          ]
+        }
+      ],
+      "rolls": 4.0
+    }
+  ]
+}

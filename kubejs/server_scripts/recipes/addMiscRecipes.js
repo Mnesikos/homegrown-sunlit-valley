@@ -400,6 +400,8 @@ ServerEvents.recipes((e) => {
     s: "society:sparkstone",
     z: "create:zinc_ingot",
   });
+  e.shapeless("society:artisan_hopper", ["4x society:mini_artisan_hopper"]);
+  e.shapeless("4x society:mini_artisan_hopper", ["society:artisan_hopper"]);
   e.shaped("society:fish_pond_basket", ["NaN", "bhb", "nsn"], {
     a: "farmersdelight:safety_net",
     n: "minecraft:netherite_ingot",

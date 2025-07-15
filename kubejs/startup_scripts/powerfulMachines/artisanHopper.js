@@ -356,6 +356,32 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   });
 };
 
+global.artisanHopperScan = (entity, radius) => {
+  const { block, level } = entity;
+  const { x, y, z } = block;
+  let attachedPlayer;
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      attachedPlayer = p;
+    }
+  });
+  if (attachedPlayer) {
+    let scanBlock;
+    let scannedBlocks = 0;
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+      x + radius,
+      y + radius,
+      z + radius,
+    ])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.hasTag("society:artisan_machine")) {
+        global.runArtisanHopper(entity, pos.immutable(), attachedPlayer, scannedBlocks * 5);
+        scannedBlocks++;
+      }
+    }
+  }
+};
+
 StartupEvents.registry("block", (event) => {
   event
     .create("society:artisan_hopper", "cardinal")
@@ -378,30 +404,47 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(200, 0, (entity) => {
-        const { block, level } = entity;
-        const { x, y, z } = block;
-        const radius = 3;
-        let attachedPlayer;
-        level.getServer().players.forEach((p) => {
-          if (p.getUuid().toString() === block.getEntityData().data.owner) {
-            attachedPlayer = p;
-          }
-        });
-        if (attachedPlayer) {
-          let scanBlock;
-          let scannedBlocks = 0;
-          for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-            x + radius,
-            y + radius,
-            z + radius,
-          ])) {
-            scanBlock = level.getBlock(pos);
-            if (scanBlock.hasTag("society:artisan_machine")) {
-              global.runArtisanHopper(entity, pos.immutable(), attachedPlayer, scannedBlocks * 5);
-              scannedBlocks++;
-            }
-          }
-        }
+        global.artisanHopperScan(entity, 3);
+      }),
+        blockInfo.rightClickOpensInventory();
+      blockInfo.attachCapability(
+        CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
+          .extractItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.extractItem(slot, stack, simulate)
+          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlots((blockEntity) => blockEntity.inventory.slots)
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+      );
+    });
+});
+
+StartupEvents.registry("block", (event) => {
+  event
+    .create("society:mini_artisan_hopper", "cardinal")
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_stone_tool")
+    .defaultCutout()
+    .item((item) => {
+      item.tooltip(Text.gray("Inserts items into Artisan Machines from inventory above."));
+      item.tooltip(Text.gray("Harvests outputs from Artisan Machines into inventory below."));
+      item.tooltip(Text.gray("Uses the skills of player that places it."));
+      item.tooltip(Text.green(`Area: 3x3x3`));
+      item.tooltip(Text.lightPurple("Requires Sparkstone for each insert and extract"));
+      item.modelJson({
+        parent: "society:block/mini_artisan_hopper",
+      });
+    })
+    .soundType("copper")
+    .model("society:block/mini_artisan_hopper")
+    .blockEntity((blockInfo) => {
+      blockInfo.inventory(9, 2);
+      blockInfo.initialData({ owner: "-1" });
+      blockInfo.serverTick(200, 0, (entity) => {
+        global.artisanHopperScan(entity, 1);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
