@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 4$(li)🍂 §4Autumn§r$(li)Yield: 2 (per bush half)$(li)Growth Stages: 3$(li)Seeds itself$(br2)$(l)Notes$()$(br)Found in rarely in Maple Forest biomes"
+      "text": "$(l)Stats$()$(li):coin: 4$(li)🍂 §4Autumn§r$(li)Yield: 2/4$(li)Grow Stages: 4/5$(li)Regrow Stages: 1/2$(br2)$(l)Notes$()$(br)Found in Maple Forest biomes$(br)No seeds, simply plant the fruit.$(br)Has 2 harvestable stages"
     },
     {
       "type": "patchouli:multiblock",

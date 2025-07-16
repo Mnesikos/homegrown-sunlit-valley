@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Stats$()$(li):coin: 8$(li)🌼 §2Spring§r$(li)Yield: 1-2$(li)Grow time: 3 days$(li)Seeds itself$(br2)$(l)Notes$()$(br)Wild Coffee can be found in Jungle biomes and its sub-variants."
+      "text": "$(l)Stats$()$(li):coin: 8$(li)🌼 §2Spring§r$(li)Yield: 1-2$(li)Grow time: 3 days$(br2)$(l)Notes$()$(br)Found in Jungle-like biomes.$(br)No seeds, simply plant the fruit."
     },
     {
       "type": "patchouli:multiblock",
