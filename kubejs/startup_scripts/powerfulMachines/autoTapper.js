@@ -33,23 +33,16 @@ StartupEvents.registry("block", (event) => {
           .getFluid((blockInfo, fl) => {
             const foundFluid = blockInfo.persistentData.getString("FluidType");
             if (!foundFluid) return Fluid.of("minecraft:water", 0);
-            return Fluid.of(
-              foundFluid,
-              blockInfo.persistentData.getInt("Fluid")
-            );
+            return Fluid.of(foundFluid, blockInfo.persistentData.getInt("Fluid") || 0);
           })
           .onFill((blockInfo, fluid, sim) => {
             const fluidData = blockInfo.persistentData.getInt("Fluid");
             const filled = Math.min(10000 - fluidData, fluid.getAmount());
             if (!sim) {
-              const storedFluidId =
-                blockInfo.persistentData.getString("FluidType");
+              const storedFluidId = blockInfo.persistentData.getString("FluidType");
               const incomingFluidId = fluid.getId();
               if (storedFluidId === "" || fluidData === 0) {
-                blockInfo.persistentData.putString(
-                  "FluidType",
-                  incomingFluidId
-                );
+                blockInfo.persistentData.putString("FluidType", incomingFluidId);
                 blockInfo.persistentData.putInt("Fluid", fluidData + filled);
               } else if (storedFluidId === incomingFluidId) {
                 blockInfo.persistentData.putInt("Fluid", fluidData + filled);
@@ -62,8 +55,7 @@ StartupEvents.registry("block", (event) => {
           .onDrain((blockInfo, fluid, sim) => {
             const fluidData = blockInfo.persistentData.getInt("Fluid");
             const drained = Math.min(fluidData, fluid.getAmount());
-            if (!sim)
-              blockInfo.persistentData.putInt("Fluid", fluidData - drained);
+            if (!sim) blockInfo.persistentData.putInt("Fluid", fluidData - drained);
             return drained;
           })
       );
@@ -82,17 +74,12 @@ StartupEvents.registry("block", (event) => {
 global.runAutoTapper = (blockInfo) => {
   const { block, level, server } = blockInfo;
 
-  const fluidHandler = blockInfo
-    .getCapability(ForgeCapabilities.FLUID_HANDLER)
-    .orElse(null);
+  const fluidHandler = blockInfo.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
   const fluidData = global.handleTapperRandomTick(
     { block: block, level: level, server: server },
     true
   );
   if (fluidData && block.properties.get("error") == "false") {
-    fluidHandler.fill(
-      Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)),
-      "execute"
-    );
+    fluidHandler.fill(Fluid.of(fluidData.fluid, Math.round(10 / fluidData.time)), "execute");
   }
 };

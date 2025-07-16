@@ -31,7 +31,7 @@
 			description: ["{ftbquests.chapter.abandoned_farm.quest1.description1}"]
 			icon: "supplementaries:present_green"
 			id: "661A3A466ABF29BA"
-			min_required_dependencies: 2
+			min_required_dependencies: 1
 			min_required_tasks: 6
 			rewards: [{
 				id: "23C19AD4A368AA0F"

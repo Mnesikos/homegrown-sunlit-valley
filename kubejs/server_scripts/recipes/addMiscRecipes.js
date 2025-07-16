@@ -68,6 +68,8 @@ ServerEvents.recipes((e) => {
   e.shapeless("4x society:cracked_egg", ["#society:large_eggs"]);
   e.shapeless("1x society:cracked_egg", ["#forge:eggs"]);
   e.shapeless("3x minecraft:glass_bottle", ["vintagedelight:mason_jar"]);
+  e.shapeless("society:magic_tunnel", ["society:magic_rope"]);
+  e.shapeless("society:magic_rope", ["society:magic_tunnel"]);
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
@@ -402,6 +404,14 @@ ServerEvents.recipes((e) => {
   });
   e.shapeless("society:artisan_hopper", ["4x society:mini_artisan_hopper"]);
   e.shapeless("4x society:mini_artisan_hopper", ["society:artisan_hopper"]);
+  e.shaped("society:mini_artisan_hopper", ["zsz", "nhn", "aba"], {
+    a: "numismatics:neptunium_coin",
+    n: "minecraft:netherite_scrap",
+    h: "minecraft:hopper",
+    b: "society:battery",
+    s: "society:sparkstone",
+    z: "create:zinc_ingot",
+  });
   e.shaped("society:fish_pond_basket", ["NaN", "bhb", "nsn"], {
     a: "farmersdelight:safety_net",
     n: "minecraft:netherite_ingot",

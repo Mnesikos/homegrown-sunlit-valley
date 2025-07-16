@@ -56,6 +56,9 @@ ItemEvents.modification((e) => {
   e.modify("society:magic_rope", (item) => {
     item.rarity = "rare";
   });
+  e.modify("society:magic_tunnel", (item) => {
+    item.rarity = "rare";
+  });
   e.modify("quark:diamond_heart", (item) => {
     item.rarity = "epic";
   });

@@ -181,7 +181,8 @@ ItemEvents.tooltip((tooltip) => {
     },
     {
       item: "society:slouching_towards_artistry",
-      description: "Artisan Hoppers have a chance to not consume Sparkstone when harvesting. The chance increases the longer the product took to make.",
+      description:
+        "Artisan Hoppers have a chance to not consume Sparkstone when harvesting. The chance increases the longer the product took to make.",
     },
     {
       item: "society:debt_caverns",
@@ -316,6 +317,16 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:magic_rope", Text.gray("Teleports you down a level in the Skull Cavern"));
   tooltip.add(
     "society:magic_rope",
+    Text.red("Make sure you're carrying an Escape rope in case you get stuck...")
+  );
+  tooltip.add(
+    "society:magic_tunnel",
+    Text.gray(
+      "Teleports you to the nearest cave in the direction of the block you've clicked in the Skull Cavern"
+    )
+  );
+  tooltip.add(
+    "society:magic_tunnel",
     Text.red("Make sure you're carrying an Escape rope in case you get stuck...")
   );
   // Fertilizers
@@ -532,6 +543,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     ["moreminecarts:chunkrodite_block", "moreminecarts:chunkrodite"],
     Text.gray("Adds time to Fueled Chunk Loader")
+  );
+  tooltip.add(
+    "pipez:item_pipe",
+    Text.gray("Can be configured to extract using the Create mod Wrench")
   );
   tooltip.add(
     "moreminecarts:chunk_loader",

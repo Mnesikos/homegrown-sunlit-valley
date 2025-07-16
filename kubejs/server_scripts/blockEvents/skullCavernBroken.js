@@ -98,7 +98,7 @@ const handleRegen = (server, level, block) => {
   let toggleBit =
     level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
   if (String(toggleBit) == block.getProperties().get("chunkbit")) {
-    server.scheduleInTicks(4800, () => {
+    server.scheduleInTicks(2400, () => {
       handleRegen(server, level, block);
     });
   } else {
@@ -139,7 +139,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
         type: String(rockType),
         chunkbit: toggleBit.toString(),
       });
-      server.scheduleInTicks(4800, () => {
+      server.scheduleInTicks(2400, () => {
         handleRegen(server, level, level.getBlock(pos));
       });
     }
@@ -187,7 +187,6 @@ BlockEvents.broken(
   (e) => {
     const { level, block, server } = e;
     const pos = block.getPos();
-    console.log("broken block at: " + pos);
     if (level.dimension === "society:skull_cavern") {
       let rockType = biomeAirTypeMap.get(`${block.biomeId.toString()}`);
       scheduleFunction(level, pos.immutable(), server, rockType);

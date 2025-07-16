@@ -215,6 +215,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     );
     if (loadedData) {
       const { recipes, stageCount, multipleInputs, hasTag, outputMult, soundType } = loadedData;
+      const hasInfinityWorm = artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
       let machineOutput;
       let type;
       let newProperties = artisanMachine.getProperties();
@@ -238,7 +239,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             upgraded: upgraded,
             stage: "0",
           });
-        } else if (artisanMachine.id === "society:deluxe_worm_farm" && upgraded) {
+        } else if (hasInfinityWorm) {
           artisanMachine.set(artisanMachine.id, {
             facing: artisanMachine.properties.get("facing"),
             type: "1",
@@ -351,6 +352,16 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             }
           }
         }
+      }
+      if (hasInfinityWorm && newProperties.get("working").toLowerCase() === "false") {
+        artisanMachine.set(artisanMachine.id, {
+          facing: artisanMachine.properties.get("facing"),
+          type: "1",
+          working: true,
+          mature: false,
+          upgraded: upgraded,
+          stage: "0",
+        });
       }
     }
   });

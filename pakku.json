@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.1.0",
+    "version": "3.1.0-playtest-4",
     "overrides": [
         "config",
         "defaultconfigs",

@@ -62,16 +62,6 @@
   "champions": {
     "enable_affix_compact": true
   },
-  "jadeaddons.create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -83,6 +73,9 @@
   "quality_food": {
     "quality": true
   },
+  "lootr": {
+    "info": true
+  },
   "balm": {
     "jade": true
   },
@@ -93,23 +86,25 @@
     "lightroom": true,
     "photograph_frame": true
   },
-  "jadeaddons.lootr": {
-    "info": true
-  },
   "pipez": {
     "pipe": true
-  },
-  "strawgolem": {
-    "strawgolem_barrel": true,
-    "strawgolem_decay": true,
-    "strawgolem_hunger": true,
-    "strawgolem": true
   },
   "untitledduckmod": {
     "lay_egg": true
   },
   "supplementaries": {
     "hat_stand": true
+  },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "waystones": {
     "waystone": true

@@ -1,7 +1,5 @@
 console.info("[SOCIETY] berryBush.js loaded");
 
-const $PushReaction = Java.loadClass("net.minecraft.world.level.material.PushReaction");
-
 global.updateBerryBush = (level, block) => {
   let type = 0;
   switch (global.getSeasonFromLevel(level)) {
@@ -30,7 +28,6 @@ StartupEvents.registry("block", (event) => {
     .hardness(0)
     .resistance(0)
     .mapColor("grass")
-    .pushReaction($PushReaction.DESTROY)
     .noCollision()
     .soundType("azalea_leaves")
     .property(integerProperty.create("type", 0, 4))

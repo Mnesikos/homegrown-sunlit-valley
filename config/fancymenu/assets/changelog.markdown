@@ -1,15 +1,16 @@
 ^^^
 ## Library of Animals
-### v3.1.0
+### v3.1.0 - Playtest 4
 ^^^
 --- 
-- IMPORTANT: backup worlds before updating!
-- Updated the pack to Create 6
 - Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
 - Added 15 skill books found from certain actions or bought from Wandering Trader
+- Added new building shop sets: Alpine by krewella and Prismarine by AndieCherries
 - Added Artisan Cheese Press and Pink Matter upgrade
+- Added Berry Bushes, a unique shrub that drops different berries when broken depending on the season. This replaces wild onions, carrots, and barley in worldgen.
+- Added Mini Artisan Hopper
 - Added Slime Feeder and Slime Candy
-- Added Miking, Special items, Pet Gifts, and loot boxes to JEI
+- Added Miking, Special items, Pet Gifts, and loot boxes, and loot boxes to JEI
 - Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
 - Added husbandry mechanics to animals: Frog, Wraptor
 - Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
@@ -20,7 +21,7 @@
 - Added Scavenged Food Bag
 - Added Fruit/Trees to Farmer's Almanac (Thanks Devon!)
 - Added Fish Finder - Book with all fish locations obtained through loot or trading (Thanks Copixel!)
-- Added Magic Rope (Staircase equivalent to Stardew) to Exotic Trader
+- Added Magic Rope/Magic Tunnel (Staircase equivalent to Stardew) to Exotic Trader 
 - Added Meowmageddon 
 - Added Candied Animal feed and Mana Animal Feed (Thanks Devon!)
 - Added new models for Mayonnaise Machine, Aging Cask and Ancient Cask
@@ -32,23 +33,28 @@
 - Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
 - Added Inception upgrade to Leatherworker and removed original recipe
 - Added lanterns to charm slot 
+- Abandoned Farm bundle now only requires 1 completed community center room
 - Sniffer, Golden, and Petrified eggs now have quality
 - Changed Prismatic Bounty skill due to it not working: Neptune's Bounties drops a Prismatic Shard when mined without Silk Touch.
 - Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
-- Fly Fisher/School Fisher now work with Nether fishing (Reduced nether fish back to their original values because of this)
+- Fly Fisher/School Fisher now work with Nether fishing
 - Increased animal affection gain by 2x
 - Increased Panda forage multiplier by 2
 - Increased chance of Skull Cavern boulders
+- Increased Cucumber noodle recipe output (1 -> 6)
 - Increased Fletcher trade amount by double
 - Improved recipe category sort order so loot/block drops are always last
-- Minty Slimes now give Bloodlust effect, Juicy now give mining fatigue
+- Ender Slimes now have a reduced teleportation distance when happy
+- Juicy Slimes no longer have Photosynthesizing trait and now give mining fatigue instead of drunk
+- Minty Slimes now give Bloodlust effect instead of drunk
 - Fish Ponds no longer burn in lava
 - Updated Flamarang texture (Thanks Tilles)
 - Updated Hazelnut texture to use Wildernature's
 - Reduced cost of Preserves Jars to not use Pine Tar
 - Reduced chance of Reaping Scythe triggers 20% -> 10%
 - Reduced the cost of Flint and Steel (8 -> 6 Iridium Coins)
-- Reduced Hay Bale spawn chance
+- Reduced Hay Bale spawn chance in villages by 50%
+- Reduced pumpkin amount in Pumpkin Fields by 33%
 - Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
 - Reworked Coin Leaderboard to use Text Displays instead of Armor Stands (no more losing items!)
 - Reworked Wooly Cows to spawn in Warped Forests and give milk less often
@@ -60,7 +66,7 @@
 - Removed advancement for bakery item
 - Removed Powdered Snow from Frozen Caves in the Skull Cavern
 - Removed Minecraft Cake from Bakery banner requirements
-- Re-wrote extractinator to fix bugs
+- Re-wrote Extractinator to fix bugs (Such as it not working somethimes)
 - Rivers are no longer infertile and instead use the global season
 - Fixed brewfest gear having old recipes
 - Fixed Jellyfish not having quality
@@ -75,6 +81,7 @@
 - Fixed ores broken with a hammer/shatterer not regenerating
 - Fixed Skull Cavern not regenerating in certain cases
 - Fixed Skull Cavern marking things as the next day at 6pm instead of 6am
+- Fixed crops growing in Skull Cavern
 - Fixed Frosted Tip upgrade not dropping (Thanks MCSuchter!)
 - Fixed Toolbelt having its own slot
 - Fixed Impact Hammer not being craftable
@@ -86,3 +93,7 @@
 - Fixed Farmers Bread recipe conflict
 - Fixed certain blocks such as Shipping Bins not working when bound player not in the same Dimension
 - Fixed Searing Cod having incompletable quest
+- Fixed cases of Dragonfruit being obtainable
+- Fixed Cucumber having incorrect value 
+- Fixed Artisan Hoppers not being compatible with Infinity Worm upgrade
+- Fixed Efficiency skill nodes giving 2 less mining speed than intended

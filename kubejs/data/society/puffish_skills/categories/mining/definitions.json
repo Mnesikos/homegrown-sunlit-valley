@@ -31,7 +31,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_attributes:pickaxe_speed",
-          "value": 1,
+          "value": 3,
           "operation": "addition"
         }
       }

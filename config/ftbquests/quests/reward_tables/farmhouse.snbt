@@ -91,6 +91,46 @@
 				}
 			}
 		}
+		{
+			item: {
+				Count: 1
+				id: "capsule:capsule"
+				tag: {
+					author: "AndieCherries"
+					canRotate: 1b
+					color: 16777215
+					display: {
+						color: 3633755
+					}
+					isReward: 1b
+					label: "Prismarine Farmhouse"
+					oneUse: 1b
+					size: 19
+					state: 5
+					structureName: "minecraft:config/capsule/rewards/home_prismarine"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "capsule:capsule"
+				tag: {
+					author: "Krewella"
+					canRotate: 1b
+					color: 3418647
+					display: {
+						color: 7170906
+					}
+					isReward: 1b
+					label: "Alpine Farmhouse"
+					oneUse: 1b
+					size: 19
+					state: 5
+					structureName: "minecraft:config/capsule/rewards/home_alpine"
+				}
+			}
+		}
 	]
 	title: "{ftbquests.loot_table_1441633631928763452.title}"
 }

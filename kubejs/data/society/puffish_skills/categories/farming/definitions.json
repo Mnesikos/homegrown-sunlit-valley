@@ -12,7 +12,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_attributes:axe_speed",
-          "value": 1,
+          "value": 3,
           "operation": "addition"
         }
       }
@@ -31,7 +31,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_attributes:shovel_speed",
-          "value": 1,
+          "value": 3,
           "operation": "addition"
         }
       }

@@ -81,8 +81,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest1.title}"
-			x: -16.0d
-			y: -7.0d
+			x: -15.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -154,8 +154,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest2.title}"
-			x: -17.5d
-			y: -7.0d
+			x: -14.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -227,8 +227,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest3.title}"
-			x: -4.0d
-			y: -7.0d
+			x: -7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -303,8 +303,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest4.title}"
-			x: -4.0d
-			y: -5.0d
+			x: -7.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -376,8 +376,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest5.title}"
-			x: -2.5d
-			y: -5.0d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
@@ -387,6 +387,8 @@
 				""
 				"{ftbquests.chapter.building_shop.quest6.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:preserves_jar"
 			id: "62D0735680A06D71"
 			size: 1.5d
@@ -396,8 +398,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest6.title}"
-			x: -6.5d
-			y: -7.0d
+			x: -6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -469,8 +471,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest7.title}"
-			x: -2.5d
-			y: -7.0d
+			x: -6.0d
+			y: -8.0d
 		}
 		{
 			can_repeat: false
@@ -480,16 +482,18 @@
 				""
 				"{ftbquests.chapter.building_shop.quest8.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:aging_cask"
 			id: "118A9A2B8922DA00"
 			size: 1.5d
 			tasks: [{
-				id: "57A6189427F3031E"
-				title: "{ftbquests.chapter.building_shop.quest8.task_6315762552038163230.title}"
+				id: "62909AC02C9A7963"
+				title: "Understood"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest8.title}"
-			x: -6.5d
+			x: -6.0d
 			y: -5.0d
 		}
 		{
@@ -500,6 +504,8 @@
 				""
 				"{ftbquests.chapter.building_shop.quest9.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:milk"
 			id: "0B3AAC4CEC0098A3"
 			size: 1.5d
@@ -509,8 +515,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest9.title}"
-			x: -13.5d
-			y: -7.0d
+			x: -14.0d
+			y: -9.5d
 		}
 		{
 			can_repeat: false
@@ -538,12 +544,8 @@
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest11.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest11.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
 			id: "71B7C3D4C9EC4CAC"
 			min_required_tasks: 3
 			rewards: [{
@@ -552,18 +554,18 @@
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
-						author: "JadeClouds"
+						author: "AndieCherries"
 						canRotate: 1b
-						color: 170
+						color: 16777215
 						display: {
-							color: 16777215
+							color: 3633755
 						}
 						isReward: 1b
-						label: "Entrana Deluxe Barn"
+						label: "Prismarine Deluxe Barn"
 						oneUse: 1b
 						size: 27
 						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_entrana"
+						structureName: "minecraft:config/capsule/rewards/deluxe_barn_prismarine"
 					}
 				}
 				team_reward: true
@@ -601,15 +603,15 @@
 					id: "7D43B3DC3F42C7B7"
 					ignoreState: false
 					layer: false
-					name: "deluxe_barn_entrana"
+					name: "deluxe_barn_prismarine"
 					rightclick: false
 					title: "{ftbquests.chapter.building_shop.quest11.task_9026255836716124087.title}"
 					type: "questsadditions:structure"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest11.title}"
-			x: -20.5d
-			y: -5.0d
+			title: "Prismarine Deluxe Barn"
+			x: -15.0d
+			y: -2.5d
 		}
 		{
 			can_repeat: false
@@ -619,6 +621,8 @@
 				""
 				"{ftbquests.chapter.building_shop.quest12.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "society:large_milk"
 			id: "07FEA26673F89CE0"
 			size: 1.5d
@@ -628,7 +632,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.building_shop.quest12.title}"
-			x: -13.5d
+			x: -14.0d
 			y: -5.0d
 		}
 		{
@@ -665,6 +669,8 @@
 				""
 				"{ftbquests.chapter.building_shop.quest14.description2}"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "tanukidecor:antique_bed"
 			id: "145DAA4D0C7740A3"
 			size: 1.5d
@@ -740,7 +746,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest15.title}"
-			x: -12.5d
+			x: -11.0d
 			y: -1.5d
 		}
 		{
@@ -886,8 +892,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest17.title}"
-			x: -1.0d
-			y: -7.0d
+			x: -5.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -957,17 +963,13 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest18.title}"
-			x: -19.0d
-			y: -7.0d
+			x: -13.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest19.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest19.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
 			id: "094C6DED5CE8D9E5"
 			min_required_tasks: 3
 			rewards: [{
@@ -976,18 +978,18 @@
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
-						author: "JadeClouds"
+						author: "AndieCherries"
 						canRotate: 1b
-						color: 170
+						color: 16777215
 						display: {
-							color: 16777215
+							color: 3633755
 						}
 						isReward: 1b
-						label: "Entrana Shed"
+						label: "Prismarine Shed"
 						oneUse: 1b
 						size: 15
 						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_entrana"
+						structureName: "minecraft:config/capsule/rewards/shed_prismarine"
 					}
 				}
 				team_reward: true
@@ -1025,24 +1027,20 @@
 					id: "26CD201AF28A9A93"
 					ignoreState: false
 					layer: false
-					name: "shed_entrana"
+					name: "shed_prismarine"
 					rightclick: false
 					title: "{ftbquests.chapter.building_shop.quest19.task_2795926243777354387.title}"
 					type: "questsadditions:structure"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest19.title}"
-			x: 0.5d
+			title: "Prismarine Shed"
+			x: -7.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest20.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest20.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{image:society:textures/gui/buildings/house_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
 			id: "28A1164FD04782DB"
 			min_required_tasks: 3
 			rewards: [{
@@ -1051,18 +1049,18 @@
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
-						author: "JadeClouds"
+						author: "Krewella"
 						canRotate: 1b
-						color: 170
+						color: 3418647
 						display: {
-							color: 16777215
+							color: 7170906
 						}
 						isReward: 1b
-						label: "Entrana Farmhouse"
+						label: "Alpine Farmhouse"
 						oneUse: 1b
 						size: 19
 						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_entrana"
+						structureName: "minecraft:config/capsule/rewards/home_alpine"
 					}
 				}
 				team_reward: true
@@ -1096,18 +1094,14 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest20.title}"
-			x: -7.5d
-			y: -1.5d
+			title: "Alpine Farmhouse"
+			x: -10.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest21.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest21.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{image:society:textures/gui/buildings/barn_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
 			id: "7080056E1C1CBCE9"
 			min_required_tasks: 3
 			rewards: [{
@@ -1116,18 +1110,18 @@
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
-						author: "JadeClouds"
+						author: "AndieCherries"
 						canRotate: 1b
-						color: 170
+						color: 16777215
 						display: {
-							color: 16777215
+							color: 3633755
 						}
 						isReward: 1b
-						label: "Entrana Barn"
+						label: "Prismarine Barn"
 						oneUse: 1b
 						size: 17
 						state: 5
-						structureName: "minecraft:config/capsule/rewards/barn_entrana"
+						structureName: "minecraft:config/capsule/rewards/barn_prismarine"
 					}
 				}
 				team_reward: true
@@ -1165,24 +1159,20 @@
 					id: "4F66B4C1459825A5"
 					ignoreState: false
 					layer: false
-					name: "barn_entrana"
+					name: "barn_prismarine"
 					rightclick: false
 					title: "{ftbquests.chapter.building_shop.quest21.task_5721459118810080677.title}"
 					type: "questsadditions:structure"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest21.title}"
-			x: -20.5d
+			title: "Prismarine Barn"
+			x: -15.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest22.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest22.description1}"
-			]
-			icon: "quark:ancient_chest"
+			description: ["{image:society:textures/gui/buildings/large_shed_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
 			id: "2FBDE6A8B7ABE074"
 			min_required_tasks: 3
 			rewards: [{
@@ -1191,18 +1181,18 @@
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
-						author: "JadeClouds"
+						author: "AndieCherries"
 						canRotate: 1b
-						color: 170
+						color: 16777215
 						display: {
-							color: 16777215
+							color: 3633755
 						}
 						isReward: 1b
-						label: "Entrana Large Shed"
+						label: "Prismarine Large Shed"
 						oneUse: 1b
 						size: 21
 						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_entrana"
+						structureName: "minecraft:config/capsule/rewards/large_shed_prismarine"
 					}
 				}
 				team_reward: true
@@ -1240,15 +1230,15 @@
 					id: "23350EE45DB4C8D7"
 					ignoreState: false
 					layer: false
-					name: "large_shed_entrana"
+					name: "large_shed_prismarine"
 					rightclick: false
 					title: "{ftbquests.chapter.building_shop.quest22.task_2536950339080603863.title}"
 					type: "questsadditions:structure"
 				}
 			]
-			title: "{ftbquests.chapter.building_shop.quest22.title}"
-			x: 0.5d
-			y: -5.0d
+			title: "Prismarine Large Shed"
+			x: -7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -1318,8 +1308,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest23.title}"
-			x: -1.0d
-			y: -5.0d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1382,7 +1372,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest24.title}"
-			x: -11.0d
+			x: -10.0d
 			y: -1.5d
 		}
 		{
@@ -1453,8 +1443,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest25.title}"
-			x: -19.0d
-			y: -5.0d
+			x: -13.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1524,8 +1514,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest26.title}"
-			x: -17.5d
-			y: -5.0d
+			x: -14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1595,8 +1585,718 @@
 				}
 			]
 			title: "{ftbquests.chapter.building_shop.quest27.title}"
-			x: -16.0d
-			y: -5.0d
+			x: -15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{image:society:textures/gui/buildings/barn_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
+			id: "1B13E51438458C85"
+			min_required_tasks: 3
+			rewards: [{
+				id: "2B6DC0336FFE24D6"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "Krewella"
+						canRotate: 1b
+						color: 3418647
+						display: {
+							color: 7170906
+						}
+						isReward: 1b
+						label: "Alpine Barn"
+						oneUse: 1b
+						size: 17
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/barn_alpine"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "6694509D727A5D70"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "318DEDE948403A1B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest21.task_4454165703007541629.title}"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "4EAE328598512C78"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "1D81F8FA45153927"
+					ignoreState: false
+					layer: false
+					name: "barn_alpine"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest21.task_5721459118810080677.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "Alpine Barn"
+			x: -14.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest21.image0}"
+				""
+				"{ftbquests.chapter.building_shop.quest21.description1}"
+			]
+			icon: "quark:ancient_chest"
+			id: "1EE50E55155925ED"
+			min_required_tasks: 3
+			rewards: [{
+				id: "468D64E988468629"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "JadeClouds"
+						canRotate: 1b
+						color: 170
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Entrana Barn"
+						oneUse: 1b
+						size: 17
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/barn_entrana"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7EAFD413176B0B1A"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "5716F0393E66E0F4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest21.task_4454165703007541629.title}"
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "26214902F8DB666E"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "0D5E726B6586EDE5"
+					ignoreState: false
+					layer: false
+					name: "barn_entrana"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest21.task_5721459118810080677.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest21.title}"
+			x: -13.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
+			id: "487A09BA84C203C5"
+			min_required_tasks: 3
+			rewards: [{
+				id: "70D17F9286B09885"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "Krewella"
+						canRotate: 1b
+						color: 3418647
+						display: {
+							color: 7170906
+						}
+						isReward: 1b
+						label: "Alpine Deluxe Barn"
+						oneUse: 1b
+						size: 27
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/deluxe_barn_alpine"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "61E52B97E11BB005"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2794BAFD998AD9D8"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest11.task_5271602103984554122.title}"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4963E595CB89AAD0"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "3EF5F40C442F42A4"
+					ignoreState: false
+					layer: false
+					name: "deluxe_barn_alpine"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest11.task_9026255836716124087.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "Alpine Deluxe Barn"
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest11.image0}"
+				""
+				"{ftbquests.chapter.building_shop.quest11.description1}"
+			]
+			icon: "quark:ancient_chest"
+			id: "1B18A02B9B3EF71A"
+			min_required_tasks: 3
+			rewards: [{
+				id: "49D9E74D3550C685"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "JadeClouds"
+						canRotate: 1b
+						color: 170
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Entrana Deluxe Barn"
+						oneUse: 1b
+						size: 27
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/deluxe_barn_entrana"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			tasks: [
+				{
+					count: 20L
+					id: "6919C6727EE3D34B"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "2FB09A78D3CFD1C1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest11.task_5271602103984554122.title}"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0DFD3DFA7C9C1B2A"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "05274B31875DCC39"
+					ignoreState: false
+					layer: false
+					name: "deluxe_barn_entrana"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest11.task_9026255836716124087.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest11.title}"
+			x: -13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest20.image0}"
+				""
+				"{ftbquests.chapter.building_shop.quest20.description1}"
+			]
+			icon: "quark:ancient_chest"
+			id: "5281409C93ABC5AB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6B114022FFCCBD35"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "JadeClouds"
+						canRotate: 1b
+						color: 170
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Entrana Farmhouse"
+						oneUse: 1b
+						size: 19
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/home_entrana"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "5F441BE615D3C402"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4462D440E23AD5AA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest20.task_8655784089189363827.title}"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "3EF9B0D4CD1C3C42"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest20.title}"
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{image:society:textures/gui/buildings/house_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
+			id: "01543A85C9957430"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4C76F3A603B73D63"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "AndieCherries"
+						canRotate: 1b
+						color: 16777215
+						display: {
+							color: 3633755
+						}
+						isReward: 1b
+						label: "Prismarine Farmhouse"
+						oneUse: 1b
+						size: 19
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/home_prismarine"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			tasks: [
+				{
+					count: 8L
+					id: "6B1DACFCB18DDE45"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "691C08D305776EDC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest20.task_8655784089189363827.title}"
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "47580B163019E319"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+			]
+			title: "Prismarine Farmhouse"
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{image:society:textures/gui/buildings/shed_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
+			id: "36B8DAFE6620E7C6"
+			min_required_tasks: 3
+			rewards: [{
+				id: "5FA2FE788F26E46E"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "Krewella"
+						canRotate: 1b
+						color: 3418647
+						display: {
+							color: 7170906
+						}
+						isReward: 1b
+						label: "Alpine Shed"
+						oneUse: 1b
+						size: 15
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/shed_alpine"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "22DA561DC103D748"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "608C5D416F7FE6A2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest19.task_9188231368753795817.title}"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "34F7EF8F68CB266F"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "1260FDADE6DD5CB2"
+					ignoreState: false
+					layer: false
+					name: "shed_alpine"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest19.task_2795926243777354387.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "Alpine Shed"
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest19.image0}"
+				""
+				"{ftbquests.chapter.building_shop.quest19.description1}"
+			]
+			icon: "quark:ancient_chest"
+			id: "5C1AE4AC1EC670F8"
+			min_required_tasks: 3
+			rewards: [{
+				id: "615D99D909E1DF03"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "JadeClouds"
+						canRotate: 1b
+						color: 170
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Entrana Shed"
+						oneUse: 1b
+						size: 15
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/shed_entrana"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "671688842DE2BD7B"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6CA63FF8971F79E1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest19.task_9188231368753795817.title}"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6125ED67199DD242"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "65DCE2BFD5D8BAC5"
+					ignoreState: false
+					layer: false
+					name: "shed_entrana"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest19.task_2795926243777354387.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest19.title}"
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{image:society:textures/gui/buildings/large_shed_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
+			id: "1FD402CC4C58E58D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "31BBA2584991DDD5"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "Krewella"
+						canRotate: 1b
+						color: 3418647
+						display: {
+							color: 7170906
+						}
+						isReward: 1b
+						label: "Alpine Large Shed"
+						oneUse: 1b
+						size: 21
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/large_shed_alpine"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "533E1222BDF546B2"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4E1963B3611FF2DD"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest22.task_820842449556348056.title}"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "33B8725ACD51216C"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "1C856D3BABC39ED4"
+					ignoreState: false
+					layer: false
+					name: "large_shed_alpine"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest22.task_2536950339080603863.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "Alpine Shed"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: [
+				"{ftbquests.chapter.building_shop.quest22.image0}"
+				""
+				"{ftbquests.chapter.building_shop.quest22.description1}"
+			]
+			icon: "quark:ancient_chest"
+			id: "118DEF3CA6FB5713"
+			min_required_tasks: 3
+			rewards: [{
+				id: "01F2922E9BB6A978"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "JadeClouds"
+						canRotate: 1b
+						color: 170
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Entrana Large Shed"
+						oneUse: 1b
+						size: 21
+						state: 5
+						structureName: "minecraft:config/capsule/rewards/large_shed_entrana"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "7996ABB2832E092B"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "17B9B9C591125155"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "society:raw_logs"
+						}
+					}
+					title: "{ftbquests.chapter.building_shop.quest22.task_820842449556348056.title}"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "12D602155DA1DE25"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					hasCustomPicture: false
+					id: "61F80817ADDECCBC"
+					ignoreState: false
+					layer: false
+					name: "large_shed_entrana"
+					rightclick: false
+					title: "{ftbquests.chapter.building_shop.quest22.task_2536950339080603863.title}"
+					type: "questsadditions:structure"
+				}
+			]
+			title: "{ftbquests.chapter.building_shop.quest22.title}"
+			x: -5.0d
+			y: -2.5d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

@@ -445,6 +445,7 @@ StartupEvents.registry("item", (e) => {
       .useAnimation("drink");
   });
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
+  e.create(`society:magic_tunnel`).texture(`society:item/magic_tunnel`);
   e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`).maxStackSize(1);
   e.create(`society:cornucopia`).texture(`society:item/cornucopia`).maxStackSize(1);
   e.create("society:relic_trove").texture("society:item/relic_trove");

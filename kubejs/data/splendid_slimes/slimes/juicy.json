@@ -9,7 +9,7 @@
   "favorite_food": {
     "item": "vinery:jungle_grapes_red"
   },
-  "traits": ["moody", "photosynthesizing"],
+  "traits": ["moody"],
   "emit_effect_particle": "rehooked:ender_hook_particle",
   "negative_emit_effects": [
     {

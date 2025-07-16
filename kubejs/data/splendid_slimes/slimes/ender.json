@@ -18,7 +18,7 @@
   "emit_effect_particle": "minecraft:dragon_breath",
   "traits": ["foodporting"],
   "postive_commands": [
-    "tp @e[distance=..8] @e[limit=1,sort=nearest]",
+    "tp @e[distance=..2] @e[limit=1,sort=nearest]",
     "playsound minecraft:entity.enderman.teleport block @a[distance=..10]"
   ],
   "negative_commands": [
