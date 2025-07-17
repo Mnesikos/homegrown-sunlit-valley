@@ -59,7 +59,7 @@ ServerEvents.recipes((e) => {
     { egg: "wildernature:penguin_spawn_egg", mineral: "society:frozen_geode", coin: "sun" },
     { egg: "wildernature:minisheep_spawn_egg", mineral: "society:lemon_stone", coin: "sun" },
     { egg: "wildernature:raccoon_spawn_egg", mineral: "society:jade", coin: "crown" },
-    { egg: "wildernature:deer_spawn_egg", mineral: "society:geode", coin: "crown" },
+    { egg: "wildernature:deer_spawn_egg", mineral: "society:source_gem", coin: "crown" },
     {
       egg: "wildernature:bison_spawn_egg",
       mineral: "society:ember_crystal_cluster",
@@ -71,6 +71,11 @@ ServerEvents.recipes((e) => {
     {
       egg: "wildernature:hedgehog_spawn_egg",
       mineral: "society:wheel_of_adaptation",
+      coin: "crown",
+    },
+    {
+      egg: "atmospheric:cochineal_spawn_egg",
+      mineral: "society:production_science_pack",
       coin: "crown",
     },
   ];

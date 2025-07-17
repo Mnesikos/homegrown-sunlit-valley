@@ -217,8 +217,6 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:crops", "society:ancient_fruit");
   e.add("forge:salt", "meadow:alpine_salt");
   e.add("forge:crops", "society:tubabbaco");
-  e.add("forge:crops", "society:blueberry");
-  e.add("forge:berries", "society:blueberry");
   e.add("forge:grapes", "nethervinery:warped_grape");
   e.add("forge:grapes", "nethervinery:crimson_grape");
   e.add("forge:crops", "society:eggplant");
@@ -263,6 +261,17 @@ ServerEvents.tags("item", (e) => {
     e.add("society:need_seeds", crop);
     e.remove("minecraft:villager_plantable_seeds", crop);
     e.remove("quark:seed_pouch_holdable", crop);
+  });
+  [
+    "society:boysenberry",
+    "society:salmonberry",
+    "society:crystalberry",
+    "society:cranberry",
+    "society:blueberry",
+  ].forEach((berry) => {
+    e.add("forge:crops", berry);
+    e.add("forge:berries", berry);
+    e.add("forge:fruits", berry);
   });
   [
     "minecraft:apple",

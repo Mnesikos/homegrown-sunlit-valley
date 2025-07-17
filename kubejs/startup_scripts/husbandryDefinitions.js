@@ -249,8 +249,14 @@ global.husbandryForagingDefinitions = [
       {
         item: "society:sap",
         countMult: 4,
-        chance: 0.2,
+        chance: 0.3,
         minHearts: 1,
+      },
+      {
+        item: "crabbersdelight:raw_frog_leg",
+        countMult: 4,
+        chance: 0.1,
+        minHearts: 5,
       },
       {
         item: "society:ribbit_gadget",
@@ -267,6 +273,59 @@ global.husbandryForagingDefinitions = [
         countMult: 8,
         chance: 0.25,
         minHearts: 5,
+      },
+    ],
+  },
+  {
+    animal: "atmospheric:cochineal",
+    forages: [
+      {
+        item: "atmospheric:carmine_husk",
+        countMult: 4,
+        chance: 1,
+        minHearts: 1,
+      },
+      {
+        item: "pamhc2trees:dragonfruititem",
+        countMult: 2,
+        chance: 0.5,
+        minHearts: 6,
+      },
+    ],
+  },
+  {
+    animal: "minecraft:squid",
+    forages: [
+      {
+        item: "crabbersdelight:raw_squid_tentacles",
+        countMult: 1,
+        chance: 0.2,
+        minHearts: 5,
+        hasQuality: true,
+      },
+      {
+        item: "supplementaries:antique_ink",
+        countMult: 1,
+        chance: 0.1,
+        minHearts: 8
+      },
+    ],
+  },
+  {
+    animal: "minecraft:glow_squid",
+    forages: [
+      {
+        item: "crabbersdelight:raw_glow_squid_tentacles",
+        countMult: 1,
+        chance: 0.1,
+        minHearts: 5,
+        hasQuality: true,
+      },
+      {
+        item: "society:legendary_ink",
+        countMult: 1,
+        chance: 0.1,
+        minHearts: 8
       },
     ],
   },
@@ -407,9 +466,14 @@ global.husbandryMilkingDefinitions = [
     milk: { sm: "society:tri_bull_milk", lg: "society:large_tri_bull_milk" },
   },
   {
-    animal: "species:mammutilation",
+    animal: "minecraft:squid",
     cooldown: 1,
-    milk: { sm: "species:ichor_bottle", lg: "species:ichor_bottle" },
+    milk: { sm: "minecraft:ink_sac", lg: "minecraft:ink_sac" },
+  },
+  {
+    animal: "minecraft:glow_squid",
+    cooldown: 1,
+    milk: { sm: "minecraft:glow_ink_sac", lg: "minecraft:glow_ink_sac" },
   },
 ];
 

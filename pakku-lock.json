@@ -6690,7 +6690,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-forge-5.23.0+mc1.20.1.jar",
+                    "file_name": "modernfix-forge-5.24.3+mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -6698,16 +6698,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6548/605/modernfix-forge-5.23.0+mc1.20.1.jar",
-                    "id": "6548605",
+                    "url": "https://edge.forgecdn.net/files/6766/127/modernfix-forge-5.24.3+mc1.20.1.jar",
+                    "id": "6766127",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "901b9adb31fe489c5d6db76dd08b9ed29a4d5395",
-                        "md5": "457fdf4d9c521890ac697485d70e7d37"
+                        "sha1": "53a839bb1b72a72a01f8906873173808d56a72b7",
+                        "md5": "9dc3ef7fb72521888ea3b04f26ba86c3"
                     },
                     "required_dependencies": [],
-                    "size": 870142,
-                    "date_published": "2025-05-19T20:50:26.350Z"
+                    "size": 879295,
+                    "date_published": "2025-07-13T23:27:06.240Z"
                 }
             ]
         },

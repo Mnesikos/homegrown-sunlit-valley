@@ -19,6 +19,8 @@ ServerEvents.tags("entity_type", (e) => {
     "farmlife:domestic_tribull",
     "wildernature:minisheep",
     "wildernature:bison",
+    "minecraft:squid",
+    "minecraft:glow_squid",
   ].forEach((animal) => {
     e.add("society:milkable_animal", animal);
   });
@@ -52,6 +54,7 @@ ServerEvents.tags("entity_type", (e) => {
     "wildernature:owl",
     "wildernature:dog",
     "minecraft:axolotl",
+    "wildernature:hedgehog",
   ];
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);

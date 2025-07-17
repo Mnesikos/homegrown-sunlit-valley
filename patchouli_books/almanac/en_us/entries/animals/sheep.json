@@ -11,7 +11,7 @@
       "type": "patchouli:entity",
       "entity": "minecraft:sheep",
       "scale": 0.8,
-      "text": "A verstile farm animal that has a lot of uses. Has 4 variants that drop patterned wool."
+      "text": "A verstile farm animal that has a lot of uses. Less than ideal for milking."
     }
   ]
 }

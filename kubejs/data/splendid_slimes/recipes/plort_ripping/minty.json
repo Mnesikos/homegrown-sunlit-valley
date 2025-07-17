@@ -12,11 +12,16 @@
     {
       "item": "minecraft:dragon_breath",
       "count": 1,
-      "weight": 3
+      "weight": 150
     },
     {
       "item": "botania:pixie_dust",
       "count": 1,
+      "weight": 50
+    },
+    {
+      "item": "minecraft:dragon_egg",
+      "count": 10,
       "weight": 1
     }
   ]

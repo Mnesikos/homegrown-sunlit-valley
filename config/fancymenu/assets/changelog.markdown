@@ -1,18 +1,18 @@
 ^^^
 ## Library of Animals
-### v3.1.0 - Playtest 4
+### v3.1.0
 ^^^
 --- 
 - Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
 - Added 15 skill books found from certain actions or bought from Wandering Trader
+- Added Berry Bushes, a unique shrub that drops different berries when broken depending on the season. This replaces wild onions, carrots, and barley in worldgen.
 - Added new building shop sets: Alpine by krewella and Prismarine by AndieCherries
 - Added Artisan Cheese Press and Pink Matter upgrade
-- Added Berry Bushes, a unique shrub that drops different berries when broken depending on the season. This replaces wild onions, carrots, and barley in worldgen.
 - Added Mini Artisan Hopper
 - Added Slime Feeder and Slime Candy
-- Added Miking, Special items, Pet Gifts, and loot boxes, and loot boxes to JEI
+- Added Milking, Special items, Pet Gifts, and loot boxes to JEI
 - Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
-- Added husbandry mechanics to animals: Frog, Wraptor
+- Added husbandry mechanics to animals: Frog, Wraptor, Cochineal, Squid, and Glow Squid
 - Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
 - Added new animals: Tri-Bull, Galliraptors - Botania exclusive husbandry animals
 - Added Slimes locations and risks to Farmer's Almanac
@@ -33,17 +33,22 @@
 - Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
 - Added Inception upgrade to Leatherworker and removed original recipe
 - Added lanterns to charm slot 
+- Added chance for a Dragon Egg to Minty Plort ripping
+- Added recycling recipes for Carmine Husk, Legendary Ink, Ancient Ink, Red Hook, and Blaze Hook
 - Abandoned Farm bundle now only requires 1 completed community center room
 - Sniffer, Golden, and Petrified eggs now have quality
 - Changed Prismatic Bounty skill due to it not working: Neptune's Bounties drops a Prismatic Shard when mined without Silk Touch.
 - Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
+- Feeding a Husbandry Animal heals it
 - Fly Fisher/School Fisher now work with Nether fishing
 - Increased animal affection gain by 2x
 - Increased Panda forage multiplier by 2
 - Increased chance of Skull Cavern boulders
 - Increased Cucumber noodle recipe output (1 -> 6)
-- Increased Fletcher trade amount by double
+- Increased Fletcher stock amount by double
+- Increased Sparkstone output from Ancient Goddess Statute trade
 - Improved recipe category sort order so loot/block drops are always last
+- Looms take wool to craft instead of string
 - Ender Slimes now have a reduced teleportation distance when happy
 - Juicy Slimes no longer have Photosynthesizing trait and now give mining fatigue instead of drunk
 - Minty Slimes now give Bloodlust effect instead of drunk
@@ -55,15 +60,19 @@
 - Reduced the cost of Flint and Steel (8 -> 6 Iridium Coins)
 - Reduced Hay Bale spawn chance in villages by 50%
 - Reduced pumpkin amount in Pumpkin Fields by 33%
+- Reduced Multiplayer pigracing payouts
+- Reduced volume of ambient sounds
 - Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
 - Reworked Coin Leaderboard to use Text Displays instead of Armor Stands (no more losing items!)
+- Reworked infernal mobs to be Champions. This change also makes them far less punishing, limiting the type of mobs that can be champions and the amount of modifiers that can be applied
 - Reworked Wooly Cows to spawn in Warped Forests and give milk less often
 - Reworked Construction Wand progression and added cores to cleric
 - Renamed old Cheese Press to Auto-Cheese Press
 - Removed crafting recipe for Milk Bottles to Large Milk
 - Removed Hearthstone cross-dimension durability debuff
 - Removed ability to cage Chickens
-- Removed advancement for bakery item
+- Removed advancement for bakery items that no longer exist
+- Removed the ability to sleep if other online players are in the Skull Cavern 
 - Removed Powdered Snow from Frozen Caves in the Skull Cavern
 - Removed Minecraft Cake from Bakery banner requirements
 - Re-wrote Extractinator to fix bugs (Such as it not working somethimes)
@@ -74,6 +83,7 @@
 - Fixed crops growing underground in any season
 - Fixed newly domesticated husbandry animals not being able to be fed/milked/pet/etc
 - Fixed Crystals of Regret giving an inconsistent amount of points depending on the skill tree
+- Fixed Trophy of Perfection working with fake players
 - Fixed Blaze Banker being unbreakable
 - Fixed Wool armor upgrade costing too much
 - Fixed Juicy Slime heart not being craftable
@@ -94,6 +104,7 @@
 - Fixed certain blocks such as Shipping Bins not working when bound player not in the same Dimension
 - Fixed Searing Cod having incompletable quest
 - Fixed cases of Dragonfruit being obtainable
+- Fixed Warped and Crimson mushrooms not being bonemealable
 - Fixed Cucumber having incorrect value 
 - Fixed Artisan Hoppers not being compatible with Infinity Worm upgrade
 - Fixed Efficiency skill nodes giving 2 less mining speed than intended

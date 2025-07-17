@@ -38,6 +38,9 @@ global.husbandryAnimals = [
   "farmlife:galliraptor",
   "minecraft:frog",
   "wildernature:squirrel",
+  "atmospheric:cochineal",
+  "minecraft:squid",
+  "minecraft:glow_squid",
 ];
 
 global.animalMessageSettings = `{anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-100}`;

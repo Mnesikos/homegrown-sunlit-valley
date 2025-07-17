@@ -5,7 +5,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (!global.checkEntityTag(target, "society:pet_animal")) return;
   if (hand == "MAIN_HAND") {
-    const data = target.persistentData;
+    let data = target.persistentData;
     let possibleGifts;
     let gift = level.createEntity("minecraft:item");
 

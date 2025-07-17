@@ -1,6 +1,86 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:sparkstone",
+      "amount": 64
+    },
+    "item:minecraft:loom",
+    "item:minecraft:ink_sac",
+    "#item:create_enchantment_industry:ink_ingredient",
+    {
+      "type": "fluid",
+      "id": "create_enchantment_industry:ink",
+      "amount": 1000
+    },
+    "item:create_enchantment_industry:ink_bucket",
+    "item:society:legendary_ink",
+    "item:crabbersdelight:raw_squid_tentacles",
+    "item:atmospheric:carmine_husk",
+    "item:supplementaries:antique_ink",
+    "item:farmlife:tribull_shank",
+    "item:wildernature:penguin_spawn_egg",
+    "item:wildernature:hedgehog_spawn_egg",
+    "item:wildernature:stylin_purple_hat{Damage:0}",
+    "item:fantasyfurniture:dunmer/cushion",
+    "item:fantasyfurniture:necrolord/table_large",
+    "item:crabbersdelight:cooked_pufferfish_slice",
+    "item:candlelight:tropical_fish_supreme",
+    "item:candlelight:fillet_steak",
+    "item:crabbersdelight:crab_trap",
+    "item:society:salmonberry",
+    "item:society:crystalberry",
+    "item:minecraft:frog_spawn_egg",
+    "item:crabbersdelight:squid_barrel",
+    {
+      "type": "item",
+      "id": "minecraft:glow_ink_sac",
+      "nbt": "{quality_food:{effects:[],quality:1}}",
+      "amount": 2
+    },
+    "item:minecraft:dragon_egg",
+    "item:minecraft:glow_squid_spawn_egg",
+    "item:minecraft:squid_spawn_egg",
+    "item:society:production_science_pack",
+    "item:atmospheric:cochineal_spawn_egg",
+    "item:pamhc2trees:dragonfruititem",
+    "item:ribbits:toadstool",
+    "item:create:red_seat",
+    "item:create:weathered_copper_shingle_stairs",
+    {
+      "type": "item",
+      "id": "brewery:hops",
+      "amount": 64
+    },
+    "item:society:iron_sprinkler",
+    {
+      "type": "item",
+      "id": "minecraft:iron_block",
+      "amount": 7
+    },
+    "item:society:preserves_jar",
+    "item:society:source_gem",
+    "item:wildernature:deer_spawn_egg",
+    {
+      "type": "item",
+      "id": "unusualfishmod:raw_beaked_herring",
+      "amount": 2
+    },
+    "item:aquaculture:driftwood",
+    "item:quark:diamond_heart",
+    "item:society:ribbit_drum",
+    {
+      "type": "item",
+      "id": "minecraft:nautilus_shell",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "minecraft:cod",
+      "amount": 8
+    },
+    "item:everycomp:rfm/botania/dreamwood_desk",
     "item:everycomp:dd/botania/tall_dreamwood_door",
     "item:meadow:cheese_form",
     "item:betterarcheology:bomb",
@@ -36,7 +116,6 @@
     "item:constructionwand:iron_wand{Damage:0,wand_options:{}}",
     "item:constructionwand:diamond_wand{Damage:0,wand_options:{}}",
     "item:constructionwand:infinity_wand{wand_options:{}}",
-    "item:society:crystalberry",
     "item:minecraft:potion{Potion:\"netherdepthsupgrade:obsidianfish_resistance\"}",
     "item:minecraft:potion{Potion:\"netherdepthsupgrade:lava_puffer_long_wither\"}",
     "item:minecraft:lingering_potion{Potion:\"netherdepthsupgrade:lava_puffer_wither\"}",
@@ -128,7 +207,6 @@
       "amount": 0
     },
     "item:minecraft:lapis_lazuli",
-    "item:society:sparkstone",
     {
       "type": "item",
       "id": "society:boysenberry",
@@ -154,11 +232,6 @@
       "type": "item",
       "id": "society:cranberry",
       "amount": 18
-    },
-    {
-      "type": "item",
-      "id": "society:salmonberry",
-      "amount": 5
     },
     {
       "type": "item",
@@ -190,7 +263,6 @@
     "item:society:crystalarium",
     "item:society:seed_maker",
     "item:society:tapper",
-    "item:society:preserves_jar",
     "item:society:espresso_machine",
     "item:society:loom",
     "item:society:mayonnaise_machine",
@@ -286,14 +358,12 @@
     "item:rehooked:blaze_hook",
     "item:furniture:trash_bag",
     "item:botania:mana_diamond",
-    "item:quark:diamond_heart",
     "item:furniture:bin",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
     "item:farmersdelight:rice",
     "item:society:basalt_shard",
     "item:minecraft:skeleton_skull",
     "item:splendid_slimes:slime_feeder",
-    "item:wildernature:penguin_spawn_egg",
     "item:society:animal_fancy",
     "item:society:animal_feed",
     "item:society:no_name_for_the_sheep",
@@ -421,7 +491,6 @@
     "item:simplehats:magikarp",
     "item:relics:horse_flute{abilities:{heal:{points:0,stats:{amount:0.01801d}}}}",
     "item:botania:goddess_charm",
-    "item:wildernature:hedgehog_spawn_egg",
     "item:beachparty:rubber_ring_axolotl{Damage:0}",
     "item:netherdepthsupgrade:nether_rice_roll_medley_block",
     "item:society:nether_raisins",
@@ -467,7 +536,6 @@
       "id": "society:froggy_helm",
       "amount": 64
     },
-    "item:minecraft:frog_spawn_egg",
     "item:buzzier_bees:moobloom_spawn_egg",
     "item:beachparty:sweetberry_milkshake",
     "item:vintagedelight:organic_mash",
@@ -511,20 +579,20 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
+      "item:minecraft:stripped_crimson_stem",
+      "item:meadow:alpine_oak_log",
       "item:vintagedelight:magic_vine_block",
-      "item:minecraft:stripped_warped_stem",
-      "item:minecraft:crimson_hyphae",
-      "item:minecraft:stripped_warped_hyphae",
-      "item:minecraft:stripped_crimson_hyphae",
-      "item:minecraft:crimson_stem",
-      "item:vintagedelight:stripped_magic_vine",
       "item:minecraft:warped_stem",
       "item:vintagedelight:magic_vine",
-      "item:society:sturdy_bamboo_block",
-      "item:minecraft:stripped_crimson_stem",
-      "item:minecraft:warped_hyphae",
-      "item:meadow:alpine_oak_log",
+      "item:minecraft:stripped_crimson_hyphae",
+      "item:minecraft:crimson_hyphae",
+      "item:minecraft:stripped_warped_stem",
+      "item:minecraft:stripped_warped_hyphae",
       "item:vintagedelight:stripped_magic_vine_block",
+      "item:minecraft:crimson_stem",
+      "item:vintagedelight:stripped_magic_vine",
+      "item:society:sturdy_bamboo_block",
+      "item:minecraft:warped_hyphae",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -563,7 +631,6 @@
     "item:wildernature:cassowary_spawn_egg",
     "item:wildernature:minisheep_spawn_egg",
     "item:wildernature:raccoon_spawn_egg",
-    "item:wildernature:deer_spawn_egg",
     "item:wildernature:bison_spawn_egg",
     "item:wildernature:flamingo_spawn_egg",
     "item:society:spider_silk",
@@ -583,7 +650,6 @@
     "item:society:ghost_crystal",
     "item:society:geminite",
     "item:society:fairy_stone",
-    "item:society:ribbit_drum",
     "item:society:esperite",
     "item:society:aerinite",
     "item:society:frozen_geode",
@@ -749,7 +815,6 @@
     "item:society:aged_warped_cheese_block",
     "item:meadow:warped_cheese_block",
     "item:society:double_aged_buffalo_cheese_block",
-    "item:wildernature:stylin_purple_hat{Damage:0}",
     "item:farmlife:tribull_cheese_wheel",
     "item:meadow:cheese_block",
     "item:society:aged_cheese_block",
@@ -798,11 +863,6 @@
       "type": "item",
       "id": "atmospheric:carmine_shingles",
       "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "atmospheric:carmine_husk",
-      "amount": 9
     },
     "item:atmospheric:carmine_block",
     "item:crabbersdelight:crab_spawn_egg",
@@ -942,7 +1002,6 @@
     "item:minecraft:oak_door",
     "item:wildernature:loot_bag",
     "item:meadow:sausage_with_cheese",
-    "item:farmlife:tribull_shank",
     "item:wildernature:cassowary_meat",
     "item:wildernature:cooked_cassowary_meat",
     "item:wildernature:fish_oil",
@@ -1027,11 +1086,9 @@
     "item:candlelight:chefs_pants{Damage:0}",
     "item:candlelight:dress{Damage:0}",
     "item:candlelight:cooking_hat{Damage:0}",
-    "item:candlelight:fillet_steak",
     "item:candlelight:beetroot_salad",
     "item:candlelight:mushroom_soup",
     "item:candlelight:tomato_soup",
-    "item:brewery:hops",
     "item:brewery:patterned_carpet",
     "item:brewery:hop_trellis_seed",
     "item:brewery:rope",
@@ -1180,6 +1237,7 @@
     "item:society:purple_sheet"
   ],
   "craft_history": [
+    "minecraft:kjs/society_iron_sprinkler",
     "minecraft:kjs/candlelight_cooking_pot",
     "minecraft:dark_oak_slab",
     "minecraft:kjs/numismatics_neptunium_coin",
@@ -1194,9 +1252,9 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

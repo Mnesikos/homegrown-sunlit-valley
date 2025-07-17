@@ -288,8 +288,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest8.title}"
-			x: 5.0d
-			y: 0.0d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["07858B887B222BC2"]
@@ -1568,7 +1568,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["230E02067CBC21CF"]
+			dependencies: ["02327F6FDF987266"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest52.description1}"
 				""
@@ -1585,8 +1585,8 @@
 				item: "society:preserves_jar"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.5d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
@@ -1657,7 +1657,7 @@
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest56.title}"
 			x: 6.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]

@@ -508,6 +508,7 @@ global.animalProducts = [
   { item: "beachparty:raw_mussel_meat", value: 16 },
   { item: "untitledduckmod:raw_goose", value: 16 },
   { item: "autumnity:turkey", value: 32 },
+  { item: "atmospheric:carmine_husk", value: 10 },
   { item: "crabbersdelight:raw_squid_tentacles", value: 16 },
   { item: "crabbersdelight:squid_barrel", value: 144 },
   { item: "crabbersdelight:raw_glow_squid_tentacles", value: 32 },

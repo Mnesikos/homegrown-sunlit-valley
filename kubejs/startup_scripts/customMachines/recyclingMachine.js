@@ -20,6 +20,8 @@ global.recyclingMachineRecipes = [
   { input: "simplehats:hatbag_summer", output: ["5x society:canvas"] },
   { input: "simplehats:hatbag_halloween", output: ["5x society:canvas"] },
   { input: "simplehats:hatbag_festive", output: ["5x society:canvas"] },
+  { input: "atmospheric:carmine_husk", output: ["2x ribbits:toadstool"] },
+  { input: "society:legendary_ink", output: ["4x supplementaries:antique_ink"] },
   { input: "rehooked:red_hook", output: ["rehooked:diamond_hook", "society:prismatic_shard"] },
   { input: "rehooked:blaze_hook", output: ["rehooked:diamond_hook"] },
 ];
