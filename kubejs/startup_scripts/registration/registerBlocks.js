@@ -140,6 +140,7 @@ StartupEvents.registry("block", (e) => {
       .resistance(3600000)
       .requiresTool(true)
       .textureAll(path)
+      .texture("particle", path)
       .unbreakable()
       .tagBlock("society:skull_block");
   };

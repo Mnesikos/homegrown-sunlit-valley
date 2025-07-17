@@ -455,8 +455,8 @@
 			id: "4EE2AD7C7BA3A6DE"
 			rewards: [{
 				count: 4
-				id: "216F4F479C9800AC"
-				item: "society:omni_geode"
+				id: "186C598CCDF37C2D"
+				item: "betterarcheology:bomb"
 				type: "item"
 			}]
 			tasks: [{
@@ -1341,6 +1341,37 @@
 			title: "Automated Cheese"
 			x: 3.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["7ECC14D99BC56382"]
+			description: [
+				"Getting to the bottom of the &6Skull Cavern&r can be a challenge. &6Magic Rope&r can be obtained from the Exotic Trader to instantly teleport you to the next layer down. "
+				""
+				"It can also be crafted into a &6Magic Tunnel&r, which teleports you to adjacent caves."
+			]
+			icon: "society:magic_rope"
+			id: "74F9C9296C92BE03"
+			rewards: [{
+				count: 2
+				id: "7F5802EA608AA10D"
+				item: "society:magic_rope"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7D182FF6E0733E10"
+					item: "society:magic_rope"
+					type: "item"
+				}
+				{
+					id: "24C8F0A11EF90428"
+					item: "society:magic_tunnel"
+					type: "item"
+				}
+			]
+			title: "Descending Faster"
+			x: 16.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

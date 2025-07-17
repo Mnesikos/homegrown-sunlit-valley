@@ -325,7 +325,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
   ranking.forEach((rank, index) => {
     if (rank === betPig) {
       if (index === 0) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue * 2, []);
+        prizePoolCoins = global.calculateCoinsFromValue(poolValue * 1.5, []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${coin.count}x ${coin.id}`));
         });
@@ -340,7 +340,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
         );
       }
       if (index === 1) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 2, []);
+        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 3, []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });
@@ -355,7 +355,7 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
         );
       }
       if (index === 2) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 4, []);
+        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 6, []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });

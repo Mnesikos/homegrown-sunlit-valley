@@ -471,42 +471,6 @@
             ]
         },
         {
-            "pakku_id": "le30HsEtOdqmKGRl",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "atomicstrykers-infernal-mobs"
-            },
-            "name": {
-                "curseforge": "AtomicStryker's Infernal Mobs"
-            },
-            "id": {
-                "curseforge": "227875"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "infernalmobs-1.20.1.6.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6145/53/infernalmobs-1.20.1.6.jar",
-                    "id": "6145053",
-                    "parent_id": "227875",
-                    "hashes": {
-                        "sha1": "9f7f8e845af77874ee244b2d7ba3e11da00f8e65",
-                        "md5": "be3e4cae47c3ac5f349cd52452899243"
-                    },
-                    "required_dependencies": [],
-                    "size": 145587,
-                    "date_published": "2025-02-01T06:59:15.283Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "79B6d8O8JRqhGXmU",
             "type": "MOD",
             "slug": {

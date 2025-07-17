@@ -157,7 +157,7 @@
 		{
 			dependencies: ["2B6877708A709B5C"]
 			description: [
-				"This pack has a configuration! Things like the Stardew Fishing minigame can be turned off, or animal feeding time changed."
+				"This pack has a configuration! Things like the Stardew Fishing minigame or hopsital fees can be turned off."
 				""
 				"In the modpack folder, go to the folder &6kubejs&r and then &6startup_scripts&r."
 				""

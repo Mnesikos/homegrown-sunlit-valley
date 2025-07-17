@@ -60,7 +60,7 @@ ItemEvents.rightClicked("society:magic_rope", (e) => {
       server.runCommandSilent(
         `playsound minecraft:entity.enderman.teleport block @a ${player.x} ${player.y} ${player.z}`
       );
-      player.addItemCooldown(item, 300);
+      player.addItemCooldown(item, 150);
     } else errorText = "There isn't a cave below you...";
   }
   if (errorText) {
@@ -107,7 +107,7 @@ BlockEvents.rightClicked((e) => {
         server.runCommandSilent(
           `playsound minecraft:entity.enderman.teleport block @a ${player.x} ${player.y} ${player.z}`
         );
-        player.addItemCooldown(item, 20);
+        player.addItemCooldown(item, 150);
       } else errorText = "There isn't a cave close enough...";
     }
   if (errorText) {
