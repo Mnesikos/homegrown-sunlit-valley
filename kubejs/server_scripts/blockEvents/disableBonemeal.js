@@ -2,9 +2,10 @@ console.info("[SOCIETY] disableBonemeal.js loaded");
 
 BlockEvents.rightClicked((e) => {
   const { player, block } = e;
+
+  if (player.isHoldingInAnyHand("farm_and_charm:fertilizer")) e.cancel();
   if (
     player.isHoldingInAnyHand("minecraft:bone_meal") ||
-    player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
     player.isHoldingInAnyHand("meadow:watering_can")
   ) {
     if (

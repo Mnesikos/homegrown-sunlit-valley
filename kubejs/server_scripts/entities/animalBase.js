@@ -250,6 +250,7 @@ const handleFeed = (data, day, e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
     );
+    target.heal(4);
     server.runCommandSilent(`puffish_skills experience add ${player.username} society:husbandry 5`);
     data.affection = affection + totalNewAffection;
     debug && player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);

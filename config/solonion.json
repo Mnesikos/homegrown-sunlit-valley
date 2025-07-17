@@ -83,6 +83,10 @@
     {
       "ingredient": "{id:\"item\",item:\"botania:infinite_fruit\"}",
       "diversity": 0
+    },
+    {
+      "ingredient": "{id:\"item\",item:\"relics:infinity_ham\"}",
+      "diversity": 0
     }
   ]
 }

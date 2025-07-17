@@ -70,6 +70,7 @@ StartupEvents.registry("block", (event) => {
               }
 
               if (fed) {
+                animal.heal(4);
                 data.ageLastFed = day;
                 if (boost > 0) data.affection = data.getInt("affection") + boost;
                 level.spawnParticles(
