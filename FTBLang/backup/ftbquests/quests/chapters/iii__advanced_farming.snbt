@@ -150,7 +150,7 @@
 			description: [
 				"Batteries are need to craft the &6Espresso Machine&r, which lets you make &6Espresso&r and &6Steamed Milk&r."
 				""
-				"Unlike other Artisan Machines, drinks made with &6Espresso&r are :corn: Farmer products."
+				"Unlike other Artisan Machines, drinks made with &6Espresso&r are 🔱 Farmer products."
 			]
 			id: "4F698E7353FD76F1"
 			rewards: [{
@@ -1079,7 +1079,7 @@
 				""
 				"It will trade various farm items for Machine upgrades. These upgrades add special effects when applied to the machine."
 				""
-				"There are also some handy utility trades for useful but annoyinhg to obtain items, such as Wither Skeleton Skulls."
+				"There are also some handy utility trades for useful but annoying to obtain items, such as Wither Skeleton Skulls."
 			]
 			icon: "minecraft:fletching_table"
 			id: "7ECC14D99BC56382"

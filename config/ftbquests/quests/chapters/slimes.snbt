@@ -495,7 +495,6 @@
 		}
 		{
 			id: "1D34087B3DA48BFB"
-			subtitle: "{ftbquests.chapter.slimes.quest22.subtitle}"
 			tasks: [{
 				id: "1713E3078B9AC189"
 				item: {

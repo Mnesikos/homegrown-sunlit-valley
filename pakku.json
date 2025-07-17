@@ -1,6 +1,6 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.0.4",
+    "version": "3.1.0",
     "overrides": [
         "config",
         "defaultconfigs",
@@ -32,6 +32,12 @@
             "side": "CLIENT"
         },
         "colorful-hearts": {
+            "side": "CLIENT"
+        },
+        "colorwheel": {
+            "side": "CLIENT"
+        },
+        "colorwheel-patcher": {
             "side": "CLIENT"
         },
         "controlling": {
@@ -76,9 +82,6 @@
         "my-server-is-compatible": {
             "side": "CLIENT"
         },
-        "skillexpnotifier": {
-            "side": "CLIENT"
-        },
         "iris-flywheel-compat": {
             "side": "CLIENT"
         },
@@ -89,6 +92,9 @@
             "side": "CLIENT"
         },
         "ok-zoomer": {
+            "side": "CLIENT"
+        },
+        "radiant-gear": {
             "side": "CLIENT"
         },
         "selectivebounds": {
@@ -110,6 +116,9 @@
             "side": "CLIENT"
         },
         "waystones": {
+            "side": "BOTH"
+        },
+        "skillexpnotifier": {
             "side": "BOTH"
         }
     }

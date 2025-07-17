@@ -224,6 +224,7 @@ global.artifacts = [
   { item: "society:ember_crystal_cluster", value: 176 },
   { item: "society:living_flesh", value: 192 },
   { item: "society:source_gem", value: 208 },
+  { item: "society:glitched_vhs", value: 256 },
   { item: "society:spider_silk", value: 320 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
@@ -320,7 +321,7 @@ global.crops = [
   { item: "atmospheric:yucca_bundle", value: 72 },
   { item: "atmospheric:yucca_cask", value: 72 },
   { item: "atmospheric:currant", value: 8 },
-  { item: "atmospheric:currant_crate", value: 144 },
+  { item: "atmospheric:currant_crate", value: 72 },
   { item: "vintagedelight:peanut", value: 24 },
   { item: "vintagedelight:peanut_crate", value: 216 },
   { item: "vintagedelight:gearo_berry", value: 24 },
@@ -386,6 +387,14 @@ global.crops = [
   { item: "vinery:cherry_bag", value: 108 },
   { item: "farm_and_charm:strawberry", value: 18 },
   { item: "farm_and_charm:strawberry_bag", value: 162 },
+  { item: "society:salmonberry", value: 20 },
+  { item: "society:salmonberry_crate", value: 180 },
+  { item: "society:boysenberry", value: 16 },
+  { item: "society:boysenberry_crate", value: 144 },
+  { item: "society:cranberry", value: 18 },
+  { item: "society:cranberry_crate", value: 162 },
+  { item: "society:crystalberry", value: 22 },
+  { item: "society:crystalberry_crate", value: 198 },
   { item: "society:blueberry", value: 24 },
   { item: "society:blueberry_crate", value: 216 },
   { item: "farmersdelight:cabbage", value: 70 },
@@ -414,8 +423,8 @@ global.crops = [
   { item: "moreminecarts:glass_cactus", value: 20 },
   { item: "vintagedelight:ghost_pepper", value: 36 },
   { item: "vintagedelight:ghost_pepper_crate", value: 324 },
-  { item: "vintagedelight:cucumber", value: 36 },
-  { item: "vintagedelight:cucumber_crate", value: 324 },
+  { item: "vintagedelight:cucumber", value: 72 },
+  { item: "vintagedelight:cucumber_crate", value: 648 },
   { item: "society:tubabacco_leaf", value: 87 },
   { item: "society:tubabacco_leaf_block", value: 783 },
   { item: "minecraft:torchflower", value: 128 },
@@ -461,17 +470,27 @@ global.animalProducts = [
   { item: "society:large_duck_egg", value: 32 },
   { item: "society:large_goose_egg", value: 64 },
   { item: "society:large_turkey_egg", value: 128 },
+  { item: "farmlife:galliraptor_egg", value: 256 },
+  { item: "society:large_galliraptor_egg", value: 1024 },
+  { item: "society:penguin_egg", value: 192 },
+  { item: "society:flamingo_egg", value: 384 },
   // Milk
   { item: "society:sheep_milk", value: 8 },
   { item: "society:milk", value: 16 },
+  { item: "society:grain_milk", value: 22 },
   { item: "society:buffalo_milk", value: 64 },
   { item: "society:goat_milk", value: 96 },
   { item: "society:warped_milk", value: 96 },
+  { item: "society:amethyst_milk", value: 144 },
+  { item: "society:tri_bull_milk", value: 192 },
   { item: "society:large_sheep_milk", value: 32 },
   { item: "society:large_milk", value: 64 },
+  { item: "society:large_grain_milk", value: 88 },
   { item: "society:large_buffalo_milk", value: 256 },
   { item: "society:large_goat_milk", value: 384 },
   { item: "society:large_warped_milk", value: 384 },
+  { item: "society:large_amethyst_milk", value: 576 },
+  { item: "society:large_tri_bull_milk", value: 768 },
   // Basic Raw
   { item: "minecraft:beef", value: 16 },
   { item: "minecraft:porkchop", value: 32 },
@@ -489,12 +508,19 @@ global.animalProducts = [
   { item: "beachparty:raw_mussel_meat", value: 16 },
   { item: "untitledduckmod:raw_goose", value: 16 },
   { item: "autumnity:turkey", value: 32 },
+  { item: "atmospheric:carmine_husk", value: 10 },
   { item: "crabbersdelight:raw_squid_tentacles", value: 16 },
   { item: "crabbersdelight:squid_barrel", value: 144 },
   { item: "crabbersdelight:raw_glow_squid_tentacles", value: 32 },
   { item: "crabbersdelight:glow_squid_barrel", value: 288 },
   { item: "crabbersdelight:raw_frog_leg", value: 40 },
   { item: "crabbersdelight:frog_leg_barrel", value: 360 },
+  { item: "farmlife:galliraptor", value: 900 },
+  { item: "farmlife:tribull_shank", value: 1800 },
+  { item: "wildernature:cassowary_meat", value: 90 },
+  { item: "wildernature:venison", value: 48 },
+  { item: "wildernature:bison_meat", value: 64 },
+  { item: "wildernature:pelican_meat", value: 32 },
   // Advanced Cooked
   { item: "snowpig:frozen_ham", value: 128 },
   { item: "buzzier_bees:glazed_porkchop", value: 144 },
@@ -576,6 +602,10 @@ global.fruits = [
   { item: "atmospheric:passion_fruit", value: 128 },
   { item: "pamhc2trees:lemonitem", value: 160 },
   { item: "pamhc2trees:starfruititem", value: 200 },
+  { item: "society:salmonberry", value: 20 },
+  { item: "society:boysenberry", value: 16 },
+  { item: "society:cranberry", value: 18 },
+  { item: "society:crystalberry", value: 22 },
 ];
 global.preserves = [
   { item: "society:red_grape_preserves", value: 124 },
@@ -594,7 +624,7 @@ global.preserves = [
   { item: "society:corn_preserves", value: 484 },
   { item: "society:hazelnut_mash", value: 544 },
   { item: "society:bell_pepper_preserves", value: 544 },
-  { item: "vintagedelight:relish_mason_jar", value: 604 },
+  { item: "vintagedelight:relish_mason_jar", value: 1440 },
   { item: "vintagedelight:pepper_jam_mason_jar", value: 604 },
   { item: "society:eggplant_preserves", value: 694 },
   { item: "society:cauliflower_preserves", value: 784 },
@@ -653,6 +683,7 @@ global.artisanGoods = [
   { item: "society:duck_mayonnaise", value: 64 },
   { item: "society:goose_mayonnaise", value: 128 },
   { item: "society:turkey_mayonnaise", value: 256 },
+  { item: "society:galliraptor_mayonnaise", value: 2048 },
   { item: "society:parrot_mayonnaise", value: 512 },
   { item: "society:turtle_mayonnaise", value: 1024 },
   { item: "society:sniffer_mayonnaise", value: 1536 },
@@ -662,10 +693,13 @@ global.artisanGoods = [
   { item: "society:large_duck_mayonnaise", value: 256 },
   { item: "society:large_goose_mayonnaise", value: 512 },
   { item: "society:large_turkey_mayonnaise", value: 1024 },
+  { item: "society:large_galliraptor_mayonnaise", value: 8192 },
   { item: "society:birt_mayonnaise", value: 96 },
   { item: "society:wraptor_mayonnaise", value: 320 },
   { item: "society:springling_mayonnaise", value: 512 },
-  { item: "society:petrified_mayonnaise", value: 2048 },
+  { item: "society:springling_mayonnaise", value: 1024 },
+  { item: "society:penguin_mayonnaise", value: 1536 },
+  { item: "society:flamingo_mayonnaise", value: 3072 },
   { item: "society:cruncher_mayonnaise", value: 4096 },
   { item: "society:oak_resin", value: 48 },
   { item: "society:maple_syrup", value: 64 },
@@ -678,14 +712,16 @@ global.artisanGoods = [
   { item: "society:aged_buffalo_cheese_block", value: 3072 },
   { item: "society:aged_sheep_cheese_block", value: 384 },
   { item: "society:aged_grain_cheese_block", value: 1056 },
-  { item: "society:aged_amethyst_cheese_block", value: 1152 },
+  { item: "society:aged_amethyst_cheese_block", value: 6912 },
+  { item: "society:aged_tribull_cheese_wheel", value: 9216 },
   { item: "society:double_aged_cheese_block", value: 3072 },
   { item: "society:double_aged_goat_cheese_block", value: 18432 },
   { item: "society:double_aged_warped_cheese_block", value: 18432 },
   { item: "society:double_aged_buffalo_cheese_block", value: 12288 },
   { item: "society:double_aged_sheep_cheese_block", value: 1536 },
   { item: "society:double_aged_grain_cheese_block", value: 4224 },
-  { item: "society:double_aged_amethyst_cheese_block", value: 4708 },
+  { item: "society:double_aged_amethyst_cheese_block", value: 27648 },
+  { item: "society:double_aged_tribull_cheese_wheel", value: 36864 },
 ];
 
 // Ice value = 8
@@ -701,6 +737,7 @@ global.cocktails = [
   { item: "beachparty:sweetberry_icecream", value: 32 },
   { item: "beachparty:coconut_icecream", value: 20 },
   { item: "beachparty:chocolate_icecream", value: 12 },
+  { item: "society:blueberry_icecream", value: 64 },
   { item: "beachparty:icecream_cactus", value: 40 },
   { item: "beachparty:icecream_melon", value: 28 },
   { item: "beachparty:icecream_coconut", value: 20 },
@@ -793,8 +830,10 @@ global.logs = [
   { item: "minecraft:stripped_warped_stem", value: 16 },
   { item: "minecraft:crimson_stem", value: 16 },
   { item: "minecraft:stripped_crimson_stem", value: 16 },
-  { item: "vintagedelight:magic_vine", value: 16 },
-  { item: "vintagedelight:stripped_magic_vine", value: 16 },
+  { item: "vintagedelight:magic_vine", value: 32 },
+  { item: "vintagedelight:stripped_magic_vine", value: 32 },
+  { item: "vanillabackport:pale_oak_log", value: 8 },
+  { item: "vanillabackport:stripped_pale_oak_log", value: 8 },
   // Log byproducts
   { item: "farmersdelight:tree_bark", value: 2 },
   { item: "farmersdelight:straw", value: 3 },
@@ -925,6 +964,7 @@ miscAged.forEach((brew) => {
  * Cheese slice = 48
  * Dough/pasta = 16
  * P. Noodle = 16
+ * Vegetable tag = 20
  * Bread = 16
  * Sweet dough = 8
  * Cake dough = 16
@@ -1038,7 +1078,7 @@ const craftingTableRecipes = [
   { item: "vintagedelight:deluxe_burger", value: 321 },
   { item: "vintagedelight:cheese_burger", value: 237 },
   { item: "vintagedelight:pb_j", value: 208 },
-  { item: "vintagedelight:cucumber_salad", value: 270 },
+  { item: "vintagedelight:cucumber_salad", value: 324 },
   { item: "vintagedelight:oatmeal_cookie", value: 10 },
   { item: "society:energy_drink", value: 277 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
@@ -1074,14 +1114,22 @@ craftingTableRecipes.forEach((recipe) => {
 const cheeses = [
   // Values shouldn't be multiplied for balance
   { item: "vintagedelight:honey_mason_jar", value: 48 },
+  { item: "meadow:piece_of_sheep_cheese", value: 24 },
   { item: "meadow:sheep_cheese_block", value: 96 },
+  { item: "meadow:piece_of_cheese", value: 48 },
   { item: "meadow:cheese_block", value: 192 },
-  { item: "meadow:amethyst_cheese_block", value: 288 },
+  { item: "meadow:piece_of_grain_cheese", value: 66 },
   { item: "meadow:grain_cheese_block", value: 264 },
+  { item: "meadow:piece_of_buffalo_cheese", value: 192 },
   { item: "meadow:buffalo_cheese_block", value: 768 },
+  { item: "meadow:piece_of_goat_cheese", value: 288 },
   { item: "meadow:goat_cheese_block", value: 1152 },
+  { item: "meadow:piece_of_warped_cheese", value: 288 },
   { item: "meadow:warped_cheese_block", value: 1152 },
-  { item: "meadow:sausage_with_cheese", value: 336 },
+  { item: "meadow:piece_of_amethyst_cheese", value: 432 },
+  { item: "meadow:amethyst_cheese_block", value: 1728 },
+  { item: "farmlife:tribull_cheese_wedge", value: 576 },
+  { item: "farmlife:tribull_cheese_wheel", value: 2304 },
 ];
 cheeses.forEach((recipe) => {
   global.cooking.push({
@@ -1093,7 +1141,7 @@ cheeses.forEach((recipe) => {
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const fermentingRecipes = [
   { item: "vintagedelight:pickled_onion", value: 14 },
-  { item: "vintagedelight:pickle", value: 38 },
+  { item: "vintagedelight:pickle", value: 72 },
   { item: "vintagedelight:century_egg", value: 136 },
   { item: "vintagedelight:surstromming", value: 48 },
   { item: "vintagedelight:pickled_pepper", value: 38 },
@@ -1134,6 +1182,12 @@ const furnaceRecipes = [
   { item: "crabbersdelight:cooked_tropical_fish", value: 72 },
   { item: "crabbersdelight:cooked_squid_tentacles", value: 16 },
   { item: "crabbersdelight:cooked_glow_squid_tentacles", value: 32 },
+  { item: "farmlife:cooked_galliraptor", value: 900 },
+  { item: "farmlife:cooked_tribull_shank", value: 1800 },
+  { item: "wildernature:cooked_bison_meat", value: 64 },
+  { item: "wildernature:cooked_pelican_meat", value: 32 },
+  { item: "wildernature:cooked_venison", value: 48 },
+  { item: "wildernature:cooked_cassowary_meat", value: 90 },
   { item: "minecraft:cooked_salmon", value: 24 },
   { item: "quark:cooked_crab_leg", value: 24 },
   { item: "untitledduckmod:cooked_duck", value: 16 },
@@ -1198,6 +1252,9 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "veggiesdelight:garlic_chicken_stew", value: 185 },
+  { item: "society:chicken_tortilla_soup", value: 279 },
+  { item: "society:mexican_street_corn", value: 162 },
   { item: "farmersdelight:tomato_sauce", value: 52 },
   { item: "minecraft:beetroot_soup", value: 72 },
   { item: "farm_and_charm:strawberry_tea", value: 40 },
@@ -1208,7 +1265,7 @@ const cookingPotRecipes = [
   { item: "farmersdelight:hot_cocoa", value: 27 },
   { item: "crabbersdelight:seafood_gumbo", value: 120 },
   { item: "candlelight:pasta_with_mozzarella", value: 96 },
-  { item: "vintagedelight:pickle_soup", value: 286 },
+  { item: "vintagedelight:pickle_soup", value: 466 },
   { item: "candlelight:tomato_soup", value: 70 },
   { item: "farmersdelight:apple_cider", value: 179 },
   { item: "candlelight:chocolate_mousse", value: 13 },
@@ -1285,6 +1342,7 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:fish_and_chips", value: 92 },
   { item: "veggiesdelight:carrot_juice", value: 42 },
   { item: "veggiesdelight:cacciatore", value: 105 },
+  { item: "meadow:sausage_with_cheese", value: 168 },
 ];
 cookingPotRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1324,7 +1382,7 @@ const stoveRecipes = [
   { item: "bakery:braided_bread", value: 6 },
   { item: "farm_and_charm:roasted_corn", value: 88 },
   { item: "candlelight:chicken_alfredo", value: 112 },
-  { item: "farm_and_charm:farmers_bread", value: 7 },
+  { item: "farm_and_charm:farmers_bread", value: 12 },
   { item: "bakery:crusty_bread", value: 8 },
   { item: "bakery:bundt_cake", value: 104 },
   { item: "candlelight:pork_ribs", value: 64 },
@@ -1516,6 +1574,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "betterarcheology:growth_totem", value: 32000 },
   { item: "botania:black_lotus", value: 128 },
   { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },
@@ -1603,6 +1662,7 @@ global.miscAdventurer = [
   { item: "mysticaloaktree:wise_oak", value: 1024 },
   { item: "minecraft:enchanted_golden_apple", value: 4096 },
   { item: "minecraft:goat_horn", value: 512 },
+  { item: "wildernature:bison_horn", value: 3300 },
   { item: "botania:life_essence", value: 9999 },
   { item: "botania:manasteel_ingot", value: 32 },
   { item: "botania:manasteel_block", value: 288 },
@@ -1952,6 +2012,8 @@ global.lootFurniture = [
   "minecraft:bell",
   "furniture:coffer",
 ];
+
+global.animalFeed = ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"];
 
 global.trades = new Map();
 global.ore.forEach((oreItem) => {

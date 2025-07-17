@@ -102,4 +102,3 @@ farmland_config = ["1;#minecraft:crops;#dew_drop_farmland_growth:bountiful_ferti
 [Compatibility]
 	#Handle Quark harvest & replant automatically (if you have custom behaviour configured regarding the quality block state turn this off)
 	quark_handle_config = true
-

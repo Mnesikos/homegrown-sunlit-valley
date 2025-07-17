@@ -58,7 +58,7 @@
 	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
 	dimensionalWarpAllowList = []
 	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
-	dimensionalWarpDenyList = ["mining_dimension:mining"]
+	dimensionalWarpDenyList = ["society:skull_cavern"]
 	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
 	allowWaystoneToWaystoneTeleport = true
 	#Set to false to allow non-creative players to make waystones globally activated for all players.

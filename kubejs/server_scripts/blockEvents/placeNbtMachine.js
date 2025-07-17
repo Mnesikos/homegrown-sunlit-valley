@@ -32,6 +32,7 @@ BlockEvents.placed(
     "shippingbin:smart_shipping_bin",
     "shippingbin:basic_shipping_bin",
     "society:artisan_hopper",
+    "society:mini_artisan_hopper",
     "society:fish_pond_basket",
     "society:auto_grabber",
   ],

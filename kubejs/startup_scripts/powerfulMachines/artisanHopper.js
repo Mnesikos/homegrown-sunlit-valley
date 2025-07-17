@@ -51,7 +51,7 @@ global.handleAdditionalArtisanMachineOutputs = (
     }
   }
 };
-
+// TODO: make artisan hopper set tappers
 global.getArtisanMachineData = (block, upgraded, stages) => {
   let machineData = {
     recipes: [],
@@ -100,6 +100,14 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.agingCaskRecipes,
         stageCount: 10,
         soundType: "minecraft:block.wood.place",
+      };
+      break;
+    case "society:cheese_press":
+      machineData = {
+        recipes: global.cheesePressRecipes,
+        stageCount: 2,
+        outputMult: stages.has("rancher") ? 2 : 1,
+        soundType: "species:block.frozen_meat.place",
       };
       break;
     case "society:ancient_cask":
@@ -180,6 +188,7 @@ global.getArtisanMachineData = (block, upgraded, stages) => {
         recipes: global.tapperRecipes,
         stageCount: 1,
         soundType: "vinery:cabinet_close",
+        outputMult: stages.has("canadian_and_famous") ? 2 : 1,
       };
       break;
     case "society:charging_rod":
@@ -197,6 +206,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
   server.scheduleInTicks(delay, () => {
     const artisanMachine = level.getBlock(artisanMachinePos);
     const { x, y, z } = artisanMachine;
+    const currentStage = artisanMachine.properties.get("stage");
     const upgraded = artisanMachine.properties.get("upgraded") == "true";
     const loadedData = global.getArtisanMachineData(artisanMachine, upgraded, player.stages);
     const season = global.getSeasonFromLevel(level);
@@ -205,6 +215,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
     );
     if (loadedData) {
       const { recipes, stageCount, multipleInputs, hasTag, outputMult, soundType } = loadedData;
+      const hasInfinityWorm = artisanMachine.id === "society:deluxe_worm_farm" && upgraded;
       let machineOutput;
       let type;
       let newProperties = artisanMachine.getProperties();
@@ -228,7 +239,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             upgraded: upgraded,
             stage: "0",
           });
-        } else if (artisanMachine.id === "society:deluxe_worm_farm" && upgraded) {
+        } else if (hasInfinityWorm) {
           artisanMachine.set(artisanMachine.id, {
             facing: artisanMachine.properties.get("facing"),
             type: "1",
@@ -244,6 +255,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             recipes,
             stageCount,
             outputMult,
+            artisanMachine.id === "society:cheese_press",
             true
           );
         }
@@ -267,7 +279,26 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               player.stages
             );
           }
-          global.useInventoryItems(inventory, "society:sparkstone", 1);
+          let sparkstoneSaveChance = 0;
+          if (player.stages.has("slouching_towards_artistry")) {
+            sparkstoneSaveChance = Number(currentStage) * 0.05;
+          }
+          if (Math.random() > sparkstoneSaveChance) {
+            global.useInventoryItems(inventory, "society:sparkstone", 1);
+          } else {
+            level.spawnParticles(
+              "species:youth_potion",
+              true,
+              x,
+              y + 0.5,
+              z,
+              0.1 * rnd(1, 4),
+              0.1 * rnd(1, 4),
+              0.1 * rnd(1, 4),
+              5,
+              0.01
+            );
+          }
           let specialItemResultCode = global.insertBelow(level, block, machineOutput);
           if (specialItemResultCode == 1) {
             level.spawnParticles(
@@ -322,8 +353,44 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           }
         }
       }
+      if (hasInfinityWorm && newProperties.get("working").toLowerCase() === "false") {
+        artisanMachine.set(artisanMachine.id, {
+          facing: artisanMachine.properties.get("facing"),
+          type: "1",
+          working: true,
+          mature: false,
+          upgraded: upgraded,
+          stage: "0",
+        });
+      }
     }
   });
+};
+
+global.artisanHopperScan = (entity, radius) => {
+  const { block, level } = entity;
+  const { x, y, z } = block;
+  let attachedPlayer;
+  level.getServer().players.forEach((p) => {
+    if (p.getUuid().toString() === block.getEntityData().data.owner) {
+      attachedPlayer = p;
+    }
+  });
+  if (attachedPlayer) {
+    let scanBlock;
+    let scannedBlocks = 0;
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+      x + radius,
+      y + radius,
+      z + radius,
+    ])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.hasTag("society:artisan_machine")) {
+        global.runArtisanHopper(entity, pos.immutable(), attachedPlayer, scannedBlocks * 5);
+        scannedBlocks++;
+      }
+    }
+  }
 };
 
 StartupEvents.registry("block", (event) => {
@@ -337,7 +404,7 @@ StartupEvents.registry("block", (event) => {
       item.tooltip(Text.gray("Harvests outputs from Artisan Machines into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
       item.tooltip(Text.green(`Area: 7x7x7`));
-      item.tooltip(Text.lightPurple("Requires Sparkstone"));
+      item.tooltip(Text.lightPurple("Requires Sparkstone for each insert and extract"));
       item.modelJson({
         parent: "society:block/artisan_hopper",
       });
@@ -348,30 +415,47 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(200, 0, (entity) => {
-        const { block, level } = entity;
-        const { x, y, z } = block;
-        const radius = 3;
-        let attachedPlayer;
-        level.players.forEach((p) => {
-          if (p.getUuid().toString() === block.getEntityData().data.owner) {
-            attachedPlayer = p;
-          }
-        });
-        if (attachedPlayer) {
-          let scanBlock;
-          let scannedBlocks = 0;
-          for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-            x + radius,
-            y + radius,
-            z + radius,
-          ])) {
-            scanBlock = level.getBlock(pos);
-            if (scanBlock.hasTag("society:artisan_machine")) {
-              global.runArtisanHopper(entity, pos.immutable(), attachedPlayer, scannedBlocks * 5);
-              scannedBlocks++;
-            }
-          }
-        }
+        global.artisanHopperScan(entity, 3);
+      }),
+        blockInfo.rightClickOpensInventory();
+      blockInfo.attachCapability(
+        CapabilityBuilder.ITEM.blockEntity()
+          .insertItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.insertItem(slot, stack, simulate)
+          )
+          .extractItem((blockEntity, slot, stack, simulate) =>
+            blockEntity.inventory.extractItem(slot, stack, simulate)
+          )
+          .getSlotLimit((blockEntity, slot) => blockEntity.inventory.getSlotLimit(slot))
+          .getSlots((blockEntity) => blockEntity.inventory.slots)
+          .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
+      );
+    });
+});
+
+StartupEvents.registry("block", (event) => {
+  event
+    .create("society:mini_artisan_hopper", "cardinal")
+    .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:needs_stone_tool")
+    .defaultCutout()
+    .item((item) => {
+      item.tooltip(Text.gray("Inserts items into Artisan Machines from inventory above."));
+      item.tooltip(Text.gray("Harvests outputs from Artisan Machines into inventory below."));
+      item.tooltip(Text.gray("Uses the skills of player that places it."));
+      item.tooltip(Text.green(`Area: 3x3x3`));
+      item.tooltip(Text.lightPurple("Requires Sparkstone for each insert and extract"));
+      item.modelJson({
+        parent: "society:block/mini_artisan_hopper",
+      });
+    })
+    .soundType("copper")
+    .model("society:block/mini_artisan_hopper")
+    .blockEntity((blockInfo) => {
+      blockInfo.inventory(9, 2);
+      blockInfo.initialData({ owner: "-1" });
+      blockInfo.serverTick(200, 0, (entity) => {
+        global.artisanHopperScan(entity, 1);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(

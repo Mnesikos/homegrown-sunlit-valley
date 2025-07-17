@@ -275,7 +275,7 @@
 		{
 			dependencies: ["18490F31FFAB134E"]
 			description: [
-				"Due to the complex worldgeneration of the Skull Cavern, we suggest pre-generating the dimension using Chunky! To do so, run the following commands:"
+				"Due to the complex world generation of the Skull Cavern, we suggest pre-generating the dimension using Chunky! To do so, run the following commands:"
 				""
 				"&6/chunky world society:skull_cavern&r"
 				"&6chunky radius 1000&r (increase number for larger servers)"
@@ -295,6 +295,27 @@
 			title: "Pregenerating the Skull Cavern"
 			x: -2.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["2B6877708A709B5C"]
+			description: [
+				"This pack has a lot of animals that can make sounds that get old very quickly."
+				""
+				"To mute specific mobs/sounds, you can click on the volume icon in your inventory."
+				""
+				"If you dislike the ambient sounds in the pack, you can edit the file &6config/ambientsounds-client.json&r and set the volume to a lower value. You can also just remove the mod without losing the ability to connect to servers using the pack."
+			]
+			icon: "etched:radio"
+			id: "67486880FE3E2CCD"
+			subtitle: "I can't stand the squirrels"
+			tasks: [{
+				id: "5330CA06B1E9BEE3"
+				title: "Understood!"
+				type: "checkmark"
+			}]
+			title: "Muting Sounds"
+			x: -2.5d
+			y: -2.5d
 		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"

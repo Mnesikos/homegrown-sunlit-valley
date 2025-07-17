@@ -20,6 +20,10 @@ global.recyclingMachineRecipes = [
   { input: "simplehats:hatbag_summer", output: ["5x society:canvas"] },
   { input: "simplehats:hatbag_halloween", output: ["5x society:canvas"] },
   { input: "simplehats:hatbag_festive", output: ["5x society:canvas"] },
+  { input: "atmospheric:carmine_husk", output: ["2x ribbits:toadstool"] },
+  { input: "society:legendary_ink", output: ["4x supplementaries:antique_ink"] },
+  { input: "rehooked:red_hook", output: ["rehooked:diamond_hook", "society:prismatic_shard"] },
+  { input: "rehooked:blaze_hook", output: ["rehooked:diamond_hook"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -38,7 +42,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Turns junk into usable resources"));
       item.modelJson({
-        parent: "society:block/recycling_machine_off",
+        parent: "society:block/recycling_machine/recycling_machine_off",
       });
     })
     .defaultState((state) => {
@@ -70,14 +74,6 @@ StartupEvents.registry("block", (event) => {
         global.handleBETick(entity, global.recyclingMachineRecipes, 1);
       });
     }).blockstateJson = {
-    multipart: [
-      {
-        apply: { model: "society:block/recycling_machine_particle" },
-      },
-      {
-        when: { mature: true },
-        apply: { model: "society:block/machine_done" },
-      },
-    ].concat(getCardinalMultipartJson("recycling_machine")),
+    multipart: getCardinalMultipartJson("recycling_machine"),
   };
 });

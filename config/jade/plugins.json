@@ -59,6 +59,9 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "champions": {
+    "enable_affix_compact": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -105,8 +108,5 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "treetap": {
-    "tap": true
   }
 }

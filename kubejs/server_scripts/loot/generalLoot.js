@@ -44,6 +44,12 @@ LootJS.modifiers((e) => {
     .randomChance(0.2)
     .addLoot("numismatics:bevel")
     .limitCount([1, 4], [5, 9]);
+  e.addLootTableModifier("minecraft:chests/abandoned_mineshaft")
+    .randomChance(0.2)
+    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:webby"}}'));
+  e.addLootTableModifier("minecraft:chests/simple_dungeon")
+    .randomChance(0.1)
+    .addLoot(Item.of("splendid_slimes:slime_heart", '{slime:{id:"splendid_slimes:webby"}}'));
   e.addLootTableModifier("minecraft:chests/buried_treasure")
     .randomChance(0.9)
     .addLoot("numismatics:cog")

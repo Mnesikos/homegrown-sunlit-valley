@@ -151,6 +151,10 @@
     "modId": "cerbons_api",
     "version": "1.0.0"
   },
+  "champions-forge-1.20.1-2.1.12.2.jar": {
+    "modId": "champions",
+    "version": "1.20.1-2.1.12.2"
+  },
   "chat_heads-0.13.7-forge-1.20.jar": {
     "modId": "chat_heads",
     "version": "0.13.7"
@@ -243,9 +247,9 @@
     "modId": "create_enchantment_industry",
     "version": "1.2.9.d"
   },
-  "create_hypertube-0.1.4-fix-CREATE-0.5.1.jar": {
+  "create_hypertube-0.2.2-CREATE-0.5.1.jar": {
     "modId": "create_hypertube",
-    "version": "0.1.4-fix"
+    "version": "0.2.2"
   },
   "create_mechanical_extruder-1.20.1-1.6.3.j-55.jar": {
     "modId": "create_mechanical_extruder",
@@ -310,6 +314,14 @@
   "dew_drop_watering_cans-1.0.2.jar": {
     "modId": "dew_drop_watering_cans",
     "version": "1.0.2"
+  },
+  "DiagonalFences-v8.1.5-1.20.1-Forge.jar": {
+    "modId": "diagonalfences",
+    "version": "8.1.5"
+  },
+  "DiagonalWalls-v8.0.4-1.20.1-Forge.jar": {
+    "modId": "diagonalwalls",
+    "version": "8.0.4"
   },
   "displaydelight-0.0.1-lite.jar": {
     "modId": "displaydelight",
@@ -407,13 +419,17 @@
     "modId": "fantasyfurniture",
     "version": "9.0.0"
   },
-  "FarmersDelight-1.20.1-1.2.6.jar": {
+  "FarmersDelight-1.20.1-1.2.8.jar": {
     "modId": "farmersdelight",
-    "version": "1.20.1-1.2.6"
+    "version": "1.20.1-1.2.8"
   },
   "farmingforblockheads-forge-1.20.1-14.0.2.jar": {
     "modId": "farmingforblockheads",
     "version": "14.0.2"
+  },
+  "farmlife-1.20.1-1.1.0.jar": {
+    "modId": "farmlife",
+    "version": "1.20.1-1.1.0"
   },
   "FasterLadderClimbing-1.20.1-0.2.10.jar": {
     "modId": "fasterladderclimbing",
@@ -499,9 +515,9 @@
     "modId": "gamediscs",
     "version": "0.3.2-forge"
   },
-  "geckolib-forge-1.20.1-4.7.1.2.jar": {
+  "geckolib-forge-1.20.1-4.7.2.jar": {
     "modId": "geckolib",
-    "version": "4.7.1.2"
+    "version": "4.7.2"
   },
   "GlitchCore-forge-1.20.1-0.0.1.1.jar": {
     "modId": "glitchcore",
@@ -539,10 +555,6 @@
     "modId": "incontrol",
     "version": "1.20-9.3.2"
   },
-  "infernalmobs-1.20.1.6.jar": {
-    "modId": "infernalmobs",
-    "version": "1.20.1.6"
-  },
   "irons_rpg_tweaks-1.20-1.4.0.jar": {
     "modId": "irons_rpg_tweaks",
     "version": "1.20-1.4.0"
@@ -558,10 +570,6 @@
   "JadeAddons-1.20.1-Forge-5.3.1.jar": {
     "modId": "jadeaddons",
     "version": "5.3.1+forge"
-  },
-  "jearchaeology-1.20.1-1.0.4.jar": {
-    "modId": "jearchaeology",
-    "version": "1.20.1-1.0.4"
   },
   "jeed-1.20-2.2.5.jar": {
     "modId": "jeed",
@@ -587,9 +595,9 @@
     "modId": "kambrik",
     "version": "6.1.1+1.20.1"
   },
-  "Kiwi-1.20.1-Forge-11.8.29.jar": {
+  "Kiwi-1.20.1-Forge-11.8.31.jar": {
     "modId": "kiwi",
-    "version": "11.8.29+forge"
+    "version": "11.8.31+forge"
   },
   "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
     "modId": "konkrete",
@@ -644,21 +652,25 @@
     "modId": "furniture",
     "version": "1.0.4"
   },
-  "letsdo-herbalbrews-forge-1.0.11.jar": {
+  "letsdo-herbalbrews-forge-1.0.12.jar": {
     "modId": "herbalbrews",
-    "version": "1.0.11"
+    "version": "1.0.12"
   },
   "letsdo-meadow-forge-1.3.23.jar": {
     "modId": "meadow",
     "version": "1.3.23"
   },
-  "letsdo-nethervinery-forge-1.2.16.jar": {
+  "letsdo-nethervinery-forge-1.2.17.jar": {
     "modId": "nethervinery",
-    "version": "1.2.16"
+    "version": "1.2.17"
   },
   "letsdo-vinery-forge-1.4.39.jar": {
     "modId": "vinery",
     "version": "1.4.39"
+  },
+  "letsdo-wildernature-forge-1.0.5.jar": {
+    "modId": "wildernature",
+    "version": "1.0.5"
   },
   "lithostitched-forge-1.20.1-1.4.8.jar": {
     "modId": "lithostitched",
@@ -676,9 +688,9 @@
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
   },
-  "lootjs-forge-1.20.1-2.12.0.jar": {
+  "lootjs-forge-1.20.1-2.13.0.jar": {
     "modId": "lootjs",
-    "version": "1.20.1-2.12.0"
+    "version": "1.20.1-2.13.0"
   },
   "lootr-forge-1.20-0.7.35.90.jar": {
     "modId": "lootr",
@@ -692,21 +704,17 @@
     "modId": "melody",
     "version": "1.0.2"
   },
-  "mining-dimension-forge-1.20.1-1.1.0.jar": {
-    "modId": "mining_dimension",
-    "version": "1.20.1-1.1.0"
-  },
-  "modernfix-forge-5.23.0+mc1.20.1.jar": {
+  "modernfix-forge-5.24.3+mc1.20.1.jar": {
     "modId": "modernfix",
-    "version": "5.23.0+mc1.20.1"
+    "version": "5.24.3+mc1.20.1"
   },
   "moonlight-1.20-2.13.70-forge.jar": {
     "modId": "moonlight",
     "version": "1.20-2.13.70"
   },
-  "morejs-forge-1.20.1-0.10.0.jar": {
+  "morejs-forge-1.20.1-0.10.1.jar": {
     "modId": "morejs",
-    "version": "0.10.0"
+    "version": "0.10.1"
   },
   "moreminecarts-1.8.3.jar": {
     "modId": "moreminecarts",
@@ -880,13 +888,21 @@
     "modId": "questsadditions",
     "version": "1.4.7"
   },
+  "radiantgear-forge-2.2.0+1.20.1.jar": {
+    "modId": "radiantgear",
+    "version": "2.2.0+1.20.1"
+  },
+  "radium-mc1.20.1-0.12.4+git.26c9d8e.jar": {
+    "modId": "radium",
+    "version": "0.12.4+git.26c9d8e"
+  },
   "refurbished_furniture-forge-1.20.1-1.0.14.jar": {
     "modId": "refurbished_furniture",
     "version": "1.0.14"
   },
-  "rehooked-1.8.1-1.20.1.jar": {
+  "rehooked-1.8.3-1.20.1.jar": {
     "modId": "rehooked",
-    "version": "1.8.1-1.20.1"
+    "version": "1.8.3-1.20.1"
   },
   "relics-1.20.1-0.8.0.9.jar": {
     "modId": "relics",
@@ -908,9 +924,9 @@
     "modId": "rhino",
     "version": "2001.2.3-build.10"
   },
-  "Ribbits-1.20.1-Forge-3.0.2.jar": {
+  "Ribbits-1.20.1-Forge-3.0.4.jar": {
     "modId": "ribbits",
-    "version": "1.20.1-Forge-3.0.2"
+    "version": "1.20.1-Forge-3.0.4"
   },
   "rottencreatures-forge-1.20.1-1.1.0.jar": {
     "modId": "rottencreatures",
@@ -952,9 +968,9 @@
     "modId": "shippingbin",
     "version": "4"
   },
-  "ShoulderSurfing-Forge-1.20.1-4.12.0.jar": {
+  "ShoulderSurfing-Forge-1.20.1-4.13.1.jar": {
     "modId": "shouldersurfing",
-    "version": "1.20.1-4.12.0"
+    "version": "1.20.1-4.13.1"
   },
   "simplehats-forge-1.20.1-0.3.2.jar": {
     "modId": "simplehats",
@@ -964,7 +980,7 @@
     "modId": "simplemagnets",
     "version": "1.1.12"
   },
-  "skillsexpnotifier-4.7.3-SNAPSHOT.jar": {
+  "skillsexpnotifier-5.4.1-SNAPSHOT.jar": {
     "modId": "skillsexpnotifier",
     "version": "1.0-SNAPSHOT"
   },
@@ -980,9 +996,9 @@
     "modId": "snowpig",
     "version": "1.20.1-6.0.3"
   },
-  "SnowRealMagic-1.20.1-Forge-10.6.0.jar": {
+  "SnowRealMagic-1.20.1-Forge-10.6.2.jar": {
     "modId": "snowrealmagic",
-    "version": "10.6.0"
+    "version": "10.6.2"
   },
   "snowyspirit-1.20-3.0.10.jar": {
     "modId": "snowyspirit",
@@ -1020,13 +1036,13 @@
     "modId": "spark",
     "version": "1.10.53"
   },
-  "Species-1.20.1-2.3-forge.jar": {
+  "species-3.4.jar": {
     "modId": "species",
-    "version": "1.20.1-2.3-forge"
+    "version": "3.4"
   },
-  "splendid_slimes-0.12.2.jar": {
+  "splendid_slimes-0.13.2.jar": {
     "modId": "splendid_slimes",
-    "version": "0.12.2"
+    "version": "0.13.2"
   },
   "stardew_fishing-1.20.1-2.3.jar": {
     "modId": "stardew_fishing",
@@ -1040,13 +1056,13 @@
     "modId": "strawstatues",
     "version": "8.0.3"
   },
-  "structureessentials-1.20.1-3.4.jar": {
+  "structureessentials-1.20.1-4.7.jar": {
     "modId": "structureessentials",
-    "version": "1.20.1-3.4"
+    "version": "1.20.1-4.7"
   },
-  "structurify-forge-1.0.14+mc1.20.1.jar": {
+  "structurify-forge-1.0.17+mc1.20.1.jar": {
     "modId": "structurify",
-    "version": "1.0.14"
+    "version": "1.0.17"
   },
   "supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
     "modId": "supermartijn642configlib",
@@ -1108,17 +1124,13 @@
     "modId": "translocators",
     "version": "2.6.0.86"
   },
-  "trashslot-forge-1.20-15.1.1.jar": {
+  "trashslot-forge-1.20-15.1.2.jar": {
     "modId": "trashslot",
-    "version": "15.1.1"
+    "version": "15.1.2"
   },
   "TreeChop-1.20.1-forge-0.19.0-fixed.jar": {
     "modId": "treechop",
     "version": "0.19.0"
-  },
-  "treetap-1.20.1-0.4.0.jar": {
-    "modId": "treetap",
-    "version": "1.20.1-0.4.0"
   },
   "Trials-2.3.3.jar": {
     "modId": "trials",
@@ -1168,13 +1180,13 @@
     "modId": "visual_keybinder",
     "version": "1.20.1 - 0.1.6"
   },
-  "waterframes-FORGE-mc1.20.1-v2.1.14.jar": {
+  "waterframes-FORGE-mc1.20.1-v2.1.15.jar": {
     "modId": "waterframes",
-    "version": "2.1.14"
+    "version": "2.1.15"
   },
-  "watermedia-2.1.24.jar": {
+  "watermedia-2.1.25.jar": {
     "modId": "watermedia",
-    "version": "2.1.24"
+    "version": "2.1.25"
   },
   "waystones-forge-1.20-14.1.7.jar": {
     "modId": "waystones",

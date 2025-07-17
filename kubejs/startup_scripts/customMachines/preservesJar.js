@@ -228,6 +228,10 @@ global.preservesJarRecipes = [
   },
   { input: "veggiesdelight:garlic", output: ["society:garlic_preserves"] },
   { input: "snowyspirit:ginger", output: ["society:ginger_preserves"] },
+  { input: "society:salmonberry", output: ["society:salmonberry_preserves"] },
+  { input: "society:boysenberry", output: ["society:boysenberry_preserves"] },
+  { input: "society:cranberry", output: ["society:cranberry_preserves"] },
+  { input: "society:crystalberry", output: ["society:crystalberry_preserves"] },
 ];
 
 roeFish.forEach((fish) => {
@@ -308,7 +312,7 @@ StartupEvents.registry("block", (event) => {
           stage: block.properties.get("stage"),
         });
       }
-      
+
       global.handleBERightClick(
         "minecraft:block.wood.place",
         click,

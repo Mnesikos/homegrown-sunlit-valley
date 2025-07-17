@@ -137,10 +137,11 @@ StartupEvents.registry("block", (e) => {
   const createSkullVariant = (type, path) => {
     e.create(`society:skull_${type}`)
       .soundType("stone")
-      .hardness(-1)
       .resistance(3600000)
       .requiresTool(true)
       .textureAll(path)
+      .texture("particle", path)
+      .unbreakable()
       .tagBlock("society:skull_block");
   };
   createSkullVariant("stone", "minecraft:block/stone");
@@ -149,7 +150,21 @@ StartupEvents.registry("block", (e) => {
   createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
   createSkullVariant("blackstone", "minecraft:block/blackstone");
   createSkullVariant("end_stone", "minecraft:block/end_stone");
-
+  e.create("society:cavern_air")
+    .box(0, 0, 0, 0, 0, 0)
+    .property(integerProperty.create("type", 0, 4))
+    .property(integerProperty.create("chunkbit", 0, 1))
+    .model("minecraft:block/air")
+    .hardness(-1)
+    .resistance(3600000)
+    .defaultState((state) => {
+      state.set(integerProperty.create("type", 0, 4), 0);
+      state.set(integerProperty.create("chunkbit", 0, 1), 0);
+    })
+    .placementState((state) => {
+      state.set(integerProperty.create("type", 0, 4), 0);
+      state.set(integerProperty.create("chunkbit", 0, 1), 0);
+    });
   e.create("society:iridium_ore")
     .soundType("stone")
     .hardness(2.5)
@@ -214,6 +229,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .texture("particle", "quark:block/cocoa_beans_sack");
+
   e.create("herbalbrews:yerba_mate_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf2")
     .mapColor("grass")
@@ -248,9 +264,18 @@ StartupEvents.registry("block", (e) => {
       .requiresTool(false);
   };
 
-  createCrate("blueberry");
-  createCrate("eggplant");
-  createCrate("ancient_fruit");
+  const crates = [
+    "blueberry",
+    "eggplant",
+    "ancient_fruit",
+    "salmonberry",
+    "boysenberry",
+    "cranberry",
+    "crystalberry",
+  ];
+  crates.forEach((crate) => {
+    createCrate(crate);
+  });
 
   e.create("society:tubabacco_leaf_block")
     .textureAll("herbalbrews:block/green_tea_leaf1")
@@ -646,7 +671,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .model("society:block/tanuki_catalog")
-    .displayName(":leaves: §aTanuki Catalog");
+    .displayName("♤ §aTanuki Catalog");
 
   e.create("society:modern_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)
@@ -654,7 +679,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .model("society:block/modern_catalog")
-    .displayName(":house: Modern Catalog");
+    .displayName("♧ Modern Catalog");
 
   e.create("society:fantasy_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)

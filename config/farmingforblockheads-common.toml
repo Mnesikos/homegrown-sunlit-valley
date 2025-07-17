@@ -11,7 +11,7 @@ feedingTroughMaxAnimals = 24
 chickenNestRange = 8
 #The chance to get a bonus crop when using Green Fertilizer.
 #Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-fertilizerBonusCropChance = 0
+fertilizerBonusCropChance = 1.0
 #The chance to get a bonus growth when using Red Fertilizer.
 #Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 fertilizerBonusGrowthChance = 0.25

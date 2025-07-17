@@ -1,10 +1,17 @@
 console.info("[SOCIETY] disableBonemeal.js loaded");
 
+const allowedBonemealCrops = [
+  "minecraft:crimson_fungus",
+  "minecraft:warped_fungus",
+  "quark:glow_shroom",
+];
 BlockEvents.rightClicked((e) => {
   const { player, block } = e;
+
+  if (allowedBonemealCrops.includes(block.id)) return;
+  if (player.isHoldingInAnyHand("farm_and_charm:fertilizer")) e.cancel();
   if (
     player.isHoldingInAnyHand("minecraft:bone_meal") ||
-    player.isHoldingInAnyHand("farm_and_charm:fertilizer") ||
     player.isHoldingInAnyHand("meadow:watering_can")
   ) {
     if (

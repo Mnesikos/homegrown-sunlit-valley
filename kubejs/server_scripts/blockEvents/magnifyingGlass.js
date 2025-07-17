@@ -5,8 +5,10 @@ const REPETITIONS = 10;
 const magnifyingGlassBlocks = [
   { id: "society:auto_grabber", radius: 5, includeY: true },
   { id: "society:artisan_hopper", radius: 3, includeY: true },
+  { id: "society:mini_artisan_hopper", radius: 1, includeY: true },
   { id: "society:fish_pond_basket", radius: 1, includeY: true },
   { id: "society:feeding_trough", radius: 6, includeY: true },
+  { id: "splendid_slimes:slime_feeder", radius: 6, includeY: true },
   { id: "society:iron_sprinkler", radius: 1 },
   { id: "society:gold_sprinkler", radius: 2 },
   { id: "society:diamond_sprinkler", radius: 3 },

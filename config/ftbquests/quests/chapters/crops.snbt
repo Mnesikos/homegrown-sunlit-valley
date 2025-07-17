@@ -772,6 +772,10 @@
 				"29DB37EC353F9B6E"
 				"747C13EC9FA295FB"
 				"4F81826897B74EE0"
+				"2F27CD4D551DD305"
+				"19A3DC6691B0D3B6"
+				"4903AF88B0996BE7"
+				"0F6038DFCF3087B8"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1017,7 +1021,7 @@
 				item: "atmospheric:aloe_leaves"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 15.5d
 			y: 3.5d
 		}
 		{
@@ -1038,6 +1042,46 @@
 				type: "item"
 			}]
 			x: 4.0d
+			y: 3.5d
+		}
+		{
+			id: "0F6038DFCF3087B8"
+			tasks: [{
+				id: "187A421E35209762"
+				item: "society:salmonberry"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			id: "4903AF88B0996BE7"
+			tasks: [{
+				id: "0D72EAA4A6ADF84D"
+				item: "society:boysenberry"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			id: "2F27CD4D551DD305"
+			tasks: [{
+				id: "668CD89F089326D3"
+				item: "society:cranberry"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			id: "19A3DC6691B0D3B6"
+			tasks: [{
+				id: "7CBF2AEDEA09DE6A"
+				item: "society:crystalberry"
+				type: "item"
+			}]
+			x: 1.0d
 			y: 3.5d
 		}
 	]
