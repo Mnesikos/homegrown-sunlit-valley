@@ -9,10 +9,46 @@
     }
   ],
   "lookup_history": [
+    "item:vinery:rotten_cherry",
+    "item:create:precision_mechanism",
+    "item:society:pink_matter",
+    {
+      "type": "item",
+      "id": "numismatics:sun",
+      "nbt": "{DisplayedCount:4}",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "society:cheese_press",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 10
+    },
+    "item:society:artifact_trove",
+    {
+      "type": "item",
+      "id": "atmospheric:carmine_husk",
+      "amount": 4
+    },
+    "item:society:glitched_vhs",
+    "item:minecraft:flint_and_steel{Damage:0}",
+    {
+      "type": "item",
+      "id": "society:grain_milk",
+      "amount": 64
+    },
+    "item:society:relic_trove",
+    "item:minecraft:spruce_log",
+    "item:minecraft:lightning_rod",
+    "item:farmersdelight:cooking_pot",
+    "item:candlelight:cooking_pot",
     "item:minecraft:nether_star",
     "item:society:tri_bull_milk",
     "item:society:amethyst_milk",
-    "item:society:grain_milk",
     "item:society:large_tri_bull_milk",
     "item:society:large_warped_milk",
     "item:beachparty:sweetberry_milkshake",
@@ -51,14 +87,8 @@
       "id": "quark:orange_blossom_sapling",
       "amount": 5
     },
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 10
-    },
     "item:furniture:trash_bag",
     "item:sawmill:sawmill",
-    "item:society:cheese_press",
     "item:meadow:cheese_form",
     "item:society:starcardi",
     "item:society:aged_starcardi",
@@ -79,7 +109,6 @@
     "item:create_enchantment_industry:ink_bucket",
     "item:society:legendary_ink",
     "item:crabbersdelight:raw_squid_tentacles",
-    "item:atmospheric:carmine_husk",
     "item:supplementaries:antique_ink",
     "item:farmlife:tribull_shank",
     "item:wildernature:penguin_spawn_egg",
@@ -188,8 +217,6 @@
     "item:minecraft:potion{Potion:\"minecraft:slowness\"}",
     "item:minecraft:potion{Potion:\"minecraft:strong_turtle_master\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_swiftness\"}",
-    "item:society:artifact_trove",
-    "item:society:relic_trove",
     "item:crabbersdelight:pearl_block",
     "item:crabbersdelight:pearl",
     {
@@ -333,7 +360,6 @@
     "item:numismatics:white_id_card",
     "item:beachparty:icecream_sweetberries",
     "item:beachparty:coconut_icecream",
-    "item:candlelight:cooking_pot",
     "item:society:prismatic_shard",
     "item:society:mana_milker",
     "item:society:feeding_trough",
@@ -362,7 +388,6 @@
     "item:tanukidecor:minimalist_mirror",
     "item:fantasyfurniture:decorations/bone_wither_chalices",
     "item:atmospheric:golden_dragon_fruit",
-    "item:society:pink_matter",
     "item:everycomp:q/meadow/pine_leaf_carpet",
     "item:everycomp:rfm/meadow/pine_hedge",
     "item:twigs:azalea_flowers",
@@ -397,7 +422,6 @@
     },
     "item:veggiesdelight:fermented_garlic_honey",
     "item:wildernature:blunderbuss{Damage:0}",
-    "item:society:glitched_vhs",
     "item:create:powdered_obsidian",
     "item:oreganized:electrum_upgrade_smithing_template",
     "item:society:neptunium_upgrade_smithing_template",
@@ -631,19 +655,19 @@
     "item:create:andesite_casing",
     [
       "item:vintagedelight:magic_vine_block",
-      "item:minecraft:crimson_stem",
-      "item:minecraft:stripped_warped_hyphae",
-      "item:vintagedelight:stripped_magic_vine",
-      "item:minecraft:crimson_hyphae",
-      "item:meadow:alpine_oak_log",
       "item:minecraft:stripped_warped_stem",
+      "item:minecraft:crimson_hyphae",
+      "item:minecraft:warped_stem",
       "item:minecraft:warped_hyphae",
-      "item:vintagedelight:magic_vine",
+      "item:minecraft:stripped_crimson_stem",
+      "item:meadow:alpine_oak_log",
+      "item:society:sturdy_bamboo_block",
+      "item:vintagedelight:stripped_magic_vine",
+      "item:minecraft:stripped_warped_hyphae",
       "item:vintagedelight:stripped_magic_vine_block",
       "item:minecraft:stripped_crimson_hyphae",
-      "item:minecraft:stripped_crimson_stem",
-      "item:society:sturdy_bamboo_block",
-      "item:minecraft:warped_stem",
+      "item:vintagedelight:magic_vine",
+      "item:minecraft:crimson_stem",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -897,7 +921,6 @@
     "item:unusualfishmod:raw_circus_fish",
     "item:pamhc2trees:peachitem",
     "item:etcetera:cotton_seeds",
-    "item:numismatics:sun",
     "item:minecraft:oak_planks",
     "item:minecraft:oak_fence_gate",
     "item:minecraft:oak_button",
@@ -1253,24 +1276,14 @@
     "item:botania:daffomill",
     "item:botania:bubbell",
     "item:society:prize_machine",
-    "item:society:aged_jo_special_mixture",
-    "item:pamhc2trees:plumitem",
-    "item:oreganized:raw_silver_block",
-    {
-      "type": "item",
-      "id": "oreganized:raw_silver",
-      "amount": 64
-    },
-    "item:vintagedelight:mason_jar",
-    "item:vintagedelight:apple_sauce_mason_jar",
-    "item:herbalbrews:cinnamon_coffee"
+    "item:society:aged_jo_special_mixture"
   ],
   "craft_history": [
     "minecraft:kjs/society_cheese_press",
+    "meadow:fire_log",
     "minecraft:kjs/society_tapper",
     "minecraft:lead",
     "minecraft:kjs/society_preserves_jar",
-    "meadow:fire_log",
     "sawmill:sawmill",
     "minecraft:kjs/society_iron_sprinkler",
     "minecraft:kjs/candlelight_cooking_pot",
@@ -1287,9 +1300,9 @@
   ],
   "recipe_defaults": {
     "added": [
+      "create:crafting/kinetics/mechanical_crafter",
       "minecraft:kjs/society_deluxe_worm_farm",
-      "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},
