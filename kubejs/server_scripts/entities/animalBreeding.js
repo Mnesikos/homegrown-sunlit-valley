@@ -35,6 +35,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     let animalNbt = target.getNbt();
+    let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
     let ageLastBred = target.persistentData.ageLastBred || 0;
     if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
     if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {

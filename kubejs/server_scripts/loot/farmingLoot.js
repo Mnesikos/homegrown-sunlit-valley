@@ -60,7 +60,6 @@ const cropList = [
   "pamhc2trees:pampawpaw",
   "pamhc2trees:pamcinnamon",
   "vintagedelight:ghost_pepper_crop",
-  "vintagedelight:gearo_berry_bush",
   "vintagedelight:cucumber_crop",
   "farmersdelight:cabbages",
   "farmersdelight:budding_tomatoes",
@@ -82,6 +81,7 @@ const cropList = [
   "society:sweet_potato",
   "society:onion",
 ];
+// TODO: "vintagedelight:gearo_berry_bush"
 const cropCollectorDenied = [
   "pamhc2trees:pamapple",
   "pamhc2trees:pamcherry",

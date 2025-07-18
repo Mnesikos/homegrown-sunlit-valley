@@ -38,6 +38,9 @@ ServerEvents.recipes((e) => {
     "buffalo_milk",
     "sheep_milk",
     "warped_milk",
+    "grain_milk",
+    "amethyst_milk",
+    "tri_bull_milk"
   ];
   milks.forEach((milk) => {
     compact(`society:large_${milk}`, `society:${milk}`, 4);

@@ -4889,7 +4889,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fusion-1.2.2-forge-mc1.20.1.jar",
+                    "file_name": "fusion-1.2.8a-forge-mc1.20.1.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -4898,16 +4898,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6073/870/fusion-1.2.2-forge-mc1.20.1.jar",
-                    "id": "6073870",
+                    "url": "https://edge.forgecdn.net/files/6773/120/fusion-1.2.8a-forge-mc1.20.1.jar",
+                    "id": "6773120",
                     "parent_id": "854949",
                     "hashes": {
-                        "sha1": "325f9c817f4d2c68f9cc9bf03b292591a0ffb43e",
-                        "md5": "9231607e20f2b323b564b60c287dea4b"
+                        "sha1": "12215c02ea3431e9d8243f5c60e3d4eed1655a58",
+                        "md5": "bc3e0bd33fa208e93ee275ba1f2a5937"
                     },
                     "required_dependencies": [],
-                    "size": 522795,
-                    "date_published": "2025-01-10T17:48:28.433Z"
+                    "size": 541898,
+                    "date_published": "2025-07-15T20:39:37.387Z"
                 }
             ]
         },
@@ -9293,7 +9293,7 @@
         {
             "pakku_id": "Y2Ni93h7aHWr6N29",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "skillexpnotifier"
             },

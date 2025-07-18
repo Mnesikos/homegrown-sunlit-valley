@@ -1,6 +1,98 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:coal_block",
+        "amount": 2
+      }
+    }
+  ],
   "lookup_history": [
+    "item:vinery:rotten_cherry",
+    "item:create:precision_mechanism",
+    "item:society:pink_matter",
+    {
+      "type": "item",
+      "id": "numismatics:sun",
+      "nbt": "{DisplayedCount:4}",
+      "amount": 4
+    },
+    {
+      "type": "item",
+      "id": "society:cheese_press",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 10
+    },
+    "item:society:artifact_trove",
+    {
+      "type": "item",
+      "id": "atmospheric:carmine_husk",
+      "amount": 4
+    },
+    "item:society:glitched_vhs",
+    "item:minecraft:flint_and_steel{Damage:0}",
+    {
+      "type": "item",
+      "id": "society:grain_milk",
+      "amount": 64
+    },
+    "item:society:relic_trove",
+    "item:minecraft:spruce_log",
+    "item:minecraft:lightning_rod",
+    "item:farmersdelight:cooking_pot",
+    "item:candlelight:cooking_pot",
+    "item:minecraft:nether_star",
+    "item:society:tri_bull_milk",
+    "item:society:amethyst_milk",
+    "item:society:large_tri_bull_milk",
+    "item:society:large_warped_milk",
+    "item:beachparty:sweetberry_milkshake",
+    "item:herbalbrews:milk_coffee",
+    "item:society:warped_milk",
+    "item:functionalstorage:oak_1",
+    "item:functionalstorage:oak_2",
+    "item:refurbished_furniture:oak_drawer",
+    "item:society:allanite",
+    "item:society:pine_tar",
+    {
+      "type": "item",
+      "id": "meadow:wooden_bucket",
+      "amount": 5
+    },
+    {
+      "type": "item",
+      "id": "society:earth_crystal",
+      "amount": 8
+    },
+    "item:simplehats:redstache",
+    "item:minecraft:lead",
+    {
+      "type": "item",
+      "id": "minecraft:barrel",
+      "amount": 5
+    },
+    "item:refurbished_furniture:jungle_mail_box",
+    {
+      "type": "item",
+      "id": "minecraft:coal_block",
+      "amount": 6
+    },
+    {
+      "type": "item",
+      "id": "quark:orange_blossom_sapling",
+      "amount": 5
+    },
+    "item:furniture:trash_bag",
+    "item:sawmill:sawmill",
+    "item:meadow:cheese_form",
+    "item:society:starcardi",
+    "item:society:aged_starcardi",
+    "item:society:star_coquito",
     {
       "type": "item",
       "id": "society:sparkstone",
@@ -17,7 +109,6 @@
     "item:create_enchantment_industry:ink_bucket",
     "item:society:legendary_ink",
     "item:crabbersdelight:raw_squid_tentacles",
-    "item:atmospheric:carmine_husk",
     "item:supplementaries:antique_ink",
     "item:farmlife:tribull_shank",
     "item:wildernature:penguin_spawn_egg",
@@ -82,7 +173,6 @@
     },
     "item:everycomp:rfm/botania/dreamwood_desk",
     "item:everycomp:dd/botania/tall_dreamwood_door",
-    "item:meadow:cheese_form",
     "item:betterarcheology:bomb",
     "item:species:smoke_bomb",
     "item:botania:mana_bomb",
@@ -127,8 +217,6 @@
     "item:minecraft:potion{Potion:\"minecraft:slowness\"}",
     "item:minecraft:potion{Potion:\"minecraft:strong_turtle_master\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_swiftness\"}",
-    "item:society:artifact_trove",
-    "item:society:relic_trove",
     "item:crabbersdelight:pearl_block",
     "item:crabbersdelight:pearl",
     {
@@ -272,7 +360,6 @@
     "item:numismatics:white_id_card",
     "item:beachparty:icecream_sweetberries",
     "item:beachparty:coconut_icecream",
-    "item:candlelight:cooking_pot",
     "item:society:prismatic_shard",
     "item:society:mana_milker",
     "item:society:feeding_trough",
@@ -301,11 +388,9 @@
     "item:tanukidecor:minimalist_mirror",
     "item:fantasyfurniture:decorations/bone_wither_chalices",
     "item:atmospheric:golden_dragon_fruit",
-    "item:society:pink_matter",
     "item:everycomp:q/meadow/pine_leaf_carpet",
     "item:everycomp:rfm/meadow/pine_hedge",
     "item:twigs:azalea_flowers",
-    "item:society:earth_crystal",
     "item:constructionwand:core_destruction",
     "item:constructionwand:core_angel",
     "item:meadow:alpine_redstone_ore",
@@ -337,7 +422,6 @@
     },
     "item:veggiesdelight:fermented_garlic_honey",
     "item:wildernature:blunderbuss{Damage:0}",
-    "item:society:glitched_vhs",
     "item:create:powdered_obsidian",
     "item:oreganized:electrum_upgrade_smithing_template",
     "item:society:neptunium_upgrade_smithing_template",
@@ -356,7 +440,6 @@
     "item:rehooked:ender_hook",
     "item:rehooked:red_hook",
     "item:rehooked:blaze_hook",
-    "item:furniture:trash_bag",
     "item:botania:mana_diamond",
     "item:furniture:bin",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
@@ -384,7 +467,6 @@
     "item:farmersdelight:tomato_sauce",
     "item:society:bowl_of_soul",
     "item:minecraft:smithing_table",
-    "item:minecraft:barrel",
     "item:society:auto_worm_farm",
     "item:sophisticatedstorage:basic_tier_upgrade",
     "item:species:coil",
@@ -408,11 +490,6 @@
       "amount": 64
     },
     "item:oreganized:electrum_chestplate{Damage:0}",
-    {
-      "type": "item",
-      "id": "society:warped_milk",
-      "amount": 4
-    },
     "item:society:large_buffalo_milk",
     "item:society:buffalo_milk",
     "item:decorative_blocks:birch_beam",
@@ -537,7 +614,6 @@
       "amount": 64
     },
     "item:buzzier_bees:moobloom_spawn_egg",
-    "item:beachparty:sweetberry_milkshake",
     "item:vintagedelight:organic_mash",
     "item:farmersdelight:rich_soil",
     "item:species:cruncher_pellet",
@@ -552,7 +628,6 @@
       "id": "railways:track_oak",
       "amount": 32
     },
-    "item:meadow:fire_log",
     "item:railways:track_dark_oak",
     "item:create:track",
     "item:railways:track_create_andesite_wide",
@@ -579,20 +654,20 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
+      "item:vintagedelight:magic_vine_block",
+      "item:minecraft:stripped_warped_stem",
+      "item:minecraft:crimson_hyphae",
+      "item:minecraft:warped_stem",
+      "item:minecraft:warped_hyphae",
       "item:minecraft:stripped_crimson_stem",
       "item:meadow:alpine_oak_log",
-      "item:vintagedelight:magic_vine_block",
-      "item:minecraft:warped_stem",
-      "item:vintagedelight:magic_vine",
-      "item:minecraft:stripped_crimson_hyphae",
-      "item:minecraft:crimson_hyphae",
-      "item:minecraft:stripped_warped_stem",
+      "item:society:sturdy_bamboo_block",
+      "item:vintagedelight:stripped_magic_vine",
       "item:minecraft:stripped_warped_hyphae",
       "item:vintagedelight:stripped_magic_vine_block",
+      "item:minecraft:stripped_crimson_hyphae",
+      "item:vintagedelight:magic_vine",
       "item:minecraft:crimson_stem",
-      "item:vintagedelight:stripped_magic_vine",
-      "item:society:sturdy_bamboo_block",
-      "item:minecraft:warped_hyphae",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -667,7 +742,6 @@
     "item:society:granite_slate",
     "item:society:celestine",
     "item:society:calcite_gem",
-    "item:society:allanite",
     "item:society:geode",
     "item:society:geode_buster",
     "item:society:fluorapatite",
@@ -743,7 +817,6 @@
     "item:atmospheric:kousa_sapling",
     "item:atmospheric:green_aspen_sapling",
     "item:society:scavenged_food_bag",
-    "item:society:cheese_press",
     "item:quark:sturdy_stone",
     "item:quark:stone_brick_vertical_slab",
     {
@@ -838,7 +911,6 @@
     "item:society:large_milk",
     "item:society:goat_milk",
     "item:society:large_sheep_milk",
-    "item:society:amethyst_milk",
     "item:meadow:piece_of_grain_cheese",
     "item:pamhc2trees:hazelnut_sapling",
     "item:society:prize_ticket",
@@ -849,7 +921,6 @@
     "item:unusualfishmod:raw_circus_fish",
     "item:pamhc2trees:peachitem",
     "item:etcetera:cotton_seeds",
-    "item:numismatics:sun",
     "item:minecraft:oak_planks",
     "item:minecraft:oak_fence_gate",
     "item:minecraft:oak_button",
@@ -1019,7 +1090,6 @@
     "item:minecraft:potion{Potion:\"rottencreatures:corrupted\"}",
     "item:rottencreatures:corrupted_wart",
     "item:vanillabackport:pale_oak_button",
-    "item:society:large_tri_bull_milk",
     "item:species:music_disc_dial",
     "item:minecraft:stone_pickaxe{Damage:0}",
     "item:vinery:winemaker_apron{Damage:0}",
@@ -1206,37 +1276,15 @@
     "item:botania:daffomill",
     "item:botania:bubbell",
     "item:society:prize_machine",
-    "item:society:aged_jo_special_mixture",
-    "item:pamhc2trees:plumitem",
-    "item:oreganized:raw_silver_block",
-    {
-      "type": "item",
-      "id": "oreganized:raw_silver",
-      "amount": 64
-    },
-    "item:vintagedelight:mason_jar",
-    "item:vintagedelight:apple_sauce_mason_jar",
-    "item:herbalbrews:cinnamon_coffee",
-    "item:society:ground_cinnamon",
-    "item:oreganized:silver_block",
-    "item:create:mechanical_harvester",
-    "item:botania:light_launcher",
-    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:luminous\"}}",
-    "item:farm_and_charm:strawberry_seed",
-    "item:bakery:strawberry_cupcake",
-    "item:minecraft:warped_stem",
-    "item:create:sturdy_sheet",
-    "item:vinery:creepers_crush",
-    "item:gag:mining_dynamite",
-    "item:farm_and_charm:carrot_bag",
-    "item:minecraft:birch_log",
-    "item:minecraft:oak_pressure_plate",
-    "item:numismatics:cog",
-    "item:netherdepthsupgrade:warped_kelp_roll",
-    "item:botania:alfheim_portal",
-    "item:society:purple_sheet"
+    "item:society:aged_jo_special_mixture"
   ],
   "craft_history": [
+    "minecraft:kjs/society_cheese_press",
+    "meadow:fire_log",
+    "minecraft:kjs/society_tapper",
+    "minecraft:lead",
+    "minecraft:kjs/society_preserves_jar",
+    "sawmill:sawmill",
     "minecraft:kjs/society_iron_sprinkler",
     "minecraft:kjs/candlelight_cooking_pot",
     "minecraft:dark_oak_slab",
@@ -1253,8 +1301,8 @@
   "recipe_defaults": {
     "added": [
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/golden_chestplate",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},

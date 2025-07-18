@@ -1687,6 +1687,7 @@
 						"patchouli:book": "patchouli:fish_finder"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "Fishing Guide"

@@ -353,7 +353,7 @@
 		{
 			dependencies: ["31F6C5811A72396C"]
 			description: [
-				"The &6Wand of Symmetry&r places a mirror in the world that mirros block placement."
+				"The &6Wand of Symmetry&r places a mirror in the world that mirrors block placement."
 				""
 				"Shift + Right click lets you switch the pattern of placement."
 			]
