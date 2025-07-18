@@ -404,6 +404,16 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     [
+      "oreganized:silver_ore",
+      "oreganized:deepslate_silver_ore",
+      "oreganized:lead_ore",
+      "oreganized:deepslate_lead_ore",
+      "minecraft:ancient_debris",
+    ],
+    Text.gold("Spawns exclusively in the Skull Cavern")
+  );
+  tooltip.add(
+    [
       "society:bait_maker",
       "society:aging_cask",
       "society:ancient_cask",

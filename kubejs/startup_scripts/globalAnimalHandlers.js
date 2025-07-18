@@ -53,11 +53,10 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   let affectionIncrease = 0;
   if (player) affectionIncrease = player.stages.has("animal_whisper.er") || data.bribed ? 20 : 10;
   let quality = 0;
-
   if (
     !target.isBaby() &&
     !hungry &&
-    (freshAnimal || day > ageLastMilked + global.getMilkingTimeMult(target, target.type))
+    (freshAnimal || day >= Number(ageLastMilked) + global.getMilkingTimeMult(target, target.type))
   ) {
     if (raiseEffection) data.affection = affection + affectionIncrease;
     data.ageLastMilked = day;

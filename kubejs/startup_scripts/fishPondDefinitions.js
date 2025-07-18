@@ -1505,8 +1505,8 @@ global.fishPondDefinitions = [
         ],
       },
       {
-        population: 8,
-        requestedItems: [{ item: "farmersdelight:mushroom_rice", count: 64 }],
+        population: 7,
+        requestedItems: [{ item: "society:cordycep", count: 1 }],
       },
     ],
     additionalRewards: [
@@ -1574,7 +1574,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [{ item: "candlelight:mushroom_soup", count: 16 }],
+        requestedItems: [{ item: "society:cordycep", count: 1 }],
       },
     ],
     additionalRewards: [
