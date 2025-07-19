@@ -168,7 +168,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
     {
       item: "society:intro_to_algorithms",
-      description: "Lead ore no longer causes Brain Damage clouds.",
+      description: "Mining Lead ore no longer causes Brain Damage clouds.",
     },
     {
       item: "society:no_name_for_the_sheep",

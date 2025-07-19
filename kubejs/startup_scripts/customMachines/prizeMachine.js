@@ -121,7 +121,6 @@ global.prizeMachineRewards = [
       "society:bluegill_meridian",
       "society:brine_and_punishment",
       "society:banana_karenina",
-      "society:animal_fancy",
     ],
   },
   {
@@ -353,7 +352,6 @@ global.prizeMachineRewards = [
       "society:bluegill_meridian",
       "society:brine_and_punishment",
       "society:banana_karenina",
-      "society:animal_fancy",
     ],
   },
 ];
