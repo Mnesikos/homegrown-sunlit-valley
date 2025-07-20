@@ -22,29 +22,20 @@ const getSpeeds = (seed, level) => {
   let boostSecondSprint = false;
   let sleepySecondSprint = false;
   pigColors.forEach((pig) => {
-    hashNumber = Math.abs(
-      stashyHashy(global.getSeasonFromLevel(level) + pig) + seed
-    );
+    hashNumber = Math.abs(stashyHashy(global.getSeasonFromLevel(level) + pig) + seed);
     boostFirstSprint = hashNumber % 3 === 0;
     sleepyFirstSprint = hashNumber % 4 === 0;
     boostSecondSprint = hashNumber % 5 === 0;
     sleepySecondSprint = hashNumber % 6 === 0;
     if (debugSpeeds) {
       console.log(`${pig}: Boost: ${boostFirstSprint} - ${boostSecondSprint}`);
-      console.log(
-        `${pig}: Sleepy: ${sleepyFirstSprint} - ${sleepySecondSprint}`
-      );
+      console.log(`${pig}: Sleepy: ${sleepyFirstSprint} - ${sleepySecondSprint}`);
     }
     speeds.push([
-      Math.random() *
-        (1.2 +
-          adjustment(boostFirstSprint) -
-          (0.7 - adjustment(sleepyFirstSprint))) +
+      Math.random() * (1.2 + adjustment(boostFirstSprint) - (0.7 - adjustment(sleepyFirstSprint))) +
         1,
       Math.random() *
-        (1.2 +
-          adjustment(boostSecondSprint) -
-          (0.7 - adjustment(sleepySecondSprint))) +
+        (1.2 + adjustment(boostSecondSprint) - (0.7 - adjustment(sleepySecondSprint))) +
         1,
     ]);
   });
@@ -238,9 +229,9 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
     ) {
       secondWindChange = speeds[index][1] > speeds[index][0];
       server.runCommandSilent(
-        `playsound ${
-          secondWindChange ? "trials:breeze_idle" : "trials:spawner_summon"
-        } player @a ${player.x} ${player.y} ${player.z}`
+        `playsound ${secondWindChange ? "trials:breeze_idle" : "trials:spawner_summon"} player @a ${
+          player.x
+        } ${player.y} ${player.z}`
       );
       pigElement[`${id}Change`] = {
         type: "rectangle",
@@ -250,9 +241,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
         y: yOffsets[index] - 8,
         alignX: "center",
         alignY: "bottom",
-        texture: `society:textures/gui/pig_racing/${
-          secondWindChange ? "boost" : "sleepy"
-        }.png`,
+        texture: `society:textures/gui/pig_racing/${secondWindChange ? "boost" : "sleepy"}.png`,
       };
     }
     pigElement[id] = { remove: true };
@@ -279,9 +268,7 @@ const paintPig = (player, server, xOffset, speeds, halfwayPoint, ranking) => {
         h: 32,
         alignX: "center",
         alignY: "bottom",
-        texture: `society:textures/gui/pig_racing/trophy_${
-          ranking.indexOf(color) + 1
-        }.png`,
+        texture: `society:textures/gui/pig_racing/trophy_${ranking.indexOf(color) + 1}.png`,
       };
     }
     player.paint(pigElement);
@@ -311,60 +298,52 @@ const handleSPResults = (player, server, betPig, betItem, ranking) => {
       h: 128,
       alignX: "center",
       alignY: "bottom",
-      texture: `society:textures/gui/pig_racing/${
-        wonRace ? "win" : "lost"
-      }.png`,
+      texture: `society:textures/gui/pig_racing/${wonRace ? "win" : "lost"}.png`,
     },
   });
 };
 
-const handleMPResults = (player, server, betPig, poolValue, ranking) => {
+const handleMPResults = (player, server, betPig, betValue, poolValue, ranking) => {
   const wonRace = ranking[0] === betPig;
   const betPigString = `betting §${global.getPigColor(betPig)}${betPig}§r!`;
   let prizePoolCoins = 0;
   ranking.forEach((rank, index) => {
     if (rank === betPig) {
       if (index === 0) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue * 1.5, []);
+        prizePoolCoins = global.calculateCoinsFromValue(Math.min(poolValue, betValue * 2), []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${coin.count}x ${coin.id}`));
         });
         server.tell(
           Text.gray(
-            `:first_place_medal:§6${
-              player.username
-            }§r won §6${global.formatPrice(
-              poolValue * 2
+            `:first_place_medal:§6${player.username}§r won §6${global.formatPrice(
+              Math.min(poolValue, betValue * 2)
             )}§r ● ${betPigString}`
           )
         );
       }
       if (index === 1) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 3, []);
+        prizePoolCoins = global.calculateCoinsFromValue(betValue, []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });
         server.tell(
           Text.gray(
-            `:second_place_medal:§6${
-              player.username
-            }§r won §6${global.formatPrice(
-              poolValue / 2
+            `:second_place_medal:§6${player.username}§r won §6${global.formatPrice(
+              betValue
             )}§r ● ${betPigString}`
           )
         );
       }
       if (index === 2) {
-        prizePoolCoins = global.calculateCoinsFromValue(poolValue / 6, []);
+        prizePoolCoins = global.calculateCoinsFromValue(betValue / 2, []);
         prizePoolCoins.forEach((coin) => {
           player.give(Item.of(`${Math.floor(coin.count)}x ${coin.id}`));
         });
         server.tell(
           Text.gray(
-            `:third_place_medal:§6${
-              player.username
-            }§r won §6${global.formatPrice(
-              poolValue / 4
+            `:third_place_medal:§6${player.username}§r won §6${global.formatPrice(
+              betValue / 2
             )}§r ● ${betPigString}`
           )
         );
@@ -389,16 +368,14 @@ const handleMPResults = (player, server, betPig, poolValue, ranking) => {
       h: 128,
       alignX: "center",
       alignY: "bottom",
-      texture: `society:textures/gui/pig_racing/${
-        wonRace ? "win" : "lost"
-      }.png`,
+      texture: `society:textures/gui/pig_racing/${wonRace ? "win" : "lost"}.png`,
     },
   });
 };
 const resetMP = (server) => {
   server.persistentData.bets = [];
   server.persistentData.pigraceInProgress = false;
-}
+};
 const runPigRace = (player, server, bet, betPig, ranking, pigSpeeds) => {
   player.addItemCooldown("society:pig_race_ticket", 350);
   server.scheduleInTicks(0, () => {
@@ -491,7 +468,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
   let ranking = [];
   let players = [];
   let prizePool = 0;
-  
+
   resetMP(server);
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
@@ -512,11 +489,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     )
   );
   server.tell(
-    Text.gray(
-      `Type §6/pigrace <pig>§r with §6${global.formatPrice(
-        betValue
-      )}§r ● worth of coins`
-    )
+    Text.gray(`Type §6/pigrace <pig>§r with §6${global.formatPrice(betValue)}§r ● worth of coins`)
   );
   server.tell(Text.gray(`or more in your offhand to join!`));
   raceData.pigraceInProgress = true;
@@ -530,11 +503,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
 
   server.scheduleInTicks(0, () => {
     server.scheduleInTicks(bettingPeriod / 2, () => {
-      server.tell(
-        Text.gray(
-          `Pig race starting in ${bettingPeriod / (2 * 20 * 60)} minute!`
-        )
-      );
+      server.tell(Text.gray(`Pig race starting in ${bettingPeriod / (2 * 20 * 60)} minute!`));
     });
     server.scheduleInTicks(bettingPeriod - 10 * 20, () => {
       server.tell(Text.gray(`Pig race starting in 10 seconds!`));
@@ -562,21 +531,13 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
           }
         });
         server.tell(
-          Text.gray(
-            `Pig race starting with a prize pool of ${global.formatPrice(
-              prizePool
-            )}`
-          )
+          Text.gray(`Pig race starting with a prize pool of ${global.formatPrice(prizePool)}`)
         );
       } else {
         player.give(bet);
         player.give(Item.of("society:multiplayer_pig_race_ticket"));
-        server.tell(
-          Text.gray(
-            "Pig race cancelled! Multiple bets are required to start..."
-          )
-        );
-        clearPigPaint(player)
+        server.tell(Text.gray("Pig race cancelled! Multiple bets are required to start..."));
+        clearPigPaint(player);
         resetMP(server);
       }
     });
@@ -589,10 +550,11 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
               p,
               server,
               String(raceData.bets[index].betPig),
+              Number(raceData.bets[index].bet),
               prizePool,
               ranking
             );
-            clearPigPaint(player)
+            clearPigPaint(player);
           }
         }
       });

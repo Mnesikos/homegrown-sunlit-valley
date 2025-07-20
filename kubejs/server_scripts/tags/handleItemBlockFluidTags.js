@@ -388,9 +388,15 @@ ServerEvents.tags("item", (e) => {
     e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
   });
 
-  ["aquaculture:jellyfish", "aquaculture:goldfish", "aquaculture:leech", "society:neptuna"].forEach(
-    (fish) => e.add("minecraft:fishes", fish)
-  );
+  [
+    "aquaculture:jellyfish",
+    "aquaculture:goldfish",
+    "aquaculture:leech",
+    "society:neptuna",
+    "aquaculture:box_turtle",
+    "aquaculture:arrau_turtle",
+    "aquaculture:starshell_turtle",
+  ].forEach((fish) => e.add("minecraft:fishes", fish));
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
     if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);
