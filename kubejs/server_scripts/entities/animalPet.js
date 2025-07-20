@@ -10,9 +10,9 @@ ItemEvents.entityInteracted((e) => {
     let gift = level.createEntity("minecraft:item");
 
     if (!data.gifted && data.affection >= 1000) {
-      const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
-      const name = target.customName ? target.customName.getString() : undefined;
-      const capitalizedType = nonIdType.charAt(0).toUpperCase() + nonIdType.slice(1);
+      let nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
+      let name = target.customName ? target.customName.getString() : undefined;
+      let capitalizedType = nonIdType.charAt(0).toUpperCase() + nonIdType.slice(1);
       server.runCommandSilent(
         `immersivemessages sendcustom ${
           player.username
@@ -22,7 +22,7 @@ ItemEvents.entityInteracted((e) => {
       );
 
       global.petGifts.forEach((gift) => {
-        if ((gift.animal = target.type)) possibleGifts = gifts;
+        if ((gift.animal === target.type)) possibleGifts = gift.gifts;
       });
       data.gifted = true;
       gift.x = player.x;

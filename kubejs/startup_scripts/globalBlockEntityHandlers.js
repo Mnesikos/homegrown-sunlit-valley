@@ -46,7 +46,7 @@ global.processShippingBinInventory = (
       }
       itemValue = calculateQualityValue(trade.value, quality);
       if (stages.has("bluegill_meridian") && slotItem.id == "aquaculture:bluegill") {
-        itemValue = calculateQualityValue(trade.value, quality);
+        itemValue = calculateQualityValue(666, quality);
       }
       if (
         stages.has("phenomenology_of_treasure") &&
