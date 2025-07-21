@@ -1,6 +1,18 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:sophisticatedbackpacks:diamond_backpack{contentsUuid:[I;1638290862,-50507812,-1569182145,-2027377955],inventorySlots:108,renderInfo:{upgradeItems:[{Count:1b,id:\"sophisticatedbackpacks:restock_upgrade\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"}]},upgradeSlots:5}",
+    "item:minecraft:paper{display:{Name:\u0027{\"text\":\"Enderman\"}\u0027}}",
+    "item:herbalbrews:tea_blossom",
+    "item:quark:ancient_fruit",
+    "item:society:mini_oni_eye",
+    "item:society:wheel_of_adaptation",
+    "item:society:heart_of_neptunium",
+    "item:society:beemonican_seal",
+    "item:society:spider_silk",
+    "item:society:production_science_pack",
+    "item:society:glitched_vhs",
+    "item:wildernature:squirrel_spawn_egg",
     "item:pamhc2trees:bananaitem",
     "item:society:banana_karenina",
     "item:society:banana_preserves",
@@ -38,7 +50,6 @@
     "item:simplehats:tvhead",
     "item:verdantvibes:cattails",
     "item:waterframes:tv_box",
-    "item:society:glitched_vhs",
     "item:relics:relic_experience_bottle",
     {
       "type": "item",
@@ -81,7 +92,6 @@
     "item:minecraft:dragon_egg",
     "item:minecraft:glow_squid_spawn_egg",
     "item:minecraft:squid_spawn_egg",
-    "item:society:production_science_pack",
     "item:atmospheric:cochineal_spawn_egg",
     "item:pamhc2trees:dragonfruititem",
     "item:ribbits:toadstool",
@@ -540,7 +550,6 @@
     "item:betterarcheology:wolf_fossil",
     "item:betterarcheology:wolf_fossil_body",
     "item:tanukidecor:owl_clock",
-    "item:wildernature:squirrel_spawn_egg",
     "item:wildernature:owl_spawn_egg",
     "item:wildernature:pelican_spawn_egg",
     "item:betterarcheology:creeper_fossil",
@@ -550,7 +559,6 @@
       "amount": 64
     },
     "item:betterarcheology:sheep_fossil",
-    "item:society:beemonican_seal",
     "item:buzzier_bees:grizzly_bear_spawn_egg",
     {
       "type": "item",
@@ -607,20 +615,20 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
-      "item:society:sturdy_bamboo_block",
-      "item:vintagedelight:magic_vine_block",
-      "item:meadow:alpine_oak_log",
-      "item:minecraft:stripped_crimson_hyphae",
-      "item:minecraft:warped_hyphae",
-      "item:minecraft:crimson_hyphae",
       "item:minecraft:stripped_crimson_stem",
-      "item:minecraft:warped_stem",
-      "item:vintagedelight:stripped_magic_vine",
       "item:vintagedelight:stripped_magic_vine_block",
-      "item:vintagedelight:magic_vine",
-      "item:minecraft:stripped_warped_hyphae",
-      "item:minecraft:stripped_warped_stem",
+      "item:vintagedelight:magic_vine_block",
+      "item:minecraft:stripped_crimson_hyphae",
       "item:minecraft:crimson_stem",
+      "item:minecraft:crimson_hyphae",
+      "item:vintagedelight:magic_vine",
+      "item:minecraft:warped_stem",
+      "item:society:sturdy_bamboo_block",
+      "item:minecraft:warped_hyphae",
+      "item:meadow:alpine_oak_log",
+      "item:minecraft:stripped_warped_stem",
+      "item:minecraft:stripped_warped_hyphae",
+      "item:vintagedelight:stripped_magic_vine",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -661,7 +669,6 @@
     "item:wildernature:raccoon_spawn_egg",
     "item:wildernature:bison_spawn_egg",
     "item:wildernature:flamingo_spawn_egg",
-    "item:society:spider_silk",
     "item:society:ruby",
     "item:society:topaz",
     "item:society:amethyst_chunk",
@@ -772,11 +779,6 @@
     "item:society:cheese_press",
     "item:quark:sturdy_stone",
     "item:quark:stone_brick_vertical_slab",
-    {
-      "type": "item",
-      "id": "society:heart_of_neptunium",
-      "amount": 64
-    },
     "item:society:intro_to_algorithms",
     {
       "type": "item",
@@ -1234,17 +1236,7 @@
     "item:society:prize_machine",
     "item:society:aged_jo_special_mixture",
     "item:pamhc2trees:plumitem",
-    "item:oreganized:raw_silver_block",
-    {
-      "type": "item",
-      "id": "oreganized:raw_silver",
-      "amount": 64
-    },
-    "item:vintagedelight:mason_jar",
-    "item:vintagedelight:apple_sauce_mason_jar",
-    "item:herbalbrews:cinnamon_coffee",
-    "item:society:ground_cinnamon",
-    "item:oreganized:silver_block"
+    "item:oreganized:raw_silver_block"
   ],
   "craft_history": [
     "minecraft:kjs/numismatics_ancient_coin",
@@ -1264,8 +1256,8 @@
   "recipe_defaults": {
     "added": [
       "minecraft:kjs/society_deluxe_worm_farm",
-      "minecraft:kjs/golden_chestplate",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},

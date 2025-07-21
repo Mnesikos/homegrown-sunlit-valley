@@ -2013,8 +2013,6 @@ global.lootFurniture = [
   "furniture:coffer",
 ];
 
-global.animalFeed = ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"];
-
 global.trades = new Map();
 global.ore.forEach((oreItem) => {
   const { item, value } = oreItem;

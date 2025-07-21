@@ -105,7 +105,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
     }
-    if (!hungry && peckish && !player.isFake() && !global.animalFeed.includes(item.id)) {
+    if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FFAA00",y:-100} 2 ${name} could use something to eat...`
       );
@@ -357,7 +357,7 @@ ItemEvents.entityInteracted((e) => {
 
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
-      if (global.animalFeed.includes(item.id) && !pet) handleFeed(data, day, e);
+      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
       if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")

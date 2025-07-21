@@ -1,5 +1,76 @@
 console.info("[SOCIETY] feedingTrough.js loaded");
 
+global.runFeedingTrough = (be, inventory, block, level) => {
+  let hasAnimalFeed = global.inventoryHasItems(inventory, "society:animal_feed", 1) == 1;
+  let hasCandiedFeed = global.inventoryHasItems(inventory, "society:candied_animal_feed", 1) == 1;
+  let hasManaFeed = global.inventoryHasItems(inventory, "society:mana_feed", 1) == 1;
+  if (!(hasAnimalFeed || hasCandiedFeed || hasManaFeed)) return;
+  let slots = inventory.getSlots();
+  let feedCount = 0;
+
+  let nearbyFarmAnimals;
+  let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+  nearbyFarmAnimals = level
+    .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
+    .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
+  nearbyFarmAnimals.forEach((animal) => {
+    let data = animal.persistentData;
+    if (!data.getInt("ageLastFed") || day < data.getInt("ageLastFed")) {
+      data.ageLastFed = day;
+    }
+    if (day > data.ageLastFed) {
+      let fed = false;
+      let boost = 0;
+      // prefer candied > mana > normal
+      if (
+        hasCandiedFeed &&
+        global.useInventoryItems(inventory, "society:candied_animal_feed", 1) == 1
+      ) {
+        fed = true;
+        boost = 100;
+      } else if (hasManaFeed && global.useInventoryItems(inventory, "society:mana_feed", 1) == 1) {
+        fed = true;
+        boost = 20;
+      } else if (
+        hasAnimalFeed &&
+        global.useInventoryItems(inventory, "society:animal_feed", 1) == 1
+      ) {
+        fed = true;
+      }
+
+      if (fed) {
+        animal.heal(4);
+        data.ageLastFed = day;
+        if (boost > 0) data.affection = data.getInt("affection") + boost;
+        level.spawnParticles(
+          "legendarycreatures:wisp_particle",
+          true,
+          animal.x,
+          animal.y + 1.5,
+          animal.z,
+          0.1 * rnd(1, 4),
+          0.1 * rnd(1, 4),
+          0.1 * rnd(1, 4),
+          5,
+          0.01
+        );
+      }
+    }
+  });
+  for (let i = 0; i < slots; i++) {
+    if (inventory.getStackInSlot(i).hasTag("society:animal_feed"))
+      feedCount += inventory.getStackInSlot(i).count;
+  }
+  let fill = 0;
+  if (feedCount >= 512) fill = 4;
+  else if (feedCount >= 256) fill = 3;
+  else if (feedCount >= 128) fill = 2;
+  else if (feedCount >= 8) fill = 1;
+  be.block.set(be.block.id, {
+    facing: be.block.properties.facing,
+    fill: String(fill),
+  });
+};
 StartupEvents.registry("block", (event) => {
   event
     .create("society:feeding_trough", "cardinal")
@@ -26,82 +97,7 @@ StartupEvents.registry("block", (event) => {
       blockInfo.initialData({ fill: "0" });
       blockInfo.serverTick(300, 0, (entity) => {
         const { inventory, block, level } = entity;
-        let hasAnimalFeed = global.inventoryHasItems(inventory, "society:animal_feed", 1) == 1;
-        let hasCandiedFeed =
-          global.inventoryHasItems(inventory, "society:candied_animal_feed", 1) == 1;
-        let hasManaFeed = global.inventoryHasItems(inventory, "society:mana_feed", 1) == 1;
-        if (!hasAnimalFeed && !hasCandiedFeed && !hasManaFeed) return;
-        let slots = inventory.getSlots();
-        let feedCount = 0;
-
-        inventory.allItems;
-        let nearbyFarmAnimals;
-        if (inventory.toString().includes("animal_feed")) {
-          let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
-          nearbyFarmAnimals = level
-            .getEntitiesWithin(AABB.ofBlock(block).inflate(6))
-            .filter((entity) => global.checkEntityTag(entity, "society:husbandry_animal"));
-          nearbyFarmAnimals.forEach((animal) => {
-            let data = animal.persistentData;
-            if (!data.getInt("ageLastFed") || day < data.getInt("ageLastFed")) {
-              data.ageLastFed = day;
-            }
-            if (day > data.ageLastFed) {
-              let fed = false;
-              let boost = 0;
-              // prefer candied > mana > normal
-              if (
-                hasCandiedFeed &&
-                global.useInventoryItems(inventory, "society:candied_animal_feed", 1) == 1
-              ) {
-                fed = true;
-                boost = 100;
-              } else if (
-                hasManaFeed &&
-                global.useInventoryItems(inventory, "society:mana_feed", 1) == 1
-              ) {
-                fed = true;
-                boost = 20;
-              } else if (
-                hasAnimalFeed &&
-                global.useInventoryItems(inventory, "society:animal_feed", 1) == 1
-              ) {
-                fed = true;
-              }
-
-              if (fed) {
-                animal.heal(4);
-                data.ageLastFed = day;
-                if (boost > 0) data.affection = data.getInt("affection") + boost;
-                level.spawnParticles(
-                  "legendarycreatures:wisp_particle",
-                  true,
-                  animal.x,
-                  animal.y + 1.5,
-                  animal.z,
-                  0.1 * rnd(1, 4),
-                  0.1 * rnd(1, 4),
-                  0.1 * rnd(1, 4),
-                  5,
-                  0.01
-                );
-              }
-            }
-          });
-          for (let i = 0; i < slots; i++) {
-            if (global.animalFeed.includes(inventory.getStackInSlot(i).item.id))
-              feedCount += inventory.getStackInSlot(i).count;
-          }
-          let fill = 0;
-          if (feedCount >= 512) fill = 4;
-          else if (feedCount >= 256) fill = 3;
-          else if (feedCount >= 128) fill = 2;
-          else if (feedCount >= 8) fill = 1;
-          entity.block.set(entity.block.id, {
-            facing: entity.block.properties.facing,
-            fill: String(fill),
-          });
-        }
+        global.runFeedingTrough(entity, inventory, block, level);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(

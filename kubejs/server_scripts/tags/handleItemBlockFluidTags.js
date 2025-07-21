@@ -387,7 +387,9 @@ ServerEvents.tags("item", (e) => {
   Color.DYE.forEach((color) => {
     e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
   });
-
+  ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"].forEach((item) =>
+    e.add("society:animal_feed", item)
+  );
   [
     "aquaculture:jellyfish",
     "aquaculture:goldfish",
