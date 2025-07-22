@@ -73,5 +73,3 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
     player.addItemCooldown(item, 10);
   }
 });
-
-Item.of('supplementaries:present_pink', '{BlockEntityTag:{ForgeCaps:{},Items:,Recipient:"hehe",Sender:"Chakyl"}}')

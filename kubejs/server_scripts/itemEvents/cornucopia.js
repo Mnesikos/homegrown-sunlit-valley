@@ -20,7 +20,7 @@ const fruitTreeBlocks = [
 const dropThree = ["pamhc2trees:pamhazelnut", "pamhc2trees:pamlychee", "pamhc2trees:pambanana"];
 const dropModified = ["pamhc2trees:pampassionfruit", "pamhc2trees:pamorange"];
 const dropFourModified = ["pamhc2trees:pamcherry", "pamhc2trees:pamapple"];
-// TODO: Banana Karenina
+
 ItemEvents.rightClicked("society:cornucopia", (e) => {
   const { server, player, level, item, hand } = e;
 
