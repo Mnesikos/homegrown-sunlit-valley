@@ -1,5 +1,13 @@
 {
-  "favorites": [],
+  "favorites": [
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:coal_block",
+        "amount": 2
+      }
+    }
+  ],
   "lookup_history": [
     "item:sophisticatedbackpacks:diamond_backpack{contentsUuid:[I;1638290862,-50507812,-1569182145,-2027377955],inventorySlots:108,renderInfo:{upgradeItems:[{Count:1b,id:\"sophisticatedbackpacks:restock_upgrade\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"},{Count:1b,id:\"minecraft:air\"}]},upgradeSlots:5}",
     "item:minecraft:paper{display:{Name:\u0027{\"text\":\"Enderman\"}\u0027}}",
@@ -67,7 +75,6 @@
     "item:create_enchantment_industry:ink_bucket",
     "item:society:legendary_ink",
     "item:crabbersdelight:raw_squid_tentacles",
-    "item:atmospheric:carmine_husk",
     "item:supplementaries:antique_ink",
     "item:farmlife:tribull_shank",
     "item:wildernature:penguin_spawn_egg",
@@ -131,7 +138,6 @@
     },
     "item:everycomp:rfm/botania/dreamwood_desk",
     "item:everycomp:dd/botania/tall_dreamwood_door",
-    "item:meadow:cheese_form",
     "item:betterarcheology:bomb",
     "item:species:smoke_bomb",
     "item:botania:mana_bomb",
@@ -169,8 +175,6 @@
     "item:minecraft:potion{Potion:\"minecraft:slowness\"}",
     "item:minecraft:potion{Potion:\"minecraft:strong_turtle_master\"}",
     "item:minecraft:potion{Potion:\"minecraft:long_swiftness\"}",
-    "item:society:artifact_trove",
-    "item:society:relic_trove",
     "item:crabbersdelight:pearl_block",
     "item:crabbersdelight:pearl",
     {
@@ -314,7 +318,6 @@
     "item:numismatics:white_id_card",
     "item:beachparty:icecream_sweetberries",
     "item:beachparty:coconut_icecream",
-    "item:candlelight:cooking_pot",
     "item:society:prismatic_shard",
     "item:society:mana_milker",
     "item:society:feeding_trough",
@@ -343,11 +346,9 @@
     "item:tanukidecor:minimalist_mirror",
     "item:fantasyfurniture:decorations/bone_wither_chalices",
     "item:atmospheric:golden_dragon_fruit",
-    "item:society:pink_matter",
     "item:everycomp:q/meadow/pine_leaf_carpet",
     "item:everycomp:rfm/meadow/pine_hedge",
     "item:twigs:azalea_flowers",
-    "item:society:earth_crystal",
     "item:constructionwand:core_destruction",
     "item:constructionwand:core_angel",
     "item:meadow:alpine_redstone_ore",
@@ -396,7 +397,6 @@
     "item:rehooked:ender_hook",
     "item:rehooked:red_hook",
     "item:rehooked:blaze_hook",
-    "item:furniture:trash_bag",
     "item:botania:mana_diamond",
     "item:furniture:bin",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
@@ -423,7 +423,6 @@
     "item:farmersdelight:tomato_sauce",
     "item:society:bowl_of_soul",
     "item:minecraft:smithing_table",
-    "item:minecraft:barrel",
     "item:society:auto_worm_farm",
     "item:sophisticatedstorage:basic_tier_upgrade",
     "item:species:coil",
@@ -447,11 +446,6 @@
       "amount": 64
     },
     "item:oreganized:electrum_chestplate{Damage:0}",
-    {
-      "type": "item",
-      "id": "society:warped_milk",
-      "amount": 4
-    },
     "item:society:large_buffalo_milk",
     "item:society:buffalo_milk",
     "item:decorative_blocks:birch_beam",
@@ -574,7 +568,6 @@
       "amount": 64
     },
     "item:buzzier_bees:moobloom_spawn_egg",
-    "item:beachparty:sweetberry_milkshake",
     "item:vintagedelight:organic_mash",
     "item:farmersdelight:rich_soil",
     "item:species:cruncher_pellet",
@@ -588,7 +581,6 @@
       "id": "railways:track_oak",
       "amount": 32
     },
-    "item:meadow:fire_log",
     "item:railways:track_dark_oak",
     "item:create:track",
     "item:railways:track_create_andesite_wide",
@@ -615,6 +607,11 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
+      "item:vintagedelight:magic_vine_block",
+      "item:minecraft:stripped_warped_stem",
+      "item:minecraft:crimson_hyphae",
+      "item:minecraft:warped_stem",
+      "item:minecraft:warped_hyphae",
       "item:minecraft:stripped_crimson_stem",
       "item:vintagedelight:stripped_magic_vine_block",
       "item:vintagedelight:magic_vine_block",
@@ -702,7 +699,6 @@
     "item:society:granite_slate",
     "item:society:celestine",
     "item:society:calcite_gem",
-    "item:society:allanite",
     "item:society:geode",
     "item:society:geode_buster",
     "item:society:fluorapatite",
@@ -776,7 +772,6 @@
     "item:atmospheric:kousa_sapling",
     "item:atmospheric:green_aspen_sapling",
     "item:society:scavenged_food_bag",
-    "item:society:cheese_press",
     "item:quark:sturdy_stone",
     "item:quark:stone_brick_vertical_slab",
     "item:society:intro_to_algorithms",
@@ -866,7 +861,6 @@
     "item:society:large_milk",
     "item:society:goat_milk",
     "item:society:large_sheep_milk",
-    "item:society:amethyst_milk",
     "item:meadow:piece_of_grain_cheese",
     "item:pamhc2trees:hazelnut_sapling",
     "item:society:prize_ticket",
@@ -877,7 +871,6 @@
     "item:unusualfishmod:raw_circus_fish",
     "item:pamhc2trees:peachitem",
     "item:etcetera:cotton_seeds",
-    "item:numismatics:sun",
     "item:minecraft:oak_planks",
     "item:minecraft:oak_fence_gate",
     "item:minecraft:oak_button",
@@ -1047,7 +1040,6 @@
     "item:minecraft:potion{Potion:\"rottencreatures:corrupted\"}",
     "item:rottencreatures:corrupted_wart",
     "item:vanillabackport:pale_oak_button",
-    "item:society:large_tri_bull_milk",
     "item:species:music_disc_dial",
     "item:minecraft:stone_pickaxe{Damage:0}",
     "item:vinery:winemaker_apron{Damage:0}",

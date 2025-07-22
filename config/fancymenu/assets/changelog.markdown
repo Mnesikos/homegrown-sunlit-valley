@@ -1,6 +1,6 @@
 ^^^
 ## Library of Animals
-### v3.1.0
+### v3.1.1
 ^^^
 --- 
 - Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
@@ -108,3 +108,18 @@
 - Fixed Cucumber having incorrect value 
 - Fixed Artisan Hoppers not being compatible with Infinity Worm upgrade
 - Fixed Efficiency skill nodes giving 2 less mining speed than intended
+
+## 3.1.1
+- Added tooltips to Oreganized ore telling location
+- Abandoned Farm bundle now always visible
+- Updated Fusion to fix crash on macosx
+- Fixed Hedgehogs not being pettable
+- Fixed Crash related to Champions in the Skull Cavern
+- Fixed Miracle Potion not working
+- Fixed milkable animals taking 1 day longer to recover than they are intended
+- Fixed Bait maker having incorrect working texture
+- Fixed new Building shop buildings not having previews in Quest Book
+- Fixed Fish Finder quest not matching nbt
+- Fixed certain milks being uncraftable into smaller/larger variants
+- Fixed Brown Shroom population 7 quest not working
+- Fixed Removed block appearing in verdant vibes structure
