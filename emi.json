@@ -9,6 +9,17 @@
     }
   ],
   "lookup_history": [
+    "item:oreganized:silver_ingot",
+    "item:longwings:butterfly_driplure",
+    "item:longwings:butterfly_bowl_feeder",
+    "item:longwings:butterfly_handbook",
+    "item:longwings:berry_butterfly_brew_block",
+    "item:longwings:berry_butterfly_brew_bottle",
+    "item:longwings:melon_butterfly_brew_bottle",
+    "item:longwings:apple_butterfly_brew_bottle",
+    "item:longwings:catching_net{Damage:0}",
+    "item:longwings:netting",
+    "item:longwings:glass_jar",
     "item:minecraft:crimson_button",
     "item:botania:cosmetic_cat_ears",
     "item:betterarcheology:ocelot_fossil",
@@ -319,7 +330,6 @@
     "item:oreganized:lead_pillar",
     "item:create:crushed_raw_lead",
     "item:oreganized:lead_nugget",
-    "item:oreganized:silver_ingot",
     "item:oreganized:raw_lead",
     "item:society:battery",
     "item:society:charging_rod",
@@ -686,19 +696,19 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
+      "item:minecraft:stripped_warped_stem",
+      "item:vintagedelight:magic_vine_block",
+      "item:minecraft:crimson_hyphae",
       "item:vintagedelight:magic_vine",
       "item:minecraft:crimson_stem",
       "item:minecraft:warped_hyphae",
-      "item:vintagedelight:stripped_magic_vine_block",
       "item:minecraft:stripped_warped_hyphae",
-      "item:minecraft:stripped_crimson_hyphae",
-      "item:minecraft:stripped_crimson_stem",
-      "item:minecraft:stripped_warped_stem",
-      "item:vintagedelight:stripped_magic_vine",
-      "item:vintagedelight:magic_vine_block",
       "item:minecraft:warped_stem",
-      "item:minecraft:crimson_hyphae",
       "item:meadow:alpine_oak_log",
+      "item:minecraft:stripped_crimson_stem",
+      "item:vintagedelight:stripped_magic_vine",
+      "item:minecraft:stripped_crimson_hyphae",
+      "item:vintagedelight:stripped_magic_vine_block",
       "item:society:sturdy_bamboo_block",
       "#item:minecraft:logs_that_burn"
     ],
@@ -1258,11 +1268,7 @@
     "item:create:oxidized_copper_shingle_stairs",
     "item:create:waxed_copper_tiles",
     "item:create:haunted_bell",
-    "item:create:fluid_valve",
-    "item:create:mechanical_arm",
-    "item:createutilities:void_steel_bars",
-    "item:createutilities:void_casing",
-    "item:sophisticatedstorage:compression_upgrade"
+    "item:create:fluid_valve"
   ],
   "craft_history": [
     "minecraft:kjs/society_cheese_press",
@@ -1287,8 +1293,8 @@
   "recipe_defaults": {
     "added": [
       "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/golden_chestplate",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "minecraft:kjs/golden_chestplate"
     ],
     "tags": {},
     "resolutions": {},
