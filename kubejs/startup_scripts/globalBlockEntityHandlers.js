@@ -90,6 +90,10 @@ const integerProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.IntegerProperty"
 );
 
+const directionProperty = Java.loadClass(
+  "net.minecraft.world.level.block.state.properties.DirectionProperty"
+);
+
 function rnd(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }

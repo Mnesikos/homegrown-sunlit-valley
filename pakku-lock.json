@@ -4919,6 +4919,47 @@
             ]
         },
         {
+            "pakku_id": "ZBwk5zryQJW0hsG9",
+            "pakku_links": [
+                "enYb9sPrtN1zNFex"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "flerovium"
+            },
+            "name": {
+                "curseforge": "Flerovium"
+            },
+            "id": {
+                "curseforge": "1142875"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "flerovium-forge-1.20.1-1.2.15-all.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6790/332/flerovium-forge-1.20.1-1.2.15-all.jar",
+                    "id": "6790332",
+                    "parent_id": "1142875",
+                    "hashes": {
+                        "sha1": "bdddd8b5b32c3efe38c7e8cda654e6382eb4d817",
+                        "md5": "21991a392f1e88d222deed0c5970b72c"
+                    },
+                    "required_dependencies": [
+                        "908741"
+                    ],
+                    "size": 232403,
+                    "date_published": "2025-07-20T07:47:40.967Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Teh5nYzjaE6r2fT2",
             "type": "MOD",
             "slug": {
@@ -5183,6 +5224,42 @@
                     "required_dependencies": [],
                     "size": 241786,
                     "date_published": "2025-04-27T10:13:28.577Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "jfseb76VnbJo8Bw9",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "geckojs"
+            },
+            "name": {
+                "curseforge": "GeckoJS"
+            },
+            "id": {
+                "curseforge": "977922"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "GeckoJS-2001forge-1.5.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6349/198/GeckoJS-2001forge-1.5.2.jar",
+                    "id": "6349198",
+                    "parent_id": "977922",
+                    "hashes": {
+                        "sha1": "ff6a1f7877d4b2ed1d0ae4f4f1ea92b65a356cc7",
+                        "md5": "c7d7887320f6e720aa4419a93598c235"
+                    },
+                    "required_dependencies": [],
+                    "size": 153436,
+                    "date_published": "2025-03-26T04:10:01.917Z"
                 }
             ]
         },
@@ -8224,6 +8301,42 @@
                     ],
                     "size": 2274642,
                     "date_published": "2025-06-24T12:16:03.783Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "hp0jwf50M1kHOqDV",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "portable-blueprints"
+            },
+            "name": {
+                "curseforge": "Portable blueprints"
+            },
+            "id": {
+                "curseforge": "1231499"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "portable_blueprints-v1.8.2-mv1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6796/705/portable_blueprints-v1.8.2-mv1.20.1.jar",
+                    "id": "6796705",
+                    "parent_id": "1231499",
+                    "hashes": {
+                        "sha1": "bd3f5e03c50be871dfb8af69774b780a64c9e449",
+                        "md5": "58f68618ffb3c1d289f5c127f857c612"
+                    },
+                    "required_dependencies": [],
+                    "size": 368995,
+                    "date_published": "2025-07-21T21:30:34.087Z"
                 }
             ]
         },
