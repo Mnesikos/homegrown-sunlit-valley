@@ -1,6 +1,6 @@
 ^^^
 ## Library of Animals
-### v3.1.1
+### v3.1.2
 ^^^
 --- 
 - Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
@@ -123,3 +123,34 @@
 - Fixed certain milks being uncraftable into smaller/larger variants
 - Fixed Brown Shroom population 7 quest not working
 - Fixed Removed block appearing in verdant vibes structure
+
+## 3.1.2
+- Added Create quest for renewable Lead and Silver
+- Added a head slot
+- Updated wording of Introduction to Algorithms to make it clear it only works when mining
+- Cleaned up tips
+- Mobs in the Lush Caverns and Skull Caves can no longer become champions
+- Reworked Multiplayer pigracing: 1st will get the entire pool capped by double their bet, 2nd gets original bet refund, 3rd gets half their bet refunded.
+- Reduced champion loot amounts
+- Mining Monthly no longer drops from Geode/Magma Geode nodes in Skull Cavern
+- Slime Tickets no longer give Spawn Eggs
+- Possibly fixed Skeleton Horse spawning
+- Fixed Miracle Potion not working (For real)
+- Fixed Introduction to Algorithms not working when far away from ore
+- Fixed Glitched VHS being unobtainable
+- Fixed Extractinator being weird with deployers
+- Fixed Relic Troves not dropping Relic Experience
+- Fixed Stone tools not using proper tag (thanks Attune)
+- Fixed Pet gifts not working correctly
+- Fixed Fly Fisher not working with Turtles
+- Fixed Bluegilll Meridian not working
+- Fixed Login dodging Skull Cavern checks
+- Fixed Artisan Hoppers not extracting bait from upgraded Deluxe Worm Bins
+- Fixed Tree Whisperer multiplying by 2 instead of adding 2
+- Fixed Banana Karenina not working with Cornucopia
+- Fixed Cassowary Deer recipe conflict
+- Fixed Pink Matter retaining Milk quality
+- Fixed Milking taking 1 day longer than intended
+- Fixed Raccoons dropping removed item
+- Fixed Feeding Trough not working with Mana Feed and Candied Animal Feed
+- Fixed issue with Bombs in the Skull Cavern being extremely glitchy in Multiplayer

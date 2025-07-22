@@ -880,11 +880,7 @@
 		}
 		{
 			dependencies: ["319129CE8210964A"]
-			description: [
-				"{ftbquests.chapter.armor_weapons__tools.quest15.description1}"
-				""
-				"{ftbquests.chapter.armor_weapons__tools.quest15.description2}"
-			]
+			description: ["{ftbquests.chapter.armor_weapons__tools.quest15.description1}"]
 			id: "0B85DF081F75ECA7"
 			rewards: [{
 				id: "2605209B1A6CAD51"

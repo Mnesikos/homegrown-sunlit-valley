@@ -187,7 +187,7 @@ global.artisanHarvest = (
   player
 ) => {
   let newProperties = block.getProperties();
-  const hasQuality = newProperties.quality && newProperties.quality !== "0";
+  let hasQuality = newProperties.quality && newProperties.quality !== "0";
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
     if (!artisanHopper) {
@@ -209,10 +209,7 @@ global.artisanHarvest = (
         (id.includes("wheel") || id.includes("block")) &&
         block.properties.get("upgraded").toLowerCase() === "true"
       ) {
-        harvestOutput = Item.of(
-          `society:aged_${id.split(":")[1]}`,
-          hasQuality ? `{quality_food:{quality:${newProperties.quality}}}` : null
-        );
+        harvestOutput = Item.of(`society:aged_${id.split(":")[1]}`);
       }
       if (outputMult > 1) harvestOutput.count = harvestOutput.count * outputMult;
       if (!artisanHopper) block.popItemFromFace(harvestOutput, block.properties.get("facing"));

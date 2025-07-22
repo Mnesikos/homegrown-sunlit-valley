@@ -195,33 +195,35 @@ BlockEvents.broken(
 );
 
 LevelEvents.beforeExplosion((e) => {
-  const { x, y, z, level, server, exploder } = e;
-  if (
-    level.dimension !== "society:skull_cavern" ||
-    exploder.type == "splendid_slimes:splendid_slime"
-  )
-    return;
-  const radius = 2;
-  let scanBlock;
-  let rockType;
-  for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-    x + radius,
-    y + radius,
-    z + radius,
-  ])) {
-    scanBlock = level.getBlock(pos);
-    if (scanBlock.hasTag("society:skull_cavern_regens")) {
-      level.destroyBlock(pos, true);
-      rockType = biomeAirTypeMap.get(`${scanBlock.biomeId.toString()}`);
-      scheduleFunction(level, pos.immutable(), server, rockType);
+  const { x, y, z, size, level, server } = e;
+  const range = Math.round(Math.floor((size * 1.3) / 0.225) * 0.5);
+  const blocks = [];
+
+  for (let xi = Math.floor(x - range); xi <= Math.ceil(x + range); xi++) {
+    for (let zi = Math.floor(z - range); zi <= Math.ceil(z + range); zi++) {
+      for (let yi = Math.floor(y - range); yi <= Math.ceil(y + range); yi++) {
+        let dist = Math.hypot(x - xi, y - yi, z - zi);
+        if (dist <= range) {
+          let block = level.getBlock(xi, yi, zi);
+          if (block.hasTag("society:skull_cavern_bomb_denied")
+          ) {
+            blocks.push({ xi: xi, yi: yi, zi: zi, dist: dist, id: block.id });
+          }
+        }
+      }
     }
   }
-  e.cancel();
-});
-BlockEvents.broken(
-  "society:skull_cavern_teleporter",
-  (e) => {
-    const { level } = e;
-    if (level.dimension === "society:skull_cavern") e.cancel();
+
+  blocks.sort((a, b) => a.dist - b.dist);
+
+  for (let i = 0; i < blocks.length; i++) {
+    let { xi, yi, zi, id } = blocks[i];
+    server.scheduleInTicks(i, () => {
+      level.getBlock(xi, yi, zi).set(id);
+    });
   }
-);
+});
+BlockEvents.broken("society:skull_cavern_teleporter", (e) => {
+  const { level } = e;
+  if (level.dimension === "society:skull_cavern") e.cancel();
+});

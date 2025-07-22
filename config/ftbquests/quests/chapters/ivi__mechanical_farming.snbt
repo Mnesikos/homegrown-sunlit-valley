@@ -1058,6 +1058,31 @@
 			x: 11.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["4C9E6CB01631C0B6"]
+			description: [
+				"&6Lead&r and &6Silver&r ingots can be automated using various machines. "
+				""
+				"&6Silver&r can be produced using &6Alchemical Varnish&r, a renewably farmable fluid."
+				""
+				"&6Lead&r can be multiplied using &6Crushed Obsidian&r as an additive."
+			]
+			icon: "oreganized:molten_lead_bucket"
+			id: "7718055315817CB1"
+			rewards: [{
+				id: "15301D9B9720AB6A"
+				item: "society:alchemical_varnish_bucket"
+				type: "item"
+			}]
+			subtitle: "Skip out on the mining!"
+			tasks: [{
+				id: "1346109CC1B282E8"
+				title: "Automated Metals"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
 	]
 	title: "{ftbquests.chapter.ivi__mechanical_farming.title}"
 }

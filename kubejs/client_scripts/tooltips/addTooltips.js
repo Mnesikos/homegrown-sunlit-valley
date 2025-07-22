@@ -252,7 +252,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels")
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry apply Milk Quality.")
   );
   tooltip.add(
     "society:stone_hand",

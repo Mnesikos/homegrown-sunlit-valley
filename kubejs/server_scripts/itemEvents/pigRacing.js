@@ -469,7 +469,6 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
   let players = [];
   let prizePool = 0;
 
-  resetMP(server);
   if (raceData.pigraceInProgress) {
     server.runCommandSilent(
       `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FFFFFFF",y:-60} 4 There's already a pig race happening! Type /pigrace <pig> to join!`
@@ -477,6 +476,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
     return;
   }
   if (!validTicket(e, bet)) return;
+  resetMP(server);
   item.count--;
   player.offHandItem = "minecraft:air";
   betValue = betValue = global.calculateCoinValue(bet);
@@ -531,7 +531,7 @@ ItemEvents.rightClicked("society:multiplayer_pig_race_ticket", (e) => {
           }
         });
         server.tell(
-          Text.gray(`Pig race starting with a prize pool of ${global.formatPrice(prizePool)}`)
+          Text.gray(`Pig race starting! Bets total to ${global.formatPrice(prizePool)}!`)
         );
       } else {
         player.give(bet);

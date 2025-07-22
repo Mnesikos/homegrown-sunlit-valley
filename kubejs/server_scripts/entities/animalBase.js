@@ -190,6 +190,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
 const handleMilk = (name, data, day, hungry, e) => {
   const { player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
+  if (player.isFake() && data.getInt("affection") < 100) return;
   let errorText;
   let milkItem = global.getMilk(target, data, player, day, true);
 
@@ -358,7 +359,7 @@ ItemEvents.entityInteracted((e) => {
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
       if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
-      if (
+      if ( 
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
