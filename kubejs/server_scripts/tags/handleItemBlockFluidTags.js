@@ -387,10 +387,18 @@ ServerEvents.tags("item", (e) => {
   Color.DYE.forEach((color) => {
     e.add("society:botania_seeds", `botania_seeds:${color}_mystical_flower_seed`);
   });
-
-  ["aquaculture:jellyfish", "aquaculture:goldfish", "aquaculture:leech", "society:neptuna"].forEach(
-    (fish) => e.add("minecraft:fishes", fish)
+  ["society:animal_feed", "society:candied_animal_feed", "society:mana_feed"].forEach((item) =>
+    e.add("society:animal_feed", item)
   );
+  [
+    "aquaculture:jellyfish",
+    "aquaculture:goldfish",
+    "aquaculture:leech",
+    "society:neptuna",
+    "aquaculture:box_turtle",
+    "aquaculture:arrau_turtle",
+    "aquaculture:starshell_turtle",
+  ].forEach((fish) => e.add("minecraft:fishes", fish));
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
     if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);

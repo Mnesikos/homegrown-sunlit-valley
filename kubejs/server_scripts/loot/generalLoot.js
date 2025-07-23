@@ -9,6 +9,9 @@ const fixedStackSize = (itemStack) => {
 };
 LootJS.modifiers((e) => {
   // Entities
+  e.addLootTableModifier("rottencreatures:entities/zap")
+    .randomChance(0.1)
+    .addLoot('society:glitched_vhs');
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
     .addLoot("society:holy_symbol");

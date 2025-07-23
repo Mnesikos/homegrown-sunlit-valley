@@ -57,7 +57,7 @@ ServerEvents.commandRegistry((event) => {
       return -1;
     }
     for (let index = 0; index < raceData.bets.length; index++) {
-      if (String(player.username) === String(raceData.bets[index].player)) {
+      if (String(player.username).equals(String(raceData.bets[index].player))) {
         player.tell(
           Text.red(
             `You've already placed a bet!`

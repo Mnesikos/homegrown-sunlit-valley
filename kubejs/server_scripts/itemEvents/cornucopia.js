@@ -17,11 +17,7 @@ const fruitTreeBlocks = [
   "pamhc2trees:pampassionfruit",
   "pamhc2trees:pamlemon",
 ];
-const dropThree = [
-  "pamhc2trees:pamhazelnut",
-  "pamhc2trees:pamlychee",
-  "pamhc2trees:pambanana",
-];
+const dropThree = ["pamhc2trees:pamhazelnut", "pamhc2trees:pamlychee", "pamhc2trees:pambanana"];
 const dropModified = ["pamhc2trees:pampassionfruit", "pamhc2trees:pamorange"];
 const dropFourModified = ["pamhc2trees:pamcherry", "pamhc2trees:pamapple"];
 
@@ -43,18 +39,15 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
   server.runCommandSilent(
     `playsound trials:breeze_idle block @a ${player.x} ${player.y} ${player.z}`
   );
-  for (let pos of BlockPos.betweenClosed(
-    new BlockPos(player.x - 12, player.y - 2, player.z - 12),
-    [player.x + 12, player.y + 12, player.z + 12]
-  )) {
+  for (let pos of BlockPos.betweenClosed(new BlockPos(player.x - 12, player.y - 2, player.z - 12), [
+    player.x + 12,
+    player.y + 12,
+    player.z + 12,
+  ])) {
     success = false;
     scannedBlock = level.getBlock(pos);
     fruitDrop = player.level.createEntity("minecraft:item");
-    if (
-      ["vinery:dark_cherry_leaves", "vinery:apple_leaves"].includes(
-        scannedBlock.id
-      )
-    ) {
+    if (["vinery:dark_cherry_leaves", "vinery:apple_leaves"].includes(scannedBlock.id)) {
       season = global.getSeasonFromLevel(player.level);
       modifiedProperties = scannedBlock.properties;
       if (
@@ -88,6 +81,11 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
       fruitCount = 1;
       success = true;
       if (dropThree.includes(scannedBlock.id)) fruitCount = 3;
+      if (scannedBlock.id === "pamhc2trees:pambanana") {
+        if (player.stages.has("banana_karenina")) fruitCount *= 2;
+        else if (Math.random() <= 0.001) scannedBlock.popItem("society:banana_karenina");
+      }
+
       if (dropModified.includes(scannedBlock.id)) {
         fruitItem = Item.of(
           scannedBlock.id === "pamhc2trees:pampassionfruit"
@@ -97,18 +95,12 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
       } else if (dropFourModified.includes(scannedBlock.id)) {
         fruitCount = 4;
         fruitItem = Item.of(
-          scannedBlock.id === "pamhc2trees:pamcherry"
-            ? "vinery:cherry"
-            : "minecraft:apple"
+          scannedBlock.id === "pamhc2trees:pamcherry" ? "vinery:cherry" : "minecraft:apple"
         );
       } else {
-        fruitItem = Item.of(
-          `pamhc2trees:${fruitType.substring(3, fruitType.length)}item`
-        );
+        fruitItem = Item.of(`pamhc2trees:${fruitType.substring(3, fruitType.length)}item`);
       }
-      fruitItem.count = player.stages.has("tree_whisperer")
-        ? fruitCount * 2
-        : fruitCount;
+      fruitItem.count = player.stages.has("tree_whisperer") ? fruitCount + 2 : fruitCount;
       scannedBlock.set(scannedBlock.id, {
         waterlogged: scannedBlock.properties.get("waterlogged") || "false",
         age: "0",
@@ -140,8 +132,6 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
     }
   }
   server.runCommandSilent(
-    `puffish_skills experience add ${player.username} society:farming ${
-      experienceMult * 30
-    }`
+    `puffish_skills experience add ${player.username} society:farming ${experienceMult * 30}`
   );
 });

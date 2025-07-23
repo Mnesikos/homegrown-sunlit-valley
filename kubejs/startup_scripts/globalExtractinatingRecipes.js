@@ -7,6 +7,29 @@ const relicTroveTable = [
     drop: "#society:treasure_books",
     drop_chance: 0.05,
   },
+  {
+    drop: "#society:relic_treasure",
+    drop_chance: 0.9,
+  },
+  {
+    drop: "#society:relic_treasure",
+    drop_chance: 0.9,
+  },
+  ,
+  {
+    drop: "#society:relic_treasure",
+    drop_chance: 0.9,
+  },
+  ,
+  {
+    drop: "#society:relic_treasure",
+    drop_chance: 0.9,
+  },
+  ,
+  {
+    drop: "#society:relic_treasure",
+    drop_chance: 0.9,
+  },
 ];
 
 const artifactTroveTable = [

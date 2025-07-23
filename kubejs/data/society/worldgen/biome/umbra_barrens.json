@@ -25,15 +25,15 @@
       },
       {
         "type": "minecraft:shulker",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 60
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 40
       },
       {
         "type": "minecraft:phantom",
         "maxCount": 4,
         "minCount": 4,
-        "weight": 80
+        "weight": 100
       },
       {
         "type": "legendarycreatures:ender_wisp",
@@ -45,7 +45,7 @@
         "type": "species:ghoul",
         "maxCount": 1,
         "minCount": 1,
-        "weight": 15
+        "weight": 25
       },
       {
         "type": "splendid_slimes:splendid_slime",

@@ -240,6 +240,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
             stage: "0",
           });
         } else if (hasInfinityWorm) {
+          machineOutput = Item.of("4x crabbersdelight:deluxe_crab_trap_bait");
           artisanMachine.set(artisanMachine.id, {
             facing: artisanMachine.properties.get("facing"),
             type: "1",
