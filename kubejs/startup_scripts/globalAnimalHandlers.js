@@ -16,6 +16,7 @@ global.getAnimalIsNotCramped = (target) => {
 
   return entities.length <= 6;
 };
+
 global.isWarpedCow = (target) =>
   target.type === "meadow:wooly_cow" && Number(target.getNbt().Variant) === 2;
 
@@ -51,12 +52,12 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   let hearts = Math.floor(affection / 100);
   const freshAnimal = global.isFresh(day, ageLastMilked);
   let affectionIncrease = 0;
-  if (player) affectionIncrease = player.stages.has("animal_whisper.er") || data.bribed ? 20 : 10;
+  if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
   let quality = 0;
   if (
     !target.isBaby() &&
     !hungry &&
-    (freshAnimal || day >= Number(ageLastMilked) + global.getMilkingTimeMult(target, target.type))
+    (freshAnimal || day > ageLastMilked + global.getMilkingTimeMult(target, target.type) - 1)
   ) {
     if (raiseEffection) data.affection = affection + affectionIncrease;
     data.ageLastMilked = day;

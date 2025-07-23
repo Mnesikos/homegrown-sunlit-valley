@@ -53,7 +53,7 @@ ServerEvents.recipes((e) => {
     { egg: "snowpig:snow_pig_spawn_egg", mineral: "society:frozen_tear", coin: "crown" },
     { egg: "snuffles:snuffle_spawn_egg", mineral: "society:lemon_stone", coin: "crown" },
     { egg: "wildernature:red_wolf_spawn_egg", mineral: "society:spider_silk", coin: "crown" },
-    { egg: "wildernature:cassowary_spawn_egg", mineral: "society:source_gem", coin: "crown" },
+    { egg: "wildernature:cassowary_spawn_egg", mineral: "society:mini_oni_eye", coin: "crown" },
     { egg: "wildernature:squirrel_spawn_egg", mineral: "society:living_flesh", coin: "crown" },
     { egg: "wildernature:flamingo_spawn_egg", mineral: "society:magma_geode", coin: "sun" },
     { egg: "wildernature:penguin_spawn_egg", mineral: "society:frozen_geode", coin: "sun" },

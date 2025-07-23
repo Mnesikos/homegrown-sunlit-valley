@@ -10,6 +10,22 @@
       "type": "puffish_skills:kill_entity",
       "data": {
         "variables": {
+          "is_armor_stand": {
+            "operations": [
+              {
+                "type": "get_killed_living_entity"
+              },
+              {
+                "type": "get_type"
+              },
+              {
+                "type": "puffish_skills:test",
+                "data": {
+                  "entity_type": "minecraft:armor_stand"
+                }
+              }
+            ]
+          },
           "max_health": {
             "operations": [
               {
@@ -23,6 +39,7 @@
         },
         "experience": [
           {
+            "condition": "!is_armor_stand",
             "expression": "max_health * 2"
           }
         ],

@@ -803,7 +803,7 @@
 				""
 				"Each slime has a favorite food that will cause them to drop double Plorts."
 				""
-				"The &6Plort Rippit&r can be used to turn Plorts into various resource depending on the breed."
+				"The &6Plort Rippit&r can be used to turn Plorts into various resources depending on the breed."
 			]
 			icon: "splendid_slimes:plort_rippit"
 			id: "41029F073ADDDC2F"
@@ -972,11 +972,11 @@
 		{
 			dependencies: ["5C9C7A5A88613109"]
 			description: [
-				"Slimes happiness depends on their hunger and living conditions. Every time they eat, their &6happiness&r will increase. If they're surrounded by similar types of Slimes, they'll get happier!"
+				"Slimes' happiness depends on their hunger and living conditions. Every time they eat, their &6happiness&r will increase. If they're surrounded by similar types of Slimes, they'll get happier!"
 				""
 				"Happiness decreases when Slimes are hungry or crowded (more than &67&r in an area)."
 				""
-				"When unhappy, Slimes may cause effects to their surroundings. The more valuable their Plorts are, the more deadly they may be..."
+				"When unhappy, Slimes may cause status effects to their surroundings. The more valuable their Plorts are, the more deadly they may be..."
 			]
 			icon: {
 				Count: 1
@@ -1231,7 +1231,7 @@
 			description: [
 				"Each &6Splendid Slime&r has different effects that may happen when they are unhappy or happy."
 				""
-				"On top of that, they may also have &6Traits&r: different behaviors or quarks that makes ranching them more difficult."
+				"On top of that, Slimes may also have &6Traits&r: different behaviors or quirks that make ranching them more difficult."
 				""
 				"Always check the traits of a Slime you're ranching by looking at the uses of a Slime in item form using JEI!"
 				""

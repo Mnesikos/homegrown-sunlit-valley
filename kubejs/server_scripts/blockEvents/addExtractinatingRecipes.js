@@ -30,5 +30,5 @@ BlockEvents.rightClicked("extractinator:extractinator", (e) => {
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
   );
-  player.addItemCooldown(item.id, 4);
+  if (!player.isFake()) player.addItemCooldown(item.id, 4);
 });

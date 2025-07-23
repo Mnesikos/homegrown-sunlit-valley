@@ -168,7 +168,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "society:first_aid_guide", description: "Halves the maximum fee and debt from death." },
     {
       item: "society:intro_to_algorithms",
-      description: "Lead ore no longer causes Brain Damage clouds.",
+      description: "Mining Lead ore no longer causes Brain Damage clouds.",
     },
     {
       item: "society:no_name_for_the_sheep",
@@ -252,7 +252,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels")
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry apply Milk Quality.")
   );
   tooltip.add(
     "society:stone_hand",

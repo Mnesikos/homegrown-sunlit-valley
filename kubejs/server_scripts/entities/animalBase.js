@@ -105,7 +105,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
     }
-    if (!hungry && peckish && !player.isFake() && !global.animalFeed.includes(item.id)) {
+    if (!hungry && peckish && !player.isFake() && !item.hasTag("society:animal_feed")) {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FFAA00",y:-100} 2 ${name} could use something to eat...`
       );
@@ -190,6 +190,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
 const handleMilk = (name, data, day, hungry, e) => {
   const { player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
+  if (player.isFake() && data.getInt("affection") < 100) return;
   let errorText;
   let milkItem = global.getMilk(target, data, player, day, true);
 
@@ -357,8 +358,8 @@ ItemEvents.entityInteracted((e) => {
 
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
-      if (global.animalFeed.includes(item.id) && !pet) handleFeed(data, day, e);
-      if (
+      if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
+      if ( 
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {

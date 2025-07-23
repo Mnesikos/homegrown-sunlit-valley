@@ -17,7 +17,8 @@
       "minecraft:husk",
       "minecraft:stray",
       "minecraft:slime",
-      "trials:bogged"
+      "trials:bogged",
+      "minecraft:skeleton_horse"
     ],
     "dimension": "minecraft:overworld",
     "minheight": 50,

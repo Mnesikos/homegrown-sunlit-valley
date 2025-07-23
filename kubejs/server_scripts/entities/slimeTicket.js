@@ -5,18 +5,18 @@ const SlimeFavoriteFoods = {
   bitwise: { item: "society:fire_opal" },
   blazing: { item: "autumnity:cooked_turkey" },
   bony: { item: "society:large_sheep_milk" },
-  boomcat: { item: "untitledduckmod:cooked_duck", entity: "untitledduckmod:duck_spawn_egg" },
-  dusty: { item: "netherdepthsupgrade:bonefish", entity: "trials:bogged_spawn_egg" },
+  boomcat: { item: "untitledduckmod:cooked_duck", entity: "Duck" },
+  dusty: { item: "netherdepthsupgrade:bonefish", entity: "Bogged" },
   ender: { item: "minecraft:amethyst_shard" },
   gold: { item: "society:bell_pepper_preserves" },
   juicy: { item: "vinery:jungle_grapes_red" },
   luminous: { item: "vintagedelight:pickle" },
-  minty: { entity: "minecraft:enderman_spawn_egg" },
-  orby: { entity: "minecraft:drowned_spawn_egg" },
+  minty: { entity: "Enderman" },
+  orby: { entity: "Drowned" },
   phantom: { item: "minecraft:purple_bed" },
   prisma: { item: "aquaculture:boulti" },
   puddle: { item: "unusualfishmod:raw_sneep_snorp" },
-  rotting: { item: "minecraft:chicken", entity: "minecraft:chicken_spawn_egg" },
+  rotting: { item: "minecraft:chicken", entity: "Chicken" },
   shulking: { item: "minecraft:chorus_flower" },
   slimy: { item: "minecraft:blue_orchid" },
   sparkcat: { item: "society:smoked_spindlefish" },
@@ -63,9 +63,9 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
           "supplementaries:present_pink",
           `{BlockEntityTag:{Description:"${
             slimeType.charAt(0).toUpperCase() + slimeType.slice(1)
-          } Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
-            favorites.entity
-          }"}],Recipient:"${player.username}",Sender:"Slime Ticket",id:"supplementaries:present"}}`
+          } Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${favorites.entity}"}\'}}}],Recipient:"${
+            player.username
+          }",Sender:"Slime Ticket",id:"supplementaries:present"}}`
         )
       );
     }

@@ -11,7 +11,7 @@ ServerEvents.recipes((e) => {
           `${modId}:stone_${type}`,
           "numismatics:cog",
           `${modId}:wooden_${type}`,
-          "minecraft:cobblestone"
+          "#minecraft:stone_tool_materials"
         );
         e.smithing(
           `${modId}:iron_${type}`,

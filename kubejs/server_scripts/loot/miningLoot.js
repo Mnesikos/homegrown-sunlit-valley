@@ -147,6 +147,7 @@ LootJS.modifiers((e) => {
     p.randomChance(0.05).addLoot("society:mining_monthly");
   });
   e.addBlockLootModifier("society:geode_node")
+    .anyDimension("minecraft:overworld")
     .hasAnyStage("prismatic_prospector")
     .pool((p) => {
       p.randomChance(0.05).addLoot("society:prismatic_shard");
@@ -155,12 +156,13 @@ LootJS.modifiers((e) => {
     p.randomChance(0.1).addLoot("society:mining_monthly");
   });
   e.addBlockLootModifier("society:magma_geode_node")
+    .anyDimension("minecraft:the_nether")
     .hasAnyStage("prismatic_prospector")
     .pool((p) => {
       p.randomChance(0.2).addLoot("society:prismatic_shard");
     });
   e.addBlockLootModifier("society:omni_geode_node").pool((p) => {
-    p.randomChance(0.4).addLoot("society:mining_monthly");
+    p.randomChance(0.1).addLoot("society:mining_monthly");
   });
   e.addBlockLootModifier("society:omni_geode_node")
     .hasAnyStage("prismatic_prospector")
