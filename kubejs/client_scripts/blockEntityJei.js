@@ -236,7 +236,7 @@ JEIAddedEvents.registerRecipes((e) => {
       input: "farm_and_charm:corn",
       output: ["4x society:pristine_star_shards"],
     },
-    { input: "snowyspirit:ginger", output: ["4x minecraft:ancient_debris"] },
+    { input: "snowyspirit:ginger", output: ["4x minecraft:netherite_scrap"] },
   ].forEach((element) => {
     e.custom("society:goddess_offering").add(element);
   });
