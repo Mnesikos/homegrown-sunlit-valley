@@ -230,13 +230,13 @@ JEIAddedEvents.registerRecipes((e) => {
     { input: "society:ancient_fruit", output: ["society:prismatic_shard"] },
     {
       input: "vintagedelight:ghost_pepper",
-      output: ["32x society:sparkstone"],
+      output: ["16x society:sparkstone_block"],
     },
     {
       input: "farm_and_charm:corn",
       output: ["4x society:pristine_star_shards"],
     },
-    { input: "snowyspirit:ginger", output: ["4x minecraft:ancient_debris"] },
+    { input: "snowyspirit:ginger", output: ["4x minecraft:netherite_scrap"] },
   ].forEach((element) => {
     e.custom("society:goddess_offering").add(element);
   });
