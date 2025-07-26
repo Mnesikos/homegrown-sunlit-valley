@@ -760,7 +760,21 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
-
+  e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_sloth",
+    T: "botania:terrasteel_ingot",
+    m: "botania:manasteel_block",
+    c: "minecraft:clock",
+    n: "minecraft:netherite_ingot",
+  });
+  
+  e.shaped("society:sparkstone_recycler", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_greed",
+    T: "botania:mana_pylon",
+    m: "society:botanical_tribute",
+    c: "botania:life_essence",
+    n: "botania:dragonstone",
+  });
   [
     { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },
     { input: "meadow:highland_wool", output: "minecraft:brown_wool" },

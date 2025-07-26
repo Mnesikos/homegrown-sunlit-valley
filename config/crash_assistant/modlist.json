@@ -229,6 +229,11 @@
     "modId": "cloth_config",
     "version": "11.1.136"
   },
+  "Clumps-forge-1.20.1-12.0.0.4.jar": {
+    "jarName": "Clumps-forge-1.20.1-12.0.0.4.jar",
+    "modId": "clumps",
+    "version": "12.0.0.4"
+  },
   "CodeChickenLib-1.20.1-4.4.0.516-universal.jar": {
     "jarName": "CodeChickenLib-1.20.1-4.4.0.516-universal.jar",
     "modId": "codechickenlib",
@@ -238,11 +243,6 @@
     "jarName": "collective-1.20.1-7.87.jar",
     "modId": "collective",
     "version": "7.87"
-  },
-  "collectorsreap-1.20.1-1.3.4.jar": {
-    "jarName": "collectorsreap-1.20.1-1.3.4.jar",
-    "modId": "collectorsreap",
-    "version": "1.3.4"
   },
   "colorfulhearts-forge-1.20.1-4.3.16.jar": {
     "jarName": "colorfulhearts-forge-1.20.1-4.3.16.jar",
@@ -324,6 +324,11 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.3-for-create-6.0.6"
   },
+  "create_factory_logistics-1.20.1-1.4.5.jar": {
+    "jarName": "create_factory_logistics-1.20.1-1.4.5.jar",
+    "modId": "create_factory_logistics",
+    "version": "1.4.5"
+  },
   "create_hypertube-0.2.2-FORGE.jar": {
     "jarName": "create_hypertube-0.2.2-FORGE.jar",
     "modId": "create_hypertube",
@@ -359,10 +364,10 @@
     "modId": "creeperconfetti",
     "version": "4.3"
   },
-  "crittersandcompanions-forge-1.20.1-2.3.0.jar": {
-    "jarName": "crittersandcompanions-forge-1.20.1-2.3.0.jar",
+  "crittersandcompanions-forge-1.20.1-2.3.1.jar": {
+    "jarName": "crittersandcompanions-forge-1.20.1-2.3.1.jar",
     "modId": "crittersandcompanions",
-    "version": "1.20.1-2.3.0"
+    "version": "1.20.1-2.3.1"
   },
   "croptania-0.3.jar": {
     "jarName": "croptania-0.3.jar",
@@ -439,11 +444,6 @@
     "modId": "drippyloadingscreen",
     "version": "3.0.12"
   },
-  "DustyDecorationsHOTFIX_1.20.1Forge_V1.6.jar": {
-    "jarName": "DustyDecorationsHOTFIX_1.20.1Forge_V1.6.jar",
-    "modId": "dustydecorations",
-    "version": "1.6"
-  },
   "ears-forge-1.19.4-1.4.7.jar": {
     "jarName": "ears-forge-1.19.4-1.4.7.jar",
     "modId": "ears",
@@ -478,6 +478,16 @@
     "jarName": "enchantmentdisabletag-forge-1.1.0+1.20.1.jar",
     "modId": "enchantmentdisabletag",
     "version": "1.1.0+1.20.1"
+  },
+  "entity_model_features_forge_1.20.1-2.4.1.jar": {
+    "jarName": "entity_model_features_forge_1.20.1-2.4.1.jar",
+    "modId": "entity_model_features",
+    "version": "2.4.1"
+  },
+  "entity_texture_features_forge_1.20.1-6.2.9.jar": {
+    "jarName": "entity_texture_features_forge_1.20.1-6.2.9.jar",
+    "modId": "entity_texture_features",
+    "version": "6.2.9"
   },
   "entityculling-forge-1.8.0-mc1.20.1.jar": {
     "jarName": "entityculling-forge-1.8.0-mc1.20.1.jar",

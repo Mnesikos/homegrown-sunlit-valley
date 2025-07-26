@@ -699,7 +699,6 @@ global.artisanGoods = [
   { item: "society:large_galliraptor_mayonnaise", value: 8192 },
   { item: "society:birt_mayonnaise", value: 96 },
   { item: "society:wraptor_mayonnaise", value: 320 },
-  { item: "society:springling_mayonnaise", value: 512 },
   { item: "society:springling_mayonnaise", value: 1024 },
   { item: "society:penguin_mayonnaise", value: 1536 },
   { item: "society:flamingo_mayonnaise", value: 3072 },

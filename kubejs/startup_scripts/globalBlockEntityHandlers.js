@@ -625,7 +625,7 @@ global.useInventoryItems = (inventory, id, count) => {
 };
 
 /** All fluid handlers expect the following initialData with a capacity of 10000
- *  
+ *
  *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
  */
 

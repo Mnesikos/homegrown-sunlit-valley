@@ -1,4 +1,5 @@
 console.info("[SOCIETY] juiceInserter.js loaded");
+
 StartupEvents.registry("block", (event) => {
   event
     .create("society:juice_inserter", "cardinal")

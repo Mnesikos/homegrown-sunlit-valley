@@ -559,6 +559,10 @@ ServerEvents.tags("block", (e) => {
     e.add("society:artisan_machine", log);
     e.add("society:golden_clock_advanced", log);
   });
+  const agingCasks = ["society:aging_cask", "society:ancient_cask"];
+  agingCasks.forEach((log) => {
+    e.add("society:aging_cask", log);
+  });
   const randomTickMachines = ["society:charging_rod", "society:espresso_machine"];
   randomTickMachines.forEach((log) => {
     e.add("society:artisan_machine", log);
