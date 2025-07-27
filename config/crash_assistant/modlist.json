@@ -9,10 +9,10 @@
     "modId": "additional_attributes",
     "version": "1.3.1"
   },
-  "AdvancedLootInfo-forge-1.20.1-1.1.8.jar": {
-    "jarName": "AdvancedLootInfo-forge-1.20.1-1.1.8.jar",
+  "AdvancedLootInfo-forge-1.20.1-1.2.1.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-1.2.1.jar",
     "modId": "ali",
-    "version": "1.20.1-1.1.8"
+    "version": "1.20.1-1.2.1"
   },
   "AdvancementPlaques-1.20.1-forge-1.6.7.jar": {
     "jarName": "AdvancementPlaques-1.20.1-forge-1.6.7.jar",
@@ -1081,6 +1081,11 @@
     "jarName": "Patchouli-1.20.1-84.1-FORGE.jar",
     "modId": "patchouli",
     "version": "1.20.1-84.1-FORGE"
+  },
+  "perfectplushies-forge-1.20.1-1.13.3.jar": {
+    "jarName": "perfectplushies-forge-1.20.1-1.13.3.jar",
+    "modId": "perfectplushies",
+    "version": "1.13.3"
   },
   "PickUpNotifier-v8.0.0-1.20.1-Forge.jar": {
     "jarName": "PickUpNotifier-v8.0.0-1.20.1-Forge.jar",

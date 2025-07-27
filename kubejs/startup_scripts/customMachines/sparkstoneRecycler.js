@@ -49,7 +49,7 @@ global.checkSparkstoneRecyclers = (level, block) => {
 global.sparkstoneRecyclerTick = (entity) => {
   const { block } = entity;
   let mana = entity.persistentData.getInt("mana");
-  let newProperties = level.getBlock(block.getPos()).getProperties();
+  let newProperties = entity.level.getBlock(block.getPos()).getProperties();
   if (mana >= MANA_PER_RECYCLE) newProperties.powered = true;
   else newProperties.powered = false;
   block.set(block.id, newProperties);

@@ -49,9 +49,9 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       player.give(
         Item.of(
           "supplementaries:present_pink",
-          `{BlockEntityTag:{Description:"${
-            slimeType.charAt(0).toUpperCase() + slimeType.slice(1)
-          } Slime\'s favorite food :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
+          `{BlockEntityTag:{Description:"${global.formatName(
+            slimeType
+          )} Slime\'s favorite food :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
             favorites.item
           }"}],Recipient:"${player.username}",Sender:"Slime Ticket",id:"supplementaries:present"}}`
         )
@@ -61,9 +61,11 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       player.give(
         Item.of(
           "supplementaries:present_pink",
-          `{BlockEntityTag:{Description:"${
-            slimeType.charAt(0).toUpperCase() + slimeType.slice(1)
-          } Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${favorites.entity}"}\'}}}],Recipient:"${
+          `{BlockEntityTag:{Description:"${global.formatName(
+            slimeType
+          )} Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${
+            favorites.entity
+          }"}\'}}}],Recipient:"${
             player.username
           }",Sender:"Slime Ticket",id:"supplementaries:present"}}`
         )

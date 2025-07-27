@@ -87,6 +87,33 @@ ItemEvents.tooltip((tooltip) => {
       }
     });
   });
+
+  global.plushies.forEach((plush) => {
+    tooltip.addAdvanced(plush, (item, advanced, text) => {
+      if (item.nbt) {
+        if (item.nbt.getCompound("quality_food"))
+          text.add(1, [
+            "§6★ §7Rarity: ",
+            Text.gold("★".repeat(item.nbt.getCompound("quality_food").getInt("quality") + 1)),
+            Text.gray("☆".repeat(3 - item.nbt.getCompound("quality_food").getInt("quality"))),
+          ]);
+        else text.add(1, [Text.gray("☆".repeat(4))]);
+        let type = global.plushieTraits[Number(item.nbt.getInt("type"))];
+        text.add(2, ["§b♫ §7Trait: ", `§${type.color}${global.formatName(type.trait)}`]);
+        let affection = item.nbt.getInt("affection");
+        text.add(3, [
+          "§c❤ §7Affection: ",
+          `§c${affection > 0 ? `❤`.repeat(affection) : ""}§7${
+            affection < 4 ? `❤`.repeat(4 - affection) : ""
+          }`,
+        ]);
+        text.add(4, ["♢ §6Plushie"]);
+      } else {
+        text.add(1, ["♢ §6Plushie"]);
+      }
+    });
+  });
+  
   const artifactTooltips = [
     {
       item: "society:froggy_helm",
@@ -252,7 +279,9 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry apply Milk Quality.")
+    Text.green(
+      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry apply Milk Quality."
+    )
   );
   tooltip.add(
     "society:stone_hand",

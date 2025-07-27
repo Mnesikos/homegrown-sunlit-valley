@@ -122,10 +122,11 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:fantasy_box_${theme}`)
       .texture(`society:item/fantasy_box_${theme}`)
       .tooltip(Text.gray("Right click to open"))
-      .displayName(`Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`);
+      .displayName(`Fantasy Box: ${global.formatName(theme)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
   e.create("society:scavenged_food_bag").texture("wildernature:item/loot_bag");
+  e.create("society:plushie_capsule").texture("society:item/plushie_capsule");
   e.create("society:sap").texture("society:item/sap");
   e.create("society:rubber").texture("society:item/rubber");
   e.create("society:pine_tar").texture("society:item/pine_tar");
@@ -139,9 +140,9 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/neptuna")
     .glow(true);
 
-  e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin");
-  e.create("numismatics:ancient_coin").texture("society:item/ancient_coin");
-  e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin");
+  e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin").tag("numismatics:coins");
+  e.create("numismatics:ancient_coin").texture("society:item/ancient_coin").tag("numismatics:coins");
+  e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin").tag("numismatics:coins");
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:bank_meter").texture("society:item/bank_meter");
@@ -495,7 +496,7 @@ StartupEvents.registry("item", (e) => {
       .food((food) => {
         food.hunger(4);
         food.saturation(1);
-          food.effect("farmersdelight:nourishment", 600, 1, 1.0);
+        food.effect("farmersdelight:nourishment", 600, 1, 1.0);
       });
   });
 

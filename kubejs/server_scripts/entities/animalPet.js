@@ -12,7 +12,7 @@ ItemEvents.entityInteracted((e) => {
     if (!data.gifted && data.affection >= 1000) {
       let nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
-      let capitalizedType = nonIdType.charAt(0).toUpperCase() + nonIdType.slice(1);
+      let capitalizedType = global.formatName(nonIdType)
       server.runCommandSilent(
         `immersivemessages sendcustom ${
           player.username

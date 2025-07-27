@@ -17,6 +17,7 @@ StartupEvents.registry("item", (e) => {
     .rarity("epic")
     .tier("prismatic")
     .displayName("§cG§6a§el§aa§9x§by §cS§6w§eo§ar§9d")
+    .tag("minecraft:swords")
     .attackDamageBaseline(10.0)
     .speed(3.0)
     .modifyTier((tier) => {
@@ -45,6 +46,7 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/artifacts/princess_hairbrush")
     .rarity("epic")
     .tier("prismatic")
+    .tag("minecraft:swords")
     .attackDamageBaseline(6.0)
     .speed(3.0)
     .modifyTier((tier) => {
@@ -60,6 +62,7 @@ StartupEvents.registry("item", (e) => {
     .rarity("epic")
     .tier("prismatic")
     .displayName("§bMeow§fmag§deddon")
+    .tag("minecraft:swords")
     .attackDamageBaseline(11.0)
     .speed(4.0)
     .modifyTier((tier) => {

@@ -346,7 +346,7 @@ ItemEvents.entityInteracted((e) => {
       const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
-        name = nonIdType.toString().charAt(0).toUpperCase() + nonIdType.toString().slice(1);
+        name = global.formatName(nonIdType);
         if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
       }
       const ageLastFed = data.getInt("ageLastFed");
@@ -359,7 +359,7 @@ ItemEvents.entityInteracted((e) => {
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
       if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
-      if ( 
+      if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {

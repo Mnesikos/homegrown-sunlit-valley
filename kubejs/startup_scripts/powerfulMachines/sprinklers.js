@@ -4,7 +4,7 @@ const generateSprinkler = (e, tier, radius) => {
   const tooltipRadius = 1 + radius * 2;
   e
     .create(`society:${tier}_sprinkler`)
-    .displayName(`${tier == "netherite" ? "Iridium" : tier.charAt(0).toUpperCase() + tier.slice(1)} Sprinkler`)
+    .displayName(`${tier == "netherite" ? "Iridium" : global.formatName(tier)} Sprinkler`)
     .property(booleanProperty.create("sticklogged"))
     .defaultState((state) => {
       state.set(booleanProperty.create("sticklogged"), false);
@@ -28,18 +28,14 @@ const generateSprinkler = (e, tier, radius) => {
     })
     .rightClick((click) => {
       const { player, item, block, hand } = click;
-      const stickLogged = block.properties.get("sticklogged").toLowerCase() === "true"
+      const stickLogged = block.properties.get("sticklogged").toLowerCase() === "true";
       if (hand == "OFF_HAND") return;
       if (hand == "MAIN_HAND" && item == "minecraft:stick" && !stickLogged) {
         if (!player.isCreative()) item.count--;
         block.set(block.id, {
           sticklogged: true,
         });
-      } else if (
-        player.isCrouching() &&
-        item === "minecraft:air" &&
-        stickLogged
-      ) {
+      } else if (player.isCrouching() && item === "minecraft:air" && stickLogged) {
         player.give(Item.of("minecraft:stick"));
         block.set(block.id, {
           sticklogged: false,

@@ -216,6 +216,7 @@ LootJS.modifiers((e) => {
   // Artisan Machines that save nbt on drop
   e.addBlockLootModifier("society:prize_machine").removeLoot("society:prize_machine");
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier(global.plushies).removeLoot("*");
 
   // Replace Loot
   e.addLootTableModifier("minecraft:chests/pillager_outpost")

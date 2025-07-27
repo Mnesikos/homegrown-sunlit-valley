@@ -3,6 +3,41 @@ console.info("[SOCIETY] handleItemBlockFluidTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
+    "perfectplushies:red_fox_plushie",
+    "perfectplushies:snow_fox_plushie",
+    "perfectplushies:fennec_fox_plushie",
+    "perfectplushies:red_ruffed_lemur_plushie",
+    "perfectplushies:red_panda_plushie",
+    "perfectplushies:raccoon_plushie",
+    "perfectplushies:capybara_plushie",
+    "perfectplushies:dog_plushie",
+    "perfectplushies:cat_plushie",
+    "perfectplushies:dolphin_plushie",
+    "perfectplushies:brown_rabbit_plushie",
+    "perfectplushies:white_rabbit_plushie",
+    "perfectplushies:frog_plushie",
+    "perfectplushies:goose_plushie",
+    "perfectplushies:duck_plushie",
+    "perfectplushies:rubber_duck_plushie",
+    "perfectplushies:robin_plushie",
+    "perfectplushies:robin_plushie",
+    "perfectplushies:hummingbird_plushie",
+    "perfectplushies:hippo_plushie",
+    "perfectplushies:mouse_plushie",
+    "perfectplushies:turtle_plushie",
+    "perfectplushies:doe_plushie",
+    "perfectplushies:reindeer_plushie",
+    "perfectplushies:bear_plushie",
+    "perfectplushies:koala_plushie",
+    "perfectplushies:panda_plushie",
+    "perfectplushies:lion_cub_plushie",
+    "perfectplushies:elephant_plushie",
+    "perfectplushies:monkey_plushie",
+    "perfectplushies:seal_plushie",
+    "perfectplushies:hedgehog_plushie",
+    "perfectplushies:aye_aye_plushie",
+    "perfectplushies:quokka_plushie",
+    "perfectplushies:dumbo_blob_plushie",
     "sewingkit:bone_sewing_needle",
     "sewingkit:diamond_sewing_needle",
     "sewingkit:netherite_sewing_needle",
@@ -322,6 +357,9 @@ ServerEvents.tags("item", (e) => {
   global.lootFurniture.forEach((item) => {
     e.add("society:loot_furniture", item);
   });
+  global.plushies.forEach((item) => {
+    e.add("society:plushies", item);
+  });
   global.dehydratorRecipes.forEach((dehydratee) => {
     e.add("society:dehydrated", dehydratee.output[0].substring(2, dehydratee.output[0].length));
   });
@@ -493,6 +531,10 @@ ServerEvents.tags("block", (e) => {
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);
+  });
+
+  global.plushies.forEach((item) => {
+    e.add("quality_foods:quality_blocks", item);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
   rawLogs.forEach((log) => {
