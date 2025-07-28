@@ -16,7 +16,8 @@ global.processShippingBinInventory = (
   inventorySlots,
   attributes,
   stages,
-  returnRemoved
+  returnRemoved,
+  simulated
 ) => {
   let calculatedValue = 0;
   let itemValue = 0;
@@ -69,7 +70,7 @@ global.processShippingBinInventory = (
           })[0]?.Base
         ) || 1);
     }
-    if (isSellable) {
+    if (isSellable && !simulated) {
       if (returnRemoved) removedItems.push(i);
       else inventory.setStackInSlot(i, "minecraft:air");
     }
@@ -660,6 +661,37 @@ global.onDrain = (blockInfo, fluid, sim) => {
   return drained;
 };
 
+// Text display utils
+global.clearOldTextDisplay = (block, id) => {
+  const { x, y, z } = block;
+  block
+    .getLevel()
+    .getServer()
+    .getEntities()
+    .forEach((entity) => {
+      entity.getTags().forEach((tag) => {
+        if (tag === `${id}-${x}-${y}-${z}`) {
+          entity.kill();
+        }
+      });
+    });
+};
+global.spawnTextDisplay = (block, y, id, text) => {
+  let entity;
+  const { x, z } = block;
+  entity = block.createEntity("minecraft:text_display");
+  let newNbt = entity.getNbt();
+  newNbt.text = `{"text":"${text}"}`;
+  newNbt.billboard = "vertical";
+  newNbt.background = 0;
+  entity.setNbt(newNbt);
+  entity.setX(x + 0.5);
+  entity.setY(y);
+  entity.setZ(z + 0.5);
+  entity.addTag(`${id}-${x}-${block.y}-${z}`);
+  entity.spawn();
+};
+
 const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/${name}`;
   return [
@@ -681,6 +713,7 @@ const getCardinalMultipartJsonBasic = (name) => {
     },
   ];
 };
+
 const getCardinalMultipartJson = (name, disableExclamation) => {
   const path = `society:block/${name}/${name}`;
   let exclamationJson = [

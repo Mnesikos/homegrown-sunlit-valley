@@ -81,15 +81,9 @@ BlockEvents.broken(
   }
 );
 BlockEvents.broken("society:coin_leaderboard", (e) => {
-  const { x, y, z } = e.block;
-  Utils.server
-    .getLevel("minecraft:overworld")
-    .getEntities()
-    .forEach((entity) => {
-      entity.getTags().forEach((tag) => {
-        if (tag === `leaderboard-${x}-${y}-${z}`) {
-          entity.kill();
-        }
-      });
-    });
+  global.clearOldTextDisplay(e.block, "leaderboard");
+});
+
+BlockEvents.broken("society:shipping_bin_monitor", (e) => {
+  global.clearOldTextDisplay(e.block, "leaderboard");
 });

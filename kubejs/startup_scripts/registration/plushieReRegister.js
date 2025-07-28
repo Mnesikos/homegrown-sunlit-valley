@@ -13,6 +13,9 @@ StartupEvents.registry("block", (event) => {
       .property(integerProperty.create("quality", 0, 4))
       .property(integerProperty.create("affection", 0, 4))
       .defaultCutout()
+      .soundType("wool")
+      .hardness(1.0)
+      .requiresTool(false)
       .model(modelPath)
       .item((item) => {
         item.modelJson({

@@ -72,9 +72,6 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "collectorsreap": {
-    "crop_progress": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -88,6 +85,9 @@
   },
   "balm": {
     "jade": true
+  },
+  "society": {
+    "plushie_jade": true
   },
   "jadeaddons": {
     "equipment_requirement": ""

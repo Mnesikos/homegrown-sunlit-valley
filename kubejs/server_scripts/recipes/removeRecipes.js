@@ -411,6 +411,7 @@ ServerEvents.recipes((e) => {
     "furniture:copper_fish_tank",
     "furniture:terrarium",
     "tanukidecor:slot_machine",
+    "tanukidecor:gumball_machine",
     "beautify:lamp_candelabra_orange",
     "beautify:lamp_candelabra_yellow",
     "beautify:lamp_candelabra_lime",

@@ -59,5 +59,6 @@ JEIAddedEvents.registerRecipes((e) => {
   fantasyBoxes.forEach((theme) => {
     addLootBoxRecipes(e, `society:fantasy_box_${theme}`, `#society:${theme}_fantasy_furniture`);
   });
+  addLootBoxRecipes(e, "society:plushie_capsule", "#society:plushies");
   addLootBoxRecipes(e, "society:bouquet_bag", "#society:bouquet_bag_flowers");
 });

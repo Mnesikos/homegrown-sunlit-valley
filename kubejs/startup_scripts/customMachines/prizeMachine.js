@@ -214,14 +214,12 @@ global.prizeMachineRewards = [
       "species:petrified_egg",
       "species:springling_egg",
       "species:wraptor_egg",
-      "quark:egg_parrot_red_blue",
-      "quark:egg_parrot_blue",
-      "quark:egg_parrot_green",
-      "quark:egg_parrot_gray",
-      "quark:egg_parrot_yellow_blue",
-      "species:birt_egg",
       "minecraft:sniffer_egg",
     ],
+  },
+  {
+    hint: "filled with plushies",
+    possibleOutputs: ["tanukidecor:gumball_machine"],
   },
   {
     hint: "beachy",

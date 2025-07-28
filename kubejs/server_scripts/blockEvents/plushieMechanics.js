@@ -10,6 +10,7 @@ BlockEvents.placed(global.plushies, (e) => {
     });
   }
 });
+
 BlockEvents.broken(global.plushies, (e) => {
   const { block } = e;
   const type = block.properties.get("type").toLowerCase();
@@ -39,7 +40,10 @@ BlockEvents.rightClicked(global.plushies, (e) => {
   if (hand == "MAIN_HAND") {
     if (quest_id > 0) {
       let questList = Ingredient.of(global.plushieTraits[type].tag).itemIds;
-      let questItem = questList[affection * (questList.length < 12 ? 2 : 3) + quest_id - 1];
+      let questOffset = 3;
+      if (questList.length < 12) questOffset = 2;
+      if (questList.length > 36) questOffset = 6;
+      let questItem = questList[affection * questOffset + quest_id - 1];
       let questName = Item.of(questItem).displayName;
       if (item && item == questItem) {
         if (!player.isCreative()) item.count--;
@@ -67,6 +71,24 @@ BlockEvents.rightClicked(global.plushies, (e) => {
         player.tell("§c❤ §7I would be much happier if I had this...");
         player.tell(questName);
       }
+    }
+  }
+});
+
+BlockEvents.rightClicked("tanukidecor:gumball_machine", (e) => {
+  const { item, player, block, hand, server } = e;
+
+  if (hand == "OFF_HAND") return;
+  if (hand == "MAIN_HAND") {
+    if (item.id.equals("numismatics:sun")) {
+      item.count -= 1;
+      block.popItemFromFace("society:plushie_capsule", block.properties.get("facing"));
+      server.runCommandSilent(
+        `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
+      );
+      player.addItemCooldown(item.id, 1);
+    } else {
+      player.tell(`§7Right click with an §6Iridium Coin§7 to purchase a Plushie Capsule!`);
     }
   }
 });

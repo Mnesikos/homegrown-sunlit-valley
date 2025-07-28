@@ -113,7 +113,7 @@ ItemEvents.tooltip((tooltip) => {
       }
     });
   });
-  
+
   const artifactTooltips = [
     {
       item: "society:froggy_helm",
@@ -544,6 +544,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("splendid_slimes:slime_feeder", Text.green(`Area: 13x13x13`));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
+  tooltip.add(
+    "tanukidecor:gumball_machine",
+    Text.gray("Right click with an Iridium Coin to purchase a Plushie Capsule")
+  );
   tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));
   tooltip.add("society:artifact_trove", Text.gray("Can be opened using an Extractinator"));
   tooltip.add("society:geode_buster", Text.gray("Right click with geode in offhand"));
@@ -567,6 +571,7 @@ ItemEvents.tooltip((tooltip) => {
 
   tooltip.add("vinery:dark_cherry_sapling", "Fruit Season:");
   tooltip.add("vinery:dark_cherry_sapling", Text.green(" Spring"));
+  tooltip.add("society:plushie_capsule", Text.gray("Right click to open"));
   tooltip.add("society:furniture_box", Text.gray("Right click to open"));
   tooltip.add("furniture:bin", Text.red("Deletes any items you click into it"));
   tooltip.add("furniture:bin", Text.green("Creates Trash Bags"));
