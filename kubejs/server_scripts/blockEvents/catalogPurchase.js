@@ -24,7 +24,7 @@ const catalogMap = {
 BlockEvents.rightClicked(
   ["society:tanuki_catalog", "society:modern_catalog", "society:fantasy_catalog"],
   (e) => {
-    const { item, player, block, server } = e;
+    const { item, player, hand, block, server } = e;
     const { price, outputItem, outputDisplayName, outputCount } =
       catalogMap[block.id.toString().split(":")[1]];
 

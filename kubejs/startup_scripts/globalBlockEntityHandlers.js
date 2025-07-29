@@ -676,14 +676,28 @@ global.clearOldTextDisplay = (block, id) => {
       });
     });
 };
+
+global.textDisplayRotationFromFacing = (block) => {
+  switch (String(block.properties.get("facing"))) {
+    case "north":
+      return 180;
+    case "east":
+      return 270;
+    case "south":
+      return 360;
+    default:
+    case "west":
+      return 90;
+  }
+};
 global.spawnTextDisplay = (block, y, id, text) => {
   let entity;
   const { x, z } = block;
   entity = block.createEntity("minecraft:text_display");
   let newNbt = entity.getNbt();
   newNbt.text = `{"text":"${text}"}`;
-  newNbt.billboard = "vertical";
   newNbt.background = 0;
+  newNbt.Rotation = [NBT.f(global.textDisplayRotationFromFacing(block)), NBT.f(0)];
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(y);

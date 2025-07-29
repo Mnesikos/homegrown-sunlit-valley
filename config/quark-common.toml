@@ -54,7 +54,7 @@
 	"Chains Connect Blocks" = true
 	Chute = true
 	Crafter = true
-	"Dispensers Place Blocks" = false
+	"Dispensers Place Blocks" = true
 	"Ender Watcher" = true
 	"Feeding Trough" = false
 	Gravisand = true

@@ -85,5 +85,5 @@ BlockEvents.broken("society:coin_leaderboard", (e) => {
 });
 
 BlockEvents.broken("society:shipping_bin_monitor", (e) => {
-  global.clearOldTextDisplay(e.block, "leaderboard");
+  global.clearOldTextDisplay(e.block, "shipping_bin_monitor");
 });

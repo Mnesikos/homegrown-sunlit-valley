@@ -1,4 +1,3 @@
-// priority: 1
 console.info("[SOCIETY] shippingBinMonitor.js loaded");
 
 global.runShippingBinMonitor = (entity) => {
@@ -10,14 +9,12 @@ global.runShippingBinMonitor = (entity) => {
     let slots = belowBlock.inventory.getSlots();
     let playerAttributes;
     let binPlayer;
-    let binPlayerUUID;
-    let calculationResults;
+    let calculationResults = -1;
 
     level.getServer().players.forEach((p) => {
       if (p.getUuid().toString() === owner) {
         playerAttributes = p.nbt.Attributes;
         binPlayer = p;
-        binPlayerUUID = binPlayer.getUuid().toString();
       }
     });
     if (playerAttributes) {
@@ -31,18 +28,18 @@ global.runShippingBinMonitor = (entity) => {
           true
         ).calculatedValue
       );
-      let nbt = entity.block.getEntityData();
-      if (nbt.data.value !== calculationResults) {
-        nbt.merge({ data: { value: calculationResults } });
-        block.setEntityData(nbt);
-        global.clearOldTextDisplay(block, "shipping_bin_monitor");
-        global.spawnTextDisplay(
-          block,
-          block.y + 0.25,
-          "shipping_bin_monitor",
-          `● ${global.formatPrice(calculationResults)}`
-        );
-      }
+    }
+    let nbt = entity.block.getEntityData();
+    if (nbt.data.value !== calculationResults) {
+      nbt.merge({ data: { value: calculationResults } });
+      block.setEntityData(nbt);
+      global.clearOldTextDisplay(block, "shipping_bin_monitor");
+      global.spawnTextDisplay(
+        block,
+        block.y + 0.25,
+        "shipping_bin_monitor", calculationResults === -1 ? "Offline" :
+        `●${calculationResults < 100000000 ? " " : ""}${global.formatPrice(calculationResults)}`
+      );
     }
   }
 };
@@ -62,6 +59,6 @@ StartupEvents.registry("block", (event) => {
     .model("society:block/shipping_bin_monitor")
     .blockEntity((blockInfo) => {
       blockInfo.initialData({ value: 0 });
-      blockInfo.serverTick(600, 0, (entity) => global.runShippingBinMonitor(entity));
+      blockInfo.serverTick(200, 0, (entity) => global.runShippingBinMonitor(entity));
     });
 });

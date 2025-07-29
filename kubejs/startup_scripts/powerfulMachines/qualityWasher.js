@@ -1,4 +1,3 @@
-// priority: 1
 console.info("[SOCIETY] qualityWasher.js loaded");
 
 global.handlePush = (e) => {

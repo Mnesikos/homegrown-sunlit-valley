@@ -475,12 +475,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Unobtainable, use a milking pail")
   );
   ["society:large_warped_milk", "society:warped_milk"].forEach((milk) => {
-    tooltip.add(
-      milk,
-      Text.aqua(
-        "Milked from Wooly Cows that come through portals in Warped Forests. They take a while to spawn on the Nether side!"
-      )
-    );
+    tooltip.add(milk, Text.aqua("Milked from Wooly Cows that spawn in Warped Forests"));
   });
   tooltip.add("society:fine_wool", Text.gray("Collected from happy Sheep and Rabbits"));
   tooltip.add("society:truffle", Text.gray("Foraged by certain farm animals such as pigs"));
