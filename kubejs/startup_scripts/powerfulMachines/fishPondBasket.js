@@ -37,7 +37,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
 
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:fish_pond_basket", "cardinal")
+    .create("society:fish_pond_basket")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .waterlogged()
@@ -53,6 +53,13 @@ StartupEvents.registry("block", (event) => {
     })
     .soundType("copper")
     .model("society:block/fish_pond_basket")
+    .property(booleanProperty.create("upgraded"))
+    .defaultState((state) => {
+      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+    })
+    .placementState((state) => {
+      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+    })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -93,5 +100,16 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    });
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { upgraded: "false" },
+        apply: { model: "society:block/fish_pond_basket" },
+      },
+      {
+        when: { upgraded: "true" },
+        apply: { model: "society:block/fish_pond_basket_upgraded" },
+      },
+    ],
+  };
 });

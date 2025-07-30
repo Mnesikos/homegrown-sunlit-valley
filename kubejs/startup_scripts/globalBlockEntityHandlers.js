@@ -728,6 +728,28 @@ const getCardinalMultipartJsonBasic = (name) => {
   ];
 };
 
+const getCardinalMultipartJsonBasicUpgradable = (name, upgraded) => {
+  const path = `society:block/${name}`;
+  return [
+    {
+      when: { facing: "north", upgraded: upgraded },
+      apply: { model: path, y: 0, uvlock: false },
+    },
+    {
+      when: { facing: "east", upgraded: upgraded },
+      apply: { model: path, y: 90, uvlock: false },
+    },
+    {
+      when: { facing: "south", upgraded: upgraded },
+      apply: { model: path, y: 180, uvlock: false },
+    },
+    {
+      when: { facing: "west", upgraded: upgraded },
+      apply: { model: path, y: -90, uvlock: false },
+    },
+  ];
+};
+
 const getCardinalMultipartJson = (name, disableExclamation) => {
   const path = `society:block/${name}/${name}`;
   let exclamationJson = [

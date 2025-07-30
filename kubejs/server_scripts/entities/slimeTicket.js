@@ -18,7 +18,7 @@ const SlimeFavoriteFoods = {
   puddle: { item: "unusualfishmod:raw_sneep_snorp" },
   rotting: { item: "minecraft:chicken", entity: "Chicken" },
   shulking: { item: "minecraft:chorus_flower" },
-  slimy: { item: "minecraft:blue_orchid" },
+  slimy: { item: "farm_and_charm:strawberry" },
   sparkcat: { item: "society:smoked_spindlefish" },
   sweet: { item: "atmospheric:orange" },
   webby: { item: "veggiesdelight:garlic" },

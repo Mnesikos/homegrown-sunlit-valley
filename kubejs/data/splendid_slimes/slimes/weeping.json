@@ -4,7 +4,7 @@
   "particle": { "item": "minecraft:ghast_tear" },
   "color": "#cff1f1",
   "diet": "diet.splendid_slimes.weeping",
-  "foods": [{ "tag": "forge:fruits" }],
+  "foods": [{ "tag": "society:tree_fruits" }],
   "favorite_food": {
     "item": "pamhc2trees:bananaitem"
   }

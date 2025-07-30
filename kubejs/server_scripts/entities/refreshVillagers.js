@@ -13,7 +13,7 @@ ItemEvents.entityInteracted((e) => {
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
   if (nbt.includes("toolsmith") && nbt.includes("reinforced_core")) updateThis = true;
   if (nbt.includes("cleric") && !nbt.includes("core_destruction")) updateThis = true;
-  if (nbt.includes("cartographer") && nbt.includes("banking_guide")) updateThis = true;
+  if (nbt.includes("cartographer") && !nbt.includes("shipping_bin_monitor")) updateThis = true;
   if (nbt.includes("fletcher") && !nbt.includes("magic_rope")) updateThis = true;
   if (nbt.includes("fisher") && !nbt.includes("guide_book")) updateThis = true;
 

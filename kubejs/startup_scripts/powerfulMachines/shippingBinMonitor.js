@@ -51,7 +51,7 @@ StartupEvents.registry("block", (event) => {
     .defaultCutout()
     .box(0, 0, 0, 16, 3, 16)
     .item((item) => {
-      item.tooltip(Text.gray("Displays coin value of Shipping Bin below"));
+      item.tooltip(Text.gray("Displays sell value of Shipping Bin below it with all bonuses applied. Updates every 10 seconds."));
       item.modelJson({
         parent: "society:block/shipping_bin_monitor",
       });

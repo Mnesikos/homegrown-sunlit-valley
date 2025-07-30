@@ -57,6 +57,13 @@ StartupEvents.registry("block", (event) => {
       });
     })
     .model("society:block/auto_grabber")
+    .property(booleanProperty.create("upgraded"))
+    .defaultState((state) => {
+      state.set(booleanProperty.create("upgraded"), false);
+    })
+    .placementState((state) => {
+      state.set(booleanProperty.create("upgraded"), false);
+    })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -132,5 +139,9 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    });
+    }).blockstateJson = {
+    multipart: []
+      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber", "false"))
+      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber_upgraded", "true")),
+  };
 });

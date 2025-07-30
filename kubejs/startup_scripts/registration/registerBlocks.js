@@ -316,7 +316,7 @@ StartupEvents.registry("block", (e) => {
   // Compressed Crops block
   e.create("society:pink_flower_wallpaper", "cardinal")
     .model("society:block/wallpapers/pink_flower")
-    .soundType("wood")
+    .soundType("wool")
     .hardness(1.0)
     .resistance(1.0)
     .tagBlock("minecraft:mineable/axe")
@@ -324,7 +324,7 @@ StartupEvents.registry("block", (e) => {
 
   e.create("society:pink_flower_birch_baseboard", "cardinal")
     .model("society:block/wallpapers/pink_flower_birch_baseboard")
-    .soundType("wood")
+    .soundType("wool")
     .hardness(1.0)
     .resistance(1.0)
     .tagBlock("minecraft:mineable/axe")

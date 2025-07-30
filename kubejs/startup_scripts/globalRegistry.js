@@ -1708,7 +1708,7 @@ global.miscAdventurer = [
 ];
 
 global.plorts = [
-  { type: "splendid_slimes:slimy", value: 32 },
+  { type: "splendid_slimes:slimy", value: 64 },
   { type: "splendid_slimes:dusty", value: 64 },
   { type: "splendid_slimes:bony", value: 72 },
   { type: "splendid_slimes:rotting", value: 72 },

@@ -339,6 +339,11 @@
     "modId": "create_mechanical_extruder",
     "version": "1.20.1-1.6.10-6.0.6"
   },
+  "createentitycontroller-1.20.1-0.2.6-6.0.6+.jar": {
+    "jarName": "createentitycontroller-1.20.1-0.2.6-6.0.6+.jar",
+    "modId": "createentitycontroller",
+    "version": "0.2.3-hotfix"
+  },
   "CreateNumismatics-1.0.15+forge-mc1.20.1.jar": {
     "jarName": "CreateNumismatics-1.0.15+forge-mc1.20.1.jar",
     "modId": "numismatics",
@@ -912,10 +917,10 @@
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
   },
-  "Longwings-v0.9.0-1.20.1-Forge.jar": {
-    "jarName": "Longwings-v0.9.0-1.20.1-Forge.jar",
+  "Longwings-v0.9.1-1.20.1-Forge.jar": {
+    "jarName": "Longwings-v0.9.1-1.20.1-Forge.jar",
     "modId": "longwings",
-    "version": "0.9.0"
+    "version": "0.9.1"
   },
   "lootjs-forge-1.20.1-2.13.0.jar": {
     "jarName": "lootjs-forge-1.20.1-2.13.0.jar",
@@ -1067,10 +1072,10 @@
     "modId": "paraglider",
     "version": "20.1.3"
   },
-  "particlerain-4.0.0-alpha-2+1.20.1-forge.jar": {
-    "jarName": "particlerain-4.0.0-alpha-2+1.20.1-forge.jar",
+  "particlerain-4.0.0-alpha.3+1.20.1-forge.jar": {
+    "jarName": "particlerain-4.0.0-alpha.3+1.20.1-forge.jar",
     "modId": "particlerain",
-    "version": "4.0.0-alpha-2+1.20.1-forge"
+    "version": "4.0.0-alpha.3+1.20.1-forge"
   },
   "PassableFoliage-1.20.1-forge-8.2.1.jar": {
     "jarName": "PassableFoliage-1.20.1-forge-8.2.1.jar",
@@ -1127,10 +1132,10 @@
     "modId": "ponderjs",
     "version": "2.0.6"
   },
-  "portable_blueprints-v1.8.3-mv1.20.1.jar": {
-    "jarName": "portable_blueprints-v1.8.3-mv1.20.1.jar",
+  "portable_blueprints-v1.8.4-mv1.20.1.jar": {
+    "jarName": "portable_blueprints-v1.8.4-mv1.20.1.jar",
     "modId": "portable_blueprints",
-    "version": "1.8.3"
+    "version": "1.8.4"
   },
   "portfolio-1.20.1-1.4.0-forge.jar": {
     "jarName": "portfolio-1.20.1-1.4.0-forge.jar",

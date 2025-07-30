@@ -2315,6 +2315,42 @@
             ]
         },
         {
+            "pakku_id": "ShR3DQcIkJWRCRr8",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-factory-logistics"
+            },
+            "name": {
+                "curseforge": "Create Factory Logistics"
+            },
+            "id": {
+                "curseforge": "1218807"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.5.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/6763/9/create_factory_logistics-1.20.1-1.4.5.jar",
+                    "id": "6763009",
+                    "parent_id": "1218807",
+                    "hashes": {
+                        "sha1": "5c2c2a416000273b8503a7ec666bc9325cb5707b",
+                        "md5": "cd134d174ec0a84bc231cda56f8510a8"
+                    },
+                    "required_dependencies": [],
+                    "size": 1082428,
+                    "date_published": "2025-07-13T08:41:15.490Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "mE1QVdBFTAKNjbwM",
             "pakku_links": [
                 "OjsYMehqACUhUBxE"
@@ -7940,7 +7976,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "particlerain-4.0.0-alpha-2+1.20.1-forge.jar",
+                    "file_name": "particlerain-4.0.0-alpha.3+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7948,19 +7984,18 @@
                         "forge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/6739/287/particlerain-4.0.0-alpha-2+1.20.1-forge.jar",
-                    "id": "6739287",
+                    "url": "https://edge.forgecdn.net/files/6807/714/particlerain-4.0.0-alpha.3+1.20.1-forge.jar",
+                    "id": "6807714",
                     "parent_id": "421897",
                     "hashes": {
-                        "sha1": "d9872127d8e023693b7fa7f9176ef6608381961f",
-                        "md5": "a5a2b910838ea2090e434c4d81147a63"
+                        "sha1": "3ed8b4abca91bde2b8823b4d30473e3d3d5d9c9b",
+                        "md5": "2061396b0a02d210f52404688024caa6"
                     },
                     "required_dependencies": [
-                        "667299",
-                        "306612"
+                        "667299"
                     ],
-                    "size": 724734,
-                    "date_published": "2025-07-06T23:32:29.617Z"
+                    "size": 726154,
+                    "date_published": "2025-07-24T18:38:21.587Z"
                 }
             ]
         },
@@ -8319,7 +8354,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.8.2-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.8.4-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8327,16 +8362,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6796/705/portable_blueprints-v1.8.2-mv1.20.1.jar",
-                    "id": "6796705",
+                    "url": "https://edge.forgecdn.net/files/6814/884/portable_blueprints-v1.8.4-mv1.20.1.jar",
+                    "id": "6814884",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "bd3f5e03c50be871dfb8af69774b780a64c9e449",
-                        "md5": "58f68618ffb3c1d289f5c127f857c612"
+                        "sha1": "11d6b3c57d80926f788e331582749066895129c9",
+                        "md5": "1ff949e1f5048caa784b48a88f9af33b"
                     },
                     "required_dependencies": [],
-                    "size": 368995,
-                    "date_published": "2025-07-21T21:30:34.087Z"
+                    "size": 389449,
+                    "date_published": "2025-07-26T19:46:15.423Z"
                 }
             ]
         },
