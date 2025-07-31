@@ -5,7 +5,7 @@ BlockEvents.rightClicked("society:fish_pond_basket", (e) => {
   const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
 
   if (hand == "OFF_HAND") return;
-  if (hand == "MAIN_HAND" && !upgraded && item == "society:stone_hand") {
+  if (hand == "MAIN_HAND" && !upgraded && item == "minecraft:bucket") {
     if (!player.isCreative()) item.count--;
     level.spawnParticles(
       "farmersdelight:star",
@@ -32,7 +32,7 @@ BlockEvents.rightClicked("society:auto_grabber", (e) => {
   const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
   console.log("yeet");
   if (hand == "OFF_HAND") return;
-  if (hand == "MAIN_HAND" && !upgraded && item == "society:stone_hand") {
+  if (hand == "MAIN_HAND" && !upgraded && item == "society:magic_shears") {
     console.log("yoot");
     if (!player.isCreative()) item.count--;
     level.spawnParticles(

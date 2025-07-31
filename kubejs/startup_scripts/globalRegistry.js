@@ -695,6 +695,7 @@ global.artisanGoods = [
   { item: "society:parrot_mayonnaise", value: 512 },
   { item: "society:turtle_mayonnaise", value: 1024 },
   { item: "society:sniffer_mayonnaise", value: 1536 },
+  { item: "society:petrified_mayonnaise", value: 2048 },
   { item: "society:golden_mayonnaise", value: 12288 },
   { item: "society:dragon_mayonnaise", value: 12288 },
   { item: "society:large_mayonnaise", value: 128 },

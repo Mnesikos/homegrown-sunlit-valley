@@ -52,7 +52,9 @@ BlockEvents.broken("society:fish_pond", (e) => {
         "society:fish_pond",
         `{type:${block.properties.get("type")},population:${block.properties.get(
           "population"
-        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get("quest")},quest_id:${block.properties.get("quest_id")}}`
+        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get(
+          "quest"
+        )},quest_id:${block.properties.get("quest_id")}}`
       )
     );
   } else {
@@ -86,4 +88,17 @@ BlockEvents.broken("society:coin_leaderboard", (e) => {
 
 BlockEvents.broken("society:shipping_bin_monitor", (e) => {
   global.clearOldTextDisplay(e.block, "shipping_bin_monitor");
+});
+
+BlockEvents.broken("society:fish_pond_basket", (e) => {
+  const { block } = e;
+  if (block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of("minecraft:bucket"));
+  }
+});
+BlockEvents.broken("society:auto_grabber", (e) => {
+  const { block } = e;
+  if (block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of("society:magic_shears"));
+  }
 });

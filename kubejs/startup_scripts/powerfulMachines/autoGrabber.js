@@ -50,6 +50,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
       );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
+      item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
       item.tooltip(Text.green(`Area: 11x11x11`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
@@ -123,6 +124,38 @@ StartupEvents.registry("block", (event) => {
               inventory,
               handleSpecialItem
             );
+            if (
+              level.getBlock(block.pos).getProperties().get("upgraded") === "false" ||
+              global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1
+            )
+              return;
+            const animalId =
+              animal.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : animal.type.split(":");
+            const droppedLoot = global.getMagicShearsOutput(animalId, attachedPlayer);
+            let insertedMagicDrops = false;
+            for (let i = 0; i < droppedLoot.length; i++) {
+              insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
+            }
+            if (insertedMagicDrops) {
+              if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+                console.error("Sparkstone not consumed when it should have been!");
+              level.server.runCommandSilent(
+                `playsound minecraft:entity.sheep.shear block @a ${animal.x} ${animal.y} ${animal.z}`
+              );
+              level.spawnParticles(
+                "snowyspirit:glow_light",
+                true,
+                animal.x,
+                animal.y + 1.5,
+                animal.z,
+                0.2 * rnd(1, 4),
+                0.2 * rnd(1, 4),
+                0.2 * rnd(1, 4),
+                20,
+                2
+              );
+              data.affection = data.getInt("affection") - 5;
+            }
           });
         }
       }),

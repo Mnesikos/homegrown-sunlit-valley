@@ -74,12 +74,12 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced(coin, (item, advanced, text) => {
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, item.count)} ●`),
+          Text.white(`● ${calculateCost(coin.split(":")[1], 1, item.count)}`),
           Text.gray(" Stack value"),
         ]);
       } else {
         text.add(1, [
-          Text.white(`${calculateCost(coin.split(":")[1], 1, 1)} ●`),
+          Text.white(`● ${calculateCost(coin.split(":")[1], 1, 1)}`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -673,13 +673,13 @@ ItemEvents.tooltip((tooltip) => {
       }
       if (tooltip.shift) {
         text.add(1, [
-          Text.white(`${formatNumber(value * item.count, quality)} ●`),
+          Text.white(`● ${formatNumber(value * item.count, quality)}`),
           Text.gray(" Stack value"),
         ]);
         text.add(2, [getAttributeStr(attribute)]);
       } else {
         text.add(1, [
-          Text.white(`${formatNumber(value, quality)} ●`),
+          Text.white(`● ${formatNumber(value, quality)}`),
           Text.darkGray(" Hold ["),
           Text.gray("Shift"),
           Text.darkGray("]"),
@@ -699,13 +699,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} ●`),
+        Text.white(`● ${formatNumber(price * item.count, 0)}`),
         Text.gray(" Stack value"),
       ]);
       text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} ●`),
+        Text.white(`● ${formatNumber(price, 0)}`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),
@@ -724,13 +724,13 @@ ItemEvents.tooltip((tooltip) => {
     });
     if (tooltip.shift) {
       text.add(1, [
-        Text.white(`${formatNumber(price * item.count, 0)} ●`),
+        Text.white(`● ${formatNumber(price * item.count, 0)}`),
         Text.gray(" Stack value"),
       ]);
       text.add(2, [getAttributeStr("meat")]);
     } else {
       text.add(1, [
-        Text.white(`${formatNumber(price, 0)} ●`),
+        Text.white(`● ${formatNumber(price, 0)}`),
         Text.darkGray(" Hold ["),
         Text.gray("Shift"),
         Text.darkGray("]"),

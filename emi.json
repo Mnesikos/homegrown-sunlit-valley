@@ -18,6 +18,22 @@
     }
   ],
   "lookup_history": [
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:weeping\"}}",
+    "#item:society:tree_fruits",
+    {
+      "type": "item",
+      "id": "splendid_slimes:plort",
+      "nbt": "{plort:{id:\"splendid_slimes:slimy\"}}",
+      "amount": 16
+    },
+    {
+      "type": "item",
+      "id": "splendid_slimes:slime_heart",
+      "nbt": "{slime:{id:\"splendid_slimes:slimy\"}}",
+      "amount": 64
+    },
+    "item:crittersandcompanions:pearl",
+    "item:society:phenomenology_of_treasure",
     "item:create_factory_logistics:fluid_mechanism",
     "item:society:golden_mayonnaise",
     "item:sophisticatedbackpacks:feeding_upgrade",
@@ -210,7 +226,6 @@
     "item:minecraft:netherite_ingot",
     "item:society:pink_flower_wallpaper{}",
     "item:society:juice_inserter{}",
-    "item:society:phenomenology_of_treasure",
     "item:stardew_fishing:treasure_bobber{Damage:0}",
     "item:aquaculture:treasure_chest",
     "item:meadow:cheese_form",
@@ -244,7 +259,6 @@
     "item:crittersandcompanions:iron_dragonfly_armor",
     "item:crittersandcompanions:diamond_dragonfly_armor",
     "item:crittersandcompanions:pearl_necklace_2",
-    "item:crittersandcompanions:pearl",
     "item:botania:manasteel_block{}",
     "item:society:mana_milker",
     "item:society:flamingo_mayonnaise",
@@ -891,20 +905,20 @@
     "item:vanillabackport:pale_oak_log",
     "item:create:andesite_casing",
     [
+      "item:minecraft:warped_stem",
+      "item:vintagedelight:stripped_magic_vine_block",
+      "item:vintagedelight:stripped_magic_vine",
+      "item:vintagedelight:magic_vine_block",
+      "item:society:sturdy_bamboo_block",
+      "item:minecraft:crimson_hyphae",
+      "item:minecraft:crimson_stem",
       "item:minecraft:stripped_warped_stem",
       "item:vintagedelight:magic_vine",
-      "item:minecraft:crimson_hyphae",
-      "item:vintagedelight:stripped_magic_vine_block",
-      "item:minecraft:warped_stem",
-      "item:vintagedelight:stripped_magic_vine",
-      "item:minecraft:warped_hyphae",
       "item:meadow:alpine_oak_log",
       "item:minecraft:stripped_crimson_hyphae",
       "item:minecraft:stripped_warped_hyphae",
-      "item:minecraft:crimson_stem",
       "item:minecraft:stripped_crimson_stem",
-      "item:society:sturdy_bamboo_block",
-      "item:vintagedelight:magic_vine_block",
+      "item:minecraft:warped_hyphae",
       "#item:minecraft:logs_that_burn"
     ],
     "item:society:meowmageddon{Damage:0}",
@@ -1245,7 +1259,6 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sparkcat\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sweet\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:weeping\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:puddle\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:orby\"}}",
@@ -1284,10 +1297,7 @@
     },
     "item:society:large_galliraptor_egg",
     "item:minecraft:potion{Potion:\"rottencreatures:corrupted\"}",
-    "item:rottencreatures:corrupted_wart",
-    "item:vanillabackport:pale_oak_button",
-    "item:species:music_disc_dial",
-    "item:minecraft:stone_pickaxe{Damage:0}"
+    "item:rottencreatures:corrupted_wart"
   ],
   "craft_history": [
     "minecraft:kjs/numismatics_ancient_coin",
@@ -1306,8 +1316,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
       "minecraft:kjs/golden_chestplate",
+      "minecraft:kjs/society_deluxe_worm_farm",
       "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},

@@ -206,34 +206,8 @@ StartupEvents.registry("block", (event) => {
               }
             }
           } else if (population !== "0" && type == `${index + 1}`) {
-            if (player.stages.has("hot_hands")) {
-              server.runCommandSilent(
-                `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
-              );
-              let smokedFishId = fish.item.split(":")[1];
-              if (smokedFishId.includes("raw_")) {
-                if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
-                else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
-              }
-              player.give(
-                Item.of(
-                  `${player.stages.has("mitosis") ? 2 : 1}x ${
-                    rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`
-                  }`
-                )
-              );
-            } else player.give(`${player.stages.has("mitosis") ? 2 : 1}x ${fish.item}`);
-            block.set(block.id, {
-              facing: facing,
-              valid: valid,
-              mature: false,
-              upgraded: upgraded,
-              quest: quest,
-              quest_id: quest_id,
-              population: decreaseStage(population),
-              max_population: max_population,
-              type: type,
-            });
+            let fishItem = global.handleFishExtraction(block, player, server, fish.item);
+            if (fishItem) player.give(fishItem);
           }
         });
       }

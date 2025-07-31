@@ -141,28 +141,38 @@
 				id: "4502F6B5E7C88D62"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed"
+						buildAnyway: 0b
 						display: {
-							color: 9926987
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Shed\"}"
 						}
-						isReward: 1b
-						label: "Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest3.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -338,28 +348,38 @@
 				id: "74A87C8C53AB8273"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 11832713
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Shed\"}"
 						}
-						isReward: 1b
-						label: "Cherry Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest7.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -687,28 +707,38 @@
 				id: "0818C4A7BA4D0066"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Shed\"}"
 						}
-						isReward: 1b
-						label: "Siberian Shed"
-						mirror: "FRONT_BACK"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest17.subtitle}"
+			subtitle: "Designed by &5Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1410,11 +1440,7 @@
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest21.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest21.description1}"
-			]
+			description: ["{ftbquests.chapter.building_shop.quest21.image0}"]
 			icon: "quark:ancient_chest"
 			id: "1EE50E55155925ED"
 			min_required_tasks: 3
@@ -1537,11 +1563,7 @@
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest11.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest11.description1}"
-			]
+			description: ["{ftbquests.chapter.building_shop.quest11.image0}"]
 			icon: "quark:ancient_chest"
 			id: "1B18A02B9B3EF71A"
 			min_required_tasks: 3
@@ -1595,11 +1617,7 @@
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest20.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest20.description1}"
-			]
+			description: ["{ftbquests.chapter.building_shop.quest20.image0}"]
 			icon: "quark:ancient_chest"
 			id: "5281409C93ABC5AB"
 			min_required_tasks: 3
@@ -1756,7 +1774,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			subtitle: "Designed by &6Krewella&r - - blocks deep, - blocks wide, and - blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1787,11 +1805,7 @@
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest19.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest19.description1}"
-			]
+			description: ["{ftbquests.chapter.building_shop.quest19.image0}"]
 			icon: "quark:ancient_chest"
 			id: "5C1AE4AC1EC670F8"
 			min_required_tasks: 3
@@ -1799,26 +1813,38 @@
 				id: "615D99D909E1DF03"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_entrana"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Shed\"}"
 						}
-						isReward: 1b
-						label: "Entrana Shed"
-						oneUse: 1b
-						size: 15
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/shed_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest19.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1914,11 +1940,7 @@
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: [
-				"{ftbquests.chapter.building_shop.quest22.image0}"
-				""
-				"{ftbquests.chapter.building_shop.quest22.description1}"
-			]
+			description: ["{ftbquests.chapter.building_shop.quest22.image0}"]
 			icon: "quark:ancient_chest"
 			id: "118DEF3CA6FB5713"
 			min_required_tasks: 3

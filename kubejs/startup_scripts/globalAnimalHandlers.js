@@ -176,3 +176,22 @@ global.handleSpecialHarvest = (
     data.ageLastDroppedSpecial = day;
   }
 };
+
+global.getMagicShearsOutput = (targetId, player) => {
+  const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`).toArray();
+  if (player.stages.has("mana_hand")) {
+    let newLoot = []
+    let dropItem;
+    for (let i = 0; i < droppedLoot.length; i++) {
+      dropItem = droppedLoot[i];
+      if (dropItem.maxStackSize < dropItem.count * 2) {
+        newLoot.push(dropItem);
+        newLoot.push(dropItem);
+      } else {
+        dropItem.count = dropItem.count * 2;
+        newLoot.push(dropItem);
+      }
+    }
+    return newLoot
+  } else return droppedLoot;
+};

@@ -293,18 +293,17 @@ const handleMagicHarvest = (name, type, data, day, e) => {
     server.runCommandSilent(
       `puffish_skills experience add ${player.username} society:husbandry 15`
     );
-    const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`);
-    for (let i = 0; i < droppedLoot.size(); i++) {
+    const droppedLoot = global.getMagicShearsOutput(targetId, player);
+    for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");
-      let dropItem = droppedLoot.get(i);
-      if (player.stages.has("mana_hand")) dropItem.count = dropItem.count * 2;
+      let dropItem = droppedLoot[i]
       specialItem.x = player.x;
       specialItem.y = player.y;
       specialItem.z = player.z;
       specialItem.item = dropItem;
       specialItem.spawn();
     }
-    if (!data.clockwork) data.affection = affection - 5;
+    data.affection = affection - 5;
 
     level.spawnParticles(
       "snowyspirit:glow_light",
