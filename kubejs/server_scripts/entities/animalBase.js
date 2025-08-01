@@ -1,6 +1,6 @@
 console.info("[SOCIETY] animalBase.js loaded");
 
-const debug = false;
+const debug = true;
 
 const debugData = (player, level, data, hearts) => {
   player.tell(`:heart: ${data.getInt("affection")}-${hearts} hearts`);
@@ -78,9 +78,10 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
 
   if (day > ageLastPet) {
     const livableArea = global.getAnimalIsNotCramped(target);
-    debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
-    data.affection = affection + affectionIncrease;
-
+    if (!player.isFake()) {
+      debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
+      data.affection = affection + affectionIncrease;
+    }
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
       data.affection = affection - (hungry ? 25 : 50);
     }
@@ -296,7 +297,7 @@ const handleMagicHarvest = (name, type, data, day, e) => {
     const droppedLoot = global.getMagicShearsOutput(targetId, player);
     for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");
-      let dropItem = droppedLoot[i]
+      let dropItem = droppedLoot[i];
       specialItem.x = player.x;
       specialItem.y = player.y;
       specialItem.z = player.z;

@@ -289,8 +289,16 @@ global.lootFurniture = [
   "candlelight:lamp",
   "minecraft:bell",
   "furniture:coffer",
+  "society:gnome",
+  "society:lucky_cat",
 ];
 global.originalPlushies = [
+  "society:fufu_plushie",
+  "society:flower_pig_plushie",
+  "society:golden_pig_plushie",
+  "society:big_panda_plushie",
+  "society:coqui_frog_plushie",
+  "society:vocal_doll",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",

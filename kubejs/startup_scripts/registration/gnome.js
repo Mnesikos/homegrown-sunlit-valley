@@ -23,8 +23,8 @@ const getGnomeState = (name, type) => {
   return cardianal;
 };
 
-StartupEvents.registry("block", (event) => {
-  event
+StartupEvents.registry("block", (e) => {
+  e
     .create("society:gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
@@ -66,7 +66,7 @@ StartupEvents.registry("block", (event) => {
       .concat(getGnomeState("twig", 2))
       .concat(getGnomeState("swing", 3)),
   };
-  event
+  e
     .create("society:lantern_gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
@@ -109,4 +109,21 @@ StartupEvents.registry("block", (event) => {
       },
     ],
   };
+
+  e.create("society:lucky_cat", "animatable")
+    .box(1, 0, 1, 15, 18, 15, true)
+    .animatableBlockEntity((info) => {
+      info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("rotating")));
+    })
+    .defaultGeoModel()
+    .property(BlockProperties.HORIZONTAL_FACING)
+    .property(booleanProperty.create("mature"))
+    .placementState((state) => {
+      state
+        .set(
+          BlockProperties.HORIZONTAL_FACING,
+          String(state.getHorizontalDirection().getOpposite())
+        )
+        .set(booleanProperty.create("mature"), false);
+    });
 });

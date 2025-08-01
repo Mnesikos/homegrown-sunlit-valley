@@ -45,4 +45,20 @@ StartupEvents.registry("block", (e) => {
         }
       }
     });
+  e.create("society:coqui_frog", "animatable")
+    .animatableBlockEntity((info) => {
+      info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("sing")));
+    })
+    .box(1, 0, 1, 15, 18, 15, true)
+    .defaultGeoModel()
+    .property(BlockProperties.HORIZONTAL_FACING)
+    .property(booleanProperty.create("mature"))
+    .placementState((state) => {
+      state
+        .set(
+          BlockProperties.HORIZONTAL_FACING,
+          String(state.getHorizontalDirection().getOpposite())
+        )
+        .set(booleanProperty.create("mature"), false);
+    });
 });
