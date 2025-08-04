@@ -87,7 +87,8 @@
     "jade": true
   },
   "society": {
-    "plushie_jade": true
+    "plushie_jade": true,
+    "fish_pond_jade": true
   },
   "jadeaddons": {
     "equipment_requirement": ""

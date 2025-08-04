@@ -625,6 +625,9 @@ ItemEvents.tooltip((tooltip) => {
     "society:pine_tar",
     "society:aquamarine",
     "society:jade",
+    "society:river_jelly",
+    "society:nether_jelly",
+    "society:ocean_jelly"
   ];
   craftingMaterials.forEach((item) => {
     tooltip.add(item, Text.gray("Crafting material"));

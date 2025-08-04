@@ -1,8 +1,12 @@
 console.info("[SOCIETY] placeNbtMachine.js loaded");
 
 BlockEvents.placed("society:prize_machine", (e) => {
-  const prizeNbt = e.player.getHeldItem("main_hand").getNbt();
-  if (prizeNbt) {
+  let item = e.player.getHeldItem("main_hand");
+  let prizeNbt;
+  if (item.id !== "society:prize_machine") item = e.player.getHeldItem("off_hand");
+  if (item.id !== "society:prize_machine") return;
+  prizeNbt = item.getNbt();
+  if (!prizeNbt.isEmpty()) {
     e.block.set(e.block.id, {
       facing: e.block.properties.get("facing"),
       prize: prizeNbt.get("prize"),
@@ -11,8 +15,12 @@ BlockEvents.placed("society:prize_machine", (e) => {
 });
 
 BlockEvents.placed("society:fish_pond", (e) => {
-  const pondNbt = e.player.getHeldItem("main_hand").getNbt();
-  if (pondNbt) {
+  let item = e.player.getHeldItem("main_hand");
+  let pondNbt;
+  if (item.id !== "society:fish_pond") item = e.player.getHeldItem("off_hand");
+  if (item.id !== "society:fish_pond") return;
+  pondNbt = item.getNbt();
+  if (!pondNbt.isEmpty()) {
     e.block.set(e.block.id, {
       facing: e.block.getProperties().get("facing"),
       valid: true,

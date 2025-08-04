@@ -33,62 +33,6 @@
       "unitWorth": 8,
       "timeMult": 2,
       "weightMult": 0.5
-    },
-    "farmer_obj_camfire_cooking": {
-      "type": "criteria",
-      "rarity": "UNCOMMON",
-      "name": "Cook on a campfire",
-      "content": "minecraft:item_used_on_block",
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "tag": "minecraft:campfires"
-              }
-            }
-          }
-        ]
-      },
-      "amount": {
-        "min": 1,
-        "max": 16
-      },
-      "unitWorth": 8,
-      "weightMult": 0.5
-    },
-    "farmer_obj_strip_logs": {
-      "type": "criteria",
-      "content": "minecraft:item_used_on_block",
-      "rarity": "EPIC",
-      "name": "Strip logs in world",
-      "conditions": {
-        "location": [
-          {
-            "condition": "minecraft:match_tool",
-            "equipment": {
-              "mainhand": {
-                "tag": "minecraft:axes"
-              }
-            }
-          },
-          {
-            "condition": "minecraft:location_check",
-            "predicate": {
-              "block": {
-                "tag": "society:raw_logs"
-              }
-            }
-          }
-        ]
-      },
-      "amount": {
-        "min": 8,
-        "max": 32
-      },
-      "unitWorth": 32,
-      "weightMult": 0.6
     }
   }
 }

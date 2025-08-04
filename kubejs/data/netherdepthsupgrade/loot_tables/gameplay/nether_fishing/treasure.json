@@ -19,43 +19,52 @@
               ]
             }
           ],
-          "name": "aquaculture:neptunes_bounty"
+          "name": "aquaculture:neptunes_bounty",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:wither_skeleton_skull",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "weight": 5,
           "functions": [
             {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0.0,
-                "max": 0.25
-              },
-              "add": false
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "treasure": true
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
             }
-          ],
-          "name": "netherdepthsupgrade:lava_fishing_rod"
+          ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:wither_skeleton_skull"
+          "name": "society:ember_crystal_cluster",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "society:ember_crystal_cluster"
+          "name": "society:nether_jelly",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:netherite_scrap"
+          "name": "society:fire_quartz",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "name": "society:wet_weekly"
+          "name": "atmospheric:firethorn",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:wet_weekly",
+          "weight": 1
         }
       ]
     }

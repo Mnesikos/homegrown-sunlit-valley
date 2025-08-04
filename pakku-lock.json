@@ -673,7 +673,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "balm-forge-1.20.1-7.3.33-all.jar",
+                    "file_name": "balm-forge-1.20.1-7.3.34-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -682,16 +682,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6784/115/balm-forge-1.20.1-7.3.33-all.jar",
-                    "id": "6784115",
+                    "url": "https://edge.forgecdn.net/files/6841/886/balm-forge-1.20.1-7.3.34-all.jar",
+                    "id": "6841886",
                     "parent_id": "531761",
                     "hashes": {
-                        "sha1": "190bb6d7e3b51f786fc3968bd142ca8705cd85ac",
-                        "md5": "2ff37a0442953ee751f788bea5658473"
+                        "sha1": "dd571104e24e58d9c022ae9e58fbcfa2120b0470",
+                        "md5": "46042f0775ca50a92f1a489e4527827c"
                     },
                     "required_dependencies": [],
-                    "size": 596329,
-                    "date_published": "2025-07-18T16:27:33.377Z"
+                    "size": 597277,
+                    "date_published": "2025-08-03T06:21:26.827Z"
                 }
             ]
         },
@@ -6505,24 +6505,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "littlejoys-forge-1.20.1-20.1.13.jar",
+                    "file_name": "littlejoys-forge-1.20.1-20.1.14.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6778/700/littlejoys-forge-1.20.1-20.1.13.jar",
-                    "id": "6778700",
+                    "url": "https://edge.forgecdn.net/files/6841/863/littlejoys-forge-1.20.1-20.1.14.jar",
+                    "id": "6841863",
                     "parent_id": "1235950",
                     "hashes": {
-                        "sha1": "e0b391838b7265aa5126e1b721db034a1fde69ad",
-                        "md5": "eb4e75ee1d1c4454d56b5f047e8aad67"
+                        "sha1": "8fe6f76a1795e48525820e2a0fb3a17bde444485",
+                        "md5": "e9b30c4b1d430e2f7ad54a496bfddd1a"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 721489,
-                    "date_published": "2025-07-17T12:15:20.033Z"
+                    "size": 721306,
+                    "date_published": "2025-08-03T06:12:31.817Z"
                 }
             ]
         },
@@ -8354,7 +8354,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.8.4-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.8.5-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8362,16 +8362,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6814/884/portable_blueprints-v1.8.4-mv1.20.1.jar",
-                    "id": "6814884",
+                    "url": "https://edge.forgecdn.net/files/6833/994/portable_blueprints-v1.8.5-mv1.20.1.jar",
+                    "id": "6833994",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "11d6b3c57d80926f788e331582749066895129c9",
-                        "md5": "1ff949e1f5048caa784b48a88f9af33b"
+                        "sha1": "4ec516c8e2efc72dd86b72bc96af90f143acda0f",
+                        "md5": "d6615c632cbeda452960d896f197f31b"
                     },
                     "required_dependencies": [],
-                    "size": 389449,
-                    "date_published": "2025-07-26T19:46:15.423Z"
+                    "size": 388761,
+                    "date_published": "2025-07-31T21:23:31.070Z"
                 }
             ]
         },
@@ -8575,7 +8575,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "quality_food-1.20.1-2.2.5-all.jar",
+                    "file_name": "quality_food-1.20.1-2.2.6-all.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -8585,16 +8585,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6398/389/quality_food-1.20.1-2.2.5-all.jar",
-                    "id": "6398389",
+                    "url": "https://edge.forgecdn.net/files/6836/343/quality_food-1.20.1-2.2.6-all.jar",
+                    "id": "6836343",
                     "parent_id": "973932",
                     "hashes": {
-                        "sha1": "6d903fc831f5abddd87066f0ba8fb2de58172d6a",
-                        "md5": "a9560a565c868b6e95500598c138ade3"
+                        "sha1": "02920b99949f4e19a55c7a1dfb81557c2dd9771c",
+                        "md5": "d6fba02654840cdc4f7efd94e52d3d36"
                     },
                     "required_dependencies": [],
-                    "size": 395023,
-                    "date_published": "2025-04-08T07:59:11.823Z"
+                    "size": 396710,
+                    "date_published": "2025-08-01T15:15:06.650Z"
                 }
             ]
         },
@@ -10137,7 +10137,7 @@
             ]
         },
         {
-            "pakku_id": "wNV1GDYTYuUuDywu",
+            "pakku_id": "KBeWfphmQUiDOUfQ",
             "type": "MOD",
             "slug": {
                 "curseforge": "stardew-fishing"
@@ -10151,25 +10151,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stardew_fishing-1.20.1-2.3.jar",
+                    "file_name": "stardew_fishing-3.0-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6434/447/stardew_fishing-1.20.1-2.3.jar",
-                    "id": "6434447",
+                    "url": "https://edge.forgecdn.net/files/6841/343/stardew_fishing-3.0-1.20.1.jar",
+                    "id": "6841343",
                     "parent_id": "1066037",
                     "hashes": {
-                        "sha1": "375da28a2bdbd27dba3230642f59185767d1d6a8",
-                        "md5": "0ffdb59ecb4e1574db3a8d1e8985012c"
+                        "sha1": "e6f0e9a15e8a1adcd8dcd9e0f971c8c3ac5e9003",
+                        "md5": "8f5aaa45d43fad5ab30eebcdb08a8a5f"
                     },
                     "required_dependencies": [],
-                    "size": 567590,
-                    "date_published": "2025-04-17T23:55:31.847Z"
+                    "size": 858640,
+                    "date_published": "2025-08-03T00:42:04.047Z"
                 }
             ]
         },

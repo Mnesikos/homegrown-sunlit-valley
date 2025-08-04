@@ -527,7 +527,14 @@ ServerEvents.tags("block", (e) => {
     "society:recycling_machine",
     "society:tapper",
     "translocators:item_translocator",
+    "cb_multipart:multipart",
     "translocators:fluid_translocator",
+    "trials:trial_spawner",
+    "splendid_slimes:slime_spawner",
+    "minecraft:spawner",
+    "trials:trial_vault",
+    "trials:trial_vault_ominous",
+    "fastpaintings:painting"
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);

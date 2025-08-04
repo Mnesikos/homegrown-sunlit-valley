@@ -89,10 +89,10 @@
     "modId": "balloonbox",
     "version": "1.20.1-1.0.3"
   },
-  "balm-forge-1.20.1-7.3.33-all.jar": {
-    "jarName": "balm-forge-1.20.1-7.3.33-all.jar",
+  "balm-forge-1.20.1-7.3.34-all.jar": {
+    "jarName": "balm-forge-1.20.1-7.3.34-all.jar",
     "modId": "balm",
-    "version": "7.3.33"
+    "version": "7.3.34"
   },
   "beautify-2.0.2.jar": {
     "jarName": "beautify-2.0.2.jar",
@@ -129,10 +129,10 @@
     "modId": "bookshelf",
     "version": "20.2.13"
   },
-  "Botania-1.20.1-448-FORGE.jar": {
-    "jarName": "Botania-1.20.1-448-FORGE.jar",
+  "Botania-1.20.1-449-FORGE.jar": {
+    "jarName": "Botania-1.20.1-449-FORGE.jar",
     "modId": "botania",
-    "version": "1.20.1-448-FORGE"
+    "version": "1.20.1-449-FORGE"
   },
   "botania_seeds-1.1.1.jar": {
     "jarName": "botania_seeds-1.1.1.jar",
@@ -902,10 +902,10 @@
     "modId": "lithostitched",
     "version": "1.4.8"
   },
-  "littlejoys-forge-1.20.1-20.1.13.jar": {
-    "jarName": "littlejoys-forge-1.20.1-20.1.13.jar",
+  "littlejoys-forge-1.20.1-20.1.14.jar": {
+    "jarName": "littlejoys-forge-1.20.1-20.1.14.jar",
     "modId": "littlejoys",
-    "version": "20.1.13"
+    "version": "20.1.14"
   },
   "LittleTractor-1.20.1-1.1.jar": {
     "jarName": "LittleTractor-1.20.1-1.1.jar",
@@ -1132,10 +1132,10 @@
     "modId": "ponderjs",
     "version": "2.0.6"
   },
-  "portable_blueprints-v1.8.4-mv1.20.1.jar": {
-    "jarName": "portable_blueprints-v1.8.4-mv1.20.1.jar",
+  "portable_blueprints-v1.8.5-mv1.20.1.jar": {
+    "jarName": "portable_blueprints-v1.8.5-mv1.20.1.jar",
     "modId": "portable_blueprints",
-    "version": "1.8.4"
+    "version": "1.8.5"
   },
   "portfolio-1.20.1-1.4.0-forge.jar": {
     "jarName": "portfolio-1.20.1-1.4.0-forge.jar",
@@ -1167,10 +1167,10 @@
     "modId": "puzzleslib",
     "version": "8.1.32"
   },
-  "quality_food-1.20.1-2.2.5-all.jar": {
-    "jarName": "quality_food-1.20.1-2.2.5-all.jar",
+  "quality_food-1.20.1-2.2.6-all.jar": {
+    "jarName": "quality_food-1.20.1-2.2.6-all.jar",
     "modId": "quality_food",
-    "version": "2.2.5"
+    "version": "2.2.6"
   },
   "Quark-4.0-462.jar": {
     "jarName": "Quark-4.0-462.jar",
@@ -1377,10 +1377,10 @@
     "modId": "splendid_slimes",
     "version": "0.13.2"
   },
-  "stardew_fishing-1.20.1-2.3.jar": {
-    "jarName": "stardew_fishing-1.20.1-2.3.jar",
+  "stardew_fishing-3.0-1.20.1.jar": {
+    "jarName": "stardew_fishing-3.0-1.20.1.jar",
     "modId": "stardew_fishing",
-    "version": "2.3"
+    "version": "3.0"
   },
   "Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar": {
     "jarName": "Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",

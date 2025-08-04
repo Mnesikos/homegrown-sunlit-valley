@@ -1,6 +1,61 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
+  e.create("society:paw_carpet").modelJson({
+    texture_size: [128, 128],
+    textures: {
+      0: "society:block/paw_carpet",
+      particle: "society:block/paw_carpet",
+    },
+    elements: [
+      {
+        from: [-16, 0, 0],
+        to: [32, 1, 32],
+        faces: {
+          north: { uv: [0, 0, 6, 0.125], texture: "#0" },
+          east: { uv: [0.125, 0, 4.125, 0.125], texture: "#0" },
+          south: { uv: [0, 0, 6, 0.125], texture: "#0" },
+          west: { uv: [0.5, 0, 4.5, 0.125], texture: "#0" },
+          up: { uv: [12, 8, 0, 0], texture: "#0" },
+          down: { uv: [12, 0, 0, 8], texture: "#0" },
+        },
+      },
+    ],
+    display: {
+      thirdperson_righthand: {
+        rotation: [75, 45, 0],
+        translation: [0, 2.5, 0],
+        scale: [0.375, 0.375, 0.375],
+      },
+      thirdperson_lefthand: {
+        rotation: [75, 45, 0],
+        translation: [0, 2.5, 0],
+        scale: [0.375, 0.375, 0.375],
+      },
+      firstperson_righthand: {
+        rotation: [0, 45, 0],
+        scale: [0.4, 0.4, 0.4],
+      },
+      firstperson_lefthand: {
+        rotation: [0, -135, 0],
+        scale: [0.4, 0.4, 0.4],
+      },
+      ground: {
+        translation: [0, 3, 0],
+        scale: [0.25, 0.25, 0.25],
+      },
+      gui: {
+        rotation: [30, -135, 0],
+        translation: [1.5, 0, 0],
+        scale: [0.29, 0.29, 0.29],
+      },
+      fixed: {
+        rotation: [-90, 0, 0],
+        translation: [0, -2.75, -1.75],
+        scale: [0.38, 0.38, 0.38],
+      },
+    },
+  });
   e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
   e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("herbalbrews:water_cup").texture("society:item/water_cup").maxStackSize(16);
@@ -140,9 +195,15 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/neptuna")
     .glow(true);
 
-  e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin").tag("numismatics:coins");
-  e.create("numismatics:ancient_coin").texture("society:item/ancient_coin").tag("numismatics:coins");
-  e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin").tag("numismatics:coins");
+  e.create("numismatics:neptunium_coin")
+    .texture("society:item/neptunium_coin")
+    .tag("numismatics:coins");
+  e.create("numismatics:ancient_coin")
+    .texture("society:item/ancient_coin")
+    .tag("numismatics:coins");
+  e.create("numismatics:prismatic_coin")
+    .texture("society:item/prismatic_coin")
+    .tag("numismatics:coins");
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:bank_meter").texture("society:item/bank_meter");
@@ -156,6 +217,10 @@ StartupEvents.registry("item", (e) => {
   });
   e.create("society:merino_wool").texture("society:item/merino_wool");
   e.create("society:enriched_bone_meal").texture("society:item/enriched_bonemeal");
+  e.create("society:river_jelly").texture("society:item/river_jelly");
+  e.create("society:ocean_jelly").texture("society:item/ocean_jelly");
+  e.create("society:nether_jelly").texture("society:item/nether_jelly");
+  e.create("society:sunlit_pearl").texture("society:item/sunlit_pearl");
   e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
   e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");

@@ -421,24 +421,30 @@ ServerEvents.recipes((e) => {
     N: "aquaculture:neptunium_ingot",
   });
   // Fish
-  e.shaped("society:fish_pond", ["PwP", "rNr"], {
+  e.shaped("society:fish_pond", [" j ", "PwP", "rNr"], {
+    j: "society:river_jelly",
     N: "aquaculture:neptunium_ingot",
     P: "crabbersdelight:pearl",
     r: "society:oak_resin",
     w: "meadow:wooden_water_bucket",
   });
-  e.shaped("society:fish_smoker", ["lNl", "asa", "lCl"], {
+  e.shaped("society:sunlit_pearl", [" n ", " p ", "r o"], {
+    n: "society:nether_jelly",
+    p: "crabbersdelight:pearl",
+    r: "society:river_jelly",
+    o: "society:ocean_jelly",
+  });
+  e.shaped("society:fish_smoker", ["lCl", "asa", "lNl"], {
     s: "minecraft:smoker",
     N: "aquaculture:neptunium_ingot",
     a: "society:aquamarine",
-    C: "numismatics:sun",
+    C: "society:sunlit_pearl",
     l: "meadow:fire_log",
   });
-  e.shaped("society:bait_maker", ["CNC", "asa", "lll"], {
+  e.shaped("society:bait_maker", [" S ", "asa", "lll"], {
     s: "society:seed_maker",
-    N: "aquaculture:neptunium_ingot",
-    a: "crabbersdelight:pearl_block",
-    C: "numismatics:sun",
+    a: "aquaculture:neptunium_ingot",
+    S: "society:sunlit_pearl",
     l: "create:zinc_ingot",
   });
   e.shaped("society:auto_worm_farm", ["lpl", "asa", "lCl"], {
@@ -767,7 +773,7 @@ ServerEvents.recipes((e) => {
     c: "minecraft:clock",
     n: "minecraft:netherite_ingot",
   });
-  
+
   e.shaped("society:sparkstone_recycler", ["mrm", "ncn", "mTm"], {
     r: "botania:rune_greed",
     T: "botania:mana_pylon",
