@@ -290,6 +290,7 @@ global.lootFurniture = [
   "minecraft:bell",
   "furniture:coffer",
   "society:gnome",
+  "society:paw_carpet",
   "society:lucky_cat",
 ];
 global.originalPlushies = [

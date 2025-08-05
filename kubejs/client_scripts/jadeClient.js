@@ -10,7 +10,7 @@ const Vec2 = Java.loadClass("net.minecraft.world.phys.Vec2");
 global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (!global.plushies.includes(accessor.getBlock().id)) return;
   const properties = accessor.getBlockState();
-  const type = properties.getValue($IntegerProperty.create("type", 0, global.originalPlushies.length));
+  const type = properties.getValue($IntegerProperty.create("type", 0, global.plushieTraits.length));
   let typeData = global.plushieTraits[type];
   const quality = properties.getValue($IntegerProperty.create("quality", 0, 4));
   const affection = properties.getValue($IntegerProperty.create("affection", 0, 4));

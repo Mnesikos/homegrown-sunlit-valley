@@ -1,4 +1,5 @@
 global.removedItems = [
+  "society:paw_carpet_entity",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",

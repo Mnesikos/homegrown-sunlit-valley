@@ -600,8 +600,8 @@ global.clearOldTextDisplay = (block, id) => {
     });
 };
 
-global.textDisplayRotationFromFacing = (block) => {
-  switch (String(block.properties.get("facing"))) {
+global.textDisplayRotationFromFacing = (facing) => {
+  switch (facing) {
     case "north":
       return 180;
     case "east":
@@ -613,6 +613,7 @@ global.textDisplayRotationFromFacing = (block) => {
       return 90;
   }
 };
+
 global.spawnTextDisplay = (block, y, id, text) => {
   let entity;
   const { x, z } = block;
@@ -620,7 +621,10 @@ global.spawnTextDisplay = (block, y, id, text) => {
   let newNbt = entity.getNbt();
   newNbt.text = `{"text":"${text}"}`;
   newNbt.background = 0;
-  newNbt.Rotation = [NBT.f(global.textDisplayRotationFromFacing(block)), NBT.f(0)];
+  newNbt.Rotation = [
+    NBT.f(global.textDisplayRotationFromFacing(block.properties.get("facing"))),
+    NBT.f(0),
+  ];
   entity.setNbt(newNbt);
   entity.setX(x + 0.5);
   entity.setY(y);
