@@ -42,6 +42,7 @@ const tanukiWordMap = [
   { word: "firewood", craftItem: "society:calcite_gem" },
   { word: "handcart", craftItem: "society:calcite_gem" },
   { word: "science", craftItem: "society:prismatic_shard" },
+  { word: "froggy", craftItem: "society:froggy_helm" },
 ];
 const modernWordMap = [
   { word: "tv", craftItem: "society:battery" },
@@ -54,41 +55,9 @@ const modernWordMap = [
   { word: "chimes", craftItem: "moreminecarts:hard_light_lens" },
 ];
 ServerEvents.recipes((e) => {
-  let tanukiRecipes = [];
-  e.forEachRecipe({ type: "tanukidecor:diy" }, (r) => {
-    tanukiRecipes.push({
-      item: r.originalRecipeResult,
-      craftItem: getCraftingItems(
-        r.originalRecipeResult.displayName.toString(),
-        tanukiWordMap,
-        "society:prismatic_shard"
-      ),
-    });
-  });
-  tanukiRecipes.forEach((recipe) => {
-    e.custom({
-      type: "refurbished_furniture:workbench_constructing",
-      materials: [
-        {
-          count: 1,
-          item: "society:tanuki_leaf",
-        },
-        {
-          count: 1,
-          item: recipe.craftItem,
-        },
-      ],
-      result: recipe.item,
-      show_notification: false,
-    });
-  });
   Ingredient.of("@fantasyfurniture").stacks.forEach((item) => {
     if (item.toString().includes("furniture_station")) return;
-    const craftItem = getCraftingItems(
-      item.toString(),
-      fantasyWordMap,
-      "minecraft:ender_eye"
-    );
+    const craftItem = getCraftingItems(item.toString(), fantasyWordMap, "minecraft:ender_eye");
     e.custom({
       type: "refurbished_furniture:workbench_constructing",
       materials: [
@@ -113,32 +82,57 @@ ServerEvents.recipes((e) => {
   });
 
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor")) return;
-    const craftItem = getCraftingItems(
-      item.toString(),
-      modernWordMap,
-      "minecraft:quartz_block"
-    );
-    e.custom({
-      type: "refurbished_furniture:workbench_constructing",
-      materials: [
-        {
-          count: 1,
-          item: "society:architects_digest",
+    if (item.includes("tanukidecor") || item.includes("society")) {
+      if (item.includes("society")) {
+        e.custom({
+          type: "tanukidecor:diy",
+          result: {
+            item: item,
+          },
+        });
+      }
+      e.custom({
+        type: "refurbished_furniture:workbench_constructing",
+        materials: [
+          {
+            count: 1,
+            item: "society:tanuki_leaf",
+          },
+          {
+            count: 1,
+            item: getCraftingItems(
+              item,
+              tanukiWordMap,
+              "society:prismatic_shard"
+            ),
+          },
+        ],
+        result: item,
+        show_notification: false,
+      });
+    } else {
+      const craftItem = getCraftingItems(item.toString(), modernWordMap, "minecraft:quartz_block");
+      e.custom({
+        type: "refurbished_furniture:workbench_constructing",
+        materials: [
+          {
+            count: 1,
+            item: "society:architects_digest",
+          },
+          {
+            count: craftItem === "minecraft:quartz_block" ? 16 : 4,
+            item: craftItem,
+          },
+        ],
+        result: item,
+        show_notification: false,
+      });
+      e.custom({
+        type: "tanukidecor:diy",
+        result: {
+          item: item,
         },
-        {
-          count: craftItem === "minecraft:quartz_block" ? 16 : 4,
-          item: craftItem,
-        },
-      ],
-      result: item,
-      show_notification: false,
-    });
-    e.custom({
-      type: "tanukidecor:diy",
-      result: {
-        item: item,
-      },
-    });
+      });
+    }
   });
 });

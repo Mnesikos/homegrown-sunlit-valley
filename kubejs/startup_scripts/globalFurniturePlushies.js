@@ -292,6 +292,11 @@ global.lootFurniture = [
   "society:gnome",
   "society:paw_carpet",
   "society:lucky_cat",
+  "society:froggy_chair",
+  "society:yellow_froggy_chair",
+  "society:pink_froggy_chair",
+  "society:orange_froggy_chair",
+  "society:blue_froggy_chair",
 ];
 global.originalPlushies = [
   "society:fufu_plushie",

@@ -1,4 +1,4 @@
-// If playing on a server, the server admin must change these values as well as clients
+// If playing on a server, the server admin must change these values
 
 /**
  * Only server needs to change this
@@ -20,3 +20,11 @@ global.enableDeathDebt = true;
  * Enables the clock icon from the HUD
  */
 global.clockIcon = true;
+
+
+/**
+ * Only server needs to change this
+ * Gives every new player a White Sharestone on spawn to make visiting bases easier
+ * This won't do anything in Single Player as they aren't otherwise obtainable
+ */
+global.multiplayerSharestones = true;

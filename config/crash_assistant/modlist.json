@@ -149,10 +149,10 @@
     "modId": "bountiful",
     "version": "6.0.4+1.20.1"
   },
-  "buildinggadgets2-1.0.7.jar": {
-    "jarName": "buildinggadgets2-1.0.7.jar",
+  "buildinggadgets2-1.0.8.jar": {
+    "jarName": "buildinggadgets2-1.0.8.jar",
     "modId": "buildinggadgets2",
-    "version": "1.0.7"
+    "version": "1.0.8"
   },
   "buzzier_bees-1.20.1-6.0.1.jar": {
     "jarName": "buzzier_bees-1.20.1-6.0.1.jar",
@@ -1157,10 +1157,10 @@
     "modId": "puffish_attributes",
     "version": "0.7.2"
   },
-  "puffish_skills-0.16.1-1.20-forge.jar": {
-    "jarName": "puffish_skills-0.16.1-1.20-forge.jar",
+  "puffish_skills-0.16.5-1.20-forge.jar": {
+    "jarName": "puffish_skills-0.16.5-1.20-forge.jar",
     "modId": "puffish_skills",
-    "version": "0.16.1"
+    "version": "0.16.5"
   },
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "jarName": "PuzzlesLib-v8.1.32-1.20.1-Forge.jar",
@@ -1191,6 +1191,16 @@
     "jarName": "radium-mc1.20.1-0.12.4+git.26c9d8e.jar",
     "modId": "radium",
     "version": "0.12.4+git.26c9d8e"
+  },
+  "refinedstorage-1.12.4.jar": {
+    "jarName": "refinedstorage-1.12.4.jar",
+    "modId": "refinedstorage",
+    "version": "1.12.4"
+  },
+  "refinedstorageaddons-0.10.0.jar": {
+    "jarName": "refinedstorageaddons-0.10.0.jar",
+    "modId": "refinedstorageaddons",
+    "version": "0.10.0"
   },
   "refurbished_furniture-forge-1.20.1-1.0.14.jar": {
     "jarName": "refurbished_furniture-forge-1.20.1-1.0.14.jar",
@@ -1377,10 +1387,10 @@
     "modId": "splendid_slimes",
     "version": "0.13.2"
   },
-  "stardew_fishing-3.0-1.20.1.jar": {
-    "jarName": "stardew_fishing-3.0-1.20.1.jar",
+  "stardew_fishing-3.2-1.20.1.jar": {
+    "jarName": "stardew_fishing-3.2-1.20.1.jar",
     "modId": "stardew_fishing",
-    "version": "3.0"
+    "version": "3.2"
   },
   "Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar": {
     "jarName": "Steam_Rails-1.6.11-alpha+forge-mc1.20.1.jar",

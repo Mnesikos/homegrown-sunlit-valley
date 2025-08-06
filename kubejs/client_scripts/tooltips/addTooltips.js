@@ -259,7 +259,7 @@ ItemEvents.tooltip((tooltip) => {
   ]);
   global.lootFurniture.forEach((item) => {
     tooltip.add(item, "♢ §6Rare furniture drop");
-    if (!item.includes("tanuki")) {
+    if (!item.includes("tanuki") && !item.includes("society")) {
       tooltip.add(item, Text.white("♧ Modern collection"));
     } else {
       tooltip.add(item, "♤ §aTanuki collection");
@@ -410,10 +410,6 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("farmersdelight:cooking_pot", Text.green("Automatable using cooking guide"));
   tooltip.add("meadow:cooking_cauldron", Text.gray("Decorative, has no recipes"));
   tooltip.add("candlelight:cooking_pot", Text.gray("Only a villager workstation, has no recipes"));
-  tooltip.add(
-    "trading_floor:trading_depot",
-    Text.red("Causes crashes with Simple Storage Networks!")
-  );
   tooltip.add(
     [
       "candlelight:red_nether_bricks_stove",

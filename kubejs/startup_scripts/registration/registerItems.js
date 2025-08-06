@@ -1,61 +1,63 @@
 console.info("[SOCIETY] registerItems.js loaded");
 
 StartupEvents.registry("item", (e) => {
-  e.create("society:paw_carpet").modelJson({
-    texture_size: [128, 128],
-    textures: {
-      0: "society:block/paw_carpet",
-      particle: "society:block/paw_carpet",
-    },
-    elements: [
-      {
-        from: [-16, 0, 0],
-        to: [32, 1, 32],
-        faces: {
-          north: { uv: [0, 0, 6, 0.125], texture: "#0" },
-          east: { uv: [0.125, 0, 4.125, 0.125], texture: "#0" },
-          south: { uv: [0, 0, 6, 0.125], texture: "#0" },
-          west: { uv: [0.5, 0, 4.5, 0.125], texture: "#0" },
-          up: { uv: [12, 8, 0, 0], texture: "#0" },
-          down: { uv: [12, 0, 0, 8], texture: "#0" },
+  e.create("society:paw_carpet")
+    .tooltip(Text.gray("Sneak while standing on it to remove"))
+    .modelJson({
+      texture_size: [128, 128],
+      textures: {
+        0: "society:block/paw_carpet",
+        particle: "society:block/paw_carpet",
+      },
+      elements: [
+        {
+          from: [-16, 0, 0],
+          to: [32, 1, 32],
+          faces: {
+            north: { uv: [0, 0, 6, 0.125], texture: "#0" },
+            east: { uv: [0.125, 0, 4.125, 0.125], texture: "#0" },
+            south: { uv: [0, 0, 6, 0.125], texture: "#0" },
+            west: { uv: [0.5, 0, 4.5, 0.125], texture: "#0" },
+            up: { uv: [12, 8, 0, 0], texture: "#0" },
+            down: { uv: [12, 0, 0, 8], texture: "#0" },
+          },
+        },
+      ],
+      display: {
+        thirdperson_righthand: {
+          rotation: [75, 45, 0],
+          translation: [0, 2.5, 0],
+          scale: [0.375, 0.375, 0.375],
+        },
+        thirdperson_lefthand: {
+          rotation: [75, 45, 0],
+          translation: [0, 2.5, 0],
+          scale: [0.375, 0.375, 0.375],
+        },
+        firstperson_righthand: {
+          rotation: [0, 45, 0],
+          scale: [0.4, 0.4, 0.4],
+        },
+        firstperson_lefthand: {
+          rotation: [0, -135, 0],
+          scale: [0.4, 0.4, 0.4],
+        },
+        ground: {
+          translation: [0, 3, 0],
+          scale: [0.25, 0.25, 0.25],
+        },
+        gui: {
+          rotation: [30, -135, 0],
+          translation: [1.5, 0, 0],
+          scale: [0.29, 0.29, 0.29],
+        },
+        fixed: {
+          rotation: [-90, 0, 0],
+          translation: [0, -2.75, -1.75],
+          scale: [0.38, 0.38, 0.38],
         },
       },
-    ],
-    display: {
-      thirdperson_righthand: {
-        rotation: [75, 45, 0],
-        translation: [0, 2.5, 0],
-        scale: [0.375, 0.375, 0.375],
-      },
-      thirdperson_lefthand: {
-        rotation: [75, 45, 0],
-        translation: [0, 2.5, 0],
-        scale: [0.375, 0.375, 0.375],
-      },
-      firstperson_righthand: {
-        rotation: [0, 45, 0],
-        scale: [0.4, 0.4, 0.4],
-      },
-      firstperson_lefthand: {
-        rotation: [0, -135, 0],
-        scale: [0.4, 0.4, 0.4],
-      },
-      ground: {
-        translation: [0, 3, 0],
-        scale: [0.25, 0.25, 0.25],
-      },
-      gui: {
-        rotation: [30, -135, 0],
-        translation: [1.5, 0, 0],
-        scale: [0.29, 0.29, 0.29],
-      },
-      fixed: {
-        rotation: [-90, 0, 0],
-        translation: [0, -2.75, -1.75],
-        scale: [0.38, 0.38, 0.38],
-      },
-    },
-  });
+    });
   e.create("oreganized:lead_sheet").texture("society:item/lead_sheet");
   e.create("oreganized:silver_sheet").texture("society:item/silver_sheet");
   e.create("herbalbrews:water_cup").texture("society:item/water_cup").maxStackSize(16);

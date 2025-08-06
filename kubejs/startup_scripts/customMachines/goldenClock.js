@@ -45,10 +45,10 @@ global.handleProgress = (level, block) => {
       break;
     case "society:tapper":
       if (block.properties.get("error") !== "true")
-        global.handleBETick(eventObj, global.tapperRecipes, 7, false, false);
+        global.handleBETick(eventObj, global.tapperRecipes, 7, false, true);
       break;
     case "society:bait_maker":
-      global.handleBETick(eventObj, global.tapperRecipes, 7, false, false, false, true);
+      global.handleBETick(eventObj, null, 7, false, false, false, true);
       break;
     case "society:charging_rod":
       global.handleBETick(eventObj, null, 5);

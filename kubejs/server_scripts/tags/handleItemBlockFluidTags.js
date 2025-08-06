@@ -440,7 +440,7 @@ ServerEvents.tags("item", (e) => {
   ].forEach((fish) => e.add("minecraft:fishes", fish));
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);
+    if (item.includes("tanukidecor") || item.includes("society")) e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
   const fantasyCategories = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];

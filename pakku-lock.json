@@ -1126,7 +1126,7 @@
             ]
         },
         {
-            "pakku_id": "1OIVFt1d62qRoIE0",
+            "pakku_id": "qwHyA0oo1kb63hTh",
             "type": "MOD",
             "slug": {
                 "curseforge": "building-gadgets"
@@ -1140,25 +1140,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "buildinggadgets2-1.0.7.jar",
+                    "file_name": "buildinggadgets2-1.0.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
-                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5144/161/buildinggadgets2-1.0.7.jar",
-                    "id": "5144161",
+                    "url": "https://edge.forgecdn.net/files/6850/495/buildinggadgets2-1.0.8.jar",
+                    "id": "6850495",
                     "parent_id": "298187",
                     "hashes": {
-                        "sha1": "466c8cf2a45d878a224a77525b254b044aba3bd2",
-                        "md5": "38d1f75c246c6abe558ac07a2fa58947"
+                        "sha1": "d06a806e8ca84a9e96a69c32da4b43226a51e0c9",
+                        "md5": "8e804b7a62c8011375e5821ad2a9dc07"
                     },
                     "required_dependencies": [],
-                    "size": 3832269,
-                    "date_published": "2024-02-28T20:35:19.910Z"
+                    "size": 3833683,
+                    "date_published": "2025-08-05T11:25:05.983Z"
                 }
             ]
         },
@@ -8834,6 +8833,80 @@
             ]
         },
         {
+            "pakku_id": "g6EujVDpH7e3rGMD",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "refined-storage"
+            },
+            "name": {
+                "curseforge": "Refined Storage"
+            },
+            "id": {
+                "curseforge": "243076"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "refinedstorage-1.12.4.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4844/585/refinedstorage-1.12.4.jar",
+                    "id": "4844585",
+                    "parent_id": "243076",
+                    "hashes": {
+                        "sha1": "ff9e83c81344d0bfe9e0bb53c6df00c7e0a39cf5",
+                        "md5": "aa6c64a4912eaef8478c5820fe03bbae"
+                    },
+                    "required_dependencies": [],
+                    "size": 3300191,
+                    "date_published": "2023-11-06T07:24:32.297Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "mj6Ac6aEqwuOriKw",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "refined-storage-addons"
+            },
+            "name": {
+                "curseforge": "Refined Storage Addons"
+            },
+            "id": {
+                "curseforge": "272302"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "refinedstorageaddons-0.10.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4626/171/refinedstorageaddons-0.10.0.jar",
+                    "id": "4626171",
+                    "parent_id": "272302",
+                    "hashes": {
+                        "sha1": "829c7270a3fad543e441a18b5b9f27fd30824086",
+                        "md5": "0f37070308d5b2c022cdef50574290d8"
+                    },
+                    "required_dependencies": [],
+                    "size": 33771,
+                    "date_published": "2023-07-05T11:08:13.323Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "WbJjgA5u6klBa8T2",
             "type": "MOD",
             "slug": {
@@ -10151,7 +10224,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stardew_fishing-3.0-1.20.1.jar",
+                    "file_name": "stardew_fishing-3.2-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10159,16 +10232,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6841/343/stardew_fishing-3.0-1.20.1.jar",
-                    "id": "6841343",
+                    "url": "https://edge.forgecdn.net/files/6851/718/stardew_fishing-3.2-1.20.1.jar",
+                    "id": "6851718",
                     "parent_id": "1066037",
                     "hashes": {
-                        "sha1": "e6f0e9a15e8a1adcd8dcd9e0f971c8c3ac5e9003",
-                        "md5": "8f5aaa45d43fad5ab30eebcdb08a8a5f"
+                        "sha1": "0eeae8b7af36dbf6e1517e6ce7725072e67b10ab",
+                        "md5": "ce96327e50b9d221eab4735c400d47b0"
                     },
                     "required_dependencies": [],
-                    "size": 858640,
-                    "date_published": "2025-08-03T00:42:04.047Z"
+                    "size": 858581,
+                    "date_published": "2025-08-05T17:04:48.637Z"
                 }
             ]
         },
