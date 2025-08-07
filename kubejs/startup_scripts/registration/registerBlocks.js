@@ -681,15 +681,6 @@ StartupEvents.registry("block", (e) => {
       });
       item.useAnimation("drink");
     });
-  ["", "yellow", "pink", "orange", "blue"].forEach((chair) => {
-    let chairID = `${chair !== "" ? chair + "_" : ""}froggy_chair`
-    e.create(`society:${chairID}`, "cardinal")
-      .box(0, 0, 0, 16, 10, 16)
-      .box(12, 10, 12, 14, 24, 14)
-      .defaultCutout()
-      .tagBlock("minecraft:mineable/axe")
-      .model(`society:block/${chairID}`)
-  });
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)

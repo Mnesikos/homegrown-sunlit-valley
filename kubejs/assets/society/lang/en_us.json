@@ -148,11 +148,11 @@
 
   "quark.jei.hint.preambl": "Forever Young - ",
 
-  "entity.society.paw_carpet_entity": "Paw Carpet",
-  "block.society.adv_fufu_plushie": "Fufu Plushie",
-  "block.society.adv_flower_pig_plushie": "Flower Pig Plushie",
-  "block.society.adv_golden_pig_plushie": "Golden Pig Plushie",
-  "block.society.adv_big_panda_plushie": "Big Panda Plushie",
-  "block.society.adv_coqui_frog_plushie": "Coqui Frog Plushie",
-  "block.society.adv_vocal_doll": "Vocal Doll"
+  "entity.whimsy_deco.paw_carpet_entity": "Paw Carpet",
+  "block.whimsy_deco.adv_fufu_plushie": "Fufu Plushie",
+  "block.whimsy_deco.adv_flower_pig_plushie": "Flower Pig Plushie",
+  "block.whimsy_deco.adv_golden_pig_plushie": "Golden Pig Plushie",
+  "block.whimsy_deco.adv_big_panda_plushie": "Big Panda Plushie",
+  "block.whimsy_deco.adv_coqui_frog_plushie": "Coqui Frog Plushie",
+  "block.whimsy_deco.adv_vocal_doll": "Vocal Doll"
 }

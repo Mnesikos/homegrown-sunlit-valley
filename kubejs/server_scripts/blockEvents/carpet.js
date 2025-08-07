@@ -1,7 +1,7 @@
 BlockEvents.rightClicked((e) => {
   const { item, block, hand, server, player, level } = e;
-  if (player.getHeldItem("main_hand") == "society:paw_carpet" && hand != "OFF_HAND") {
-    let carpet = level.createEntity("society:paw_carpet_entity");
+  if (player.getHeldItem("main_hand") == "whimsy_deco:paw_carpet" && hand != "OFF_HAND") {
+    let carpet = level.createEntity("whimsy_deco:paw_carpet_entity");
     carpet.setPos(block.getX(), block.getY() + 1, block.getZ());
 
     let newNbt = carpet.getNbt();

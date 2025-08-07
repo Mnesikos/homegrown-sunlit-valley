@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "society:block/fufu",
-		"particle": "society:block/fufu"
+		"1": "whimsy_deco:block/fufu",
+		"particle": "whimsy_deco:block/fufu"
 	},
 	"elements": [
 		{

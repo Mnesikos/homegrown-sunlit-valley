@@ -259,7 +259,7 @@ ItemEvents.tooltip((tooltip) => {
   ]);
   global.lootFurniture.forEach((item) => {
     tooltip.add(item, "♢ §6Rare furniture drop");
-    if (!item.includes("tanuki") && !item.includes("society")) {
+    if (!item.includes("tanuki") && !item.includes("whimsy_deco")) {
       tooltip.add(item, Text.white("♧ Modern collection"));
     } else {
       tooltip.add(item, "♤ §aTanuki collection");

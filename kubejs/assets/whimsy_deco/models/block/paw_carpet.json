@@ -1,8 +1,8 @@
 {
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "society:block/paw_carpet",
-		"particle": "society:block/paw_carpet"
+		"0": "whimsy_deco:block/paw_carpet",
+		"particle": "whimsy_deco:block/paw_carpet"
 	},
 	"elements": [
 		{

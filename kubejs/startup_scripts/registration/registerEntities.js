@@ -9,18 +9,18 @@ global.carpetTick = (entity) => {
       Utils.getServer().runCommandSilent(
         `playsound minecraft:block.wool.break block @a ${player.x} ${player.y} ${player.z}`
       );
-      player.give(Item.of("society:paw_carpet"));
+      player.give(Item.of("whimsy_deco:paw_carpet"));
     }
   }
 };
 
 StartupEvents.registry("entity_type", (e) => {
-  e.create("society:paw_carpet_entity", "entityjs:mob")
+  e.create("whimsy_deco:paw_carpet_entity", "entityjs:mob")
     .isPushable(false)
     .onHurt((context) => {
       context.entity.setRemoved("unloaded_to_chunk");
     })
-    .translationKey("entity.society.paw_carpet")
+    .translationKey("entity.whimsy_deco.paw_carpet")
     .sized(0.1, 0.1)
     .isPushable(false)
     .canBeCollidedWith((entity) => false)

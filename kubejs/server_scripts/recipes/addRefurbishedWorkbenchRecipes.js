@@ -43,6 +43,9 @@ const tanukiWordMap = [
   { word: "handcart", craftItem: "society:calcite_gem" },
   { word: "science", craftItem: "society:prismatic_shard" },
   { word: "froggy", craftItem: "society:froggy_helm" },
+  { word: "toy_plane", craftItem: "society:ribbit_gadget" },
+  { word: "atm", craftItem: "numismatics:neptunium_coin" },
+  { word: "phone", craftItem: 'society:steamy_gadget' },
 ];
 const modernWordMap = [
   { word: "tv", craftItem: "society:battery" },
@@ -82,8 +85,8 @@ ServerEvents.recipes((e) => {
   });
 
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor") || item.includes("society")) {
-      if (item.includes("society")) {
+    if (item.includes("tanukidecor") || item.includes("whimsy_deco")) {
+      if (item.includes("whimsy_deco")) {
         e.custom({
           type: "tanukidecor:diy",
           result: {

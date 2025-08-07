@@ -189,7 +189,7 @@ global.removedItems = [
   "refinedstorage:storage_housing",
   "refinedstorage:wireless_fluid_grid",
   "refinedstorage:wrench",
-  "society:paw_carpet_entity",
+  "whimsy_deco:paw_carpet_entity",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",
