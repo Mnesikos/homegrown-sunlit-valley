@@ -8,7 +8,7 @@
         "max": 2
       },
       "unitWorth": 8,
-      "weightMult": 0.3
+      "weightMult": 0.2
     },
     "coin_rew_sprocket": {
       "type": "item",
@@ -18,7 +18,7 @@
         "max": 3
       },
       "unitWorth": 16,
-      "weightMult": 0.4
+      "weightMult": 0.3
     },
     "coin_rew_cog": {
       "type": "item",
@@ -188,7 +188,7 @@
         "min": 1,
         "max": 1
       },
-      "unitWorth": 4096,
+      "unitWorth": 2048,
       "weightMult": 0.02
     },
     "coin_frogs_bounty_bazaar": {
@@ -198,7 +198,7 @@
         "min": 1,
         "max": 1
       },
-      "unitWorth": 4096,
+      "unitWorth": 10096,
       "weightMult": 0.01
     }
   }
