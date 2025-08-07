@@ -147,7 +147,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
   const biomeTags = level.getBiome(player.pos).tags().toList().toString();
   const isDay = level.getDayTime() % 24000 < 12999;
   let weather = level.raining
-    ? `☔ ${extraOutput ? "§9Rain§r" : ""}`
+    ? `🌧 ${extraOutput ? "§9Rain§r" : ""}`
     : `☂ ${extraOutput ? "§eClear§r" : ""}`;
   let time = isDay ? `☀ ${extraOutput ? "§6Day§r" : ""}` : `⛈ ${extraOutput ? "§8Night§r" : ""}`;
   if (biomeTags.includes("minecraft:is_ocean") || biomeTags.includes("minecraft:is_beach")) {
@@ -167,7 +167,7 @@ global.overworldRadar = (e, fish, printFunction, extraOutput) => {
         break;
     }
   } else if (biomeTags.includes("minecraft:is_river")) {
-    printFunction(`   🌧 ${extraOutput ? "§9River§r" : ""} ${weather} ${time}`);
+    printFunction(`   ☔ ${extraOutput ? "§9River§r" : ""} ${weather} ${time}`);
     switch (season) {
       case "spring":
         global.springRiver.forEach((fish) => validateEntry(fish, isDay, level, local));
