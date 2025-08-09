@@ -75,6 +75,25 @@
       }
     ]
   },
+  "bullfish_jobs": {
+    "title": "Bullfish Jobs",
+    "description": "The quality of fish taken out of Fish Ponds scales with max population.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:bullfish_jobs"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s bullfish_jobs",
+          "lock_command": "kubejs stages remove @s bullfish_jobs"
+        }
+      }
+    ]
+  },
   "canadian_and_famous": {
     "title": "Canadian And Famous",
     "description": "Tappers output double. Doesn't affect Auto-Tappers.",
@@ -296,6 +315,25 @@
         "data": {
           "unlock_command": "kubejs stages add @s slouching_towards_artistry",
           "lock_command": "kubejs stages remove @s slouching_towards_artistry"
+        }
+      }
+    ]
+  },
+  "wuthering_logs": {
+    "title": "Wuthering Logs",
+    "description": "Trees have a 15% chance to drop Fire Logs when chopped.",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "society:wuthering_logs"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "kubejs stages add @s wuthering_logs",
+          "lock_command": "kubejs stages remove @s wuthering_logs"
         }
       }
     ]

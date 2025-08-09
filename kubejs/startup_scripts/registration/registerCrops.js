@@ -29,6 +29,61 @@ StartupEvents.registry("block", (e) => {
     } else return false;
   };
   e
+    .create("society:berry_bush_crop", "crop")
+    .age(3, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 13, 16)
+        .shape(2, 0, 0, 0, 16, 16, 16)
+        .shape(3, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
+    .property(integerProperty.create("type", 0, 3))
+    .defaultState((state) => {
+      state.set(integerProperty.create("type", 0, 3), 0);
+    })
+    .placementState((state) => {
+      state.set(integerProperty.create("type", 0, 3), 0);
+    })
+    .item((seedItem) => {
+      seedItem.texture("society:item/berry_bush_seed");
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { age: 0 },
+        apply: { model: "society:berry_bush/start" },
+      },
+      {
+        when: { age: 1 },
+        apply: { model: "society:berry_bush/middle"},
+      },
+      {
+        when: { age: 2 },
+        apply: { model: "society:berry_bush/base"},
+      },
+      {
+        when: { age: 3, type: 0 },
+        apply: { model: "society:berry_bush/salmonberry"},
+      },
+      {
+        when: { age: 3, type: 0 },
+        apply: { model: "society:berry_bush/boysenberry"},
+      },
+      {
+        when: { age: 3, type: 0 },
+        apply: { model: "society:berry_bush/cranberry"},
+      },
+      {
+        when: { age: 3, type: 0 },
+        apply: { model: "society:berry_bush/crystalberry"},
+      },
+    ],
+  };
+
+  e
     .create("society:ancient_fruit", "crop")
     .age(10, (builder) => {
       builder

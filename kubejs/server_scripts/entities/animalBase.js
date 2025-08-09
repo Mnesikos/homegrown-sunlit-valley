@@ -100,9 +100,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
       1,
       0.01
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 10`
-    );
+    global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
     }
@@ -205,9 +203,7 @@ const handleMilk = (name, data, day, hungry, e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.cow.milk block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 30`
-    );
+    global.giveExperience(server, player, "husbandry", 30);
     level.spawnParticles(
       "minecraft:note",
       true,
@@ -253,7 +249,7 @@ const handleFeed = (data, day, e) => {
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
     );
     target.heal(4);
-    server.runCommandSilent(`puffish_skills experience add ${player.username} society:husbandry 5`);
+    global.giveExperience(server, player, "husbandry", 20);
     data.affection = affection + totalNewAffection;
     debug && player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);
     data.ageLastFed = day;
@@ -291,9 +287,7 @@ const handleMagicHarvest = (name, type, data, day, e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 15`
-    );
+    global.giveExperience(server, player, "husbandry", 15);
     const droppedLoot = global.getMagicShearsOutput(targetId, player);
     for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");

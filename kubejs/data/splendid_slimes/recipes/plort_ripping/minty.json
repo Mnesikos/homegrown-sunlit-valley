@@ -20,8 +20,13 @@
       "weight": 50
     },
     {
+      "item": "quark:dragon_scale",
+      "count": 1,
+      "weight": 4
+    },
+    {
       "item": "minecraft:dragon_egg",
-      "count": 10,
+      "count": 2,
       "weight": 1
     }
   ]

@@ -328,6 +328,7 @@ StartupEvents.registry("item", (e) => {
     "banana_karenina",
     "brine_and_punishment",
     "bluegill_meridian",
+    "bullfish_jobs",
     "canadian_and_famous",
     "first_aid_guide",
     "hitting_hard_and_soft",
@@ -336,6 +337,7 @@ StartupEvents.registry("item", (e) => {
     "paradise_crop",
     "slime_contain_protect",
     "slouching_towards_artistry",
+    "wuthering_logs",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/books/${item}`);
   });
@@ -455,6 +457,8 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
+  e.create("society:butterfly_amber").texture("society:item/butterfly_amber");
+  e.create("society:moth_pollen").texture("society:item/moth_pollen");
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
   e.create(`society:magic_tunnel`).texture(`society:item/magic_tunnel`);
   e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`).maxStackSize(1);
@@ -785,6 +789,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_bark_angelfish", hex: 0x755838 },
     { item: "unusualfishmod:raw_amber_goby", hex: 0xfcae2a },
     { item: "unusualfishmod:raw_eyelash", hex: 0xdc66a0 },
+    { item: "crittersandcompanions:koi_fish", hex: 0xef7639 },
   ];
   // Smoked fish, roe, aged roe, and bait
   global.fish.forEach((fish) => {

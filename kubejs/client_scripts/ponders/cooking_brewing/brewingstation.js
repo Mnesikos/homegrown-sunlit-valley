@@ -199,11 +199,7 @@ Ponder.registry((e) => {
         scene.world.modifyBlock([2, 1, 2], () => Block.id("brewery:brew_whistle").with("facing", "south").with("material", "copper"), true);
         scene.world.modifyBlock([2, 2, 2], () => Block.id("brewery:brew_whistle").with("half", "upper").with("material", "copper").with("facing", "south"), true);
 
-        scene.text(60, "Copper is the second tier, capable of brewing spirits and beers.")
-
-        scene.idle(70);
-
-        scene.text(60, "It can be purchased from the Gourmand decree.")
+        scene.text(60, "Copper is the second tier, capable of brewing spirits and beers. It also never spawns Elementals.")
 
         scene.idle(90);
 
@@ -218,7 +214,7 @@ Ponder.registry((e) => {
 
         scene.idle(10);
 
-        scene.text(80, "Reinforced is the final tier. It can brew every drink, and the brewing minigame is optional.")
+        scene.text(80, "Reinforced is the final tier. It can brew every drink, and provides a minimum quality of 3.")
 
         scene.idle(80);
 

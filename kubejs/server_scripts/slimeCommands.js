@@ -25,7 +25,7 @@ global.weepingWater = (slime, pig) => {
     executor.tell(pos);
     scanBlock = level.getBlock(pos);
     if (scanBlock.id.equals("minecraft:air")) {
-      level.setBlock(pos, "minecraft:water");
+      scanBlock.set("minecraft:water");
       scannedBlocks++;
     }
   }

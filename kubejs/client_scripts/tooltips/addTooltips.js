@@ -220,6 +220,8 @@ ItemEvents.tooltip((tooltip) => {
       description: "Artifacts and Relics are worth 200% more",
     },
     { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
+    { item: "society:bullfish_jobs", description: "The quality of fish taken out of Fish Ponds scales with max population."},
+    { item: "society:wuthering_logs", description: "Trees have a 15% chance to drop Fire Logs when chopped."},
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));
     tooltip.add(book.item, Text.green("Right click to learn this skill!"));

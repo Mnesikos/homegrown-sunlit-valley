@@ -11,9 +11,8 @@ const getRequestedItems = (fish, population) => {
 };
 
 const handleFishInsertion = (fish, recipeIndex, clickEvent) => {
-  const { item, block, player, level, server } = clickEvent;
-  const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
-    global.getPondProperties(block);
+  const { item, block, player, level } = clickEvent;
+  const { facing, upgraded, type } = global.getPondProperties(block);
   if (item == fish.item && (type == `${recipeIndex + 1}` || type == "0")) {
     if (type == "0") {
       successParticles(level, block);
@@ -24,37 +23,9 @@ const handleFishInsertion = (fish, recipeIndex, clickEvent) => {
         upgraded: upgraded,
         quest: false,
         quest_id: "0",
-        population: "1",
+        population: "0",
         max_population: "3",
         type: "" + (recipeIndex + 1),
-      });
-      if (!player.isCreative()) item.count--;
-    } else if (population !== max_population && !player.stages.has("mitosis")) {
-      server.runCommandSilent(
-        `playsound minecraft:entity.player.splash block @a ${block.x} ${block.y} ${block.z}`
-      );
-      level.spawnParticles(
-        "minecraft:splash",
-        true,
-        block.x + 0.5,
-        block.y + 0.9,
-        block.z + 0.5,
-        0.1 * rnd(1, 4),
-        0.1 * rnd(1, 4),
-        0.1 * rnd(1, 4),
-        10,
-        0.1
-      );
-      block.set(block.id, {
-        facing: facing,
-        valid: valid,
-        mature: mature,
-        upgraded: upgraded,
-        quest: quest,
-        quest_id: quest_id,
-        population: increaseStage(population),
-        max_population: max_population,
-        type: type,
       });
       if (!player.isCreative()) item.count--;
     }
@@ -186,21 +157,17 @@ StartupEvents.registry("block", (event) => {
             }
             if (population == "0" && type == `${index + 1}`) {
               if (item && item.hasTag("forge:tools/fishing_rods")) {
-                if (!player.stages.has("mitosis")) {
-                  block.set(block.id, {
-                    facing: facing,
-                    valid: valid,
-                    mature: false,
-                    upgraded: upgraded,
-                    quest: false,
-                    quest_id: "0",
-                    population: "0",
-                    max_population: "3",
-                    type: "0",
-                  });
-                } else {
-                  player.tell(Text.red("Fish Ponds can not be reset with mitosis skill."));
-                }
+                block.set(block.id, {
+                  facing: facing,
+                  valid: valid,
+                  mature: false,
+                  upgraded: upgraded,
+                  quest: false,
+                  quest_id: "0",
+                  population: "0",
+                  max_population: "3",
+                  type: "0",
+                });
               } else {
                 player.tell(Text.red("Right click with a fishing rod to clear fish type."));
               }

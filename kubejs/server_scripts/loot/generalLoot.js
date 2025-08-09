@@ -10,8 +10,8 @@ const fixedStackSize = (itemStack) => {
 LootJS.modifiers((e) => {
   // Entities
   e.addLootTableModifier("rottencreatures:entities/zap")
-    .randomChance(0.1)
-    .addLoot('society:glitched_vhs');
+    .randomChance(0.03)
+    .addLoot("society:glitched_vhs");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
     .addLoot("society:holy_symbol");
@@ -28,6 +28,9 @@ LootJS.modifiers((e) => {
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");
   e.addLootTableModifier("minecraft:entities/pig")
+    .randomChance(0.05)
+    .addLoot("minecraft:eye_armor_trim_smithing_template");
+  e.addLootTableModifier("minecraft:entities/enderman")
     .randomChance(0.05)
     .addLoot("society:living_flesh");
   e.addLootTableModifier("minecraft:entities/hoglin").replaceLoot(

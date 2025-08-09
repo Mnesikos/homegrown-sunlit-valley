@@ -23,9 +23,7 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
     server.runCommandSilent(
       `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 60`
-    );
+    global.giveExperience(server, player, "husbandry", 60);
     level.spawnParticles(
       "farmersdelight:star",
       true,

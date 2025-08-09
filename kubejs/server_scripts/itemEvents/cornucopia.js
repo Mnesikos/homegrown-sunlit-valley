@@ -131,7 +131,6 @@ ItemEvents.rightClicked("society:cornucopia", (e) => {
       );
     }
   }
-  server.runCommandSilent(
-    `puffish_skills experience add ${player.username} society:farming ${experienceMult * 30}`
-  );
+
+  global.giveExperience(server, player, "farming", experienceMult * 30);
 });

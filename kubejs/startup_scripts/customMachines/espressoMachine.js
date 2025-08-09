@@ -69,9 +69,7 @@ StartupEvents.registry("block", (event) => {
             server.runCommandSilent(
               `playsound minecraft:block.lava.extinguish block @a ${player.x} ${player.y} ${player.z}`
             );
-            server.runCommandSilent(
-              `puffish_skills experience add ${player.username} society:farming 5`
-            );
+            global.giveExperience(server, player, "farming", 10);
             global.espressoMachineRecipes[index].output.forEach((e) => {
               block.popItemFromFace(e, block.properties.get("facing"));
             });

@@ -58,7 +58,7 @@
   },
   "tiller": {
     "title": "Tiller",
-    "description": "🔱 Farmer products worth 10% more.",
+    "description": "🔱 Farmer products worth 15% more.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -75,7 +75,7 @@
       {
         "type": "puffish_skills:command",
         "data": {
-          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1.1",
+          "unlock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1.15",
           "lock_command": "attribute @s shippingbin:crop_sell_multiplier base set 1"
         }
       },

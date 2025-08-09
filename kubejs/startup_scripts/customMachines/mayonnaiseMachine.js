@@ -83,7 +83,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 3))
+    .property(integerProperty.create("stage", 0, 1))
     .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
     .property(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length))
@@ -104,7 +104,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
@@ -113,7 +113,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })

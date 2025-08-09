@@ -588,23 +588,7 @@ ServerEvents.tags("block", (e) => {
   });
   // Sails
   e.remove("create:windmill_sails", "#minecraft:wool");
-  const tickArtisanMachines = [
-    "society:loom",
-    "society:mayonnaise_machine",
-    "society:preserves_jar",
-    "society:crystalarium",
-    "society:aging_cask",
-    "society:ancient_cask",
-    "society:dehydrator",
-    "society:deluxe_worm_farm",
-    "society:seed_maker",
-    "society:fish_smoker",
-    "society:bait_maker",
-    "society:recycling_machine",
-    "society:tapper",
-    "society:cheese_press",
-  ];
-  tickArtisanMachines.forEach((log) => {
+  global.artisanMachineIds.forEach((log) => {
     e.add("society:artisan_machine", log);
     e.add("society:golden_clock_advanced", log);
   });

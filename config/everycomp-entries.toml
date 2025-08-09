@@ -137,7 +137,7 @@
 			toilet = false
 			storage_jar = false
 			lattice_fence = true
-			basin = true
+			basin = false
 			kitchen_drawer = true
 			lattice_fence_gate = true
 			kitchen_cabinetry = true

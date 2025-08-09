@@ -59,4 +59,11 @@ ServerEvents.tags("entity_type", (e) => {
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);
   });
+
+    [
+    "longwings:moth",
+    "longwings:butterfly",
+  ].forEach((animal) => {
+    e.add("society:longwing", animal);
+  });
 });

@@ -96,7 +96,8 @@ global.prizeMachineRewards = [
   {
     hint: "large and wooden",
     possibleOutputs: ["2x brewery:barrel_main"],
-  },  {
+  },
+  {
     hint: "good for reading",
     possibleOutputs: [
       "society:intro_to_algorithms",
@@ -194,7 +195,7 @@ global.prizeMachineRewards = [
     possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
   },
   {
-    hint: "some tickets?",
+    hint: "tickety?",
     possibleOutputs: ["3x splendid_slimes:slime_ticket"],
   },
   {
@@ -412,21 +413,11 @@ StartupEvents.registry("block", (event) => {
         click.server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:farming 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:husbandry 400`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:fishing 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:mining 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:adventuring 100`
-        );
+        global.giveExperience(server, player, "farming", 100);
+        global.giveExperience(server, player, "husbandry", 100);
+        global.giveExperience(server, player, "mining", 100);
+        global.giveExperience(server, player, "adventuring", 100);
+        global.giveExperience(server, player, "fishing", 100);
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }

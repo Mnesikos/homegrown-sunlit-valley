@@ -1,4 +1,4 @@
-console.info("[SOCIETY] hamsterBite.js loaded");
+console.info("[SOCIETY] slimeTicket.js loaded");
 
 const SlimeFavoriteFoods = {
   all_seeing: { item: "minecraft:golden_carrot" },

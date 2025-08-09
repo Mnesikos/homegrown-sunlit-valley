@@ -25,6 +25,7 @@ global["JadePlushieClientCallback"] = (tooltip, accessor, pluginConfig) => {
     }`
   );
 };
+
 global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   if (accessor.getBlock().id !== "society:fish_pond") return;
   const properties = accessor.getBlockState();
@@ -50,15 +51,71 @@ global["JadeFishPondClientCallback"] = (tooltip, accessor, pluginConfig) => {
   tooltip["add(snownee.jade.api.ui.IElement)"](fishIcon);
   tooltip.append(Component.translatable(Item.of(fish).getDescriptionId()));
   if (upgraded) {
-    const upgrade = helper
-      .item(Item.of("society:sea_biscut"), 0.5)
-      .message(null)
-      .translate(Vec2(-2, -1));
-    tooltip["add(snownee.jade.api.ui.IElement)"](upgrade);
+    tooltip["add(snownee.jade.api.ui.IElement)"](
+      helper.item(Item.of("society:sea_biscut"), 0.5).message(null).translate(Vec2(-2, -1))
+    );
     tooltip.append(fishIcons);
   } else {
     tooltip.add(fishIcons);
   }
+};
+
+global["JadeArtisanMachineClientCallback"] = (tooltip, accessor, pluginConfig) => {
+  if (!global.artisanMachineIds.includes(accessor.getBlock().id)) return;
+  const properties = accessor.getBlockState();
+  const machine = global.artisanMachineDefinitions.filter((obj) => {
+    return obj.id === accessor.getBlock().id;
+  })[0];
+  if (!machine) return;
+  const type =
+    accessor.getBlock().id === "society:charging_rod"
+      ? 1
+      : properties.getValue($IntegerProperty.create("type", 0, machine.recipes.length));
+  const working = properties.getValue($BooleanProperty.create("working"));
+  if (Number(type) === 0 || !working) return;
+
+  const recipe =
+    accessor.getBlock().id === "society:charging_rod"
+      ? {
+          output: ["society:battery"],
+        }
+      : machine.recipes[Number(type) - 1];
+  const stage = properties.getValue(
+    $IntegerProperty.create("stage", 0, Math.max(machine.stageCount, machine.maxInput))
+  );
+  const upgraded = properties.getValue($BooleanProperty.create("upgraded"));
+  let duration = recipe.time || machine.stageCount;
+  if (accessor.getBlock().id == "society:aging_cask" && upgraded) {
+    duration = duration / 2;
+  }
+  let progressIcons = "";
+  for (let index = 0; index < duration; index++) {
+    if (index < stage) progressIcons += "⬛";
+    else progressIcons += "⬜";
+  }
+  const progress = `Progress: ${stage}/${duration} `;
+  let blockName = accessor.getBlock().getDescriptionId();
+  tooltip.clear();
+  const helper = tooltip.getElementHelper();
+  const recipeIcon = helper
+    .item(Item.of(recipe.output[0]), 0.5)
+    .message(null)
+    .translate(Vec2(-2, -1));
+  tooltip.add(Component.translatable(blockName));
+  tooltip["add(snownee.jade.api.ui.IElement)"](recipeIcon);
+  tooltip.append(Component.translatable(Item.of(recipe.output[0]).getDescriptionId()));
+
+  if (upgraded) {
+    tooltip["add(snownee.jade.api.ui.IElement)"](
+      helper.item(Item.of(machine.upgrade), 0.5).message(null).translate(Vec2(-2, -1))
+    );
+    tooltip.append(progress);
+  } else {
+    tooltip.add(progress);
+  }
+  tooltip["append(snownee.jade.api.ui.IElement)"](
+    helper.item(Item.of("minecraft:clock"), 0.5).message(null).translate(Vec2(-2, -1))
+  );
 };
 
 JadeEvents.onClientRegistration((e) => {
@@ -67,5 +124,8 @@ JadeEvents.onClientRegistration((e) => {
   });
   e.block("society:fish_pond_jade", $Block).tooltip((tooltip, accessor, pluginConfig) => {
     global["JadeFishPondClientCallback"](tooltip, accessor, pluginConfig);
+  });
+  e.block("society:artisan_machine_jade", $Block).tooltip((tooltip, accessor, pluginConfig) => {
+    global["JadeArtisanMachineClientCallback"](tooltip, accessor, pluginConfig);
   });
 });

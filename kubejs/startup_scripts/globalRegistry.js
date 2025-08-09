@@ -29,9 +29,9 @@ global.formatPrice = (number) => {
 };
 
 global.formatName = (name) => {
-  if (name.length === 0) return ""
+  if (name.length === 0) return "";
   return name.charAt(0).toUpperCase() + name.slice(1);
-}
+};
 
 // For cases where prices are auto-generated, round
 const roundPrice = (price) => {
@@ -539,6 +539,8 @@ global.animalProducts = [
   { item: "minecraft:honeycomb_block", value: 16 },
   { item: "buzzier_bees:bee_bottle", value: 16 },
   { item: "etcetera:cotton_flower", value: 24 },
+  { item: "society:butterfly_amber", value: 64 },
+  { item: "society:moth_pollen", value: 96 },
   // Misc
   { item: "minecraft:leather", value: 8 },
   { item: "netherdepthsupgrade:soul_sucker_leather", value: 16 },
@@ -1176,7 +1178,10 @@ global.picklableVegetables = [
   { item: "veggiesdelight:cauliflower", value: 48 },
 ];
 global.picklableVegetables.forEach((recipe) =>
-  fermentingRecipes.push({ item: `society:pickled_${recipe.item.split(":")[1]}`, value: recipe.value })
+  fermentingRecipes.push({
+    item: `society:pickled_${recipe.item.split(":")[1]}`,
+    value: recipe.value,
+  })
 );
 
 fermentingRecipes.forEach((recipe) => {
@@ -1530,6 +1535,7 @@ global.fish = [
   { item: "aquaculture:box_turtle", value: 320 },
   { item: "unusualfishmod:raw_copperflame_anthias", value: 320 },
   { item: "unusualfishmod:raw_circus_fish", value: 320 },
+  { item: "crittersandcompanions:koi_fish", value: 340 },
   { item: "unusualfishmod:raw_hatchetfish", value: 352 },
   { item: "unusualfishmod:raw_spindlefish", value: 368 },
   { item: "society:neptuna", value: 384 },
