@@ -1,6 +1,6 @@
 console.info("[SOCIETY] qualityWasher.js loaded");
 
-global.handlePush = (e) => {
+global.handleQualityWasher = (e) => {
   const { inventory, level, block } = e;
   let slots = inventory.getSlots();
   let slotItem;
@@ -53,7 +53,7 @@ StartupEvents.registry("block", (event) => {
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 1);
       blockInfo.serverTick(20, 0, (entity) => {
-        global.handlePush(entity);
+        global.handleQualityWasher(entity);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(

@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Gifts:$()$(br)Owl Clock$(br2)$(l)Taming$()$(br)Rotten Flesh"
+      "text": "$(l)Possible Gifts:$()$(br)Owl Clock$(br)$(l)Taming item:$()$(br)Rotten Flesh$(br2)$(l)Notes$()$(br)Can be found in forests."
     },
     {
       "type": "patchouli:entity",

@@ -74,6 +74,7 @@ const baitFish = [
   "unusualfishmod:raw_bark_angelfish",
   "unusualfishmod:raw_amber_goby",
   "unusualfishmod:raw_eyelash",
+  "crittersandcompanions:koi_fish",
 ];
 global.baitMakerRecipes = [];
 baitFish.forEach((fish) => {

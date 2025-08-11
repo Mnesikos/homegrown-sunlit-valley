@@ -8,7 +8,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 56
+			"unitWorth": 42
 		},
 		"cooking_turtle_soup": {
 			"type": "minecraft:item",
@@ -18,7 +18,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1344
+			"unitWorth": 1008
 		},
 		"cooking_sushi": {
 			"type": "minecraft:item",
@@ -28,7 +28,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 56
+			"unitWorth": 42
 		},
 		"cooking_bread_crate": {
 			"type": "minecraft:item",
@@ -38,7 +38,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 304
+			"unitWorth": 228
 		},
 		"cooking_sandwich": {
 			"type": "minecraft:item",
@@ -48,7 +48,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 268
+			"unitWorth": 201
 		},
 		"cooking_chocolate_box": {
 			"type": "minecraft:item",
@@ -58,7 +58,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 344
+			"unitWorth": 258
 		},
 		"cooking_bread_with_jam": {
 			"type": "minecraft:item",
@@ -68,7 +68,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 152
+			"unitWorth": 114
 		},
 		"cooking_vegetable_sandwich": {
 			"type": "minecraft:item",
@@ -78,7 +78,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 200
+			"unitWorth": 150
 		},
 		"cooking_mashed_potatoes": {
 			"type": "minecraft:item",
@@ -88,7 +88,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 672
+			"unitWorth": 504
 		},
 		"cooking_half_chicken": {
 			"type": "minecraft:item",
@@ -98,7 +98,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 56
+			"unitWorth": 42
 		},
 		"cooking_honey_apple": {
 			"type": "minecraft:item",
@@ -108,7 +108,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 728
+			"unitWorth": 546
 		},
 		"cooking_honey_bread": {
 			"type": "minecraft:item",
@@ -118,7 +118,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 112
+			"unitWorth": 84
 		},
 		"cooking_coral_crunch": {
 			"type": "minecraft:item",
@@ -128,7 +128,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 228
+			"unitWorth": 171
 		},
 		"cooking_fish_stick": {
 			"type": "minecraft:item",
@@ -138,7 +138,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_surf_and_turf": {
 			"type": "minecraft:item",
@@ -148,7 +148,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 344
+			"unitWorth": 258
 		},
 		"cooking_shrimp_skewer": {
 			"type": "minecraft:item",
@@ -158,7 +158,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 180
+			"unitWorth": 135
 		},
 		"cooking_squid_kebob": {
 			"type": "minecraft:item",
@@ -168,7 +168,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 392
+			"unitWorth": 294
 		},
 		"cooking_frog_leg_kebob": {
 			"type": "minecraft:item",
@@ -178,7 +178,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 712
+			"unitWorth": 534
 		},
 		"cooking_kelp_shake": {
 			"type": "minecraft:item",
@@ -188,7 +188,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 36
+			"unitWorth": 27
 		},
 		"cooking_sea_pickle_juice": {
 			"type": "minecraft:item",
@@ -198,7 +198,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 36
+			"unitWorth": 27
 		},
 		"cooking_chocolate_glazed_berries": {
 			"type": "minecraft:item",
@@ -208,7 +208,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 160
+			"unitWorth": 120
 		},
 		"cooking_bar_of_chocolate": {
 			"type": "minecraft:item",
@@ -218,7 +218,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_sweet_roll": {
 			"type": "minecraft:item",
@@ -228,7 +228,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 304
+			"unitWorth": 228
 		},
 		"cooking_builders_tea": {
 			"type": "minecraft:item",
@@ -238,7 +238,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1688
+			"unitWorth": 1266
 		},
 		"cooking_honeyed_apple": {
 			"type": "minecraft:item",
@@ -248,7 +248,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 152
+			"unitWorth": 114
 		},
 		"cooking_farmers_breakfast": {
 			"type": "minecraft:item",
@@ -258,7 +258,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1872
+			"unitWorth": 1404
 		},
 		"cooking_grilled_salmon": {
 			"type": "minecraft:item",
@@ -268,7 +268,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 532
+			"unitWorth": 399
 		},
 		"cooking_roasted_mutton_chops": {
 			"type": "minecraft:item",
@@ -278,7 +278,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 640
+			"unitWorth": 480
 		},
 		"cooking_sweet_berry_cheesecake": {
 			"type": "minecraft:item",
@@ -288,7 +288,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2176
+			"unitWorth": 1632
 		},
 		"cooking_nether_salad": {
 			"type": "minecraft:item",
@@ -298,7 +298,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1380
+			"unitWorth": 1035
 		},
 		"cooking_melon_popsicle": {
 			"type": "minecraft:item",
@@ -308,7 +308,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 248
+			"unitWorth": 186
 		},
 		"cooking_salmon_roll": {
 			"type": "minecraft:item",
@@ -318,7 +318,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 172
+			"unitWorth": 129
 		},
 		"cooking_cod_roll": {
 			"type": "minecraft:item",
@@ -328,7 +328,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 268
+			"unitWorth": 201
 		},
 		"cooking_fruit_salad": {
 			"type": "minecraft:item",
@@ -338,7 +338,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 784
+			"unitWorth": 588
 		},
 		"cooking_mixed_salad": {
 			"type": "minecraft:item",
@@ -348,7 +348,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 352
+			"unitWorth": 264
 		},
 		"cooking_kelp_roll": {
 			"type": "minecraft:item",
@@ -358,7 +358,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 348
+			"unitWorth": 261
 		},
 		"cooking_kelp_roll_slice": {
 			"type": "minecraft:item",
@@ -368,7 +368,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 124
+			"unitWorth": 93
 		},
 		"cooking_cabbage_rolls": {
 			"type": "minecraft:item",
@@ -378,7 +378,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 488
+			"unitWorth": 366
 		},
 		"cooking_hamburger": {
 			"type": "minecraft:item",
@@ -388,7 +388,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 732
+			"unitWorth": 549
 		},
 		"cooking_chicken_sandwich": {
 			"type": "minecraft:item",
@@ -398,7 +398,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 544
+			"unitWorth": 408
 		},
 		"cooking_bacon_sandwich": {
 			"type": "minecraft:item",
@@ -408,7 +408,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 820
+			"unitWorth": 615
 		},
 		"cooking_mutton_wrap": {
 			"type": "minecraft:item",
@@ -418,7 +418,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 544
+			"unitWorth": 408
 		},
 		"cooking_stuffed_potato": {
 			"type": "minecraft:item",
@@ -428,7 +428,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 440
+			"unitWorth": 330
 		},
 		"cooking_barbecue_stick": {
 			"type": "minecraft:item",
@@ -438,7 +438,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 276
+			"unitWorth": 207
 		},
 		"cooking_egg_sandwich": {
 			"type": "minecraft:item",
@@ -448,7 +448,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 132
+			"unitWorth": 99
 		},
 		"cooking_steak_and_potatoes": {
 			"type": "minecraft:item",
@@ -458,7 +458,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 688
+			"unitWorth": 516
 		},
 		"cooking_chocolate_pie": {
 			"type": "minecraft:item",
@@ -468,7 +468,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3168
+			"unitWorth": 2376
 		},
 		"cooking_honey_glazed_ham_block": {
 			"type": "minecraft:item",
@@ -478,7 +478,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_shepherds_pie_block": {
 			"type": "minecraft:item",
@@ -488,7 +488,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1252
+			"unitWorth": 939
 		},
 		"cooking_rice_roll_medley_block": {
 			"type": "minecraft:item",
@@ -498,7 +498,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1392
+			"unitWorth": 1044
 		},
 		"cooking_apple_pie": {
 			"type": "minecraft:item",
@@ -508,7 +508,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 704
+			"unitWorth": 528
 		},
 		"cooking_melon_juice": {
 			"type": "minecraft:item",
@@ -518,7 +518,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 1020
+			"unitWorth": 765
 		},
 		"cooking_roast_chicken_block": {
 			"type": "minecraft:item",
@@ -528,7 +528,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1164
+			"unitWorth": 873
 		},
 		"cooking_roasted_ham": {
 			"type": "minecraft:item",
@@ -538,7 +538,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 516
+			"unitWorth": 387
 		},
 		"cooking_cheese_stick": {
 			"type": "minecraft:item",
@@ -548,7 +548,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cheesecake": {
 			"type": "minecraft:item",
@@ -558,7 +558,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 168
+			"unitWorth": 126
 		},
 		"cooking_cheese_tart": {
 			"type": "minecraft:item",
@@ -568,7 +568,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 232
+			"unitWorth": 174
 		},
 		"cooking_cheese_sandwich": {
 			"type": "minecraft:item",
@@ -578,7 +578,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 60
+			"unitWorth": 45
 		},
 		"cooking_cheese_roll": {
 			"type": "minecraft:item",
@@ -588,7 +588,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 64
+			"unitWorth": 48
 		},
 		"cooking_cookie": {
 			"type": "minecraft:item",
@@ -598,7 +598,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 56
+			"unitWorth": 42
 		},
 		"cooking_bread": {
 			"type": "minecraft:item",
@@ -608,7 +608,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 64
+			"unitWorth": 48
 		},
 		"cooking_pumpkin_pie": {
 			"type": "minecraft:item",
@@ -618,7 +618,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 416
+			"unitWorth": 312
 		},
 		"cooking_mushroom_stew": {
 			"type": "minecraft:item",
@@ -628,7 +628,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 36
+			"unitWorth": 27
 		},
 		"cooking_cake": {
 			"type": "minecraft:item",
@@ -638,7 +638,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1524
+			"unitWorth": 1143
 		},
 		"cooking_rabbit_stew": {
 			"type": "minecraft:item",
@@ -648,7 +648,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1144
+			"unitWorth": 858
 		},
 		"cooking_lava_pufferfish_roll": {
 			"type": "minecraft:item",
@@ -658,7 +658,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2648
+			"unitWorth": 1986
 		},
 		"cooking_obsidianfish_roll": {
 			"type": "minecraft:item",
@@ -668,7 +668,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 5028
+			"unitWorth": 3771
 		},
 		"cooking_searing_cod_roll": {
 			"type": "minecraft:item",
@@ -678,7 +678,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2648
+			"unitWorth": 1986
 		},
 		"cooking_blazefish_roll": {
 			"type": "minecraft:item",
@@ -688,7 +688,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4032
+			"unitWorth": 3024
 		},
 		"cooking_magmacubefish_roll": {
 			"type": "minecraft:item",
@@ -698,7 +698,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6064
+			"unitWorth": 4548
 		},
 		"cooking_glowdine_roll": {
 			"type": "minecraft:item",
@@ -708,7 +708,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4416
+			"unitWorth": 3312
 		},
 		"cooking_soulsucker_roll": {
 			"type": "minecraft:item",
@@ -718,7 +718,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3108
+			"unitWorth": 2331
 		},
 		"cooking_warped_kelp_roll": {
 			"type": "minecraft:item",
@@ -728,7 +728,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 460
+			"unitWorth": 345
 		},
 		"cooking_warped_kelp_roll_slice": {
 			"type": "minecraft:item",
@@ -738,7 +738,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 152
+			"unitWorth": 114
 		},
 		"cooking_nether_rice_roll_medley_block": {
 			"type": "minecraft:item",
@@ -748,7 +748,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 34808
+			"unitWorth": 26106
 		},
 		"cooking_bread_slice": {
 			"type": "minecraft:item",
@@ -758,7 +758,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 24
+			"unitWorth": 18
 		},
 		"cooking_glow_berry_jam_toast": {
 			"type": "minecraft:item",
@@ -768,7 +768,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 232
+			"unitWorth": 174
 		},
 		"cooking_sweet_berry_jam_toast": {
 			"type": "minecraft:item",
@@ -778,7 +778,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 76
+			"unitWorth": 57
 		},
 		"cooking_cheese_toastie": {
 			"type": "minecraft:item",
@@ -788,7 +788,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 72
+			"unitWorth": 54
 		},
 		"cooking_gingerbread_cookie": {
 			"type": "minecraft:item",
@@ -798,7 +798,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 36
+			"unitWorth": 27
 		},
 		"cooking_candy_cane": {
 			"type": "minecraft:item",
@@ -808,7 +808,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 16
+			"unitWorth": 12
 		},
 		"cooking_eggnog": {
 			"type": "minecraft:item",
@@ -818,7 +818,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 208
+			"unitWorth": 156
 		},
 		"cooking_candy": {
 			"type": "minecraft:item",
@@ -828,7 +828,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 112
+			"unitWorth": 84
 		},
 		"cooking_salted_cod": {
 			"type": "minecraft:item",
@@ -838,7 +838,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 84
+			"unitWorth": 63
 		},
 		"cooking_salted_salmon": {
 			"type": "minecraft:item",
@@ -848,7 +848,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 124
+			"unitWorth": 93
 		},
 		"cooking_honey_roasted_peanut": {
 			"type": "minecraft:item",
@@ -858,7 +858,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_magic_peanut": {
 			"type": "minecraft:item",
@@ -868,7 +868,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4800
+			"unitWorth": 3600
 		},
 		"cooking_tubasmoke_stick": {
 			"type": "minecraft:item",
@@ -878,7 +878,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 944
+			"unitWorth": 708
 		},
 		"cooking_tubasmoke_carton": {
 			"type": "minecraft:item",
@@ -888,7 +888,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 8508
+			"unitWorth": 6381
 		},
 		"cooking_fruity_granola_bar": {
 			"type": "minecraft:item",
@@ -898,7 +898,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 112
+			"unitWorth": 84
 		},
 		"cooking_deluxe_granola_bar": {
 			"type": "minecraft:item",
@@ -908,7 +908,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 200
+			"unitWorth": 150
 		},
 		"cooking_chocolate_nut_granola_bar": {
 			"type": "minecraft:item",
@@ -918,7 +918,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 196
+			"unitWorth": 147
 		},
 		"cooking_stuffed_burrito": {
 			"type": "minecraft:item",
@@ -928,7 +928,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1308
+			"unitWorth": 981
 		},
 		"cooking_deluxe_burger": {
 			"type": "minecraft:item",
@@ -938,7 +938,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1540
+			"unitWorth": 1155
 		},
 		"cooking_cheese_burger": {
 			"type": "minecraft:item",
@@ -948,7 +948,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1136
+			"unitWorth": 852
 		},
 		"cooking_pb_j": {
 			"type": "minecraft:item",
@@ -958,7 +958,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 996
+			"unitWorth": 747
 		},
 		"cooking_cucumber_salad": {
 			"type": "minecraft:item",
@@ -968,7 +968,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1552
+			"unitWorth": 1164
 		},
 		"cooking_oatmeal_cookie": {
 			"type": "minecraft:item",
@@ -978,7 +978,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_energy_drink": {
 			"type": "minecraft:item",
@@ -988,7 +988,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1328
+			"unitWorth": 996
 		},
 		"cooking_odd_fishsticks": {
 			"type": "minecraft:item",
@@ -998,7 +998,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 460
+			"unitWorth": 345
 		},
 		"cooking_weird_goldfish": {
 			"type": "minecraft:item",
@@ -1008,7 +1008,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 304
+			"unitWorth": 228
 		},
 		"cooking_pickledish": {
 			"type": "minecraft:item",
@@ -1018,7 +1018,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_strange_broth": {
 			"type": "minecraft:item",
@@ -1028,7 +1028,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 576
+			"unitWorth": 432
 		},
 		"cooking_unusual_sandwich": {
 			"type": "minecraft:item",
@@ -1038,7 +1038,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 632
+			"unitWorth": 474
 		},
 		"cooking_raw_aero_mono_stick": {
 			"type": "minecraft:item",
@@ -1048,7 +1048,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_candied_orange_slices": {
 			"type": "minecraft:item",
@@ -1058,7 +1058,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 472
+			"unitWorth": 354
 		},
 		"cooking_orange_sorbet": {
 			"type": "minecraft:item",
@@ -1068,7 +1068,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 512
+			"unitWorth": 384
 		},
 		"cooking_currant_muffin": {
 			"type": "minecraft:item",
@@ -1078,7 +1078,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 152
+			"unitWorth": 114
 		},
 		"cooking_aloe_gel_bottle": {
 			"type": "minecraft:item",
@@ -1088,7 +1088,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_yucca_gateau": {
 			"type": "minecraft:item",
@@ -1098,7 +1098,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1768
+			"unitWorth": 1326
 		},
 		"cooking_aloe_gel_block": {
 			"type": "minecraft:item",
@@ -1108,7 +1108,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2456
+			"unitWorth": 1842
 		},
 		"cooking_passion_fruit_sorbet": {
 			"type": "minecraft:item",
@@ -1118,7 +1118,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 664
+			"unitWorth": 498
 		},
 		"cooking_passion_fruit_tart": {
 			"type": "minecraft:item",
@@ -1128,7 +1128,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_beetroot_brownie_tray": {
 			"type": "minecraft:item",
@@ -1138,7 +1138,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 676
+			"unitWorth": 507
 		},
 		"cooking_sweet_potato_cupcake": {
 			"type": "minecraft:item",
@@ -1148,7 +1148,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 124
+			"unitWorth": 93
 		},
 		"cooking_carrot_cake": {
 			"type": "minecraft:item",
@@ -1158,7 +1158,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1228
+			"unitWorth": 921
 		},
 		"cooking_sweet_potato_pie": {
 			"type": "minecraft:item",
@@ -1168,7 +1168,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2344
+			"unitWorth": 1758
 		},
 		"cooking_cesar_salad": {
 			"type": "minecraft:item",
@@ -1178,7 +1178,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 804
+			"unitWorth": 603
 		},
 		"cooking_dandelion_and_eggs": {
 			"type": "minecraft:item",
@@ -1188,7 +1188,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 276
+			"unitWorth": 207
 		},
 		"cooking_chicken_fajitas_wrap": {
 			"type": "minecraft:item",
@@ -1198,7 +1198,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_cauliflower_burger": {
 			"type": "minecraft:item",
@@ -1208,7 +1208,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 776
+			"unitWorth": 582
 		},
 		"cooking_honey_mason_jar": {
 			"type": "minecraft:item",
@@ -1218,7 +1218,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_piece_of_sheep_cheese": {
 			"type": "minecraft:item",
@@ -1228,7 +1228,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_sheep_cheese_block": {
 			"type": "minecraft:item",
@@ -1238,7 +1238,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_piece_of_cheese": {
 			"type": "minecraft:item",
@@ -1248,7 +1248,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cheese_block": {
 			"type": "minecraft:item",
@@ -1258,7 +1258,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 768
+			"unitWorth": 576
 		},
 		"cooking_piece_of_grain_cheese": {
 			"type": "minecraft:item",
@@ -1268,7 +1268,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 264
+			"unitWorth": 198
 		},
 		"cooking_grain_cheese_block": {
 			"type": "minecraft:item",
@@ -1278,7 +1278,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1056
+			"unitWorth": 792
 		},
 		"cooking_piece_of_buffalo_cheese": {
 			"type": "minecraft:item",
@@ -1288,7 +1288,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 768
+			"unitWorth": 576
 		},
 		"cooking_buffalo_cheese_block": {
 			"type": "minecraft:item",
@@ -1298,7 +1298,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3072
+			"unitWorth": 2304
 		},
 		"cooking_piece_of_goat_cheese": {
 			"type": "minecraft:item",
@@ -1308,7 +1308,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_goat_cheese_block": {
 			"type": "minecraft:item",
@@ -1318,7 +1318,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4608
+			"unitWorth": 3456
 		},
 		"cooking_piece_of_warped_cheese": {
 			"type": "minecraft:item",
@@ -1328,7 +1328,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_warped_cheese_block": {
 			"type": "minecraft:item",
@@ -1338,7 +1338,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4608
+			"unitWorth": 3456
 		},
 		"cooking_piece_of_amethyst_cheese": {
 			"type": "minecraft:item",
@@ -1348,7 +1348,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1728
+			"unitWorth": 1296
 		},
 		"cooking_amethyst_cheese_block": {
 			"type": "minecraft:item",
@@ -1358,7 +1358,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6912
+			"unitWorth": 5184
 		},
 		"cooking_tribull_cheese_wedge": {
 			"type": "minecraft:item",
@@ -1368,7 +1368,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2304
+			"unitWorth": 1728
 		},
 		"cooking_tribull_cheese_wheel": {
 			"type": "minecraft:item",
@@ -1378,7 +1378,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 9216
+			"unitWorth": 6912
 		},
 		"cooking_pickled_onion": {
 			"type": "minecraft:item",
@@ -1388,7 +1388,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 168
+			"unitWorth": 126
 		},
 		"cooking_pickle": {
 			"type": "minecraft:item",
@@ -1398,7 +1398,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 864
+			"unitWorth": 648
 		},
 		"cooking_century_egg": {
 			"type": "minecraft:item",
@@ -1408,7 +1408,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1632
+			"unitWorth": 1224
 		},
 		"cooking_surstromming": {
 			"type": "minecraft:item",
@@ -1418,7 +1418,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 576
+			"unitWorth": 432
 		},
 		"cooking_pickled_pepper": {
 			"type": "minecraft:item",
@@ -1428,7 +1428,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 456
+			"unitWorth": 342
 		},
 		"cooking_truffle_oil": {
 			"type": "minecraft:item",
@@ -1438,7 +1438,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 33024
+			"unitWorth": 24768
 		},
 		"cooking_overnight_oats": {
 			"type": "minecraft:item",
@@ -1448,7 +1448,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1440
+			"unitWorth": 1080
 		},
 		"cooking_pickled_beetroot": {
 			"type": "minecraft:item",
@@ -1458,7 +1458,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 312
+			"unitWorth": 234
 		},
 		"cooking_pickled_egg": {
 			"type": "minecraft:item",
@@ -1468,7 +1468,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_vinegar_mason_jar": {
 			"type": "minecraft:item",
@@ -1478,7 +1478,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2040
+			"unitWorth": 1530
 		},
 		"cooking_pickled_pitcher_pod": {
 			"type": "minecraft:item",
@@ -1488,7 +1488,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 768
+			"unitWorth": 576
 		},
 		"cooking_kimchi": {
 			"type": "minecraft:item",
@@ -1498,7 +1498,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 852
+			"unitWorth": 639
 		},
 		"cooking_fermented_garlic_honey": {
 			"type": "minecraft:item",
@@ -1508,7 +1508,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1872
+			"unitWorth": 1404
 		},
 		"cooking_lumisene_bottle": {
 			"type": "minecraft:item",
@@ -1518,7 +1518,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_pickled_pumpkin_slice": {
 			"type": "minecraft:item",
@@ -1528,7 +1528,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 240
+			"unitWorth": 180
 		},
 		"cooking_pickled_lettuce": {
 			"type": "minecraft:item",
@@ -1538,7 +1538,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_pickled_potato": {
 			"type": "minecraft:item",
@@ -1548,7 +1548,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_pickled_carrot": {
 			"type": "minecraft:item",
@@ -1558,7 +1558,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 276
+			"unitWorth": 207
 		},
 		"cooking_pickled_golden_carrot": {
 			"type": "minecraft:item",
@@ -1568,7 +1568,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1800
+			"unitWorth": 1350
 		},
 		"cooking_pickled_ginger": {
 			"type": "minecraft:item",
@@ -1578,7 +1578,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_pickled_garlic": {
 			"type": "minecraft:item",
@@ -1588,7 +1588,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 324
+			"unitWorth": 243
 		},
 		"cooking_pickled_bellpepper": {
 			"type": "minecraft:item",
@@ -1598,7 +1598,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_pickled_eggplant": {
 			"type": "minecraft:item",
@@ -1608,7 +1608,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 504
+			"unitWorth": 378
 		},
 		"cooking_pickled_cauliflower": {
 			"type": "minecraft:item",
@@ -1618,7 +1618,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 576
+			"unitWorth": 432
 		},
 		"cooking_cooked_unusual_fillet": {
 			"type": "minecraft:item",
@@ -1628,7 +1628,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_ghost_charcoal": {
 			"type": "minecraft:item",
@@ -1638,7 +1638,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 216
+			"unitWorth": 162
 		},
 		"cooking_roastedhazelnutitem": {
 			"type": "minecraft:item",
@@ -1648,7 +1648,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_roasted_peanut": {
 			"type": "minecraft:item",
@@ -1658,7 +1658,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_roasted_yucca_fruit": {
 			"type": "minecraft:item",
@@ -1668,7 +1668,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_roasted_yucca_bundle": {
 			"type": "minecraft:item",
@@ -1678,7 +1678,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_roasted_yucca_cask": {
 			"type": "minecraft:item",
@@ -1688,7 +1688,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_cooked_beef": {
 			"type": "minecraft:item",
@@ -1698,7 +1698,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_baked_potato": {
 			"type": "minecraft:item",
@@ -1708,7 +1708,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_cooked_porkchop": {
 			"type": "minecraft:item",
@@ -1718,7 +1718,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cooked_rabbit": {
 			"type": "minecraft:item",
@@ -1728,7 +1728,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_cooked_mutton": {
 			"type": "minecraft:item",
@@ -1738,7 +1738,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_cooked_chicken": {
 			"type": "minecraft:item",
@@ -1748,7 +1748,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_cooked_clam_meat": {
 			"type": "minecraft:item",
@@ -1758,7 +1758,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_cooked_frog_leg": {
 			"type": "minecraft:item",
@@ -1768,7 +1768,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 240
+			"unitWorth": 180
 		},
 		"cooking_cooked_tropical_fish": {
 			"type": "minecraft:item",
@@ -1778,7 +1778,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_cooked_squid_tentacles": {
 			"type": "minecraft:item",
@@ -1788,7 +1788,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_cooked_glow_squid_tentacles": {
 			"type": "minecraft:item",
@@ -1798,7 +1798,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cooked_galliraptor": {
 			"type": "minecraft:item",
@@ -1808,7 +1808,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 5400
+			"unitWorth": 4050
 		},
 		"cooking_cooked_tribull_shank": {
 			"type": "minecraft:item",
@@ -1818,7 +1818,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 10800
+			"unitWorth": 8100
 		},
 		"cooking_cooked_bison_meat": {
 			"type": "minecraft:item",
@@ -1828,7 +1828,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_cooked_pelican_meat": {
 			"type": "minecraft:item",
@@ -1838,7 +1838,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cooked_venison": {
 			"type": "minecraft:item",
@@ -1848,7 +1848,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_cooked_cassowary_meat": {
 			"type": "minecraft:item",
@@ -1858,7 +1858,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 540
+			"unitWorth": 405
 		},
 		"cooking_cooked_salmon": {
 			"type": "minecraft:item",
@@ -1868,7 +1868,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1296
+			"unitWorth": 972
 		},
 		"cooking_cooked_crab_leg": {
 			"type": "minecraft:item",
@@ -1878,7 +1878,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_cooked_duck": {
 			"type": "minecraft:item",
@@ -1888,7 +1888,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_cooked_goose": {
 			"type": "minecraft:item",
@@ -1898,7 +1898,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_cooked_turkey": {
 			"type": "minecraft:item",
@@ -1908,7 +1908,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cooked_cod": {
 			"type": "minecraft:item",
@@ -1918,7 +1918,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1144
+			"unitWorth": 858
 		},
 		"cooking_cooked_aero_mono_stick": {
 			"type": "minecraft:item",
@@ -1928,7 +1928,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_fish_fillet_cooked": {
 			"type": "minecraft:item",
@@ -1938,7 +1938,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_cooked_buffalo_meat": {
 			"type": "minecraft:item",
@@ -1948,7 +1948,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_cooked_mussel_meat": {
 			"type": "minecraft:item",
@@ -1958,7 +1958,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_smoked_ham": {
 			"type": "minecraft:item",
@@ -1968,7 +1968,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_popped_chorus_fruit": {
 			"type": "minecraft:item",
@@ -1978,7 +1978,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_meat_pizza": {
 			"type": "minecraft:item",
@@ -1988,7 +1988,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3132
+			"unitWorth": 2349
 		},
 		"cooking_toast": {
 			"type": "minecraft:item",
@@ -1998,7 +1998,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 128
+			"unitWorth": 96
 		},
 		"cooking_cooked_vegetable_pizza": {
 			"type": "minecraft:item",
@@ -2008,7 +2008,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2484
+			"unitWorth": 1863
 		},
 		"cooking_roasted_garlic_clove": {
 			"type": "minecraft:item",
@@ -2018,7 +2018,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 84
+			"unitWorth": 63
 		},
 		"cooking_smoked_bellpepper": {
 			"type": "minecraft:item",
@@ -2028,7 +2028,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_baked_sweet_potato": {
 			"type": "minecraft:item",
@@ -2038,7 +2038,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 120
+			"unitWorth": 90
 		},
 		"cooking_mhadjeb": {
 			"type": "minecraft:item",
@@ -2048,7 +2048,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 560
+			"unitWorth": 420
 		},
 		"cooking_garlic_baked_cod": {
 			"type": "minecraft:item",
@@ -2058,7 +2058,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 344
+			"unitWorth": 258
 		},
 		"cooking_dried_tubabacco_leaf": {
 			"type": "minecraft:item",
@@ -2068,7 +2068,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 524
+			"unitWorth": 393
 		},
 		"cooking_dried_wheat": {
 			"type": "minecraft:item",
@@ -2078,7 +2078,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 276
+			"unitWorth": 207
 		},
 		"cooking_dried_barley": {
 			"type": "minecraft:item",
@@ -2088,7 +2088,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 68
+			"unitWorth": 51
 		},
 		"cooking_dried_corn": {
 			"type": "minecraft:item",
@@ -2098,7 +2098,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 168
+			"unitWorth": 126
 		},
 		"cooking_dried_oat": {
 			"type": "minecraft:item",
@@ -2108,7 +2108,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 204
+			"unitWorth": 153
 		},
 		"cooking_apple_cupcake": {
 			"type": "minecraft:item",
@@ -2118,7 +2118,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 512
+			"unitWorth": 384
 		},
 		"cooking_strawberry_cake": {
 			"type": "minecraft:item",
@@ -2128,7 +2128,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 768
+			"unitWorth": 576
 		},
 		"cooking_strawberry_cupcake": {
 			"type": "minecraft:item",
@@ -2138,7 +2138,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 768
+			"unitWorth": 576
 		},
 		"cooking_sweetberry_cupcake": {
 			"type": "minecraft:item",
@@ -2148,7 +2148,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_sweetberry_cake": {
 			"type": "minecraft:item",
@@ -2158,7 +2158,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_chocolate_glazed_cookie": {
 			"type": "minecraft:item",
@@ -2168,7 +2168,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3408
+			"unitWorth": 2556
 		},
 		"cooking_strawberry_glazed_cookie": {
 			"type": "minecraft:item",
@@ -2178,7 +2178,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 1024
+			"unitWorth": 768
 		},
 		"cooking_sweetberry_glazed_cookie": {
 			"type": "minecraft:item",
@@ -2188,7 +2188,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 640
+			"unitWorth": 480
 		},
 		"cooking_chocolate_cake": {
 			"type": "minecraft:item",
@@ -2198,7 +2198,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2272
+			"unitWorth": 1704
 		},
 		"cooking_chocolate_gateau": {
 			"type": "minecraft:item",
@@ -2208,7 +2208,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 400
+			"unitWorth": 300
 		},
 		"cooking_garlic_chicken_stew": {
 			"type": "minecraft:item",
@@ -2218,7 +2218,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1112
+			"unitWorth": 834
 		},
 		"cooking_chicken_tortilla_soup": {
 			"type": "minecraft:item",
@@ -2228,7 +2228,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1676
+			"unitWorth": 1257
 		},
 		"cooking_mexican_street_corn": {
 			"type": "minecraft:item",
@@ -2238,7 +2238,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 972
+			"unitWorth": 729
 		},
 		"cooking_tomato_sauce": {
 			"type": "minecraft:item",
@@ -2248,7 +2248,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 312
+			"unitWorth": 234
 		},
 		"cooking_beetroot_soup": {
 			"type": "minecraft:item",
@@ -2258,7 +2258,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_strawberry_tea": {
 			"type": "minecraft:item",
@@ -2268,7 +2268,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 240
+			"unitWorth": 180
 		},
 		"cooking_nettle_tea": {
 			"type": "minecraft:item",
@@ -2278,7 +2278,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 312
+			"unitWorth": 234
 		},
 		"cooking_cheese_pasta": {
 			"type": "minecraft:item",
@@ -2288,7 +2288,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 672
+			"unitWorth": 504
 		},
 		"cooking_onion_soup": {
 			"type": "minecraft:item",
@@ -2298,7 +2298,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_strawberry_jam": {
 			"type": "minecraft:item",
@@ -2308,7 +2308,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 128
+			"unitWorth": 96
 		},
 		"cooking_hot_cocoa": {
 			"type": "minecraft:item",
@@ -2318,7 +2318,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 164
+			"unitWorth": 123
 		},
 		"cooking_seafood_gumbo": {
 			"type": "minecraft:item",
@@ -2328,7 +2328,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 720
+			"unitWorth": 540
 		},
 		"cooking_pasta_with_mozzarella": {
 			"type": "minecraft:item",
@@ -2338,7 +2338,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 576
+			"unitWorth": 432
 		},
 		"cooking_pickle_soup": {
 			"type": "minecraft:item",
@@ -2348,7 +2348,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2796
+			"unitWorth": 2097
 		},
 		"cooking_tomato_soup": {
 			"type": "minecraft:item",
@@ -2358,7 +2358,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 420
+			"unitWorth": 315
 		},
 		"cooking_apple_cider": {
 			"type": "minecraft:item",
@@ -2368,7 +2368,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1076
+			"unitWorth": 807
 		},
 		"cooking_chocolate_mousse": {
 			"type": "minecraft:item",
@@ -2378,7 +2378,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 80
+			"unitWorth": 60
 		},
 		"cooking_pasta_with_meatballs": {
 			"type": "minecraft:item",
@@ -2388,7 +2388,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 504
+			"unitWorth": 378
 		},
 		"cooking_mushroom_rice": {
 			"type": "minecraft:item",
@@ -2398,7 +2398,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_salmon_on_white_wine": {
 			"type": "minecraft:item",
@@ -2408,7 +2408,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 864
+			"unitWorth": 648
 		},
 		"cooking_squid_ink_pasta": {
 			"type": "minecraft:item",
@@ -2418,7 +2418,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 992
+			"unitWorth": 744
 		},
 		"cooking_chocolate_truffle": {
 			"type": "minecraft:item",
@@ -2428,7 +2428,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 36
+			"unitWorth": 27
 		},
 		"cooking_beef_stew": {
 			"type": "minecraft:item",
@@ -2438,7 +2438,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 384
+			"unitWorth": 288
 		},
 		"cooking_crab_cakes": {
 			"type": "minecraft:item",
@@ -2448,7 +2448,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 740
+			"unitWorth": 555
 		},
 		"cooking_chicken_soup": {
 			"type": "minecraft:item",
@@ -2458,7 +2458,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 720
+			"unitWorth": 540
 		},
 		"cooking_baked_cod_stew": {
 			"type": "minecraft:item",
@@ -2468,7 +2468,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1532
+			"unitWorth": 1149
 		},
 		"cooking_clam_chowder": {
 			"type": "minecraft:item",
@@ -2478,7 +2478,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 1008
+			"unitWorth": 756
 		},
 		"cooking_jar_of_pickles": {
 			"type": "minecraft:item",
@@ -2488,7 +2488,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 24
+			"unitWorth": 18
 		},
 		"cooking_orange_pudding": {
 			"type": "minecraft:item",
@@ -2498,7 +2498,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 984
+			"unitWorth": 738
 		},
 		"cooking_glow_berry_custard": {
 			"type": "minecraft:item",
@@ -2508,7 +2508,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1292
+			"unitWorth": 969
 		},
 		"cooking_ratatouille": {
 			"type": "minecraft:item",
@@ -2518,7 +2518,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 776
+			"unitWorth": 582
 		},
 		"cooking_nut_milk_bottle": {
 			"type": "minecraft:item",
@@ -2528,7 +2528,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 308
+			"unitWorth": 231
 		},
 		"cooking_baked_soulsucker_stew": {
 			"type": "minecraft:item",
@@ -2538,7 +2538,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 7344
+			"unitWorth": 5508
 		},
 		"cooking_baked_glowdine_stew": {
 			"type": "minecraft:item",
@@ -2548,7 +2548,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 9792
+			"unitWorth": 7344
 		},
 		"cooking_baked_magmacubefish_stew": {
 			"type": "minecraft:item",
@@ -2558,7 +2558,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 12888
+			"unitWorth": 9666
 		},
 		"cooking_baked_blazefish_stew": {
 			"type": "minecraft:item",
@@ -2568,7 +2568,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 9072
+			"unitWorth": 6804
 		},
 		"cooking_baked_searing_cod_stew": {
 			"type": "minecraft:item",
@@ -2578,7 +2578,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6480
+			"unitWorth": 4860
 		},
 		"cooking_baked_obsidianfish_stew": {
 			"type": "minecraft:item",
@@ -2588,7 +2588,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 10944
+			"unitWorth": 8208
 		},
 		"cooking_baked_lava_pufferfish_stew": {
 			"type": "minecraft:item",
@@ -2598,7 +2598,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6480
+			"unitWorth": 4860
 		},
 		"cooking_pudding": {
 			"type": "minecraft:item",
@@ -2608,7 +2608,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 600
+			"unitWorth": 450
 		},
 		"cooking_dumplings": {
 			"type": "minecraft:item",
@@ -2618,7 +2618,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 612
+			"unitWorth": 459
 		},
 		"cooking_hazelnut_ella": {
 			"type": "minecraft:item",
@@ -2628,7 +2628,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6000
+			"unitWorth": 4500
 		},
 		"cooking_chocolate_jam": {
 			"type": "minecraft:item",
@@ -2638,7 +2638,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 504
+			"unitWorth": 378
 		},
 		"cooking_lasagne": {
 			"type": "minecraft:item",
@@ -2648,7 +2648,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 668
+			"unitWorth": 501
 		},
 		"cooking_cooked_rice": {
 			"type": "minecraft:item",
@@ -2658,7 +2658,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_shrimp_fried_rice": {
 			"type": "minecraft:item",
@@ -2668,7 +2668,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 572
+			"unitWorth": 429
 		},
 		"cooking_khinkali": {
 			"type": "minecraft:item",
@@ -2678,7 +2678,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_vegetable_soup": {
 			"type": "minecraft:item",
@@ -2688,7 +2688,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 864
+			"unitWorth": 648
 		},
 		"cooking_stuffed_nautilus_shell": {
 			"type": "minecraft:item",
@@ -2698,7 +2698,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_ribwort_tea": {
 			"type": "minecraft:item",
@@ -2708,7 +2708,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 312
+			"unitWorth": 234
 		},
 		"cooking_mushroom_soup": {
 			"type": "minecraft:item",
@@ -2718,7 +2718,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 3384
+			"unitWorth": 2538
 		},
 		"cooking_fried_rice": {
 			"type": "minecraft:item",
@@ -2728,7 +2728,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 504
+			"unitWorth": 378
 		},
 		"cooking_barley_soup": {
 			"type": "minecraft:item",
@@ -2738,7 +2738,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 116
+			"unitWorth": 87
 		},
 		"cooking_sausage": {
 			"type": "minecraft:item",
@@ -2748,7 +2748,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 336
+			"unitWorth": 252
 		},
 		"cooking_sausage_with_oat_patty": {
 			"type": "minecraft:item",
@@ -2758,7 +2758,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 648
+			"unitWorth": 486
 		},
 		"cooking_noodle_soup": {
 			"type": "minecraft:item",
@@ -2768,7 +2768,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 524
+			"unitWorth": 393
 		},
 		"cooking_ghostly_chili": {
 			"type": "minecraft:item",
@@ -2778,7 +2778,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1224
+			"unitWorth": 918
 		},
 		"cooking_glowberry_jam": {
 			"type": "minecraft:item",
@@ -2788,7 +2788,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 164
+			"unitWorth": 123
 		},
 		"cooking_simple_tomato_soup": {
 			"type": "minecraft:item",
@@ -2798,7 +2798,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 332
+			"unitWorth": 249
 		},
 		"cooking_sweetberry_jam": {
 			"type": "minecraft:item",
@@ -2808,7 +2808,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 32
+			"unitWorth": 24
 		},
 		"cooking_chocolate_donut": {
 			"type": "minecraft:item",
@@ -2818,7 +2818,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 18864
+			"unitWorth": 14148
 		},
 		"cooking_vegetable_noodles": {
 			"type": "minecraft:item",
@@ -2828,7 +2828,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 816
+			"unitWorth": 612
 		},
 		"cooking_pad_thai": {
 			"type": "minecraft:item",
@@ -2838,7 +2838,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2232
+			"unitWorth": 1674
 		},
 		"cooking_potato_soup": {
 			"type": "minecraft:item",
@@ -2848,7 +2848,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 216
+			"unitWorth": 162
 		},
 		"cooking_apple_jam": {
 			"type": "minecraft:item",
@@ -2858,7 +2858,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 68
+			"unitWorth": 51
 		},
 		"cooking_corn_grits": {
 			"type": "minecraft:item",
@@ -2868,7 +2868,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 432
+			"unitWorth": 324
 		},
 		"cooking_fish_stew": {
 			"type": "minecraft:item",
@@ -2878,7 +2878,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 924
+			"unitWorth": 693
 		},
 		"cooking_pasta_with_mutton_chop": {
 			"type": "minecraft:item",
@@ -2888,7 +2888,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 660
+			"unitWorth": 495
 		},
 		"cooking_chicken_teriyaki": {
 			"type": "minecraft:item",
@@ -2898,7 +2898,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_bisque": {
 			"type": "minecraft:item",
@@ -2908,7 +2908,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1128
+			"unitWorth": 846
 		},
 		"cooking_goulash": {
 			"type": "minecraft:item",
@@ -2918,7 +2918,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1856
+			"unitWorth": 1392
 		},
 		"cooking_cooked_shrimp": {
 			"type": "minecraft:item",
@@ -2928,7 +2928,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 24
+			"unitWorth": 18
 		},
 		"cooking_cooked_clawster": {
 			"type": "minecraft:item",
@@ -2938,7 +2938,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_cooked_crab": {
 			"type": "minecraft:item",
@@ -2948,7 +2948,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_clam_bake": {
 			"type": "minecraft:item",
@@ -2958,7 +2958,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 696
+			"unitWorth": 522
 		},
 		"cooking_pumpkin_soup": {
 			"type": "minecraft:item",
@@ -2968,7 +2968,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 840
+			"unitWorth": 630
 		},
 		"cooking_stuffed_pumpkin_block": {
 			"type": "minecraft:item",
@@ -2978,7 +2978,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1800
+			"unitWorth": 1350
 		},
 		"cooking_cauliflower_soup": {
 			"type": "minecraft:item",
@@ -2988,7 +2988,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 792
+			"unitWorth": 594
 		},
 		"cooking_potato_noodles": {
 			"type": "minecraft:item",
@@ -2998,7 +2998,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 264
+			"unitWorth": 198
 		},
 		"cooking_shakshouka": {
 			"type": "minecraft:item",
@@ -3008,7 +3008,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 992
+			"unitWorth": 744
 		},
 		"cooking_roasted_vegetables": {
 			"type": "minecraft:item",
@@ -3018,7 +3018,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1440
+			"unitWorth": 1080
 		},
 		"cooking_stuffed_bellpeppers": {
 			"type": "minecraft:item",
@@ -3028,7 +3028,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 876
+			"unitWorth": 657
 		},
 		"cooking_sweet_potato_mochi": {
 			"type": "minecraft:item",
@@ -3038,7 +3038,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 624
+			"unitWorth": 468
 		},
 		"cooking_garlic_rice_with_cauliflower": {
 			"type": "minecraft:item",
@@ -3048,7 +3048,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 888
+			"unitWorth": 666
 		},
 		"cooking_garlic_stuffed_mushrooms": {
 			"type": "minecraft:item",
@@ -3058,7 +3058,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 600
+			"unitWorth": 450
 		},
 		"cooking_fish_and_chips": {
 			"type": "minecraft:item",
@@ -3068,7 +3068,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 552
+			"unitWorth": 414
 		},
 		"cooking_carrot_juice": {
 			"type": "minecraft:item",
@@ -3078,7 +3078,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 252
+			"unitWorth": 189
 		},
 		"cooking_cacciatore": {
 			"type": "minecraft:item",
@@ -3088,7 +3088,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 632
+			"unitWorth": 474
 		},
 		"cooking_sausage_with_cheese": {
 			"type": "minecraft:item",
@@ -3098,7 +3098,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 1008
+			"unitWorth": 756
 		},
 		"cooking_tropical_fish_supreme": {
 			"type": "minecraft:item",
@@ -3108,7 +3108,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2944
+			"unitWorth": 2208
 		},
 		"cooking_waffle": {
 			"type": "minecraft:item",
@@ -3118,7 +3118,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_baked_lamb_ham": {
 			"type": "minecraft:item",
@@ -3128,7 +3128,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 320
+			"unitWorth": 240
 		},
 		"cooking_bun": {
 			"type": "minecraft:item",
@@ -3138,7 +3138,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 40
+			"unitWorth": 30
 		},
 		"cooking_stuffed_rabbit": {
 			"type": "minecraft:item",
@@ -3148,7 +3148,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 792
+			"unitWorth": 594
 		},
 		"cooking_roasted_chicken": {
 			"type": "minecraft:item",
@@ -3158,7 +3158,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 376
+			"unitWorth": 282
 		},
 		"cooking_chicken_with_vegetables": {
 			"type": "minecraft:item",
@@ -3168,7 +3168,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1152
+			"unitWorth": 864
 		},
 		"cooking_baguette": {
 			"type": "minecraft:item",
@@ -3178,7 +3178,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 72
+			"unitWorth": 54
 		},
 		"cooking_croissant": {
 			"type": "minecraft:item",
@@ -3188,7 +3188,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 16
+			"unitWorth": 12
 		},
 		"cooking_glowberry_tart": {
 			"type": "minecraft:item",
@@ -3198,7 +3198,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 280
+			"unitWorth": 210
 		},
 		"cooking_grilled_bacon_sandwich": {
 			"type": "minecraft:item",
@@ -3208,7 +3208,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 448
+			"unitWorth": 336
 		},
 		"cooking_pork_knuckle": {
 			"type": "minecraft:item",
@@ -3218,7 +3218,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1280
+			"unitWorth": 960
 		},
 		"cooking_roastbeef_with_glazed_carrots": {
 			"type": "minecraft:item",
@@ -3228,7 +3228,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 576
+			"unitWorth": 432
 		},
 		"cooking_cornet": {
 			"type": "minecraft:item",
@@ -3238,7 +3238,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 160
+			"unitWorth": 120
 		},
 		"cooking_honey_cookie": {
 			"type": "minecraft:item",
@@ -3248,7 +3248,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 512
+			"unitWorth": 384
 		},
 		"cooking_misslilitu_biscuit": {
 			"type": "minecraft:item",
@@ -3258,7 +3258,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 32
+			"unitWorth": 24
 		},
 		"cooking_gingerbread": {
 			"type": "minecraft:item",
@@ -3268,7 +3268,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 416
+			"unitWorth": 312
 		},
 		"cooking_stuffed_chicken": {
 			"type": "minecraft:item",
@@ -3278,7 +3278,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 344
+			"unitWorth": 258
 		},
 		"cooking_grilled_salmon_sandwich": {
 			"type": "minecraft:item",
@@ -3288,7 +3288,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 256
+			"unitWorth": 192
 		},
 		"cooking_beef_wellington": {
 			"type": "minecraft:item",
@@ -3298,7 +3298,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 10464
+			"unitWorth": 7848
 		},
 		"cooking_potato_with_roast_meat": {
 			"type": "minecraft:item",
@@ -3308,7 +3308,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_pasta_with_onion_sauce": {
 			"type": "minecraft:item",
@@ -3318,7 +3318,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 80
+			"unitWorth": 60
 		},
 		"cooking_chocolate_tart": {
 			"type": "minecraft:item",
@@ -3328,7 +3328,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 256
+			"unitWorth": 192
 		},
 		"cooking_grandmothers_strawberry_cake": {
 			"type": "minecraft:item",
@@ -3338,7 +3338,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 144
+			"unitWorth": 108
 		},
 		"cooking_braided_bread": {
 			"type": "minecraft:item",
@@ -3348,7 +3348,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 48
+			"unitWorth": 36
 		},
 		"cooking_roasted_corn": {
 			"type": "minecraft:item",
@@ -3358,7 +3358,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 704
+			"unitWorth": 528
 		},
 		"cooking_chicken_alfredo": {
 			"type": "minecraft:item",
@@ -3368,7 +3368,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 896
+			"unitWorth": 672
 		},
 		"cooking_farmers_bread": {
 			"type": "minecraft:item",
@@ -3378,7 +3378,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_crusty_bread": {
 			"type": "minecraft:item",
@@ -3388,7 +3388,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 64
+			"unitWorth": 48
 		},
 		"cooking_bundt_cake": {
 			"type": "minecraft:item",
@@ -3398,7 +3398,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 832
+			"unitWorth": 624
 		},
 		"cooking_pork_ribs": {
 			"type": "minecraft:item",
@@ -3408,7 +3408,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 512
+			"unitWorth": 384
 		},
 		"cooking_sweet_berry_cookie": {
 			"type": "minecraft:item",
@@ -3418,7 +3418,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 64
+			"unitWorth": 48
 		},
 		"cooking_linzer_tart": {
 			"type": "minecraft:item",
@@ -3428,7 +3428,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 8280
+			"unitWorth": 6210
 		},
 		"cooking_pretzel": {
 			"type": "minecraft:item",
@@ -3438,7 +3438,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 104
+			"unitWorth": 78
 		},
 		"cooking_jam_roll": {
 			"type": "minecraft:item",
@@ -3448,7 +3448,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 6000
+			"unitWorth": 4500
 		},
 		"cooking_pumpkin_bread": {
 			"type": "minecraft:item",
@@ -3458,7 +3458,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 760
+			"unitWorth": 570
 		},
 		"cooking_whole_roasted_cauliflower": {
 			"type": "minecraft:item",
@@ -3468,7 +3468,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 640
+			"unitWorth": 480
 		},
 		"cooking_garlic_bread": {
 			"type": "minecraft:item",
@@ -3478,7 +3478,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 256
+			"unitWorth": 192
 		},
 		"cooking_cauliflower_bread": {
 			"type": "minecraft:item",
@@ -3488,7 +3488,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 608
+			"unitWorth": 456
 		},
 		"cooking_lamb_with_corn": {
 			"type": "minecraft:item",
@@ -3498,7 +3498,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1184
+			"unitWorth": 888
 		},
 		"cooking_bolognese": {
 			"type": "minecraft:item",
@@ -3508,7 +3508,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1520
+			"unitWorth": 1140
 		},
 		"cooking_pasta_with_bolognese": {
 			"type": "minecraft:item",
@@ -3518,7 +3518,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2032
+			"unitWorth": 1524
 		},
 		"cooking_roasted_lamb_with_lettuce": {
 			"type": "minecraft:item",
@@ -3528,7 +3528,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 1024
+			"unitWorth": 768
 		},
 		"cooking_oat_pancake": {
 			"type": "minecraft:item",
@@ -3538,7 +3538,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 672
+			"unitWorth": 504
 		},
 		"cooking_pasta_with_lettuce": {
 			"type": "minecraft:item",
@@ -3548,7 +3548,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 704
+			"unitWorth": 528
 		},
 		"cooking_beef_patty_with_vegetables": {
 			"type": "minecraft:item",
@@ -3558,7 +3558,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 864
+			"unitWorth": 648
 		},
 		"cooking_fillet_steak": {
 			"type": "minecraft:item",
@@ -3568,7 +3568,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 2176
+			"unitWorth": 1632
 		},
 		"cooking_barley_patties_with_potatoes": {
 			"type": "minecraft:item",
@@ -3578,7 +3578,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 640
+			"unitWorth": 480
 		},
 		"cooking_chicken_wrapped_in_bacon": {
 			"type": "minecraft:item",
@@ -3588,7 +3588,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 1056
+			"unitWorth": 792
 		},
 		"cooking_beef_with_mushroom_in_wine_and_potatoes": {
 			"type": "minecraft:item",
@@ -3598,7 +3598,7 @@
 				"min": 1,
 				"max": 4
 			},
-			"unitWorth": 4224
+			"unitWorth": 3168
 		},
 		"cooking_omelet": {
 			"type": "minecraft:item",
@@ -3608,7 +3608,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 176
+			"unitWorth": 132
 		},
 		"cooking_fried_chicken": {
 			"type": "minecraft:item",
@@ -3618,7 +3618,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 608
+			"unitWorth": 456
 		},
 		"cooking_bacon_with_eggs": {
 			"type": "minecraft:item",
@@ -3628,7 +3628,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 272
+			"unitWorth": 204
 		},
 		"cooking_potato_salad": {
 			"type": "minecraft:item",
@@ -3638,7 +3638,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 656
+			"unitWorth": 492
 		},
 		"cooking_oatmeal_with_strawberries": {
 			"type": "minecraft:item",
@@ -3648,7 +3648,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 464
+			"unitWorth": 348
 		},
 		"cooking_farmer_salad": {
 			"type": "minecraft:item",
@@ -3658,7 +3658,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 480
+			"unitWorth": 360
 		},
 		"cooking_mozzarella": {
 			"type": "minecraft:item",
@@ -3668,7 +3668,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 96
+			"unitWorth": 72
 		},
 		"cooking_beetroot_salad": {
 			"type": "minecraft:item",
@@ -3678,7 +3678,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 288
+			"unitWorth": 216
 		},
 		"cooking_harvest_plate": {
 			"type": "minecraft:item",
@@ -3688,7 +3688,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 192
+			"unitWorth": 144
 		},
 		"cooking_butter": {
 			"type": "minecraft:item",
@@ -3698,7 +3698,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 128
+			"unitWorth": 96
 		},
 		"cooking_beef_tartare": {
 			"type": "minecraft:item",
@@ -3708,7 +3708,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 112
+			"unitWorth": 84
 		},
 		"cooking_salad": {
 			"type": "minecraft:item",
@@ -3718,7 +3718,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 200
+			"unitWorth": 150
 		},
 		"cooking_fresh_garden_salad": {
 			"type": "minecraft:item",
@@ -3728,7 +3728,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 296
+			"unitWorth": 222
 		},
 		"cooking_tomato_mozzarella_salad": {
 			"type": "minecraft:item",
@@ -3738,7 +3738,7 @@
 				"min": 2,
 				"max": 8
 			},
-			"unitWorth": 368
+			"unitWorth": 276
 		}
 	}
 }

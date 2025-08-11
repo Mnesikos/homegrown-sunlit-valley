@@ -31,5 +31,5 @@ ItemEvents.rightClicked("society:plushie_capsule", (e) => {
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
   );
-  player.addItemCooldown("society:plushie_capsule", 2);
+  global.addItemCooldown(player, "society:plushie_capsule", 2);
 });

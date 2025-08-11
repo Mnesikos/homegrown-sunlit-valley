@@ -266,7 +266,7 @@ const handleFeed = (data, day, e) => {
       0.01
     );
     item.count--;
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 };
 
@@ -312,7 +312,7 @@ const handleMagicHarvest = (name, type, data, day, e) => {
       20,
       2
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   } else {
     errorText = `${name} needs some time to rest`;
     if (hearts < 5) {
@@ -322,7 +322,7 @@ const handleMagicHarvest = (name, type, data, day, e) => {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 2 ${errorText}`
       );
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 };
 
@@ -404,7 +404,7 @@ ItemEvents.entityInteracted((e) => {
           0.01
         );
         data.affection = affection - 100;
-        player.addItemCooldown(item, 5);
+        global.addItemCooldown(player, item, 5);
       }
       if (player.stages.has("bribery") && item === "numismatics:crown" && !data.bribed) {
         if (player.cooldowns.isOnCooldown(item)) return;
@@ -426,7 +426,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 10);
+        global.addItemCooldown(player, item, 10);
       }
       if (
         player.stages.has("clockwork") &&
@@ -501,7 +501,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 4);
+        global.addItemCooldown(player, item, 4);
       }
       if (item === "society:magic_shears") handleMagicHarvest(name, nonIdType, data, day, e);
       if (affection > 1075) {

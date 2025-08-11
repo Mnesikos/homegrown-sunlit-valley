@@ -12,9 +12,9 @@ const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",
         amount: amountFunction || {
-              min: pricy ? 1 : 2,
-              max: pricy ? 4 : 8,
-            },
+          min: pricy ? 1 : 2,
+          max: pricy ? 4 : 8,
+        },
         unitWorth: tradeEntry.value * mult,
       };
     } else console.log("ERROR: Couldn't generate bounty entry for " + item);
@@ -149,5 +149,6 @@ if (runBountyDataGen) {
     "minecraft:cod",
     "unusualfishmod:raw_snowflake",
   ]);
-  createDecree("cooking", Ingredient.of("#society:dish").itemIds, 4, 256);
+  createDecree("cooking", Ingredient.of("#society:dish").itemIds, 3, 256);
+  createDecree("fishing", Ingredient.of("#minecraft:fishes").itemIds, 4, 128);
 }

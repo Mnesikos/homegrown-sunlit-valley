@@ -22,5 +22,5 @@ ItemEvents.rightClicked("society:fish_radar", (e) => {
   fish.forEach((fish) => {
     player.tell(renderItem(fish));
   });
-  player.addItemCooldown(item, 20);
+  global.addItemCooldown(player, item, 20);
 });

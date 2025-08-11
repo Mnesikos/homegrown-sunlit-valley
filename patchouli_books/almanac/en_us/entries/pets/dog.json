@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Gifts:$()$(br)Sheep Fossil$(br2)$(l)Taming$()$(br)Bone"
+      "text": "$(l)Possible Gifts:$()$(br)Sheep Fossil$(br)$(l)Taming item:$()$(br)Bone$(br2)$(l)Notes$()$(br)Can be found in plains."
     },
     {
       "type": "patchouli:entity",

@@ -27,10 +27,10 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");
-  e.addLootTableModifier("minecraft:entities/pig")
+  e.addLootTableModifier("minecraft:entities/enderman")
     .randomChance(0.05)
     .addLoot("minecraft:eye_armor_trim_smithing_template");
-  e.addLootTableModifier("minecraft:entities/enderman")
+  e.addLootTableModifier("minecraft:entities/pig")
     .randomChance(0.05)
     .addLoot("society:living_flesh");
   e.addLootTableModifier("minecraft:entities/hoglin").replaceLoot(

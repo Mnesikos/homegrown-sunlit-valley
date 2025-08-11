@@ -55,7 +55,7 @@ ServerEvents.recipes((e) => {
     { egg: "wildernature:red_wolf_spawn_egg", mineral: "society:spider_silk", coin: "crown" },
     { egg: "wildernature:cassowary_spawn_egg", mineral: "society:mini_oni_eye", coin: "crown" },
     { egg: "wildernature:squirrel_spawn_egg", mineral: "society:living_flesh", coin: "crown" },
-    { egg: "wildernature:flamingo_spawn_egg", mineral: "society:magma_geode", coin: "sun" },
+    { egg: "wildernature:flamingo_spawn_egg", mineral: "society:supreme_mayonnaise", coin: "sun" },
     { egg: "wildernature:penguin_spawn_egg", mineral: "society:frozen_geode", coin: "sun" },
     { egg: "wildernature:minisheep_spawn_egg", mineral: "society:lemon_stone", coin: "sun" },
     { egg: "wildernature:raccoon_spawn_egg", mineral: "society:jade", coin: "crown" },
@@ -76,6 +76,21 @@ ServerEvents.recipes((e) => {
     {
       egg: "atmospheric:cochineal_spawn_egg",
       mineral: "society:production_science_pack",
+      coin: "crown",
+    },
+    {
+      egg: "crittersandcompanions:red_panda_spawn_egg",
+      mineral: "society:magma_geode",
+      coin: "crown",
+    },
+    {
+      egg: "crittersandcompanions:ferret_spawn_egg",
+      mineral: "society:glitched_vhs",
+      coin: "crown",
+    },
+    {
+      egg: "crittersandcompanions:shima_enaga_spawn_egg",
+      mineral: "society:steamy_gadget",
       coin: "crown",
     },
   ];

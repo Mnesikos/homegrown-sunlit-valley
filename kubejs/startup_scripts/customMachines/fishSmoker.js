@@ -74,6 +74,7 @@ const smokableFish = [
   "unusualfishmod:raw_bark_angelfish",
   "unusualfishmod:raw_amber_goby",
   "unusualfishmod:raw_eyelash",
+  "crittersandcompanions:koi_fish",
 ];
 smokableFish.forEach((fish) => {
   let fishId = fish.split(":")[1];

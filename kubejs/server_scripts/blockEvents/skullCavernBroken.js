@@ -88,48 +88,6 @@ const rollReplaceTable = (table, hasRope) => {
   return "minecraft:obsidian";
 };
 
-const handleRegen = (server, level, block) => {
-  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
-  let belowPos;
-  let belowBlock;
-  let belowBelowPos;
-  let hasRope;
-
-  let toggleBit =
-    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
-  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
-    server.scheduleInTicks(2400, () => {
-      handleRegen(server, level, block);
-    });
-  } else {
-    belowPos = block.getPos().below();
-    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-    belowBelowPos = belowBlock.getPos().below();
-    hasRope =
-      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
-      "farmersdelight:rope";
-    let newBlock;
-    switch (Number(block.properties.get("type"))) {
-      case 4:
-        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
-        break;
-      case 3:
-        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
-        break;
-      case 2:
-        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
-        break;
-      case 1:
-        newBlock = rollReplaceTable(iceRockTable, hasRope);
-        break;
-      default:
-      case 0:
-        newBlock = rollReplaceTable(stoneRockTable, hasRope);
-        break;
-    }
-    block.set(newBlock);
-  }
-};
 const scheduleFunction = (level, pos, server, rockType) => {
   server.scheduleInTicks(5, () => {
     if (level.getBlock(pos) == "minecraft:air") {
@@ -140,7 +98,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
         chunkbit: toggleBit.toString(),
       });
       server.scheduleInTicks(2400, () => {
-        handleRegen(server, level, level.getBlock(pos));
+        global.handleSkullCavernRegen(server, level, level.getBlock(pos));
       });
     }
   });
@@ -223,6 +181,7 @@ LevelEvents.beforeExplosion((e) => {
     });
   }
 });
+
 BlockEvents.broken("society:skull_cavern_teleporter", (e) => {
   const { level } = e;
   if (level.dimension === "society:skull_cavern") e.cancel();

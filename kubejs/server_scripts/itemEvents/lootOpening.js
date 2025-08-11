@@ -20,7 +20,7 @@ ItemEvents.rightClicked("society:furniture_box", (e) => {
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
   );
-  player.addItemCooldown("society:furniture_box", 2);
+  global.addItemCooldown(player, "society:furniture_box", 2);
 });
 
 const fantasyBoxes = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
@@ -47,7 +47,7 @@ fantasyBoxes.forEach((theme) => {
     server.runCommandSilent(
       `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(`society:fantasy_box_${theme}`, 2);
+    global.addItemCooldown(player, `society:fantasy_box_${theme}`, 2);
   });
 });
 
@@ -71,7 +71,7 @@ ItemEvents.rightClicked("society:bouquet_bag", (e) => {
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
   );
-  player.addItemCooldown("society:bouquet_bag", 2);
+  global.addItemCooldown(player, "society:bouquet_bag", 2);
 });
 
 ItemEvents.rightClicked("society:scavenged_food_bag", (e) => {
@@ -94,5 +94,5 @@ ItemEvents.rightClicked("society:scavenged_food_bag", (e) => {
   server.runCommandSilent(
     `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
   );
-  player.addItemCooldown("society:scavenged_food_bag", 2);
+  global.addItemCooldown(player, "society:scavenged_food_bag", 2);
 });

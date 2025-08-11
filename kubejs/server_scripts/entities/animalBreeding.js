@@ -34,12 +34,21 @@ ItemEvents.entityInteracted((e) => {
 
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
+    if (target.type === "wildernature:flamingo") {
+      server.runCommandSilent(
+        `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 5 This animal cannot breed.`
+      );
+      e.cancel();
+    }
     let animalNbt = target.getNbt();
     let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
     let ageLastBred = target.persistentData.ageLastBred || 0;
     if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
     if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {
-      if (target.type === "minecraft:panda" && Math.random() > 0.2) {
+      if (
+        ["crittersandcompanions:red_panda", "minecraft:panda"].includes(target.type) &&
+        Math.random() > 0.2
+      ) {
         item.count--;
         target.persistentData.ageLastBred = day;
         server.runCommandSilent(
@@ -63,10 +72,10 @@ ItemEvents.entityInteracted((e) => {
         );
         target.persistentData.ageLastBred = day;
         player.swing();
-        player.addItemCooldown(item, 10);
+        global.addItemCooldown(player, item, 10);
       }
     } else if (day > ageLastBred) {
-      player.addItemCooldown("society:miracle_potion", 40);
+      global.addItemCooldown(player, "society:miracle_potion", 40);
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 4 This animal needs time to rest after taking a Miracle Potion...`
       );

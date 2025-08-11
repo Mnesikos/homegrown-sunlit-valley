@@ -301,6 +301,10 @@ ItemEvents.tooltip((tooltip) => {
     "society:black_opal",
     Text.green("Use on a §2Crystalarium§a to give it a 10% chance of producing pristine items")
   );
+    tooltip.add(
+    "society:enkephalin",
+    Text.green("Use on a §2Mayonnaise Machine§a to give it a 5% chance of producing Supreme Mayonnaise")
+  );
   tooltip.add(
     "society:tiny_gnome",
     Text.green("Use on a §2Loom§a to give it a 25% chance of producing rare furniture")

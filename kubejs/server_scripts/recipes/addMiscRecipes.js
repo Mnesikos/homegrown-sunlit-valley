@@ -101,6 +101,10 @@ ServerEvents.recipes((e) => {
     f: "society:jade",
     g: "moreminecarts:organic_glass",
   });
+  e.stonecutting("moreminecarts:greenhouse_glass_stairs", "moreminecarts:chiseled_organic_glass");
+  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_stairs");
+  e.stonecutting("moreminecarts:greenhouse_glass_slab", "moreminecarts:chiseled_organic_glass");
+  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_slab");
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",

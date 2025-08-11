@@ -3,7 +3,6 @@ global.handleLongwings = (entity, item) => {
   const entities = level
     .getEntitiesWithin(entity.boundingBox.inflate(16))
     .filter((e) => global.checkEntityTag(e, "society:longwing"));
-
   const radius = 3;
   const { x, y, z } = entity;
   let scanBlock;

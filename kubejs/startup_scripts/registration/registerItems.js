@@ -43,6 +43,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
   e.create("society:inserter").texture("society:item/inserter");
   e.create("society:cordycep").texture("society:item/cordycep");
+  e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:blueberry")
     .texture("society:item/blueberry")
     .food((food) => {
@@ -837,7 +838,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.frozenGeodeList.forEach((geode) => {
@@ -845,7 +846,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/frozen_geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.magmaGeodeList.forEach((geode) => {
@@ -853,14 +854,14 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/magma_geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.gems.forEach((gem) => {
     e.create(`society:pristine_${gem.item.split(":")[1]}`)
       .texture(`society:item/gems/${gem.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   const vanillaPristine = [
@@ -875,6 +876,6 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${gem.split(":")[1]}`)
       .texture(`minecraft:item/${gem.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 });

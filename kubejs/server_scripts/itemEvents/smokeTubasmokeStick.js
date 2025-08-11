@@ -149,5 +149,5 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       );
     });
   }
-  player.addItemCooldown(item, 10);
+  global.addItemCooldown(player, item, 10);
 });

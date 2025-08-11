@@ -342,3 +342,7 @@ global.addAttributesFromStages = (player, server) => {
   if (stages.has("fence")) server.runCommandSilent(attributeCommand("meat", 1.5));
   if (stages.has("looting_tycoon")) server.runCommandSilent(attributeCommand("meat", 2));
 };
+
+global.addItemCooldown = (player, item, time) => {
+  if (!player.isFake()) player.addItemCooldown(item, time);
+};

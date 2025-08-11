@@ -371,6 +371,24 @@
     },
     {
       "offer": {
+        "itemKey": "society:enkephalin",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "society:nether_jelly",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 32,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:fletcher_enkephalin_for_nether_jelly"
+    },
+    {
+      "offer": {
         "itemKey": "society:cordycep",
         "amount": 1,
         "priceModifier": 0

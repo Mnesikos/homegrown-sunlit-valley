@@ -185,6 +185,23 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
+    animal: "crittersandcompanions:red_panda",
+    forages: [
+      {
+        item: "society:ruby",
+        countMult: 2,
+        chance: 0.3,
+        minHearts: 3,
+      },
+      {
+        item: "society:pristine_ruby",
+        countMult: 1,
+        chance: 0.1,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
     animal: "wildernature:squirrel",
     forages: [
       {
@@ -307,7 +324,7 @@ global.husbandryForagingDefinitions = [
         item: "supplementaries:antique_ink",
         countMult: 1,
         chance: 0.1,
-        minHearts: 8
+        minHearts: 8,
       },
     ],
   },
@@ -325,7 +342,7 @@ global.husbandryForagingDefinitions = [
         item: "society:legendary_ink",
         countMult: 1,
         chance: 0.1,
-        minHearts: 8
+        minHearts: 8,
       },
     ],
   },
@@ -500,4 +517,9 @@ global.petGifts = [
     animal: "minecraft:axolotl",
     gifts: ["simplehats:axolotl_on_head", "beachparty:rubber_ring_axolotl"],
   },
+  {
+    animal: "crittersandcompanions:ferret",
+    gifts: ["crittersandcompanions:jumping_spider_spawn_egg"],
+  },
+  { animal: "crittersandcompanions:shima_enaga", gifts: ["relics:elytra_booster"] },
 ];

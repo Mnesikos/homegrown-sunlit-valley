@@ -42,12 +42,6 @@ StartupEvents.registry("block", (e) => {
     .tagBlock("minecraft:mineable/hoe")
     .randomTick((tick) => {})
     .property(integerProperty.create("type", 0, 3))
-    .defaultState((state) => {
-      state.set(integerProperty.create("type", 0, 3), 0);
-    })
-    .placementState((state) => {
-      state.set(integerProperty.create("type", 0, 3), 0);
-    })
     .item((seedItem) => {
       seedItem.texture("society:item/berry_bush_seed");
     }).blockstateJson = {
@@ -65,21 +59,9 @@ StartupEvents.registry("block", (e) => {
         apply: { model: "society:berry_bush/base"},
       },
       {
-        when: { age: 3, type: 0 },
+        when: { age: 3 },
         apply: { model: "society:berry_bush/salmonberry"},
-      },
-      {
-        when: { age: 3, type: 0 },
-        apply: { model: "society:berry_bush/boysenberry"},
-      },
-      {
-        when: { age: 3, type: 0 },
-        apply: { model: "society:berry_bush/cranberry"},
-      },
-      {
-        when: { age: 3, type: 0 },
-        apply: { model: "society:berry_bush/crystalberry"},
-      },
+      }
     ],
   };
 

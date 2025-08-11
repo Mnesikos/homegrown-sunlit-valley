@@ -325,6 +325,7 @@ global.prizeMachineRewards = [
       "society:infinity_worm",
       "society:cordycep",
       "society:pink_matter",
+      "society:enkephalin",
     ],
   },
   {

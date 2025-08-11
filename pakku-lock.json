@@ -1063,7 +1063,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Botania-1.20.1-449-FORGE.jar",
+                    "file_name": "Botania-1.20.1-450-FORGE.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -1071,19 +1071,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6843/600/Botania-1.20.1-449-FORGE.jar",
-                    "id": "6843600",
+                    "url": "https://edge.forgecdn.net/files/6870/713/Botania-1.20.1-450-FORGE.jar",
+                    "id": "6870713",
                     "parent_id": "225643",
                     "hashes": {
-                        "sha1": "4cc4832c94d7b4eeddf975dd5b600aac1f1badec",
-                        "md5": "c6221012f83c8f0b34ba323453689c3c"
+                        "sha1": "637e1d7ac69d89f17aea813e0b43f2ee806e3b14",
+                        "md5": "f4ce35424e81996520657abf504d714a"
                     },
                     "required_dependencies": [
-                        "309927",
-                        "306770"
+                        "306770",
+                        "309927"
                     ],
-                    "size": 12192840,
-                    "date_published": "2025-08-03T17:03:09.050Z"
+                    "size": 12195508,
+                    "date_published": "2025-08-10T10:26:38.127Z"
                 }
             ]
         },
@@ -4406,7 +4406,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-library-forge-2001.2.9.jar",
+                    "file_name": "ftb-library-forge-2001.2.10.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4414,18 +4414,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6164/53/ftb-library-forge-2001.2.9.jar",
-                    "id": "6164053",
+                    "url": "https://edge.forgecdn.net/files/6807/424/ftb-library-forge-2001.2.10.jar",
+                    "id": "6807424",
                     "parent_id": "404465",
                     "hashes": {
-                        "sha1": "42639a90f91c79d6b323ede5e229a79c050f4dc7",
-                        "md5": "cdf8b270d3ee2c403a26206b10e0a749"
+                        "sha1": "9472bb30d0e38cb774b9cc7852bdd8dbf845622b",
+                        "md5": "ae5292127a5a0d85d793bbce8f1e24dd"
                     },
                     "required_dependencies": [
                         "419699"
                     ],
-                    "size": 791841,
-                    "date_published": "2025-02-06T12:34:16.087Z"
+                    "size": 791875,
+                    "date_published": "2025-07-24T16:54:08.133Z"
                 }
             ]
         },
@@ -8636,7 +8636,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.8.5-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.8.6-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8644,16 +8644,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6833/994/portable_blueprints-v1.8.5-mv1.20.1.jar",
-                    "id": "6833994",
+                    "url": "https://edge.forgecdn.net/files/6868/93/portable_blueprints-v1.8.6-mv1.20.1.jar",
+                    "id": "6868093",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "4ec516c8e2efc72dd86b72bc96af90f143acda0f",
-                        "md5": "d6615c632cbeda452960d896f197f31b"
+                        "sha1": "6c7c2a0c14ebe05928f87dabd08e059249ca56a8",
+                        "md5": "32d67486122f069bd3caa2d9f58a87e3"
                     },
                     "required_dependencies": [],
-                    "size": 388761,
-                    "date_published": "2025-07-31T21:23:31.070Z"
+                    "size": 395885,
+                    "date_published": "2025-08-09T16:42:53.270Z"
                 }
             ]
         },

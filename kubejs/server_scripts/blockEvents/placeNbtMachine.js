@@ -20,7 +20,7 @@ BlockEvents.placed("society:fish_pond", (e) => {
   if (item.id !== "society:fish_pond") item = e.player.getHeldItem("off_hand");
   if (item.id !== "society:fish_pond") return;
   pondNbt = item.getNbt();
-  if (!pondNbt.isEmpty()) {
+  if (pondNbt && !pondNbt.isEmpty()) {
     e.block.set(e.block.id, {
       facing: e.block.getProperties().get("facing"),
       valid: true,

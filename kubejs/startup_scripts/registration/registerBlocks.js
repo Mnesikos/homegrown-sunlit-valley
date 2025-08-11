@@ -157,6 +157,9 @@ StartupEvents.registry("block", (e) => {
     .model("minecraft:block/air")
     .hardness(-1)
     .resistance(3600000)
+    .randomTick((tick) => {
+      global.handleSkullCavernRegen(tick.server, tick.level, tick.block);
+    })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);
       state.set(integerProperty.create("chunkbit", 0, 1), 0);
@@ -681,6 +684,23 @@ StartupEvents.registry("block", (e) => {
       });
       item.useAnimation("drink");
     });
+
+  e.create("society:supreme_mayonnaise", "cardinal")
+    .model("society:block/supreme_mayonnaise")
+    .soundType("stone")
+    .hardness(1.0)
+    .resistance(1.0)
+    .requiresTool(false)
+    .item((item) => {
+      item.tooltip(Text.red("Do not drink."));
+      item.tooltip(Text.gray("Created by the Mayonnaise Machine upgrade: Enkephalin"));
+      item.food((food) => {
+        food.alwaysEdible(true);
+        food.effect("vinery:creeper_effect", 120, 4, 1.0);
+        food.fastToEat(true);
+      });
+      item.useAnimation("drink");
+    });
   // Catalogs
   e.create("society:tanuki_catalog", "cardinal")
     .box(2, 0, 3, 14, 1.025, 13)
@@ -705,4 +725,16 @@ StartupEvents.registry("block", (e) => {
     .requiresTool(false)
     .model("society:block/fantasy_catalog")
     .displayName(":axe: §eFantasy Catalog");
+
+  e.create("moreminecarts:greenhouse_glass_stairs", "stairs")
+    .soundType("glass")
+    .resistance(0.8)
+    .renderType("translucent")
+    .textureAll("moreminecarts:block/chiseled_organic_glass");
+
+  e.create("moreminecarts:greenhouse_glass_slab", "slab")
+    .soundType("glass")
+    .resistance(0.8)
+    .renderType("translucent")
+    .textureAll("moreminecarts:block/chiseled_organic_glass");
 });

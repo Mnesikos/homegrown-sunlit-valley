@@ -5,6 +5,7 @@ const handleBrokenMachine = (block) => {
     return obj.id === block.id;
   })[0];
   if (!machine) return;
+  let working = block.properties.get("working").toLowerCase() == "true";
   if (machine.upgrade && block.properties.get("upgraded").toLowerCase() == "true") {
     block.popItem(machine.upgrade);
   }
@@ -14,15 +15,14 @@ const handleBrokenMachine = (block) => {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
-  } else if (
-    block.properties.get("working").toLowerCase() == "true" &&
-    !["society:charging_rod", "society:tapper"].includes(block.id)
-  ) {
+  } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
+    let stage = Number(block.properties.get("stage"));
     if (
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      block.popItem(Item.of(`4x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`4x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     } else if (
       block.id == "society:deluxe_worm_farm" &&
       block.properties.get("upgraded").toLowerCase() == "true"
@@ -32,9 +32,11 @@ const handleBrokenMachine = (block) => {
       block.id == "society:preserves_jar" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      block.popItem(Item.of(`3x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`3x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     } else {
-      block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     }
   }
 };

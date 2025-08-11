@@ -377,7 +377,7 @@ const resetMP = (server) => {
   server.persistentData.pigraceInProgress = false;
 };
 const runPigRace = (player, server, bet, betPig, ranking, pigSpeeds) => {
-  player.addItemCooldown("society:pig_race_ticket", 350);
+  global.addItemCooldown(player, "society:pig_race_ticket", 350);
   server.scheduleInTicks(0, () => {
     server.runCommandSilent(`stopsound ${player.username}`);
     server.runCommandSilent(
@@ -601,6 +601,6 @@ ItemEvents.firstLeftClicked(
       },
       ["pigBet"]
     );
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 );

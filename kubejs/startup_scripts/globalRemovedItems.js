@@ -1,4 +1,13 @@
 global.removedItems = [
+  "moblassos:contract",
+  "moblassos:emerald_lasso",
+  "moblassos:aqua_lasso",
+  "moblassos:golden_lasso",
+  "crittersandcompanions:diamond_dragonfly_armor",
+  "crittersandcompanions:gold_dragonfly_armor",
+  "crittersandcompanions:iron_dragonfly_armor",
+  "crittersandcompanions:dragonfly_spawn_egg",
+  "crittersandcompanions:dragonfly_wing",
   "crittersandcompanions:clam",
   "crittersandcompanions:pearl",
   "crittersandcompanions:pearl_necklace_1",

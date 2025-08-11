@@ -24,6 +24,18 @@ global.recyclingMachineRecipes = [
   { input: "society:legendary_ink", output: ["4x supplementaries:antique_ink"] },
   { input: "rehooked:red_hook", output: ["rehooked:diamond_hook", "society:prismatic_shard"] },
   { input: "rehooked:blaze_hook", output: ["rehooked:diamond_hook"] },
+  { input: "atmospheric:grimwood_leaves", output: ["4x atmospheric:grimwood_sapling"] },
+  { input: "society:butterfly_amber", output: ["4x society:sparkstone"] },
+  { input: "society:moth_pollen", output: ["16x vintagedelight:organic_mash"] },
+  { input: "society:ruby", output: ["4x quark:red_corundum"] },
+  { input: "society:topaz", output: ["4x quark:orange_corundum"] },
+  { input: "society:fluorapatite", output: ["4x quark:violet_corundum"] },
+  { input: "society:geminite", output: ["4x quark:green_corundum"] },
+  { input: "society:kyanite", output: ["4x quark:indigo_corundum"] },
+  { input: "society:opal", output: ["4x quark:white_corundum"] },
+  { input: "society:lemon_stone", output: ["4x quark:yellow_corundum"] },
+  { input: "society:ghost_crystal", output: ["4x quark:blue_corundum"] },
+  { input: "society:bixbyite", output: ["4x quark:black_corundum"] },
 ];
 
 StartupEvents.registry("block", (event) => {

@@ -96,6 +96,10 @@
     "result": "allow"
   },
   {
+    "mob": ["crittersandcompanions:dragonfly", "crittersandcompanions:jumping_spider"],
+    "result": "deny"
+  },
+  {
     "mod": "legendarycreatures",
     "dimension": "minecraft:overworld",
     "result": "deny"
@@ -121,7 +125,12 @@
   },
   {
     "mob": "autumnity:turkey",
-    "mincount": 1,
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "wildernature:flamingo",
+    "mincount": 3,
     "result": "deny"
   },
   {

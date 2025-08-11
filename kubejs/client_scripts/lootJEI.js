@@ -5,7 +5,7 @@ const registerLootCategory = (event, title) => {
     } = category;
     category
       .title(title)
-      .background(guiHelper.createBlankDrawable(144, 144))
+      .background(guiHelper.createBlankDrawable(144, 148))
       .icon(guiHelper.createDrawableItemStack(Item.of("society:furniture_box")))
       .isRecipeHandled((recipe) => {
         return !!(recipe?.data?.input !== undefined && recipe?.data?.outputs !== undefined);

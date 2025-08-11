@@ -6,7 +6,7 @@ const addExperience = (player, server, item, type) => {
     `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
   );
   item.count--;
-  player.addItemCooldown(item, 2);
+  global.addItemCooldown(player, item, 2);
 };
 ItemEvents.rightClicked("society:yard_work_yearly", (e) => {
   const { server, player, item } = e;
@@ -42,5 +42,5 @@ ItemEvents.rightClicked("society:book_of_stars", (e) => {
     `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
   );
   item.count--;
-  player.addItemCooldown(item, 2);
+  global.addItemCooldown(player, item, 2);
 });

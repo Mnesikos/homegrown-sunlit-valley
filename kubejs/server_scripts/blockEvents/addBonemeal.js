@@ -29,6 +29,6 @@ BlockEvents.rightClicked(["meadow:eriophorum_tall", "meadow:small_fir"], (e) => 
     server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   }
 });

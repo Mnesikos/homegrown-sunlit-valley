@@ -31,10 +31,10 @@ console.info("[SOCIETY] skillBooks.js loaded");
         `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
       );
       item.count--;
-      player.addItemCooldown(item, 20);
+      global.addItemCooldown(player, item, 20);
     } else {
       player.tell(Text.red("You've already learned this skill!"));
-      player.addItemCooldown(item, 20);
+      global.addItemCooldown(player, item, 20);
     }
   });
 });

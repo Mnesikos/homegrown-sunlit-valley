@@ -66,7 +66,7 @@ ItemEvents.firstLeftClicked((e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.ender_dragon.hurt block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(item, 200);
+    global.addItemCooldown(player, item, 200);
   }
 });
 
@@ -104,7 +104,7 @@ ItemEvents.rightClicked((e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.ender_dragon.hurt block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(item, 80);
+    global.addItemCooldown(player, item, 80);
   }
 });
 

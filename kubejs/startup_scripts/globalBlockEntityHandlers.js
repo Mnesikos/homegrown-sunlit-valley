@@ -69,6 +69,7 @@ global.artisanMachineDefinitions = [
     recipes: global.mayonnaiseMachineRecipes,
     stageCount: 1,
     maxInput: 1,
+    upgrade: "society:enkephalin",
   },
   {
     id: "society:preserves_jar",
@@ -750,7 +751,48 @@ global.giveExperience = (server, player, category, xp) => {
     );
   }
 };
+global.handleSkullCavernRegen = (server, level, block) => {
+  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
+  let belowPos;
+  let belowBlock;
+  let belowBelowPos;
+  let hasRope;
 
+  let toggleBit =
+    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
+  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
+    server.scheduleInTicks(2400, () => {
+      handleRegen(server, level, block);
+    });
+  } else {
+    belowPos = block.getPos().below();
+    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+    belowBelowPos = belowBlock.getPos().below();
+    hasRope =
+      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
+      "farmersdelight:rope";
+    let newBlock;
+    switch (Number(block.properties.get("type"))) {
+      case 4:
+        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
+        break;
+      case 3:
+        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
+        break;
+      case 2:
+        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
+        break;
+      case 1:
+        newBlock = rollReplaceTable(iceRockTable, hasRope);
+        break;
+      default:
+      case 0:
+        newBlock = rollReplaceTable(stoneRockTable, hasRope);
+        break;
+    }
+    block.set(newBlock);
+  }
+};
 const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/${name}`;
   return [

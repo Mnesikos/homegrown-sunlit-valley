@@ -28,7 +28,7 @@ ServerEvents.tags("item", (e) => {
     "chimes",
     "botania",
     "farmingforblockheads",
-    "numismatics"
+    "numismatics",
   ];
   modBans.forEach((tag) => {
     e.add("furniture:trash_bag_blacklist", `@${tag}`);
@@ -36,6 +36,12 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
+    "minecraft:bedrock",
+    "moblassos:creative_lasso",
+    "botania:corporea_spark_creative",
+    "botania:lens_storm",
+    "botania:creative_pool",
+    "create_central_kitchen:creative_tab_icon",
     "unusualfishmod:fluvial_shell",
     "unusualfishmod:clement_shell",
     "unusualfishmod:thunderous_shell",

@@ -72,6 +72,6 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       );
     }
     item.count--;
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 });

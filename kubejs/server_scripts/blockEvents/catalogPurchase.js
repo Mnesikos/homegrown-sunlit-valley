@@ -45,7 +45,7 @@ BlockEvents.rightClicked(
         server.runCommandSilent(
           `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
         );
-        player.addItemCooldown(item.id, 1);
+        global.addItemCooldown(player, item.id, 1);
       } else {
         player.tell(
           `§7Right click with ${price} §6Gold Coin${

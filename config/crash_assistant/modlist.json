@@ -129,10 +129,10 @@
     "modId": "bookshelf",
     "version": "20.2.13"
   },
-  "Botania-1.20.1-449-FORGE.jar": {
-    "jarName": "Botania-1.20.1-449-FORGE.jar",
+  "Botania-1.20.1-450-FORGE.jar": {
+    "jarName": "Botania-1.20.1-450-FORGE.jar",
     "modId": "botania",
-    "version": "1.20.1-449-FORGE"
+    "version": "1.20.1-450-FORGE"
   },
   "botania_seeds-1.1.1.jar": {
     "jarName": "botania_seeds-1.1.1.jar",
@@ -639,10 +639,10 @@
     "modId": "ftbchunks",
     "version": "2001.3.6"
   },
-  "ftb-library-forge-2001.2.9.jar": {
-    "jarName": "ftb-library-forge-2001.2.9.jar",
+  "ftb-library-forge-2001.2.10.jar": {
+    "jarName": "ftb-library-forge-2001.2.10.jar",
     "modId": "ftblibrary",
-    "version": "2001.2.9"
+    "version": "2001.2.10"
   },
   "ftb-quests-forge-2001.4.13.jar": {
     "jarName": "ftb-quests-forge-2001.4.13.jar",

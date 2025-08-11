@@ -367,17 +367,30 @@
 			]
 			icon: "bountiful:bountyboard"
 			id: "34FCF481CDFD3380"
-			rewards: [{
-				id: "6DB78FE4AB9F93FA"
-				item: {
-					Count: 1
-					id: "bountiful:decree"
-					tag: {
-						"bountiful:decree_data": "{}"
+			rewards: [
+				{
+					id: "6DB78FE4AB9F93FA"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{}"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0479CC3534ABA5D5"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{\"ids\":[\"spring\"]}"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "68532046A994CD92"
 				item: "bountiful:bountyboard"

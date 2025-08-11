@@ -440,7 +440,8 @@ ServerEvents.tags("item", (e) => {
   ].forEach((fish) => e.add("minecraft:fishes", fish));
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor") || item.includes("society")) e.add("refurbished_furniture:outdoors", item);
+    if (item.includes("tanukidecor") || item.includes("society"))
+      e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
   const fantasyCategories = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
@@ -496,6 +497,17 @@ ServerEvents.tags("item", (e) => {
   largeMilks.forEach((item) => {
     e.add("society:large_milk", item);
   });
+  [
+    "society:topaz",
+    "society:amethyst_chunk",
+    "society:ruby",
+    "society:aquamarine",
+    "society:jade",
+    "society:sparkstone",
+    "society:prismatic_shard",
+  ].forEach((item) => {
+    e.add("forge:gems", item);
+  });
   e.add("splendid_slimes:slime_vac_fireable", "#society:large_milk");
   [
     "snowpig:snow_pig_spawn_egg",
@@ -534,7 +546,7 @@ ServerEvents.tags("block", (e) => {
     "minecraft:spawner",
     "trials:trial_vault",
     "trials:trial_vault_ominous",
-    "fastpaintings:painting"
+    "fastpaintings:painting",
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);

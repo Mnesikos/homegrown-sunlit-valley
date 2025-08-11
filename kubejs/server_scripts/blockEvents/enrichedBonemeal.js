@@ -49,7 +49,7 @@ BlockEvents.rightClicked(cropDrop, (e) => {
     server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${e.player.x} ${e.player.y} ${e.player.z}`
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   }
 });
 
@@ -77,7 +77,7 @@ BlockEvents.rightClicked(cropGrowth, (e) => {
     server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${e.player.x} ${e.player.y} ${e.player.z}`
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   }
 });
 
@@ -123,7 +123,7 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
     e.server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   }
 });
 
@@ -169,6 +169,6 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     e.server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`
     );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   }
 });
