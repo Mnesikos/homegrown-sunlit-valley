@@ -308,13 +308,14 @@ global.lootFurniture = [
   "whimsy_deco:blue_phone",
   "whimsy_deco:black_phone",
   "whimsy_deco:red_phone",
+  "whimsy_deco:gatcha_machine"
 ];
 global.originalPlushies = [
   "whimsy_deco:fufu_plushie",
   "whimsy_deco:flower_pig_plushie",
   "whimsy_deco:golden_pig_plushie",
   "whimsy_deco:big_panda_plushie",
-  "whimsy_deco:coqui_frog_plushie",
+  "whimsy_deco:singing_frog_plushie",
   "whimsy_deco:vocal_doll",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",

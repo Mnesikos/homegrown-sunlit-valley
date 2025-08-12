@@ -28,42 +28,47 @@ StartupEvents.registry("block", (e) => {
       return true;
     } else return false;
   };
-  e
-    .create("society:berry_bush_crop", "crop")
-    .age(3, (builder) => {
-      builder
-        .shape(0, 0, 0, 0, 16, 4, 16)
-        .shape(1, 0, 0, 0, 16, 13, 16)
-        .shape(2, 0, 0, 0, 16, 16, 16)
-        .shape(3, 0, 0, 0, 16, 16, 16);
-    })
-    .survive((state, level, pos) => surviveCheck(level, pos))
-    .dropSeed(false)
-    .tagBlock("minecraft:mineable/hoe")
-    .randomTick((tick) => {})
-    .property(integerProperty.create("type", 0, 3))
-    .item((seedItem) => {
-      seedItem.texture("society:item/berry_bush_seed");
-    }).blockstateJson = {
-    multipart: [
-      {
-        when: { age: 0 },
-        apply: { model: "society:berry_bush/start" },
-      },
-      {
-        when: { age: 1 },
-        apply: { model: "society:berry_bush/middle"},
-      },
-      {
-        when: { age: 2 },
-        apply: { model: "society:berry_bush/base"},
-      },
-      {
-        when: { age: 3 },
-        apply: { model: "society:berry_bush/salmonberry"},
-      }
-    ],
-  };
+  // TODO: 3.3
+  // e.create("society:berry_bush_crop", "crop")
+  //   .age(3, (builder) => {
+  //     builder
+  //       .shape(0, 0, 0, 0, 16, 4, 16)
+  //       .shape(1, 0, 0, 0, 16, 13, 16)
+  //       .shape(2, 0, 0, 0, 16, 16, 16)
+  //       .shape(3, 0, 0, 0, 16, 16, 16);
+  //   })
+  //   .survive((state, level, pos) => surviveCheck(level, pos))
+  //   .dropSeed(false)
+  //   .tagBlock("minecraft:mineable/hoe")
+  //   .property(integerProperty.create("type", 0, 4))
+  //   .defaultState((state) => {
+  //     state.set(integerProperty.create("type", 0, 4), 0);
+  //   })
+  //   .placementState((state) => {
+  //     state.set(integerProperty.create("type", 0, 4), 0);
+  //   })
+  //   .item((seedItem) => {
+  //     seedItem.texture("society:item/berry_bush_seed");
+  //   }).blockstateJson = {
+  //   multipart: [
+  //     {
+  //       when: { age: 0 },
+  //       apply: { model: "society:block/berry_bush/start" },
+  //     },
+  //     {
+  //       when: { age: 1 },
+  //       apply: { model: "society:block/berry_bush/middle" },
+  //     },
+  //     {
+  //       when: { age: 2 },
+  //       apply: { model: "society:block/berry_bush/base" },
+  //     },
+  //     {
+  //       when: { age: 3 },
+  //       apply: { model: "society:block/berry_bush/base" },
+  //     },
+  //   ],
+  // };
 
   e
     .create("society:ancient_fruit", "crop")

@@ -34,10 +34,10 @@
     "modId": "ambientsounds",
     "version": "6.1.11"
   },
-  "amendments-1.20-2.0.6.jar": {
-    "jarName": "amendments-1.20-2.0.6.jar",
+  "amendments-1.20-2.1.1.jar": {
+    "jarName": "amendments-1.20-2.1.1.jar",
     "modId": "amendments",
-    "version": "1.20-2.0.6"
+    "version": "1.20-2.1.1"
   },
   "appleskin-forge-mc1.20.1-2.5.1.jar": {
     "jarName": "appleskin-forge-mc1.20.1-2.5.1.jar",
@@ -917,6 +917,11 @@
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
   },
+  "Log-Begone-Forge-1.20.1-1.0.8.jar": {
+    "jarName": "Log-Begone-Forge-1.20.1-1.0.8.jar",
+    "modId": "logbegone",
+    "version": "1.0.8"
+  },
   "Longwings-v0.9.1-1.20.1-Forge.jar": {
     "jarName": "Longwings-v0.9.1-1.20.1-Forge.jar",
     "modId": "longwings",
@@ -1562,10 +1567,10 @@
     "modId": "waterframes",
     "version": "2.1.15"
   },
-  "watermedia-2.1.28.jar": {
-    "jarName": "watermedia-2.1.28.jar",
+  "watermedia-2.1.30.jar": {
+    "jarName": "watermedia-2.1.30.jar",
     "modId": "watermedia",
-    "version": "2.1.28"
+    "version": "2.1.30"
   },
   "waystones-forge-1.20.1-14.1.13.jar": {
     "jarName": "waystones-forge-1.20.1-14.1.13.jar",

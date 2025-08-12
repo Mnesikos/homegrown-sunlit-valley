@@ -891,6 +891,8 @@
 				"{ftbquests.chapter.ii__building_up_the_farm.quest30.description1}"
 				""
 				"{ftbquests.chapter.ii__building_up_the_farm.quest30.description2}"
+				""
+				"Higher tiers of rods will also increase the size of the minigame bobber!"
 			]
 			icon: {
 				Count: 1
@@ -955,7 +957,7 @@
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest31.description1}"
 				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest31.description2}"
+				"&oOnly upgraded rods can have hooks attached&r"
 			]
 			id: "63FDC7BA6801CF64"
 			rewards: [{
@@ -1693,6 +1695,78 @@
 			title: "Fishing Guide"
 			x: 11.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["21B07E7D0C412FFA"]
+			description: [
+				"Bobbers can be attached to any kind of fishing rod by dragging it over and right clicking on it."
+				""
+				"They have various effects on the fishing minigame, such as revealing the fish on the line or increasing the bobber size even more!"
+			]
+			icon: {
+				Count: 1
+				id: "stardew_fishing:trap_bobber"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77690255DF58F118"
+			rewards: [{
+				id: "6014646708F6EAAD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E8C2AD5FDF6B94F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "stardew_fishing:treasure_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:sonar_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:cork_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:trap_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "stardew_fishing:quality_bobber"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Any Bobber"
+				type: "item"
+			}]
+			title: "Minigame modifications"
+			x: 3.0d
+			y: -10.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

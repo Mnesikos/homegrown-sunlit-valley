@@ -1,4 +1,5 @@
-const runBountyDataGen = false;
+const runBountyDataGen = true;
+
 const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
   let objs = { content: {} };
   let tradeEntry;
@@ -11,7 +12,8 @@ const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
         type: "minecraft:item",
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",
-        amount: amountFunction || {
+        weightMult: pricy ? 0.5 : 1,
+        amount: amountFunction && amountFunction(pricy) || {
           min: pricy ? 1 : 2,
           max: pricy ? 4 : 8,
         },
@@ -40,6 +42,7 @@ const createSeasonalDecree = (season, items) => {
         type: "minecraft:item",
         content: item,
         rarity: pricy ? "UNCOMMON" : "COMMON",
+        weightMult: pricy ? 0.5 : 1,
         amount: crop
           ? {
               min: pricy ? 4 : 16,
@@ -151,4 +154,47 @@ if (runBountyDataGen) {
   ]);
   createDecree("cooking", Ingredient.of("#society:dish").itemIds, 3, 256);
   createDecree("fishing", Ingredient.of("#minecraft:fishes").itemIds, 4, 128);
+  createDecree(
+    "geologist",
+    [
+      "minecraft:raw_copper",
+      "minecraft:raw_copper_block",
+      "minecraft:raw_iron",
+      "minecraft:raw_iron_block",
+      "minecraft:raw_gold",
+      "minecraft:raw_gold_block",
+      "etcetera:raw_bismuth",
+      "etcetera:raw_bismuth_block",
+      "minecraft:redstone",
+      "minecraft:redstone_block",
+      "minecraft:quartz",
+      "minecraft:quartz_block",
+      "minecraft:lapis_lazuli",
+      "minecraft:lapis_block",
+      "society:geode",
+      "society:frozen_geode",
+      "society:magma_geode",
+      "society:topaz",
+      "society:ruby",
+      "society:amethyst_chunk",
+      "society:sparkstone",
+      "society:sparkstone_block",
+      "minecraft:netherite_scrap",
+      "minecraft:diamond",
+      "minecraft:diamond_block",
+      "society:omni_geode",
+      "society:earth_crystal",
+      "society:fire_quartz",
+      "society:aquamarine",
+      "society:jade",
+      "oreganized:raw_lead",
+      "oreganized:raw_lead_block",
+      "oreganized:raw_silver",
+      "oreganized:raw_silver_block",
+      "society:prismatic_shard",
+    ],
+    3,
+    48,
+    (pricy) => ({ min: pricy ? 1 : 8, max: pricy ? 4 : 32 })
+  );
 }

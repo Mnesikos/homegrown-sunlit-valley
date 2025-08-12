@@ -4,9 +4,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:dragonfruititem",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
-				"min": 4,
-				"max": 8
+				"min": 1,
+				"max": 4
 			},
 			"unitWorth": 384
 		},
@@ -14,9 +15,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:cinnamonitem",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
-				"min": 4,
-				"max": 8
+				"min": 1,
+				"max": 4
 			},
 			"unitWorth": 480
 		},
@@ -24,6 +26,7 @@
 			"type": "minecraft:item",
 			"content": "society:frozen_tear",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -34,6 +37,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:blackfish",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -44,6 +48,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:atlantic_cod",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -54,9 +59,10 @@
 			"type": "minecraft:item",
 			"content": "society:crystalberry",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 66
 		},
@@ -64,9 +70,10 @@
 			"type": "minecraft:item",
 			"content": "farmersdelight:cabbage",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
-				"min": 4,
-				"max": 8
+				"min": 1,
+				"max": 4
 			},
 			"unitWorth": 210
 		},
@@ -74,6 +81,7 @@
 			"type": "minecraft:item",
 			"content": "society:tubabacco_leaf",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -84,6 +92,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:atlantic_herring",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -94,6 +103,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:pink_salmon",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -104,6 +114,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:brown_trout",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -114,6 +125,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:pollock",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -124,9 +136,10 @@
 			"type": "minecraft:item",
 			"content": "snowyspirit:ginger",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 72
 		},
@@ -134,6 +147,7 @@
 			"type": "minecraft:item",
 			"content": "unusualfishmod:raw_triple_twirl_pleco",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -144,6 +158,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:perch",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -154,6 +169,7 @@
 			"type": "minecraft:item",
 			"content": "farm_and_charm:barley",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -164,6 +180,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:cod",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -174,6 +191,7 @@
 			"type": "minecraft:item",
 			"content": "unusualfishmod:raw_snowflake",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4

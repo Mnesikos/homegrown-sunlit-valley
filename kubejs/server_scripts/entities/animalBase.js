@@ -270,7 +270,7 @@ const handleFeed = (data, day, e) => {
   }
 };
 
-const handleMagicHarvest = (name, type, data, day, e) => {
+const handleMagicHarvest = (name, data, day, e) => {
   const { player, target, level, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
   const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
@@ -283,12 +283,15 @@ const handleMagicHarvest = (name, type, data, day, e) => {
     data.ageLastMagicHarvested = day;
     const targetId =
       target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
-    player.damageHeldItem("main_hand", 1);
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
     );
     global.giveExperience(server, player, "husbandry", 15);
     const droppedLoot = global.getMagicShearsOutput(targetId, player);
+    if (player.stages.has("heretic")) {
+      target.attack(2)
+      data.affection = affection - 35;
+    }
     for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");
       let dropItem = droppedLoot[i];
@@ -298,8 +301,8 @@ const handleMagicHarvest = (name, type, data, day, e) => {
       specialItem.item = dropItem;
       specialItem.spawn();
     }
-    data.affection = affection - 5;
-
+    data.affection = affection - 15;
+    
     level.spawnParticles(
       "snowyspirit:glow_light",
       true,
@@ -503,7 +506,7 @@ ItemEvents.entityInteracted((e) => {
         );
         global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, nonIdType, data, day, e);
+      if (item === "society:magic_shears") handleMagicHarvest(name, data, day, e);
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

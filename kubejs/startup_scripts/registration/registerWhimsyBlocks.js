@@ -7,7 +7,7 @@ StartupEvents.registry("block", (e) => {
       .displayName(`${global.formatName(color)} ATM`)
       .box(0, 0, 0, 16, 32, 16)
       .defaultCutout()
-      .tagBlock("minecraft:mineable/axe")
+      .tagBlock("minecraft:mineable/pickaxe")
       .model(`whimsy_deco:block/${atmID}`);
   });
 
@@ -27,13 +27,19 @@ StartupEvents.registry("block", (e) => {
       .model(`whimsy_deco:block/${phoneId}`).blockstateJson = getPhoneState(phoneId);
   });
 
+  e.create("whimsy_deco:gatcha_machine", "cardinal")
+    .box(0, 0, 0, 16, 27, 16)
+    .defaultCutout()
+    .tagBlock("minecraft:mineable/pickaxe")
+    .model(`whimsy_deco:block/gatcha_machine`);
+
   ["", "yellow", "pink", "orange", "blue"].forEach((color) => {
     let chairID = `${color !== "" ? color + "_" : ""}froggy_chair`;
     e.create(`whimsy_deco:${chairID}`, "cardinal")
       .box(0, 0, 0, 16, 10, 16)
       .box(12, 10, 12, 14, 24, 14)
       .defaultCutout()
-      .tagBlock("minecraft:mineable/axe")
+      .tagBlock("minecraft:mineable/pickaxe")
       .model(`whimsy_deco:block/${chairID}`);
   });
 
@@ -49,7 +55,7 @@ StartupEvents.registry("block", (e) => {
       .placementState((state) => {
         state.set(booleanProperty.create("flying"), false);
       })
-      .tagBlock("minecraft:mineable/axe")
+      .tagBlock("minecraft:mineable/pickaxe")
       .model(`whimsy_deco:block/${planeId}`)
       .rightClick((click) => {
         const { block, hand } = click;
@@ -88,6 +94,24 @@ StartupEvents.registry("block", (e) => {
     .box(1, 0, 1, 15, 18, 15, true)
     .animatableBlockEntity((info) => {
       info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("rotating")));
+      info.serverTick(artMachineTickRate, 0, (entity) => {
+        const { level, block } = entity;
+        const { x, y, z } = block;
+        let dayTime = level.dayTime();
+        let morningModulo = dayTime % 24000;
+        if (
+          morningModulo >= artMachineProgTime &&
+          morningModulo < artMachineProgTime + artMachineTickRate
+        ) {
+          level.server.runCommandSilent(
+            `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`
+          );
+          block.set(block.id, {
+            facing: block.properties.get("facing"),
+            mature: true,
+          });
+        }
+      });
     })
     .defaultGeoModel()
     .property(BlockProperties.HORIZONTAL_FACING)
@@ -101,7 +125,7 @@ StartupEvents.registry("block", (e) => {
         .set(booleanProperty.create("mature"), false);
     })
     .rightClick((click) => {
-      const { block, hand } = click;
+      const { block, level, hand } = click;
       const mature = String(block.properties.get("mature")) === "true";
       const facing = block.properties.get("facing");
 
@@ -109,29 +133,27 @@ StartupEvents.registry("block", (e) => {
       if (hand == "MAIN_HAND") {
         if (mature) {
           const possibleDrops = [
-            "whimsy_deco:pristine_diamond",
+            "society:pristine_diamond",
             "minecraft:netherite_ingot",
-            "whimsy_deco:omni_geode",
+            "society:omni_geode",
             "oreganized:electrum_ingot",
           ];
           block.popItemFromFace(
             possibleDrops[Math.floor(Math.random() * possibleDrops.length)],
             facing
           );
+          level.server.runCommandSilent(
+            `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`
+          );
           block.set(block.id, {
             facing: facing,
             mature: false,
-          });
-        } else {
-          block.set(block.id, {
-            facing: facing,
-            mature: true,
           });
         }
       }
     });
 
-  e.create("whimsy_deco:coqui_frog", "animatable")
+  e.create("whimsy_deco:singing_frog", "animatable")
     .animatableBlockEntity((info) => {
       info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("sing")));
     })

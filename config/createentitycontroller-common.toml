@@ -2,7 +2,7 @@
 [blocks_limit]
 	#--------------------------------------------------------------------------
 	#The count limit of blocks that are used in block entities. The first para is count limit and the second para is stabilize para.
-	blocks_limit = [["create:deployer", 256, 100], ["create:mechanical_drill", 256, 100], ["minecraft:dirt", 2048, 10000], ["create:linear_chassis", 2048, -100], ["minecraft:netherrack", 2048, 5000]]
+	blocks_limit = [["create:deployer", 256, 100], ["create:mechanical_drill", 49, 100], ["minecraft:dirt", 2048, 10000], ["create:linear_chassis", 2048, -100], ["minecraft:netherrack", 2048, 5000]]
 	#--------------------------------------------------------------------------
 	#Whether to log the block entity problem if it can't turned into block entities.
 	"Log block entity problem" = false

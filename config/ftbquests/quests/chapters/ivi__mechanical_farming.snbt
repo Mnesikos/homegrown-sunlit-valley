@@ -1083,6 +1083,28 @@
 			x: 10.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["472A339723DE2777"]
+			description: [
+				"Grape juice in liquid form can be easily put inside of Fermentation Barrels using the &6Juice Inserter&r."
+				""
+				"Pump liquids in and they will continually provide juice fluids."
+			]
+			id: "5384CAC9635C71E5"
+			rewards: [{
+				id: "499721765F7F78CB"
+				item: "nethervinery:crimson_grape_juice_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CEDED2175C3ACFD"
+				item: "society:juice_inserter"
+				type: "item"
+			}]
+			title: "Automated Juice Logistics"
+			x: -1.5d
+			y: 4.5d
+		}
 	]
 	title: "{ftbquests.chapter.ivi__mechanical_farming.title}"
 }

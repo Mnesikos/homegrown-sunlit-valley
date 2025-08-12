@@ -4,6 +4,7 @@
 			"type": "minecraft:item",
 			"content": "vintagedelight:ghost_pepper",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -14,6 +15,7 @@
 			"type": "minecraft:item",
 			"content": "farm_and_charm:corn",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -24,9 +26,10 @@
 			"type": "minecraft:item",
 			"content": "society:blueberry",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 72
 		},
@@ -34,6 +37,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:melon_slice",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -44,6 +48,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:tropical_fish",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -54,6 +59,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:red_grouper",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -64,6 +70,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:tuna",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -74,6 +81,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:tambaqui",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -84,9 +92,10 @@
 			"type": "minecraft:item",
 			"content": "society:boysenberry",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 48
 		},
@@ -94,6 +103,7 @@
 			"type": "minecraft:item",
 			"content": "veggiesdelight:bellpepper",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -104,9 +114,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:bananaitem",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 48
 		},
@@ -114,9 +125,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:mangoitem",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 192
 		},
@@ -124,6 +136,7 @@
 			"type": "minecraft:item",
 			"content": "farm_and_charm:oat",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -134,6 +147,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:cocoa_beans",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -144,9 +158,10 @@
 			"type": "minecraft:item",
 			"content": "farmersdelight:tomato",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 78
 		},
@@ -154,9 +169,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:peachitem",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 192
 		},
@@ -164,9 +180,10 @@
 			"type": "minecraft:item",
 			"content": "minecraft:wheat",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 138
 		},
@@ -174,6 +191,7 @@
 			"type": "minecraft:item",
 			"content": "atmospheric:orange",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -184,6 +202,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:salmon",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -194,6 +213,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:synodontis",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -204,6 +224,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:leech",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -214,6 +235,7 @@
 			"type": "minecraft:item",
 			"content": "unusualfishmod:raw_sneep_snorp",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -224,6 +246,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:jellyfish",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8

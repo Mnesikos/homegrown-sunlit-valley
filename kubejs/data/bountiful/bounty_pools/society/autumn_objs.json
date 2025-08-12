@@ -4,9 +4,10 @@
 			"type": "minecraft:item",
 			"content": "minecraft:carrot",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 69
 		},
@@ -14,9 +15,10 @@
 			"type": "minecraft:item",
 			"content": "minecraft:wheat",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 138
 		},
@@ -24,6 +26,7 @@
 			"type": "minecraft:item",
 			"content": "farm_and_charm:corn",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -34,6 +37,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:apple",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -44,9 +48,10 @@
 			"type": "minecraft:item",
 			"content": "veggiesdelight:sweet_potato",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 60
 		},
@@ -54,9 +59,10 @@
 			"type": "minecraft:item",
 			"content": "pamhc2trees:plumitem",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
-				"min": 4,
-				"max": 8
+				"min": 1,
+				"max": 4
 			},
 			"unitWorth": 288
 		},
@@ -64,6 +70,7 @@
 			"type": "minecraft:item",
 			"content": "farm_and_charm:barley",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -74,9 +81,10 @@
 			"type": "minecraft:item",
 			"content": "society:eggplant",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 126
 		},
@@ -84,6 +92,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:blackfish",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -94,6 +103,7 @@
 			"type": "minecraft:item",
 			"content": "minecraft:salmon",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -104,6 +114,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:brown_trout",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8
@@ -114,6 +125,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:gar",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -124,9 +136,10 @@
 			"type": "minecraft:item",
 			"content": "minecraft:beetroot",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 72
 		},
@@ -134,9 +147,10 @@
 			"type": "minecraft:item",
 			"content": "farmersdelight:cabbage",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
-				"min": 4,
-				"max": 8
+				"min": 1,
+				"max": 4
 			},
 			"unitWorth": 210
 		},
@@ -144,6 +158,7 @@
 			"type": "minecraft:item",
 			"content": "unusualfishmod:raw_forkfish",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -154,6 +169,7 @@
 			"type": "minecraft:item",
 			"content": "unusualfishmod:raw_sailor_barb",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -164,9 +180,10 @@
 			"type": "minecraft:item",
 			"content": "society:cranberry",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
-				"min": 16,
-				"max": 48
+				"min": 2,
+				"max": 8
 			},
 			"unitWorth": 54
 		},
@@ -174,6 +191,7 @@
 			"type": "minecraft:item",
 			"content": "aquaculture:muskellunge",
 			"rarity": "UNCOMMON",
+			"weightMult": 0.5,
 			"amount": {
 				"min": 1,
 				"max": 4
@@ -184,6 +202,7 @@
 			"type": "minecraft:item",
 			"content": "vintagedelight:peanut",
 			"rarity": "COMMON",
+			"weightMult": 1,
 			"amount": {
 				"min": 2,
 				"max": 8

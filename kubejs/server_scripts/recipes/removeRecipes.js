@@ -4,6 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "moblassos:hostile_lasso",
+    "moblassos:diamond_lasso",
     "refinedstorage:cable",
     "refinedstorage:external_storage",
     "refinedstorageaddons:wireless_crafting_grid",
@@ -395,7 +397,6 @@ ServerEvents.recipes((e) => {
     "furniture:copper_fish_tank",
     "furniture:terrarium",
     "tanukidecor:slot_machine",
-    "tanukidecor:gumball_machine",
     "beautify:lamp_candelabra_orange",
     "beautify:lamp_candelabra_yellow",
     "beautify:lamp_candelabra_lime",

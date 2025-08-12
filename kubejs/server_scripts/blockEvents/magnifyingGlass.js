@@ -16,6 +16,7 @@ const magnifyingGlassBlocks = [
   { id: "society:mana_milker", radius: 10, includeY: true },
   { id: "society:golden_clock", radius: 2, includeY: true },
   { id: "society:mana_clock", radius: 1, includeY: true },
+  { id: "society:snow_melter", radius: 10 },
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 

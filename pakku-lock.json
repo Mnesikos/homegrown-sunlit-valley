@@ -255,7 +255,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "amendments-1.20-2.0.6.jar",
+                    "file_name": "amendments-1.20-2.1.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -263,18 +263,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6864/192/amendments-1.20-2.0.6.jar",
-                    "id": "6864192",
+                    "url": "https://edge.forgecdn.net/files/6875/720/amendments-1.20-2.1.1.jar",
+                    "id": "6875720",
                     "parent_id": "896746",
                     "hashes": {
-                        "sha1": "97cf1313b1d092cf71d0bf82a0fd138ec21f75e1",
-                        "md5": "9cba1f150847c1cdeb582c1b2b852090"
+                        "sha1": "8eceb67075ec49be1a29a4251391cf826bbbe50a",
+                        "md5": "6e2e99fb52c0c4a5fdb562b6feac0bc7"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 1267734,
-                    "date_published": "2025-08-08T17:16:11.220Z"
+                    "size": 1277768,
+                    "date_published": "2025-08-11T17:36:51.017Z"
                 }
             ]
         },
@@ -6804,6 +6804,42 @@
             ]
         },
         {
+            "pakku_id": "BLzWSnRbDAg0WBsT",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "log-begone"
+            },
+            "name": {
+                "curseforge": "Log Begone"
+            },
+            "id": {
+                "curseforge": "623560"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Log-Begone-Forge-1.20.1-1.0.8.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/4583/425/Log-Begone-Forge-1.20.1-1.0.8.jar",
+                    "id": "4583425",
+                    "parent_id": "623560",
+                    "hashes": {
+                        "sha1": "3b9f1c7fea5e0bdbc6f06429e147bd0a7c08663d",
+                        "md5": "694cfbc14ffff6166786fbaf05b1382e"
+                    },
+                    "required_dependencies": [],
+                    "size": 58508,
+                    "date_published": "2023-06-12T23:18:59.260Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "pmkIF5J4CjiNAvM4",
             "type": "MOD",
             "slug": {
@@ -11983,7 +12019,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "watermedia-2.1.28.jar",
+                    "file_name": "watermedia-2.1.30.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11993,16 +12029,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6844/870/watermedia-2.1.28.jar",
-                    "id": "6844870",
+                    "url": "https://edge.forgecdn.net/files/6875/641/watermedia-2.1.30.jar",
+                    "id": "6875641",
                     "parent_id": "869524",
                     "hashes": {
-                        "sha1": "4ac26b9dcbfb3dac396d4c547ebf2994952e03c3",
-                        "md5": "302ebe6c26891bdfe996a86cf45a910f"
+                        "sha1": "d2ac566dc3416101c94b807dcade279c32d4d601",
+                        "md5": "b06ede69dbb92530d5a6e20633464b2f"
                     },
                     "required_dependencies": [],
-                    "size": 37854061,
-                    "date_published": "2025-08-03T23:17:16.517Z"
+                    "size": 37857356,
+                    "date_published": "2025-08-11T17:07:59.683Z"
                 }
             ]
         },

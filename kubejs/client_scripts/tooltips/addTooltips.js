@@ -541,8 +541,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("splendid_slimes:slime_feeder", Text.green(`Area: 13x13x13`));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
+  tooltip.add("whimsy_deco:statue_endless_fortune", Text.gray("Gives a valuable item once a day"))
+  tooltip.add("whimsy_deco:statue_endless_fortune", Text.red("Definitely not overpriced."))
   tooltip.add(
-    "tanukidecor:gumball_machine",
+    "whimsy_deco:gatcha_machine",
     Text.gray("Right click with an Iridium Coin to purchase a Plushie Capsule")
   );
   tooltip.add("society:relic_trove", Text.gray("Can be opened using an Extractinator"));
@@ -937,11 +939,13 @@ ItemEvents.tooltip((tooltip) => {
   );
   const magnifyingBlocks = [
     "Auto-Grabber",
-    "Artisan Hopper",
+    "Artisan Hoppers",
     "Feeding Trough",
     "Slime Feeder",
+    "Snow Melter",
     "Fish Pond Basket",
     "Golden Clock",
+    "Mana Clock",
     "Mana Milker",
     "All Sprinklers",
   ];

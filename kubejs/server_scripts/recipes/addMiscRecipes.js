@@ -257,6 +257,11 @@ ServerEvents.recipes((e) => {
     f: "society:fire_quartz",
     p: "society:pine_tar",
   });
+    e.shaped("society:snow_melter", [" f ", "fbf", " B "], {
+    b: "minecraft:blast_furnace",
+    B: "society:battery",
+    f: "society:fire_quartz"
+  });
   e.shaped("society:recycling_machine", ["LGL", "fbf", "LIL"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
@@ -453,8 +458,9 @@ ServerEvents.recipes((e) => {
     S: "society:sunlit_pearl",
     l: "create:zinc_ingot",
   });
-  e.shaped("society:auto_worm_farm", ["lpl", "asa", "lCl"], {
+  e.shaped("society:auto_worm_farm", ["lpl", "asa", "CSC"], {
     s: "farmersdelight:rich_soil",
+    S: "society:sunlit_pearl",
     p: "create:precision_mechanism",
     a: "aquaculture:worm_farm",
     C: "society:battery",

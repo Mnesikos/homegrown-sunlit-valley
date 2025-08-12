@@ -623,7 +623,7 @@ ServerEvents.tags("block", (e) => {
     "refurbished_furniture:post_box",
     "bountiful:bountyboard",
     "tanukidecor:slot_machine",
-    "tanukidecor:gumball_machine",
+    "whimsy_deco:gatcha_machine",
   ];
   ftbChunksWhitelist.forEach((item) => {
     e.add("ftbchunks:interact_whitelist", item);

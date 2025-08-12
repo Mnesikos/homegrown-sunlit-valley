@@ -78,6 +78,24 @@
     },
     {
       "offer": {
+        "itemKey": "moblassos:diamond_lasso",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shepherd_mob_lasso_for_sun"
+    },
+    {
+      "offer": {
         "itemKey": "society:milk_pail",
         "amount": 1,
         "priceModifier": 0

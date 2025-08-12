@@ -751,6 +751,83 @@ global.giveExperience = (server, player, category, xp) => {
     );
   }
 };
+
+const stoneRockTable = [
+  { block: "society:stone_boulder", weight: 163 },
+  { block: "minecraft:coal_ore", weight: 25 },
+  { block: "minecraft:copper_ore", weight: 20 },
+  { block: "minecraft:iron_ore", weight: 15 },
+  { block: "create:zinc_ore", weight: 13 },
+  { block: "minecraft:lapis_ore", weight: 2 },
+  { block: "society:geode_node", weight: 2, sturdy: true },
+  { block: "society:earth_crystal", weight: 2, sturdy: true },
+];
+
+const iceRockTable = [
+  { block: "society:ice_boulder", weight: 164 },
+  { block: "minecraft:iron_ore", weight: 25 },
+  { block: "create:zinc_ore", weight: 15 },
+  { block: "oreganized:lead_ore", weight: 10 },
+  { block: "minecraft:diamond_ore", weight: 4 },
+  { block: "society:earth_crystal", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 1, sturdy: true },
+  { block: "society:sparkstone_ore", weight: 2 },
+];
+
+const sandstoneRockTable = [
+  { block: "society:sandstone_boulder", weight: 163 },
+  { block: "minecraft:gold_ore", weight: 20 },
+  { block: "oreganized:lead_ore", weight: 10 },
+  { block: "minecraft:redstone_ore", weight: 6 },
+  { block: "minecraft:diamond_ore", weight: 4 },
+  { block: "society:sparkstone_ore", weight: 4 },
+  { block: "society:fire_quartz", weight: 2, sturdy: true },
+  { block: "society:magma_geode_node", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 2, sturdy: true },
+  { block: "oreganized:silver_ore", weight: 1 },
+  { block: "society:iridium_ore", weight: 1 },
+];
+
+const blackstoneRockTable = [
+  { block: "society:blackstone_boulder", weight: 148 },
+  { block: "minecraft:deepslate_gold_ore", weight: 20 },
+  { block: "oreganized:deepslate_lead_ore", weight: 10 },
+  { block: "minecraft:deepslate_redstone_ore", weight: 15 },
+  { block: "minecraft:deepslate_diamond_ore", weight: 4 },
+  { block: "society:deepslate_sparkstone_ore", weight: 10 },
+  { block: "society:fire_quartz", weight: 2, sturdy: true },
+  { block: "society:magma_geode_node", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 4, sturdy: true },
+  { block: "oreganized:deepslate_silver_ore", weight: 3 },
+  { block: "society:deepslate_iridium_ore", weight: 2 },
+];
+
+const endstoneRockTable = [
+  { block: "society:end_stone_boulder", weight: 194 },
+  { block: "society:deepslate_sparkstone_ore", weight: 14 },
+  { block: "society:omni_geode_node", weight: 4, sturdy: true },
+  { block: "society:deepslate_iridium_ore", weight: 3 },
+];
+
+const rollReplaceTable = (table, hasRope) => {
+  let roll = 0;
+  const totalWeight = table.reduce(
+    (acc, current) => (hasRope && current.sturdy ? acc : acc + current.weight),
+    0
+  );
+  let currentWeight = 0;
+  if (totalWeight > 1) {
+    roll = rnd(0, totalWeight);
+    for (let index = 0; index < table.length; index++) {
+      currentWeight += table[index].weight;
+      if (currentWeight >= roll) {
+        return table[index].block;
+      }
+    }
+  }
+  return "minecraft:obsidian";
+};
+
 global.handleSkullCavernRegen = (server, level, block) => {
   if (!level.persistentData || !level.persistentData.chunkParityMap) return;
   let belowPos;

@@ -220,7 +220,7 @@ global.prizeMachineRewards = [
   },
   {
     hint: "filled with plushies",
-    possibleOutputs: ["tanukidecor:gumball_machine"],
+    possibleOutputs: ["whimsy_deco:gatcha_machine"],
   },
   {
     hint: "beachy",

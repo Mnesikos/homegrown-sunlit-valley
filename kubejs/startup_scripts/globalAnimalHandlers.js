@@ -179,8 +179,8 @@ global.handleSpecialHarvest = (
 
 global.getMagicShearsOutput = (targetId, player) => {
   const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`).toArray();
+  let newLoot = [];
   if (player.stages.has("mana_hand")) {
-    let newLoot = []
     let dropItem;
     for (let i = 0; i < droppedLoot.length; i++) {
       dropItem = droppedLoot[i];
@@ -192,6 +192,13 @@ global.getMagicShearsOutput = (targetId, player) => {
         newLoot.push(dropItem);
       }
     }
-    return newLoot
-  } else return droppedLoot;
+    return newLoot;
+  }
+  for (let i = 0; i < droppedLoot.length; i++) {
+    newLoot.push(droppedLoot[i]);
+  }
+  if (player.stages.has("heretic")) {
+    newLoot.push(Item.of("3x society:sparkstone"));
+  }
+  return newLoot;
 };

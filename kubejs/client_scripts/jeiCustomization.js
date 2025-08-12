@@ -140,7 +140,7 @@ JEIAddedEvents.registerRecipes((e) => {
       output: "society:fantasy_dust",
     },
     {
-      catalog: "tanukidecor:gumball_machine",
+      catalog: "whimsy_deco:gatcha_machine",
       cost: "1x numismatics:sun",
       output: "society:plushie_capsule",
     },
