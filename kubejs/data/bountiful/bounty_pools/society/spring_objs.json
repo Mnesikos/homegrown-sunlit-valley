@@ -6,8 +6,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 60
 		},
@@ -17,8 +17,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 36
 		},
@@ -61,8 +61,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 72
 		},
@@ -72,8 +72,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 81
 		},
@@ -94,8 +94,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 144
 		},
@@ -105,8 +105,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 78
 		},
@@ -116,8 +116,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 69
 		},
@@ -127,8 +127,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 48
 		},
@@ -193,8 +193,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 72
 		},

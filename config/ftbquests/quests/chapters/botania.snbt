@@ -759,7 +759,6 @@
 			dependencies: [
 				"221306DB217B8F93"
 				"5E5E6E09E6C6DF02"
-				"1D1F8EA9D17BCF81"
 			]
 			description: ["{ftbquests.chapter.botania.quest24.description1}"]
 			icon: "botania:orange_mystical_flower"

@@ -1,4 +1,4 @@
-const runBountyDataGen = true;
+const runBountyDataGen = false;
 
 const createDecree = (name, items, mult, pricyThreshold, amountFunction) => {
   let objs = { content: {} };

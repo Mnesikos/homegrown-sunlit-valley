@@ -143,7 +143,7 @@ global.handleSpecialHarvest = (
         inventory: inventory,
       });
     }
-    if (data.bff) {
+    if (data.bff && player.stages.has("bff")) {
       harvestFunction(data, 0.1, hungry, 10, 1, "society:prismatic_shard", false, {
         level: level,
         target: target,

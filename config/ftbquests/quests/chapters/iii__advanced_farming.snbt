@@ -884,10 +884,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: [
-				"01071E36A0370E13"
-				"5C9C7A5A88613109"
-			]
+			dependencies: ["5C9C7A5A88613109"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest36.description1}"
@@ -970,7 +967,10 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["5C9C7A5A88613109"]
+			dependencies: [
+				"5C9C7A5A88613109"
+				"139B02AFBCBBF350"
+			]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest39.description1}"
 				""
@@ -988,6 +988,7 @@
 				}
 			}
 			id: "07A551F04BB9A117"
+			min_required_dependencies: 1
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0AF350DA4D7F6BE5"
@@ -1000,8 +1001,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest39.title}"
-			x: 3.0d
-			y: 7.0d
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3291A30C1D1B009D"]
@@ -1562,6 +1563,34 @@
 			title: "The Butterfly Effect"
 			x: 3.0d
 			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5C9C7A5A88613109"
+				"139B02AFBCBBF350"
+			]
+			description: [
+				"Slimes can be fed by tossing their food on the ground, or poviding a live mob for them to eat."
+				""
+				"This can be done in a more convenient way with the &6Slime Feeder&r, which feeds nearby Slimes with foods from their diet."
+				""
+				"Additionally, if a Slime has the \"Picky\" trait, the Slime Feeder will only feed the food item that won't make it angry."
+			]
+			id: "54E81642A0E67042"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "1DD372F2BF6522C8"
+				item: "splendid_slimes:slime_ticket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D4E38A68FEE0DC1"
+				item: "splendid_slimes:slime_feeder"
+				type: "item"
+			}]
+			title: "Feeding Slimes"
+			x: 3.0d
+			y: 7.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

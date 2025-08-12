@@ -220,8 +220,14 @@ ItemEvents.tooltip((tooltip) => {
       description: "Artifacts and Relics are worth 200% more",
     },
     { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
-    { item: "society:bullfish_jobs", description: "The quality of fish taken out of Fish Ponds scales with max population."},
-    { item: "society:wuthering_logs", description: "Trees have a 15% chance to drop Fire Logs when chopped."},
+    {
+      item: "society:bullfish_jobs",
+      description: "The quality of fish taken out of Fish Ponds scales with max population.",
+    },
+    {
+      item: "society:wuthering_logs",
+      description: "Trees have a 15% chance to drop Fire Logs when chopped.",
+    },
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));
     tooltip.add(book.item, Text.green("Right click to learn this skill!"));
@@ -282,9 +288,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "society:pink_matter",
     Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry apply Milk Quality."
+      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry over Milk Quality"
     )
   );
+  tooltip.add("society:pink_matter", Text.red("Does not carry over Milk Quality"));
   tooltip.add(
     "society:stone_hand",
     Text.green("Use on a §2Preserves Jar§a to decrease input amount by 2")
@@ -301,9 +308,11 @@ ItemEvents.tooltip((tooltip) => {
     "society:black_opal",
     Text.green("Use on a §2Crystalarium§a to give it a 10% chance of producing pristine items")
   );
-    tooltip.add(
+  tooltip.add(
     "society:enkephalin",
-    Text.green("Use on a §2Mayonnaise Machine§a to give it a 5% chance of producing Supreme Mayonnaise")
+    Text.green(
+      "Use on a §2Mayonnaise Machine§a to give it a 5% chance of producing Supreme Mayonnaise"
+    )
   );
   tooltip.add(
     "society:tiny_gnome",
@@ -541,8 +550,8 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("splendid_slimes:slime_feeder", Text.green(`Area: 13x13x13`));
   tooltip.add("create:creative_blaze_cake", Text.gray("It's smoking..."));
   tooltip.add("tanukidecor:slot_machine", Text.gray("Right click with any legal tender"));
-  tooltip.add("whimsy_deco:statue_endless_fortune", Text.gray("Gives a valuable item once a day"))
-  tooltip.add("whimsy_deco:statue_endless_fortune", Text.red("Definitely not overpriced."))
+  tooltip.add("whimsy_deco:statue_endless_fortune", Text.gray("Gives a valuable item once a day"));
+  tooltip.add("whimsy_deco:statue_endless_fortune", Text.red("Definitely not overpriced."));
   tooltip.add(
     "whimsy_deco:gatcha_machine",
     Text.gray("Right click with an Iridium Coin to purchase a Plushie Capsule")
@@ -631,7 +640,7 @@ ItemEvents.tooltip((tooltip) => {
     "society:jade",
     "society:river_jelly",
     "society:nether_jelly",
-    "society:ocean_jelly"
+    "society:ocean_jelly",
   ];
   craftingMaterials.forEach((item) => {
     tooltip.add(item, Text.gray("Crafting material"));

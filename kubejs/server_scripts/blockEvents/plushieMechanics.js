@@ -28,6 +28,23 @@ BlockEvents.broken(global.plushies, (e) => {
   }
 });
 
+BlockEvents.broken("whimsy_deco:singing_frog", (e) => {
+  const { block } = e;
+  const type = block.properties.get("type").toLowerCase();
+  if (type !== "0") {
+    block.popItem(
+      Item.of(
+        "whimsy_deco:adv_singing_frog_plushie",
+        `{quality_food:{quality:${block.properties.get(
+          "quality"
+        )}},type:${type},quest_id:${block.properties.get(
+          "quest_id"
+        )},affection:${block.properties.get("affection")}}`
+      )
+    );
+  }
+});
+
 BlockEvents.rightClicked("whimsy_deco:gatcha_machine", (e) => {
   const { item, player, block, hand, server } = e;
 

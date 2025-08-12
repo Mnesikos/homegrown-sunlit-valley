@@ -154,8 +154,6 @@ ServerEvents.recipes((e) => {
     "unusualfishmod:depth_scythe",
     "unusualfishmod:ripsaw",
     "unusualfishmod:ancient_weapon_smithing_template",
-    "capsule:capsulemarker",
-    "capsule:capsule",
     "minecraft:milk_bucket",
     "farm_and_charm:feeding_trough",
     "farm_and_charm:pitchfork",

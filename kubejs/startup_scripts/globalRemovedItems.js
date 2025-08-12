@@ -456,7 +456,6 @@ global.removedItems = [
   "unusualfishmod:ancient_weapon_smithing_template",
   "unusualfishmod:depth_scythe",
   "unusualfishmod:ripsaw",
-  "capsule:capsulemarker",
   "farm_and_charm:feeding_trough",
   "minecraft:milk_bucket",
   "minecraft:milk",

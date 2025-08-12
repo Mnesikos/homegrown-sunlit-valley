@@ -145,6 +145,9 @@ StartupEvents.registry("block", (e) => {
           level.server.runCommandSilent(
             `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`
           );
+          level.server.runCommandSilent(
+            `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`
+          );
           block.set(block.id, {
             facing: facing,
             mature: false,
@@ -160,14 +163,35 @@ StartupEvents.registry("block", (e) => {
     .box(1, 0, 1, 15, 18, 15, true)
     .defaultGeoModel()
     .property(BlockProperties.HORIZONTAL_FACING)
-    .property(booleanProperty.create("mature"))
+    .property(integerProperty.create("type", 0, global.plushieTraits.length))
+    .property(integerProperty.create("quest_id", 0, 3))
+    .property(integerProperty.create("quality", 0, 4))
+    .property(integerProperty.create("affection", 0, 4))
     .placementState((state) => {
       state
         .set(
           BlockProperties.HORIZONTAL_FACING,
           String(state.getHorizontalDirection().getOpposite())
         )
-        .set(booleanProperty.create("mature"), false);
+        .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
+        .set(integerProperty.create("quest_id", 0, 3), 0)
+        .set(integerProperty.create("quality", 0, 4), 0)
+        .set(integerProperty.create("affection", 0, 4), 0);
+    })
+    .defaultState((state) => {
+      state
+        .set(integerProperty.create("type", 0, global.plushieTraits.length), 0)
+        .set(integerProperty.create("quest_id", 0, 3), 0)
+        .set(integerProperty.create("quality", 0, 4), 0)
+        .set(integerProperty.create("affection", 0, 4), 0);
+    })
+    .rightClick((click) => {
+      const { block, server } = click;
+      const { x, y, z } = block;
+      block.set("whimsy_deco:adv_singing_frog_plushie", block.properties);
+      server.runCommandSilent(
+        `execute positioned ${x} ${y} ${z} run stopsound @e[type=player,distance=..4] block`
+      );
     });
 });
 

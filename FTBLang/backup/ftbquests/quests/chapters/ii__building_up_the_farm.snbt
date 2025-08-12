@@ -17,7 +17,7 @@
 			description: [
 				"Your journey into farming starts with the &6Market&r, which sells a variety of basic seeds and saplings."
 				""
-				"Some crops only grow in certain seasons, which is designated in the crops's tooltip. "
+				"Some crops only grow in certain seasons, which is designated in each crops's tooltip. "
 				""
 				"Seasons last &630 minecraft days&r, and hot or cold biomes will be always be Summer and Winter respectively."
 				""
@@ -97,7 +97,7 @@
 			description: [
 				"Once you find an appropriate place to start your farm, your first step should be preparing a field of farmland."
 				""
-				"Once fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
+				"Once your crops are fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
 			]
 			icon: "minecraft:farmland"
 			id: "0A39B0C0A77E57B0"
@@ -163,7 +163,7 @@
 				"2134CA6B3880D089"
 			]
 			description: [
-				"By now you might have ran out of money while getting your crops started. "
+				"By now you might have run out of money while getting your crops started. "
 				""
 				"It's a good time to dig into stone to get materials needed to craft sprinklers or upgrade tools."
 			]

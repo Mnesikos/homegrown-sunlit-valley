@@ -375,27 +375,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["221306DB217B8F93"]
-			description: [
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description1}"
-				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description2}"
-				""
-				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest16.description3}"
-			]
-			icon: "create:mechanical_bearing"
-			id: "1D1F8EA9D17BCF81"
-			tasks: [{
-				id: "1D688CDC40C31E99"
-				title: "{ftbquests.chapter.ivi__mechanical_farming.quest16.task_2119098502285041305.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ivi__mechanical_farming.quest16.title}"
-			x: -5.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["6A931F456D6FEA3E"]
 			description: ["{ftbquests.chapter.ivi__mechanical_farming.quest17.description1}"]
 			id: "5BAFB04B1F3B8150"
@@ -1007,7 +986,7 @@
 			description: [
 				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest39.description2}"
+				"The blueprinting system that the &6Scanner&r and &6Tablet&r provide are a good substitute to the Schematiccannon."
 			]
 			icon: "create:schematicannon"
 			id: "4694534F6E99EAAD"
@@ -1018,7 +997,7 @@
 			}]
 			title: "{ftbquests.chapter.ivi__mechanical_farming.quest39.title}"
 			x: -5.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4C9E6CB01631C0B6"]

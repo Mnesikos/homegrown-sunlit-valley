@@ -4,10 +4,10 @@
     "modId": "forge",
     "version": "fmlloader-1.20.1-47.4.0.jar"
   },
-  "additional_attributes-1.20.1-1.3.1-all.jar": {
-    "jarName": "additional_attributes-1.20.1-1.3.1-all.jar",
+  "additional_attributes-1.20.1-1.3.6-all.jar": {
+    "jarName": "additional_attributes-1.20.1-1.3.6-all.jar",
     "modId": "additional_attributes",
-    "version": "1.3.1"
+    "version": "1.3.6"
   },
   "AdvancedLootInfo-forge-1.20.1-1.2.1.jar": {
     "jarName": "AdvancedLootInfo-forge-1.20.1-1.2.1.jar",
@@ -169,11 +169,6 @@
     "modId": "caelus",
     "version": "3.2.0+1.20.1"
   },
-  "Capsule-1.20.1-8.0.105.jar": {
-    "jarName": "Capsule-1.20.1-8.0.105.jar",
-    "modId": "capsule",
-    "version": "1.20.1-8.0.105"
-  },
   "carryon-forge-1.20.1-2.1.2.7.jar": {
     "jarName": "carryon-forge-1.20.1-2.1.2.7.jar",
     "modId": "carryon",
@@ -329,10 +324,10 @@
     "modId": "create_factory_logistics",
     "version": "1.4.5"
   },
-  "create_hypertube-0.2.4-FORGE.jar": {
-    "jarName": "create_hypertube-0.2.4-FORGE.jar",
+  "create_hypertube-0.2.5-FORGE.jar": {
+    "jarName": "create_hypertube-0.2.5-FORGE.jar",
     "modId": "create_hypertube",
-    "version": "0.2.4"
+    "version": "0.2.5"
   },
   "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar": {
     "jarName": "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar",
@@ -378,6 +373,11 @@
     "jarName": "croptania-0.3.jar",
     "modId": "croptania",
     "version": "0.3"
+  },
+  "CTM-1.20.1-1.1.10.jar": {
+    "jarName": "CTM-1.20.1-1.1.10.jar",
+    "modId": "ctm",
+    "version": "1.20.1-1.1.10"
   },
   "cupboard-1.20.1-2.7.jar": {
     "jarName": "cupboard-1.20.1-2.7.jar",
@@ -494,10 +494,10 @@
     "modId": "entity_texture_features",
     "version": "6.2.9"
   },
-  "entityculling-forge-1.8.0-mc1.20.1.jar": {
-    "jarName": "entityculling-forge-1.8.0-mc1.20.1.jar",
+  "entityculling-forge-1.8.2-mc1.20.1.jar": {
+    "jarName": "entityculling-forge-1.8.2-mc1.20.1.jar",
     "modId": "entityculling",
-    "version": "1.8.0"
+    "version": "1.8.2"
   },
   "entityjs-0.6.2-1.20.1.jar": {
     "jarName": "entityjs-0.6.2-1.20.1.jar",
@@ -699,10 +699,10 @@
     "modId": "geckojs",
     "version": "2001forge-1.5.2"
   },
-  "geckolib-forge-1.20.1-4.7.2.jar": {
-    "jarName": "geckolib-forge-1.20.1-4.7.2.jar",
+  "geckolib-forge-1.20.1-4.7.3.jar": {
+    "jarName": "geckolib-forge-1.20.1-4.7.3.jar",
     "modId": "geckolib",
-    "version": "4.7.2"
+    "version": "4.7.3"
   },
   "GlitchCore-forge-1.20.1-0.0.1.1.jar": {
     "jarName": "GlitchCore-forge-1.20.1-0.0.1.1.jar",
@@ -724,10 +724,10 @@
     "modId": "hopo",
     "version": "1.2.2"
   },
-  "horseman-1.20.1-1.3.9-forge.jar": {
-    "jarName": "horseman-1.20.1-1.3.9-forge.jar",
+  "horseman-1.20.1-1.3.11-forge.jar": {
+    "jarName": "horseman-1.20.1-1.3.11-forge.jar",
     "modId": "horseman",
-    "version": "1.3.9"
+    "version": "1.3.11"
   },
   "Iceberg-1.20.1-forge-1.1.25.jar": {
     "jarName": "Iceberg-1.20.1-forge-1.1.25.jar",
@@ -739,10 +739,10 @@
     "modId": "immersive_paintings",
     "version": "0.6.8+1.20.1"
   },
-  "immersivemessages-forge-1.0.16-1.20.1.jar": {
-    "jarName": "immersivemessages-forge-1.0.16-1.20.1.jar",
+  "immersivemessages-forge-1.0.18-1.20.1.jar": {
+    "jarName": "immersivemessages-forge-1.0.18-1.20.1.jar",
     "modId": "immersivemessages",
-    "version": "1.0.16"
+    "version": "1.0.18"
   },
   "incontrol-1.20-9.3.3.jar": {
     "jarName": "incontrol-1.20-9.3.3.jar",
@@ -759,10 +759,10 @@
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"
   },
-  "Jade-1.20.1-Forge-11.13.1.jar": {
-    "jarName": "Jade-1.20.1-Forge-11.13.1.jar",
+  "Jade-1.20.1-Forge-11.13.2.jar": {
+    "jarName": "Jade-1.20.1-Forge-11.13.2.jar",
     "modId": "jade",
-    "version": "11.13.1+forge"
+    "version": "11.13.2+forge"
   },
   "JadeAddons-1.20.1-Forge-5.5.0.jar": {
     "jarName": "JadeAddons-1.20.1-Forge-5.5.0.jar",
@@ -1222,10 +1222,10 @@
     "modId": "relics",
     "version": "0.8.0.9"
   },
-  "resourcefulconfig-forge-1.20.1-2.1.2.jar": {
-    "jarName": "resourcefulconfig-forge-1.20.1-2.1.2.jar",
+  "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
+    "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
     "modId": "resourcefulconfig",
-    "version": "2.1.2"
+    "version": "2.1.3"
   },
   "resourcefullib-forge-1.20.1-2.1.29.jar": {
     "jarName": "resourcefullib-forge-1.20.1-2.1.29.jar",
@@ -1252,10 +1252,10 @@
     "modId": "rottencreatures",
     "version": "1.1.0"
   },
-  "sawmill-1.20-1.4.7.jar": {
-    "jarName": "sawmill-1.20-1.4.7.jar",
+  "sawmill-1.20-1.4.8.jar": {
+    "jarName": "sawmill-1.20-1.4.8.jar",
     "modId": "sawmill",
-    "version": "1.20-1.4.7"
+    "version": "1.20-1.4.8"
   },
   "Searchables-forge-1.20.1-1.0.3.jar": {
     "jarName": "Searchables-forge-1.20.1-1.0.3.jar",
@@ -1297,10 +1297,10 @@
     "modId": "shippingbin",
     "version": "4"
   },
-  "ShoulderSurfing-Forge-1.20.1-4.13.1.jar": {
-    "jarName": "ShoulderSurfing-Forge-1.20.1-4.13.1.jar",
+  "ShoulderSurfing-Forge-1.20.1-4.14.1.jar": {
+    "jarName": "ShoulderSurfing-Forge-1.20.1-4.14.1.jar",
     "modId": "shouldersurfing",
-    "version": "1.20.1-4.13.1"
+    "version": "1.20.1-4.14.1"
   },
   "simplehats-forge-1.20.1-0.3.2.jar": {
     "jarName": "simplehats-forge-1.20.1-0.3.2.jar",
@@ -1407,15 +1407,15 @@
     "modId": "strawstatues",
     "version": "8.0.3"
   },
-  "structureessentials-1.20.1-4.7.jar": {
-    "jarName": "structureessentials-1.20.1-4.7.jar",
+  "structureessentials-1.20.1-4.8.jar": {
+    "jarName": "structureessentials-1.20.1-4.8.jar",
     "modId": "structureessentials",
-    "version": "1.20.1-4.7"
+    "version": "1.20.1-4.8"
   },
-  "structurify-forge-1.0.17+mc1.20.1.jar": {
-    "jarName": "structurify-forge-1.0.17+mc1.20.1.jar",
+  "structurify-forge-1.0.21+mc1.20.1.jar": {
+    "jarName": "structurify-forge-1.0.21+mc1.20.1.jar",
     "modId": "structurify",
-    "version": "1.0.17"
+    "version": "1.0.21"
   },
   "supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
     "jarName": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
@@ -1517,10 +1517,10 @@
     "modId": "twigs",
     "version": "1.20.1-3.1.1"
   },
-  "txnilib-forge-1.0.23-1.20.1.jar": {
-    "jarName": "txnilib-forge-1.0.23-1.20.1.jar",
+  "txnilib-forge-1.0.24-1.20.1.jar": {
+    "jarName": "txnilib-forge-1.0.24-1.20.1.jar",
     "modId": "txnilib",
-    "version": "1.0.23"
+    "version": "1.0.24"
   },
   "untitledduckmod-0.7.0-forge-1.20.1.jar": {
     "jarName": "untitledduckmod-0.7.0-forge-1.20.1.jar",
@@ -1572,10 +1572,10 @@
     "modId": "watermedia",
     "version": "2.1.30"
   },
-  "waystones-forge-1.20.1-14.1.13.jar": {
-    "jarName": "waystones-forge-1.20.1-14.1.13.jar",
+  "waystones-forge-1.20.1-14.1.17.jar": {
+    "jarName": "waystones-forge-1.20.1-14.1.17.jar",
     "modId": "waystones",
-    "version": "14.1.13"
+    "version": "14.1.17"
   },
   "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar": {
     "jarName": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",

@@ -23,20 +23,32 @@
 				id: "16BF49CFC6B5C49C"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn"
+						buildAnyway: 0b
 						display: {
-							color: 5055259
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Barn\"}"
 						}
-						isReward: 1b
-						label: "Basic Barn"
-						oneUse: 1b
-						size: 17
-						state: 5
-						structureName: "config/capsule/rewards/barn.nbt"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -81,22 +93,32 @@
 				id: "0F1B0A120DFE317E"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Barn\"}"
 						}
-						isReward: 1b
-						label: "Cherry Barn"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "COUNTERCLOCKWISE_90"
-						size: 17
-						state: 5
-						structureName: "config/capsule/rewards/barn_cherry.nbt"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -214,22 +236,32 @@
 				id: "1781AAA30A33896B"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed"
+						buildAnyway: 0b
 						display: {
-							color: 9926987
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Large Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "CLOCKWISE_90"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -270,22 +302,32 @@
 				id: "7C3D2DBBB488E608"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 7746349
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 11832713
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Cherry Large Shed"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "CLOCKWISE_90"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -440,6 +482,7 @@
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			hide_details_until_startable: false
 			icon: "society:milk"
 			id: "0B3AAC4CEC0098A3"
 			size: 1.5d
@@ -456,13 +499,13 @@
 			can_repeat: false
 			dependencies: ["66D159252C70D5F2"]
 			description: [
-				"{ftbquests.chapter.building_shop.quest10.description1}"
+				"This chapter contains pre-built buildings that can be purchased with currency and resources."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description2}"
+				"&6Right click&r on a block with a blueprint to place a preview. Right click again on the preview to build."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description3}"
+				"&6Shift + Right Click&r in the air to mirror, flip or rotate the preview."
 				""
-				"{ftbquests.chapter.building_shop.quest10.description4}"
+				"&6Scroll Wheel&r can be used to position more precisely."
 			]
 			icon: "minecraft:spruce_door"
 			id: "049EB48B999881A3"
@@ -595,22 +638,32 @@
 				id: "03D9B5B292CD4F2D"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 8072841
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_tudor"
+						buildAnyway: 0b
 						display: {
-							color: 14714914
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Tudor Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Tudor Farmhouse"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_tudor"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_tudor"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -651,22 +704,32 @@
 				id: "03595A7BE69C5DDA"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 0
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9532749
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Siberian Farmhouse"
-						mirror: "NONE"
-						oneUse: 1b
-						rotation: "NONE"
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -738,7 +801,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "Designed by &5Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
+			subtitle: "Designed by &6Chakyl&r - 15 blocks deep, 11 blocks wide, and 7 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -777,20 +840,32 @@
 				id: "7C002C937DEDFDF0"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Barn\"}"
 						}
-						isReward: 1b
-						label: "Siberian Barn"
-						oneUse: 1b
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/barn_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1103,20 +1178,32 @@
 				id: "18A9A2BE7CC94F7E"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 5544791
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 7105644
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Large Shed\"}"
 						}
-						isReward: 1b
-						label: "large_shed_siberian"
-						oneUse: 1b
-						size: 23
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1157,20 +1244,32 @@
 				id: "76CF6CBE5B174080"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Cherry Farmhouse"
-						oneUse: 1b
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1182,12 +1281,6 @@
 					count: 8L
 					id: "6F6963CE5793534D"
 					item: { Count: 8, id: "numismatics:sun" }
-					type: "item"
-				}
-				{
-					count: 256L
-					id: "3055C9D0D99D0304"
-					item: { Count: 256, id: "minecraft:oak_log" }
 					type: "item"
 				}
 				{
@@ -1217,20 +1310,32 @@
 				id: "1C9C706C6994BEB3"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 16777215
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_siberian"
+						buildAnyway: 0b
 						display: {
-							color: 9849600
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Siberian Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_siberian"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_siberian"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1271,20 +1376,32 @@
 				id: "57A5A89DA047C2FA"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_cherry"
+						buildAnyway: 0b
 						display: {
-							color: 9926515
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Cherry Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_cherry"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_cherry"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1325,20 +1442,32 @@
 				id: "4C61D52DDE1A5535"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "Chakyl"
-						canRotate: 1b
-						color: 13092290
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn"
+						buildAnyway: 0b
 						display: {
-							color: 5055259
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn"
+						owner: "worn"
+						owner_name: "Chakyl"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1448,20 +1577,32 @@
 				id: "468D64E988468629"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_entrana"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Barn\"}"
 						}
-						isReward: 1b
-						label: "Entrana Barn"
-						oneUse: 1b
-						size: 17
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/barn_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1571,23 +1712,34 @@
 				id: "49D9E74D3550C685"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_entrana"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Deluxe Barn\"}"
 						}
-						isReward: 1b
-						label: "Entrana Deluxe Barn"
-						oneUse: 1b
-						size: 27
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/deluxe_barn_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
 			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
@@ -1625,20 +1777,32 @@
 				id: "6B114022FFCCBD35"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_entrana"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Farmhouse\"}"
 						}
-						isReward: 1b
-						label: "Entrana Farmhouse"
-						oneUse: 1b
-						size: 19
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/home_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1774,7 +1938,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "Designed by &6Krewella&r - - blocks deep, - blocks wide, and - blocks tall"
+			subtitle: "Designed by &6Krewella&r - 19 blocks deep, 15 blocks wide, and 9 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1948,20 +2112,32 @@
 				id: "01F2922E9BB6A978"
 				item: {
 					Count: 1
-					id: "capsule:capsule"
+					id: "portable_blueprints:worn_blueprint"
 					tag: {
-						author: "JadeClouds"
-						canRotate: 1b
-						color: 170
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_entrana"
+						buildAnyway: 0b
 						display: {
-							color: 16777215
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Large Shed\"}"
 						}
-						isReward: 1b
-						label: "Entrana Large Shed"
-						oneUse: 1b
-						size: 21
-						state: 5
-						structureName: "minecraft:config/capsule/rewards/large_shed_entrana"
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_entrana"
+						owner: "worn"
+						owner_name: "JadeClouds"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
 					}
 				}
 				team_reward: true
@@ -1991,6 +2167,446 @@
 			title: "{ftbquests.chapter.building_shop.quest22.title}"
 			x: -5.0d
 			y: -2.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["049EB48B999881A3"]
+			description: [
+				"Coops are small cozy homes for all types of egg-laying animals."
+				""
+				"One &6Feeding Trough&r is included that covers the entire working area of the Coop"
+			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "minecraft:egg"
+			id: "1BAF470C2BE0A492"
+			size: 1.5d
+			tasks: [{
+				id: "62A5BE0503E59BE6"
+				title: "{ftbquests.chapter.building_shop.quest6.task_6639295337464295342.title}"
+				type: "checkmark"
+			}]
+			title: "Coops"
+			x: -18.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest3.image0}"]
+			icon: "minecraft:chest"
+			id: "26786C93CF7A75C3"
+			min_required_tasks: 3
+			rewards: [{
+				id: "34102F22D83E5D16"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Basic Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 14 blocks deep, 9 blocks wide, and 10 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "531E9D9087F98916"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7CC3581A951DA3EE"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "518A5CB149515B70"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Coop"
+			x: -19.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest7.image0}"]
+			icon: "quark:cherry_chest"
+			id: "674C3D7DFF93154F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "58B4EDEC3D936173"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_cherry"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cherry Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_cherry"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 12 blocks deep, 11 blocks wide, and 7 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "3B642829761622F7"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "51299C0D628071B5"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "712EEE6B22C9F8F1"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cherry Coop"
+			x: -18.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest17.image0}"]
+			icon: "quark:spruce_chest"
+			id: "2705D27735C4858B"
+			min_required_tasks: 3
+			rewards: [{
+				id: "560D8581CA604817"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_siberian"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Siberian Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_siberian"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 10 blocks deep, 12 blocks wide, and 7 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "2AC20E1D8082AD0C"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1B02CC500E229BBC"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "238ED80C34F468C3"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Siberian Coop"
+			x: -17.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
+			icon: "quark:prismarine_chest"
+			id: "24F24D2941BCF17C"
+			min_required_tasks: 3
+			rewards: [{
+				id: "50E6A6292A9C6051"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_prismarine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Prismarine Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_prismarine"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 14 blocks deep, 13 blocks wide, and 9 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "4209EC5FA2683AD0"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0E0586D67DA3D946"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "356DD17DEC83FAEE"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Prismarine Coop"
+			x: -19.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/shed_alpine.png width:198 height:154 align:center}"]
+			icon: "meadow:shelf"
+			id: "03C9745F9E9D8B24"
+			min_required_tasks: 3
+			rewards: [{
+				id: "06CE6994362AE418"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_alpine"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Alpine Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_alpine"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 19 blocks deep, 15 blocks wide, and 13 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "6C4A680032747257"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5CC8EB1297315581"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "664A073404C74553"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Alpine Coop"
+			x: -18.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{ftbquests.chapter.building_shop.quest19.image0}"]
+			icon: "quark:ancient_chest"
+			id: "517BDCBA749E1F0F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "41012E5CEE23F9D8"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_entrana"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Entrana Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_entrana"
+						owner: "worn"
+						owner_name: "charlotte.b"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "Designed by &6charlotte.b&r - 11 blocks deep, 14 blocks wide, and 11 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "276E65F335DDDF6D"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "12CCB6E07B2E1FA0"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7B0690A5DDCC6DAF"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Entrana Coop"
+			x: -17.5d
+			y: -7.0d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

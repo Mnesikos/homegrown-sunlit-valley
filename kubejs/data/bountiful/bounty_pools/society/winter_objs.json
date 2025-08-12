@@ -6,8 +6,8 @@
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 4,
+				"max": 8
 			},
 			"unitWorth": 384
 		},
@@ -17,8 +17,8 @@
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 4,
+				"max": 8
 			},
 			"unitWorth": 480
 		},
@@ -61,8 +61,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 66
 		},
@@ -72,8 +72,8 @@
 			"rarity": "UNCOMMON",
 			"weightMult": 0.5,
 			"amount": {
-				"min": 1,
-				"max": 4
+				"min": 4,
+				"max": 8
 			},
 			"unitWorth": 210
 		},
@@ -138,8 +138,8 @@
 			"rarity": "COMMON",
 			"weightMult": 1,
 			"amount": {
-				"min": 2,
-				"max": 8
+				"min": 16,
+				"max": 48
 			},
 			"unitWorth": 72
 		},
