@@ -57,7 +57,33 @@ global.handleProgress = (level, block) => {
       console.log("Invalid artisan machine!");
   }
 };
-
+global.runGoldenClock = (entity) => {
+  const { level, block } = entity;
+  const { x, y, z } = block;
+  const radius = 2;
+  let scanBlock;
+  let dayTime = level.dayTime();
+  let morningModulo = dayTime % 24000;
+  const goldenClockProgTime = 40;
+  if (
+    morningModulo >= goldenClockProgTime &&
+    morningModulo < goldenClockProgTime + artMachineTickRate
+  ) {
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+      x + radius,
+      y + radius,
+      z + radius,
+    ])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.hasTag("society:golden_clock_advanced")) {
+        global.handleProgress(level, scanBlock);
+      }
+    }
+    level.server.runCommandSilent(
+      `playsound tanukidecor:block.grandfather_clock.chime block @a ${x} ${y} ${z}`
+    );
+  }
+};
 StartupEvents.registry("block", (event) => {
   event
     .create("society:golden_clock", "cardinal")
@@ -75,31 +101,6 @@ StartupEvents.registry("block", (event) => {
     })
     .model("society:block/golden_clock")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        const { level, block } = entity;
-        const { x, y, z } = block;
-        const radius = 2;
-        let scanBlock;
-        let dayTime = level.dayTime();
-        let morningModulo = dayTime % 40;
-        if (
-          morningModulo >= artMachineProgTime &&
-          morningModulo < artMachineProgTime + artMachineTickRate
-        ) {
-          for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-            x + radius,
-            y + radius,
-            z + radius,
-          ])) {
-            scanBlock = level.getBlock(pos);
-            if (scanBlock.hasTag("society:golden_clock_advanced")) {
-              global.handleProgress(level, scanBlock);
-            }
-          }
-          level.server.runCommandSilent(
-            `playsound tanukidecor:block.grandfather_clock.chime block @a ${x} ${y} ${z}`
-          );
-        }
-      });
-    })
+      blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runGoldenClock(entity));
+    });
 });

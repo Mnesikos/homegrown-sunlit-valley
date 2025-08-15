@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] chargingRod.js loaded");
 
 StartupEvents.registry("block", (event) => {

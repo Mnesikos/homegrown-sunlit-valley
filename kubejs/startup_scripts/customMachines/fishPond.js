@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] fishPond.js loaded");
 
 const getRequestedItems = (fish, population) => {

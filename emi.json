@@ -9,9 +9,378 @@
     },
     {
       "stack": "item:society:pink_flower_wallpaper{}"
+    },
+    {
+      "stack": "item:crittersandcompanions:dragonfly_wing"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:torch",
+        "amount": 39
+      }
     }
   ],
   "lookup_history": [
+    {
+      "id": "relics:confusion"
+    },
+    {
+      "id": "species:bloodlust"
+    },
+    {
+      "id": "trials:trial_curse"
+    },
+    {
+      "id": "relics:paralysis"
+    },
+    {
+      "id": "supplementaries:flammable"
+    },
+    {
+      "id": "vinery:creeper_effect"
+    },
+    {
+      "id": "via_romana:travellers_fatigue"
+    },
+    {
+      "id": "supplementaries:overencumbered"
+    },
+    {
+      "id": "species:stuck"
+    },
+    {
+      "id": "rottencreatures:freeze"
+    },
+    {
+      "id": "rottencreatures:channelled"
+    },
+    "item:farmersdelight:hot_cocoa",
+    {
+      "id": "minecraft:blindness"
+    },
+    {
+      "id": "minecraft:wither"
+    },
+    {
+      "id": "oreganized:stunning"
+    },
+    {
+      "id": "champions:wound"
+    },
+    {
+      "id": "champions:paralysis"
+    },
+    {
+      "id": "relics:stun"
+    },
+    {
+      "id": "minecraft:unluck"
+    },
+    {
+      "id": "minecraft:weakness"
+    },
+    {
+      "id": "minecraft:instant_damage"
+    },
+    {
+      "id": "minecraft:nausea"
+    },
+    {
+      "id": "minecraft:levitation"
+    },
+    {
+      "factor_data": {
+        "factor_current": 0.0,
+        "ticks_active": 0,
+        "factor_previous_frame": 0.0,
+        "had_effect_last_tick": false,
+        "padding_duration": 22,
+        "factor_start": 0.0,
+        "factor_target": 1.0
+      },
+      "id": "minecraft:darkness"
+    },
+    "item:society:amethyst_milk",
+    "item:society:large_amethyst_milk",
+    "item:society:sunlit_pearl",
+    "item:society:fish_smoker",
+    "item:minecraft:end_rod",
+    "item:quark:iron_rod",
+    "item:minecraft:gunpowder",
+    "item:society:kinetic_blueprint",
+    "item:society:canvas",
+    "item:etcetera:cotton_flower",
+    "item:minecraft:calcite",
+    {
+      "type": "fluid",
+      "id": "society:milk",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "create_central_kitchen:tomato_sauce",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "create_central_kitchen:dragon_breath",
+      "amount": 0
+    },
+    "item:create_mechanical_extruder:mechanical_extruder",
+    "item:society:truffle_tea",
+    "item:herbalbrews:yerba_mate_tea",
+    "item:herbalbrews:yerba_mate_leaf_block",
+    "item:herbalbrews:wild_yerba_mate_plant",
+    "item:herbalbrews:yerba_mate_leaf",
+    "item:botania:cosmetic_four_leaf_clover",
+    {
+      "type": "item",
+      "id": "minecraft:oak_fence",
+      "amount": 45
+    },
+    "item:minecraft:crafting_table",
+    "item:crafting_on_a_stick:crafting_table",
+    "item:minecraft:potion{Potion:\"oreganized:stunning\"}",
+    "item:society:golden_clock",
+    {
+      "type": "item",
+      "id": "atmospheric:currant",
+      "amount": 11
+    },
+    "item:society:mayonnaise_machine",
+    "item:society:seed_maker",
+    {
+      "type": "item",
+      "id": "minecraft:pufferfish",
+      "nbt": "{quality_food:{effects:[],quality:3}}",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "twigs:twig",
+      "amount": 16
+    },
+    "item:minecraft:tropical_fish",
+    {
+      "type": "item",
+      "id": "pamhc2trees:bananaitem",
+      "amount": 15
+    },
+    {
+      "type": "item",
+      "id": "vintagedelight:vinegar_mason_jar",
+      "amount": 4
+    },
+    "item:extra_gauges:logic_gauge",
+    "item:create_factory_logistics:network_link",
+    "item:create_factory_logistics:factory_fluid_gauge",
+    "item:create:package_frogport",
+    "item:create_factory_logistics:jar_packager",
+    "item:createrailwaysnavigator:advanced_display_half_panel",
+    "item:crittersandcompanions:silk",
+    "item:crittersandcompanions:grappling_hook",
+    "item:createrailwaysnavigator:navigator",
+    "item:oreganized:unknown_device",
+    "item:oreganized:thermometer",
+    "item:oreganized:speedometer",
+    "item:society:blueberry",
+    "item:society:ancient_juice",
+    "item:society:plushie_capsule",
+    "item:society:mana_clock",
+    "item:society:snow_melter",
+    "item:society:ancient_cog",
+    "item:society:stone_hand",
+    "item:society:scavenged_food_bag",
+    "item:society:chai_blend",
+    "item:society:blueberry_icecream",
+    "item:society:ground_cinnamon",
+    "item:society:spider_silk",
+    "item:create:white_postbox",
+    "item:create:stock_ticker",
+    "item:create:stock_link",
+    "item:create:peculiar_bell",
+    "item:create:blue_valve_handle",
+    "item:create:packager",
+    "item:create:repackager",
+    {
+      "type": "item",
+      "id": "create:chain_conveyor",
+      "amount": 64
+    },
+    "item:crittersandcompanions:dragonfly_wing",
+    "item:create:green_table_cloth",
+    "item:create:cyan_toolbox",
+    "item:create:desk_bell",
+    "item:create:brown_toolbox",
+    "item:create:linked_controller",
+    "item:createutilities:void_steel_bars",
+    "item:createutilities:void_steel_block",
+    "item:copycats:copycat_large_cogwheel",
+    "item:create:transmitter",
+    "item:extra_gauges:counter_gauge",
+    "item:create:magenta_postbox",
+    "item:create:mechanical_plough",
+    "item:create:sweet_roll",
+    "item:create:whisk",
+    "item:createrailwaysnavigator:train_station_clock",
+    "item:create_hypertube:hypertube_entrance",
+    "item:createrailwaysnavigator:advanced_display_slab",
+    "item:create_hypertube:hypertube_accelerator",
+    "item:unusualfishmod:raw_circus_fish{quality_food:{effects:[],quality:1}}",
+    "item:bakery:chocolate_jam",
+    "item:society:truffle_oil",
+    "item:society:battery",
+    "item:society:ribbit_gadget",
+    "item:refinedstorage:network_transmitter",
+    "item:refinedstorage:wireless_transmitter",
+    "item:refinedstorage:storage_monitor",
+    "item:refinedstorage:interface",
+    "item:refinedstorage:network_receiver",
+    "item:refinedstorage:relay",
+    "item:refinedstorage:security_manager",
+    "item:refinedstorage:security_card",
+    "item:refinedstorage:network_card",
+    "item:refinedstorage:stack_upgrade",
+    "item:refinedstorage:filter",
+    "item:moblassos:diamond_lasso",
+    {
+      "type": "item",
+      "id": "vintagedelight:mason_jar",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "vintagedelight:vinegar_bottle",
+      "amount": 6
+    },
+    "item:vintagedelight:fermenting_jar",
+    "item:supplementaries:jar",
+    "item:minecraft:composter",
+    {
+      "type": "item",
+      "id": "society:earth_crystal",
+      "amount": 3
+    },
+    {
+      "type": "item",
+      "id": "meadow:sausage_with_cheese",
+      "amount": 2
+    },
+    "item:veggiesdelight:fermented_garlic_honey",
+    "item:vinery:fermentation_barrel",
+    "item:numismatics:crown",
+    "item:vinery:grapevine_pot",
+    {
+      "type": "item",
+      "id": "society:living_flesh",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "ribbits:toadstool",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:tin_can",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:fish_bones",
+      "nbt": "{}",
+      "amount": 6
+    },
+    "item:society:recycling_machine",
+    "item:refurbished_furniture:recycle_bin",
+    "item:minecraft:iron_block",
+    {
+      "type": "item",
+      "id": "society:fire_quartz",
+      "amount": 9
+    },
+    {
+      "type": "item",
+      "id": "society:salmonberry_preserves",
+      "amount": 7
+    },
+    {
+      "type": "item",
+      "id": "aquaculture:message_in_a_bottle",
+      "amount": 2
+    },
+    "item:crittersandcompanions:koi_fish",
+    "item:aquaculture:carp{quality_food:{effects:[],quality:1}}",
+    {
+      "type": "item",
+      "id": "aquaculture:minnow",
+      "nbt": "{Damage:0,quality_food:{quality:3}}",
+      "amount": 4
+    },
+    "item:aquaculture:algae",
+    "item:aquaculture:neptunium_ingot",
+    {
+      "type": "item",
+      "id": "moreminecarts:glass_spines",
+      "amount": 10
+    },
+    {
+      "type": "item",
+      "id": "meadow:raw_buffalo_meat",
+      "amount": 32
+    },
+    {
+      "type": "item",
+      "id": "meadow:alpine_salt",
+      "amount": 23
+    },
+    "item:society:fish_pond",
+    "item:society:fish_pond_basket",
+    "#item:c:cheese",
+    "item:oreganized:datura",
+    "item:wildernature:raccoon_spawn_egg",
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 8
+    },
+    "item:simplemagnets:basicmagnet",
+    "item:simplemagnets:basic_demagnetization_coil",
+    "item:society:truffle",
+    "item:farmersdelight:basket",
+    "item:farmersdelight:canvas",
+    {
+      "type": "item",
+      "id": "etcetera:bismuth_ingot",
+      "amount": 11
+    },
+    {
+      "type": "item",
+      "id": "society:merino_wool",
+      "amount": 5
+    },
+    "item:aquaculture:neptunium_fillet_knife",
+    "item:society:supreme_mayonnaise",
+    "item:etcetera:bismuth_bars",
+    "item:etcetera:bismuth_block",
+    "item:etcetera:leveled_stone",
+    "item:minecraft:raw_gold",
+    "item:minecraft:raw_gold_block",
+    "item:etcetera:raw_bismuth_block",
+    "item:etcetera:raw_bismuth",
+    "item:bountiful:bountyboard",
+    "item:comforts:sleeping_bag_white",
+    {
+      "type": "item",
+      "id": "society:treated_log",
+      "amount": 6
+    },
+    "item:longwings:catching_net{Damage:0}",
+    "item:society:gold_sprinkler",
+    "item:minecraft:flint_and_steel{Damage:0}",
+    "item:minecraft:grindstone",
+    "item:minecraft:cartography_table",
     "item:portable_blueprints:tablet",
     "item:portable_blueprints:scanner{}",
     {
@@ -31,14 +400,8 @@
     "item:oreganized:electrum_block",
     "item:create:cart_assembler",
     "item:create:mechanical_bearing",
-    {
-      "type": "item",
-      "id": "society:battery",
-      "amount": 64
-    },
     "item:extra_gauges:comparator_gauge",
     "item:extra_gauges:integer_gauge",
-    "item:extra_gauges:logic_gauge",
     "item:create:filter",
     "item:create:attribute_filter",
     "item:create:package_filter",
@@ -59,7 +422,6 @@
     "item:botania:manasteel_sword{Damage:0}",
     "item:society:dragon_mayonnaise",
     "item:society:golden_mayonnaise",
-    "item:society:supreme_mayonnaise",
     "item:society:double_aged_tribull_cheese_wheel",
     "item:society:double_aged_warped_cheese_block",
     {
@@ -68,7 +430,6 @@
       "amount": 63
     },
     "item:create_central_kitchen:cooking_guide",
-    "item:society:large_amethyst_milk",
     "item:society:moth_pollen",
     "item:vintagedelight:organic_mash",
     "item:herbalbrews:mixed_tea_leaf_block",
@@ -93,7 +454,6 @@
     "item:vinery:jellie_wine",
     "item:vinery:winemaker_leggings{Damage:0}",
     "item:vinery:chorus_wine",
-    "item:create_hypertube:hypertube_accelerator",
     "item:create:sticky_mechanical_piston",
     "item:create:mechanical_piston",
     "item:create:precision_mechanism",
@@ -106,11 +466,6 @@
       "amount": 4
     },
     "item:zetter:canvas",
-    {
-      "type": "item",
-      "id": "society:canvas",
-      "amount": 4
-    },
     "item:society:prismatic_shard",
     {
       "type": "item",
@@ -128,11 +483,9 @@
     "item:minecraft:cooked_cod",
     "item:minecraft:golden_horse_armor",
     "item:moblassos:hostile_lasso{}",
-    "item:moblassos:diamond_lasso{}",
     "item:society:gold_upgrade_smithing_template",
     "item:minecraft:golden_chestplate{Damage:0}",
     "item:moblassos:creative_lasso",
-    "item:minecraft:tropical_fish",
     {
       "type": "item",
       "id": "dew_drop_farmland_growth:high_quality_fertilizer",
@@ -149,7 +502,6 @@
     "item:society:dirty_chai",
     "item:society:juice_inserter",
     "item:society:quality_washer",
-    "item:society:fish_smoker",
     "item:society:mini_artisan_hopper",
     "item:society:auto_worm_farm",
     "item:society:mana_milker",
@@ -158,16 +510,13 @@
     "item:society:alchemical_varnish_bucket",
     "item:society:ancient_fruit_juice_bucket",
     "item:society:tubabacco_leaf",
-    "item:society:blueberry",
     "item:society:prize_ticket",
     "item:society:rubber",
     "item:society:multiplayer_pig_race_ticket",
-    "item:society:truffle",
     "item:society:no_name_for_the_sheep",
     "item:society:energy_drink",
     "item:society:pine_tar",
     "item:society:starfruit_juice",
-    "item:society:plushie_capsule",
     "item:society:cranberry",
     "item:society:bouquet_bag",
     "item:society:fish_radar",
@@ -175,21 +524,15 @@
     "item:society:crystalberry",
     "item:society:inserter",
     "item:society:architects_digest",
-    "item:society:stone_hand",
-    "item:society:blueberry_icecream",
     "item:society:enkephalin",
     "item:botania:flight_tiara{variant:1}",
     "item:society:sparkstone_recycler",
     "item:botania:mana_pylon",
-    "item:society:mana_clock{}",
     "item:atmospheric:firethorn",
     "item:society:nether_jelly",
-    "item:society:sunlit_pearl",
     "item:minecraft:blast_furnace",
-    "item:longwings:catching_net{Damage:0}",
     "item:botania:life_essence",
     "item:society:butterfly_amber",
-    "item:society:merino_wool",
     "item:longwings:butterfly_handbook{}",
     "item:create_central_kitchen:aloe_gel_bucket",
     "item:atmospheric:aloe_kernels",
@@ -233,14 +576,6 @@
     "item:create:lime_table_cloth",
     "item:create:fluid_pipe",
     "item:create_factory_logistics:fluid_mechanism",
-    "item:create:stock_link",
-    {
-      "type": "item",
-      "id": "create_factory_logistics:factory_fluid_gauge",
-      "amount": 2
-    },
-    "item:create_factory_logistics:network_link",
-    "item:create_factory_logistics:jar_packager",
     {
       "type": "item",
       "id": "numismatics:cog",
@@ -248,7 +583,6 @@
     },
     "item:society:smoked_carp",
     "item:society:black_opal",
-    "item:society:living_flesh",
     "item:minecraft:eye_armor_trim_smithing_template",
     {
       "type": "item",
@@ -264,11 +598,9 @@
     "item:quark:diamond_heart",
     "item:botania:mana_diamond",
     "item:moreminecarts:greenhouse_glass_slab",
-    "item:numismatics:crown",
     "item:moreminecarts:chiseled_organic_glass",
     "item:moreminecarts:greenhouse_glass_stairs",
     "item:minecraft:oak_stairs",
-    "item:society:recycling_machine",
     "item:tanukidecor:adv_mayoral_mini_figure",
     "item:quark:yellow_corundum",
     "item:moblassos:emerald_lasso{}",
@@ -289,7 +621,6 @@
     "item:society:token_of_unity",
     "item:society:holy_symbol",
     "item:society:legendary_ink",
-    "item:society:spider_silk",
     "item:society:source_gem",
     "item:society:ember_crystal_cluster",
     "item:botania:red_floating_flower",
@@ -299,12 +630,9 @@
     "item:moblassos:contract{}",
     "item:moblassos:golden_lasso",
     "item:unusualfishmod:clement_shell{Damage:0}",
-    "item:aquaculture:neptunium_ingot",
-    "item:society:fish_pond",
     "item:society:deluxe_worm_farm",
     "item:crabbersdelight:deluxe_crab_trap_bait",
     "item:vintagedelight:ghost_charcoal",
-    "item:minecraft:gunpowder",
     "item:minecraft:stripped_spruce_wood",
     {
       "type": "item",
@@ -320,11 +648,6 @@
       "amount": 64
     },
     "item:minecraft:dragon_breath",
-    {
-      "type": "fluid",
-      "id": "create_central_kitchen:dragon_breath",
-      "amount": 0
-    },
     "item:unusualfishmod:sea_boom",
     "item:society:smoked_spindlefish",
     "item:botania:pixie_dust",
@@ -343,7 +666,6 @@
     "item:botania:spark",
     "item:society:fluorapatite",
     "item:society:pristine_amethyst_chunk{}",
-    "item:minecraft:raw_gold",
     "item:society:pristine_star_shards",
     "item:society:dragontooth_axe{Damage:0}",
     "item:society:pristine_diamond",
@@ -391,7 +713,6 @@
     "item:nethervinery:nether_fizz",
     "item:gag:hearthstone{Damage:0}",
     "item:gag:energized_hearthstone{Damage:0}",
-    "item:society:fish_pond_basket",
     "item:society:aged_amethyst_cheese_block",
     "item:minecraft:budding_amethyst",
     "item:simplehats:sleepeyemask",
@@ -428,7 +749,6 @@
     "item:numismatics:sun",
     "item:refinedstorage:4k_storage_block",
     "item:society:iron_upgrade_smithing_template",
-    "item:refinedstorage:interface",
     "item:bountiful:decree",
     "item:minecraft:beetroot",
     "item:everycomp:fd/meadow/pine_cabinet",
@@ -451,7 +771,6 @@
     "item:toms_storage:ts.adv_wireless_terminal",
     "item:numismatics:bank_terminal",
     "item:refinedstorageaddons:wireless_crafting_grid",
-    "item:refinedstorage:network_card",
     "item:toms_storage:ts.wireless_terminal",
     "item:toms_storage:ts.item_filter",
     "item:toms_storage:ts.paint_kit{Damage:0}",
@@ -466,25 +785,15 @@
     "item:refinedstorage:exporter",
     "item:refinedstorage:magenta_crafting_grid",
     "item:refinedstorage:regulator_upgrade",
-    "item:refinedstorage:stack_upgrade",
     "item:refinedstorage:range_upgrade",
     "item:refinedstorage:speed_upgrade",
-    "item:refinedstorage:security_card",
     "item:refinedstorage:hollow_cover{Item:{Count:1b,id:\"minecraft:stone_bricks\"}}",
-    "item:refinedstorage:network_transmitter",
-    "item:refinedstorage:network_receiver",
     "item:refinedstorage:controller",
-    "item:refinedstorage:storage_monitor",
     "item:refinedstorage:cover{Item:{Count:1b,id:\"minecraft:stone_bricks\"}}",
     "item:refinedstorage:detector",
-    "item:refinedstorage:security_manager",
-    "item:refinedstorage:wireless_transmitter",
     "item:refinedstorage:external_storage",
     "item:refinedstorage:cable",
     "item:refinedstorage:machine_casing",
-    "item:refinedstorage:filter{}",
-    "item:refinedstorage:relay",
-    "item:etcetera:bismuth_ingot",
     {
       "type": "item",
       "id": "refinedstorage:upgrade",
@@ -492,7 +801,6 @@
     },
     "item:moreminecarts:hard_light_lens",
     "item:oreganized:electrum_nugget",
-    "item:oreganized:speedometer",
     "item:minecraft:gold_ingot",
     "item:minecraft:gold_block",
     "item:moreminecarts:lightspeed_powered_rail",
@@ -526,7 +834,6 @@
     "item:minecraft:hopper",
     "item:numismatics:neptunium_coin",
     "item:waterframes:remote",
-    "item:society:ribbit_gadget",
     {
       "type": "item",
       "id": "createutilities:void_casing",
@@ -537,7 +844,6 @@
     "item:createutilities:void_motor",
     "item:refinedstorage:crafting_grid",
     "item:refinedstorage:wireless_grid",
-    "item:minecraft:grindstone",
     "item:refinedstorage:crafting_upgrade",
     {
       "type": "item",
@@ -647,7 +953,6 @@
     "item:everycomp:fs/vinery/dark_cherry_2",
     "item:everycomp:dd/beachparty/short_palm_door",
     "item:everycomp:dd/beachparty/tall_palm_door",
-    "item:meadow:fire_log",
     "item:society:aquamarine",
     "item:society:aging_cask",
     "item:society:preserves_jar",
@@ -658,7 +963,6 @@
     "item:rottencreatures:magma_rotten_flesh",
     "item:society:froggy_helm",
     "item:species:ghoul_tongue",
-    "item:society:scavenged_food_bag",
     "item:perfectplushies:dumbo_blob_plushie",
     "item:perfectplushies:adv_panda_plushie",
     "item:society:milk",
@@ -686,7 +990,6 @@
     "item:botania:floating_agricarnation",
     "item:botania:floating_agricarnation_chibi",
     "item:quark:blaze_lantern",
-    "item:society:truffle_tea",
     "item:society:aged_starshell_turtle_roe",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:weeping\"}}",
     "#item:society:tree_fruits",
@@ -723,11 +1026,6 @@
       "id": "pamhc2trees:mangoitem",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "pamhc2trees:bananaitem",
-      "amount": 64
-    },
     "item:simplemagnets:advancedmagnet",
     "item:simplehats:baseballhatrgb",
     "item:simplehats:bandanargb",
@@ -751,7 +1049,6 @@
       "id": "autumnity:large_soul_jack_o_lantern_slice",
       "amount": 64
     },
-    "item:oreganized:unknown_device{Value:66167}",
     "item:oreganized:chiseled_glance",
     "item:oreganized:purple_datura",
     {
@@ -759,7 +1056,6 @@
       "id": "minecraft:sugar",
       "amount": 64
     },
-    "item:vinery:fermentation_barrel{}",
     "item:sophisticatedstorage:stack_upgrade_omega_tier",
     "item:sophisticatedstorage:stack_upgrade_tier_5",
     "item:sophisticatedstorage:stack_upgrade_tier_4",
@@ -793,8 +1089,6 @@
     "item:etcetera:trader_robe",
     "item:botania:star_sword{Damage:0}",
     "item:perfectplushies:adv_hedgehog_plushie",
-    "item:herbalbrews:yerba_mate_leaf",
-    "item:herbalbrews:wild_yerba_mate_plant",
     "item:herbalbrews:tea_blossom",
     "item:aquaculture:lockbox",
     "item:perfectplushies:adv_red_panda_plushie{affection:0,color:\"a\",trait:\"cheerful\"}",
@@ -817,8 +1111,6 @@
     "item:wildernature:flint_ammunition",
     "item:etcetera:golden_eggple",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:blazing\"}}",
-    "item:minecraft:flint_and_steel{Damage:0}",
-    "item:society:gold_sprinkler",
     "item:justhammers:gold_impact_hammer{Damage:0}",
     "item:farmersdelight:golden_knife{Damage:0}",
     "item:simplehats:mimic_head_gold",
@@ -880,11 +1172,6 @@
     "item:society:end_stone_boulder",
     "item:society:blackstone_boulder",
     "item:minecraft:emerald",
-    {
-      "type": "item",
-      "id": "society:earth_crystal",
-      "amount": 3
-    },
     "item:longwings:glass_jar",
     "item:minecraft:crimson_button",
     "item:botania:cosmetic_cat_ears",
@@ -958,7 +1245,6 @@
       "nbt": "{quality_food:{effects:[],quality:3}}",
       "amount": 16
     },
-    "item:moreminecarts:glass_spines",
     "item:waystones:purple_sharestone",
     "item:society:basalt_shard",
     "item:society:magic_rope",
@@ -1001,19 +1287,12 @@
     "item:minecraft:squid_spawn_egg",
     "item:atmospheric:cochineal_spawn_egg",
     "item:pamhc2trees:dragonfruititem",
-    "item:ribbits:toadstool",
     "item:create:red_seat",
     "item:create:weathered_copper_shingle_stairs",
     {
       "type": "item",
       "id": "brewery:hops",
       "amount": 64
-    },
-    "item:society:iron_sprinkler",
-    {
-      "type": "item",
-      "id": "minecraft:iron_block",
-      "amount": 7
     },
     "item:wildernature:deer_spawn_egg",
     "item:aquaculture:driftwood",
@@ -1028,7 +1307,6 @@
     "item:species:smoke_bomb",
     "item:botania:mana_bomb",
     "item:supplementaries:bomb",
-    "item:minecraft:oak_fence",
     "item:quark:vertical_oak_planks",
     "item:wildernature:cooked_bison_meat",
     "item:create:water_wheel",
@@ -1037,7 +1315,6 @@
     "item:create:black_seat",
     "item:createrailwaysnavigator:advanced_display",
     "item:copycats:copycat_beam",
-    "item:create_hypertube:hypertube_entrance",
     "item:create_hypertube:hypertube{}",
     "item:vinery:savanna_grapes_red",
     "item:constructionwand:stone_wand{Damage:0,wand_options:{}}",
@@ -1089,7 +1366,6 @@
     "item:atmospheric:aloe_leaves",
     "item:atmospheric:aloe_gel_block",
     "item:atmospheric:aloe_gel_bottle",
-    "item:etcetera:raw_bismuth",
     {
       "type": "fluid",
       "id": "oreganized:molten_lead",
@@ -1133,155 +1409,36 @@
     "item:minecraft:lingering_potion{Potion:\"minecraft:weakness\"}",
     "item:minecraft:splash_potion{Potion:\"minecraft:weakness\"}",
     "item:minecraft:potion{Potion:\"minecraft:weakness\"}",
-    "item:minecraft:potion{Potion:\"minecraft:long_weakness\"}",
-    "item:minecraft:splash_potion{Potion:\"minecraft:long_weakness\"}",
-    "item:vinery:cherry",
-    "item:botania:invisibility_cloak",
-    "item:minecraft:splash_potion{Potion:\"minecraft:long_night_vision\"}",
-    "item:minecraft:splash_potion{Potion:\"minecraft:long_invisibility\"}",
-    "item:quark:gunpowder_sack",
-    "item:minecraft:glowstone_dust",
-    "item:society:galliraptor_mayonnaise",
-    "item:beachparty:icecream_cactus",
-    "item:society:crystalarium",
-    "item:society:seed_maker",
-    "item:society:mayonnaise_machine",
-    "item:society:bait_maker",
-    "item:society:ancient_cask",
-    "item:numismatics:white_id_card",
-    "item:beachparty:icecream_sweetberries",
-    "item:beachparty:coconut_icecream",
-    "item:society:animal_feed_sack",
-    "item:furniture:spruce_mirror",
-    "item:fantasyfurniture:venthyr/bed_single",
-    "item:minecraft:bell",
-    "item:fantasyfurniture:dunmer/bed_double",
-    "item:fantasyfurniture:dunmer/bed_single",
-    "item:fantasyfurniture:bone/skeleton/bed_double",
-    "item:fantasyfurniture:venthyr/bed_double",
-    "item:furniture:jungle_mirror",
-    "item:fantasyfurniture:nordic/bed_single",
-    "item:society:furniture_box",
-    "item:furniture:birch_mirror",
-    "item:tanukidecor:antique_mirror",
-    "item:society:fantasy_box_necrolord",
-    "item:fantasyfurniture:necrolord/bed_single",
-    "item:fantasyfurniture:royal/bed_single",
-    "item:fantasyfurniture:nordic/bed_double",
-    "item:furniture:acacia_mirror",
-    "item:relics:magic_mirror{abilities:{teleport:{points:0,stats:{cooldown:68.47633d,distance:767.59209d}}}}",
-    "item:tanukidecor:minimalist_mirror",
-    "item:fantasyfurniture:decorations/bone_wither_chalices",
-    "item:atmospheric:golden_dragon_fruit",
-    "item:everycomp:q/meadow/pine_leaf_carpet",
-    "item:everycomp:rfm/meadow/pine_hedge",
-    "item:twigs:azalea_flowers",
-    "item:constructionwand:core_destruction",
-    "item:constructionwand:core_angel",
-    "item:meadow:alpine_redstone_ore",
-    "item:society:sparkstone_ore",
-    "item:society:dehydrator",
-    "item:society:fire_quartz",
-    {
-      "type": "item",
-      "id": "crabbersdelight:crab_trap_bait",
-      "amount": 4
-    },
-    "item:netherdepthsupgrade:lava_fishing_rod{Damage:130,Enchantments:[{id:\"minecraft:lure\",lvl:1s}]}",
-    "item:minecraft:raw_iron",
-    "item:species:wicked_treat",
-    "item:minecraft:bucket",
-    {
-      "type": "item",
-      "id": "minecraft:glass_bottle",
-      "amount": 64
-    },
-    "item:veggiesdelight:fermented_garlic_honey",
-    "item:wildernature:blunderbuss{Damage:0}",
-    "item:create:powdered_obsidian",
-    "item:oreganized:electrum_upgrade_smithing_template",
-    "item:society:neptunium_upgrade_smithing_template",
-    "item:society:diamond_upgrade_smithing_template",
-    "item:minecraft:netherite_upgrade_smithing_template",
-    "item:species:crankbow{Damage:0}",
-    "item:simplehats:smokingpipe",
-    "item:sophisticatedbackpacks:filter_upgrade",
-    "item:create:potato_cannon{Damage:0}",
-    "item:sophisticatedbackpacks:inception_upgrade",
-    "item:rehooked:ender_hook",
-    "item:rehooked:red_hook",
-    "item:rehooked:blaze_hook",
-    "item:furniture:bin",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:prisma\"}}",
-    "item:farmersdelight:rice",
-    "item:minecraft:skeleton_skull",
-    "item:society:animal_fancy",
-    "item:society:animal_feed",
-    "item:mysticaloaktree:wise_oak",
-    "item:society:dried_bracket_mushroom",
-    "item:farm_and_charm:roasted_corn",
-    "item:farm_and_charm:onion",
-    "item:bakery:grilled_salmon_sandwich",
-    "item:farmersdelight:grilled_salmon",
-    "item:refurbished_furniture:cheese_toastie",
-    "item:minecraft:elytra{Damage:0}",
-    "item:society:elytra_wing",
-    "item:simplehats:fakefire",
-    "item:farmersdelight:chicken_cuts",
-    "item:farmersdelight:chicken_soup",
-    "item:farm_and_charm:chicken_wrapped_in_bacon",
-    "item:farmersdelight:tomato_sauce",
-    "item:society:bowl_of_soul",
-    "item:minecraft:smithing_table",
-    "item:sophisticatedstorage:basic_tier_upgrade",
-    "item:species:coil",
-    "item:pamhc2trees:starfruit_sapling",
-    "item:simplehats:axolotl_on_head",
-    "item:simplehats:sonichood",
-    "item:unusualfishmod:raw_picklefish",
-    "item:pamhc2trees:roastedhazelnutitem",
-    "item:minecraft:slime_ball",
-    "item:crabbersdelight:raw_frog_leg",
-    "item:crabbersdelight:cooked_frog_leg",
-    {
-      "type": "item",
-      "id": "bakery:crusty_bread",
-      "amount": 64
-    },
-    "item:oreganized:electrum_chestplate{Damage:0}",
-    "item:society:large_buffalo_milk",
-    "item:society:buffalo_milk",
-    "item:decorative_blocks:birch_beam",
-    {
-      "type": "item",
-      "id": "vinery:dark_cherry_beam",
-      "amount": 62
-    },
-    "item:dew_drop_watering_cans:copper_watering_can{Damage:0}",
-    "item:meadow:pine_log",
-    "item:aquaculture:leech{Damage:0,Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}",
-    "item:beachparty:dried_wheat_block",
-    "item:gag:sacred_salt",
-    "item:society:dried_ancient_fruit",
-    "item:society:ancient_fruit",
-    "item:society:ancient_vespertine",
-    "item:gag:sacred_salve",
-    {
-      "type": "item",
-      "id": "meadow:climbing_rope_topmount",
-      "amount": 64
-    },
-    "item:society:magma_geode",
-    "item:society:baryte",
-    "item:society:aged_chorus_wine"
+    "item:minecraft:potion{Potion:\"minecraft:long_weakness\"}"
   ],
   "craft_history": [
+    "minecraft:oak_fence",
+    "minecraft:crafting_table",
+    "minecraft:kjs/society_mayonnaise_machine",
+    "minecraft:kjs/society_seed_maker",
+    "vintagedelight:jam/vinegar_jar_deconstruct",
+    "vintagedelight:fermenting_jar",
+    "supplementaries:jar",
+    "minecraft:composter",
+    "vinery:grapevine_pot",
+    "minecraft:kjs/vinery_fermentation_barrel",
+    "minecraft:kjs/society_recycling_machine",
+    "minecraft:iron_block",
+    "meadow:fire_log",
+    "minecraft:lightning_rod",
+    "minecraft:copper_ingot",
+    "simplemagnets:basicmagnet",
+    "farmersdelight:basket",
+    "minecraft:kjs/society_iron_sprinkler",
+    "longwings:catching_net",
+    "bountiful:crafting/bountyboard",
+    "minecraft:kjs/society_loom",
+    "minecraft:grindstone",
+    "minecraft:cartography_table",
     "minecraft:kjs/numismatics_ancient_coin",
     "minecraft:kjs/numismatics_neptunium_coin",
-    "minecraft:kjs/society_iron_sprinkler",
     "minecraft:kjs/candlelight_cooking_pot",
     "minecraft:dark_oak_slab",
-    "minecraft:grindstone",
     "farmersdelight:lead_from_straw",
     "splendid_slimes:plort_press",
     "vintagedelight:gearo_bag_deconstruct",
@@ -1292,8 +1449,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

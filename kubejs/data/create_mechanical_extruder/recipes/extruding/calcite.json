@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "amount": 1000,
-      "fluid": "minecraft:lava",
+      "fluid": "society:milk",
       "nbt": {}
     },
     {
@@ -12,8 +12,8 @@
       "nbt": {}
     }
   ],
-  "requiredBonks": 4,
+  "requiredBonks": 40,
   "result": {
-    "item": "meadow:cobbled_limestone"
+    "item": "minecraft:calcite"
   }
 }

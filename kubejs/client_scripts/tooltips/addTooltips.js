@@ -410,6 +410,7 @@ ItemEvents.tooltip((tooltip) => {
     "dew_drop_farmland_growth:pristine_quality_fertilizer",
     Text.green("Supremely increases the chance of quality crops on harvest")
   );
+  tooltip.add('minecraft:fishing_rod', Text.gray("Remove attached bobbers before upgrading"))
   tooltip.add("etcetera:handbell", Text.gray("Calls non-sitting pets and allays to you when rung"));
   tooltip.add("farm_and_charm:pitchfork", Text.gray("Turns Fertilized Farmland into Dirt"));
   tooltip.add("farm_and_charm:pitchfork", Text.green("50% chance to recover Fertilizer"));
@@ -631,6 +632,9 @@ ItemEvents.tooltip((tooltip) => {
   });
   tooltip.add("relics:jellyfish_necklace", Text.red("Hurts nearby animals when worn!"));
 
+  tooltip.add("society:river_jelly", Text.blue("Fished up in River biomes"))
+  tooltip.add("society:ocean_jelly", Text.aqua("Fished up in Ocean & Beach biomes"))
+  tooltip.add("society:nether_jelly", Text.gold("Fished up in Nether biomes"))
   const craftingMaterials = [
     "society:fire_quartz",
     "society:earth_crystal",
@@ -1009,6 +1013,8 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.red("Does not work with Magic Mirror!")
   );
+  // Refined
+  tooltip.add('refinedstorage:4k_storage_block', Text.green("Stores 4,000 items digitally."))
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
   });

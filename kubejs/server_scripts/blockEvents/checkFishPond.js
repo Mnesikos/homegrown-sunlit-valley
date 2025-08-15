@@ -118,12 +118,12 @@ BlockEvents.rightClicked("society:fish_pond", (e) => {
       if (mature == "false") {
         if (type !== "0") {
           sendFishPondMessage(e, global.fishPondDefinitions, population, max_population);
-        } else if (!(item && item.hasTag("#minecraft:fishes"))) {
+        } else if (!(item && item.hasTag("minecraft:fishes"))) {
           player.tell(
             Text.gray("This Fish Pond is Empty! Right click with a fish to place it in the pond.")
           );
         }
-        if (type !== "0" && item && item.hasTag("#minecraft:fishes")) {
+        if (type !== "0" && item && item.hasTag("minecraft:fishes")) {
           if (global.fishPondDefinitions[Number(type) - 1].item !== item.id)
             player.tell(Text.red(`🐟: We don't like that fish here...`));
         }

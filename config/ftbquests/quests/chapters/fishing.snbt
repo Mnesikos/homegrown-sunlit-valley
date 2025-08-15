@@ -394,8 +394,8 @@
 				item: "aquaculture:pacific_halibut"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: -3.5d
+			y: 5.5d
 		}
 		{
 			id: "7C403DDBA1AF988B"
@@ -601,6 +601,7 @@
 				"6E4D5B648B0BDEC7"
 				"3A37BDD1FC16B8AF"
 				"39A4724958097814"
+				"240127F0C0DB502A"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -746,7 +747,7 @@
 				item: "unusualfishmod:raw_duality_damselfish"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.0d
 			y: 5.5d
 		}
 		{
@@ -776,7 +777,7 @@
 				item: "unusualfishmod:raw_hatchetfish"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 4.0d
 		}
 		{
@@ -786,7 +787,7 @@
 				item: "unusualfishmod:raw_spindlefish"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.5d
 			y: 4.0d
 		}
 		{
@@ -816,7 +817,7 @@
 				item: "unusualfishmod:raw_eyelash"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -0.5d
 			y: 5.5d
 		}
 		{
@@ -846,7 +847,7 @@
 				item: "society:neptuna"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -866,7 +867,7 @@
 				item: "aquaculture:goldfish"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 5.5d
 		}
 		{
@@ -878,6 +879,16 @@
 			}]
 			x: 15.0d
 			y: 0.5d
+		}
+		{
+			id: "240127F0C0DB502A"
+			tasks: [{
+				id: "01E1F6DE52138FB1"
+				item: "crittersandcompanions:koi_fish"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
 		}
 	]
 	title: "{ftbquests.chapter.fishing.title}"

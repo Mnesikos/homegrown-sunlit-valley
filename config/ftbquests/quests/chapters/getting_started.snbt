@@ -497,10 +497,11 @@
 					type: "item"
 				}
 				{
+					consume_items: true
 					count: 10L
 					id: "11214822A37DCD70"
 					item: {
-						Count: 10
+						Count: 1
 						id: "meadow:fire_log"
 						tag: { }
 					}

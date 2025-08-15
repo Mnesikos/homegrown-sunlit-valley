@@ -126,6 +126,7 @@ StartupEvents.registry("block", (e) => {
     })
     .rightClick((click) => {
       const { block, level, hand } = click;
+      const { x, y, z } = block;
       const mature = String(block.properties.get("mature")) === "true";
       const facing = block.properties.get("facing");
 
@@ -141,9 +142,6 @@ StartupEvents.registry("block", (e) => {
           block.popItemFromFace(
             possibleDrops[Math.floor(Math.random() * possibleDrops.length)],
             facing
-          );
-          level.server.runCommandSilent(
-            `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`
           );
           level.server.runCommandSilent(
             `playsound tanukidecor:block.cash_register.ring block @a ${x} ${y} ${z}`

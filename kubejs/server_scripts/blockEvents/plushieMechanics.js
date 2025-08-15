@@ -14,18 +14,16 @@ BlockEvents.placed(global.plushies, (e) => {
 BlockEvents.broken(global.plushies, (e) => {
   const { block } = e;
   const type = block.properties.get("type").toLowerCase();
-  if (type !== "0") {
-    block.popItem(
-      Item.of(
-        block.id,
-        `{quality_food:{quality:${block.properties.get(
-          "quality"
-        )}},type:${type},quest_id:${block.properties.get(
-          "quest_id"
-        )},affection:${block.properties.get("affection")}}`
-      )
-    );
-  }
+  block.popItem(
+    Item.of(
+      block.id,
+      `{quality_food:{quality:${block.properties.get(
+        "quality"
+      )}},type:${type},quest_id:${block.properties.get(
+        "quest_id"
+      )},affection:${block.properties.get("affection")}}`
+    )
+  );
 });
 
 BlockEvents.broken("whimsy_deco:singing_frog", (e) => {

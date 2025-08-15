@@ -1,7 +1,7 @@
 {
   "profession": "minecraft:fletcher",
   "removeOtherTrades": true,
-  "maxTrades": 41,
+  "maxTrades": 44,
   "trades": [
     {
       "offer": {
@@ -65,7 +65,7 @@
       },
       "request": {
         "itemKey": "farmersdelight:rice_bag",
-        "amount": 16,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 2,

@@ -9,7 +9,7 @@
   "favorite_food": {
     "item": "atmospheric:orange"
   },
-  "traits": ["moody"],
+  "traits": ["moody", "inverse"],
   "innate_effects": [
     {
       "effect": "minecraft:speed",

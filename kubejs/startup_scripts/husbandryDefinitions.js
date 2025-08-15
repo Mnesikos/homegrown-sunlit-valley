@@ -120,7 +120,7 @@ global.husbandryForagingDefinitions = [
       {
         item: "betterarcheology:growth_totem",
         countMult: 1,
-        chance: 0.01,
+        chance: 0.05,
         minHearts: 10,
       },
     ],
@@ -451,7 +451,7 @@ const sheepMilk = { sm: "society:sheep_milk", lg: "society:large_sheep_milk" };
 global.husbandryMilkingDefinitions = [
   { animal: "minecraft:cow", cooldown: 1, milk: cowMilk },
   { animal: "minecraft:mooshroom", cooldown: 1, milk: cowMilk },
-  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: cowMilk },
+  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },
   {
     animal: "meadow:wooly_cow",

@@ -60,7 +60,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.2.1.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.2.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -69,16 +69,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6813/174/AdvancedLootInfo-forge-1.20.1-1.2.1.jar",
-                    "id": "6813174",
+                    "url": "https://edge.forgecdn.net/files/6883/324/AdvancedLootInfo-forge-1.20.1-1.2.4.jar",
+                    "id": "6883324",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "5b28582b755b2c46e073c0fd12c507e5c84ad697",
-                        "md5": "2c60981fc92df2bff2b60af20cd90ccf"
+                        "sha1": "7091591e07854cdb82d8b2301c79bd22ea9348d4",
+                        "md5": "097a115b281d19884a883f65f9d710c9"
                     },
                     "required_dependencies": [],
-                    "size": 390390,
-                    "date_published": "2025-07-26T10:05:33.203Z"
+                    "size": 394369,
+                    "date_published": "2025-08-13T18:55:13.563Z"
                 }
             ]
         },
@@ -8206,6 +8206,7 @@
                 "6a3LhwGbJe9ZoJYG"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "particle-rain"
             },
@@ -8637,7 +8638,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.8.6-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.8.7-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8645,16 +8646,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6868/93/portable_blueprints-v1.8.6-mv1.20.1.jar",
-                    "id": "6868093",
+                    "url": "https://edge.forgecdn.net/files/6881/224/portable_blueprints-v1.8.7-mv1.20.1.jar",
+                    "id": "6881224",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "6c7c2a0c14ebe05928f87dabd08e059249ca56a8",
-                        "md5": "32d67486122f069bd3caa2d9f58a87e3"
+                        "sha1": "3bc00e9a14930958e1a37fd9fd7acdb3a9941b8b",
+                        "md5": "05bd8a29800de856324859457b5a5de8"
                     },
                     "required_dependencies": [],
-                    "size": 395885,
-                    "date_published": "2025-08-09T16:42:53.270Z"
+                    "size": 396279,
+                    "date_published": "2025-08-13T07:01:58.377Z"
                 }
             ]
         },
@@ -10390,24 +10391,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "species-3.4.jar",
+                    "file_name": "species-3.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6744/903/species-3.4.jar",
-                    "id": "6744903",
+                    "url": "https://edge.forgecdn.net/files/6886/321/species-3.5.jar",
+                    "id": "6886321",
                     "parent_id": "857737",
                     "hashes": {
-                        "sha1": "9a382083142bf27992fbe0836d297f89265dd24a",
-                        "md5": "eff659ebb9c4a822f480a4c27d13a8af"
+                        "sha1": "b4d924f4faf6eb201db04205b61fa1524a8b0178",
+                        "md5": "3fb4bc2ee270255038b08971dec18243"
                     },
                     "required_dependencies": [],
-                    "size": 42101496,
-                    "date_published": "2025-07-08T16:03:05.663Z"
+                    "size": 42114388,
+                    "date_published": "2025-08-14T16:26:07.777Z"
                 }
             ]
         },

@@ -482,6 +482,9 @@ global.animalProducts = [
   { item: "society:large_turkey_egg", value: 128 },
   { item: "farmlife:galliraptor_egg", value: 256 },
   { item: "society:large_galliraptor_egg", value: 1024 },
+  { item: "species:birt_egg", value: 12 },
+  { item: "species:wraptor_egg", value: 40 },
+  { item: "species:springling_egg", value: 128 },
   { item: "society:penguin_egg", value: 192 },
   { item: "society:flamingo_egg", value: 384 },
   // Milk
@@ -1607,6 +1610,9 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "society:river_jelly", value: 128 },
+  { item: "society:ocean_jelly", value: 256 },
+  { item: "society:nether_jelly", value: 512 },
   { item: "botania:black_lotus", value: 128 },
   { item: "automobility:dash_panel", value: 60 },
   { item: "create:experience_nugget", value: 2 },

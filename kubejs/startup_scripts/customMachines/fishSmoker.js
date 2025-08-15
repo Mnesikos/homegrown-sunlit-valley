@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] fishSmoker.js loaded");
+
 global.fishSmokerRecipes = [];
 const smokableFish = [
   "aquaculture:atlantic_herring",

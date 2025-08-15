@@ -1084,6 +1084,83 @@
 			x: -1.5d
 			y: 4.5d
 		}
+		{
+			dependencies: ["6A931F456D6FEA3E"]
+			description: [
+				"&6Chain Conveyers&r transport rotational energy over longer distances."
+				""
+				"They can also be ridden by right clicking with a &6Wrench&r!"
+			]
+			id: "501D5F9B05EF9B3F"
+			rewards: [{
+				count: 32
+				id: "3A530F4875905870"
+				item: "minecraft:chain"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3C26CC7ACDAF8EFB"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			title: "Long Distance Power"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["501D5F9B05EF9B3F"]
+			description: [
+				"&6Package Frogports&r will attach packages to &6Chain Conveyers&r to transport items across your base."
+				""
+				"You'll need a &6Packager&r to turn these items into packages."
+				""
+				"&oPonder both of these blocks to learn more about package logistics&r"
+			]
+			icon: "create:package_frogport"
+			id: "3211E60DF860BE29"
+			rewards: [{
+				id: "585D48B3E2E22AE1"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			subtitle: "Package Logistics"
+			tasks: [
+				{
+					id: "0F4561AAF7D3AF22"
+					item: "create:package_frogport"
+					type: "item"
+				}
+				{
+					id: "4C7D16417CF3321D"
+					item: "create:packager"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["472A339723DE2777"]
+			description: [
+				"The &6Bottle&r is a &6Packager&r but for fluids!"
+				""
+				"It can be attached to a &6Fluid Tank&r and transported in the same way a package can."
+			]
+			id: "54B5FB32B885916A"
+			rewards: [{
+				id: "352303D920F6A3CF"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FC134345139BE3D"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			title: "Fluid Logistics"
+			x: -4.5d
+			y: 4.5d
+		}
 	]
 	title: "{ftbquests.chapter.ivi__mechanical_farming.title}"
 }

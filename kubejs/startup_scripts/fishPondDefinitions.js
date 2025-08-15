@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] fishPondDefinitions.js loaded");
 
 const basicQuests = [

@@ -6,7 +6,7 @@
         "defaultconfigs",
         "kubejs",
         "patchouli_books",
-        "Portable_blueprints"
+        "portable_blueprints"
     ],
     "client_overrides": [
         "resourcepacks",
@@ -80,6 +80,9 @@
             "side": "CLIENT"
         },
         "my-server-is-compatible": {
+            "side": "CLIENT"
+        },
+        "particle-rain": {
             "side": "CLIENT"
         },
         "iris-flywheel-compat": {

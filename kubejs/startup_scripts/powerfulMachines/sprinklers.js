@@ -13,6 +13,7 @@ const generateSprinkler = (e, tier, radius) => {
       state.set(booleanProperty.create("sticklogged"), false);
     })
     .tagBlock("minecraft:mineable/pickaxe")
+    .tagBlock("minecraft:mineable/axe")
     .tagBlock("society:sprinkler")
     .tagBlock(`dew_drop_farmland_growth:sprinkler_tier_${radius}`)
     .tagBlock("minecraft:needs_stone_tool")

@@ -16,6 +16,7 @@ BlockEvents.rightClicked("bountiful:bountyboard", (e) => {
       blockNbt.decree_inv.Items[index].tag["bountiful:decree_data"] = Object(
         `{"ids":["${global.getSeasonFromLevel(level)}"]}`
       );
+      isSeasonal = false;
       hasChanged = true;
     }
   }

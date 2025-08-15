@@ -121,7 +121,6 @@ global.removedItems = [
   "refinedstorage:raw_improved_processor",
   "refinedstorage:raw_basic_processor",
   "refinedstorage:processor_binding",
-  "etcetera:bismuth_ingot",
   "refinedstorage:construction_core",
   "refinedstorage:destruction_core",
   "refinedstorage:improved_processor",

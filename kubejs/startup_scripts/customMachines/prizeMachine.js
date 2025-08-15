@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] preservesJar.js loaded");
 
 global.prizeMachineRewards = [

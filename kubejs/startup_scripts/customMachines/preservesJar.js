@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] preservesJar.js loaded");
+
 const roeFish = [
   { item: "aquaculture:atlantic_herring" },
   { item: "minecraft:pufferfish" },

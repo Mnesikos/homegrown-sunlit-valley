@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] mayonnaiseMachine.js loaded");
 
 global.mayonnaiseMachineRecipes = [

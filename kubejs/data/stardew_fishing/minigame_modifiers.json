@@ -4,7 +4,7 @@
       "line_strength": "x1.33"
     },
     "stardew_fishing:cork_bobber": {
-      "bar_size": "+8"
+      "bar_size": "+4"
     },
     "stardew_fishing:treasure_bobber": {
       "treasure_chance_bonus": "+0.05"
