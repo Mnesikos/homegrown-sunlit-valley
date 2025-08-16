@@ -36,6 +36,8 @@ ServerEvents.tags("item", (e) => {
   e.add("furniture:trash_bag_blacklist", "#society:loot_furniture");
   e.add("furniture:trash_bag_blacklist", "#society:dish");
   const itemBans = [
+    "wildernature:stylin_purple_hat", 
+    "beachparty:crocs", 
     "minecraft:bedrock",
     "moblassos:creative_lasso",
     "botania:corporea_spark_creative",

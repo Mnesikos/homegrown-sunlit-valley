@@ -1,6 +1,6 @@
 ^^^
 ## Pretty Polish
-### v3.2.0 - PLAYTEST
+### v3.2.0 - PLAYTEST - 2
 ^^^
 --- 
 - Updated to Create 6
@@ -27,7 +27,7 @@
 - Added River, Ocean, and Nether Jelly, and Sunlit Pearl as crafting ingredients
 - Added seasonal decree for crops/fish that update to current season when checking bounty board
 - Added cooking and fishing decree to bounty board
-- Added Koi Fish to Summer Fresh pool
+- Added Koi Fish to Summer Freshwater pool
 - Added Red Panda Husbandry animal
 - Added Ferret and Shima Enaga pets
 - Added config option for starting with White Sharestone for servers
@@ -35,17 +35,28 @@
 - Added Greenhouse Glass Slab and Stairs
 - Added Mana Infusion recipes for Artifact Shards/Dragonstone to Sparkstone
 - Added Mob Lassos
+- Added Nuclear trait to Sparkcat, removed explosive
+- Added Putrid trait to Minty, Bony, and Rotten Slimes
+- Added Weeping trait to Weeping Slime
+- Added Inverse trait to Orby and Sweet Slims
+- Added plort press recipe for Sparkcat heart
+- Added recipe for Alpine Cobblestone
+- Added What Are They Up To
 - Increased base value of all wines by 100
 - Increased Dino Den spawn chance
 - Increased Tiller bonus 10% -> 15%
 - Increased damage of Botania Swords and Electrum Sword 
+- Increased negative effect length of Minty and Sparkcat Slimes
 - Endoflames now require Overgrowth seeds because I hate them
 - Fishing bar size now increases with upgrades
 - Lava Fishing Rod and normal Fishing Rod can now be equipped with Bobbers
 - Rebalanced Slimy Slime: No longer has Picky trait, now eats berries. Increased Plort value 32 -> 64
 - Rebalanced Weeping Slime: Now only eats tree fruits. Cries.
+- Rebalanced Juicy Slime: no longer climbs, causes brain damage when happy and sad
 - Reduced Chance of Glitched VHS drops from Zap
+- Reworked Skull Cavern block placement: all blocks placed will decay over time, with torches taking longer. Breakable blocks like moss will also quickly regen when broken, allowing for some farming of things such as moss without messing up the terrain forever
 - Reworked Heretic -> Magic Shears generate Sparkstone but damage mobs and harshly drop affection
+- Removed Skeleton horse jumpscare finally for real
 - Reworked certain fishing related items to use new crafting ingredients
 - Reworked Spindlefish Fish Pond drops to no longer drop Amethyst (moved to Koi)
 - Removed Batteries from Sparkcat Plort ripping
@@ -54,11 +65,12 @@
 - Removed Everycompat sinks
 - Removed ability for Deployers increasing affection
 - Removed Adventurer decree from bounty board
+- Mooblooms now milk Amethyst Milk
 - Sea Biscuits additionally require Sunlit Pearls
 - Shipping Bin's sell message and sound can now be muted with a Redstone signal
+- Sprinkers now have axe mineable tag
 - Geodes now have a tag
 - Gnome is now considered a Rare Furniture drop
-- Fixed Slimes literally eating spawn crates/eggs
 - Fixed Soulsuckers not having quality
 - Fixed Ancient Goddess Statue having incorrect jei
 - Fixed Cartography Tower having old villager
@@ -78,4 +90,7 @@
 - Fixed Skull Cavern air never regening in specific cases
 - Fixed Zetter Canvas
 - Fixed BFF triggering in cases where it shouldn't
+- Fixed Seed Money advancement stating wrong coin
 - Fixed Jungle structure having too high level enchanted books
+- Fixed craftable milks using wooden buckets for no good reason
+- Fixed interaction with Brain Damage and Farmers/Grandma's blessing causing infinite slowness until death

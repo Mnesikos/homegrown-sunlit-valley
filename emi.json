@@ -11,9 +11,6 @@
       "stack": "item:society:pink_flower_wallpaper{}"
     },
     {
-      "stack": "item:crittersandcompanions:dragonfly_wing"
-    },
-    {
       "stack": {
         "type": "item",
         "id": "minecraft:torch",
@@ -22,13 +19,20 @@
     }
   ],
   "lookup_history": [
+    "item:beachparty:crocs{Damage:0}",
+    "item:meadow:cobbled_limestone{}",
+    "item:meadow:alpine_salt{}",
+    "item:meadow:limestone",
+    "item:meadow:limestone_bricks",
+    "item:botania:itemfinder",
+    "item:minecraft:prismarine_shard",
+    "item:wildernature:penguin_spawn_egg",
     "item:botania:ice_pendant{}",
     "item:simplehats:frozenhead",
     "item:rottencreatures:frozen_rotten_flesh",
     "item:society:blueberry_icecream",
     "item:botania:rune_winter",
     "item:oreganized:unknown_device",
-    "item:wildernature:penguin_spawn_egg",
     "item:society:artifact_trove",
     "item:society:token_of_unity",
     "item:whimsy_deco:blue_phone",
@@ -46,11 +50,8 @@
     "item:society:sparkstone",
     "item:society:merino_wool",
     "item:botania:prism",
-    "item:minecraft:prismarine_shard",
     "item:minecraft:prismarine",
     "item:minecraft:dark_prismarine",
-    "item:meadow:cobbled_limestone",
-    "item:meadow:limestone",
     "item:create:ochrum",
     "item:society:mocha",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
@@ -130,7 +131,6 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
-    "item:beachparty:crocs{Damage:0}",
     "item:autumnity:autumn_crocus",
     "item:portable_blueprints:scanner{angolo1:1b,angolo2:1b,angoloFantasma:1b,coordinateAngolo1:\"x\u003d470,y\u003d-60,z\u003d66\",coordinateAngolo2:\"x\u003d485,y\u003d-51,z\u003d76\",coordinateAngoloFantasma:\"x\u003d465,y\u003d-60,z\u003d65\"}",
     "item:create:mechanical_bearing",
@@ -234,7 +234,6 @@
       "id": "create:chain_conveyor",
       "amount": 64
     },
-    "item:crittersandcompanions:dragonfly_wing",
     "item:create:green_table_cloth",
     "item:create:cyan_toolbox",
     "item:create:desk_bell",
@@ -354,11 +353,6 @@
       "type": "item",
       "id": "meadow:raw_buffalo_meat",
       "amount": 32
-    },
-    {
-      "type": "item",
-      "id": "meadow:alpine_salt",
-      "amount": 23
     },
     "item:society:fish_pond",
     "item:society:fish_pond_basket",
@@ -1332,9 +1326,7 @@
     "item:minecraft:bread",
     "item:buzzier_bees:honey_bread",
     "item:farm_and_charm:farmers_bread",
-    "item:farmersdelight:wheat_dough",
-    "item:society:aloe_preserves",
-    "item:atmospheric:aloe_leaves"
+    "item:farmersdelight:wheat_dough"
   ],
   "craft_history": [
     "minecraft:oak_fence",

@@ -72,6 +72,10 @@ ServerEvents.recipes((e) => {
   e.shapeless("society:magic_rope", ["society:magic_tunnel"]);
   e.shapeless("refinedstorage:network_transmitter", ["refinedstorage:network_receiver"]);
   e.shapeless("refinedstorage:network_receiver", ["refinedstorage:network_transmitter"]);
+    e.shaped("meadow:cobbled_limestone", ["cs ", "sc "], {
+    c: "minecraft:cobblestone",
+    s: 'meadow:alpine_salt',
+  });
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",

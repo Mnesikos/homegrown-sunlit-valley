@@ -2192,7 +2192,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest3.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop.png width:198 height:168 align:center}"]
 			icon: "minecraft:chest"
 			id: "26786C93CF7A75C3"
 			min_required_tasks: 3
@@ -2262,7 +2262,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest7.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_cherry.png width:198 height:178 align:center}"]
 			icon: "quark:cherry_chest"
 			id: "674C3D7DFF93154F"
 			min_required_tasks: 3
@@ -2332,7 +2332,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest17.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_siberian.png width:198 height:178 align:center}"]
 			icon: "quark:spruce_chest"
 			id: "2705D27735C4858B"
 			min_required_tasks: 3
@@ -2402,7 +2402,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/coop_prismarine.png width:198 height:178 align:center}"]
 			icon: "quark:prismarine_chest"
 			id: "24F24D2941BCF17C"
 			min_required_tasks: 3
@@ -2471,7 +2471,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/shed_alpine.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/coop_alpine.png width:198 height:174 align:center}"]
 			icon: "meadow:shelf"
 			id: "03C9745F9E9D8B24"
 			min_required_tasks: 3
@@ -2540,7 +2540,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{ftbquests.chapter.building_shop.quest19.image0}"]
+			description: ["{image:society:textures/gui/buildings/coop_entrana.png width:198 height:178 align:center}"]
 			icon: "quark:ancient_chest"
 			id: "517BDCBA749E1F0F"
 			min_required_tasks: 3
@@ -2610,7 +2610,7 @@
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/shed_mason.png width:198 height:174 align:center}"]
 			icon: "minecraft:bricks"
 			id: "69490758ABE15175"
 			min_required_tasks: 3
@@ -2744,7 +2744,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: ["{image:society:textures/gui/buildings/shed_mason.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/coop_mason.png width:198 height:178 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2817,7 +2817,7 @@
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: ["{image:society:textures/gui/buildings/barn_mason.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/barn_mason.png width:198 height:184 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2890,7 +2890,7 @@
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: ["{image:society:textures/gui/buildings/deluxe_barn_mason.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_mason.png width:198 height:174 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
@@ -2959,7 +2959,7 @@
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: ["{image:society:textures/gui/buildings/house_mason.png width:198 height:154 align:center}"]
+			description: ["{image:society:textures/gui/buildings/house_mason.png width:198 height:174 align:center}"]
 			icon: {
 				Count: 1
 				id: "minecraft:bricks"
