@@ -13,9 +13,6 @@
       "tag": "brewery:wheat"
     }
   ],
-  "container": {
-    "item": "meadow:wooden_bucket"
-  },
   "recipe_book_tab": "meals",
   "result": {
     "item": "society:large_grain_milk"

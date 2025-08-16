@@ -1610,6 +1610,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "crittersandcompanions:silk", value: 128 },
   { item: "society:river_jelly", value: 128 },
   { item: "society:ocean_jelly", value: 256 },
   { item: "society:nether_jelly", value: 512 },

@@ -270,28 +270,15 @@ const handleFeed = (data, day, e) => {
   }
 };
 
-const handleMagicHarvest = (name, data, day, e) => {
-  const { player, target, level, item, server } = e;
+const handleMagicHarvest = (name, data, e) => {
+  const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
-  const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
-  const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";
-
-  if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
-    data.ageLastMagicHarvested = day;
-    const targetId =
-      target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
-    server.runCommandSilent(
-      `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
-    );
+  const droppedLoot = global.getMagicShearsOutput(level, target, player, server);
+  if (droppedLoot !== -1) {
     global.giveExperience(server, player, "husbandry", 15);
-    const droppedLoot = global.getMagicShearsOutput(targetId, player);
-    if (player.stages.has("heretic")) {
-      target.attack(2)
-      data.affection = affection - 35;
-    }
     for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");
       let dropItem = droppedLoot[i];
@@ -301,20 +288,6 @@ const handleMagicHarvest = (name, data, day, e) => {
       specialItem.item = dropItem;
       specialItem.spawn();
     }
-    data.affection = affection - 15;
-    
-    level.spawnParticles(
-      "snowyspirit:glow_light",
-      true,
-      target.x,
-      target.y + 1.5,
-      target.z,
-      0.2 * rnd(1, 4),
-      0.2 * rnd(1, 4),
-      0.2 * rnd(1, 4),
-      20,
-      2
-    );
     global.addItemCooldown(player, item, 1);
   } else {
     errorText = `${name} needs some time to rest`;
@@ -506,7 +479,7 @@ ItemEvents.entityInteracted((e) => {
         );
         global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, data, day, e);
+      if (item === "society:magic_shears") handleMagicHarvest(name, data,e);
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

@@ -61,7 +61,11 @@ ServerEvents.tags("entity_type", (e) => {
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);
   });
-
+  ["wildernature:flamingo", "farmlife:galliraptor", "farmlife:domestic_tribull"].forEach(
+    (animal) => {
+      e.add("society:infertile", animal);
+    }
+  );
   ["longwings:moth", "longwings:butterfly"].forEach((animal) => {
     e.add("society:longwing", animal);
   });

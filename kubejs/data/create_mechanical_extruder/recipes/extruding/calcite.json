@@ -3,16 +3,16 @@
   "ingredients": [
     {
       "amount": 1000,
-      "fluid": "society:milk",
+      "fluid": "minecraft:lava",
       "nbt": {}
     },
     {
       "amount": 1000,
-      "fluid": "vinery:apple_juice",
+      "fluid": "society:milk",
       "nbt": {}
     }
   ],
-  "requiredBonks": 40,
+  "requiredBonks": 20,
   "result": {
     "item": "minecraft:calcite"
   }

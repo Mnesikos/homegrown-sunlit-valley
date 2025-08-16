@@ -64,7 +64,7 @@ ServerEvents.recipes((e) => {
         item: "splendid_slimes:slime_heart",
         nbt: {
           slime: {
-            id: `splendid_slimes:${bottom}`,
+          id: `splendid_slimes:${bottom}`,
           },
         },
       },
@@ -87,4 +87,5 @@ ServerEvents.recipes((e) => {
   addItemFusion("numismatics:ancient_coin", "minty", "gold");
   addItemFusion("botania:life_essence", "ender", "minty");
   addItemFusion("minecraft:dragon_egg", "ender", "minty");
+  addItemFusion("society:token_of_unity", "boomcat", "sparkcat");
 });

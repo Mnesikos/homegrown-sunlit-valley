@@ -191,6 +191,10 @@ global.seedMakerRecipes = [
     input: "mysticaloaktree:wise_oak",
     output: ["1x botania:overgrowth_seed"],
   },
+  {
+    input: "atmospheric:currant",
+    output: ["6x atmospheric:currant_seedling"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

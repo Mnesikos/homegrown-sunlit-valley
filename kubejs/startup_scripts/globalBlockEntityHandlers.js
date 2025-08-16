@@ -726,7 +726,7 @@ global.handleSkullCavernRegen = (server, level, block) => {
     level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
   if (String(toggleBit) == block.getProperties().get("chunkbit")) {
     server.scheduleInTicks(2400, () => {
-      handleRegen(server, level, block);
+      global.handleSkullCavernRegen(server, level, block);
     });
   } else {
     belowPos = block.getPos().below();

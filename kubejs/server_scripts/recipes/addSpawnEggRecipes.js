@@ -56,7 +56,7 @@ ServerEvents.recipes((e) => {
     { egg: "wildernature:cassowary_spawn_egg", mineral: "society:mini_oni_eye", coin: "crown" },
     { egg: "wildernature:squirrel_spawn_egg", mineral: "society:living_flesh", coin: "crown" },
     { egg: "wildernature:flamingo_spawn_egg", mineral: "society:supreme_mayonnaise", coin: "sun" },
-    { egg: "wildernature:penguin_spawn_egg", mineral: "society:frozen_geode", coin: "sun" },
+    { egg: "wildernature:penguin_spawn_egg", mineral: "botania:ice_pendant", coin: "sun" },
     { egg: "wildernature:minisheep_spawn_egg", mineral: "society:lemon_stone", coin: "sun" },
     { egg: "wildernature:raccoon_spawn_egg", mineral: "society:jade", coin: "crown" },
     { egg: "wildernature:deer_spawn_egg", mineral: "society:source_gem", coin: "crown" },

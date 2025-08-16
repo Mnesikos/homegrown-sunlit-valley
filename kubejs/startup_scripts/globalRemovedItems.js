@@ -264,7 +264,6 @@ global.removedItems = [
   "perfectplushies:sirjain_plushie",
   "perfectplushies:nyf_plushie",
   "perfectplushies:dumbo_blob_plushie",
-  "longwings:glass_jar",
   "everycomp:q/meadow/pine_leaf_carpet",
   "everycomp:rfm/meadow/pine_hedge",
   "sophisticatedbackpacks:alchemy_upgrade",

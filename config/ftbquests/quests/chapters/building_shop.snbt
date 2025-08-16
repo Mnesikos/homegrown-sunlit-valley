@@ -54,7 +54,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest1.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest1.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -81,7 +81,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest1.title}"
 			x: -15.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -124,7 +124,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest2.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest2.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -151,7 +151,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest2.title}"
 			x: -14.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -221,7 +221,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest3.title}"
 			x: -7.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -267,7 +267,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest4.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest4.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -290,7 +290,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest4.title}"
 			x: -7.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -333,7 +333,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest5.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest5.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -356,7 +356,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest5.title}"
 			x: -6.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			can_repeat: false
@@ -378,7 +378,7 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest6.title}"
 			x: -6.0d
-			y: -9.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -448,7 +448,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest7.title}"
 			x: -6.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			can_repeat: false
@@ -470,7 +470,7 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest8.title}"
 			x: -6.0d
-			y: -5.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
@@ -493,7 +493,7 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest9.title}"
 			x: -14.0d
-			y: -9.5d
+			y: -11.5d
 		}
 		{
 			can_repeat: false
@@ -582,7 +582,7 @@
 			]
 			title: "Prismarine Deluxe Barn"
 			x: -15.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			can_repeat: false
@@ -604,7 +604,7 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest12.title}"
 			x: -14.0d
-			y: -5.0d
+			y: -3.5d
 		}
 		{
 			can_repeat: false
@@ -626,7 +626,7 @@
 			}]
 			title: "{ftbquests.chapter.building_shop.quest14.title}"
 			x: -10.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -669,7 +669,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest15.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest15.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -692,7 +692,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest15.title}"
 			x: -11.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -735,7 +735,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest16.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest16.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -758,7 +758,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest16.title}"
 			x: -9.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -828,7 +828,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest17.title}"
 			x: -5.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -871,7 +871,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest18.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest18.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -898,7 +898,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest18.title}"
 			x: -13.0d
-			y: -8.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -967,7 +967,7 @@
 			]
 			title: "Prismarine Shed"
 			x: -7.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1009,7 +1009,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 17 blocks deep, 25 blocks wide, and 19 blocks tall"
 			tasks: [
 				{
 					count: 8L
@@ -1032,7 +1032,7 @@
 			]
 			title: "Alpine Farmhouse"
 			x: -10.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -1101,7 +1101,7 @@
 			]
 			title: "Prismarine Barn"
 			x: -15.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -1166,7 +1166,7 @@
 			]
 			title: "Prismarine Large Shed"
 			x: -7.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -1209,7 +1209,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest23.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest23.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1232,7 +1232,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest23.title}"
 			x: -5.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1275,7 +1275,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest24.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest24.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -1298,7 +1298,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest24.title}"
 			x: -10.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1341,7 +1341,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest25.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest25.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1364,7 +1364,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest25.title}"
 			x: -13.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1407,7 +1407,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest26.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest26.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1430,7 +1430,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest26.title}"
 			x: -14.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1473,7 +1473,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest27.subtitle}"
+			subtitle: "Designed by &6Chakyl&r - {ftbquests.chapter.building_shop.quest27.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1496,7 +1496,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest27.title}"
 			x: -15.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -1538,7 +1538,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 19 blocks deep, 15 blocks wide, and 10 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -1565,7 +1565,7 @@
 			]
 			title: "Alpine Barn"
 			x: -14.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
@@ -1608,7 +1608,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest21.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest21.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -1635,7 +1635,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest21.title}"
 			x: -13.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1677,7 +1677,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 25 blocks deep, 21 blocks wide, and 12 blocks tall"
 			tasks: [
 				{
 					count: 20L
@@ -1700,7 +1700,7 @@
 			]
 			title: "Alpine Deluxe Barn"
 			x: -14.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
@@ -1742,7 +1742,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest11.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest11.subtitle}"
 			tasks: [
 				{
 					count: 20L
@@ -1765,7 +1765,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest11.title}"
 			x: -13.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1808,7 +1808,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest20.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest20.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -1831,7 +1831,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest20.title}"
 			x: -9.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
@@ -1896,7 +1896,7 @@
 			]
 			title: "Prismarine Farmhouse"
 			x: -11.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -1965,7 +1965,7 @@
 			]
 			title: "Alpine Shed"
 			x: -6.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
@@ -2035,7 +2035,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest19.title}"
 			x: -5.0d
-			y: -7.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -2077,7 +2077,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			subtitle: "Designed by &6Krewella&r - 23 blocks deep, 22 blocks wide, and 11 blocks tall"
 			tasks: [
 				{
 					count: 4L
@@ -2098,9 +2098,9 @@
 					type: "item"
 				}
 			]
-			title: "Alpine Shed"
+			title: "Alpine Large Shed"
 			x: -6.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
@@ -2143,7 +2143,7 @@
 				team_reward: true
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.building_shop.quest22.subtitle}"
+			subtitle: "Designed by &6JadeClouds&r - {ftbquests.chapter.building_shop.quest22.subtitle}"
 			tasks: [
 				{
 					count: 4L
@@ -2166,7 +2166,7 @@
 			]
 			title: "{ftbquests.chapter.building_shop.quest22.title}"
 			x: -5.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			can_repeat: false
@@ -2187,8 +2187,8 @@
 				type: "checkmark"
 			}]
 			title: "Coops"
-			x: -18.5d
-			y: -9.5d
+			x: -10.0d
+			y: -11.5d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2257,8 +2257,8 @@
 				}
 			]
 			title: "Coop"
-			x: -19.5d
-			y: -8.0d
+			x: -11.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2327,8 +2327,8 @@
 				}
 			]
 			title: "Cherry Coop"
-			x: -18.5d
-			y: -8.0d
+			x: -10.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2397,8 +2397,8 @@
 				}
 			]
 			title: "Siberian Coop"
-			x: -17.5d
-			y: -8.0d
+			x: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2466,8 +2466,8 @@
 				}
 			]
 			title: "Prismarine Coop"
-			x: -19.5d
-			y: -7.0d
+			x: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2535,8 +2535,8 @@
 				}
 			]
 			title: "Alpine Coop"
-			x: -18.5d
-			y: -7.0d
+			x: -10.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
@@ -2605,8 +2605,426 @@
 				}
 			]
 			title: "Entrana Coop"
-			x: -17.5d
-			y: -7.0d
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: ["{image:society:textures/gui/buildings/shed_prismarine.png width:198 height:154 align:center}"]
+			icon: "minecraft:bricks"
+			id: "69490758ABE15175"
+			min_required_tasks: 3
+			rewards: [{
+				id: "1876180E47078532"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks wide, 15 blocks deep, 10 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "2AD84A9289D8AD4A"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "17B9FCAB153592D7"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5F9A6B85D235CF4A"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Mason Shed"
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: ["{image:society:textures/gui/buildings/large_shed_mason.png width:198 height:154 align:center}"]
+			icon: "minecraft:bricks"
+			id: "5563F1AAEE97AC72"
+			min_required_tasks: 3
+			rewards: [{
+				id: "591F3C66FD947C51"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 19 blocks wide, 26 blocks deep, 21 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "47D47DA9CA98B191"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "1009F98847D657F7"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "083D9F4D1B1D59AB"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mason Large Shed"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: ["{image:society:textures/gui/buildings/shed_mason.png width:198 height:154 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "520F3B27A8B6E7CB"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6C91767CF301CC9C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 17 blocks wide, 10 blocks deep, 10 blocks tall"
+			tasks: [
+				{
+					count: 2L
+					id: "303A46735AA49AF4"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "48644BE14B608717"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5E9D4EAD7E3D03A7"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Mason Coop"
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: ["{image:society:textures/gui/buildings/barn_mason.png width:198 height:154 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "1C7B6E3FADAF796F"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4C40722A6E27BB96"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 22 blocks wide, 15 blocks deep, 10 blocks tall"
+			tasks: [
+				{
+					count: 4L
+					id: "72A1615EBF56BF36"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "33708CA94B2D67C7"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "15B58919DF2F9985"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Mason Barn"
+			x: -14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_mason.png width:198 height:154 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "2C702A38BF57AFDA"
+			min_required_tasks: 3
+			rewards: [{
+				id: "206B4E47BA26CEC0"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks wide, 23 blocks deep, 14 blocks tall"
+			tasks: [
+				{
+					count: 20L
+					id: "08C656A8524E61C1"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "4828A81C3A7FA561"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "543B188DB5C003C3"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mason Deluxe Barn"
+			x: -14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: ["{image:society:textures/gui/buildings/house_mason.png width:198 height:154 align:center}"]
+			icon: {
+				Count: 1
+				id: "minecraft:bricks"
+				tag: { }
+			}
+			id: "284CCC590B3DAF52"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6C641B289BDC6A76"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_mason"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mason Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_mason"
+						owner: "worn"
+						owner_name: "Kanlamari"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6Kanlamari&r - 27 blocks wide, 23 blocks deep, 15 blocks tall"
+			tasks: [
+				{
+					count: 8L
+					id: "04F7B138810C4D26"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "4510841514826D25"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "7170D4E37A6C4632"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mason Farmhouse"
+			x: -10.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"

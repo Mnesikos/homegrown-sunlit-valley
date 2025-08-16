@@ -1,86 +1,9 @@
 console.info("[SOCIETY] skullCavernPlace.js loaded");
 
-BlockEvents.placed(
-  [
-    "society:stone_boulder",
-    "society:ice_boulder",
-    "society:sandstone_boulder",
-    "society:blackstone_boulder",
-    "society:end_stone_boulder",
-    "minecraft:deepslate_copper_ore",
-    "oreganized:lead_ore",
-    "create:zinc_ore",
-    "create:zinc_ore",
-    "society:geode_node",
-    "society:magma_geode_node",
-    "society:omni_geode_node",
-    "society:earth_crystal",
-    "society:fire_quartz",
-    "minecraft:deepslate_emerald_ore",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_lapis_ore",
-    "minecraft:lapis_ore",
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:diamond_ore",
-    "society:deepslate_sparkstone_ore",
-    "society:sparkstone_ore",
-    "society:deepslate_iridium_ore",
-    "society:iridium_ore",
-    "minecraft:copper_ore",
-    "minecraft:deepslate_iron_ore",
-    "minecraft:iron_ore",
-    "minecraft:coal_ore",
-    "minecraft:deepslate_coal_ore",
-    "minecraft:deepslate_redstone_ore",
-    "minecraft:redstone_ore",
-    "oreganized:deepslate_silver_ore",
-    "oreganized:silver_ore",
-    "minecraft:deepslate_gold_ore",
-    "minecraft:gold_ore",
-    "oreganized:deepslate_lead_ore",
-    "minecraft:deepslate_copper_ore",
-    "oreganized:lead_ore",
-    "create:zinc_ore",
-    "create:zinc_ore",
-    "society:geode_node",
-    "society:magma_geode_node",
-    "society:omni_geode_node",
-    "society:earth_crystal",
-    "society:fire_quartz",
-    "minecraft:deepslate_emerald_ore",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_lapis_ore",
-    "minecraft:lapis_ore",
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:diamond_ore",
-    "society:deepslate_sparkstone_ore",
-    "society:sparkstone_ore",
-    "society:deepslate_iridium_ore",
-    "society:iridium_ore",
-    "minecraft:copper_ore",
-    "minecraft:deepslate_iron_ore",
-    "minecraft:iron_ore",
-    "minecraft:coal_ore",
-    "minecraft:deepslate_coal_ore",
-    "minecraft:deepslate_redstone_ore",
-    "minecraft:redstone_ore",
-    "oreganized:deepslate_silver_ore",
-    "oreganized:silver_ore",
-    "minecraft:deepslate_gold_ore",
-    "minecraft:gold_ore",
-    "oreganized:deepslate_lead_ore",
-    "waystones:white_sharestone",
-    "waystones:purple_sharestone",
-    "waystones:blue_sharestone",
-    "waystones:green_sharestone",
-    "waystones:red_sharestone",
-    "waystones:waystone",
-    "torchmaster:megatorch",
-    "society:skull_cavern_teleporter"
-  ],
-  (e) => {
-    const { player, level, server } = e;
-    if (level.dimension === "society:skull_cavern") {
+BlockEvents.placed((e) => {
+  const { player, block, level, server } = e;
+  if (level.dimension === "society:skull_cavern") {
+    if (block.hasTag("society:skull_cavern_unplacable")) {
       global.renderUiText(
         player,
         server,
@@ -108,6 +31,24 @@ BlockEvents.placed(
         global.mainUiElementIds
       );
       e.cancel();
+    } else {
+      server.scheduleInTicks(0, () => {
+        server.scheduleInTicks(block.id === "minecraft:torch" ? 1200 : 200, () => {
+          level.destroyBlock(block.pos, true);
+          level.spawnParticles(
+            "snowyspirit:glow_light",
+            true,
+            block.x,
+            block.y + 0.5,
+            block.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            5,
+            2
+          );
+        });
+      });
     }
   }
-);
+});

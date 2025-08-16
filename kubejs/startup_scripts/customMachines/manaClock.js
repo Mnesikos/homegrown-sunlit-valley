@@ -61,7 +61,7 @@ StartupEvents.registry("block", (event) => {
     })
     .model("society:block/mana_clock")
     .blockEntity((blockInfo) => {
-      blockInfo.serverTick(20, 0, (entity) => global.manaClockTick(entity)),
+      blockInfo.serverTick(200, 0, (entity) => global.manaClockTick(entity)),
         blockInfo.attachCapability(
           BotaniaCapabilityBuilder.MANA.blockEntity()
             .canReceiveManaFromBurst((be) => {

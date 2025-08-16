@@ -75,6 +75,48 @@ BlockEvents.broken(
     }
   }
 );
+// Skull Cavern unplacable tag
+BlockEvents.broken(
+  [
+    "atmospheric:arid_sand",
+    "atmospheric:red_arid_sand",
+    "minecraft:sand",
+    "minecraft:basalt",
+    "minecraft:end_stone",
+    "minecraft:magma_block",
+    "oreganized:glance",
+    "oreganized:glance_bricks",
+    "oreganized:polished_glance",
+    "minecraft:moss_block",
+    "vanillabackport:pale_moss_block",
+    "oreganized:spotted_glance",
+    "minecraft:snow_block",
+    "minecraft:blue_ice",
+    "minecraft:packed_ice",
+  ],
+  (e) => {
+    const { level, block, server } = e;
+    if (level.dimension === "society:skull_cavern") {
+      server.scheduleInTicks(0, () => {
+        server.scheduleInTicks(200, () => {
+          level.getBlock(block.pos).set(block.id);
+          level.spawnParticles(
+            "snowyspirit:glow_light",
+            true,
+            block.x,
+            block.y + 0.5,
+            block.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            5,
+            2
+          );
+        });
+      });
+    }
+  }
+);
 
 LevelEvents.beforeExplosion((e) => {
   const { x, y, z, size, level, server } = e;
@@ -87,8 +129,7 @@ LevelEvents.beforeExplosion((e) => {
         let dist = Math.hypot(x - xi, y - yi, z - zi);
         if (dist <= range) {
           let block = level.getBlock(xi, yi, zi);
-          if (block.hasTag("society:skull_cavern_bomb_denied")
-          ) {
+          if (block.hasTag("society:skull_cavern_bomb_denied")) {
             blocks.push({ xi: xi, yi: yi, zi: zi, dist: dist, id: block.id });
           }
         }

@@ -177,28 +177,57 @@ global.handleSpecialHarvest = (
   }
 };
 
-global.getMagicShearsOutput = (targetId, player) => {
+global.getMagicShearsOutput = (level, target, player, server) => {
+  const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
+  const data = target.persistentData;
+  const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
+  const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
+  const affection = data.getInt("affection");
+  const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
+  const targetId =
+    target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
   const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`).toArray();
   let newLoot = [];
-  if (player.stages.has("mana_hand")) {
-    let dropItem;
-    for (let i = 0; i < droppedLoot.length; i++) {
-      dropItem = droppedLoot[i];
-      if (dropItem.maxStackSize < dropItem.count * 2) {
-        newLoot.push(dropItem);
-        newLoot.push(dropItem);
-      } else {
-        dropItem.count = dropItem.count * 2;
-        newLoot.push(dropItem);
+  if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
+    data.ageLastMagicHarvested = day;
+    data.affection = affection - 15;
+    server.runCommandSilent(
+      `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
+    );
+    level.spawnParticles(
+      "snowyspirit:glow_light",
+      true,
+      target.x,
+      target.y + 1.5,
+      target.z,
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      0.2 * rnd(1, 4),
+      20,
+      2
+    );
+    if (player.stages.has("mana_hand")) {
+      let dropItem;
+      for (let i = 0; i < droppedLoot.length; i++) {
+        dropItem = droppedLoot[i];
+        if (dropItem.maxStackSize < dropItem.count * 2) {
+          newLoot.push(dropItem);
+          newLoot.push(dropItem);
+        } else {
+          dropItem.count = dropItem.count * 2;
+          newLoot.push(dropItem);
+        }
       }
+      return newLoot;
+    }
+    for (let i = 0; i < droppedLoot.length; i++) {
+      newLoot.push(droppedLoot[i]);
+    }
+    if (player.stages.has("heretic")) {
+      newLoot.push(Item.of("3x society:sparkstone"));
+      target.attack(2);
+      data.affection = affection - 35;
     }
     return newLoot;
-  }
-  for (let i = 0; i < droppedLoot.length; i++) {
-    newLoot.push(droppedLoot[i]);
-  }
-  if (player.stages.has("heretic")) {
-    newLoot.push(Item.of("3x society:sparkstone"));
-  }
-  return newLoot;
+  } else return -1;
 };

@@ -129,34 +129,23 @@ StartupEvents.registry("block", (event) => {
               global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1
             )
               return;
-            const animalId =
-              animal.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : animal.type.split(":");
-            const droppedLoot = global.getMagicShearsOutput(animalId, attachedPlayer);
-            let insertedMagicDrops = false;
-            for (let i = 0; i < droppedLoot.length; i++) {
-              insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
-            }
-            if (insertedMagicDrops) {
-              if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
-                console.error("Sparkstone not consumed when it should have been!");
-              if (!global.getAnimalIsNotCramped(animal))
-                data.affection = data.getInt("affection") - 50;
-              level.server.runCommandSilent(
-                `playsound minecraft:entity.sheep.shear block @a ${animal.x} ${animal.y} ${animal.z}`
-              );
-              level.spawnParticles(
-                "snowyspirit:glow_light",
-                true,
-                animal.x,
-                animal.y + 1.5,
-                animal.z,
-                0.2 * rnd(1, 4),
-                0.2 * rnd(1, 4),
-                0.2 * rnd(1, 4),
-                20,
-                2
-              );
-              data.affection = data.getInt("affection") - 5;
+            let droppedLoot = global.getMagicShearsOutput(
+              level,
+              animal,
+              attachedPlayer,
+              level.server
+            );
+            if (droppedLoot !== -1) {
+              let insertedMagicDrops = false;
+              for (let i = 0; i < droppedLoot.length; i++) {
+                insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
+              }
+              if (insertedMagicDrops) {
+                if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+                  console.error("Sparkstone not consumed when it should have been!");
+                if (!global.getAnimalIsNotCramped(animal))
+                  data.affection = data.getInt("affection") - 50;
+              }
             }
           });
         }
