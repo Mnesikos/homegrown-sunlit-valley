@@ -93,6 +93,11 @@ ServerEvents.recipes((e) => {
       mineral: "society:steamy_gadget",
       coin: "crown",
     },
+    {
+      egg: "meadow:wooly_sheep_spawn_egg",
+      mineral: "minecraft:emerald",
+      coin: "crown",
+    },
   ];
 
   recipes.forEach((recipe) => {

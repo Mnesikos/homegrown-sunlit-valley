@@ -14,7 +14,6 @@ ServerEvents.recipes((e) => {
     "refinedstorage:controller",
     "refinedstorage:4k_storage_block",
     "meadow:watering_can",
-    "longwings:glass_jar",
     "wildernature:leveling_contract",
     "wildernature:uncommon_contract",
     "wildernature:rare_contract",

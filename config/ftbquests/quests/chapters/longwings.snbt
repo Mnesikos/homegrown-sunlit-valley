@@ -839,7 +839,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 6.5d
 		}
 		{
@@ -857,7 +857,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 6.5d
 		}
 		{
@@ -875,7 +875,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 6.5d
 		}
 		{
@@ -893,7 +893,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 6.5d
 		}
 		{
@@ -911,7 +911,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 6.5d
 		}
 		{
@@ -929,7 +929,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 6.5d
 		}
 		{
@@ -947,7 +947,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 6.5d
 		}
 		{
@@ -1346,6 +1346,7 @@
 				"1F5BE42EC64BE0C5"
 				"66BB843D75A0605B"
 				"43661DEAB3C61534"
+				"62D563D41BB5D230"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1403,6 +1404,23 @@
 			title: "Butterfly \\& Moth Collection Complete!"
 			x: 3.0d
 			y: 9.0d
+		}
+		{
+			id: "62D563D41BB5D230"
+			tasks: [{
+				id: "06E19998D1BDBBD0"
+				item: {
+					Count: 1
+					id: "longwings:butterfly"
+					tag: {
+						variant: "brimstone"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Not required for perfection"]

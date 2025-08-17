@@ -3,9 +3,8 @@
   "eventCondition": {
     "type": "is_state",
     "state": {
-      "Name": "minecraft:coal_ore"
+      "Name": "etcetera:nether_bismuth_ore"
     }
   },
-  "lootTable": "society:util/gold_rush_coal",
-  "chanceMultiplier": 0.5
+  "lootTable": "etcetera:blocks/nether_bismuth_ore"
 }

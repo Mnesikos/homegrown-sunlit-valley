@@ -112,5 +112,11 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "ultramarine": {
+    "brick_kiln": true,
+    "bottle_gourd": true,
+    "mallet_toggleable": true,
+    "censer_burn_time": true
   }
 }

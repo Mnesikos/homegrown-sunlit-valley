@@ -165,46 +165,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"54B618CF0AB9DC20"
-				"2134CA6B3880D089"
-			]
-			description: [
-				"{ftbquests.chapter.ii__building_up_the_farm.quest6.description1}"
-				""
-				"{ftbquests.chapter.ii__building_up_the_farm.quest6.description2}"
-			]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "02327F6FDF987266"
-			rewards: [{
-				id: "25F280C7FDC94599"
-				item: {
-					Count: 1
-					id: "gag:escape_rope"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "4B15A9D1420596BE"
-				item: { Count: 16, id: "minecraft:raw_iron" }
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ii__building_up_the_farm.quest6.title}"
-			x: 5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["02327F6FDF987266"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest7.description1}"
 				""
@@ -224,7 +185,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest7.title}"
-			x: 7.0d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -334,7 +295,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest9.title}"
-			x: 8.0d
+			x: 7.0d
 			y: -3.0d
 		}
 		{
@@ -356,7 +317,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest10.title}"
-			x: 9.0d
+			x: 8.0d
 			y: -1.5d
 		}
 		{
@@ -379,7 +340,7 @@
 				item: "society:seed_maker"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.5d
 			y: -3.5d
 		}
 		{
@@ -400,7 +361,7 @@
 				item: "moreminecarts:chiseled_organic_glass"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -417,7 +378,7 @@
 				item: "society:pine_tar"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 10.0d
 			y: -2.5d
 		}
 		{
@@ -434,7 +395,7 @@
 				item: "society:oak_resin"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
@@ -467,13 +428,14 @@
 				}
 			]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest15.title}"
-			x: 12.5d
+			x: 11.5d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"7B2EB2B56F155E49"
 				"230E02067CBC21CF"
+				"2B3BEC36F6C0F6BE"
 			]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest16.description1}"
@@ -495,6 +457,7 @@
 				}
 			}
 			id: "2DD84A5F127B1463"
+			min_required_dependencies: 2
 			min_required_tasks: 1
 			rewards: [{
 				id: "0EE0C090E1074FF2"
@@ -507,7 +470,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest16.title}"
-			x: 13.0d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -534,7 +497,7 @@
 				title: "{ftbquests.chapter.ii__building_up_the_farm.quest17.task_5113876534554025924.title}"
 				type: "checkmark"
 			}]
-			x: 15.0d
+			x: 14.0d
 			y: -1.5d
 		}
 		{
@@ -563,7 +526,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest18.title}"
-			x: 18.0d
+			x: 17.0d
 			y: -1.5d
 		}
 		{
@@ -1244,8 +1207,8 @@
 				item: "society:treated_log"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["761F68396065119B"]
@@ -1338,7 +1301,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest42.title}"
-			x: 0.5d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -1357,7 +1320,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest43.title}"
-			x: 0.5d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -1488,7 +1451,7 @@
 				item: "society:frozen_geode"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.0d
 			y: -3.0d
 		}
 		{
@@ -1570,7 +1533,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["02327F6FDF987266"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest52.description1}"
 				""
@@ -1587,8 +1550,8 @@
 				item: "society:preserves_jar"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -0.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
@@ -1633,7 +1596,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["02327F6FDF987266"]
+			dependencies: ["6ADD884F3FFE5D42"]
 			description: [
 				"{ftbquests.chapter.ii__building_up_the_farm.quest56.description1}"
 				""
@@ -1658,8 +1621,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.ii__building_up_the_farm.quest56.title}"
-			x: 6.0d
-			y: -2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4A48308E11476E9B"]
@@ -1767,6 +1730,108 @@
 			title: "Minigame modifications"
 			x: 3.0d
 			y: -10.0d
+		}
+		{
+			dependencies: ["5B6FD08D6063D6AA"]
+			description: [
+				"By now your chests might be an overflowing mess."
+				""
+				"Luckily the &6Storagesmith villager&r sells a variety of items to help manage the mess."
+				""
+				"Most notable is the &6Controller&r, a block that can help manage entire storage systems. Items in its storage can be viewed using a &6Crafting Terminal&r placed next to it or connected with &6Cables&r."
+				""
+				" "
+			]
+			icon: "refinedstorage:crafting_grid"
+			id: "61501449BF31B773"
+			rewards: [{
+				count: 16
+				id: "5DC9285D66B2B4E6"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10E465DFCFE2145D"
+					item: "refinedstorage:crafting_grid"
+					type: "item"
+				}
+				{
+					id: "124F45DDBD1834CC"
+					item: "refinedstorage:controller"
+					type: "item"
+				}
+			]
+			title: "Farming Storage"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["61501449BF31B773"]
+			description: [
+				"The &6Controller&r can't actually store any items on its own. "
+				""
+				"Existing chests or other inventories such as Drawers can be added to the network using an &6External Storage&r."
+				""
+				"If you prefer digitally storing items for easy transportation, &64k Storage Blocks&r can be placed to allow for up to &64,000&r items on its own."
+			]
+			icon: "refinedstorage:4k_storage_block"
+			id: "69C3121C90AABBF4"
+			tasks: [
+				{
+					id: "48B9D6CA4DCEE524"
+					item: "refinedstorage:external_storage"
+					type: "item"
+				}
+				{
+					id: "1F58F668CB26451B"
+					item: "refinedstorage:4k_storage_block"
+					type: "item"
+				}
+			]
+			title: "Adding Storage Space"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["61501449BF31B773"]
+			description: [
+				"The &6Wireless Crafting Grid&r allows you to access your storage network from a distance!"
+				""
+				"You'll also need to purchase a &6Wireless Transmitter&r and place it somewhere on your network. Multiple can be added at different areas of your base to cover a wider area!"
+				""
+				"Alternatively, their range can be extended with &6Range Upgrades&r."
+			]
+			icon: {
+				Count: 1
+				id: "refinedstorageaddons:wireless_crafting_grid"
+				tag: { }
+			}
+			id: "55D658B5939D9DEB"
+			rewards: [{
+				id: "3CEC38B315AC2E57"
+				item: "refinedstorage:range_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C4975F5156BCFCC"
+					item: {
+						Count: 1
+						id: "refinedstorageaddons:wireless_crafting_grid"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7300B5298A729EE8"
+					item: "refinedstorage:wireless_transmitter"
+					type: "item"
+				}
+			]
+			title: "Wireless Access"
+			x: 16.0d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.ii__building_up_the_farm.title}"

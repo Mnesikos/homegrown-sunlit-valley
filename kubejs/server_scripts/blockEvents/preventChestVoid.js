@@ -26,11 +26,7 @@ BlockEvents.rightClicked(
     const { block, player, hand, item, server } = e;
     if (hand == "OFF_HAND") return;
     if (block.properties.get("type").toString() === "single") return;
-    if (
-      [
-        "sophisticatedstorage:basic_tier_upgrade",
-      ].includes(item.id)
-    ) {
+    if ("sophisticatedstorage:basic_tier_upgrade" === item.id) {
       player.tell(Text.red("This chest cannot be upgraded while full."));
       e.cancel();
     }

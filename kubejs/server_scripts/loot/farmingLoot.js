@@ -108,12 +108,14 @@ const checkMaxGrownWithChance = (destroyedBlock, chance) => {
 };
 const getFertilizer = (crop) => {
   const block = crop.getLevel().getBlock(crop.getPos().below().offset(-1, 0, 0));
+  if (block.hasTag("dew_drop_farmland_growth:bountiful_fertilized_farmland")) return -1;
   if (block.hasTag("dew_drop_farmland_growth:low_quality_fertilized_farmland")) return 1;
   if (block.hasTag("dew_drop_farmland_growth:high_quality_fertilized_farmland")) return 2;
   if (block.hasTag("dew_drop_farmland_growth:pristine_quality_fertilized_farmland")) return 3;
   return 0;
 };
 const getCropQuality = (crop, fertilizer) => {
+  if (fertilizer == -1) return 0;
   const qualityName = LevelData.get(crop.getLevel(), crop.getPos().offset(-1, 0, 0), false);
   const seedQuality = qualityToInt(qualityName);
   const goldChance =
