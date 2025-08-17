@@ -1,6 +1,6 @@
 ^^^
 ## Pretty Polish
-### v3.2.0 - PLAYTEST - 2
+### v3.2.0
 ^^^
 --- 
 - Updated to Create 6

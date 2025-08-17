@@ -19,6 +19,8 @@
     }
   ],
   "lookup_history": [
+    "item:aquaculture:carp{}",
+    "item:society:river_jelly",
     "item:beachparty:crocs{Damage:0}",
     "item:meadow:cobbled_limestone{}",
     "item:meadow:alpine_salt{}",
@@ -335,7 +337,6 @@
       "amount": 2
     },
     "item:crittersandcompanions:koi_fish",
-    "item:aquaculture:carp{quality_food:{effects:[],quality:1}}",
     {
       "type": "item",
       "id": "aquaculture:minnow",
@@ -794,7 +795,6 @@
     "item:numismatics:red_card",
     "item:society:combat_quarterly",
     "item:society:ocean_jelly",
-    "item:society:river_jelly",
     "item:dew_drop_farmland_growth:pristine_quality_fertilizer",
     "item:oreganized:silver_ingot",
     "item:oreganized:silver_mirror",
@@ -1366,8 +1366,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
