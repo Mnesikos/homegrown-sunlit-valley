@@ -278,6 +278,9 @@ const handleMagicHarvest = (name, data, e) => {
   let errorText = "";
   const droppedLoot = global.getMagicShearsOutput(level, target, player, server);
   if (droppedLoot !== -1) {
+    server.runCommandSilent(
+      `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
+    );
     global.giveExperience(server, player, "husbandry", 15);
     for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");

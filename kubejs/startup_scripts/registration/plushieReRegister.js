@@ -45,7 +45,7 @@ global.plushieRightClick = (click) => {
         player.tell(questName);
       }
     }
-    if (item =="minecraft:air" && block.id === "whimsy_deco:adv_singing_frog_plushie") {
+    if (item == "minecraft:air" && block.id === "whimsy_deco:adv_singing_frog_plushie") {
       server.runCommandSilent(`playsound species:music.disk.spawner block @a ${x} ${y} ${z}`);
       block.set("whimsy_deco:singing_frog", block.properties);
       server.scheduleInTicks(0, () => {
@@ -75,6 +75,7 @@ StartupEvents.registry("block", (event) => {
       .property(integerProperty.create("quality", 0, 4))
       .property(integerProperty.create("affection", 0, 4))
       .defaultCutout()
+      .box(2, 0, 2, 14, 14, 14)
       .soundType("wool")
       .hardness(1.0)
       .requiresTool(false)

@@ -191,9 +191,6 @@ global.getMagicShearsOutput = (level, target, player, server) => {
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
     data.ageLastMagicHarvested = day;
     data.affection = affection - 15;
-    server.runCommandSilent(
-      `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
-    );
     level.spawnParticles(
       "snowyspirit:glow_light",
       true,

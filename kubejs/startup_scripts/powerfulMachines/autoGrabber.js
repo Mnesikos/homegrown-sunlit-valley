@@ -19,7 +19,7 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
       if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
         console.error("Sparkstone not consumed when it should have been!");
       server.runCommandSilent(
-        `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+        `playsound stardew_fishing:dwop block @a ${target.x} ${target.y} ${target.z}`
       );
       level.spawnParticles(
         "farmersdelight:star",
@@ -136,6 +136,9 @@ StartupEvents.registry("block", (event) => {
               level.server
             );
             if (droppedLoot !== -1) {
+              level.server.runCommandSilent(
+                `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`
+              );
               let insertedMagicDrops = false;
               for (let i = 0; i < droppedLoot.length; i++) {
                 insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
