@@ -301,6 +301,14 @@ StartupEvents.registry("item", (e) => {
       food.saturation(2);
     });
 
+  e.create("society:ancient_cookie")
+    .texture("society:item/ancient_cookie")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(4);
+      food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
+    });
+
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
 

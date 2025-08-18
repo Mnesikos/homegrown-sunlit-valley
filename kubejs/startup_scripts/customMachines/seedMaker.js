@@ -195,6 +195,10 @@ global.seedMakerRecipes = [
     input: "atmospheric:currant",
     output: ["6x atmospheric:currant_seedling"],
   },
+  {
+    input: "atmospheric:aloe_leaves",
+    output: ["6x atmospheric:aloe_kernels"],
+  },
 ];
 
 StartupEvents.registry("block", (event) => {

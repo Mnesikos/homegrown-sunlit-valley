@@ -9,10 +9,10 @@
     "modId": "additional_attributes",
     "version": "1.3.6"
   },
-  "AdvancedLootInfo-forge-1.20.1-1.2.4.jar": {
-    "jarName": "AdvancedLootInfo-forge-1.20.1-1.2.4.jar",
+  "AdvancedLootInfo-forge-1.20.1-1.2.5.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
     "modId": "ali",
-    "version": "1.20.1-1.2.4"
+    "version": "1.20.1-1.2.5"
   },
   "AdvancementPlaques-1.20.1-forge-1.6.7.jar": {
     "jarName": "AdvancementPlaques-1.20.1-forge-1.6.7.jar",
@@ -404,10 +404,10 @@
     "modId": "decorative_blocks",
     "version": "4.1.3"
   },
-  "defaultoptions-forge-1.20-18.0.1.jar": {
-    "jarName": "defaultoptions-forge-1.20-18.0.1.jar",
+  "defaultoptions-forge-1.20.1-18.0.3.jar": {
+    "jarName": "defaultoptions-forge-1.20.1-18.0.3.jar",
     "modId": "defaultoptions",
-    "version": "18.0.1"
+    "version": "18.0.3"
   },
   "dew_drop_daily_weather-1.1.1.jar": {
     "jarName": "dew_drop_daily_weather-1.1.1.jar",
@@ -549,10 +549,10 @@
     "modId": "extremesoundmuffler",
     "version": "3.48"
   },
-  "Fallingleaves-1.20.1-2.1.0.jar": {
-    "jarName": "Fallingleaves-1.20.1-2.1.0.jar",
+  "fallingleaves-1.20.1-2.1.2.jar": {
+    "jarName": "fallingleaves-1.20.1-2.1.2.jar",
     "modId": "fallingleaves",
-    "version": "2.1.0"
+    "version": "2.1.2"
   },
   "fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar": {
     "jarName": "fallingtrees-forge-mc1.20-0.13.2-SNAPSHOT.jar",
@@ -957,10 +957,10 @@
     "modId": "modernfix",
     "version": "5.24.4+mc1.20.1"
   },
-  "moonlight-1.20-2.15.6-forge.jar": {
-    "jarName": "moonlight-1.20-2.15.6-forge.jar",
+  "moonlight-1.20-2.16.2-forge.jar": {
+    "jarName": "moonlight-1.20-2.16.2-forge.jar",
     "modId": "moonlight",
-    "version": "1.20-2.15.6"
+    "version": "1.20-2.16.2"
   },
   "morejs-forge-1.20.1-0.10.1.jar": {
     "jarName": "morejs-forge-1.20.1-0.10.1.jar",
@@ -1142,10 +1142,10 @@
     "modId": "ponderjs",
     "version": "2.0.6"
   },
-  "portable_blueprints-v1.8.7-mv1.20.1.jar": {
-    "jarName": "portable_blueprints-v1.8.7-mv1.20.1.jar",
+  "portable_blueprints-v1.9.0-mv1.20.1.jar": {
+    "jarName": "portable_blueprints-v1.9.0-mv1.20.1.jar",
     "modId": "portable_blueprints",
-    "version": "1.8.7"
+    "version": "1.9.0"
   },
   "portfolio-1.20.1-1.4.0-forge.jar": {
     "jarName": "portfolio-1.20.1-1.4.0-forge.jar",
@@ -1392,10 +1392,10 @@
     "modId": "species",
     "version": "3.5"
   },
-  "splendid_slimes-0.14.1.jar": {
-    "jarName": "splendid_slimes-0.14.1.jar",
+  "splendid_slimes-0.14.2.jar": {
+    "jarName": "splendid_slimes-0.14.2.jar",
     "modId": "splendid_slimes",
-    "version": "0.14.1"
+    "version": "0.14.2"
   },
   "stardew_fishing-3.2-1.20.1.jar": {
     "jarName": "stardew_fishing-3.2-1.20.1.jar",
@@ -1432,10 +1432,10 @@
     "modId": "supermartijn642corelib",
     "version": "1.1.18"
   },
-  "supplementaries-1.20-3.1.36.jar": {
-    "jarName": "supplementaries-1.20-3.1.36.jar",
+  "supplementaries-1.20-3.1.37.jar": {
+    "jarName": "supplementaries-1.20-3.1.37.jar",
     "modId": "supplementaries",
-    "version": "1.20-3.1.36"
+    "version": "1.20-3.1.37"
   },
   "tanukidecor-20.1.1.0.jar": {
     "jarName": "tanukidecor-20.1.1.0.jar",

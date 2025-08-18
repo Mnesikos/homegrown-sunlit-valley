@@ -45,8 +45,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 5
+                "min": 2,
+                "max": 3
               }
             }
           ]
@@ -73,6 +73,16 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:ender_pearl",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "society:spider_silk",
           "conditions": [
             {
               "condition": "minecraft:random_chance",
@@ -111,7 +121,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "herbalbrews:tea_plant",
+          "name": "herbalbrews:tea_blossom",
           "functions": [
             {
               "function": "minecraft:set_count",

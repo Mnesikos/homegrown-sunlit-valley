@@ -1423,6 +1423,7 @@ const stoveRecipes = [
   { item: "candlelight:pork_ribs", value: 64 },
   { item: "bakery:apple_pie", value: 88 },
   { item: "farmersdelight:sweet_berry_cookie", value: 8 },
+  { item: "society:ancient_cookie", value: 728 },
   { item: "bakery:linzer_tart", value: 1035 },
   { item: "brewery:pretzel", value: 13 },
   { item: "bakery:jam_roll", value: 750 },

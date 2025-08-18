@@ -6,7 +6,10 @@
 - Updated to Create 6
 - Added Refined Storage as replacement mod for Tom's Simple Storage, with crafting recipes to convert old to new.
 - Added new system for Building Shop Buildings
+- Added furniture from Whimsy Deco, an unreleased furniture mod by Nitbe as rare furniture loot
+- Added Mason set by Kanlamari
 - Added Coop buildings by charlotte.b
+- Added Wallpapers and Baseboard blocks by charlotte.b
 - Added Plushies - Collectable gatcha pets with rarity, traits, and affection mechanics
 - Added Plushie Capsules and Plushie Capsule Machine
 - Added Juice Inserter - Directly inserts juice fluids into Fermentation Barrel
@@ -16,9 +19,7 @@
 - Added Jade support to Artisan Machines and Fish Ponds 
 - Added skill books: Bullfish Jobs, Wuthering Logs
 - Added Pickle variants for every every vegetable
-- Added Statue of Endless Fortune
-- Added Lucky Cat - Rare furniture drop
-- Added Pink Flower Wallpaper and Baseboards
+- Added Statue of Endless Fortune to Mystical Botanist
 - Added Auto-Grabber upgrade to auto-Magic Shear
 - Added Fish Pond Basket upgrade to auto-harvest fish
 - Added Shipping Bin Monitor to Banker Villager
@@ -41,7 +42,13 @@
 - Added Inverse trait to Orby and Sweet Slims
 - Added plort press recipe for Sparkcat heart
 - Added recipe for Alpine Cobblestone
-- Added What Are They Up To
+- Added What Are They Up To mod
+- Added Carps to Deluxe Crab Trap Bait pool
+- Added Wooly Sheep spawn egg recipe
+- Added Earth Crystals and Geodes to coal, iron, and lead gold rushes
+- Added gold rushes to Sparkstone, Lead, Silver, and Bismuth ores
+- Added message for Flamingo infertility and made Galliraptors/Tri-bulls unable to breed
+- Added Ancient Cookie
 - Increased base value of all wines by 100
 - Increased Dino Den spawn chance
 - Increased Tiller bonus 10% -> 15%
@@ -54,19 +61,23 @@
 - Rebalanced Weeping Slime: Now only eats tree fruits. Cries.
 - Rebalanced Juicy Slime: no longer climbs, causes brain damage when happy and sad
 - Reduced Chance of Glitched VHS drops from Zap
+- Reduced Limpet spawn height
 - Reworked Skull Cavern block placement: all blocks placed will decay over time, with torches taking longer. Breakable blocks like moss will also quickly regen when broken, allowing for some farming of things such as moss without messing up the terrain forever
 - Reworked Heretic -> Magic Shears generate Sparkstone but damage mobs and harshly drop affection
-- Removed Skeleton horse jumpscare finally for real
 - Reworked certain fishing related items to use new crafting ingredients
 - Reworked Spindlefish Fish Pond drops to no longer drop Amethyst (moved to Koi)
+- Reworked Brass Hands to use Iridium instead of Iridium coins
+- Reworked Splendid Slimes to not perform negative effects or get hungry while their owner is offline (configurable)
+- Removed Skeleton horse jumpscare finally for real
 - Removed Batteries from Sparkcat Plort ripping
 - Removed ability to insert fish into ponds. Fish ponds set with a fish now get set to 0 population
-- Removed Bountiful Fertilizer from Farmer
+- Removed Automobility Slopes due to crash
+- Removed Bountiful Fertilizer from Farmer villager
 - Removed Everycompat sinks
 - Removed ability for Deployers increasing affection
 - Removed Adventurer decree from bounty board
 - Mooblooms now milk Amethyst Milk
-- Sea Biscuits additionally require Sunlit Pearls
+- Sea Biscuits now additionally require Sunlit Pearls
 - Shipping Bin's sell message and sound can now be muted with a Redstone signal
 - Sprinkers now have axe mineable tag
 - Geodes now have a tag
@@ -84,13 +95,17 @@
 - Fixed inaccuracies in Brewingstation ponder
 - Fixed fake player actions giving experience
 - Fixed event order causing potential exploits in multiplayer
-- Fixed Autograbbers performing cramped check too often
+- Fixed Auto-grabbers performing cramped check too often
+- Fixed Auto-grabbers playing sound near player instead of animal
 - Fixed some gems not having gem tag
 - Fixed artisan machines with multiple inputs voiding inputs when not full and broken
 - Fixed Skull Cavern air never regening in specific cases
-- Fixed Zetter Canvas
+- Fixed Zetter Canvas and Bison Horn having stack voiding issue
+- Fixed Bountiful Fertilizer adding quality
 - Fixed BFF triggering in cases where it shouldn't
 - Fixed Seed Money advancement stating wrong coin
 - Fixed Jungle structure having too high level enchanted books
 - Fixed craftable milks using wooden buckets for no good reason
 - Fixed interaction with Brain Damage and Farmers/Grandma's blessing causing infinite slowness until death
+- Fixed Sophisticated Storage voiding issue with upgrades (via prevention)
+- Fixed Pale Oak not being craftable into chests and sometimes slabs

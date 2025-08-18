@@ -59,6 +59,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "society:plushie_capsule",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
           "weight": 14,
           "functions": [
             {

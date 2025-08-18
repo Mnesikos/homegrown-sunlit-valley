@@ -130,7 +130,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_boots",
+          "name": "minecraft:chainmail_boots",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -146,7 +146,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_chestplate",
+          "name": "minecraft:chainmail_chestplate",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -162,7 +162,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_leggings",
+          "name": "minecraft:chainmail_leggings",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -178,7 +178,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_helmet",
+          "name": "minecraft:chainmail_helmet",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -194,7 +194,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_pickaxe",
+          "name": "minecraft:stone_pickaxe",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -210,7 +210,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_shovel",
+          "name": "minecraft:stone_shovel",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -226,7 +226,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_sword",
+          "name": "minecraft:stone_sword",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -242,87 +242,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:iron_boots",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20,
-                "max": 39
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_chestplate",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20,
-                "max": 39
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20,
-                "max": 39
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_helmet",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20,
-                "max": 39
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_pickaxe",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 20,
-                "max": 39
-              },
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_shovel",
+          "name": "numismatics:cog",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",

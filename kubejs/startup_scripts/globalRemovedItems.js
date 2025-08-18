@@ -1,4 +1,6 @@
 global.removedItems = [
+  "automobility:slope",
+  "automobility:steep_slope",
   "moblassos:contract",
   "moblassos:emerald_lasso",
   "moblassos:aqua_lasso",

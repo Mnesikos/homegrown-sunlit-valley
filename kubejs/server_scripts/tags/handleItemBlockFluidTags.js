@@ -550,7 +550,10 @@ ServerEvents.tags("block", (e) => {
     "lootr:lootr_barrel",
     "lootr:lootr_chest",
     "lootr:lootr_trapped_chest",
-    "lootr:lootr_inventory"
+    "lootr:lootr_inventory",
+    "brewery:wooden_brewingstation",
+    "brewery:copper_brewingstation",
+    "brewery:netherite_brewingstation"
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);

@@ -60,7 +60,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.2.4.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -69,16 +69,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6883/324/AdvancedLootInfo-forge-1.20.1-1.2.4.jar",
-                    "id": "6883324",
+                    "url": "https://edge.forgecdn.net/files/6895/734/AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
+                    "id": "6895734",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "7091591e07854cdb82d8b2301c79bd22ea9348d4",
-                        "md5": "097a115b281d19884a883f65f9d710c9"
+                        "sha1": "ab326518cbd007e71826ccd7b5fc670cbc218ecf",
+                        "md5": "750860b84ddf0e9edabeaa123051daea"
                     },
                     "required_dependencies": [],
-                    "size": 394369,
-                    "date_published": "2025-08-13T18:55:13.563Z"
+                    "size": 394389,
+                    "date_published": "2025-08-17T09:05:12.163Z"
                 }
             ]
         },
@@ -3383,7 +3383,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "defaultoptions-forge-1.20-18.0.1.jar",
+                    "file_name": "defaultoptions-forge-1.20.1-18.0.3.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -3392,18 +3392,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4635/878/defaultoptions-forge-1.20-18.0.1.jar",
-                    "id": "4635878",
+                    "url": "https://edge.forgecdn.net/files/6804/680/defaultoptions-forge-1.20.1-18.0.3.jar",
+                    "id": "6804680",
                     "parent_id": "232131",
                     "hashes": {
-                        "sha1": "d19f874852def4ef73b32caf3f218e6423d51677",
-                        "md5": "1784bcb1bd23f47ba2d048fc69ac743c"
+                        "sha1": "a7bffd6bd5cff19793cede8c1b8bb0450eb25059",
+                        "md5": "10d4a6afe004f72a965d0263583576db"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 87943,
-                    "date_published": "2023-07-10T20:42:52.003Z"
+                    "size": 94649,
+                    "date_published": "2025-07-23T21:49:30.653Z"
                 }
             ]
         },
@@ -4660,21 +4660,24 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Fallingleaves-1.20.1-2.1.0.jar",
+                    "file_name": "fallingleaves-1.20.1-2.1.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
+                    "loaders": [
+                        "forge"
+                    ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4695/661/Fallingleaves-1.20.1-2.1.0.jar",
-                    "id": "4695661",
+                    "url": "https://edge.forgecdn.net/files/6241/90/fallingleaves-1.20.1-2.1.2.jar",
+                    "id": "6241090",
                     "parent_id": "463155",
                     "hashes": {
-                        "sha1": "7cae5ae0f3ff3af230ecb8557fe0af6ca59f3ef5",
-                        "md5": "9abb855e91488602aca8ee1d95f3e392"
+                        "sha1": "b890536f44a5c0a49f2b1f4af91c17d948b4ef4d",
+                        "md5": "721d92a83d7518e8515dbd499eda03cd"
                     },
                     "required_dependencies": [],
-                    "size": 130363,
-                    "date_published": "2023-08-11T11:20:29.657Z"
+                    "size": 124212,
+                    "date_published": "2025-02-26T21:13:08.110Z"
                 }
             ]
         },
@@ -7234,7 +7237,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.20-2.15.6-forge.jar",
+                    "file_name": "moonlight-1.20-2.16.2-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -7243,16 +7246,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6846/127/moonlight-1.20-2.15.6-forge.jar",
-                    "id": "6846127",
+                    "url": "https://edge.forgecdn.net/files/6900/641/moonlight-1.20-2.16.2-forge.jar",
+                    "id": "6900641",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "0ea0d478011428a02b561b24ca9db40c31b39870",
-                        "md5": "2e91dd12ddb2fc40bacb6b499568296a"
+                        "sha1": "fe9d8b5aed75507e25d38c4bd9d19e512e5af1f5",
+                        "md5": "d5ae73d3eb1d407e7743085b8c1c8123"
                     },
                     "required_dependencies": [],
-                    "size": 1287123,
-                    "date_published": "2025-08-04T09:41:35.207Z"
+                    "size": 1324970,
+                    "date_published": "2025-08-18T15:23:46.933Z"
                 }
             ]
         },
@@ -10555,7 +10558,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.14.1.jar",
+                    "file_name": "splendid_slimes-0.14.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10563,18 +10566,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6891/663/splendid_slimes-0.14.1.jar",
-                    "id": "6891663",
+                    "url": "https://edge.forgecdn.net/files/6898/14/splendid_slimes-0.14.2.jar",
+                    "id": "6898014",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "116173955e4ca82287162513cbfdb114688e06d7",
-                        "md5": "b292eeb5e554cf03aabd9d0ee4562f59"
+                        "sha1": "5bbc6bc50392ff2e9524fdaccbd91e41edf66157",
+                        "md5": "ceea14b0e21cebaf605b072034fd5808"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 461726,
-                    "date_published": "2025-08-16T02:53:46.300Z"
+                    "size": 461804,
+                    "date_published": "2025-08-17T21:10:27.503Z"
                 }
             ]
         },
@@ -10985,7 +10988,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "supplementaries-1.20-3.1.36.jar",
+                    "file_name": "supplementaries-1.20-3.1.37.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10994,18 +10997,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6749/363/supplementaries-1.20-3.1.36.jar",
-                    "id": "6749363",
+                    "url": "https://edge.forgecdn.net/files/6889/3/supplementaries-1.20-3.1.37.jar",
+                    "id": "6889003",
                     "parent_id": "412082",
                     "hashes": {
-                        "sha1": "58145767061a4d5bf9229fbacc78451098b9d0c8",
-                        "md5": "98178d688af6bedcd5730d592c7dca6d"
+                        "sha1": "b5c6518b97c4ce0c70a2065090ba91e6d3b6115b",
+                        "md5": "333646b920a658e24938140f1615ca85"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 13623263,
-                    "date_published": "2025-07-09T18:03:38.790Z"
+                    "size": 13647512,
+                    "date_published": "2025-08-15T10:18:50.317Z"
                 }
             ]
         },

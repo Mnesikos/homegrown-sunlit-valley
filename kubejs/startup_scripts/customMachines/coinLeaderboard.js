@@ -31,7 +31,7 @@ global.updateLeaderboard = (block, server) => {
       block,
       calcY,
       "leaderboard",
-      `§6${balanceStr[0]} §7- §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")} §f●`
+      `§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
     );
   });
 };

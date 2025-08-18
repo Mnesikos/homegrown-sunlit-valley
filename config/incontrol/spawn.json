@@ -18,7 +18,8 @@
       "minecraft:stray",
       "minecraft:slime",
       "trials:bogged",
-      "minecraft:skeleton_horse"
+      "minecraft:skeleton_horse",
+      "species:limpet"
     ],
     "dimension": "minecraft:overworld",
     "minheight": 50,

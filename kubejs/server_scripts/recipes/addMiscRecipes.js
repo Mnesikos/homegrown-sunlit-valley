@@ -72,9 +72,9 @@ ServerEvents.recipes((e) => {
   e.shapeless("society:magic_rope", ["society:magic_tunnel"]);
   e.shapeless("refinedstorage:network_transmitter", ["refinedstorage:network_receiver"]);
   e.shapeless("refinedstorage:network_receiver", ["refinedstorage:network_transmitter"]);
-    e.shaped("meadow:cobbled_limestone", ["cs ", "sc "], {
+  e.shaped("meadow:cobbled_limestone", ["cs ", "sc "], {
     c: "minecraft:cobblestone",
-    s: 'meadow:alpine_salt',
+    s: "meadow:alpine_salt",
   });
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
@@ -261,10 +261,10 @@ ServerEvents.recipes((e) => {
     f: "society:fire_quartz",
     p: "society:pine_tar",
   });
-    e.shaped("society:snow_melter", [" f ", "fbf", " B "], {
+  e.shaped("society:snow_melter", [" f ", "fbf", " B "], {
     b: "minecraft:blast_furnace",
     B: "society:battery",
-    f: "society:fire_quartz"
+    f: "society:fire_quartz",
   });
   e.shaped("society:recycling_machine", ["LGL", "fbf", "LIL"], {
     b: "minecraft:barrel",
@@ -512,15 +512,6 @@ ServerEvents.recipes((e) => {
     F: "create:fluid_tank",
     b: "minecraft:bamboo_block",
     r: "society:rubber",
-  });
-  e.shaped("8x society:pink_flower_wallpaper", ["ppp", "pfp", "ppp"], {
-    f: "minecraft:pink_tulip",
-    p: "minecraft:paper",
-  });
-  e.shaped("8x society:pink_flower_birch_baseboard", ["ppp", "pfp", "bbb"], {
-    f: "minecraft:pink_tulip",
-    p: "minecraft:paper",
-    b: "minecraft:birch_planks",
   });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
@@ -807,5 +798,52 @@ ServerEvents.recipes((e) => {
     { input: "meadow:warped_wool", output: "minecraft:cyan_wool" },
   ].forEach((recipe) => {
     e.shapeless(recipe.output, [recipe.input]);
+  });
+  // Wallpapers
+  const wallpaperPattern = ["ppp", "pfp", "ppp"];
+  const baseboardPattern = ["ppp", "pfp", "bbb"];
+
+  e.shaped("8x society:pink_flower_wallpaper", wallpaperPattern, {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:pink_flower_baseboard", baseboardPattern, {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:hive_wallpaper", wallpaperPattern, {
+    f: "minecraft:honeycomb",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:bee_wallpaper", wallpaperPattern, {
+    f: "minecraft:honey_bottle",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:hive_baseboard", baseboardPattern, {
+    f: "minecraft:honeycomb",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:cloud_wallpaper", wallpaperPattern, {
+    f: "etcetera:cotton_flower",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:cloud_baseboard", baseboardPattern, {
+    f: "etcetera:cotton_flower",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:bunny_wallpaper", wallpaperPattern, {
+    f: "society:fine_wool",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:bunny_baseboard", baseboardPattern, {
+    f: "society:fine_wool",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
   });
 });
