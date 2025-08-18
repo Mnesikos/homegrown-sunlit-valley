@@ -19,6 +19,7 @@
     }
   ],
   "lookup_history": [
+    "item:society:snow_melter{}",
     "item:numismatics:neptunium_coin",
     "item:dew_drop_farmland_growth:bountiful_fertilizer{}",
     "item:society:ancient_cookie",
@@ -245,7 +246,6 @@
     "item:society:broken_clock",
     "item:society:supreme_mayonnaise",
     "item:society:tiny_gnome",
-    "item:society:snow_melter",
     "item:society:auto_grabber",
     "item:society:pink_matter",
     "item:society:ancient_cog",
@@ -1360,8 +1360,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

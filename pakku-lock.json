@@ -8680,7 +8680,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.8.7-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.9.0-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8688,16 +8688,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6881/224/portable_blueprints-v1.8.7-mv1.20.1.jar",
-                    "id": "6881224",
+                    "url": "https://edge.forgecdn.net/files/6898/625/portable_blueprints-v1.9.0-mv1.20.1.jar",
+                    "id": "6898625",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "3bc00e9a14930958e1a37fd9fd7acdb3a9941b8b",
-                        "md5": "05bd8a29800de856324859457b5a5de8"
+                        "sha1": "ae783186c635b3afc0f990806ff010abed61a2f3",
+                        "md5": "9df7456f8d658a637026a081fe86f17b"
                     },
                     "required_dependencies": [],
-                    "size": 396279,
-                    "date_published": "2025-08-13T07:01:58.377Z"
+                    "size": 414205,
+                    "date_published": "2025-08-18T00:50:04.413Z"
                 }
             ]
         },

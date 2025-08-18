@@ -17,7 +17,7 @@ global.handleSnowMelter = (entity) => {
       scanBlock.set("minecraft:air");
     }
     if (scanBlock.id === "snowrealmagic:snow") {
-      scanBlock.set("minecraft:grass");
+      scanBlock.set(scanBlock.getEntityData().Block);
     }
     if (scanBlock.id === "minecraft:ice") {
       scanBlock.set("minecraft:water");
