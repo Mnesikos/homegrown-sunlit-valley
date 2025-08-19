@@ -6,21 +6,21 @@ LootJS.modifiers((e) => {
     .hasAnyStage("starting_items")
     .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
     .pool((p) => {
-      p.randomChance(0.05).addLoot("society:ocean_jelly");
+      p.randomChance(0.1).addLoot("society:ocean_jelly");
     });
+
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("starting_items")
     .anyBiome("#minecraft:is_river")
     .pool((p) => {
-      p.randomChance(0.05).addLoot("society:river_jelly");
+      p.randomChance(0.1).addLoot("society:river_jelly");
     });
-
+    
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:furniture_box");
     });
-
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("frozen_treasure")
     .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
@@ -54,6 +54,36 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.randomChance(0.25).addLoot("crabbersdelight:deluxe_crab_trap_bait");
       p.limitCount([1, 4]);
+    });
+
+  e.addLootTypeModifier(LootType.FISHING)
+    .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
+    .playerPredicate((p) =>
+      p.getHeldItem("main_hand").nbt.Inventory
+        ? p
+            .getHeldItem("main_hand")
+            .nbt.Inventory.Items.toString()
+            .contains("aquaculture:redstone_hook")
+        : false
+    )
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:ocean_jelly");
+      p.limitCount([1, 2]);
+    });
+
+  e.addLootTypeModifier(LootType.FISHING)
+    .anyBiome("#minecraft:is_river")
+    .playerPredicate((p) =>
+      p.getHeldItem("main_hand").nbt.Inventory
+        ? p
+            .getHeldItem("main_hand")
+            .nbt.Inventory.Items.toString()
+            .contains("aquaculture:redstone_hook")
+        : false
+    )
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:river_jelly");
+      p.limitCount([1, 2]);
     });
 
   e.addLootTypeModifier(LootType.FISHING)

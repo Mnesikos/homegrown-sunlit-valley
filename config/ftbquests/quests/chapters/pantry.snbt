@@ -191,10 +191,6 @@
 									Count: 1b
 									id: "society:large_sheep_milk"
 								}
-								{
-									Count: 1b
-									id: "society:large_goat_milk"
-								}
 							]
 						}
 					}

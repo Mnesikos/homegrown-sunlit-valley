@@ -1,11 +1,12 @@
 ^^^
 ## Pretty Polish
-### v3.2.0
+### v3.2.1
 ^^^
 --- 
 - Updated to Create 6
 - Added Refined Storage as replacement mod for Tom's Simple Storage, with crafting recipes to convert old to new.
 - Added new system for Building Shop Buildings
+- Added Butterfly & Moth Catching
 - Added furniture from Whimsy Deco, an unreleased furniture mod by Nitbe as rare furniture loot
 - Added Mason set by Kanlamari
 - Added Coop buildings by charlotte.b
@@ -110,3 +111,29 @@
 - Fixed interaction with Brain Damage and Farmers/Grandma's blessing causing infinite slowness until death
 - Fixed Sophisticated Storage voiding issue with upgrades (via prevention)
 - Fixed Pale Oak not being craftable into chests and sometimes slabs
+
+## 3.2.1
+- Added Infinity/Dimensional Cad upgrades and updated tom's terminal conversion to give Dimension Card
+- Added Longwing Nuker resourcepack
+- Added Ocean Jelly to Jellyfish Fish Pond pool
+- Added Nether Jelly to Magmacubefish Fish Pond pool
+- Added config option for Skull Cavern decay and set to off by default
+- Reduced item counts for Spindlefish to not be insane
+- Reduced cost of Ranged Upgrade
+- Reduced Cost of Enkephalin by half (need to kill villager if already updated)
+- Removed ability to pick up Flamingos due to epilepsy
+- Removed Pale Oak boats due to crashes that lock you out of world
+- Reworked Redstone Hook to be Jelly hook:+10% chance to catch 1-2 Jelly
+- Increased chance of fishing jelly by double (5% -> 10%)
+- Fish Pond Baskets with upgrades only extract when the pond is mature
+- Bullfish Ponds scales off population instead of max populationc
+- Fixed Berry Bushes not being shearable when they have berries
+- Fixed Golden Clock tooltip
+- Fixed Building Gadgets not working in certain scenarios
+- Fixed all animals being infertile
+- Fixed Deployers being able to fish
+- Fixed Deployers being weird with harvesting
+- Fixed Leeches being wanting to not be caught so badly that they crash your game
+- Fixed Wuthering Logs working on everything
+- Fixed Husbandry Bundle listing Large Goat Milk twice
+- Fixed Changelog missing entries

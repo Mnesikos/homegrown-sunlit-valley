@@ -34,7 +34,7 @@ ItemEvents.entityInteracted((e) => {
 
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
-    if (global.checkEntityTag(target, "society:husbandry_animal")) {
+    if (global.checkEntityTag(target, "society:infertile")) {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 5 This animal cannot breed.`
       );

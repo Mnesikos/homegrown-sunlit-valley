@@ -1166,7 +1166,7 @@
             ]
         },
         {
-            "pakku_id": "qwHyA0oo1kb63hTh",
+            "pakku_id": "1OIVFt1d62qRoIE0",
             "type": "MOD",
             "slug": {
                 "curseforge": "building-gadgets"
@@ -1180,24 +1180,25 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "buildinggadgets2-1.0.8.jar",
+                    "file_name": "buildinggadgets2-1.0.7.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
+                        "neoforge",
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6850/495/buildinggadgets2-1.0.8.jar",
-                    "id": "6850495",
+                    "url": "https://edge.forgecdn.net/files/5144/161/buildinggadgets2-1.0.7.jar",
+                    "id": "5144161",
                     "parent_id": "298187",
                     "hashes": {
-                        "sha1": "d06a806e8ca84a9e96a69c32da4b43226a51e0c9",
-                        "md5": "8e804b7a62c8011375e5821ad2a9dc07"
+                        "sha1": "466c8cf2a45d878a224a77525b254b044aba3bd2",
+                        "md5": "38d1f75c246c6abe558ac07a2fa58947"
                     },
                     "required_dependencies": [],
-                    "size": 3833683,
-                    "date_published": "2025-08-05T11:25:05.983Z"
+                    "size": 3832269,
+                    "date_published": "2024-02-28T20:35:19.910Z"
                 }
             ]
         },
@@ -6847,6 +6848,39 @@
             ]
         },
         {
+            "pakku_id": "WGCNbSCQVkhJdiH2",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "longwing-nuker"
+            },
+            "name": {
+                "curseforge": "Longwing Nuker"
+            },
+            "id": {
+                "curseforge": "1324038"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "longwing_nuker.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6868/450/longwing_nuker.zip",
+                    "id": "6868450",
+                    "parent_id": "1324038",
+                    "hashes": {
+                        "sha1": "84dc12b865fc1055eac46936bd9f982276afbf57",
+                        "md5": "378331f4cbb312b4c0bfd06cceb419cf"
+                    },
+                    "required_dependencies": [],
+                    "size": 7189,
+                    "date_published": "2025-08-09T18:21:41.580Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "pmkIF5J4CjiNAvM4",
             "type": "MOD",
             "slug": {
@@ -9003,6 +9037,47 @@
                     ],
                     "size": 112015,
                     "date_published": "2024-12-19T12:00:59.607Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "WlY1Bvjnz7fOfWRj",
+            "pakku_links": [
+                "g6EujVDpH7e3rGMD"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "rsinfinitybooster"
+            },
+            "name": {
+                "curseforge": "RSInfinityBooster"
+            },
+            "id": {
+                "curseforge": "446870"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "RSInfinityBooster-1.20.1-1.0+41.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5814/102/RSInfinityBooster-1.20.1-1.0+41.jar",
+                    "id": "5814102",
+                    "parent_id": "446870",
+                    "hashes": {
+                        "sha1": "fa5d1ae8a115998067e6805c9748cbce64ab960a",
+                        "md5": "81099ce9a1b9ca5b6738bf614f9c6c69"
+                    },
+                    "required_dependencies": [
+                        "243076"
+                    ],
+                    "size": 33622,
+                    "date_published": "2024-10-15T12:12:15.813Z"
                 }
             ]
         },

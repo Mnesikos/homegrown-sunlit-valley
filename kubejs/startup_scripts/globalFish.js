@@ -284,8 +284,8 @@ global.handleFishExtraction = (block, player, server, item) => {
   let result;
   let resultCount = player.stages.has("mitosis") ? 2 : 1;
   let quality = 0;
-  if (player.stages.has("bullfish_jobs")) {
-    quality = Math.floor((Number(max_population) - 3) / 2);
+  if (player.stages.has("bullfish_jobs") && Number(population) > 3) {
+    quality = Math.floor((Number(population) - 3) / 2);
   }
   if (player.stages.has("hot_hands")) {
     server.runCommandSilent(

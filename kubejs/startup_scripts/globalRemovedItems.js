@@ -1,4 +1,6 @@
 global.removedItems = [
+  "vanillabackport:pale_oak_boat",
+  "vanillabackport:pale_oak_chest_boat",
   "automobility:slope",
   "automobility:steep_slope",
   "moblassos:contract",

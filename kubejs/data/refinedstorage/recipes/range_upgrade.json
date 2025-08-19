@@ -12,7 +12,7 @@
       "tag": "forge:ender_pearls"
     },
     "p": {
-      "tag": "society:pristine_mineral"
+      "item": "society:fire_quartz"
     },
     "U": {
       "item": "refinedstorage:upgrade"

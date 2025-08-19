@@ -31,7 +31,7 @@ BlockEvents.placed((e) => {
         global.mainUiElementIds
       );
       e.cancel();
-    } else {
+    } else if (global.skullCavernHardmode) {
       server.scheduleInTicks(0, () => {
         server.scheduleInTicks(block.id === "minecraft:torch" ? 1200 : 200, () => {
           level.destroyBlock(block.pos, true);

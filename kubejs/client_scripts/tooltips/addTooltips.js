@@ -222,7 +222,7 @@ ItemEvents.tooltip((tooltip) => {
     { item: "society:frogs_bounty_bazaar", description: "Prize Tickets give double the prizes." },
     {
       item: "society:bullfish_jobs",
-      description: "The quality of fish taken out of Fish Ponds scales with max population.",
+      description: "The quality of fish taken out of Fish Ponds scales with population.",
     },
     {
       item: "society:wuthering_logs",
@@ -1015,7 +1015,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   // Refined
   tooltip.add('refinedstorage:4k_storage_block', Text.green("Stores 4,000 items digitally"))
-  tooltip.add('toms_storage:ts.adv_wireless_terminal', Text.red("Right Click to convert into Wireless Crafting Grid and 64 Range Upgrades."))
+  tooltip.add('toms_storage:ts.adv_wireless_terminal', Text.red("Shift + Right Click to convert into Wireless Crafting Grid and Dimension Card."))
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
   });

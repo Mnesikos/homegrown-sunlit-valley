@@ -1498,7 +1498,7 @@
 			description: [
 				"The Butterfly \\& Moth handbook provides information on where to find every single variant that exists."
 				""
-				"The spawning of specific variants is determined by the current biome's &6Temperature&r and &6Humidity&r,"
+				"The spawning of specific variants is determined by the current biome's &6Temperature&r and &6Humidity&r."
 				""
 				"It also acts as a way to view your collection outside of the quest book, though it needs to be in your inventory for every catch."
 			]

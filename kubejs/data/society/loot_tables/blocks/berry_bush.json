@@ -57,6 +57,20 @@
               "type": "minecraft:item",
               "conditions": [
                 {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "name": "society:berry_bush"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
                   "block": "society:berry_bush",
                   "condition": "minecraft:block_state_property",
                   "properties": {
@@ -84,6 +98,20 @@
               "type": "minecraft:item",
               "conditions": [
                 {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "name": "society:berry_bush"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
                   "block": "society:berry_bush",
                   "condition": "minecraft:block_state_property",
                   "properties": {
@@ -107,6 +135,20 @@
         {
           "type": "minecraft:alternatives",
           "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "name": "society:berry_bush"
+            },
             {
               "type": "minecraft:item",
               "conditions": [
