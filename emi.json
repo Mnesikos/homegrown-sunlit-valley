@@ -19,6 +19,10 @@
     }
   ],
   "lookup_history": [
+    "item:atmospheric:grimwood_leaves",
+    "item:atmospheric:grimwood_sapling",
+    "item:meadow:wooly_sheep_spawn_egg",
+    "item:torchmaster:dreadlamp",
     "item:society:snow_melter{}",
     "item:numismatics:neptunium_coin",
     "item:dew_drop_farmland_growth:bountiful_fertilizer{}",
@@ -115,7 +119,6 @@
       "amount": 58
     },
     "item:longwings:glass_jar{}",
-    "item:meadow:wooly_sheep_spawn_egg{}",
     {
       "type": "item",
       "id": "minecraft:emerald",
@@ -684,11 +687,6 @@
     "item:moblassos:emerald_lasso{}",
     "item:quark:red_corundum",
     "item:minecraft:lapis_lazuli",
-    {
-      "type": "item",
-      "id": "atmospheric:grimwood_sapling",
-      "amount": 4
-    },
     "item:society:topaz",
     "item:botania:red_floating_flower",
     "item:society:ruby",
@@ -1317,9 +1315,7 @@
     "item:everycomp:rfm/botania/dreamwood_desk",
     "item:betterarcheology:bomb",
     "item:species:smoke_bomb",
-    "item:botania:mana_bomb",
-    "item:supplementaries:bomb",
-    "item:quark:vertical_oak_planks"
+    "item:botania:mana_bomb"
   ],
   "craft_history": [
     "sophisticatedbackpacks:copper_backpack",
@@ -1360,8 +1356,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

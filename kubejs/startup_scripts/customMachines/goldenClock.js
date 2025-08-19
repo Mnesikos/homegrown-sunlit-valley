@@ -93,7 +93,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Randomly progresses artisan machines around it."));
+      item.tooltip(Text.gray("Progresses nearby Artisan Machines once a day"));
       item.tooltip(Text.green(`Area: 5x5`));
       item.modelJson({
         parent: "society:block/golden_clock",

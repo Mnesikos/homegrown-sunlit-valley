@@ -135,6 +135,11 @@
     "result": "deny"
   },
   {
+    "mob": "crittersandcompanions:leaf_insect",
+    "mincount": 1,
+    "result": "deny"
+  },
+  {
     "mob": "balloonbox:balloonbox",
     "mincount": {
       "amount": 1,

@@ -68,6 +68,7 @@
 - Reworked Spindlefish Fish Pond drops to no longer drop Amethyst (moved to Koi)
 - Reworked Brass Hands to use Iridium instead of Iridium coins
 - Reworked Splendid Slimes to not perform negative effects or get hungry while their owner is offline (configurable)
+- Reworked Golden Clock to work once a day
 - Removed Skeleton horse jumpscare finally for real
 - Removed Batteries from Sparkcat Plort ripping
 - Removed ability to insert fish into ponds. Fish ponds set with a fish now get set to 0 population
