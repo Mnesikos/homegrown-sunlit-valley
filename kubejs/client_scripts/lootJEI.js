@@ -5,7 +5,7 @@ const registerLootCategory = (event, title) => {
     } = category;
     category
       .title(title)
-      .background(guiHelper.createBlankDrawable(144, 144))
+      .background(guiHelper.createBlankDrawable(144, 148))
       .icon(guiHelper.createDrawableItemStack(Item.of("society:furniture_box")))
       .isRecipeHandled((recipe) => {
         return !!(recipe?.data?.input !== undefined && recipe?.data?.outputs !== undefined);
@@ -59,5 +59,6 @@ JEIAddedEvents.registerRecipes((e) => {
   fantasyBoxes.forEach((theme) => {
     addLootBoxRecipes(e, `society:fantasy_box_${theme}`, `#society:${theme}_fantasy_furniture`);
   });
+  addLootBoxRecipes(e, "society:plushie_capsule", "#society:plushies");
   addLootBoxRecipes(e, "society:bouquet_bag", "#society:bouquet_bag_flowers");
 });

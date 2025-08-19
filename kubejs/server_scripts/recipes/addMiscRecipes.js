@@ -70,6 +70,12 @@ ServerEvents.recipes((e) => {
   e.shapeless("3x minecraft:glass_bottle", ["vintagedelight:mason_jar"]);
   e.shapeless("society:magic_tunnel", ["society:magic_rope"]);
   e.shapeless("society:magic_rope", ["society:magic_tunnel"]);
+  e.shapeless("refinedstorage:network_transmitter", ["refinedstorage:network_receiver"]);
+  e.shapeless("refinedstorage:network_receiver", ["refinedstorage:network_transmitter"]);
+  e.shaped("meadow:cobbled_limestone", ["cs ", "sc "], {
+    c: "minecraft:cobblestone",
+    s: "meadow:alpine_salt",
+  });
   e.shaped("minecraft:bundle", [" s ", " l "], {
     s: "minecraft:string",
     l: "minecraft:leather",
@@ -99,6 +105,10 @@ ServerEvents.recipes((e) => {
     f: "society:jade",
     g: "moreminecarts:organic_glass",
   });
+  e.stonecutting("moreminecarts:greenhouse_glass_stairs", "moreminecarts:chiseled_organic_glass");
+  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_stairs");
+  e.stonecutting("moreminecarts:greenhouse_glass_slab", "moreminecarts:chiseled_organic_glass");
+  e.stonecutting("moreminecarts:chiseled_organic_glass", "moreminecarts:greenhouse_glass_slab");
   // Earth Crystal
   e.shaped("society:tapper", [" C ", "lwl", " e "], {
     w: "meadow:wooden_bucket",
@@ -250,6 +260,11 @@ ServerEvents.recipes((e) => {
     G: "society:raisins",
     f: "society:fire_quartz",
     p: "society:pine_tar",
+  });
+  e.shaped("society:snow_melter", [" f ", "fbf", " B "], {
+    b: "minecraft:blast_furnace",
+    B: "society:battery",
+    f: "society:fire_quartz",
   });
   e.shaped("society:recycling_machine", ["LGL", "fbf", "LIL"], {
     b: "minecraft:barrel",
@@ -421,28 +436,35 @@ ServerEvents.recipes((e) => {
     N: "aquaculture:neptunium_ingot",
   });
   // Fish
-  e.shaped("society:fish_pond", ["PwP", "rNr"], {
+  e.shaped("society:fish_pond", [" j ", "PwP", "rNr"], {
+    j: "society:river_jelly",
     N: "aquaculture:neptunium_ingot",
     P: "crabbersdelight:pearl",
     r: "society:oak_resin",
     w: "meadow:wooden_water_bucket",
   });
-  e.shaped("society:fish_smoker", ["lNl", "asa", "lCl"], {
+  e.shaped("society:sunlit_pearl", [" n ", " p ", "r o"], {
+    n: "society:nether_jelly",
+    p: "crabbersdelight:pearl",
+    r: "society:river_jelly",
+    o: "society:ocean_jelly",
+  });
+  e.shaped("society:fish_smoker", ["lCl", "asa", "lNl"], {
     s: "minecraft:smoker",
     N: "aquaculture:neptunium_ingot",
     a: "society:aquamarine",
-    C: "numismatics:sun",
+    C: "society:sunlit_pearl",
     l: "meadow:fire_log",
   });
-  e.shaped("society:bait_maker", ["CNC", "asa", "lll"], {
+  e.shaped("society:bait_maker", [" S ", "asa", "lll"], {
     s: "society:seed_maker",
-    N: "aquaculture:neptunium_ingot",
-    a: "crabbersdelight:pearl_block",
-    C: "numismatics:sun",
+    a: "aquaculture:neptunium_ingot",
+    S: "society:sunlit_pearl",
     l: "create:zinc_ingot",
   });
-  e.shaped("society:auto_worm_farm", ["lpl", "asa", "lCl"], {
+  e.shaped("society:auto_worm_farm", ["lpl", "asa", "CSC"], {
     s: "farmersdelight:rich_soil",
+    S: "society:sunlit_pearl",
     p: "create:precision_mechanism",
     a: "aquaculture:worm_farm",
     C: "society:battery",
@@ -484,6 +506,12 @@ ServerEvents.recipes((e) => {
     T: "society:tapper",
     b: "society:battery",
     P: "create:precision_mechanism",
+  });
+  e.shaped("society:juice_inserter", ["fff", "rFb", "fff"], {
+    f: "meadow:fire_log",
+    F: "create:fluid_tank",
+    b: "minecraft:bamboo_block",
+    r: "society:rubber",
   });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
@@ -745,7 +773,21 @@ ServerEvents.recipes((e) => {
     l: "botania:livingwood_log",
     T: "botania:mana_tablet",
   });
+  e.shaped("society:mana_clock", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_sloth",
+    T: "botania:terrasteel_ingot",
+    m: "botania:manasteel_block",
+    c: "minecraft:clock",
+    n: "minecraft:netherite_ingot",
+  });
 
+  e.shaped("society:sparkstone_recycler", ["mrm", "ncn", "mTm"], {
+    r: "botania:rune_greed",
+    T: "botania:mana_pylon",
+    m: "society:botanical_tribute",
+    c: "botania:life_essence",
+    n: "botania:dragonstone",
+  });
   [
     { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },
     { input: "meadow:highland_wool", output: "minecraft:brown_wool" },
@@ -756,5 +798,52 @@ ServerEvents.recipes((e) => {
     { input: "meadow:warped_wool", output: "minecraft:cyan_wool" },
   ].forEach((recipe) => {
     e.shapeless(recipe.output, [recipe.input]);
+  });
+  // Wallpapers
+  const wallpaperPattern = ["ppp", "pfp", "ppp"];
+  const baseboardPattern = ["ppp", "pfp", "bbb"];
+
+  e.shaped("8x society:pink_flower_wallpaper", wallpaperPattern, {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:pink_flower_baseboard", baseboardPattern, {
+    f: "minecraft:pink_tulip",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:hive_wallpaper", wallpaperPattern, {
+    f: "minecraft:honeycomb",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:bee_wallpaper", wallpaperPattern, {
+    f: "minecraft:honey_bottle",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:hive_baseboard", baseboardPattern, {
+    f: "minecraft:honeycomb",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:cloud_wallpaper", wallpaperPattern, {
+    f: "etcetera:cotton_flower",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:cloud_baseboard", baseboardPattern, {
+    f: "etcetera:cotton_flower",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
+  });
+
+  e.shaped("8x society:bunny_wallpaper", wallpaperPattern, {
+    f: "society:fine_wool",
+    p: "minecraft:paper",
+  });
+  e.shaped("8x society:bunny_baseboard", baseboardPattern, {
+    f: "society:fine_wool",
+    p: "minecraft:paper",
+    b: "#minecraft:planks",
   });
 });

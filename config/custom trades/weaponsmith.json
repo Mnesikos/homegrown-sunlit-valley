@@ -221,61 +221,7 @@
     },
     {
       "offer": {
-        "itemKey": "toms_storage:ts.inventory_connector",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 8,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.inventory_connector_for_sun"
-    },
-    {
-      "offer": {
-        "itemKey": "toms_storage:ts.inventory_cable",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.inventory_cable_for_cog"
-    },
-    {
-      "offer": {
-        "itemKey": "toms_storage:ts.inventory_cable_connector",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.inventory_cable_connector_for_crown"
-    },
-    {
-      "offer": {
-        "itemKey": "toms_storage:ts.storage_terminal",
+        "itemKey": "refinedstorage:controller",
         "amount": 1,
         "priceModifier": 0
       },
@@ -289,21 +235,16 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.storage_terminal_for_sun"
+      "UTID": "minecraft:weaponsmith_controller_for_sun"
     },
-    {
+        {
       "offer": {
-        "itemKey": "toms_storage:ts.crafting_terminal",
+        "itemKey": "refinedstorage:4k_storage_block",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 2,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "toms_storage:ts.storage_terminal",
         "amount": 1,
         "priceModifier": 0
       },
@@ -312,11 +253,65 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.crafting_terminal_for_sun"
+      "UTID": "minecraft:weaponsmith_controller_for_sun"
     },
     {
       "offer": {
-        "itemKey": "toms_storage:ts.wireless_terminal",
+        "itemKey": "refinedstorage:cable",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_cable_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "refinedstorage:external_storage",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_external_storage_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "refinedstorage:crafting_grid",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_crafting_grid_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "refinedstorageaddons:wireless_crafting_grid",
         "amount": 1,
         "priceModifier": 0
       },
@@ -330,22 +325,17 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.wireless_terminal_for_cog"
+      "UTID": "minecraft:weaponsmith_wireless_crafting_grid_for_sun"
     },
     {
       "offer": {
-        "itemKey": "toms_storage:ts.adv_wireless_terminal",
+        "itemKey": "refinedstorage:wireless_transmitter",
         "amount": 1,
         "priceModifier": 0
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 48,
-        "priceModifier": 0
-      },
-      "additionalRequest": {
-        "itemKey": "toms_storage:ts.wireless_terminal",
-        "amount": 1,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -353,25 +343,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.adv_wireless_terminal_for_sun"
-    },
-    {
-      "offer": {
-        "itemKey": "toms_storage:ts.paint_kit",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "request": {
-        "itemKey": "numismatics:bevel",
-        "amount": 1,
-        "priceModifier": 0
-      },
-      "tradeExp": 1,
-      "maxUses": 64,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_ts.paint_kit_for_bevel"
+      "UTID": "minecraft:weaponsmith_wireless_transmitter_for_sun"
     },
     {
       "offer": {
@@ -606,6 +578,24 @@
       "demand": 0,
       "tradeLevel": 1,
       "UTID": "minecraft:weaponsmith_stack_upgrade_tier_5_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "sophisticatedstorage:stack_upgrade_omega_tier",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:ancient_coin",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_stack_upgrade_omega_tier_for_ancient_coin"
     },
     {
       "offer": {

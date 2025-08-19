@@ -1,5 +1,7 @@
+console.info("[SOCIETY] spawnBoomcat.js loaded");
+
 EntityEvents.death((e) => {
-  const { source, level, server, entity } = e;
+  const { level, server, entity } = e;
   if (Math.random() < 0.2 && entity.type === "minecraft:creeper") {
     let cat = level.createEntity("splendid_slimes:splendid_slime");
     cat.nbt.Breed = "splendid_slimes:boomcat";

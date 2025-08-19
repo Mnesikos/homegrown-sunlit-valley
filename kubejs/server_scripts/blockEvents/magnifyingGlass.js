@@ -15,13 +15,15 @@ const magnifyingGlassBlocks = [
   { id: "society:netherite_sprinkler", radius: 4 },
   { id: "society:mana_milker", radius: 10, includeY: true },
   { id: "society:golden_clock", radius: 2, includeY: true },
+  { id: "society:mana_clock", radius: 1, includeY: true },
+  { id: "society:snow_melter", radius: 10 },
 ];
 const magnifyingGlassBlockIds = magnifyingGlassBlocks.map((x) => x.id);
 
 BlockEvents.rightClicked(magnifyingGlassBlockIds, (e) => {
   const { item, hand, player, server, level, block } = e;
   if (hand == "MAIN_HAND" && item == "society:magnifying_glass") {
-    player.addItemCooldown(item, (DELAY * REPETITIONS) / 2);
+    global.addItemCooldown(player, item, (DELAY * REPETITIONS) / 2);
     player.swing();
     server.runCommandSilent(
       `playsound tanukidecor:block.lantern_clock.chime block @a ${player.x} ${player.y} ${player.z}`

@@ -110,6 +110,29 @@
     },
     {
       "offer": {
+        "itemKey": "moblassos:hostile_lasso",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "society:prismatic_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cleric_hearthstone_for_sun"
+    },
+    {
+      "offer": {
         "itemKey": "paraglider:goddess_statue",
         "amount": 1,
         "priceModifier": 0

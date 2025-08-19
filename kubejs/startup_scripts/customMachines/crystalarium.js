@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] crystalarium.js loaded");
+
 global.crystalariumCrystals = [];
 const crystals = [
   { item: "society:ocean_stone", time: 3 },

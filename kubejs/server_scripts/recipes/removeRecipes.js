@@ -4,6 +4,16 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "moblassos:hostile_lasso",
+    "moblassos:diamond_lasso",
+    "refinedstorage:cable",
+    "refinedstorage:external_storage",
+    "refinedstorageaddons:wireless_crafting_grid",
+    "refinedstorage:crafting_grid",
+    "refinedstorage:wireless_transmitter",
+    "refinedstorage:controller",
+    "refinedstorage:4k_storage_block",
+    "meadow:watering_can",
     "wildernature:leveling_contract",
     "wildernature:uncommon_contract",
     "wildernature:rare_contract",
@@ -143,8 +153,6 @@ ServerEvents.recipes((e) => {
     "unusualfishmod:depth_scythe",
     "unusualfishmod:ripsaw",
     "unusualfishmod:ancient_weapon_smithing_template",
-    "capsule:capsulemarker",
-    "capsule:capsule",
     "minecraft:milk_bucket",
     "farm_and_charm:feeding_trough",
     "farm_and_charm:pitchfork",
@@ -1067,6 +1075,9 @@ ServerEvents.recipes((e) => {
     e.remove({ id: item });
   });
   removeByOutput.forEach((item) => {
+    e.remove({ output: item });
+  });
+  global.removedItems.forEach((item) => {
     e.remove({ output: item });
   });
   removeByInput.forEach((item) => {

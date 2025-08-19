@@ -18,7 +18,8 @@
       "minecraft:stray",
       "minecraft:slime",
       "trials:bogged",
-      "minecraft:skeleton_horse"
+      "minecraft:skeleton_horse",
+      "species:limpet"
     ],
     "dimension": "minecraft:overworld",
     "minheight": 50,
@@ -96,6 +97,10 @@
     "result": "allow"
   },
   {
+    "mob": ["crittersandcompanions:dragonfly", "crittersandcompanions:jumping_spider"],
+    "result": "deny"
+  },
+  {
     "mod": "legendarycreatures",
     "dimension": "minecraft:overworld",
     "result": "deny"
@@ -121,6 +126,16 @@
   },
   {
     "mob": "autumnity:turkey",
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "wildernature:flamingo",
+    "mincount": 3,
+    "result": "deny"
+  },
+  {
+    "mob": "crittersandcompanions:leaf_insect",
     "mincount": 1,
     "result": "deny"
   },

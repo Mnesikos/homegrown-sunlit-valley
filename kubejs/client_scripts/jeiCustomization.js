@@ -59,7 +59,7 @@ JEIAddedEvents.registerCategories((e) => {
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
           .addSlot("input", 63, 2)
-          .addItemStack(Item.of(`${cost}x numismatics:crown`))
+          .addItemStack(Item.of(cost))
           .setBackground(guiHelper.getSlotDrawable(), -1, -1);
         builder
           .addSlot("output", 132, 2)
@@ -72,12 +72,8 @@ JEIAddedEvents.registerRecipes((e) => {
   const nether = ["crimson", "warped"];
   const juiceJEIRecipe = (juice, grape) => {
     e.custom("vinery:manual_juicing").add({
-      grape: `6x ${
-        nether.includes(juice) ? "nethervinery" : "vinery"
-      }:${grape}`,
-      juice: `2x ${
-        nether.includes(juice) ? "nethervinery" : "vinery"
-      }:${juice}_grapejuice`,
+      grape: `6x ${nether.includes(juice) ? "nethervinery" : "vinery"}:${grape}`,
+      juice: `2x ${nether.includes(juice) ? "nethervinery" : "vinery"}:${juice}_grapejuice`,
     });
   };
 
@@ -130,18 +126,23 @@ JEIAddedEvents.registerRecipes((e) => {
   const catalogRecipes = [
     {
       catalog: "society:tanuki_catalog",
-      cost: 2,
+      cost: "2x numismatics:crown",
       output: "society:tanuki_leaf",
     },
     {
       catalog: "society:modern_catalog",
-      cost: 6,
+      cost: "6x numismatics:crown",
       output: "society:architects_digest",
     },
     {
       catalog: "society:fantasy_catalog",
-      cost: 4,
+      cost: "4x numismatics:crown",
       output: "society:fantasy_dust",
+    },
+    {
+      catalog: "whimsy_deco:gatcha_machine",
+      cost: "1x numismatics:sun",
+      output: "society:plushie_capsule",
     },
   ];
   catalogRecipes.forEach((item) => {

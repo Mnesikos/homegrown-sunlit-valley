@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] preservesJar.js loaded");
 
 global.prizeMachineRewards = [
@@ -96,7 +97,8 @@ global.prizeMachineRewards = [
   {
     hint: "large and wooden",
     possibleOutputs: ["2x brewery:barrel_main"],
-  },  {
+  },
+  {
     hint: "good for reading",
     possibleOutputs: [
       "society:intro_to_algorithms",
@@ -194,7 +196,7 @@ global.prizeMachineRewards = [
     possibleOutputs: ["pamhc2trees:hazelnut_sapling"],
   },
   {
-    hint: "some tickets?",
+    hint: "tickety?",
     possibleOutputs: ["3x splendid_slimes:slime_ticket"],
   },
   {
@@ -214,14 +216,12 @@ global.prizeMachineRewards = [
       "species:petrified_egg",
       "species:springling_egg",
       "species:wraptor_egg",
-      "quark:egg_parrot_red_blue",
-      "quark:egg_parrot_blue",
-      "quark:egg_parrot_green",
-      "quark:egg_parrot_gray",
-      "quark:egg_parrot_yellow_blue",
-      "species:birt_egg",
       "minecraft:sniffer_egg",
     ],
+  },
+  {
+    hint: "filled with plushies",
+    possibleOutputs: ["whimsy_deco:gatcha_machine"],
   },
   {
     hint: "beachy",
@@ -326,6 +326,7 @@ global.prizeMachineRewards = [
       "society:infinity_worm",
       "society:cordycep",
       "society:pink_matter",
+      "society:enkephalin",
     ],
   },
   {
@@ -414,21 +415,11 @@ StartupEvents.registry("block", (event) => {
         click.server.runCommandSilent(
           `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
         );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:farming 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:husbandry 400`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:fishing 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:mining 100`
-        );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:adventuring 100`
-        );
+        global.giveExperience(server, player, "farming", 100);
+        global.giveExperience(server, player, "husbandry", 100);
+        global.giveExperience(server, player, "mining", 100);
+        global.giveExperience(server, player, "adventuring", 100);
+        global.giveExperience(server, player, "fishing", 100);
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }

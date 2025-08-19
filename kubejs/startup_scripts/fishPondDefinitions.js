@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] fishPondDefinitions.js loaded");
 
 const basicQuests = [
@@ -2158,11 +2159,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [
-          { item: "dew_drop_farmland_growth:hydrating_fertilizer", count: 64 },
-          { item: "dew_drop_farmland_growth:bountiful_fertilizer", count: 32 },
-          { item: "dew_drop_farmland_growth:weak_fertilizer", count: 16 },
-        ],
+        requestedItems: [{ item: "society:nether_jelly", count: 4 }],
       },
     ],
     additionalRewards: [
@@ -2307,7 +2304,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [{ item: "nethervinery:lava_fizz", count: 1 }],
+        requestedItems: [{ item: "society:nether_jelly", count: 2 }],
       },
     ],
     additionalRewards: [
@@ -2480,7 +2477,7 @@ global.fishPondDefinitions = [
         population: 5,
         requestedItems: [
           { item: "netherdepthsupgrade:lava_sponge", count: 1 },
-          { item: "minecraft:magma_cream", count: 32 },
+          { item: "society:nether_jelly", count: 4 },
           { item: "society:magma_geode", count: 16 },
         ],
       },
@@ -3418,65 +3415,39 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [
-          { item: "minecraft:amethyst_shard", count: 48 },
-          { item: "minecraft:amethyst_block", count: 16 },
-          { item: "meadow:amethyst_cheese_block", count: 1 },
-        ],
+        requestedItems: [{ item: "society:sunlit_pearl", count: 3 }],
       },
       {
         population: 5,
-        requestedItems: [
-          { item: "society:purple_sheet", count: 4 },
-          { item: "minecraft:budding_amethyst", count: 4 },
-          { item: "nightlights:octopus_purple", count: 2 },
-        ],
+        requestedItems: [{ item: "society:aged_improved_nether_fizz", count: 16 }],
       },
       {
         population: 7,
         requestedItems: [
-          { item: "pamhc2trees:plumitem", count: 32 },
-          { item: "society:sparkstone_block", count: 16 },
-          { item: "society:aged_jo_special_mixture", count: 8 },
+          { item: "society:aged_energy_drink", count: 32 },
+          { item: "society:petrified_mayonnaise", count: 4 },
+          { item: "society:pristine_amethyst_chunk", count: 8 },
         ],
       },
     ],
     additionalRewards: [
       {
         minPopulation: 4,
-        item: "minecraft:amethyst_shard",
+        item: "quark:myalite_crystal",
         count: 32,
         chance: 0.44,
       },
       {
         minPopulation: 4,
-        item: "minecraft:amethyst_cluster",
+        item: "minecraft:dragon_breath",
         count: 4,
-        chance: 0.27,
-      },
-      {
-        minPopulation: 6,
-        item: "society:amethyst_chunk",
-        count: 4,
-        chance: 0.28,
-      },
-      {
-        minPopulation: 8,
-        item: "society:production_science_pack",
-        count: 1,
-        chance: 0.1,
+        chance: 0.17,
       },
       {
         minPopulation: 10,
         item: "society:sparkstone",
         count: 8,
         chance: 0.25,
-      },
-      {
-        minPopulation: 10,
-        item: "chimes:amethyst_chimes",
-        count: 1,
-        chance: 0.1,
       },
     ],
   },
@@ -3577,6 +3548,66 @@ global.fishPondDefinitions = [
         item: "society:book_of_stars",
         count: 1,
         chance: 0.06,
+      },
+    ],
+  },
+  {
+    item: "crittersandcompanions:koi_fish",
+    quests: [
+      {
+        population: 3,
+        requestedItems: [
+          { item: "minecraft:amethyst_shard", count: 48 },
+          { item: "minecraft:amethyst_block", count: 16 },
+          { item: "meadow:amethyst_cheese_block", count: 1 },
+        ],
+      },
+      {
+        population: 5,
+        requestedItems: [
+          { item: "society:purple_sheet", count: 4 },
+          { item: "minecraft:budding_amethyst", count: 4 },
+          { item: "nightlights:octopus_purple", count: 2 },
+        ],
+      },
+      {
+        population: 7,
+        requestedItems: [
+          { item: "pamhc2trees:plumitem", count: 16 },
+          { item: "vinery:jo_special_mixture", count: 1 },
+        ],
+      },
+    ],
+    additionalRewards: [
+      {
+        minPopulation: 4,
+        item: "minecraft:amethyst_shard",
+        count: 8,
+        chance: 0.54,
+      },
+      {
+        minPopulation: 4,
+        item: "minecraft:amethyst_cluster",
+        count: 4,
+        chance: 0.2,
+      },
+      {
+        minPopulation: 6,
+        item: "society:amethyst_chunk",
+        count: 1,
+        chance: 0.28,
+      },
+      {
+        minPopulation: 8,
+        item: "society:production_science_pack",
+        count: 1,
+        chance: 0.1,
+      },
+      {
+        minPopulation: 10,
+        item: "chimes:amethyst_chimes",
+        count: 1,
+        chance: 0.01,
       },
     ],
   },

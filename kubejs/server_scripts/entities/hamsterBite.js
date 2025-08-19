@@ -27,6 +27,6 @@ ItemEvents.entityInteracted((e) => {
       );
     }
     item.count--;
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 });

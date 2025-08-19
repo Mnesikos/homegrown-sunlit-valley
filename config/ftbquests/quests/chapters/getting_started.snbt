@@ -367,17 +367,30 @@
 			]
 			icon: "bountiful:bountyboard"
 			id: "34FCF481CDFD3380"
-			rewards: [{
-				id: "6DB78FE4AB9F93FA"
-				item: {
-					Count: 1
-					id: "bountiful:decree"
-					tag: {
-						"bountiful:decree_data": "{}"
+			rewards: [
+				{
+					id: "6DB78FE4AB9F93FA"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{}"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0479CC3534ABA5D5"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{\"ids\":[\"spring\"]}"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "68532046A994CD92"
 				item: "bountiful:bountyboard"
@@ -459,11 +472,11 @@
 				""
 				"{ftbquests.chapter.getting_started.quest14.description2}"
 				""
-				"{ftbquests.chapter.getting_started.quest14.description3}"
+				"&6Right click&r on a block with a blueprint to place a preview. Right click again on the preview to build."
 				""
-				"{ftbquests.chapter.getting_started.quest14.description4}"
+				"&6Shift + Right Click&r in the air to mirror, flip or rotate the preview."
 				""
-				"{ftbquests.chapter.getting_started.quest14.description5}"
+				"&6Scroll Wheel&r can be used to position more precisely."
 			]
 			icon: "tanukidecor:antique_bed"
 			id: "1A4FD076999BF29F"
@@ -479,22 +492,19 @@
 				{
 					consume_items: true
 					count: 64L
-					id: "6D21C1D76292BD76"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "society:raw_logs"
-						}
-					}
-					title: "{ftbquests.chapter.getting_started.quest14.task_7863779555181510006.title}"
+					id: "32868E4039CBCDC9"
+					item: "minecraft:cobblestone"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 64L
-					id: "32868E4039CBCDC9"
-					item: "minecraft:cobblestone"
+					count: 10L
+					id: "11214822A37DCD70"
+					item: {
+						Count: 1
+						id: "meadow:fire_log"
+						tag: { }
+					}
 					type: "item"
 				}
 			]

@@ -24,7 +24,7 @@ BlockEvents.rightClicked((e) => {
 
 ItemEvents.entityInteracted("society:car_key", (e) => {
   const { item, target } = e;
-  if (target.type !== "automobility:automobile") {
+  if (target.type !== "automobility:automobile" || item.nbt) {
     return;
   }
   item.nbt = target.getNbt();

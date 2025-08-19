@@ -1,62 +1,5 @@
 console.info("[SOCIETY] skullCavernBroken.js loaded");
 
-const stoneRockTable = [
-  { block: "society:stone_boulder", weight: 163 },
-  { block: "minecraft:coal_ore", weight: 25 },
-  { block: "minecraft:copper_ore", weight: 20 },
-  { block: "minecraft:iron_ore", weight: 15 },
-  { block: "create:zinc_ore", weight: 13 },
-  { block: "minecraft:lapis_ore", weight: 2 },
-  { block: "society:geode_node", weight: 2, sturdy: true },
-  { block: "society:earth_crystal", weight: 2, sturdy: true },
-];
-
-const iceRockTable = [
-  { block: "society:ice_boulder", weight: 164 },
-  { block: "minecraft:iron_ore", weight: 25 },
-  { block: "create:zinc_ore", weight: 15 },
-  { block: "oreganized:lead_ore", weight: 10 },
-  { block: "minecraft:diamond_ore", weight: 4 },
-  { block: "society:earth_crystal", weight: 2, sturdy: true },
-  { block: "society:omni_geode_node", weight: 1, sturdy: true },
-  { block: "society:sparkstone_ore", weight: 2 },
-];
-
-const sandstoneRockTable = [
-  { block: "society:sandstone_boulder", weight: 163 },
-  { block: "minecraft:gold_ore", weight: 20 },
-  { block: "oreganized:lead_ore", weight: 10 },
-  { block: "minecraft:redstone_ore", weight: 6 },
-  { block: "minecraft:diamond_ore", weight: 4 },
-  { block: "society:sparkstone_ore", weight: 4 },
-  { block: "society:fire_quartz", weight: 2, sturdy: true },
-  { block: "society:magma_geode_node", weight: 2, sturdy: true },
-  { block: "society:omni_geode_node", weight: 2, sturdy: true },
-  { block: "oreganized:silver_ore", weight: 1 },
-  { block: "society:iridium_ore", weight: 1 },
-];
-
-const blackstoneRockTable = [
-  { block: "society:blackstone_boulder", weight: 148 },
-  { block: "minecraft:deepslate_gold_ore", weight: 20 },
-  { block: "oreganized:deepslate_lead_ore", weight: 10 },
-  { block: "minecraft:deepslate_redstone_ore", weight: 15 },
-  { block: "minecraft:deepslate_diamond_ore", weight: 4 },
-  { block: "society:deepslate_sparkstone_ore", weight: 10 },
-  { block: "society:fire_quartz", weight: 2, sturdy: true },
-  { block: "society:magma_geode_node", weight: 2, sturdy: true },
-  { block: "society:omni_geode_node", weight: 4, sturdy: true },
-  { block: "oreganized:deepslate_silver_ore", weight: 3 },
-  { block: "society:deepslate_iridium_ore", weight: 2 },
-];
-
-const endstoneRockTable = [
-  { block: "society:end_stone_boulder", weight: 194 },
-  { block: "society:deepslate_sparkstone_ore", weight: 14 },
-  { block: "society:omni_geode_node", weight: 4, sturdy: true },
-  { block: "society:deepslate_iridium_ore", weight: 3 },
-];
-
 const biomeAirTypeMap = new Map([
   ["society:cavern_top", 0],
   ["society:skull_caves", 0],
@@ -69,67 +12,6 @@ const biomeAirTypeMap = new Map([
   ["society:umbra_barrens", 4],
 ]);
 
-const rollReplaceTable = (table, hasRope) => {
-  let roll = 0;
-  const totalWeight = table.reduce(
-    (acc, current) => (hasRope && current.sturdy ? acc : acc + current.weight),
-    0
-  );
-  let currentWeight = 0;
-  if (totalWeight > 1) {
-    roll = rnd(0, totalWeight);
-    for (let index = 0; index < table.length; index++) {
-      currentWeight += table[index].weight;
-      if (currentWeight >= roll) {
-        return table[index].block;
-      }
-    }
-  }
-  return "minecraft:obsidian";
-};
-
-const handleRegen = (server, level, block) => {
-  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
-  let belowPos;
-  let belowBlock;
-  let belowBelowPos;
-  let hasRope;
-
-  let toggleBit =
-    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
-  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
-    server.scheduleInTicks(2400, () => {
-      handleRegen(server, level, block);
-    });
-  } else {
-    belowPos = block.getPos().below();
-    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
-    belowBelowPos = belowBlock.getPos().below();
-    hasRope =
-      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
-      "farmersdelight:rope";
-    let newBlock;
-    switch (Number(block.properties.get("type"))) {
-      case 4:
-        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
-        break;
-      case 3:
-        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
-        break;
-      case 2:
-        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
-        break;
-      case 1:
-        newBlock = rollReplaceTable(iceRockTable, hasRope);
-        break;
-      default:
-      case 0:
-        newBlock = rollReplaceTable(stoneRockTable, hasRope);
-        break;
-    }
-    block.set(newBlock);
-  }
-};
 const scheduleFunction = (level, pos, server, rockType) => {
   server.scheduleInTicks(5, () => {
     if (level.getBlock(pos) == "minecraft:air") {
@@ -140,7 +22,7 @@ const scheduleFunction = (level, pos, server, rockType) => {
         chunkbit: toggleBit.toString(),
       });
       server.scheduleInTicks(2400, () => {
-        handleRegen(server, level, level.getBlock(pos));
+        global.handleSkullCavernRegen(server, level, level.getBlock(pos));
       });
     }
   });
@@ -193,6 +75,48 @@ BlockEvents.broken(
     }
   }
 );
+// Skull Cavern unplacable tag
+BlockEvents.broken(
+  [
+    "atmospheric:arid_sand",
+    "atmospheric:red_arid_sand",
+    "minecraft:sand",
+    "minecraft:basalt",
+    "minecraft:end_stone",
+    "minecraft:magma_block",
+    "oreganized:glance",
+    "oreganized:glance_bricks",
+    "oreganized:polished_glance",
+    "minecraft:moss_block",
+    "vanillabackport:pale_moss_block",
+    "oreganized:spotted_glance",
+    "minecraft:snow_block",
+    "minecraft:blue_ice",
+    "minecraft:packed_ice",
+  ],
+  (e) => {
+    const { level, block, server } = e;
+    if (level.dimension === "society:skull_cavern") {
+      server.scheduleInTicks(0, () => {
+        server.scheduleInTicks(200, () => {
+          level.getBlock(block.pos).set(block.id);
+          level.spawnParticles(
+            "snowyspirit:glow_light",
+            true,
+            block.x,
+            block.y + 0.5,
+            block.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            5,
+            2
+          );
+        });
+      });
+    }
+  }
+);
 
 LevelEvents.beforeExplosion((e) => {
   const { x, y, z, size, level, server } = e;
@@ -205,8 +129,7 @@ LevelEvents.beforeExplosion((e) => {
         let dist = Math.hypot(x - xi, y - yi, z - zi);
         if (dist <= range) {
           let block = level.getBlock(xi, yi, zi);
-          if (block.hasTag("society:skull_cavern_bomb_denied")
-          ) {
+          if (block.hasTag("society:skull_cavern_bomb_denied")) {
             blocks.push({ xi: xi, yi: yi, zi: zi, dist: dist, id: block.id });
           }
         }
@@ -223,6 +146,7 @@ LevelEvents.beforeExplosion((e) => {
     });
   }
 });
+
 BlockEvents.broken("society:skull_cavern_teleporter", (e) => {
   const { level } = e;
   if (level.dimension === "society:skull_cavern") e.cancel();

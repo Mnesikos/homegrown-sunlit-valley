@@ -11,7 +11,7 @@
       "item": "farm_and_charm:yeast"
     }
   ],
-  "material": "WOOD",
+  "material": "NETHERITE",
   "result": {
     "item": "society:beer_attunecore"
   }

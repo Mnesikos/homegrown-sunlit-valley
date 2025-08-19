@@ -5,6 +5,7 @@ const handleBrokenMachine = (block) => {
     return obj.id === block.id;
   })[0];
   if (!machine) return;
+  let working = block.properties.get("working").toLowerCase() == "true";
   if (machine.upgrade && block.properties.get("upgraded").toLowerCase() == "true") {
     block.popItem(machine.upgrade);
   }
@@ -14,15 +15,14 @@ const handleBrokenMachine = (block) => {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
     });
-  } else if (
-    block.properties.get("working").toLowerCase() == "true" &&
-    !["society:charging_rod", "society:tapper"].includes(block.id)
-  ) {
+  } else if (!["society:charging_rod", "society:tapper"].includes(block.id)) {
+    let stage = Number(block.properties.get("stage"));
     if (
       block.id == "society:ancient_cask" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      block.popItem(Item.of(`4x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`4x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     } else if (
       block.id == "society:deluxe_worm_farm" &&
       block.properties.get("upgraded").toLowerCase() == "true"
@@ -32,9 +32,11 @@ const handleBrokenMachine = (block) => {
       block.id == "society:preserves_jar" &&
       block.properties.get("upgraded").toLowerCase() == "true"
     ) {
-      block.popItem(Item.of(`3x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`3x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     } else {
-      block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
+      if (working) block.popItem(Item.of(`${machine.maxInput}x ${currentRecipe.input}`));
+      else block.popItem(Item.of(`${stage}x ${currentRecipe.input}`));
     }
   }
 };
@@ -52,7 +54,9 @@ BlockEvents.broken("society:fish_pond", (e) => {
         "society:fish_pond",
         `{type:${block.properties.get("type")},population:${block.properties.get(
           "population"
-        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get("quest")},quest_id:${block.properties.get("quest_id")}}`
+        )},max_population:${block.properties.get("max_population")},quest:${block.properties.get(
+          "quest"
+        )},quest_id:${block.properties.get("quest_id")}}`
       )
     );
   } else {
@@ -81,15 +85,22 @@ BlockEvents.broken(
   }
 );
 BlockEvents.broken("society:coin_leaderboard", (e) => {
-  const { x, y, z } = e.block;
-  Utils.server
-    .getLevel("minecraft:overworld")
-    .getEntities()
-    .forEach((entity) => {
-      entity.getTags().forEach((tag) => {
-        if (tag === `leaderboard-${x}-${y}-${z}`) {
-          entity.kill();
-        }
-      });
-    });
+  global.clearOldTextDisplay(e.block, "leaderboard");
+});
+
+BlockEvents.broken("society:shipping_bin_monitor", (e) => {
+  global.clearOldTextDisplay(e.block, "shipping_bin_monitor");
+});
+
+BlockEvents.broken("society:fish_pond_basket", (e) => {
+  const { block } = e;
+  if (block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of("minecraft:bucket"));
+  }
+});
+BlockEvents.broken("society:auto_grabber", (e) => {
+  const { block } = e;
+  if (block.properties.get("upgraded").toLowerCase() == "true") {
+    block.popItem(Item.of("society:magic_shears"));
+  }
 });

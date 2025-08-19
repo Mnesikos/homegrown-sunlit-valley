@@ -6,9 +6,7 @@ const resetSkills = (tree, server, player, amount) => {
   );
   server.runCommandSilent(`puffish_skills category erase ${player.username} society:${tree}`);
   server.runCommandSilent(`puffish_skills points set ${player.username} society:${tree} 0`);
-  server.runCommandSilent(
-    `puffish_skills experience set ${player.username} society:${tree} ${amount}`
-  );
+  global.giveExperience(server, player, tree, amount);
   player.tell(Text.gray(`Reset all your ${tree} skills!`));
 };
 

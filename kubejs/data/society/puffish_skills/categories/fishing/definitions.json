@@ -283,7 +283,7 @@
   },
   "mitosis": {
     "title": "Mitosis",
-    "description": "Doubles a fish being retrieved from a Fish Ponds.\n§cYou can no longer insert more than the first fish.",
+    "description": "Doubles a fish being retrieved from a Fish Ponds.",
     "frame": {
       "type": "advancement",
       "data": {

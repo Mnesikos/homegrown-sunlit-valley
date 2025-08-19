@@ -11,17 +11,23 @@
   },
   "traits": ["moody"],
   "emit_effect_particle": "rehooked:ender_hook_particle",
+    "positive_emit_effects": [
+    {
+      "effect": "oreganized:stunning",
+      "duration": 120,
+      "amplifier": 1
+    }
+  ],
   "negative_emit_effects": [
     {
       "effect": "minecraft:mining_fatigue",
       "duration": 120,
       "amplifier": 2
-    }
-  ],
-  "innate_effects": [
+    },
     {
-      "effect": "vinery:climbing_effect",
-      "amplifier": 0
+      "effect": "oreganized:stunning",
+      "duration": 120,
+      "amplifier": 2
     }
   ]
 }

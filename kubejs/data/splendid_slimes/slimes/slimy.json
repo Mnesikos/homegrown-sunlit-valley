@@ -7,11 +7,10 @@
   "diet": "diet.splendid_slimes.slimy",
   "foods": [
     {
-      "tag": "minecraft:flowers"
+      "tag": "forge:berries"
     }
   ],
   "favorite_food": {
-    "item": "minecraft:blue_orchid"
-  },
-  "traits": ["picky"]
+    "item": "farm_and_charm:strawberry"
+  }
 }

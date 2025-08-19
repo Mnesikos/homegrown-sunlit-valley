@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] seedMaker.js loaded");
 
 global.seedMakerRecipes = [
@@ -189,6 +190,14 @@ global.seedMakerRecipes = [
   {
     input: "mysticaloaktree:wise_oak",
     output: ["1x botania:overgrowth_seed"],
+  },
+  {
+    input: "atmospheric:currant",
+    output: ["6x atmospheric:currant_seedling"],
+  },
+  {
+    input: "atmospheric:aloe_leaves",
+    output: ["6x atmospheric:aloe_kernels"],
   },
 ];
 

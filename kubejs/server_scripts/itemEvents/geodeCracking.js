@@ -55,5 +55,5 @@ ItemEvents.rightClicked("society:geode_buster", e => {
       `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
     );
   }
-  player.addItemCooldown("society:geode_buster", 2);
+  global.addItemCooldown(player, "society:geode_buster", 2);
 });

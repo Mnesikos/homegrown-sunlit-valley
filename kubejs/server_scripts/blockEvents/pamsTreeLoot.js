@@ -33,9 +33,7 @@ BlockEvents.rightClicked(
       return;
     if (player.stages.has("tree_whisperer") && Number(block.properties.get("age")) == 7) {
       const weirdFruit = weirdFruits.get(String(block.id));
-      server.runCommandSilent(
-        `puffish_skills experience add ${player.username} society:farming 40`
-      );
+      global.giveExperience(server, player, "farming", 40);
       if (weirdFruit) {
         block.popItem(`2x ${weirdFruit}`);
       } else {
@@ -47,9 +45,7 @@ BlockEvents.rightClicked(
       player.stages.has("banana_karenina") &&
       Number(block.properties.get("age")) == 7
     ) {
-      server.runCommandSilent(
-        `puffish_skills experience add ${player.username} society:farming 40`
-      );
+      global.giveExperience(server, player, "farming", 40);
       block.popItem(
         `${player.stages.has("tree_whisperer") ? 5 : 3}x pamhc2trees:${fruitName.substring(
           3,

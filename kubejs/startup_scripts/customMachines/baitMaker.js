@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] baitMaker.js loaded");
 
 const baitFish = [
@@ -74,6 +75,7 @@ const baitFish = [
   "unusualfishmod:raw_bark_angelfish",
   "unusualfishmod:raw_amber_goby",
   "unusualfishmod:raw_eyelash",
+  "crittersandcompanions:koi_fish",
 ];
 global.baitMakerRecipes = [];
 baitFish.forEach((fish) => {
@@ -96,7 +98,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 3))
+    .property(integerProperty.create("stage", 0, 1))
     .property(integerProperty.create("type", 0, global.baitMakerRecipes.length))
     .box(2, 0, 2, 14, 19, 14)
     .defaultCutout()
@@ -114,7 +116,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .placementState((state) => {
@@ -122,7 +124,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.baitMakerRecipes.length), 0);
     })
     .rightClick((click) => {

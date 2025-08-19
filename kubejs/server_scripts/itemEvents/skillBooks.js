@@ -5,6 +5,7 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:banana_karenina", skillId: "76yv8nz8x47d80oe" },
   { id: "society:brine_and_punishment", skillId: "p5dklukq9ggwgfa4" },
   { id: "society:bluegill_meridian", skillId: "9ax835fydbyuvjkx" },
+  { id: "society:bullfish_jobs", skillId: "pirgo25ykt4bsbdo" },
   { id: "society:canadian_and_famous", skillId: "x52wa6t39ywp17zu" },
   { id: "society:first_aid_guide", skillId: "12wl5sjx8vy7q0xl" },
   { id: "society:hitting_hard_and_soft", skillId: "t07mtr3euiz40jb0" },
@@ -16,6 +17,7 @@ console.info("[SOCIETY] skillBooks.js loaded");
   { id: "society:frogs_bounty_bazaar", skillId: "3fgcne477ni1rjxx" },
   { id: "society:phenomenology_of_treasure", skillId: "z68vn1cf2lucfbos" },
   { id: "society:slime_contain_protect", skillId: "uj8tnf4jgm0xyp13" },
+  { id: "society:wuthering_logs", skillId: "y1xltbgkupmcoe0i" },
 ].forEach((book) => {
   ItemEvents.rightClicked(book.id, (e) => {
     const { player, item, server } = e;
@@ -29,10 +31,10 @@ console.info("[SOCIETY] skillBooks.js loaded");
         `playsound minecraft:block.enchantment_table.use block @a ${player.x} ${player.y} ${player.z}`
       );
       item.count--;
-      player.addItemCooldown(item, 20);
+      global.addItemCooldown(player, item, 20);
     } else {
       player.tell(Text.red("You've already learned this skill!"));
-      player.addItemCooldown(item, 20);
+      global.addItemCooldown(player, item, 20);
     }
   });
 });

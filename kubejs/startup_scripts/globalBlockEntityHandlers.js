@@ -1,82 +1,5 @@
 /* eslint-disable no-unused-vars */
 // Priority: 1000
-const calculateQualityValue = (number, quality) => {
-  let value;
-  if (quality) {
-    if (quality == 1.0) value = Math.round(number * 1.25);
-    if (quality == 2.0) value = Math.round(number * 1.5);
-    if (quality == 3.0) value = Math.round(number * 2);
-  } else {
-    value = number;
-  }
-  return value;
-};
-
-global.processShippingBinInventory = (
-  inventory,
-  inventorySlots,
-  attributes,
-  stages,
-  returnRemoved
-) => {
-  let calculatedValue = 0;
-  let itemValue = 0;
-  let removedItems = [];
-  let slotItem;
-  let isSellable;
-  for (let i = 0; i < inventorySlots; i++) {
-    slotItem = inventory.getStackInSlot(i).item;
-    isSellable =
-      global.trades.has(String(slotItem.id)) ||
-      ["splendid_slimes:plort", "splendid_slimes:slime_heart"].includes(slotItem.id);
-    if (isSellable) {
-      let trade = global.trades.get(String(slotItem.id));
-      let quality;
-      let slotNbt;
-      if (inventory.getStackInSlot(i).hasNBT()) {
-        slotNbt = inventory.getStackInSlot(i).nbt;
-      }
-      if (slotNbt && ((slotNbt.slime && slotNbt.slime.id) || (slotNbt.plort && slotNbt.plort.id))) {
-        if (slotNbt.slime) trade = global.trades.get(`${slotItem.id}/${slotNbt.slime.id}`);
-        if (slotNbt.plort) trade = global.trades.get(`${slotItem.id}/${slotNbt.plort.id}`);
-      }
-
-      if (slotNbt && slotNbt.quality_food) {
-        quality = slotNbt.quality_food.quality;
-      }
-      itemValue = calculateQualityValue(trade.value, quality);
-      if (stages.has("bluegill_meridian") && slotItem.id == "aquaculture:bluegill") {
-        itemValue = calculateQualityValue(666, quality);
-      }
-      if (
-        stages.has("phenomenology_of_treasure") &&
-        (Item.of(slotItem).hasTag("society:artifacts") ||
-          Item.of(slotItem).hasTag("society:relics"))
-      ) {
-        itemValue *= 3;
-      }
-      if (
-        stages.has("brine_and_punishment") &&
-        Item.of(slotItem).hasTag("society:brine_and_punishment")
-      ) {
-        itemValue *= 2;
-      }
-      calculatedValue +=
-        itemValue *
-        inventory.getStackInSlot(i).count *
-        (Number(
-          attributes.filter((obj) => {
-            return obj.Name === trade.multiplier;
-          })[0]?.Base
-        ) || 1);
-    }
-    if (isSellable) {
-      if (returnRemoved) removedItems.push(i);
-      else inventory.setStackInSlot(i, "minecraft:air");
-    }
-  }
-  return { calculatedValue: calculatedValue, removedItems: removedItems };
-};
 
 const artMachineTickRate = 20;
 
@@ -88,6 +11,10 @@ const booleanProperty = Java.loadClass(
 
 const integerProperty = Java.loadClass(
   "net.minecraft.world.level.block.state.properties.IntegerProperty"
+);
+
+const directionProperty = Java.loadClass(
+  "net.minecraft.world.level.block.state.properties.DirectionProperty"
 );
 
 function rnd(min, max) {
@@ -191,9 +118,7 @@ global.artisanHarvest = (
   if (block.properties.get("mature").toLowerCase() === "true") {
     let harvestOutput;
     if (!artisanHopper) {
-      server.runCommandSilent(
-        `puffish_skills experience add ${player.username} society:farming ${stageCount * 20}`
-      );
+      global.giveExperience(server, player, "farming", stageCount * 20);
       server.runCommandSilent(
         `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
       );
@@ -351,8 +276,24 @@ const getOpposite = (facing, pos) => {
   }
 };
 
+const getFacing = (facing, pos) => {
+  switch (facing) {
+    case "north":
+      return pos.offset(0, 0, -1);
+    case "south":
+      return pos.offset(0, 0, 1);
+    case "west":
+      return pos.offset(-1, 0, 0);
+    case "east":
+      return pos.offset(1, 0, 0);
+  }
+};
+
 global.getTapperLog = (level, block) =>
   level.getBlock(getOpposite(block.properties.get("facing"), block.getPos()));
+
+global.getFermentingBarrel = (level, block) =>
+  level.getBlock(getFacing(block.getProperties().get("facing"), block.getPos()));
 
 global.handleTapperRandomTick = (tickEvent, returnFluidData) => {
   const { block, level, server } = tickEvent;
@@ -604,6 +545,218 @@ global.useInventoryItems = (inventory, id, count) => {
   }
   return 0;
 };
+
+/** All fluid handlers expect the following initialData with a capacity of 10000
+ *
+ *  blockInfo.initialData({ Fluid: 0, FluidType: "" });
+ */
+
+global.getFluid = (blockInfo) => {
+  const foundFluid = blockInfo.persistentData.getString("FluidType");
+  if (!foundFluid) return Fluid.of("minecraft:water", 0);
+  return Fluid.of(foundFluid, blockInfo.persistentData.getInt("Fluid") || 0);
+};
+
+global.onFill = (blockInfo, fluid, sim) => {
+  const fluidData = blockInfo.persistentData.getInt("Fluid");
+  const filled = Math.min(10000 - fluidData, fluid.getAmount());
+  if (!sim) {
+    const storedFluidId = blockInfo.persistentData.getString("FluidType");
+    const incomingFluidId = fluid.getId();
+    if (storedFluidId === "" || fluidData === 0) {
+      blockInfo.persistentData.putString("FluidType", incomingFluidId);
+      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+    } else if (storedFluidId === incomingFluidId) {
+      blockInfo.persistentData.putInt("Fluid", fluidData + filled);
+    } else {
+      return (filled = 0);
+    }
+  }
+  return filled;
+};
+
+global.onDrain = (blockInfo, fluid, sim) => {
+  const fluidData = blockInfo.persistentData.getInt("Fluid");
+  const drained = Math.min(fluidData, fluid.getAmount());
+  if (!sim) blockInfo.persistentData.putInt("Fluid", fluidData - drained);
+  return drained;
+};
+
+// Text display utils
+global.clearOldTextDisplay = (block, id) => {
+  const { x, y, z } = block;
+  block
+    .getLevel()
+    .getServer()
+    .getEntities()
+    .forEach((entity) => {
+      entity.getTags().forEach((tag) => {
+        if (tag === `${id}-${x}-${y}-${z}`) {
+          entity.kill();
+        }
+      });
+    });
+};
+
+global.textDisplayRotationFromFacing = (facing) => {
+  switch (facing) {
+    case "north":
+      return 180;
+    case "east":
+      return 270;
+    case "south":
+      return 360;
+    default:
+    case "west":
+      return 90;
+  }
+};
+
+global.spawnTextDisplay = (block, y, id, text) => {
+  let entity;
+  const { x, z } = block;
+  entity = block.createEntity("minecraft:text_display");
+  let newNbt = entity.getNbt();
+  newNbt.text = `{"text":"${text}"}`;
+  newNbt.background = 0;
+  newNbt.Rotation = [
+    NBT.f(global.textDisplayRotationFromFacing(block.properties.get("facing"))),
+    NBT.f(0),
+  ];
+  entity.setNbt(newNbt);
+  entity.setX(x + 0.5);
+  entity.setY(y);
+  entity.setZ(z + 0.5);
+  entity.addTag(`${id}-${x}-${block.y}-${z}`);
+  entity.spawn();
+};
+
+global.giveExperience = (server, player, category, xp) => {
+  if (!player.isFake()) {
+    server.runCommandSilent(
+      `puffish_skills experience add ${player.username} society:${category} ${xp}`
+    );
+  }
+};
+
+const stoneRockTable = [
+  { block: "society:stone_boulder", weight: 163 },
+  { block: "minecraft:coal_ore", weight: 25 },
+  { block: "minecraft:copper_ore", weight: 20 },
+  { block: "minecraft:iron_ore", weight: 15 },
+  { block: "create:zinc_ore", weight: 13 },
+  { block: "minecraft:lapis_ore", weight: 2 },
+  { block: "society:geode_node", weight: 2, sturdy: true },
+  { block: "society:earth_crystal", weight: 2, sturdy: true },
+];
+
+const iceRockTable = [
+  { block: "society:ice_boulder", weight: 164 },
+  { block: "minecraft:iron_ore", weight: 25 },
+  { block: "create:zinc_ore", weight: 15 },
+  { block: "oreganized:lead_ore", weight: 10 },
+  { block: "minecraft:diamond_ore", weight: 4 },
+  { block: "society:earth_crystal", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 1, sturdy: true },
+  { block: "society:sparkstone_ore", weight: 2 },
+];
+
+const sandstoneRockTable = [
+  { block: "society:sandstone_boulder", weight: 163 },
+  { block: "minecraft:gold_ore", weight: 20 },
+  { block: "oreganized:lead_ore", weight: 10 },
+  { block: "minecraft:redstone_ore", weight: 6 },
+  { block: "minecraft:diamond_ore", weight: 4 },
+  { block: "society:sparkstone_ore", weight: 4 },
+  { block: "society:fire_quartz", weight: 2, sturdy: true },
+  { block: "society:magma_geode_node", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 2, sturdy: true },
+  { block: "oreganized:silver_ore", weight: 1 },
+  { block: "society:iridium_ore", weight: 1 },
+];
+
+const blackstoneRockTable = [
+  { block: "society:blackstone_boulder", weight: 148 },
+  { block: "minecraft:deepslate_gold_ore", weight: 20 },
+  { block: "oreganized:deepslate_lead_ore", weight: 10 },
+  { block: "minecraft:deepslate_redstone_ore", weight: 15 },
+  { block: "minecraft:deepslate_diamond_ore", weight: 4 },
+  { block: "society:deepslate_sparkstone_ore", weight: 10 },
+  { block: "society:fire_quartz", weight: 2, sturdy: true },
+  { block: "society:magma_geode_node", weight: 2, sturdy: true },
+  { block: "society:omni_geode_node", weight: 4, sturdy: true },
+  { block: "oreganized:deepslate_silver_ore", weight: 3 },
+  { block: "society:deepslate_iridium_ore", weight: 2 },
+];
+
+const endstoneRockTable = [
+  { block: "society:end_stone_boulder", weight: 194 },
+  { block: "society:deepslate_sparkstone_ore", weight: 14 },
+  { block: "society:omni_geode_node", weight: 4, sturdy: true },
+  { block: "society:deepslate_iridium_ore", weight: 3 },
+];
+
+const rollReplaceTable = (table, hasRope) => {
+  let roll = 0;
+  const totalWeight = table.reduce(
+    (acc, current) => (hasRope && current.sturdy ? acc : acc + current.weight),
+    0
+  );
+  let currentWeight = 0;
+  if (totalWeight > 1) {
+    roll = rnd(0, totalWeight);
+    for (let index = 0; index < table.length; index++) {
+      currentWeight += table[index].weight;
+      if (currentWeight >= roll) {
+        return table[index].block;
+      }
+    }
+  }
+  return "minecraft:obsidian";
+};
+
+global.handleSkullCavernRegen = (server, level, block) => {
+  if (!level.persistentData || !level.persistentData.chunkParityMap) return;
+  let belowPos;
+  let belowBlock;
+  let belowBelowPos;
+  let hasRope;
+
+  let toggleBit =
+    level.persistentData.chunkParityMap[level.getChunkAt(block.getPos()).pos.toString()].toggleBit;
+  if (String(toggleBit) == block.getProperties().get("chunkbit")) {
+    server.scheduleInTicks(2400, () => {
+      global.handleSkullCavernRegen(server, level, block);
+    });
+  } else {
+    belowPos = block.getPos().below();
+    belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
+    belowBelowPos = belowBlock.getPos().below();
+    hasRope =
+      level.getBlock(belowBelowPos.x, belowBelowPos.y, belowBelowPos.z).id ===
+      "farmersdelight:rope";
+    let newBlock;
+    switch (Number(block.properties.get("type"))) {
+      case 4:
+        newBlock = rollReplaceTable(endstoneRockTable, hasRope);
+        break;
+      case 3:
+        newBlock = rollReplaceTable(blackstoneRockTable, hasRope);
+        break;
+      case 2:
+        newBlock = rollReplaceTable(sandstoneRockTable, hasRope);
+        break;
+      case 1:
+        newBlock = rollReplaceTable(iceRockTable, hasRope);
+        break;
+      default:
+      case 0:
+        newBlock = rollReplaceTable(stoneRockTable, hasRope);
+        break;
+    }
+    block.set(newBlock);
+  }
+};
 const getCardinalMultipartJsonBasic = (name) => {
   const path = `society:block/${name}`;
   return [
@@ -625,6 +778,29 @@ const getCardinalMultipartJsonBasic = (name) => {
     },
   ];
 };
+
+const getCardinalMultipartJsonBasicUpgradable = (name, upgraded) => {
+  const path = `society:block/${name}`;
+  return [
+    {
+      when: { facing: "north", upgraded: upgraded },
+      apply: { model: path, y: 0, uvlock: false },
+    },
+    {
+      when: { facing: "east", upgraded: upgraded },
+      apply: { model: path, y: 90, uvlock: false },
+    },
+    {
+      when: { facing: "south", upgraded: upgraded },
+      apply: { model: path, y: 180, uvlock: false },
+    },
+    {
+      when: { facing: "west", upgraded: upgraded },
+      apply: { model: path, y: -90, uvlock: false },
+    },
+  ];
+};
+
 const getCardinalMultipartJson = (name, disableExclamation) => {
   const path = `society:block/${name}/${name}`;
   let exclamationJson = [

@@ -46,17 +46,12 @@ StartupEvents.registry("block", (event) => {
           let value = 0;
           let playerAttributes;
           let binPlayer;
-          let binPlayerUUID;
-          let binDebt = 0;
-          let debtPaid;
-          let totalDebt;
           let removedSlots = [];
           let calculationResults;
           level.getServer().players.forEach((p) => {
             if (p.getUuid().toString() === block.getEntityData().data.owner) {
               playerAttributes = p.nbt.Attributes;
               binPlayer = p;
-              binPlayerUUID = binPlayer.getUuid().toString();
             }
           });
           if (playerAttributes) {
@@ -69,112 +64,15 @@ StartupEvents.registry("block", (event) => {
             );
             value = Math.round(calculationResults.calculatedValue);
             removedSlots = calculationResults.removedItems;
-            if (value > 0) {
-              if (binPlayer.server.persistentData.debts) {
-                binDebt = binPlayer.server.persistentData.debts.filter((debt) => {
-                  return debt.uuid === binPlayerUUID;
-                });
-              }
-              if (binDebt.length > 0 && binDebt[0].amount > 0) {
-                totalDebt = binDebt[0].amount;
-                if (value >= totalDebt) {
-                  value = value - totalDebt;
-                  debtPaid = totalDebt;
-                  binPlayer.server.runCommandSilent(
-                    `immersivemessages sendcustom ${
-                      binPlayer.username
-                    } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 §aYou paid off your §f● §a${global.formatPrice(
-                      debtPaid
-                    )} debt!`
-                  );
-
-                  global.setDebt(binPlayer.server, binPlayerUUID, 0);
-                } else {
-                  debtPaid = value;
-                  value = 0;
-                  binPlayer.server.runCommandSilent(
-                    `immersivemessages sendcustom ${
-                      binPlayer.username
-                    } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● §6${global.formatPrice(
-                      debtPaid
-                    )} §7of your debt paid off...`
-                  );
-                  global.setDebt(binPlayer.server, binPlayerUUID, totalDebt - debtPaid);
-                }
-              }
-              value = Math.round(value);
-              let outputs = calculateCoinsFromValue(value, [], basicCoinMap);
-              if (!outputs) outputs = [];
-
-              if (debug) {
-                console.log(`slots: ${slots}`);
-                console.log(`countNonEmpty: ${inventory.countNonEmpty()}`);
-                console.log(`RemovedSlots: ${removedSlots.length}`);
-                console.log(`calculateSlotsNeeded: ${calculateSlotsNeeded(outputs)}`);
-              }
-              if (
-                slots -
-                  inventory.countNonEmpty() +
-                  removedSlots.length -
-                  calculateSlotsNeeded(outputs) >=
-                0
-              ) {
-                binPlayer.server.runCommandSilent(
-                  `playsound etcetera:item.handbell.ring block @a ${binPlayer.x} ${binPlayer.y} ${binPlayer.z} 0.3`
-                );
-                binPlayer.server.runCommandSilent(
-                  `immersivemessages sendcustom ${
-                    binPlayer.username
-                  } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● §6${global.formatPrice(value)} §7worth of goods sold`
-                );
-                for (let i = 0; i < removedSlots.length; i++) {
-                  inventory.setStackInSlot(removedSlots[i], "minecraft:air");
-                }
-                outputs.forEach((output) => {
-                  let { coin, count } = output;
-                  for (let index = 0; index <= count; index += 64) {
-                    let difference = count - index;
-                    for (let i = 0; i < slots; i++) {
-                      if (inventory.getStackInSlot(i).item.id === "minecraft:air") {
-                        inventory.setStackInSlot(
-                          i,
-                          Item.of(`${difference > 64 ? 64 : difference}x ${coin}`)
-                        );
-                        break;
-                      }
-                    }
-                  }
-                });
-                if (debtPaid > 0) {
-                  for (let j = 0; j < inventory.slots; j++) {
-                    if (inventory.getStackInSlot(j) === Item.of("minecraft:air")) {
-                      inventory.insertItem(
-                        j,
-                        Item.of(
-                          "candlelight:note_paper_written",
-                          `{author:"Sunlit Valley Hospital",text:[" Sunlit Valley Hospital
-
-${binPlayer.username}, your profits were used to pay off your debt!
-
-:coin: ${global.formatPrice(debtPaid)} paid out of your :coin: ${global.formatPrice(
-                            totalDebt
-                          )} debt."],title:"Debt Payment Receipt"}`
-                        ),
-                        false
-                      );
-                      break;
-                    }
-                  }
-                }
-              } else {
-                binPlayer.server.runCommandSilent(
-                  `playsound stardew_fishing:fish_escape block @a ${binPlayer.x} ${binPlayer.y} ${binPlayer.z} 0.3`
-                );
-                binPlayer.server.runCommandSilent(
-                  `immersivemessages sendcustom ${binPlayer.username} {anchor:7,background:1,color:"#FF5555",size:1,y:24,slideleft:1,slideoutleft:1,typewriter:1} 8 Your Basic Shipping Bin was too full to sell...`
-                );
-              }
-            }
+            global.processValueOutput(
+              value,
+              slots,
+              removedSlots,
+              binPlayer,
+              binPlayer.server,
+              block,
+              inventory
+            );
           }
         }
       }),

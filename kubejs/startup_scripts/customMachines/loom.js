@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] loom.js loaded");
 
 global.loomRecipes = [
@@ -5,6 +6,7 @@ global.loomRecipes = [
   { input: "etcetera:cotton_flower", output: ["society:canvas"] },
   { input: "society:fine_wool", output: ["society:merino_wool"] },
   { input: "botania:mana_string", output: ["botania:manaweave_cloth"] },
+  { input: "crittersandcompanions:silk", output: ["society:merino_wool"] },
 ];
 
 StartupEvents.registry("block", (event) => {

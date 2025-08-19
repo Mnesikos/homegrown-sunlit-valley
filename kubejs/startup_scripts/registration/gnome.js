@@ -22,9 +22,8 @@ const getGnomeState = (name, type) => {
   ];
   return cardianal;
 };
-
-StartupEvents.registry("block", (event) => {
-  event
+StartupEvents.registry("block", (e) => {
+  e
     .create("society:gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
     .defaultCutout()
@@ -66,10 +65,11 @@ StartupEvents.registry("block", (event) => {
       .concat(getGnomeState("twig", 2))
       .concat(getGnomeState("swing", 3)),
   };
-  event
+  e
     .create("society:lantern_gnome", "cardinal")
     .property(integerProperty.create("type", 0, 3))
-    .defaultCutout().item((item) => {
+    .defaultCutout()
+    .item((item) => {
       item.tooltip(Text.gray("Right click a Gnome with a lantern to create"));
       item.modelJson({
         parent: "society:block/gnome/lantern",

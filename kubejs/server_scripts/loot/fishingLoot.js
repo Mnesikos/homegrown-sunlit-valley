@@ -1,6 +1,20 @@
 console.info("[SOCIETY] fishingLoot.js loaded");
 
 LootJS.modifiers((e) => {
+  // Has any stage check is to prevent jellies from being fished up from Crab Traps. Yeah it's weird.
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("starting_items")
+    .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
+    .pool((p) => {
+      p.randomChance(0.05).addLoot("society:ocean_jelly");
+    });
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("starting_items")
+    .anyBiome("#minecraft:is_river")
+    .pool((p) => {
+      p.randomChance(0.05).addLoot("society:river_jelly");
+    });
+
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
     .pool((p) => {

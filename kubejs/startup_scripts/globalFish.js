@@ -83,6 +83,7 @@ global.summerFresh = [
   { fish: "aquaculture:leech", weight: 9, night: true },
   { fish: "aquaculture:piranha", weight: 9, night: true, requiresRain: true },
   { fish: "aquaculture:boulti", weight: 5, night: true },
+  { fish: "crittersandcompanions:koi_fish", weight: 3, requiresClear: true },
   { fish: "aquaculture:arapaima", weight: 3, requiresRain: true },
   { fish: "unusualfishmod:raw_circus_fish", weight: 2 },
 ];
@@ -258,9 +259,7 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
     `playsound stardew_fishing:dwop block @a ${block.x} ${block.y} ${block.z}`
   );
   if (!basket) {
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:fishing ${roeCount * 4}`
-    );
+    global.giveExperience(server, player, "fishing", roeCount * 4);
   }
   block.set(block.id, {
     facing: facing,
@@ -277,6 +276,47 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
   harvestOutputs.forEach((item) => {
     block.popItemFromFace(item, facing);
   });
+};
+
+global.handleFishExtraction = (block, player, server, item) => {
+  const { facing, valid, mature, upgraded, quest, quest_id, type, population, max_population } =
+    global.getPondProperties(block);
+  let result;
+  let resultCount = player.stages.has("mitosis") ? 2 : 1;
+  let quality = 0;
+  if (player.stages.has("bullfish_jobs")) {
+    quality = Math.floor((Number(max_population) - 3) / 2);
+  }
+  if (player.stages.has("hot_hands")) {
+    server.runCommandSilent(
+      `playsound minecraft:block.lava.extinguish block @a ${block.x} ${block.y} ${block.z}`
+    );
+    let smokedFishId = item.split(":")[1];
+    if (smokedFishId.includes("raw_")) {
+      if (smokedFishId === "raw_snowflake") smokedFishId = "frosty_fin";
+      else smokedFishId = smokedFishId.substring(4, smokedFishId.length);
+    }
+    result = Item.of(
+      `${resultCount}x ${rnd25() ? "minecraft:coal" : `society:smoked_${smokedFishId}`}`,
+      quality > 0 ? `{quality_food:{quality:${quality}}}` : null
+    );
+  } else {
+    result = Item.of(`${resultCount}x ${item}`);
+  }
+  if (result) {
+    block.set(block.id, {
+      facing: facing,
+      valid: valid,
+      mature: mature,
+      upgraded: upgraded,
+      quest: quest,
+      quest_id: quest_id,
+      population: decreaseStage(population),
+      max_population: max_population,
+      type: type,
+    });
+  }
+  return result;
 };
 
 global.validatePond = (block, level, lavaFish) => {
@@ -370,7 +410,11 @@ global.validatePond = (block, level, lavaFish) => {
       waterAmount += 1;
     } else if (!lavaFish && (scannedId === "minecraft:water" || scannedId === "minecraft:ice")) {
       waterAmount += 1;
-    } else if (scannedBlockProperties && scannedBlockProperties.get("waterlogged") == "true") {
+    } else if (
+      !lavaFish &&
+      scannedBlockProperties &&
+      scannedBlockProperties.get("waterlogged") == "true"
+    ) {
       waterAmount += 1;
     }
   }

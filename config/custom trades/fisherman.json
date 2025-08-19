@@ -91,6 +91,11 @@
         "amount": 8,
         "priceModifier": 0
       },
+      "additionalRequest": {
+        "itemKey": "society:river_jelly",
+        "amount": 1,
+        "priceModifier": 0
+      },
       "tradeExp": 1,
       "maxUses": 64,
       "priceMultiplier": 0.0,
@@ -105,8 +110,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:sun",
-        "amount": 10,
+        "itemKey": "numismatics:neptunium_coin",
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -114,7 +119,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_fish_smoker_for_sun"
+      "UTID": "minecraft:fisherman_fish_smoker_for_neptunium_coin"
     },
     {
       "offer": {
@@ -270,7 +275,7 @@
       },
       "request": {
         "itemKey": "numismatics:crown",
-        "amount": 2,
+        "amount": 4,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -288,7 +293,7 @@
       },
       "request": {
         "itemKey": "numismatics:crown",
-        "amount": 3,
+        "amount": 6,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -306,7 +311,7 @@
       },
       "request": {
         "itemKey": "numismatics:crown",
-        "amount": 3,
+        "amount": 6,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -323,8 +328,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 6,
+        "itemKey": "numismatics:sun",
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,
@@ -332,7 +337,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_treasure_bobber_for_crown"
+      "UTID": "minecraft:fisherman_treasure_bobber_for_sun"
     },
     {
       "offer": {
@@ -341,8 +346,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:crown",
-        "amount": 5,
+        "itemKey": "numismatics:sun",
+        "amount": 1,
         "priceModifier": 0
       },
       "additionalRequest": {
@@ -355,7 +360,7 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:fisherman_quality_bobber_for_crown"
+      "UTID": "minecraft:fisherman_quality_bobber_for_sun"
     },
     {
       "offer": {
@@ -383,7 +388,7 @@
       },
       "request": {
         "itemKey": "numismatics:sun",
-        "amount": 2,
+        "amount": 1,
         "priceModifier": 0
       },
       "tradeExp": 1,

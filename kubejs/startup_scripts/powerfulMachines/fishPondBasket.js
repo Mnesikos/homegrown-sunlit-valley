@@ -8,7 +8,31 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   let machineOutputs;
   let newProperties = fishPond.getProperties();
   const fishRecipe = global.getArtisanRecipe(global.fishPondDefinitions, fishPond);
+  if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
   if (
+    level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
+    Number(newProperties.get("population")) > 0
+  ) {
+    let fishie = global.handleFishExtraction(fishPond, player, server, fishRecipe.item);
+    if (
+      global.inventoryBelowHasRoom(level, block, fishie) &&
+      global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
+    ) {
+      global.insertBelow(level, block, fishie);
+      level.spawnParticles(
+        "species:ascending_dust",
+        true,
+        x,
+        y + 1,
+        z,
+        0.2 * rnd(1, 1.5),
+        0.2 * rnd(1, 1.5),
+        0.2 * rnd(1, 1.5),
+        3,
+        0.01
+      );
+    }
+  } else if (
     newProperties.get("mature").toLowerCase() === "true" &&
     global.inventoryBelowHasRoom(level, block, global.getRoe(fishRecipe.item)) &&
     global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
@@ -37,7 +61,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
 
 StartupEvents.registry("block", (event) => {
   event
-    .create("society:fish_pond_basket", "cardinal")
+    .create("society:fish_pond_basket")
     .tagBlock("minecraft:mineable/axe")
     .tagBlock("minecraft:needs_stone_tool")
     .waterlogged()
@@ -45,6 +69,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Harvests outputs of Fish Ponds into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
+      item.tooltip(Text.gold("Upgrade with a Bucket to extract fish."));
       item.tooltip(Text.green(`Area: 3x3x3`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
@@ -53,6 +78,13 @@ StartupEvents.registry("block", (event) => {
     })
     .soundType("copper")
     .model("society:block/fish_pond_basket")
+    .property(booleanProperty.create("upgraded"))
+    .defaultState((state) => {
+      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+    })
+    .placementState((state) => {
+      state.set(booleanProperty.create("upgraded"), false).set(BlockProperties.WATERLOGGED, false);
+    })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -93,5 +125,16 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    });
+    }).blockstateJson = {
+    multipart: [
+      {
+        when: { upgraded: "false" },
+        apply: { model: "society:block/fish_pond_basket" },
+      },
+      {
+        when: { upgraded: "true" },
+        apply: { model: "society:block/fish_pond_basket_upgraded" },
+      },
+    ],
+  };
 });

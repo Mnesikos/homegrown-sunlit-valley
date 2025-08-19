@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] chargingRod.js loaded");
 
 StartupEvents.registry("block", (event) => {
@@ -69,9 +70,7 @@ StartupEvents.registry("block", (event) => {
         server.runCommandSilent(
           `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
         );
-        server.runCommandSilent(
-          `puffish_skills experience add ${player.username} society:farming 15`
-        );
+        global.giveExperience(server, player, "farming", 40);
         block.set(block.id, {
           working: false,
           mature: false,

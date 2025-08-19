@@ -14,62 +14,28 @@ const updateLeaderboardMap = (server) => {
     .slice(0, 10);
 };
 
-const clearOldLeaderboard = (block) => {
-  const { x, y, z } = block;
-  Utils.server
-    .getLevel("minecraft:overworld")
-    .getEntities()
-    .forEach((entity) => {
-      entity.getTags().forEach((tag) => {
-        if (tag === `leaderboard-${x}-${y}-${z}`) {
-          entity.kill();
-        }
-      });
-    });
-};
-
 global.updateLeaderboard = (block, server) => {
-  const { x, y, z } = block;
-  let entity;
-  let calcY = y + 3;
+  let calcY = block.y + 3;
   let leaderboardMap = updateLeaderboardMap(server);
   if (!leaderboardMap) return;
-  clearOldLeaderboard(block);
+  global.clearOldTextDisplay(block, "leaderboard");
 
   // Display leaderboard name
-  entity = block.createEntity("minecraft:text_display");
-  let newNbt = entity.getNbt();
-  newNbt.text = '{"text":"● Leaderboard"}';
-  newNbt.billboard = "vertical";
-  newNbt.background = 0;
-  entity.setNbt(newNbt);
-  entity.setX(x + 0.5);
-  entity.setY(calcY);
-  entity.setZ(z + 0.5);
-  entity.addTag(`leaderboard-${x}-${y}-${z}`);
-  entity.spawn();
-
+  global.spawnTextDisplay(block, calcY, "leaderboard", "● Leaderboard");
   // Display leaderboard accounts
   leaderboardMap.forEach((playerName) => {
     const balanceStr = playerName.toString().split(`,`);
     if (balanceStr[0].length <= 1) return;
     calcY -= 0.3;
-    entity = block.createEntity("minecraft:text_display");
-    let newNbt = entity.getNbt();
-    newNbt.text = `{"text":"§6${balanceStr[0]} §7- §6${balanceStr[1].replace(
-      /\B(?=(\d{3})+(?!\d))/g,
-      ","
-    )} §f●"}`;
-    newNbt.billboard = "vertical";
-    newNbt.background = 0;
-    entity.setNbt(newNbt);
-    entity.setX(x + 0.5);
-    entity.setY(calcY);
-    entity.setZ(z + 0.5);
-    entity.addTag(`leaderboard-${x}-${y}-${z}`);
-    entity.spawn();
+    global.spawnTextDisplay(
+      block,
+      calcY,
+      "leaderboard",
+      `§6${balanceStr[0]} §7- §f● §6${balanceStr[1].replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
+    );
   });
 };
+
 StartupEvents.registry("block", (e) => {
   e.create("society:coin_leaderboard", "cardinal")
     .box(2, 0, 2, 14, 2, 14)

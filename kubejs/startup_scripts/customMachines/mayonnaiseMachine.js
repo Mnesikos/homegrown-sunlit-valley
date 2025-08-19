@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] mayonnaiseMachine.js loaded");
 
 global.mayonnaiseMachineRecipes = [
@@ -83,7 +84,7 @@ StartupEvents.registry("block", (event) => {
     .property(booleanProperty.create("working"))
     .property(booleanProperty.create("mature"))
     .property(booleanProperty.create("upgraded"))
-    .property(integerProperty.create("stage", 0, 3))
+    .property(integerProperty.create("stage", 0, 1))
     .property(integerProperty.create("quality", 0, 3))
     .soundType("copper")
     .property(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length))
@@ -104,7 +105,7 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
@@ -113,12 +114,46 @@ StartupEvents.registry("block", (event) => {
         .set(booleanProperty.create("working"), false)
         .set(booleanProperty.create("mature"), false)
         .set(booleanProperty.create("upgraded"), false)
-        .set(integerProperty.create("stage", 0, 3), 0)
+        .set(integerProperty.create("stage", 0, 1), 0)
         .set(integerProperty.create("type", 0, global.mayonnaiseMachineRecipes.length), 0)
         .set(integerProperty.create("quality", 0, 3), 0);
     })
     .rightClick((click) => {
-      const { player } = click;
+      const { player, item, block, hand, level } = click;
+      const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
+      if (hand == "OFF_HAND") return;
+      if (hand == "MAIN_HAND") {
+        if (!upgraded && item == "society:enkephalin") {
+          if (!player.isCreative()) item.count--;
+          level.spawnParticles(
+            "farmersdelight:star",
+            true,
+            block.x,
+            block.y + 1,
+            block.z,
+            0.2 * rnd(1, 2),
+            0.2 * rnd(1, 2),
+            0.2 * rnd(1, 2),
+            3,
+            0.01
+          );
+          block.set(block.id, {
+            facing: block.properties.get("facing"),
+            type: block.properties.get("type"),
+            working: block.properties.get("working"),
+            mature: block.properties.get("mature"),
+            upgraded: true,
+            stage: block.properties.get("stage"),
+            quality: block.properties.get("quality"),
+          });
+        }
+      }
+      if (upgraded && block.properties.get("mature") === "true" && rnd75()) {
+        block.popItemFromFace(
+          "society:supreme_mayonnaise",
+          block.properties.get("facing").toLowerCase()
+        );
+      }
       global.handleBERightClick(
         "minecraft:block.sniffer_egg.plop",
         click,

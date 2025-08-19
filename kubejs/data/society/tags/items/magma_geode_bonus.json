@@ -3,7 +3,7 @@
     "minecraft:raw_iron",
     "minecraft:raw_copper",
     "minecraft:raw_gold",
-    "minecraft:raw_zinc",
+    "create:raw_zinc",
     "minecraft:clay_ball",
     "minecraft:coal"
   ]

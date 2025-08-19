@@ -19,7 +19,7 @@ const handleSpecialItem = (data, chance, hungry, minHearts, mult, item, hasQuali
       if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
         console.error("Sparkstone not consumed when it should have been!");
       server.runCommandSilent(
-        `playsound stardew_fishing:dwop block @a ${player.x} ${player.y} ${player.z}`
+        `playsound stardew_fishing:dwop block @a ${target.x} ${target.y} ${target.z}`
       );
       level.spawnParticles(
         "farmersdelight:star",
@@ -50,6 +50,7 @@ StartupEvents.registry("block", (event) => {
         Text.gray("Harvests Milk and Special items from Farm Animals into inventory below.")
       );
       item.tooltip(Text.gray("Uses the skills of player that places it."));
+      item.tooltip(Text.gold("Upgrade with Magic Shears to collect drops."));
       item.tooltip(Text.green(`Area: 11x11x11`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({
@@ -57,6 +58,13 @@ StartupEvents.registry("block", (event) => {
       });
     })
     .model("society:block/auto_grabber")
+    .property(booleanProperty.create("upgraded"))
+    .defaultState((state) => {
+      state.set(booleanProperty.create("upgraded"), false);
+    })
+    .placementState((state) => {
+      state.set(booleanProperty.create("upgraded"), false);
+    })
     .blockEntity((blockInfo) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
@@ -79,8 +87,6 @@ StartupEvents.registry("block", (event) => {
             const day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
             const hungry = day - data.getInt("ageLastFed") > 1;
             if (hungry) return;
-            if (!global.getAnimalIsNotCramped(animal))
-              data.affection = data.getInt("affection") - 50;
             if (global.checkEntityTag(animal, "society:milkable_animal")) {
               let milkItem = global.getMilk(animal, data, attachedPlayer, day);
               if (milkItem !== -1) {
@@ -88,6 +94,8 @@ StartupEvents.registry("block", (event) => {
                 if (insertedMilk) {
                   if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
                     console.error("Sparkstone not consumed when it should have been!");
+                  if (!global.getAnimalIsNotCramped(animal))
+                    data.affection = data.getInt("affection") - 50;
                   level.server.runCommandSilent(
                     `playsound minecraft:entity.cow.milk block @a ${animal.x} ${animal.y} ${animal.z}`
                   );
@@ -116,6 +124,32 @@ StartupEvents.registry("block", (event) => {
               inventory,
               handleSpecialItem
             );
+            if (
+              level.getBlock(block.pos).getProperties().get("upgraded") === "false" ||
+              global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1
+            )
+              return;
+            let droppedLoot = global.getMagicShearsOutput(
+              level,
+              animal,
+              attachedPlayer,
+              level.server
+            );
+            if (droppedLoot !== -1) {
+              level.server.runCommandSilent(
+                `playsound minecraft:entity.sheep.shear block @a ${block.x} ${block.y} ${block.z}`
+              );
+              let insertedMagicDrops = false;
+              for (let i = 0; i < droppedLoot.length; i++) {
+                insertedMagicDrops = global.insertBelow(level, block, droppedLoot[i]) == 1;
+              }
+              if (insertedMagicDrops) {
+                if (global.useInventoryItems(inventory, "society:sparkstone", 1) != 1)
+                  console.error("Sparkstone not consumed when it should have been!");
+                if (!global.getAnimalIsNotCramped(animal))
+                  data.affection = data.getInt("affection") - 50;
+              }
+            }
           });
         }
       }),
@@ -132,5 +166,9 @@ StartupEvents.registry("block", (event) => {
           .getSlots((blockEntity) => blockEntity.inventory.slots)
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
-    });
+    }).blockstateJson = {
+    multipart: []
+      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber", "false"))
+      .concat(getCardinalMultipartJsonBasicUpgradable("auto_grabber_upgraded", "true")),
+  };
 });

@@ -17,7 +17,7 @@
     "minecraft:creeper"
   ],
   "favorite_entity": "minecraft:enderman",
-  "traits": ["feral", "defiant", "floating"],
+  "traits": ["feral", "defiant", "floating", "putrid"],
   "innate_effects": [
     {
       "effect": "minecraft:strength",
@@ -44,7 +44,7 @@
   "negative_emit_effects": [
     {
       "effect": "species:bloodlust",
-      "duration": 60,
+      "duration": 600,
       "amplifier": 2
     }
   ]

@@ -219,6 +219,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       let machineOutput;
       let type;
       let newProperties = artisanMachine.getProperties();
+      let recycleSparkstone;
       if (
         newProperties.get("mature").toLowerCase() === "true" &&
         global.inventoryBelowHasRoom(
@@ -262,6 +263,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
         }
 
         if (machineOutput) {
+          recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
           if (
             artisanMachine.id === "society:dehydrator" &&
             upgraded &&
@@ -284,7 +286,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
           if (player.stages.has("slouching_towards_artistry")) {
             sparkstoneSaveChance = Number(currentStage) * 0.05;
           }
-          if (Math.random() > sparkstoneSaveChance) {
+          if (!recycleSparkstone && Math.random() > sparkstoneSaveChance) {
             global.useInventoryItems(inventory, "society:sparkstone", 1);
           } else {
             level.spawnParticles(
@@ -320,6 +322,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
 
       const abovePos = block.getPos().above();
       const aboveBlock = level.getBlock(abovePos.x, abovePos.y, abovePos.z);
+
       if (
         recipes &&
         newProperties.get("working").toLowerCase() === "false" &&
@@ -346,7 +349,22 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
               server
             );
             if (outputCount > 0) {
-              global.useInventoryItems(inventory, "society:sparkstone", 1);
+              recycleSparkstone = global.checkSparkstoneRecyclers(level, block);
+              if (!recycleSparkstone) global.useInventoryItems(inventory, "society:sparkstone", 1);
+              else {
+                level.spawnParticles(
+                  "species:youth_potion",
+                  true,
+                  x,
+                  y + 0.5,
+                  z,
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  0.1 * rnd(1, 4),
+                  5,
+                  0.01
+                );
+              }
               level.runCommandSilent(`playsound create:fwoomp block @a ${x} ${y} ${z} 0.8`);
               aboveBlock.inventory.extractItem(i, outputCount, false);
               break;

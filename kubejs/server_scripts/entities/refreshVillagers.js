@@ -7,15 +7,21 @@ ItemEvents.entityInteracted((e) => {
   let updateThis = false;
   const nbt = target.nbt.toString();
   if (nbt.includes("leatherworker") && !nbt.includes("stylin_purple_hat")) updateThis = true;
-  // if (nbt.includes("weaponsmith") && !nbt.includes("omega")) updateThis = true;
-  if (nbt.includes("botanist") && nbt.includes("cornucopia")) updateThis = true;
-  if (nbt.includes("minecraft:farmer") && !nbt.includes("bakery")) updateThis = true;
+  if (nbt.includes("weaponsmith") && !nbt.includes("refined")) updateThis = true;
+  if (nbt.includes("shepherd") && !nbt.includes("lasso")) updateThis = true;
+  if (nbt.includes("botanist") && !nbt.includes("endless_fortune")) updateThis = true;
+  if (nbt.includes("bountiful_fertilizer")) updateThis = true;
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
   if (nbt.includes("toolsmith") && nbt.includes("reinforced_core")) updateThis = true;
-  if (nbt.includes("cleric") && !nbt.includes("core_destruction")) updateThis = true;
-  if (nbt.includes("cartographer") && nbt.includes("banking_guide")) updateThis = true;
-  if (nbt.includes("fletcher") && !nbt.includes("magic_rope")) updateThis = true;
-  if (nbt.includes("fisher") && !nbt.includes("guide_book")) updateThis = true;
+  if (nbt.includes("cleric") && !nbt.includes("lasso")) updateThis = true;
+  if (
+    nbt.includes("cartographer") &&
+    !nbt.includes("fletcher") &&
+    !nbt.includes("shipping_bin_monitor")
+  )
+    updateThis = true;
+  if (nbt.includes("fletcher") && !nbt.includes("enkephalin")) updateThis = true;
+  if (nbt.includes("fisher") && !nbt.includes("river_jelly")) updateThis = true;
 
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");

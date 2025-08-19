@@ -6,7 +6,7 @@
       "tag": "forge:nuggets/zinc"
     },
     "S": {
-      "tag": "minecraft:wool"
+      "item": "society:canvas"
     }
   },
   "pattern": [

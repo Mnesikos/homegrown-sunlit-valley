@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] preservesJar.js loaded");
+
 const roeFish = [
   { item: "aquaculture:atlantic_herring" },
   { item: "minecraft:pufferfish" },
@@ -73,6 +75,7 @@ const roeFish = [
   { item: "unusualfishmod:raw_bark_angelfish" },
   { item: "unusualfishmod:raw_amber_goby" },
   { item: "unusualfishmod:raw_eyelash" },
+  { item: "crittersandcompanions:koi_fish" },
 ];
 
 global.preservesJarRecipes = [

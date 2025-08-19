@@ -482,7 +482,7 @@
 				item: "botania:mana_diamond"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -499,7 +499,7 @@
 				item: "botania:mana_pearl"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: -1.0d
 		}
 		{
@@ -615,7 +615,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest18.title}"
-			x: 20.0d
+			x: 19.5d
 			y: 0.0d
 		}
 		{
@@ -720,7 +720,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.botania.quest22.title}"
-			x: 14.5d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
@@ -759,7 +759,6 @@
 			dependencies: [
 				"221306DB217B8F93"
 				"5E5E6E09E6C6DF02"
-				"1D1F8EA9D17BCF81"
 			]
 			description: ["{ftbquests.chapter.botania.quest24.description1}"]
 			icon: "botania:orange_mystical_flower"
@@ -776,9 +775,9 @@
 		{
 			dependencies: ["33B78DFDDC041570"]
 			description: [
-				"Infusing &6Animal Feed&r with mana by dropping it into a &6Mana Pool&r makes it tastier too farm animals!"
+				"Infusing &6Animal Feed&r with mana by dropping it into a &6Mana Pool&r makes it tastier to farm animals!"
 				""
-				"It takes a decent amount of mana to make but it will save you tons of time when raising new animals."
+				"It takes a decent amount of mana to make, but it will save you tons of time when raising new animals."
 			]
 			id: "631D3F5020956DD7"
 			rewards: [{
@@ -833,6 +832,87 @@
 			}]
 			title: "Magical Animals"
 			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"Sparkstone is not an easy resource to aquire. &bMana&r can be used to harness the remnants from Sparkstone consuming machines."
+				""
+				"&6Sparkstone Recyclers&r can be attached to any side of the machine. The recycling chance stacks additively for each of them attached."
+				""
+				"Mana Spreaders must be used to give them &bMana&r."
+			]
+			id: "52AB7E364A737557"
+			rewards: [{
+				id: "33ADB279EAF02CC2"
+				item: "botania:mana_pylon"
+				type: "item"
+			}]
+			tasks: [{
+				id: "485786DF564CFDD5"
+				item: {
+					Count: 1
+					id: "society:sparkstone_recycler"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13A0704DCABC95E9"]
+			description: [
+				"The &6Flugel Tiara&r is one of the few forms of creative flight in Sunlit Valley."
+				""
+				"It consumes &bMana&r from rings or tablets in your inventory, and a dash can be performed by double tapping the directional keys."
+				""
+				"&oMight need some extra pocket change to afford making this...&r"
+			]
+			id: "61F2F0C46147E002"
+			rewards: [{
+				id: "3095C6FED15E64BB"
+				item: "botania:quartz_blaze"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F3CC185B8FF80D3"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 21.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46F86152B5B36A3B"]
+			description: [
+				"The &6Mana Clock&r is a machine that heavily uses &bMana&r from a Mana Spreader to altar time around it."
+				""
+				"It is used in conjunction with &6Aging Casks&r and &6Ancient Casks&r to reduce the overall amount of time they take to process."
+			]
+			id: "768A5A2162C079D0"
+			rewards: [{
+				id: "596991571993533D"
+				item: "furniture:spruce_grandfather_clock"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DCA9053294233FF"
+				item: {
+					Count: 1
+					id: "society:mana_clock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.0d
 			y: -1.5d
 		}
 	]

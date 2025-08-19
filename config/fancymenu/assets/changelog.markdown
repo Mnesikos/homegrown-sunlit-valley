@@ -1,156 +1,112 @@
 ^^^
-## Library of Animals
-### v3.1.2
+## Pretty Polish
+### v3.2.0
 ^^^
 --- 
-- Reworked Husbandry mechanics to be on the day system rather than a clunky set time system. This should make husbandry animals more intuitive and less frustrating
-- Added 15 skill books found from certain actions or bought from Wandering Trader
-- Added Berry Bushes, a unique shrub that drops different berries when broken depending on the season. This replaces wild onions, carrots, and barley in worldgen.
-- Added new building shop sets: Alpine by krewella and Prismarine by AndieCherries
-- Added Artisan Cheese Press and Pink Matter upgrade
-- Added Mini Artisan Hopper
-- Added Slime Feeder and Slime Candy
-- Added Milking, Special items, Pet Gifts, and loot boxes to JEI
-- Added new animals: Deer, Raccoon, Minisheep, Squirrel, Bison, Flamingo, Penguin as Husbandry animals
-- Added husbandry mechanics to animals: Frog, Wraptor, Cochineal, Squid, and Glow Squid
-- Added pets: Nether Wisp, Hedgehog, Red Wolf, Owl, Dog, Axolotl
-- Added new animals: Tri-Bull, Galliraptors - Botania exclusive husbandry animals
-- Added Slimes locations and risks to Farmer's Almanac
-- Added Bubonic Billionic Beach Hat to Leatherworker
-- Added values to Cheese Pieces and Growth Totem
-- Added Scavenged Food Bag
-- Added Fruit/Trees to Farmer's Almanac (Thanks Devon!)
-- Added Fish Finder - Book with all fish locations obtained through loot or trading (Thanks Copixel!)
-- Added Magic Rope/Magic Tunnel (Staircase equivalent to Stardew) to Exotic Trader 
-- Added Meowmageddon 
-- Added Candied Animal feed and Mana Animal Feed (Thanks Devon!)
-- Added new models for Mayonnaise Machine, Aging Cask and Ancient Cask
-- Added new Quality Washer texture
-- Added forages: Snuffle forages Frozen Hair, Mooshrooms forage for mushroom seats
-- Added Chicken Tortilla Soup
-- Added "Eye" Smithing Template as Prize Machine reward
-- Added new Spawn Crate textures for some Spawn eggs
-- Added new Gnome poses: Swing and Lantern (made by clicking with a lantern)
-- Added Inception upgrade to Leatherworker and removed original recipe
-- Added lanterns to charm slot 
-- Added chance for a Dragon Egg to Minty Plort ripping
-- Added recycling recipes for Carmine Husk, Legendary Ink, Ancient Ink, Red Hook, and Blaze Hook
-- Abandoned Farm bundle now only requires 1 completed community center room
-- Sniffer, Golden, and Petrified eggs now have quality
-- Changed Prismatic Bounty skill due to it not working: Neptune's Bounties drops a Prismatic Shard when mined without Silk Touch.
-- Cheese Wheels now always take 3/13 days to age/ancient age (Some were 2, some were 4)
-- Feeding a Husbandry Animal heals it
-- Fly Fisher/School Fisher now work with Nether fishing
-- Increased animal affection gain by 2x
-- Increased Panda forage multiplier by 2
-- Increased chance of Skull Cavern boulders
-- Increased Cucumber noodle recipe output (1 -> 6)
-- Increased Fletcher stock amount by double
-- Increased Sparkstone output from Ancient Goddess Statute trade
-- Improved recipe category sort order so loot/block drops are always last
-- Looms take wool to craft instead of string
-- Ender Slimes now have a reduced teleportation distance when happy
-- Juicy Slimes no longer have Photosynthesizing trait and now give mining fatigue instead of drunk
-- Minty Slimes now give Bloodlust effect instead of drunk
-- Fish Ponds no longer burn in lava
-- Updated Flamarang texture (Thanks Tilles)
-- Updated Hazelnut texture to use Wildernature's
-- Reduced cost of Preserves Jars to not use Pine Tar
-- Reduced chance of Reaping Scythe triggers 20% -> 10%
-- Reduced the cost of Flint and Steel (8 -> 6 Iridium Coins)
-- Reduced Hay Bale spawn chance in villages by 50%
-- Reduced pumpkin amount in Pumpkin Fields by 33%
-- Reduced Multiplayer pigracing payouts
-- Reduced volume of ambient sounds
-- Reworked chickens, ducks, etc to have egg frequency scale with affection rather than not producing any eggs at 2 hearts 
-- Reworked Coin Leaderboard to use Text Displays instead of Armor Stands (no more losing items!)
-- Reworked infernal mobs to be Champions. This change also makes them far less punishing, limiting the type of mobs that can be champions and the amount of modifiers that can be applied
-- Reworked Wooly Cows to spawn in Warped Forests and give milk less often
-- Reworked Construction Wand progression and added cores to cleric
-- Renamed old Cheese Press to Auto-Cheese Press
-- Removed crafting recipe for Milk Bottles to Large Milk
-- Removed Hearthstone cross-dimension durability debuff
-- Removed ability to cage Chickens
-- Removed advancement for bakery items that no longer exist
-- Removed the ability to sleep if other online players are in the Skull Cavern 
-- Removed Powdered Snow from Frozen Caves in the Skull Cavern
-- Removed Minecraft Cake from Bakery banner requirements
-- Re-wrote Extractinator to fix bugs (Such as it not working somethimes)
-- Rivers are no longer infertile and instead use the global season
-- Fixed brewfest gear having old recipes
-- Fixed Jellyfish not having quality
-- Fixed Iridium tools and armor being repaired with diamond
-- Fixed crops growing underground in any season
-- Fixed newly domesticated husbandry animals not being able to be fed/milked/pet/etc
-- Fixed Crystals of Regret giving an inconsistent amount of points depending on the skill tree
-- Fixed Trophy of Perfection working with fake players
-- Fixed Blaze Banker being unbreakable
-- Fixed Wool armor upgrade costing too much
-- Fixed Juicy Slime heart not being craftable
-- Fixed experience showing as 0 when fainting from Skull Cavern
-- Fixed ores broken with a hammer/shatterer not regenerating
-- Fixed Skull Cavern not regenerating in certain cases
-- Fixed Skull Cavern marking things as the next day at 6pm instead of 6am
-- Fixed crops growing in Skull Cavern
-- Fixed Frosted Tip upgrade not dropping (Thanks MCSuchter!)
-- Fixed Toolbelt having its own slot
-- Fixed Impact Hammer not being craftable
-- Fixed Pale Oak not having the correct tags
-- Fixed Ancient Goddess Statue console spam
-- Fixed Pine/Dark Cherry Beam recipe conflicts
-- Fixed Electrum Swords/Knife only having looting II
-- Fixed Warped Tower's Slime Spawners being on cooldown
-- Fixed Farmers Bread recipe conflict
-- Fixed certain blocks such as Shipping Bins not working when bound player not in the same Dimension
-- Fixed Searing Cod having incompletable quest
-- Fixed cases of Dragonfruit being obtainable
-- Fixed Warped and Crimson mushrooms not being bonemealable
-- Fixed Cucumber having incorrect value 
-- Fixed Artisan Hoppers not being compatible with Infinity Worm upgrade
-- Fixed Efficiency skill nodes giving 2 less mining speed than intended
-
-## 3.1.1
-- Added tooltips to Oreganized ore telling location
-- Abandoned Farm bundle now always visible
-- Updated Fusion to fix crash on macosx
-- Fixed Hedgehogs not being pettable
-- Fixed Crash related to Champions in the Skull Cavern
-- Fixed Miracle Potion not working
-- Fixed milkable animals taking 1 day longer to recover than they are intended
-- Fixed Bait maker having incorrect working texture
-- Fixed new Building shop buildings not having previews in Quest Book
-- Fixed Fish Finder quest not matching nbt
-- Fixed certain milks being uncraftable into smaller/larger variants
-- Fixed Brown Shroom population 7 quest not working
-- Fixed Removed block appearing in verdant vibes structure
-
-## 3.1.2
-- Added Create quest for renewable Lead and Silver
-- Added a head slot
-- Updated wording of Introduction to Algorithms to make it clear it only works when mining
-- Cleaned up tips
-- Mobs in the Lush Caverns and Skull Caves can no longer become champions
-- Reworked Multiplayer pigracing: 1st will get the entire pool capped by double their bet, 2nd gets original bet refund, 3rd gets half their bet refunded.
-- Reduced champion loot amounts
-- Mining Monthly no longer drops from Geode/Magma Geode nodes in Skull Cavern
-- Slime Tickets no longer give Spawn Eggs
-- Possibly fixed Skeleton Horse spawning
-- Fixed Miracle Potion not working (For real)
-- Fixed Introduction to Algorithms not working when far away from ore
-- Fixed Glitched VHS being unobtainable
-- Fixed Extractinator being weird with deployers
-- Fixed Relic Troves not dropping Relic Experience
-- Fixed Stone tools not using proper tag (thanks Attune)
-- Fixed Pet gifts not working correctly
-- Fixed Fly Fisher not working with Turtles
-- Fixed Bluegilll Meridian not working
-- Fixed Login dodging Skull Cavern checks
-- Fixed Artisan Hoppers not extracting bait from upgraded Deluxe Worm Bins
-- Fixed Tree Whisperer multiplying by 2 instead of adding 2
-- Fixed Banana Karenina not working with Cornucopia
-- Fixed Cassowary Deer recipe conflict
-- Fixed Pink Matter retaining Milk quality
-- Fixed Milking taking 1 day longer than intended
-- Fixed Raccoons dropping removed item
-- Fixed Feeding Trough not working with Mana Feed and Candied Animal Feed
-- Fixed issue with Bombs in the Skull Cavern being extremely glitchy in Multiplayer
+- Updated to Create 6
+- Added Refined Storage as replacement mod for Tom's Simple Storage, with crafting recipes to convert old to new.
+- Added new system for Building Shop Buildings
+- Added furniture from Whimsy Deco, an unreleased furniture mod by Nitbe as rare furniture loot
+- Added Mason set by Kanlamari
+- Added Coop buildings by charlotte.b
+- Added Wallpapers and Baseboard blocks by charlotte.b
+- Added Plushies - Collectable gatcha pets with rarity, traits, and affection mechanics
+- Added Plushie Capsules and Plushie Capsule Machine
+- Added Juice Inserter - Directly inserts juice fluids into Fermentation Barrel
+- Added Sparkstone Recycler - Botania Machine that attaches to Sparkstone machines to add +10% chance to not use Sparkstone per operation
+- Added Mana Clock - Botania machine that increases Aging & Ancient Cask speed by 1 day 
+- Added Enkephalin upgrade for Mayonnaise Machine and Supreme Mayonnaise
+- Added Jade support to Artisan Machines and Fish Ponds 
+- Added skill books: Bullfish Jobs, Wuthering Logs
+- Added Pickle variants for every every vegetable
+- Added Statue of Endless Fortune to Mystical Botanist
+- Added Auto-Grabber upgrade to auto-Magic Shear
+- Added Fish Pond Basket upgrade to auto-harvest fish
+- Added Shipping Bin Monitor to Banker Villager
+- Added Snow Melter that melts snow and ice and a large area
+- Added Pickle variants for every every vegetable
+- Added River, Ocean, and Nether Jelly, and Sunlit Pearl as crafting ingredients
+- Added seasonal decree for crops/fish that update to current season when checking bounty board
+- Added cooking and fishing decree to bounty board
+- Added Koi Fish to Summer Freshwater pool
+- Added Red Panda Husbandry animal
+- Added Ferret and Shima Enaga pets
+- Added config option for starting with White Sharestone for servers
+- Added recycling recipes for Grimwood Saplings and Corundums
+- Added Greenhouse Glass Slab and Stairs
+- Added Mana Infusion recipes for Artifact Shards/Dragonstone to Sparkstone
+- Added Mob Lassos
+- Added Nuclear trait to Sparkcat, removed explosive
+- Added Putrid trait to Minty, Bony, and Rotten Slimes
+- Added Weeping trait to Weeping Slime
+- Added Inverse trait to Orby and Sweet Slims
+- Added plort press recipe for Sparkcat heart
+- Added recipe for Alpine Cobblestone
+- Added What Are They Up To mod
+- Added Carps to Deluxe Crab Trap Bait pool
+- Added Wooly Sheep spawn egg recipe
+- Added Earth Crystals and Geodes to coal, iron, and lead gold rushes
+- Added gold rushes to Sparkstone, Lead, Silver, and Bismuth ores
+- Added message for Flamingo infertility and made Galliraptors/Tri-bulls unable to breed
+- Added Ancient Cookie
+- Increased base value of all wines by 100
+- Increased Dino Den spawn chance
+- Increased Tiller bonus 10% -> 15%
+- Increased damage of Botania Swords and Electrum Sword 
+- Increased negative effect length of Minty and Sparkcat Slimes
+- Endoflames now require Overgrowth seeds because I hate them
+- Fishing bar size now increases with upgrades
+- Lava Fishing Rod and normal Fishing Rod can now be equipped with Bobbers
+- Rebalanced Slimy Slime: No longer has Picky trait, now eats berries. Increased Plort value 32 -> 64
+- Rebalanced Weeping Slime: Now only eats tree fruits. Cries.
+- Rebalanced Juicy Slime: no longer climbs, causes brain damage when happy and sad
+- Reduced Chance of Glitched VHS drops from Zap
+- Reduced Limpet spawn height
+- Reworked Skull Cavern block placement: all blocks placed will decay over time, with torches taking longer. Breakable blocks like moss will also quickly regen when broken, allowing for some farming of things such as moss without messing up the terrain forever
+- Reworked Heretic -> Magic Shears generate Sparkstone but damage mobs and harshly drop affection
+- Reworked certain fishing related items to use new crafting ingredients
+- Reworked Spindlefish Fish Pond drops to no longer drop Amethyst (moved to Koi)
+- Reworked Brass Hands to use Iridium instead of Iridium coins
+- Reworked Splendid Slimes to not perform negative effects or get hungry while their owner is offline (configurable)
+- Reworked Golden Clock to work once a day
+- Removed Skeleton horse jumpscare finally for real
+- Removed Batteries from Sparkcat Plort ripping
+- Removed ability to insert fish into ponds. Fish ponds set with a fish now get set to 0 population
+- Removed Automobility Slopes due to crash
+- Removed Bountiful Fertilizer from Farmer villager
+- Removed Everycompat sinks
+- Removed ability for Deployers increasing affection
+- Removed Adventurer decree from bounty board
+- Mooblooms now milk Amethyst Milk
+- Sea Biscuits now additionally require Sunlit Pearls
+- Shipping Bin's sell message and sound can now be muted with a Redstone signal
+- Sprinkers now have axe mineable tag
+- Geodes now have a tag
+- Gnome is now considered a Rare Furniture drop
+- Fixed Soulsuckers not having quality
+- Fixed Ancient Goddess Statue having incorrect jei
+- Fixed Cartography Tower having old villager
+- Fixed Smart Shipping Bin committing Debt Fraud
+- Fixed visual imperfections with Shipping Bin messages
+- Fixed Petrified Mayonnaise not having a value
+- Fixed Pale Garden related crash
+- Fixed Lava Fish Ponds accepting waterlogged blocks
+- Fixed Melon Slice not showing season
+- Fixed Golden Clock not affecting Tapper
+- Fixed inaccuracies in Brewingstation ponder
+- Fixed fake player actions giving experience
+- Fixed event order causing potential exploits in multiplayer
+- Fixed Auto-grabbers performing cramped check too often
+- Fixed Auto-grabbers playing sound near player instead of animal
+- Fixed some gems not having gem tag
+- Fixed artisan machines with multiple inputs voiding inputs when not full and broken
+- Fixed Skull Cavern air never regening in specific cases
+- Fixed Zetter Canvas and Bison Horn having stack voiding issue
+- Fixed Bountiful Fertilizer adding quality
+- Fixed BFF triggering in cases where it shouldn't
+- Fixed Seed Money advancement stating wrong coin
+- Fixed Jungle structure having too high level enchanted books
+- Fixed craftable milks using wooden buckets for no good reason
+- Fixed interaction with Brain Damage and Farmers/Grandma's blessing causing infinite slowness until death
+- Fixed Sophisticated Storage voiding issue with upgrades (via prevention)
+- Fixed Pale Oak not being craftable into chests and sometimes slabs

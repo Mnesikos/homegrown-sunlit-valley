@@ -15,6 +15,9 @@
     },
     {
       "item": "society:botanical_tribute"
+    },
+    {
+      "item": "botania:overgrowth_seed"
     }
   ],
   "output": {

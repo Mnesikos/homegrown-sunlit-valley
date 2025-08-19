@@ -10,8 +10,8 @@ const fixedStackSize = (itemStack) => {
 LootJS.modifiers((e) => {
   // Entities
   e.addLootTableModifier("rottencreatures:entities/zap")
-    .randomChance(0.1)
-    .addLoot('society:glitched_vhs');
+    .randomChance(0.03)
+    .addLoot("society:glitched_vhs");
   e.addLootTableModifier("minecraft:entities/witch")
     .randomChance(0.1)
     .addLoot("society:holy_symbol");
@@ -27,6 +27,9 @@ LootJS.modifiers((e) => {
   e.addLootTableModifier("legendarycreatures:entities/corpse_eater")
     .randomChance(0.05)
     .addLoot("society:wheel_of_adaptation");
+  e.addLootTableModifier("minecraft:entities/enderman")
+    .randomChance(0.05)
+    .addLoot("minecraft:eye_armor_trim_smithing_template");
   e.addLootTableModifier("minecraft:entities/pig")
     .randomChance(0.05)
     .addLoot("society:living_flesh");
@@ -216,6 +219,7 @@ LootJS.modifiers((e) => {
   // Artisan Machines that save nbt on drop
   e.addBlockLootModifier("society:prize_machine").removeLoot("society:prize_machine");
   e.addBlockLootModifier("society:fish_pond").removeLoot("society:fish_pond");
+  e.addBlockLootModifier(global.plushies).removeLoot("*");
 
   // Replace Loot
   e.addLootTableModifier("minecraft:chests/pillager_outpost")

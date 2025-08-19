@@ -127,6 +127,7 @@ const springCrops = [
 ];
 
 const summerCrops = [
+  "minecraft:melon_slice",
   "society:boysenberry",
   "farm_and_charm:oat_crop",
   "farm_and_charm:corn_crop",

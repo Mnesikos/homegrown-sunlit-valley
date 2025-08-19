@@ -10,7 +10,7 @@ global.handleProgress = (level, block) => {
     case "society:mayonnaise_machine":
       global.handleBETick(eventObj, global.mayonnaiseMachineRecipes, 1, false, true);
       break;
-          case "society:cheese_press":
+    case "society:cheese_press":
       global.handleBETick(eventObj, global.cheesePressRecipes, 2, false, true);
       break;
     case "society:preserves_jar":
@@ -45,10 +45,10 @@ global.handleProgress = (level, block) => {
       break;
     case "society:tapper":
       if (block.properties.get("error") !== "true")
-        global.handleBETick(eventObj, global.tapperRecipes, 7, false, false);
+        global.handleBETick(eventObj, global.tapperRecipes, 7, false, true);
       break;
     case "society:bait_maker":
-      global.handleBETick(eventObj, global.tapperRecipes, 7, false, false, false, true);
+      global.handleBETick(eventObj, null, 7, false, false, false, true);
       break;
     case "society:charging_rod":
       global.handleBETick(eventObj, null, 5);
@@ -57,7 +57,33 @@ global.handleProgress = (level, block) => {
       console.log("Invalid artisan machine!");
   }
 };
-
+global.runGoldenClock = (entity) => {
+  const { level, block } = entity;
+  const { x, y, z } = block;
+  const radius = 2;
+  let scanBlock;
+  let dayTime = level.dayTime();
+  let morningModulo = dayTime % 24000;
+  const goldenClockProgTime = 40;
+  if (
+    morningModulo >= goldenClockProgTime &&
+    morningModulo < goldenClockProgTime + artMachineTickRate
+  ) {
+    for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
+      x + radius,
+      y + radius,
+      z + radius,
+    ])) {
+      scanBlock = level.getBlock(pos);
+      if (scanBlock.hasTag("society:golden_clock_advanced")) {
+        global.handleProgress(level, scanBlock);
+      }
+    }
+    level.server.runCommandSilent(
+      `playsound tanukidecor:block.grandfather_clock.chime block @a ${x} ${y} ${z}`
+    );
+  }
+};
 StartupEvents.registry("block", (event) => {
   event
     .create("society:golden_clock", "cardinal")
@@ -67,32 +93,14 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Randomly progresses artisan machines around it."));
+      item.tooltip(Text.gray("Progresses nearby Artisan Machines once a day"));
       item.tooltip(Text.green(`Area: 5x5`));
       item.modelJson({
         parent: "society:block/golden_clock",
       });
     })
     .model("society:block/golden_clock")
-    .randomTick((tick) => {
-      const { block, level } = tick;
-      const { x, y, z } = block;
-      const radius = 2;
-      let scanBlock;
-      if (rnd25()) {
-        for (let pos of BlockPos.betweenClosed(new BlockPos(x - radius, y - radius, z - radius), [
-          x + radius,
-          y + radius,
-          z + radius,
-        ])) {
-          scanBlock = level.getBlock(pos);
-          if (scanBlock.hasTag("society:golden_clock_advanced")) {
-            global.handleProgress(level, scanBlock);
-          }
-        }
-        level.server.runCommandSilent(
-          `playsound tanukidecor:block.grandfather_clock.chime block @a ${x} ${y} ${z}`
-        );
-      }
+    .blockEntity((blockInfo) => {
+      blockInfo.serverTick(artMachineTickRate, 0, (entity) => global.runGoldenClock(entity));
     });
 });

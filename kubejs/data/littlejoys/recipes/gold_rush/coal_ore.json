@@ -6,6 +6,6 @@
       "Name": "minecraft:coal_ore"
     }
   },
-  "lootTable": "minecraft:blocks/coal_ore",
+  "lootTable": "society:util/gold_rush_coal",
   "chanceMultiplier": 0.5
 }

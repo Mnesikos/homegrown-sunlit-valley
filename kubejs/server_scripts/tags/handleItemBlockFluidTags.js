@@ -3,6 +3,41 @@ console.info("[SOCIETY] handleItemBlockFluidTags.js loaded");
 
 ServerEvents.tags("item", (e) => {
   const stripTags = [
+    "perfectplushies:red_fox_plushie",
+    "perfectplushies:snow_fox_plushie",
+    "perfectplushies:fennec_fox_plushie",
+    "perfectplushies:red_ruffed_lemur_plushie",
+    "perfectplushies:red_panda_plushie",
+    "perfectplushies:raccoon_plushie",
+    "perfectplushies:capybara_plushie",
+    "perfectplushies:dog_plushie",
+    "perfectplushies:cat_plushie",
+    "perfectplushies:dolphin_plushie",
+    "perfectplushies:brown_rabbit_plushie",
+    "perfectplushies:white_rabbit_plushie",
+    "perfectplushies:frog_plushie",
+    "perfectplushies:goose_plushie",
+    "perfectplushies:duck_plushie",
+    "perfectplushies:rubber_duck_plushie",
+    "perfectplushies:robin_plushie",
+    "perfectplushies:robin_plushie",
+    "perfectplushies:hummingbird_plushie",
+    "perfectplushies:hippo_plushie",
+    "perfectplushies:mouse_plushie",
+    "perfectplushies:turtle_plushie",
+    "perfectplushies:doe_plushie",
+    "perfectplushies:reindeer_plushie",
+    "perfectplushies:bear_plushie",
+    "perfectplushies:koala_plushie",
+    "perfectplushies:panda_plushie",
+    "perfectplushies:lion_cub_plushie",
+    "perfectplushies:elephant_plushie",
+    "perfectplushies:monkey_plushie",
+    "perfectplushies:seal_plushie",
+    "perfectplushies:hedgehog_plushie",
+    "perfectplushies:aye_aye_plushie",
+    "perfectplushies:quokka_plushie",
+    "perfectplushies:dumbo_blob_plushie",
     "sewingkit:bone_sewing_needle",
     "sewingkit:diamond_sewing_needle",
     "sewingkit:netherite_sewing_needle",
@@ -322,6 +357,9 @@ ServerEvents.tags("item", (e) => {
   global.lootFurniture.forEach((item) => {
     e.add("society:loot_furniture", item);
   });
+  global.plushies.forEach((item) => {
+    e.add("society:plushies", item);
+  });
   global.dehydratorRecipes.forEach((dehydratee) => {
     e.add("society:dehydrated", dehydratee.output[0].substring(2, dehydratee.output[0].length));
   });
@@ -395,13 +433,15 @@ ServerEvents.tags("item", (e) => {
     "aquaculture:goldfish",
     "aquaculture:leech",
     "society:neptuna",
+    "netherdepthsupgrade:soulsucker",
     "aquaculture:box_turtle",
     "aquaculture:arrau_turtle",
     "aquaculture:starshell_turtle",
   ].forEach((fish) => e.add("minecraft:fishes", fish));
   // Furniture Workbench tags
   global.lootFurniture.forEach((item) => {
-    if (item.includes("tanukidecor")) e.add("refurbished_furniture:outdoors", item);
+    if (item.includes("tanukidecor") || item.includes("society"))
+      e.add("refurbished_furniture:outdoors", item);
     else e.add("refurbished_furniture:kitchen", item);
   });
   const fantasyCategories = ["nordic", "dunmer", "venthyr", "bone", "royal", "necrolord"];
@@ -457,6 +497,17 @@ ServerEvents.tags("item", (e) => {
   largeMilks.forEach((item) => {
     e.add("society:large_milk", item);
   });
+  [
+    "society:topaz",
+    "society:amethyst_chunk",
+    "society:ruby",
+    "society:aquamarine",
+    "society:jade",
+    "society:sparkstone",
+    "society:prismatic_shard",
+  ].forEach((item) => {
+    e.add("forge:gems", item);
+  });
   e.add("splendid_slimes:slime_vac_fireable", "#society:large_milk");
   [
     "snowpig:snow_pig_spawn_egg",
@@ -488,10 +539,28 @@ ServerEvents.tags("block", (e) => {
     "society:recycling_machine",
     "society:tapper",
     "translocators:item_translocator",
+    "cb_multipart:multipart",
     "translocators:fluid_translocator",
+    "trials:trial_spawner",
+    "splendid_slimes:slime_spawner",
+    "minecraft:spawner",
+    "trials:trial_vault",
+    "trials:trial_vault_ominous",
+    "fastpaintings:painting",
+    "lootr:lootr_barrel",
+    "lootr:lootr_chest",
+    "lootr:lootr_trapped_chest",
+    "lootr:lootr_inventory",
+    "brewery:wooden_brewingstation",
+    "brewery:copper_brewingstation",
+    "brewery:netherite_brewingstation"
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);
+  });
+
+  global.plushies.forEach((item) => {
+    e.add("quality_foods:quality_blocks", item);
   });
   e.remove("minecraft:dirt", "farmersdelight:rich_soil");
   rawLogs.forEach((log) => {
@@ -538,25 +607,13 @@ ServerEvents.tags("block", (e) => {
   });
   // Sails
   e.remove("create:windmill_sails", "#minecraft:wool");
-  const tickArtisanMachines = [
-    "society:loom",
-    "society:mayonnaise_machine",
-    "society:preserves_jar",
-    "society:crystalarium",
-    "society:aging_cask",
-    "society:ancient_cask",
-    "society:dehydrator",
-    "society:deluxe_worm_farm",
-    "society:seed_maker",
-    "society:fish_smoker",
-    "society:bait_maker",
-    "society:recycling_machine",
-    "society:tapper",
-    "society:cheese_press",
-  ];
-  tickArtisanMachines.forEach((log) => {
+  global.artisanMachineIds.forEach((log) => {
     e.add("society:artisan_machine", log);
     e.add("society:golden_clock_advanced", log);
+  });
+  const agingCasks = ["society:aging_cask", "society:ancient_cask"];
+  agingCasks.forEach((log) => {
+    e.add("society:aging_cask", log);
   });
   const randomTickMachines = ["society:charging_rod", "society:espresso_machine"];
   randomTickMachines.forEach((log) => {
@@ -573,6 +630,7 @@ ServerEvents.tags("block", (e) => {
     "refurbished_furniture:post_box",
     "bountiful:bountyboard",
     "tanukidecor:slot_machine",
+    "whimsy_deco:gatcha_machine",
   ];
   ftbChunksWhitelist.forEach((item) => {
     e.add("ftbchunks:interact_whitelist", item);

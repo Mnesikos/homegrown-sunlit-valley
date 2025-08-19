@@ -78,9 +78,10 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
 
   if (day > ageLastPet) {
     const livableArea = global.getAnimalIsNotCramped(target);
-    debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
-    data.affection = affection + affectionIncrease;
-
+    if (!player.isFake()) {
+      debug && player.tell(`Increased Affection by: ${affectionIncrease} from petting`);
+      data.affection = affection + affectionIncrease;
+    }
     if (hungry || (!data.clockwork && player.isFake()) || !livableArea) {
       data.affection = affection - (hungry ? 25 : 50);
     }
@@ -99,9 +100,7 @@ const handlePet = (name, data, day, peckish, hungry, e) => {
       1,
       0.01
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 10`
-    );
+    global.giveExperience(server, player, "husbandry", 10);
     if (!livableArea && !data.clockwork) {
       errorText = `${name} feels crowded and unhappy...`;
     }
@@ -204,9 +203,7 @@ const handleMilk = (name, data, day, hungry, e) => {
     server.runCommandSilent(
       `playsound minecraft:entity.cow.milk block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 30`
-    );
+    global.giveExperience(server, player, "husbandry", 30);
     level.spawnParticles(
       "minecraft:note",
       true,
@@ -252,7 +249,7 @@ const handleFeed = (data, day, e) => {
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`
     );
     target.heal(4);
-    server.runCommandSilent(`puffish_skills experience add ${player.username} society:husbandry 5`);
+    global.giveExperience(server, player, "husbandry", 20);
     data.affection = affection + totalNewAffection;
     debug && player.tell(`Increased Affection by: ${totalNewAffection} from feeding`);
     data.ageLastFed = day;
@@ -269,56 +266,32 @@ const handleFeed = (data, day, e) => {
       0.01
     );
     item.count--;
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 };
 
-const handleMagicHarvest = (name, type, data, day, e) => {
-  const { player, target, level, item, server } = e;
+const handleMagicHarvest = (name, data, e) => {
+  const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
-  const ageLastMagicHarvested = data.getInt("ageLastMagicHarvested");
-  const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";
-
-  if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
-    data.ageLastMagicHarvested = day;
-    const targetId =
-      target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
-    player.damageHeldItem("main_hand", 1);
+  const droppedLoot = global.getMagicShearsOutput(level, target, player, server);
+  if (droppedLoot !== -1) {
     server.runCommandSilent(
       `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
     );
-    server.runCommandSilent(
-      `puffish_skills experience add ${player.username} society:husbandry 15`
-    );
-    const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`);
-    for (let i = 0; i < droppedLoot.size(); i++) {
+    global.giveExperience(server, player, "husbandry", 15);
+    for (let i = 0; i < droppedLoot.length; i++) {
       let specialItem = level.createEntity("minecraft:item");
-      let dropItem = droppedLoot.get(i);
-      if (player.stages.has("mana_hand")) dropItem.count = dropItem.count * 2;
+      let dropItem = droppedLoot[i];
       specialItem.x = player.x;
       specialItem.y = player.y;
       specialItem.z = player.z;
       specialItem.item = dropItem;
       specialItem.spawn();
     }
-    if (!data.clockwork) data.affection = affection - 5;
-
-    level.spawnParticles(
-      "snowyspirit:glow_light",
-      true,
-      target.x,
-      target.y + 1.5,
-      target.z,
-      0.2 * rnd(1, 4),
-      0.2 * rnd(1, 4),
-      0.2 * rnd(1, 4),
-      20,
-      2
-    );
-    player.addItemCooldown(item, 1);
+    global.addItemCooldown(player, item, 1);
   } else {
     errorText = `${name} needs some time to rest`;
     if (hearts < 5) {
@@ -328,7 +301,7 @@ const handleMagicHarvest = (name, type, data, day, e) => {
       server.runCommandSilent(
         `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 2 ${errorText}`
       );
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 };
 
@@ -346,7 +319,7 @@ ItemEvents.entityInteracted((e) => {
       const nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
       if (!name) {
-        name = nonIdType.toString().charAt(0).toUpperCase() + nonIdType.toString().slice(1);
+        name = global.formatName(nonIdType);
         if (name.equals("Domestic tribull")) name = "Domestic tri-bull";
       }
       const ageLastFed = data.getInt("ageLastFed");
@@ -359,7 +332,7 @@ ItemEvents.entityInteracted((e) => {
       handlePet(name, data, day, peckish, hungry, e);
       if (pet) return;
       if (item.hasTag("society:animal_feed") && !pet) handleFeed(data, day, e);
-      if ( 
+      if (
         item === "society:milk_pail" &&
         global.checkEntityTag(target, "society:milkable_animal")
       ) {
@@ -410,7 +383,7 @@ ItemEvents.entityInteracted((e) => {
           0.01
         );
         data.affection = affection - 100;
-        player.addItemCooldown(item, 5);
+        global.addItemCooldown(player, item, 5);
       }
       if (player.stages.has("bribery") && item === "numismatics:crown" && !data.bribed) {
         if (player.cooldowns.isOnCooldown(item)) return;
@@ -432,7 +405,7 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 10);
+        global.addItemCooldown(player, item, 10);
       }
       if (
         player.stages.has("clockwork") &&
@@ -507,9 +480,9 @@ ItemEvents.entityInteracted((e) => {
           5,
           0.01
         );
-        player.addItemCooldown(item, 4);
+        global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, nonIdType, data, day, e);
+      if (item === "society:magic_shears") handleMagicHarvest(name, data,e);
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

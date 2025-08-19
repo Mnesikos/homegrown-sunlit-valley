@@ -1,9 +1,20 @@
-console.info('[SOCIETY] addQuestbook.js loaded')
+console.info("[SOCIETY] addQuestbook.js loaded");
 
-PlayerEvents.loggedIn(e => {
-  const { player } = e
-  if (!player.stages.has('starting_items')) {
-    player.stages.add('starting_items')
-    player.give('ftbquests:book')
+PlayerEvents.loggedIn((e) => {
+  const { player } = e;
+  if (!player.stages.has("starting_items")) {
+    player.stages.add("starting_items");
+    player.give("ftbquests:book");
+    if (global.multiplayerSharestones) {
+      player.give("waystones:white_sharestone");
+      player.give(
+        Item.of(
+          "candlelight:note_paper_written",
+          `{author:"Society",text:["Welcome!
+
+Thanks for taking part in a Sunlit Valley Multiplayer Server! You've been given a White Sharestone to make traveling to other bases easier. Please be sure to claim your base before placing it!"],title:"Server Welcome"}`
+        )
+      );
+    }
   }
-})
+});

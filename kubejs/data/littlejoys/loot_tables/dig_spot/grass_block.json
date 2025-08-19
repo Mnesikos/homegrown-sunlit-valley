@@ -25,6 +25,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 1,
+          "name": "longwings:catching_net"
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "add": false,

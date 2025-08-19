@@ -1,3 +1,4 @@
+//priority: 100
 console.info("[SOCIETY] tapper.js loaded");
 
 global.tapperRecipes = [

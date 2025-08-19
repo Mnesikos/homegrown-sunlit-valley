@@ -1,4 +1,4 @@
-console.info("[SOCIETY] hamsterBite.js loaded");
+console.info("[SOCIETY] slimeTicket.js loaded");
 
 const SlimeFavoriteFoods = {
   all_seeing: { item: "minecraft:golden_carrot" },
@@ -18,7 +18,7 @@ const SlimeFavoriteFoods = {
   puddle: { item: "unusualfishmod:raw_sneep_snorp" },
   rotting: { item: "minecraft:chicken", entity: "Chicken" },
   shulking: { item: "minecraft:chorus_flower" },
-  slimy: { item: "minecraft:blue_orchid" },
+  slimy: { item: "farm_and_charm:strawberry" },
   sparkcat: { item: "society:smoked_spindlefish" },
   sweet: { item: "atmospheric:orange" },
   webby: { item: "veggiesdelight:garlic" },
@@ -49,9 +49,9 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       player.give(
         Item.of(
           "supplementaries:present_pink",
-          `{BlockEntityTag:{Description:"${
-            slimeType.charAt(0).toUpperCase() + slimeType.slice(1)
-          } Slime\'s favorite food :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
+          `{BlockEntityTag:{Description:"${global.formatName(
+            slimeType
+          )} Slime\'s favorite food :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"${
             favorites.item
           }"}],Recipient:"${player.username}",Sender:"Slime Ticket",id:"supplementaries:present"}}`
         )
@@ -61,15 +61,17 @@ ItemEvents.entityInteracted("splendid_slimes:splendid_slime", (e) => {
       player.give(
         Item.of(
           "supplementaries:present_pink",
-          `{BlockEntityTag:{Description:"${
-            slimeType.charAt(0).toUpperCase() + slimeType.slice(1)
-          } Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${favorites.entity}"}\'}}}],Recipient:"${
+          `{BlockEntityTag:{Description:"${global.formatName(
+            slimeType
+          )} Slime\'s favorite mob to eat :pink_heart:",ForgeCaps:{},Items:[{Count:1b,Slot:0b,id:"minecraft:paper",tag:{display:{Name:\'{"text":"${
+            favorites.entity
+          }"}\'}}}],Recipient:"${
             player.username
           }",Sender:"Slime Ticket",id:"supplementaries:present"}}`
         )
       );
     }
     item.count--;
-    player.addItemCooldown(item, 10);
+    global.addItemCooldown(player, item, 10);
   }
 });

@@ -1,0 +1,10 @@
+{
+  "type": "littlejoys:gold_rush",
+  "eventCondition": {
+    "type": "is_state",
+    "state": {
+      "Name": "oreganized:deepslate_lead_ore"
+    }
+  },
+  "lootTable": "oreganized:blocks/deepslate_lead_ore"
+}

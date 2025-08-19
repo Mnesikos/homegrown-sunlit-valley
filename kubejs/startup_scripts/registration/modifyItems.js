@@ -199,4 +199,24 @@ ItemEvents.modification((e) => {
     item.maxDamage *= 1.5;
     item.setArmorProtection(3);
   });
+
+  e.modify("botania:manasteel_sword", (item) => {
+    item.setAttackDamage(7);
+  });
+  e.modify("botania:elementium_sword", (item) => {
+    item.setAttackDamage(8);
+  });
+  e.modify("oreganized:electrum_sword", (item) => {
+    item.setAttackDamage(8);
+  });
+  // Netherite Tier
+  e.modify("botania:terra_sword", (item) => {
+    item.setAttackDamage(10);
+  });
+  e.modify("botania:star_sword", (item) => {
+    item.setAttackDamage(10);
+  });
+  e.modify("botania:thunder_sword", (item) => {
+    item.setAttackDamage(10);
+  });
 });

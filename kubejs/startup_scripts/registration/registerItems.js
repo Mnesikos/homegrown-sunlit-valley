@@ -43,6 +43,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:frosted_tip").texture("society:item/frosted_tip");
   e.create("society:inserter").texture("society:item/inserter");
   e.create("society:cordycep").texture("society:item/cordycep");
+  e.create("society:enkephalin").texture("society:item/enkephalin");
   e.create("society:blueberry")
     .texture("society:item/blueberry")
     .food((food) => {
@@ -122,10 +123,11 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:fantasy_box_${theme}`)
       .texture(`society:item/fantasy_box_${theme}`)
       .tooltip(Text.gray("Right click to open"))
-      .displayName(`Fantasy Box: ${theme.charAt(0).toUpperCase() + theme.slice(1)} Set`);
+      .displayName(`Fantasy Box: ${global.formatName(theme)} Set`);
   });
   e.create("society:bouquet_bag").texture("society:item/bouquet_bag");
   e.create("society:scavenged_food_bag").texture("wildernature:item/loot_bag");
+  e.create("society:plushie_capsule").texture("society:item/plushie_capsule");
   e.create("society:sap").texture("society:item/sap");
   e.create("society:rubber").texture("society:item/rubber");
   e.create("society:pine_tar").texture("society:item/pine_tar");
@@ -139,9 +141,15 @@ StartupEvents.registry("item", (e) => {
     .texture("society:item/neptuna")
     .glow(true);
 
-  e.create("numismatics:neptunium_coin").texture("society:item/neptunium_coin");
-  e.create("numismatics:ancient_coin").texture("society:item/ancient_coin");
-  e.create("numismatics:prismatic_coin").texture("society:item/prismatic_coin");
+  e.create("numismatics:neptunium_coin")
+    .texture("society:item/neptunium_coin")
+    .tag("numismatics:coins");
+  e.create("numismatics:ancient_coin")
+    .texture("society:item/ancient_coin")
+    .tag("numismatics:coins");
+  e.create("numismatics:prismatic_coin")
+    .texture("society:item/prismatic_coin")
+    .tag("numismatics:coins");
 
   e.create("society:elytra_wing").texture("society:item/elytra_wing");
   e.create("society:bank_meter").texture("society:item/bank_meter");
@@ -155,6 +163,10 @@ StartupEvents.registry("item", (e) => {
   });
   e.create("society:merino_wool").texture("society:item/merino_wool");
   e.create("society:enriched_bone_meal").texture("society:item/enriched_bonemeal");
+  e.create("society:river_jelly").texture("society:item/river_jelly");
+  e.create("society:ocean_jelly").texture("society:item/ocean_jelly");
+  e.create("society:nether_jelly").texture("society:item/nether_jelly");
+  e.create("society:sunlit_pearl").texture("society:item/sunlit_pearl");
   e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
   e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
@@ -289,6 +301,14 @@ StartupEvents.registry("item", (e) => {
       food.saturation(2);
     });
 
+  e.create("society:ancient_cookie")
+    .texture("society:item/ancient_cookie")
+    .food((food) => {
+      food.hunger(4);
+      food.saturation(4);
+      food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
+    });
+
   e.create("society:ground_cinnamon").texture("society:item/ground_cinnamon");
   e.create("society:chai_blend").texture("society:item/chai_blend");
 
@@ -317,6 +337,7 @@ StartupEvents.registry("item", (e) => {
     "banana_karenina",
     "brine_and_punishment",
     "bluegill_meridian",
+    "bullfish_jobs",
     "canadian_and_famous",
     "first_aid_guide",
     "hitting_hard_and_soft",
@@ -325,6 +346,7 @@ StartupEvents.registry("item", (e) => {
     "paradise_crop",
     "slime_contain_protect",
     "slouching_towards_artistry",
+    "wuthering_logs",
   ].forEach((item) => {
     e.create(`society:${item}`).texture(`society:item/books/${item}`);
   });
@@ -444,6 +466,8 @@ StartupEvents.registry("item", (e) => {
       })
       .useAnimation("drink");
   });
+  e.create("society:butterfly_amber").texture("society:item/butterfly_amber");
+  e.create("society:moth_pollen").texture("society:item/moth_pollen");
   e.create(`society:magic_rope`).texture(`society:item/magic_rope`);
   e.create(`society:magic_tunnel`).texture(`society:item/magic_tunnel`);
   e.create(`society:magnifying_glass`).texture(`society:item/magnifying_glass`).maxStackSize(1);
@@ -486,8 +510,21 @@ StartupEvents.registry("item", (e) => {
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
 
+  global.picklableVegetables.forEach((product) => {
+    const splitProduct = product.item.split(":");
+    let texturePath = `${splitProduct[0]}:item/${splitProduct[1]}`;
+    e.create(`society:pickled_${splitProduct[1]}`)
+      .texture(texturePath)
+      .color(0, 0xd8f266)
+      .food((food) => {
+        food.hunger(4);
+        food.saturation(1);
+        food.effect("farmersdelight:nourishment", 600, 1, 1.0);
+      });
+  });
+
   global.preserves.forEach((jar) => {
-    if (jar.item.includes("society"))
+    if (jar.item.includes("society")) {
       e.create(`society:${jar.item.split(":")[1]}`)
         .texture(`society:item/preserves/${jar.item.split(":")[1]}`)
         .food((food) => {
@@ -496,6 +533,7 @@ StartupEvents.registry("item", (e) => {
           food.fastToEat(true);
           food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
         });
+    }
   });
   // Dehydrator outputs
   e.create(`society:raisins`)
@@ -760,6 +798,7 @@ StartupEvents.registry("item", (e) => {
     { item: "unusualfishmod:raw_bark_angelfish", hex: 0x755838 },
     { item: "unusualfishmod:raw_amber_goby", hex: 0xfcae2a },
     { item: "unusualfishmod:raw_eyelash", hex: 0xdc66a0 },
+    { item: "crittersandcompanions:koi_fish", hex: 0xef7639 },
   ];
   // Smoked fish, roe, aged roe, and bait
   global.fish.forEach((fish) => {
@@ -807,7 +846,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.frozenGeodeList.forEach((geode) => {
@@ -815,7 +854,7 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/frozen_geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.magmaGeodeList.forEach((geode) => {
@@ -823,14 +862,14 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${geode.item.split(":")[1]}`)
       .texture(`society:item/magma_geode/${geode.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   global.gems.forEach((gem) => {
     e.create(`society:pristine_${gem.item.split(":")[1]}`)
       .texture(`society:item/gems/${gem.item.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 
   const vanillaPristine = [
@@ -845,6 +884,6 @@ StartupEvents.registry("item", (e) => {
     e.create(`society:pristine_${gem.split(":")[1]}`)
       .texture(`minecraft:item/${gem.split(":")[1]}`)
       .glow(true)
-      .tooltip(Text.gray("Created from the Black Opal upgrade"));
+      .tooltip(Text.gray("Created from the Crystalarium upgrade: Black Opal"));
   });
 });

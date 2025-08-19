@@ -121,7 +121,7 @@
 			description: [
 				"To get started making money, you'll need a &6Basic Shipping Bin&r."
 				""
-				"Items placed inside that have will be sold at &66 AM&r for the value listed in the tooltip."
+				"Items placed inside that have a sell value will be sold at &66 AM&r for the value listed in the tooltip."
 			]
 			id: "3F759C6DEEBC61FD"
 			rewards: [
@@ -480,13 +480,8 @@
 					consume_items: true
 					count: 64L
 					id: "6D21C1D76292BD76"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "society:raw_logs"
-						}
-					}
+
+					item: { Count: 40, id: "meadow:fire_log" }
 					title: "Any #society:raw_logs"
 					type: "item"
 				}
@@ -505,7 +500,7 @@
 		{
 			dependencies: ["472F40ECF199DD42"]
 			description: [
-				"You may notice the tiers of armor and tools has been slightly tweaked."
+				"You may notice the tiers of armor and tools have been slightly tweaked."
 				""
 				"Iron now upgrades to &6Gold&r before &bDiamond&r, adding another step in progression."
 				""

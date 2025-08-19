@@ -1,12 +1,12 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.1.2",
+    "version": "3.2.0",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
         "patchouli_books",
-        "quests_structures"
+        "portable_blueprints"
     ],
     "client_overrides": [
         "resourcepacks",
@@ -80,6 +80,9 @@
             "side": "CLIENT"
         },
         "my-server-is-compatible": {
+            "side": "CLIENT"
+        },
+        "particle-rain": {
             "side": "CLIENT"
         },
         "iris-flywheel-compat": {

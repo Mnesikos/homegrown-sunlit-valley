@@ -1,16 +1,5 @@
 console.info("[SOCIETY] catalogPurchase.js loaded");
 
-const catalogPurchaseThrottle = ((temp) => (entity, tick, identifier) => {
-  const { age, uuid } = entity;
-  const key = `${uuid}${identifier}`;
-  const now = temp[key];
-  if (!now || age - now >= tick) {
-    temp[key] = age;
-    return false;
-  }
-  return true;
-})({});
-
 const catalogMap = {
   tanuki_catalog: {
     price: 2,
@@ -31,39 +20,39 @@ const catalogMap = {
     outputCount: 1,
   },
 };
+
 BlockEvents.rightClicked(
-  [
-    "society:tanuki_catalog",
-    "society:modern_catalog",
-    "society:fantasy_catalog",
-  ],
+  ["society:tanuki_catalog", "society:modern_catalog", "society:fantasy_catalog"],
   (e) => {
-    const { item, player, block, server } = e;
+    const { item, player, hand, block, server } = e;
     const { price, outputItem, outputDisplayName, outputCount } =
       catalogMap[block.id.toString().split(":")[1]];
 
-    if (catalogPurchaseThrottle(player, 1, "catalog-throttle")) return;
-    if (item.getId() === "numismatics:crown" && item.count >= price) {
-      if (!player.isCrouching()) {
-        item.count -= price;
+    if (hand == "OFF_HAND") return;
+    if (hand == "MAIN_HAND") {
+      if (item.getId() === "numismatics:crown" && item.count >= price) {
+        if (!player.isCrouching()) {
+          item.count -= price;
 
-        block.popItemFromFace(`${outputCount}x ${outputItem}`, "up");
-      } else {
-        block.popItemFromFace(
-          `${Math.floor(item.count / price) * outputCount}x ${outputItem}`,
-          "up"
+          block.popItemFromFace(`${outputCount}x ${outputItem}`, "up");
+        } else {
+          block.popItemFromFace(
+            `${Math.floor(item.count / price) * outputCount}x ${outputItem}`,
+            "up"
+          );
+          item.count -= item.count - (item.count % price);
+        }
+        server.runCommandSilent(
+          `playsound tanukidecor:block.cash_register.ring block @a ${player.x} ${player.y} ${player.z}`
         );
-        item.count -= item.count - (item.count % price);
+        global.addItemCooldown(player, item.id, 1);
+      } else {
+        player.tell(
+          `§7Right click with ${price} §6Gold Coin${
+            price > 1 ? "s" : ""
+          }§7 to purchase ${outputCount} §a${outputDisplayName}`
+        );
       }
-      server.runCommandSilent(
-        `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
-      );
-    } else {
-      player.tell(
-        `§7Right click with ${price} §6Gold Coin${
-          price > 1 ? "s" : ""
-        }§7 to purchase ${outputCount} §a${outputDisplayName}`
-      );
     }
   }
 );

@@ -11,17 +11,6 @@ const hasGreenhouseGlass = (level, cropPos) => {
   return false;
 };
 
-const enrichedBonemealThrottle = ((temp) => (entity, tick, identifier) => {
-  const { age, uuid } = entity;
-  const key = `${uuid}${identifier}`;
-  const now = temp[key];
-  if (!now || age - now >= tick) {
-    temp[key] = age;
-    return false;
-  }
-  return true;
-})({});
-
 const rnd = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
@@ -33,69 +22,73 @@ const cropDrop = [
   "farm_and_charm:wild_nettle",
 ];
 BlockEvents.rightClicked(cropDrop, (e) => {
+  const { player, item, block, server } = e;
   if (
-    e.player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    enrichedBonemealThrottle(e.player, 1, "enriched_bonemeal_throttle_crop_drop")
+    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
+    !player.cooldowns.isOnCooldown(item)
   ) {
-    e.player.getHeldItem("main_hand").count--;
-    let crop = e.block.level.createEntity("minecraft:item");
-    crop.x = e.block.x + rnd(0, 0.5);
-    crop.y = e.block.y + 0.5;
-    crop.z = e.block.z + rnd(0, 0.5);
-    crop.item = Item.of(e.block.id);
+    player.getHeldItem("main_hand").count--;
+    let crop = block.level.createEntity("minecraft:item");
+    crop.x = block.x + rnd(0, 0.5);
+    crop.y = block.y + 0.5;
+    crop.z = block.z + rnd(0, 0.5);
+    crop.item = Item.of(block.id);
     crop.spawn();
-    e.block.level.spawnParticles(
+    block.level.spawnParticles(
       "minecraft:happy_villager",
       true,
-      e.block.x + 0.5,
-      e.block.y + 0.1,
-      e.block.z + 0.5,
+      block.x + 0.5,
+      block.y + 0.1,
+      block.z + 0.5,
       0.1 * rnd(1, 4),
       0.1 * rnd(1, 4),
       0.1 * rnd(1, 4),
       10,
       0.1
     );
-    e.server.runCommandSilent(
+    server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${e.player.x} ${e.player.y} ${e.player.z}`
     );
+    global.addItemCooldown(player, item, 1);
   }
 });
 
 const cropGrowth = ["minecraft:cave_vines", "minecraft:cave_vines_plant"];
 BlockEvents.rightClicked(cropGrowth, (e) => {
+  const { player, item, block, server } = e;
   if (
-    e.player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
-    enrichedBonemealThrottle(e.player, 1, "enriched_bonemeal_throttle_crop_growth")
+    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
+    !player.cooldowns.isOnCooldown(item)
   ) {
-    e.player.getHeldItem("main_hand").count--;
-    e.block.set(e.block.id, { berries: "true" });
-    e.block.level.spawnParticles(
+    player.getHeldItem("main_hand").count--;
+    block.set(block.id, { berries: "true" });
+    block.level.spawnParticles(
       "minecraft:happy_villager",
       true,
-      e.block.x + 0.5,
-      e.block.y + 0.1,
-      e.block.z + 0.5,
+      block.x + 0.5,
+      block.y + 0.1,
+      block.z + 0.5,
       0.1 * rnd(1, 4),
       0.1 * rnd(1, 4),
       0.1 * rnd(1, 4),
       10,
       0.1
     );
-    e.server.runCommandSilent(
+    server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${e.player.x} ${e.player.y} ${e.player.z}`
     );
+    global.addItemCooldown(player, item, 1);
   }
 });
 
 BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
-  const { block, player } = e;
+  const { block, player, item } = e;
   const season = global.getSeasonFromLevel(player.level);
   let modifiedProperties = block.properties;
-  let throttle = enrichedBonemealThrottle(player, 1, "enriched_bonemeal_throttle_apple_leaves");
   if (
     block.properties.get("can_have_apples").toString() == "true" &&
-    block.properties.get("has_apples").toString() == "true"
+    block.properties.get("has_apples").toString() == "true" &&
+    !player.cooldowns.isOnCooldown(item)
   ) {
     if (season == "autumn" || hasGreenhouseGlass(player.level, block.getPos())) {
       modifiedProperties.can_have_apples = false;
@@ -107,7 +100,10 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
       player.tell("This tree only bears fruit in §6Autumn§r!");
       e.cancel();
     }
-  } else if (player.getHeldItem("main_hand") == "society:enriched_bone_meal" && throttle) {
+  } else if (
+    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
+    !player.cooldowns.isOnCooldown(item)
+  ) {
     player.getHeldItem("main_hand").count--;
     modifiedProperties.can_have_apples = true;
     modifiedProperties.has_apples = true;
@@ -127,6 +123,7 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
     e.server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`
     );
+    global.addItemCooldown(player, item, 1);
   }
 });
 
@@ -134,14 +131,10 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
   const { block, player } = e;
   let modifiedProperties = block.properties;
   const season = global.getSeasonFromLevel(player.level);
-  let throttle = enrichedBonemealThrottle(
-    player,
-    1,
-    "enriched_bonemeal_throttle_dark_cherry_leaves"
-  );
   if (
     block.properties.get("can_have_cherries").toString() == "true" &&
-    block.properties.get("has_cherries").toString() == "true"
+    block.properties.get("has_cherries").toString() == "true" &&
+    !player.cooldowns.isOnCooldown(item)
   ) {
     if (season == "spring" || hasGreenhouseGlass(player.level, block.getPos())) {
       modifiedProperties.can_have_cherries = false;
@@ -153,7 +146,10 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
       e.player.tell("This tree only bears fruit in §aSpring§r!");
       e.cancel();
     }
-  } else if (player.getHeldItem("main_hand") == "society:enriched_bone_meal" && throttle) {
+  } else if (
+    player.getHeldItem("main_hand") == "society:enriched_bone_meal" &&
+    !player.cooldowns.isOnCooldown(item)
+  ) {
     player.getHeldItem("main_hand").count--;
     modifiedProperties.can_have_cherries = true;
     modifiedProperties.has_cherries = true;
@@ -173,5 +169,6 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     e.server.runCommandSilent(
       `playsound minecraft:item.bone_meal.use block @a ${player.x} ${player.y} ${player.z}`
     );
+    global.addItemCooldown(player, item, 1);
   }
 });

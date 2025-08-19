@@ -8,7 +8,7 @@
   "favorite_food": {
     "item": "society:smoked_spindlefish"
   },
-  "traits": ["explosive", "moody", "largoless", "defiant"],
+  "traits": ["nuclear", "moody", "largoless", "defiant"],
   "emit_effect_particle": "snowyspirit:glow_light",
   "innate_effects": [
     {
@@ -27,7 +27,7 @@
   "negative_emit_effects": [
     {
       "effect": "brewery:lightning_strike",
-      "duration": 40,
+      "duration": 420,
       "amplifier": 0
     }
   ]

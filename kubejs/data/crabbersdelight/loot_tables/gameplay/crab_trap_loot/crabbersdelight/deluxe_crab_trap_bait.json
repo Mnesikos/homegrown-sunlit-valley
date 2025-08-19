@@ -27,6 +27,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 4,
+          "name": "aquaculture:carp"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:stick"
         },

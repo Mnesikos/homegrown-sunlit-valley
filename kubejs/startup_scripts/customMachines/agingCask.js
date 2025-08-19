@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] agingCask.js loaded");
+
 global.agingCaskRecipes = [];
 // Both global variables as items are registered based on these
 global.ageableProductInputs = [

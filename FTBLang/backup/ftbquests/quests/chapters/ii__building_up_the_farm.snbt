@@ -17,7 +17,7 @@
 			description: [
 				"Your journey into farming starts with the &6Market&r, which sells a variety of basic seeds and saplings."
 				""
-				"Some crops only grow in certain seasons, which is designated in the crops's tooltip. "
+				"Some crops only grow in certain seasons, which is designated in each crops's tooltip. "
 				""
 				"Seasons last &630 minecraft days&r, and hot or cold biomes will be always be Summer and Winter respectively."
 				""
@@ -97,7 +97,7 @@
 			description: [
 				"Once you find an appropriate place to start your farm, your first step should be preparing a field of farmland."
 				""
-				"Once fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
+				"Once your crops are fully grown, you can &6Right Click&r to harvest without losing the seed! Hoes can do this an an area."
 			]
 			icon: "minecraft:farmland"
 			id: "0A39B0C0A77E57B0"
@@ -163,7 +163,7 @@
 				"2134CA6B3880D089"
 			]
 			description: [
-				"By now you might have ran out of money while getting your crops started. "
+				"By now you might have run out of money while getting your crops started. "
 				""
 				"It's a good time to dig into stone to get materials needed to craft sprinklers or upgrade tools."
 			]
@@ -561,7 +561,7 @@
 		}
 		{
 			description: [
-				"In this pack, raising farm animals requires care, money and attention. "
+				"In this pack, raising farm animals requires care, money, and attention. "
 				""
 				"A &6Shepherd&r villager will be needed for basic supplies."
 			]
@@ -585,7 +585,7 @@
 		{
 			dependencies: ["6EEBD017839FF628"]
 			description: [
-				"All farm animals require &6Animal Feed&r regularly to produce their products. They need to be fed at least once every Minecraft day."
+				"All farm animals require &6Animal Feed&r regularly to produce their products. They need to be fed once every Minecraft day."
 				""
 				"If an animal goes too long without being fed, they won't be very happy with you..."
 			]
@@ -707,7 +707,7 @@
 				""
 				"Milking animals requires a special &6Milk Pail&r for collection."
 				""
-				"The size of the milk willl depend on how much the animal likes you!"
+				"The size of the milk will depend on how much the animal likes you!"
 			]
 			icon: "society:milk"
 			id: "5B5A764F0E02E5FF"
@@ -942,7 +942,7 @@
 			description: [
 				"&6Tackle Box&r are used to customize your rod using the slots on the right. They also retain their inventory when broken."
 				""
-				"&oOnly upgraded rods can be customized&r"
+				"&oOnly upgraded rods can be customized.&r"
 			]
 			id: "63FDC7BA6801CF64"
 			rewards: [{

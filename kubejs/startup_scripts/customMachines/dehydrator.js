@@ -1,4 +1,6 @@
+//priority: 100
 console.info("[SOCIETY] dehydrator.js loaded");
+
 global.dehydratorRecipes = [
   { input: "nethervinery:crimson_grape", output: [`1x society:nether_raisins`] },
   { input: "nethervinery:warped_grape", output: [`1x society:nether_raisins`] },

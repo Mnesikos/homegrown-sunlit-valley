@@ -120,7 +120,7 @@ global.husbandryForagingDefinitions = [
       {
         item: "betterarcheology:growth_totem",
         countMult: 1,
-        chance: 0.01,
+        chance: 0.05,
         minHearts: 10,
       },
     ],
@@ -181,6 +181,23 @@ global.husbandryForagingDefinitions = [
         chance: 0.75,
         minHearts: 2,
         hasQuality: true,
+      },
+    ],
+  },
+  {
+    animal: "crittersandcompanions:red_panda",
+    forages: [
+      {
+        item: "society:ruby",
+        countMult: 2,
+        chance: 0.3,
+        minHearts: 3,
+      },
+      {
+        item: "society:pristine_ruby",
+        countMult: 1,
+        chance: 0.1,
+        minHearts: 10,
       },
     ],
   },
@@ -307,7 +324,7 @@ global.husbandryForagingDefinitions = [
         item: "supplementaries:antique_ink",
         countMult: 1,
         chance: 0.1,
-        minHearts: 8
+        minHearts: 8,
       },
     ],
   },
@@ -325,7 +342,7 @@ global.husbandryForagingDefinitions = [
         item: "society:legendary_ink",
         countMult: 1,
         chance: 0.1,
-        minHearts: 8
+        minHearts: 8,
       },
     ],
   },
@@ -434,7 +451,7 @@ const sheepMilk = { sm: "society:sheep_milk", lg: "society:large_sheep_milk" };
 global.husbandryMilkingDefinitions = [
   { animal: "minecraft:cow", cooldown: 1, milk: cowMilk },
   { animal: "minecraft:mooshroom", cooldown: 1, milk: cowMilk },
-  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: cowMilk },
+  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },
   {
     animal: "meadow:wooly_cow",
@@ -500,4 +517,9 @@ global.petGifts = [
     animal: "minecraft:axolotl",
     gifts: ["simplehats:axolotl_on_head", "beachparty:rubber_ring_axolotl"],
   },
+  {
+    animal: "crittersandcompanions:ferret",
+    gifts: ["crittersandcompanions:jumping_spider_spawn_egg"],
+  },
+  { animal: "crittersandcompanions:shima_enaga", gifts: ["relics:elytra_booster"] },
 ];

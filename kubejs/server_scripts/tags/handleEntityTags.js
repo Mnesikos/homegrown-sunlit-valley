@@ -55,8 +55,18 @@ ServerEvents.tags("entity_type", (e) => {
     "wildernature:dog",
     "minecraft:axolotl",
     "wildernature:hedgehog",
+    "crittersandcompanions:ferret",
+    "crittersandcompanions:shima_enaga",
   ];
   petAnimals.forEach((animal) => {
     e.add("society:pet_animal", animal);
+  });
+  ["wildernature:flamingo", "farmlife:galliraptor", "farmlife:domestic_tribull"].forEach(
+    (animal) => {
+      e.add("society:infertile", animal);
+    }
+  );
+  ["longwings:moth", "longwings:butterfly"].forEach((animal) => {
+    e.add("society:longwing", animal);
   });
 });

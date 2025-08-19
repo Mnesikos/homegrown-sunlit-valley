@@ -13,9 +13,6 @@
       "tag": "forge:salt"
     }
   ],
-  "container": {
-    "item": "meadow:wooden_bucket"
-  },
   "result": {
     "item": "society:large_amethyst_milk"
   }
