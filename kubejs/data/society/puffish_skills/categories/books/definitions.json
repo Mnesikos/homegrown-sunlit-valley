@@ -77,7 +77,7 @@
   },
   "bullfish_jobs": {
     "title": "Bullfish Jobs",
-    "description": "The quality of fish taken out of Fish Ponds scales with max population.",
+    "description": "The quality of fish taken out of Fish Ponds scales with population.",
     "icon": {
       "type": "item",
       "data": {

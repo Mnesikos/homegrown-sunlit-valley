@@ -149,10 +149,10 @@
     "modId": "bountiful",
     "version": "6.0.4+1.20.1"
   },
-  "buildinggadgets2-1.0.8.jar": {
-    "jarName": "buildinggadgets2-1.0.8.jar",
+  "buildinggadgets2-1.0.7.jar": {
+    "jarName": "buildinggadgets2-1.0.7.jar",
     "modId": "buildinggadgets2",
-    "version": "1.0.8"
+    "version": "1.0.7"
   },
   "buzzier_bees-1.20.1-6.0.1.jar": {
     "jarName": "buzzier_bees-1.20.1-6.0.1.jar",
@@ -1251,6 +1251,11 @@
     "jarName": "rottencreatures-forge-1.20.1-1.1.0.jar",
     "modId": "rottencreatures",
     "version": "1.1.0"
+  },
+  "RSInfinityBooster-1.20.1-1.0+41.jar": {
+    "jarName": "RSInfinityBooster-1.20.1-1.0+41.jar",
+    "modId": "rsinfinitybooster",
+    "version": "1.20.1-1.0+41"
   },
   "sawmill-1.20-1.4.8.jar": {
     "jarName": "sawmill-1.20-1.4.8.jar",

@@ -10,6 +10,7 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
   const fishRecipe = global.getArtisanRecipe(global.fishPondDefinitions, fishPond);
   if (global.inventoryHasItems(inventory, "society:sparkstone", 1) != 1) return;
   if (
+    newProperties.get("mature").toLowerCase() === "true" &&
     level.getBlock(block.pos).getProperties().get("upgraded") === "true" &&
     Number(newProperties.get("population")) > 0
   ) {
@@ -32,7 +33,8 @@ global.runFishPondBasket = (tickEvent, fishPondPos, player) => {
         0.01
       );
     }
-  } else if (
+  } 
+  if (
     newProperties.get("mature").toLowerCase() === "true" &&
     global.inventoryBelowHasRoom(level, block, global.getRoe(fishRecipe.item)) &&
     global.useInventoryItems(inventory, "society:sparkstone", 1) == 1
@@ -69,7 +71,7 @@ StartupEvents.registry("block", (event) => {
     .item((item) => {
       item.tooltip(Text.gray("Harvests outputs of Fish Ponds into inventory below."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.gold("Upgrade with a Bucket to extract fish."));
+      item.tooltip(Text.gold("Upgrade with a Bucket to extract fish when mature."));
       item.tooltip(Text.green(`Area: 3x3x3`));
       item.tooltip(Text.lightPurple("Requires Sparkstone"));
       item.modelJson({

@@ -643,6 +643,12 @@ global.fishPondDefinitions = [
       },
       {
         minPopulation: 8,
+        item: "society:ocean_jelly",
+        count: 1,
+        chance: 0.04,
+      },
+      {
+        minPopulation: 8,
         item: "relics:jellyfish_necklace",
         count: 1,
         chance: 0.08,
@@ -2327,6 +2333,12 @@ global.fishPondDefinitions = [
         count: 1,
         chance: 0.22,
       },
+      {
+        minPopulation: 8,
+        item: "society:nether_jelly",
+        count: 1,
+        chance: 0.04,
+      },
     ],
   },
   {
@@ -3415,7 +3427,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [{ item: "society:sunlit_pearl", count: 3 }],
+        requestedItems: [{ item: "society:sunlit_pearl", count: 1 }],
       },
       {
         population: 5,
@@ -3424,9 +3436,9 @@ global.fishPondDefinitions = [
       {
         population: 7,
         requestedItems: [
-          { item: "society:aged_energy_drink", count: 32 },
-          { item: "society:petrified_mayonnaise", count: 4 },
-          { item: "society:pristine_amethyst_chunk", count: 8 },
+          { item: "society:aged_energy_drink", count: 8 },
+          { item: "society:petrified_mayonnaise", count: 1 },
+          { item: "society:pristine_amethyst_chunk", count: 1 },
         ],
       },
     ],

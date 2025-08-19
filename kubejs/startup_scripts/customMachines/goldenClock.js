@@ -64,7 +64,7 @@ global.runGoldenClock = (entity) => {
   let scanBlock;
   let dayTime = level.dayTime();
   let morningModulo = dayTime % 24000;
-  const goldenClockProgTime = 40;
+  const goldenClockProgTime = 1000;
   if (
     morningModulo >= goldenClockProgTime &&
     morningModulo < goldenClockProgTime + artMachineTickRate
@@ -93,7 +93,7 @@ StartupEvents.registry("block", (event) => {
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
     .item((item) => {
-      item.tooltip(Text.gray("Progresses nearby Artisan Machines once a day"));
+      item.tooltip(Text.gray("Progresses nearby Artisan Machines once a day at 7am"));
       item.tooltip(Text.green(`Area: 5x5`));
       item.modelJson({
         parent: "society:block/golden_clock",

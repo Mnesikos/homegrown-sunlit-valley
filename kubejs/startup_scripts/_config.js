@@ -27,3 +27,9 @@ global.clockIcon = true;
  * This won't do anything in Single Player as they aren't otherwise obtainable
  */
 global.multiplayerSharestones = false;
+
+/**
+ * Only server needs to change this
+ * Skull Cavern will decay blocks placed after 30 seconds and torches after 1 minute
+ */
+global.skullCavernHardmode = false;

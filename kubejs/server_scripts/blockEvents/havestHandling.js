@@ -29,7 +29,6 @@ BlockEvents.rightClicked((e) => {
       e.cancel();
     }
   }
-  if (block.hasTag("dewdrop:waterable") && player.isFake()) e.cancel();
   if (!allowedBonemealCrops.includes(block.id)) {
     if (player.isHoldingInAnyHand("farm_and_charm:fertilizer")) e.cancel();
     if (

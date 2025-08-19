@@ -283,7 +283,7 @@
   },
   "mitosis": {
     "title": "Mitosis",
-    "description": "Doubles a fish being retrieved from a Fish Ponds.",
+    "description": "Doubles a fish being retrieved from Fish Ponds.",
     "frame": {
       "type": "advancement",
       "data": {

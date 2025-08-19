@@ -377,7 +377,7 @@
       },
       "request": {
         "itemKey": "society:nether_jelly",
-        "amount": 16,
+        "amount": 8,
         "priceModifier": 0
       },
       "tradeExp": 2,
