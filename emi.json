@@ -22,6 +22,32 @@
     }
   ],
   "lookup_history": [
+    "item:netherdepthsupgrade:eyeball_fish",
+    {
+      "type": "item",
+      "id": "netherdepthsupgrade:soulsucker",
+      "amount": 31
+    },
+    {
+      "type": "item",
+      "id": "netherdepthsupgrade:soul_sucker_leather",
+      "amount": 3
+    },
+    "item:minecraft:oak_pressure_plate",
+    "item:society:plushie_capsule{}",
+    "item:moblassos:hostile_lasso",
+    "item:moblassos:diamond_lasso",
+    {
+      "type": "item",
+      "id": "society:sparkstone_block",
+      "amount": 64
+    },
+    "item:atmospheric:currant_seedling",
+    {
+      "type": "item",
+      "id": "minecraft:oak_log",
+      "amount": 32
+    },
     "item:society:supreme_mayonnaise",
     "item:candlelight:tropical_fish_supreme",
     "item:moreminecarts:chiseled_organic_glass",
@@ -68,11 +94,6 @@
       "amount": 1152
     },
     "item:minecraft:diamond_block",
-    {
-      "type": "item",
-      "id": "minecraft:oak_log",
-      "amount": 192
-    },
     "item:create:industrial_iron_block",
     "item:minecraft:iron_ingot",
     "item:society:sunlit_pearl",
@@ -210,7 +231,6 @@
     "item:society:sparkstone",
     "item:botania:mana_diamond",
     "item:botania:dragonstone",
-    "item:society:sparkstone_block",
     "item:whimsy_deco:yellow_froggy_chair",
     "item:whimsy_deco:red_atm",
     "item:whimsy_deco:adv_vocal_doll",
@@ -242,7 +262,6 @@
     "item:aquaculture:jellyfish",
     "item:aquaculture:lockbox",
     "item:aquaculture:treasure_chest",
-    "item:moblassos:diamond_lasso",
     "item:society:enkephalin",
     "item:wildernature:flamingo_spawn_egg",
     "item:hamsters:hamster_wheel",
@@ -284,7 +303,6 @@
     "item:sophisticatedbackpacks:backpack{contentsUuid:[I;-1591382662,1081494888,-1326849505,-229745559],inventorySlots:27,renderInfo:{upgradeItems:[{Count:1b,id:\"minecraft:air\",tag:{}}]},upgradeSlots:1}",
     "item:society:spider_silk",
     "item:minecraft:chainmail_chestplate{Damage:0}",
-    "item:society:plushie_capsule",
     "item:dew_drop_farmland_growth:low_quality_fertilizer",
     "item:dew_drop_farmland_growth:hydrating_fertilizer",
     "item:dew_drop_farmland_growth:pristine_quality_fertilizer",
@@ -421,7 +439,6 @@
     "item:society:end_stone_boulder",
     "item:society:sandstone_boulder",
     "item:society:ice_boulder",
-    "item:atmospheric:currant_seedling{}",
     {
       "type": "item",
       "id": "society:fine_wool",
@@ -791,7 +808,6 @@
     "item:minecraft:cod",
     "item:minecraft:cooked_cod",
     "item:minecraft:golden_horse_armor",
-    "item:moblassos:hostile_lasso{}",
     "item:society:gold_upgrade_smithing_template",
     "item:minecraft:golden_chestplate{Damage:0}",
     "item:moblassos:creative_lasso",
@@ -1284,17 +1300,13 @@
       "nbt": "{}",
       "amount": 64
     },
-    "item:perfectplushies:joosh_plushie",
-    "item:perfectplushies:panda_plushie",
-    "item:perfectplushies:rubber_duck_plushie",
-    "item:perfectplushies:hippo_plushie",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:all_seeing\"}}"
+    "item:perfectplushies:joosh_plushie"
   ],
   "craft_history": [
+    "quark:building/crafting/hollowlogs/hollow_oak_log",
     "minecraft:kjs/tropical_fish",
     "minecraft:diamond_block",
     "minecraft:diamond",
-    "quark:building/crafting/hollowlogs/hollow_oak_log",
     "sophisticatedbackpacks:copper_backpack",
     "minecraft:oak_fence",
     "minecraft:crafting_table",

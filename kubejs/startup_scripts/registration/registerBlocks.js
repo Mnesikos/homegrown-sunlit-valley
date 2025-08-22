@@ -158,7 +158,7 @@ StartupEvents.registry("block", (e) => {
     .hardness(-1)
     .resistance(3600000)
     .randomTick((tick) => {
-      global.handleSkullCavernRegen(tick.server, tick.level, tick.block);
+      if (rnd25()) global.handleSkullCavernRegen(tick.server, tick.level, tick.block);
     })
     .defaultState((state) => {
       state.set(integerProperty.create("type", 0, 4), 0);

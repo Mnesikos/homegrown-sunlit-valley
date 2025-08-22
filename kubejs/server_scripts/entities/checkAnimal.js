@@ -21,7 +21,7 @@ ItemEvents.entityInteracted((e) => {
     let nearbyLongwings = level
       .getEntitiesWithin(target.boundingBox.inflate(16))
       .filter((e) => global.checkEntityTag(e, "society:longwing"));
-    let radius = 3;
+    let radius = 4;
     let { x, y, z } = target;
     let scanBlock;
     let scannedBlocks = 0;
@@ -39,8 +39,8 @@ ItemEvents.entityInteracted((e) => {
         if (!stolenBlock) stolenBlock = scanBlock;
       }
     }
-    let chance = scannedBlocks * 0.1 - nearbyLongwings.length * 0.1;
-    chance = chance <= 0 ? "0%" : `${Math.floor(chance * 100)}%`;
+    let chance = scannedBlocks * 0.15 - nearbyLongwings.length * 0.1;
+    chance = chance <= 0 ? "0%" : `${Math.min(100, Math.floor(chance * 100))}%`;
     let chanceMessage = `${chance} Chance to produce ${target.type.toString().equals("longwings:butterfly") ? "Butterfly Amber" : "Moth Pollen"}`;
     let longwingCountMessage = `${nearbyLongwings.length} nearby Moths & Butterflies`;
     let flowerCountMessage = `${scannedBlocks} unique flowers nearby`;
