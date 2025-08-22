@@ -147,6 +147,8 @@
 - Added Silk Touch book to Librarian
 - Improved the performance of Skull Cavern air by reducing randomtick frequency
 - Increased impact of unique flowers on Butterfly Amber/Moth Pollen production chance (+10% per -> +15% per)
+- Reduced radius of Weeping trait 3 -> 2
+- Reduced Weeping trait's time to 30 -> 2.6 minutes (4x slime effect cooldown config option)
 - Fixed Butterfly Amber/Moth Pollen production time being far too high 
 - Fixed Koi Fish not having Fish Finder entry
 - Fixed Glow mushrooms being bonemealable
@@ -157,5 +159,7 @@
 - Fixed Flamingos spawning on beaches
 - Fixed issues with Building Shop Blueprints disappearing on Aternos/Exeraton
 - Fixed Spawn Eggs working on Mob Spawners
+- Fixed Wild slimes not having Jade 
+- Fixed Slime Vac desync issue when sucking up Slimes for real this time in a definitely smart way
 - Fixed Shepherd and Cleric not updating trades
-- Fixed Eyballfish and Soul Sucker voiding shears
+- Fixed Eyeballfish and Soul Sucker voiding shears
