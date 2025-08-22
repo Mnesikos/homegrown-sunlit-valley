@@ -192,7 +192,6 @@ global.removedItems = [
   "refinedstorage:64k_fluid_storage_block",
   "refinedstorage:64k_fluid_storage_disk",
   "refinedstorage:64k_fluid_storage_part",
-  "refinedstorage:64k_storage_block",
   "refinedstorage:64k_storage_disk",
   "refinedstorage:64k_storage_part",
   "refinedstorage:constructor",

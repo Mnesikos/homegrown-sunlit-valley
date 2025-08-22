@@ -16,6 +16,9 @@ global.mainUiElementIds = [
   "skullTeleportMessage",
   "skullCavernPlaceBlockMessage",
   "magicRopeMessage",
+  "chanceMessage",
+  "longwingCountMessage",
+  "flowerCountMessage"
 ];
 const clearUiPaint = (player, ids) => {
   let removedText = {};

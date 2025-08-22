@@ -229,6 +229,9 @@ global.handleFishHarvest = (fish, block, player, server, basket) => {
     global.getPondProperties(block);
   let additionalMaxRoe = 0;
   let harvestOutputs = [];
+  if (Math.random() < 0.01 && !player.stages.has("bullfish_jobs")) {
+    harvestOutputs.push("society:bullfish_jobs");
+  }
   if (player.stages.has("caper_catcher")) additionalMaxRoe += 5;
   if (player.stages.has("caviar_catcher")) additionalMaxRoe += 5;
   const fishRoe = global.getRoe(fish.item);

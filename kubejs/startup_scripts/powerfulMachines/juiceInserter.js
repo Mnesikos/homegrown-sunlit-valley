@@ -55,7 +55,7 @@ global.runJuiceInserter = (blockInfo) => {
   let barrelData = fermentationBarrel.getEntityData();
   const fluidData = block.getEntityData().ForgeData;
   if (!barrelData) return;
-  if (Number(barrelData.FluidLevel) === 100) return;
+  if (Number(barrelData.FluidLevel) + 25 > 100) return;
   if (fluidData.Fluid < 250) return;
   juiceMap.forEach((juice) => {
     if (fluidData.FluidType.equals(juice.fluid)) {

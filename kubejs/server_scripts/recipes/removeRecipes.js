@@ -13,6 +13,7 @@ ServerEvents.recipes((e) => {
     "refinedstorage:wireless_transmitter",
     "refinedstorage:controller",
     "refinedstorage:4k_storage_block",
+    "refinedstorage:64k_storage_block",
     "meadow:watering_can",
     "wildernature:leveling_contract",
     "wildernature:uncommon_contract",

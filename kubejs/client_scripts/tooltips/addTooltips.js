@@ -410,7 +410,7 @@ ItemEvents.tooltip((tooltip) => {
     "dew_drop_farmland_growth:pristine_quality_fertilizer",
     Text.green("Supremely increases the chance of quality crops on harvest")
   );
-  tooltip.add('minecraft:fishing_rod', Text.gray("Remove attached bobbers before upgrading"))
+  tooltip.add("minecraft:fishing_rod", Text.gray("Remove attached bobbers before upgrading"));
   tooltip.add("etcetera:handbell", Text.gray("Calls non-sitting pets and allays to you when rung"));
   tooltip.add("farm_and_charm:pitchfork", Text.gray("Turns Fertilized Farmland into Dirt"));
   tooltip.add("farm_and_charm:pitchfork", Text.green("50% chance to recover Fertilizer"));
@@ -571,9 +571,15 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:kinetic_blueprint", "🏹 §6Boiler Room reward");
   tooltip.add("society:skull_cavern_teleporter", "🏹 §6Vault reward");
   tooltip.add("relics:magic_mirror", "🏹 §6Crafts Room reward");
+
   tooltip.add(
-    "moreminecarts:chiseled_organic_glass",
-    Text.gray("Crops underneath grow in any season")
+    [
+      "moreminecarts:chiseled_organic_glass",
+      "moreminecarts:chiseled_organic_glass_pane",
+      "moreminecarts:greenhouse_glass_stairs",
+      "moreminecarts:greenhouse_glass_slab",
+    ],
+    Text.gray("Crop underneath grows in any season")
   );
   tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
   tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
@@ -632,9 +638,9 @@ ItemEvents.tooltip((tooltip) => {
   });
   tooltip.add("relics:jellyfish_necklace", Text.red("Hurts nearby animals when worn!"));
 
-  tooltip.add("society:river_jelly", Text.blue("Fished up in River biomes"))
-  tooltip.add("society:ocean_jelly", Text.aqua("Fished up in Ocean & Beach biomes"))
-  tooltip.add("society:nether_jelly", Text.gold("Fished up in Nether biomes"))
+  tooltip.add("society:river_jelly", Text.blue("Fished up in River biomes"));
+  tooltip.add("society:ocean_jelly", Text.aqua("Fished up in Ocean & Beach biomes"));
+  tooltip.add("society:nether_jelly", Text.gold("Fished up in Nether biomes"));
   const craftingMaterials = [
     "society:fire_quartz",
     "society:earth_crystal",
@@ -1014,8 +1020,12 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("Does not work with Magic Mirror!")
   );
   // Refined
-  tooltip.add('refinedstorage:4k_storage_block', Text.green("Stores 4,000 items digitally"))
-  tooltip.add('toms_storage:ts.adv_wireless_terminal', Text.red("Shift + Right Click to convert into Wireless Crafting Grid and Dimension Card."))
+  tooltip.add("refinedstorage:4k_storage_block", Text.green("Stores 4,000 items digitally"));
+  tooltip.add("refinedstorage:64k_storage_block", Text.green("Stores 64,000 items digitally"));
+  tooltip.add(
+    "toms_storage:ts.adv_wireless_terminal",
+    Text.red("Shift + Right Click to convert into Wireless Crafting Grid and Dimension Card.")
+  );
   global.removedItems.forEach((item) => {
     tooltip.add(item, Text.red("REMOVED! You shouldn't have this..."));
   });
