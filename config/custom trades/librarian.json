@@ -101,8 +101,31 @@
         "enchantments": [
           {
             "enchantmentKey": "minecraft:mending",
-            "enchantmentLevel": 1,
-            "maxEnchantmentLevel": 3
+            "enchantmentLevel": 1
+          }
+        ]
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:librarian_enchanted_book_for_sun"
+    },
+        {
+      "offer": {
+        "itemKey": "minecraft:enchanted_book",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "minecraft:silk_touch",
+            "enchantmentLevel": 1
           }
         ]
       },

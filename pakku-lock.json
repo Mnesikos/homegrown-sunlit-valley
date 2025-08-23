@@ -8714,7 +8714,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.9.0-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.9.1-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8722,16 +8722,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6898/625/portable_blueprints-v1.9.0-mv1.20.1.jar",
-                    "id": "6898625",
+                    "url": "https://edge.forgecdn.net/files/6914/703/portable_blueprints-v1.9.1-mv1.20.1.jar",
+                    "id": "6914703",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "ae783186c635b3afc0f990806ff010abed61a2f3",
-                        "md5": "9df7456f8d658a637026a081fe86f17b"
+                        "sha1": "3c23343d9a8568dc538bdc7f3510bf29629eaf39",
+                        "md5": "116684862083159823c3c0b162b8de8d"
                     },
                     "required_dependencies": [],
-                    "size": 414205,
-                    "date_published": "2025-08-18T00:50:04.413Z"
+                    "size": 414225,
+                    "date_published": "2025-08-22T12:01:59.183Z"
                 }
             ]
         },
@@ -10633,7 +10633,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "splendid_slimes-0.14.2.jar",
+                    "file_name": "splendid_slimes-0.14.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10641,18 +10641,18 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6898/14/splendid_slimes-0.14.2.jar",
-                    "id": "6898014",
+                    "url": "https://edge.forgecdn.net/files/6913/446/splendid_slimes-0.14.4.jar",
+                    "id": "6913446",
                     "parent_id": "1240935",
                     "hashes": {
-                        "sha1": "5bbc6bc50392ff2e9524fdaccbd91e41edf66157",
-                        "md5": "ceea14b0e21cebaf605b072034fd5808"
+                        "sha1": "81cdd2a411efb879dcd160dd83007dd008db974e",
+                        "md5": "c114be4687320094cfa5033b4ae79f33"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 461804,
-                    "date_published": "2025-08-17T21:10:27.503Z"
+                    "size": 462002,
+                    "date_published": "2025-08-22T01:41:44.450Z"
                 }
             ]
         },

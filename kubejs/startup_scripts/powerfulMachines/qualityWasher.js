@@ -20,7 +20,7 @@ global.handleQualityWasher = (e) => {
               belowItem.count < belowBlock.inventory.getSlotLimit(j))
           ) {
             sentItem = slotItem.copy();
-            if (slotItem.nbt && slotItem.nbt.quality_food) {
+            if (slotItem.nbt && slotItem.nbt.quality_food && !slotItem.hasTag('society:plushies')) {
               sentItem.nbt = null;
             }
             sentItem.count = 1;

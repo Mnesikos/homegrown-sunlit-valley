@@ -3,7 +3,7 @@ global.handleLongwings = (entity, item) => {
   const entities = level
     .getEntitiesWithin(entity.boundingBox.inflate(16))
     .filter((e) => global.checkEntityTag(e, "society:longwing"));
-  const radius = 3;
+  const radius = 4;
   const { x, y, z } = entity;
   let scanBlock;
   let scannedBlocks = 0;
@@ -21,7 +21,7 @@ global.handleLongwings = (entity, item) => {
       if (!stolenBlock) stolenBlock = scanBlock;
     }
   }
-  const chance = scannedBlocks * 0.1 - entities.length * 0.1;
+  const chance = scannedBlocks * 0.15 - entities.length * 0.1;
   if (chance > 0 && Math.random() <= chance) {
     let drop = level.createEntity("minecraft:item");
     drop.item = item;
@@ -38,14 +38,14 @@ global.handleLongwings = (entity, item) => {
 EntityJSEvents.modifyEntity((event) => {
   event.modify("longwings:moth", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
-      if (entity.level.time % 1000 === 0) {
+      if (entity.level.time % 6000 === 0) {
         global.handleLongwings(entity, "society:butterfly_amber");
       }
     });
   });
   event.modify("longwings:butterfly", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
-      if (entity.level.time % 1000 === 0) {
+      if (entity.level.time % 6000 === 0) {
         global.handleLongwings(entity, "society:moth_pollen");
       }
     });

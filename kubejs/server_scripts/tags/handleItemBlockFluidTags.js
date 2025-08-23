@@ -393,6 +393,15 @@ ServerEvents.tags("item", (e) => {
     e.add("society:raw_logs", log);
   });
   e.add("forge:stripped_logs", "vanillabackport:stripped_pale_oak_log");
+  [
+    "twigs:tangerine_seashell",
+    "twigs:roseate_seashell",
+    "twigs:opaline_seashell",
+    "beachparty:seashell",
+    "twigs:bronzed_seashell",
+  ].forEach((shell) => {
+    e.add("society:seashells", shell);
+  });
   // Furniture
   global.lootFurniture.forEach((furniture) => {
     e.add("society:loot_furniture", furniture);
@@ -553,7 +562,7 @@ ServerEvents.tags("block", (e) => {
     "lootr:lootr_inventory",
     "brewery:wooden_brewingstation",
     "brewery:copper_brewingstation",
-    "brewery:netherite_brewingstation"
+    "brewery:netherite_brewingstation",
   ];
   buildingGadgetsDeny.forEach((block) => {
     e.add("buildinggadgets2:deny", block);

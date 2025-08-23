@@ -13,7 +13,6 @@ const deniedCrops = [
 const allowedBonemealCrops = [
   "minecraft:crimson_fungus",
   "minecraft:warped_fungus",
-  "quark:glow_shroom",
 ];
 const reseedableCrops = [
   "minecraft:potato",
@@ -83,6 +82,7 @@ BlockEvents.rightClicked((e) => {
           "verdantvibes:bracket_mushroom",
         ].includes(block.id)
       ) {
+        player.tell("Bonemeal is too weak to grow this...")
         e.cancel();
       }
     }

@@ -514,6 +514,7 @@ ServerEvents.recipes((e) => {
     r: "society:rubber",
   });
   e.shapeless("society:furniture_box", ["4x #society:loot_furniture"]);
+  e.shapeless("society:plushie_capsule", ["4x #society:plushies"]);
   e.smoking("pamhc2trees:roastedhazelnutitem", "pamhc2trees:hazelnutitem").xp(0.35);
   // Crab trap bait
   e.shapeless("crabbersdelight:crab_trap_bait", ["aquaculture:worm"]);

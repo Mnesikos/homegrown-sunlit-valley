@@ -1,6 +1,6 @@
 ^^^
 ## Pretty Polish
-### v3.2.1
+### v3.2.2
 ^^^
 --- 
 - Updated to Create 6
@@ -137,3 +137,29 @@
 - Fixed Wuthering Logs working on everything
 - Fixed Husbandry Bundle listing Large Goat Milk twice
 - Fixed Changelog missing entries
+
+## 3.2.2
+- Added Fermenting recipe for River Jelly
+- Added Butterfly and Moth checking for 
+- Added Bullfish Jobs as a chance output to Fish Ponds
+- Added Seashell tag
+- Added 64k storage block to Storagesmith
+- Added Silk Touch book to Librarian
+- Improved the performance of Skull Cavern air by reducing randomtick frequency
+- Increased impact of unique flowers on Butterfly Amber/Moth Pollen production chance (+10% per -> +15% per)
+- Reduced radius of Weeping trait 3 -> 2
+- Reduced Weeping trait's time to 30 -> 2.6 minutes (4x slime effect cooldown config option)
+- Fixed Butterfly Amber/Moth Pollen production time being far too high 
+- Fixed Koi Fish not having Fish Finder entry
+- Fixed Glow mushrooms being bonemealable
+- Fixed Bonemeal failing not having a message
+- Fixed Sophisticated Storage upgrade void bug prevention not actually checking if chest is empty
+- Fixed forage berry bush crates not having recipes
+- Fixed Greenhouse Glass blocks not having tooltips and cleaned it up
+- Fixed Flamingos spawning on beaches
+- Fixed issues with Building Shop Blueprints disappearing on Aternos/Exeraton
+- Fixed Spawn Eggs working on Mob Spawners
+- Fixed Wild slimes not having Jade 
+- Fixed Slime Vac desync issue when sucking up Slimes for real this time in a definitely smart way
+- Fixed Shepherd and Cleric not updating trades
+- Fixed Eyeballfish and Soul Sucker voiding shears

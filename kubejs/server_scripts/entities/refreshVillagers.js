@@ -7,13 +7,14 @@ ItemEvents.entityInteracted((e) => {
   let updateThis = false;
   const nbt = target.nbt.toString();
   if (nbt.includes("leatherworker") && !nbt.includes("stylin_purple_hat")) updateThis = true;
-  if (nbt.includes("weaponsmith") && !nbt.includes("refined")) updateThis = true;
-  if (nbt.includes("shepherd") && !nbt.includes("lasso")) updateThis = true;
+  if (nbt.includes("weaponsmith") && !nbt.includes("64k_storage_block")) updateThis = true;
+  if (nbt.includes("shepherd") && !nbt.includes("diamond_lasso")) updateThis = true;
   if (nbt.includes("botanist") && !nbt.includes("endless_fortune")) updateThis = true;
   if (nbt.includes("bountiful_fertilizer")) updateThis = true;
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
   if (nbt.includes("toolsmith") && nbt.includes("reinforced_core")) updateThis = true;
-  if (nbt.includes("cleric") && !nbt.includes("lasso")) updateThis = true;
+  if (nbt.includes("cleric") && !nbt.includes("hostile_lasso")) updateThis = true;
+  if (nbt.includes("librarian") && !nbt.includes("silk_touch")) updateThis = true;
   if (
     nbt.includes("cartographer") &&
     !nbt.includes("fletcher") &&

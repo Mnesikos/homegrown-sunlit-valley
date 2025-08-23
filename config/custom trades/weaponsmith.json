@@ -237,7 +237,7 @@
       "tradeLevel": 1,
       "UTID": "minecraft:weaponsmith_controller_for_sun"
     },
-        {
+    {
       "offer": {
         "itemKey": "refinedstorage:4k_storage_block",
         "amount": 1,
@@ -253,7 +253,25 @@
       "priceMultiplier": 0.0,
       "demand": 0,
       "tradeLevel": 1,
-      "UTID": "minecraft:weaponsmith_controller_for_sun"
+      "UTID": "minecraft:weaponsmith_4k_storage_block_for_sun"
+    },
+    {
+      "offer": {
+        "itemKey": "refinedstorage:64k_storage_block",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:weaponsmith_64k_storage_block_for_sun"
     },
     {
       "offer": {

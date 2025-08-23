@@ -1,12 +1,11 @@
 {
     "name": "Society Sunlit Valley",
-    "version": "3.2.1",
+    "version": "3.2.2",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
-        "patchouli_books",
-        "portable_blueprints"
+        "patchouli_books"
     ],
     "client_overrides": [
         "resourcepacks",
