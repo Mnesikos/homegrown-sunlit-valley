@@ -1,0 +1,308 @@
+{
+  "shopID": "fisher",
+  "name": "shop.society_trading.fisher",
+  "trades": [
+    {
+      "offer": {
+        "item": "aquaculture:worm",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 2
+      }
+    },
+    {
+      "offer": {
+        "item": "minecraft:fishing_rod",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      }
+    },
+    {
+      "offer": {
+        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 24
+      }
+    },
+    {
+      "offer": {
+        "item": "society:fish_radar",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      },
+      "secondRequest": {
+        "item": "aquaculture:neptunium_ingot",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "society:fish_pond",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 8
+      },
+      "secondRequest": {
+        "item": "society:river_jelly",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "society:fish_smoker",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 2
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:note_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:spur",
+        "count": 7
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:light_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 5
+      },
+      "secondRequest": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:heavy_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 5
+      },
+      "secondRequest": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:redstone_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 5
+      },
+      "secondRequest": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:gold_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 5
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:iron_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:diamond_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 16
+      },
+      "secondRequest": {
+        "item": "aquaculture:neptunium_ingot",
+        "count": 2
+      }
+    },
+    {
+      "offer": {
+        "item": "stardew_fishing:trap_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      }
+    },
+    {
+      "offer": {
+        "item": "stardew_fishing:cork_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      }
+    },
+    {
+      "offer": {
+        "item": "stardew_fishing:sonar_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 6
+      }
+    },
+    {
+      "offer": {
+        "item": "stardew_fishing:treasure_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "stardew_fishing:quality_bobber",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "secondRequest": {
+        "item": "aquaculture:neptunium_ingot",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:double_hook",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:tackle_box",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "aquaculture:worm_farm",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      }
+    },
+    {
+      "offer": {
+        "item": "society:neptunium_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 32
+      }
+    },
+    {
+      "offer": {
+        "item": "create:copper_diving_helmet",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      }
+    },
+    {
+      "offer": {
+        "item": "create:copper_backtank",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 4
+      }
+    },
+    {
+      "offer": {
+        "item": "create:copper_diving_boots",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 3
+      }
+    },
+    {
+      "offer": {
+        "item": "candlelight:gold_ring",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 32
+      }
+    },
+    {
+      "offer": {
+        "item": "patchouli:guide_book",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "secondRequest": {
+        "item": "aquaculture:neptunium_block",
+        "count": 1
+      }
+    }
+  ]
+}

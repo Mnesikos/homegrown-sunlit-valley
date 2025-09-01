@@ -347,7 +347,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.darkRed("Does not work on farmland crops")
   );
   tooltip.add(
-    "society:bank_meter",
+    "numismatics_utils:bank_meter",
     Text.gray("Shows balance in Bank Terminal when worn in curio slot")
   );
   tooltip.add(
@@ -599,6 +599,7 @@ ItemEvents.tooltip((tooltip) => {
     Text.red("REMOVED!! CORRUPTS WORLD WHEN USED ON ARTISAN MACHINES")
   );
   tooltip.add("extractinator:extractinator", Text.gray("Right click with a geode to process"));
+  tooltip.add("extractinator:extractinator", Text.gray("Shift + Right click to process stack"));
   tooltip.add(
     ["moreminecarts:chunkrodite_block", "moreminecarts:chunkrodite"],
     Text.gray("Adds time to Fueled Chunk Loader")

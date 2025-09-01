@@ -104,6 +104,12 @@
   "pipez": {
     "pipe": true
   },
+  "strawgolem": {
+    "strawgolem_barrel": true,
+    "strawgolem_decay": true,
+    "strawgolem_hunger": true,
+    "strawgolem": true
+  },
   "untitledduckmod": {
     "lay_egg": true
   },
@@ -112,11 +118,5 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "ultramarine": {
-    "brick_kiln": true,
-    "bottle_gourd": true,
-    "mallet_toggleable": true,
-    "censer_burn_time": true
   }
 }

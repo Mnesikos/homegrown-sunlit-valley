@@ -60,7 +60,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
+                    "file_name": "AdvancedLootInfo-forge-1.20.1-1.3.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -69,16 +69,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6895/734/AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
-                    "id": "6895734",
+                    "url": "https://edge.forgecdn.net/files/6933/164/AdvancedLootInfo-forge-1.20.1-1.3.1.jar",
+                    "id": "6933164",
                     "parent_id": "1205426",
                     "hashes": {
-                        "sha1": "ab326518cbd007e71826ccd7b5fc670cbc218ecf",
-                        "md5": "750860b84ddf0e9edabeaa123051daea"
+                        "sha1": "e3b41276185166ca22f815884cf89fe5d30e4624",
+                        "md5": "903ff984d07e6700387c687abc0fbf5e"
                     },
                     "required_dependencies": [],
-                    "size": 394389,
-                    "date_published": "2025-08-17T09:05:12.163Z"
+                    "size": 457223,
+                    "date_published": "2025-08-27T07:04:58.273Z"
                 }
             ]
         },
@@ -2406,7 +2406,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_factory_logistics-1.20.1-1.4.5.jar",
+                    "file_name": "create_factory_logistics-1.20.1-1.4.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2414,16 +2414,16 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/6763/9/create_factory_logistics-1.20.1-1.4.5.jar",
-                    "id": "6763009",
+                    "url": "https://edge.forgecdn.net/files/6925/756/create_factory_logistics-1.20.1-1.4.6.jar",
+                    "id": "6925756",
                     "parent_id": "1218807",
                     "hashes": {
-                        "sha1": "5c2c2a416000273b8503a7ec666bc9325cb5707b",
-                        "md5": "cd134d174ec0a84bc231cda56f8510a8"
+                        "sha1": "465e6b54a7aad8c5501a517e4d83d9da4aefaaea",
+                        "md5": "65252091cb9878b33a5ebabdfd73cf7f"
                     },
                     "required_dependencies": [],
-                    "size": 1082428,
-                    "date_published": "2025-07-13T08:41:15.490Z"
+                    "size": 1097007,
+                    "date_published": "2025-08-25T07:30:01.110Z"
                 }
             ]
         },
@@ -4779,7 +4779,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FarmersDelight-1.20.1-1.2.8.jar",
+                    "file_name": "FarmersDelight-1.20.1-1.2.9.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -4788,16 +4788,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6597/298/FarmersDelight-1.20.1-1.2.8.jar",
-                    "id": "6597298",
+                    "url": "https://edge.forgecdn.net/files/6917/255/FarmersDelight-1.20.1-1.2.9.jar",
+                    "id": "6917255",
                     "parent_id": "398521",
                     "hashes": {
-                        "sha1": "a3402ee46cf12583416b8fbe84a97dd20ba1401a",
-                        "md5": "56aed09101bcbf0790154f8d8f09d9aa"
+                        "sha1": "ca9417c369e75d38dacdac59937223e5f6adcc18",
+                        "md5": "71e177a98e0e6f399761ad00e978d177"
                     },
                     "required_dependencies": [],
-                    "size": 2962947,
-                    "date_published": "2025-05-30T01:49:22.850Z"
+                    "size": 2978080,
+                    "date_published": "2025-08-23T01:46:19.950Z"
                 }
             ]
         },
@@ -8714,7 +8714,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "portable_blueprints-v1.9.1-mv1.20.1.jar",
+                    "file_name": "portable_blueprints-v1.9.2-mv1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -8722,16 +8722,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6914/703/portable_blueprints-v1.9.1-mv1.20.1.jar",
-                    "id": "6914703",
+                    "url": "https://edge.forgecdn.net/files/6941/72/portable_blueprints-v1.9.2-mv1.20.1.jar",
+                    "id": "6941072",
                     "parent_id": "1231499",
                     "hashes": {
-                        "sha1": "3c23343d9a8568dc538bdc7f3510bf29629eaf39",
-                        "md5": "116684862083159823c3c0b162b8de8d"
+                        "sha1": "a82788919db16d2f7e0e659cddd15e09523a2ac4",
+                        "md5": "9ba3c4fd9e14e48f86ce6a336481059a"
                     },
                     "required_dependencies": [],
-                    "size": 414225,
-                    "date_published": "2025-08-22T12:01:59.183Z"
+                    "size": 431031,
+                    "date_published": "2025-08-29T12:54:15.100Z"
                 }
             ]
         },
@@ -9659,7 +9659,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "seasonhud-forge-1.20.1-1.13.7.jar",
+                    "file_name": "seasonhud-forge-1.20.1-1.13.9.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -9669,16 +9669,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6828/944/seasonhud-forge-1.20.1-1.13.7.jar",
-                    "id": "6828944",
+                    "url": "https://edge.forgecdn.net/files/6933/197/seasonhud-forge-1.20.1-1.13.9.jar",
+                    "id": "6933197",
                     "parent_id": "690971",
                     "hashes": {
-                        "sha1": "d97bae6c4c37ff09661ff2fc7f15858b20d51c61",
-                        "md5": "62246012d654a36925e85a5f4b62b88b"
+                        "sha1": "3a12ab03cb351712f4decfc0207e18c94a1bb239",
+                        "md5": "fc2078f7fdbbe354d6bb5bc5f004ebb1"
                     },
                     "required_dependencies": [],
-                    "size": 292491,
-                    "date_published": "2025-07-30T14:05:40.240Z"
+                    "size": 297914,
+                    "date_published": "2025-08-27T07:14:48.513Z"
                 }
             ]
         },
@@ -11950,7 +11950,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "veggiesdelight-1.7.2.jar",
+                    "file_name": "veggiesdelight-1.8.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11958,16 +11958,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6271/55/veggiesdelight-1.7.2.jar",
-                    "id": "6271055",
+                    "url": "https://edge.forgecdn.net/files/6940/290/veggiesdelight-1.8.2.jar",
+                    "id": "6940290",
                     "parent_id": "1082807",
                     "hashes": {
-                        "sha1": "db098470583baf792f70322471f03b764acd30de",
-                        "md5": "df08ec52c09a650a0ea7288ac11d1074"
+                        "sha1": "1413889921efd7a71bb86ca32dc53974ff28e3ef",
+                        "md5": "05bf09a82add7af47f197644ee3adda9"
                     },
-                    "required_dependencies": [],
-                    "size": 283302,
-                    "date_published": "2025-03-06T13:38:10.437Z"
+                    "required_dependencies": [
+                        "398521"
+                    ],
+                    "size": 363547,
+                    "date_published": "2025-08-29T07:07:50.073Z"
                 }
             ]
         },

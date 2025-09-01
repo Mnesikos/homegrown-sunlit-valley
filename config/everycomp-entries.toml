@@ -45,6 +45,12 @@
 		[types.leaves_type.vanillabackport]
 			pale_oak = true
 
+		[types.leaves_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+			flowering_acacia = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]
@@ -82,6 +88,11 @@
 
 		[types.wood_type.vanillabackport]
 			pale_oak = true
+
+		[types.wood_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
 
 	[types.cake]
 

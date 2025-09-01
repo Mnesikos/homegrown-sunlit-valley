@@ -2,9 +2,7 @@ console.info("[SOCIETY] coinUi.js loaded");
 
 const xOffset = 64;
 
-const Numismatics = Java.loadClass(
-  "dev.ithundxr.createnumismatics.Numismatics"
-);
+const Numismatics = Java.loadClass("dev.ithundxr.createnumismatics.Numismatics");
 
 const getPlayerBalance = (player) => {
   const playerAccount = Numismatics.BANK.accounts.get(player.getUuid());
@@ -16,9 +14,7 @@ PlayerEvents.tick((e) => {
   const curios = player.nbt.ForgeCaps["curios:inventory"];
   if (global.clockIcon && player.age % 20 == 0) {
     if (
-      ["gag:energized_hearthstone", "gag:hearthstone"].includes(
-        player.getHeldItem("main_hand").id
-      )
+      ["gag:energized_hearthstone", "gag:hearthstone"].includes(player.getHeldItem("main_hand").id)
     ) {
       player.paint({
         clockIcon: { remove: true },
@@ -41,17 +37,14 @@ PlayerEvents.tick((e) => {
 });
 
 const bankMeterPainter = (curios, player) => {
-  if (
-    player.age % 100 == 0 &&
-    curios.toString().includes("society:bank_meter")
-  ) {
+  if (player.age % 100 == 0 && curios.toString().includes("society:bank_meter")) {
     const balance = getPlayerBalance(player);
     const balanceText = global.formatPrice(balance);
 
     player.paint({
       coinDisplayDropShadow: {
         type: "text",
-        x: 1+ xOffset,
+        x: 1 + xOffset,
         z: -1,
         y: 19,
         text: `● ${balanceText}`,
@@ -97,10 +90,7 @@ const fishRadarPainter = (curios, e) => {
   function setLocalConditions(x) {
     localConditions = x;
   }
-  if (
-    player.age % 100 == 0 &&
-    curios.toString().includes("society:fish_radar")
-  ) {
+  if (player.age % 100 == 0 && curios.toString().includes("society:fish_radar")) {
     let fish = [];
 
     if (level.dimension !== "minecraft:the_nether") {
@@ -160,6 +150,6 @@ const fishRadarPainter = (curios, e) => {
     for (let index = 0; index < 10; index++) {
       removedFishUiIds.push(`fish_radar_${index}`);
     }
-    global.clearUiItemPaint(player, removedFishUiIds)
+    global.clearUiItemPaint(player, removedFishUiIds);
   }
 };

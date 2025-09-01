@@ -8,7 +8,7 @@ const validExtractinatorItems = [
   "society:magma_geode",
   "society:omni_geode",
 ];
-const processGeodeLootTable = (lootTable, block) => {
+const processGeodeLootTable = (lootTable, block, server) => {
   let drops;
   lootTable.forEach((entry) => {
     if (Math.random() < entry.drop_chance) {
@@ -16,6 +16,9 @@ const processGeodeLootTable = (lootTable, block) => {
       block.popItemFromFace(drops[Math.floor(Math.random() * drops.length)], "up");
     }
   });
+  server.runCommandSilent(
+    `playsound twigs:block.schist_bricks.break block @a ${block.x} ${block.y} ${block.z} 0.3`
+  );
 };
 
 BlockEvents.rightClicked("extractinator:extractinator", (e) => {
@@ -24,11 +27,20 @@ BlockEvents.rightClicked("extractinator:extractinator", (e) => {
   const heldItem = item.getId();
   if (!validExtractinatorItems.includes(heldItem)) return;
   global.extractinatorRecipes.forEach((recipe) => {
-    if (heldItem == recipe.input) processGeodeLootTable(recipe.output, block);
-  });
-  if (!player.isCreative()) item.count--;
-  server.runCommandSilent(
-    `playsound stardew_fishing:complete block @a ${player.x} ${player.y} ${player.z}`
-  );
+    if (heldItem == recipe.input) {
+      if (player.isCrouching()) {
+        for (let i = 0; i < item.count; i++) {
+          server.scheduleInTicks(i * 4, () => {
+            processGeodeLootTable(recipe.output, block, server);
+          });
+        }
+  global.addItemCooldown(player, item.id, item.count);
+        if (!player.isCreative()) item.count = 0;
+      } else {
+        processGeodeLootTable(recipe.output, block, server);
+        if (!player.isCreative()) item.count--;
   global.addItemCooldown(player, item.id, 4);
+      }
+    }
+  });
 });

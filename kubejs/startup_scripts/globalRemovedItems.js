@@ -1,4 +1,13 @@
 global.removedItems = [
+  "windswept:ginger_root",
+  "windswept:ginger_root_crate",
+  "windswept:candy_cane",
+  "aquaculture:wooden_fillet_knife",
+  "aquaculture:stone_fillet_knife",
+  "aquaculture:iron_fillet_knife",
+  "aquaculture:gold_fillet_knife",
+  "aquaculture:diamond_fillet_knife",
+  "aquaculture:neptunium_fillet_knife",
   "vanillabackport:pale_oak_boat",
   "vanillabackport:pale_oak_chest_boat",
   "automobility:slope",

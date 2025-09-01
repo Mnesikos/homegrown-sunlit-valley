@@ -9,20 +9,20 @@
     "modId": "additional_attributes",
     "version": "1.3.6"
   },
-  "AdvancedLootInfo-forge-1.20.1-1.2.5.jar": {
-    "jarName": "AdvancedLootInfo-forge-1.20.1-1.2.5.jar",
+  "AdvancedLootInfo-forge-1.20.1-1.3.1.jar": {
+    "jarName": "AdvancedLootInfo-forge-1.20.1-1.3.1.jar",
     "modId": "ali",
-    "version": "1.20.1-1.2.5"
+    "version": "1.20.1-1.3.1"
   },
   "AdvancementPlaques-1.20.1-forge-1.6.7.jar": {
     "jarName": "AdvancementPlaques-1.20.1-forge-1.6.7.jar",
     "modId": "advancementplaques",
     "version": "1.6.7"
   },
-  "alltheleaks-0.1.4-beta+1.20.1-forge.jar": {
-    "jarName": "alltheleaks-0.1.4-beta+1.20.1-forge.jar",
+  "alltheleaks-1.0.2+1.20.1-forge.jar": {
+    "jarName": "alltheleaks-1.0.2+1.20.1-forge.jar",
     "modId": "alltheleaks",
-    "version": "0.1.4-beta+1.20.1-forge"
+    "version": "1.0.2+1.20.1-forge"
   },
   "alternate_current-mc1.20-1.7.0.jar": {
     "jarName": "alternate_current-mc1.20-1.7.0.jar",
@@ -324,10 +324,10 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.3-for-create-6.0.6"
   },
-  "create_factory_logistics-1.20.1-1.4.5.jar": {
-    "jarName": "create_factory_logistics-1.20.1-1.4.5.jar",
+  "create_factory_logistics-1.20.1-1.4.6.jar": {
+    "jarName": "create_factory_logistics-1.20.1-1.4.6.jar",
     "modId": "create_factory_logistics",
-    "version": "1.4.5"
+    "version": "1.4.6"
   },
   "create_hypertube-0.2.5-FORGE.jar": {
     "jarName": "create_hypertube-0.2.5-FORGE.jar",
@@ -569,10 +569,10 @@
     "modId": "fantasyfurniture",
     "version": "9.0.0"
   },
-  "FarmersDelight-1.20.1-1.2.8.jar": {
-    "jarName": "FarmersDelight-1.20.1-1.2.8.jar",
+  "FarmersDelight-1.20.1-1.2.9.jar": {
+    "jarName": "FarmersDelight-1.20.1-1.2.9.jar",
     "modId": "farmersdelight",
-    "version": "1.20.1-1.2.8"
+    "version": "1.20.1-1.2.9"
   },
   "farmingforblockheads-forge-1.20.1-14.0.2.jar": {
     "jarName": "farmingforblockheads-forge-1.20.1-14.0.2.jar",
@@ -733,6 +733,11 @@
     "jarName": "Iceberg-1.20.1-forge-1.1.25.jar",
     "modId": "iceberg",
     "version": "1.1.25"
+  },
+  "ImmediatelyFast-Forge-1.5.1+1.20.4.jar": {
+    "jarName": "ImmediatelyFast-Forge-1.5.1+1.20.4.jar",
+    "modId": "immediatelyfast",
+    "version": "1.5.1+1.20.4"
   },
   "immersive_paintings-0.6.8+1.20.1-forge.jar": {
     "jarName": "immersive_paintings-0.6.8+1.20.1-forge.jar",
@@ -1037,6 +1042,11 @@
     "modId": "nerb",
     "version": "0.4.1"
   },
+  "numismatics_utils-0.1.jar": {
+    "jarName": "numismatics_utils-0.1.jar",
+    "modId": "numismatics_utils",
+    "version": "0.1"
+  },
   "observable-4.4.1.jar": {
     "jarName": "observable-4.4.1.jar",
     "modId": "observable",
@@ -1142,10 +1152,10 @@
     "modId": "ponderjs",
     "version": "2.0.6"
   },
-  "portable_blueprints-v1.9.1-mv1.20.1.jar": {
-    "jarName": "portable_blueprints-v1.9.1-mv1.20.1.jar",
+  "portable_blueprints-v1.9.2-mv1.20.1.jar": {
+    "jarName": "portable_blueprints-v1.9.2-mv1.20.1.jar",
     "modId": "portable_blueprints",
-    "version": "1.9.1"
+    "version": "1.9.2"
   },
   "portfolio-1.20.1-1.4.0-forge.jar": {
     "jarName": "portfolio-1.20.1-1.4.0-forge.jar",
@@ -1156,6 +1166,11 @@
     "jarName": "powerfuljs-1.6.1.jar",
     "modId": "powerfuljs",
     "version": "1.6.1"
+  },
+  "probejs-6.0.1-forge.jar": {
+    "jarName": "probejs-6.0.1-forge.jar",
+    "modId": "probejs",
+    "version": "6.0.1"
   },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "jarName": "puffish_attributes-0.7.2-1.20-forge.jar",
@@ -1267,10 +1282,10 @@
     "modId": "searchables",
     "version": "1.0.3"
   },
-  "seasonhud-forge-1.20.1-1.13.7.jar": {
-    "jarName": "seasonhud-forge-1.20.1-1.13.7.jar",
+  "seasonhud-forge-1.20.1-1.13.9.jar": {
+    "jarName": "seasonhud-forge-1.20.1-1.13.9.jar",
     "modId": "seasonhud",
-    "version": "1.13.7"
+    "version": "1.13.9"
   },
   "selectivebounds-forge-1.20.1-0.0.2.jar": {
     "jarName": "selectivebounds-forge-1.20.1-0.0.2.jar",
@@ -1357,6 +1372,11 @@
     "modId": "snuffles",
     "version": "1.0.7"
   },
+  "society_trading-0.1.jar": {
+    "jarName": "society_trading-0.1.jar",
+    "modId": "society_trading",
+    "version": "0.1"
+  },
   "sodiumdynamiclights-forge-1.0.10-1.20.1.jar": {
     "jarName": "sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
     "modId": "sodiumdynamiclights",
@@ -1372,20 +1392,20 @@
     "modId": "solonion",
     "version": "1.4.5"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.23.1289.jar": {
-    "jarName": "sophisticatedbackpacks-1.20.1-3.23.23.1289.jar",
+  "sophisticatedbackpacks-1.20.1-3.23.26.1315.jar": {
+    "jarName": "sophisticatedbackpacks-1.20.1-3.23.26.1315.jar",
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.23.1289"
+    "version": "3.23.26.1315"
   },
-  "sophisticatedcore-1.20.1-1.2.80.1073.jar": {
-    "jarName": "sophisticatedcore-1.20.1-1.2.80.1073.jar",
+  "sophisticatedcore-1.20.1-1.2.81.1091.jar": {
+    "jarName": "sophisticatedcore-1.20.1-1.2.81.1091.jar",
     "modId": "sophisticatedcore",
-    "version": "1.2.80.1073"
+    "version": "1.2.81.1091"
   },
-  "sophisticatedstorage-1.20.1-1.3.58.1217.jar": {
-    "jarName": "sophisticatedstorage-1.20.1-1.3.58.1217.jar",
+  "sophisticatedstorage-1.20.1-1.3.62.1236.jar": {
+    "jarName": "sophisticatedstorage-1.20.1-1.3.62.1236.jar",
     "modId": "sophisticatedstorage",
-    "version": "1.3.58.1217"
+    "version": "1.3.62.1236"
   },
   "spark-1.10.53-forge.jar": {
     "jarName": "spark-1.10.53-forge.jar",
@@ -1547,10 +1567,10 @@
     "modId": "vanillabackport",
     "version": "1.1.4.3"
   },
-  "veggiesdelight-1.7.2.jar": {
-    "jarName": "veggiesdelight-1.7.2.jar",
+  "veggiesdelight-1.8.2.jar": {
+    "jarName": "veggiesdelight-1.8.2.jar",
     "modId": "veggiesdelight",
-    "version": "1.7.2"
+    "version": "1.8.2"
   },
   "verdantvibes-1.0.3-1.20.1.jar": {
     "jarName": "verdantvibes-1.0.3-1.20.1.jar",
@@ -1591,6 +1611,11 @@
     "jarName": "waystones-forge-1.20.1-14.1.17.jar",
     "modId": "waystones",
     "version": "14.1.17"
+  },
+  "windswept-1.20.1-3.0.0.jar": {
+    "jarName": "windswept-1.20.1-3.0.0.jar",
+    "modId": "windswept",
+    "version": "3.0.0"
   },
   "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar": {
     "jarName": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",

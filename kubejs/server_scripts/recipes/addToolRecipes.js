@@ -129,13 +129,6 @@ ServerEvents.recipes((e) => {
     `minecraft:bow`,
     "aquaculture:neptunium_ingot"
   );
-  upgradeTool("fillet_knife", "aquaculture");
-  e.smithing(
-    `aquaculture:neptunium_fillet_knife`,
-    `society:neptunium_upgrade_smithing_template`,
-    `aquaculture:diamond_fillet_knife`,
-    "aquaculture:neptunium_ingot"
-  );
   // Knives
   const knifeTiers = ["flint", "iron", "gold", "diamond", "netherite"];
   knifeTiers.forEach((tier, index) => {
