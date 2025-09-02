@@ -6,7 +6,8 @@ emojiful/cache
 journeymap/
 local/
 logs
-resourcepacks/
+resourcepacks/*
+!resourcepacks/emi_tag_icon_fixes/
 mods/
 build/
 saves/
