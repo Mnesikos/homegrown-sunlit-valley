@@ -80,6 +80,9 @@ const cropList = [
   "society:peanut",
   "society:sweet_potato",
   "society:onion",
+  "veggiesdelight:turnip_crop",
+  "veggiesdelight:zucchini_crop",
+  "veggiesdelight:broccoli_crop",
 ];
 // TODO: "vintagedelight:gearo_berry_bush"
 const cropCollectorDenied = [

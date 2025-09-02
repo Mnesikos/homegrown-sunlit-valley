@@ -124,19 +124,16 @@
 				"{ftbquests.chapter.getting_started.quest3.description2}"
 			]
 			id: "3F759C6DEEBC61FD"
-			rewards: [
-				{
-					count: 9
-					id: "1B89BB30B2C03782"
-					item: "farmersdelight:tomato_seeds"
-					type: "item"
+			rewards: [{
+				count: 16
+				id: "7B4C17024ED1239D"
+				item: {
+					Count: 1
+					id: "veggiesdelight:turnip_seeds"
+					tag: { }
 				}
-				{
-					id: "032EA113F5A62635"
-					item: "numismatics:sprocket"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "303017FCE69EB127"

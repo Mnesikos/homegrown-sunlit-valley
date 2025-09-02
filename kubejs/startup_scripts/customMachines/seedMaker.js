@@ -199,6 +199,9 @@ global.seedMakerRecipes = [
     input: "atmospheric:aloe_leaves",
     output: ["6x atmospheric:aloe_kernels"],
   },
+  { input: "veggiesdelight:turnip", output: ["6x veggiesdelight:turnip_seeds"] },
+  { input: "veggiesdelight:broccoli", output: ["6x veggiesdelight:broccoli_seeds"] },
+  { input: "veggiesdelight:zucchini", output: ["6x veggiesdelight:zucchini_seeds"] },
 ];
 
 StartupEvents.registry("block", (event) => {

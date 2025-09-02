@@ -965,7 +965,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.767857142857153d
+			x: 0.0d
 			y: 11.547619047619051d
 		}
 		{
@@ -983,7 +983,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 2.267857142857153d
+			x: 1.5d
 			y: 11.547619047619051d
 		}
 		{
@@ -1001,7 +1001,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.767857142857153d
+			x: 3.0d
 			y: 11.547619047619051d
 		}
 		{
@@ -1019,7 +1019,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 5.267857142857153d
+			x: 4.5d
 			y: 11.547619047619051d
 		}
 		{
@@ -1037,8 +1037,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 13.0d
+			x: 6.0d
+			y: 11.5d
 		}
 		{
 			id: "2916F3AC70CDF974"
@@ -1055,7 +1055,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 13.0d
 		}
 		{
@@ -1073,7 +1073,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 13.0d
 		}
 		{
@@ -1091,7 +1091,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 13.0d
 		}
 		{
@@ -1109,7 +1109,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 13.0d
 		}
 		{
@@ -1127,7 +1127,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 13.0d
 		}
 		{
@@ -1145,7 +1145,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 13.0d
 		}
 		{
@@ -1163,8 +1163,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -1.5d
-			y: 14.5d
+			x: 7.5d
+			y: 13.0d
 		}
 		{
 			id: "3A80E1BB93F0414B"
@@ -1181,7 +1181,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 0.0d
+			x: -1.5d
 			y: 14.5d
 		}
 		{
@@ -1199,7 +1199,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
+			x: 0.0d
 			y: 14.5d
 		}
 		{
@@ -1217,7 +1217,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: 14.5d
 		}
 		{
@@ -1235,7 +1235,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.5d
+			x: 3.0d
 			y: 14.5d
 		}
 		{
@@ -1253,7 +1253,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
+			x: 4.5d
 			y: 14.5d
 		}
 		{
@@ -1271,7 +1271,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 7.5d
+			x: 6.0d
 			y: 14.5d
 		}
 		{
@@ -1347,6 +1347,7 @@
 				"66BB843D75A0605B"
 				"43661DEAB3C61534"
 				"62D563D41BB5D230"
+				"4F68D7E85B9F2064"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -1421,6 +1422,24 @@
 			}]
 			x: 7.5d
 			y: 6.5d
+		}
+		{
+			id: "4F68D7E85B9F2064"
+			tasks: [{
+				id: "5D3B542BFBBB902C"
+				item: {
+					Count: 1
+					id: "longwings:moth"
+					tag: {
+						variant: "omiza"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 7.5d
+			y: 14.5d
 		}
 	]
 	subtitle: ["Not required for perfection"]

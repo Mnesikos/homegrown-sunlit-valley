@@ -1,6 +1,102 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "veggiesdelight:turnip",
+      "amount": 8
+    },
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:ender\"}}",
+    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
+    "item:minecraft:oak_planks",
+    {
+      "type": "item",
+      "id": "minecraft:oak_log",
+      "amount": 64
+    },
+    "item:create:cut_deepslate_brick_stairs",
+    "item:create:polished_cut_scoria_wall",
+    "item:veggiesdelight:zucchini",
+    "item:veggiesdelight:zucchini_seeds",
+    "item:veggiesdelight:broccoli",
+    "item:veggiesdelight:turnip_seeds",
+    "item:veggiesdelight:broccoli_seeds",
+    "item:veggiesdelight:turnip_crate",
+    "item:society:ancient_fruit_preserves",
+    "item:society:pickled_zucchini",
+    "item:society:pickled_turnip",
+    "item:society:pickled_broccoli",
+    "item:society:wild_berries_preserves",
+    "item:society:raisins",
+    "item:society:nether_raisins",
+    "item:society:dried_shimmering_mushrooms",
+    "item:society:broccoli_preserves",
+    "item:society:turnip_preserves",
+    "item:society:zucchini_preserves",
+    "item:veggiesdelight:garlic",
+    "item:society:pickled_garlic",
+    "item:veggiesdelight:cauliflower",
+    "item:veggiesdelight:bellpepper",
+    "item:vintagedelight:cucumber",
+    "item:vintagedelight:ghost_pepper",
+    "item:minecraft:sweet_berries",
+    "item:windswept:wild_berries",
+    "#item:minecraft:wooden_slabs",
+    "item:railways:wooden_headstock_link_and_pin",
+    "item:railways:wooden_headstock_split_knuckle_coupler",
+    "item:railways:copycat_headstock_split_knuckle_coupler",
+    "item:railways:track_coupler",
+    "item:railways:link_and_pin",
+    "#item:railways:deco_couplers",
+    "item:railways:wooden_headstock",
+    {
+      "type": "item",
+      "id": "railways:copycat_headstock",
+      "amount": 64
+    },
+    "item:create:minecart_coupling",
+    "item:railways:wooden_headstock_screwlink_coupler",
+    "item:moreminecarts:coupler",
+    "item:windswept:holly_berries",
+    "item:veggiesdelight:turnip_cake{}",
+    "item:snowyspirit:ginger",
+    "item:society:pickled_ginger",
+    {
+      "type": "item",
+      "id": "windswept:mutton_pie",
+      "amount": 64
+    },
+    "item:windswept:chestnuts",
+    "item:windswept:pinecone_block",
+    {
+      "type": "item",
+      "id": "windswept:pinecone",
+      "amount": 9
+    },
+    "item:windswept:pinecone_shingles",
+    "item:windswept:light_gray_pinecone_shingles",
+    "item:windswept:pinecone_jam_block",
+    "item:windswept:carved_pinecone_block",
+    "item:species:ancient_pinecone",
+    "item:windswept:pinecone_jam_bottle",
+    "item:windswept:light_gray_pinecone_shingle_stairs",
+    "item:windswept:roasted_chestnuts",
+    "item:windswept:chestnut_crate",
+    "item:windswept:lavender_bale",
+    "item:windswept:lavender",
+    "item:herbalbrews:lavender_blossom",
+    "item:herbalbrews:lavender",
+    "item:botania:quartz_lavender",
+    "item:botania:lavender_quartz",
+    "item:quark:lavender_blossom_leaves",
+    "item:windswept:lavender_crown{Damage:0}",
+    "item:windswept:lavender_tea",
+    "item:windswept:ice_lantern",
+    "item:twigs:torchflower_paper_lantern",
+    "item:twigs:paper_lantern",
+    "item:numismatics_utils:bank_meter",
+    "item:numismatics_utils:portable_bank_terminal",
+    "item:botania:rune_water",
     "item:society:ancient_cookie",
     "item:vintagedelight:oatmeal_cookie",
     "item:botania:mana_cookie",
@@ -9,9 +105,7 @@
     "item:windswept:ginger_root",
     "item:windswept:ginger_soil",
     "item:windswept:ginger_root_crate",
-    "item:snowyspirit:ginger",
     "item:snowyspirit:wild_ginger",
-    "item:society:pickled_ginger",
     "item:snowyspirit:gingerbread_cookie",
     {
       "type": "item",
@@ -27,11 +121,6 @@
       "id": "windswept:goat",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "windswept:mutton_pie",
-      "amount": 64
-    },
     "item:snowyspirit:gingerbread",
     "#item:snowyspirit:gingerbreads",
     "item:windswept:glazed_gingerbread_bricks",
@@ -42,7 +131,6 @@
     "item:windswept:candy_cane_block",
     "item:snowyspirit:candy_cane",
     "item:windswept:candy_cane",
-    "item:windswept:chestnuts",
     "item:minecraft:bone_meal",
     "item:minecraft:bone_block",
     "item:minecraft:bone",
@@ -70,7 +158,6 @@
     "item:veggiesdelight:turnip_water",
     "item:veggiesdelight:turnip_beef_stew",
     "item:veggiesdelight:turnip_salad",
-    "item:veggiesdelight:turnip_cake{}",
     "item:veggiesdelight:broccoli_salad",
     "item:veggiesdelight:pasta_with_broccoli",
     "item:veggiesdelight:stuffed_zucchinis",
@@ -136,19 +223,8 @@
     },
     "item:crabbersdelight:cooked_glow_squid_tentacles",
     "item:crabbersdelight:raw_glow_squid_tentacles",
-    {
-      "type": "item",
-      "id": "veggiesdelight:zucchini_seeds",
-      "amount": 64
-    },
     "item:dew_drop_farmland_growth:bountiful_fertilizer",
     "item:dew_drop_farmland_growth:pristine_quality_fertilizer",
-    "item:windswept:lavender_crown{Damage:0}",
-    {
-      "type": "item",
-      "id": "windswept:wild_berries",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "atmospheric:aloe_kernels",
@@ -159,7 +235,6 @@
       "id": "atmospheric:yucca_branch",
       "amount": 64
     },
-    "item:minecraft:sweet_berries",
     {
       "type": "item",
       "id": "herbalbrews:coffee_beans",
@@ -167,28 +242,16 @@
     },
     "item:farmersdelight:melon_popsicle",
     "item:mysticaloaktree:wise_oak",
-    {
-      "type": "item",
-      "id": "windswept:lavender",
-      "amount": 64
-    },
     "item:minecraft:nether_star",
     "#item:forge:cooked_pork",
     "item:shippingbin:basic_shipping_bin",
     "item:windswept:holly_sapling",
     {
       "type": "item",
-      "id": "windswept:pinecone",
-      "amount": 8
-    },
-    {
-      "type": "item",
       "id": "windswept:weathered_pine_log",
       "amount": 14
     },
     "item:windswept:moss_campion",
-    "item:windswept:pinecone_jam_block",
-    "item:windswept:pinecone_jam_bottle",
     "item:windswept:hoot_pottery_sherd",
     "item:windswept:lupine",
     "item:windswept:wooden_water_bucket{Damage:0}",
@@ -198,12 +261,9 @@
     "item:windswept:chestnut_boat",
     "item:windswept:chestnut_bookshelf",
     "item:windswept:will_o_the_wisp",
-    "item:windswept:roasted_chestnuts",
     "item:windswept:sweet_snow_cone",
     "item:windswept:chestnut_soup",
     "item:windswept:ginger_tea",
-    "item:windswept:lavender_tea",
-    "item:windswept:holly_berries",
     "item:windswept:frozen_branch",
     "item:windswept:elder_feather",
     "item:windswept:lunalite",
@@ -245,12 +305,10 @@
     "item:windswept:music_disc_bumblebee",
     "item:windswept:wooden_bucket{Damage:0}",
     "item:windswept:holly_berries_on_a_stick{Damage:0}",
-    "item:windswept:ice_lantern",
     "item:windswept:wooden_powder_snow_bucket{Damage:0}",
     "item:windswept:white_rose_bush",
     "item:windswept:dry_mossy_sprouts",
     "item:windswept:mossy_sprouts",
-    "item:windswept:lavender_bale",
     {
       "type": "item",
       "id": "windswept:roasted_chestnut_crate",
@@ -277,11 +335,6 @@
     "item:brewery:whiskey_maggoallan",
     {
       "type": "item",
-      "id": "minecraft:oak_planks",
-      "amount": 7
-    },
-    {
-      "type": "item",
       "id": "minecraft:oak_slab",
       "amount": 60
     },
@@ -301,14 +354,7 @@
       "id": "veggiesdelight:zucchini_slice",
       "amount": 3
     },
-    {
-      "type": "item",
-      "id": "veggiesdelight:zucchini",
-      "amount": 64
-    },
-    "item:veggiesdelight:turnip",
     "item:veggiesdelight:sweet_potato",
-    "item:veggiesdelight:broccoli_seeds",
     {
       "type": "item",
       "id": "veggiesdelight:garlic_clove",
@@ -316,7 +362,6 @@
       "amount": 64
     },
     "item:veggiesdelight:garlic_bread",
-    "item:veggiesdelight:garlic",
     "item:netherdepthsupgrade:eyeball_fish",
     {
       "type": "item",
@@ -338,11 +383,6 @@
       "amount": 64
     },
     "item:atmospheric:currant_seedling",
-    {
-      "type": "item",
-      "id": "minecraft:oak_log",
-      "amount": 32
-    },
     "item:society:supreme_mayonnaise",
     "item:moreminecarts:chiseled_organic_glass",
     "item:moreminecarts:greenhouse_glass_slab",
@@ -422,7 +462,6 @@
     "item:oreganized:silver_nugget",
     "item:minecraft:copper_ingot",
     "item:botania:mana_powder",
-    "item:botania:quartz_lavender",
     "item:botania:infused_seeds",
     "item:botania:manaweave_chestplate{Damage:0}",
     "item:botania:knockback_belt",
@@ -454,7 +493,6 @@
     "item:nightlights:octopus_light_gray",
     "item:botania:cosmetic_witch_pin",
     "item:betterarcheology:artifact_shards",
-    "item:vintagedelight:ghost_pepper",
     "item:extra_gauges:counter_gauge",
     "item:simplehats:easterhead",
     "item:simplehats:mohawk",
@@ -485,7 +523,6 @@
     "item:whimsy_deco:green_atm",
     "item:society:book_of_stars",
     "item:society:celestine",
-    "item:society:dried_shimmering_mushrooms",
     "item:society:dried_brown_mushroom",
     "item:society:double_aged_good_catawba",
     "item:society:aged_beer_haley",
@@ -494,7 +531,6 @@
     "item:society:dried_crystalberry",
     "item:society:double_aged_creepers_crush",
     "item:society:double_aged_glowing_wine",
-    "item:society:ancient_fruit_preserves",
     "item:society:strawberry_preserves",
     "item:society:baryte",
     "item:society:neptunite",
@@ -704,7 +740,6 @@
     "item:society:turtle_mayonnaise",
     "item:society:cruncher_mayonnaise",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:sparkcat\"}}",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
     "item:society:merino_wool",
     "item:botania:prism",
     "item:minecraft:prismarine",
@@ -1063,11 +1098,6 @@
     "item:numismatics:ancient_coin",
     "item:zetter:canvas",
     "item:society:prismatic_shard",
-    {
-      "type": "item",
-      "id": "botania:rune_water",
-      "amount": 64
-    },
     "#item:minecraft:fishes",
     "item:minecraft:barrier{display:{Name:\u0027{\"text\":\"Empty Tag: minecraft:fishes\"}\u0027}}",
     {
@@ -1262,73 +1292,7 @@
     "item:meadow:pine_wood",
     "item:toms_storage:ts.inventory_hopper_basic",
     "item:toms_storage:ts.inventory_proxy",
-    "item:toms_storage:ts.inventory_cable_connector_filtered",
-    "item:toms_storage:ts.inventory_cable_framed",
-    "item:toms_storage:ts.wireless_terminal",
-    "item:toms_storage:ts.item_filter",
-    "item:toms_storage:ts.paint_kit{Damage:0}",
-    "item:toms_storage:ts.level_emitter",
-    "item:toms_storage:ts.inventory_cable_connector_framed",
-    "item:toms_storage:ts.inventory_cable_connector",
-    "item:toms_storage:ts.inventory_cable",
-    "item:toms_storage:ts.open_crate",
-    "item:toms_storage:ts.trim",
-    "item:toms_storage:ts.inventory_connector",
-    "item:refinedstorage:magenta_crafting_grid",
-    "item:refinedstorage:regulator_upgrade",
-    "item:refinedstorage:speed_upgrade",
-    "item:refinedstorage:hollow_cover{Item:{Count:1b,id:\"minecraft:stone_bricks\"}}",
-    "item:refinedstorage:cover{Item:{Count:1b,id:\"minecraft:stone_bricks\"}}",
-    "item:refinedstorage:detector",
-    "item:refinedstorage:machine_casing",
-    {
-      "type": "item",
-      "id": "refinedstorage:upgrade",
-      "amount": 64
-    },
-    "item:moreminecarts:hard_light_lens",
-    "item:oreganized:electrum_nugget",
-    "item:minecraft:gold_ingot",
-    "item:minecraft:gold_block",
-    "item:moreminecarts:lightspeed_powered_rail",
-    "item:moreminecarts:lightspeed_cross_rail",
-    "item:numismatics:red_card",
-    "item:society:combat_quarterly",
-    "item:oreganized:silver_mirror",
-    "item:minecraft:ender_pearl",
-    {
-      "type": "item",
-      "id": "createutilities:graviton_tube",
-      "amount": 60
-    },
-    {
-      "type": "item",
-      "id": "create:andesite_funnel",
-      "amount": 64
-    },
-    "item:pipez:item_pipe",
-    "item:create:andesite_casing",
-    "item:refinedstorage:white_detector",
-    "#item:refinedstorage:detector",
-    "item:wildernature:diamond_ammunition",
-    "item:create:chute",
-    "item:minecraft:hopper",
-    "item:waterframes:remote",
-    {
-      "type": "item",
-      "id": "createutilities:void_casing",
-      "amount": 64
-    },
-    "item:functionalstorage:ender_drawer",
-    "item:createutilities:void_steel_sheet",
-    "item:createutilities:void_motor",
-    "item:refinedstorage:wireless_grid",
-    "item:refinedstorage:crafting_upgrade",
-    {
-      "type": "item",
-      "id": "refinedstorage:magenta_security_manager",
-      "amount": 64
-    }
+    "item:toms_storage:ts.inventory_cable_connector_filtered"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",

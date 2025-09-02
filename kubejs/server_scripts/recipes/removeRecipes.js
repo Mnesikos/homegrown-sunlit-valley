@@ -4,6 +4,8 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "numismatics_utils:portable_bank_terminal",
+    "numismatics_utils:bank_meter",
     "moblassos:hostile_lasso",
     "moblassos:diamond_lasso",
     "refinedstorage:cable",

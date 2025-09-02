@@ -48,6 +48,12 @@ const stripTags = [
   "vintagedelight:peanut_crop",
   "veggiesdelight:sweet_potato_crop",
   "farm_and_charm:onion_crop",
+  "veggiesdelight:turnip_seeds",
+  "veggiesdelight:turnip",
+  "veggiesdelight:turnip_crop",
+  "veggiesdelight:broccoli_seeds",
+  "veggiesdelight:broccoli",
+  "veggiesdelight:broccoli_crop",
 ];
 const stripSeasons = (e, item) => {
   e.remove("sereneseasons:summer_crops", "vintagedelight:cucumber_crop");
@@ -124,6 +130,9 @@ const springCrops = [
   "society:carrot_seed",
   "society:onion",
   "society:onion_seed",
+  "veggiesdelight:turnip_seeds",
+  "veggiesdelight:turnip",
+  "veggiesdelight:turnip_crop",
 ];
 
 const summerCrops = [
@@ -188,6 +197,8 @@ const summerCrops = [
   "veggiesdelight:bellpepper_crop",
   "veggiesdelight:bellpepper",
   "veggiesdelight:bellpepper_seeds",
+  "veggiesdelight:zucchini",
+  "veggiesdelight:zucchini_crop",
 ];
 const autumnCrops = [
   "society:cranberry",
@@ -240,6 +251,9 @@ const autumnCrops = [
   "society:peanut_seed",
   "society:sweet_potato",
   "society:sweet_potato_seed",
+  "veggiesdelight:broccoli_seeds",
+  "veggiesdelight:broccoli",
+  "veggiesdelight:broccoli_crop",
 ];
 const winterCrops = [
   "society:crystalberry",
@@ -259,6 +273,8 @@ const winterCrops = [
   "society:tubabacco_leaf",
   "society:tubabacco_leaf_seed",
   "atmospheric:kousa_sapling",
+  "windswept:wild_berry_bush",
+  "windswept:wild_berries"
 ];
 const allSeasonCrops = [
   "atmospheric:laurel_sapling",

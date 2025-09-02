@@ -30,12 +30,6 @@
 			tasks: [
 				{
 					count: 32L
-					id: "1477F70DF8BDF00F"
-					item: "minecraft:potato"
-					type: "item"
-				}
-				{
-					count: 32L
 					id: "541D9F35016F7E24"
 					item: "veggiesdelight:cauliflower"
 					type: "item"
@@ -50,6 +44,12 @@
 					count: 32L
 					id: "367F96A16FB9F550"
 					item: "farm_and_charm:strawberry"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "244DF0AA371032B8"
+					item: { Count: 64, id: "veggiesdelight:turnip" }
 					type: "item"
 				}
 			]

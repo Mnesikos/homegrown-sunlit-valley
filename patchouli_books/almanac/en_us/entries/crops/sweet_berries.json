@@ -18,7 +18,7 @@
         ],
         "mapping": {
           "0": "minecraft:sweet_berry_bush[age=3]",
-          "F": "minecraft:grass_block"
+          "F": "minecraft:farmland[moisture=7]"
         }
       }
     }
