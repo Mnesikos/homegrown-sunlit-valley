@@ -126,12 +126,8 @@
 			id: "3F759C6DEEBC61FD"
 			rewards: [{
 				count: 16
-				id: "7B4C17024ED1239D"
-				item: {
-					Count: 1
-					id: "veggiesdelight:turnip_seeds"
-					tag: { }
-				}
+				id: "0675D9BCC3957125"
+				item: "veggiesdelight:turnip_seeds"
 				type: "item"
 			}]
 			size: 1.5d

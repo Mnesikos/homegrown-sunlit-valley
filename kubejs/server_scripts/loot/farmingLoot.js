@@ -134,6 +134,7 @@ LootJS.modifiers((e) => {
     c.forEachLoot((item) => {
       const fertilizer = getFertilizer(c.destroyedBlock);
       const quality = getCropQuality(c.destroyedBlock, fertilizer);
+      // 4.0 TODO: remove effects:[] from this data
       if (quality > 0) item.setNbt(`{quality_food:{effects:[],quality:${quality}}}`);
     });
   });

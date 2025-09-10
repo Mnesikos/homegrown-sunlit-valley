@@ -170,7 +170,7 @@
 		[entries.wood_type.beautify]
 			trellis = true
 			blinds = true
-			picture_frame = true
+			picture_frame = false
 
 		[entries.wood_type.dramaticdoors]
 			short_door = true

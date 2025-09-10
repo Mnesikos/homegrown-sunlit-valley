@@ -1,308 +1,264 @@
 {
-  "shopID": "fisher",
-  "name": "shop.society_trading.fisher",
+  "shop_id": "blacksmith",
+  "name": "shop.society_trading.blacksmith",
+  "texture": "minecraft:textures/block/smithing_table_side",
   "trades": [
     {
       "offer": {
-        "item": "aquaculture:worm",
+        "item": "minecraft:coal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "trade_id": "blacksmith_coal_for_spur"
+    },
+    {
+      "offer": {
+        "item": "minecraft:copper_ingot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "trade_id": "blacksmith_copper_ingot_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "minecraft:iron_ingot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "trade_id": "blacksmith_iron_ingot_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "create:zinc_ingot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "trade_id": "blacksmith_zinc_ingot_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "minecraft:gold_ingot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "trade_id": "blacksmith_gold_ingot_for_cog"
+    },
+    {
+      "offer": {
+        "item": "minecraft:redstone",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "trade_id": "blacksmith_redstone_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "minecraft:flint_and_steel",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 6
+      },
+      "trade_id": "blacksmith_flint_and_steel_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society:iron_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "trade_id": "iron_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:gold_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "trade_id": "gold_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:diamond_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "trade_id": "diamond_upgrade_smithing_template_for_sun"
+    },
+    {
+      "offer": {
+        "item": "minecraft:netherite_upgrade_smithing_template",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 22
+      },
+      "trade_id": "blacksmith_netherite_upgrade_smithing_template_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society:geode_buster",
         "count": 1
       },
       "request": {
         "item": "numismatics:bevel",
         "count": 2
-      }
-    },
-    {
-      "offer": {
-        "item": "minecraft:fishing_rod",
-        "count": 1
       },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      }
+      "trade_id": "blacksmith_geode_buster_for_bevel"
     },
     {
       "offer": {
-        "item": "netherdepthsupgrade:lava_fishing_rod",
+        "item": "extractinator:extractinator",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 24
-      }
+        "count": 3
+      },
+      "trade_id": "blacksmith_extractinator_for_sun_0"
     },
     {
       "offer": {
-        "item": "society:fish_radar",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      },
-      "secondRequest": {
-        "item": "aquaculture:neptunium_ingot",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "society:fish_pond",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 8
-      },
-      "secondRequest": {
-        "item": "society:river_jelly",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "society:fish_smoker",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:neptunium_coin",
-        "count": 2
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:note_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:spur",
-        "count": 7
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:light_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 5
-      },
-      "secondRequest": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:heavy_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 5
-      },
-      "secondRequest": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:redstone_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:cog",
-        "count": 5
-      },
-      "secondRequest": {
-        "item": "numismatics:sprocket",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:gold_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 5
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:iron_hook",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:diamond_hook",
+        "item": "society:skull_cavern_teleporter",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
         "count": 16
       },
-      "secondRequest": {
-        "item": "aquaculture:neptunium_ingot",
-        "count": 2
-      }
+      "second_request": {
+        "item": "minecraft:nether_star",
+        "count": 1
+      },
+      "trade_id": "blacksmith_teleporter_for_sun"
     },
     {
       "offer": {
-        "item": "stardew_fishing:trap_bobber",
+        "item": "create:brown_toolbox",
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      }
-    },
-    {
-      "offer": {
-        "item": "stardew_fishing:cork_bobber",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
+        "item": "numismatics:cog",
         "count": 6
-      }
+      },
+      "trade_id": "blacksmith_brown_toolbox_for_cog_0"
     },
     {
       "offer": {
-        "item": "stardew_fishing:sonar_bobber",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 6
-      }
-    },
-    {
-      "offer": {
-        "item": "stardew_fishing:treasure_bobber",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "stardew_fishing:quality_bobber",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 1
-      },
-      "secondRequest": {
-        "item": "aquaculture:neptunium_ingot",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:double_hook",
+        "item": "furniture:bin",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
         "count": 4
-      }
+      },
+      "trade_id": "blacksmith_bin_for_sun_0"
     },
     {
       "offer": {
-        "item": "aquaculture:tackle_box",
+        "item": "rehooked:wood_hook",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 1
-      }
-    },
-    {
-      "offer": {
-        "item": "aquaculture:worm_farm",
-        "count": 1
+        "count": 4
       },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 1
-      }
+      "trade_id": "blacksmith_wood_hook_for_sun"
     },
     {
       "offer": {
-        "item": "society:neptunium_upgrade_smithing_template",
+        "item": "refurbished_furniture:workbench",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 32
-      }
+        "count": 16
+      },
+      "trade_id": "blacksmith_crafter_for_cog"
     },
     {
       "offer": {
-        "item": "create:copper_diving_helmet",
+        "item": "automobility:automobile_assembler",
         "count": 1
       },
       "request": {
         "item": "numismatics:crown",
         "count": 4
-      }
-    },
-    {
-      "offer": {
-        "item": "create:copper_backtank",
-        "count": 1
       },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 4
-      }
+      "trade_id": "blacksmith_automobile_assembler_for_crown"
     },
     {
       "offer": {
-        "item": "create:copper_diving_boots",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:crown",
-        "count": 3
-      }
-    },
-    {
-      "offer": {
-        "item": "candlelight:gold_ring",
+        "item": "automobility:auto_mechanic_table",
         "count": 1
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 32
-      }
+        "count": 48
+      },
+      "trade_id": "blacksmith_auto_mechanic_table_for_sun"
     },
     {
       "offer": {
-        "item": "patchouli:guide_book",
+        "item": "buildinggadgets2:gadget_core",
         "count": 1
       },
       "request": {
-        "item": "numismatics:neptunium_coin",
+        "item": "numismatics:sun",
+        "count": 20
+      },
+      "trade_id": "blacksmith_gadget_core_for_sun"
+    },
+    {
+      "offer": {
+        "item": "justhammers:small_core",
         "count": 1
       },
-      "secondRequest": {
-        "item": "aquaculture:neptunium_block",
+      "request": {
+        "item": "numismatics:sun",
+        "count": 64
+      },
+      "trade_id": "blacksmith_small_core_for_sun"
+    },
+    {
+      "offer": {
+        "item": "justhammers:impact_core",
         "count": 1
-      }
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 4
+      },
+      "trade_id": "blacksmith_impact_core_for_ancient_coin"
     }
   ]
 }

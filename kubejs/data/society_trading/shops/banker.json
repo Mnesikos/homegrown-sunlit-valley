@@ -1,0 +1,183 @@
+{
+  "shop_id": "banker",
+  "name": "shop.society_trading.banker",
+  "texture": "numismatics:textures/block/bank_terminal/bank_terminal_front",
+  "trades": [
+    {
+      "offer": {
+        "item": "numismatics:prismatic_coin",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:ancient_coin",
+        "count": 64
+      },
+      "trade_id": "beautify:cartographer_prismatic_coin_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "society:pig_race_ticket",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "trade_id": "cartographer_pig_race_ticket_for_crown"
+    },
+    {
+      "offer": {
+        "item": "society:multiplayer_pig_race_ticket",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 2
+      },
+      "trade_id": "cartographer_multiplayer_pig_race_ticket_ticket_for_crown"
+    },
+    {
+      "offer": {
+        "item": "numismatics:bank_terminal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "trade_id": "cartographer_bank_terminal_for_cog"
+    },
+    {
+      "offer": {
+        "item": "numismatics_utils:portable_bank_terminal",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "trade_id": "cartographer_portable_bank_terminal_for_cog"
+    },
+    {
+      "offer": {
+        "item": "numismatics_utils:bank_meter",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "trade_id": "cartographer_bank_meter_for_cog"
+    },
+    {
+      "offer": {
+        "item": "society:shipping_bin_monitor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 1
+      },
+      "trade_id": "cartographer_shipping_bin_monitor_for_cog"
+    },
+    {
+      "offer": {
+        "item": "numismatics:vendor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 2
+      },
+      "trade_id": "cartographer_vendor_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "numismatics:white_card",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "trade_id": "cartographer_white_card_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "numismatics:andesite_depositor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 3
+      },
+      "trade_id": "cartographer_andesite_depositor_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "numismatics:brass_depositor",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 2
+      },
+      "trade_id": "cartographer_brass_depositor_for_cog"
+    },
+    {
+      "offer": {
+        "item": "numismatics:white_id_card",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "trade_id": "cartographer_white_id_card_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "numismatics:blaze_banker",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "trade_id": "cartographer_blaze_banker_for_crown"
+    },
+    {
+      "offer": {
+        "item": "tradingpost:trading_post",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 10
+      },
+      "trade_id": "cartographer_trading_post_for_sun"
+    },
+    {
+      "offer": {
+        "item": "trading_floor:trading_depot",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "trade_id": "cartographer_trading_depot_for_sun"
+    },
+    {
+      "offer": {
+        "item": "society:coin_leaderboard",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "trade_id": "cartographer_coin_leaderboard_for_cog"
+    }
+  ]
+}

@@ -1,6 +1,24 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:unusualfishmod:ancient_weapon_smithing_template",
+    "item:relics:holy_locket{abilities:{belief:{points:0,stats:{amount:0.19389d,capacity:8.0989d,count:1.21805d,radius:3.52019d}},blessing:{points:0,stats:{consumption:7.31713d},temp:{ticking:1b}},repentance:{points:0,stats:{damage:0.15802d,radius:2.27459d}}}}",
+    "item:beachparty:tiki_bar",
+    "item:beachparty:cabinet",
+    "item:beachparty:radio",
+    "item:beachparty:mini_fridge",
+    "item:windswept:candy_cane_block",
+    "item:windswept:candy_cane",
+    "item:windswept:chestnuts",
+    "item:windswept:roasted_chestnuts",
+    "item:bakery:chocolate_glazed_cookie",
+    "item:windswept:pinecone_jam_bottle",
+    "item:windswept:pine_door",
+    {
+      "type": "item",
+      "id": "numismatics:ancient_coin",
+      "amount": 64
+    },
     {
       "type": "item",
       "id": "veggiesdelight:turnip",
@@ -66,7 +84,6 @@
       "id": "windswept:mutton_pie",
       "amount": 64
     },
-    "item:windswept:chestnuts",
     "item:windswept:pinecone_block",
     {
       "type": "item",
@@ -78,9 +95,7 @@
     "item:windswept:pinecone_jam_block",
     "item:windswept:carved_pinecone_block",
     "item:species:ancient_pinecone",
-    "item:windswept:pinecone_jam_bottle",
     "item:windswept:light_gray_pinecone_shingle_stairs",
-    "item:windswept:roasted_chestnuts",
     "item:windswept:chestnut_crate",
     "item:windswept:lavender_bale",
     "item:windswept:lavender",
@@ -128,9 +143,7 @@
     "item:windswept:gingerbread_trapdoor",
     "item:windswept:glazed_gingerbread_brick_wall",
     "item:snowyspirit:ginger_flower",
-    "item:windswept:candy_cane_block",
     "item:snowyspirit:candy_cane",
-    "item:windswept:candy_cane",
     "item:minecraft:bone_meal",
     "item:minecraft:bone_block",
     "item:minecraft:bone",
@@ -295,7 +308,6 @@
     "item:everycomp:q/windswept/hollow_pine_log",
     "item:everycomp:rfm/meadow/pine_chair",
     "item:everycomp:db/windswept/pine_palisade",
-    "item:windswept:pine_door",
     "item:windswept:pine_wood",
     "item:windswept:frozen_flesh",
     "item:windswept:cherry_wreath",
@@ -1095,7 +1107,6 @@
     "item:vinery:chorus_wine",
     "item:create:precision_mechanism",
     "item:numismatics:prismatic_coin",
-    "item:numismatics:ancient_coin",
     "item:zetter:canvas",
     "item:society:prismatic_shard",
     "#item:minecraft:fishes",
@@ -1285,14 +1296,7 @@
     "item:bountiful:decree",
     "item:minecraft:beetroot",
     "item:everycomp:fd/meadow/pine_cabinet",
-    "item:society:frozen_geode",
-    "item:society:frozen_tear",
-    "item:pamhc2trees:hazelnutitem",
-    "item:meadow:pine_chest_boat",
-    "item:meadow:pine_wood",
-    "item:toms_storage:ts.inventory_hopper_basic",
-    "item:toms_storage:ts.inventory_proxy",
-    "item:toms_storage:ts.inventory_cable_connector_filtered"
+    "item:society:frozen_geode"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",
@@ -1339,8 +1343,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

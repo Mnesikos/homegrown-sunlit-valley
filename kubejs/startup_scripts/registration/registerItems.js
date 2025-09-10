@@ -165,7 +165,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:enriched_bone_meal").texture("society:item/enriched_bonemeal");
   e.create("society:river_jelly").texture("society:item/river_jelly");
   e.create("society:ocean_jelly").texture("society:item/ocean_jelly");
-  e.create("society:nether_jelly").texture("society:item/nether_jelly");
+  e.create("society:nether_jelly").texture("society:item/nether_jelly").fireResistant(true);
   e.create("society:sunlit_pearl").texture("society:item/sunlit_pearl");
   e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
   e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");

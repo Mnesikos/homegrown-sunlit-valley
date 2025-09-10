@@ -10,7 +10,7 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:bevel",
+        "itemKey": "numismatics:sprocket",
         "amount": 1,
         "priceModifier": 0
       },
@@ -119,8 +119,8 @@
         "priceModifier": 0
       },
       "request": {
-        "itemKey": "numismatics:cog",
-        "amount": 6,
+        "itemKey": "numismatics:crown",
+        "amount": 2,
         "priceModifier": 0
       },
       "tradeExp": 1,
