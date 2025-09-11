@@ -9,8 +9,8 @@
   "shop.society_trading.fisher": "Fisher",
   "shop.society_trading.leatherworker": "Leatherworker",
   "shop.society_trading.librarian": "Librarian",
-  "shop.society_trading.master_cultivator": "Master Cultivator",
-  "shop.society_trading.mystical_botanist": "Mystical Botanist",
+  "shop.society_trading.master_cultivator": "M. Cultivator",
+  "shop.society_trading.mystical_botanist": "M. Botanist",
   "shop.society_trading.shepherd": "Shepherd",
   "shop.society_trading.storagesmith": "Storagesmith",
 
@@ -18,5 +18,5 @@
   "shop.society_trading.builder.name": "Builder",
 
   "gui.society_trading.price": "%s ● ",
-  "gui.society_trading.balance": "%s ● "
+  "gui.society_trading.balance": "● %f"
 }

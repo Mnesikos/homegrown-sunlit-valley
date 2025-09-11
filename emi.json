@@ -1,24 +1,74 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "society:spruce_supply_crate",
+      "amount": 42
+    },
+    {
+      "type": "item",
+      "id": "society:sparkstone",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "meadow:fire_log",
+      "amount": 9
+    },
+    {
+      "type": "item",
+      "id": "quark:sturdy_stone",
+      "amount": 16
+    },
+    {
+      "type": "item",
+      "id": "society:crystalberry",
+      "amount": 3
+    },
+    "item:society:palm_supply_crate",
+    "item:vinery:taiga_grape_seeds_red",
+    {
+      "type": "item",
+      "id": "society:grimwood_supply_crate",
+      "amount": 64
+    },
+    "item:veggiesdelight:garlic_chicken_stew",
+    "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"veggiesdelight:garlic_clove\"}}",
+    "item:veggiesdelight:roasted_garlic_clove",
+    "item:society:garlic_seed",
+    "item:veggiesdelight:wild_garlic",
+    {
+      "type": "item",
+      "id": "windswept:wild_berries",
+      "amount": 64
+    },
+    "item:society:broccoli_preserves",
+    "item:society:wild_berries_preserves",
+    "item:minecraft:gunpowder",
+    "item:society:aged_amethyst_cheese_block",
+    "item:numismatics:prismatic_coin",
+    "item:numismatics:ancient_coin",
+    "item:society:animal_feed",
+    "item:society:mana_feed",
+    "item:society:geode",
+    "item:windswept:candy_cane_block",
+    "item:supplementaries:candy",
+    "item:society:magic_rock_candy",
+    "item:minecraft:birch_log",
+    "item:society:maple_syrup",
     "item:unusualfishmod:ancient_weapon_smithing_template",
     "item:relics:holy_locket{abilities:{belief:{points:0,stats:{amount:0.19389d,capacity:8.0989d,count:1.21805d,radius:3.52019d}},blessing:{points:0,stats:{consumption:7.31713d},temp:{ticking:1b}},repentance:{points:0,stats:{damage:0.15802d,radius:2.27459d}}}}",
     "item:beachparty:tiki_bar",
     "item:beachparty:cabinet",
     "item:beachparty:radio",
     "item:beachparty:mini_fridge",
-    "item:windswept:candy_cane_block",
     "item:windswept:candy_cane",
     "item:windswept:chestnuts",
     "item:windswept:roasted_chestnuts",
     "item:bakery:chocolate_glazed_cookie",
     "item:windswept:pinecone_jam_bottle",
     "item:windswept:pine_door",
-    {
-      "type": "item",
-      "id": "numismatics:ancient_coin",
-      "amount": 64
-    },
     {
       "type": "item",
       "id": "veggiesdelight:turnip",
@@ -44,11 +94,9 @@
     "item:society:pickled_zucchini",
     "item:society:pickled_turnip",
     "item:society:pickled_broccoli",
-    "item:society:wild_berries_preserves",
     "item:society:raisins",
     "item:society:nether_raisins",
     "item:society:dried_shimmering_mushrooms",
-    "item:society:broccoli_preserves",
     "item:society:turnip_preserves",
     "item:society:zucchini_preserves",
     "item:veggiesdelight:garlic",
@@ -58,7 +106,6 @@
     "item:vintagedelight:cucumber",
     "item:vintagedelight:ghost_pepper",
     "item:minecraft:sweet_berries",
-    "item:windswept:wild_berries",
     "#item:minecraft:wooden_slabs",
     "item:railways:wooden_headstock_link_and_pin",
     "item:railways:wooden_headstock_split_knuckle_coupler",
@@ -213,7 +260,6 @@
     "item:stardew_fishing:treasure_bobber{Damage:0}",
     "item:stardew_fishing:sonar_bobber{Damage:0}",
     "item:minecraft:amethyst_cluster",
-    "item:quark:sturdy_stone",
     "item:aquaculture:neptunium_sword{Damage:0}",
     "item:botania:manasteel_sword{Damage:0}",
     "item:botania:star_sword{Damage:0}",
@@ -569,7 +615,6 @@
     "item:waystones:deepslate_waystone",
     "item:waystones:warp_scroll",
     "item:oreganized:silver_ingot",
-    "item:society:sparkstone",
     "item:botania:mana_diamond",
     "item:botania:dragonstone",
     "item:whimsy_deco:yellow_froggy_chair",
@@ -842,7 +887,6 @@
     "item:society:fish_smoker",
     "item:minecraft:end_rod",
     "item:quark:iron_rod",
-    "item:minecraft:gunpowder",
     "item:society:kinetic_blueprint",
     "item:society:canvas",
     "item:minecraft:calcite",
@@ -1017,11 +1061,6 @@
     "#item:c:cheese",
     "item:oreganized:datura",
     "item:wildernature:raccoon_spawn_egg",
-    {
-      "type": "item",
-      "id": "meadow:fire_log",
-      "amount": 8
-    },
     "item:simplemagnets:basicmagnet",
     "item:simplemagnets:basic_demagnetization_coil",
     "item:society:truffle",
@@ -1106,7 +1145,6 @@
     "item:vinery:winemaker_leggings{Damage:0}",
     "item:vinery:chorus_wine",
     "item:create:precision_mechanism",
-    "item:numismatics:prismatic_coin",
     "item:zetter:canvas",
     "item:society:prismatic_shard",
     "#item:minecraft:fishes",
@@ -1148,7 +1186,6 @@
     "item:society:bouquet_bag",
     "item:society:fish_radar",
     "item:society:bank_meter",
-    "item:society:crystalberry",
     "item:society:inserter",
     "item:botania:flight_tiara{variant:1}",
     "item:botania:mana_pylon",
@@ -1267,7 +1304,6 @@
     "item:nethervinery:nether_fizz",
     "item:gag:hearthstone{Damage:0}",
     "item:gag:energized_hearthstone{Damage:0}",
-    "item:society:aged_amethyst_cheese_block",
     "item:minecraft:budding_amethyst",
     "item:simplehats:sleepeyemask",
     "item:simplehats:demoneyes",
@@ -1280,23 +1316,7 @@
     "item:minecraft:oxeye_daisy",
     "item:botania:tigerseye",
     "item:amendments:dragon_charge",
-    "item:species:petrified_egg",
-    "item:oreganized:lead_block",
-    "item:create:andesite_alloy",
-    "item:oreganized:lead_ingot",
-    "item:unusualfishmod:raw_sneep_snorp",
-    "item:whimsy_deco:black_atm",
-    "item:whimsy_deco:yellow_toy_plane",
-    "item:tanukidecor:holiday_tree",
-    "item:whimsy_deco:blue_toy_plane",
-    "item:whimsy_deco:adv_golden_pig_plushie",
-    "item:whimsy_deco:blue_atm",
-    "item:numismatics:sun",
-    "item:society:iron_upgrade_smithing_template",
-    "item:bountiful:decree",
-    "item:minecraft:beetroot",
-    "item:everycomp:fd/meadow/pine_cabinet",
-    "item:society:frozen_geode"
+    "item:species:petrified_egg"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",
@@ -1343,8 +1363,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

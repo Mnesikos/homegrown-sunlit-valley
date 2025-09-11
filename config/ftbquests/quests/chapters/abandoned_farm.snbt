@@ -146,6 +146,14 @@
 					item: "botania:apothecary_default"
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p abandoned_farm_complete"
+					elevate_perms: true
+					id: "699EAE14FFE8E2AB"
+					silent: true
+					type: "command"
+				}
 			]
 			subtitle: "{ftbquests.chapter.abandoned_farm.quest2.subtitle}"
 			tasks: [{

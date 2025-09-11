@@ -239,8 +239,6 @@
 			description: [
 				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description1}"
 				""
-				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description2}"
-				""
 				"{ftbquests.chapter.ivi__mechanical_farming.quest11.description3}"
 			]
 			icon: "create:wrench"

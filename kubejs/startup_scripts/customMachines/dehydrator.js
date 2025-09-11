@@ -69,6 +69,7 @@ global.dehydratableFruits = [
   "society:boysenberry",
   "society:cranberry",
   "society:crystalberry",
+  "windswept:wild_berries",
 ];
 global.dehydratableFruits.forEach((item) => {
   let itemId = item.split(":")[1];

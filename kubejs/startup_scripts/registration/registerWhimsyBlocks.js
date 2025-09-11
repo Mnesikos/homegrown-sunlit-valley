@@ -92,6 +92,7 @@ StartupEvents.registry("block", (e) => {
 
   e.create("whimsy_deco:statue_endless_fortune", "animatable")
     .box(1, 0, 1, 15, 18, 15, true)
+    .displayName("Statue of Endless Fortune")
     .animatableBlockEntity((info) => {
       info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("rotating")));
       info.serverTick(artMachineTickRate, 0, (entity) => {

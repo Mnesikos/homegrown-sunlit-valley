@@ -1,7 +1,7 @@
 {
   "shop_id": "leatherworker",
   "name": "shop.society_trading.leatherworker",
-  "texture": "minecraft:textures/block/note_block",
+  "texture": "quark:textures/block/bonded_leather",
   "trades": [
     {
       "offer": {
@@ -12,6 +12,7 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
+      "numismatics_cost": 16,
       "trade_id": "leatherworker_bundle_white_for_sprocket"
     },
     {
@@ -23,6 +24,7 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "numismatics_cost": 128,
       "trade_id": "leatherworker_saddle_for_cog"
     },
     {
@@ -34,6 +36,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "numismatics_cost": 2048,
       "trade_id": "leatherworker_sewing_station_for_crown"
     },
     {
@@ -45,6 +48,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "leatherworker_iron_sewing_needle_for_cog"
     },
     {
@@ -56,6 +60,7 @@
         "item": "numismatics:sun",
         "count": 6
       },
+      "numismatics_cost": 24576,
       "trade_id": "leatherworker_naturescompass_for_crown"
     },
     {
@@ -67,6 +72,7 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "numismatics_cost": 1024,
       "trade_id": "leatherworker_backpack_for_crown"
     },
     {
@@ -78,6 +84,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "leatherworker_upgrade_base_for_crown"
     },
     {
@@ -89,6 +96,7 @@
         "item": "numismatics:sun",
         "count": 8
       },
+      "numismatics_cost": 32768,
       "trade_id": "leatherworker_stack_upgrade_starter_tier_for_sun"
     },
     {
@@ -100,6 +108,7 @@
         "item": "numismatics:sun",
         "count": 16
       },
+      "numismatics_cost": 65536,
       "trade_id": "leatherworker_stack_upgrade_tier_1_for_sun"
     },
     {
@@ -111,6 +120,7 @@
         "item": "numismatics:sun",
         "count": 32
       },
+      "numismatics_cost": 131072,
       "trade_id": "leatherworker_stack_upgrade_tier_2_for_sun"
     },
     {
@@ -122,6 +132,7 @@
         "item": "numismatics:sun",
         "count": 64
       },
+      "numismatics_cost": 262144,
       "trade_id": "leatherworker_stack_upgrade_tier_3_for_sun"
     },
     {
@@ -137,6 +148,7 @@
         "item": "numismatics:sun",
         "count": 64
       },
+      "numismatics_cost": 524288,
       "trade_id": "leatherworker_stack_upgrade_tier_4_for_sun"
     },
     {
@@ -148,6 +160,7 @@
         "item": "numismatics:ancient_coin",
         "count": 8
       },
+      "numismatics_cost": 2097152,
       "trade_id": "leatherworker_stack_upgrade_omega_tier_for_ancient_coin"
     },
     {
@@ -159,6 +172,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 4
       },
+      "numismatics_cost": 67108864,
       "trade_id": "leatherworker_inception_upgrade_for_prismatic_coin"
     },
     {
@@ -170,6 +184,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 16
       },
+      "numismatics_cost": 268435456,
       "trade_id": "leatherworker_crocs_for_prismatic_coin"
     },
     {
@@ -181,6 +196,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 64
       },
+      "numismatics_cost": 1073741824,
       "trade_id": "leatherworker_stylin_purple_hat_for_prismatic_coin"
     }
   ]

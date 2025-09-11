@@ -601,6 +601,7 @@ StartupEvents.registry("item", (e) => {
     { item: "society:boysenberry", hex: 0xcf657f },
     { item: "society:cranberry", hex: 0xb33831 },
     { item: "society:crystalberry", hex: 0xb33831 },
+    { item: "windswept:wild_berries", hex: 0xa53982 }
   ];
   global.dehydratableFruits.forEach((item) => {
     const itemHex = dehydratorFruitMapping.find((val) => val.item === item)?.hex;

@@ -53,6 +53,14 @@
 					}
 					type: "item"
 				}
+				{
+					auto: "invisible"
+					command: "/kjs stages add @p boiler_room_complete"
+					elevate_perms: true
+					id: "3DE1133EC784FE2F"
+					silent: true
+					type: "command"
+				}
 			]
 			subtitle: "{ftbquests.chapter.boiler_room.quest1.subtitle}"
 			tasks: [{

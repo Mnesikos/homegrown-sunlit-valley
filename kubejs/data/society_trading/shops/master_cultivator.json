@@ -2,6 +2,7 @@
   "shop_id": "master_cultivator",
   "name": "shop.society_trading.master_cultivator",
   "texture": "society:textures/block/ancient_fruit_crate_side",
+  "stage_required": "master_cultivator_unlocked",
   "trades": [
     {
       "offer": {
@@ -12,6 +13,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "cook_cabbage_seeds_for_cog"
     },
     {
@@ -23,17 +25,19 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "cook_cucumber_seeds_for_cog"
     },
     {
       "offer": {
-        "item": "veggiesdelight:garlic_seeds",
+        "item": "society:garlic_seed",
         "count": 1
       },
       "request": {
         "item": "numismatics:sprocket",
         "count": 2
       },
+      "numismatics_cost": 32,
       "trade_id": "cook_cucumber_seeds_for_cog"
     },
     {
@@ -45,6 +49,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "cook_ghost_pepper_seeds_for_cog"
     },
     {
@@ -56,6 +61,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "cook_peanut_for_cog"
     },
     {
@@ -67,6 +73,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "cook_peanut_for_crown"
     },
     {
@@ -78,6 +85,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "cook_tubabacco_leaf_seed_for_crown"
     },
     {
@@ -89,6 +97,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "cook_cherry_sapling_for_crown"
     },
     {
@@ -100,6 +109,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "cook_apple_sapling_for_crown"
     },
     {
@@ -111,6 +121,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
+      "numismatics_cost": 16384,
       "trade_id": "cook_mango_sapling_for_sun"
     },
     {
@@ -126,6 +137,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "numismatics_cost": 18432,
       "trade_id": "cook_orange_sapling_for_sun_and_crown"
     },
     {
@@ -141,6 +153,7 @@
         "item": "numismatics:crown",
         "count": 6
       },
+      "numismatics_cost": 27648,
       "trade_id": "cook_plum_sapling_for_sun_and_crown"
     },
     {
@@ -156,6 +169,7 @@
         "item": "numismatics:crown",
         "count": 4
       },
+      "numismatics_cost": 43008,
       "trade_id": "cook_dragonfruit_sapling_for_sun_and_crown"
     },
     {
@@ -171,6 +185,7 @@
         "item": "society:prismatic_shard",
         "count": 4
       },
+      "numismatics_cost": 81920,
       "trade_id": "cook_starfruit_sapling_for_sun_and_prismatic_shard"
     }
   ]

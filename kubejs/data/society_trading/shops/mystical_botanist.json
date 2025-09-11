@@ -2,6 +2,7 @@
   "shop_id": "mystical_botanist",
   "name": "shop.society_trading.mystical_botanist",
   "texture": "botania:textures/block/mana_void",
+  "stage_required": "mystical_botanist_unlocked",
   "trades": [
     {
       "offer": {
@@ -12,6 +13,7 @@
         "item": "numismatics:ancient_coin",
         "count": 64
       },
+      "numismatics_cost": 16777216,
       "trade_id": "beautify:cartographer_prismatic_coin_for_ancient_coin"
     },
     {
@@ -21,12 +23,10 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 48
-      },
-      "second_request": {
-        "item": "society:prismatic_shard",
         "count": 1
       },
+      "stage_required": "abandoned_farm_complete",
+      "numismatics_cost": 4096,
       "trade_id": "botanist_apothecary_default_for_sun"
     },
     {
@@ -36,28 +36,11 @@
       },
       "request": {
         "item": "numismatics:sun",
-        "count": 32
-      },
-      "second_request": {
-        "item": "minecraft:nether_star",
         "count": 1
       },
-      "trade_id": "botanist_t_for_sun"
-    },
-    {
-      "offer": {
-        "item": "moreminecarts:chunk_loader",
-        "count": 1
-      },
-      "request": {
-        "item": "numismatics:sun",
-        "count": 48
-      },
-      "second_request": {
-        "item": "society:prismatic_shard",
-        "count": 1
-      },
-      "trade_id": "mason_chunk_loader_for_sun_and_crown"
+      "numismatics_cost": 4096,
+      "stage_required": "boiler_room_complete",
+      "trade_id": "botanist_kinetic_blueprint_for_sun"
     },
     {
       "offer": {
@@ -68,6 +51,7 @@
         "item": "numismatics:ancient_coin",
         "count": 1
       },
+      "numismatics_cost": 262144,
       "trade_id": "botanist_overgrowth_seed_for_ancient_coin"
     },
     {
@@ -79,6 +63,7 @@
         "item": "numismatics:sun",
         "count": 24
       },
+      "numismatics_cost": 98304,
       "trade_id": "botanist_tanuki_catalog_for_sun"
     },
     {
@@ -90,6 +75,7 @@
         "item": "numismatics:ancient_coin",
         "count": 3
       },
+      "numismatics_cost": 262144,
       "trade_id": "botanist_modern_catalog_for_ancient_coin"
     },
     {
@@ -101,6 +87,7 @@
         "item": "numismatics:ancient_coin",
         "count": 4
       },
+      "numismatics_cost": 1048576,
       "trade_id": "botanist_fantasy_catalog_for_ancient_coin"
     },
     {
@@ -112,6 +99,7 @@
         "item": "numismatics:ancient_coin",
         "count": 8
       },
+      "numismatics_cost": 2097152,
       "trade_id": "botanist_red_sharestone_for_ancient_coin"
     },
     {
@@ -123,6 +111,7 @@
         "item": "numismatics:ancient_coin",
         "count": 8
       },
+      "numismatics_cost": 2097152,
       "trade_id": "botanist_blue_sharestone_for_ancient_coin"
     },
     {
@@ -134,6 +123,7 @@
         "item": "numismatics:ancient_coin",
         "count": 8
       },
+      "numismatics_cost": 2097152,
       "trade_id": "botanist_green_sharestone_for_ancient_coin"
     },
     {
@@ -145,6 +135,7 @@
         "item": "numismatics:ancient_coin",
         "count": 8
       },
+      "numismatics_cost": 2097152,
       "trade_id": "botanist_purple_sharestone_for_ancient_coin"
     },
     {
@@ -156,6 +147,7 @@
         "item": "numismatics:ancient_coin",
         "count": 20
       },
+      "numismatics_cost": 5242880,
       "trade_id": "botanist_warp_stone_for_ancient_coin"
     },
     {
@@ -167,6 +159,7 @@
         "item": "numismatics:sun",
         "count": 8
       },
+      "numismatics_cost": 32768,
       "trade_id": "botanist_bound_scroll_for_sun"
     },
     {
@@ -178,6 +171,7 @@
         "item": "numismatics:ancient_coin",
         "count": 32
       },
+      "numismatics_cost": 8388608,
       "trade_id": "botanist_statue_endless_fortune_for_ancient_coin"
     },
     {
@@ -189,6 +183,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 1
       },
+      "numismatics_cost": 16777216,
       "trade_id": "botanist_golden_clock_for_prismatic_coin"
     },
     {
@@ -200,6 +195,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 4
       },
+      "numismatics_cost": 67108864,
       "trade_id": "botanist_diy_workbench_for_prismatic_coin"
     },
     {
@@ -211,6 +207,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 16
       },
+      "numismatics_cost": 268435456,
       "trade_id": "botanist_scarecrow_for_prismatic_coin"
     }
   ]

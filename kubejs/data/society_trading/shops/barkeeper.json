@@ -12,6 +12,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "beachparty:barkeeper_milk_for_crown"
     },
     {
@@ -23,6 +24,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "beachparty:barkeeper_crusty_bread_for_cog"
     },
     {
@@ -34,6 +36,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "beachparty:barkeeper_farmer_salad_for_cog"
     },
     {
@@ -45,6 +48,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "beachparty:barkeeper_potato_salad_for_cog"
     },
     {
@@ -56,6 +60,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "beachparty:barkeeper_sandwich_for_cog"
     },
     {
@@ -67,6 +72,7 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "numismatics_cost": 128,
       "trade_id": "beachparty:barkeeper_coffee_for_sprocket"
     },
     {
@@ -78,6 +84,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "beachparty:barkeeper_beer_hops_for_cog"
     },
     {
@@ -89,6 +96,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "beachparty:barkeeper_cheese_pizza_slice_for_crown"
     },
     {
@@ -111,6 +119,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "barkeeper_lunchbag_for_cog"
     },
     {
@@ -122,6 +131,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
+      "numismatics_cost": 16384,
       "trade_id": "barkeeper_lunchbox_for_sun"
     },
     {
@@ -133,6 +143,7 @@
         "item": "numismatics:sun",
         "count": 16
       },
+      "numismatics_cost": 65536,
       "trade_id": "barkeeper_golden_lunchbox_for_sun"
     },
     {
@@ -144,6 +155,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
+      "numismatics_cost": 16384,
       "trade_id": "barkeeper_feeding_upgrade_for_sun"
     },
     {
@@ -155,6 +167,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 8
       },
+      "numismatics_cost": 134217728,
       "trade_id": "barkeeper_feeding_upgrade_for_prismatic_coin"
     }
   ]

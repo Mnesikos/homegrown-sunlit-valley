@@ -616,6 +616,46 @@ StartupEvents.registry("block", (e) => {
   };
 
   e
+    .create("society:garlic", "crop")
+    .age(7, (builder) => {
+      builder
+        .shape(0, 0, 0, 0, 16, 4, 16)
+        .shape(1, 0, 0, 0, 16, 6, 16)
+        .shape(2, 0, 0, 0, 16, 7, 16)
+        .shape(3, 0, 0, 0, 16, 13, 16)
+        .shape(4, 0, 0, 0, 16, 16, 16)
+        .shape(5, 0, 0, 0, 16, 16, 16);
+    })
+    .survive((state, level, pos) => surviveCheck(level, pos))
+    .dropSeed(false)
+    .crop("vintagedelight:garlic", 1)
+    .tagBlock("minecraft:mineable/hoe")
+    .randomTick((tick) => {})
+    .item((seedItem) => {
+      seedItem.texture("veggiesdelight:item/garlic_seed");
+    }).blockstateJson = {
+    variants: {
+      "age=0": {
+        model: "vintagedelight:block/garlic_stage0",
+      },
+      "age=1": {
+        model: "vintagedelight:block/garlic_stage0",
+      },
+      "age=2": {
+        model: "vintagedelight:block/garlic_stage1",
+      },
+      "age=3": {
+        model: "vintagedelight:block/garlic_stage1",
+      },
+      "age=4": {
+        model: "vintagedelight:block/garlic_stage2",
+      },
+      "age=5": {
+        model: "vintagedelight:block/garlic_stage3",
+      },
+    },
+  };
+  e
     .create("society:peanut", "crop")
     .age(7, (builder) => {
       builder

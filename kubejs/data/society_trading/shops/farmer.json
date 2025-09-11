@@ -13,6 +13,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "farmer_guide_book_for_cog"
     },
     {
@@ -24,6 +25,7 @@
         "item": "numismatics:sprocket",
         "count": 2
       },
+      "numismatics_cost": 32,
       "trade_id": "minecraft:tree_fertilizer_for_sprocket"
     },
     {
@@ -35,6 +37,7 @@
         "item": "numismatics:sprocket",
         "count": 2
       },
+      "numismatics_cost": 32,
       "trade_id": "minecraft:farmer_hydrating_fertilizer_for_sprocket"
     },
     {
@@ -46,6 +49,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "minecraft:farmer_low_quality_fertilizer_for_cog"
     },
     {
@@ -57,6 +61,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "minecraft:farmer_weak_fertilizer_for_cog"
     },
     {
@@ -68,6 +73,7 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "numismatics_cost": 128,
       "trade_id": "meadow:farmer_alpine_salt_for_cog"
     },
     {
@@ -79,6 +85,7 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
+      "numismatics_cost": 16,
       "trade_id": "minecraft:farmer_sugar_for_sprocket"
     },
     {
@@ -90,6 +97,7 @@
         "item": "numismatics:spur",
         "count": 4
       },
+      "numismatics_cost": 4,
       "trade_id": "minecraft:farmer_glass_bottle_for_spur"
     },
     {
@@ -101,6 +109,7 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
+      "numismatics_cost": 16,
       "trade_id": "minecraft:farmer_glass_bottle_for_sprocket"
     },
     {
@@ -112,6 +121,7 @@
         "item": "numismatics:spur",
         "count": 2
       },
+      "numismatics_cost": 2,
       "trade_id": "minecraft:farmer_wine_bottle_for_spur"
     },
     {
@@ -123,12 +133,8 @@
         "item": "numismatics:spur",
         "count": 4
       },
-      "tradeExp": 4,
-      "maxUses": 4096,
-      "priceMultiplier": 0.0,
-      "demand": 0,
-      "tradeLevel": 1,
-      "trade_id": "minecraft:farmer_beer_mug_for_spur"
+      "numismatics_cost": 4,
+      "trade_id": "minecraft_farmer_beer_mug_for_spur"
     },
     {
       "offer": {
@@ -139,7 +145,8 @@
         "item": "numismatics:spur",
         "count": 4
       },
-      "trade_id": "minecraft:farmer_bowl_for_spur"
+      "numismatics_cost": 4,
+      "trade_id": "minecraft_farmer_bowl_for_spur"
     },
     {
       "offer": {
@@ -150,6 +157,7 @@
         "item": "numismatics:sun",
         "count": 18
       },
+      "numismatics_cost": 73728,
       "trade_id": "minecraft:farmer_pitchfork_for_sun"
     },
     {
@@ -161,6 +169,7 @@
         "item": "numismatics:sun",
         "count": 5
       },
+      "numismatics_cost": 20480,
       "trade_id": "farmer_dehydrator_for_sun"
     },
     {
@@ -172,6 +181,7 @@
         "item": "numismatics:sun",
         "count": 6
       },
+      "numismatics_cost": 24576,
       "trade_id": "farmer_liltractor_for_sun"
     },
     {
@@ -187,6 +197,7 @@
         "item": "society:prismatic_shard",
         "count": 1
       },
+      "numismatics_cost": 32768,
       "trade_id": "farmer_cooking_guide_for_sun"
     }
   ]

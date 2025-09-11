@@ -12,6 +12,7 @@
         "item": "numismatics:crown",
         "count": 2
       },
+      "numismatics_cost": 1024,
       "trade_id": "cleric_blaze_powder_for_crown"
     },
     {
@@ -23,6 +24,7 @@
         "item": "numismatics:cog",
         "count": 1
       },
+      "numismatics_cost": 64,
       "trade_id": "cleric_levitation_powder_for_cog"
     },
     {
@@ -38,6 +40,7 @@
         "item": "minecraft:diamond_pickaxe",
         "count": 1
       },
+      "numismatics_cost": 64536,
       "trade_id": "cleric_pickarang_for_crown"
     },
     {
@@ -53,6 +56,7 @@
         "item": "numismatics:sun",
         "count": 64
       },
+      "numismatics_cost": 262144,
       "trade_id": "cleric_wand_of_symmetry_for_sun"
     },
     {
@@ -68,6 +72,7 @@
         "item": "society:prismatic_shard",
         "count": 1
       },
+      "numismatics_cost": 163840,
       "trade_id": "cleric_hearthstone_for_sun"
     },
     {
@@ -83,6 +88,7 @@
         "item": "society:prismatic_shard",
         "count": 1
       },
+      "numismatics_cost": 131072,
       "trade_id": "cleric_hearthstone_for_sun"
     },
     {
@@ -94,6 +100,7 @@
         "item": "numismatics:sun",
         "count": 3
       },
+      "numismatics_cost": 1536,
       "trade_id": "cleric_goddess_statue_for_sun"
     },
     {
@@ -105,6 +112,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
+      "numismatics_cost": 16384,
       "trade_id": "cleric_stone_wand_for_crown"
     },
     {
@@ -116,6 +124,7 @@
         "item": "numismatics:sun",
         "count": 1
       },
+      "numismatics_cost": 4096,
       "trade_id": "cleric_core_angel_for_sun"
     },
     {
@@ -127,6 +136,7 @@
         "item": "numismatics:prismatic_coin",
         "count": 1
       },
+      "numismatics_cost": 16777216,
       "trade_id": "cleric_core_destruction_for_prismatic_coin"
     },
     {
@@ -142,6 +152,7 @@
         "item": "society:prismatic_shard",
         "count": 1
       },
+      "numismatics_cost": 20480,
       "trade_id": "cleric_wand_of_symmetry_for_sun"
     },
     {
@@ -153,6 +164,7 @@
         "item": "numismatics:sun",
         "count": 20
       },
+      "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_farming_for_sun"
     },
     {
@@ -164,6 +176,7 @@
         "item": "numismatics:sun",
         "count": 20
       },
+      "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_husbandry_for_sun"
     },
     {
@@ -175,6 +188,7 @@
         "item": "numismatics:sun",
         "count": 20
       },
+      "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_mining_for_sun"
     },
     {
@@ -186,6 +200,7 @@
         "item": "numismatics:sun",
         "count": 20
       },
+      "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_adventuring_for_sun"
     },
     {
@@ -197,6 +212,7 @@
         "item": "numismatics:sun",
         "count": 20
       },
+      "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_fishing_for_sun"
     }
   ]

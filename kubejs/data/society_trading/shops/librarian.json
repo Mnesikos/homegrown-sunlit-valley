@@ -12,6 +12,7 @@
         "item": "numismatics:spur",
         "count": 3
       },
+      "numismatics_cost": 3,
       "trade_id": "librarian_label_for_spur"
     },
     {
@@ -23,6 +24,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "librarian_name_tag_for_cog"
     },
     {
@@ -34,6 +36,7 @@
         "item": "numismatics:sun",
         "count": 2
       },
+      "numismatics_cost": 1024,
       "trade_id": "labeling_tool_tag_for_sun"
     },
     {
@@ -45,6 +48,7 @@
         "item": "numismatics:bevel",
         "count": 3
       },
+      "numismatics_cost": 24,
       "trade_id": "librarian_book_for_bevel"
     },
     {
@@ -56,6 +60,7 @@
         "item": "numismatics:sun",
         "count": 16
       },
+      "numismatics_cost": 65536,
       "trade_id": "librarian_enchanting_table_for_sun"
     },
     {
@@ -68,6 +73,7 @@
         "item": "numismatics:sun",
         "count": 2
       },
+      "numismatics_cost": 8192,
       "trade_id": "librarian_enchanted_book_for_sun"
     },
     {
@@ -80,6 +86,7 @@
         "item": "numismatics:sun",
         "count": 2
       },
+      "numismatics_cost": 8192,
       "trade_id": "librarian_enchanted_book_for_sun"
     },
     {
@@ -91,6 +98,7 @@
         "item": "numismatics:sun",
         "count": 16
       },
+      "numismatics_cost": 65536,
       "trade_id": "librarian_disenchanter_for_sun"
     },
     {
@@ -102,6 +110,7 @@
         "item": "numismatics:sun",
         "count": 64
       },
+      "numismatics_cost": 262144,
       "trade_id": "librarian_printer_for_sun"
     },
     {
@@ -110,9 +119,10 @@
         "count": 1
       },
       "request": {
-        "item": "numismatics:crown",
-        "count": 48
+        "item": "numismatics:sun",
+        "count": 6
       },
+      "numismatics_cost": 24576,
       "trade_id": "librarian_enchanting_guide_for_crown"
     }
   ]

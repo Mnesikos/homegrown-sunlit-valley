@@ -150,6 +150,19 @@ StartupEvents.registry("block", (e) => {
   createSkullVariant("arid_sandstone", "atmospheric:block/arid_sandstone_top");
   createSkullVariant("blackstone", "minecraft:block/blackstone");
   createSkullVariant("end_stone", "minecraft:block/end_stone");
+
+  const createSupplyCrate = (type, path) => {
+    e.create(`society:${type}_supply_crate`)
+      .soundType("wood")
+      .tagBlock("minecraft:mineable/axe")
+      .model(path)
+      .tagBlock("society:supply_crate");
+  };
+  createSupplyCrate("oak", "refurbished_furniture:block/oak_crate_closed");
+  createSupplyCrate("spruce", "refurbished_furniture:block/spruce_crate_closed");
+  createSupplyCrate("palm", "everycomp:block/rfm/beachparty/palm_crate_closed");
+  createSupplyCrate("grimwood", "everycomp:block/rfm/atmospheric/grimwood_crate_closed");
+
   e.create("society:cavern_air")
     .box(0, 0, 0, 0, 0, 0)
     .property(integerProperty.create("type", 0, 4))
@@ -708,7 +721,7 @@ StartupEvents.registry("block", (e) => {
     .resistance(1.0)
     .requiresTool(false)
     .model("society:block/fantasy_catalog")
-    .displayName(":axe: §eFantasy Catalog");
+    .displayName("♡ §eFantasy Catalog");
 
   e.create("moreminecarts:greenhouse_glass_stairs", "stairs")
     .soundType("glass")

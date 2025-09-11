@@ -9,10 +9,11 @@
         "count": 1
       },
       "request": {
-        "item": "numismatics:bevel",
-        "count": 2
+        "item": "numismatics:sprocket",
+        "count": 1
       },
-      "trade_id": "minecraft:fisherman_worm_for_spur"
+      "numismatics_cost": 16,
+      "trade_id": "fisherman_worm_for_sprocket"
     },
     {
       "offer": {
@@ -23,7 +24,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
-      "trade_id": "minecraft:fisherman_fishing_rod_for_crown"
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_fishing_rod_for_crown"
     },
     {
       "offer": {
@@ -34,7 +36,8 @@
         "item": "numismatics:sun",
         "count": 24
       },
-      "trade_id": "minecraft:fisherman_lava_fishing_rod_rod_for_sun"
+      "numismatics_cost": 98304,
+      "trade_id": "fisherman_lava_fishing_rod_rod_for_sun"
     },
     {
       "offer": {
@@ -49,7 +52,8 @@
         "item": "aquaculture:neptunium_ingot",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_fish_radar_for_crown"
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_fish_radar_for_crown"
     },
     {
       "offer": {
@@ -64,7 +68,8 @@
         "item": "society:river_jelly",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_fish_pond_for_sun"
+      "numismatics_cost": 32768,
+      "trade_id": "fisherman_fish_pond_for_sun"
     },
     {
       "offer": {
@@ -75,7 +80,8 @@
         "item": "numismatics:neptunium_coin",
         "count": 2
       },
-      "trade_id": "minecraft:fisherman_fish_smoker_for_neptunium_coin"
+      "numismatics_cost": 65536,
+      "trade_id": "fisherman_fish_smoker_for_neptunium_coin"
     },
     {
       "offer": {
@@ -86,7 +92,8 @@
         "item": "numismatics:spur",
         "count": 7
       },
-      "trade_id": "minecraft:fisherman_note_hook_for_spur"
+      "numismatics_cost": 7,
+      "trade_id": "fisherman_note_hook_for_spur"
     },
     {
       "offer": {
@@ -101,7 +108,8 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_light_hook_for_cog_and_sprocket"
+      "numismatics_cost": 16,
+      "trade_id": "fisherman_light_hook_for_cog_and_sprocket"
     },
     {
       "offer": {
@@ -116,7 +124,8 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_heavy_hook_for_cog_and_sprocket"
+      "numismatics_cost": 336,
+      "trade_id": "fisherman_heavy_hook_for_cog_and_sprocket"
     },
     {
       "offer": {
@@ -131,7 +140,8 @@
         "item": "numismatics:sprocket",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_redstone_hook_for_cog_and_sprocket"
+      "numismatics_cost": 336,
+      "trade_id": "fisherman_redstone_hook_for_cog_and_sprocket"
     },
     {
       "offer": {
@@ -142,7 +152,8 @@
         "item": "numismatics:crown",
         "count": 5
       },
-      "trade_id": "minecraft:fisherman_gold_hook_for_crown"
+      "numismatics_cost": 2560,
+      "trade_id": "fisherman_gold_hook_for_crown"
     },
     {
       "offer": {
@@ -153,7 +164,8 @@
         "item": "numismatics:sun",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_iron_hook_for_cog"
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_iron_hook_for_cog"
     },
     {
       "offer": {
@@ -168,7 +180,8 @@
         "item": "aquaculture:neptunium_ingot",
         "count": 2
       },
-      "trade_id": "minecraft:fisherman_diamond_hook_for_crown"
+      "numismatics_cost": 65536,
+      "trade_id": "fisherman_diamond_hook_for_crown"
     },
     {
       "offer": {
@@ -179,7 +192,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
-      "trade_id": "minecraft:fisherman_trap_bobber_for_crown"
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_trap_bobber_for_crown"
     },
     {
       "offer": {
@@ -190,7 +204,8 @@
         "item": "numismatics:crown",
         "count": 6
       },
-      "trade_id": "minecraft:fisherman_cork_bobber_for_crown"
+      "numismatics_cost": 3072,
+      "trade_id": "fisherman_cork_bobber_for_crown"
     },
     {
       "offer": {
@@ -201,7 +216,8 @@
         "item": "numismatics:crown",
         "count": 6
       },
-      "trade_id": "minecraft:fisherman_sonar_bobber_for_crown"
+      "numismatics_cost": 3072,
+      "trade_id": "fisherman_sonar_bobber_for_crown"
     },
     {
       "offer": {
@@ -212,7 +228,8 @@
         "item": "numismatics:sun",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_treasure_bobber_for_sun"
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_treasure_bobber_for_sun"
     },
     {
       "offer": {
@@ -227,7 +244,8 @@
         "item": "aquaculture:neptunium_ingot",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_quality_bobber_for_sun"
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_quality_bobber_for_sun"
     },
     {
       "offer": {
@@ -238,7 +256,8 @@
         "item": "numismatics:sun",
         "count": 4
       },
-      "trade_id": "minecraft:fisherman_double_hook_for_crown"
+      "numismatics_cost": 16384,
+      "trade_id": "fisherman_double_hook_for_crown"
     },
     {
       "offer": {
@@ -249,7 +268,8 @@
         "item": "numismatics:sun",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_tackle_box_for_sun"
+      "numismatics_cost": 4096,
+      "trade_id": "fisherman_tackle_box_for_sun"
     },
     {
       "offer": {
@@ -260,7 +280,8 @@
         "item": "numismatics:crown",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_worm_farm_for_crown"
+      "numismatics_cost": 512,
+      "trade_id": "fisherman_worm_farm_for_crown"
     },
     {
       "offer": {
@@ -271,6 +292,7 @@
         "item": "numismatics:sun",
         "count": 32
       },
+      "numismatics_cost": 131072,
       "trade_id": "minecraft:toolsmith_neptunium_upgrade_smithing_template_for_crown"
     },
     {
@@ -282,7 +304,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
-      "trade_id": "minecraft:fisherman_copper_diving_helmet_for_crown"
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_copper_diving_helmet_for_crown"
     },
     {
       "offer": {
@@ -293,7 +316,8 @@
         "item": "numismatics:crown",
         "count": 4
       },
-      "trade_id": "minecraft:fisherman_copper_backtank_for_crown"
+      "numismatics_cost": 2048,
+      "trade_id": "fisherman_copper_backtank_for_crown"
     },
     {
       "offer": {
@@ -304,7 +328,8 @@
         "item": "numismatics:crown",
         "count": 3
       },
-      "trade_id": "minecraft:fisherman_copper_diving_boots_for_crown"
+      "numismatics_cost": 1536,
+      "trade_id": "fisherman_copper_diving_boots_for_crown"
     },
     {
       "offer": {
@@ -315,7 +340,8 @@
         "item": "numismatics:sun",
         "count": 32
       },
-      "trade_id": "minecraft:fisherman_gold_ring_for_sun"
+      "numismatics_cost": 131072,
+      "trade_id": "fisherman_gold_ring_for_sun"
     },
     {
       "offer": {
@@ -331,7 +357,8 @@
         "item": "aquaculture:neptunium_block",
         "count": 1
       },
-      "trade_id": "minecraft:fisherman_guide_book_for_neptunium_coin"
+      "numismatics_cost": 32768,
+      "trade_id": "fisherman_guide_book_for_neptunium_coin"
     }
   ]
 }

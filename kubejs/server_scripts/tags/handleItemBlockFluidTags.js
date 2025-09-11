@@ -211,6 +211,7 @@ ServerEvents.tags("item", (e) => {
   global.removedItems.forEach((item) => {
     e.removeAllTagsFrom(item);
     e.add("furniture:trash_bag_blacklist", item);
+    e.add('c:hidden_from_recipe_viewers', item)
   });
 });
 const rawLogs = [

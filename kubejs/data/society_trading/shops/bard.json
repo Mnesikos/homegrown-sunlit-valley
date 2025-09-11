@@ -12,6 +12,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "bard_blank_music_disc_for_cog"
     },
     {
@@ -23,6 +24,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "bard_etching_table_for_crown"
     },
     {
@@ -34,6 +36,7 @@
         "item": "numismatics:sun",
         "count": 1
       },
+      "numismatics_cost": 4096,
       "trade_id": "bard_album_jukebox_for_sun"
     },
     {
@@ -45,6 +48,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "bard_radio_for_cog"
     },
     {
@@ -56,6 +60,7 @@
         "item": "numismatics:sun",
         "count": 1
       },
+      "numismatics_cost": 4096,
       "trade_id": "bard_boombox_for_sun"
     },
     {
@@ -67,6 +72,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "bard_camera_for_crown"
     },
     {
@@ -78,6 +84,7 @@
         "item": "numismatics:cog",
         "count": 2
       },
+      "numismatics_cost": 128,
       "trade_id": "bard_black_and_white_film_for_cog"
     },
     {
@@ -89,6 +96,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "bard_color_film_for_cog"
     },
     {
@@ -100,6 +108,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "bard_lightroom_for_crown"
     },
     {
@@ -111,6 +120,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "bard_painting_for_cog"
     },
     {
@@ -122,6 +132,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "bard_graffiti_for_cog"
     },
     {
@@ -133,6 +144,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
+      "numismatics_cost": 16384,
       "trade_id": "bard_graffiti_for_crown"
     },
     {
@@ -144,6 +156,7 @@
         "item": "numismatics:cog",
         "count": 4
       },
+      "numismatics_cost": 256,
       "trade_id": "bard_paints_for_cog"
     },
     {
@@ -155,6 +168,7 @@
         "item": "numismatics:crown",
         "count": 1
       },
+      "numismatics_cost": 512,
       "trade_id": "bard_straw_statue_for_crown"
     },
     {
@@ -166,6 +180,7 @@
         "item": "numismatics:sun",
         "count": 7
       },
+      "numismatics_cost": 28672,
       "trade_id": "bard_tv_for_crown"
     },
     {
@@ -177,6 +192,7 @@
         "item": "numismatics:sun",
         "count": 16
       },
+      "numismatics_cost": 65536,
       "trade_id": "bard_frame_for_sun"
     },
     {
@@ -188,6 +204,7 @@
         "item": "numismatics:sun",
         "count": 3
       },
+      "numismatics_cost": 1536,
       "trade_id": "bard_remote_for_cog"
     },
     {
@@ -199,6 +216,7 @@
         "item": "numismatics:ancient_coin",
         "count": 1
       },
+      "numismatics_cost": 262144,
       "trade_id": "bard_game_disc_blocktris_for_ancient_coin"
     }
   ]

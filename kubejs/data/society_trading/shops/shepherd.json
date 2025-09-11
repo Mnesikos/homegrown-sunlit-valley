@@ -217,7 +217,7 @@
         "item": "numismatics:sun",
         "count": 4
       },
-      "numismatics_cost": 2048,
+      "numismatics_cost": 16384,
       "trade_id": "shepherd_pig_spawn_egg_for_sun"
     },
     {
