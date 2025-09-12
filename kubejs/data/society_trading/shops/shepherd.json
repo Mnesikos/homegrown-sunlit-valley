@@ -10,10 +10,10 @@
       },
       "request": {
         "item": "numismatics:sprocket",
-        "count": 1
+        "count": 2
       },
       "numismatics_cost": 16,
-      "trade_id": "minecraft:shepherd_animal_feed_for_bevel"
+      "trade_id": "minecraft:shepherd_animal_feed_for_sprocket"
     },
     {
       "offer": {

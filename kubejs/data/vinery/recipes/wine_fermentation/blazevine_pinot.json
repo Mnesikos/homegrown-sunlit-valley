@@ -5,8 +5,11 @@
     "amount": 7
   },
   "ingredients": [
-    {
-      "item": "minecraft:blaze_powder"
+    { 
+      "item": "pamhc2trees:lemonitem" 
+    },
+    { 
+      "item": "pamhc2trees:lemonitem" 
     },
     { 
       "item": "pamhc2trees:lemonitem" 

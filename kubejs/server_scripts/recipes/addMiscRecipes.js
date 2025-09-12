@@ -116,11 +116,12 @@ ServerEvents.recipes((e) => {
     e: "society:earth_crystal",
     C: "minecraft:copper_block",
   });
-  e.shaped("society:mayonnaise_machine", [" C ", "pcp", " e "], {
+  e.shaped("society:mayonnaise_machine", [" p ", "fcf", "CeC"], {
     c: "minecraft:composter",
-    C: "numismatics:crown",
+    C: "minecraft:copper_block",
     e: "society:earth_crystal",
     p: "society:pine_tar",
+    f: "meadow:fire_log",
   });
   e.shaped("society:cheese_press", [" p ", "fef", "fff"], {
     f: "meadow:fire_log",
@@ -129,7 +130,7 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("meadow:cheese_form", [" C ", "pcp", " b "], {
     c: "society:cheese_press",
-    C: "numismatics:sun",
+    C: "minecraft:netherite_ingot",
     b: "society:battery",
     p: "society:pine_tar",
   });
@@ -154,46 +155,41 @@ ServerEvents.recipes((e) => {
     p: "#minecraft:planks",
     o: "society:maple_syrup",
   });
-  e.shaped("farm_and_charm:roaster", [" C ", "ece", " e "], {
-    C: "numismatics:crown",
+  e.shaped("farm_and_charm:roaster", ["CCC", "ece", "CCC"], {
+    C: "minecraft:iron_ingot",
     e: "society:earth_crystal",
     c: "farmersdelight:cooking_pot",
   });
-  e.shaped("herbalbrews:tea_kettle", [" C ", "ici", "eie"], {
-    C: "numismatics:crown",
+  e.shaped("herbalbrews:tea_kettle", [" i ", "ici", "eie"], {
     c: "minecraft:cauldron",
     e: "society:earth_crystal",
     i: "minecraft:iron_ingot",
   });
-  e.shaped("herbalbrews:copper_tea_kettle", [" C ", "ici", "eie"], {
-    C: "numismatics:crown",
+  e.shaped("herbalbrews:copper_tea_kettle", [" i ", "ici", "eie"], {
     c: "minecraft:cauldron",
     e: "society:earth_crystal",
     i: "minecraft:copper_ingot",
   });
-  e.shaped("4x farm_and_charm:silo_wood", ["lCl", "rbr", "lel"], {
-    C: "numismatics:crown",
+  e.shaped("4x farm_and_charm:silo_wood", ["lll", "rbr", "lel"], {
     b: "minecraft:barrel",
     l: "meadow:fire_log",
     r: "society:oak_resin",
     e: "society:earth_crystal",
   });
-  e.shaped("bakery:baker_station", ["rCr", "ppp", "pep"], {
-    C: "numismatics:crown",
+  e.shaped("bakery:baker_station", ["ppp", "rpr", "pep"], {
     p: "#minecraft:planks",
     e: "society:earth_crystal",
     r: "society:oak_resin",
   });
-  e.shaped("farm_and_charm:crafting_bowl", [" C ", "zbz", "eze"], {
-    C: "numismatics:crown",
+  e.shaped("farm_and_charm:crafting_bowl", ["zzz", "zbz", "eze"], {
     b: "minecraft:bowl",
     e: "society:earth_crystal",
     z: "create:zinc_ingot",
   });
   // Fire Quartz
-  e.shaped("society:seed_maker", [" C ", "pcp", " f "], {
+  e.shaped("society:seed_maker", [" f ", "pcp", "ggg"], {
+    g: "minecraft:gold_block",
     c: "minecraft:composter",
-    C: "numismatics:sun",
     f: "society:earth_crystal",
     p: "society:pine_tar",
   });
@@ -221,31 +217,31 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("society:quality_washer", [" S ", "zcz", "fzf"], {
     c: "minecraft:cauldron",
-    S: "numismatics:sun",
+    S: "dew_drop_farmland_growth:high_quality_fertilizer",
     f: "society:fire_quartz",
     z: "create:zinc_ingot",
   });
   e.shaped("farm_and_charm:mincer", ["iCi", "ici", "ifi"], {
     c: "minecraft:iron_block",
-    C: "numismatics:crown",
+    C: "quark:sturdy_stone",
     f: "society:fire_quartz",
     i: "minecraft:iron_ingot",
   });
-  e.shaped("vinery:apple_press", ["CfC", "tbt", "tft"], {
+  e.shaped("vinery:apple_press", [" f ", "tbt", "tft"], {
     b: "minecraft:barrel",
-    C: "numismatics:crown",
     f: "society:fire_quartz",
     t: "society:treated_log",
   });
-  e.shaped("vinery:fermentation_barrel", [" C ", "pbp", "fpf"], {
+  e.shaped("vinery:fermentation_barrel", ["FoF", "IbI", "FfF"], {
     b: "minecraft:barrel",
-    C: "numismatics:sun",
+    I: "minecraft:iron_block",
     f: "society:fire_quartz",
-    p: "society:pine_tar",
+    o: "society:oak_resin",
+    F: "meadow:fire_log",
   });
   e.shaped("herbalbrews:cauldron", [" C ", "fcf", " f "], {
     c: "minecraft:cauldron",
-    C: "numismatics:crown",
+    C: "society:jade",
     f: "society:fire_quartz",
   });
   e.shaped("society:preserves_jar", ["LLL", "LbL", "CiC"], {
@@ -266,19 +262,18 @@ ServerEvents.recipes((e) => {
     B: "society:battery",
     f: "society:fire_quartz",
   });
-  e.shaped("society:recycling_machine", ["LGL", "fbf", "LIL"], {
+  e.shaped("society:recycling_machine", ["LIL", "fbf", "LIL"], {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
-    G: "numismatics:crown",
     f: "society:fire_quartz",
     I: "minecraft:iron_block",
   });
   // Battery
-  e.shaped("society:crystalarium", ["SiS", "iDi", "SbS"], {
+  e.shaped("society:crystalarium", ["iii", "SDS", "ibi"], {
     D: "minecraft:diamond_block",
-    S: "numismatics:sun",
+    S: "minecraft:netherite_ingot",
     b: "society:battery",
-    i: "create:industrial_iron_block",
+    i: "oreganized:lead_block",
   });
   e.shaped("society:espresso_machine", ["iii", "ltl", "bib"], {
     t: "herbalbrews:tea_kettle",
@@ -294,15 +289,11 @@ ServerEvents.recipes((e) => {
   });
   e.shaped("shippingbin:smart_shipping_bin", ["SSS", "SsS", "SbS"], {
     s: "shippingbin:basic_shipping_bin",
-    S: "numismatics:sun",
+    S: "create:zinc_ingot",
     b: "society:battery",
   });
   // Prismatic
-  e.shaped("society:car_key", [" p ", " f ", " t "], {
-    f: "relics:horse_flute",
-    t: "numismatics:sun",
-    p: "society:prismatic_shard",
-  });
+  e.shapeless("society:car_key", ["relics:horse_flute", "society:prismatic_shard"]);
   e.shaped("society:prize_machine", ["ttt", "tbt", "ttt"], {
     b: "bountiful:bountyboard",
     t: "society:prize_ticket",
@@ -441,7 +432,7 @@ ServerEvents.recipes((e) => {
     N: "aquaculture:neptunium_ingot",
     P: "crabbersdelight:pearl",
     r: "society:oak_resin",
-    w: "meadow:wooden_water_bucket",
+    w: "meadow:wooden_bucket",
   });
   e.shaped("society:sunlit_pearl", [" n ", " p ", "r o"], {
     n: "society:nether_jelly",
@@ -485,18 +476,17 @@ ServerEvents.recipes((e) => {
   });
 
   // Jade
-  e.shaped("society:aging_cask", ["SjS", "pbp", "SSS"], {
+  e.shaped("society:aging_cask", ["SjS", "pbp", "SpS"], {
     b: "vinery:fermentation_barrel",
-    S: "numismatics:sun",
+    S: "oreganized:lead_block",
     j: "society:jade",
     p: "society:pine_tar",
   });
 
   // Other
-  e.shaped("society:charging_rod", ["CZC", "zlz", "ZbZ"], {
+  e.shaped("society:charging_rod", [" Z ", "zlz", "ZbZ"], {
     Z: "create:zinc_block",
-    z: "create:zinc_ingot",
-    C: "numismatics:sun",
+    z: "etcetera:bismuth_ingot",
     l: "minecraft:lightning_rod",
     b: "quark:blaze_lantern",
   });

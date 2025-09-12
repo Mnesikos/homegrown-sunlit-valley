@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "S": {
-      "item": "numismatics:crown"
+      "item": "etcetera:bismuth_ingot"
     },
     "W": {
       "item": "supplementaries:jar"

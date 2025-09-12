@@ -1,25 +1,25 @@
 {
   "type": "vinery:wine_fermentation",
   "juice": {
-    "type": "white_general",
-    "amount": 14
+    "type": "apple",
+    "amount": 20
   },
   "ingredients": [
     {
-      "item": "minecraft:melon"
+      "item": "society:maple_syrup"
     },
     {
-      "item": "minecraft:melon"
+      "item": "society:maple_syrup"
     },
     {
-      "item": "minecraft:melon"
+      "item": "society:maple_syrup"
     }
   ],
   "wine_bottle": {
     "required": true
   },
   "result": {
-    "item": "vinery:kelp_cider",
+    "item": "vinery:apple_cider",
     "count": 1
   }
 }

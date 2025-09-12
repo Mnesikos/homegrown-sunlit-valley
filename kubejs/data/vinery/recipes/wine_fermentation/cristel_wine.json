@@ -6,10 +6,10 @@
   },
   "ingredients": [
     {
-      "item": "minecraft:sugar"
+      "item": "vintagedelight:gearo_berry"
     },
     {
-      "item": "minecraft:feather"
+      "item": "vintagedelight:gearo_berry"
     },
     {
       "item": "vintagedelight:gearo_berry"
@@ -23,4 +23,3 @@
     "count": 1
   }
 }
-

@@ -85,7 +85,7 @@
       "diversity": 0
     },
     {
-      "ingredient": "{id:\"item\",item:\"relics:infinity_ham\"}",
+      "ingredient": "{id:\"item\",item:\"minecraft:air\"}",
       "diversity": 0
     }
   ]

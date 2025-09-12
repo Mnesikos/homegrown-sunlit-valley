@@ -2,23 +2,24 @@
   "type": "vinery:wine_fermentation",
   "juice": {
     "type": "white_warped",
-    "amount": 25
+    "amount": 10
   },
   "ingredients": [
     {
-      "item": "pamhc2trees:pawpawitem"
+      "item": "atmospheric:aloe_leaves"
     },
     {
-      "item": "pamhc2trees:pawpawitem"
+      "item": "atmospheric:aloe_leaves"
     },
     {
-      "item": "pamhc2trees:pawpawitem"
+      "item": "atmospheric:aloe_leaves"
     }
   ],
   "wine_bottle": {
     "required": true
   },
   "result": {
-    "item": "nethervinery:nether_fizz"
+    "item": "nethervinery:ghastly_grenache",
+    "count": 1
   }
 }

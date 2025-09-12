@@ -1,7 +1,7 @@
 {
   "type": "vinery:wine_fermentation",
   "juice": {
-    "type": "white_savanna",
+    "type": "white_general",
     "amount": 10
   },
   "ingredients": [
@@ -12,7 +12,7 @@
       "item": "autumnity:foul_berries"
     },
     {
-      "item": "minecraft:gunpowder"
+      "item": "autumnity:foul_berries"
     }
   ],
   "wine_bottle": {
@@ -23,4 +23,3 @@
     "count": 1
   }
 }
-

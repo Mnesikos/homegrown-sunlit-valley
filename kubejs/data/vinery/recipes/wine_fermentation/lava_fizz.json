@@ -6,10 +6,13 @@
   },
   "ingredients": [
     {
-      "item": "minecraft:lava_bucket"
+      "item": "vintagedelight:ghost_pepper"
     },
     {
-      "item": "paraglider:spirit_orb"
+      "item": "vintagedelight:ghost_pepper"
+    },
+    {
+      "item": "vintagedelight:ghost_pepper"
     }
   ],
   "wine_bottle": {
