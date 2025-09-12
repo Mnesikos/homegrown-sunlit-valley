@@ -16,6 +16,11 @@
     }
   ],
   "lookup_history": [
+    {
+      "type": "item",
+      "id": "vintagedelight:apple_sauce_mason_jar",
+      "amount": 16
+    },
     "item:society:mana_clock",
     "item:botania:lens_damage",
     "item:vinery:jellie_wine",
@@ -1400,8 +1405,7 @@
     "item:society:smoked_koi_fish",
     "item:society:smoked_circus_fish",
     "item:society:flamingo_egg",
-    "item:society:infinity_worm",
-    "item:society:frosted_tip"
+    "item:society:infinity_worm"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",

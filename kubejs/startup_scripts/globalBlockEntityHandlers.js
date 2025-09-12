@@ -439,7 +439,9 @@ global.inventoryBelowHasRoom = (level, block, item) => {
       belowItem = belowBlock.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
-        belowItem.count + Item.of(item).count < belowBlock.inventory.getSlotLimit(j)
+        belowItem.count + Item.of(item).count <
+          belowBlock.inventory.getSlotLimit(j) /
+            (64 / belowBlock.inventory.getStackInSlot(j).maxStackSize)
       ) {
         return true;
       }
@@ -469,7 +471,9 @@ global.insertBelow = (level, block, item) => {
       belowItem = belowBlock.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
-        belowItem.count + Item.of(item).count < belowBlock.inventory.getSlotLimit(j)
+        belowItem.count + Item.of(item).count <
+          belowBlock.inventory.getSlotLimit(j) /
+            (64 / belowBlock.inventory.getStackInSlot(j).maxStackSize)
       ) {
         belowBlock.inventory.insertItem(j, item, false);
         return 1;
