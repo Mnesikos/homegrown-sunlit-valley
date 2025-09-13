@@ -169,6 +169,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:sunlit_pearl").texture("society:item/sunlit_pearl");
   e.create("crabbersdelight:crab_trap_bait").texture("society:item/crab_trap_bait");
   e.create("crabbersdelight:deluxe_crab_trap_bait").texture("society:item/deluxe_crab_trap_bait");
+  e.create("crabbersdelight:mana_crab_trap_bait").texture("society:item/mana_crab_trap_bait");
   e.create("etcetera:bismuth_nugget").texture("society:item/bismuth_nugget");
   e.create("society:pig_race_ticket").texture("society:item/pig_race_ticket");
   e.create("society:multiplayer_pig_race_ticket").texture(

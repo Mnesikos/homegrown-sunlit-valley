@@ -27,7 +27,7 @@ ItemEvents.entityInteracted((e) => {
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
   if (breedingItems.includes(item.id)) {
     server.runCommandSilent(
-      `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 8 This animal can only be bred with a Miracle Potion!`
+      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 480 This animal can only be bred with a Miracle Potion!`
     );
     e.cancel();
   }
@@ -36,7 +36,7 @@ ItemEvents.entityInteracted((e) => {
   if (hand == "MAIN_HAND" && item === "society:miracle_potion") {
     if (global.checkEntityTag(target, "society:infertile")) {
       server.runCommandSilent(
-        `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 5 This animal cannot breed.`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 350 This animal cannot breed.`
       );
       e.cancel();
     }
@@ -52,7 +52,7 @@ ItemEvents.entityInteracted((e) => {
         item.count--;
         target.persistentData.ageLastBred = day;
         server.runCommandSilent(
-          `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 5 The Miracle Potion failed...`
+          `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 350 The Miracle Potion failed...`
         );
       } else {
         animalNbt.InLove = 2000;
@@ -77,7 +77,7 @@ ItemEvents.entityInteracted((e) => {
     } else if (day > ageLastBred) {
       global.addItemCooldown(player, "society:miracle_potion", 40);
       server.runCommandSilent(
-        `immersivemessages sendcustom ${player.username} ${global.animalMessageSettings} 4 This animal needs time to rest after taking a Miracle Potion...`
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal needs time to rest after taking a Miracle Potion...`
       );
     }
   }

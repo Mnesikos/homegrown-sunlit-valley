@@ -102,6 +102,7 @@
     "create:mechanical_bearing",
     "create:clockwork_bearing",
     "create:cart_assembler",
-    "minecraft:dispenser"
+    "minecraft:dispenser",
+    "#society:skull_cavern_bomb_denied"
   ]
 }

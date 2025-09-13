@@ -65,6 +65,10 @@ BlockEvents.broken(
     "minecraft:deepslate_gold_ore",
     "minecraft:gold_ore",
     "oreganized:deepslate_lead_ore",
+    "society:grimwood_supply_crate",
+    "society:oak_supply_crate",
+    "society:spruce_supply_crate",
+    "society:palm_supply_crate",
   ],
   (e) => {
     const { level, block, server } = e;
@@ -75,6 +79,26 @@ BlockEvents.broken(
     }
   }
 );
+
+const scheduleUnplaceableRegenFunction = (level, pos, server, id) => {
+  server.scheduleInTicks(100, () => {
+    if (level.getBlock(pos) == "minecraft:air") {
+      level.getBlock(pos).set(id);
+      level.spawnParticles(
+        "snowyspirit:glow_light",
+        true,
+        pos.x,
+        pos.y + 0.5,
+        pos.z,
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        0.2 * rnd(1, 4),
+        5,
+        2
+      );
+    }
+  });
+};
 // Skull Cavern unplacable tag
 BlockEvents.broken(
   [
@@ -96,24 +120,14 @@ BlockEvents.broken(
   ],
   (e) => {
     const { level, block, server } = e;
+    const unplacablePos = block.getPos();
     if (level.dimension === "society:skull_cavern") {
-      server.scheduleInTicks(0, () => {
-        server.scheduleInTicks(200, () => {
-          level.getBlock(block.pos).set(block.id);
-          level.spawnParticles(
-            "snowyspirit:glow_light",
-            true,
-            block.x,
-            block.y + 0.5,
-            block.z,
-            0.2 * rnd(1, 4),
-            0.2 * rnd(1, 4),
-            0.2 * rnd(1, 4),
-            5,
-            2
-          );
-        });
-      });
+      scheduleUnplaceableRegenFunction(
+        level,
+        unplacablePos.immutable(),
+        server,
+        block.getId()
+      );
     }
   }
 );

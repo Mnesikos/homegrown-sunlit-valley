@@ -35,6 +35,10 @@
     "oreganized:silver_ore",
     "minecraft:deepslate_gold_ore",
     "minecraft:gold_ore",
-    "oreganized:deepslate_lead_ore"
+    "oreganized:deepslate_lead_ore",
+    "society:grimwood_supply_crate",
+    "society:oak_supply_crate",
+    "society:spruce_supply_crate",
+    "society:palm_supply_crate"
   ]
 }

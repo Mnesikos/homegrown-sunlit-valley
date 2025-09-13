@@ -44,4 +44,4 @@ global.husbandryAnimals = [
   "crittersandcompanions:red_panda",
 ];
 
-global.animalMessageSettings = `{anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-100}`;
+global.animalMessageSettings = `{anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-100}`;

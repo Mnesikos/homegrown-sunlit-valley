@@ -1760,6 +1760,7 @@ global.plorts = [
   { type: "splendid_slimes:dusty", value: 64 },
   { type: "splendid_slimes:bony", value: 72 },
   { type: "splendid_slimes:rotting", value: 72 },
+  { type: "splendid_slimes:mechanic", value: 90 },
   { type: "splendid_slimes:webby", value: 128 },
   { type: "splendid_slimes:luminous", value: 132 },
   { type: "splendid_slimes:juicy", value: 148 },

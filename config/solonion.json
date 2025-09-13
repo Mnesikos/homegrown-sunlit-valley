@@ -22,7 +22,7 @@
     },
     {
       "threshold": 15,
-      "benefit": "{key:\"vinery:experience_effect\",type:\"eff\",val:0.0d}"
+      "benefit": "{key:\"autumnity:extension\",type:\"eff\",val:0.0d}"
     },
     {
       "threshold": 15,
@@ -82,11 +82,11 @@
     },
     {
       "ingredient": "{id:\"item\",item:\"botania:infinite_fruit\"}",
-      "diversity": 0
+      "diversity": -2
     },
     {
-      "ingredient": "{id:\"item\",item:\"minecraft:air\"}",
-      "diversity": 0
+      "ingredient": "{id:\"item\",item:\"relics:infinity_ham\"}",
+      "diversity": -2
     }
   ]
 }

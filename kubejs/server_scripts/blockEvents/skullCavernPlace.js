@@ -3,7 +3,7 @@ console.info("[SOCIETY] skullCavernPlace.js loaded");
 BlockEvents.placed((e) => {
   const { player, block, level, server } = e;
   if (level.dimension === "society:skull_cavern") {
-    if (block.hasTag("society:skull_cavern_unplacable")) {
+    if (block.hasTag("society:skull_cavern_unplacable") && !player.isCreative()) {
       global.renderUiText(
         player,
         server,

@@ -12,17 +12,17 @@ ItemEvents.entityInteracted((e) => {
     if (!data.gifted && data.affection >= 1000) {
       let nonIdType = String(target.type.split(":")[1]).replace(/_/g, " ");
       let name = target.customName ? target.customName.getString() : undefined;
-      let capitalizedType = global.formatName(nonIdType)
+      let capitalizedType = global.formatName(nonIdType);
       server.runCommandSilent(
-        `immersivemessages sendcustom ${
+        `emberstextapi sendcustom ${
           player.username
-        } {anchor:3,background:1,wrap:1,align:0,color:"#55FF55",y:-90} 4 ${
+        } {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#55FF55",y:-90} 240 ${
           name ? name : capitalizedType
         } really loves you!`
       );
 
       global.petGifts.forEach((gift) => {
-        if ((gift.animal === target.type)) possibleGifts = gift.gifts;
+        if (gift.animal === target.type) possibleGifts = gift.gifts;
       });
       data.gifted = true;
       gift.x = player.x;

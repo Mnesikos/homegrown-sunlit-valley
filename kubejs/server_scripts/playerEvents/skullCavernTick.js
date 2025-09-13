@@ -12,7 +12,7 @@ PlayerEvents.tick((e) => {
           `playsound minecraft:ambient.cave block @a ${e.player.x} ${e.player.y} ${e.player.z}`
         );
         server.runCommandSilent(
-          `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#AAAAAA",y:-60} 10 It's getting late...`
+          `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60} 600 It's getting late...`
         );
       }
       player.potionEffects.add("minecraft:slowness", 210, 0, true, false);
@@ -21,7 +21,7 @@ PlayerEvents.tick((e) => {
     if (timeModulo >= 20000) {
       if (timeModulo <= 20200) {
         server.runCommandSilent(
-          `immersivemessages sendcustom ${player.username} {anchor:3,shake:1,background:1,wrap:1,align:0,color:"#AAAAAA",y:-60} 10 I should really go home...`
+          `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",shakeRandom:0.8,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60} 600 I should really go home...`
         );
       }
       server.runCommandSilent(
@@ -33,7 +33,7 @@ PlayerEvents.tick((e) => {
       player.persistentData.skullCavernEnterDay = -1;
       global.teleportHome(player, server, player.level);
       server.runCommandSilent(
-        `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#AAAAAA",y:-60} 10 You fainted in the Skull Cavern...`
+        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60} 600 You fainted in the Skull Cavern...`
       );
       player.potionEffects.add("minecraft:slowness", 310, 3, true, false);
       player.potionEffects.add("minecraft:darkness", 310, 0, true, false);

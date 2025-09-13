@@ -1544,6 +1544,47 @@
             ]
         },
         {
+            "pakku_id": "5uA9c4VHGBXz4E96",
+            "pakku_links": [
+                "enYb9sPrtN1zNFex"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "chloride"
+            },
+            "name": {
+                "curseforge": "Chloride (Embeddium++/Sodium++)"
+            },
+            "id": {
+                "curseforge": "931925"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.2.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6615/986/chloride-FORGE-mc1.20.1-v1.7.2.jar",
+                    "id": "6615986",
+                    "parent_id": "931925",
+                    "hashes": {
+                        "sha1": "d04b7bcd14a210a670877ff3f425fbf760dadda3",
+                        "md5": "a50f626acc0ade9c250df4cd16ec960d"
+                    },
+                    "required_dependencies": [
+                        "908741"
+                    ],
+                    "size": 944500,
+                    "date_published": "2025-06-05T01:33:47.447Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "kanBRUq8DCOGwGcr",
             "type": "MOD",
             "slug": {
@@ -3844,6 +3885,42 @@
             ]
         },
         {
+            "pakku_id": "PRzueofHwRLpn1gJ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "embers-text-api"
+            },
+            "name": {
+                "curseforge": "Embers Text API"
+            },
+            "id": {
+                "curseforge": "1345948"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emberstextapi-1.1.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6991/1/emberstextapi-1.1.0.jar",
+                    "id": "6991001",
+                    "parent_id": "1345948",
+                    "hashes": {
+                        "sha1": "9b5769c32488f41a4f786a1507de393597517bd4",
+                        "md5": "3c0e2a29d99b39762ea3cf92f1bd85ef"
+                    },
+                    "required_dependencies": [],
+                    "size": 91903,
+                    "date_published": "2025-09-12T23:51:44.363Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "VhXQtw6ZdevNX8Md",
             "type": "MOD",
             "slug": {
@@ -5930,45 +6007,6 @@
             ]
         },
         {
-            "pakku_id": "DDlMWhIWDvRBfboG",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "immersive-messages-api"
-            },
-            "name": {
-                "curseforge": "Immersive Messages API"
-            },
-            "id": {
-                "curseforge": "1109713"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "immersivemessages-forge-1.0.18-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6480/772/immersivemessages-forge-1.0.18-1.20.1.jar",
-                    "id": "6480772",
-                    "parent_id": "1109713",
-                    "hashes": {
-                        "sha1": "61ce58279c764ab212ee816a6d66fc26dd6a8ba3",
-                        "md5": "8d57d5644346905b4e58829412d56cae"
-                    },
-                    "required_dependencies": [
-                        "1104882"
-                    ],
-                    "size": 1462072,
-                    "date_published": "2025-04-30T16:57:44.703Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "htcwLDmgzMMXDEAf",
             "type": "MOD",
             "slug": {
@@ -7974,6 +8012,43 @@
             ]
         },
         {
+            "pakku_id": "tIDRSBWtFXNQn3in",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "obsidianui"
+            },
+            "name": {
+                "curseforge": "ObsidianUI"
+            },
+            "id": {
+                "curseforge": "684718"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ObsidianUI-forge-0.2.3+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5279/713/ObsidianUI-forge-0.2.3+mc1.20.1.jar",
+                    "id": "5279713",
+                    "parent_id": "684718",
+                    "hashes": {
+                        "sha1": "aaa69c42410847ac5d13034fba9d519e0afd0abf",
+                        "md5": "323ee5036a5113c1529520430e7b6a04"
+                    },
+                    "required_dependencies": [],
+                    "size": 212286,
+                    "date_published": "2024-04-21T14:14:57.107Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Gt0q5vF9DOqCn3H8",
             "type": "MOD",
             "slug": {
@@ -9621,6 +9696,48 @@
             ]
         },
         {
+            "pakku_id": "VOJyvlNjsbaRWQWM",
+            "pakku_links": [
+                "tIDRSBWtFXNQn3in"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ryoamiclights"
+            },
+            "name": {
+                "curseforge": "RyoamicLights"
+            },
+            "id": {
+                "curseforge": "913587"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "RyoamicLights-forge-0.2.3+mc1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5353/333/RyoamicLights-forge-0.2.3+mc1.20.1.jar",
+                    "id": "5353333",
+                    "parent_id": "913587",
+                    "hashes": {
+                        "sha1": "1850d6b47b39ed439c8e9f85caf6cbe88df817c3",
+                        "md5": "f90749d92767a42c3cf8df3d95cc1067"
+                    },
+                    "required_dependencies": [
+                        "684718"
+                    ],
+                    "size": 160055,
+                    "date_published": "2024-05-18T15:03:19.660Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Cub2qq5lbAsk5e9x",
             "type": "MOD",
             "slug": {
@@ -10386,87 +10503,6 @@
                     "required_dependencies": [],
                     "size": 219393,
                     "date_published": "2023-06-11T05:14:19.783Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "MbMf3sJEF33Dbbko",
-            "pakku_links": [
-                "NBYT8tUPNk76cGYx"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "dynamiclights-reforged"
-            },
-            "name": {
-                "curseforge": "Sodium/Embeddium Dynamic Lights"
-            },
-            "id": {
-                "curseforge": "551736"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6044/481/sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
-                    "id": "6044481",
-                    "parent_id": "551736",
-                    "hashes": {
-                        "sha1": "d27524e85bed0f0af83c03be46f9ca3eb02a1be9",
-                        "md5": "687c18cefa558ca8101ef97914d9ba6b"
-                    },
-                    "required_dependencies": [
-                        "1103431"
-                    ],
-                    "size": 511601,
-                    "date_published": "2025-01-02T01:22:43.027Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "NBYT8tUPNk76cGYx",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "sodium-options-api"
-            },
-            "name": {
-                "curseforge": "Sodium/Embeddium Options API"
-            },
-            "id": {
-                "curseforge": "1103431"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6100/812/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
-                    "id": "6100812",
-                    "parent_id": "1103431",
-                    "hashes": {
-                        "sha1": "7529fbf938787ed13a251cbf40936f8c29ec4b6c",
-                        "md5": "75807590ae2648ecdeb855705868ce59"
-                    },
-                    "required_dependencies": [
-                        "908741"
-                    ],
-                    "size": 443978,
-                    "date_published": "2025-01-18T20:48:18.013Z"
                 }
             ]
         },
@@ -11826,43 +11862,6 @@
                     "required_dependencies": [],
                     "size": 2766476,
                     "date_published": "2024-01-01T02:09:08.843Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "BeB2OHbVV2GpUbfB",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "txnilib"
-            },
-            "name": {
-                "curseforge": "TxniLib"
-            },
-            "id": {
-                "curseforge": "1104882"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "txnilib-forge-1.0.24-1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6533/724/txnilib-forge-1.0.24-1.20.1.jar",
-                    "id": "6533724",
-                    "parent_id": "1104882",
-                    "hashes": {
-                        "sha1": "a1e16b7d61f0f16a162d429ee1eab9b4e3eeb9ef",
-                        "md5": "31823d0999fda413af6dc226481e404a"
-                    },
-                    "required_dependencies": [],
-                    "size": 3743339,
-                    "date_published": "2025-05-15T21:54:10.010Z"
                 }
             ]
         },
