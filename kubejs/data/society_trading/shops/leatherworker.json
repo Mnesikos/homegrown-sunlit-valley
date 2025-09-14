@@ -2,6 +2,7 @@
   "shop_id": "leatherworker",
   "name": "shop.society_trading.leatherworker",
   "texture": "quark:textures/block/bonded_leather",
+  "villager_profession": "leatherworker",
   "trades": [
     {
       "offer": {

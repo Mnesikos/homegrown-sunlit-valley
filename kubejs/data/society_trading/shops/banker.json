@@ -2,6 +2,7 @@
   "shop_id": "banker",
   "name": "shop.society_trading.banker",
   "texture": "numismatics:textures/block/bank_terminal/bank_terminal_front",
+  "villager_profession": "cartographer",
   "trades": [
     {
       "offer": {

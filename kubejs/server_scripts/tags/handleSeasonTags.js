@@ -54,6 +54,14 @@ const stripTags = [
   "veggiesdelight:broccoli_seeds",
   "veggiesdelight:broccoli",
   "veggiesdelight:broccoli_crop",
+  "veggiesdelight:cauliflower",
+  "veggiesdelight:cauliflower_seeds",
+  "veggiesdelight:cauliflower_crop",
+  "veggiesdelight:sweet_potato_crop",
+  "veggiesdelight:sweet_potato",
+  "veggiesdelight:bellpepper_crop",
+  "veggiesdelight:bellpepper",
+  "veggiesdelight:bellpepper_seeds",
 ];
 const stripSeasons = (e, item) => {
   e.remove("sereneseasons:summer_crops", "vintagedelight:cucumber_crop");
@@ -122,7 +130,7 @@ const springCrops = [
   "veggiesdelight:cauliflower_seeds",
   "veggiesdelight:cauliflower_crop",
   "veggiesdelight:garlic_crop",
-  "veggiesdelight:garlic_seeds",
+  "society:garlic_seed",
   "veggiesdelight:garlic",
   "society:potato",
   "society:potato_seed",
@@ -274,7 +282,7 @@ const winterCrops = [
   "society:tubabacco_leaf_seed",
   "atmospheric:kousa_sapling",
   "windswept:wild_berry_bush",
-  "windswept:wild_berries"
+  "windswept:wild_berries",
 ];
 const allSeasonCrops = [
   "atmospheric:laurel_sapling",

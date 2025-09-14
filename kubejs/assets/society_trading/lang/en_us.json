@@ -4,7 +4,7 @@
   "shop.society_trading.barkeeper": "Barkeeper",
   "shop.society_trading.blacksmith": "Blacksmith",
   "shop.society_trading.cleric": "Cleric",
-  "shop.society_trading.exotic_trader": "Exotic Trader",
+  "shop.society_trading.exotic_trader": "E. Trader",
   "shop.society_trading.farmer": "Farmer",
   "shop.society_trading.fisher": "Fisher",
   "shop.society_trading.leatherworker": "Leatherworker",
@@ -14,10 +14,12 @@
   "shop.society_trading.shepherd": "Shepherd",
   "shop.society_trading.bookseller": "Bookseller",
   "shop.society_trading.storagesmith": "Storagesmith",
+  "shop.society_trading.market": "Market",
 
   "shop.society_trading.mechanic.name": "Mechanic",
   "shop.society_trading.builder.name": "Builder",
 
   "gui.society_trading.price": "%s ● ",
+  "gui.society_trading.hover_price_one": "Price: %s ●",
   "gui.society_trading.balance": "● %f"
 }

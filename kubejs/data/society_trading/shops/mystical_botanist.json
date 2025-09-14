@@ -3,6 +3,7 @@
   "name": "shop.society_trading.mystical_botanist",
   "texture": "botania:textures/block/mana_void",
   "stage_required": "mystical_botanist_unlocked",
+  "villager_profession": "botanist",
   "trades": [
     {
       "offer": {

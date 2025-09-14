@@ -2,6 +2,7 @@
   "shop_id": "fisher",
   "name": "shop.society_trading.fisher",
   "texture": "minecraft:textures/block/barrel_side",
+  "villager_profession": "fisherman",
   "trades": [
     {
       "offer": {

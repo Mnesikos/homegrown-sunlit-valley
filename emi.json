@@ -5,6 +5,14 @@
     }
   ],
   "lookup_history": [
+    "item:furniture:cash_register",
+    "item:windswept:chestnut_fence_gate",
+    "item:windswept:elder_wing",
+    "item:windswept:will_o_the_wisp",
+    "item:whimsy_deco:red_toy_plane",
+    "item:whimsy_deco:orange_froggy_chair",
+    "item:whimsy_deco:blue_toy_plane",
+    "item:whimsy_deco:black_phone",
     "item:society:canvas",
     "item:supplementaries:awning",
     "item:everycomp:fs/meadow/pine_4",
@@ -687,7 +695,6 @@
     "item:windswept:wooden_honey_bucket{Damage:0}",
     "item:windswept:chestnut_boat",
     "item:windswept:chestnut_bookshelf",
-    "item:windswept:will_o_the_wisp",
     "item:windswept:sweet_snow_cone",
     "item:windswept:chestnut_soup",
     "item:windswept:ginger_tea",
@@ -1403,14 +1410,7 @@
       "type": "item",
       "id": "oreganized:electrum_ingot",
       "amount": 9
-    },
-    "item:oreganized:electrum_block",
-    "item:extra_gauges:comparator_gauge",
-    "item:extra_gauges:integer_gauge",
-    "item:create:filter",
-    "item:create:attribute_filter",
-    "item:create:package_filter",
-    "item:create:windmill_bearing"
+    }
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",

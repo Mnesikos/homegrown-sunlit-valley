@@ -19,10 +19,10 @@
     "modId": "advancementplaques",
     "version": "1.6.7"
   },
-  "alltheleaks-1.0.4+1.20.1-forge.jar": {
-    "jarName": "alltheleaks-1.0.4+1.20.1-forge.jar",
+  "alltheleaks-1.0.3+1.20.1-forge.jar": {
+    "jarName": "alltheleaks-1.0.3+1.20.1-forge.jar",
     "modId": "alltheleaks",
-    "version": "1.0.4+1.20.1-forge"
+    "version": "1.0.3+1.20.1-forge"
   },
   "alternate_current-mc1.20-1.7.0.jar": {
     "jarName": "alternate_current-mc1.20-1.7.0.jar",
@@ -339,15 +339,10 @@
     "modId": "create_hypertube",
     "version": "0.2.5"
   },
-  "create_mecanical_extruder-1.20.1-1.6.11-6.0.6.jar": {
-    "jarName": "create_mecanical_extruder-1.20.1-1.6.11-6.0.6.jar",
+  "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar": {
+    "jarName": "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar",
     "modId": "create_mechanical_extruder",
     "version": "1.20.1-1.6.10-6.0.6"
-  },
-  "create_slime-1.0.1.jar": {
-    "jarName": "create_slime-1.0.1.jar",
-    "modId": "create_slime",
-    "version": "1.20"
   },
   "createentitycontroller-1.20.1-0.2.6-6.0.6+.jar": {
     "jarName": "createentitycontroller-1.20.1-0.2.6-6.0.6+.jar",
@@ -1177,11 +1172,6 @@
     "modId": "powerfuljs",
     "version": "1.6.1"
   },
-  "probejs-6.0.1-forge.jar": {
-    "jarName": "probejs-6.0.1-forge.jar",
-    "modId": "probejs",
-    "version": "6.0.1"
-  },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "jarName": "puffish_attributes-0.7.2-1.20-forge.jar",
     "modId": "puffish_attributes",
@@ -1242,10 +1232,10 @@
     "modId": "rehooked",
     "version": "1.8.3-1.20.1"
   },
-  "relics-1.20.1-0.8.0.11.jar": {
-    "jarName": "relics-1.20.1-0.8.0.11.jar",
+  "relics-1.20.1-0.8.0.9.jar": {
+    "jarName": "relics-1.20.1-0.8.0.9.jar",
     "modId": "relics",
-    "version": "0.8.0.11"
+    "version": "0.8.0.9"
   },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",

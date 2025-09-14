@@ -134,7 +134,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "alltheleaks-1.0.3+1.20.1-forge.jar",
+                    "file_name": "alltheleaks-1.0.4+1.20.1-forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -142,16 +142,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6954/969/alltheleaks-1.0.3+1.20.1-forge.jar",
-                    "id": "6954969",
+                    "url": "https://edge.forgecdn.net/files/6967/574/alltheleaks-1.0.4+1.20.1-forge.jar",
+                    "id": "6967574",
                     "parent_id": "1091339",
                     "hashes": {
-                        "sha1": "362320e0bd04af7f6bc9ce93a1d2a46a47935d0f",
-                        "md5": "9ea4fd61333e66e9c5b7451a1c9fe982"
+                        "sha1": "4aafc8d482e3da5d9c59029f8614d44c93c6d86f",
+                        "md5": "f15861b04cfb7335b0cd8de0cca9625b"
                     },
                     "required_dependencies": [],
-                    "size": 1136005,
-                    "date_published": "2025-09-02T05:16:22.177Z"
+                    "size": 1137043,
+                    "date_published": "2025-09-06T00:40:00.270Z"
                 }
             ]
         },
@@ -2486,7 +2486,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar",
+                    "file_name": "create_mecanical_extruder-1.20.1-1.6.11-6.0.6.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -2495,18 +2495,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6657/454/create_mecanical_extruder-1.20.1-1.6.10-6.0.6.jar",
-                    "id": "6657454",
+                    "url": "https://edge.forgecdn.net/files/6944/732/create_mecanical_extruder-1.20.1-1.6.11-6.0.6.jar",
+                    "id": "6944732",
                     "parent_id": "686100",
                     "hashes": {
-                        "sha1": "83121a1170ad824ed3e993ec447d080bf5306533",
-                        "md5": "c471f57c079a0e11ec4dd543243dd6c5"
+                        "sha1": "cf3c7a54e2cd0b1441b897ad4c88dcacb2163f4a",
+                        "md5": "1efc306ab05c8e8aec85c25e75eaf063"
                     },
                     "required_dependencies": [
                         "328085"
                     ],
-                    "size": 512838,
-                    "date_published": "2025-06-16T12:27:33.427Z"
+                    "size": 513561,
+                    "date_published": "2025-08-30T13:11:35.277Z"
                 }
             ]
         },
@@ -2949,6 +2949,42 @@
                     ],
                     "size": 37051,
                     "date_published": "2025-09-02T16:10:15.077Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "JIJ7zwWniSI2I0rQ",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-slime"
+            },
+            "name": {
+                "curseforge": "Create: Splendid Cogs"
+            },
+            "id": {
+                "curseforge": "1335492"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create_slime-1.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6963/686/create_slime-1.0.1.jar",
+                    "id": "6963686",
+                    "parent_id": "1335492",
+                    "hashes": {
+                        "sha1": "e3550ac8a2aca1a44e3d2baa2cb5386032676a43",
+                        "md5": "24c086447f0e394cda22a9f156c66b75"
+                    },
+                    "required_dependencies": [],
+                    "size": 19142,
+                    "date_published": "2025-09-04T18:27:43.183Z"
                 }
             ]
         },
@@ -9451,7 +9487,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "relics-1.20.1-0.8.0.9.jar",
+                    "file_name": "relics-1.20.1-0.8.0.11.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -9459,16 +9495,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6376/192/relics-1.20.1-0.8.0.9.jar",
-                    "id": "6376192",
+                    "url": "https://edge.forgecdn.net/files/6976/293/relics-1.20.1-0.8.0.11.jar",
+                    "id": "6976293",
                     "parent_id": "445274",
                     "hashes": {
-                        "sha1": "a0252af334ade7a6b48fcabea3b4947fbcb18b24",
-                        "md5": "18be53515d2feaa08da2196ef6c8b321"
+                        "sha1": "7cae606158a0ddcecd0c68c1d82a29ad89da6ce2",
+                        "md5": "450bc342776c6e63294453377c50dd1c"
                     },
-                    "required_dependencies": [],
-                    "size": 1520280,
-                    "date_published": "2025-04-02T00:29:22.850Z"
+                    "required_dependencies": [
+                        "916747",
+                        "309927"
+                    ],
+                    "size": 1518437,
+                    "date_published": "2025-09-08T14:01:37.067Z"
                 }
             ]
         },

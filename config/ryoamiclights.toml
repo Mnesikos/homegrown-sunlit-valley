@@ -33,6 +33,10 @@
 				sheep = true
 				player = true
 				enderman = true
+				experience_orb = true
+				rabbit = true
+				slime = true
+				lightning_bolt = true
 
 			[light_sources.settings.entities.farmingforblockheads]
 				merchant = true
@@ -44,6 +48,8 @@
 				squirrel = true
 				minisheep = true
 				flamingo = true
+				bison = true
+				boar = true
 
 			[light_sources.settings.entities.automobility]
 				automobile = true
@@ -92,4 +98,25 @@
 
 			[light_sources.settings.entities.snowpig]
 				snow_pig = true
+
+			[light_sources.settings.entities.hamsters]
+				hamster = true
+
+			[light_sources.settings.entities.splendid_slimes]
+				splendid_slime = true
+
+			[light_sources.settings.entities.unusualfishmod]
+				deep_crawler = true
+				shockcat = true
+				prawn = true
+				blindsailfin = true
+
+			[light_sources.settings.entities.crittersandcompanions]
+				leaf_insect = true
+
+			[light_sources.settings.entities.windswept]
+				chilled = true
+
+			[light_sources.settings.entities.balloonbox]
+				balloonbox = true
 

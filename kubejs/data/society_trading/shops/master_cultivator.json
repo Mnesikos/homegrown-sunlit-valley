@@ -3,6 +3,7 @@
   "name": "shop.society_trading.master_cultivator",
   "texture": "society:textures/block/ancient_fruit_crate_side",
   "stage_required": "master_cultivator_unlocked",
+  "villager_profession": "cook",
   "trades": [
     {
       "offer": {
@@ -62,7 +63,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "cook_peanut_for_cog"
+      "trade_id": "cook_sweet_potato_seed_for_cog"
     },
     {
       "offer": {

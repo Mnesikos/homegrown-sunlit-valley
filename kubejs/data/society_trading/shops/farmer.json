@@ -2,6 +2,7 @@
   "shop_id": "farmer",
   "name": "shop.society_trading.farmer",
   "texture": "minecraft:textures/block/composter_side",
+  "villager_profession": "farmer",
   "trades": [
     {
       "offer": {

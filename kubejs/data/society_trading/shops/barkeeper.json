@@ -2,6 +2,7 @@
   "shop_id": "barkeeper",
   "name": "shop.society_trading.barkeeper",
   "texture": "beachparty:textures/item/honey_cocktail",
+  "villager_profession": "beach_guy",
   "trades": [
     {
       "offer": {
@@ -13,7 +14,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "beachparty:barkeeper_milk_for_crown"
+      "trade_id": "barkeeper_milk_for_crown"
     },
     {
       "offer": {
@@ -25,7 +26,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "beachparty:barkeeper_crusty_bread_for_cog"
+      "trade_id": "barkeeper_crusty_bread_for_cog"
     },
     {
       "offer": {
@@ -37,7 +38,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "beachparty:barkeeper_farmer_salad_for_cog"
+      "trade_id": "barkeeper_farmer_salad_for_cog"
     },
     {
       "offer": {
@@ -49,7 +50,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "beachparty:barkeeper_potato_salad_for_cog"
+      "trade_id": "barkeeper_potato_salad_for_cog"
     },
     {
       "offer": {
@@ -61,7 +62,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "beachparty:barkeeper_sandwich_for_cog"
+      "trade_id": "barkeeper_sandwich_for_cog"
     },
     {
       "offer": {
@@ -73,7 +74,7 @@
         "count": 2
       },
       "numismatics_cost": 128,
-      "trade_id": "beachparty:barkeeper_coffee_for_sprocket"
+      "trade_id": "barkeeper_coffee_for_sprocket"
     },
     {
       "offer": {
@@ -85,7 +86,7 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "beachparty:barkeeper_beer_hops_for_cog"
+      "trade_id": "barkeeper_beer_hops_for_cog"
     },
     {
       "offer": {
@@ -97,7 +98,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "beachparty:barkeeper_cheese_pizza_slice_for_crown"
+      "trade_id": "barkeeper_cheese_pizza_slice_for_crown"
     },
     {
       "offer": {
@@ -108,7 +109,7 @@
         "item": "society:prismatic_shard",
         "count": 3
       },
-      "trade_id": "beachparty:barkeeper_magic_rock_candy_for_prismatic_shard"
+      "trade_id": "barkeeper_magic_rock_candy_for_prismatic_shard"
     },
     {
       "offer": {
