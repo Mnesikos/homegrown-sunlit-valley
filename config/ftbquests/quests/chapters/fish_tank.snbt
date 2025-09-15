@@ -316,6 +316,6 @@
 			y: 1.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.fish_tank.subtitle0}"]
+	subtitle: ["Reward: Neptunium-Infused Hook"]
 	title: "{ftbquests.chapter.fish_tank.title}"
 }

@@ -5,6 +5,12 @@
     }
   ],
   "lookup_history": [
+    "item:botania_seeds:white_mystical_flower_seed",
+    "item:windswept:cherry_wreath",
+    "item:minecraft:book",
+    "item:windswept:pine_bookshelf",
+    "item:windswept:wooden_honey_bucket{Damage:0}",
+    "item:windswept:wooden_bucket{Damage:0}",
     "item:furniture:cash_register",
     "item:windswept:chestnut_fence_gate",
     "item:windswept:elder_wing",
@@ -692,7 +698,6 @@
     "item:windswept:lupine",
     "item:windswept:wooden_water_bucket{Damage:0}",
     "item:windswept:wooden_milk_bucket{Damage:0}",
-    "item:windswept:wooden_honey_bucket{Damage:0}",
     "item:windswept:chestnut_boat",
     "item:windswept:chestnut_bookshelf",
     "item:windswept:sweet_snow_cone",
@@ -729,12 +734,10 @@
     "item:everycomp:db/windswept/pine_palisade",
     "item:windswept:pine_wood",
     "item:windswept:frozen_flesh",
-    "item:windswept:cherry_wreath",
     "item:windswept:christmas_pudding",
     "item:windswept:frost_arrow",
     "item:windswept:antler_helmet{Damage:0}",
     "item:windswept:music_disc_bumblebee",
-    "item:windswept:wooden_bucket{Damage:0}",
     "item:windswept:holly_berries_on_a_stick{Damage:0}",
     "item:windswept:wooden_powder_snow_bucket{Damage:0}",
     "item:windswept:white_rose_bush",
@@ -1403,14 +1406,7 @@
       "id": "minecraft:coal_block",
       "amount": 2
     },
-    "item:minecraft:spruce_planks",
-    "item:minecraft:green_wool",
-    "item:minecraft:wheat_seeds",
-    {
-      "type": "item",
-      "id": "oreganized:electrum_ingot",
-      "amount": 9
-    }
+    "item:minecraft:spruce_planks"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",
