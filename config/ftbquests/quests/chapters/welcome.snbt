@@ -317,6 +317,38 @@
 			x: -2.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["1375AE2ECAC8C147"]
+			description: [
+				"The FTB Chunks map is disabled to prevent confusion from having two maps."
+				""
+				"If you're familiar with modded minecraft and prefer that map, click the check mark!"
+				""
+				"&cThis cannot be undone!&r"
+			]
+			icon: "supplementaries:slice_map"
+			id: "5FDA526D348C8A0F"
+			rewards: [{
+				command: "/kjs stages add @p ftbchunks_mapping"
+				elevate_perms: true
+				exclude_from_claim_all: true
+				icon: "supplementaries:slice_map"
+				id: "757BB197D52F88E4"
+				ignore_reward_blocking: true
+				silent: true
+				team_reward: false
+				title: "Enabled FTB Chunks Map"
+				type: "command"
+			}]
+			tasks: [{
+				id: "278FC13CCE8B9572"
+				title: "Enable FTB Chunks Map"
+				type: "checkmark"
+			}]
+			title: "Prefer FTB Chunks?"
+			x: 2.5d
+			y: -2.5d
+		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"
 }

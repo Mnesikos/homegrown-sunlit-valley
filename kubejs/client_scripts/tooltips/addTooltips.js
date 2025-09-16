@@ -960,6 +960,7 @@ ItemEvents.tooltip((tooltip) => {
   const magnifyingBlocks = [
     "Auto-Grabber",
     "Artisan Hoppers",
+    "Chicken Nest",
     "Feeding Trough",
     "Slime Feeder",
     "Snow Melter",
@@ -981,6 +982,10 @@ ItemEvents.tooltip((tooltip) => {
     }
   });
   tooltip.add("trials:ominous_bottle", Text.blue("Bad Omen (10:00)"));
+  tooltip.add("society:overflow_token", Text.gray("Permanantly adds ● 1,006,632,960"));
+  tooltip.add("society:overflow_token", Text.gray("to your coin leaderboard score,"));
+  tooltip.add("society:overflow_token", Text.gray("bypassing the bank account's cap."));
+  tooltip.add("society:overflow_token", Text.red("Overflow tokens cannot be recovered"));
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));

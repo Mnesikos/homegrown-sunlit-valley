@@ -94,72 +94,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 60,
           "name": "meadow:fire_log"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "society:boysenberry",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 8
-              },
-              "add": false
-            }
-          ],
-          "weight": 30
-        },
-        {
-          "type": "minecraft:item",
-          "name": "herbalbrews:rooibos_leaf",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 8
-              },
-              "add": false
-            }
-          ],
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "brewery:hop_trellis_seed",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 8
-              },
-              "add": false
-            }
-          ],
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
-          "name": "atmospheric:aloe_kernels",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 8
-              },
-              "add": false
-            }
-          ],
-          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -179,7 +115,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "vinery:jungle_grape_seeds_red",
+          "name": "nethervinery:crimson_grape_seeds",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -195,7 +131,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "vinery:jungle_grape_seeds_white",
+          "name": "nethervinery:warped_grape_seeds",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -208,32 +144,11 @@
             }
           ],
           "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "atmospheric:yucca_sapling",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 4
-              },
-              "add": false
-            }
-          ],
-          "weight": 6
-        },
-        {
-          "type": "minecraft:item",
-          "name": "atmospheric:yucca_branch",
-          "weight": 3
         },
         {
           "type": "minecraft:item",
           "name": "society:ancient_fruit_seed",
-          "weight": 1
+          "weight": 5
         }
       ]
     }

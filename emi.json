@@ -5,6 +5,129 @@
     }
   ],
   "lookup_history": [
+    "item:vinery:fermentation_barrel",
+    {
+      "type": "item",
+      "id": "society:grimwood_supply_crate",
+      "amount": 63
+    },
+    "item:society:ancient_fruit_seed",
+    "item:everycomp:rfm/atmospheric/grimwood_crate",
+    "item:society:spruce_supply_crate",
+    "item:society:palm_supply_crate",
+    "item:everycomp:rfm/beachparty/palm_crate",
+    "item:nethervinery:warped_grape_seeds",
+    "item:minecraft:sand",
+    "item:minecraft:calcite",
+    "item:supplementaries:fine_wood",
+    {
+      "type": "item",
+      "id": "minecraft:end_stone",
+      "amount": 64
+    },
+    "item:quark:myalite_crystal",
+    "item:minecraft:dark_prismarine",
+    "item:minecraft:prismarine",
+    "item:minecraft:blackstone",
+    "item:minecraft:granite",
+    {
+      "type": "item",
+      "id": "create:ochrum",
+      "amount": 64
+    },
+    "item:minecraft:andesite",
+    {
+      "type": "item",
+      "id": "minecraft:polished_basalt",
+      "amount": 64
+    },
+    "item:minecraft:packed_mud",
+    "item:create:scorchia",
+    {
+      "type": "item",
+      "id": "create:limestone",
+      "amount": 64
+    },
+    "item:railways:riveted_locometal",
+    "item:railways:slashed_locometal",
+    "item:clayworks:concrete",
+    "item:clayworks:concrete_powder",
+    "item:clayworks:terracotta_bricks",
+    "item:minecraft:bricks",
+    "item:twigs:packed_silt",
+    "item:twigs:silt",
+    "item:twigs:twisting_polished_blackstone_bricks",
+    "item:twigs:schist",
+    "item:twigs:cobblestone_bricks",
+    "item:twigs:compacted_dripstone",
+    "item:twigs:gravel_bricks",
+    "item:twigs:chiseled_smooth_basalt_bricks",
+    "item:twigs:polished_basalt_bricks",
+    "item:windswept:lunalite",
+    "item:windswept:shale",
+    "item:windswept:dry_mossy_cobblestone",
+    {
+      "type": "item",
+      "id": "windswept:icicle_block",
+      "amount": 64
+    },
+    "item:botania:corporea_block",
+    "item:botania:white_pavement_stairs",
+    "item:botania:white_pavement",
+    {
+      "type": "item",
+      "id": "pamhc2trees:pampawpaw",
+      "amount": 58
+    },
+    "item:society:merino_wool",
+    "item:simplehats:worm_hat",
+    "item:simplehats:toast",
+    "item:veggiesdelight:turnip_beef_stew",
+    "item:veggiesdelight:zucchini_sandwich{}",
+    "#item:forge:crops/zucchini",
+    "#item:forge:bread",
+    "item:veggiesdelight:broccoli_salad",
+    "item:veggiesdelight:turnip_salad",
+    "#item:forge:cabbage",
+    "item:veggiesdelight:turnip_cake{}",
+    "item:veggiesdelight:pasta_with_broccoli{}",
+    "item:veggiesdelight:turnip_water",
+    "item:veggiesdelight:stuffed_zucchinis",
+    [
+      "#item:forge:raw_beef",
+      "#item:forge:raw_mutton"
+    ],
+    "item:veggiesdelight:broccoli_soup",
+    "item:veggiesdelight:cauliflower_kuku{}",
+    "#item:forge:vegetables",
+    "#item:forge:crops/garlic",
+    "#item:society:large_milk",
+    "item:veggiesdelight:carrot_juice",
+    "item:veggiesdelight:sweet_potato_pancakes",
+    "item:veggiesdelight:cauliflower",
+    "item:veggiesdelight:fried_cauliflower_floret",
+    "item:veggiesdelight:garlic_rice_with_cauliflower",
+    "item:sewingkit:sewing_station",
+    "item:etched:album_cover",
+    {
+      "type": "item",
+      "id": "society:truffle_tea",
+      "amount": 8
+    },
+    "item:society:cordycep",
+    "item:society:fire_quartz",
+    "item:society:dehydrator",
+    "item:minecraft:rotten_flesh",
+    "item:paraglider:spirit_orb",
+    "#item:minecraft:wool",
+    "item:sewingkit:wool_trim",
+    "item:sewingkit:wool_roll",
+    {
+      "type": "item",
+      "id": "minecraft:white_wool",
+      "amount": 64
+    },
+    "item:betterarcheology:sheep_fossil_body",
     "item:botania_seeds:white_mystical_flower_seed",
     "item:windswept:cherry_wreath",
     "item:minecraft:book",
@@ -155,17 +278,6 @@
       "id": "society:oak_supply_crate",
       "amount": 64
     },
-    {
-      "type": "item",
-      "id": "society:spruce_supply_crate",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "society:palm_supply_crate",
-      "amount": 64
-    },
-    "item:everycomp:rfm/beachparty/palm_crate",
     "item:botania:infinite_fruit{soulbindUUID:\"8d3c8e31-8b73-4336-9adb-df8508f79251\"}",
     {
       "type": "item",
@@ -266,11 +378,6 @@
     "item:farmersdelight:cooking_pot",
     "item:vinery:apple_press",
     "item:farm_and_charm:mincer",
-    {
-      "type": "item",
-      "id": "society:fire_quartz",
-      "amount": 64
-    },
     "item:society:pine_tar",
     {
       "type": "fluid",
@@ -438,11 +545,6 @@
       "amount": 9
     },
     "item:vinery:taiga_grape_seeds_red",
-    {
-      "type": "item",
-      "id": "society:grimwood_supply_crate",
-      "amount": 64
-    },
     "item:veggiesdelight:garlic_chicken_stew",
     "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"veggiesdelight:garlic_clove\"}}",
     "item:veggiesdelight:roasted_garlic_clove",
@@ -504,7 +606,6 @@
     "item:society:zucchini_preserves",
     "item:veggiesdelight:garlic",
     "item:society:pickled_garlic",
-    "item:veggiesdelight:cauliflower",
     "item:veggiesdelight:bellpepper",
     "item:vintagedelight:cucumber",
     "item:vintagedelight:ghost_pepper",
@@ -525,7 +626,6 @@
     "item:railways:wooden_headstock_screwlink_coupler",
     "item:moreminecarts:coupler",
     "item:windswept:holly_berries",
-    "item:veggiesdelight:turnip_cake{}",
     "item:snowyspirit:ginger",
     "item:society:pickled_ginger",
     {
@@ -598,21 +698,12 @@
     "item:minecraft:flint",
     "item:wildernature:flint_ammunition",
     "item:atmospheric:yellow_blossoms",
-    "item:veggiesdelight:sweet_potato_pancakes",
     "item:farm_and_charm:oat_pancake",
     "item:supplementaries:pancake",
     "item:farmersdelight:bone_broth",
     "item:aquaculture:fish_bones",
     "#item:forge:bones",
     "item:minecraft:ochre_froglight",
-    "item:veggiesdelight:turnip_water",
-    "item:veggiesdelight:turnip_beef_stew",
-    "item:veggiesdelight:turnip_salad",
-    "item:veggiesdelight:broccoli_salad",
-    "item:veggiesdelight:pasta_with_broccoli",
-    "item:veggiesdelight:stuffed_zucchinis",
-    "item:veggiesdelight:cauliflower_kuku",
-    "item:veggiesdelight:broccoli_soup",
     {
       "type": "item",
       "id": "aquaculture:fish_fillet_raw",
@@ -703,7 +794,6 @@
     "item:windswept:sweet_snow_cone",
     "item:windswept:chestnut_soup",
     "item:windswept:ginger_tea",
-    "item:windswept:lunalite",
     "item:windswept:smooth_lunalite",
     "item:windswept:cut_lunalite_brick_slab",
     "item:windswept:gingerbread_block",
@@ -773,14 +863,8 @@
       "amount": 60
     },
     "item:quark:oak_post",
-    {
-      "type": "item",
-      "id": "veggiesdelight:carrot_juice",
-      "amount": 32
-    },
     "item:veggiesdelight:wild_broccoli",
     "item:veggiesdelight:chicken_fajitas_wrap",
-    "item:veggiesdelight:fried_cauliflower_floret",
     "item:veggiesdelight:cauliflower_bread",
     "item:veggiesdelight:cauliflower_floret",
     {
@@ -1147,11 +1231,7 @@
     "item:society:parrot_mayonnaise",
     "item:society:turtle_mayonnaise",
     "item:society:cruncher_mayonnaise",
-    "item:society:merino_wool",
     "item:botania:prism",
-    "item:minecraft:prismarine",
-    "item:minecraft:dark_prismarine",
-    "item:create:ochrum",
     "item:society:mocha",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:all_seeing\"}}",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:webby\"}}",
@@ -1230,7 +1310,6 @@
     "item:minecraft:end_rod",
     "item:quark:iron_rod",
     "item:society:kinetic_blueprint",
-    "item:minecraft:calcite",
     {
       "type": "fluid",
       "id": "create_central_kitchen:tomato_sauce",
@@ -1242,7 +1321,6 @@
       "amount": 0
     },
     "item:create_mechanical_extruder:mechanical_extruder",
-    "item:society:truffle_tea",
     "item:herbalbrews:yerba_mate_tea",
     "item:herbalbrews:yerba_mate_leaf_block",
     "item:herbalbrews:wild_yerba_mate_plant",
@@ -1302,111 +1380,7 @@
       "type": "item",
       "id": "create:chain_conveyor",
       "amount": 64
-    },
-    "item:create:green_table_cloth",
-    "item:create:cyan_toolbox",
-    "item:create:desk_bell",
-    "item:create:brown_toolbox",
-    "item:create:linked_controller",
-    "item:createutilities:void_steel_bars",
-    "item:createutilities:void_steel_block",
-    "item:copycats:copycat_large_cogwheel",
-    "item:create:transmitter",
-    "item:create:magenta_postbox",
-    "item:create:sweet_roll",
-    "item:create:whisk",
-    "item:createrailwaysnavigator:train_station_clock",
-    "item:create_hypertube:hypertube_entrance",
-    "item:createrailwaysnavigator:advanced_display_slab",
-    "item:create_hypertube:hypertube_accelerator",
-    "item:unusualfishmod:raw_circus_fish{quality_food:{effects:[],quality:1}}",
-    "item:society:truffle_oil",
-    "item:society:battery",
-    "item:refinedstorage:security_manager",
-    "item:refinedstorage:security_card",
-    "item:refinedstorage:network_card",
-    "item:refinedstorage:stack_upgrade",
-    "item:refinedstorage:filter",
-    {
-      "type": "item",
-      "id": "vintagedelight:mason_jar",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "vintagedelight:vinegar_bottle",
-      "amount": 6
-    },
-    "item:supplementaries:jar",
-    {
-      "type": "item",
-      "id": "meadow:sausage_with_cheese",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "ribbits:toadstool",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "aquaculture:tin_can",
-      "amount": 7
-    },
-    "item:refurbished_furniture:recycle_bin",
-    "item:minecraft:iron_block",
-    {
-      "type": "item",
-      "id": "society:salmonberry_preserves",
-      "amount": 7
-    },
-    {
-      "type": "item",
-      "id": "aquaculture:message_in_a_bottle",
-      "amount": 2
-    },
-    {
-      "type": "item",
-      "id": "aquaculture:minnow",
-      "nbt": "{Damage:0,quality_food:{quality:3}}",
-      "amount": 4
-    },
-    {
-      "type": "item",
-      "id": "moreminecarts:glass_spines",
-      "amount": 10
-    },
-    {
-      "type": "item",
-      "id": "meadow:raw_buffalo_meat",
-      "amount": 32
-    },
-    "#item:c:cheese",
-    "item:oreganized:datura",
-    "item:wildernature:raccoon_spawn_egg",
-    "item:simplemagnets:basicmagnet",
-    "item:simplemagnets:basic_demagnetization_coil",
-    "item:society:truffle",
-    "item:farmersdelight:basket",
-    "item:farmersdelight:canvas",
-    "item:etcetera:bismuth_bars",
-    "item:etcetera:bismuth_block",
-    "item:etcetera:leveled_stone",
-    "item:minecraft:raw_gold",
-    "item:minecraft:raw_gold_block",
-    "item:etcetera:raw_bismuth_block",
-    "item:bountiful:bountyboard",
-    "item:comforts:sleeping_bag_white",
-    "item:longwings:catching_net{Damage:0}",
-    "item:minecraft:flint_and_steel{Damage:0}",
-    "item:minecraft:cartography_table",
-    "item:portable_blueprints:tablet",
-    {
-      "type": "item",
-      "id": "minecraft:coal_block",
-      "amount": 2
-    },
-    "item:minecraft:spruce_planks"
+    }
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",
@@ -1453,8 +1427,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},

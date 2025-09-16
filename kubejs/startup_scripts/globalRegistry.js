@@ -1015,6 +1015,9 @@ miscAged.forEach((brew) => {
 global.cooking = [];
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const craftingTableRecipes = [
+  { item: "veggiesdelight:zucchini_sandwich", value: 134 },
+  { item: "veggiesdelight:turnip_salad", value: 60 },
+  { item: "veggiesdelight:broccoli_salad", value: 92 },
   { item: "autumnity:foul_soup", value: 12 },
   { item: "aquaculture:turtle_soup", value: 280 },
   { item: "aquaculture:sushi", value: 12 },
@@ -1140,7 +1143,7 @@ const craftingTableRecipes = [
 craftingTableRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: Math.floor(recipe.value * 1.2),
+    value: Math.floor(recipe.value * 1.4),
   });
 });
 
@@ -1306,7 +1309,7 @@ const cakingStationRecipes = [
 cakingStationRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 4,
+    value: recipe.value * 5,
   });
 });
 const cookingPotRecipes = [
@@ -1369,7 +1372,7 @@ const cookingPotRecipes = [
   { item: "vintagedelight:ghostly_chili", value: 204 },
   { item: "bakery:glowberry_jam", value: 27 },
   { item: "farm_and_charm:simple_tomato_soup", value: 55 },
-  { item: "bakery:sweetberry_jam", value: 7},
+  { item: "bakery:sweetberry_jam", value: 7 },
   { item: "bakery:chocolate_donut", value: 3144 },
   { item: "farmersdelight:vegetable_noodles", value: 136 },
   { item: "vintagedelight:pad_thai", value: 372 },
@@ -1394,18 +1397,24 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:shakshouka", value: 165 },
   { item: "veggiesdelight:roasted_vegetables", value: 240 },
   { item: "veggiesdelight:stuffed_bellpeppers", value: 146 },
-  { item: "veggiesdelight:sweet_potato_mochi", value: 104 },
   { item: "veggiesdelight:garlic_rice_with_cauliflower", value: 148 },
   { item: "veggiesdelight:garlic_stuffed_mushrooms", value: 100 },
   { item: "veggiesdelight:fish_and_chips", value: 92 },
   { item: "veggiesdelight:carrot_juice", value: 42 },
   { item: "veggiesdelight:cacciatore", value: 105 },
   { item: "meadow:sausage_with_cheese", value: 168 },
+  { item: "veggiesdelight:cauliflower_kuku", value: 222 },
+  { item: "veggiesdelight:broccoli_soup", value: 196 },
+  { item: "veggiesdelight:stuffed_zucchinis", value: 186 },
+  { item: "veggiesdelight:turnip_water", value: 76 },
+  { item: "veggiesdelight:turnip_beef_stew", value: 75 },
+  { item: "veggiesdelight:pasta_with_broccoli", value: 148 },
 ];
+
 cookingPotRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: Math.round(recipe.value * 1.5),
+    value: Math.round(recipe.value * 2),
   });
 });
 
@@ -1451,14 +1460,14 @@ const stoveRecipes = [
   { item: "brewery:pretzel", value: 13 },
   { item: "bakery:jam_roll", value: 750 },
   { item: "autumnity:pumpkin_bread", value: 95 },
-  { item: "veggiesdelight:whole_roasted_cauliflower", value: 80 },
   { item: "veggiesdelight:garlic_bread", value: 32 },
   { item: "veggiesdelight:cauliflower_bread", value: 76 },
+  { item: "veggiesdelight:turnip_cake", value: 60 },
 ];
 stoveRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 2,
+    value: recipe.value * 3,
   });
 });
 
@@ -1484,7 +1493,7 @@ const roasterRecipes = [
 roasterRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 2,
+    value: recipe.value * 3,
   });
 });
 
@@ -1505,7 +1514,7 @@ const mixingBowlRecipes = [
 mixingBowlRecipes.forEach((recipe) => {
   global.cooking.push({
     item: recipe.item,
-    value: recipe.value * 2,
+    value: recipe.value * 3,
   });
 });
 

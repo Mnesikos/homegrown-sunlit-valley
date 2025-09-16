@@ -476,7 +476,7 @@ ServerEvents.recipes((e) => {
   });
 
   // Jade
-  e.shaped("society:aging_cask", ["SjS", "pbp", "SpS"], {
+  e.shaped("society:aging_cask", [" j ", "pbp", "SpS"], {
     b: "vinery:fermentation_barrel",
     S: "oreganized:lead_block",
     j: "society:jade",

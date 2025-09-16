@@ -652,6 +652,7 @@ const stoneRockTable = [
   { block: "minecraft:lapis_ore", weight: 2 },
   { block: "society:geode_node", weight: 2, sturdy: true },
   { block: "society:earth_crystal", weight: 2, sturdy: true },
+  { block: "society:oak_supply_crate", weight: 2 },
 ];
 
 const iceRockTable = [
@@ -663,6 +664,7 @@ const iceRockTable = [
   { block: "society:earth_crystal", weight: 2, sturdy: true },
   { block: "society:omni_geode_node", weight: 1, sturdy: true },
   { block: "society:sparkstone_ore", weight: 2 },
+  { block: "society:spruce_supply_crate", weight: 2 },
 ];
 
 const sandstoneRockTable = [
@@ -675,7 +677,8 @@ const sandstoneRockTable = [
   { block: "society:fire_quartz", weight: 2, sturdy: true },
   { block: "society:magma_geode_node", weight: 2, sturdy: true },
   { block: "society:omni_geode_node", weight: 2, sturdy: true },
-  { block: "oreganized:silver_ore", weight: 1 },
+  { block: "society:palm_supply_crate", weight: 2 },
+  { block: "oreganized:silver_ore", weight: 2 },
   { block: "society:iridium_ore", weight: 1 },
 ];
 
@@ -689,7 +692,8 @@ const blackstoneRockTable = [
   { block: "society:fire_quartz", weight: 2, sturdy: true },
   { block: "society:magma_geode_node", weight: 2, sturdy: true },
   { block: "society:omni_geode_node", weight: 4, sturdy: true },
-  { block: "oreganized:deepslate_silver_ore", weight: 3 },
+  { block: "oreganized:deepslate_silver_ore", weight: 4 },
+  { block: "society:grimwood_supply_crate", weight: 2 },
   { block: "society:deepslate_iridium_ore", weight: 2 },
 ];
 

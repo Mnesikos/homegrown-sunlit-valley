@@ -631,7 +631,7 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
-  const ftbChunksWhitelist = [
+  [
     "minecraft:crafting_table",
     "numismatics:andesite_depositor",
     "numismatics:brass_depositor",
@@ -641,11 +641,40 @@ ServerEvents.tags("block", (e) => {
     "bountiful:bountyboard",
     "tanukidecor:slot_machine",
     "whimsy_deco:gatcha_machine",
-  ];
-  ftbChunksWhitelist.forEach((item) => {
+  ].forEach((item) => {
     e.add("ftbchunks:interact_whitelist", item);
   });
   e.add("society:opens_market", "farmingforblockheads:market");
+
+  [
+    "moreminecarts:chiseled_organic_glass",
+    "moreminecarts:chiseled_organic_glass_pane",
+    "moreminecarts:greenhouse_glass_stairs",
+    "moreminecarts:greenhouse_glass_slab",
+  ].forEach((item) => {
+    e.add("oreganized:mineable/scribe", item);
+  });
+
+  [
+    "pamhc2trees:pamcinnamon",
+    "pamhc2trees:pamdragonfruit",
+    "pamhc2trees:pamstarfruit",
+    "pamhc2trees:pamlychee",
+    "pamhc2trees:pampassionfruit",
+    "pamhc2trees:pammango",
+    "pamhc2trees:pambanana",
+    "pamhc2trees:pampawpaw",
+    "pamhc2trees:pamhazelnut",
+    "pamhc2trees:pamorange",
+    "pamhc2trees:pamplum",
+    "pamhc2trees:pampeach",
+    "pamhc2trees:pamlemon",
+    "pamhc2trees:pamcherry",
+    "pamhc2trees:pamapple",
+  ].forEach((item) => {
+    e.add("minecraft:sword_efficient", item);
+  });
+
 });
 
 ServerEvents.tags("fluid", (e) => {

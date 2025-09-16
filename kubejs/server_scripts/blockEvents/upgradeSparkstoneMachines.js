@@ -30,7 +30,6 @@ BlockEvents.rightClicked("society:fish_pond_basket", (e) => {
 BlockEvents.rightClicked("society:auto_grabber", (e) => {
   const { player, item, block, hand, level } = e;
   const upgraded = block.properties.get("upgraded").toLowerCase() == "true";
-  console.log("yeet");
   if (hand == "OFF_HAND") return;
   if (hand == "MAIN_HAND" && !upgraded && item == "society:magic_shears") {
     console.log("yoot");

@@ -3333,17 +3333,6 @@
 			},
 			"unitWorth": 657
 		},
-		"cooking_sweet_potato_mochi": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:sweet_potato_mochi",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 468
-		},
 		"cooking_garlic_rice_with_cauliflower": {
 			"type": "minecraft:item",
 			"content": "veggiesdelight:garlic_rice_with_cauliflower",
@@ -3805,17 +3794,6 @@
 				"max": 8
 			},
 			"unitWorth": 570
-		},
-		"cooking_whole_roasted_cauliflower": {
-			"type": "minecraft:item",
-			"content": "veggiesdelight:whole_roasted_cauliflower",
-			"rarity": "COMMON",
-			"weightMult": 1,
-			"amount": {
-				"min": 2,
-				"max": 8
-			},
-			"unitWorth": 480
 		},
 		"cooking_garlic_bread": {
 			"type": "minecraft:item",

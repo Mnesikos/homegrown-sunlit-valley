@@ -3,11 +3,19 @@ console.info("[SOCIETY] coinLeaderboard.js loaded");
 const updateLeaderboardMap = (server) => {
   let playerName;
   let playerList = server.persistentData.playerList;
+  let overflowList = server.persistentData.overflowList;
   if (!playerList) return undefined;
   let leaderboardMap = new Map();
   global.GLOBAL_BANK.accounts.forEach((playerUUID, bankAccount) => {
     playerName = playerList[playerUUID];
-    leaderboardMap.set(playerName, bankAccount.getBalance());
+    if (overflowList != null && overflowList[playerUUID] != null) {
+      leaderboardMap.set(
+        playerName,
+        bankAccount.getBalance() + overflowList[playerUUID] * 1006632960
+      );
+    } else {
+      leaderboardMap.set(playerName, bankAccount.getBalance());
+    }
   });
   return Array.from(leaderboardMap)
     .sort((a, b) => b[1] - a[1])

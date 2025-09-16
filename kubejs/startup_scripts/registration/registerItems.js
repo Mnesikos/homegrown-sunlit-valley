@@ -175,7 +175,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:multiplayer_pig_race_ticket").texture(
     "society:item/pig_race_ticket_multiplayer"
   );
-
+  e.create("society:overflow_token").texture("society:item/overflow_token");
   // Regret Crystals
   e.create(`society:crystal_of_regret_farming`)
     .displayName("Crystal of Regret: Farming")

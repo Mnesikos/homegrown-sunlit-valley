@@ -51,6 +51,12 @@
           "data": {
             "Name": "society:earth_crystal"
           }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:oak_supply_crate"
+          }
         }
       ]
     }

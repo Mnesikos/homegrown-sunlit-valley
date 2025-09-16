@@ -75,15 +75,15 @@
         },
         {
           "type": "item",
-          "name": "society:furniture_box",
-          "entryName": "furniture_box",
-          "weight": 4
-        },
-        {
-          "type": "item",
           "name": "society:relic_trove",
           "entryName": "relic_trove",
           "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "society:sunlit_pearl",
+          "entryName": "sunlit_pearl",
+          "weight": 2
         },
         {
           "type": "item",

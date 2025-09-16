@@ -81,6 +81,12 @@
               "data": {
                 "Name": "society:iridium_ore"
               }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:palm_supply_crate"
+              }
             }
           ]
         }

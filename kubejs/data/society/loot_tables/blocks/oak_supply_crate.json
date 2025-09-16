@@ -17,8 +17,8 @@
         { "type": "minecraft:item", "weight": 3, "name": "society:froggy_helm" },
         { "type": "minecraft:item", "weight": 3, "name": "society:ribbit_drum" },
         { "type": "minecraft:item", "weight": 3, "name": "society:ribbit_gadget" },
-        { "type": "minecraft:item", "weight": 32, "name": "society:magic_rope" },
-        { "type": "minecraft:item", "weight": 15, "name": "gag:escape_rope" },
+        { "type": "minecraft:item", "weight": 22, "name": "society:magic_rope" },
+        { "type": "minecraft:item", "weight": 5, "name": "gag:escape_rope" },
         { "type": "minecraft:item", "weight": 80, "name": "meadow:fire_log" }
       ]
     },

@@ -14,7 +14,7 @@
         "count": 64
       },
       "numismatics_cost": 16777216,
-      "trade_id": "beautify:cartographer_prismatic_coin_for_ancient_coin"
+      "trade_id": "beautify:banker_prismatic_coin_for_ancient_coin"
     },
     {
       "offer": {
@@ -26,7 +26,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "cartographer_pig_race_ticket_for_crown"
+      "trade_id": "banker_pig_race_ticket_for_crown"
     },
     {
       "offer": {
@@ -38,7 +38,7 @@
         "count": 2
       },
       "numismatics_cost": 1024,
-      "trade_id": "cartographer_multiplayer_pig_race_ticket_ticket_for_crown"
+      "trade_id": "banker_multiplayer_pig_race_ticket_ticket_for_crown"
     },
     {
       "offer": {
@@ -50,7 +50,7 @@
         "count": 2
       },
       "numismatics_cost": 128,
-      "trade_id": "cartographer_bank_terminal_for_cog"
+      "trade_id": "banker_bank_terminal_for_cog"
     },
     {
       "offer": {
@@ -62,7 +62,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "cartographer_portable_bank_terminal_for_cog"
+      "trade_id": "banker_portable_bank_terminal_for_cog"
     },
     {
       "offer": {
@@ -74,7 +74,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "cartographer_bank_meter_for_cog"
+      "trade_id": "banker_bank_meter_for_cog"
     },
     {
       "offer": {
@@ -86,7 +86,7 @@
         "count": 1
       },
       "numismatics_cost": 64,
-      "trade_id": "cartographer_shipping_bin_monitor_for_cog"
+      "trade_id": "banker_shipping_bin_monitor_for_cog"
     },
     {
       "offer": {
@@ -98,7 +98,7 @@
         "count": 2
       },
       "numismatics_cost": 32,
-      "trade_id": "cartographer_vendor_for_sprocket"
+      "trade_id": "banker_vendor_for_sprocket"
     },
     {
       "offer": {
@@ -110,7 +110,7 @@
         "count": 1
       },
       "numismatics_cost": 16,
-      "trade_id": "cartographer_white_card_for_sprocket"
+      "trade_id": "banker_white_card_for_sprocket"
     },
     {
       "offer": {
@@ -122,7 +122,7 @@
         "count": 3
       },
       "numismatics_cost": 48,
-      "trade_id": "cartographer_andesite_depositor_for_sprocket"
+      "trade_id": "banker_andesite_depositor_for_sprocket"
     },
     {
       "offer": {
@@ -134,7 +134,7 @@
         "count": 2
       },
       "numismatics_cost": 128,
-      "trade_id": "cartographer_brass_depositor_for_cog"
+      "trade_id": "banker_brass_depositor_for_cog"
     },
     {
       "offer": {
@@ -146,7 +146,7 @@
         "count": 1
       },
       "numismatics_cost": 16,
-      "trade_id": "cartographer_white_id_card_for_sprocket"
+      "trade_id": "banker_white_id_card_for_sprocket"
     },
     {
       "offer": {
@@ -158,7 +158,7 @@
         "count": 1
       },
       "numismatics_cost": 512,
-      "trade_id": "cartographer_blaze_banker_for_crown"
+      "trade_id": "banker_blaze_banker_for_crown"
     },
     {
       "offer": {
@@ -170,7 +170,7 @@
         "count": 4
       },
       "numismatics_cost": 16384,
-      "trade_id": "cartographer_trading_depot_for_sun"
+      "trade_id": "banker_trading_depot_for_sun"
     },
     {
       "offer": {
@@ -182,7 +182,19 @@
         "count": 4
       },
       "numismatics_cost": 256,
-      "trade_id": "cartographer_coin_leaderboard_for_cog"
+      "trade_id": "banker_coin_leaderboard_for_cog"
+    },
+    {
+      "offer": {
+        "item": "society:overflow_token",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:prismatic_coin",
+        "count": 60
+      },
+      "numismatics_cost": 1006632960,
+      "trade_id": "banker_overflow_token_for_prismatic_coin"
     }
   ]
 }

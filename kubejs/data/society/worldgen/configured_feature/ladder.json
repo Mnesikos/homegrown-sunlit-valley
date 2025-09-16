@@ -69,6 +69,12 @@
               "data": {
                 "Name": "minecraft:lapis_ore"
               }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:oak_supply_crate"
+              }
             }
           ]
         }

@@ -5,6 +5,7 @@
     {
       "id": "mynethersdelight:powdery_chubby_sapling",
       "required": false
-    }
+    },
+    "moreminecarts:greenhouse_glass_slab"
   ]
 }

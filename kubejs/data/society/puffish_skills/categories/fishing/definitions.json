@@ -158,7 +158,7 @@
   },
   "wooden_pollution": {
     "title": "Wooden Pollution",
-    "description": "Chance to find §6Furniture Boxes§7 from fishing.",
+    "description": "Double rolls for §6Jelly§7 from fishing. Chance to find §6Furniture Boxes§7 from fishing.",
     "frame": {
       "type": "advancement",
       "data": {
@@ -168,7 +168,7 @@
     "icon": {
       "type": "item",
       "data": {
-        "item": "tanukidecor:antique_wall_shelf"
+        "item": "society:ocean_jelly"
       }
     },
     "rewards": [

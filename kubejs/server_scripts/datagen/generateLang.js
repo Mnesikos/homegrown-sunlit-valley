@@ -1,7 +1,6 @@
 const runLangDataGen = false;
 if (runLangDataGen) {
   let objs = {};
-  console.log("yeet");
   let societyItems = Ingredient.of("@society").getStacks();
   societyItems.forEach((item) => {
     objs[`${item.getDescriptionId()}`] = "";

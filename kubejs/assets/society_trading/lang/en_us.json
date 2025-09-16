@@ -15,9 +15,7 @@
   "shop.society_trading.bookseller": "Bookseller",
   "shop.society_trading.storagesmith": "Storagesmith",
   "shop.society_trading.market": "Market",
-
-  "shop.society_trading.mechanic.name": "Mechanic",
-  "shop.society_trading.builder.name": "Builder",
+  "shop.society_trading.carpenter": "Carpenter",
 
   "gui.society_trading.price": "%s ● ",
   "gui.society_trading.hover_price_one": "Price: %s ●",

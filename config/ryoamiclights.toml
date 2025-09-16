@@ -38,6 +38,15 @@
 				slime = true
 				lightning_bolt = true
 				drowned = true
+				bee = true
+				axolotl = true
+				shulker = true
+				stray = true
+				area_effect_cloud = true
+				husk = true
+				phantom = true
+				blaze = true
+				wither_skeleton = true
 
 			[light_sources.settings.entities.farmingforblockheads]
 				merchant = true
@@ -52,6 +61,7 @@
 				bison = true
 				boar = true
 				penguin = true
+				hedgehog = true
 
 			[light_sources.settings.entities.automobility]
 				automobile = true
@@ -69,12 +79,17 @@
 				deflector_dummy = true
 				limpet = true
 				deepfish = true
+				goober = true
+				bewereager = true
+				wicked = true
+				ghoul = true
 
 			[light_sources.settings.entities.ribbits]
 				ribbit = true
 
 			[light_sources.settings.entities.untitledduckmod]
 				duck = true
+				goose = true
 
 			[light_sources.settings.entities.quark]
 				shiba = true
@@ -119,10 +134,37 @@
 
 			[light_sources.settings.entities.windswept]
 				chilled = true
+				frost_arrow = true
 
 			[light_sources.settings.entities.balloonbox]
 				balloonbox = true
 
 			[light_sources.settings.entities.apexcore]
 				seat = true
+
+			[light_sources.settings.entities.lootr]
+				lootr_minecart = true
+
+			[light_sources.settings.entities.legendarycreatures]
+				forest_mojo = true
+				desert_mojo = true
+				ender_wisp = true
+				nether_wisp = true
+
+			[light_sources.settings.entities.trials]
+				breeze = true
+
+			[light_sources.settings.entities.rottencreatures]
+				zap = true
+				undead_miner = true
+				frostbitten = true
+				hunter_wolf = true
+				glacial_hunter = true
+				immortal = true
+				mummy = true
+				burned = true
+
+			[light_sources.settings.entities.champions]
+				arctic_bullet = true
+				enkindling_bullet = true
 

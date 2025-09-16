@@ -75,6 +75,12 @@
               "data": {
                 "Name": "society:deepslate_iridium_ore"
               }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "Name": "society:grimwood_supply_crate"
+              }
             }
           ]
         }
