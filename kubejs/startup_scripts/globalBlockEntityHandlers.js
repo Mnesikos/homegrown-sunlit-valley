@@ -174,6 +174,9 @@ global.artisanInsert = (
       successParticles(level, block);
       server.runCommandSilent(`playsound ${stockSound} block @a ${block.x} ${block.y} ${block.z}`);
       newProperties.type = String(index + 1);
+      let nbt = block.getEntityData();
+      nbt.merge({ data: { type: index + 1, stage: 0 } });
+      block.setEntityData(nbt);
       newProperties.working = false;
       newProperties.mature = false;
       if (newProperties.quality && itemNbt && itemNbt.quality_food) {

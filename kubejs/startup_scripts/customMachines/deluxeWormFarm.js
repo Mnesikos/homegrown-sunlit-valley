@@ -81,7 +81,7 @@ StartupEvents.registry("block", (event) => {
         4,
         true
       );
-      
+
       if (upgraded && block.properties.get("working") === "false") {
         block.set(block.id, {
           facing: block.properties.get("facing"),
@@ -95,6 +95,9 @@ StartupEvents.registry("block", (event) => {
     })
     .randomTick((tick) => {
       global.handleBERandomTick(tick, rnd50(), 2);
+    })
+    .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
     }).blockstateJson = {
     multipart: [
       {
