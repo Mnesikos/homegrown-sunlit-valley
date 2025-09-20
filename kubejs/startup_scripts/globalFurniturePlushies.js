@@ -363,6 +363,7 @@ global.originalPlushies = [
   "kata:june_kata_doll",
   "kata:jungle_kata_doll",
   "kata:prince_kata_doll",
+  "kata:geraldine_plushie",
 ];
 
 global.plushies = [];

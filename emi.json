@@ -7,6 +7,16 @@
   "lookup_history": [
     {
       "type": "item",
+      "id": "society:spark_gro",
+      "amount": 4
+    },
+    "item:farm_and_charm:fertilizer",
+    "item:vintagedelight:organic_mash",
+    "item:create:pulse_timer",
+    "item:minecraft:netherrack",
+    "item:quark:netherrack_bricks",
+    {
+      "type": "item",
       "id": "society:aged_star_coquito",
       "amount": 3
     },
@@ -38,16 +48,9 @@
     "item:oreganized:raw_lead",
     "item:create:crushed_raw_zinc",
     "item:society:maple_syrup",
-    "item:vintagedelight:organic_mash",
     "item:society:sparkstone_dust",
-    {
-      "type": "item",
-      "id": "society:spark_gro",
-      "amount": 8
-    },
     "item:society:sparkstone",
     "item:dew_drop_farmland_growth:weak_fertilizer",
-    "item:farm_and_charm:fertilizer",
     "item:minecraft:diamond_hoe{Damage:0}",
     "item:dew_drop_farmland_growth:iron_sprinkler",
     "item:dew_drop_farmland_growth:garden_pot",
@@ -1356,10 +1359,7 @@
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:slimy\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:shulking\"}}",
     "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:rotting\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:luminous\"}}",
-    "item:autumnity:autumn_crocus",
-    "item:portable_blueprints:scanner{angolo1:1b,angolo2:1b,angoloFantasma:1b,coordinateAngolo1:\"x\u003d470,y\u003d-60,z\u003d66\",coordinateAngolo2:\"x\u003d485,y\u003d-51,z\u003d76\",coordinateAngoloFantasma:\"x\u003d465,y\u003d-60,z\u003d65\"}"
+    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:phantom\"}}"
   ],
   "craft_history": [
     "quark:building/crafting/vertplanks/vertical_oak_planks",
