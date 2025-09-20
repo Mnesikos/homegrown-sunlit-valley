@@ -422,7 +422,7 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-
+  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth")
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");

@@ -423,6 +423,8 @@ StartupEvents.registry("block", (event) => {
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }
+    }) .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
     }).blockstateJson = {
     multipart: [
       {

@@ -47,6 +47,19 @@
 				phantom = true
 				blaze = true
 				wither_skeleton = true
+				potion = true
+				cat = true
+				iron_golem = true
+				wolf = true
+				painting = true
+				leash_knot = true
+				boat = true
+				cod = true
+				salmon = true
+				goat = true
+				sniffer = true
+				allay = true
+				squid = true
 
 			[light_sources.settings.entities.farmingforblockheads]
 				merchant = true
@@ -62,6 +75,12 @@
 				boar = true
 				penguin = true
 				hedgehog = true
+				raccoon = true
+				deer = true
+				cassowary = true
+				pelican = true
+				red_wolf = true
+				owl = true
 
 			[light_sources.settings.entities.automobility]
 				automobile = true
@@ -83,6 +102,9 @@
 				bewereager = true
 				wicked = true
 				ghoul = true
+				birt = true
+				mammutilation = true
+				springling = true
 
 			[light_sources.settings.entities.ribbits]
 				ribbit = true
@@ -107,6 +129,7 @@
 
 			[light_sources.settings.entities.autumnity]
 				turkey = true
+				snail = true
 
 			[light_sources.settings.entities.meadow]
 				wooly_sheep = true
@@ -128,9 +151,15 @@
 				prawn = true
 				blindsailfin = true
 				sea_spider = true
+				triple_twirl_pleco = true
+				hatchet_fish = true
 
 			[light_sources.settings.entities.crittersandcompanions]
 				leaf_insect = true
+				otter = true
+				koi_fish = true
+				shima_enaga = true
+				ferret = true
 
 			[light_sources.settings.entities.windswept]
 				chilled = true
@@ -167,4 +196,44 @@
 			[light_sources.settings.entities.champions]
 				arctic_bullet = true
 				enkindling_bullet = true
+
+			[light_sources.settings.entities.strawstatues]
+				straw_statue = true
+
+			[light_sources.settings.entities.crabbersdelight]
+				crab = true
+
+			[light_sources.settings.entities.smallships]
+				brigg = true
+
+			[light_sources.settings.entities.create]
+				stationary_contraption = true
+
+			[light_sources.settings.entities.liltractor]
+				liltractor = true
+
+			[light_sources.settings.entities.blueprint]
+				boat = true
+
+			[light_sources.settings.entities.simplehats]
+				hatdisplay = true
+
+			[light_sources.settings.entities.supplementaries]
+				hat_stand = true
+
+			[light_sources.settings.entities.bakery]
+				wandering_baker = true
+
+			[light_sources.settings.entities.etcetera]
+				chapple = true
+
+			[light_sources.settings.entities.vinery]
+				wandering_winemaker = true
+				mule = true
+
+			[light_sources.settings.entities.aquaculture]
+				starshell_turtle = true
+
+			[light_sources.settings.entities.relics]
+				life_essence = true
 

@@ -419,10 +419,10 @@
     "modId": "dew_drop_daily_weather",
     "version": "1.1.1"
   },
-  "dew_drop_farmland_growth-2.2.jar": {
-    "jarName": "dew_drop_farmland_growth-2.2.jar",
+  "dew_drop_farmland_growth-4.1.jar": {
+    "jarName": "dew_drop_farmland_growth-4.1.jar",
     "modId": "dew_drop_farmland_growth",
-    "version": "2.2"
+    "version": "4.1"
   },
   "dew_drop_watering_cans-1.0.2.jar": {
     "jarName": "dew_drop_watering_cans-1.0.2.jar",
@@ -544,10 +544,10 @@
     "modId": "exposure_catalog",
     "version": "1.0.3"
   },
-  "extra_gauges-1.1.2-all.jar": {
-    "jarName": "extra_gauges-1.1.2-all.jar",
+  "extra_gauges-2.0.6.jar": {
+    "jarName": "extra_gauges-2.0.6.jar",
     "modId": "extra_gauges",
-    "version": "1.1.2"
+    "version": "2.0.6"
   },
   "extractinator-forge-1.20.1-2.3.0.jar": {
     "jarName": "extractinator-forge-1.20.1-2.3.0.jar",
@@ -744,10 +744,10 @@
     "modId": "iceberg",
     "version": "1.1.25"
   },
-  "ImmediatelyFast-Forge-1.5.1+1.20.4.jar": {
-    "jarName": "ImmediatelyFast-Forge-1.5.1+1.20.4.jar",
+  "ImmediatelyFast-Forge-1.5.2+1.20.4.jar": {
+    "jarName": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
     "modId": "immediatelyfast",
-    "version": "1.5.1+1.20.4"
+    "version": "1.5.2+1.20.4"
   },
   "immersive_paintings-0.6.8+1.20.1-forge.jar": {
     "jarName": "immersive_paintings-0.6.8+1.20.1-forge.jar",
@@ -887,15 +887,15 @@
     "modId": "meadow",
     "version": "1.3.23"
   },
-  "letsdo-nethervinery-forge-1.2.17.jar": {
-    "jarName": "letsdo-nethervinery-forge-1.2.17.jar",
+  "letsdo-nethervinery-forge-1.2.19.jar": {
+    "jarName": "letsdo-nethervinery-forge-1.2.19.jar",
     "modId": "nethervinery",
-    "version": "1.2.17"
+    "version": "1.2.19"
   },
-  "letsdo-vinery-forge-1.4.39.jar": {
-    "jarName": "letsdo-vinery-forge-1.4.39.jar",
+  "letsdo-vinery-forge-1.4.41.jar": {
+    "jarName": "letsdo-vinery-forge-1.4.41.jar",
     "modId": "vinery",
-    "version": "1.4.39"
+    "version": "1.4.41"
   },
   "letsdo-wildernature-forge-1.0.5.jar": {
     "jarName": "letsdo-wildernature-forge-1.0.5.jar",
@@ -1032,11 +1032,6 @@
     "modId": "nochatreports",
     "version": "1.20.1-v2.2.2"
   },
-  "norandomticks-0.2-1.20.1.jar": {
-    "jarName": "norandomticks-0.2-1.20.1.jar",
-    "modId": "norandomticks",
-    "version": "0.2-1.20.1"
-  },
   "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar": {
     "jarName": "Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar",
     "modId": "nerb",
@@ -1077,10 +1072,10 @@
     "modId": "online_detector",
     "version": "1.20-6.0.0"
   },
-  "Oreganized 1.20.1-4.2.4.jar": {
-    "jarName": "Oreganized 1.20.1-4.2.4.jar",
+  "Oreganized 1.20.1-4.2.5.jar": {
+    "jarName": "Oreganized 1.20.1-4.2.5.jar",
     "modId": "oreganized",
-    "version": "4.2.4"
+    "version": "4.2.5"
   },
   "pamhc2trees-1.20-1.0.2.jar": {
     "jarName": "pamhc2trees-1.20-1.0.2.jar",
@@ -1157,10 +1152,10 @@
     "modId": "ponderjs",
     "version": "2.0.6"
   },
-  "portable_blueprints-v1.9.2-mv1.20.1.jar": {
-    "jarName": "portable_blueprints-v1.9.2-mv1.20.1.jar",
+  "portable_blueprints-v1.9.3-mv1.20.1.jar": {
+    "jarName": "portable_blueprints-v1.9.3-mv1.20.1.jar",
     "modId": "portable_blueprints",
-    "version": "1.9.2"
+    "version": "1.9.3"
   },
   "portfolio-1.20.1-1.4.0-forge.jar": {
     "jarName": "portfolio-1.20.1-1.4.0-forge.jar",
@@ -1171,6 +1166,11 @@
     "jarName": "powerfuljs-1.6.1.jar",
     "modId": "powerfuljs",
     "version": "1.6.1"
+  },
+  "probejs-6.0.1-forge.jar": {
+    "jarName": "probejs-6.0.1-forge.jar",
+    "modId": "probejs",
+    "version": "6.0.1"
   },
   "puffish_attributes-0.7.2-1.20-forge.jar": {
     "jarName": "puffish_attributes-0.7.2-1.20-forge.jar",
@@ -1232,10 +1232,10 @@
     "modId": "rehooked",
     "version": "1.8.3-1.20.1"
   },
-  "relics-1.20.1-0.8.0.9.jar": {
-    "jarName": "relics-1.20.1-0.8.0.9.jar",
+  "relics-1.20.1-0.8.0.11.jar": {
+    "jarName": "relics-1.20.1-0.8.0.11.jar",
     "modId": "relics",
-    "version": "0.8.0.9"
+    "version": "0.8.0.11"
   },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "jarName": "resourcefulconfig-forge-1.20.1-2.1.3.jar",
@@ -1612,10 +1612,10 @@
     "modId": "whimsy_deco",
     "version": "0.1"
   },
-  "windswept-1.20.1-3.0.1.jar": {
-    "jarName": "windswept-1.20.1-3.0.1.jar",
+  "windswept-1.20.1-3.0.2.jar": {
+    "jarName": "windswept-1.20.1-3.0.2.jar",
     "modId": "windswept",
-    "version": "3.0.1"
+    "version": "3.0.2"
   },
   "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar": {
     "jarName": "yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",

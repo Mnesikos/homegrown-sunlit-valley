@@ -672,42 +672,42 @@ ServerEvents.recipes((e) => {
     e.shapeless(fish, [`society:smoked_${fish.split(":")[1]}`, "1x minecraft:blue_ice"]);
   });
   // Sprinklers
-  e.shaped("society:iron_sprinkler", [" C ", "IlI", " l "], {
+  e.shaped("dew_drop_farmland_growth:iron_sprinkler", [" C ", "IlI", " l "], {
     I: "minecraft:iron_block",
     C: "minecraft:copper_block",
     l: "#society:raw_logs",
   });
-  e.shaped("society:gold_sprinkler", ["fef", " s ", " G "], {
+  e.shaped("dew_drop_farmland_growth:gold_sprinkler", ["fef", " s ", " G "], {
     G: "minecraft:gold_block",
     s: "society:iron_sprinkler",
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
-  e.shaped("society:gold_sprinkler", ["fef", "GlG", " l "], {
+  e.shaped("dew_drop_farmland_growth:gold_sprinkler", ["fef", "GlG", " l "], {
     l: "#society:raw_logs",
     G: "minecraft:gold_block",
     f: "society:fire_quartz",
     e: "society:earth_crystal",
   });
-  e.shaped("society:diamond_sprinkler", ["nDn", " s ", " b "], {
+  e.shaped("dew_drop_farmland_growth:diamond_sprinkler", ["nDn", " s ", " b "], {
     s: "society:gold_sprinkler",
     D: "minecraft:diamond_block",
     b: "society:battery",
     n: "aquaculture:neptunium_nugget",
   });
-  e.shaped("society:diamond_sprinkler", ["nDn", "blb", " l "], {
+  e.shaped("dew_drop_farmland_growth:diamond_sprinkler", ["nDn", "blb", " l "], {
     l: "#society:raw_logs",
     D: "minecraft:diamond_block",
     b: "society:battery",
     n: "aquaculture:neptunium_nugget",
   });
-  e.shaped("society:netherite_sprinkler", ["nNn", " s ", " j "], {
+  e.shaped("dew_drop_farmland_growth:netherite_sprinkler", ["nNn", " s ", " j "], {
     s: "society:diamond_sprinkler",
     j: "society:jade",
     N: "minecraft:netherite_ingot",
     n: "aquaculture:neptunium_ingot",
   });
-  e.shaped("society:netherite_sprinkler", ["nNn", "jlj", " l "], {
+  e.shaped("dew_drop_farmland_growth:netherite_sprinkler", ["nNn", "jlj", " l "], {
     l: "#society:raw_logs",
     j: "society:jade",
     N: "minecraft:netherite_ingot",
@@ -778,6 +778,18 @@ ServerEvents.recipes((e) => {
     m: "society:botanical_tribute",
     c: "botania:life_essence",
     n: "botania:dragonstone",
+  });
+
+  e.shaped("4x society:spark_gro", ["oso", "sps", "oso"], {
+    o: "vintagedelight:organic_mash",
+    s: "society:sparkstone_dust",
+    p: "farm_and_charm:fertilizer",
+  });
+
+  e.shaped("8x society:spark_gro", ["oso", "sps", "oso"], {
+    o: "vintagedelight:organic_mash",
+    s: "society:sparkstone_dust",
+    p: "society:moth_pollen",
   });
   [
     { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },

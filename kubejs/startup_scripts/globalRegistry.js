@@ -318,9 +318,9 @@ global.crops = [
   { item: "quark:cocoa_beans_sack", value: 36 },
   { item: "farm_and_charm:onion", value: 12 },
   { item: "farm_and_charm:onion_bag", value: 108 },
-  { item: "farmersdelight:tomato", value: 26 },
+  { item: "farmersdelight:tomato", value: 24 },
   { item: "farmersdelight:rotten_tomato", value: 1 },
-  { item: "farmersdelight:tomato_crate", value: 234 },
+  { item: "farmersdelight:tomato_crate", value: 216 },
   { item: "minecraft:nether_wart", value: 6 },
   { item: "quark:nether_wart_sack", value: 54 },
   { item: "minecraft:carrot", value: 23 },
@@ -924,11 +924,11 @@ global.wines = [
 global.wines.forEach((wine) => {
   global.artisanGoods.push({
     item: `society:aged_${wine.item.split(":")[1]}`,
-    value: wine.value * 3,
+    value: wine.value * 4,
   });
   global.artisanGoods.push({
     item: `society:double_aged_${wine.item.split(":")[1]}`,
-    value: wine.value * 9,
+    value: wine.value * 16,
   });
 });
 
@@ -965,11 +965,11 @@ brewingStationRecipes.forEach((recipe) => {
 global.brews.forEach((brew) => {
   global.artisanGoods.push({
     item: `society:aged_${brew.item.split(":")[1]}`,
-    value: brew.value * 3,
+    value: brew.value * 4,
   });
   global.artisanGoods.push({
     item: `society:double_aged_${brew.item.split(":")[1]}`,
-    value: brew.value * 9,
+    value: brew.value * 16,
   });
 });
 const miscAged = [
@@ -981,11 +981,11 @@ const miscAged = [
 miscAged.forEach((brew) => {
   global.artisanGoods.push({
     item: `society:aged_${brew.item.split(":")[1]}`,
-    value: brew.value * 3,
+    value: brew.value * 4,
   });
   global.artisanGoods.push({
     item: `society:double_aged_${brew.item.split(":")[1]}`,
-    value: brew.value * 9,
+    value: brew.value * 16,
   });
 });
 

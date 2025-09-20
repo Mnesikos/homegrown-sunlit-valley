@@ -317,6 +317,7 @@ global.originalPlushies = [
   "whimsy_deco:big_panda_plushie",
   "whimsy_deco:singing_frog_plushie",
   "whimsy_deco:vocal_doll",
+  "whimsy_deco:red_vocal_doll",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",
@@ -352,6 +353,16 @@ global.originalPlushies = [
   "perfectplushies:hedgehog_plushie",
   "perfectplushies:aye_aye_plushie",
   "perfectplushies:quokka_plushie",
+  "kata:ace_kata_doll",
+  "kata:dipp_kata_doll",
+  "kata:foomin_kata_doll",
+  "kata:havana_kata_doll",
+  "kata:honey_kata_doll",
+  "kata:ichigo_kata_doll",
+  "kata:johnson_kata_doll",
+  "kata:june_kata_doll",
+  "kata:jungle_kata_doll",
+  "kata:prince_kata_doll",
 ];
 
 global.plushies = [];

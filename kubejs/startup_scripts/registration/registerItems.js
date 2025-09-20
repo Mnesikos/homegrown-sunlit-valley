@@ -510,7 +510,11 @@ StartupEvents.registry("item", (e) => {
   });
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
+  e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust")
+  e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro")
 
+  e.create("create:crushed_raw_bismuth").texture("society:item/crushed_raw_bismuth")
+  
   global.picklableVegetables.forEach((product) => {
     const splitProduct = product.item.split(":");
     let texturePath = `${splitProduct[0]}:item/${splitProduct[1]}`;

@@ -391,6 +391,10 @@ ItemEvents.tooltip((tooltip) => {
     Text.green("Keeps farmland watered until crop is half grown (rounded down)")
   );
   tooltip.add(
+    "dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
+    Text.green("Never dries out")
+  );
+  tooltip.add(
     "dew_drop_farmland_growth:bountiful_fertilizer",
     Text.green("Crops have a 25% chance to drop 1 extra when harvested")
   );
@@ -409,6 +413,14 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "dew_drop_farmland_growth:pristine_quality_fertilizer",
     Text.green("Supremely increases the chance of quality crops on harvest")
+  );
+  tooltip.add(
+    "dew_drop_farmland_growth:garden_pot",
+    Text.gray("Grow crops indoors during any season. Cannot be watered with Sprinklers")
+  );
+  tooltip.add(
+    "dew_drop_farmland_growth:garden_pot",
+    Text.green("Can be upgraded with Deluxe Hydrating Fertilizer and hung from chains and ropes")
   );
   tooltip.add("minecraft:fishing_rod", Text.gray("Remove attached bobbers before upgrading"));
   tooltip.add("etcetera:handbell", Text.gray("Calls non-sitting pets and allays to you when rung"));
