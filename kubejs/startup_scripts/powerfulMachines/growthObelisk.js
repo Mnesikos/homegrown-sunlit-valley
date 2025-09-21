@@ -26,8 +26,8 @@ global.runGrowthObelisk = (tickEvent) => {
   }
 };
 
-StartupEvents.registry("block", (event) => {
-  event
+StartupEvents.registry("block", (e) => {
+  e
     .create("society:growth_obelisk", "cardinal")
     .tagBlock("minecraft:mineable/pickaxe")
     .tagBlock("minecraft:needs_stone_tool")
@@ -46,7 +46,7 @@ StartupEvents.registry("block", (event) => {
       blockInfo.inventory(9, 2);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
-        global.runGrowthObelisk(entity, 3);
+        global.runGrowthObelisk(entity, 4);
       }),
         blockInfo.rightClickOpensInventory();
       blockInfo.attachCapability(
@@ -62,7 +62,7 @@ StartupEvents.registry("block", (event) => {
           .getStackInSlot((blockEntity, slot) => blockEntity.inventory.getStackInSlot(slot))
       );
     });
-  event
+  e
     .create("society:growth_obelisk_upper")
     .box(4, 0, 4, 12, 9, 12)
     .tagBlock("minecraft:mineable/pickaxe")

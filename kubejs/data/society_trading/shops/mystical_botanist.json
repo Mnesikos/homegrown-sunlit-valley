@@ -4,6 +4,7 @@
   "texture": "botania:textures/block/mana_void",
   "stage_required": "mystical_botanist_unlocked",
   "villager_profession": "botanist",
+  "jei_catalyst": { "item":"beautify:botanist_workbench" },
   "trades": [
     {
       "offer": {
@@ -28,6 +29,7 @@
       },
       "stage_required": "abandoned_farm_complete",
       "numismatics_cost": 4096,
+      "unlock_description": "jei.society_trading.abandoned_farm_complete",
       "trade_id": "botanist_apothecary_default_for_sun"
     },
     {
@@ -41,6 +43,7 @@
       },
       "numismatics_cost": 4096,
       "stage_required": "boiler_room_complete",
+      "unlock_description": "jei.society_trading.boiler_room_complete",
       "trade_id": "botanist_kinetic_blueprint_for_sun"
     },
     {

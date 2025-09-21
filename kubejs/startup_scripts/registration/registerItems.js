@@ -513,6 +513,7 @@ StartupEvents.registry("item", (e) => {
   e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust")
   e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro")
 
+  e.create(`society:magic_bulb`).texture(`society:item/magic_bulb`);
   e.create("create:crushed_raw_bismuth").texture("society:item/crushed_raw_bismuth")
   
   global.picklableVegetables.forEach((product) => {

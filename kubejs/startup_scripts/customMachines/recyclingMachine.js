@@ -42,7 +42,7 @@ global.recyclingMachineRecipes = [
   { input: "minecraft:raw_copper", output: ["2x create:crushed_raw_copper"] },
   { input: "minecraft:raw_gold", output: ["2x create:crushed_raw_gold"] },
   { input: "create:raw_zinc", output: ["2x create:crushed_raw_zinc"] },
-  { input: "oreganized:raw_lead", output: ["2x oreganized:raw_lead"] },
+  { input: "oreganized:raw_lead", output: ["2x create:crushed_raw_lead"] },
   { input: "oreganized:raw_silver", output: ["2x create:crushed_raw_silver"] },
   { input: "etcetera:raw_bismuth", output: ["2x create:crushed_raw_bismuth"] },
 ];

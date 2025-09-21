@@ -248,6 +248,25 @@ ItemEvents.tooltip((tooltip) => {
       text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
     }
   });
+    tooltip.add(
+    [
+      "whimsy_deco:phone",
+      "whimsy_deco:blue_phone",
+      "whimsy_deco:black_phone",
+      "whimsy_deco:red_phone",
+    ],
+    Text.gray("Can call all unlocked villagers to trade with them.")
+  );
+
+  tooltip.add(
+    [
+      "whimsy_deco:phone",
+      "whimsy_deco:blue_phone",
+      "whimsy_deco:black_phone",
+      "whimsy_deco:red_phone",
+    ],
+    Text.green("Has some unique villager shops")
+  );
   // Furniture
   tooltip.add("tanukidecor:diy_workbench", Text.gray("Crafts any Catalog item for cheap"));
   tooltip.add("society:tanuki_catalog", [
@@ -288,7 +307,7 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add(
     "society:pink_matter",
     Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels. Does not carry over Milk Quality"
+      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels."
     )
   );
   tooltip.add("society:pink_matter", Text.red("Does not carry over Milk Quality"));
@@ -455,6 +474,7 @@ ItemEvents.tooltip((tooltip) => {
     ],
     Text.green("Has built-in oven")
   );
+
   tooltip.add(
     [
       "oreganized:silver_ore",
@@ -552,7 +572,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "splendid_slimes:slime_candy",
-    Text.gray("Feed to a Splendid Slime to greatly increase their affection.")
+    Text.gray("Feed to a Splendid Slime to greatly increase their happiness.")
   );
   tooltip.add(
     "splendid_slimes:slime_feeder",

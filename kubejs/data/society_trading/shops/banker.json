@@ -2,6 +2,7 @@
   "shop_id": "banker",
   "name": "shop.society_trading.banker",
   "texture": "numismatics:textures/block/bank_terminal/bank_terminal_front",
+  "jei_catalyst": { "item":"minecraft:cartography_table"},
   "villager_profession": "cartographer",
   "trades": [
     {

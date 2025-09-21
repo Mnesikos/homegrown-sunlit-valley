@@ -254,7 +254,7 @@ ServerEvents.recipes((e) => {
     b: "minecraft:barrel",
     L: "meadow:fire_log",
     G: "society:raisins",
-    f: "society:fire_quartz",
+    f: "society:battery",
     p: "society:pine_tar",
   });
   e.shaped("society:snow_melter", [" f ", "fbf", " B "], {
@@ -328,7 +328,7 @@ ServerEvents.recipes((e) => {
     b: "create:blaze_burner",
   });
   e.shaped("relics:magic_mirror", ["ppp", "pmp", "ppp"], {
-    m: "#society:mirrors",
+    m: "oreganized:silver_mirror",
     p: "society:prismatic_shard",
   });
   e.shaped("relics:spore_sack", [" p ", " m ", " s "], {
@@ -484,10 +484,11 @@ ServerEvents.recipes((e) => {
   });
 
   // Other
-  e.shaped("society:charging_rod", [" Z ", "zlz", "ZbZ"], {
+  e.shaped("society:charging_rod", [" f ", "zlz", "ZbZ"], {
     Z: "create:zinc_block",
     z: "etcetera:bismuth_ingot",
     l: "minecraft:lightning_rod",
+    f: "society:fire_quartz",
     b: "quark:blaze_lantern",
   });
   e.shaped("society:auto_tapper", ["fFf", "bTb", "fPf"], {
@@ -780,16 +781,30 @@ ServerEvents.recipes((e) => {
     n: "botania:dragonstone",
   });
 
-  e.shaped("4x society:spark_gro", ["oso", "sps", "oso"], {
+  e.shaped("society:spark_gro", ["oso", "sps", "oso"], {
     o: "vintagedelight:organic_mash",
     s: "society:sparkstone_dust",
     p: "farm_and_charm:fertilizer",
   });
 
-  e.shaped("8x society:spark_gro", ["oso", "sps", "oso"], {
+  e.shaped("4x society:spark_gro", ["oso", "sps", "oso"], {
     o: "vintagedelight:organic_mash",
     s: "society:sparkstone_dust",
     p: "society:moth_pollen",
+  });
+    e.shaped("society:growth_obelisk", ["sis", "sjs", "sbs"], {
+    s: "minecraft:stone_bricks",
+    i: "minecraft:netherite_ingot",
+    j: "society:jade",
+    b: "society:magic_bulb",
+  });
+      e.shaped("society:magic_bulb", ["dgf", "sbs", "SSS"], {
+    d: "society:ribbit_drum",
+    g: "society:ribbit_gadget",
+    f: "society:froggy_helm",
+    s: "society:sparkstone",
+    S: "oreganized:silver_block",
+    b: "etcetera:light_bulb",
   });
   [
     { input: "meadow:flecked_wool", output: "minecraft:brown_wool" },
