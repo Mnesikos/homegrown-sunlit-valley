@@ -1,4 +1,5 @@
 {
+	autofocus_id: "5A369FC904BCF5EE"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "iv__prismatic_farming"
@@ -36,7 +37,7 @@
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest46.title}"
 			x: -4.5d
-			y: 19.5d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -103,12 +104,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "3AE4FF5F961EE70A"
-				item: "society:netherite_sprinkler"
+				id: "58304EBAF06978FC"
+				item: "dew_drop_farmland_growth:netherite_sprinkler"
 				type: "item"
 			}]
 			x: -7.5d
-			y: 19.0d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -132,10 +133,13 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 16.0d
+			y: 17.5d
 		}
 		{
-			dependencies: ["0E4EA6B5E8E6361C"]
+			dependencies: [
+				"0E4EA6B5E8E6361C"
+				"3C61AB99F40B709F"
+			]
 			description: [
 				"{ftbquests.chapter.iii__advanced_farming.quest17.description1}"
 				""
@@ -152,7 +156,7 @@
 				item: "society:aging_cask"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: 14.5d
 		}
 		{
@@ -360,7 +364,7 @@
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest48.title}"
 			x: 1.0d
-			y: 14.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3291A30C1D1B009D"]
@@ -403,8 +407,8 @@
 				item: "society:fish_pond_basket"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 12.5d
+			x: 1.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
@@ -438,8 +442,8 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
-			y: 12.5d
+			x: 2.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7B26713E5E4E25CB"]
@@ -509,12 +513,26 @@
 				"01B84BE72772B00B"
 				"0DC68C5CF6D82372"
 			]
+			description: [
+				"&6Lead&r is a grating ore that begins to spawn in the frozen layer. When broken, it spawns clouds of brain damage unless adjacent to water."
+				""
+				"&oThere may be ways to mitigate this risk...&r"
+				""
+				"Its main use is heavy machinery, particularly in the Create mod."
+			]
 			id: "3C61AB99F40B709F"
+			rewards: [{
+				count: 4
+				id: "0FFE1A6FD3B741BB"
+				item: "candlelight:harvest_plate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A9B2BB9B94A06CB"
 				item: "oreganized:raw_lead"
 				type: "item"
 			}]
+			title: "Coughing and Spitting"
 			x: -3.0d
 			y: 13.5d
 		}
@@ -597,7 +615,7 @@
 			}]
 			title: "Layer III - The Deep Desert"
 			x: -4.5d
-			y: 15.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
@@ -637,7 +655,7 @@
 			]
 			title: "Layer IV - The Final Depth"
 			x: -4.5d
-			y: 17.5d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -662,7 +680,7 @@
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest7.title}"
 			x: -8.5d
-			y: 17.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["3FA607115DB107D9"]
@@ -683,7 +701,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 16.0d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -716,7 +734,7 @@
 			]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest32.title}"
 			x: -6.5d
-			y: 17.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["38AC25E172172654"]
@@ -743,7 +761,7 @@
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest34.title}"
 			x: -6.5d
-			y: 18.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["4564673A6912E917"]
@@ -768,7 +786,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 17.0d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -794,7 +812,7 @@
 			}]
 			title: "Automated Cheese"
 			x: -8.5d
-			y: 18.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
@@ -890,19 +908,29 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 17.0d
+			x: -3.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["0E4EA6B5E8E6361C"]
+			description: [
+				"&6Hyper Fertilizer&r is the fastest and most expensive of them all, shortening grow times by 3 days."
+				""
+				"It can be used for painfully slow growing crops, or to make quickly growing crops a daily harvest."
+			]
 			id: "52A790F80019F520"
+			rewards: [{
+				id: "0FFE0D3F83EB0BCD"
+				item: "society:bonefish_bait"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A255EE6EF6BBB75"
 				item: "dew_drop_farmland_growth:hyper_fertilizer"
 				type: "item"
 			}]
 			x: -7.5d
-			y: 13.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["41C453E806763C4F"]
@@ -969,11 +997,11 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 17.0d
+			x: -1.5d
+			y: 20.5d
 		}
 		{
-			dependencies: ["7B26713E5E4E25CB"]
+			dependencies: ["4A96DC00D7D0CAD6"]
 			description: [
 				"The &dMagic Bulb&r is a strange device capable of harnessing the sun."
 				""
@@ -991,7 +1019,31 @@
 				type: "item"
 			}]
 			title: "Ribbit Sun Magic"
-			x: 2.5d
+			x: -1.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["3C61AB99F40B709F"]
+			description: [
+				"&6Lead&r is a sturdy enough material to build trains in your world!"
+				""
+				"Unlike what you may be used to, trains from Create do not require create progress or power."
+				""
+				""
+				"{ \"text\": \"More information can be found here.\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"53836B96EE81A695\" } }"
+			]
+			id: "53C771625381F8F8"
+			rewards: [{
+				id: "648E24CF711DD824"
+				item: "society:ribbit_gadget"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B94672A2238F6EC"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: -1.5d
 			y: 15.0d
 		}
 	]

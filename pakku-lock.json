@@ -5682,7 +5682,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "geckolib-forge-1.20.1-4.7.3.jar",
+                    "file_name": "geckolib-forge-1.20.1-4.8.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5690,16 +5690,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6789/487/geckolib-forge-1.20.1-4.7.3.jar",
-                    "id": "6789487",
+                    "url": "https://edge.forgecdn.net/files/7017/796/geckolib-forge-1.20.1-4.8.jar",
+                    "id": "7017796",
                     "parent_id": "388172",
                     "hashes": {
-                        "sha1": "37931d750fe7772f1665da3310321ba812cfcb46",
-                        "md5": "771fb21a83d735260ff271092d8cc311"
+                        "sha1": "e7e7dac15b5e180987b9bd3ebc865193e4682279",
+                        "md5": "8018719048a1f1c3a8cb9ecd8d109115"
                     },
                     "required_dependencies": [],
-                    "size": 1012611,
-                    "date_published": "2025-07-20T00:06:25.577Z"
+                    "size": 1039409,
+                    "date_published": "2025-09-21T05:18:31.253Z"
                 }
             ]
         },
@@ -10242,6 +10242,42 @@
             ]
         },
         {
+            "pakku_id": "yy3eBlMTIOD19eCh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "simple-recall-potion"
+            },
+            "name": {
+                "curseforge": "Simple Recall Potion"
+            },
+            "id": {
+                "curseforge": "1234653"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "simplerecall-1.0.1-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6479/542/simplerecall-1.0.1-1.20.1.jar",
+                    "id": "6479542",
+                    "parent_id": "1234653",
+                    "hashes": {
+                        "sha1": "ed12f05e2af20e558eb49673e5a5f413f87a48e4",
+                        "md5": "8b4c2d87ea1a1011f32947ccd20ee703"
+                    },
+                    "required_dependencies": [],
+                    "size": 14066,
+                    "date_published": "2025-04-30T08:39:45.957Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Y2Ni93h7aHWr6N29",
             "type": "MOD",
             "side": "BOTH",
@@ -11078,7 +11114,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-4.1.jar",
+                    "file_name": "dew_drop_farmland_growth-4.2.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11086,18 +11122,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7013/909/dew_drop_farmland_growth-4.1.jar",
-                    "id": "7013909",
+                    "url": "https://edge.forgecdn.net/files/7015/451/dew_drop_farmland_growth-4.2.jar",
+                    "id": "7015451",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "86b80bc2cd0859f8f429a238acd3e03c33e626b3",
-                        "md5": "e3e1274ac4e66bae011ba5af1bcbed89"
+                        "sha1": "c71e9cdb8a4747638a1ee5d81f9fa39a778138cf",
+                        "md5": "6dcbe8c68acb2be1fe505ee36774e037"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 144937,
-                    "date_published": "2025-09-20T02:00:44.837Z"
+                    "size": 144970,
+                    "date_published": "2025-09-20T14:40:30.540Z"
                 }
             ]
         },

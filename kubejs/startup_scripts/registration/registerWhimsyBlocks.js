@@ -1,23 +1,6 @@
 console.info("[WHIMSY_DECO] registerWhimsyBlocks.js loaded");
 
 StartupEvents.registry("block", (e) => {
-  e.create("whimsy_deco:lucky_cat", "animatable")
-    .box(1, 0, 1, 15, 18, 15, true)
-    .animatableBlockEntity((info) => {
-      info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("rotating")));
-    })
-    .defaultGeoModel()
-    .property(BlockProperties.HORIZONTAL_FACING)
-    .property(booleanProperty.create("mature"))
-    .placementState((state) => {
-      state
-        .set(
-          BlockProperties.HORIZONTAL_FACING,
-          String(state.getHorizontalDirection().getOpposite())
-        )
-        .set(booleanProperty.create("mature"), false);
-    });
-
   e.create("whimsy_deco:statue_endless_fortune", "animatable")
     .box(1, 0, 1, 15, 18, 15, true)
     .displayName("Statue of Endless Fortune")
@@ -83,7 +66,7 @@ StartupEvents.registry("block", (e) => {
       }
     });
 
-  e.create("whimsy_deco:singing_frog", "animatable")
+  e.create("whimsy_deco:sunlit_singing_frog", "animatable")
     .animatableBlockEntity((info) => {
       info.addAnimation((state) => state.setAndContinue(RawAnimation.begin().thenLoop("sing")));
     })
@@ -181,59 +164,3 @@ StartupEvents.registry("item", (e) => {
       },
     });
 });
-
-const getPlaneState = (color, flying) => {
-  const path = `whimsy_deco:block/${color}_toy_plane${flying ? "_fly" : ""}`;
-  let cardianal = [
-    {
-      when: { flying: flying, facing: "north" },
-      apply: { model: path, y: 0, uvlock: false },
-    },
-    {
-      when: { flying: flying, facing: "east" },
-      apply: { model: path, y: 90, uvlock: false },
-    },
-    {
-      when: { flying: flying, facing: "south" },
-      apply: { model: path, y: 180, uvlock: false },
-    },
-    {
-      when: { flying: flying, facing: "west" },
-      apply: { model: path, y: -90, uvlock: false },
-    },
-  ];
-  return cardianal;
-};
-
-const getPhoneState = (phoneId) => {
-  return {
-    variants: {
-      "facing=down": {
-        model: `whimsy_deco:block/${phoneId}`,
-        x: 180,
-      },
-      "facing=east": {
-        model: `whimsy_deco:block/${phoneId}`,
-        x: 90,
-        y: 90,
-      },
-      "facing=north": {
-        model: `whimsy_deco:block/${phoneId}`,
-        x: 90,
-      },
-      "facing=south": {
-        model: `whimsy_deco:block/${phoneId}`,
-        x: 90,
-        y: 180,
-      },
-      "facing=up": {
-        model: `whimsy_deco:block/${phoneId}`,
-      },
-      "facing=west": {
-        model: `whimsy_deco:block/${phoneId}`,
-        x: 90,
-        y: 270,
-      },
-    },
-  };
-};

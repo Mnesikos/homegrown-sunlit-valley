@@ -60,6 +60,7 @@
 				sniffer = true
 				allay = true
 				squid = true
+				donkey = true
 
 			[light_sources.settings.entities.farmingforblockheads]
 				merchant = true

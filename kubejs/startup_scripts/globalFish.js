@@ -457,7 +457,9 @@ global.handleFishPondTick = (tickEvent) => {
     });
   }
   if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
-    if (type !== "0" && valid === "true") {
+    if (type !== "0" && valid === "true") {      let nbt = block.getEntityData();
+      nbt.merge({ data: { type: type, quest_id: quest_id, population: population, max_population: max_population } });
+      block.setEntityData(nbt)
       if (Number(population) > 1) {
         level.spawnParticles(
           "supplementaries:suds",

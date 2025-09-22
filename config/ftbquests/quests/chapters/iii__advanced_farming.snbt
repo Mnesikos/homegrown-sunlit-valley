@@ -246,8 +246,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "6A39934F61EB59BF"
-				item: "society:gold_sprinkler"
+				id: "6ED7E64530635F03"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.iii__advanced_farming.quest10.title}"
@@ -264,8 +264,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "15363B698E92450C"
-				item: "society:diamond_sprinkler"
+				id: "5B08BD5F101D61C1"
+				item: "dew_drop_farmland_growth:diamond_sprinkler"
 				type: "item"
 			}]
 			x: 8.0d

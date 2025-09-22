@@ -340,7 +340,6 @@ ItemEvents.entityInteracted((e) => {
       }
       if (
         player.stages.has("biomancer") &&
-        hearts >= 1 &&
         [
           "bakery:bread_knife",
           "farmersdelight:iron_knife",
@@ -358,32 +357,38 @@ ItemEvents.entityInteracted((e) => {
         ].includes(item.id)
       ) {
         if (player.cooldowns.isOnCooldown(item)) return;
-        let heart = level.createEntity("minecraft:item");
-        heart.x = player.x;
-        heart.y = player.y;
-        heart.z = player.z;
-        heart.item = Item.of("quark:diamond_heart");
-        heart.spawn();
-        server.runCommandSilent(
-          `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
-        );
-        server.runCommandSilent(
-          `playsound legendarycreatures:mojo_hurt block @a ${player.x} ${player.y} ${player.z} 0.1`
-        );
-        level.spawnParticles(
-          "minecraft:angry_villager",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          5,
-          0.01
-        );
-        data.affection = affection - 100;
-        global.addItemCooldown(player, item, 5);
+        if (hearts < 5) {
+          server.runCommandSilent(
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 ${name} doesn't trust you enough...`
+          );
+        } else {
+          let heart = level.createEntity("minecraft:item");
+          heart.x = player.x;
+          heart.y = player.y;
+          heart.z = player.z;
+          heart.item = Item.of("quark:diamond_heart");
+          heart.spawn();
+          server.runCommandSilent(
+            `playsound minecraft:entity.sheep.shear block @a ${player.x} ${player.y} ${player.z}`
+          );
+          server.runCommandSilent(
+            `playsound legendarycreatures:mojo_hurt block @a ${player.x} ${player.y} ${player.z} 0.1`
+          );
+          level.spawnParticles(
+            "minecraft:angry_villager",
+            true,
+            target.x,
+            target.y + 1.5,
+            target.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            5,
+            0.01
+          );
+          data.affection = affection - 100;
+          global.addItemCooldown(player, item, 5);
+        }
       }
       if (player.stages.has("bribery") && item === "numismatics:crown" && !data.bribed) {
         if (player.cooldowns.isOnCooldown(item)) return;
@@ -482,7 +487,7 @@ ItemEvents.entityInteracted((e) => {
         );
         global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, data,e);
+      if (item === "society:magic_shears") handleMagicHarvest(name, data, e);
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

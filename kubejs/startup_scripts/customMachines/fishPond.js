@@ -181,7 +181,7 @@ StartupEvents.registry("block", (event) => {
       }
     })
     .blockEntity((blockInfo) => {
-      blockInfo.initialData({ stage: 0, type: 0 });
+      blockInfo.initialData({ type: 0, quest_id: 0, population: 0, max_population: 3 });
       blockInfo.serverTick(fishPondTickRate, 0, (entity) => {
         entity;
         global.handleFishPondTick(entity);
