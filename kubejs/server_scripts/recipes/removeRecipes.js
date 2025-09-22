@@ -4,6 +4,10 @@ ServerEvents.recipes((e) => {
   e.remove({ mod: "justhammers" });
   e.remove({ mod: "itemfilters" });
   const removeByOutput = [
+    "dew_drop_farmland_growth:iron_sprinkler",
+    "dew_drop_farmland_growth:gold_sprinkler",
+    "dew_drop_farmland_growth:diamond_sprinkler",
+    "dew_drop_farmland_growth:netherite_sprinkler",
     "numismatics_utils:portable_bank_terminal",
     "numismatics_utils:bank_meter",
     "moblassos:hostile_lasso",

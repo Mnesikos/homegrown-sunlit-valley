@@ -140,9 +140,11 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wheel_of_adaptation",
       tooltip: "Was once used to summon a beast",
     },
+    { item: "society:spider_silk", tooltip: "Meticulously textured by a Nerdy Spider" },
+    { item: "society:toy_train", tooltip: "« Limited to 2 passengers : ants »"},
     {
-      item: "society:token_of_unity",
-      tooltip: "I love making mazes! I'm going to design the biggest maze ever!",
+      item: "society:perfect_cherry",
+      tooltip: "It wants you to eat it",
     },
     {
       item: "society:mini_oni_eye",
@@ -248,7 +250,7 @@ ItemEvents.tooltip((tooltip) => {
       text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
     }
   });
-    tooltip.add(
+  tooltip.add(
     [
       "whimsy_deco:phone",
       "whimsy_deco:blue_phone",
@@ -306,9 +308,7 @@ ItemEvents.tooltip((tooltip) => {
   );
   tooltip.add(
     "society:pink_matter",
-    Text.green(
-      "Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels."
-    )
+    Text.green("Use on an §2Artisan Cheese Press§a to make it auto-age Cheese Wheels.")
   );
   tooltip.add("society:pink_matter", Text.red("Does not carry over Milk Quality"));
   tooltip.add(
@@ -611,8 +611,18 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_stairs",
       "moreminecarts:greenhouse_glass_slab",
     ],
-    Text.gray("Crop underneath grows in any season")
+    Text.gray("The Crop directly underneath grows in any season")
   );
+    tooltip.add(
+    [
+      "moreminecarts:chiseled_organic_glass",
+      "moreminecarts:chiseled_organic_glass_pane",
+      "moreminecarts:greenhouse_glass_stairs",
+      "moreminecarts:greenhouse_glass_slab",
+    ],
+    Text.green("Range: 16 blocks")
+  );  
+ 
   tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
   tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
 
@@ -633,18 +643,10 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("extractinator:extractinator", Text.gray("Right click with a geode to process"));
   tooltip.add("extractinator:extractinator", Text.gray("Shift + Right click to process stack"));
   tooltip.add(
-    ["moreminecarts:chunkrodite_block", "moreminecarts:chunkrodite"],
-    Text.gray("Adds time to Fueled Chunk Loader")
-  );
-  tooltip.add(
     "pipez:item_pipe",
     Text.gray("Can be configured to extract using the Create mod Wrench")
   );
-  tooltip.add(
-    "moreminecarts:chunk_loader",
-    Text.green("Loads a 5x5 chunk area using Chunkroderite and other items")
-  );
-  tooltip.add("moreminecarts:chunk_loader", Text.red("Must be restarted when server restarts"));
+  tooltip.add("moreminecarts:chunk_loader", Text.red("Removed! Craft into money for your refund."));
   tooltip.add("vintagedelight:evaporator", Text.gray("Place next to water to make salt"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("Grows colonies from red and"));
   tooltip.add("farmersdelight:rich_soil", Text.gray("brown mushrooms planted on it"));
@@ -1018,6 +1020,26 @@ ItemEvents.tooltip((tooltip) => {
   tooltip.add("society:overflow_token", Text.gray("to your coin leaderboard score,"));
   tooltip.add("society:overflow_token", Text.gray("bypassing the bank account's cap."));
   tooltip.add("society:overflow_token", Text.red("Overflow tokens cannot be recovered"));
+  // Sprinklers
+  const generateSprinklerTooltip = (tooltip, tier, radius) => {
+    const tooltipRadius = 1 + radius * 2;
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.gray("Waters crops before they dry out at 6am")
+    );
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.gray("Can be given a stick for decoration")
+    );
+    tooltip.add(
+      `dew_drop_farmland_growth:${tier}_sprinkler`,
+      Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`)
+    );
+  };
+  generateSprinklerTooltip(tooltip, "iron", 1);
+  generateSprinklerTooltip(tooltip, "gold", 2);
+  generateSprinklerTooltip(tooltip, "diamond", 3);
+  generateSprinklerTooltip(tooltip, "netherite", 4);
   // Books
   tooltip.add("society:yard_work_yearly", Text.green("Right click to gain Farming experience"));
   tooltip.add("society:husbandry_hourly", Text.green("Right click to gain Husbandry experience"));

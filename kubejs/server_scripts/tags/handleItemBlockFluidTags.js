@@ -213,6 +213,10 @@ ServerEvents.tags("item", (e) => {
     e.add("furniture:trash_bag_blacklist", item);
     e.add("c:hidden_from_recipe_viewers", item);
   });
+  global.hiddenItems.forEach((item) => {
+    e.add("furniture:trash_bag_blacklist", item);
+    e.add("c:hidden_from_recipe_viewers", item);
+  });
 });
 const rawLogs = [
   "quark:blossom_log",
@@ -422,7 +426,7 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth")
+  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth");
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
@@ -674,7 +678,6 @@ ServerEvents.tags("block", (e) => {
   ].forEach((item) => {
     e.add("minecraft:sword_efficient", item);
   });
-
 });
 
 ServerEvents.tags("fluid", (e) => {

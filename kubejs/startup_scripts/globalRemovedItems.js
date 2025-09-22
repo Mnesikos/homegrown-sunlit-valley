@@ -864,3 +864,44 @@ global.removedItems = [
   "atmospheric:dragon_fruit_crate",
   "atmospheric:dragon_fruit",
 ];
+
+global.hiddenItems = [
+  "society:diamond_sprinkler",
+  "society:gold_sprinkler",
+  "society:netherite_sprinkler",
+  "society:iron_sprinkler",
+  "minecraft:ancient_debris",
+  "society:growth_obelisk_upper",
+];
+const refinedBlocks = [
+  "controller",
+  "crafting_grid",
+  "detector",
+  "relay",
+  "network_transmitter",
+  "network_receiver",
+  "wireless_transmitter",
+  "security_manager",
+];
+const colors = [
+  "white",
+  "orange",
+  "magenta",
+  "yellow",
+  "lime",
+  "pink",
+  "gray",
+  "light_gray",
+  "cyan",
+  "purple",
+  "blue",
+  "brown",
+  "green",
+  "red",
+  "black",
+];
+refinedBlocks.forEach((block) => {
+  colors.forEach((color) => {
+    global.hiddenItems.push(`refinedstorage:${color}_${block}`);
+  });
+});

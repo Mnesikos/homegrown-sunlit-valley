@@ -5,13 +5,13 @@
   "ingredients": [
     {
       "tag": "forge:eggs"
-  },
-  {
+    },
+    {
       "item": "atmospheric:orange"
-  },
-  {
+    },
+    {
       "tag": "society:large_milk"
-  }
+    }
   ],
   "container": {
     "item": "minecraft:bowl"

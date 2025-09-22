@@ -274,17 +274,11 @@
 		{
 			dependencies: ["0F176FBF01ABB774"]
 			description: [
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description1}"
+				"The &6Mincer&r is a cooking implement for finely grounding certain items. "
 				""
-				"{ftbquests.chapter.iii__advanced_farming.quest12.description2}"
+				"It is a necessary tool for when chopping can't quite get the job done."
 			]
 			id: "711AC0F5208316D5"
-			rewards: [{
-				count: 32
-				id: "7BC5A2F167579D9B"
-				item: "moreminecarts:chunkrodite"
-				type: "item"
-			}]
 			tasks: [{
 				id: "58A708BD47826C8B"
 				item: "farm_and_charm:mincer"
@@ -335,6 +329,8 @@
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description1}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description2}"
+				""
+				"It will deposit coins directly into your bank account when sold. If you don't have one or its at the limit, it will shoot them out."
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest22.description3}"
 			]

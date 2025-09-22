@@ -160,7 +160,6 @@ ${player.username}, your profits were used to pay off your debt!
   return newValue;
 };
 
-// global.processValueOutput(value, slots, removedSlots, binPlayer, binPlayerUUID, binPlayer.server, block, inventory, false)
 global.processValueOutput = (
   value,
   slots,
@@ -204,13 +203,19 @@ global.processValueOutput = (
       }
       if (extenalOutput) {
         let facing = block.properties.get("facing");
-        outputs.forEach((output) => {
-          let { coin, count } = output;
-          for (let index = 0; index <= count; index += 64) {
-            let difference = count - index;
-            block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
-          }
-        });
+        let account = global.GLOBAL_BANK.getAccount(player.getUuid());
+
+        if (account && account.getBalance() + value < 2147483000) {
+          account.deposit(value);
+        } else {
+          outputs.forEach((output) => {
+            let { coin, count } = output;
+            for (let index = 0; index <= count; index += 64) {
+              let difference = count - index;
+              block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
+            }
+          });
+        }
       } else {
         /**
          * Basic Shipping Bins only remove items when they're sure there's enough room.

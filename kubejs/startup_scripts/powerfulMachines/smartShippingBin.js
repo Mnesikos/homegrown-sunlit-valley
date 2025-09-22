@@ -6,8 +6,8 @@ StartupEvents.registry("block", (event) => {
     .create("shippingbin:smart_shipping_bin", "cardinal")
     .tagBlock("minecraft:mineable/axe")
     .item((item) => {
-      item.tooltip(Text.gray("Sells inventory periodically and spits it out into the world"));
-      item.tooltip(Text.green("Automatically converts coins into highest denominations"));
+      item.tooltip(Text.gray("Sells inventory periodically and puts the profit into your bank account."));
+      item.tooltip(Text.red("If you don't have an account or are at the limit it will spit out coins when sold."));
       item.modelJson({
         parent: "society:block/smart_shipping_bin",
       });

@@ -61,6 +61,7 @@ ServerEvents.recipes((e) => {
       item: "society:mexican_street_corn",
     },
   });
+  e.shapeless("6x numismatics:neptunium_coin", ["moreminecarts:chunk_loader"])
   e.shapeless("3x society:prismatic_shard", ["society:token_of_unity", "society:prismatic_shard"]);
   e.shapeless("3x quark:soul_bead", ["netherdepthsupgrade:soulsucker"]);
   e.shapeless("society:book_of_stars", ["3x #society:skill_book"]);
@@ -608,6 +609,11 @@ ServerEvents.recipes((e) => {
     "pamhc2trees:pawpawitem",
     "minecraft:sugar",
   ]);
+  e.shapeless("society:death_liquid", [
+    "minecraft:skeleton_skull",
+    "society:battery",
+    ["society:salmonberry", "society:boysenberry", "society:cranberry", "society:crystalberry"],
+  ]);
   e.shapeless("4x farmersdelight:canvas", ["society:canvas"]);
   e.shapeless("1x society:tubasmoke_stick", [
     "society:dried_tubabacco_leaf",
@@ -792,13 +798,13 @@ ServerEvents.recipes((e) => {
     s: "society:sparkstone_dust",
     p: "society:moth_pollen",
   });
-    e.shaped("society:growth_obelisk", ["sis", "sjs", "sbs"], {
+  e.shaped("society:growth_obelisk", ["sis", "sjs", "sbs"], {
     s: "minecraft:stone_bricks",
     i: "minecraft:netherite_ingot",
     j: "society:jade",
     b: "society:magic_bulb",
   });
-      e.shaped("society:magic_bulb", ["dgf", "sbs", "SSS"], {
+  e.shaped("society:magic_bulb", ["dgf", "sbs", "SSS"], {
     d: "society:ribbit_drum",
     g: "society:ribbit_gadget",
     f: "society:froggy_helm",

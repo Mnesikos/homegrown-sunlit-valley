@@ -215,12 +215,47 @@ StartupEvents.registry("item", (e) => {
   // Artifacts
   global.artifacts.forEach((artifact) => {
     const { item } = artifact;
-    if (item !== "society:princess_hairbrush") {
+    if (item !== "society:princess_hairbrush" && item !== "society:perfect_cherry") {
       e.create(item)
         .texture(`society:item/artifacts/${item.split(":")[1]}`)
         .rarity("uncommon");
     }
   });
+  e.create("society:perfect_cherry")
+    .texture("society:item/artifacts/perfect_cherry")
+    .food((food) => {
+      food.hunger(1);
+      food.saturation(1);
+      food.eaten((e) => {
+        const { player, server, level } = e;
+        if (!level.isClientSide()) {
+          if (Math.random() < 0.2) {
+            server.runCommandSilent(
+              `execute in ${level.dimension} run summon lightning_bolt ${player.x} ${player.y} ${player.z}`
+            );
+          }
+          if (Math.random() < 0.2) {
+            server.runCommandSilent(`effect give ${player.username} minecraft:poison 100 1`);
+          }
+          if (Math.random() < 0.2) {
+            server.runCommandSilent(`effect give ${player.username} minecraft:wither 100 1`);
+          }
+          if (Math.random() < 0.2) {
+            server.runCommandSilent(
+              `effect give ${player.username} legendarycreatures:convulsion 100 1`
+            );
+          }
+          if (Math.random() < 0.2) {
+            server.runCommandSilent(`effect give ${player.username} minecraft:bad_omen 100 1`);
+          }
+
+          if (Math.random() < 0.4) {
+            player.attack(10);
+          }
+          player.give("society:perfect_cherry");
+        }
+      });
+    });
 
   // Food
   e.create("society:energy_drink")
@@ -229,6 +264,14 @@ StartupEvents.registry("item", (e) => {
       food.fastToEat(true);
       food.effect("botania:emptiness", 4800, 0, 1.0);
       food.effect("minecraft:speed", 4800, 2, 1.0);
+    })
+    .useAnimation("drink");
+  e.create("society:death_liquid")
+    .texture("society:item/drinks/death_liquid")
+    .tooltip(Text.darkPurple("stupid straightedge water"))
+    .food((food) => {
+      food.fastToEat(true);
+      food.effect("minecraft:poison", 800, 2, 1.0);
     })
     .useAnimation("drink");
   e.create("herbalbrews:ground_coffee").texture("society:item/ground_coffee");
@@ -294,7 +337,6 @@ StartupEvents.registry("item", (e) => {
       food.hunger(5);
       food.saturation(2);
     });
-
   e.create("society:blueberry_icecream")
     .texture("society:item/blueberry_icecream")
     .food((food) => {
@@ -510,12 +552,12 @@ StartupEvents.registry("item", (e) => {
   });
 
   e.create("society:sparkstone").texture("society:item/sparkstone");
-  e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust")
-  e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro")
+  e.create("society:sparkstone_dust").texture("society:item/sparkstone_dust");
+  e.create("society:spark_gro").texture("society:item/spark_gro").displayName("Spark-Gro");
 
   e.create(`society:magic_bulb`).texture(`society:item/magic_bulb`);
-  e.create("create:crushed_raw_bismuth").texture("society:item/crushed_raw_bismuth")
-  
+  e.create("create:crushed_raw_bismuth").texture("society:item/crushed_raw_bismuth");
+
   global.picklableVegetables.forEach((product) => {
     const splitProduct = product.item.split(":");
     let texturePath = `${splitProduct[0]}:item/${splitProduct[1]}`;
@@ -607,7 +649,7 @@ StartupEvents.registry("item", (e) => {
     { item: "society:boysenberry", hex: 0xcf657f },
     { item: "society:cranberry", hex: 0xb33831 },
     { item: "society:crystalberry", hex: 0xb33831 },
-    { item: "windswept:wild_berries", hex: 0xa53982 }
+    { item: "windswept:wild_berries", hex: 0xa53982 },
   ];
   global.dehydratableFruits.forEach((item) => {
     const itemHex = dehydratorFruitMapping.find((val) => val.item === item)?.hex;

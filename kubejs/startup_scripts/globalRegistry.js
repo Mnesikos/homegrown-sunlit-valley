@@ -234,8 +234,10 @@ global.artifacts = [
   { item: "society:source_gem", value: 208 },
   { item: "society:glitched_vhs", value: 256 },
   { item: "society:spider_silk", value: 320 },
+  { item: "society:toy_train", value: 430 },
   { item: "society:aquamagical_dust", value: 512 },
   { item: "society:wheel_of_adaptation", value: 576 },
+  { item: "society:perfect_cherry", value: 777 },
   { item: "society:mini_oni_eye", value: 704 },
   { item: "society:production_science_pack", value: 1024 },
   { item: "society:steamy_gadget", value: 649 },
@@ -792,6 +794,8 @@ global.herbalBrews = [
   { item: "herbalbrews:hibiscus_tea", value: 16 },
   { item: "herbalbrews:rooibos_tea", value: 20 },
   { item: "herbalbrews:lavender_tea", value: 16 },
+  { item: "windswept:lavender_tea", value: 80 },
+  { item: "windswept:ginger_tea", value: 128 },
   { item: "herbalbrews:green_tea", value: 16 },
   { item: "herbalbrews:black_tea", value: 128 },
   { item: "herbalbrews:chai_tea", value: 328 },
@@ -1099,6 +1103,7 @@ const craftingTableRecipes = [
   { item: "refurbished_furniture:cheese_toastie", value: 15 },
   { item: "snowyspirit:gingerbread_cookie", value: 8 },
   { item: "snowyspirit:candy_cane", value: 4 },
+  { item: "windswept:candy_cane_block", value: 36 },
   { item: "snowyspirit:eggnog", value: 44 },
   { item: "supplementaries:candy", value: 24 },
   { item: "vintagedelight:salted_cod", value: 18 },
@@ -1117,6 +1122,7 @@ const craftingTableRecipes = [
   { item: "vintagedelight:cucumber_salad", value: 324 },
   { item: "vintagedelight:oatmeal_cookie", value: 10 },
   { item: "society:energy_drink", value: 277 },
+  { item: "society:death_liquid", value: 930 },
   { item: "unusualfishmod:odd_fishsticks", value: 96 },
   { item: "unusualfishmod:weird_goldfish", value: 64 },
   { item: "unusualfishmod:pickledish", value: 128 },
@@ -1139,6 +1145,10 @@ const craftingTableRecipes = [
   { item: "veggiesdelight:dandelion_and_eggs", value: 58 },
   { item: "veggiesdelight:chicken_fajitas_wrap", value: 90 },
   { item: "veggiesdelight:cauliflower_burger", value: 162 },
+  { item: "windswept:spicy_snow_cone", value: 64 },
+  { item: "windswept:sweet_snow_cone", value: 34 },
+  { item: "windswept:mutton_pie", value: 116 },
+  { item: "windswept:minty_snow_cone", value: 27 }
 ];
 craftingTableRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1176,6 +1186,7 @@ cheeses.forEach((recipe) => {
 
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 let fermentingRecipes = [
+  { item: "windswept:pinecone_jam_bottle", value: 212 },
   { item: "vintagedelight:pickled_onion", value: 14 },
   { item: "vintagedelight:pickle", value: 72 },
   { item: "vintagedelight:century_egg", value: 136 },
@@ -1222,6 +1233,7 @@ fermentingRecipes.forEach((recipe) => {
 
 // Raw ingredient calculation. Multiplier added before pushing to global.cooking
 const furnaceRecipes = [
+  { item: "buzzier_bees:crystallized_honey_block", value: 24 },
   { item: "unusualfishmod:cooked_unusual_fillet", value: 64 },
   { item: "vintagedelight:ghost_charcoal", value: 36 },
   { item: "pamhc2trees:roastedhazelnutitem", value: 32 },
@@ -1313,6 +1325,9 @@ cakingStationRecipes.forEach((recipe) => {
   });
 });
 const cookingPotRecipes = [
+  { item: "windswept:goat_stew", value: 190 },
+  { item: "windswept:chestnut_soup", value: 80 },
+  { item: "windswept:christmas_pudding", value: 160 },
   { item: "veggiesdelight:garlic_chicken_stew", value: 185 },
   { item: "society:chicken_tortilla_soup", value: 279 },
   { item: "society:mexican_street_corn", value: 162 },
