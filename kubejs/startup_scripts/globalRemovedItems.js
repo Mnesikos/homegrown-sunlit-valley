@@ -1,4 +1,10 @@
 global.removedItems = [
+  "vinery:red_taiga_grapejuice",
+  "vinery:red_jungle_grapejuice",
+  "vinery:red_savanna_grapejuice",
+  "vinery:white_taiga_grapejuice",
+  "vinery:white_jungle_grapejuice",
+  "vinery:white_savanna_grapejuice",
   "whimsy_deco:gold_lucky_cat",
   "whimsy_deco:gnome",
   "whimsy_deco:lantern_gnome",

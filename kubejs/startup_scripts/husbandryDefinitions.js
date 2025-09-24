@@ -496,6 +496,11 @@ global.husbandryMilkingDefinitions = [
     cooldown: 1,
     milk: { sm: "minecraft:glow_ink_sac", lg: "minecraft:glow_ink_sac" },
   },
+  {
+    animal: "species:mammutilation",
+    cooldown: 2,
+    milk: { sm: "species:ichor_bottle", lg: "species:ichor_bottle" },
+  },
 ];
 
 global.petGifts = [

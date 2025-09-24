@@ -24,4 +24,11 @@ ServerEvents.recipes((e) => {
   e.shapeless("refinedstorage:filter", ["toms_storage:ts.item_filter"]);
   e.shapeless("refinedstorage:filter", ["toms_storage:ts.polymorphic_item_filter"]);
   e.shapeless("refinedstorage:filter", ["toms_storage:ts.tag_item_filter"]);
+
+  e.shapeless("vinery:red_grapejuice", ["vinery:red_taiga_grapejuice"]);
+  e.shapeless("vinery:red_grapejuice", ["vinery:red_jungle_grapejuice"]);
+  e.shapeless("vinery:red_grapejuice", ["vinery:red_savanna_grapejuice"]);
+  e.shapeless("vinery:white_grapejuice", ["vinery:white_taiga_grapejuice"]);
+  e.shapeless("vinery:white_grapejuice", ["vinery:white_jungle_grapejuice"]);
+  e.shapeless("vinery:white_grapejuice", ["vinery:white_savanna_grapejuice"]);
 });

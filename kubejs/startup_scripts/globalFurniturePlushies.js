@@ -290,7 +290,6 @@ global.lootFurniture = [
   "minecraft:bell",
   "furniture:coffer",
   "society:gnome",
-  "whimsy_deco:paw_carpet",
   "whimsy_deco:lucky_cat",
   "whimsy_deco:froggy_chair",
   "whimsy_deco:yellow_froggy_chair",

@@ -130,6 +130,7 @@
 			[light_sources.settings.entities.farmlife]
 				galliraptor = true
 				domestic_tribull = true
+				galliraptor_egg = true
 
 			[light_sources.settings.entities.autumnity]
 				turkey = true
