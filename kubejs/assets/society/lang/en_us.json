@@ -1,6 +1,10 @@
 {
   "itemGroup.society": "Society",
   "itemGroup.society.creative_tab": "Society",
+  "society.books.almanac.name": "Farmer's Almanac",
+  "society.books.almanac.landing_text": "Your guide to crops and farm animals. This is a work in progress and most crops are not listed.",
+  "society.books.fish_finder.name": "Fish Finder",
+  "society.books.fish_finder.landing_text": "The wettest guide you'll ever find, telling you the secret locations of every fish.",
   "entity.minecraft.villager.butcher": "Butcher",
   "entity.minecraft.villager.cartographer": "Banker",
   "entity.minecraft.villager.cleric": "Cleric",
