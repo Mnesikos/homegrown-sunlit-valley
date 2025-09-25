@@ -1658,6 +1658,7 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "crittersandcompanions:clam", value: 512 },
   { item: "windswept:elder_feather", value: 128 },
   { item: "windswept:frozen_branch", value: 200 },
   { item: "crittersandcompanions:silk", value: 128 },

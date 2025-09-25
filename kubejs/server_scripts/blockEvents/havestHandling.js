@@ -1,4 +1,5 @@
 console.info("[SOCIETY] harvestHandling.js loaded");
+// Yeah this filename has a typo. Fixing it would be more annoying than leaving it.
 
 const deniedCrops = [
   "farmersdelight:tomatoes",

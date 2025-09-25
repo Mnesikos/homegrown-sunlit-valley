@@ -54,6 +54,11 @@ const tanukiWordMap = [
   { word: "swimming", craftItem: 'society:flamingo_egg' },
   { word: "washing", craftItem: 'supplementaries:soap_block' },
   { word: "horseshoe", craftItem: 'minecraft:golden_horse_armor' },
+  { word: "bamboo", craftItem: 'twigs:bamboo_thatch' },
+  { word: "stocking", craftItem: 'windswept:holly_wreath' },
+  { word: "broom", craftItem: 'windswept:elder_feather' },
+  { word: "rack", craftItem: 'meadow:fire_log' },
+  { word: "rattan", craftItem: 'society:perfect_cherry' },
 ];
 const modernWordMap = [
   { word: "tv", craftItem: "society:battery" },

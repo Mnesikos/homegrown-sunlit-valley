@@ -8008,43 +8008,6 @@
             ]
         },
         {
-            "pakku_id": "tIDRSBWtFXNQn3in",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "obsidianui"
-            },
-            "name": {
-                "curseforge": "ObsidianUI"
-            },
-            "id": {
-                "curseforge": "684718"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ObsidianUI-forge-0.2.3+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5279/713/ObsidianUI-forge-0.2.3+mc1.20.1.jar",
-                    "id": "5279713",
-                    "parent_id": "684718",
-                    "hashes": {
-                        "sha1": "aaa69c42410847ac5d13034fba9d519e0afd0abf",
-                        "md5": "323ee5036a5113c1529520430e7b6a04"
-                    },
-                    "required_dependencies": [],
-                    "size": 212286,
-                    "date_published": "2024-04-21T14:14:57.107Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Gt0q5vF9DOqCn3H8",
             "type": "MOD",
             "slug": {
@@ -10479,26 +10442,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-0.2.jar",
+                    "file_name": "society_trading-0.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7016/830/society_trading-0.2.jar",
-                    "id": "7016830",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7032/915/society_trading-0.3.jar",
+                    "id": "7032915",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "8bdc12f6264dbb7f5901a9497a85e961e7b20ebe",
-                        "md5": "4e21b90ea12b72aa42deaae3a2c00402"
+                        "sha1": "d11f5abb34eb53a159c8f252a3550415e630a15d",
+                        "md5": "87e304586e452afa3fa282efa0ca5b4e"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 84405,
-                    "date_published": "2025-09-20T21:25:36.817Z"
+                    "size": 84681,
+                    "date_published": "2025-09-25T18:27:24.233Z"
                 }
             ]
         },
@@ -10601,7 +10564,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.2.1339.jar",
+                    "file_name": "sophisticatedbackpacks-1.20.1-3.24.7.1376.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10610,18 +10573,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6962/821/sophisticatedbackpacks-1.20.1-3.24.2.1339.jar",
-                    "id": "6962821",
+                    "url": "https://edge.forgecdn.net/files/7031/698/sophisticatedbackpacks-1.20.1-3.24.7.1376.jar",
+                    "id": "7031698",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "702557657e8f7ffa75650cca77a2fcef61a1103d",
-                        "md5": "ec4ab6395785ef216106c4ba6bac1af0"
+                        "sha1": "c4a6e5709233d4489b4f1eb4590e4b0a1275f8b1",
+                        "md5": "3abb4d3c21556e3498bfd3b7fd47f089"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 971630,
-                    "date_published": "2025-09-04T13:47:38.530Z"
+                    "size": 970776,
+                    "date_published": "2025-09-25T10:22:47.483Z"
                 }
             ]
         },
@@ -10640,7 +10603,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.20.1-1.2.86.1132.jar",
+                    "file_name": "sophisticatedcore-1.20.1-1.2.94.1169.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10649,16 +10612,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6965/342/sophisticatedcore-1.20.1-1.2.86.1132.jar",
-                    "id": "6965342",
+                    "url": "https://edge.forgecdn.net/files/7031/694/sophisticatedcore-1.20.1-1.2.94.1169.jar",
+                    "id": "7031694",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "48919ddb57b6fc6410292e89f4ac0afc79deb83b",
-                        "md5": "1d2a54be35b61601d5aa93450ab96d46"
+                        "sha1": "165217661f1d1b574d647ac2eb5730644d0afb64",
+                        "md5": "57ce03cb4bb6f2f0f020ee6f12f70978"
                     },
                     "required_dependencies": [],
-                    "size": 1341488,
-                    "date_published": "2025-09-05T09:54:37.440Z"
+                    "size": 1390545,
+                    "date_published": "2025-09-25T10:19:54.107Z"
                 }
             ]
         },
@@ -10677,7 +10640,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedstorage-1.20.1-1.4.2.1271.jar",
+                    "file_name": "sophisticatedstorage-1.20.1-1.4.9.1317.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10686,18 +10649,64 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6960/639/sophisticatedstorage-1.20.1-1.4.2.1271.jar",
-                    "id": "6960639",
+                    "url": "https://edge.forgecdn.net/files/7031/702/sophisticatedstorage-1.20.1-1.4.9.1317.jar",
+                    "id": "7031702",
                     "parent_id": "619320",
                     "hashes": {
-                        "sha1": "03c5d433a1b4585e134e3fbfd1b92f02afdc6775",
-                        "md5": "1eccdf1a7d714758183923568f8c01a3"
+                        "sha1": "b76f69b956effd88a151974993e8e1b3351bc13c",
+                        "md5": "6d5cd91bd7dcabbd64f4ea25c44424eb"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 1665642,
-                    "date_published": "2025-09-03T21:43:54.997Z"
+                    "size": 1665723,
+                    "date_published": "2025-09-25T10:26:37.327Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "2YVfmWpa6WcgDu0I",
+            "pakku_links": [
+                "xJWEZnxpiqkYpfj2",
+                "QHbJ1mhGzWID7cwp",
+                "OjsYMehqACUhUBxE"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sophisticated-storage-create-integration"
+            },
+            "name": {
+                "curseforge": "Sophisticated Storage Create Integration"
+            },
+            "id": {
+                "curseforge": "1226755"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sophisticatedstoragecreateintegration-1.20.1-0.1.13.48.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "neoforge",
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7031/713/sophisticatedstoragecreateintegration-1.20.1-0.1.13.48.jar",
+                    "id": "7031713",
+                    "parent_id": "1226755",
+                    "hashes": {
+                        "sha1": "ee0d2107c195dc1e32e69537d63b420f00988aeb",
+                        "md5": "a968e8189a23a22b4576e735aff2bd8b"
+                    },
+                    "required_dependencies": [
+                        "619320",
+                        "618298",
+                        "328085"
+                    ],
+                    "size": 127299,
+                    "date_published": "2025-09-25T10:32:47.303Z"
                 }
             ]
         },
@@ -11112,7 +11121,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-4.2.jar",
+                    "file_name": "dew_drop_farmland_growth-4.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11120,18 +11129,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7015/451/dew_drop_farmland_growth-4.2.jar",
-                    "id": "7015451",
+                    "url": "https://edge.forgecdn.net/files/7032/826/dew_drop_farmland_growth-4.3.jar",
+                    "id": "7032826",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "c71e9cdb8a4747638a1ee5d81f9fa39a778138cf",
-                        "md5": "6dcbe8c68acb2be1fe505ee36774e037"
+                        "sha1": "1abc33eccf3283da93f7450afec5bc17e4950c3d",
+                        "md5": "a2e424964aee19ac5859963c390ecc7b"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 144970,
-                    "date_published": "2025-09-20T14:40:30.540Z"
+                    "size": 144978,
+                    "date_published": "2025-09-25T17:59:04.460Z"
                 }
             ]
         },

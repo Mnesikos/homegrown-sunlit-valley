@@ -5,9 +5,9 @@
 	#Recall potion cooldown in seconds
 	Cooldown = 0
 	#Whether or not you can recall to spawn from other dimensions
-	Interdimensional = false
+	Interdimensional = true
 	#Does recall potion have enchantment glow
-	Glow = false
+	Glow = true
 	#Main ingredient used to brew recall potions
-	Ingredient = "minecraft:ender_eye"
+	Ingredient = "society:ancient_fruit"
 

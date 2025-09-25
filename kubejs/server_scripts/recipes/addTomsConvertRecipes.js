@@ -5,6 +5,7 @@ ServerEvents.recipes((e) => {
 
   // 4.0 TODO: Remove backwords compat
   e.shapeless("farm_and_charm:flour", ["create:wheat_flour"]);
+  e.shapeless("numismatics_utils:bank_meter", ["society:bank_meter"]);
   e.shapeless("refinedstorage:cable", ["toms_storage:ts.inventory_cable"]);
   e.shapeless("refinedstorage:cable", ["toms_storage:ts.inventory_cable_framed"]);
   e.shapeless("refinedstorage:cable", ["toms_storage:ts.inventory_proxy"]);

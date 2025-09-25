@@ -419,10 +419,10 @@
     "modId": "dew_drop_daily_weather",
     "version": "1.1.1"
   },
-  "dew_drop_farmland_growth-4.2.jar": {
-    "jarName": "dew_drop_farmland_growth-4.2.jar",
+  "dew_drop_farmland_growth-4.3.jar": {
+    "jarName": "dew_drop_farmland_growth-4.3.jar",
     "modId": "dew_drop_farmland_growth",
-    "version": "4.2"
+    "version": "4.3"
   },
   "dew_drop_watering_cans-1.0.2.jar": {
     "jarName": "dew_drop_watering_cans-1.0.2.jar",
@@ -1367,10 +1367,10 @@
     "modId": "snuffles",
     "version": "1.0.7"
   },
-  "society_trading-0.2.jar": {
-    "jarName": "society_trading-0.2.jar",
+  "society_trading-0.3.jar": {
+    "jarName": "society_trading-0.3.jar",
     "modId": "society_trading",
-    "version": "0.2"
+    "version": "0.3"
   },
   "sodiumdynamiclights-forge-1.0.10-1.20.1.jar": {
     "jarName": "sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
@@ -1387,20 +1387,25 @@
     "modId": "solonion",
     "version": "1.4.5"
   },
-  "sophisticatedbackpacks-1.20.1-3.24.2.1339.jar": {
-    "jarName": "sophisticatedbackpacks-1.20.1-3.24.2.1339.jar",
+  "sophisticatedbackpacks-1.20.1-3.24.7.1376.jar": {
+    "jarName": "sophisticatedbackpacks-1.20.1-3.24.7.1376.jar",
     "modId": "sophisticatedbackpacks",
-    "version": "3.24.2.1339"
+    "version": "3.24.7.1376"
   },
-  "sophisticatedcore-1.20.1-1.2.86.1132.jar": {
-    "jarName": "sophisticatedcore-1.20.1-1.2.86.1132.jar",
+  "sophisticatedcore-1.20.1-1.2.94.1169.jar": {
+    "jarName": "sophisticatedcore-1.20.1-1.2.94.1169.jar",
     "modId": "sophisticatedcore",
-    "version": "1.2.86.1132"
+    "version": "1.2.94.1169"
   },
-  "sophisticatedstorage-1.20.1-1.4.2.1271.jar": {
-    "jarName": "sophisticatedstorage-1.20.1-1.4.2.1271.jar",
+  "sophisticatedstorage-1.20.1-1.4.9.1317.jar": {
+    "jarName": "sophisticatedstorage-1.20.1-1.4.9.1317.jar",
     "modId": "sophisticatedstorage",
-    "version": "1.4.2.1271"
+    "version": "1.4.9.1317"
+  },
+  "sophisticatedstoragecreateintegration-1.20.1-0.1.13.48.jar": {
+    "jarName": "sophisticatedstoragecreateintegration-1.20.1-0.1.13.48.jar",
+    "modId": "sophisticatedstoragecreateintegration",
+    "version": "0.1.13.48"
   },
   "spark-1.10.53-forge.jar": {
     "jarName": "spark-1.10.53-forge.jar",

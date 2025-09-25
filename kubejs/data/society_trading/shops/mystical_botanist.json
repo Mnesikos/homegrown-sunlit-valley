@@ -4,7 +4,7 @@
   "texture": "botania:textures/block/mana_void",
   "stage_required": "mystical_botanist_unlocked",
   "villager_profession": "botanist",
-  "jei_catalyst": { "item":"beautify:botanist_workbench" },
+  "jei_catalyst": { "item": "beautify:botanist_workbench" },
   "trades": [
     {
       "offer": {
@@ -17,6 +17,24 @@
       },
       "numismatics_cost": 16777216,
       "trade_id": "beautify:cartographer_prismatic_coin_for_ancient_coin"
+    },
+    {
+      "offer": {
+        "item": "society:ribbit_hut",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:neptunium_coin",
+        "count": 1
+      },
+      "second_request": {
+        "item": "pamhc2trees:starfruititem",
+        "count": 16
+      },
+      "stage_required": "community_center_complete",
+      "numismatics_cost": 32768,
+      "unlock_description": "jei.society_trading.community_center_complete",
+      "trade_id": "botanist_ribbit_hut"
     },
     {
       "offer": {

@@ -62,6 +62,7 @@ const setRibbitHutBlocks = (level, block, player, server) => {
     });
   });
 };
+
 BlockEvents.placed("society:ribbit_hut", (e) => {
   const { player, level, block, server } = e;
   let space = scanArea(level, block);
@@ -79,7 +80,7 @@ BlockEvents.leftClicked(["society:ribbit_hut_block"], (e) => {
 });
 
 BlockEvents.broken(["society:ribbit_hut"], (e) => {
-  const { level, block } = e;
+  const { level, player, block } = e;
   let centerBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
   for (let pos of BlockPos.betweenClosed(
     new BlockPos(centerBlock.x - 1, centerBlock.y, centerBlock.z - 1),
@@ -87,4 +88,5 @@ BlockEvents.broken(["society:ribbit_hut"], (e) => {
   )) {
     level.getBlock(pos).set("minecraft:air");
   }
+  player.give("society:ribbit_hut")
 });

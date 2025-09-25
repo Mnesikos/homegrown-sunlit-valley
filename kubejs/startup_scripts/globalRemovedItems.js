@@ -1,4 +1,5 @@
 global.removedItems = [
+  "windswept:gingerbread_cookie",
   "windswept:frozen_flesh",
   "whimsy_deco:gatcha_capsule",
   "vinery:red_taiga_grapejuice",
@@ -249,7 +250,6 @@ global.removedItems = [
   "refinedstorage:storage_housing",
   "refinedstorage:wireless_fluid_grid",
   "refinedstorage:wrench",
-  "whimsy_deco:paw_carpet_entity",
   "tanukidecor:mayoral_mini_figure",
   "tanukidecor:developer_mini_figure",
   "perfectplushies:red_fox_plushie",

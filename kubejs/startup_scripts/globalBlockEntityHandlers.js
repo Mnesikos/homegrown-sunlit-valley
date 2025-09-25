@@ -433,6 +433,13 @@ global.handleBETick = (entity, recipes, stageCount, halveTime, forced) => {
   }
 };
 
+global.isSameQuality = (itemA, itemB) => {
+  if (!itemA.nbt && !itemB.nbt) return true;
+  if ((itemA.nbt && !itemB.nbt) || (!itemA.nbt && itemB.nbt)) return false;
+  if (!itemA.nbt.quality_food && !itemB.nbt.quality_food) return false;
+  return (itemA.nbt.quality_food.quality === itemB.nbt.quality_food.quality);
+};
+
 global.inventoryHasRoom = (block, item) => {
   let belowItem;
   if (block.inventory && item && item !== Item.of("minecraft:air")) {
@@ -440,6 +447,7 @@ global.inventoryHasRoom = (block, item) => {
       belowItem = block.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
+        global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
           block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {
@@ -461,7 +469,6 @@ global.inventoryBelowHasRoom = (level, block, item) => {
   const belowBlock = level.getBlock(belowPos.x, belowPos.y, belowPos.z);
   return global.inventoryHasRoom(belowBlock, item);
 };
-
 /**
  * @returns result code:
  * -1 - Failure - Operation attempted but couldn't be inserted
@@ -475,6 +482,7 @@ global.insertInto = (block, item) => {
       belowItem = block.inventory.getStackInSlot(j);
       if (
         belowItem.id === Item.of(item).id &&
+        global.isSameQuality(belowItem, Item.of(item)) &&
         belowItem.count + Item.of(item).count <
           block.inventory.getSlotLimit(j) / (64 / block.inventory.getStackInSlot(j).maxStackSize)
       ) {

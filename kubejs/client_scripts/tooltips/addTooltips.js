@@ -378,6 +378,7 @@ ItemEvents.tooltip((tooltip) => {
     "numismatics_utils:bank_meter",
     Text.gray("Shows balance in Bank Terminal when worn in curio slot")
   );
+  tooltip.add("society:bank_meter", Text.red("Removed! Craft into new one!"));
   tooltip.add(
     "society:fish_radar",
     Text.gray("Shows catchable fish at the current time and location")
@@ -1012,6 +1013,8 @@ ItemEvents.tooltip((tooltip) => {
     "Mana Clock",
     "Mana Milker",
     "All Sprinklers",
+    "Growth Obelisk",
+    "Ribbit Hut",
   ];
   // Translocators
   tooltip.addAdvanced("society:magnifying_glass", (item, advanced, text) => {

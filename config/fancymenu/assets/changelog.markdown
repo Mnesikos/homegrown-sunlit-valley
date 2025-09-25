@@ -1,50 +1,64 @@
 ^^^
 ## Whimsical Trading
-### v3.3.0-PLAYTEST-1
+### v3.3.0
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
-- Added Windswept - Biome mod focusing on temperate and colder biomes
+- Added Ribbit Hut, a giant block that harvests crops around it using Ribbit Magic
 - Added Whimsy Deco - furniture mod featuring art by Nitbe!
 - Added Growth Obelisk - a block that uses Spark-Gro to grow crops in a 7x7 daily
+- Added Windswept - Biome mod focusing on temperate and colder biomes
 - Added Spark-Gro and Crushed Sparkstone
 - Added Garden Pots and Tilled Sand 
 - Added Deluxe Hydrating Fertilizer
 - Added Portable Bank Terminal
 - Added Smart Shipping Bin functionality: Deposits directly into bank account
-- Added Cacti, Sugar Cane, Rice, and Grapevine Stems and Lattices to the daily cycle
+- Added Cacti, Sugar Cane, Rice, and Grapevine Stems and Lattices to the daily cycle. The first three will still grow without farmland until 4.0 for backwards compat.
 - Added Supply Crates to Skull Cavern that rarely spawn and drop rare seeds, materials, and other useful items
+- Added Recall Potions that teleport you to your spawn
 - Added Turnips to market
 - Added Broccoli and Zucchini crops unique to crates in Skull Cavern
 - Added functionality to Extractinator to process entire stack with shift + right click
 - Added values to completed fossils
+- Added Frostbiter as Husbandry Animal
 - Added unique Ribbit Fisher trades
 - Added Carpenter shop available via phone
 - Added Bookseller shop available via phone at the end of every season
 - Added Mana Crab Trap Bait
 - Added Overflow Tokens - adds money to coin leaderboard permanently to bypass bank account limit
+- Added Skill Books: Universal Methods of Farming& The Spark Also Rises
 - Added Kata dolls
 - Added additional roll of Jelly to Wooden Pollution skill
 - Added Sunlit Pearl to Treasure chest loot pool
 - Added animal feed milling to oat
 - Added Create milling recipes for mincer recipes
 - Added Crushed Raw Bismuth
+- Added Mechanic Slime
+- Added Fossilized Clam
+- Added Elder Feather Forage to turkey
 - Added washing byproducts to crushed ore that don't have them
 - Added ore doubling using recycling machines
+- Increased FTB force Chunks to 15 and soft removed fueled chunk loaders
 - Increased sell values of all wines
+- Increased chance of Nether Jelly from nether fishing treasure
 - Increased value mult of cooking: Cooking Pot: 1.5 -> 2, Caking Station: 4-> 5, Crafting Table: 1.2 -> 1.5, Stove, Roaster, Mixing Bowl: 2 -> 3
 - Increased sell values of grapes 4 ->20 (24 for nether)
 - Increased sell value of Sweet Berries 2 -> 4
 - Increased sell value of Ancient Fruit: 96 -> 128
 - Increased sell value of Maple Syrup 64 -> 192
-- Increased the processing time for most Tapper recourses 
+- Increased the processing time for most Tapper resources 
 - Increased price of Animal Feed 8 -> 16
 - Increased Frozen Treasure skill chance 20% -> 45%
 - Increased chance of Silver Ore in Skull Cavern
-- Increased affection requirement for Biomancer 1-> 5
+- Increased affection requirement for Biomancer 1 -> 5
+- Increased Mana Feed boost in troughs 20 -> 40
+- Increased Sparkstone max drop rate from fortune 5 -> 8
+- Magic Shears now shear sheep literally
 - Market now sells products based on current season (only applies to new worlds/players)
 - Greenhouse Glass blocks now easily breakable with Scribe
 - Reworked wine crafting: Most wines now have simplified recipes of 3 of the same fruit. Unified all grape juice to be red or white no matter the variety.
+- Reworked Boiler Room rewards: Blacksmith's Bundle gives Extractinator (formerly furniture boxes), Mineralogist Bundle gives Relic Trove (formerly Extractinator)
+- Reworked Husbandy Bundle reward: Replaced Feeding Trough chance with Artisan Cheese Press
 - Reworked Steadfast skill: Now gives 20% chance to heal a heart when hurt
 - Reduced check radius for butterfly/moth checking (Effectively increases moth pollen and butterfly amber rates)
 - Reduced amount of aged items requested by fish ponds in most cases by half
@@ -59,10 +73,9 @@
 - Removed Fortune's impact on crops
 - Removed Experience food diversity effect
 - Removed Slime Incubator from Shepherd
+- Renamed the deluxe burger to "The Emma Burger"
 - Renamed Pine wood set to Alpine
 - Renamed Alpine Salt to Salt
-- Reworked Boiler Room rewards: Blacksmith's Bundle gives Extractrinator (formerly furniture boxes), Mineralogist Bundle gives Relic Trove (formerly Extractinator)
-- Reworked Husbandy Bundle reward: Replaced Feeding Trough chance with Artisan Cheese Press
 - Nether Jelly is now fire resistant
 - Fixed Nether Jelly dropping far too often 
 - Fixed Enkephalin chances not matching tooltip
@@ -71,9 +84,15 @@
 - Fixed removed items showing up in EMI
 - Fixed Birt Egg being used as representation of egg tag
 - Fixed Artisan Hoppers voiding items with stack size less than 64
+- Fixed Artisan Hoppers and other machines voiding items with mismatched nbt they attempt to merge
 - Fixed hammers not regenerating natural Skull Cavern blocks
 - Fixed Sewing Table crash
 - Fixed Datura flowers not dropping from Bouquet Bags
 - Fixed Glance crushing recipe not being disabled
 - Fixed Bullfish Jobs not working
 - Fixed Orange Pudding having a non-cooking pot recipe
+- Fixed Mammutiation not being milkable
+- Fixed Let's Do - Meadow advancements being unintentionally deleted
+- Fixed Yerba Mate dropping too little from harvest
+- Fixed Blaze Banker accidental destruction with proper checks
+- Fixed Raw Meat Pizza being uncraftable

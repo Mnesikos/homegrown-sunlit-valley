@@ -15,8 +15,11 @@
     {
       "category": "ali:fishing_loot"
     },
-        {
+    {
       "category": "ali:trade_loot"
+    },
+    {
+      "category": "farmingforblockheads:market"
     },
     {
       "category": "trading_floor:potential_villager_trade"

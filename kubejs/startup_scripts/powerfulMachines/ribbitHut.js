@@ -2,20 +2,61 @@ console.info("[SOCIETY] ribbitHut.js loaded");
 
 const Block = Java.loadClass("net.minecraft.world.level.block.Block");
 
-global.runRibbitHut = (tickEvent) => {
+global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   const { level, block, inventory } = tickEvent;
-  let centerBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
-  const { x, y, z } = centerBlock;
+  const { x, y, z } = pos;
+  console.log("running ribbit harvest");
   const server = level.server;
-  let attachedPlayer;
-  let dayTime = level.dayTime();
-  let morningModulo = dayTime % 24000;
-  const goldenClockProgTime = 2000;
-  let scannedBlock;
   let blockState;
   let scannedMCBlock;
   let drops;
   let quality;
+  let scannedBlock = level.getBlock(pos);
+  server.scheduleInTicks(delay, () => {
+    if (scannedBlock.hasTag("minecraft:crops")) {
+      blockState = level.getBlockState(pos);
+      scannedMCBlock = blockState.block;
+      if (scannedMCBlock.isMaxAge(blockState)) {
+        drops = Block.getDrops(blockState, level, pos, null, player, Item.of("minecraft:hoe"));
+        drops.forEach((drop) => {
+          quality = global.getCropQuality(scannedBlock);
+          // 4.0 TODO: remove effects:[] from this data
+          if (quality > 0) {
+            drop.nbt = `{quality_food:{effects:[],quality:${quality}}}`;
+          }
+          if (global.inventoryHasRoom(block, drop)) {
+            global.insertInto(block, drop);
+            scannedBlock.set(scannedBlock.id, { age: "0" });
+            server.runCommandSilent(
+              `playsound minecraft:block.grass.break block @a ${x} ${y} ${z} 0.5`
+            );
+            level.spawnParticles(
+              "ribbits:spell",
+              true,
+              x + 0.5,
+              y + 0.5,
+              z + 0.5,
+              0,
+              0.1,
+              0,
+              1,
+              0.0001
+            );
+          }
+        });
+      }
+    }
+  });
+};
+global.runRibbitHut = (tickEvent) => {
+  const { level, block } = tickEvent;
+  let centerBlock = global.getOpposite(block.getProperties().get("facing"), block.getPos());
+  const { x, y, z } = centerBlock;
+  let scannedBlocks = 0;
+  let attachedPlayer;
+  let dayTime = level.dayTime();
+  let morningModulo = dayTime % 24000;
+  const goldenClockProgTime = 2000;
   if (
     morningModulo >= goldenClockProgTime &&
     morningModulo < goldenClockProgTime + artMachineTickRate
@@ -26,42 +67,16 @@ global.runRibbitHut = (tickEvent) => {
       }
     });
     if (attachedPlayer) {
+      level.server.runCommandSilent(
+        `playsound ribbits:entity.ribbit.ambient block @a ${x} ${y} ${z}`
+      );
       for (let pos of BlockPos.betweenClosed(new BlockPos(x - 6, y - 1, z - 6), [
         x + 6,
         y + 1,
         z + 6,
       ])) {
-        scannedBlock = level.getBlock(pos);
-        level.spawnParticles(
-          "ribbits:spell",
-          true,
-          pos.x + 0.5,
-          pos.y + 0.5,
-          pos.z + 0.5,
-          0,
-          0,
-          0,
-          0,
-          0.0001
-        );
-        if (scannedBlock.hasTag("minecraft:crops")) {
-          blockState = level.getBlockState(pos);
-          scannedMCBlock = blockState.block;
-          if (scannedMCBlock.isMaxAge(blockState)) {
-            drops = Block.getDrops(blockState, level, pos, null, null, Item.of("minecraft:hoe"));
-            drops.forEach((drop) => {
-              quality = global.getCropQuality(scannedBlock);
-              // 4.0 TODO: remove effects:[] from this data
-              if (quality > 0) {
-                drop.nbt = `{quality_food:{effects:[],quality:${quality}}}`;
-              }
-              if (global.inventoryHasRoom(block, drop)) {
-                global.insertInto(block, drop);
-              }
-            });
-            scannedBlock.set(scannedBlock.id, { age: "0" });
-          }
-        }
+        global.handleRibbitHarvest(tickEvent, pos.immutable(), attachedPlayer, scannedBlocks * 2);
+        scannedBlocks++;
       }
     }
   }
@@ -77,9 +92,12 @@ StartupEvents.registry("block", (e) => {
       item.tooltip(Text.gray("Creates a hut in a 3x3x3 space centered around it."));
       item.tooltip(Text.gray("Ribbits will collect crops at 8am every morning."));
       item.tooltip(Text.gray("Uses the skills of player that places it."));
-      item.tooltip(Text.green(`Area: 19x3x19`));
+      item.tooltip(Text.green(`Area: 13x3x13`));
       item.modelJson({
-        parent: "society:item/ribbit_hut_item ",
+        parent: "minecraft:item/generated",
+        textures: {
+          layer0: "society:item/ribbit_hut_item",
+        },
       });
     })
     .lightLevel(1)
@@ -93,7 +111,7 @@ StartupEvents.registry("block", (e) => {
     .soundType("stone")
     .model("society:block/ribbit_hut/bottom_front_center")
     .blockEntity((blockInfo) => {
-      blockInfo.inventory(9, 2);
+      blockInfo.inventory(9, 3);
       blockInfo.initialData({ owner: "-1" });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.runRibbitHut(entity);

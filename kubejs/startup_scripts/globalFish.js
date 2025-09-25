@@ -304,7 +304,10 @@ global.handleFishExtraction = (block, player, server, item) => {
       quality > 0 ? `{quality_food:{quality:${quality}}}` : null
     );
   } else {
-    result = Item.of(`${resultCount}x ${item}`);
+    result = Item.of(
+      `${resultCount}x ${item}`,
+      quality > 0 ? `{quality_food:{quality:${quality}}}` : null
+    );
   }
   if (result) {
     block.set(block.id, {
@@ -457,9 +460,17 @@ global.handleFishPondTick = (tickEvent) => {
     });
   }
   if (morningModulo >= fishPondProgTime && morningModulo < fishPondProgTime + fishPondTickRate) {
-    if (type !== "0" && valid === "true") {      let nbt = block.getEntityData();
-      nbt.merge({ data: { type: type, quest_id: quest_id, population: population, max_population: max_population } });
-      block.setEntityData(nbt)
+    if (type !== "0" && valid === "true") {
+      let nbt = block.getEntityData();
+      nbt.merge({
+        data: {
+          type: type,
+          quest_id: quest_id,
+          population: population,
+          max_population: max_population,
+        },
+      });
+      block.setEntityData(nbt);
       if (Number(population) > 1) {
         level.spawnParticles(
           "supplementaries:suds",
