@@ -141,7 +141,7 @@ ItemEvents.tooltip((tooltip) => {
       tooltip: "Was once used to summon a beast",
     },
     { item: "society:spider_silk", tooltip: "Meticulously textured by a Nerdy Spider" },
-    { item: "society:toy_train", tooltip: "« Limited to 2 passengers : ants »"},
+    { item: "society:toy_train", tooltip: "« Limited to 2 passengers : ants »" },
     {
       item: "society:perfect_cherry",
       tooltip: "It wants you to eat it",
@@ -230,6 +230,14 @@ ItemEvents.tooltip((tooltip) => {
       item: "society:wuthering_logs",
       description: "Trees have a 15% chance to drop Fire Logs when chopped.",
     },
+    {
+      item: "society:the_spark_also_rises",
+      description: "Minining any ore drops Sparkstone.",
+    },
+    {
+      item: "society:universal_methods_of_farming",
+      description: "The Market sells all basic seeds in every season.",
+    },
   ].forEach((book) => {
     tooltip.add(book.item, Text.gray(book.description));
     tooltip.add(book.item, Text.green("Right click to learn this skill!"));
@@ -250,6 +258,7 @@ ItemEvents.tooltip((tooltip) => {
       text.add(4, Text.darkAqua("Needs a 3x4 of water behind pond"));
     }
   });
+  tooltip.add("simplerecall:recall_potion", Text.gray("Teleports you to your spawn location"));
   tooltip.add(
     [
       "whimsy_deco:phone",
@@ -611,9 +620,9 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_stairs",
       "moreminecarts:greenhouse_glass_slab",
     ],
-    Text.gray("The Crop directly underneath grows in any season")
+    Text.gray("Grows the first crop underneath in any season")
   );
-    tooltip.add(
+  tooltip.add(
     [
       "moreminecarts:chiseled_organic_glass",
       "moreminecarts:chiseled_organic_glass_pane",
@@ -621,8 +630,8 @@ ItemEvents.tooltip((tooltip) => {
       "moreminecarts:greenhouse_glass_slab",
     ],
     Text.green("Range: 16 blocks")
-  );  
- 
+  );
+
   tooltip.add("vinery:apple_tree_sapling", "Fruit Season:");
   tooltip.add("vinery:apple_tree_sapling", Text.gold(" Autumn"));
 

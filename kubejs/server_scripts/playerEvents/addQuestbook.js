@@ -2,6 +2,9 @@ console.info("[SOCIETY] addQuestbook.js loaded");
 
 PlayerEvents.loggedIn((e) => {
   const { player } = e;
+  if (player.stages.has("starting_items") || !player.stages.has("starting_items_up")) {
+    player.give("society:univeral_methods_of_farming");
+  }
   if (!player.stages.has("starting_items") || !player.stages.has("starting_items_up")) {
     player.stages.add("starting_items_up");
     player.give("ftbquests:book");

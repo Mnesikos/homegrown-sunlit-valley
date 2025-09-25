@@ -20,6 +20,7 @@ const reseedableCrops = [
   "farm_and_charm:onion",
   "veggiesdelight:sweet_potato",
   "vintagedelight:peanut",
+  "veggiesdelight:garlic_crop"
 ];
 BlockEvents.rightClicked((e) => {
   const { block, player, server, hand, item, level } = e;

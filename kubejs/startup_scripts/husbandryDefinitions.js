@@ -392,6 +392,13 @@ global.husbandryForagingDefinitions = [
         minHearts: 4,
         hasQuality: true,
       },
+      {
+        item: "windswept:elder_feather",
+        countMult: 1,
+        chance: 0.2,
+        minHearts: 8,
+        hasQuality: true,
+      }
     ],
   },
   {
@@ -439,6 +446,24 @@ global.husbandryForagingDefinitions = [
         chance: 1,
         minHearts: 4,
         hasQuality: true,
+      },
+    ],
+  },
+  {
+    animal: "windswept:frostbiter",
+    forages: [
+      {
+        item: "windswept:frozen_branch",
+        countMult: 1,
+        chance: 0.15,
+        minHearts: 5,
+        hasQuality: true,
+      },
+      {
+        item: "betterarcheology:artifact_shards",
+        countMult: 4,
+        chance: 1,
+        minHearts: 10,
       },
     ],
   },
@@ -500,6 +525,11 @@ global.husbandryMilkingDefinitions = [
     animal: "species:mammutilation",
     cooldown: 2,
     milk: { sm: "species:ichor_bottle", lg: "species:ichor_bottle" },
+  },
+  {
+    animal: "windswept:frostbiter",
+    cooldown: 1,
+    milk: cowMilk,
   },
 ];
 

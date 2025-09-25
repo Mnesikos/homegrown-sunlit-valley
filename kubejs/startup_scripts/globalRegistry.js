@@ -1148,7 +1148,7 @@ const craftingTableRecipes = [
   { item: "windswept:spicy_snow_cone", value: 64 },
   { item: "windswept:sweet_snow_cone", value: 34 },
   { item: "windswept:mutton_pie", value: 116 },
-  { item: "windswept:minty_snow_cone", value: 27 }
+  { item: "windswept:minty_snow_cone", value: 27 },
 ];
 craftingTableRecipes.forEach((recipe) => {
   global.cooking.push({
@@ -1658,6 +1658,8 @@ global.fish.forEach((fish) => {
 });
 
 global.miscAdventurer = [
+  { item: "windswept:elder_feather", value: 128 },
+  { item: "windswept:frozen_branch", value: 200 },
   { item: "crittersandcompanions:silk", value: 128 },
   { item: "society:river_jelly", value: 128 },
   { item: "society:ocean_jelly", value: 256 },

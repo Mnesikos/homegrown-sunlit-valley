@@ -1,4 +1,6 @@
 global.removedItems = [
+  "windswept:frozen_flesh",
+  "whimsy_deco:gatcha_capsule",
   "vinery:red_taiga_grapejuice",
   "vinery:red_jungle_grapejuice",
   "vinery:red_savanna_grapejuice",

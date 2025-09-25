@@ -21,7 +21,7 @@ PlayerEvents.tick((e) => {
     if (timeModulo >= 20000) {
       if (timeModulo <= 20200) {
         server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",shakeRandom:0.8,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60} 600 I should really go home...`
+          `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60} 600 I should really go home...`
         );
       }
       server.runCommandSilent(

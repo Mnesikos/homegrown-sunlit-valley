@@ -15,6 +15,9 @@
     {
       "category": "ali:fishing_loot"
     },
+        {
+      "category": "ali:trade_loot"
+    },
     {
       "category": "trading_floor:potential_villager_trade"
     },

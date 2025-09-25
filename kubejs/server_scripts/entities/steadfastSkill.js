@@ -1,6 +1,20 @@
+console.info("[SOCIETY] steadFastSkill.js loaded");
+
+const steadfastThrottle = ((temp) => (entity, tick, identifier) => {
+  const { age, uuid } = entity;
+  const key = `${uuid}${identifier}`;
+  const now = temp[key];
+  if (!now || age - now >= tick) {
+    temp[key] = age;
+    return false;
+  }
+  return true;
+})({});
+
 EntityEvents.hurt((e) => {
   const { server, level, entity } = e;
-  if (entity.isPlayer() && Math.random() < 0.2 && entity.stages.has("steadfast")) {
+  if (!entity.isPlayer() || steadfastThrottle(entity, 20, "steadfast_throttle")) return
+  if (entity.isPlayer() && Math.random() < 0.9 && entity.stages.has("steadfast")) {
     entity.heal(2);
     level.spawnParticles(
       "minecraft:heart",

@@ -262,6 +262,24 @@
       "trade_id": "bookseller_banana_karenina_for_sun"
     },
     {
+      "offer": { "item": "society:the_spark_also_rises", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 20
+      },
+      "numismatics_cost": 81920,
+      "trade_id": "bookseller_the_spark_also_rises"
+    },
+    {
+      "offer": { "item": "society:universal_methods_of_farming", "count": 1 },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 10
+      },
+      "numismatics_cost": 40960,
+      "trade_id": "bookseller_universal_methods_of_farming"
+    },
+    {
       "offer": {
         "item": "society:slouching_towards_artistry",
         "count": 1

@@ -107,6 +107,18 @@
 			}
 		},
 		{
+			"from": [-11.5, 0, -11],
+			"to": [27.5, 0, 27],
+			"rotation": {"angle": 0, "axis": "x", "origin": [-14.5, 2, 23]},
+			"faces": {
+				"north": {"uv": [5.25, 0, 9.75, 0], "texture": "#4"},
+				"east": {"uv": [0, 0, 9.5, 0], "texture": "#4"},
+				"south": {"uv": [0, 0, 4.5, 0], "texture": "#4"},
+				"west": {"uv": [0, 0, 9.5, 0], "texture": "#4"},
+				"down": {"uv": [0, 9.5, 4.5, 0], "texture": "#4"}
+			}
+		},
+		{
 			"from": [26.88604, 22, -5.98528],
 			"to": [26.88604, 27, 0.01472],
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [26.88604, 24.5, -0.98528]},
@@ -320,7 +332,7 @@
 			"name": "bone",
 			"origin": [15, 11.75, -34],
 			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
 		},
 		{
 			"name": "main",
@@ -335,15 +347,15 @@
 				}
 			]
 		},
-		8,
 		9,
 		10,
 		11,
+		12,
 		{
 			"name": "main2",
 			"origin": [-1, 30, -20],
 			"color": 0,
-			"children": [12]
+			"children": [13]
 		},
 		{
 			"name": "main3",
@@ -396,13 +408,13 @@
 					"name": "umbrella",
 					"origin": [14, 0.4, -29.1],
 					"color": 0,
-					"children": [13, 14, 15]
+					"children": [14, 15, 16]
 				},
 				{
 					"name": "umbrella2",
 					"origin": [14, 0.4, -29.1],
 					"color": 0,
-					"children": [16, 17, 18]
+					"children": [17, 18, 19]
 				}
 			]
 		},
@@ -416,13 +428,13 @@
 					"name": "umbrella5",
 					"origin": [-29, 0.4, 11.9],
 					"color": 0,
-					"children": [19, 20]
+					"children": [20, 21]
 				},
 				{
 					"name": "umbrella4",
 					"origin": [-29, 0.4, 11.9],
 					"color": 0,
-					"children": [21, 22, 23]
+					"children": [22, 23, 24]
 				}
 			]
 		}

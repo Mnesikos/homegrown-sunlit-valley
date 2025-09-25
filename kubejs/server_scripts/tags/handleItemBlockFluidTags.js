@@ -303,6 +303,15 @@ ServerEvents.tags("item", (e) => {
     e.remove("quark:seed_pouch_holdable", crop);
   });
   [
+    "etcetera:nether_bismuth_ore",
+    "society:sparkstone_ore",
+    "society:deepslate_sparkstone_ore",
+    "society:iridium_ore",
+    "society:deepslate_iridium_ore",
+  ].forEach((ore) => {
+    e.add("forge:ores", ore);
+  });
+  [
     "society:boysenberry",
     "society:salmonberry",
     "society:crystalberry",

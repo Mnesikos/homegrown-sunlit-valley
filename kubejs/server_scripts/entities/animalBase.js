@@ -269,10 +269,40 @@ const handleFeed = (data, day, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
+const handleSheepMagicShears = (e) => {
+  const { target, level, server } = e;
+  if (target.readyForShearing()) {
+    target.setSheared(true);
+    let woolItem = Item.of(target.getColor().getName() + "_wool");
+    let i = Math.ceil(Math.random() * 4);
+    for (let j = 0; j < i; j++) {
+      let wool = level.createEntity("minecraft:item");
 
+      wool.x = target.x + rnd(0, 0.5);
+      wool.y = target.y + 0.5;
+      wool.z = target.z + rnd(0, 0.5);
+      wool.item = Item.of(woolItem);
+      wool.spawn();
+      wool.setDeltaMovement(
+        wool
+          .getDeltaMovement()
+          .add(
+            (Math.random() - Math.random()) * 0.1,
+            Math.random() * 0.05,
+            (Math.random() - Math.random()) * 0.1
+          )
+      );
+    }
+
+    server.runCommandSilent(
+      `playsound minecraft:entity.sheep.shear block @a ${target.x} ${target.y} ${target.z}`
+    );
+  }
+};
 const handleMagicHarvest = (name, data, e) => {
   const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
+  if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";
@@ -487,7 +517,9 @@ ItemEvents.entityInteracted((e) => {
         );
         global.addItemCooldown(player, item, 4);
       }
-      if (item === "society:magic_shears") handleMagicHarvest(name, data, e);
+      if (item === "society:magic_shears") {
+        handleMagicHarvest(name, data, e);
+      }
       if (affection > 1075) {
         // Cap affection at 1075
         data.affection = 1075;

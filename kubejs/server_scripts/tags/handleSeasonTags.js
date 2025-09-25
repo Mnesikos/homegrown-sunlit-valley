@@ -130,7 +130,7 @@ const springCrops = [
   "veggiesdelight:cauliflower_seeds",
   "veggiesdelight:cauliflower_crop",
   "veggiesdelight:garlic_crop",
-  "society:garlic_seed",
+  "veggiesdelight:garlic_seed",
   "veggiesdelight:garlic",
   "society:potato",
   "society:potato_seed",

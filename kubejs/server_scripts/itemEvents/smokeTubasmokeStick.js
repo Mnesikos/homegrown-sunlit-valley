@@ -32,7 +32,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
       `execute in ${level.dimension} run summon lightning_bolt ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",shakeRandom:0.8,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 180 Smoking kills...`
+      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 180 Smoking kills...`
     );
   }
   if (Math.random() < 0.01 && !item.nbt) {
@@ -142,7 +142,7 @@ ItemEvents.rightClicked("society:tubasmoke_stick", (e) => {
     server.scheduleInTicks(800, () => {
       server.runCommandSilent(`effect give ${player.username} minecraft:wither 40 3`);
       server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",shakeRandom:0.8,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 180 Smoking kills...`
+        `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",charShakeRandom:0.2,background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 180 Smoking kills...`
       );
     });
   }

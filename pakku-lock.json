@@ -1544,47 +1544,6 @@
             ]
         },
         {
-            "pakku_id": "5uA9c4VHGBXz4E96",
-            "pakku_links": [
-                "enYb9sPrtN1zNFex"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "chloride"
-            },
-            "name": {
-                "curseforge": "Chloride (Embeddium++/Sodium++)"
-            },
-            "id": {
-                "curseforge": "931925"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "chloride-FORGE-mc1.20.1-v1.7.2.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6615/986/chloride-FORGE-mc1.20.1-v1.7.2.jar",
-                    "id": "6615986",
-                    "parent_id": "931925",
-                    "hashes": {
-                        "sha1": "d04b7bcd14a210a670877ff3f425fbf760dadda3",
-                        "md5": "a50f626acc0ade9c250df4cd16ec960d"
-                    },
-                    "required_dependencies": [
-                        "908741"
-                    ],
-                    "size": 944500,
-                    "date_published": "2025-06-05T01:33:47.447Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "kanBRUq8DCOGwGcr",
             "type": "MOD",
             "slug": {
@@ -7045,6 +7004,43 @@
             ]
         },
         {
+            "pakku_id": "fpVdkjVE4gLaDIMx",
+            "type": "MOD",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "loot-journal"
+            },
+            "name": {
+                "curseforge": "Loot Journal (Forge)"
+            },
+            "id": {
+                "curseforge": "700723"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Loot Journal-forge-1.20.1-5.0.1.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6998/294/Loot Journal-forge-1.20.1-5.0.1.jar",
+                    "id": "6998294",
+                    "parent_id": "700723",
+                    "hashes": {
+                        "sha1": "8e7ccadf53cd18cd092b58f72f781bed7211bf04",
+                        "md5": "d39fc7984111da2618a6156aa0018e9c"
+                    },
+                    "required_dependencies": [],
+                    "size": 42433,
+                    "date_published": "2025-09-15T01:55:33.680Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "GFwaZJsaLc3oiY9P",
             "type": "MOD",
             "slug": {
@@ -8563,44 +8559,6 @@
             ]
         },
         {
-            "pakku_id": "lsKw8zxNFxNR2jpc",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "pick-up-notifier"
-            },
-            "name": {
-                "curseforge": "Pick Up Notifier [Forge & Fabric]"
-            },
-            "id": {
-                "curseforge": "351441"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "PickUpNotifier-v8.0.0-1.20.1-Forge.jar",
-                    "mc_versions": [
-                        "1.20.1"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4613/538/PickUpNotifier-v8.0.0-1.20.1-Forge.jar",
-                    "id": "4613538",
-                    "parent_id": "351441",
-                    "hashes": {
-                        "sha1": "378cc9730d1f11cd4c50add96263baccacdb4942",
-                        "md5": "c1004011e796ef62010dcb03e9597cdc"
-                    },
-                    "required_dependencies": [
-                        "495476"
-                    ],
-                    "size": 102164,
-                    "date_published": "2023-06-28T09:11:56.270Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Gtu34NPDq27uGOTK",
             "type": "MOD",
             "slug": {
@@ -9699,48 +9657,6 @@
             ]
         },
         {
-            "pakku_id": "VOJyvlNjsbaRWQWM",
-            "pakku_links": [
-                "tIDRSBWtFXNQn3in"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "ryoamiclights"
-            },
-            "name": {
-                "curseforge": "RyoamicLights"
-            },
-            "id": {
-                "curseforge": "913587"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "RyoamicLights-forge-0.2.3+mc1.20.1.jar",
-                    "mc_versions": [
-                        "1.20.1",
-                        "1.20"
-                    ],
-                    "loaders": [
-                        "forge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/5353/333/RyoamicLights-forge-0.2.3+mc1.20.1.jar",
-                    "id": "5353333",
-                    "parent_id": "913587",
-                    "hashes": {
-                        "sha1": "1850d6b47b39ed439c8e9f85caf6cbe88df817c3",
-                        "md5": "f90749d92767a42c3cf8df3d95cc1067"
-                    },
-                    "required_dependencies": [
-                        "684718"
-                    ],
-                    "size": 160055,
-                    "date_published": "2024-05-18T15:03:19.660Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "Cub2qq5lbAsk5e9x",
             "type": "MOD",
             "slug": {
@@ -10583,6 +10499,87 @@
                     ],
                     "size": 84405,
                     "date_published": "2025-09-20T21:25:36.817Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "MbMf3sJEF33Dbbko",
+            "pakku_links": [
+                "NBYT8tUPNk76cGYx"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "dynamiclights-reforged"
+            },
+            "name": {
+                "curseforge": "Sodium/Embeddium Dynamic Lights"
+            },
+            "id": {
+                "curseforge": "551736"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6044/481/sodiumdynamiclights-forge-1.0.10-1.20.1.jar",
+                    "id": "6044481",
+                    "parent_id": "551736",
+                    "hashes": {
+                        "sha1": "d27524e85bed0f0af83c03be46f9ca3eb02a1be9",
+                        "md5": "687c18cefa558ca8101ef97914d9ba6b"
+                    },
+                    "required_dependencies": [
+                        "1103431"
+                    ],
+                    "size": 511601,
+                    "date_published": "2025-01-02T01:22:43.027Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NBYT8tUPNk76cGYx",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sodium-options-api"
+            },
+            "name": {
+                "curseforge": "Sodium/Embeddium Options API"
+            },
+            "id": {
+                "curseforge": "1103431"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6100/812/sodiumoptionsapi-forge-1.0.10-1.20.1.jar",
+                    "id": "6100812",
+                    "parent_id": "1103431",
+                    "hashes": {
+                        "sha1": "7529fbf938787ed13a251cbf40936f8c29ec4b6c",
+                        "md5": "75807590ae2648ecdeb855705868ce59"
+                    },
+                    "required_dependencies": [
+                        "908741"
+                    ],
+                    "size": 443978,
+                    "date_published": "2025-01-18T20:48:18.013Z"
                 }
             ]
         },
@@ -12525,26 +12522,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "whimsy_deco-0.1.jar",
+                    "file_name": "whimsy_deco-1.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7021/178/whimsy_deco-0.1.jar",
-                    "id": "7021178",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7029/363/whimsy_deco-1.0.jar",
+                    "id": "7029363",
                     "parent_id": "1351466",
                     "hashes": {
-                        "sha1": "5b492e8229d53dd9bc88b506115befe3f4614370",
-                        "md5": "4025c011e705c83e2804baa01d436b2d"
+                        "sha1": "dca8944740358e01a80a4645703a2bd5bf67a1c7",
+                        "md5": "ec03df34c1f8363b262c1cdb140fc1e0"
                     },
                     "required_dependencies": [
                         "388172"
                     ],
-                    "size": 367363,
-                    "date_published": "2025-09-22T02:16:44.443Z"
+                    "size": 538234,
+                    "date_published": "2025-09-24T15:22:22.810Z"
                 }
             ]
         },
