@@ -5,6 +5,8 @@
     }
   ],
   "lookup_history": [
+    "item:botania:cosmetic_cat_ears",
+    "item:society:large_milk",
     "item:society:bank_meter",
     "item:numismatics_utils:bank_meter",
     "item:croptania:floating_cropnolia",
@@ -1358,9 +1360,7 @@
     "item:botania:manasteel_ingot",
     "item:decorative_blocks:spruce_palisade",
     "item:nightlights:octopus_light_gray",
-    "item:botania:cosmetic_witch_pin",
-    "item:betterarcheology:artifact_shards",
-    "item:extra_gauges:counter_gauge"
+    "item:botania:cosmetic_witch_pin"
   ],
   "craft_history": [
     "whimsy_deco:classic_tile",
@@ -1407,8 +1407,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},

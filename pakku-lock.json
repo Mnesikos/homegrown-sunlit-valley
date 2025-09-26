@@ -5965,6 +5965,7 @@
         {
             "pakku_id": "uo1HWSI3S1gnTXV1",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "immediatelyfast"
             },
@@ -10442,26 +10443,26 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "society_trading-0.3.jar",
+                    "file_name": "society_trading-0.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "loaders": [
                         "forge"
                     ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7032/915/society_trading-0.3.jar",
-                    "id": "7032915",
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/7033/474/society_trading-0.4.jar",
+                    "id": "7033474",
                     "parent_id": "1347329",
                     "hashes": {
-                        "sha1": "d11f5abb34eb53a159c8f252a3550415e630a15d",
-                        "md5": "87e304586e452afa3fa282efa0ca5b4e"
+                        "sha1": "311eac9bedab11c24f461e0169870dcf064f2e01",
+                        "md5": "32f11e3f9a1e202b4ecfdd9ea1efa87a"
                     },
                     "required_dependencies": [
                         "283644"
                     ],
-                    "size": 84681,
-                    "date_published": "2025-09-25T18:27:24.233Z"
+                    "size": 84585,
+                    "date_published": "2025-09-25T21:52:26.953Z"
                 }
             ]
         },
@@ -11604,6 +11605,7 @@
                 "EMZjAi5TpykS4ZaM"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "tmrv"
             },
@@ -12745,6 +12747,7 @@
                 "OwNZGrIXXYraAig0"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "entity-model-features"
             },
@@ -12785,6 +12788,7 @@
         {
             "pakku_id": "OwNZGrIXXYraAig0",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "entity-texture-features-fabric"
             },

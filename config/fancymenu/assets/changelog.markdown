@@ -27,7 +27,7 @@
 - Added Mana Crab Trap Bait
 - Added Overflow Tokens - adds money to coin leaderboard permanently to bypass bank account limit
 - Added Skill Books: Universal Methods of Farming& The Spark Also Rises
-- Added Kata dolls
+- Added Kata and Geraldine dolls by Altessa
 - Added additional roll of Jelly to Wooden Pollution skill
 - Added Sunlit Pearl to Treasure chest loot pool
 - Added animal feed milling to oat
@@ -38,6 +38,7 @@
 - Added Elder Feather Forage to turkey
 - Added washing byproducts to crushed ore that don't have them
 - Added ore doubling using recycling machines
+- Added PT-BR translation for mod overrides by SrPalha
 - Increased FTB force Chunks to 15 and soft removed fueled chunk loaders
 - Increased sell values of all wines
 - Increased chance of Nether Jelly from nether fishing treasure
