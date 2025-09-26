@@ -1,4 +1,5 @@
 console.info("[SOCIETY] harvestHandling.js loaded");
+// Yeah this filename has a typo. Fixing it would be more annoying than leaving it.
 
 const deniedCrops = [
   "farmersdelight:tomatoes",
@@ -20,6 +21,7 @@ const reseedableCrops = [
   "farm_and_charm:onion",
   "veggiesdelight:sweet_potato",
   "vintagedelight:peanut",
+  "veggiesdelight:garlic_crop"
 ];
 BlockEvents.rightClicked((e) => {
   const { block, player, server, hand, item, level } = e;

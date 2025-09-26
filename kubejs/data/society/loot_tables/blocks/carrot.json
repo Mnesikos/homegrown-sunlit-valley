@@ -17,21 +17,13 @@
           }
         }
       ],
-      "entries": [
+      "functions": [
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:binomial_with_bonus_count",
-              "function": "minecraft:apply_bonus",
-              "parameters": {
-                "extra": 2,
-                "probability": 0.5714286
-              }
-            }
-          ],
-          "name": "minecraft:carrot"
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 1,
+            "max": 2
+          }
         }
       ],
       "rolls": 1.0

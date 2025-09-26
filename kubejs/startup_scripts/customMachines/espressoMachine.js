@@ -88,6 +88,9 @@ StartupEvents.registry("block", (event) => {
     })
     .randomTick((tick) => {
       global.handleBERandomTick(tick, true, 1);
+    })
+    .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
     }).blockstateJson = {
     multipart: [
       {

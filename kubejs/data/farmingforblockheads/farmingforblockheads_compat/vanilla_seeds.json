@@ -38,6 +38,13 @@
       }
     },
     {
+      "output": "veggiesdelight:turnip_seeds",
+      "payment": {
+        "item": "numismatics:spur",
+        "count": 6
+      }
+    },
+    {
       "output": "society:potato_seed",
       "payment": {
         "item": "numismatics:spur",

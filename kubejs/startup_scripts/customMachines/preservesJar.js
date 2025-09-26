@@ -235,8 +235,11 @@ global.preservesJarRecipes = [
   { input: "society:boysenberry", output: ["society:boysenberry_preserves"] },
   { input: "society:cranberry", output: ["society:cranberry_preserves"] },
   { input: "society:crystalberry", output: ["society:crystalberry_preserves"] },
+  { input: "windswept:wild_berries", output: ["society:wild_berries_preserves"] },
+  { input: "veggiesdelight:zucchini", output: ["society:zucchini_preserves"] },
+  { input: "veggiesdelight:turnip", output: ["society:turnip_preserves"] },
+  { input: "veggiesdelight:broccoli", output: ["society:broccoli_preserves"] },
 ];
-
 roeFish.forEach((fish) => {
   const splitFish = fish.item.split(":");
   let fishId = splitFish[1];
@@ -325,6 +328,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.preservesJarRecipes, 3);
       });

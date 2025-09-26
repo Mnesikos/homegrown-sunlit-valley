@@ -8,6 +8,12 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:ocean_jelly");
     });
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("wooden_pollution")
+    .anyBiome("#minecraft:is_ocean", "#minecraft:is_beach")
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:ocean_jelly");
+    });
 
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("starting_items")
@@ -15,7 +21,14 @@ LootJS.modifiers((e) => {
     .pool((p) => {
       p.randomChance(0.1).addLoot("society:river_jelly");
     });
-    
+
+  e.addLootTypeModifier(LootType.FISHING)
+    .hasAnyStage("wooden_pollution")
+    .anyBiome("#minecraft:is_river")
+    .pool((p) => {
+      p.randomChance(0.1).addLoot("society:river_jelly");
+    });
+
   e.addLootTypeModifier(LootType.FISHING)
     .hasAnyStage("wooden_pollution")
     .pool((p) => {
@@ -25,7 +38,7 @@ LootJS.modifiers((e) => {
     .hasAnyStage("frozen_treasure")
     .playerPredicate((p) => global.getSeasonFromLevel(p.level) === "winter")
     .pool((p) => {
-      p.randomChance(0.2).addLoot("aquaculture:treasure_chest");
+      p.randomChance(0.45).addLoot("aquaculture:treasure_chest");
     });
 
   e.addLootTypeModifier(LootType.FISHING)

@@ -77,7 +77,25 @@
     },
     {
       "offer": {
-        "itemKey": "society:bank_meter",
+        "itemKey": "numismatics_utils:portable_bank_terminal",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:cartographer_portable_bank_terminal_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "numismatics_utils:bank_meter",
         "amount": 1,
         "priceModifier": 0
       },

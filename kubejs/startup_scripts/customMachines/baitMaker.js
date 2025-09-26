@@ -131,6 +131,7 @@ StartupEvents.registry("block", (event) => {
       global.handleBERightClick("aquaculture:fish_death", click, global.baitMakerRecipes, 1);
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.baitMakerRecipes, 1);
       });

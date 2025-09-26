@@ -9,7 +9,7 @@ const breakAxe = (item, server, player) => {
       `playsound minecraft:entity.warden.sonic_boom block @a ${player.x} ${player.y} ${player.z}`
     );
     server.runCommandSilent(
-      `immersivemessages sendcustom ${player.username} {anchor:3,background:1,wrap:1,align:0,color:"#FF5555",y:-60} 12 Your Dragontooth Axe broke, only a Dragonslayer can wield it...`
+      `emberstextapi sendcustom ${player.username} {anchor:"BOTTOM_CENTER",background:1,wrap:220,align:"BOTTOM_CENTER",color:"#FF5555",offsetY:-60} 720 Your Dragontooth Axe broke, only a Dragonslayer can wield it...`
     );
   }
 };

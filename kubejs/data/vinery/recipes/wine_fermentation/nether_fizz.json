@@ -6,7 +6,10 @@
   },
   "ingredients": [
     {
-      "item": "minecraft:crimson_fungus"
+      "item": "pamhc2trees:pawpawitem"
+    },
+    {
+      "item": "pamhc2trees:pawpawitem"
     },
     {
       "item": "pamhc2trees:pawpawitem"

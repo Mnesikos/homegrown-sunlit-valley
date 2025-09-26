@@ -220,6 +220,7 @@ global.runArtisanHopper = (tickEvent, artisanMachinePos, player, delay) => {
       let type;
       let newProperties = artisanMachine.getProperties();
       let recycleSparkstone;
+
       if (
         newProperties.get("mature").toLowerCase() === "true" &&
         global.inventoryBelowHasRoom(

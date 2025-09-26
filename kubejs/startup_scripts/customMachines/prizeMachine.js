@@ -423,6 +423,12 @@ StartupEvents.registry("block", (event) => {
       } else {
         player.tell(Text.gray(`:ticket: Next prize: Something §6${prizeHint}§r...`));
       }
+      let nbt = block.getEntityData();
+      nbt.merge({ data: { prize: Number(prizeNumber) } });
+      block.setEntityData(nbt);
+    })
+    .blockEntity((blockInfo) => {
+      blockInfo.initialData({ prize: 0 });
     }).blockstateJson = {
     multipart: [
       {

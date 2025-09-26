@@ -241,4 +241,20 @@ LootJS.modifiers((e) => {
         });
     }
   );
+
+  Ingredient.of("#forge:ores").itemIds.forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .hasAnyStage("the_spark_also_rises")
+      .pool((p) => {
+        p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
+        p.addLoot("2x society:sparkstone");
+      });
+  });
+  ['society:sparkstone_ore', 'society:deepslate_sparkstone_ore'].forEach((ore) => {
+    e.addBlockLootModifier(ore)
+      .pool((p) => {
+        p.not((n) => n.matchMainHand(ItemFilter.hasEnchantment("minecraft:silk_touch")));
+        p.randomChance(0.01).addLoot("society:the_spark_also_rises");
+      });
+  });
 });

@@ -30,12 +30,6 @@
 			tasks: [
 				{
 					count: 32L
-					id: "1477F70DF8BDF00F"
-					item: "minecraft:potato"
-					type: "item"
-				}
-				{
-					count: 32L
 					id: "541D9F35016F7E24"
 					item: "veggiesdelight:cauliflower"
 					type: "item"
@@ -52,6 +46,12 @@
 					item: "farm_and_charm:strawberry"
 					type: "item"
 				}
+				{
+					count: 64L
+					id: "244DF0AA371032B8"
+					item: { Count: 64, id: "veggiesdelight:turnip" }
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.pantry.quest1.title}"
 			x: -3.0d
@@ -62,8 +62,8 @@
 			id: "3EF57F71C1C786FE"
 			require_sequential_tasks: false
 			rewards: [{
-				id: "6E15114F2B2D8547"
-				item: "society:gold_sprinkler"
+				id: "6517D1EFE1E30357"
+				item: "dew_drop_farmland_growth:gold_sprinkler"
 				type: "item"
 			}]
 			tasks: [

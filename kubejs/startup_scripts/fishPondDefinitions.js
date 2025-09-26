@@ -1461,8 +1461,7 @@ global.fishPondDefinitions = [
       {
         population: 7,
         requestedItems: [
-          { item: "society:dewy_star", count: 4 },
-          { item: "society:aged_dewy_star", count: 1 },
+          { item: "society:aged_dewy_star", count: 2 },
         ],
       },
     ],
@@ -2231,7 +2230,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 7,
-        requestedItems: [{ item: "society:aged_dark_brew", count: 16 }],
+        requestedItems: [{ item: "society:aged_dark_brew", count: 8 }],
       },
     ],
     additionalRewards: [
@@ -3228,7 +3227,7 @@ global.fishPondDefinitions = [
         requestedItems: [
           { item: "farm_and_charm:oat_ball", count: 48 },
           { item: "beachparty:sweetberry_milkshake", count: 4 },
-          { item: "society:aged_grain_cheese_block", count: 16 },
+          { item: "society:aged_grain_cheese_block", count: 4 },
         ],
       },
       {
@@ -3337,7 +3336,7 @@ global.fishPondDefinitions = [
     quests: [
       {
         population: 3,
-        requestedItems: [{ item: "society:aged_whiskey_lilitusinglemalt", count: 16 }],
+        requestedItems: [{ item: "society:aged_whiskey_lilitusinglemalt", count: 8 }],
       },
       {
         population: 5,
@@ -3431,7 +3430,7 @@ global.fishPondDefinitions = [
       },
       {
         population: 5,
-        requestedItems: [{ item: "society:aged_improved_nether_fizz", count: 16 }],
+        requestedItems: [{ item: "society:aged_improved_nether_fizz", count: 8 }],
       },
       {
         population: 7,
@@ -3537,7 +3536,7 @@ global.fishPondDefinitions = [
         population: 7,
         requestedItems: [
           { item: "society:pristine_star_shards", count: 32 },
-          { item: "society:aged_dewy_star", count: 16 },
+          { item: "society:aged_dewy_star", count: 8 },
           { item: "society:aged_star_coquito", count: 4 },
         ],
       },

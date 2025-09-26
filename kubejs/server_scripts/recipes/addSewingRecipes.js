@@ -260,7 +260,7 @@ ServerEvents.recipes((e) => {
     "villagernose",
     "worm_hat",
   ].forEach((hat, index) => {
-    createHatSewingRecipe(index, global.cooking, 1, hat);
+    createHatSewingRecipe(index, global.fish, 1, hat);
   });
   const geodeMinerals = [];
   Array.prototype.push.apply(geodeMinerals, global.geodeList);

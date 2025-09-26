@@ -6,13 +6,13 @@
   },
   "ingredients": [
     {
-      "item": "farmersdelight:red_mushroom_colony"
+      "item": "society:ancient_fruit"
     },
     {
       "item": "society:ancient_fruit"
     },
     {
-      "item": "minecraft:diamond"
+      "item": "society:ancient_fruit"
     }
   ],
   "wine_bottle": {

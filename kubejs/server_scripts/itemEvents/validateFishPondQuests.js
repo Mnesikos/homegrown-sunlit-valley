@@ -2,6 +2,7 @@ console.info("[SOCIETY] validateFishPondQuests.js loaded");
 
 // Tests if quest items are valid items. Dev use only.
 ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
+  player.server.persistentData.pigraceInProgress = false;
   global.fishPondDefinitions.forEach((fish) => {
     fish.quests.forEach((quest) => {
       quest.requestedItems.forEach((req) => {
@@ -9,5 +10,5 @@ ItemEvents.rightClicked("functionalstorage:creative_vending_upgrade", (e) => {
       });
     });
   });
-  e.player.tell("Quests validated.")
+  e.player.tell("Quests validated.");
 });

@@ -1,17 +1,19 @@
 {
   "type": "vinery:wine_fermentation",
   "juice": {
-    "type": "red_jungle",
+    "type": "red_general",
     "amount": 12
   },
   "ingredients": [
     {
-      "item": "minecraft:honey_bottle"
+      "item": "pamhc2trees:peachitem"
+    },
+    {
+      "item": "pamhc2trees:peachitem"
     },
     {
       "item": "pamhc2trees:peachitem"
     }
-
   ],
   "wine_bottle": {
     "required": false
@@ -21,4 +23,3 @@
     "count": 1
   }
 }
-

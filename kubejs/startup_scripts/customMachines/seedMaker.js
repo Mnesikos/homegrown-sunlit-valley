@@ -199,6 +199,9 @@ global.seedMakerRecipes = [
     input: "atmospheric:aloe_leaves",
     output: ["6x atmospheric:aloe_kernels"],
   },
+  { input: "veggiesdelight:turnip", output: ["6x veggiesdelight:turnip_seeds"] },
+  { input: "veggiesdelight:broccoli", output: ["6x veggiesdelight:broccoli_seeds"] },
+  { input: "veggiesdelight:zucchini", output: ["6x veggiesdelight:zucchini_seeds"] },
 ];
 
 StartupEvents.registry("block", (event) => {
@@ -287,6 +290,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.seedMakerRecipes, 1);
       });

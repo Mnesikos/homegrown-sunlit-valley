@@ -115,9 +115,9 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       newValue = value - totalDebt;
       debtPaid = totalDebt;
       server.runCommandSilent(
-        `immersivemessages sendcustom ${
+        `emberstextapi sendcustom ${
           player.username
-        } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 §aYou paid off your §f● §a${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 §aYou paid off your §f● §a${global.formatPrice(
           debtPaid
         )} debt!`
       );
@@ -126,9 +126,9 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       debtPaid = value;
       newValue = 0;
       server.runCommandSilent(
-        `immersivemessages sendcustom ${
+        `emberstextapi sendcustom ${
           player.username
-        } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 f● §6${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 f● §6${global.formatPrice(
           debtPaid
         )} §7of your debt paid off...`
       );
@@ -160,7 +160,6 @@ ${player.username}, your profits were used to pay off your debt!
   return newValue;
 };
 
-// global.processValueOutput(value, slots, removedSlots, binPlayer, binPlayerUUID, binPlayer.server, block, inventory, false)
 global.processValueOutput = (
   value,
   slots,
@@ -195,22 +194,28 @@ global.processValueOutput = (
           `playsound etcetera:item.handbell.ring block @a ${player.x} ${player.y} ${player.z} 0.3`
         );
         server.runCommandSilent(
-          `immersivemessages sendcustom ${
+          `emberstextapi sendcustom ${
             player.username
-          } {anchor:7,background:1,color:"#FFFFFF",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 ● §6${global.formatPrice(
+          } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 ● §6${global.formatPrice(
             value
           )} §7worth of goods sold`
         );
       }
       if (extenalOutput) {
         let facing = block.properties.get("facing");
-        outputs.forEach((output) => {
-          let { coin, count } = output;
-          for (let index = 0; index <= count; index += 64) {
-            let difference = count - index;
-            block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
-          }
-        });
+        let account = global.GLOBAL_BANK.getAccount(player.getUuid());
+
+        if (account && account.getBalance() + value < 2147483000) {
+          account.deposit(value);
+        } else {
+          outputs.forEach((output) => {
+            let { coin, count } = output;
+            for (let index = 0; index <= count; index += 64) {
+              let difference = count - index;
+              block.popItemFromFace(`${difference > 64 ? 64 : difference}x ${coin}`, facing);
+            }
+          });
+        }
       } else {
         /**
          * Basic Shipping Bins only remove items when they're sure there's enough room.
@@ -242,7 +247,7 @@ global.processValueOutput = (
         `playsound stardew_fishing:fish_escape block @a ${player.x} ${player.y} ${player.z} 0.3`
       );
       server.runCommandSilent(
-        `immersivemessages sendcustom ${player.username} {anchor:7,background:1,color:"#FF5555",size:1,y:30,slideleft:1,slideoutleft:1,typewriter:1} 8 Your Basic Shipping Bin was too full to sell...`
+        `emberstextapi sendcustom ${player.username} {anchor:"TOP_LEFT",background:1,color:"#FF5555",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT",} 480 Your Basic Shipping Bin was too full to sell...`
       );
     }
   }

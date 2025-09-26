@@ -11,14 +11,12 @@
 		}
 	}
 	id: "7D5C355F4BB66AE9"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
 				"{ftbquests.chapter.botania.quest1.description1}"
-				""
-				"{ftbquests.chapter.botania.quest1.description2}"
 				""
 				"{ftbquests.chapter.botania.quest1.description3}"
 				""
@@ -415,8 +413,8 @@
 				item: "society:botanical_tribute"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -3.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1BF054DD14781BAD"]
@@ -459,8 +457,8 @@
 				item: "botania:manasteel_ingot"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33B78DFDDC041570"]
@@ -668,7 +666,7 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -792,7 +790,7 @@
 				type: "item"
 			}]
 			title: "Mana Feed"
-			x: 5.0d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -831,7 +829,7 @@
 				type: "item"
 			}]
 			title: "Magical Animals"
-			x: 12.5d
+			x: 12.0d
 			y: -1.5d
 		}
 		{
@@ -912,8 +910,31 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["69A2A84A2830134C"]
+			description: [
+				"&6Mana Crab Trap Bait&r can be crafted from various magical materials on a Runic Altar."
+				""
+				"It catches even less trash and more fish than &6Deluxe Crab Trap Bait&r, with a chance to fish up rare and valuable aquatic loot."
+			]
+			id: "24D0021DB56E9E46"
+			rewards: [{
+				count: 4
+				id: "64C0142B7B187005"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AC03820EA1202FA"
+				item: "crabbersdelight:mana_crab_trap_bait"
+				type: "item"
+			}]
+			title: "Botanical Fishing"
+			x: 11.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.chapter.botania.title}"

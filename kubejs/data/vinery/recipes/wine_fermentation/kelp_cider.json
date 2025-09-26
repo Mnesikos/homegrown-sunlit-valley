@@ -1,7 +1,7 @@
 {
   "type": "vinery:wine_fermentation",
   "juice": {
-    "type": "white_savanna",
+    "type": "white_general",
     "amount": 14
   },
   "ingredients": [
@@ -9,7 +9,10 @@
       "item": "minecraft:melon"
     },
     {
-      "item": "minecraft:kelp"
+      "item": "minecraft:melon"
+    },
+    {
+      "item": "minecraft:melon"
     }
   ],
   "wine_bottle": {
@@ -20,4 +23,3 @@
     "count": 1
   }
 }
-

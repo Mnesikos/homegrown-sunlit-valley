@@ -51,6 +51,12 @@
           "data": {
             "Name": "society:sparkstone_ore"
           }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "society:spruce_supply_crate"
+          }
         }
       ]
     }

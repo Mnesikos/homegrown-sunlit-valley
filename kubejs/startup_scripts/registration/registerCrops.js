@@ -28,7 +28,7 @@ StartupEvents.registry("block", (e) => {
       return true;
     } else return false;
   };
-  // TODO: 3.3
+  // TODO: 4.0
   // e.create("society:berry_bush_crop", "crop")
   //   .age(3, (builder) => {
   //     builder

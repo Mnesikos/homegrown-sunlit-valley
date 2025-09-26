@@ -211,6 +211,11 @@ ServerEvents.tags("item", (e) => {
   global.removedItems.forEach((item) => {
     e.removeAllTagsFrom(item);
     e.add("furniture:trash_bag_blacklist", item);
+    e.add("c:hidden_from_recipe_viewers", item);
+  });
+  global.hiddenItems.forEach((item) => {
+    e.add("furniture:trash_bag_blacklist", item);
+    e.add("c:hidden_from_recipe_viewers", item);
   });
 });
 const rawLogs = [
@@ -296,6 +301,15 @@ ServerEvents.tags("item", (e) => {
     e.add("society:need_seeds", crop);
     e.remove("minecraft:villager_plantable_seeds", crop);
     e.remove("quark:seed_pouch_holdable", crop);
+  });
+  [
+    "etcetera:nether_bismuth_ore",
+    "society:sparkstone_ore",
+    "society:deepslate_sparkstone_ore",
+    "society:iridium_ore",
+    "society:deepslate_iridium_ore",
+  ].forEach((ore) => {
+    e.add("forge:ores", ore);
   });
   [
     "society:boysenberry",
@@ -421,7 +435,7 @@ ServerEvents.tags("item", (e) => {
   ["society:oak_resin", "society:maple_syrup", "society:pine_tar"].forEach((bottle) => {
     e.add("create:upright_on_belt", bottle);
   });
-
+  e.add("create:crushed_raw_materials", "create:crushed_raw_bismuth");
   e.add("splendid_slimes:slime_vac_fireable", "#society:omni_geode_treasure");
   e.add("splendid_slimes:slime_vac_fireable", "#society:preserves");
   e.add("splendid_slimes:slime_vac_fireable", "minecraft:bone");
@@ -630,7 +644,7 @@ ServerEvents.tags("block", (e) => {
   });
   e.remove("minecraft:leaves", "beachparty:palm_leaves");
   e.add("society:palm_leaves", "beachparty:palm_leaves");
-  const ftbChunksWhitelist = [
+  [
     "minecraft:crafting_table",
     "numismatics:andesite_depositor",
     "numismatics:brass_depositor",
@@ -640,9 +654,38 @@ ServerEvents.tags("block", (e) => {
     "bountiful:bountyboard",
     "tanukidecor:slot_machine",
     "whimsy_deco:gatcha_machine",
-  ];
-  ftbChunksWhitelist.forEach((item) => {
+  ].forEach((item) => {
     e.add("ftbchunks:interact_whitelist", item);
+  });
+  e.add("society:opens_market", "farmingforblockheads:market");
+
+  [
+    "moreminecarts:chiseled_organic_glass",
+    "moreminecarts:chiseled_organic_glass_pane",
+    "moreminecarts:greenhouse_glass_stairs",
+    "moreminecarts:greenhouse_glass_slab",
+  ].forEach((item) => {
+    e.add("oreganized:mineable/scribe", item);
+  });
+
+  [
+    "pamhc2trees:pamcinnamon",
+    "pamhc2trees:pamdragonfruit",
+    "pamhc2trees:pamstarfruit",
+    "pamhc2trees:pamlychee",
+    "pamhc2trees:pampassionfruit",
+    "pamhc2trees:pammango",
+    "pamhc2trees:pambanana",
+    "pamhc2trees:pampawpaw",
+    "pamhc2trees:pamhazelnut",
+    "pamhc2trees:pamorange",
+    "pamhc2trees:pamplum",
+    "pamhc2trees:pampeach",
+    "pamhc2trees:pamlemon",
+    "pamhc2trees:pamcherry",
+    "pamhc2trees:pamapple",
+  ].forEach((item) => {
+    e.add("minecraft:sword_efficient", item);
   });
 });
 

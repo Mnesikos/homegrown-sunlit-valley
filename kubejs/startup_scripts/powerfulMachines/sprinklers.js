@@ -24,8 +24,12 @@ const generateSprinkler = (e, tier, radius) => {
       item.tooltip(Text.gray("Can be given a stick for decoration"));
       item.tooltip(Text.green(`Area: ${tooltipRadius}x${tooltipRadius}`));
       item.modelJson({
-        parent: `society:block/${tier}_sprinkler`,
+        parent: `dew_drop_farmland_growth:block/${tier}_sprinkler`,
       });
+    })
+    .randomTick((tick) => {
+      const { block, level, server } = tick;
+      block.set(`dew_drop_farmland_growth:${tier}_sprinkler`, block.getProperties());
     })
     .rightClick((click) => {
       const { player, item, block, hand } = click;
@@ -45,11 +49,11 @@ const generateSprinkler = (e, tier, radius) => {
     }).blockstateJson = {
     multipart: [
       {
-        apply: { model: `society:block/${tier}_sprinkler` },
+        apply: { model: `dew_drop_farmland_growth:block/${tier}_sprinkler` },
       },
       {
         when: { sticklogged: true },
-        apply: { model: "society:block/sprinkler_stick" },
+        apply: { model: "dew_drop_farmland_growth:block/sprinkler_stick" },
       },
     ],
   };

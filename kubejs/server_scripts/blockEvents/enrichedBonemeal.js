@@ -86,12 +86,12 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
   const season = global.getSeasonFromLevel(player.level);
   let modifiedProperties = block.properties;
   if (
-    block.properties.get("can_have_apples").toString() == "true" &&
+    block.properties.get("can_grow_apples").toString() == "true" &&
     block.properties.get("has_apples").toString() == "true" &&
     !player.cooldowns.isOnCooldown(item)
   ) {
     if (season == "autumn" || hasGreenhouseGlass(player.level, block.getPos())) {
-      modifiedProperties.can_have_apples = false;
+      modifiedProperties.can_grow_apples = false;
       modifiedProperties.has_apples = false;
       e.server.scheduleInTicks(5, () => {
         block.set(block.id, modifiedProperties);
@@ -105,7 +105,7 @@ BlockEvents.rightClicked("vinery:apple_leaves", (e) => {
     !player.cooldowns.isOnCooldown(item)
   ) {
     player.getHeldItem("main_hand").count--;
-    modifiedProperties.can_have_apples = true;
+    modifiedProperties.can_grow_apples = true;
     modifiedProperties.has_apples = true;
     block.set(block.id, modifiedProperties);
     block.level.spawnParticles(
@@ -132,12 +132,12 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
   let modifiedProperties = block.properties;
   const season = global.getSeasonFromLevel(player.level);
   if (
-    block.properties.get("can_have_cherries").toString() == "true" &&
+    block.properties.get("can_grow_cherries").toString() == "true" &&
     block.properties.get("has_cherries").toString() == "true" &&
     !player.cooldowns.isOnCooldown(item)
   ) {
     if (season == "spring" || hasGreenhouseGlass(player.level, block.getPos())) {
-      modifiedProperties.can_have_cherries = false;
+      modifiedProperties.can_grow_cherries = false;
       modifiedProperties.has_cherries = false;
       e.server.scheduleInTicks(5, () => {
         block.set(block.id, modifiedProperties);
@@ -151,7 +151,7 @@ BlockEvents.rightClicked("vinery:dark_cherry_leaves", (e) => {
     !player.cooldowns.isOnCooldown(item)
   ) {
     player.getHeldItem("main_hand").count--;
-    modifiedProperties.can_have_cherries = true;
+    modifiedProperties.can_grow_cherries = true;
     modifiedProperties.has_cherries = true;
     block.set(block.id, modifiedProperties);
     block.level.spawnParticles(

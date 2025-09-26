@@ -148,7 +148,7 @@ StartupEvents.registry("block", (event) => {
           });
         }
       }
-      if (upgraded && block.properties.get("mature") === "true" && rnd75()) {
+      if (upgraded && block.properties.get("mature") === "true" && rnd5()) {
         block.popItemFromFace(
           "society:supreme_mayonnaise",
           block.properties.get("facing").toLowerCase()
@@ -165,6 +165,7 @@ StartupEvents.registry("block", (event) => {
       );
     })
     .blockEntity((blockInfo) => {
+      blockInfo.initialData({ stage: 0, type: 0 });
       blockInfo.serverTick(artMachineTickRate, 0, (entity) => {
         global.handleBETick(entity, global.mayonnaiseMachineRecipes, 1);
       });
