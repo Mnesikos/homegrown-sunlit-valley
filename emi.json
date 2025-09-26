@@ -5,6 +5,18 @@
     }
   ],
   "lookup_history": [
+    "item:society:ribbit_hut",
+    "item:farmersdelight:salmon_roll",
+    "item:farmersdelight:skillet{Damage:0}",
+    "item:farmersdelight:cooking_pot",
+    "item:society:slouching_towards_artistry",
+    "item:kata:adv_jungle_kata_doll",
+    "item:minecraft:grindstone",
+    "item:pamhc2trees:plum_sapling",
+    "item:society:universal_methods_of_farming",
+    "item:tradingpost:trading_post",
+    "item:society:the_spark_also_rises",
+    "item:vinery:mellohi_wine",
     "item:botania:cosmetic_cat_ears",
     "item:society:large_milk",
     "item:society:bank_meter",
@@ -30,7 +42,6 @@
     "item:botania:ender_air_bottle",
     "item:beautify:botanist_workbench",
     "item:pamhc2trees:starfruititem",
-    "item:society:ribbit_hut",
     "item:whimsy_deco:broom",
     "item:whimsy_deco:gray_cash_register",
     "item:whimsy_deco:cast_iron_ledge",
@@ -162,13 +173,11 @@
     },
     "item:dew_drop_farmland_growth:garden_pot",
     "item:windswept:frozen_branch",
-    "item:society:the_spark_also_rises",
     "item:windswept:holly_berries",
     "item:society:large_amethyst_milk",
     "item:windswept:frostbiter_trophy",
     "item:society:toy_train",
     "item:society:sparkstone_ore",
-    "item:society:universal_methods_of_farming",
     "item:minecraft:nether_gold_ore",
     "item:minecraft:deepslate_diamond_ore",
     "item:society:ancient_juice",
@@ -413,7 +422,6 @@
     "item:minecraft:smithing_table",
     "item:farmersdelight:cabbage_seeds",
     "item:candlelight:cooking_pot",
-    "item:minecraft:grindstone",
     "item:minecraft:fletching_table",
     "item:minecraft:note_block",
     "item:minecraft:wheat_seeds",
@@ -828,7 +836,6 @@
     "item:farm_and_charm:silo_wood",
     "item:herbalbrews:tea_kettle",
     "item:herbalbrews:copper_tea_kettle",
-    "item:farmersdelight:cooking_pot",
     "item:vinery:apple_press",
     "item:society:pine_tar",
     {
@@ -917,12 +924,6 @@
     {
       "type": "item",
       "id": "nethervinery:netherite_nectar",
-      "nbt": "{Year:0}",
-      "amount": 64
-    },
-    {
-      "type": "item",
-      "id": "vinery:mellohi_wine",
       "nbt": "{Year:0}",
       "amount": 64
     },
@@ -1354,13 +1355,7 @@
     "item:ribbits:brown_toadstool",
     "item:beautify:warped_trellis",
     "item:beautify:birch_trellis",
-    "item:moreminecarts:projector_rail",
-    "item:moreminecarts:rail_signal_brown",
-    "item:sophisticatedbackpacks:upgrade_base",
-    "item:botania:manasteel_ingot",
-    "item:decorative_blocks:spruce_palisade",
-    "item:nightlights:octopus_light_gray",
-    "item:botania:cosmetic_witch_pin"
+    "item:moreminecarts:projector_rail"
   ],
   "craft_history": [
     "whimsy_deco:classic_tile",
@@ -1407,8 +1402,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
