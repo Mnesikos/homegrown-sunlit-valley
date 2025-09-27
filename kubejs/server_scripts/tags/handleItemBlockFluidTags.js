@@ -593,7 +593,6 @@ ServerEvents.tags("block", (e) => {
   rawLogs.forEach((log) => {
     e.add("society:raw_logs", log);
   });
-  e.add("dewdrop:waterable", "dew_drop_farmland_growth:deluxe_hydrating_farmland");
   [
     "fantasyfurniture:necrolord/carpet",
     "fantasyfurniture:nordic/carpet",
