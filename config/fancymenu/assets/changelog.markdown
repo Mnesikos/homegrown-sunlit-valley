@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.0
+### v3.3.1
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -97,3 +97,16 @@
 - Fixed Yerba Mate dropping too little from harvest
 - Fixed Blaze Banker accidental destruction with proper checks
 - Fixed Raw Meat Pizza being uncraftable
+
+## 3.3.1
+- Added Create crushing/milling recipes for some Mincer exclusive items
+- Added crafting conversion recipes for outdated Sprinklers
+- Removed Grapevine leaves mechanic from additional harvests
+- Removed seed error message due to unreliability
+- Cleaned up come quests
+- Fixed Farmer's Delight Cooking Pot recipe
+- Fixed Air triggering pickup notification
+- Fixed 6am crash with Sweet Berries
+- Fixed Phone recipe existing
+- Fixed Sewing table crash
+- Fixed Artisan decree values not matching updated values and added items

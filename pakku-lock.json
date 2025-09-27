@@ -11122,7 +11122,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "dew_drop_farmland_growth-4.3.jar",
+                    "file_name": "dew_drop_farmland_growth-4.4.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11130,18 +11130,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7032/826/dew_drop_farmland_growth-4.3.jar",
-                    "id": "7032826",
+                    "url": "https://edge.forgecdn.net/files/7034/129/dew_drop_farmland_growth-4.4.jar",
+                    "id": "7034129",
                     "parent_id": "1172429",
                     "hashes": {
-                        "sha1": "1abc33eccf3283da93f7450afec5bc17e4950c3d",
-                        "md5": "a2e424964aee19ac5859963c390ecc7b"
+                        "sha1": "fce4ff4b344a6e499b0f89b88ed13b30f2e9978d",
+                        "md5": "247d5e7d4dd1a4fa00b71ba6d0fcfc27"
                     },
                     "required_dependencies": [
                         "1062753"
                     ],
-                    "size": 144978,
-                    "date_published": "2025-09-25T17:59:04.460Z"
+                    "size": 144970,
+                    "date_published": "2025-09-26T03:40:37.560Z"
                 }
             ]
         },
