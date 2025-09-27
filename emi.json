@@ -21,6 +21,8 @@
     }
   ],
   "lookup_history": [
+    "item:society:spider_silk",
+    "item:splendid_slimes:plort_rippit",
     {
       "type": "fluid",
       "id": "society:milk",
@@ -1381,9 +1383,7 @@
     "item:longwings:apple_butterfly_brew_bottle",
     "item:longwings:butterfly_bowl_feeder",
     "item:longwings:glass_jar",
-    "item:verdantvibes:ivy",
-    "item:untitledduckmod:duck_sack",
-    "item:minecraft:iron_horse_armor"
+    "item:verdantvibes:ivy"
   ],
   "craft_history": [
     "whimsy_deco:classic_tile",
@@ -1430,8 +1430,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
