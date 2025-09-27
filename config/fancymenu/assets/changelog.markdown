@@ -1,6 +1,6 @@
 ^^^
 ## Whimsical Trading
-### v3.3.1
+### v3.3.2
 ^^^
 --- 
 - Reworked villager trading to use a brand new GUI that allows for purchasing directly from bank account
@@ -110,3 +110,19 @@
 - Fixed Phone recipe existing
 - Fixed Sewing table crash
 - Fixed Artisan decree values not matching updated values and added items
+
+## 3.3.2
+- Updated ATL to fix log/chat spam
+- Fixed Cauliflower Preserves being nuked
+- Fixed Deluxe Hydrating Farmland not working correctly
+- Fixed Fish Ponds requesting Chunkroderite
+- Fixed Sprinkler upgrading recipes
+- Fixed Lavender Quartz recipe not using Lavender
+- Fixed Carrots not dropping
+- Fixed Hatchetfish first quest requiring Chunkroderite
+- Fixed Windswept logs not having values or the correct tag
+- Fixed certain grape juices not having create spouting recipes
+- Fixed console spam
+- Fixed Spark Only Rises not working
+- Fixed Garlic Seeds not consuming and having sound
+- Fixed Juicy Plort rippiting into removed grape juices
