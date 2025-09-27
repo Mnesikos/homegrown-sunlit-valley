@@ -21,6 +21,10 @@
     }
   ],
   "lookup_history": [
+    "item:society:sparkstone",
+    "item:vinery:red_grapejuice",
+    "item:vinery:white_grapejuice",
+    "item:vinery:white_taiga_grapejuice",
     "item:society:spider_silk",
     "item:splendid_slimes:plort_rippit",
     {
@@ -33,8 +37,6 @@
       "id": "minecraft:milk",
       "amount": 0
     },
-    "item:vinery:white_grapejuice",
-    "item:vinery:red_grapejuice",
     "item:windswept:holly_log",
     "item:windswept:pine_log",
     "item:windswept:stripped_holly_log",
@@ -292,11 +294,6 @@
     "item:whimsy_deco:adv_flower_pig_plushie",
     "item:whimsy_deco:red_atm",
     "item:refurbished_furniture:raw_meatlovers_pizza",
-    {
-      "type": "item",
-      "id": "society:sparkstone",
-      "amount": 58
-    },
     "item:dew_drop_farmland_growth:garden_pot",
     "item:windswept:frozen_branch",
     "item:windswept:holly_berries",
@@ -308,7 +305,6 @@
     "item:minecraft:deepslate_diamond_ore",
     "item:society:ancient_juice",
     "item:dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-    "item:vinery:white_taiga_grapejuice",
     "item:vinery:red_taiga_grapejuice",
     "item:vinery:red_savanna_grapejuice",
     {
@@ -1430,8 +1426,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
