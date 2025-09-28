@@ -863,46 +863,6 @@
             ]
         },
         {
-            "pakku_id": "o4h8uX7jGZjpnUBa",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "better-cats-minecraft"
-            },
-            "name": {
-                "curseforge": "Better Cats"
-            },
-            "id": {
-                "curseforge": "683123"
-            },
-            "redistributable": false,
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Better_Cats_V0.09.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/4784/566/Better_Cats_V0.09.zip",
-                    "id": "4784566",
-                    "parent_id": "683123",
-                    "hashes": {
-                        "sha1": "500a86d5de382b10118320d3f058f3e1afaa11f2",
-                        "md5": "cd5bcdf19cd042141e8eaa4c7243bbe4"
-                    },
-                    "required_dependencies": [],
-                    "size": 1912874,
-                    "date_published": "2023-10-06T14:49:20.757Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "ZVRMLtfRktLlPogQ",
             "type": "MOD",
             "slug": {
@@ -3707,6 +3667,7 @@
         {
             "pakku_id": "t7R5gMQznP3JGV2D",
             "type": "MOD",
+            "side": "SERVER",
             "slug": {
                 "curseforge": "dcintegration"
             },
@@ -3811,6 +3772,40 @@
                     "required_dependencies": [],
                     "size": 960006,
                     "date_published": "2024-06-22T02:59:05.557Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "czUkkn60v9n75TQh",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "beta-farmlife-remastered"
+            },
+            "name": {
+                "curseforge": "DragN's Livestock FarmLife Remastered [ W.I.P ]"
+            },
+            "id": {
+                "curseforge": "1311617"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "v2.3.1 FarmLife Remastered.zip",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6913/433/v2.3.1 FarmLife Remastered.zip",
+                    "id": "6913433",
+                    "parent_id": "1311617",
+                    "hashes": {
+                        "sha1": "7410254b1b4e4ef2b6a761df9dbd6c816a64b827",
+                        "md5": "b03ce592be7e913ed9768f83edc530db"
+                    },
+                    "required_dependencies": [],
+                    "size": 1874487,
+                    "date_published": "2025-08-22T01:36:10.827Z"
                 }
             ]
         },
@@ -5137,6 +5132,42 @@
             ]
         },
         {
+            "pakku_id": "IQQpcId2KEK1TYnD",
+            "type": "RESOURCE_PACK",
+            "slug": {
+                "curseforge": "farmergui"
+            },
+            "name": {
+                "curseforge": "Farmer GUI"
+            },
+            "id": {
+                "curseforge": "918818"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Farmer GUI v.1.7.6 [1.20.1].zip",
+                    "mc_versions": [
+                        "1.20.1",
+                        "1.20",
+                        "1.20-Snapshot"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6749/481/Farmer GUI v.1.7.6 [1.20.1].zip",
+                    "id": "6749481",
+                    "parent_id": "918818",
+                    "hashes": {
+                        "sha1": "2032670d91da37c6ae6086d1901cd7ddfd73f208",
+                        "md5": "f33c7bd27c31691c0609666d468f68bc"
+                    },
+                    "required_dependencies": [],
+                    "size": 2236411,
+                    "date_published": "2025-07-09T18:34:05.453Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "05muXOOq4rBjMVyM",
             "type": "MOD",
             "slug": {
@@ -6301,45 +6332,6 @@
             ]
         },
         {
-            "pakku_id": "P6hCU0tU4apQ21tX",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "icon-journey"
-            },
-            "name": {
-                "curseforge": "Icon Journey"
-            },
-            "id": {
-                "curseforge": "978219"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "Icon Journey 1.1.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.5",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.6",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5656/300/Icon Journey 1.1.zip",
-                    "id": "5656300",
-                    "parent_id": "978219",
-                    "hashes": {
-                        "sha1": "0808ae731fec2c634720e82d0eb1b174202df19f",
-                        "md5": "710e4009d3f5245cccec4dd25da1016b"
-                    },
-                    "required_dependencies": [],
-                    "size": 17646309,
-                    "date_published": "2024-08-23T16:13:33.850Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "uo1HWSI3S1gnTXV1",
             "type": "MOD",
             "side": "CLIENT",
@@ -6646,43 +6638,6 @@
                     "required_dependencies": [],
                     "size": 552486,
                     "date_published": "2025-08-06T14:19:52.700Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "NsCfrqZqmA2yDRl2",
-            "type": "RESOURCE_PACK",
-            "slug": {
-                "curseforge": "journeymap-extended-mob-icons"
-            },
-            "name": {
-                "curseforge": "JourneyMap Extended Mob Icons"
-            },
-            "id": {
-                "curseforge": "985057"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "JourneyMap Extended Mob Icons v2.0.zip",
-                    "mc_versions": [
-                        "1.20.2",
-                        "1.20.3",
-                        "1.20.1",
-                        "1.20",
-                        "1.20.4"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5170/422/JourneyMap Extended Mob Icons v2.0.zip",
-                    "id": "5170422",
-                    "parent_id": "985057",
-                    "hashes": {
-                        "sha1": "3728f18a6f53d6b4e8c023a77d3342b4e373a5ab",
-                        "md5": "12e961e0a647958bbcf93dabcc5043bb"
-                    },
-                    "required_dependencies": [],
-                    "size": 65610,
-                    "date_published": "2024-03-09T23:28:06.960Z"
                 }
             ]
         },
