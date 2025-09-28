@@ -8,7 +8,7 @@ ItemEvents.entityInteracted((e) => {
   const nbt = target.nbt.toString();
   if (nbt.includes("leatherworker") && !nbt.includes("stylin_purple_hat")) updateThis = true;
   if (nbt.includes("weaponsmith") && !nbt.includes("64k_storage_block")) updateThis = true;
-  if (nbt.includes("shepherd") && !nbt.includes("diamond_lasso")) updateThis = true;
+  if (nbt.includes("shepherd") && !nbt.includes("diamond_lasso") && !nbt.includes("german_shepherd")) updateThis = true;
   if (nbt.includes("botanist") && !nbt.includes("endless_fortune")) updateThis = true;
   if (nbt.includes("bountiful_fertilizer")) updateThis = true;
   if (nbt.includes("candlelight:cook") && !nbt.includes("sweet_potato_seed")) updateThis = true;
@@ -23,6 +23,8 @@ ItemEvents.entityInteracted((e) => {
     updateThis = true;
   if (nbt.includes("fletcher") && !nbt.includes("enkephalin")) updateThis = true;
   if (nbt.includes("fisher") && !nbt.includes("river_jelly")) updateThis = true;
+  if (nbt.includes("shelter_worker") && !nbt.includes("catnip")) updateThis = true;
+  if (nbt.includes("kennel_hand") && !nbt.includes("frisbee")) updateThis = true;
 
   if (updateThis) {
     let freshVillager = level.createEntity("minecraft:villager");

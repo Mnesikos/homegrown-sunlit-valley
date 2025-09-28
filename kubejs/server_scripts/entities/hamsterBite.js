@@ -3,7 +3,7 @@ console.info("[SOCIETY] hamsterBite.js loaded");
 ItemEvents.entityInteracted((e) => {
   const { hand, player, level, target, server, item } = e;
   if (hand == "OFF_HAND") return;
-  if (target.type !== "hamsters:hamster") return;
+  if (target.type !== "hamsters:hamster" || target.type !== "adorablehamsterpets:hamster") return;
   if (hand == "MAIN_HAND" && item === "society:animal_feed") {
     server.runCommandSilent(
       `playsound minecraft:entity.generic.eat block @a ${player.x} ${player.y} ${player.z}`

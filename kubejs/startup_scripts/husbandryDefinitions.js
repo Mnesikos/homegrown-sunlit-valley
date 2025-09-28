@@ -23,6 +23,7 @@ const fineWoolForage = [
 
 global.husbandryForagingDefinitions = [
   { animal: "minecraft:pig", forages: truffleForage },
+  { animal: "dragnlivestock:o_pig", forages: truffleForage },
   { animal: "snowpig:snow_pig", forages: truffleForage },
   {
     animal: "minecraft:mooshroom",
@@ -48,8 +49,33 @@ global.husbandryForagingDefinitions = [
       },
     ],
   },
+  {
+    animal: "dragnlivestock:o_mooshroom",
+    forages: [
+      {
+        item: "society:truffle",
+        countMult: 1,
+        chance: 0.3,
+        minHearts: 4,
+        hasQuality: true,
+        stage: { name: "triple_truffle", locale: "Triple Truffle", newCountMult: 3 },
+      },
+      {
+        itemPool: [
+          "tanukidecor:brown_mushroom_log_stool",
+          "tanukidecor:red_mushroom_log_stool",
+          "tanukidecor:brown_mushroom_stool",
+          "tanukidecor:red_mushroom_stool",
+        ],
+        countMult: 1,
+        chance: 0.04,
+        minHearts: 8,
+      },
+    ],
+  },
 
   { animal: "minecraft:sheep", forages: fineWoolForage },
+  { animal: "dragnlivestock:o_sheep", forages: fineWoolForage },
   { animal: "meadow:wooly_sheep", forages: fineWoolForage },
   {
     animal: "snuffles:snuffle",
@@ -115,7 +141,144 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
+    animal: "dragnlivestock:o_rabbit",
+    forages: [
+      {
+        item: "society:fine_wool",
+        countMult: 1,
+        chance: 0.33,
+        minHearts: 3,
+        hasQuality: true,
+        stage: { name: "coopmaster", locale: "Coopmaster", newCountMult: 2 },
+      },
+      {
+        item: "minecraft:rabbit_foot",
+        countMult: 1,
+        chance: 0.16,
+        minHearts: 5,
+        hasQuality: true,
+        stage: { name: "coopmaster", locale: "Coopmaster", newCountMult: 2 },
+      },
+      {
+        item: "wildernature:bunny_stalker_banner",
+        countMult: 1,
+        chance: 0.01,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
     animal: "buzzier_bees:moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:wheat_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:sweet_berry_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:pumpkin_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:potato_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:melon_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:glow_berry_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:flowering_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:carrot_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:beetroot_moobloom",
+    forages: [
+      {
+        item: "betterarcheology:growth_totem",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 10,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:azalea_moobloom",
     forages: [
       {
         item: "betterarcheology:growth_totem",
@@ -294,6 +457,39 @@ global.husbandryForagingDefinitions = [
     ],
   },
   {
+    animal: "dragnlivestock:o_frog",
+    forages: [
+      {
+        item: "society:sap",
+        countMult: 4,
+        chance: 0.3,
+        minHearts: 1,
+      },
+      {
+        item: "crabbersdelight:raw_frog_leg",
+        countMult: 4,
+        chance: 0.1,
+        minHearts: 5,
+      },
+      {
+        item: "society:ribbit_gadget",
+        countMult: 1,
+        chance: 0.05,
+        minHearts: 7,
+      },
+      {
+        itemPool: [
+          "minecraft:ochre_froglight",
+          "minecraft:verdant_froglight",
+          "minecraft:pearlescent_froglight",
+        ],
+        countMult: 8,
+        chance: 0.25,
+        minHearts: 5,
+      },
+    ],
+  },
+  {
     animal: "atmospheric:cochineal",
     forages: [
       {
@@ -348,6 +544,18 @@ global.husbandryForagingDefinitions = [
   },
   {
     animal: "minecraft:chicken",
+    forages: [
+      {
+        item: "society:large_egg",
+        countMult: 1,
+        chance: 1,
+        minHearts: 4,
+        hasQuality: true,
+      },
+    ],
+  },
+  {
+    animal: "dragnlivestock:o_chicken",
     forages: [
       {
         item: "society:large_egg",
@@ -475,12 +683,20 @@ const sheepMilk = { sm: "society:sheep_milk", lg: "society:large_sheep_milk" };
 
 global.husbandryMilkingDefinitions = [
   { animal: "minecraft:cow", cooldown: 1, milk: cowMilk },
+  { animal: "dragnlivestock:o_cow", cooldown: 1, milk: cowMilk },
   { animal: "minecraft:mooshroom", cooldown: 1, milk: cowMilk },
-  {
-    animal: "buzzier_bees:moobloom",
-    cooldown: 1,
-    milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" },
-  },
+  { animal: "dragnlivestock:o_mooshroom", cooldown: 1, milk: cowMilk },
+  { animal: "buzzier_bees:moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:wheat_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:sweet_berry_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:pumpkin_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:potato_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:melon_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:glow_berry_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:flowering_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:carrot_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:beetroot_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
+  { animal: "dragnlivestock:azalea_moobloom", cooldown: 1, milk: { sm: "society:amethyst_milk", lg: "society:large_amethyst_milk" } },
   { animal: "meadow:wooly_cow", warped: false, cooldown: 1, milk: cowMilk },
   {
     animal: "meadow:wooly_cow",
@@ -489,10 +705,21 @@ global.husbandryMilkingDefinitions = [
     milk: { sm: "society:warped_milk", lg: "society:large_warped_milk" },
   },
   { animal: "minecraft:sheep", cooldown: 2, milk: sheepMilk },
+  { animal: "dragnlivestock:o_sheep", cooldown: 2, milk: sheepMilk },
   { animal: "meadow:wooly_sheep", cooldown: 2, milk: sheepMilk },
   { animal: "wildernature:minisheep", cooldown: 2, milk: sheepMilk },
   {
     animal: "minecraft:goat",
+    cooldown: 1,
+    milk: { sm: "society:goat_milk", lg: "society:large_goat_milk" },
+  },
+  {
+    animal: "dragnlivestock:o_goat",
+    cooldown: 1,
+    milk: { sm: "society:goat_milk", lg: "society:large_goat_milk" },
+  },
+  {
+    animal: "dragnlivestock:farm_goat",
     cooldown: 1,
     milk: { sm: "society:goat_milk", lg: "society:large_goat_milk" },
   },
@@ -538,13 +765,25 @@ global.petGifts = [
   { animal: "legendarycreatures:nether_wisp", gifts: ["legendarycreatures:nether_wisp_spawn_egg"] },
   { animal: "legendarycreatures:ender_wisp", gifts: ["simplehats:pika_ears"] },
   { animal: "minecraft:wolf", gifts: ["simplehats:longfoxears", "betterarcheology:wolf_fossil"] },
+  { animal: "workdog:wolf", gifts: ["simplehats:longfoxears", "betterarcheology:wolf_fossil"] },
+  { animal: "workdog:akita", gifts: ["simplehats:eevee_ears"] },
+  { animal: "workdog:border_collie", gifts: ["betterarcheology:sheep_fossil"] },
+  { animal: "workdog:boston_terrier", gifts: ["simplehats:fireworks"] },
+  { animal: "workdog:german_shepherd", gifts: ["simplehats:eevee_ears"] },
+  { animal: "workdog:jack_russell_terrier", gifts: ["simplehats:fireworks"] },
+  { animal: "workdog:pit_bull", gifts: ["betterarcheology:sheep_fossil"] },
   { animal: "minecraft:cat", gifts: ["simplehats:nekoears", "betterarcheology:ocelot_fossil"] },
+  { animal: "simplycats:cat", gifts: ["simplehats:nekoears", "betterarcheology:ocelot_fossil"] },
+  { animal: "dragnpets:o_fox", gifts: ["simplehats:eevee_ears", "simplehats:longfoxears"] },
   { animal: "quark:foxhound", gifts: ["simplehats:fireworks"] },
   { animal: "quark:shiba", gifts: ["simplehats:eevee_ears"] },
   { animal: "minecraft:allay", gifts: ["simplehats:chi_ears"] },
   { animal: "minecraft:horse", gifts: ["relics:horse_flute"] },
+  { animal: "horse_colors:horse_felinoid", gifts: ["relics:horse_flute"] },
+  { animal: "dragnlivestock:caribou", gifts: ["relics:horse_flute"] },
   { animal: "minecraft:polar_bear", gifts: ["simplehats:teddy_bear"] },
   { animal: "hamsters:hamster", gifts: ["society:tiny_gnome"] },
+  { animal: "adorablehamsterpets:hamster", gifts: ["society:tiny_gnome"] },
   { animal: "wildernature:hedgehog", gifts: ["simplehats:sonichood"] },
   {
     animal: "wildernature:red_wolf",
@@ -554,6 +793,10 @@ global.petGifts = [
   { animal: "wildernature:dog", gifts: ["betterarcheology:sheep_fossil"] },
   {
     animal: "minecraft:axolotl",
+    gifts: ["simplehats:axolotl_on_head", "beachparty:rubber_ring_axolotl"],
+  },
+  {
+    animal: "dragnpets:o_axolotl",
     gifts: ["simplehats:axolotl_on_head", "beachparty:rubber_ring_axolotl"],
   },
   {

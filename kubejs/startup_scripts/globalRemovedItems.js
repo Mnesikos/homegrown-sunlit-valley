@@ -342,6 +342,11 @@ global.removedItems = [
   "create:empty_schematic",
   "create:schematic_and_quill",
   "create:schematic_table",
+  // Adoarable Hamster Pets
+  "adorablehamsterpets:cheese",
+  "adorablehamsterpets:cucumber",
+  "adorablehamsterpets:cucumber_seeds",
+  "adorablehamsterpets:wild_cucumber_bush",
   // Pipez
   "pipez:energy_pipe",
   "pipez:fluid_pipe",

@@ -14,6 +14,8 @@
     "minecraft:shepherd",
     "etched:bard",
     "candlelight:cook_poi",
-    "beautify:botanist_workbench_poi"
+    "beautify:botanist_workbench_poi",
+    "simplycats:adoption_book",
+    "workdog:kennel_equipment"
   ]
 }
