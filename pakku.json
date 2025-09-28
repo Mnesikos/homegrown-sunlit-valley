@@ -1,5 +1,5 @@
 {
-    "name": "Society Sunlit Valley",
+    "name": "Homegrown Sunlit Valley",
     "version": "3.3.0",
     "overrides": [
         "config",
@@ -9,7 +9,8 @@
     ],
     "client_overrides": [
         "resourcepacks",
-        "shaderpacks"
+        "shaderpacks",
+        "servers.dat"
     ],
     "projects": {
         "ambientsounds": {
@@ -22,6 +23,9 @@
             "side": "CLIENT"
         },
         "bad-wither-no-cookie-reloaded": {
+            "side": "CLIENT"
+        },
+        "blur": {
             "side": "CLIENT"
         },
         "chat-heads": {
@@ -45,6 +49,9 @@
         "crash-assistant": {
             "side": "CLIENT"
         },
+        "ding": {
+            "side": "CLIENT"
+        },
         "default-options": {
             "side": "CLIENT"
         },
@@ -66,6 +73,9 @@
         "entityculling": {
             "side": "CLIENT"
         },
+        "farsight": {
+            "side": "CLIENT"
+        },
         "falling-leaves-forge": {
             "side": "CLIENT"
         },
@@ -78,6 +88,18 @@
         "immediatelyfast": {
             "side": "CLIENT"
         },
+        "itemzoom": {
+            "side": "CLIENT"
+        },
+        "justenoughprofessions": {
+            "side": "CLIENT"
+        },
+        "justenoughresources": {
+            "side": "CLIENT"
+        },
+        "keepstepping": {
+            "side": "CLIENT"
+        },
         "loot-journal": {
             "side": "CLIENT"
         },
@@ -88,6 +110,9 @@
             "side": "CLIENT"
         },
         "my-server-is-compatible": {
+            "side": "CLIENT"
+        },
+        "notes": {
             "side": "CLIENT"
         },
         "particle-rain": {
@@ -119,7 +144,7 @@
         },
         "tmrv": {
             "side": "CLIENT"
-         },
+        },
         "raws-visual-keybinder": {
             "side": "CLIENT"
         },
@@ -134,6 +159,9 @@
         },
         "skillexpnotifier": {
             "side": "BOTH"
+        },
+        "dcintegration": {
+            "side": "SERVER"
         }
     }
 }
