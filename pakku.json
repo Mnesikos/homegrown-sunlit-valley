@@ -157,6 +157,9 @@
         "create-trading-floor": {
             "side": "BOTH"
         },
+        "building-gadgets": {
+            "side": "BOTH"
+        },
         "dcintegration": {
             "side": "SERVER"
         }

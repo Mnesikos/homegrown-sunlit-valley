@@ -1214,7 +1214,7 @@
         {
             "pakku_id": "1OIVFt1d62qRoIE0",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "building-gadgets"
             },
@@ -3040,7 +3040,7 @@
         {
             "pakku_id": "T3LqycMkuVJ5eEMh",
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "create-trading-floor"
             },
@@ -10941,7 +10941,7 @@
                 "Pwtu2pLK2gksB4sO"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "society-trading"
             },
@@ -12277,7 +12277,7 @@
                 "h4bdqeioqgqc7T24"
             ],
             "type": "MOD",
-            "side": "CLIENT",
+            "side": "BOTH",
             "slug": {
                 "curseforge": "trading-post"
             },
