@@ -19,7 +19,7 @@ global.enableDeathDebt = true;
  * Only server needs to change this
  * Enables the clock icon from the HUD
  */
-global.clockIcon = true;
+global.clockIcon = false;
 
 /**
  * Only server needs to change this
