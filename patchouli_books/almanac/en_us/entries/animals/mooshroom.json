@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:mooshroom",
+      "entity": "dragnlivestock:o_mooshroom",
       "scale": 0.8,
       "text": "A rare, mushroom producing beauty."
     }

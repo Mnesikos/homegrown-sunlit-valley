@@ -1,0 +1,344 @@
+{
+  "name": "Sunflower",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:sunflower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_sunflower,flowerary:orange_sunflower,flowerary:yellow_sunflower,flowerary:lime_sunflower,flowerary:mint_sunflower,flowerary:cyan_sunflower,flowerary:blue_sunflower,flowerary:light_blue_sunflower,flowerary:lavender_sunflower,flowerary:purple_sunflower,flowerary:lilac_sunflower,flowerary:magenta_sunflower,flowerary:pink_sunflower,flowerary:peach_sunflower,flowerary:multicolor_sunflower,flowerary:white_sunflower,flowerary:black_sunflower,flowerary:wilted_sunflower",
+	  "title": "Sunflower",
+	  "text": "A Sunflower is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Sunflower.$(br2)Sunflower Pollen Jars will produce yellow or lime hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_sunflower_seeds,flowerary:orange_sunflower_seeds,flowerary:yellow_sunflower_seeds,flowerary:lime_sunflower_seeds,flowerary:mint_sunflower_seeds,flowerary:cyan_sunflower_seeds,flowerary:blue_sunflower_seeds,flowerary:light_blue_sunflower_seeds,flowerary:lavender_sunflower_seeds,flowerary:purple_sunflower_seeds,flowerary:lilac_sunflower_seeds,flowerary:magenta_sunflower_seeds,flowerary:pink_sunflower_seeds,flowerary:peach_sunflower_seeds,flowerary:multicolor_sunflower_seeds,flowerary:white_sunflower_seeds,flowerary:black_sunflower_seeds,flowerary:wilted_sunflower_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Sunflower to obtain hybridized Sunflower Seeds, with an uncommon chance of obtaining hybridized Blazing Star Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:red_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:orange_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:yellow_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:lime_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:mint_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:cyan_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:blue_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:light_blue_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:lavender_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:purple_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:lilac_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:magenta_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:pink_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:peach_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:multicolor_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:white_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:black_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Sunflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_sunflower_plant[age=7,half=upper]",
+          "1": "flowerary:wilted_sunflower_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

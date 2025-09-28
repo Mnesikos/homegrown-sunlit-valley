@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:chicken",
+      "entity": "dragnlivestock:o_chicken",
       "scale": 0.8,
       "text": "These humble birds require little attention, only food."
     }

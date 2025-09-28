@@ -1,0 +1,344 @@
+{
+  "name": "Rose Bush",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:rose_bush",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_rose_bush,flowerary:orange_rose_bush,flowerary:yellow_rose_bush,flowerary:lime_rose_bush,flowerary:mint_rose_bush,flowerary:cyan_rose_bush,flowerary:blue_rose_bush,flowerary:light_blue_rose_bush,flowerary:lavender_rose_bush,flowerary:purple_rose_bush,flowerary:lilac_rose_bush,flowerary:magenta_rose_bush,flowerary:pink_rose_bush,flowerary:peach_rose_bush,flowerary:multicolor_rose_bush,flowerary:white_rose_bush,flowerary:black_rose_bush,flowerary:wilted_rose_bush",
+	  "title": "Rose Bush",
+	  "text": "A Rose Bush is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Rose Bush.$(br2)Rose Bush Pollen Jars will produce red or peach hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_rose_bush_seeds,flowerary:orange_rose_bush_seeds,flowerary:yellow_rose_bush_seeds,flowerary:lime_rose_bush_seeds,flowerary:mint_rose_bush_seeds,flowerary:cyan_rose_bush_seeds,flowerary:blue_rose_bush_seeds,flowerary:light_blue_rose_bush_seeds,flowerary:lavender_rose_bush_seeds,flowerary:purple_rose_bush_seeds,flowerary:lilac_rose_bush_seeds,flowerary:magenta_rose_bush_seeds,flowerary:pink_rose_bush_seeds,flowerary:peach_rose_bush_seeds,flowerary:multicolor_rose_bush_seeds,flowerary:white_rose_bush_seeds,flowerary:black_rose_bush_seeds,flowerary:wilted_rose_bush_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Rose Bush to obtain hybridized Rose Bush Seeds, with an uncommon chance of obtaining hybridized Rose Bushlet Seeds and Rose Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:red_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:orange_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:yellow_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:lime_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:mint_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:cyan_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:blue_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:light_blue_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:lavender_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:purple_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:lilac_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:magenta_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:pink_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:peach_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:multicolor_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:white_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:black_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Rose Bush",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_rose_bush_plant[age=7,half=upper]",
+          "1": "flowerary:wilted_rose_bush_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

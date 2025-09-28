@@ -1,0 +1,6 @@
+{
+    "name": "Flowers",
+	"description": "An overview of all flowers, including how to cross-pollinate for new hybrid species and colors.",
+    "icon": "minecraft:poppy",
+    "category": "patchouli:flowers"
+}

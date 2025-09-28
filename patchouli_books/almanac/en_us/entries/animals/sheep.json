@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:sheep",
+      "entity": "dragnlivestock:o_sheep",
       "scale": 0.8,
       "text": "A verstile farm animal that has a lot of uses. Less than ideal for milking."
     }

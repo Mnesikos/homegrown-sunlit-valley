@@ -1,0 +1,17 @@
+{
+  "name": "Jack Russell Terrier",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Fireworks hat$(br)$(l)Taming item:$()$(br)Raw meats$(br2)$(l)Notes$()$(br)Can be found in swamps."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:jack_russell_terrier{Variant:6}",
+      "scale": 0.7,
+      "text": "Bred to hunt foxes, now mostly used in pest control and as family pets, the Jack is a tenacious terrier with lots of energy."
+    }
+  ]
+}

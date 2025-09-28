@@ -1,0 +1,308 @@
+{
+  "name": "Cornflower",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:cornflower",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_cornflower,flowerary:orange_cornflower,flowerary:yellow_cornflower,flowerary:lime_cornflower,flowerary:mint_cornflower,flowerary:cyan_cornflower,flowerary:blue_cornflower,flowerary:light_blue_cornflower,flowerary:lavender_cornflower,flowerary:purple_cornflower,flowerary:lilac_cornflower,flowerary:magenta_cornflower,flowerary:pink_cornflower,flowerary:peach_cornflower,flowerary:multicolor_cornflower,flowerary:white_cornflower,flowerary:black_cornflower,flowerary:wilted_cornflower",
+	  "title": "Cornflower",
+	  "text": "A Cornflower is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Cornflower.$(br2)Cornflower Pollen Jars will produce blue or purple hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_cornflower_seeds,flowerary:orange_cornflower_seeds,flowerary:yellow_cornflower_seeds,flowerary:lime_cornflower_seeds,flowerary:mint_cornflower_seeds,flowerary:cyan_cornflower_seeds,flowerary:blue_cornflower_seeds,flowerary:light_blue_cornflower_seeds,flowerary:lavender_cornflower_seeds,flowerary:purple_cornflower_seeds,flowerary:lilac_cornflower_seeds,flowerary:magenta_cornflower_seeds,flowerary:pink_cornflower_seeds,flowerary:peach_cornflower_seeds,flowerary:multicolor_cornflower_seeds,flowerary:white_cornflower_seeds,flowerary:black_cornflower_seeds,flowerary:wilted_cornflower_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Cornflower to obtain hybridized Cornflower Seeds, with an uncommon chance of obtaining hybridized Chicory Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Cornflower",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_cornflower_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

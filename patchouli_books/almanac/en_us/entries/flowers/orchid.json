@@ -1,0 +1,308 @@
+{
+  "name": "Orchid",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:blue_orchid",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_orchid,flowerary:orange_orchid,flowerary:yellow_orchid,flowerary:lime_orchid,flowerary:mint_orchid,flowerary:cyan_orchid,flowerary:blue_orchid,flowerary:light_blue_orchid,flowerary:lavender_orchid,flowerary:purple_orchid,flowerary:lilac_orchid,flowerary:magenta_orchid,flowerary:pink_orchid,flowerary:peach_orchid,flowerary:multicolor_orchid,flowerary:white_orchid,flowerary:black_orchid,flowerary:wilted_orchid",
+	  "title": "Orchid",
+	  "text": "A Orchid is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Orchid.$(br2)Orchid Pollen Jars will produce light blue or mint hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_orchid_seeds,flowerary:orange_orchid_seeds,flowerary:yellow_orchid_seeds,flowerary:lime_orchid_seeds,flowerary:mint_orchid_seeds,flowerary:cyan_orchid_seeds,flowerary:blue_orchid_seeds,flowerary:light_blue_orchid_seeds,flowerary:lavender_orchid_seeds,flowerary:purple_orchid_seeds,flowerary:lilac_orchid_seeds,flowerary:magenta_orchid_seeds,flowerary:pink_orchid_seeds,flowerary:peach_orchid_seeds,flowerary:multicolor_orchid_seeds,flowerary:white_orchid_seeds,flowerary:black_orchid_seeds,flowerary:wilted_orchid_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Orchid to obtain hybridized Orchid Seeds, with an uncommon chance of obtaining hybridized Lantanas Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Orchid",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_orchid_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

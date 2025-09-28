@@ -1,0 +1,308 @@
+{
+  "name": "Allium",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:allium",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_allium,flowerary:orange_allium,flowerary:yellow_allium,flowerary:lime_allium,flowerary:mint_allium,flowerary:cyan_allium,flowerary:blue_allium,flowerary:light_blue_allium,flowerary:lavender_allium,flowerary:purple_allium,flowerary:lilac_allium,flowerary:magenta_allium,flowerary:pink_allium,flowerary:peach_allium,flowerary:multicolor_allium,flowerary:white_allium,flowerary:black_allium,flowerary:wilted_allium",
+	  "title": "Allium",
+	  "text": "An Allium is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Allium.$(br2)Allium Pollen Jars will produce magenta or lilac hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_allium_seeds,flowerary:orange_allium_seeds,flowerary:yellow_allium_seeds,flowerary:lime_allium_seeds,flowerary:mint_allium_seeds,flowerary:cyan_allium_seeds,flowerary:blue_allium_seeds,flowerary:light_blue_allium_seeds,flowerary:lavender_allium_seeds,flowerary:purple_allium_seeds,flowerary:lilac_allium_seeds,flowerary:magenta_allium_seeds,flowerary:pink_allium_seeds,flowerary:peach_allium_seeds,flowerary:multicolor_allium_seeds,flowerary:white_allium_seeds,flowerary:black_allium_seeds,flowerary:wilted_allium_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Allium to obtain hybridized Allium Seeds, with an uncommon chance of obtaining hybridized Daffodil Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Allium",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_allium_plant[age=7]",
+          "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:pig",
+      "entity": "dragnlivestock:o_pig",
       "scale": 0.7,
       "text": "Simple and moody, they require a lot of attention before digging up valuable Truffles."
     }

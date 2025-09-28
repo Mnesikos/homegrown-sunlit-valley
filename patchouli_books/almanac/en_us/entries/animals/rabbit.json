@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:rabbit",
+      "entity": "dragnlivestock:o_rabbit",
       "scale": 0.8,
       "text": "They hate being pet, but if they like you enough they'll give you their excess feet... Somehow..."
     }

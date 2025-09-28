@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:horse",
+      "entity": "horse_colors:horse_felinoid",
       "scale": 0.7,
       "text": "Cheaper than a car!"
     }

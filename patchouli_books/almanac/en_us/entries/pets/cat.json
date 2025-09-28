@@ -5,13 +5,13 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Possible Gifts:$()$(br)Neko Ears hat, Ocelot-Fossil$(br2)$(l)Taming$()$(br)Fish"
+      "text": "$(l)Possible Gifts:$()$(br)Neko Ears hat, Ocelot-Fossil"
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:cat",
+      "entity": "simplycats:cat{EyeColor:green,FurLength:L-L,Eumelanin:B-B,Phaeomelanin:Xo-Y,Dilution:D-D,DiluteMod:dm-dm,Agouti:A-A,Tabby:Mc-mc,Spotted:sp-sp,Ticked:ta-ta,Inhibitor:i-i,Colorpoint:C-C,White:w-w,Bobtail:Jb-Jb}",
       "scale": 0.7,
-      "text": "Name your orange cat Coquito and gray one Basil"
+      "text": "Cats spend 70% of their lives sleeping, totaling 13-16 hours daily."
     }
   ]
 }

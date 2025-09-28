@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:frog",
+      "entity": "dragnlivestock:o_frog",
       "scale": 0.7,
       "text": "Loves completing bounties, hates Slimes!"
     }

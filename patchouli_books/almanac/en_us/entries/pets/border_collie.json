@@ -1,0 +1,17 @@
+{
+  "name": "Border Collie",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Sheep-Fossil$(br)$(l)Taming item:$()$(br)Raw meats"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:border_collie{Variant:1}",
+      "scale": 0.7,
+      "text": " While originally bred to herd sheep, they can learn to sniff for survivors after natural disasters, tolerate attention as therapy animals, and much more."
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     },
     {
       "type": "patchouli:entity",
-      "entity": "minecraft:cow",
+      "entity": "dragnlivestock:o_cow",
       "scale": 0.8,
       "text": "Your basic farm animal. Easy to raise, but not worth much."
     }

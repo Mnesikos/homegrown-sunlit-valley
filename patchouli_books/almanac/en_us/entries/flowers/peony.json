@@ -1,0 +1,344 @@
+{
+  "name": "Peony",
+  "category": "patchouli:flowers",
+  "icon": "minecraft:peony",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_peony,flowerary:orange_peony,flowerary:yellow_peony,flowerary:lime_peony,flowerary:mint_peony,flowerary:cyan_peony,flowerary:blue_peony,flowerary:light_blue_peony,flowerary:lavender_peony,flowerary:purple_peony,flowerary:lilac_peony,flowerary:magenta_peony,flowerary:pink_peony,flowerary:peach_peony,flowerary:multicolor_peony,flowerary:white_peony,flowerary:black_peony,flowerary:wilted_peony",
+	  "title": "Peony",
+	  "text": "A Peony is a vanilla flower species that can be hybridized into new colors when a filled pollen jar is used on a vanilla Peony.$(br2)Peony Pollen Jars will produce pink or lavender hybridized seeds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_peony_seeds,flowerary:orange_peony_seeds,flowerary:yellow_peony_seeds,flowerary:lime_peony_seeds,flowerary:mint_peony_seeds,flowerary:cyan_peony_seeds,flowerary:blue_peony_seeds,flowerary:light_blue_peony_seeds,flowerary:lavender_peony_seeds,flowerary:purple_peony_seeds,flowerary:lilac_peony_seeds,flowerary:magenta_peony_seeds,flowerary:pink_peony_seeds,flowerary:peach_peony_seeds,flowerary:multicolor_peony_seeds,flowerary:white_peony_seeds,flowerary:black_peony_seeds,flowerary:wilted_peony_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "Use any of the Pollen Jars on a vanilla Peony to obtain hybridized Peony Seeds, with an uncommon chance of obtaining hybridized Foxglove Seeds."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_peony_plant[age=7,half=upper]",
+          "1": "flowerary:red_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_peony_plant[age=7,half=upper]",
+          "1": "flowerary:orange_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_peony_plant[age=7,half=upper]",
+          "1": "flowerary:yellow_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_peony_plant[age=7,half=upper]",
+          "1": "flowerary:lime_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_peony_plant[age=7,half=upper]",
+          "1": "flowerary:mint_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_peony_plant[age=7,half=upper]",
+          "1": "flowerary:cyan_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_peony_plant[age=7,half=upper]",
+          "1": "flowerary:blue_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_peony_plant[age=7,half=upper]",
+          "1": "flowerary:light_blue_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_peony_plant[age=7,half=upper]",
+          "1": "flowerary:lavender_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_peony_plant[age=7,half=upper]",
+          "1": "flowerary:purple_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_peony_plant[age=7,half=upper]",
+          "1": "flowerary:lilac_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_peony_plant[age=7,half=upper]",
+          "1": "flowerary:magenta_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_peony_plant[age=7,half=upper]",
+          "1": "flowerary:pink_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_peony_plant[age=7,half=upper]",
+          "1": "flowerary:peach_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_peony_plant[age=7,half=upper]",
+          "1": "flowerary:multicolor_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_peony_plant[age=7,half=upper]",
+          "1": "flowerary:white_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_peony_plant[age=7,half=upper]",
+          "1": "flowerary:black_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Peony",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_peony_plant[age=7,half=upper]",
+          "1": "flowerary:wilted_peony_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+{
+  "name": "* Cross-pollination",
+  "category": "patchouli:flowers",
+  "icon": "flowerary:empty_pollen_jar",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "An empty pollen jar may be used to collect pollen by holding it in the hand and using it on a vanilla flower. The flower will be unaffected by this, and its pollen will influence the color of any resulting seeds, with a 10% chance to mutate into a secondary color, or a 2% chance to mutate into the rare multicolor."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "flowerary:empty_pollen_jar",
+      "text": "Using a filled pollen jar on a vanilla flower will use up the pollen, return an empty pollen jar, and give you new flower seeds. The flower the pollen jar is used on will influence the species of flower for the resulting seeds, with a 20% chance to mutate into a hybrid flower species."
+    }
+  ]
+}

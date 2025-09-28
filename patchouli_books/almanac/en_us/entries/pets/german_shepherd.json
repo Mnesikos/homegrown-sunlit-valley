@@ -1,0 +1,17 @@
+{
+  "name": "German Shepherd",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Eevee Ears hat$(br)$(l)Taming item:$()$(br)Raw meats$(br2)$(l)Notes$()$(br)Can be found in plains."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:german_shepherd{Variant:5}",
+      "scale": 0.7,
+      "text": "German shepherds are regal, loyal and intelligent dogs, with a gentle and playful streak for those they trust."
+    }
+  ]
+}

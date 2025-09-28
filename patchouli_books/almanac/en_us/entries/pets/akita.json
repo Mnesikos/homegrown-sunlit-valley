@@ -1,0 +1,17 @@
+{
+  "name": "Akita",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Eevee Ears hat$(br)$(l)Taming item:$()$(br)Raw meats"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:akita{Variant:4}",
+      "scale": 0.7,
+      "text": "A rough, tough, no-nonsense large game hunting dog, the akita is quiet, clean and aloof."
+    }
+  ]
+}

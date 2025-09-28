@@ -1,0 +1,17 @@
+{
+  "name": "Pit Bull",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Sheep-Fossil$(br)$(l)Taming item:$()$(br)Raw meats"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:pit_bull{Variant:8}",
+      "scale": 0.7,
+      "text": "While “pit bull” isn’t an official breed, it’s a classifying term for medium-sized dogs with short fur, whip tails, large heads and extremely strong jaws."
+    }
+  ]
+}

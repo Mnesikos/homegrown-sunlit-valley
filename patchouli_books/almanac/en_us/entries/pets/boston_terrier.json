@@ -1,0 +1,17 @@
+{
+  "name": "Boston Terrier",
+  "category": "patchouli:pets",
+  "icon": "farm_and_charm:dog_food",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Possible Gifts:$()$(br)Fireworks hat$(br)$(l)Taming item:$()$(br)Raw meats"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "workdog:boston_terrier{Variant:1}",
+      "scale": 0.7,
+      "text": "Unlike a lot of other bulldogs, the Boston has all of the energy, but little stubbornness, and they love to trot alongside an owner and experience new things."
+    }
+  ]
+}
