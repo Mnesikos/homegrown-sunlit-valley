@@ -985,12 +985,19 @@
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
-			rewards: [{
-				count: 4
-				id: "7206E75A9309D986"
-				item: "society:bouquet_bag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7206E75A9309D986"
+					item: "society:bouquet_bag"
+					type: "item"
+				}
+				{
+					id: "3C273BC02EC38EE8"
+					item: "sophisticatedstorage:advanced_magnet_upgrade"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "526CDEE7648DACB8"
 				item: {
