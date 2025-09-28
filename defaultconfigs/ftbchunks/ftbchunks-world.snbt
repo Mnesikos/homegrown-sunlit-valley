@@ -104,7 +104,7 @@
 	# AVERAGE: use the average of all members' limits.
 	# Default: "largest"
 	# Valid values: "largest", "owner", "sum", "average"
-	party_limit_mode: "largest"
+	party_limit_mode: "SUM"
 	
 	# If true, pistons are prevented from pushing/pulling blocks across claims owned by different teams (unless the target claim has public 'edit block' permissions defined). If 'disable_protection' is set to true, this setting is ignored.
 	# Default: true
