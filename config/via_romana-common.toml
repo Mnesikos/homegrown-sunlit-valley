@@ -21,11 +21,11 @@
 	path_distance_maximum = 100000.0
 	#Cooldown in seconds for travel fatigue effect.
 	#Range: 0.0 ~ 3600.0
-	travel_fatigue_cooldown = 30.0
+	travel_fatigue_cooldown = 5.0
 
 [Management]
 	#Comma-separated list of entity IDs allowed to use paths (e.g., minecraft:player, minecraft:horse).
-	valid_entities = "minecraft:player, minecraft:boat, minecraft:horse, minecraft:pig, minecraft:strider, minecraft:camel"
+	valid_entities = "minecraft:player, minecraft:boat, minecraft:horse, horse_colors:horse_felinoid, horse_colors:donkey, horse_colors:mule, dragnlivestock:caribou, dragnlivestock:o_cow, dragnlivestock:o_mooshroom, minecraft:pig, dragnlivestock:o_pig, minecraft:strider, minecraft:camel, dragnlivestock:o_camel, automobility:automobile, dragnlivestock:covered_wagon, dragnlivestock:livestock_wagon, dragnlivestock:lumber_wagon, dragnlivestock:goods_cart, dragnlivestock:mining_cart, dragnlivestock:transport_cart, dragnlivestock:plow"
 	#Comma-separated list of dimension IDs where the mod operates (e.g., minecraft:overworld).
 	valid_dimensions = "minecraft:overworld, minecraft:the_end"
 	#Comma-separated list of block tags considered valid path blocks (e.g., via_romana:path_block).

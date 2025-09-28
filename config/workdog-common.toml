@@ -1,0 +1,32 @@
+
+[Options]
+	enabled = true
+	pedigree_mode = false
+	remove_vanilla_wolves = true
+	# Sets a limit of dogs each player is allowed to have tamed, setting this to 0 will disable the limit.
+	tamed_limit = 0
+	# This number is used to limit dog breeding; if more than this amount of dogs are nearby, automatic breeding will be disabled.
+	# Default: 20
+	breeding_limit = 20
+	# Enable automatic naming for baby animals; this will give a placeholder name to the offspring of named animals.
+	# Set this to true if you operate a server that has a lag clearing feature that wipes un-named entities!
+	name_babies = false
+
+[Timers]
+	# Number of minecraft ticks before a puppy becomes an adult.
+	# Default: 72000 (3 full minecraft days)
+	puppy_mature_timer = 72000
+	# Number of minecraft ticks before a pregnant dog will give birth.
+	# Default: 72000 (3 full minecraft days)
+	pregnancy_timer = 72000
+	# Number of minecraft ticks that a dog will be in heat.
+	# Default: 48000 (2 full minecraft days)
+	heat_timer = 48000
+	# Number of minecraft ticks that a dog will not go into heat.
+	# Default: 72000 (3 full minecraft days)
+	heat_cooldown = 72000
+
+[Lists]
+	wolf_prey_list = ["minecraft:sheep", "minecraft:pig", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:cow", "minecraft:ocelot", "minecraft:parrot", "simplycats:cat", "hotchicks:chicken", "hotchicks:cow", "hotchicks:rabbit", "workdog:boston_terrier", "workdog:jack_russell_terrier"]
+	herder_livestock_list = ["minecraft:sheep", "minecraft:cow", "minecraft:pig", "minecraft:chicken", "minecraft:rabbit", "minecraft:llama", "minecraft:trader_llama", "hotchicks:cow", "hotchicks:chicken", "hotchicks:rabbit"]
+

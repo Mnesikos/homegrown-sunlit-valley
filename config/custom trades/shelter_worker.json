@@ -1,0 +1,134 @@
+{
+  "profession": "simplycats:shelter_worker",
+  "removeOtherTrades": true,
+  "maxTrades": 20,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "simplycats:catnip_seeds",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 4096,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_catnip_seeds_for_bevel"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:catnip",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:sprocket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 4096,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_catnip_for_sprocket"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:sterilization_potion",
+        "amount": 8,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 6,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_sterilization_potion_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:pet_carrier",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:crown",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_pet_carrier_for_crown"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:laser_pointer",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:bevel",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 4096,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_laser_pointer_for_bevel"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:treat_bag",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "numismatics:cog",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_treat_bag_for_cog"
+    },
+    {
+      "offer": {
+        "itemKey": "simplycats:pet_carrier",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Damage:3}"
+      },
+      "request": {
+        "itemKey": "numismatics:sun",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 64,
+      "priceMultiplier": 0.0,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:shelter_worker_cat_spawn_for_sun"
+    }
+  ]
+}

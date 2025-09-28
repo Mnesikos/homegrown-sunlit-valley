@@ -13,11 +13,11 @@
 	#The maximum length for a path to be valid in blocks from start to finish
 	"Maximum Path Distance" = 100000.0
 	#Amount of ticks for teleport cooldown effect (enter 0 to disable)
-	"Teleport Cooldown" = 600.0
+	"Teleport Cooldown" = 100.0
 
 ["Allowed Blocks, Entities, & Dimensions"]
 	#Entities that you are able to teleport with
-	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, minecraft:pig, minecraft:strider, minecraft:camel, automobility:automobile"
+	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, horse_colors:horse_felinoid, horse_colors:donkey, horse_colors:mule, dragnlivestock:caribou, dragnlivestock:o_cow, dragnlivestock:o_mooshroom, minecraft:pig, dragnlivestock:o_pig, minecraft:strider, minecraft:camel, dragnlivestock:o_camel, automobility:automobile, dragnlivestock:covered_wagon, dragnlivestock:livestock_wagon, dragnlivestock:lumber_wagon, dragnlivestock:goods_cart, dragnlivestock:mining_cart, dragnlivestock:transport_cart, dragnlivestock:plow"
 	#Dimensions that paths will be allowed in
 	"Valid Dimensions" = "minecraft:overworld, minecraft:the_end"
 	#A comma separated list of accepted block tags for path
