@@ -1071,11 +1071,6 @@
 					item: "ribbits:ribbit_nitwit_spawn_egg"
 					type: "item"
 				}
-				{
-					id: "7C8E972DB82CC7E7"
-					item: "ribbits:ribbit_gardener_spawn_egg"
-					type: "item"
-				}
 			]
 			tasks: [{
 				id: "63EB3001225261A5"

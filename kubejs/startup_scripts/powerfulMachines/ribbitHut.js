@@ -11,11 +11,19 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
   let drops;
   let quality;
   let scannedBlock = level.getBlock(pos);
+  let inserted = false;
+  let valid = true;
   server.scheduleInTicks(delay, () => {
     if (scannedBlock.hasTag("minecraft:crops")) {
       blockState = level.getBlockState(pos);
       scannedMCBlock = blockState.block;
-      if (scannedMCBlock.isMaxAge(blockState)) {
+      if (
+        scannedBlock.id === "supplementaries:flax" &&
+        scannedBlock.getProperties().get("half") == "lower"
+      ) {
+        valid = false;
+      }
+      if (valid && scannedMCBlock.isMaxAge(blockState)) {
         drops = Block.getDrops(blockState, level, pos, null, player, Item.of("minecraft:hoe"));
         drops.forEach((drop) => {
           quality = global.getCropQuality(scannedBlock);
@@ -25,24 +33,34 @@ global.handleRibbitHarvest = (tickEvent, pos, player, delay) => {
           }
           if (global.inventoryHasRoom(block, drop)) {
             global.insertInto(block, drop);
-            scannedBlock.set(scannedBlock.id, { age: "0" });
-            server.runCommandSilent(
-              `playsound minecraft:block.grass.break block @a ${x} ${y} ${z} 0.5`
-            );
-            level.spawnParticles(
-              "ribbits:spell",
-              true,
-              x + 0.5,
-              y + 0.5,
-              z + 0.5,
-              0,
-              0.1,
-              0,
-              1,
-              0.0001
-            );
+            inserted = true;
           }
         });
+      }
+      if (inserted) {
+        inserted = false;
+        if (scannedBlock.id === "supplementaries:flax") {
+          scannedBlock.set("minecraft:air", { age: "0" });
+          level.getBlock(pos.below()).set("supplementaries:flax", { age: "0", half: "lower" });
+        } else {
+          scannedBlock.set(scannedBlock.id, { age: "0" });
+        }
+        scannedBlock.set(scannedBlock.id, { age: "0" });
+        server.runCommandSilent(
+          `playsound minecraft:block.grass.break block @a ${x} ${y} ${z} 0.5`
+        );
+        level.spawnParticles(
+          "ribbits:spell",
+          true,
+          x + 0.5,
+          y + 0.5,
+          z + 0.5,
+          0,
+          0.1,
+          0,
+          1,
+          0.0001
+        );
       }
     }
   });
