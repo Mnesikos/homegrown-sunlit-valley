@@ -5688,6 +5688,42 @@
             ]
         },
         {
+            "pakku_id": "Djh2BoAyPgBWZieM",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "flowerary"
+            },
+            "name": {
+                "curseforge": "Flowerary"
+            },
+            "id": {
+                "curseforge": "1272888"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "flowerary-1.20.1-1.0.0.jar",
+                    "mc_versions": [
+                        "1.20.1"
+                    ],
+                    "loaders": [
+                        "forge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6563/174/flowerary-1.20.1-1.0.0.jar",
+                    "id": "6563174",
+                    "parent_id": "1272888",
+                    "hashes": {
+                        "sha1": "bff9cd03aed1cb66ba686b716200c458fdc7eb94",
+                        "md5": "53cce850f32b313828d08d8c7bed0b50"
+                    },
+                    "required_dependencies": [],
+                    "size": 4173600,
+                    "date_published": "2025-05-25T01:06:00.593Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "Teh5nYzjaE6r2fT2",
             "type": "MOD",
             "slug": {
