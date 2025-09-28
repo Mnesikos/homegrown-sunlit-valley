@@ -3026,6 +3026,306 @@
 			x: -10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: [""]
+			icon: "minecraft:mangrove_planks"
+			id: "15697B6B65D52080"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6DBB5FC90BF1A56C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_mangrove"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_mangrove"
+						owner: "worn"
+						owner_name: "FateOmega"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "13CCB9E9D2BD0C2F"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "5A18A7BE03BA2AD3"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "4F7073E9A86C9CB0"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Mangrove Barn"
+			x: -13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: [""]
+			icon: "minecraft:mangrove_planks"
+			id: "44A2215FA202C299"
+			min_required_tasks: 3
+			rewards: [{
+				id: "41D759D0D75B08FB"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_mangrove"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_mangrove"
+						owner: "worn"
+						owner_name: "FateOmega"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "71F6C89A71D1439B"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1E326E3E30452B54"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "5C8F81761BEF1E9B"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Mangrove Shed"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: [""]
+			icon: "minecraft:mangrove_planks"
+			id: "0CDBEBF5D47330A9"
+			min_required_tasks: 3
+			rewards: [{
+				id: "14D754B4F9558E82"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_mangrove"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_mangrove"
+						owner: "worn"
+						owner_name: "FateOmega"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 20L
+					id: "1F5D8F45D166A7EA"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "1EBC1A2F923FFE4E"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "1525BE01B9427F4B"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mangrove Deluxe Barn"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: [""]
+			icon: "minecraft:mangrove_planks"
+			id: "25B5F9136178767B"
+			min_required_tasks: 3
+			rewards: [{
+				id: "42F9AD448EE5CA39"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_mangrove"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_mangrove"
+						owner: "worn"
+						owner_name: "FateOmega"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "13E839E0D10B78EF"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "472EBBE29FB913B2"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "0ED0F9240CA65DD2"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mangrove Farmhouse"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: [""]
+			icon: "minecraft:mangrove_planks"
+			id: "2D440E0810B1111F"
+			min_required_tasks: 3
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C53175DBBA54088"
+				table_id: 4623716102751830300L
+				type: "choice"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "4403506215BA479C"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "0B5DC6010E7DC60D"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "5297942EAF7A3AC3"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Mangrove Large Shed"
+			x: -5.0d
+			y: 0.0d
+		}
 	]
 	title: "{ftbquests.chapter.building_shop.title}"
 }
