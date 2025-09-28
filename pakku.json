@@ -25,7 +25,7 @@
         "bad-wither-no-cookie-reloaded": {
             "side": "CLIENT"
         },
-        "blur": {
+        "blur-forge": {
             "side": "CLIENT"
         },
         "chat-heads": {
@@ -49,7 +49,7 @@
         "crash-assistant": {
             "side": "CLIENT"
         },
-        "ding": {
+        "231275": {
             "side": "CLIENT"
         },
         "default-options": {
@@ -91,12 +91,6 @@
         "itemzoom": {
             "side": "CLIENT"
         },
-        "justenoughprofessions": {
-            "side": "CLIENT"
-        },
-        "justenoughresources": {
-            "side": "CLIENT"
-        },
         "keepstepping": {
             "side": "CLIENT"
         },
@@ -112,16 +106,10 @@
         "my-server-is-compatible": {
             "side": "CLIENT"
         },
-        "notes": {
-            "side": "CLIENT"
-        },
         "particle-rain": {
             "side": "CLIENT"
         },
         "iris-flywheel-compat": {
-            "side": "CLIENT"
-        },
-        "journeypac": {
             "side": "CLIENT"
         },
         "oculus": {
@@ -158,6 +146,15 @@
             "side": "BOTH"
         },
         "skillexpnotifier": {
+            "side": "BOTH"
+        },
+        "trading-post": {
+            "side": "BOTH"
+        },
+        "society-trading": {
+            "side": "BOTH"
+        },
+        "create-trading-floor": {
             "side": "BOTH"
         },
         "dcintegration": {
