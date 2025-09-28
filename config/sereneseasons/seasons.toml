@@ -12,7 +12,7 @@
 	#It is intended to be used in conjunction with another mod which adjusts the actual length of a Minecraft day.
 	day_duration = 24000
 	#The duration of a sub season in days.
-	sub_season_duration = 10
+	sub_season_duration = 168
 	#The starting sub season for new worlds.
 	#0 = Random, 1 - 3 = Early/Mid/Late Spring
 	#4 - 6 = Early/Mid/Late Summer
@@ -20,7 +20,7 @@
 	#10 - 12 = Early/Mid/Late Winter
 	starting_sub_season = 1
 	#If the season should progress on a server with no players online
-	progress_season_while_offline = false
+	progress_season_while_offline = true
 
 [aesthetic_settings]
 	#Change the grass color based on the current season
@@ -42,11 +42,6 @@
 #max_rain_time is the maximum time interval between rain events in ticks. Set to -1 to disable rain.
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
-#grass_colour is the color of grass, from 0 to 0xFFFFFF(16777215).
-#grass_saturation is the saturation multiplier of grass color. Set to -1 to disable.
-#foliage_colour is the color of foliage, from 0 to 0xFFFFFF(16777215).
-#foliage_saturation is the saturation multiplier of foliage color. Set to -1 to disable.
-#birch_color is the color of birch foliage, from 0 to 0xFFFFFF(16777215). It will use the same saturation multiplier of foliage_colour
 [[season_properties]]
 	season = "EARLY_AUTUMN"
 	melt_percent = 12.5
