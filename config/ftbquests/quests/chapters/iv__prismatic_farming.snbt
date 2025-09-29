@@ -453,6 +453,8 @@
 				"{ftbquests.chapter.iii__advanced_farming.quest42.description2}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest42.description3}"
+				""
+				"It can be upgraded with Magic Shears to automatically harvest meat, though this does reduce their affection if they aren't pet every day."
 			]
 			id: "4D1F2652FD9DEF69"
 			rewards: [{

@@ -1,26 +1,49 @@
 {
   "favorites": [
     {
-      "stack": "item:snowyspirit:ginger_flower"
+      "stack": "item:meadow:stripped_pine_wood"
     },
     {
-      "stack": {
-        "type": "item",
-        "id": "brewery:mashed_potatoes",
-        "amount": 2
-      },
-      "recipe": "toomanyrecipeviewers:/farm_and_charm/mincer/mashed_potatoes"
+      "stack": "item:meadow:stripped_pine_log"
     },
     {
-      "stack": "item:farm_and_charm:minced_beef",
-      "recipe": "toomanyrecipeviewers:/farm_and_charm/mincer/minced_beef"
+      "stack": "item:dramaticdoors:short_meadow_pine_door"
     },
     {
-      "stack": "item:farm_and_charm:lamb_ham",
-      "recipe": "toomanyrecipeviewers:/farm_and_charm/mincer/lamb_ham"
+      "stack": "item:dramaticdoors:tall_meadow_pine_door"
+    },
+    {
+      "stack": "item:dramaticdoors:short_meadow_pine_barn_door"
+    },
+    {
+      "stack": "item:dramaticdoors:tall_meadow_pine_barn_door"
     }
   ],
   "lookup_history": [
+    "item:society:cauliflower_preserves",
+    "item:vinery:apple_juice",
+    "item:vinery:red_taiga_grapejuice",
+    "item:vinery:white_grapejuice",
+    "item:botania:crafting_halo",
+    "item:vinery:red_grapejuice",
+    "item:nethervinery:warped_grapejuice",
+    "item:vinery:fermentation_barrel",
+    "item:society:blueberry",
+    "item:farm_and_charm:fertilizer",
+    "item:vintagedelight:organic_mash",
+    "item:refinedstorage:64k_storage_part",
+    "item:minecraft:beetroot_seeds",
+    "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"society:peanut_seed\"}}",
+    "item:create:crushed_raw_iron",
+    "item:veggiesdelight:stuffed_bellpeppers",
+    "item:veggiesdelight:broccoli",
+    "item:veggiesdelight:sweet_potato",
+    "item:botania_seeds:brown_mystical_flower_seed",
+    "item:farmersdelight:cabbage_seeds",
+    "item:botania_seeds:black_mystical_flower_seed",
+    "item:brewery:hop_trellis_seed",
+    "item:society:truffle_oil",
+    "item:bakery:chocolate_donut",
     "item:society:tubabacco_leaf",
     "item:farm_and_charm:kernels",
     "item:snowyspirit:ginger",
@@ -35,17 +58,10 @@
     "item:botania:apothecary_default",
     "item:simplerecall:recall_potion",
     "item:society:ancient_fruit",
-    {
-      "type": "item",
-      "id": "society:blueberry",
-      "amount": 4
-    },
     "item:society:onion_seed",
     "item:farm_and_charm:onion",
     "item:vintagedelight:pickled_onion",
     "item:society:sparkstone",
-    "item:vinery:red_grapejuice",
-    "item:vinery:white_grapejuice",
     "item:vinery:white_taiga_grapejuice",
     "item:society:spider_silk",
     "item:splendid_slimes:plort_rippit",
@@ -81,7 +97,6 @@
       "amount": 0
     },
     "item:nethervinery:crimson_grapejuice",
-    "item:nethervinery:warped_grapejuice",
     {
       "type": "fluid",
       "id": "vinery:white_grape_juice",
@@ -143,7 +158,6 @@
     "item:farm_and_charm:minced_beef",
     "item:farm_and_charm:lamb_ham",
     "item:brewery:mashed_potatoes",
-    "item:farm_and_charm:fertilizer",
     {
       "type": "item",
       "id": "farmersdelight:chicken_cuts",
@@ -325,7 +339,6 @@
     "item:minecraft:deepslate_diamond_ore",
     "item:society:ancient_juice",
     "item:dew_drop_farmland_growth:deluxe_hydrating_fertilizer",
-    "item:vinery:red_taiga_grapejuice",
     "item:vinery:red_savanna_grapejuice",
     {
       "type": "fluid",
@@ -338,13 +351,11 @@
       "amount": 38
     },
     "item:vinery:grapevine_pot",
-    "item:vinery:fermentation_barrel",
     "item:society:sparkstone_dust",
     "item:botania:spark_upgrade_dispersive",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
     "item:society:sparkstone_block",
     "item:vintagedelight:peanut",
-    "item:veggiesdelight:sweet_potato",
     "item:farmersdelight:tomato",
     "item:society:milk_pail",
     "item:farm_and_charm:farmers_bread",
@@ -354,7 +365,6 @@
     "item:brewery:beer_standard",
     "item:society:wheel_of_adaptation",
     "item:windswept:gingerbread_brick_slab",
-    "item:minecraft:beetroot_seeds",
     "item:whimsy_deco:moroccan_sofa",
     "item:whimsy_deco:rattan_stool",
     "item:whimsy_deco:orange_stocking",
@@ -510,12 +520,10 @@
     "item:meadow:woodcutter",
     "item:minecraft:brewing_stand",
     "item:minecraft:smithing_table",
-    "item:farmersdelight:cabbage_seeds",
     "item:minecraft:fletching_table",
     "item:minecraft:note_block",
     "item:minecraft:wheat_seeds",
     "item:etcetera:cotton_seeds",
-    "item:quark:seed_pouch{itemCount:640,storedItem:{Count:1b,id:\"society:garlic_seed\"}}",
     "item:create:flywheel",
     "item:society:starfruit_juice",
     "item:society:cranberry_crate",
@@ -535,7 +543,6 @@
     "item:minecraft:lectern",
     "item:minecraft:villager_spawn_egg",
     "item:trofers:large_pillar{BlockEntityTag:{Trophy:\"trofers:artifacts\"}}",
-    "item:vintagedelight:organic_mash",
     "item:create:pulse_timer",
     "item:minecraft:netherrack",
     "item:quark:netherrack_bricks",
@@ -564,7 +571,6 @@
       "id": "oreganized:silver_nugget",
       "amount": 9
     },
-    "item:create:crushed_raw_iron",
     "item:minecraft:raw_iron",
     "item:dew_drop_farmland_growth:weak_fertilizer",
     "item:minecraft:diamond_hoe{Damage:0}",
@@ -1093,7 +1099,6 @@
     "item:create:polished_cut_scoria_wall",
     "item:veggiesdelight:zucchini",
     "item:veggiesdelight:zucchini_seeds",
-    "item:veggiesdelight:broccoli",
     "item:veggiesdelight:turnip_seeds",
     "item:veggiesdelight:broccoli_seeds",
     "item:veggiesdelight:turnip_crate",
@@ -1365,17 +1370,7 @@
     "item:create:industrial_iron_block",
     "item:minecraft:iron_ingot",
     "item:twigs:tangerine_seashell",
-    "item:society:legendary_ink",
-    "item:tanukidecor:antique_cabinet",
-    "item:tanukidecor:antique_clock",
-    "item:crabbersdelight:raw_frog_leg",
-    "item:society:pristine_aquamarine",
-    "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:puddle\"}}",
-    "item:splendid_slimes:slime_heart{slime:{id:\"splendid_slimes:weeping\"}}",
-    "item:twigs:roseate_seashell{}",
-    "item:everycomp:rfm/vanillabackport/pale_oak_kitchen_sink",
-    "item:verdantvibes:cattails{}",
-    "item:create_central_kitchen:aloe_gel_bucket"
+    "item:society:legendary_ink"
   ],
   "craft_history": [
     "whimsy_deco:classic_tile",
@@ -1422,8 +1417,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
