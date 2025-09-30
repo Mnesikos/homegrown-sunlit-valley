@@ -17,9 +17,24 @@
     },
     {
       "stack": "item:dramaticdoors:tall_meadow_pine_barn_door"
+    },
+    {
+      "stack": {
+        "type": "item",
+        "id": "minecraft:wheat",
+        "amount": 8
+      }
     }
   ],
   "lookup_history": [
+    "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}",
+    "item:society:slouching_towards_artistry",
+    "item:vintagedelight:vinegar_mason_jar",
+    "item:justhammers:impact_core{Damage:0}",
+    "item:dew_drop_farmland_growth:gold_sprinkler",
+    "item:dew_drop_farmland_growth:iron_sprinkler",
+    "item:automobility:dirt_off_road",
+    "item:minecraft:spruce_slab",
     "item:society:cauliflower_preserves",
     "item:vinery:apple_juice",
     "item:vinery:red_taiga_grapejuice",
@@ -175,10 +190,7 @@
     "item:whimsy_deco:phone",
     "item:dew_drop_farmland_growth:netherite_sprinkler",
     "item:dew_drop_farmland_growth:diamond_sprinkler",
-    "item:dew_drop_farmland_growth:gold_sprinkler",
-    "item:dew_drop_farmland_growth:iron_sprinkler",
     "item:farmersdelight:salmon_roll",
-    "item:society:slouching_towards_artistry",
     "item:kata:adv_jungle_kata_doll",
     "item:minecraft:grindstone",
     "item:pamhc2trees:plum_sapling",
@@ -1337,40 +1349,7 @@
     "item:society:salmonberry_crate",
     "item:society:crystalberry_crate{}",
     "item:society:smoked_salmon",
-    "item:farmersdelight:grilled_salmon",
-    "item:society:salmonberry",
-    "item:society:double_aged_century_egg",
-    "item:vintagedelight:century_egg",
-    "item:longwings:butterfly_driplure",
-    "item:crabbersdelight:raw_squid_tentacles",
-    "item:aquaculture:smallmouth_bass",
-    "item:society:nether_jelly",
-    "item:society:butterfly_amber",
-    {
-      "type": "item",
-      "id": "society:moth_pollen",
-      "amount": 5
-    },
-    "item:waterframes:projector",
-    "item:crittersandcompanions:koi_fish",
-    "item:minecraft:red_mushroom",
-    "item:minecraft:red_mushroom_block",
-    "item:farmersdelight:red_mushroom_colony",
-    "item:vinery:grass_slab",
-    "item:automobility:grass_off_road",
-    "item:botania:gaia_ingot",
-    "item:botania:jaded_amaranthus",
-    "item:numismatics:bank_terminal",
-    {
-      "type": "item",
-      "id": "minecraft:diamond",
-      "amount": 1152
-    },
-    "item:minecraft:diamond_block",
-    "item:create:industrial_iron_block",
-    "item:minecraft:iron_ingot",
-    "item:twigs:tangerine_seashell",
-    "item:society:legendary_ink"
+    "item:farmersdelight:grilled_salmon"
   ],
   "craft_history": [
     "whimsy_deco:classic_tile",
@@ -1417,8 +1396,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "create:crafting/kinetics/mechanical_crafter",
-      "minecraft:kjs/society_deluxe_worm_farm"
+      "minecraft:kjs/society_deluxe_worm_farm",
+      "create:crafting/kinetics/mechanical_crafter"
     ],
     "tags": {},
     "resolutions": {},
