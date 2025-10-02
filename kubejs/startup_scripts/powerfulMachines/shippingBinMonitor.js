@@ -11,6 +11,7 @@ global.runShippingBinMonitor = (entity) => {
     let playerAttributes = blockData.attributes;
     let playerStages = blockData.stages;
     let calculationResults = -1;
+    if (!playerStages || !playerAttributes) return;
 
     calculationResults = Math.round(
       global.processShippingBinInventory(

@@ -35,7 +35,7 @@ StartupEvents.registry("block", (event) => {
         let playerAttributes = blockData.attributes;
         let playerStages = blockData.stages;
         let ownerUUID = blockData.owner;
-
+        if (!playerStages || !playerAttributes) return;
         value = global.processShippingBinInventory(
           inventory,
           slots,

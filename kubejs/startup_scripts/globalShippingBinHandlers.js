@@ -133,7 +133,7 @@ global.handleShippingBinDebt = (value, player, server, block, inventory, extenal
       server.runCommandSilent(
         `emberstextapi sendcustom ${
           player.username
-        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 f● §6${global.formatPrice(
+        } {anchor:"TOP_LEFT",background:1,color:"#FFFFFF",size:1,offsetY:36,offsetX:6,typewriter:1,align:"TOP_LEFT"} 160 §f● §6${global.formatPrice(
           debtPaid
         )} §7of your debt paid off...`
       );

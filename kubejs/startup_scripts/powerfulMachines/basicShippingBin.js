@@ -51,6 +51,7 @@ StartupEvents.registry("block", (event) => {
           let playerStages = blockData.stages;
           let removedSlots = [];
           let calculationResults;
+          if (!playerStages || !playerAttributes) return;
 
           calculationResults = global.processShippingBinInventory(
             inventory,
