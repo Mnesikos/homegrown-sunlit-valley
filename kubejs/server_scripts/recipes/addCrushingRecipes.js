@@ -1,4 +1,4 @@
-console.info("[SOCIETY] addMiscRecipes.js loaded");
+console.info("[SOCIETY] addCrushingRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
   const crushedRecipes = (input, output, outputCount, ignoreMincer) => {
