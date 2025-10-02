@@ -349,6 +349,26 @@
 			x: 2.5d
 			y: -2.5d
 		}
+		{
+			id: "2F0F38F09F139786"
+			tasks: [{
+				id: "6550100C135F92D8"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			id: "01D5DCF89F7FC44F"
+			tasks: [{
+				id: "62C4B375B2FB7FA9"
+				item: "numismatics:prismatic_coin"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
 	]
 	title: "{ftbquests.chapter.welcome.title}"
 }

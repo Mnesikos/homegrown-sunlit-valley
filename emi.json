@@ -27,6 +27,53 @@
     }
   ],
   "lookup_history": [
+    "item:botania:daffomill",
+    "item:minecraft:iron_horse_armor",
+    "item:minecraft:iron_boots{Damage:0}",
+    "item:minecraft:iron_chestplate{Damage:0}",
+    "item:minecraft:iron_shovel{Damage:0}",
+    "item:minecraft:iron_pickaxe{Damage:0}",
+    "item:minecraft:iron_axe{Damage:0}",
+    "item:minecraft:iron_sword{Damage:0}",
+    "item:minecraft:raw_iron",
+    "item:minecraft:iron_nugget",
+    "item:crabbersdelight:mana_crab_trap_bait",
+    "item:botania:pixie_dust",
+    {
+      "type": "item",
+      "id": "numismatics:neptunium_coin",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "numismatics:sun",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "supplementaries:antique_ink",
+      "amount": 20
+    },
+    {
+      "type": "item",
+      "id": "pamhc2trees:mangoitem",
+      "amount": 16
+    },
+    {
+      "type": "item",
+      "id": "atmospheric:passion_fruit",
+      "amount": 21
+    },
+    "item:minecraft:netherite_helmet{Damage:0}",
+    "item:minecraft:golden_axe{Damage:0}",
+    "item:oreganized:glance",
+    "item:oreganized:spotted_glance",
+    "item:oreganized:lead_nugget",
+    "item:oreganized:waxed_spotted_glance",
+    "item:vinery:fermentation_barrel",
+    "item:minecraft:fermented_spider_eye",
+    "item:veggiesdelight:fermented_garlic_honey",
+    "item:society:juice_inserter",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:sparkcat\"}}",
     "item:society:slouching_towards_artistry",
     "item:vintagedelight:vinegar_mason_jar",
@@ -42,7 +89,6 @@
     "item:botania:crafting_halo",
     "item:vinery:red_grapejuice",
     "item:nethervinery:warped_grapejuice",
-    "item:vinery:fermentation_barrel",
     "item:society:blueberry",
     "item:farm_and_charm:fertilizer",
     "item:vintagedelight:organic_mash",
@@ -139,7 +185,6 @@
     "item:society:ribbit_hut",
     "item:society:feeding_trough",
     "item:society:mana_milker",
-    "item:society:juice_inserter",
     "item:society:growth_obelisk",
     "item:society:auto_tapper",
     "item:society:auto_worm_farm",
@@ -398,7 +443,6 @@
     "item:furniture:sofa_yellow",
     "item:furniture:mangrove_desk_chair",
     "item:furniture:birch_dresser",
-    "item:supplementaries:antique_ink",
     "item:splendid_slimes:slime_item{slime:{id:\"splendid_slimes:mechanic\"}}",
     "#item:forge:ingots",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:mechanic\"}}",
@@ -541,7 +585,6 @@
     "item:society:cranberry_crate",
     "item:herbalbrews:yerba_mate_leaf_block",
     "item:society:ancient_fruit_crate",
-    "item:numismatics:neptunium_coin",
     "item:farmersdelight:tomato_seeds",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sweet\"}}",
     "item:minecraft:composter",
@@ -583,7 +626,6 @@
       "id": "oreganized:silver_nugget",
       "amount": 9
     },
-    "item:minecraft:raw_iron",
     "item:dew_drop_farmland_growth:weak_fertilizer",
     "item:minecraft:diamond_hoe{Damage:0}",
     "item:stardew_fishing:cork_bobber{Damage:0}",
@@ -754,12 +796,6 @@
     "item:mysticaloaktree:wise_oak",
     "item:aquaculture:neptunium_ingot",
     "item:society:aquamagical_dust",
-    "item:botania:pixie_dust",
-    {
-      "type": "item",
-      "id": "crabbersdelight:mana_crab_trap_bait",
-      "amount": 46
-    },
     "item:botania:lime_shiny_flower",
     "item:botania:infused_seeds",
     "item:society:sunlit_pearl",
@@ -846,7 +882,6 @@
     "item:aquaculture:neptunes_bounty",
     "item:society:frogs_bounty_bazaar",
     "item:numismatics:ancient_coin",
-    "item:numismatics:sun",
     "item:vinery:jellie_wine",
     {
       "type": "item",
@@ -964,7 +999,6 @@
       "amount": 64
     },
     "item:vinery:mead",
-    "item:veggiesdelight:fermented_garlic_honey",
     "item:minecraft:melon",
     "item:atmospheric:blood_orange",
     "item:vinery:jo_special_mixture{Year:0}",
@@ -1059,7 +1093,6 @@
       "nbt": "{Year:0}",
       "amount": 64
     },
-    "item:atmospheric:passion_fruit",
     {
       "type": "item",
       "id": "society:starcardi",
@@ -1352,6 +1385,8 @@
     "item:farmersdelight:grilled_salmon"
   ],
   "craft_history": [
+    "minecraft:kjs/numismatics_ancient_coin",
+    "minecraft:kjs/numismatics_neptunium_coin",
     "whimsy_deco:classic_tile",
     "quark:building/crafting/vertplanks/vertical_oak_planks",
     "minecraft:oak_slab",
@@ -1382,8 +1417,6 @@
     "minecraft:kjs/society_loom",
     "minecraft:grindstone",
     "minecraft:cartography_table",
-    "minecraft:kjs/numismatics_ancient_coin",
-    "minecraft:kjs/numismatics_neptunium_coin",
     "minecraft:kjs/candlelight_cooking_pot",
     "minecraft:dark_oak_slab",
     "farmersdelight:lead_from_straw",
@@ -1396,8 +1429,8 @@
   ],
   "recipe_defaults": {
     "added": [
-      "minecraft:kjs/society_deluxe_worm_farm",
-      "create:crafting/kinetics/mechanical_crafter"
+      "create:crafting/kinetics/mechanical_crafter",
+      "minecraft:kjs/society_deluxe_worm_farm"
     ],
     "tags": {},
     "resolutions": {},
