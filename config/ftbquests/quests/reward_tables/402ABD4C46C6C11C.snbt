@@ -1,0 +1,72 @@
+{
+	id: "402ABD4C46C6C11C"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "large_shed_mangrove"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Large Shed 1\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "large_shed_mangrove"
+					owner: "worn"
+					owner_name: "FateOmega"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 1b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "portable_blueprints:worn_blueprint"
+				tag: {
+					Damage: 1
+					allow_nbt: 1
+					altezza: 0
+					blueprint_name: "large_shed_mangrove_1"
+					buildAnyway: 0b
+					display: {
+						Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Mangrove Large Shed 2\"}"
+					}
+					free_build: 1
+					inventari_blocco_selezionati: ""
+					lunghezzaX: 0
+					lunghezzaZ: 0
+					mirrowX: 0b
+					mirrowY: 0b
+					mirrowZ: 0b
+					nome: "large_shed_mangrove_1"
+					owner: "worn"
+					owner_name: "FateOmega"
+					remaining_uses: 1
+					rotateValue: 0s
+					skipObstructionBlock: 0b
+					visualizeBuild: 1b
+					wasHolding: 1b
+					worn_set: 1b
+				}
+			}
+		}
+	]
+	title: "Mangrove Large Shed"
+}

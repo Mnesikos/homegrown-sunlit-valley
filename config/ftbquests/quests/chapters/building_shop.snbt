@@ -3029,7 +3029,7 @@
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
 			description: [""]
-			icon: "minecraft:mangrove_planks"
+			icon: "quark:mangrove_chest"
 			id: "15697B6B65D52080"
 			min_required_tasks: 3
 			rewards: [{
@@ -3097,7 +3097,7 @@
 		{
 			dependencies: ["62D0735680A06D71"]
 			description: [""]
-			icon: "minecraft:mangrove_planks"
+			icon: "quark:mangrove_chest"
 			id: "44A2215FA202C299"
 			min_required_tasks: 3
 			rewards: [{
@@ -3165,7 +3165,7 @@
 		{
 			dependencies: ["07FEA26673F89CE0"]
 			description: [""]
-			icon: "minecraft:mangrove_planks"
+			icon: "quark:mangrove_chest"
 			id: "0CDBEBF5D47330A9"
 			min_required_tasks: 3
 			rewards: [{
@@ -3229,7 +3229,7 @@
 		{
 			dependencies: ["145DAA4D0C7740A3"]
 			description: [""]
-			icon: "minecraft:mangrove_planks"
+			icon: "quark:mangrove_chest"
 			id: "25B5F9136178767B"
 			min_required_tasks: 3
 			rewards: [{
@@ -3293,7 +3293,7 @@
 		{
 			dependencies: ["118A9A2B8922DA00"]
 			description: [""]
-			icon: "minecraft:mangrove_planks"
+			icon: "quark:mangrove_chest"
 			id: "2D440E0810B1111F"
 			min_required_tasks: 3
 			rewards: [{
@@ -3324,6 +3324,408 @@
 			]
 			title: "Mangrove Large Shed"
 			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B3AAC4CEC0098A3"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "0CF18C0B6AE2B387"
+			min_required_tasks: 3
+			rewards: [{
+				id: "45112AE1C5389730"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "barn_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "barn_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 4L
+					id: "59DC330A0C9CFC33"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 128L
+					id: "56A48D10A9487137"
+					item: { Count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "6EF82021647D181B"
+					item: {
+						Count: 20
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cottagecore Barn"
+			x: -15.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BAF470C2BE0A492"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "66A8CA4C3BF5C468"
+			min_required_tasks: 3
+			rewards: [{
+				id: "6377EEBA0548AB5F"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "coop_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Coop\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "coop_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 2L
+					id: "468B1A8E9A70FCD8"
+					item: { Count: 2, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7128446253FB7B3A"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "196297D2A435FF6C"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cottagecore Coop"
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["62D0735680A06D71"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "757193660DAE5C9D"
+			min_required_tasks: 3
+			rewards: [{
+				id: "18947952363A9093"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "shed_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "shed_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 4L
+					id: "7EC7A7646E7F72C3"
+					item: { Count: 4, id: "numismatics:crown" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3583C1BDEAF5EB2B"
+					item: { Count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7979B0EC0BFD9196"
+					item: {
+						Count: 10
+						id: "meadow:fire_log"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Cottagecore Shed"
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["07FEA26673F89CE0"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "426C41FC45412408"
+			min_required_tasks: 3
+			rewards: [{
+				id: "3DCDA0D05B963E8C"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "deluxe_barn_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Deluxe Barn\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "deluxe_barn_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 20L
+					id: "73F070EAD9EFF458"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "28864880959236A2"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "33D1FDC7CBC180C2"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Cottagecore Deluxe Barn"
+			x: -15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145DAA4D0C7740A3"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "04638891293A3359"
+			min_required_tasks: 3
+			rewards: [{
+				id: "427107AC472BED6E"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "home_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Farmhouse\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "home_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 8L
+					id: "06F3760CF02002EB"
+					item: { Count: 8, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 512L
+					id: "3F231AFE216886E0"
+					item: { Count: 512, id: "minecraft:cobblestone" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "7206D9811AE56D27"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Cottagecore Farmhouse"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["118A9A2B8922DA00"]
+			description: [""]
+			icon: "quark:oak_chest"
+			id: "12A28DEFE192BD8A"
+			min_required_tasks: 3
+			rewards: [{
+				id: "4587D1B39778DF9A"
+				item: {
+					Count: 1
+					id: "portable_blueprints:worn_blueprint"
+					tag: {
+						Damage: 1
+						allow_nbt: 1
+						altezza: 0
+						blueprint_name: "large_shed_cottagecore"
+						buildAnyway: 0b
+						display: {
+							Name: "{\"italic\":false,\"color\":\"#FFFF00\",\"text\":\"Blueprint: Cottagecore Large Shed\"}"
+						}
+						free_build: 1
+						inventari_blocco_selezionati: ""
+						lunghezzaX: 0
+						lunghezzaZ: 0
+						mirrowX: 0b
+						mirrowY: 0b
+						mirrowZ: 0b
+						nome: "large_shed_cottagecore"
+						owner: "worn"
+						owner_name: "DemonKingNico"
+						remaining_uses: 1
+						rotateValue: 0s
+						skipObstructionBlock: 0b
+						visualizeBuild: 1b
+						wasHolding: 1b
+						worn_set: 1b
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Designed by &6DemonKingNico&r"
+			tasks: [
+				{
+					count: 4L
+					id: "2C04259609B444A3"
+					item: { Count: 4, id: "numismatics:sun" }
+					type: "item"
+				}
+				{
+					count: 256L
+					id: "1891C9A82AD34217"
+					item: { Count: 256, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "4C505DBFD52811E1"
+					item: { Count: 40, id: "meadow:fire_log" }
+					type: "item"
+				}
+			]
+			title: "Cottagecore Large Shed"
+			x: -7.0d
 			y: 0.0d
 		}
 	]
