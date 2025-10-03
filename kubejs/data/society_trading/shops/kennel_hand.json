@@ -1,0 +1,165 @@
+{
+  "shop_id": "kennel_hand",
+  "name": "shop.society_trading.kennel_hand",
+  "texture": "workdog:textures/item/crate_full",
+  "villager_profession": "workdog:kennel_hand",
+  "jei_catalyst": { "item":"workdog:kennel_equipment" },
+  "trades": [
+    {
+      "offer": {
+        "item": "workdog:frisbee",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "kennel_hand_frisbee_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "workdog:collar",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "kennel_hand_collar_for_cog"
+    },
+    {
+      "offer": {
+        "item": "workdog:sterilization_potion",
+        "count": 2
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "kennel_hand_sterilization_potion_for_cog"
+    },
+    {
+      "offer": {
+        "item": "workdog:harness",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "kennel_hand_harness_for_cog"
+    },
+    {
+      "offer": {
+        "item": "workdog:hog_vest",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "kennel_hand_hog_vest_for_cog"
+    },
+    {
+      "offer": {
+        "item": "workdog:crate",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "kennel_hand_crate_for_crown"
+    },
+    {
+      "offer": {
+        "item": "workdog:muzzle",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "kennel_hand_muzzle_for_cog"
+    },
+    {
+      "offer": {
+        "item": "workdog:boston_terrier_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_boston_terrier_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "workdog:jack_russell_terrier_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_jack_russell_terrier_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "workdog:border_collie_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_border_collie_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "workdog:pit_bull_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_pit_bull_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "workdog:akita_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_akita_spawn_egg_for_sun"
+    },
+    {
+      "offer": {
+        "item": "workdog:german_shepherd_spawn_egg",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 4
+      },
+      "numismatics_cost": 16484,
+      "trade_id": "kennel_hand_german_shepherd_spawn_egg_for_sun"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "shop_id": "shelter_worker",
+  "name": "shop.society_trading.shelter_worker",
+  "texture": "simplycats:textures/item/cat_book",
+  "villager_profession": "simplycats:shelter_worker",
+  "jei_catalyst": { "item":"simplycats:shelter_book" },
+  "trades": [
+    {
+      "offer": {
+        "item": "simplycats:catnip_seeds",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "shelter_worker_catnip_seeds_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "simplycats:catnip",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:sprocket",
+        "count": 1
+      },
+      "numismatics_cost": 16,
+      "trade_id": "shelter_worker_catnip_for_sprocket"
+    },
+    {
+      "offer": {
+        "item": "simplycats:sterilization_potion",
+        "count": 8
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 6
+      },
+      "numismatics_cost": 384,
+      "trade_id": "shelter_worker_sterilization_potion_for_cog"
+    },
+    {
+      "offer": {
+        "item": "simplycats:pet_carrier",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:crown",
+        "count": 1
+      },
+      "numismatics_cost": 512,
+      "trade_id": "shelter_worker_pet_carrier_for_crown"
+    },
+    {
+      "offer": {
+        "item": "simplycats:laser_pointer",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:bevel",
+        "count": 1
+      },
+      "numismatics_cost": 8,
+      "trade_id": "shelter_worker_laser_pointer_for_bevel"
+    },
+    {
+      "offer": {
+        "item": "simplycats:treat_bag",
+        "count": 1
+      },
+      "request": {
+        "item": "numismatics:cog",
+        "count": 4
+      },
+      "numismatics_cost": 256,
+      "trade_id": "shelter_worker_treat_bag_for_cog"
+    },
+    {
+      "offer": {
+        "item": "simplycats:pet_carrier",
+        "count": 1,
+        "nbt": "{Damage:3}"
+      },
+      "request": {
+        "item": "numismatics:sun",
+        "count": 1
+      },
+      "numismatics_cost": 4096,
+      "trade_id": "shelter_worker_cat_spawn_for_sun"
+    }
+  ]
+}

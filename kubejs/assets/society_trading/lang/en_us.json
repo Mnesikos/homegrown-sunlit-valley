@@ -16,6 +16,8 @@
   "shop.society_trading.storagesmith": "Storagesmith",
   "shop.society_trading.market": "Market",
   "shop.society_trading.carpenter": "Carpenter",
+  "shop.society_trading.shelter_worker": "Shelter Worker",
+  "shop.society_trading.kennel_hand": "Kennel Hand",
 
   "shop.society_trading.banker.description": "Sells tools that help manage you money.",
   "shop.society_trading.bard.description": "Sells fun tools for music, photography, & custom paintings.",
@@ -34,6 +36,8 @@
   "shop.society_trading.storagesmith.description": "Sells equipment related to storage.",
   "shop.society_trading.market.description": "Sells basic seeds & saplings depending on the season.",
   "shop.society_trading.carpenter.description": "Sells building blocks & seasonal furniture for constructing your farm.",
+  "shop.society_trading.shelter_worker.description": "Sells cat related items.",
+  "shop.society_trading.kennel_hand.description": "Sells dog related items.",
 
   "gui.society_trading.price": "%s ● ",
   "gui.society_trading.hover_price_one": "Price: %s ●",

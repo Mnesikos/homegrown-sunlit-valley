@@ -727,6 +727,8 @@ ItemEvents.tooltip((tooltip) => {
     { villager: "Barkeeper", block: "beachparty:tiki_bar" },
     { villager: "Exotic Trader", block: "minecraft:fletching_table" },
     { villager: "Mystical Botanist", block: "beautify:botanist_workbench" },
+    { villager: "Shelter Worker", block: "simplycats:shelter_book" },
+    { villager: "Kennel Hand", block: "workdog:kennel_equipment" },
   ];
   workstation.forEach((station) => {
     const { villager, block } = station;
