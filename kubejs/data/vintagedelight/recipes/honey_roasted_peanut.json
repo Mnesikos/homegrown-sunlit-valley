@@ -3,17 +3,17 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "farm_and_charm:oat"
+      "item": "vintagedelight:roasted_peanut"
     },
     {
-      "item": "farm_and_charm:oat"
+      "item": "vintagedelight:roasted_peanut"
     },
     {
       "tag": "betterbeekeeping:honey_bottles"
     }
   ],
   "result": {
-    "count": 8,
-    "item": "vintagedelight:oatmeal_cookie"
+    "count": 2,
+    "item": "vintagedelight:honey_roasted_peanut"
   }
 }

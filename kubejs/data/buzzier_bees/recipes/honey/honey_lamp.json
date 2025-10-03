@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:end_rod"
+    },
+    {
+      "tag": "betterbeekeeping:honey_bottles"
+    },
+    {
+      "tag": "forge:nuggets/gold"
+    }
+  ],
+  "result": {
+    "item": "buzzier_bees:honey_lamp",
+    "count": 1
+  }
+}

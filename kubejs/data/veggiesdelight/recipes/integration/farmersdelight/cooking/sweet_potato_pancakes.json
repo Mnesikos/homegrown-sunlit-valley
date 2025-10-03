@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "veggiesdelight:sweet_potato_dough"
+    },
+    {
+      "tag": "betterbeekeeping:honey_bottles"
+    },
+    {
+      "tag": "forge:milk"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "veggiesdelight:sweet_potato_pancakes"
+  }
+}

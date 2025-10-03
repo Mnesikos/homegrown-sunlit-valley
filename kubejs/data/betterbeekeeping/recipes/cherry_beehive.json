@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "IHI",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:cherry_planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "O": {
+      "item": "society:maple_syrup"
+    }
+  },
+  "result": {
+    "item": "betterbeekeeping:cherry_beehive"
+  }
+}

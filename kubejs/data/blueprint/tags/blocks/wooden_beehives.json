@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "betterbeekeeping:acacia_beehive",
+    "betterbeekeeping:bamboo_beehive",
+    "betterbeekeeping:birch_beehive",
+    "betterbeekeeping:cherry_beehive",
+    "betterbeekeeping:crimson_beehive",
+    "betterbeekeeping:dark_oak_beehive",
+    "betterbeekeeping:jungle_beehive",
+    "betterbeekeeping:mangrove_beehive",
+    "betterbeekeeping:oak_beehive",
+    "betterbeekeeping:spruce_beehive",
+    "betterbeekeeping:warped_beehive"
+  ]
+}

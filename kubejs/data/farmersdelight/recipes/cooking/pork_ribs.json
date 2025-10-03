@@ -7,7 +7,7 @@
       "item": "minecraft:porkchop"
     },
     {
-      "item": "minecraft:honey_bottle"
+      "tag": "betterbeekeeping:honey_bottles"
     },
     {
       "tag": "candlelight:red_effect"

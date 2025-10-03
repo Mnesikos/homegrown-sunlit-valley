@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "vintagedelight:apple_sauce_bottle",
+    "vintagedelight:sweet_berry_jam_bottle",
+    "vintagedelight:glow_berry_jam_bottle",
+    "vintagedelight:gearo_berry_jam_bottle",
+    "minecraft:honey_bottle",
+    {
+      "id": "#betterbeekeeping:honey_bottles",
+      "required": false
+    }
+  ]
+}

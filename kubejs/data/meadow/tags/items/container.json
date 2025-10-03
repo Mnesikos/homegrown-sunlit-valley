@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "#betterbeekeeping:honey_bottles",
+            "required": false
+        },
+        {
             "id": "createfood:cacao_mass_bucket",
             "required": false
         },

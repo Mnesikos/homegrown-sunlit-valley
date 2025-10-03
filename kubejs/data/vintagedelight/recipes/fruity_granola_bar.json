@@ -6,7 +6,7 @@
       "item": "farm_and_charm:oat"
     },
     {
-      "item": "minecraft:honey_bottle"
+      "tag": "betterbeekeeping:honey_bottles"
     },
     {
       "tag": "forge:berries"

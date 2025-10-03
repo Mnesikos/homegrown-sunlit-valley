@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "IHI",
+    "POP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:acacia_planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "O": {
+      "item": "society:maple_syrup"
+    }
+  },
+  "result": {
+    "item": "betterbeekeeping:acacia_beehive"
+  }
+}

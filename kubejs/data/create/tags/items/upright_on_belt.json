@@ -2,6 +2,10 @@
     "replace": false,
     "values": [
         {
+            "id": "#betterbeekeeping:honey_bottles",
+            "required": false
+        },
+        {
             "id": "vinery:red_grapejuice_wine_bottle",
             "required": false
         },

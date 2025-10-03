@@ -842,7 +842,7 @@ ServerEvents.recipes((e) => {
     p: "minecraft:paper",
   });
   e.shaped("8x society:bee_wallpaper", wallpaperPattern, {
-    f: "minecraft:honey_bottle",
+    f: "#betterbeekeeping:honey_bottles",
     p: "minecraft:paper",
   });
   e.shaped("8x society:hive_baseboard", baseboardPattern, {

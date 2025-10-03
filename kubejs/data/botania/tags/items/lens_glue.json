@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#betterbeekeeping:honey_bottles",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+	"criteria": {
+		"pickup_honeycomb": {
+			"conditions": {
+				"items": [
+					{
+						"items": ["minecraft:honeycomb"]
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"display": {
+		"announce_to_chat": true,
+		"background": "minecraft:textures/block/honey_block_top.png",
+		"description": {
+			"translate": "advancements.betterbeekeeping.think_honey.description"
+		},
+		"frame": "task",
+		"hidden": false,
+		"icon": {
+			"item": "minecraft:honeycomb"
+		},
+		"show_toast": true,
+		"title": {
+			"translate": "advancements.betterbeekeeping.think_honey.title"
+		}
+	},
+	"requirements": [
+		[
+			"pickup_honeycomb"
+		]
+	]
+}
