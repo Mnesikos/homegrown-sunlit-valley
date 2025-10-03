@@ -2,7 +2,7 @@
   "shop_id": "shelter_worker",
   "name": "shop.society_trading.shelter_worker",
   "texture": "simplycats:textures/item/cat_book",
-  "villager_profession": "simplycats:shelter_worker",
+  "villager_profession": "shelter_worker",
   "jei_catalyst": { "item":"simplycats:shelter_book" },
   "trades": [
     {

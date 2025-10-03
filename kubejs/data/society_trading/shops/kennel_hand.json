@@ -2,7 +2,7 @@
   "shop_id": "kennel_hand",
   "name": "shop.society_trading.kennel_hand",
   "texture": "workdog:textures/item/crate_full",
-  "villager_profession": "workdog:kennel_hand",
+  "villager_profession": "kennel_hand",
   "jei_catalyst": { "item":"workdog:kennel_equipment" },
   "trades": [
     {
