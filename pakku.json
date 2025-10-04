@@ -1,6 +1,6 @@
 {
     "name": "Homegrown Sunlit Valley",
-    "version": "3.3.3",
+    "version": "3.3.3-bees",
     "overrides": [
         "config",
         "defaultconfigs",
