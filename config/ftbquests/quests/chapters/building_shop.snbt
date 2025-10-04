@@ -3028,7 +3028,7 @@
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/barn_mangrove.png width:198 height:154 align:center}"]
 			icon: "quark:mangrove_chest"
 			id: "15697B6B65D52080"
 			min_required_tasks: 3
@@ -3096,7 +3096,7 @@
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/shed_mangrove.png width:198 height:154 align:center}"]
 			icon: "quark:mangrove_chest"
 			id: "44A2215FA202C299"
 			min_required_tasks: 3
@@ -3164,7 +3164,7 @@
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_mangrove.png width:198 height:154 align:center}"]
 			icon: "quark:mangrove_chest"
 			id: "0CDBEBF5D47330A9"
 			min_required_tasks: 3
@@ -3228,7 +3228,7 @@
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/house_mangrove.png width:198 height:154 align:center}"]
 			icon: "quark:mangrove_chest"
 			id: "25B5F9136178767B"
 			min_required_tasks: 3
@@ -3292,7 +3292,10 @@
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: [""]
+			description: [
+				"{image:society:textures/gui/buildings/large_shed_mangrove.png width:198 height:154 align:center}"
+				"{image:society:textures/gui/buildings/large_shed_mangrove_1.png width:198 height:154 align:center}"
+			]
 			icon: "quark:mangrove_chest"
 			id: "2D440E0810B1111F"
 			min_required_tasks: 3
@@ -3328,7 +3331,7 @@
 		}
 		{
 			dependencies: ["0B3AAC4CEC0098A3"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/barn_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "0CF18C0B6AE2B387"
 			min_required_tasks: 3
@@ -3397,7 +3400,7 @@
 		}
 		{
 			dependencies: ["1BAF470C2BE0A492"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/coop_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "66A8CA4C3BF5C468"
 			min_required_tasks: 3
@@ -3466,7 +3469,7 @@
 		}
 		{
 			dependencies: ["62D0735680A06D71"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/shed_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "757193660DAE5C9D"
 			min_required_tasks: 3
@@ -3535,7 +3538,7 @@
 		}
 		{
 			dependencies: ["07FEA26673F89CE0"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/deluxe_barn_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "426C41FC45412408"
 			min_required_tasks: 3
@@ -3600,7 +3603,7 @@
 		}
 		{
 			dependencies: ["145DAA4D0C7740A3"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/house_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "04638891293A3359"
 			min_required_tasks: 3
@@ -3665,7 +3668,7 @@
 		}
 		{
 			dependencies: ["118A9A2B8922DA00"]
-			description: [""]
+			description: ["{image:society:textures/gui/buildings/large_shed_cottagecore.png width:198 height:154 align:center}"]
 			icon: "quark:oak_chest"
 			id: "12A28DEFE192BD8A"
 			min_required_tasks: 3
