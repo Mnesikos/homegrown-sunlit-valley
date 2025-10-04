@@ -1,0 +1,22 @@
+{
+  "colors": {
+    "accent": "#33FF00",
+    "base": "#339900"
+  },
+  "display": {
+    "offset": { "x": 0, "y": 1, "z": 0 },
+    "scale": 2.0
+  },
+  "item": {
+    "item": "flowerary:multicolor_foxglove",
+    "count": 1
+  },
+  "animation": {
+    "type": "spinning",
+    "speed": 0.1
+  },
+  "name": {
+    "color": "#33FF00",
+    "text": "Flowerary Trophy"
+  }
+}
