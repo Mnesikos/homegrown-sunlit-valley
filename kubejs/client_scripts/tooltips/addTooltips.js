@@ -877,6 +877,13 @@ ItemEvents.tooltip((tooltip) => {
   global.animalProducts.forEach((meat) => {
     addPriceTooltip(meat, "crop");
   });
+  // Flowers
+  global.wildFlowers.forEach((flower) => {
+    addPriceTooltip(flower, "flower");
+  });
+  global.specialFlowers.forEach((flower) => {
+    addPriceTooltip(flower, "flower");
+  });
   // Wines
   global.wines.forEach((wine) => {
     addPriceTooltip(wine, "wood");
