@@ -63,7 +63,7 @@
 
 [Herding]
 	#Should animals, like cows, herd together?
-	"Animals Herd Together" = true
+	"Animals Herd Together" = false
 	#Maximum amount of O-Cows that can herd together. Default is 8.
 	"Cow Herd Maximum" = 8
 	#Maximum amount of O-Horses that can herd together. Default is 3.
