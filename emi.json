@@ -24,9 +24,57 @@
         "id": "minecraft:wheat",
         "amount": 8
       }
+    },
+    {
+      "stack": "item:minecraft:ender_pearl"
     }
   ],
   "lookup_history": [
+    "item:brewery:wooden_brewingstation",
+    "item:vinery:grapevine_pot",
+    "item:minecraft:pumpkin_pie",
+    "item:refinedstorageaddons:wireless_crafting_grid",
+    "item:create:wrench",
+    "item:meadow:cheese_sandwich",
+    "item:nightlights:fairy_lights_red",
+    "item:vinery:apple_leaves",
+    "item:vinery:apple_mash",
+    "item:vinery:apple_juice",
+    "item:minecraft:ender_pearl",
+    "item:minecraft:apple",
+    "item:botania:lavender_quartz",
+    "item:crittersandcompanions:pearl",
+    "item:oreganized:glance",
+    "item:aquaculture:neptunium_nugget",
+    {
+      "type": "item",
+      "id": "society:warped_milk",
+      "amount": 64
+    },
+    "#item:forge:cooked_fishes",
+    "item:crabbersdelight:fish_stick",
+    "item:unusualfishmod:raw_blizzard_tuna",
+    "item:aquaculture:fish_fillet_raw",
+    "item:aquaculture:fish_fillet_cooked",
+    "item:beachparty:dried_wheat_block",
+    "item:brewery:dried_wheat",
+    "item:minecraft:stripped_oak_wood",
+    "item:minecraft:oak_fence",
+    "item:minecraft:oak_pressure_plate",
+    "item:minecraft:oak_door",
+    "item:quark:spruce_post",
+    "item:society:fire_quartz",
+    {
+      "type": "item",
+      "id": "society:bouquet_bag",
+      "amount": 4
+    },
+    "item:minecraft:barrel",
+    {
+      "type": "item",
+      "id": "minecraft:quartz",
+      "amount": 24
+    },
     "item:vinery:dirt_slab",
     "item:vinery:coarse_dirt_slab",
     "item:society:dirty_chai",
@@ -104,7 +152,6 @@
       "amount": 21
     },
     "item:minecraft:netherite_helmet{Damage:0}",
-    "item:oreganized:glance",
     "item:oreganized:spotted_glance",
     "item:oreganized:lead_nugget",
     "item:oreganized:waxed_spotted_glance",
@@ -121,7 +168,6 @@
     "item:automobility:dirt_off_road",
     "item:minecraft:spruce_slab",
     "item:society:cauliflower_preserves",
-    "item:vinery:apple_juice",
     "item:vinery:red_taiga_grapejuice",
     "item:vinery:white_grapejuice",
     "item:botania:crafting_halo",
@@ -356,7 +402,6 @@
     "item:numismatics:bevel",
     "item:numismatics:cog",
     "item:minecraft:cobweb",
-    "item:minecraft:oak_pressure_plate",
     "item:atmospheric:grimwood_sapling",
     "item:everycomp:fd/atmospheric/grimwood_cabinet",
     "item:everycomp:q/atmospheric/stripped_grimwood_post",
@@ -441,7 +486,6 @@
       "id": "vinery:white_savanna_grapejuice",
       "amount": 38
     },
-    "item:vinery:grapevine_pot",
     "item:society:sparkstone_dust",
     "item:botania:spark_upgrade_dispersive",
     "item:splendid_slimes:plort{plort:{id:\"splendid_slimes:sparkcat\"}}",
@@ -597,7 +641,6 @@
       "id": "create:crushed_raw_zinc",
       "amount": 2
     },
-    "item:society:fire_quartz",
     "item:society:battery",
     "item:splendid_slimes:slime_feeder",
     "item:splendid_slimes:corral_block",
@@ -677,7 +720,6 @@
     "item:refinedstorage:upgrade",
     "item:rsinfinitybooster:infinity_card",
     "item:atmospheric:golden_dragon_fruit",
-    "item:society:bouquet_bag",
     "item:farm_and_charm:flour",
     "item:farm_and_charm:flour_bag",
     "item:create:cinder_flour",
@@ -824,7 +866,6 @@
     "item:everycomp:rfm/meadow/pine_kitchen_drawer",
     "item:everycomp:q/meadow/pine_vertical_slab",
     "item:meadow:alpine_salt",
-    "item:quark:spruce_post",
     "item:mysticaloaktree:wise_oak",
     "item:aquaculture:neptunium_ingot",
     "item:society:aquamagical_dust",
@@ -1215,7 +1256,6 @@
     "item:windswept:chestnut_crate",
     "item:windswept:lavender_bale",
     "item:windswept:lavender",
-    "item:botania:lavender_quartz",
     "item:quark:lavender_blossom_leaves",
     "item:windswept:ice_lantern",
     "item:twigs:torchflower_paper_lantern",
@@ -1250,11 +1290,6 @@
     "item:aquaculture:fish_bones",
     "#item:forge:bones",
     "item:minecraft:ochre_froglight",
-    {
-      "type": "item",
-      "id": "aquaculture:fish_fillet_raw",
-      "amount": 3
-    },
     "item:farmersdelight:golden_knife{Damage:0}",
     "item:bakery:bread_knife{Damage:0}",
     "item:aquaculture:wooden_fillet_knife{Damage:0}",
@@ -1279,7 +1314,6 @@
     "item:aquaculture:iron_fishing_rod{Damage:0}",
     "item:minecraft:fishing_rod{Damage:0}",
     "item:aquaculture:neptunium_fishing_rod{Damage:0}",
-    "item:minecraft:barrel",
     "item:stardew_fishing:quality_bobber{Damage:0}",
     "item:stardew_fishing:treasure_bobber{Damage:0}",
     "item:stardew_fishing:sonar_bobber{Damage:0}",
@@ -1353,39 +1387,7 @@
     "item:everycomp:rfm/meadow/pine_chair",
     "item:everycomp:db/windswept/pine_palisade",
     "item:windswept:pine_wood",
-    "item:windswept:music_disc_bumblebee",
-    "item:windswept:holly_berries_on_a_stick{Damage:0}",
-    "item:windswept:wooden_powder_snow_bucket{Damage:0}",
-    "item:windswept:white_rose_bush",
-    "item:windswept:dry_mossy_sprouts",
-    "item:windswept:mossy_sprouts",
-    "item:windswept:blue_rose",
-    "item:windswept:blue_rose_bush",
-    "item:windswept:bluebells",
-    "item:windswept:pinecone_wreath",
-    "item:windswept:vine_wreath",
-    "item:windswept:light_gray_pinecone_shingle_slab",
-    "item:windswept:blue_pinecone_shingle_slab",
-    "item:farm_and_charm:simple_tomato_soup{quality_food:{effects:[],quality:2}}",
-    "item:brewery:dried_wheat",
-    "item:brewery:whiskey_maggoallan",
-    "item:quark:oak_post",
-    "item:veggiesdelight:wild_broccoli",
-    "item:veggiesdelight:chicken_fajitas_wrap",
-    "item:veggiesdelight:cauliflower_bread",
-    "item:veggiesdelight:cauliflower_floret",
-    {
-      "type": "item",
-      "id": "veggiesdelight:zucchini_slice",
-      "amount": 3
-    },
-    {
-      "type": "item",
-      "id": "veggiesdelight:garlic_clove",
-      "nbt": "{}",
-      "amount": 64
-    },
-    "item:veggiesdelight:garlic_bread"
+    "item:windswept:music_disc_bumblebee"
   ],
   "craft_history": [
     "minecraft:kjs/numismatics_ancient_coin",
