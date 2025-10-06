@@ -30,6 +30,7 @@
     }
   ],
   "lookup_history": [
+    "item:dew_drop_farmland_growth:gold_sprinkler",
     "item:brewery:wooden_brewingstation",
     "item:vinery:grapevine_pot",
     "item:minecraft:pumpkin_pie",
@@ -163,7 +164,6 @@
     "item:society:slouching_towards_artistry",
     "item:vintagedelight:vinegar_mason_jar",
     "item:justhammers:impact_core{Damage:0}",
-    "item:dew_drop_farmland_growth:gold_sprinkler",
     "item:dew_drop_farmland_growth:iron_sprinkler",
     "item:automobility:dirt_off_road",
     "item:minecraft:spruce_slab",

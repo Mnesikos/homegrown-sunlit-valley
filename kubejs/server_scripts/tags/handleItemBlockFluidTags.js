@@ -712,6 +712,7 @@ ServerEvents.tags("block", (e) => {
   ].forEach((item) => {
     e.add("minecraft:sword_efficient", item);
   });
+  e.add("minecraft:mineable/axe", "beachparty:cabinet");
 });
 
 ServerEvents.tags("fluid", (e) => {
