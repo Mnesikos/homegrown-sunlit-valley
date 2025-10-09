@@ -1,6 +1,10 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:farm_and_charm:horse_fodder",
+    {
+      "id": "farm_and_charm:horse_fodder"
+    },
     "item:furniture:gramophone",
     "item:oreganized:glance",
     "item:oreganized:lead_nugget",
