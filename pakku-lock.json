@@ -3829,21 +3829,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "v2.3.1 FarmLife Remastered.zip",
+                    "file_name": "3.3 FarmLife Remastered.zip",
                     "mc_versions": [
                         "1.20.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6913/433/v2.3.1 FarmLife Remastered.zip",
-                    "id": "6913433",
+                    "url": "https://edge.forgecdn.net/files/7092/497/3.3 FarmLife Remastered.zip",
+                    "id": "7092497",
                     "parent_id": "1311617",
                     "hashes": {
-                        "sha1": "7410254b1b4e4ef2b6a761df9dbd6c816a64b827",
-                        "md5": "b03ce592be7e913ed9768f83edc530db"
+                        "sha1": "b0534264b19e7e119ebd78d1218831178d71f62c",
+                        "md5": "9d80f83b2035c295f71c6e136aadfb70"
                     },
-                    "required_dependencies": [],
-                    "size": 1874487,
-                    "date_published": "2025-08-22T01:36:10.827Z"
+                    "required_dependencies": [
+                        "1131669"
+                    ],
+                    "size": 2260406,
+                    "date_published": "2025-10-10T22:49:05.037Z"
                 }
             ]
         },
@@ -5185,23 +5187,23 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Farmer GUI v.1.7.6 [1.20.1].zip",
+                    "file_name": "Farmer GUI v.1.7.6.1.1 [1.20.1].zip",
                     "mc_versions": [
                         "1.20.1",
                         "1.20",
                         "1.20-Snapshot"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6749/481/Farmer GUI v.1.7.6 [1.20.1].zip",
-                    "id": "6749481",
+                    "url": "https://edge.forgecdn.net/files/7063/820/Farmer GUI v.1.7.6.1.1 [1.20.1].zip",
+                    "id": "7063820",
                     "parent_id": "918818",
                     "hashes": {
-                        "sha1": "2032670d91da37c6ae6086d1901cd7ddfd73f208",
-                        "md5": "f33c7bd27c31691c0609666d468f68bc"
+                        "sha1": "18af96e0ce945d0130b23a64d74d459ea7da63ed",
+                        "md5": "6b00d02a593786affd7d3642cb2f95fd"
                     },
                     "required_dependencies": [],
-                    "size": 2236411,
-                    "date_published": "2025-07-09T18:34:05.453Z"
+                    "size": 2365009,
+                    "date_published": "2025-10-04T00:16:21.887Z"
                 }
             ]
         },
@@ -11752,7 +11754,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SubtleEffects-forge-1.20.1-1.12.1.jar",
+                    "file_name": "SubtleEffects-forge-1.20.1-1.13.0.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11760,18 +11762,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6857/365/SubtleEffects-forge-1.20.1-1.12.1.jar",
-                    "id": "6857365",
+                    "url": "https://edge.forgecdn.net/files/7064/192/SubtleEffects-forge-1.20.1-1.13.0.jar",
+                    "id": "7064192",
                     "parent_id": "1023913",
                     "hashes": {
-                        "sha1": "ef765c05c9283e05f080b4c280b4bb48887b0ad4",
-                        "md5": "a0d328a5e5648595900c7cc241e87011"
+                        "sha1": "edf45ec3aba8c2325f8e62fbe2a559f39312dcc8",
+                        "md5": "1c07eccdb950adad5495e77460598d7a"
                     },
                     "required_dependencies": [
                         "1005914"
                     ],
-                    "size": 3097715,
-                    "date_published": "2025-08-06T22:49:40.263Z"
+                    "size": 3347617,
+                    "date_published": "2025-10-04T03:29:16.620Z"
                 }
             ]
         },
