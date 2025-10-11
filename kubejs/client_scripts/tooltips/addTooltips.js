@@ -879,10 +879,10 @@ ItemEvents.tooltip((tooltip) => {
   });
   // Flowers
   global.wildFlowers.forEach((flower) => {
-    addPriceTooltip(flower, "flower");
+    addPriceTooltip(flower, "crop");
   });
   global.specialFlowers.forEach((flower) => {
-    addPriceTooltip(flower, "flower");
+    addPriceTooltip(flower, "crop");
   });
   // Wines
   global.wines.forEach((wine) => {
