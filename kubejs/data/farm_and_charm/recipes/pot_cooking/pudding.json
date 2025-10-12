@@ -1,7 +1,5 @@
 {
-  "type": "farmersdelight:cooking",
-  "cookingtime": 200,
-  "experience": 2.0,
+  "type": "farm_and_charm:pot_cooking",
   "ingredients": [
     {
       "tag": "bakery:eggs"
@@ -10,13 +8,12 @@
       "tag": "forge:jams"
     },
     {
-      "tag": "society:large_milk"
+      "tag": "bakery:milk"
     }
   ],
   "container": {
     "item": "minecraft:bowl"
   },
-  "recipe_book_tab": "meals",
   "result": {
     "item": "bakery:pudding",
     "count": 1

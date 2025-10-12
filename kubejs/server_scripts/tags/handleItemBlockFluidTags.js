@@ -374,7 +374,7 @@ ServerEvents.tags("item", (e) => {
     e.add("forge:jam_bottles", `society:${preserve.item.split(":")[1]}_bottle`)
   });
   global.jams.forEach((jam) => {
-    e.add("bakery:jam", jam.item);
+    e.add("forge:jams", jam.item);
   });
   global.lootFurniture.forEach((item) => {
     e.add("society:loot_furniture", item);
