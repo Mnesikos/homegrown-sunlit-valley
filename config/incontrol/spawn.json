@@ -1,5 +1,19 @@
 [
   {
+    "mob": ["minecraft:cat"],
+    "customevent": "replace_cats",
+    "when": "onjoin",
+    "spawntype": ["spawn_egg"],
+    "result": "deny"
+  },
+  {
+    "mob": ["minecraft:wolf"],
+    "customevent": "replace_wolves",
+    "when": "onjoin",
+    "spawntype": ["spawn_egg"],
+    "result": "deny"
+  },
+  {
     "mob": ["minecraft:drowned"],
     "dimension": "minecraft:overworld",
     "minheight": 30,

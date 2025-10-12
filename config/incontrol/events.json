@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "on": "custom",
+    "parameters": {
+      "name": "replace_cats"
+    },
+    "spawn": {
+      "mob": "simplycats:cat",
+      "mindistance": 0,
+      "maxdistance": 1
+    }
+  },
+  {
+    "on": "custom",
+    "parameters": {
+      "name": "replace_wolves"
+    },
+    "spawn": {
+      "mob": "workdog:wolf",
+      "mindistance": 0,
+      "maxdistance": 1
+    }
+  }
+]
