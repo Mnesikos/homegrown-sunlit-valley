@@ -4,8 +4,6 @@
   "default_packs": [
     "file/Lopy-Create-Pipez.zip",
     "file/glow_up-1.4-1.20.1.zip",
-    "file/Icon Journey 1.1.zip",
-    "file/JourneyMap Extended Mob Icons v2.0.zip",
     "file/updated_aquaculture-1.1.zip",
     "file/MobCrates_1.20.1_v1.zip",
     "file/JadeStardewValleyTheme.zip",
@@ -14,8 +12,9 @@
     "file/Create Simple Storage 2.1.zip",
     "file/Better tom's create storage 1.1.zip",
     "file/Fairy Wings Elytra.zip",
-    "file/Better_Cats_V0.09.zip",
-    "file/Create Style for Refined Storage.zip"
+    "file/Create Style for Refined Storage.zip",
+    "file/v2.3.1 FarmLife Remastered.zip",
+    "file/Farmer GUI v.1.7.6 [1.20.1].zip"
   ],
   "default_overrides": {
     "force_compatible": true
@@ -24,8 +23,6 @@
     "1": [
     "file/Lopy-Create-Pipez.zip",
     "file/glow_up-1.4-1.20.1.zip",
-    "file/Icon Journey 1.1.zip",
-    "file/JourneyMap Extended Mob Icons v2.0.zip",
     "file/updated_aquaculture-1.1.zip",
     "file/MobCrates_1.20.1_v1.zip",
     "file/JadeStardewValleyTheme.zip",
@@ -34,8 +31,8 @@
     "file/Create Simple Storage 2.1.zip",
     "file/Better tom's create storage 1.1.zip",
     "file/Fairy Wings Elytra.zip",
-    "file/Better_Cats_V0.09.zip",
-    "file/Create Style for Refined Storage.zip"
+    "file/Create Style for Refined Storage.zip",
+    "file/v2.3.1 FarmLife Remastered.zip"
   ],
     "$$1": {
       "hidden": false,
