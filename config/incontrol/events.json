@@ -7,7 +7,9 @@
     "spawn": {
       "mob": "simplycats:cat",
       "mindistance": 0,
-      "maxdistance": 1
+      "maxdistance": 2,
+      "attempts": 20,
+      "norestrictions": true
     }
   },
   {
@@ -18,7 +20,9 @@
     "spawn": {
       "mob": "workdog:wolf",
       "mindistance": 0,
-      "maxdistance": 1
+      "maxdistance": 2,
+      "attempts": 20,
+      "norestrictions": true
     }
   }
 ]

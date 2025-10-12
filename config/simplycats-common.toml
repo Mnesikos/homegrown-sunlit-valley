@@ -3,7 +3,7 @@
 	# If you have existing tamed vanilla cats in your world and want to change them to Simply Cats, enable this and restart your minecraft instance.
 	replace_tamed_vanilla = true
 	# Disables vanilla cats spawning, set to false to allow them to spawn again.
-	stop_vanilla_spawns = true
+	stop_vanilla_spawns = false
 	# Disable this if you want ALL stray village cats to be fixed (enable for 10% intact cat spawns).
 	intact_stray_spawns = true
 	# Disabling this will not allow cats to attack entities in their prey list, essentially a peaceful mode for cats.

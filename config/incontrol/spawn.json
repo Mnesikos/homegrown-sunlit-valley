@@ -4,13 +4,18 @@
     "customevent": "replace_cats",
     "when": "onjoin",
     "spawntype": ["spawn_egg"],
-    "result": "deny"
+    "result": "deny_with_actions"
   },
   {
     "mob": ["minecraft:wolf"],
     "customevent": "replace_wolves",
     "when": "onjoin",
     "spawntype": ["spawn_egg"],
+    "result": "deny_with_actions"
+  },
+  {
+    "mob": ["minecraft:cat", "minecraft:wolf"],
+    "when": "onjoin",
     "result": "deny"
   },
   {
