@@ -634,6 +634,20 @@ StartupEvents.registry("item", (e) => {
           food.fastToEat(true);
           food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
         });
+      e.create(`society:${jar.item.split(":")[1]}_bottle`)
+        .texture(`society:item/preserves/${jar.item.split(":")[1]}_bottle`)
+        .food((food) => {
+          food.hunger(2);
+          food.saturation(0.6);
+          food.fastToEat(true);
+          food.effect("farm_and_charm:grandmas_blessing", 1200, 1, 1.0);
+        });
+    }
+  });
+  global.jams.forEach((jar) => {
+    if (jar.item.includes("society")) {
+      e.create(`society:${jar.item.split(":")[1]}`)
+        .texture(`society:item/preserves/${jar.item.split(":")[1]}`);
     }
   });
   // Dehydrator outputs

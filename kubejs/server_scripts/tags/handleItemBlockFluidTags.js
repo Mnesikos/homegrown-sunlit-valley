@@ -371,6 +371,10 @@ ServerEvents.tags("item", (e) => {
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
+    e.add("forge:jam_bottles", `society:${preserve.item.split(":")[1]}_bottle`)
+  });
+  global.jams.forEach((jam) => {
+    e.add("bakery:jam", jam.item);
   });
   global.lootFurniture.forEach((item) => {
     e.add("society:loot_furniture", item);

@@ -1440,6 +1440,7 @@ global.fruits = [
   {
     item: "minecraft:sweet_berries",
     altPreserveOutput: "vintagedelight:sweet_berry_mason_jar",
+    altJamOutput: "bakery:sweetberry_jam",
     value: 4,
   },
   { item: "autumnity:foul_berries", value: 4 },
@@ -1447,16 +1448,19 @@ global.fruits = [
   {
     item: "atmospheric:yucca_fruit",
     altPreserveOutput: "society:yucca_preserves",
+    altJamOutput: "society:yucca_jam",
     value: 8,
   },
   {
     item: "minecraft:apple",
     altPreserveOutput: "vintagedelight:apple_sauce_mason_jar",
+    altJamOutput: "bakery:apple_jam",
     value: 8,
   },
   {
     item: "minecraft:melon_slice",
     altPreserveOutput: "society:melon_preserves",
+    altJamOutput: "society:melon_jam",
     value: 9,
   },
   {
@@ -1467,10 +1471,15 @@ global.fruits = [
   { item: "minecraft:chorus_fruit", value: 16 },
   { item: "pamhc2trees:lycheeitem", value: 16 },
   { item: "pamhc2trees:bananaitem", value: 16 },
-  { item: "farm_and_charm:strawberry", value: 18 },
+  {
+    item: "farm_and_charm:strawberry",
+    altJamOutput: "bakery:strawberry_jam",
+    value: 18
+  },
   {
     item: "minecraft:glow_berries",
     altPreserveOutput: "vintagedelight:glow_berry_mason_jar",
+    altJamOutput: "bakery:glowberry_jam",
     value: 24,
   },
   { item: "vinery:cherry", value: 24 },
@@ -1516,6 +1525,11 @@ global.preserves = [
   { item: "society:zucchini_preserves", value: 1440 },
   { item: "society:broccoli_preserves", value: 1080 },
 ];
+global.jams = [
+  { item: "society:aloe_jam", ingredient: "atmospheric:aloe_leaves", value: 19 },
+  { item: "society:red_grape_jam", ingredient: "#vinery:red_grape", value: 23 },
+  { item: "society:white_grape_jam", ingredient: "#vinery:white_grape", value: 23 },
+];
 global.dehydrated = [
   { item: "society:raisins", value: 360 },
   { item: "society:nether_raisins", value: 400 },
@@ -1526,6 +1540,11 @@ global.fruits.forEach((fruit) => {
   global.preserves.push({
     item: fruit.altPreserveOutput ? fruit.altPreserveOutput : `society:${itemId}_preserves`,
     value: fruit.value * 15 + 64,
+  });
+  global.jams.push({
+    item: fruit.altJamOutput ? fruit.altJamOutput : `society:${itemId}_jam`,
+    ingredient: fruit.item,
+    value: fruit.value + 3,
   });
   global.dehydrated.push({
     item: `society:dried_${itemId}`,
@@ -2195,7 +2214,7 @@ const cookingPotRecipes = [
   { item: "farm_and_charm:nettle_tea", value: 52 },
   { item: "vintagedelight:cheese_pasta", value: 112 },
   { item: "farm_and_charm:onion_soup", value: 32 },
-  { item: "bakery:strawberry_jam", value: 21 },
+//  { item: "bakery:strawberry_jam", value: 21 },
   { item: "farmersdelight:hot_cocoa", value: 27 },
   { item: "crabbersdelight:seafood_gumbo", value: 120 },
   { item: "candlelight:pasta_with_mozzarella", value: 96 },
@@ -2243,14 +2262,14 @@ const cookingPotRecipes = [
   { item: "farm_and_charm:sausage_with_oat_patty", value: 108 },
   { item: "farmersdelight:noodle_soup", value: 87 },
   { item: "vintagedelight:ghostly_chili", value: 204 },
-  { item: "bakery:glowberry_jam", value: 27 },
+//  { item: "bakery:glowberry_jam", value: 27 },
   { item: "farm_and_charm:simple_tomato_soup", value: 55 },
-  { item: "bakery:sweetberry_jam", value: 7 },
+//  { item: "bakery:sweetberry_jam", value: 7 },
   { item: "bakery:chocolate_donut", value: 3144 },
   { item: "farmersdelight:vegetable_noodles", value: 136 },
   { item: "vintagedelight:pad_thai", value: 372 },
   { item: "farm_and_charm:potato_soup", value: 36 },
-  { item: "bakery:apple_jam", value: 11 },
+//  { item: "bakery:apple_jam", value: 11 },
   { item: "farm_and_charm:corn_grits", value: 72 },
   { item: "farmersdelight:fish_stew", value: 154 },
   { item: "farmersdelight:pasta_with_mutton_chop", value: 110 },
@@ -2283,6 +2302,12 @@ const cookingPotRecipes = [
   { item: "veggiesdelight:turnip_beef_stew", value: 75 },
   { item: "veggiesdelight:pasta_with_broccoli", value: 148 },
 ];
+global.jams.forEach((jar) => {
+  cookingPotRecipes.push({
+    item: jar.item,
+    value: jar.value
+  });
+});
 
 cookingPotRecipes.forEach((recipe) => {
   global.cooking.push({

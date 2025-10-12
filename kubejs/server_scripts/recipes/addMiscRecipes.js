@@ -1,6 +1,84 @@
 console.info("[SOCIETY] addMiscRecipes.js loaded");
 
 ServerEvents.recipes((e) => {
+  // Preserves bottles
+  global.preserves.forEach((jar) => {
+    if (jar.item.includes("society")) {
+      e.shaped(Item.of(`society:${jar.item.split(":")[1]}_bottle`, 3), ["pb", "bb"], {
+        p: jar.item,
+        b: "minecraft:glass_bottle"
+      });
+    }
+  });
+  // Jams
+  global.jams.forEach((jam) => {
+    if (jam.item.includes("society") && !jam.item.includes("grape")) {
+      e.custom({
+        type: "farmersdelight:cooking",
+        cookingtime: 200,
+        experience: 2.0,
+        container: {
+          item: "bakery:jar",
+        },
+        ingredients: [
+          {
+            item: jam.ingredient,
+          },
+          {
+            item: "minecraft:sugar",
+          },
+        ],
+        result: {
+          item: jam.item,
+        },
+      });
+    }
+  });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 2.0,
+    container: {
+      item: "bakery:jar",
+    },
+    ingredients: [
+      [
+        { item: "vinery:red_grape" },
+        { item: "vinery:savanna_grapes_red" },
+        { item: "vinery:taiga_grapes_red" },
+        { item: "vinery:jungle_grapes_red" },
+      ],
+      {
+        item: "minecraft:sugar",
+      },
+    ],
+    result: {
+      item: "society:red_grape_jam",
+    },
+  });
+  e.custom({
+    type: "farmersdelight:cooking",
+    cookingtime: 200,
+    experience: 2.0,
+    container: {
+      item: "bakery:jar",
+    },
+    ingredients: [
+      [
+        { item: "vinery:white_grape" },
+        { item: "vinery:savanna_grapes_white" },
+        { item: "vinery:taiga_grapes_white" },
+        { item: "vinery:jungle_grapes_white" },
+      ],
+      {
+        item: "minecraft:sugar",
+      },
+    ],
+    result: {
+      item: "society:white_grape_jam",
+    },
+  });
+
   e.shaped("atmospheric:blood_orange", ["mmm", "mom", "mmm"], {
     o: "atmospheric:orange",
     m: "farm_and_charm:minced_beef",
