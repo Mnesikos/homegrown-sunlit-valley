@@ -17,7 +17,7 @@
 
 ["Allowed Blocks, Entities, & Dimensions"]
 	#Entities that you are able to teleport with
-	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, horse_colors:horse_felinoid, horse_colors:donkey, horse_colors:mule, dragnlivestock:caribou, dragnlivestock:o_cow, dragnlivestock:o_mooshroom, minecraft:pig, dragnlivestock:o_pig, minecraft:strider, minecraft:camel, dragnlivestock:o_camel, automobility:automobile, dragnlivestock:covered_wagon, dragnlivestock:livestock_wagon, dragnlivestock:lumber_wagon, dragnlivestock:goods_cart, dragnlivestock:mining_cart, dragnlivestock:transport_cart, dragnlivestock:plow"
+	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, horse_colors:horse_felinoid, horse_colors:donkey, horse_colors:mule, dragnlivestock:caribou, dragnlivestock:o_llama, dragnlivestock:o_camel, dragnlivestock:unicorn, dragnlivestock:o_cow, dragnlivestock:o_mooshroom, minecraft:pig, dragnlivestock:o_pig, minecraft:strider, minecraft:camel, dragnlivestock:o_camel, automobility:automobile, dragnlivestock:covered_wagon, dragnlivestock:livestock_wagon, dragnlivestock:lumber_wagon, dragnlivestock:goods_cart, dragnlivestock:mining_cart, dragnlivestock:transport_cart, dragnlivestock:plow"
 	#Dimensions that paths will be allowed in
 	"Valid Dimensions" = "minecraft:overworld, minecraft:the_end"
 	#A comma separated list of accepted block tags for path
