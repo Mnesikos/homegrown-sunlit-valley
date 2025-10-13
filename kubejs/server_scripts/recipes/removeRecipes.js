@@ -235,6 +235,9 @@ ServerEvents.recipes((e) => {
     "unusualfishmod:ripsaw",
     "unusualfishmod:ancient_weapon_smithing_template",
     "minecraft:milk_bucket",
+    "dragnlivestock:sheep_milk_bucket",
+    "dragnlivestock:llama_milk_bucket",
+    "dragnlivestock:goat_milk_bucket",
     "farm_and_charm:feeding_trough",
     "farm_and_charm:pitchfork",
     "meadow:wooden_milk_bucket",
@@ -1126,6 +1129,7 @@ ServerEvents.recipes((e) => {
     "minecraft:beehive",
   ];
   const removeByInput = [
+    "forge:egg",
     "decorative_blocks:rocky_dirt",
     "veggiesdelight:mature_dandelion",
     "veggiesdelight:dandelion_leaf",
@@ -1138,6 +1142,9 @@ ServerEvents.recipes((e) => {
     "meadow:wooden_warped_milk_bucket",
     "meadow:wooden_buffalo_milk_bucket",
     "meadow:wooden_goat_milk_bucket",
+    "dragnlivestock:sheep_milk_bucket",
+    "dragnlivestock:llama_milk_bucket",
+    "dragnlivestock:goat_milk_bucket",
     "atmospheric:golden_dragon_fruit_crate",
     "atmospheric:golden_dragon_fruit",
     "atmospheric:dragon_fruit_crate",

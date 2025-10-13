@@ -6,6 +6,9 @@ let bannedItems = [
   "meadow:wooden_buffalo_milk_bucket",
   "meadow:wooden_goat_milk_bucket",
   "farmlife:tribull_milk",
+  "dragnlivestock:sheep_milk_bucket",
+  "dragnlivestock:llama_milk_bucket",
+  "dragnlivestock:goat_milk_bucket",
 ];
 
 PlayerEvents.inventoryChanged((e) => {

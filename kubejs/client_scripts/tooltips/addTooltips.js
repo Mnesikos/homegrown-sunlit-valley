@@ -524,6 +524,9 @@ ItemEvents.tooltip((tooltip) => {
       "meadow:wooden_warped_milk_bucket",
       "meadow:wooden_buffalo_milk_bucket",
       "meadow:wooden_goat_milk_bucket",
+      "dragnlivestock:sheep_milk_bucket",
+      "dragnlivestock:llama_milk_bucket",
+      "dragnlivestock:goat_milk_bucket",
     ],
     Text.red("Unobtainable, use a milking pail")
   );
