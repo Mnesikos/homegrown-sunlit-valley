@@ -107,6 +107,7 @@ global.ageableProductInputs = [
   { item: "brewery:dark_brew", name: "Dark Brew", time: 6 },
   { item: "meadow:cheese_block", name: "Cheese Wheel", time: 3 },
   { item: "meadow:goat_cheese_block", name: "Goat Cheese Wheel", time: 3 },
+  { item: "dragnlivestock:llama_cheese", name: "Llama Cheese", time: 3 },
   { item: "meadow:warped_cheese_block", name: "Warped Cheese Wheel", time: 3 },
   { item: "meadow:sheep_cheese_block", name: "Sheep Cheese Wheel", time: 3 },
   { item: "meadow:grain_cheese_block", name: "Grain Cheese Wheel", time: 3 },

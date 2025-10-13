@@ -44,6 +44,7 @@ ServerEvents.tags("item", (e) => {
     "sewingkit:wood_sewing_needle",
     "sewingkit:gold_sewing_needle",
     "refurbished_furniture:knife",
+    "dragnlivestock:llama_cheese",
     "vintagedelight:cheese_wheel",
     "vintagedelight:oat_dough",
     "vintagedelight:oat_seeds",
@@ -278,6 +279,7 @@ ServerEvents.tags("item", (e) => {
   e.add("forge:cheeses", "farmlife:tribull_cheese_wedge");
   e.add("c:cheeses", "farmlife:tribull_cheese_wedge");
   e.add("meadow:cheese_blocks", "meadow:amethyst_cheese_block");
+  e.add("meadow:cheese_blocks", "dragnlivestock:llama_cheese");
   e.add("netherdepthsupgrade:lava_fishing_rod", "forge:tools/fishing_rods");
   e.add("forge:rope", "brewery:rope");
   e.remove("forge:chests/ender", "minecraft:ender_chest");
@@ -504,6 +506,7 @@ ServerEvents.tags("item", (e) => {
   const smallMilks = [
     "society:milk",
     "society:goat_milk",
+    "society:llama_milk",
     "society:sheep_milk",
     "society:buffalo_milk",
     "society:warped_milk",
@@ -518,6 +521,7 @@ ServerEvents.tags("item", (e) => {
   const largeMilks = [
     "society:large_milk",
     "society:large_goat_milk",
+    "society:large_llama_milk",
     "society:large_buffalo_milk",
     "society:large_sheep_milk",
     "society:large_warped_milk",

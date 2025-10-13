@@ -1,0 +1,10 @@
+{
+  "type": "meadow:cheese",
+  "bucket": {
+    "item": "society:large_llama_milk"
+  },
+  "ingredient": {
+    "item": "meadow:rennet"
+  },
+  "result": "dragnlivestock:llama_cheese"
+}

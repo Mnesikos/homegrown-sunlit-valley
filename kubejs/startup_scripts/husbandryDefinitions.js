@@ -725,6 +725,11 @@ global.husbandryMilkingDefinitions = [
     milk: { sm: "society:goat_milk", lg: "society:large_goat_milk" },
   },
   {
+    animal: "dragnlivestock:o_llama",
+    cooldown: 1,
+    milk: { sm: "society:llama_milk", lg: "society:large_llama_milk" },
+  },
+  {
     animal: "meadow:water_buffalo",
     cooldown: 1,
     milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
@@ -784,7 +789,6 @@ global.petGifts = [
   { animal: "horse_colors:horse_felinoid", gifts: ["relics:horse_flute", "simplehats:cowboy"] },
   { animal: "dragnlivestock:caribou", gifts: ["simplehats:festiveantlers"] },
   { animal: "dragnlivestock:o_camel", gifts: ["simplehats:explorerhat"] },
-  { animal: "dragnlivestock:o_llama", gifts: ["simplehats:gnome", "simplehats:summerhat"] },
   { animal: "dragnlivestock:unicorn", gifts: ["simplehats:unicornhorn"] },
   { animal: "minecraft:polar_bear", gifts: ["simplehats:teddy_bear"] },
   { animal: "hamsters:hamster", gifts: ["society:tiny_gnome"] },

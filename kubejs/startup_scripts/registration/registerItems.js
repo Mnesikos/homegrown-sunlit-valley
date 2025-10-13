@@ -543,6 +543,8 @@ StartupEvents.registry("item", (e) => {
     "large_buffalo_milk",
     "goat_milk",
     "large_goat_milk",
+    "llama_milk",
+    "large_llama_milk",
     "warped_milk",
     "large_warped_milk",
     "tri_bull_milk",

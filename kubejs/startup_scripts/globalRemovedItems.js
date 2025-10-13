@@ -67,6 +67,8 @@ global.removedItems = [
   "dragnlivestock:cooked_unicorn_rib_steak",
   "dragnlivestock:unicorn_sirloin_steak",
   "dragnlivestock:cooked_unicorn_sirloin_steak",
+  "dragnlivestock:frog",
+  "dragnlivestock:cooked_frog",
   "dragnpets:wolf",
   "dragnpets:cooked_wolf",
   "dragnpets:cat",

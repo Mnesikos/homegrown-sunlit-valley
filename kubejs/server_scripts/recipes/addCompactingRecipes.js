@@ -31,6 +31,7 @@ ServerEvents.recipes((e) => {
   const milks = [
     "milk",
     "goat_milk",
+    "llama_milk",
     "buffalo_milk",
     "sheep_milk",
     "warped_milk",

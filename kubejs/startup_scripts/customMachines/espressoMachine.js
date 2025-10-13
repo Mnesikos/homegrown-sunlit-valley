@@ -6,11 +6,13 @@ global.espressoMachineRecipes = [
   { input: "society:large_milk", output: ["4x society:steamed_milk"] },
   { input: "society:large_sheep_milk", output: ["4x society:steamed_milk"] },
   { input: "society:large_goat_milk", output: ["4x society:steamed_milk"] },
+  { input: "society:large_llama_milk", output: ["4x society:steamed_milk"] },
   { input: "society:large_warped_milk", output: ["4x society:steamed_milk"] },
   { input: "society:large_buffalo_milk", output: ["4x society:steamed_milk"] },
   { input: "society:milk", output: ["1x society:steamed_milk"] },
   { input: "society:sheep_milk", output: ["1x society:steamed_milk"] },
   { input: "society:goat_milk", output: ["1x society:steamed_milk"] },
+  { input: "society:llama_milk", output: ["1x society:steamed_milk"] },
   { input: "society:warped_milk", output: ["1x society:steamed_milk"] },
   { input: "society:buffalo_milk", output: ["1x society:steamed_milk"] },
   {
