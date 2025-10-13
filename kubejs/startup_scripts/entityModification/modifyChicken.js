@@ -10,6 +10,13 @@ const starvationPrevention = (entity, affectionPenaltyMult) => {
 };
 
 EntityJSEvents.modifyEntity((event) => {
+  event.modify("dragnlivestock:o_chicken", (modifyBuilder) => {
+    modifyBuilder.tick((entity) => {
+      if (entity.level.time % 1000 === 0) {
+        starvationPrevention(entity, 1);
+      }
+    });
+  });
   event.modify("minecraft:chicken", (modifyBuilder) => {
     modifyBuilder.tick((entity) => {
       if (entity.level.time % 1000 === 0) {

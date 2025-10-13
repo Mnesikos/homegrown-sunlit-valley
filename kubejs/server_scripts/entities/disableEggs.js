@@ -7,7 +7,13 @@ const eggs = [
   "untitledduckmod:duck_egg",
   "farmlife:galliraptor_egg",
 ];
-EntityEvents.spawned(eggs, (e) => e.cancel());
+EntityEvents.spawned(eggs, (e) => {
+  let entity = e.entity;
+  if (entity.type == "minecraft:egg") {
+    if (entity.getDefaultItem() != "dragnlivestock:fertilized_egg") e.cancel();
+  }
+  else e.cancel();
+});
 
 ItemEvents.rightClicked(eggs, (e) => {
   if (!e.player.isCrouching()) e.cancel();

@@ -25,7 +25,7 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
-  if (breedingItems.includes(item.id)) {
+  if (breedingItems.includes(item.id) || target.isFood(item)) {
     server.runCommandSilent(
       `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 This animal can only be bred with a Miracle Potion!`
     );
@@ -44,41 +44,58 @@ ItemEvents.entityInteracted((e) => {
     let day = Number((Math.floor(Number(level.dayTime() / 24000)) + 1).toFixed());
     let ageLastBred = target.persistentData.ageLastBred || 0;
     if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
-    if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {
-      if (
-        ["crittersandcompanions:red_panda", "minecraft:panda"].includes(target.type) &&
-        Math.random() > 0.2
-      ) {
+
+    if (global.checkEntityTag(target, "society:gendered_animal")) {
+      if (Number(animalNbt.InLove) === 0 && day > ageLastBred && target.canFallInLove()) {
+        target.setInLove(player);
         item.count--;
-        target.persistentData.ageLastBred = day;
-        server.runCommandSilent(
-          `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 The Miracle Potion failed...`
-        );
-      } else {
-        animalNbt.InLove = 2000;
-        target.setNbt(animalNbt);
-        item.count--;
-        level.spawnParticles(
-          "minecraft:heart",
-          true,
-          target.x,
-          target.y + 1.5,
-          target.z,
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          0.2 * rnd(1, 4),
-          12,
-          0.01
-        );
+        //spawnparticles?
         target.persistentData.ageLastBred = day;
         player.swing();
         global.addItemCooldown(player, item, 10);
+      } else if (day > ageLastBred) {
+        global.addItemCooldown(player, "society:miracle_potion", 40);
+        server.runCommandSilent(
+          `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal needs time to rest after taking a Miracle Potion...`
+        );
       }
-    } else if (day > ageLastBred) {
-      global.addItemCooldown(player, "society:miracle_potion", 40);
-      server.runCommandSilent(
-        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal needs time to rest after taking a Miracle Potion...`
-      );
+    } else {
+      if (Number(animalNbt.InLove) === 0 && day > ageLastBred) {
+        if (
+          ["crittersandcompanions:red_panda", "minecraft:panda"].includes(target.type) &&
+          Math.random() > 0.2
+        ) {
+          item.count--;
+          target.persistentData.ageLastBred = day;
+          server.runCommandSilent(
+            `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 The Miracle Potion failed...`
+          );
+        } else {
+          animalNbt.InLove = 2000;
+          target.setNbt(animalNbt);
+          item.count--;
+          level.spawnParticles(
+            "minecraft:heart",
+            true,
+            target.x,
+            target.y + 1.5,
+            target.z,
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            0.2 * rnd(1, 4),
+            12,
+            0.01
+          );
+          target.persistentData.ageLastBred = day;
+          player.swing();
+          global.addItemCooldown(player, item, 10);
+        }
+      } else if (day > ageLastBred) {
+        global.addItemCooldown(player, "society:miracle_potion", 40);
+        server.runCommandSilent(
+          `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 120 This animal needs time to rest after taking a Miracle Potion...`
+        );
+      }
     }
   }
 });
