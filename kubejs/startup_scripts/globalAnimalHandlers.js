@@ -113,17 +113,6 @@ global.handleSpecialHarvest = (
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   const heartBonus = hearts === 10 ? 2 : 1;
 
-
-// REMOVE THIS. DEBUG TESTING.
-//  const modId = target.type.split(":")[0];
-//  const gender = target.nbt.getInt("Gender");
-//  let text = `${global.checkEntityTag(target, "society:gendered_animal")}, ${modId}, ${gender}, ${gender === 1}`
-////  let text = `${global.checkEntityTag(target, "society:gendered_animal")}, ${modId}, ${gender}, ${global.isGenderedMale(target)}`
-//  server.runCommandSilent(
-//    `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${text}`
-//  );
-
-
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
