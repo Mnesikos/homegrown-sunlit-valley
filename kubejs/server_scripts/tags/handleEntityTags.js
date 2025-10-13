@@ -106,4 +106,45 @@ ServerEvents.tags("entity_type", (e) => {
   ["longwings:moth", "longwings:butterfly"].forEach((animal) => {
     e.add("society:longwing", animal);
   });
+
+  [
+    "dragnlivestock:o_cow",
+    "dragnlivestock:o_goat",
+    "dragnlivestock:farm_goat",
+    "dragnlivestock:o_sheep",
+    "dragnlivestock:o_pig",
+    "dragnlivestock:o_rabbit",
+    "dragnlivestock:o_chicken",
+    "dragnlivestock:o_mooshroom",
+    "dragnlivestock:wheat_moobloom",
+    "dragnlivestock:sweet_berry_moobloom",
+    "dragnlivestock:pumpkin_moobloom",
+    "dragnlivestock:potato_moobloom",
+    "dragnlivestock:melon_moobloom",
+    "dragnlivestock:glow_berry_moobloom",
+    "dragnlivestock:flowering_moobloom",
+    "dragnlivestock:carrot_moobloom",
+    "dragnlivestock:beetroot_moobloom",
+    "dragnlivestock:azalea_moobloom",
+    "dragnlivestock:caribou",
+    "dragnlivestock:o_camel",
+    "dragnlivestock:o_llama",
+    "dragnlivestock:unicorn",
+    "dragnpets:o_fox",
+    "dragnpets:o_ocelot",
+    "dragnpets:macaw",
+    "dragnpets:cockatiel",
+    "dragnpets:ringneck",
+    "workdog:wolf",
+    "workdog:akita",
+    "workdog:border_collie",
+    "workdog:boston_terrier",
+    "workdog:german_shepherd",
+    "workdog:jack_russell_terrier",
+    "workdog:pit_bull",
+    "simplycats:cat",
+    "horse_colors:horse_felinoid",
+  ].forEach((animal) => {
+    e.add("society:gendered_animal", animal);
+  });
 });

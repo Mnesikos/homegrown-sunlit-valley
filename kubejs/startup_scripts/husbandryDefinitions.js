@@ -563,6 +563,7 @@ global.husbandryForagingDefinitions = [
         chance: 1,
         minHearts: 4,
         hasQuality: true,
+        genderDependent: true,
       },
     ],
   },

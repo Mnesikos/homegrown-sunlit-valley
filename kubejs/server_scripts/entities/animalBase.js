@@ -216,6 +216,8 @@ const handleMilk = (name, data, day, hungry, e) => {
       3,
       0.01
     );
+  } else if (global.isGenderedMale(target)) {
+    errorText = `${name} does not produce milk!`
   } else if (target.isBaby()) {
     errorText = `${name} is too young to produce milk!`;
   } else if (hungry) {

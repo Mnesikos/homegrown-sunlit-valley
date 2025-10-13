@@ -4,6 +4,22 @@ global.checkEntityTag = (entity, checkedTag) => {
   return entity.entityType.tags.anyMatch((tag) => tag.location() == checkedTag);
 };
 
+global.isGenderedMale = (target) => {
+  if (global.checkEntityTag(target, "society:gendered_animal")) {
+    const modId = target.type.split(":")[0];
+    if (modId.includes("dragnlivestock") || modId.includes("dragnpets")) return target.getNbt().getInt("Gender") === 1;
+    if (modId.includes("workdog")) return target.getNbt().getBoolean("Gender");
+    if (modId.includes("simplycats")) return target.getNbt().getString("Phaeomelanin").includes("Y");
+    if (modId.includes("horse_colors")) return target.getNbt().getBoolean("gender");
+  }
+  return false;
+};
+global.genderCanForage = (target) => {
+  const type = target.type.split(":")[1];
+  if (type.includes("chicken")) return !global.isGenderedMale(target);
+  return true;
+};
+
 global.isFresh = (day, actionAge) => {
   return day < actionAge;
 };
@@ -55,6 +71,7 @@ global.getMilk = (target, data, player, day, raiseEffection) => {
   if (player) affectionIncrease = player.stages.has("animal_whisperer") || data.bribed ? 20 : 10;
   let quality = 0;
   if (
+    !global.isGenderedMale(target) &&
     !target.isBaby() &&
     !hungry &&
     (freshAnimal || day > ageLastMilked + global.getMilkingTimeMult(target, target.type) - 1)
@@ -95,44 +112,59 @@ global.handleSpecialHarvest = (
   const affection = data.getInt("affection") || 0;
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   const heartBonus = hearts === 10 ? 2 : 1;
+
+
+// REMOVE THIS. DEBUG TESTING.
+//  const modId = target.type.split(":")[0];
+//  const gender = target.nbt.getInt("Gender");
+//  let text = `${global.checkEntityTag(target, "society:gendered_animal")}, ${modId}, ${gender}, ${gender === 1}`
+////  let text = `${global.checkEntityTag(target, "society:gendered_animal")}, ${modId}, ${gender}, ${global.isGenderedMale(target)}`
+//  server.runCommandSilent(
+//    `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 40 ${text}`
+//  );
+
+
   if (freshAnimal || day > ageLastDroppedSpecial) {
     let resolvedCount;
     let resolvedItem;
     global.husbandryForagingDefinitions.forEach((definition) => {
       if (definition.animal.equals(type)) {
         definition.forages.forEach((forage) => {
-          resolvedCount = forage.countMult;
-          if (forage.stage && player.stages.has(forage.stage.name)) {
-            resolvedCount = forage.stage.newCountMult;
-          }
-          if (forage.itemPool) {
-            resolvedItem = forage.itemPool[Math.floor(Math.random() * forage.itemPool.length)];
-          } else {
-            resolvedItem = forage.item;
-          }
-          harvestFunction(
-            data,
-            forage.chance,
-            hungry,
-            forage.minHearts,
-            heartBonus * resolvedCount,
-            resolvedItem,
-            forage.hasQuality,
-            {
-              level: level,
-              target: target,
-              player: player,
-              server: server,
-              block: block,
-              inventory: inventory,
+          if (!forage.genderDependent || global.genderCanForage(target)) {
+            resolvedCount = forage.countMult;
+            if (forage.stage && player.stages.has(forage.stage.name)) {
+              resolvedCount = forage.stage.newCountMult;
             }
-          );
+            if (forage.itemPool) {
+              resolvedItem = forage.itemPool[Math.floor(Math.random() * forage.itemPool.length)];
+            } else {
+              resolvedItem = forage.item;
+            }
+            harvestFunction(
+              data,
+              forage.chance,
+              hungry,
+              forage.minHearts,
+              heartBonus * resolvedCount,
+              resolvedItem,
+              forage.hasQuality,
+              {
+                level: level,
+                target: target,
+                player: player,
+                server: server,
+                block: block,
+                inventory: inventory,
+              }
+            );
+          }
         });
       }
     });
     if (
       player.stages.has("coopmaster") &&
-      global.checkEntityTag(target, "society:coopmaster_bird")
+      global.checkEntityTag(target, "society:coopmaster_bird") &&
+      global.genderCanForage(target)
     ) {
       harvestFunction(data, 0.02, hungry, 1, 1, "vintagedelight:golden_egg", true, {
         level: level,
