@@ -59,7 +59,7 @@
 	#Amount of time, in ticks, that you must wait to shear an O-Sheep, Goat or Llama. Default is 24000 ticks, or 20 minutes.
 	"Wool Regrowth Time" = 24000
 	#Amount of Fertilized Eggs a hen should lay after mating. Default is 3.
-	"Chicken Egg Lay Amount" = 3
+	"Chicken Egg Lay Amount" = 1
 
 [Herding]
 	#Should animals, like cows, herd together?
