@@ -80,8 +80,6 @@ ServerEvents.tags("entity_type", (e) => {
     "legendarycreatures:ender_wisp",
     "minecraft:horse",
     "horse_colors:horse_felinoid",
-    "dragnlivestock:caribou",
-    "dragnlivestock:o_camel",
     "dragnlivestock:unicorn",
     "minecraft:polar_bear",
     "hamsters:hamster",
