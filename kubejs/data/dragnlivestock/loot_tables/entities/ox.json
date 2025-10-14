@@ -37,7 +37,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 6.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             },
@@ -62,8 +62,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 2.0,
+                "max": 6.0,
                 "type": "minecraft:uniform"
               }
             },
@@ -95,6 +95,12 @@
     },
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -102,8 +108,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             },
@@ -120,13 +126,6 @@
                   "entity": "this"
                 }
               ]
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
             }
           ],
           "name": "dragnlivestock:beef_sirloin_steak"
@@ -135,6 +134,12 @@
     },
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
@@ -142,8 +147,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             },
@@ -160,13 +165,6 @@
                   "entity": "this"
                 }
               ]
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
             }
           ],
           "name": "dragnlivestock:beef_rib_steak"

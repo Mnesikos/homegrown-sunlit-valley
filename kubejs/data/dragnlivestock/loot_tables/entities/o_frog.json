@@ -3,26 +3,15 @@
   "pools": [
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "chance": 0.05,
+          "condition": "minecraft:random_chance"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 2.0,
-                "type": "minecraft:uniform"
-              }
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 2.0
-              }
-            }
-          ],
           "name": "minecraft:bone_meal"
         }
       ]
@@ -56,24 +45,6 @@
             }
           ],
           "name": "dragnlivestock:frog"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:ochre_froglight",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:pearlescent_froglight"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:verdant_froglight"
         }
       ]
     }
