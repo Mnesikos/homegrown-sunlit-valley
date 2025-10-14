@@ -67,7 +67,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "adorablehamsterpets-3.3.1-1.20.1+forge.jar",
+                    "file_name": "adorablehamsterpets-3.3.2-1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -75,22 +75,22 @@
                         "forge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/7075/519/adorablehamsterpets-3.3.1-1.20.1+forge.jar",
-                    "id": "7075519",
+                    "url": "https://edge.forgecdn.net/files/7102/972/adorablehamsterpets-3.3.2-1.20.1+forge.jar",
+                    "id": "7102972",
                     "parent_id": "1306061",
                     "hashes": {
-                        "sha1": "428b3dfb82b44c46fbeb48f9fb337a080a3cac77",
-                        "md5": "6748524c95d74fd52a9f699d8d223807"
+                        "sha1": "e3f6ae1e17ac35f8369ceddf37b424f1830d1f6e",
+                        "md5": "523cafc15d56b488edde58995bb604a9"
                     },
                     "required_dependencies": [
-                        "419699",
                         "351264",
+                        "419699",
                         "1005914",
                         "306770",
                         "388172"
                     ],
-                    "size": 3011377,
-                    "date_published": "2025-10-06T23:16:21.683Z"
+                    "size": 3030671,
+                    "date_published": "2025-10-13T14:23:56.397Z"
                 }
             ]
         },
@@ -5894,7 +5894,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fzzy_config-0.7.2+1.20.1+forge.jar",
+                    "file_name": "fzzy_config-0.7.3+1.20.1+forge.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -5903,18 +5903,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6843/463/fzzy_config-0.7.2+1.20.1+forge.jar",
-                    "id": "6843463",
+                    "url": "https://edge.forgecdn.net/files/7085/17/fzzy_config-0.7.3+1.20.1+forge.jar",
+                    "id": "7085017",
                     "parent_id": "1005914",
                     "hashes": {
-                        "sha1": "a06d2ae66dbed25fd7f1d878254bce3a40680800",
-                        "md5": "d82c28e78e80f5e2fbbffe4a6fbb7a76"
+                        "sha1": "e771e543e930bd7c733f803bdbc0d3f2ecfb46c4",
+                        "md5": "bcbfb7e94f16a15ad5d13fb4999a5b78"
                     },
                     "required_dependencies": [
                         "351264"
                     ],
-                    "size": 2275298,
-                    "date_published": "2025-08-03T16:35:38.450Z"
+                    "size": 2312969,
+                    "date_published": "2025-10-09T02:39:14.310Z"
                 }
             ]
         },

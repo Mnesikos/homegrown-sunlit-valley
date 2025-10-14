@@ -1,9 +1,25 @@
 # Don't change this! Version used to track needed updates.
 version = 0
+# The master switch for all announcement notifications. Turning this off is the same as clicking 'Disable All' in the announcement screen. Announcements can still be viewed in the §f§lHamster Tips§r guide book.
+enableNotificationIcons = false
+# For when you see the update notification and think, 'That's a problem for future me.' Future you will be so proud. This is where you select many days to hide the 'Update Available' notification when you click 'Remind Me Later'.
+snoozeUpdateReminderDays = 5
+# Decide if the bell haunts you full-time on the HUD or only ambushes you when you're trying to organize your inventory. If disabled, you will only see notifications when you open an inventory.
+enableHudIcon = false
+# Banish the bell to a corner of your choosing. It's your screen. Establish dominance.
+hudIconPositionPreset = "TOP_LEFT"
+# Shove the icon horizontally. For when 'top-left' isn't specific enough for your discerning taste.
+hudIconOffsetX = 10
+# Adjust the vertical placement. Does it block your view? Is it not blocking your view enough? The power is yours.
+hudIconOffsetY = 10
+# Make it bigger. Make it smaller. Make it an affront to good taste. I'm not your art director.
+hudIconScale = 1.0
+# Decide if the bell icon should ambush you while you're sorting your inventory. If disabled, it will only bother you on the main menu or the game HUD if you have those enabled. Your screen, your rules.
+enableWidgetIcon = false
 # Hand-delivers the sacred texts on first login. Read it—or don’t. I'm not your conscience.
 enableAutoGuidebookDelivery = true
 # Helpful whispers on what the heck that cucumber is for.
-enableItemTooltips = true
+enableItemTooltips = false
 # Little status mumbles when your co-pilot disembarks.
 enableShoulderDismountMessages = true
 # More stats than anyone asked for. Defaults to off—mercifully.
@@ -62,7 +78,7 @@ standardFoods = [
     "culturaldelights:cut_cucumber",
     "culturaldelights:cucumber_seeds",
     "culturaldelights:corn_kernels",
-	"farm_and_charm:kernels"
+    "farm_and_charm:kernels"
 ]
 # The list of items a hamster might try to... 'borrow' if you leave them on the ground. A chase will ensue. You have been warned.
 stealableItems = [
@@ -75,14 +91,14 @@ buffFoods = [
 # The specific item that convinces a tamed hamster your shoulder is the best seat in the house. Defaults to cheese, because of course it does.
 shoulderMountFoods = [
     "adorablehamsterpets:cheese",
-	"meadow:piece_of_cheese",
-	"meadow:piece_of_sheep_cheese",
-	"meadow:piece_of_grain_cheese",
-	"meadow:piece_of_amethyst_cheese",
-	"meadow:piece_of_buffalo_cheese",
-	"meadow:piece_of_goat_cheese",
-	"meadow:piece_of_warped_cheese",
-	"farmlife:tribull_cheese_wedge"
+    "meadow:piece_of_cheese",
+    "meadow:piece_of_sheep_cheese",
+    "meadow:piece_of_grain_cheese",
+    "meadow:piece_of_amethyst_cheese",
+    "meadow:piece_of_buffalo_cheese",
+    "meadow:piece_of_goat_cheese",
+    "meadow:piece_of_warped_cheese",
+    "farmlife:tribull_cheese_wedge"
 ]
 # The one-time offering required to earn a hamster's ultimate trust, unlocking their cheek inventory. Make it something special. Or don't. See if I care.
 pouchUnlockFoods = [
@@ -168,6 +184,16 @@ pouchDisallowedTags = [
     "#minecraft:doors",
     "#minecraft:boats"
 ]
+# How much abuse a wild hamster can take before it gives up the ghost. Vanilla animals are around 8-10. Set it to 200 (100 hearts) if you enjoy a challenge, or 1 if you're a monster.
+wildMaxHealth = 8.0
+# How beefy your tamed fuzzball is. Defaults to double its wild health, because love makes you stronger. Or something. Vanilla wolves have 20 (10 hearts).
+tamedMaxHealth = 16.0
+# Convince a hamster to love you. Taming difficulty (1 in X chance). Higher = more cucumbers sacrificed to fuzzy freeloaders.
+tamingChanceDenominator = 3
+# Tamed hamster melee damage. Squeak-first, ask questions later.
+meleeDamage = 2.0
+# Damage dealt by thrown hamster. Surprisingly effective against Creepers. How convenient.
+hamsterThrowDamage = 20.0
 # Adjusts hamster spawn frequency. Higher = more chaos. 1 = blissful silence.
 spawnWeight = 30
 # Maximum hamsters per spawn group. Because sometimes one just isn't cute enough.
@@ -410,10 +436,22 @@ includeBiomes = [
 ]
 # A list of specific biome IDs to NEVER allow spawns in, even if they match a tag. This overrides all other settings. Format: 'mod_id:biome_name'. For example, 'minecraft:plains'.
 excludeBiomes = [
-    "mod_id:biome_name"
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "minecraft:warm_ocean",
+    "minecraft:lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean",
+    "minecraft:frozen_ocean",
+    "minecraft:deep_frozen_ocean",
+    "minecraft:mushroom_fields",
+    "minecraft:river"
 ]
-# Taming difficulty (1 in X chance). Higher = more cucumbers sacrificed to fuzzy freeloaders.
-tamingChanceDenominator = 3
+# Should luring a hamster to your shoulder consume the item (e.g., cheese)? Turn this off if you believe your charm alone should be enough. The item will still be required, just not eaten.
+consumeShoulderMountItem = true
+# Tired of wasting perfectly good cheese? Enable this to use a dedicated keybind (unbound by default). Hold down this key while right-clicking your hamster to hoist them onto your shoulder, no questions asked. Uses a separate key you must set in Controls > Key Binds.
+enableShoulderMountKeybind = false
 # May save your inventory. Or your ears.
 enableShoulderCreeperDetection = true
 # Adjust paranoia levels.
@@ -450,24 +488,6 @@ silencePhysicsSoundsInFirstPerson = false
 hamsterThrowVelocity = 1.5
 # The throw speed of your furry projectile when under the influence of Steamed Green Beans. Goes from 'yeet' to 'yote'.
 hamsterThrowVelocityBuffed = 2.5
-# Permit hamsters to embark on solo get-rich-quick schemes?
-enableIndependentDiamondSeeking = true
-# How far a hamster scans once it’s decided to play prospector.
-diamondSeekRadius = 10
-# The probability (0.0 to 1.0) that a hamster will seek gold instead of diamond, if both are available. At 0.5, it's a coin toss. At 1.0, it's guaranteed hamster sulking.
-goldMistakeChance = 0.33
-# Permits hamsters to engage in spontaneous, high-stakes games of keep-away with your valuables. A chase ensues. Obviously.
-enableDiamondStealing = true
-# Probability (0.1 to 1.0) a hamster will succumb to temptation. High by default. You shouldn't leave your diamonds lying around anyway.
-diamondPounceChance = 0.75
-# The hamster's personal space bubble.
-minFleeDistance = 5
-# The maximum distance before the hamster gets bored and stops running to taunt you.
-maxFleeDistance = 20
-# The shortest amount of time the hamster will entertain this little game before getting bored and dropping your stuff.
-minStealDurationSeconds = 5
-# The longest your cardio session can last before the hamster's attention span gives out.
-maxStealDurationSeconds = 15
 # How close a hostile mob can get before a hamster wakes up from it's power nap.
 tamedSleepThreatDetectionRadiusBlocks = 8
 # Night-owl hamsters? Your choice.
@@ -476,10 +496,6 @@ requireDaytimeForTamedSleep = true
 tamedQuiescentSitMinSeconds = 120
 # Maximum seconds before the inevitable deep snooze.
 tamedQuiescentSitMaxSeconds = 180
-# Tamed hamster melee damage. Mostly for show, let's be honest.
-meleeDamage = 2.0
-# Damage dealt by thrown hamster. Surprisingly effective against Creepers. How convenient.
-hamsterThrowDamage = 20.0
 # Healing amount from Hamster Food Mix. The good stuff.
 hamsterFoodMixHealing = 4.0
 # Healing from basic seeds/crops. Better than nothing… probably.
@@ -498,6 +514,24 @@ greenBeanBuffAmplifierStrength = 1
 greenBeanBuffAmplifierAbsorption = 1
 # Heals minor paper-cuts (and fragile egos).
 greenBeanBuffAmplifierRegen = 0
+# Permit hamsters to embark on solo get-rich-quick schemes?
+enableIndependentDiamondSeeking = true
+# How far a hamster scans once it’s decided to play prospector.
+diamondSeekRadius = 10
+# The probability (0.0 to 1.0) that a hamster will seek gold instead of diamond, if both are available. At 0.5, it's a coin toss. At 1.0, it's guaranteed hamster sulking.
+goldMistakeChance = 0.33
+# Permits hamsters to engage in spontaneous, high-stakes games of keep-away with your valuables. A chase ensues. Obviously.
+enableDiamondStealing = true
+# Probability (0.1 to 1.0) a hamster will succumb to temptation. High by default. You shouldn't leave your diamonds lying around anyway.
+diamondPounceChance = 0.75
+# The hamster's personal space bubble.
+minFleeDistance = 5
+# The maximum distance before the hamster gets bored and stops running to taunt you.
+maxFleeDistance = 20
+# The shortest amount of time the hamster will entertain this little game before getting bored and dropping your stuff.
+minStealDurationSeconds = 5
+# The longest your cardio session can last before the hamster's attention span gives out.
+maxStealDurationSeconds = 15
 # Higher = slower, lower = faster. Makes perfect sense.
 wildBushRegrowthModifier = 1.0
 # Higher = slower, lower = faster. Photosynthesis is hard, okay?
@@ -583,3 +617,19 @@ greenBeanBushExclusions = [
     "minecraft:river",
     "minecraft:sunflower_plains"
 ]
+
+# Control the icon's placement for standard GUIs. Because nothing says 'immersion' like a perfectly aligned notification bell. Position is relative to the GUI's top-right corner.
+
+[survivalWidgetIconSettings]
+# Shove it sideways (in pixels). Increase the number to move it right, decrease to move left.
+offsetX = 0
+# Shove it vertically (in pixels). Increase the number to move it down, decrease to move up.
+offsetY = 0
+
+# Control the icon's placement for the creative mode GUI. Because nothing says 'immersion' like a perfectly aligned notification bell. Position is relative to the GUI's top-right corner.
+
+[creativeWidgetIconSettings]
+# Shove it sideways (in pixels). Increase the number to move it right, decrease to move left.
+offsetX = 0
+# Shove it vertically (in pixels). Increase the number to move it down, decrease to move up.
+offsetY = 0
