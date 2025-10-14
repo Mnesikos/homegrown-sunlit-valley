@@ -75,7 +75,7 @@
 
 [QoL]
 	#Should O-Animals use vanilla loot instead of the loot included in the mod?
-	"Use Vanilla Animal Loot" = true
+	"Use Vanilla Animal Loot" = false
 	#Should O-Horses be able to spawn with any breed naturally? (They spawn only as wild Mustangs by default)
 	"Naturally Spawning O-Horse Breeds" = false
 	#Base time an O-Horse can run for at full speed, in seconds. Default is 45s.
