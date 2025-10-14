@@ -1,5 +1,15 @@
 [
   {
+    "mob": ["dragnlivestock:o_chicken"],
+    "dimension": "minecraft:overworld",
+    "minheight": "50",
+    "result": "allow"
+  },
+  {
+    "mob": ["dragnlivestock:o_chicken"],
+    "result": "deny"
+  },
+  {
     "mob": ["minecraft:cat"],
     "customevent": "replace_cats",
     "when": "onjoin",
