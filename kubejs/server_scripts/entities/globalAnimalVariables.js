@@ -6,6 +6,8 @@ global.husbandryAnimals = [
   "dragnlivestock:o_goat",
   "dragnlivestock:farm_goat",
   "dragnlivestock:o_llama",
+  "dragnlivestock:o_camel",
+  "dragnlivestock:caribou",
   "minecraft:sheep",
   "dragnlivestock:o_sheep",
   "minecraft:pig",
