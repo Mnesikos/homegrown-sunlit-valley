@@ -271,9 +271,10 @@ const handleFeed = (data, day, e) => {
     global.addItemCooldown(player, item, 10);
   }
 };
+
 const handleSheepMagicShears = (e) => {
   const { target, level, server } = e;
-  if (target.readyForShearing()) {
+  if (target.type == "minecraft:sheep" && target.readyForShearing()) {
     target.setSheared(true);
     let woolItem = Item.of(target.getColor().getName() + "_wool");
     let i = Math.ceil(Math.random() * 4);
@@ -300,11 +301,24 @@ const handleSheepMagicShears = (e) => {
       `playsound minecraft:entity.sheep.shear block @a ${target.x} ${target.y} ${target.z}`
     );
   }
+
+  if (target.type.split(":")[0].includes("dragnlivestock") && !target.isSheared()) {
+    const sheepSix = target.type == "dragnlivestock:o_sheep" && target.getBreed() == 6;
+    if (!sheepSix) {
+      target.setSheared(true);
+      target.dropWoolByColorAndMarking();
+      target.regrowWoolCounter = 0;
+      server.runCommandSilent(
+        `playsound minecraft:entity.sheep.shear block @a ${target.x} ${target.y} ${target.z}`
+      );
+    }
+  }
 };
+
 const handleMagicHarvest = (name, data, e) => {
   const { player, level, target, item, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
-  if (target.type == "minecraft:sheep") handleSheepMagicShears(e);
+  if (["minecraft:sheep", "dragnlivestock:o_sheep", "dragnlivestock:farm_goat", "dragnlivestock:o_goat"].includes(target.type)) handleSheepMagicShears(e);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
   let errorText = "";

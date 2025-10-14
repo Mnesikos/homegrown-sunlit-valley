@@ -205,8 +205,13 @@ global.getMagicShearsOutput = (level, target, player, server) => {
   const freshAnimal = global.isFresh(day, ageLastMagicHarvested);
   const affection = data.getInt("affection");
   const hearts = Math.floor((affection > 1000 ? 1000 : affection) / 100);
-  const targetId =
+  let targetId =
     target.type === "meadow:wooly_cow" ? ["minecraft", "cow"] : target.type.split(":");
+  if (targetId[0].includes("dragnlivestock")) {
+    if (targetId[1].includes("farm_goat")) targetId = ["dragnlivestock", "o_goat"];
+    if (targetId[1].includes("moobloom")) targetId = ["dragnlivestock", "o_cow"];
+    if (targetId[1].includes("sheep")) targetId = ["dragnlivestock", "o_sheep"];
+  }
   const droppedLoot = Utils.rollChestLoot(`${targetId[0]}:entities/${targetId[1]}`).toArray();
   let newLoot = [];
   if (hearts >= 5 && (freshAnimal || day > ageLastMagicHarvested)) {
