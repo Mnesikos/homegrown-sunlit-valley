@@ -25,7 +25,7 @@ ItemEvents.entityInteracted((e) => {
   const { hand, player, item, target, level, server } = e;
   if (player.cooldowns.isOnCooldown(item)) return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
-  if (breedingItems.includes(item.id) || target.isFood(item)) {
+  if (breedingItems.includes(item.id) || (typeof target.isFood === "function" && target.isFood(item))) {
     server.runCommandSilent(
       `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 This animal can only be bred with a Miracle Potion!`
     );
