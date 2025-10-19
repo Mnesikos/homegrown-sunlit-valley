@@ -45,7 +45,7 @@ ItemEvents.entityInteracted((e) => {
     let ageLastBred = target.persistentData.ageLastBred || 0;
     if (global.isFresh(day, ageLastBred)) ageLastBred = 0;
 
-    if (global.checkEntityTag(target, "society:gendered_animal")) {
+    if (global.checkEntityTag(target, "homegrown:gendered_animal")) {
       if (Number(animalNbt.InLove) === 0 && day > ageLastBred && target.canFallInLove()) {
         target.setInLove(player);
         item.count--;

@@ -31,7 +31,6 @@ ServerEvents.recipes((e) => {
   const milks = [
     "milk",
     "goat_milk",
-    "llama_milk",
     "buffalo_milk",
     "sheep_milk",
     "warped_milk",
@@ -42,6 +41,7 @@ ServerEvents.recipes((e) => {
   milks.forEach((milk) => {
     compact(`society:large_${milk}`, `society:${milk}`, 4);
   });
+  compact("homegrown:large_llama_milk", "homegrown:llama_milk", 4);
   e.shapeless("9x nethervinery:warped_grape", ["nethervinery:warped_grape_crate"]);
   e.shapeless("9x nethervinery:crimson_grape", ["nethervinery:crimson_grape_crate"]);
   compact("society:salmonberry_crate", "society:salmonberry", 9);

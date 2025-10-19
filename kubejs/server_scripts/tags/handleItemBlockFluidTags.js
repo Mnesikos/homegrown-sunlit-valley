@@ -373,7 +373,7 @@ ServerEvents.tags("item", (e) => {
   // Bulk
   global.preserves.forEach((preserve) => {
     e.add("society:preserves", preserve.item);
-    e.add("forge:jam_bottles", `society:${preserve.item.split(":")[1]}_bottle`)
+    e.add("forge:jam_bottles", `homegrown:${preserve.item.split(":")[1]}_bottle`)
   });
   global.jams.forEach((jam) => {
     e.add("forge:jams", jam.item);
@@ -506,7 +506,7 @@ ServerEvents.tags("item", (e) => {
   const smallMilks = [
     "society:milk",
     "society:goat_milk",
-    "society:llama_milk",
+    "homegrown:llama_milk",
     "society:sheep_milk",
     "society:buffalo_milk",
     "society:warped_milk",
@@ -521,7 +521,7 @@ ServerEvents.tags("item", (e) => {
   const largeMilks = [
     "society:large_milk",
     "society:large_goat_milk",
-    "society:large_llama_milk",
+    "homegrown:large_llama_milk",
     "society:large_buffalo_milk",
     "society:large_sheep_milk",
     "society:large_warped_milk",

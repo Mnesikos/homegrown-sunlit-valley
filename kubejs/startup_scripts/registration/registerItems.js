@@ -543,8 +543,6 @@ StartupEvents.registry("item", (e) => {
     "large_buffalo_milk",
     "goat_milk",
     "large_goat_milk",
-    "llama_milk",
-    "large_llama_milk",
     "warped_milk",
     "large_warped_milk",
     "tri_bull_milk",
@@ -556,6 +554,20 @@ StartupEvents.registry("item", (e) => {
   ].forEach((item) => {
     e.create(`society:${item}`)
       .texture(`society:item/husbandry/${item}`)
+      .food((food) => {
+        food.hunger(item.includes("large") ? 5 : 1);
+        food.saturation(1);
+        food.effect("farm_and_charm:grandmas_blessing", 200, 0, 1.0);
+        food.alwaysEdible(true);
+      })
+      .useAnimation("drink");
+  });
+  [
+    "llama_milk",
+    "large_llama_milk",
+  ].forEach((item) => {
+    e.create(`homegrown:${item}`)
+      .texture(`homegrown:item/husbandry/${item}`)
       .food((food) => {
         food.hunger(item.includes("large") ? 5 : 1);
         food.saturation(1);
@@ -636,8 +648,8 @@ StartupEvents.registry("item", (e) => {
           food.fastToEat(true);
           food.effect("farm_and_charm:grandmas_blessing", 6000, 1, 1.0);
         });
-      e.create(`society:${jar.item.split(":")[1]}_bottle`)
-        .texture(`society:item/preserves/${jar.item.split(":")[1]}_bottle`)
+      e.create(`homegrown:${jar.item.split(":")[1]}_bottle`)
+        .texture(`homegrown:item/preserves/${jar.item.split(":")[1]}_bottle`)
         .food((food) => {
           food.hunger(2);
           food.saturation(0.6);
@@ -647,9 +659,9 @@ StartupEvents.registry("item", (e) => {
     }
   });
   global.jams.forEach((jar) => {
-    if (jar.item.includes("society")) {
-      e.create(`society:${jar.item.split(":")[1]}`)
-        .texture(`society:item/preserves/${jar.item.split(":")[1]}`);
+    if (jar.item.includes("homegrown")) {
+      e.create(`homegrown:${jar.item.split(":")[1]}`)
+        .texture(`homegrown:item/preserves/${jar.item.split(":")[1]}`);
     }
   });
   // Dehydrator outputs

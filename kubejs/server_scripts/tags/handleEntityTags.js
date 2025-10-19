@@ -143,6 +143,6 @@ ServerEvents.tags("entity_type", (e) => {
     "simplycats:cat",
     "horse_colors:horse_felinoid",
   ].forEach((animal) => {
-    e.add("society:gendered_animal", animal);
+    e.add("homegrown:gendered_animal", animal);
   });
 });

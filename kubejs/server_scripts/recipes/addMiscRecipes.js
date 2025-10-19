@@ -3,8 +3,8 @@ console.info("[SOCIETY] addMiscRecipes.js loaded");
 ServerEvents.recipes((e) => {
   // Preserves bottles
   global.preserves.forEach((jar) => {
-    if (jar.item.includes("society")) {
-      e.shaped(Item.of(`society:${jar.item.split(":")[1]}_bottle`, 3), ["pb", "bb"], {
+    if (jar.item.includes("homegrown")) {
+      e.shaped(Item.of(`homegrown:${jar.item.split(":")[1]}_bottle`, 3), ["pb", "bb"], {
         p: jar.item,
         b: "minecraft:glass_bottle"
       });
@@ -12,7 +12,7 @@ ServerEvents.recipes((e) => {
   });
   // Jams
   global.jams.forEach((jam) => {
-    if (jam.item.includes("society") && !jam.item.includes("grape")) {
+    if (jam.item.includes("homegrown") && !jam.item.includes("grape")) {
       e.custom({
         type: "farmersdelight:cooking",
         cookingtime: 200,

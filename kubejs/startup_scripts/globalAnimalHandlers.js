@@ -5,7 +5,7 @@ global.checkEntityTag = (entity, checkedTag) => {
 };
 
 global.isGenderedMale = (target) => {
-  if (global.checkEntityTag(target, "society:gendered_animal")) {
+  if (global.checkEntityTag(target, "homegrown:gendered_animal")) {
     const modId = target.type.split(":")[0];
     if (modId.includes("dragnlivestock") || modId.includes("dragnpets")) return target.getNbt().getInt("Gender") === 1;
     if (modId.includes("workdog")) return target.getNbt().getBoolean("Gender");

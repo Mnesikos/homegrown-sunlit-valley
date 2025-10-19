@@ -20,14 +20,14 @@ ServerEvents.recipes((e) => {
   [
     "society:large_milk",
     "society:large_goat_milk",
-    "society:large_llama_milk",
+    "homegrown:large_llama_milk",
     "society:large_buffalo_milk",
     "society:large_sheep_milk",
     "society:large_warped_milk",
   ].forEach((milk) => {
     addDrainRecipe(milk, 1000);
   });
-  ['society:goat_milk', 'society:llama_milk', 'society:milk', 'society:buffalo_milk', 'society:warped_milk', 'society:sheep_milk'].forEach((milk) => {
+  ['society:goat_milk', 'homegrown:llama_milk', 'society:milk', 'society:buffalo_milk', 'society:warped_milk', 'society:sheep_milk'].forEach((milk) => {
     addDrainRecipe(milk, 250);
   });
 });

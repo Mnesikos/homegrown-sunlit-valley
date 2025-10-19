@@ -727,7 +727,7 @@ global.husbandryMilkingDefinitions = [
   {
     animal: "dragnlivestock:o_llama",
     cooldown: 1,
-    milk: { sm: "society:llama_milk", lg: "society:large_llama_milk" },
+    milk: { sm: "homegrown:llama_milk", lg: "homegrown:large_llama_milk" },
   },
   {
     animal: "meadow:water_buffalo",

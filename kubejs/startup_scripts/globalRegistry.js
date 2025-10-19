@@ -510,7 +510,7 @@ global.animalProducts = [
   { item: "society:grain_milk", value: 22 },
   { item: "society:buffalo_milk", value: 64 },
   { item: "society:goat_milk", value: 96 },
-  { item: "society:llama_milk", value: 96 },
+  { item: "homegrown:llama_milk", value: 96 },
   { item: "society:warped_milk", value: 96 },
   { item: "society:amethyst_milk", value: 144 },
   { item: "society:tri_bull_milk", value: 192 },
@@ -519,7 +519,7 @@ global.animalProducts = [
   { item: "society:large_grain_milk", value: 88 },
   { item: "society:large_buffalo_milk", value: 256 },
   { item: "society:large_goat_milk", value: 384 },
-  { item: "society:large_llama_milk", value: 384 },
+  { item: "homegrown:large_llama_milk", value: 384 },
   { item: "society:large_warped_milk", value: 384 },
   { item: "society:large_amethyst_milk", value: 576 },
   { item: "society:large_tri_bull_milk", value: 768 },
@@ -1473,7 +1473,7 @@ global.fruits = [
   {
     item: "atmospheric:yucca_fruit",
     altPreserveOutput: "society:yucca_preserves",
-    altJamOutput: "society:yucca_jam",
+    altJamOutput: "homegrown:yucca_jam",
     value: 8,
   },
   {
@@ -1485,7 +1485,7 @@ global.fruits = [
   {
     item: "minecraft:melon_slice",
     altPreserveOutput: "society:melon_preserves",
-    altJamOutput: "society:melon_jam",
+    altJamOutput: "homegrown:melon_jam",
     value: 9,
   },
   {
@@ -1551,9 +1551,9 @@ global.preserves = [
   { item: "society:broccoli_preserves", value: 1080 },
 ];
 global.jams = [
-  { item: "society:aloe_jam", ingredient: "atmospheric:aloe_leaves", value: 19 },
-  { item: "society:red_grape_jam", ingredient: "#vinery:red_grape", value: 23 },
-  { item: "society:white_grape_jam", ingredient: "#vinery:white_grape", value: 23 },
+  { item: "homegrown:aloe_jam", ingredient: "atmospheric:aloe_leaves", value: 19 },
+  { item: "homegrown:red_grape_jam", ingredient: "#vinery:red_grape", value: 23 },
+  { item: "homegrown:white_grape_jam", ingredient: "#vinery:white_grape", value: 23 },
 ];
 global.dehydrated = [
   { item: "society:raisins", value: 360 },
@@ -1567,7 +1567,7 @@ global.fruits.forEach((fruit) => {
     value: fruit.value * 15 + 64,
   });
   global.jams.push({
-    item: fruit.altJamOutput ? fruit.altJamOutput : `society:${itemId}_jam`,
+    item: fruit.altJamOutput ? fruit.altJamOutput : `homegrown:${itemId}_jam`,
     ingredient: fruit.item,
     value: fruit.value + 3,
   });
@@ -1640,7 +1640,7 @@ global.artisanGoods = [
   { item: "society:rubber", value: 30 },
   { item: "society:aged_cheese_block", value: 576 },
   { item: "society:aged_goat_cheese_block", value: 3456 },
-  { item: "society:aged_llama_cheese_block", value: 3456 },
+  { item: "homegrown:aged_llama_cheese_block", value: 3456 },
   { item: "society:aged_warped_cheese_block", value: 3456 },
   { item: "society:aged_buffalo_cheese_block", value: 2304 },
   { item: "society:aged_sheep_cheese_block", value: 288 },
@@ -1649,7 +1649,7 @@ global.artisanGoods = [
   { item: "society:aged_tribull_cheese_wheel", value: 6912 },
   { item: "society:double_aged_cheese_block", value: 1728 },
   { item: "society:double_aged_goat_cheese_block", value: 10368 },
-  { item: "society:double_aged_llama_cheese_block", value: 10368 },
+  { item: "homegrown:double_aged_llama_cheese_block", value: 10368 },
   { item: "society:double_aged_warped_cheese_block", value: 10368 },
   { item: "society:double_aged_buffalo_cheese_block", value: 6912 },
   { item: "society:double_aged_sheep_cheese_block", value: 864 },
