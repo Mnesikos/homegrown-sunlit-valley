@@ -1,0 +1,345 @@
+{
+  "name": "Foxglove",
+  "category": "patchouli:flowers",
+  "icon": "flowerary:pink_foxglove",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_foxglove,flowerary:orange_foxglove,flowerary:yellow_foxglove,flowerary:lime_foxglove,flowerary:mint_foxglove,flowerary:cyan_foxglove,flowerary:blue_foxglove,flowerary:light_blue_foxglove,flowerary:lavender_foxglove,flowerary:purple_foxglove,flowerary:lilac_foxglove,flowerary:magenta_foxglove,flowerary:pink_foxglove,flowerary:peach_foxglove,flowerary:multicolor_foxglove,flowerary:white_foxglove,flowerary:black_foxglove,flowerary:wilted_foxglove",
+	  "title": "Foxglove",
+	  "text": "A Foxglove is a hybrid flower species. Hybrid flowers cannot be hybridized further."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_foxglove_seeds,flowerary:orange_foxglove_seeds,flowerary:yellow_foxglove_seeds,flowerary:lime_foxglove_seeds,flowerary:mint_foxglove_seeds,flowerary:cyan_foxglove_seeds,flowerary:blue_foxglove_seeds,flowerary:light_blue_foxglove_seeds,flowerary:lavender_foxglove_seeds,flowerary:purple_foxglove_seeds,flowerary:lilac_foxglove_seeds,flowerary:magenta_foxglove_seeds,flowerary:pink_foxglove_seeds,flowerary:peach_foxglove_seeds,flowerary:multicolor_foxglove_seeds,flowerary:white_foxglove_seeds,flowerary:black_foxglove_seeds,flowerary:wilted_foxglove_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "There is an uncommon chance to obtain Foxglove Seeds by using any of the Pollen Jars on a vanilla Peony."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:red_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:orange_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:yellow_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:lime_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:mint_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:cyan_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:blue_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:light_blue_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:lavender_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:purple_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:lilac_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:magenta_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:pink_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:peach_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:multicolor_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:white_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:black_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Foxglove",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_foxglove_plant[age=7,half=upper]",
+          "1": "flowerary:wilted_foxglove_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+
+

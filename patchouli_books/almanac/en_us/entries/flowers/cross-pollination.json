@@ -4,13 +4,31 @@
   "icon": "flowerary:empty_pollen_jar",
   "pages": [
     {
-      "type": "patchouli:text",
-      "text": "An empty pollen jar may be used to collect pollen by holding it in the hand and using it on a vanilla flower. The flower will be unaffected by this, and its pollen will influence the color of any resulting seeds, with a 10% chance to mutate into a secondary color, or a 2% chance to mutate into the rare multicolor."
+      "type": "patchouli:spotlight",
+      "title": "Cross-pollination",
+      "item": "flowerary:dandelion_pollen_jar",
+      "text": "A pollen jar is a vital item in obtaining hybridized flowers.$(br2)An empty pollen jar may be used to collect pollen by holding it in the hand and using it on a vanilla flower.$(br2)The flower will be unaffected by this."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "flowerary:empty_pollen_jar",
-      "text": "Using a filled pollen jar on a vanilla flower will use up the pollen, return an empty pollen jar, and give you new flower seeds. The flower the pollen jar is used on will influence the species of flower for the resulting seeds, with a 20% chance to mutate into a hybrid flower species."
+      "text": "$(br)Filled pollen jars can also be crafted back into empty pollen jars."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The first step, collecting pollen, is what influences the color of resulting seeds.$(br)$(li)$(#B02E26)Red$(): Poppy, Red Tulip, Rose Bush$(li)$(#F9801D)Orange$(): Orange Tulip, Torchflower$(li)$(#FED83D)Yellow$(): Dandelion, Sunflower$(li)$(#169C9C)Cyan$(): Pitcher Plant$(li)$(#3C44AA)Blue$(): Cornflower$(li)$(#3AB3DA)Light blue$(): Blue Orchid$(li)$(#C74EBD)Magenta$(): Allium, Lilac$(li)$(#F38BAA)Pink$(): Peony, Pink Petals, Pink Tulip$(li)$(#9D9D97)White$(): Azure Bluet, Lily of the Valley, Oxeye Daisy, White Tulip$(li)$(#1D1D21)Black$(): Wither Rose"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "There is a 10% chance to mutate into a secondary color.$(br)$(li)$(#80C71F)Lime$(): Dandelion, Sunflower$(li)$(#169C9C)Mint$(): Blue Orchid$(li)$(#8932B8)Lavender$(): Peony, Pink Petals, Pink Tulip$(li)$(#8932B8)Purple$(): Cornflower, Pitcher Plant$(li)$(#C74EBD)Lilac$(): Allium, Lilac$(li)$(#F38BAA)Peach$(): Poppy, Red Tulip, Rose Bush$(li)$(#835432)Wilted$(): Wither Rose$(br2)There is also a 2% chance to mutate into the rare multicolor from any of the pollens."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The second step, using a filled pollen jar on a vanilla flower, influences the species of flower for the resulting seeds.$(br2)There is a 20% chance to mutate into a hybrid flower species.$(br)$(li)$(l)Alyssum$(): Pink Petals$(li)$(l)Blazing Star$(): Sunflower$(li)$(l)Bougainvillea$(): Orange Tulip$(li)$(l)Bromeliad$(): Torchflower$(li)$(l)Chicory$(): Cornflower$(li)$(l)Clematis$(): White Tulip$(li)$(l)Clover$(): Oxeye Daisy"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)Daffodil$(): Allium$(li)$(l)Dianthus$(): Azure Bluet$(li)$(l)Fairy Rose$(): Wither Rose$(li)$(l)Foxglove$(): Peony$(li)$(l)Hibiscus$(): Lily of the Valley$(li)$(l)Hyacinth$(): Red Tulip$(li)$(l)Impala Lily$(): Pitcher Plant$(li)$(l)Jasmine$(): Pink Tulip$(li)$(l)Lantanas$(): Blue Orchid$(li)$(l)Lavender$(): Lilac$(li)$(l)Poppies$(): Poppy$(li)$(l)Rose$(): Rose Bush$(li)$(l)Rose Bushlet$(): Rose Bush$(li)$(l)Wildflower$(): Dandelion"
     }
   ]
 }

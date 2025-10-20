@@ -1,0 +1,345 @@
+{
+  "name": "Impala Lily",
+  "category": "patchouli:flowers",
+  "icon": "flowerary:cyan_impala_lily",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_impala_lily,flowerary:orange_impala_lily,flowerary:yellow_impala_lily,flowerary:lime_impala_lily,flowerary:mint_impala_lily,flowerary:cyan_impala_lily,flowerary:blue_impala_lily,flowerary:light_blue_impala_lily,flowerary:lavender_impala_lily,flowerary:purple_impala_lily,flowerary:lilac_impala_lily,flowerary:magenta_impala_lily,flowerary:pink_impala_lily,flowerary:peach_impala_lily,flowerary:multicolor_impala_lily,flowerary:white_impala_lily,flowerary:black_impala_lily,flowerary:wilted_impala_lily",
+	  "title": "Impala Lily",
+	  "text": "A Impala Lily is a hybrid flower species. Hybrid flowers cannot be hybridized further."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "flowerary:red_impala_lily_seeds,flowerary:orange_impala_lily_seeds,flowerary:yellow_impala_lily_seeds,flowerary:lime_impala_lily_seeds,flowerary:mint_impala_lily_seeds,flowerary:cyan_impala_lily_seeds,flowerary:blue_impala_lily_seeds,flowerary:light_blue_impala_lily_seeds,flowerary:lavender_impala_lily_seeds,flowerary:purple_impala_lily_seeds,flowerary:lilac_impala_lily_seeds,flowerary:magenta_impala_lily_seeds,flowerary:pink_impala_lily_seeds,flowerary:peach_impala_lily_seeds,flowerary:multicolor_impala_lily_seeds,flowerary:white_impala_lily_seeds,flowerary:black_impala_lily_seeds,flowerary:wilted_impala_lily_seeds",
+      "title": "Hybridized Seeds",
+	  "text": "There is an uncommon chance to obtain Impala Lily Seeds by using any of the Pollen Jars on a vanilla Pitcher Plant."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:red_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:red_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Red flowers are from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Orange Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:orange_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:orange_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Orange flowers are from cross-pollination with Orange Tulip or Torchflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:yellow_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:yellow_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Yellow flowers are from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lime_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:lime_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lime flowers are an uncommon mutation from cross-pollination with Dandelion or Sunflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Mint Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:mint_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:mint_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Mint flowers are an uncommon mutation from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cyan Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:cyan_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:cyan_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Cyan flowers are from cross-pollination with Pitcher Plant Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Blue Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:blue_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:blue_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Blue flowers are from cross-pollination with Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Light Blue Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:light_blue_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:light_blue_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Light blue flowers are from cross-pollination with Blue Orchid Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lavender Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lavender_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:lavender_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lavender flowers are an uncommon mutation from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:purple_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:purple_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Purple flowers are an uncommon mutation from cross-pollination with Pitcher Plant and Cornflower Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lilac Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:lilac_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:lilac_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Lilac flowers are an uncommon mutation from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Magenta Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:magenta_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:magenta_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Magenta flowers are from cross-pollination with Allium and Lilac Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Pink Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:pink_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:pink_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Pink flowers are from cross-pollination with Peony, Pink Petals, and Pink Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peach Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:peach_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:peach_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Peach flowers are an uncommon mutation from cross-pollination with Poppy, Red Tulip, or Rose Bush Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Multicolor Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:multicolor_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:multicolor_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Multicolor flowers are a rare mutation from cross-pollination with any of the Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "White Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:white_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:white_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "White flowers are from cross-pollination with Azure Bluet, Lily of the Valley, Oxeye Daisy, and White Tulip Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Black Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:black_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:black_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Black flowers are from cross-pollination with Wither Rose Pollen Jars."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Wilted Impala Lily",
+      "enable_visualize": false,
+      "multiblock": {
+        "pattern": [
+          ["0"],
+		  ["1"],
+          ["F"]
+        ],
+        "mapping": {
+          "0": "flowerary:wilted_impala_lily_plant[age=7,half=upper]",
+          "1": "flowerary:wilted_impala_lily_plant[age=7,half=lower]",
+		  "F": "minecraft:air"
+        }
+      },
+	  "text": "Wilted flowers are an uncommon mutation from cross-pollination with Wither Rose Pollen Jars."
+    }
+  ]
+}
+
+
