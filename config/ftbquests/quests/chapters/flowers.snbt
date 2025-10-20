@@ -3,6 +3,10 @@
 	default_quest_shape: ""
 	filename: "flowers"
 	group: "15230846E14B6926"
+	icon: {
+		Count: 1
+		id: "flowerary:magenta_hyacinth"
+	}
 	id: "44751451837DC2F1"
 	order_index: 11
 	quest_links: [ ]
@@ -7585,5 +7589,6 @@
 			y: 6.5d
 		}
 	]
+	subtitle: ["Not required for perfection"]
 	title: "Flowers"
 }
