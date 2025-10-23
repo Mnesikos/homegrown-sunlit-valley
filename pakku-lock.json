@@ -10173,7 +10173,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "simplerecall-1.0.1-1.20.1.jar",
+                    "file_name": "simplerecall-1.0.5-1.20.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -10181,16 +10181,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6479/542/simplerecall-1.0.1-1.20.1.jar",
-                    "id": "6479542",
+                    "url": "https://edge.forgecdn.net/files/7047/902/simplerecall-1.0.5-1.20.1.jar",
+                    "id": "7047902",
                     "parent_id": "1234653",
                     "hashes": {
-                        "sha1": "ed12f05e2af20e558eb49673e5a5f413f87a48e4",
-                        "md5": "8b4c2d87ea1a1011f32947ccd20ee703"
+                        "sha1": "c461c1e56c53fe9a4ea0974a708c4b8bf8e5dd91",
+                        "md5": "9c0ff3bf706f8136b92daeaca5bb6486"
                     },
                     "required_dependencies": [],
-                    "size": 14066,
-                    "date_published": "2025-04-30T08:39:45.957Z"
+                    "size": 16000,
+                    "date_published": "2025-09-30T07:20:39.563Z"
                 }
             ]
         },
