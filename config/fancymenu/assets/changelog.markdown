@@ -211,3 +211,4 @@
 - Fixed sawmill not having barrel recipes sometimes
 - Fixed fruit trees not dropping experience (thanks Space_Mex)
 - Fixed Cocoa beans and Nether Wart not being harvested by Ribbit Huts
+- Fixed Nether grapes having wrong season tooltip
