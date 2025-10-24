@@ -638,7 +638,6 @@ ServerEvents.tags("block", (e) => {
   });
   const unbreakableTags = [
     "minecraft:wither_immune",
-    "minecraft:features_cannot_replace",
     "buildinggadgets2:deny",
     "minecraft:lava_pool_stone_cannot_replace",
     "forge:relocation_not_supported",
