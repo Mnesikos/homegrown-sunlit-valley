@@ -187,6 +187,7 @@
 - Added Search box to trade screen
 - Added icons to shop selector for seasonal/unlockable shops
 - Added JEI category for drying tea
+- Added ability to right click and update Shipping Bin Monitor
 - Added Bone Fantasy Box to Carpenter in late Autumn
 - Improved speed of Auto-Grabbers
 - Increased number of trades shown on trade screen as well as size of screens

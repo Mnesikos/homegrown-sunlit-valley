@@ -1,6 +1,7 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:birch_log",
     "item:society:ribbit_hut",
     "item:pamhc2trees:starfruit_sapling",
     {
@@ -86,7 +87,6 @@
     "item:fantasyfurniture:decorations/floating_tomes",
     "item:paraglider:horned_statue",
     "item:simplehats:hatbag_halloween",
-    "item:minecraft:birch_log",
     "item:windswept:wooden_bucket{Damage:0}",
     "item:brewery:whiskey_smokey_reverie",
     "item:society:aged_whiskey_smokey_reverie",
