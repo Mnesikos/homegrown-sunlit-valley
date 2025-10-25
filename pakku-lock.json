@@ -1532,7 +1532,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "chat_heads-0.13.7-forge-1.20.jar",
+                    "file_name": "chat_heads-0.14.0-forge-1.20.jar",
                     "mc_versions": [
                         "1.20.1",
                         "1.20"
@@ -1541,16 +1541,16 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5936/595/chat_heads-0.13.7-forge-1.20.jar",
-                    "id": "5936595",
+                    "url": "https://edge.forgecdn.net/files/7057/824/chat_heads-0.14.0-forge-1.20.jar",
+                    "id": "7057824",
                     "parent_id": "407206",
                     "hashes": {
-                        "sha1": "288ca8e77d116f4cb0b487a4e490c0337ec1fa1f",
-                        "md5": "b4bd25da93deaf00dd6d6ae09902fc2a"
+                        "sha1": "567ee6f6d2b72a8203b73887e38344ffa2834b12",
+                        "md5": "b0d253116c8e585f087b481ec46a5c55"
                     },
                     "required_dependencies": [],
-                    "size": 265135,
-                    "date_published": "2024-11-25T16:38:56.040Z"
+                    "size": 718407,
+                    "date_published": "2025-10-02T14:11:48.900Z"
                 }
             ]
         },
@@ -3868,7 +3868,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "DragNs_Livestock_Overhaul-1.20.1-3.2.jar",
+                    "file_name": "DragNs_Livestock_Overhaul-1.20.1-3.2.3.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -3876,19 +3876,19 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7033/844/DragNs_Livestock_Overhaul-1.20.1-3.2.jar",
-                    "id": "7033844",
+                    "url": "https://edge.forgecdn.net/files/7146/15/DragNs_Livestock_Overhaul-1.20.1-3.2.3.jar",
+                    "id": "7146015",
                     "parent_id": "1131669",
                     "hashes": {
-                        "sha1": "9efdb2f5f4e95be4ca973da70e209f10b95edd40",
-                        "md5": "b9c28c03b5a7476651a707160e1e23e5"
+                        "sha1": "a346d134fe2a074eec5ae34e4fb98520a3587b06",
+                        "md5": "f3bf7f60b7a676b9660f2dd5267dc88a"
                     },
                     "required_dependencies": [
                         "388172",
                         "306770"
                     ],
-                    "size": 6592599,
-                    "date_published": "2025-09-26T00:51:04.853Z"
+                    "size": 6598053,
+                    "date_published": "2025-10-24T22:17:18.277Z"
                 }
             ]
         },
@@ -11754,7 +11754,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "SubtleEffects-forge-1.20.1-1.13.0.jar",
+                    "file_name": "SubtleEffects-forge-1.20.1-1.13.1.jar",
                     "mc_versions": [
                         "1.20.1"
                     ],
@@ -11762,18 +11762,18 @@
                         "forge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/7064/192/SubtleEffects-forge-1.20.1-1.13.0.jar",
-                    "id": "7064192",
+                    "url": "https://edge.forgecdn.net/files/7139/104/SubtleEffects-forge-1.20.1-1.13.1.jar",
+                    "id": "7139104",
                     "parent_id": "1023913",
                     "hashes": {
-                        "sha1": "edf45ec3aba8c2325f8e62fbe2a559f39312dcc8",
-                        "md5": "1c07eccdb950adad5495e77460598d7a"
+                        "sha1": "b481cf019821beaa27ab2797e600c50f142ea77c",
+                        "md5": "d2ad78f772021d92a8737d4fd5c7e84e"
                     },
                     "required_dependencies": [
                         "1005914"
                     ],
-                    "size": 3347617,
-                    "date_published": "2025-10-04T03:29:16.620Z"
+                    "size": 3366021,
+                    "date_published": "2025-10-22T23:15:30.500Z"
                 }
             ]
         },
