@@ -69,4 +69,31 @@ LootJS.modifiers((e) => {
       if (!cropCollectorDenied.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
       return itemStack;
     });
+  // flowerary crops
+  global.rareFlowers.forEach((flower) => {
+    if (flower.item.includes("flowerary")) {
+      e.addBlockLootModifier(`${flower.item}_plant`).removeLoot(`${flower.item}_seeds`);
+      e.addBlockLootModifier(`${flower.item}_plant`)
+        .randomChance(0.25)
+        .customCondition({
+          condition: "minecraft:location_check",
+          offsetY: -1,
+          predicate: {
+            block: {
+              blocks: ["dew_drop_farmland_growth:bountiful_fertilized_farmland"],
+            },
+          },
+        })
+        .modifyLoot(Ingredient.all, (itemStack) => {
+          itemStack.setCount(itemStack.getCount() + 1);
+          return itemStack;
+        });
+      e.addBlockLootModifier(`${flower.item}_plant`)
+        .hasAnyStage("crop_collector")
+        .modifyLoot(Ingredient.all, (itemStack) => {
+          if (!cropCollectorDenied.includes(itemStack.id)) itemStack.setCount(itemStack.getCount() * 2);
+          return itemStack;
+        });
+    }
+  });
 });

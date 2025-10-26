@@ -617,7 +617,7 @@ global.animalProducts = [
 /*
   Flowerary: * 2.5 hybrid species, * 5 hybrid color, * 25 multicolor
 */
-global.wildFlowers = [
+global.flowers = [
   { item: "minecraft:allium", value: 2 },
   { item: "minecraft:azure_bluet", value: 2 },
   { item: "minecraft:blue_orchid", value: 2 },
@@ -737,7 +737,7 @@ global.wildFlowers = [
   { item: "windswept:yellow_rose", value: 2},
   { item: "windswept:yellow_rose_bush", value: 2},
 ];
-global.specialFlowers = [
+global.rareFlowers = [
 //  { item: "betterarcheology:growth_totem", value: 2 },
 //  { item: "botania:black_double_flower", value: 2 },
 //  { item: "botania:black_mystical_flower", value: 2 },
@@ -1456,6 +1456,12 @@ global.specialFlowers = [
   { item: "flowerary:yellow_wildflower", value: 5 },
   { item: "flowerary:yellow_wither_rose", value: 2 },
 ];
+global.rareFlowers.forEach((flower) => {
+  global.flowers.push({
+    item: flower.item,
+    value: flower.value
+  });
+});
 
 /**
  * Preserves
@@ -2772,14 +2778,7 @@ global.crops.forEach((crop) => {
     multiplier: "shippingbin:crop_sell_multiplier",
   });
 });
-global.wildFlowers.forEach((flower) => {
-  const { item, value } = flower;
-  global.trades.set(item, {
-    value: value,
-    multiplier: "shippingbin:crop_sell_multiplier",
-  });
-});
-global.specialFlowers.forEach((flower) => {
+global.flowers.forEach((flower) => {
   const { item, value } = flower;
   global.trades.set(item, {
     value: value,
