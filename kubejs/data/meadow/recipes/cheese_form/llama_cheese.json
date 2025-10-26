@@ -1,7 +1,7 @@
 {
   "type": "meadow:cheese",
   "bucket": {
-    "item": "society:large_llama_milk"
+    "item": "homegrown:large_llama_milk"
   },
   "ingredient": {
     "item": "meadow:rennet"
