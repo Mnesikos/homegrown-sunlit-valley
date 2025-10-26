@@ -3,7 +3,7 @@ console.info("[SOCIETY] addMiscRecipes.js loaded");
 ServerEvents.recipes((e) => {
   // Preserves bottles
   global.preserves.forEach((jar) => {
-    if (jar.item.includes("homegrown")) {
+    if (jar.item.includes("society")) {
       e.shaped(Item.of(`homegrown:${jar.item.split(":")[1]}_bottle`, 3), ["pb", "bb"], {
         p: jar.item,
         b: "minecraft:glass_bottle"
@@ -53,7 +53,7 @@ ServerEvents.recipes((e) => {
       },
     ],
     result: {
-      item: "society:red_grape_jam",
+      item: "homegrown:red_grape_jam",
     },
   });
   e.custom({
@@ -75,7 +75,7 @@ ServerEvents.recipes((e) => {
       },
     ],
     result: {
-      item: "society:white_grape_jam",
+      item: "homegrown:white_grape_jam",
     },
   });
 
