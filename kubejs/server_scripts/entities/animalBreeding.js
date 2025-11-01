@@ -19,6 +19,14 @@ const breedingItems = [
   "society:blueberry_seed",
   "minecraft:dandelion",
   "minecraft:golden_carrot",
+  "minecraft:dead_bush",
+  "minecraft:cactus",
+  "minecraft:hay_block",
+  "minecraft:sweet_berries",
+  "minecraft:golden_apple",
+  "minecraft:enchanted_golden_apple",
+  "minecraft:apple",
+  "minecraft:sugar",
 ];
 
 ItemEvents.entityInteracted((e) => {
@@ -26,10 +34,13 @@ ItemEvents.entityInteracted((e) => {
   if (player.cooldowns.isOnCooldown(item)) return;
   if (!global.checkEntityTag(target, "society:husbandry_animal") || target.isBaby()) return;
   if (breedingItems.includes(item.id) || (typeof target.isFood === "function" && target.isFood(item))) {
-    server.runCommandSilent(
-      `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 This animal can only be bred with a Miracle Potion!`
-    );
-    e.cancel();
+    let rabbit = target.type != "dragnlivestock:o_rabbit" || target.isTame();
+    if (rabbit && (!["dragnlivestock:o_camel", "dragnlivestock:caribou"].includes(target.type) || target.isTamed())) {
+      server.runCommandSilent(
+        `emberstextapi sendcustom ${player.username} ${global.animalMessageSettings} 160 This animal can only be bred with a Miracle Potion!`
+      );
+      e.cancel();
+    }
   }
 
   if (hand == "OFF_HAND") return;
